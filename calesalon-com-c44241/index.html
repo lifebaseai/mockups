@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup calesalon-com-c44241 1 a31a0500 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calé Salon | Hair salon in Metuchen, NJ</title>
+<meta name="description" content="Cuts, color, highlights, smoothing, bridal and waxing at 56 Pearl St, Metuchen, NJ. See every price and plan your visit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gold:#bc904c; --gold-ink:#85622a; --gold-soft:#efe3cf; --cream:#faf7f2;
+  --ink:#24201c; --muted:#5c554d; --line:#e6ddd0; --char:#2f2c29; --blue:#24a4c8;
+  --serif:"Playfair Display",Georgia,"Times New Roman",serif;
+  --sans:"Josefin Sans","Avenir Next","Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--ink);font:400 17px/1.6 var(--sans);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1180px,100% - 48px);margin-inline:auto}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:#fff;padding:10px 14px;z-index:50;text-decoration:none}
+.skip:focus{top:12px}
+
+/* label + header */
+.mock{background:var(--cream);color:var(--muted);font-size:13px;letter-spacing:.06em;text-align:center;padding:7px 12px;border-bottom:1px solid var(--line)}
+header.top{background:#fff;border-bottom:1px solid var(--gold)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:84px}
+.logo img{width:146px;height:auto}
+.top nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0;align-items:center}
+.top nav a{text-decoration:none;font-size:15px;letter-spacing:.12em;text-transform:uppercase;padding:12px 0;display:inline-block}
+.top nav a:hover{color:var(--gold-ink)}
+.top .tel{font-weight:600;letter-spacing:.06em;border:1px solid var(--gold);padding:12px 18px;border-radius:2px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:15px 26px 12px;font:600 15px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border-radius:2px;border:1px solid var(--gold);cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.btn.primary{background:var(--gold);color:#1d1915}
+.btn.primary:hover{background:#a97f3f;transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--gold-soft)}
+.btn svg{width:17px;height:17px;flex:none;margin-top:-3px}
+
+/* hero */
+.hero{background:var(--cream)}
+.hero .wrap{display:grid;grid-template-columns:1fr 390px;align-items:center;gap:64px;padding:60px 0 56px}
+.eyebrow{font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-ink);font-weight:600;margin:0 0 18px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.1;margin:0;text-wrap:balance}
+h1{font-size:clamp(42px,5.6vw,74px);letter-spacing:-.01em;max-width:13ch}
+h1 em,h2 em{font-style:italic;color:var(--gold-ink)}
+.lead{font-size:19px;color:var(--muted);max-width:40ch;margin:22px 0 30px}
+.actions{display:flex;flex-wrap:wrap;gap:14px}
+.today{background:#fff;border:1px solid var(--line);border-top:3px solid var(--gold);padding:28px 30px 24px;border-radius:2px;font-size:16px;color:var(--muted);box-shadow:0 18px 40px -28px rgba(60,40,10,.35)}
+.today p{margin:0}
+.today .tk{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-ink);font-weight:600}
+.today .st{font-family:var(--serif);color:var(--ink);font-size:24px;line-height:1.25;margin:10px 0 16px}
+.today .dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--gold);margin-right:10px;vertical-align:4px}
+.today dl{margin:0}
+.today dl div{display:grid;grid-template-columns:64px 1fr;gap:12px;align-items:center;min-height:48px;border-top:1px solid var(--line)}
+.today dt{font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+.today dd{margin:0;color:var(--ink);padding-top:2px}
+.today a{color:var(--ink);text-underline-offset:3px;text-decoration-color:var(--gold);display:inline-flex;align-items:center;min-height:44px}
+.today dl div:last-child{border-bottom:1px solid var(--line)}
+.strip{background:var(--cream)}
+.strip img{width:100%;max-width:1574px;margin-inline:auto;aspect-ratio:1574/450;object-fit:cover}
+
+/* starting prices ribbon */
+.ribbon{border-bottom:1px solid var(--line)}
+.ribbon ul{list-style:none;margin:0 auto;padding:0;display:grid;grid-template-columns:repeat(4,1fr)}
+.ribbon li{padding:30px 24px;border-left:1px solid var(--line)}
+.ribbon li:first-child{border-left:0;padding-left:0}
+.ribbon .k{display:block;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.ribbon .v{font-family:var(--serif);font-size:30px;line-height:1.2}
+.ribbon .v small{font-family:var(--sans);font-size:14px;color:var(--muted);letter-spacing:.06em;margin-right:6px;text-transform:uppercase}
+
+/* section heads */
+section{scroll-margin-top:20px}
+.sec{padding:96px 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:40px}
+h2{font-size:clamp(34px,4vw,52px)}
+.head p{margin:0;color:var(--muted);max-width:44ch}
+
+/* planner */
+.planner{display:grid;grid-template-columns:1fr 370px;gap:48px;align-items:start}
+.planner>*{min-width:0}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px;padding:0}
+.tab{font:600 14px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;min-height:44px;padding:15px 16px 12px;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:999px;cursor:pointer;white-space:nowrap;transition:border-color .2s,background .2s}
+.tab:hover{border-color:var(--gold)}
+.tab[aria-selected="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.tab .n{display:inline-block;min-width:20px;margin-left:6px;padding:3px 6px 1px;border-radius:10px;background:var(--gold);color:#1d1915;font-size:12px;letter-spacing:0}
+.tab .n[hidden]{display:none}
+.cat{margin-bottom:34px}
+.cat h3{font-size:26px;margin-bottom:6px}
+.js .cat h3{display:none}
+.js .cat{margin:0}
+.js .cat:not(.on){display:none}
+.items{display:grid;grid-template-columns:1fr;column-gap:36px}
+.wide .items{grid-template-columns:1fr 1fr}
+.js #menu{min-height:560px}
+.item{display:flex;align-items:center;gap:14px;min-height:56px;padding:10px 4px;border-bottom:1px solid var(--line);cursor:pointer;transition:background .15s}
+.item:hover{background:var(--cream)}
+.item input{width:20px;height:20px;margin:0;accent-color:var(--gold-ink);flex:none;cursor:pointer}
+.item .nm{flex:1;line-height:1.3;padding-top:3px}
+.item .nm small{display:block;color:var(--muted);font-size:14px}
+.item .pr{font-family:var(--serif);font-size:19px;white-space:nowrap}
+.item .pr i{font-family:var(--sans);font-style:normal;font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-right:4px}
+.item:has(input:checked){background:#fbf6ee}
+.fine{font-size:15px;color:var(--muted);margin:22px 0 0}
+
+.sum{position:sticky;top:24px;background:var(--cream);border:1px solid var(--line);border-top:3px solid var(--gold);padding:28px 28px 26px;border-radius:2px;box-shadow:0 18px 40px -28px rgba(60,40,10,.35)}
+.sum h3{font-size:28px;margin-bottom:4px}
+.sum .sub{margin:0 0 16px;color:var(--muted);font-size:15px}
+.sum ul{list-style:none;margin:0 0 6px;padding:0}
+.sum li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px dashed #d9cdb9;font-size:16px;line-height:1.3}
+.sum li span:last-child{white-space:nowrap;font-family:var(--serif)}
+.sum .empty{color:var(--muted);font-style:italic}
+.total{display:flex;justify-content:space-between;align-items:baseline;margin:16px 0 4px}
+.total span{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.total output{font-family:var(--serif);font-size:42px;line-height:1}
+.total output.zero{color:var(--muted)}
+.consult{font-size:15px;color:var(--muted);margin:4px 0 0;min-height:1em}
+.sum .btn{width:100%;margin-top:14px}
+.sum .row{display:flex;gap:10px}
+.sum .row .btn{flex:1;padding-inline:12px;font-size:14px}
+.linkbtn{background:none;border:0;color:var(--muted);font:inherit;font-size:15px;text-decoration:underline;text-underline-offset:3px;cursor:pointer;min-height:44px;padding:0;margin-top:6px}
+
+/* photo bands */
+.band{position:relative;background:var(--char);color:#fff}
+.band img{width:100%;max-width:1574px;margin-inline:auto;aspect-ratio:1574/450;object-fit:cover}
+.after{display:grid;grid-template-columns:1fr 1.15fr;gap:64px;align-items:start;padding:72px 0 88px}
+.after p{color:var(--muted);margin:16px 0 0}
+.after .btn{margin-top:26px}
+.after.short{grid-template-columns:1fr auto;align-items:end}
+.go{text-align:right}
+.go .from{margin:0;font-family:var(--serif);font-size:22px;color:var(--ink)}
+.go .from small{font-family:var(--sans);font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 2px}
+.go .from span{color:var(--gold);margin:0 8px}
+.go .btn{margin-top:18px}
+.alt{background:var(--cream)}
+.points{list-style:none;margin:0;padding:0;counter-reset:p}
+.points li{display:grid;grid-template-columns:44px 1fr;gap:4px 12px;padding:18px 0;border-bottom:1px solid var(--line)}
+.points li::before{counter-increment:p;content:"0" counter(p);font-family:var(--serif);color:var(--gold-ink);font-size:20px;grid-row:span 2}
+.points b{font-weight:600;font-size:18px}
+.points span{color:var(--muted)}
+
+/* visit */
+.visit{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:56px}
+.visit h3{font-family:var(--sans);font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-ink);font-weight:600;margin-bottom:16px}
+.hours{width:100%;border-collapse:collapse;font-size:17px}
+.hours th{text-align:left;font-weight:400;padding:9px 0;border-bottom:1px solid var(--line)}
+.hours td{text-align:right;padding:9px 0;border-bottom:1px solid var(--line);color:var(--muted)}
+.hours tr.now th,.hours tr.now td{color:var(--ink);font-weight:600}
+.hours tr.now th::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--gold);margin:0 8px 2px -15px}
+.addr{font-family:var(--serif);font-size:30px;line-height:1.25;margin:0 0 14px}
+.visit .lnk{display:inline-flex;align-items:center;min-height:44px;color:var(--ink);text-decoration-color:var(--gold);text-underline-offset:4px;font-size:17px}
+.contact{list-style:none;margin:0;padding:0}
+.contact li{border-bottom:1px solid var(--line)}
+.contact a{display:flex;justify-content:space-between;align-items:center;min-height:56px;text-decoration:none;font-size:17px}
+.contact a span:last-child{color:var(--muted);font-size:14px;letter-spacing:.12em;text-transform:uppercase}
+.contact a:hover span:first-child{color:var(--gold-ink)}
+
+/* final */
+.final{background:var(--char);color:#fff;text-align:center;padding:96px 0}
+.nw{white-space:nowrap}
+.final h2{color:#fff;max-width:16ch;margin:0 auto}
+.final h2 em{color:#e2be84}
+.final p{color:#d8d1c7;margin:18px auto 32px;max-width:44ch}
+.final .actions{justify-content:center}
+.final .btn.ghost{color:#fff}
+.final .btn.ghost:hover{background:rgba(255,255,255,.08)}
+footer{background:#252321;color:#cfc8bd;font-size:15px;padding:26px 0 30px}
+footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+footer a{color:#fff;text-underline-offset:3px}
+
+/* phone call bar */
+.callbar{display:none}
+
+/* motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+
+/* tablet */
+@media (max-width:1000px){
+  .hero .wrap{grid-template-columns:1fr 340px;gap:40px}
+  .planner{grid-template-columns:1fr}
+  .sum{position:static}
+  .js #menu{min-height:0}
+  .after{grid-template-columns:1fr;gap:28px}
+  .after.short{grid-template-columns:1fr;align-items:start}
+  .go{text-align:left}
+  .visit{grid-template-columns:1fr 1fr}
+  .visit>div:first-child{grid-column:1/-1}
+}
+/* phone */
+@media (max-width:720px){
+  body{font-size:17px;padding-bottom:68px}
+  .wrap{width:calc(100% - 40px)}
+  .top .wrap{min-height:72px}
+  .logo img{width:124px}
+  .top nav li:not(.c){display:none}
+  .top .tel{padding:12px 14px;font-size:14px}
+  .hero .wrap{grid-template-columns:1fr;gap:30px;padding:40px 0 34px}
+  h1{font-size:44px}
+  .lead{font-size:18px;margin:18px 0 26px}
+  .actions .btn{flex:1 1 100%}
+  .today{padding:22px 20px 18px}
+  .today .st{font-size:21px}
+  .strip img{aspect-ratio:auto;height:240px;object-position:53% 30%}
+  .ribbon ul{grid-template-columns:1fr 1fr}
+  .ribbon li{padding:20px 0 20px 18px}
+  .ribbon li:nth-child(odd){border-left:0;padding-left:0}
+  .ribbon li:nth-child(n+3){border-top:1px solid var(--line)}
+  .ribbon .v{font-size:26px}
+  .ribbon .k{font-size:13px}
+  .sec{padding:64px 0}
+  .head{display:block;margin-bottom:26px}
+  .head p{margin-top:12px}
+  .tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .tab{padding:15px 10px 12px;font-size:13px;letter-spacing:.06em}
+  .tab .n{margin-left:4px}
+  .items,.wide .items{grid-template-columns:1fr}
+  .sum{padding:24px 20px}
+  .band img{aspect-ratio:auto;height:240px}
+  .band.b1 img{object-position:55% 50%}
+  .band.b3 img{object-position:52% 50%}
+  .after{padding:48px 0 64px}
+  .go .from{font-size:20px}
+  .go .btn{width:100%}
+  .visit{grid-template-columns:1fr;gap:44px}
+  .addr{font-size:26px}
+  .final{padding:72px 0}
+  .final .actions .btn{flex:1 1 100%}
+  footer .wrap{display:block}
+  footer p{margin:0 0 10px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;background:#fff;border-top:1px solid var(--gold);padding:8px 12px calc(8px + env(safe-area-inset-bottom));gap:10px;box-shadow:0 -8px 24px -16px rgba(0,0,0,.4)}
+  .callbar a{flex:1;min-height:48px;display:flex;align-items:center;justify-content:center;text-decoration:none;font:600 14px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;border-radius:2px;padding-top:3px}
+  .callbar .plan{border:1px solid var(--line);color:var(--ink)}
+  .callbar .call{background:var(--gold);color:#1d1915}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="mock">Free mockup for Calé Salon</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#main" aria-label="Calé Salon, back to top"><img src="https://calesalon.com/wp-content/uploads/2019/04/Cale-Salon-logo.jpg" alt="Calé Salon" width="307" height="118"></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#prices">Prices</a></li>
+        <li><a href="#bridal">Bridal</a></li>
+        <li><a href="#visit">Visit</a></li>
+        <li class="c"><a class="tel" href="tel:+17325485666">(732) 548-5666</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Hair salon in Metuchen, NJ</p>
+        <h1 id="h1">Leave feeling like a <em>whole new you.</em></h1>
+        <p class="lead">Cuts, color, highlights, smoothing, bridal and waxing, all in one salon on Pearl Street, with only the highest quality products.</p>
+        <div class="actions">
+          <a class="btn primary" href="tel:+17325485666"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>Call to book</a>
+          <a class="btn ghost" href="#prices">Plan your visit</a>
+        </div>
+      </div>
+      <div class="today">
+        <p class="tk">Visit the salon</p>
+        <p class="st" id="status"><span class="dot" aria-hidden="true"></span>Open Tuesday to Saturday</p>
+        <dl>
+          <div><dt>Hours</dt><dd>Tue to Sat, 10:00 AM to 6:00 PM</dd></div>
+          <div><dt>Where</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=56%20Pearl%20St%2C%20Metuchen%2C%20NJ%2008840">56 Pearl St, Metuchen</a></dd></div>
+          <div><dt>Call</dt><dd><a href="tel:+17325485666">(732) 548-5666</a></dd></div>
+        </dl>
+      </div>
+    </div>
+    <div class="strip">
+      <img src="https://calesalon.com/wp-content/uploads/2019/04/homebanner.jpg" alt="A woman with long styled waves in front of the Metuchen sign" width="1574" height="450">
+    </div>
+  </section>
+
+  <div class="ribbon" aria-label="Starting prices">
+    <ul class="wrap">
+      <li><span class="k">Haircut &amp; blow-dry</span><span class="v"><small>from</small>$55</span></li>
+      <li><span class="k">Partial highlights</span><span class="v"><small>from</small>$105</span></li>
+      <li><span class="k">Keratin smoothing</span><span class="v"><small>from</small>$350</span></li>
+      <li><span class="k">Eyebrow wax</span><span class="v">$15</span></li>
+    </ul>
+  </div>
+
+  <section class="sec" id="prices" aria-labelledby="h-prices">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="h-prices">Know your price <em>before you call.</em></h2>
+        <p>Every service on our price list. Tick what you would like and see where your visit starts.</p>
+      </div>
+      <div class="planner">
+        <div id="menu">
+          <div class="cat" id="cat-cuts" data-name="Haircuts">
+            <h3>Haircuts</h3>
+            <div class="items">
+              <label class="item"><input type="checkbox" data-p="55" data-up><span class="nm">Haircut &amp; blow-dry</span><span class="pr"><i>from</i>$55</span></label>
+              <label class="item"><input type="checkbox" data-p="35" data-up><span class="nm">Men’s cut</span><span class="pr"><i>from</i>$35</span></label>
+              <label class="item"><input type="checkbox" data-p="30" data-up><span class="nm">Kids’ cut<small>12 and under</small></span><span class="pr"><i>from</i>$30</span></label>
+            </div>
+          </div>
+          <div class="cat" id="cat-blow" data-name="Blowouts">
+            <h3>Blowouts</h3>
+            <div class="items">
+              <label class="item"><input type="checkbox" data-p="30" data-up><span class="nm">Signature blowout</span><span class="pr"><i>from</i>$30</span></label>
+              <label class="item"><input type="checkbox" data-p="20" data-up><span class="nm">Ironworks</span><span class="pr"><i>from</i>$20</span></label>
+            </div>
+          </div>
+          <div class="cat" id="cat-color" data-name="Color">
+            <h3>Color</h3>
+            <div class="items">
+              <label class="item"><input type="checkbox" data-p="60" data-up><span class="nm">Single process</span><span class="pr"><i>from</i>$60</span></label>
+              <label class="item"><input type="checkbox" data-p="70" data-up><span class="nm">Single process<small>ammonia free</small></span><span class="pr"><i>from</i>$70</span></label>
+              <label class="item"><input type="checkbox" data-p="120" data-up><span class="nm">Double process</span><span class="pr"><i>from</i>$120</span></label>
+              <label class="item"><input type="checkbox" data-p="35" data-up><span class="nm">Base softener</span><span class="pr"><i>from</i>$35</span></label>
+              <label class="item"><input type="checkbox" data-p="30" data-up><span class="nm">Gloss toner</span><span class="pr"><i>from</i>$30</span></label>
+              <label class="item"><input type="checkbox" data-p="35" data-up><span class="nm">Men’s color blending</span><span class="pr"><i>from</i>$35</span></label>
+              <label class="item"><input type="checkbox" data-c><span class="nm">Balayage</span><span class="pr"><i>on consultation</i></span></label>
+              <label class="item"><input type="checkbox" data-c><span class="nm">Ombre</span><span class="pr"><i>on consultation</i></span></label>
+            </div>
+          </div>
+          <div class="cat" id="cat-hl" data-name="Highlights">
+            <h3>Highlights</h3>
+            <div class="items">
+              <label class="item"><input type="checkbox" data-p="155" data-up><span class="nm">Full highlights<small>24 foils</small></span><span class="pr"><i>from</i>$155</span></label>
+              <label class="item"><input type="checkbox" data-p="105" data-up><span class="nm">Partial highlights<small>12 foils</small></span><span class="pr"><i>from</i>$105</span></label>
+              <label class="item"><input type="checkbox" data-p="25" data-up><span class="nm">Accent highlights<small>4 foils</small></span><span class="pr"><i>from</i>$25</span></label>
+            </div>
+          </div>
+          <div class="cat" id="cat-smooth" data-name="Smoothing">
+            <h3>Smoothing</h3>
+            <div class="items">
+              <label class="item"><input type="checkbox" data-p="350" data-up><span class="nm">Keratin Complex</span><span class="pr"><i>from</i>$350</span></label>
+              <label class="item"><input type="checkbox" data-p="450" data-up><span class="nm">Magic Sleek</span><span class="pr"><i>from</i>$450</span></label>
+            </div>
+          </div>
+          <div class="cat" id="cat-updo" data-name="Updos &amp; make-up">
+            <h3>Updos &amp; make-up</h3>
+            <div class="items">
+              <label class="item"><input type="checkbox" data-p="100" data-up><span class="nm">Bride’s updo</span><span class="pr"><i>from</i>$100</span></label>
+              <label class="item"><input type="checkbox" data-p="75" data-up><span class="nm">Bridesmaid’s updo</span><span class="pr"><i>from</i>$75</span></label>
+              <label class="item"><input type="checkbox" data-p="75" data-up><span class="nm">Updo</span><span class="pr"><i>from</i>$75</span></label>
+              <label class="item"><input type="checkbox" data-p="50" data-up><span class="nm">Kids’ updo<small>under 12</small></span><span class="pr"><i>from</i>$50</span></label>
+              <label class="item"><input type="checkbox" data-p="65" data-up><span class="nm">Make-up</span><span class="pr"><i>from</i>$65</span></label>
+            </div>
+          </div>
+          <div class="cat" id="cat-treat" data-name="Treatments">
+            <h3>Treatments &amp; extensions</h3>
+            <div class="items">
+              <label class="item"><input type="checkbox" data-p="25" data-up><span class="nm">Moisture loss</span><span class="pr"><i>from</i>$25</span></label>
+              <label class="item"><input type="checkbox" data-p="20" data-up><span class="nm">Clarifying treatment</span><span class="pr"><i>from</i>$20</span></label>
+              <label class="item"><input type="checkbox" data-p="30" data-up><span class="nm">Dry scalp &amp; dandruff</span><span class="pr"><i>from</i>$30</span></label>
+              <label class="item"><input type="checkbox" data-p="30" data-up><span class="nm">Scalp exfoliation</span><span class="pr"><i>from</i>$30</span></label>
+              <label class="item"><input type="checkbox" data-p="45"><span class="nm">Bond RX by Paul Mitchell</span><span class="pr">$45</span></label>
+              <label class="item"><input type="checkbox" data-p="45"><span class="nm">Screen Express silkening</span><span class="pr">$45</span></label>
+              <label class="item"><input type="checkbox" data-c><span class="nm">Extensions</span><span class="pr"><i>on consultation</i></span></label>
+            </div>
+          </div>
+          <div class="cat wide" id="cat-wax" data-name="Waxing">
+            <h3>Waxing</h3>
+            <div class="items">
+              <label class="item"><input type="checkbox" data-p="15"><span class="nm">Eyebrow</span><span class="pr">$15</span></label>
+              <label class="item"><input type="checkbox" data-p="10"><span class="nm">Lip</span><span class="pr">$10</span></label>
+              <label class="item"><input type="checkbox" data-p="10"><span class="nm">Chin</span><span class="pr">$10</span></label>
+              <label class="item"><input type="checkbox" data-p="15"><span class="nm">Nose</span><span class="pr">$15</span></label>
+              <label class="item"><input type="checkbox" data-p="12"><span class="nm">Cheeks</span><span class="pr">$12</span></label>
+              <label class="item"><input type="checkbox" data-p="12"><span class="nm">Sides</span><span class="pr">$12</span></label>
+              <label class="item"><input type="checkbox" data-p="12"><span class="nm">Neck</span><span class="pr">$12</span></label>
+              <label class="item"><input type="checkbox" data-p="45"><span class="nm">Full face</span><span class="pr">$45</span></label>
+              <label class="item"><input type="checkbox" data-p="20"><span class="nm">Under arm</span><span class="pr">$20</span></label>
+              <label class="item"><input type="checkbox" data-p="30"><span class="nm">Half arms</span><span class="pr">$30</span></label>
+              <label class="item"><input type="checkbox" data-p="40"><span class="nm">Full arms</span><span class="pr">$40</span></label>
+              <label class="item"><input type="checkbox" data-p="30"><span class="nm">Bikini</span><span class="pr">$30</span></label>
+              <label class="item"><input type="checkbox" data-p="35"><span class="nm">Half legs</span><span class="pr">$35</span></label>
+              <label class="item"><input type="checkbox" data-p="60"><span class="nm">Full legs</span><span class="pr">$60</span></label>
+              <label class="item"><input type="checkbox" data-p="30"><span class="nm">Upper chest</span><span class="pr">$30</span></label>
+              <label class="item"><input type="checkbox" data-p="30"><span class="nm">Lower chest</span><span class="pr">$30</span></label>
+              <label class="item"><input type="checkbox" data-p="60"><span class="nm">Full chest</span><span class="pr">$60</span></label>
+              <label class="item"><input type="checkbox" data-p="25"><span class="nm">Upper back</span><span class="pr">$25</span></label>
+              <label class="item"><input type="checkbox" data-p="25"><span class="nm">Lower back</span><span class="pr">$25</span></label>
+              <label class="item"><input type="checkbox" data-p="60"><span class="nm">Full back</span><span class="pr">$60</span></label>
+            </div>
+          </div>
+          <p class="fine">Prices are starting points and can change with the length and texture of your hair.</p>
+        </div>
+
+        <aside class="sum" id="summary" aria-labelledby="h-sum">
+          <h3 id="h-sum">Your visit</h3>
+          <p class="sub">Tick services from any tab to see where your visit starts.</p>
+          <ul id="picked" aria-live="polite">
+            <li class="empty">Tick a service to add it here.</li>
+          </ul>
+          <div class="total"><span id="tlabel">Total</span><output id="total" class="zero" for="menu">$0</output></div>
+          <p class="consult" id="consult"></p>
+          <a class="btn primary" href="tel:+17325485666"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>Call to book this</a>
+          <div class="row">
+            <a class="btn ghost" id="mail" href="mailto:cale_salon@yahoo.com?subject=Appointment%20request">Email this list</a>
+          </div>
+          <button type="button" class="linkbtn" id="clear">Clear and start over</button>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="bridal" aria-labelledby="h-bridal">
+    <div class="band b1">
+      <img src="https://calesalon.com/wp-content/uploads/2025/01/mervat-4.jpg" alt="A woman in a yellow evening gown with styled hair under the Metuchen train bridge" width="1574" height="450" loading="lazy">
+    </div>
+    <div class="wrap after short">
+      <div>
+        <p class="eyebrow">Special occasion &amp; bridal</p>
+        <h2 id="h-bridal">Hair and <span class="nw">make-up</span> <em>for the big day.</em></h2>
+        <p>Updos for the bride, the bridesmaids and the little ones, with make-up to match. Call us to plan the morning.</p>
+      </div>
+      <div class="go">
+        <p class="from">Updos <small>from</small> $50 <span aria-hidden="true">·</span> Make-up <small>from</small> $65</p>
+        <a class="btn ghost" href="#prices" data-tab="cat-updo">Add to your visit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" aria-labelledby="h-salon">
+    <div class="band b3">
+      <img src="https://calesalon.com/wp-content/uploads/2025/01/tony.jpg" alt="A stylist cutting a man’s hair in the salon" width="1574" height="450" loading="lazy">
+    </div>
+    <div class="wrap after">
+      <div>
+        <p class="eyebrow">The salon</p>
+        <h2 id="h-salon">A visit that feels <em>like pampering.</em></h2>
+        <p>Women, men and kids, in an atmosphere of relaxation and comfort. A salon that does it all, from cuts and color to waxing.</p>
+      </div>
+      <ol class="points">
+        <li><b>Only the highest quality products</b><span>In every treatment, from a gloss toner to a Keratin Complex smoothing.</span></li>
+        <li><b>Up to date with the latest trends</b><span>Balayage and ombre are on the menu, priced at a consultation.</span></li>
+        <li><b>Fun, comfortable and modern</b><span>Stop by on Pearl Street, or call and we will find you a time.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec" id="visit" aria-labelledby="h-visit">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="h-visit">Come and <em>see us.</em></h2>
+        <p id="visit-status">Open Tuesday to Saturday, 10:00 AM to 6:00 PM.</p>
+      </div>
+      <div class="visit">
+        <div>
+          <h3>Find us</h3>
+          <p class="addr">56 Pearl St<br>Metuchen, NJ 08840</p>
+          <a class="lnk" href="https://www.google.com/maps/search/?api=1&amp;query=56%20Pearl%20St%2C%20Metuchen%2C%20NJ%2008840">Get directions in Google Maps</a>
+        </div>
+        <div>
+          <h3>Hours</h3>
+          <table class="hours" aria-label="Opening hours">
+            <tbody>
+              <tr data-d="2"><th scope="row">Tuesday</th><td>10:00 AM – 6:00 PM</td></tr>
+              <tr data-d="3"><th scope="row">Wednesday</th><td>10:00 AM – 6:00 PM</td></tr>
+              <tr data-d="4"><th scope="row">Thursday</th><td>10:00 AM – 6:00 PM</td></tr>
+              <tr data-d="5"><th scope="row">Friday</th><td>10:00 AM – 6:00 PM</td></tr>
+              <tr data-d="6"><th scope="row">Saturday</th><td>10:00 AM – 6:00 PM</td></tr>
+              <tr data-d="0"><th scope="row">Sunday</th><td>Closed</td></tr>
+              <tr data-d="1"><th scope="row">Monday</th><td>Closed</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h3>Get in touch</h3>
+          <ul class="contact">
+            <li><a href="tel:+17325485666"><span>(732) 548-5666</span><span>Call</span></a></li>
+            <li><a href="mailto:cale_salon@yahoo.com"><span>cale_salon@yahoo.com</span><span>Email</span></a></li>
+            <li><a href="https://www.instagram.com/cale_salon/"><span>@cale_salon</span><span>Instagram</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final" aria-labelledby="h-final">
+    <div class="wrap">
+      <h2 id="h-final">Ready for a <em>whole new you?</em></h2>
+      <p>Call us to book, or stop by the salon at 56 Pearl St, Tuesday to Saturday.</p>
+      <div class="actions">
+        <a class="btn primary" href="tel:+17325485666">Call (732) 548-5666</a>
+        <a class="btn ghost" href="#prices">Plan your visit</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Calé Salon · 56 Pearl St, Metuchen, NJ 08840 · <a href="https://calesalon.com/">calesalon.com</a></p>
+    <p>Mockup made for Calé Salon by Sunny Gupta, <a href="https://lifebaselabs.com">lifebaselabs.com</a></p>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick actions">
+  <a class="plan" href="#prices">See prices</a>
+  <a class="call" href="tel:+17325485666">Call to book</a>
+</nav>
+
+<script>
+(function(){
+  var doc=document.documentElement; doc.classList.add('js');
+  var menu=document.getElementById('menu');
+  var cats=[].slice.call(menu.querySelectorAll('.cat'));
+  var boxes=[].slice.call(menu.querySelectorAll('input[type=checkbox]'));
+
+  /* tabs */
+  var list=document.createElement('div');
+  list.className='tabs'; list.setAttribute('role','tablist'); list.setAttribute('aria-label','Service groups');
+  var tabs=cats.map(function(c,i){
+    var b=document.createElement('button');
+    b.type='button'; b.className='tab'; b.id='t-'+c.id; b.setAttribute('role','tab');
+    b.setAttribute('aria-controls',c.id);
+    b.innerHTML=c.getAttribute('data-name')+'<span class="n" hidden></span>';
+    c.setAttribute('role','tabpanel'); c.setAttribute('aria-labelledby',b.id);
+    b.addEventListener('click',function(){show(i)});
+    b.addEventListener('keydown',function(e){
+      var k=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(k){e.preventDefault();var j=(i+k+cats.length)%cats.length;show(j);tabs[j].focus();}
+    });
+    list.appendChild(b); return b;
+  });
+  menu.insertBefore(list,cats[0]);
+  function show(i){
+    cats.forEach(function(c,j){c.classList.toggle('on',j===i)});
+    tabs.forEach(function(t,j){t.setAttribute('aria-selected',j===i?'true':'false');t.tabIndex=j===i?0:-1});
+    var t=tabs[i]; if(list.scrollWidth>list.clientWidth){list.scrollTo({left:t.offsetLeft-20,behavior:'smooth'})}
+  }
+  show(2);
+
+  /* summary */
+  var picked=document.getElementById('picked'),total=document.getElementById('total'),
+      tlabel=document.getElementById('tlabel'),consult=document.getElementById('consult'),
+      mail=document.getElementById('mail');
+  function nameOf(b){var n=b.parentNode.querySelector('.nm');var s=n.firstChild.textContent.trim();var sm=n.querySelector('small');return sm?s+' ('+sm.textContent+')':s}
+  function update(){
+    var sum=0,up=false,cons=[],lines=[];picked.innerHTML='';
+    boxes.forEach(function(b){
+      if(!b.checked)return;
+      var li=document.createElement('li'),a=document.createElement('span'),p=document.createElement('span');
+      a.textContent=nameOf(b);
+      if(b.hasAttribute('data-c')){p.textContent='consultation';cons.push(nameOf(b));lines.push('- '+nameOf(b)+' (price on consultation)')}
+      else{var v=+b.getAttribute('data-p');sum+=v;if(b.hasAttribute('data-up'))up=true;p.textContent='$'+v+(b.hasAttribute('data-up')?'+':'');lines.push('- '+nameOf(b)+' ('+(b.hasAttribute('data-up')?'from ':'')+'$'+v+')')}
+      li.appendChild(a);li.appendChild(p);picked.appendChild(li);
+    });
+    if(!lines.length){var e=document.createElement('li');e.className='empty';e.textContent='Tick a service to add it here.';picked.appendChild(e)}
+    total.textContent='$'+sum; total.classList.toggle('zero',!lines.length);
+    tlabel.textContent=up?'Starts from':'Total';
+    consult.textContent=cons.length?'Plus '+cons.join(' and ').toLowerCase()+', priced when we see you.':'';
+    var body='Hi Calé Salon,\n\nI would like to book:\n'+lines.join('\n')+'\n\nEstimate: '+(up?'from ':'')+'$'+sum+'\n\nThank you.';
+    mail.href='mailto:cale_salon@yahoo.com?subject='+encodeURIComponent('Appointment request')+'&body='+encodeURIComponent(body);
+    cats.forEach(function(c,i){
+      var n=c.querySelectorAll('input:checked').length,badge=tabs[i].querySelector('.n');
+      badge.hidden=!n; badge.textContent=n;
+      tabs[i].setAttribute('aria-label',c.getAttribute('data-name').replace('&amp;','&')+(n?', '+n+' selected':''));
+    });
+  }
+  boxes.forEach(function(b){b.addEventListener('change',update)});
+  document.getElementById('clear').addEventListener('click',function(){boxes.forEach(function(b){b.checked=false});update()});
+  update();
+
+  /* jump to a tab */
+  [].forEach.call(document.querySelectorAll('[data-tab]'),function(a){
+    a.addEventListener('click',function(){var id=a.getAttribute('data-tab');cats.forEach(function(c,i){if(c.id===id)show(i)})});
+  });
+
+  /* open now, in Metuchen time */
+  try{
+    var parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+    var get=function(t){for(var i=0;i<parts.length;i++)if(parts[i].type===t)return parts[i].value};
+    var day=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(get('weekday'));
+    var mins=(+get('hour')%24)*60+(+get('minute'));
+    var openDay=day>=2&&day<=6, open=openDay&&mins>=600&&mins<1080;
+    var names=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    var next=day;
+    if(!(openDay&&mins<600)){do{next=(next+1)%7}while(next<2)}
+    var when=next===day?'today':(next===(day+1)%7?'tomorrow':names[next]);
+    var msg=open?'Open now, until 6:00 PM':'Closed now, opens '+when+' at 10:00 AM';
+    document.getElementById('status').innerHTML='<span class="dot" aria-hidden="true"></span>'+msg;
+    document.getElementById('visit-status').textContent=msg+'.';
+    var row=document.querySelector('.hours tr[data-d="'+day+'"]'); if(row)row.classList.add('now');
+  }catch(e){}
+
+  /* gentle rise for things below the first screen */
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce&&'IntersectionObserver' in window){
+    var els=[].slice.call(document.querySelectorAll('.ribbon li,.head,.planner,.after>div,.after>ol,.visit>div,.final .wrap'));
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){
+      if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('rise','will-rise');io.observe(el)}
+    });
+  }
+})();
+</script>
+</body>
+</html>
