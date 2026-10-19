@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup cranleightaxi-co-uk-76a55b 1 1f4ef27a -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cathy's Taxi | Local taxis in Cranleigh &amp; airport transfers</title>
+<meta name="description" content="Cathy's Taxi: a small, friendly and reliable taxi in Cranleigh, Shamley Green, Shere and the Surrey Hills. Gatwick and Heathrow transfers. Call 01483 893 130.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1b3f8f;--deep:#0f2557;--ink:#0b1a3d;--yellow:#edd50e;--gold:#c9a92b;
+  --text:#1f2a44;--muted:#4a5672;--line:#dfe4ef;--wash:#f3f5fa;
+  --head:'Oswald','Arial Narrow',sans-serif;--body:'Open Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:400 17px/1.6 var(--body);color:var(--text);background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--head);font-weight:500;line-height:1.08;margin:0;letter-spacing:.005em}
+p{margin:0}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--yellow);color:var(--ink);padding:10px 14px;border-radius:8px;z-index:50}
+.skip:focus{top:12px}
+
+/* mockup banner */
+.mockbar{background:var(--ink);color:#e6ebf6;font-size:13.5px;letter-spacing:.02em;text-align:center;padding:8px 16px;line-height:1.4}
+
+/* header */
+.top{background:#fff;border-bottom:6px solid var(--gold)}
+.top .wrap{display:flex;align-items:center;gap:28px;min-height:96px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.brand img{width:80px;height:auto}
+.brand span{font-family:var(--head);font-size:22px;color:var(--deep);line-height:1.1}
+.brand small{display:block;font-family:var(--body);font-size:13px;color:var(--muted);letter-spacing:.02em}
+.nav{display:flex;gap:26px;margin-left:auto}
+.nav a{font-weight:600;font-size:15px;color:var(--deep);text-decoration:none;padding:10px 0;border-bottom:2px solid transparent}
+.nav a:hover{border-color:var(--yellow)}
+.callpill{display:flex;flex-direction:column;align-items:center;text-decoration:none;background:var(--yellow);color:var(--ink);border-radius:999px;padding:9px 26px 10px;line-height:1.1;box-shadow:0 2px 0 rgba(15,37,87,.18)}
+.callpill small{font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.callpill b{font-family:var(--head);font-weight:500;font-size:24px;letter-spacing:.01em}
+.callpill:hover{background:#f5e035}
+
+/* hero */
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:center;padding-top:72px;padding-bottom:88px;position:relative;z-index:1}
+.kicker{font-size:13.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--yellow)}
+.hero h1{font-size:clamp(44px,5.4vw,72px);margin:16px 0 20px;font-weight:500}
+.hero h1 em{font-style:normal;color:var(--yellow)}
+.lede{font-size:18.5px;color:#e4e9f5;max-width:30em}
+.actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font-weight:700;font-size:16.5px;text-decoration:none;cursor:pointer;border:0;font-family:var(--body);transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-y{background:var(--yellow);color:var(--ink)}
+.btn-y:hover{background:#f5e035}
+.btn-o{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.55)}
+.btn-o:hover{box-shadow:inset 0 0 0 2px #fff}
+.btn-n{background:var(--deep);color:#fff}
+.btn-n:hover{background:var(--ink)}
+.btn svg{width:19px;height:19px;flex:none}
+.assure{margin-top:26px;font-size:14px;color:#c9d3ea;display:flex;flex-wrap:wrap;gap:6px 18px}
+.assure span{display:inline-flex;align-items:center;gap:7px}
+.assure span::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--yellow)}
+.photo{position:relative;margin:0 18px 0 0;z-index:0}
+.photo img{width:100%;height:auto;aspect-ratio:1536/870;object-fit:cover;border-radius:22px 22px 22px 22px;box-shadow:0 30px 60px -25px rgba(5,15,40,.6)}
+.photo::before{content:"";position:absolute;inset:18px -18px -18px 18px;border-radius:22px;background:var(--yellow);z-index:-1}
+.photo figcaption{position:absolute;left:18px;bottom:18px;background:rgba(11,26,61,.82);color:#fff;font-size:13px;padding:7px 12px;border-radius:999px;backdrop-filter:blur(4px)}
+@media (min-width:981px){
+  .hero .wrap{display:block;position:static;min-height:600px;padding-top:88px;padding-bottom:96px}
+  .hero-text{position:relative;z-index:1;width:min(540px,calc(50vw - 100px))}
+  .photo{position:absolute;top:0;right:0;bottom:0;width:50%;margin:0}
+  .photo img{width:100%;height:100%;aspect-ratio:auto;object-fit:cover;object-position:62% 55%;border-radius:0;box-shadow:none}
+  .photo::before{inset:0 auto 0 0;width:10px;border-radius:0;z-index:1}
+  .photo figcaption{left:34px;bottom:26px}
+}
+
+/* where-to board */
+.section{padding:96px 0}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--navy)}
+.h2{font-size:clamp(34px,4vw,50px);color:var(--deep);margin-top:10px}
+.sub{color:var(--muted);margin-top:14px;max-width:36em;font-size:18px}
+.board{margin-top:44px;border-top:2px solid var(--deep)}
+.trip{display:grid;grid-template-columns:minmax(220px,1.1fr) 1.6fr auto;align-items:center;gap:28px;padding:24px 8px 24px 20px;border-bottom:1px solid var(--line);position:relative;background:none;border-left:0;border-right:0;border-top:0;width:100%;text-align:left;font:inherit;color:inherit;cursor:pointer;transition:background .2s ease}
+.trip::before{content:"";position:absolute;left:0;top:18px;bottom:18px;width:4px;border-radius:4px;background:var(--yellow);transform:scaleY(0);transition:transform .2s ease}
+.trip:hover{background:var(--wash)}
+.trip:hover::before,.trip:focus-visible::before{transform:scaleY(1)}
+.trip h3{font-size:28px;color:var(--deep)}
+.trip p{color:var(--muted);font-size:16.5px}
+.trip .go{font-weight:700;font-size:15px;color:var(--navy);display:inline-flex;align-items:center;gap:8px;white-space:nowrap}
+.trip .go svg{width:18px;height:18px;transition:transform .2s ease}
+.trip:hover .go svg{transform:translateX(4px)}
+
+/* planner */
+.plan{background:var(--wash)}
+.plan-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:36px;margin-top:44px;align-items:start}
+.form{background:#fff;border-radius:22px;padding:34px;box-shadow:0 1px 0 var(--line),0 20px 40px -30px rgba(15,37,87,.35)}
+fieldset{border:0;margin:0 0 26px;padding:0;min-width:0}
+legend,.lbl{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--deep);margin-bottom:10px;padding:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip span{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;border:1.5px solid #c5cde0;font-weight:600;font-size:15px;color:var(--text);cursor:pointer;transition:all .15s ease;background:#fff}
+.chip input:checked+span{background:var(--deep);border-color:var(--deep);color:#fff}
+.chip input:focus-visible+span{outline:3px solid var(--yellow);outline-offset:2px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:flex;flex-direction:column;margin-bottom:16px}
+.field label{font-size:14px;font-weight:600;color:var(--deep);margin-bottom:6px}
+.field input,.field select{font:inherit;font-size:16px;color:var(--text);min-height:48px;padding:0 14px;border:1.5px solid #c5cde0;border-radius:12px;background:#fff;width:100%}
+.field input:focus,.field select:focus{border-color:var(--navy);outline:3px solid rgba(237,213,14,.7);outline-offset:1px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:6px 16px}
+.check{display:flex;align-items:center;gap:10px;min-height:44px;font-size:15.5px;cursor:pointer}
+.check input{width:22px;height:22px;accent-color:var(--deep);flex:none}
+.hidden{display:none!important}
+.more{border-top:1px solid var(--line);margin-top:4px}
+.more summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:52px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--deep)}
+.more summary::-webkit-details-marker{display:none}
+.more summary em{font-style:normal;font-weight:600;letter-spacing:0;text-transform:none;font-size:14px;color:var(--muted);margin-left:8px}
+.more summary i{flex:none;width:28px;height:28px;border-radius:50%;background:var(--wash);position:relative}
+.more summary i::before,.more summary i::after{content:"";position:absolute;left:8px;right:8px;top:13px;height:2px;background:var(--deep);border-radius:2px}
+.more summary i::after{transform:rotate(90deg);transition:transform .2s ease}
+.more[open] summary i{background:var(--yellow)}
+.more[open] summary i::after{transform:rotate(0)}
+.more .checks{padding-bottom:4px}
+.form-call{display:none}
+
+/* ticket */
+.ticket{position:sticky;top:24px;background:var(--deep);color:#fff;border-radius:22px;overflow:hidden;box-shadow:0 30px 50px -30px rgba(5,15,40,.7)}
+.t-top{padding:28px 30px 24px}
+.t-label{font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--yellow)}
+.t-when{display:flex;align-items:baseline;gap:14px;margin-top:10px}
+.t-time{font-family:var(--head);font-size:64px;line-height:1;font-weight:500}
+.t-date{font-size:17px;color:#cfd8ee}
+.route{display:grid;grid-template-columns:22px 1fr;gap:0 14px;margin-top:24px}
+.route svg{grid-row:1/3;width:22px;height:100%;min-height:86px}
+.route .stop{font-family:var(--head);font-size:24px;line-height:1.15;padding:0 0 18px}
+.route .stop small{display:block;font-family:var(--body);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#9fb0d6;margin-bottom:2px}
+.route .stop:last-of-type{padding-bottom:0}
+.dash{stroke-dasharray:4 6;animation:none}
+.ticket.live .dash{animation:roll 1.4s linear infinite}
+@keyframes roll{to{stroke-dashoffset:-20}}
+.t-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.t-meta span{font-size:13.5px;font-weight:600;background:rgba(255,255,255,.1);padding:6px 12px;border-radius:999px}
+.perf{height:22px;position:relative;background:radial-gradient(circle at 0 50%,var(--wash) 11px,transparent 12px),radial-gradient(circle at 100% 50%,var(--wash) 11px,transparent 12px)}
+.perf::after{content:"";position:absolute;left:24px;right:24px;top:50%;border-top:2px dashed rgba(255,255,255,.22)}
+.t-notes{list-style:none;margin:0;padding:14px 30px 8px}
+.t-notes li{display:grid;grid-template-columns:22px 1fr;gap:12px;padding:9px 0;font-size:15px;color:#e4e9f5;line-height:1.45}
+.t-notes svg{width:20px;height:20px;margin-top:1px;color:var(--yellow)}
+.t-notes b{color:#fff}
+.t-cta{padding:18px 30px 30px}
+.t-cta .btn{width:100%;font-size:18px}
+.t-cta p{font-size:13.5px;color:#aebbd9;margin-top:12px;text-align:center}
+.flash{animation:flash .5s ease}
+@keyframes flash{from{background:rgba(237,213,14,.25)}to{background:transparent}}
+
+/* trust */
+.trust{background:var(--navy);color:#fff}
+.trust .h2{color:#fff}
+.trust .eyebrow{color:var(--yellow)}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);margin-top:44px;border-top:1px solid rgba(255,255,255,.22)}
+.fact{padding:28px 26px 4px 0}
+.fact+.fact{padding-left:26px;border-left:1px solid rgba(255,255,255,.22)}
+.fact svg{width:34px;height:34px;color:var(--yellow)}
+.fact h3{font-size:23px;margin:16px 0 8px}
+.fact p{color:#d6def0;font-size:15.5px}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:64px;align-items:start}
+.faq-side{position:sticky;top:24px}
+.faq-side .btn{margin-top:26px}
+.qa{border-top:1px solid var(--line)}
+.qa:last-child{border-bottom:1px solid var(--line)}
+.qa summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 4px;min-height:44px;font-family:var(--head);font-size:23px;color:var(--deep);font-weight:500}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary i{flex:none;width:30px;height:30px;border-radius:50%;background:var(--wash);position:relative;transition:transform .2s ease,background .2s ease}
+.qa summary i::before,.qa summary i::after{content:"";position:absolute;left:9px;right:9px;top:14px;height:2px;background:var(--deep);border-radius:2px}
+.qa summary i::after{transform:rotate(90deg);transition:transform .2s ease}
+.qa[open] summary i{background:var(--yellow)}
+.qa[open] summary i::after{transform:rotate(0)}
+.qa p{padding:0 50px 22px 4px;color:var(--muted);font-size:16.5px}
+.qa p a{color:var(--navy);font-weight:700}
+
+/* footer */
+footer{background:var(--ink);color:#cfd8ee;padding:56px 0 28px;font-size:15px}
+.foot{display:grid;grid-template-columns:auto 1.4fr 1fr;gap:40px;align-items:start}
+.foot .logo{background:#fff;border-radius:16px;padding:10px}
+.foot .logo img{width:72px;height:auto}
+.foot h2{font-size:24px;color:#fff;margin-bottom:8px}
+.foot a{color:var(--yellow)}
+.foot .btn{margin:14px 0 16px;color:var(--ink)}
+.legal{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);font-size:13.5px;color:#aebbd9;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+.legal a{color:#e6ebf6}
+
+/* phone call bar */
+.callbar{display:none}
+
+/* rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .6s ease,transform .6s ease}
+
+@media (max-width:980px){
+  .nav{display:none}
+  .hero .wrap{grid-template-columns:1fr;gap:40px;padding-top:44px;padding-bottom:64px}
+  .plan-grid{grid-template-columns:1fr}
+  .ticket{position:relative;top:0}
+  .facts{grid-template-columns:1fr 1fr}
+  .fact:nth-child(3){padding-left:0;border-left:0}
+  .fact:nth-child(n+3){border-top:1px solid rgba(255,255,255,.22);margin-top:20px}
+  .faq-grid{grid-template-columns:1fr;gap:30px}
+  .faq-side{position:static}
+  .foot{grid-template-columns:auto 1fr}
+  .foot>div:last-child{grid-column:1/-1}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:76px}
+  .wrap{padding:0 20px}
+  .mockbar{font-size:12.5px;padding:7px 12px}
+  .top .wrap{min-height:76px;gap:12px}
+  .brand img{width:60px}
+  .brand span{font-size:19px}
+  .brand small{display:none}
+  .callpill{padding:8px 16px;margin-left:auto}
+  .callpill small{display:none}
+  .callpill b{font-size:19px}
+  .hero .wrap{padding-bottom:52px}
+  .t-cta .btn{font-size:17px;padding:0 18px}
+  .t-cta .long{display:none}
+  .hero h1{font-size:44px;margin:12px 0 16px}
+  .lede{font-size:17px}
+  .actions{margin-top:24px}
+  .actions .btn{flex:1 1 100%}
+  .assure{font-size:13.5px}
+  .photo{margin-right:12px}
+  .photo::before{inset:12px -12px -12px 12px;border-radius:16px}
+  .photo img{border-radius:16px}
+  .photo figcaption{left:12px;bottom:12px;font-size:12px}
+  .section{padding:68px 0}
+  .sub{font-size:16.5px}
+  .board{margin-top:30px}
+  .trip{grid-template-columns:1fr auto;gap:4px 14px;padding:20px 4px 20px 16px}
+  .trip h3{font-size:24px;grid-column:1}
+  .trip p{grid-column:1;font-size:15px}
+  .trip .go{grid-column:2;grid-row:1/3}
+  .trip .go span{display:none}
+  .trip .go svg{width:26px;height:26px;padding:3px;border-radius:50%;background:var(--yellow);color:var(--ink);box-sizing:content-box}
+  .plan-grid{margin-top:30px;gap:24px}
+  .form{padding:24px 18px;border-radius:18px}
+  .row{grid-template-columns:1fr;gap:0}
+  .row.two{grid-template-columns:1fr 1fr;gap:12px}
+  .checks{grid-template-columns:1fr}
+  .form-call{display:block;margin-top:18px}
+  .form-call .btn{width:100%;font-size:17px;padding:0 18px}
+  .form-call p{font-size:13.5px;color:var(--muted);margin-top:10px;text-align:center}
+  .t-cta{display:none}
+  .t-notes{padding-bottom:16px}
+  .t-top{padding:24px 22px 20px}
+  .t-time{font-size:54px}
+  .t-notes{padding:12px 22px 6px}
+  .t-cta{padding:16px 22px 24px}
+  .facts{grid-template-columns:1fr}
+  .fact,.fact+.fact{padding:22px 0 0;border-left:0;margin-top:0}
+  .fact+.fact{border-top:1px solid rgba(255,255,255,.22);margin-top:22px}
+  .fact h3{font-size:21px}
+  .qa summary{font-size:20px;padding:18px 2px}
+  .qa p{padding:0 8px 20px 2px;font-size:15.5px}
+  .foot{grid-template-columns:1fr;gap:24px}
+  .legal{flex-direction:column}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;gap:10px;align-items:center;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:var(--ink);box-shadow:0 -8px 24px rgba(5,15,40,.25)}
+  .callbar p{color:#dfe6f5;font-size:13.5px;line-height:1.25;flex:1}
+  .callbar p b{display:block;color:#fff;font-family:var(--head);font-weight:500;font-size:17px}
+  .callbar .btn{min-height:48px;padding:0 20px;font-size:16px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mockbar" role="note">Free mockup for Cathy's Taxi</div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Cathy's Taxi, back to top">
+      <img src="https://cranleightaxi.co.uk/wp-content/uploads/2015/08/logo.png" alt="Cathy's Taxi logo" width="134" height="114">
+      <span>Cathy's Taxi<small>&amp; Airport Transfers</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#trips">Where to</a>
+      <a href="#plan">Plan a trip</a>
+      <a href="#why">Why Cathy's</a>
+      <a href="#questions">Questions</a>
+    </nav>
+    <a class="callpill" href="tel:+441483893130"><small>Phone to book</small><b>01483 893 130</b></a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div class="hero-text">
+      <p class="kicker">Cranleigh · Shamley Green · Shere · Surrey Hills</p>
+      <h1 id="hero-title">Your local taxi. <em>Just call Cathy.</em></h1>
+      <p class="lede">A small, friendly and reliable taxi for Cranleigh and the Surrey villages. Hospital runs, shopping trips, Gatwick and Heathrow, today, tomorrow or next week.</p>
+      <div class="actions">
+        <a class="btn btn-y" href="tel:+441483893130"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call 01483 893 130</a>
+        <a class="btn btn-o" href="#plan">Plan your trip</a>
+      </div>
+      <p class="assure"><span>Meter set by Waverley Borough Council</span><span>Insured, licensed, CRB-cleared drivers</span></p>
+    </div>
+    <figure class="photo">
+      <img src="https://cranleightaxi.co.uk//wp-content/uploads/2015/08/IMG_0440-e1553519933628.jpg" alt="The navy Cathy's Taxi car parked under pink blossom in a Surrey village" width="1536" height="870" fetchpriority="high">
+      <figcaption>Cathy's Taxi, in the Surrey Hills</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="trips" aria-labelledby="trips-title">
+  <div class="wrap">
+    <p class="eyebrow">Where to?</p>
+    <h2 class="h2" id="trips-title">Wherever you'd like to go.</h2>
+    <p class="sub">Pick a trip and the planner below fills itself in. Pre-booking is advisable, so you're never disappointed.</p>
+    <div class="board">
+      <button class="trip" type="button" data-type="local"><h3>Around the villages</h3><p>Cranleigh, Shamley Green, Shere and across the Surrey Hills.</p><span class="go"><span>Plan this trip</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+      <button class="trip" type="button" data-type="airport"><h3>Gatwick &amp; Heathrow</h3><p>Off on holiday, or coming home. Free flight monitoring included.</p><span class="go"><span>Plan this trip</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+      <button class="trip" type="button" data-type="hospital"><h3>Hospital appointments</h3><p>A lift to the hospital, there on time, every time.</p><span class="go"><span>Plan this trip</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+      <button class="trip" type="button" data-type="far"><h3>London &amp; further</h3><p>London, Portsmouth, Southampton, or wherever you need to be.</p><span class="go"><span>Plan this trip</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+      <button class="trip" type="button" data-type="shopping"><h3>Shopping trips</h3><p>There and back, without worrying about parking.</p><span class="go"><span>Plan this trip</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+    </div>
+  </div>
+</section>
+
+<section class="section plan" id="plan" aria-labelledby="plan-title">
+  <div class="wrap">
+    <p class="eyebrow">Trip planner</p>
+    <h2 class="h2" id="plan-title">Plan it here. Book it in one call.</h2>
+    <p class="sub">Fill in your trip and your booking card is ready to read out when you phone, with everything Cathy needs to know.</p>
+    <div class="plan-grid">
+      <div class="form" id="planner" role="group" aria-label="Trip planner">
+        <fieldset>
+          <legend>Type of trip</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="type" value="local"><span>Local</span></label>
+            <label class="chip"><input type="radio" name="type" value="airport" checked><span>Airport</span></label>
+            <label class="chip"><input type="radio" name="type" value="hospital"><span>Hospital</span></label>
+            <label class="chip"><input type="radio" name="type" value="far"><span>Further afield</span></label>
+            <label class="chip"><input type="radio" name="type" value="shopping"><span>Shopping</span></label>
+          </div>
+        </fieldset>
+        <fieldset id="dirset">
+          <legend>Airport run</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="dir" value="out" checked><span>Going to the airport</span></label>
+            <label class="chip"><input type="radio" name="dir" value="home"><span>Collect me from arrivals</span></label>
+          </div>
+        </fieldset>
+        <div class="row">
+          <div class="field"><label for="from">Pick up from</label><input id="from" name="from" list="places" value="Cranleigh" autocomplete="off"></div>
+          <div class="field"><label for="to">Going to</label><input id="to" name="to" list="places" value="Gatwick Airport" autocomplete="off"></div>
+        </div>
+        <datalist id="places"><option value="Cranleigh"><option value="Shamley Green"><option value="Shere"><option value="Gatwick Airport"><option value="Heathrow Airport"><option value="London"><option value="Portsmouth"><option value="Southampton"></datalist>
+        <div class="field hidden" id="flightfield"><label for="flight">Flight number</label><input id="flight" name="flight" placeholder="So we can track your landing" autocomplete="off"></div>
+        <div class="row two">
+          <div class="field"><label for="date">Date</label><input id="date" name="date" type="date"></div>
+          <div class="field"><label for="time">Pick-up time</label><input id="time" name="time" type="time" value="05:30"></div>
+        </div>
+        <div class="field"><label for="pax">Passengers</label>
+          <select id="pax" name="pax"><option value="1">1 passenger</option><option value="2" selected>2 passengers</option><option value="3">3 passengers</option><option value="4">4 passengers</option><option value="5+">5 or more</option></select>
+        </div>
+        <details class="more" id="more">
+          <summary><span>More options<em id="moreCount">1 chosen</em></span><i aria-hidden="true"></i></summary>
+          <div class="checks">
+            <label class="check"><input type="checkbox" name="ring" checked>Call me 30 minutes before</label>
+            <label class="check"><input type="checkbox" name="lady">Lady driver, please</label>
+            <label class="check"><input type="checkbox" name="ret">I need a return trip</label>
+            <label class="check"><input type="checkbox" name="biz">On a business account</label>
+          </div>
+        </details>
+        <div class="form-call">
+          <a class="btn btn-y" href="tel:+441483893130"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call to book: 01483 893 130</a>
+          <p>Read out your booking card below when you call.</p>
+        </div>
+      </div>
+
+      <aside class="ticket" id="ticket" aria-label="Your booking card" aria-live="polite">
+        <div class="t-top">
+          <p class="t-label">Your booking card</p>
+          <div class="t-when"><span class="t-time" id="tTime">05:30</span><span class="t-date" id="tDate">Tomorrow</span></div>
+          <div class="route">
+            <svg viewBox="0 0 22 100" preserveAspectRatio="none" aria-hidden="true"><circle cx="11" cy="9" r="6" fill="#edd50e"/><line class="dash" x1="11" y1="18" x2="11" y2="82" stroke="#9fb0d6" stroke-width="2.5" vector-effect="non-scaling-stroke"/><circle cx="11" cy="91" r="6" fill="none" stroke="#edd50e" stroke-width="3" vector-effect="non-scaling-stroke"/></svg>
+            <p class="stop"><small>From</small><span id="tFrom">Cranleigh</span></p>
+            <p class="stop"><small>To</small><span id="tTo">Gatwick Airport</span></p>
+          </div>
+          <div class="t-meta" id="tMeta"><span>Airport run</span><span>2 passengers</span></div>
+        </div>
+        <div class="perf" aria-hidden="true"></div>
+        <ul class="t-notes" id="tNotes">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span><b>Night rate.</b> Night rates apply from 11pm to 7am.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span><b>Wake-up call.</b> We'll ring you 30 minutes before pick-up.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><span><b>Pay your way.</b> Credit or debit card, or cash on the day.</span></li>
+        </ul>
+        <div class="t-cta">
+          <a class="btn btn-y" href="tel:+441483893130"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call<span class="long"> to book:</span> 01483 893 130</a>
+          <p>Read this card out when you call. Pre-booking is advisable.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="section trust" id="why" aria-labelledby="why-title">
+  <div class="wrap">
+    <p class="eyebrow">Why Cathy's</p>
+    <h2 class="h2" id="why-title">Small, friendly, and properly looked after.</h2>
+    <div class="facts">
+      <div class="fact">
+        <svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="17" cy="19" r="12"/><path d="M17 19l6-6M13 4h8"/></svg>
+        <h3>A fair, set meter</h3>
+        <p>Meter set by Waverley Borough Council. Day rates change to night rates from 11pm to 7am.</p>
+      </div>
+      <div class="fact">
+        <svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 3l11 4v9c0 7-5 12-11 15C11 28 6 23 6 16V7z"/><path d="M12 17l4 4 7-8"/></svg>
+        <h3>Checked and insured</h3>
+        <p>All taxis and drivers are fully insured, licensed and CRB cleared.</p>
+      </div>
+      <div class="fact">
+        <svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21l26-9-4-5-7 2-6-4-3 1 4 5-6 2-3-2-2 1z"/><path d="M4 29h26"/></svg>
+        <h3>Flights watched for free</h3>
+        <p>We track your flight and arrive 20 to 30 minutes after landing, unless you tell us otherwise.</p>
+      </div>
+      <div class="fact">
+        <svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="17" cy="11" r="6"/><path d="M5 31c1-7 6-11 12-11s11 4 12 11"/></svg>
+        <h3>Lady driver on request</h3>
+        <p>Just ask when you book. Business accounts are welcome too.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="questions" aria-labelledby="faq-title">
+  <div class="wrap faq-grid">
+    <div class="faq-side">
+      <p class="eyebrow">Questions</p>
+      <h2 class="h2" id="faq-title">Good to know before you ring.</h2>
+      <a class="btn btn-n" href="tel:+441483893130">Ask Cathy: 01483 893 130</a>
+    </div>
+    <div>
+      <details class="qa" open><summary>How do I book?<i aria-hidden="true"></i></summary><p>Phone <a href="tel:+441483893130">01483 893 130</a>. Book for today, tomorrow or next week. Pre-booking is advisable to avoid disappointment.</p></details>
+      <details class="qa"><summary>What if my flight lands late?<i aria-hidden="true"></i></summary><p>Flight monitoring is free. Your driver arrives 20 to 30 minutes after you land, unless you ask otherwise.</p></details>
+      <details class="qa"><summary>When does the night rate start?<i aria-hidden="true"></i></summary><p>Day rates change to night rates between 11pm and 7am. The meter is set by Waverley Borough Council.</p></details>
+      <details class="qa"><summary>Can you ring me before an early pick-up?<i aria-hidden="true"></i></summary><p>Yes. On request, we'll call you 30 minutes before pick-up for early morning appointments.</p></details>
+      <details class="qa"><summary>Can I ask for a lady driver?<i aria-hidden="true"></i></summary><p>Yes, a lady driver is available on request.</p></details>
+      <details class="qa"><summary>How can I pay?<i aria-hidden="true"></i></summary><p>By credit or debit card through our website, or cash on the day. Business accounts are welcome.</p></details>
+      <details class="qa"><summary>Which areas do you cover?<i aria-hidden="true"></i></summary><p>Cranleigh and the Surrey Hills, with metered taxis based in Shamley Green and Shere. We'll also take you to London, Portsmouth, Southampton or wherever you'd like to go.</p></details>
+      <details class="qa"><summary>Anything I should know for the ride?<i aria-hidden="true"></i></summary><p>Seat belts must be worn, and there's no smoking or eating in the car. The driver takes the most suitable and safest route, unless you ask otherwise.</p></details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="logo"><img src="https://cranleightaxi.co.uk/wp-content/uploads/2015/08/logo.png" alt="Cathy's Taxi logo" width="134" height="114"></div>
+      <div>
+        <h2>Cathy's Taxi &amp; Airport Transfers</h2>
+        <p>Local taxis in Cranleigh and the surrounding Surrey villages, with metered taxis based in Shamley Green and Shere. Thank you for using your local taxi.</p>
+      </div>
+      <div>
+        <p>Today, tomorrow or next week: just call Cathy.</p>
+        <a class="btn btn-y" href="tel:+441483893130"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call 01483 893 130</a>
+        <p><a href="https://cranleightaxi.co.uk/">cranleightaxi.co.uk</a></p>
+      </div>
+    </div>
+    <div class="legal">
+      <p>© Cathy's Taxi</p>
+      <p>Mockup made for Cathy's Taxi by Sunny Gupta, <a href="https://lifebaselabs.com">lifebaselabs.com</a></p>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar" role="complementary" aria-label="Call to book">
+  <p><b>Cathy's Taxi</b>Phone to book a ride</p>
+  <a class="btn btn-y" href="tel:+441483893130">Call 01483 893 130</a>
+</div>
+
+<script>
+(function(){
+  var f=document.getElementById('planner');
+  ['from','to','date','time','pax','flight','ring','lady','ret','biz'].forEach(function(n){f[n]=f.querySelector('[name="'+n+'"]')});
+  var wide=matchMedia('(min-width: 641px)'),more=document.getElementById('more');
+  function fold(){more.open=wide.matches}
+  fold();if(wide.addEventListener)wide.addEventListener('change',fold);
+  var $=function(id){return document.getElementById(id)};
+  var ICON={
+    moon:'<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>',
+    sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+    phone:'<path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/>',
+    plane:'<path d="M2 16l20-7-3-4-5 2-5-3-2 1 3 4-5 2-2-1-1 1z"/><path d="M2 21h20"/>',
+    person:'<circle cx="12" cy="8" r="4"/><path d="M4 21c1-5 4-7 8-7s7 2 8 7"/>',
+    back:'<path d="M3 12h15M9 6l-6 6 6 6"/><path d="M21 6v12"/>',
+    case:'<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V4h6v3"/>',
+    card:'<rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/>',
+    clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>'
+  };
+  function li(icon,b,t){return '<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+ICON[icon]+'</svg><span><b>'+b+'</b> '+t+'</span></li>'}
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  var DEF={local:['Cranleigh','Shere'],hospital:['Cranleigh',''],far:['Cranleigh','London'],shopping:['Cranleigh','']};
+  var NAMES={local:'Local trip',airport:'Airport run',hospital:'Hospital trip',far:'Longer trip',shopping:'Shopping trip'};
+  var EMPTY={hospital:'Your hospital',shopping:'Your shops',local:'Where to?',far:'Where to?',airport:'Which airport?'};
+  var PH={hospital:'Which hospital?',shopping:'Where would you like to shop?',local:'Where to?',far:'Where to?',airport:'Gatwick or Heathrow'};
+
+  var t=new Date();t.setDate(t.getDate()+1);
+  var iso=function(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')};
+  f.date.value=iso(t);f.date.min=iso(new Date());
+
+  function val(n){var el=f.querySelector('input[name="'+n+'"]:checked');return el?el.value:''}
+  function dateLabel(v){
+    if(!v)return 'Choose a date';
+    var p=v.split('-'),d=new Date(+p[0],+p[1]-1,+p[2]);
+    var today=new Date();today.setHours(0,0,0,0);
+    var diff=Math.round((d-today)/864e5);
+    var s=d.toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'});
+    return diff===0?'Today, '+s:diff===1?'Tomorrow, '+s:s;
+  }
+  function render(flash){
+    var type=val('type'),dir=val('dir'),air=type==='airport',home=air&&dir==='home';
+    $('dirset').classList.toggle('hidden',!air);
+    $('flightfield').classList.toggle('hidden',!home);
+    f.to.placeholder=PH[type]||'Where to?';
+    $('tTime').textContent=f.time.value||'--:--';
+    $('tDate').textContent=dateLabel(f.date.value);
+    $('tFrom').textContent=f.from.value.trim()||'Where from?';
+    $('tTo').textContent=f.to.value.trim()||EMPTY[type];
+    var meta=[NAMES[type]];
+    var pax=f.pax.value;meta.push(pax==='1'?'1 passenger':pax==='5+'?'5 or more passengers':pax+' passengers');
+    if(home&&f.flight.value.trim())meta.push('Flight '+esc(f.flight.value.trim().toUpperCase()));
+    if(f.ret.checked)meta.push('Return trip');
+    if(f.biz.checked)meta.push('Business account');
+    $('tMeta').innerHTML=meta.map(function(m){return '<span>'+m+'</span>'}).join('');
+    var h=parseInt((f.time.value||'12').split(':')[0],10);
+    var n=[];
+    n.push(h>=23||h<7?li('moon','Night rate.','Night rates apply from 11pm to 7am.'):li('sun','Day rate.','On the meter set by Waverley Borough Council.'));
+    if(home)n.push(li('plane','Free flight monitoring.','Your driver arrives 20 to 30 minutes after landing.'));
+    if(f.ring.checked)n.push(li('phone','Wake-up call.','We’ll ring you 30 minutes before pick-up.'));
+    if(type==='hospital')n.push(li('clock','On time.','We get you to your appointment on time, every time.'));
+    if(f.lady.checked)n.push(li('person','Lady driver.','Requested. Mention it when you call.'));
+    if(f.ret.checked)n.push(li('back','Return trip.','Give the time you’d like collecting when you call.'));
+    n.push(f.biz.checked?li('case','Business account.','Business accounts are welcome.'):li('card','Pay your way.','Credit or debit card, or cash on the day.'));
+    $('tNotes').innerHTML=n.join('');
+    var c=['ring','lady','ret','biz'].filter(function(k){return f[k].checked}).length;
+    $('moreCount').textContent=c?c+' chosen':'';
+    if(flash){var tk=$('ticket');tk.classList.remove('flash');void tk.offsetWidth;tk.classList.add('flash');}
+  }
+  function setType(type){
+    var air=type==='airport';
+    if(air){var home=val('dir')==='home';f.from.value=home?'Gatwick Airport':'Cranleigh';f.to.value=home?'Cranleigh':'Gatwick Airport';}
+    else{f.from.value=DEF[type][0];f.to.value=DEF[type][1];}
+  }
+  f.addEventListener('change',function(e){
+    if(e.target.name==='type')setType(e.target.value);
+    if(e.target.name==='dir'){var a=f.from.value;f.from.value=f.to.value;f.to.value=a;}
+    render(true);
+  });
+  f.addEventListener('input',function(){render(false)});
+  document.querySelectorAll('.trip').forEach(function(b){
+    b.addEventListener('click',function(){
+      var r=f.querySelector('input[name="type"][value="'+b.dataset.type+'"]');r.checked=true;setType(b.dataset.type);render(true);
+      document.getElementById('plan').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+    });
+  });
+  render(false);
+
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if('IntersectionObserver' in window){
+    var tk=$('ticket');
+    new IntersectionObserver(function(es){es.forEach(function(x){tk.classList.toggle('live',x.isIntersecting&&!reduce)})}).observe(tk);
+    if(!reduce){
+      var els=document.querySelectorAll('.section .h2,.sub,.board,.form,.ticket,.facts,.qa,.foot');
+      var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.remove('will-rise');io.unobserve(x.target);}})},{rootMargin:'0px 0px -40px 0px'});
+      els.forEach(function(el){if(el.getBoundingClientRect().top>innerHeight){el.classList.add('rise','will-rise');io.observe(el);}});
+    }
+  }
+})();
+</script>
+</body>
+</html>
