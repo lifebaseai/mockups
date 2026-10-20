@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup bencoomber-com-93088f 1 75e86aac -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ben Coomber: Coach, Speaker, Author</title>
+<meta name="description" content="Ben Coomber: multi-award winning coach, speaker, bestselling author and Founder &amp; CEO of Awesome Supplements.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0c0c0c; --ink2:#161616; --paper:#fff; --cream:#f6f4ef; --line:#e4e0d6;
+  --yellow:#f1c40f; --muted:#4a4a4a; --muted-d:#b9b9b9;
+  --wrap:1180px; --r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Archivo,system-ui,-apple-system,"Segoe UI",sans-serif;font-stretch:100%;color:var(--ink);background:var(--paper);line-height:1.55;font-size:17px;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.cond{font-stretch:68%;font-weight:850;text-transform:uppercase;letter-spacing:.005em;line-height:.92}
+.skip{position:absolute;left:12px;top:-60px;background:var(--yellow);color:var(--ink);padding:10px 14px;z-index:99;font-weight:700}
+.skip:focus{top:12px}
+
+/* mockup banner */
+.mock{background:#ece8dd;color:#2b2b2b;font-size:13.5px;text-align:center;padding:7px 16px;letter-spacing:.02em;border-bottom:1px solid #d9d3c3}
+.mock b{font-weight:700}
+
+/* header */
+header.top{background:var(--ink);color:#fff;position:sticky;top:0;z-index:40;border-bottom:1px solid #222}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.mark{font-stretch:68%;font-weight:900;font-size:26px;letter-spacing:.01em;text-decoration:none;text-transform:uppercase;line-height:1}
+.mark span{color:var(--yellow)}
+.top nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+.top nav a{text-decoration:none;font-size:15px;color:#ddd;padding:12px 0}
+.top nav a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit;transition:transform .2s ease,background .2s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-y{background:var(--yellow);color:var(--ink)}
+.btn-y:hover{background:#f5d23c}
+.btn-o{border-color:#fff;color:#fff;background:transparent}
+.btn-o:hover{background:#fff;color:var(--ink)}
+.btn-k{background:var(--ink);color:#fff}
+.btn-sm{min-height:44px;padding:0 18px;font-size:15px}
+.arrow{transition:transform .2s ease}
+.btn:hover .arrow{transform:translateX(3px)}
+
+/* hero */
+.hero{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;min-height:600px}
+.hero-copy{padding:72px 48px 64px max(28px,calc((100vw - var(--wrap))/2 + 28px));display:flex;flex-direction:column;justify-content:center}
+.eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--yellow);font-weight:700;margin:0 0 22px}
+.hero h1{font-size:clamp(56px,7.4vw,104px);margin:0 0 26px}
+.hero h1 em{font-style:normal;color:var(--yellow)}
+.hero .lede{font-size:19px;color:#d6d6d6;max-width:30em;margin:0 0 34px}
+.hero .lede strong{color:#fff;font-weight:700}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero-photo{position:relative;background:#cfcfcf}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;position:absolute;inset:0}
+.hero-photo figcaption{position:absolute;left:20px;bottom:20px;background:rgba(12,12,12,.82);color:#fff;font-size:13px;padding:8px 12px;border-radius:8px;letter-spacing:.02em}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #262626}
+.stat{padding:26px 28px;border-right:1px solid #262626}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-stretch:68%;font-weight:850;font-size:44px;line-height:1;color:#fff}
+.stat b i{font-style:normal;color:var(--yellow)}
+.stat span{font-size:14.5px;color:var(--muted-d)}
+
+/* logos */
+.logos{background:#fff;padding:34px 0 26px;border-bottom:1px solid var(--line)}
+.logos p{text-align:center;margin:0 0 6px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;width:max-content;animation:slide 48s linear infinite}
+.track img{height:118px;width:auto;flex:none}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* sections */
+section{scroll-margin-top:70px}
+.sec{padding:110px 0}
+.kicker{font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--muted);margin:0 0 14px;display:flex;align-items:center;gap:10px}
+.kicker::before{content:"";width:22px;height:3px;background:var(--yellow);border-radius:2px}
+h2.cond{font-size:clamp(46px,5.6vw,78px);margin:0 0 22px}
+.intro{font-size:19px;color:var(--muted);max-width:36em;margin:0}
+
+/* intake */
+.start{background:var(--cream)}
+.intake{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;margin-top:48px;align-items:start}
+.panel{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:32px;box-shadow:0 1px 0 rgba(0,0,0,.02),0 18px 40px -28px rgba(0,0,0,.25)}
+.step{margin:0 0 28px}
+.step:last-child{margin-bottom:0}
+.step h3{font-size:15px;margin:0 0 12px;font-weight:700;display:flex;gap:10px;align-items:center}
+.step h3 .n{width:26px;height:26px;border-radius:50%;background:var(--ink);color:#fff;font-size:13px;display:inline-grid;place-items:center;flex:none}
+.doors{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.door{font-family:inherit;text-align:left;background:#fff;border:2px solid var(--line);border-radius:12px;padding:16px 16px 14px;cursor:pointer;min-height:96px;display:flex;flex-direction:column;justify-content:space-between;gap:10px;color:var(--ink);transition:border-color .2s,background .2s}
+.door:hover{border-color:#bdb7a6}
+.door b{font-stretch:75%;font-weight:850;font-size:21px;text-transform:uppercase;line-height:1}
+.door small{font-size:13.5px;color:var(--muted);line-height:1.35}
+.door[aria-pressed="true"]{border-color:var(--ink);background:var(--ink);color:#fff}
+.door[aria-pressed="true"] small{color:#cfcfcf}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-family:inherit;font-size:15px;min-height:44px;padding:0 18px;border-radius:999px;border:1.5px solid #cfc9b9;background:#fff;color:var(--ink);cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.chip[aria-pressed="true"]{background:var(--yellow);border-color:var(--yellow);font-weight:700}
+.chip[aria-pressed="true"]::before{content:"";width:10px;height:6px;border-left:2px solid var(--ink);border-bottom:2px solid var(--ink);transform:rotate(-45deg) translate(1px,-1px)}
+.freelist{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.freelist a{display:flex;justify-content:space-between;align-items:center;min-height:48px;padding:10px 16px;border:1.5px solid var(--line);border-radius:10px;text-decoration:none;font-weight:600}
+.freelist a:hover{border-color:var(--ink)}
+.freelist small{font-weight:400;color:var(--muted);display:block;font-size:13.5px}
+.note{background:var(--ink);color:#fff;border-radius:var(--r);padding:30px;position:sticky;top:92px}
+.note-h{display:flex;justify-content:space-between;align-items:center;margin:0 0 16px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--yellow);font-weight:700}
+.note-h span{color:#9d9d9d;letter-spacing:.04em;text-transform:none;font-weight:400}
+.letter{font-size:18px;line-height:1.55;margin:0 0 22px;min-height:7.5em}
+.letter mark{background:none;color:var(--yellow);font-weight:600}
+.note label{display:block;font-size:13.5px;color:#cfcfcf;margin:0 0 6px}
+.note input,.note textarea{width:100%;font:inherit;font-size:16px;background:#1d1d1d;border:1px solid #3a3a3a;color:#fff;border-radius:10px;padding:12px 14px;min-height:48px;margin:0 0 14px}
+.note textarea{min-height:76px;resize:vertical}
+.note input:focus,.note textarea:focus{border-color:var(--yellow);outline:none;box-shadow:0 0 0 3px rgba(241,196,15,.35)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.note .btn{width:100%;margin-top:4px}
+.sent{margin:14px 0 0;padding:12px 14px;border-radius:10px;background:#1f1f1f;border-left:3px solid var(--yellow);font-size:15px}
+
+/* coaching */
+.coach-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.coach-photo{border-radius:var(--r);overflow:hidden;max-width:620px;aspect-ratio:4/3.4}
+.coach-photo img{width:100%;height:100%;object-fit:cover;object-position:45% 30%}
+.voice{font-size:21px;line-height:1.5;margin:0 0 26px;max-width:28em}
+.areas{display:flex;flex-wrap:wrap;gap:6px 18px;margin:0 0 30px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.areas span{font-stretch:68%;font-weight:850;text-transform:uppercase;font-size:30px;line-height:1}
+.areas span::after{content:".";color:var(--yellow)}
+.creds{list-style:none;padding:0;margin:0 0 32px;display:grid;grid-template-columns:1fr 1fr;gap:10px 22px;font-size:15.5px}
+.creds li{display:flex;gap:10px;align-items:baseline}
+.creds li::before{content:"";flex:none;width:7px;height:7px;background:var(--yellow);border-radius:50%;transform:translateY(-2px)}
+.creds b{font-weight:700}
+
+/* awards strip */
+.awards{background:var(--yellow);color:var(--ink)}
+.awards .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.award{padding:30px 24px;border-right:1px solid rgba(0,0,0,.14)}
+.award:first-child{padding-left:0}
+.award:last-child{border-right:0}
+.award b{display:block;font-stretch:68%;font-weight:850;font-size:30px;line-height:1;text-transform:uppercase;margin-bottom:6px}
+.award span{font-size:15px}
+
+/* speaker */
+.stage{background:var(--ink);color:#fff}
+.stage .kicker{color:var(--muted-d)}
+.stage-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.stage-photo{border-radius:var(--r);overflow:hidden;max-width:560px;justify-self:end}
+.stage .tag{font-size:21px;color:var(--yellow);margin:0 0 28px;font-weight:600}
+.facts{list-style:none;padding:0;margin:0 0 30px;display:grid;gap:14px}
+.facts li{display:grid;grid-template-columns:88px 1fr;gap:16px;align-items:baseline;border-top:1px solid #2a2a2a;padding-top:14px}
+.facts b{font-stretch:68%;font-weight:850;font-size:34px;line-height:1;color:#fff}
+.facts span{color:#d0d0d0;font-size:16px}
+blockquote{margin:0}
+.pull{border-left:3px solid var(--yellow);padding:4px 0 4px 20px;margin:0 0 34px}
+.pull p{font-size:20px;margin:0 0 6px;font-style:italic}
+.pull cite{font-style:normal;color:var(--muted-d);font-size:14.5px}
+
+/* listen + read */
+.media{background:var(--cream)}
+.media-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px;display:grid;grid-template-columns:200px 1fr;gap:26px;align-items:start}
+.card img{border-radius:10px;width:200px;height:200px;object-fit:cover}
+.card h3{font-stretch:72%;font-weight:850;text-transform:uppercase;font-size:30px;line-height:1;margin:2px 0 12px}
+.card p{margin:0 0 18px;color:var(--muted);font-size:16px}
+.card .big{font-stretch:68%;font-weight:850;font-size:52px;line-height:.9;color:var(--ink);display:block;margin-bottom:6px}
+
+/* journey */
+.journey-head{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:end;margin-bottom:56px}
+.journey-head blockquote p{font-size:22px;line-height:1.45;margin:0 0 8px}
+.journey-head cite{font-style:normal;color:var(--muted);font-size:14.5px}
+.timeline{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--ink)}
+.timeline li{padding:22px 24px 26px 0;border-bottom:1px solid var(--line);position:relative}
+.timeline li::before{content:"";position:absolute;top:-7px;left:0;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2px solid var(--ink)}
+.timeline li.hard::before{background:var(--ink)}
+.timeline li.win::before{background:var(--yellow);border-color:var(--ink)}
+.timeline .yr{display:block;font-size:13px;letter-spacing:.1em;font-weight:700;color:var(--muted);margin:6px 0 6px}
+.timeline b{display:block;font-size:18px;line-height:1.3;margin-bottom:4px}
+.timeline span.d{font-size:15px;color:var(--muted)}
+.legend{display:flex;gap:22px;margin-top:20px;font-size:14px;color:var(--muted);flex-wrap:wrap}
+.legend i{display:inline-block;width:11px;height:11px;border-radius:50%;border:2px solid var(--ink);margin-right:7px;vertical-align:-1px}
+.legend .h{background:var(--ink)} .legend .w{background:var(--yellow)}
+
+/* words */
+.words{background:var(--ink);color:#fff}
+.words .kicker{color:var(--muted-d)}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:40px}
+.quotes figure{margin:0;padding:28px 0 0;border-top:2px solid var(--yellow)}
+.quotes p{font-size:19px;line-height:1.5;margin:0 0 16px}
+.quotes figcaption{color:var(--muted-d);font-size:14.5px}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
+details{border-bottom:1px solid var(--line)}
+details:first-child{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:20px 40px 20px 0;font-weight:700;font-size:18.5px;position:relative;min-height:44px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";position:absolute;right:8px;top:28px;width:10px;height:10px;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);transform:rotate(45deg);transition:transform .2s}
+details[open] summary::after{transform:rotate(225deg);top:32px}
+details p{margin:0 0 22px;color:var(--muted);max-width:36em}
+
+/* end */
+.end{background:var(--ink);color:#fff;text-align:center;padding:120px 0}
+.end h2{font-size:clamp(56px,8vw,120px);margin:0 0 20px}
+.end h2 em{font-style:normal;color:var(--yellow)}
+.end p{color:#cfcfcf;font-size:19px;margin:0 auto 34px;max-width:30em}
+.end .ctas{justify-content:center}
+footer{background:#000;color:#bdbdbd;padding:44px 0 40px;font-size:14.5px}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+.social{display:flex;gap:6px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+.social a{display:inline-flex;align-items:center;min-height:44px;padding:0 10px;text-decoration:none;color:#e5e5e5}
+.social a:hover{color:var(--yellow)}
+footer p{margin:0}
+footer .made a{color:#fff}
+
+.callbar{display:none}
+
+/* rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise-ready{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:980px){
+  .top nav{display:none}
+  .hero-grid{grid-template-columns:1fr;min-height:0}
+  .hero-photo{order:-1;height:380px}
+  .hero-copy{padding:40px 22px 40px}
+  .stats{grid-template-columns:1fr 1fr}
+  .stat{padding:20px 22px;border-bottom:1px solid #262626}
+  .stat:nth-child(2){border-right:0}
+  .stat:nth-child(n+3){border-bottom:0}
+  .intake,.coach-grid,.stage-grid,.media-grid,.journey-head,.faq-grid{grid-template-columns:1fr}
+  .coach-grid,.stage-grid{gap:36px}
+  .stage-photo{justify-self:start}
+  .note{position:static}
+  .timeline{grid-template-columns:1fr 1fr}
+  .quotes{grid-template-columns:1fr}
+  .awards .wrap{grid-template-columns:1fr 1fr}
+  .award{padding:22px 18px}
+  .award:nth-child(odd){padding-left:0}
+  .award:nth-child(2){border-right:0}
+  .award:nth-child(-n+2){border-bottom:1px solid rgba(0,0,0,.14)}
+}
+@media (max-width:640px){
+  body{font-size:16.5px;padding-bottom:64px}
+  .wrap{padding:0 20px}
+  .mark{font-size:22px}
+  .top .wrap{height:60px}
+  .hero-photo{height:330px}
+  .hero-copy{padding:32px 20px 36px}
+  .hero h1{font-size:58px;margin-bottom:18px}
+  .hero .lede{font-size:17.5px;margin-bottom:26px}
+  .ctas .btn{flex:1 1 100%}
+  .stat{padding:18px 20px}
+  .stat b{font-size:36px}
+  .stat span{font-size:13.5px}
+  .track img{height:80px}
+  .sec{padding:72px 0}
+  h2.cond{font-size:48px}
+  .intro{font-size:17.5px}
+  .intake{margin-top:32px;gap:16px}
+  .panel{padding:22px 18px}
+  .doors{grid-template-columns:1fr}
+  .door{min-height:0;flex-direction:row;align-items:center;padding:14px 16px}
+  .door small{text-align:right;max-width:13em}
+  .note{padding:24px 20px}
+  .row2{grid-template-columns:1fr;gap:0}
+  .letter{font-size:17px;min-height:0}
+  .voice{font-size:19px}
+  .areas span{font-size:26px}
+  .creds{grid-template-columns:1fr}
+  .award b{font-size:24px}
+  .award span{font-size:14px}
+  .facts li{grid-template-columns:72px 1fr}
+  .facts b{font-size:30px}
+  .card{grid-template-columns:1fr;padding:22px}
+  .card img{width:100%;height:auto;max-width:360px}
+  .timeline{grid-template-columns:1fr;border-top:0;border-left:2px solid var(--ink);margin-left:6px}
+  .timeline li{padding:4px 0 22px 24px;border-bottom:0}
+  .timeline li::before{top:8px;left:-8px}
+  .timeline .yr{margin-top:0}
+  .journey-head{gap:24px;margin-bottom:36px}
+  .journey-head blockquote p{font-size:19px}
+  .end{padding:84px 0}
+  .end h2{font-size:60px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--ink);border-top:1px solid #2a2a2a;padding:8px 12px calc(8px + env(safe-area-inset-bottom));gap:10px;align-items:center;justify-content:space-between}
+  .callbar span{color:#fff;font-size:14.5px;font-weight:600;padding-left:6px}
+  .callbar .btn{min-height:44px;padding:0 20px;font-size:15px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .track{animation:none;flex-wrap:wrap;width:auto;justify-content:center}
+  .track img{height:clamp(56px,6.4vw,92px)}
+  .marquee{-webkit-mask-image:none;mask-image:none}
+  .track img[aria-hidden="true"]{display:none}
+  .will-rise{opacity:1;transform:none}
+  .rise-ready,.btn,.arrow{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note"><b>Free mockup for Ben Coomber</b> &middot; a working preview of a new website</div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#main" aria-label="Ben Coomber, home">Ben Coomber<span>.</span></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#coaching">Coaching</a></li>
+        <li><a href="#speaking">Speaking</a></li>
+        <li><a href="#listen">Podcast &amp; book</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#questions">Questions</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-y btn-sm" href="#start">Work with Ben</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Coach &middot; Speaker &middot; Bestselling author</p>
+        <h1 id="hero-h" class="cond">Live fully.<br>Leave nothing <em>on the table.</em></h1>
+        <p class="lede">20 years helping humans be the most <strong>AWESOME</strong> version of themselves. In body, mind, business and career. 1-2-1 coaching, talks, and a #1 podcast.</p>
+        <div class="ctas">
+          <a class="btn btn-y" href="#start">Work with Ben <span class="arrow" aria-hidden="true">&rarr;</span></a>
+          <a class="btn btn-o" href="#start" data-path="speak">Hire Ben to speak</a>
+        </div>
+      </div>
+      <figure class="hero-photo" style="margin:0">
+        <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2157063676/settings_images/f7e162-84ec-7383-0d1f-61b2ad12cb78_DSC09370.png" alt="Ben Coomber, black and white portrait, wearing an Awesome t-shirt" width="2500" height="1875" fetchpriority="high">
+        <figcaption>Founder &amp; CEO, Awesome Supplements</figcaption>
+      </figure>
+    </div>
+    <div class="stats" role="list">
+      <div class="stat" role="listitem"><b>20<i>yrs</i></b><span>coaching humans</span></div>
+      <div class="stat" role="listitem"><b>1000<i>+</i></b><span>people coached</span></div>
+      <div class="stat" role="listitem"><b>40m<i>+</i></b><span>podcast downloads</span></div>
+      <div class="stat" role="listitem"><b>100<i>+</i></b><span>stages worldwide</span></div>
+    </div>
+  </section>
+
+  <section class="logos" aria-label="Brands Ben has worked with">
+    <p>Brands Ben has worked with</p>
+    <div class="marquee">
+      <div class="track">
+        <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2157063676/settings_images/01d24ac-0ff6-11e7-4782-ef6031ae2bab_website_brands-02.png" alt="BBC, HSBC, Sky, O2" width="2560" height="562">
+        <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2157063676/settings_images/726ac-f35-bffc-d601-acf3b88be8e_website_brands-03.png" alt="Men's Health, M&amp;S, England Rugby, PureGym" width="2560" height="562">
+        <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2157063676/settings_images/7012661-cf81-0ce3-6775-1bc33436630d_website_brands-04.png" alt="Twinings, The Gym, Be Military Fit, Virgin Media" width="2560" height="562">
+        <img aria-hidden="true" src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2157063676/settings_images/01d24ac-0ff6-11e7-4782-ef6031ae2bab_website_brands-02.png" alt="" width="2560" height="562">
+        <img aria-hidden="true" src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2157063676/settings_images/726ac-f35-bffc-d601-acf3b88be8e_website_brands-03.png" alt="" width="2560" height="562">
+        <img aria-hidden="true" src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2157063676/settings_images/7012661-cf81-0ce3-6775-1bc33436630d_website_brands-04.png" alt="" width="2560" height="562">
+      </div>
+    </div>
+  </section>
+
+  <section class="sec start" id="start" aria-labelledby="start-h">
+    <div class="wrap">
+      <p class="kicker">Start here</p>
+      <h2 id="start-h" class="cond">What do you want from Ben?</h2>
+      <p class="intro">Tap your answers. Your note to Ben writes itself as you go. Add your name and send.</p>
+
+      <div class="intake">
+        <div class="panel">
+          <div class="step">
+            <h3><span class="n">1</span>I'm here to&hellip;</h3>
+            <div class="doors" role="group" aria-label="What you want">
+              <button type="button" class="door" data-door="coach" aria-pressed="true"><b>Get coached</b><small>1-2-1 with Ben</small></button>
+              <button type="button" class="door" data-door="speak" aria-pressed="false"><b>Book Ben</b><small>Speaker, host, panellist</small></button>
+              <button type="button" class="door" data-door="free" aria-pressed="false"><b>Explore first</b><small>Podcast, book, blog</small></button>
+            </div>
+          </div>
+
+          <div class="branch" data-branch="coach">
+            <div class="step">
+              <h3><span class="n">2</span>Where do you want to level up?</h3>
+              <div class="chips" role="group" aria-label="Areas" data-multi="areas">
+                <button type="button" class="chip" aria-pressed="true" data-v="body">Body</button>
+                <button type="button" class="chip" aria-pressed="false" data-v="mind">Mind</button>
+                <button type="button" class="chip" aria-pressed="true" data-v="business">Business</button>
+                <button type="button" class="chip" aria-pressed="false" data-v="career">Career</button>
+                <button type="button" class="chip" aria-pressed="false" data-v="life">Life</button>
+              </div>
+            </div>
+            <div class="step">
+              <h3><span class="n">3</span>When do you want to start?</h3>
+              <div class="chips" role="group" aria-label="When" data-one="when">
+                <button type="button" class="chip" aria-pressed="false" data-v="as soon as possible">Now</button>
+                <button type="button" class="chip" aria-pressed="true" data-v="in the next few months">Next few months</button>
+                <button type="button" class="chip" aria-pressed="false" data-v="when the time is right; for now I'm exploring">Just exploring</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="branch" data-branch="speak">
+            <div class="step">
+              <h3><span class="n">2</span>Ben's role at your event</h3>
+              <div class="chips" role="group" aria-label="Role" data-one="role">
+                <button type="button" class="chip" aria-pressed="true" data-v="speak">Speaker</button>
+                <button type="button" class="chip" aria-pressed="false" data-v="host">Host</button>
+                <button type="button" class="chip" aria-pressed="false" data-v="sit on a panel">Panellist</button>
+              </div>
+            </div>
+            <div class="step">
+              <h3><span class="n">3</span>Roughly how many in the room?</h3>
+              <div class="chips" role="group" aria-label="Audience size" data-one="size">
+                <button type="button" class="chip" aria-pressed="false" data-v="under 100">Under 100</button>
+                <button type="button" class="chip" aria-pressed="true" data-v="100 to 500">100 to 500</button>
+                <button type="button" class="chip" aria-pressed="false" data-v="500 or more">500+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="branch" data-branch="free">
+            <div class="step">
+              <h3><span class="n">2</span>Pick your way in</h3>
+              <ul class="freelist">
+                <li><a href="#listen"><span>The Dose Is Everything<small>The podcast, over 40m downloads</small></span><span aria-hidden="true">&rarr;</span></a></li>
+                <li><a href="#listen"><span>How to Live an Awesome Life<small>The 11 step formula, #1 bestseller</small></span><span aria-hidden="true">&rarr;</span></a></li>
+                <li><a href="https://www.bencoomber.com/"><span>The blog<small>Deep dives on optimal human performance</small></span><span aria-hidden="true">&rarr;</span></a></li>
+                <li><a href="https://www.instagram.com/bencoomber"><span>DM Ben on Instagram<small>Got a burning question?</small></span><span aria-hidden="true">&rarr;</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <form class="note" id="noteForm" novalidate aria-labelledby="note-h">
+          <p class="note-h" id="note-h">Your note to Ben <span>updates as you tap</span></p>
+          <p class="letter" id="letter" aria-live="polite">Hi Ben, I'd like to explore 1-2-1 coaching with you. I want to level up my <mark>body</mark> and my <mark>business</mark>, and I'm looking to start <mark>in the next few months</mark>.</p>
+          <label for="extra">In one line, what's in the way right now? <span style="color:#9d9d9d">(optional)</span></label>
+          <textarea id="extra" name="extra" rows="2"></textarea>
+          <div class="row2">
+            <div><label for="nm">Your name</label><input id="nm" name="name" autocomplete="name" required></div>
+            <div><label for="em">Email</label><input id="em" name="email" type="email" autocomplete="email" required></div>
+          </div>
+          <button class="btn btn-y" type="submit">Send to Ben <span class="arrow" aria-hidden="true">&rarr;</span></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="coaching" aria-labelledby="coach-h">
+    <div class="wrap coach-grid">
+      <div class="coach-photo">
+        <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2147524686/images/0bd6131-7051-3ea7-4d72-f46476f324e_tempImageHAMiop.jpeg" alt="Ben Coomber at Performx Live, wearing a Freedom t-shirt" width="1280" height="720" loading="lazy">
+      </div>
+      <div>
+        <p class="kicker">1-2-1 coaching</p>
+        <h2 id="coach-h" class="cond">The keys to your potential.</h2>
+        <p class="voice">&ldquo;Deep in my soul is the love for helping humans be all they can be. This life is one to be lived fully, powerfully, to leave nothing on the table. That's what I give to my clients.&rdquo;</p>
+        <div class="areas" aria-label="What coaching covers"><span>Body</span><span>Mind</span><span>Business</span><span>Career</span><span>Life</span></div>
+        <ul class="creds" aria-label="Ben's skills">
+          <li><span><b>Human Performance Coach</b> (BSc)</span></li>
+          <li><span><b>Nutritionist</b> (CISSN)</span></li>
+          <li><span><b>Intuitive Psychology coach</b> (IPA)</span></li>
+          <li><span><b>Strength &amp; Conditioning</b> (L4)</span></li>
+          <li><span><b>Meditation &amp; Breath Work</b> coach</span></li>
+          <li><span><b>20 years</b> in business</span></li>
+        </ul>
+        <a class="btn btn-k" href="#start" data-path="coach">Explore coaching with Ben <span class="arrow" aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="awards" aria-label="Awards">
+    <div class="wrap">
+      <div class="award"><b>2021 &amp; 2022</b><span>Nutrition Coach of the Year</span></div>
+      <div class="award"><b>2023</b><span>Lifestyle Coaching CEO of the Year</span></div>
+      <div class="award"><b>2019</b><span>Health Contributor award</span></div>
+      <div class="award"><b>21x</b><span>award winning: Awesome Supplements</span></div>
+    </div>
+  </section>
+
+  <section class="sec stage" id="speaking" aria-labelledby="stage-h">
+    <div class="wrap stage-grid">
+      <div>
+        <p class="kicker">Hire Ben</p>
+        <h2 id="stage-h" class="cond">Speaker.<br>Host.<br>Panellist.</h2>
+        <p class="tag">Inspiring. Captivating. Energising.</p>
+        <ul class="facts">
+          <li><b>100+</b><span>stages around the world</span></li>
+          <li><b>24+</b><span>transformational retreats across Europe &amp; Africa</span></li>
+          <li><b>M&amp;S</b><span>plus Sky, O2, Twinings, Global Media and HSBC: consulting and speaking</span></li>
+        </ul>
+        <blockquote class="pull">
+          <p>&ldquo;Whatever Ben does, he brings energy, passion and wisdom to the table.&rdquo;</p>
+          <cite>Global Media</cite>
+        </blockquote>
+        <a class="btn btn-y" href="#start" data-path="speak">Check Ben for your event <span class="arrow" aria-hidden="true">&rarr;</span></a>
+      </div>
+      <div class="stage-photo">
+        <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2157063676/settings_images/f4f47ec-7ab0-03af-0c6b-c466c22f77c3_tempImageNC2fOF.jpeg" alt="Ben on stage in conversation at an Original Source event" width="1146" height="1000" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="sec media" id="listen" aria-labelledby="listen-h">
+    <div class="wrap">
+      <p class="kicker">Listen &amp; read</p>
+      <h2 id="listen-h" class="cond">Hear him first.</h2>
+      <p class="intro">&ldquo;Every day I get messages saying, Ben, this podcast has changed my life. Perhaps it can help change yours.&rdquo;</p>
+      <div class="media-grid">
+        <article class="card">
+          <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2157063676/settings_images/7c22c61-64dd-f00f-fc34-370a871534e_TDIE_Podcast_Thumbnail.png" alt="The Dose Is Everything podcast cover with Ben Coomber" width="1254" height="1254" loading="lazy">
+          <div>
+            <span class="big">40m+</span>
+            <h3>The Dose Is Everything</h3>
+            <p>Launched in 2012. Sat at #1 for over 3 years. Downloaded by over 40 million people.</p>
+            <a class="btn btn-k btn-sm" href="https://www.youtube.com/channel/UCRrT_wYzZG_65KgTmMPbPqw">Ben on YouTube <span class="arrow" aria-hidden="true">&rarr;</span></a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2157063676/settings_images/470bf4-782d-af5c-c1ab-7ca53b00add_52529c81-4a17-4d1d-b244-e9feb8df27ef.jpg" alt="Cover of How to Live an Awesome Life by Ben Coomber" width="1440" height="1440" loading="lazy">
+          <div>
+            <span class="big">#1</span>
+            <h3>How to Live an Awesome Life</h3>
+            <p>The 11 step formula to fulfilment and success, in ALL areas of life. A #1 bestseller.</p>
+            <a class="btn btn-k btn-sm" href="https://www.bencoomber.com/">Grab a copy <span class="arrow" aria-hidden="true">&rarr;</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="journey" aria-labelledby="journey-h">
+    <div class="wrap">
+      <div class="journey-head">
+        <div>
+          <p class="kicker">Who's Ben?</p>
+          <h2 id="journey-h" class="cond" style="margin-bottom:0">Walks the talk.</h2>
+        </div>
+        <blockquote>
+          <p>&ldquo;There is no aspect of my work I have not lived, mastered, and can confidently teach to others.&rdquo;</p>
+          <cite>Ben, husband and dad of 2 AWESOME girls</cite>
+        </blockquote>
+      </div>
+      <ol class="timeline">
+        <li><span class="yr">2004</span><b>Obese to athletic</b><span class="d">Lost 5.5 stone of body fat. Where it all started, at 18.</span></li>
+        <li><span class="yr">2008 &ndash; 2012</span><b>Built 3 stone of muscle</b><span class="d">Four years of building, after the 5.5 stone came off.</span></li>
+        <li><span class="yr">2009 &ndash; today</span><b>Coached over 1000 people</b><span class="d">Some of the world's most high performing humans.</span></li>
+        <li class="win"><span class="yr">2012 &ndash; today</span><b>Built a #1 rated podcast</b><span class="d">Downloaded by over 40 million people.</span></li>
+        <li><span class="yr">2013 &ndash; 2023</span><b>Trained 1000+ nutrition coaches</b><span class="d">And wrote 100 articles for major magazines and newspapers.</span></li>
+        <li class="win"><span class="yr">2016 &amp; 2023</span><b>#1 best-selling author</b><span class="d">Twice over.</span></li>
+        <li class="hard"><span class="yr">2017 &amp; 2022</span><b>Fought bankruptcy, twice</b><span class="d">Built several companies along the way, and sold two.</span></li>
+        <li class="hard"><span class="yr">2003 &ndash; 2024</span><b>Asthma, eczema, IBS, ADHD, long Covid, low testosterone, depression, anxiety</b><span class="d">Asthma and eczema (2003), IBS (2005), ADHD (2011), long Covid (2021), testosterone deficiency (2022), depression (2023), anxiety (2024). Lived every one of them.</span></li>
+        <li class="win"><span class="yr">2021 &ndash; 2023</span><b>Nutrition Coach of the Year, twice. Lifestyle Coaching CEO of the Year.</b><span class="d">And the journey continues&hellip;</span></li>
+      </ol>
+      <div class="legend" aria-hidden="true"><span><i class="w"></i>Wins</span><span><i class="h"></i>Hard years</span><span><i></i>The work</span></div>
+    </div>
+  </section>
+
+  <section class="sec words" aria-labelledby="words-h">
+    <div class="wrap">
+      <p class="kicker">In their words</p>
+      <h2 id="words-h" class="cond">Lives changed.</h2>
+      <div class="quotes">
+        <figure><blockquote><p>&ldquo;Thanks to Ben I'm living my truth, serving others, and now having a huge impact. You showed me my potential.&rdquo;</p></blockquote><figcaption>Dave Cottrell</figcaption></figure>
+        <figure><blockquote><p>&ldquo;You inspired me to leave my corporate job, start a nutrition business, and be an Entrepreneur. Now I'm living in Portugal living my best life.&rdquo;</p></blockquote><figcaption>James Moody</figcaption></figure>
+        <figure><blockquote><p>&ldquo;I've been following Ben for over 10 years, and I learn something new off him almost every day! He's always evolving and growing as a human, and that means I am too.&rdquo;</p></blockquote><figcaption>Martin Marino</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="questions" aria-labelledby="faq-h">
+    <div class="wrap faq-grid">
+      <div>
+        <p class="kicker">Questions</p>
+        <h2 id="faq-h" class="cond">Quick answers.</h2>
+        <p class="intro">Still stuck? <a href="https://www.instagram.com/bencoomber">DM Ben on Instagram</a>.</p>
+      </div>
+      <div>
+        <details open><summary>What can coaching with Ben help with?</summary><p>Your body, your mind, your business, your career and your life. Ben's 1-2-1 coaching is about reaching your potential in all of them.</p></details>
+        <details><summary>How long has Ben been coaching?</summary><p>20 years. He has coached over 1000 people since 2009, and trained over 1000 nutrition coaches.</p></details>
+        <details><summary>What are Ben's qualifications?</summary><p>Human Performance Coach (BSc), Nutritionist (CISSN), Intuitive Psychology coach (IPA), Strength &amp; Conditioning Coach (L4), and Meditation &amp; Breath Work Coach.</p></details>
+        <details><summary>Can Ben speak at our event?</summary><p>Ben speaks, hosts and sits on panels. He has spoken on over 100 stages, and consulted and spoken for M&amp;S, Sky, O2, Twinings, Global Media and HSBC. <a href="#start" data-path="speak">Tell Ben about your event</a>.</p></details>
+        <details><summary>I just have one question. Where do I ask?</summary><p>DM Ben on <a href="https://www.instagram.com/bencoomber">Instagram</a>.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="end" aria-labelledby="end-h">
+    <div class="wrap">
+      <h2 id="end-h" class="cond">Leave nothing<br><em>on the table.</em></h2>
+      <p>If you feel drawn to Ben as a coach, get in touch.</p>
+      <div class="ctas">
+        <a class="btn btn-y" href="#start">Work with Ben <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        <a class="btn btn-o" href="#start" data-path="speak">Hire Ben to speak</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 Ben Coomber Ltd.</p>
+    <ul class="social" aria-label="Ben on social media">
+      <li><a href="https://www.instagram.com/bencoomber">Instagram</a></li>
+      <li><a href="https://www.youtube.com/channel/UCRrT_wYzZG_65KgTmMPbPqw">YouTube</a></li>
+      <li><a href="https://www.linkedin.com/in/bencoomber/">LinkedIn</a></li>
+      <li><a href="https://www.tiktok.com/@bencoomber">TikTok</a></li>
+      <li><a href="https://www.facebook.com/theofficialbencoomberpage">Facebook</a></li>
+      <li><a href="https://www.twitter.com/bencoomber">X</a></li>
+    </ul>
+    <p class="made">Mockup made for Ben Coomber by Sunny Gupta, <a href="https://lifebaselabs.com">lifebaselabs.com</a></p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick action">
+  <span>Ready to level up?</span>
+  <a class="btn btn-y" href="#start">Work with Ben</a>
+</div>
+
+<script>
+(function(){
+  var state={door:'coach',areas:['body','business'],when:'in the next few months',role:'speak',size:'100 to 500'};
+  var letter=document.getElementById('letter');
+  var extra=document.getElementById('extra');
+  var nm=document.getElementById('nm');
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function m(s){return '<mark>'+esc(s)+'</mark>';}
+  function list(a){
+    if(!a.length) return null;
+    var w=a.map(function(x){return 'my '+m(x);});
+    if(w.length===1) return w[0];
+    return w.slice(0,-1).join(', ')+' and '+w[w.length-1];
+  }
+  function render(){
+    var t, name=nm.value.trim(), x=extra.value.trim();
+    if(state.door==='coach'){
+      var l=list(state.areas);
+      t='Hi Ben, I\'d like to explore 1-2-1 coaching with you. '+(l?'I want to level up '+l+', and I\'m':'I\'m')+' looking to start '+m(state.when)+'.';
+    }else if(state.door==='speak'){
+      t='Hi Ben, we\'d love you to '+m(state.role)+' at our event. We\'re expecting '+m(state.size)+' people. Could we talk about dates?';
+    }else{
+      t='Hi Ben, I\'m new to your work and starting with your podcast. Which podcast episode should I listen to first?';
+    }
+    if(x) t+=' What\'s in the way right now: '+esc(x);
+    if(name) t+='<br>'+esc(name);
+    letter.innerHTML=t;
+  }
+  function setDoor(d){
+    state.door=d;
+    document.querySelectorAll('.door').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.door===d));});
+    document.querySelectorAll('.branch').forEach(function(b){b.hidden=b.dataset.branch!==d;});
+    render();
+  }
+  document.querySelectorAll('.door').forEach(function(b){b.addEventListener('click',function(){setDoor(b.dataset.door);});});
+  document.querySelectorAll('[data-multi]').forEach(function(g){
+    g.querySelectorAll('.chip').forEach(function(c){c.addEventListener('click',function(){
+      var on=c.getAttribute('aria-pressed')!=='true';c.setAttribute('aria-pressed',String(on));
+      state.areas=[].slice.call(g.querySelectorAll('.chip[aria-pressed="true"]')).map(function(e){return e.dataset.v;});
+      render();
+    });});
+  });
+  document.querySelectorAll('[data-one]').forEach(function(g){
+    g.querySelectorAll('.chip').forEach(function(c){c.addEventListener('click',function(){
+      g.querySelectorAll('.chip').forEach(function(e){e.setAttribute('aria-pressed','false');});
+      c.setAttribute('aria-pressed','true');state[g.dataset.one]=c.dataset.v;render();
+    });});
+  });
+  extra.addEventListener('input',render);nm.addEventListener('input',render);
+  document.querySelectorAll('[data-path]').forEach(function(a){a.addEventListener('click',function(){setDoor(a.dataset.path);});});
+  document.querySelectorAll('a[href="#start"]:not([data-path])').forEach(function(a){a.addEventListener('click',function(){if(state.door==='free')setDoor('coach');});});
+  var form=document.getElementById('noteForm');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var old=form.querySelector('.sent');if(old)old.remove();
+    var p=document.createElement('p');p.className='sent';p.setAttribute('role','status');
+    p.textContent='Thanks. This is a mockup, so nothing was sent.';
+    form.appendChild(p);
+  });
+  setDoor('coach');
+
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce && 'IntersectionObserver' in window){
+    var els=document.querySelectorAll('.sec .wrap > *, .award, .quotes figure, .timeline li, .card, .end .wrap > *');
+    var vh=window.innerHeight;
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target);}});},{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){
+      if(el.getBoundingClientRect().top>vh){el.classList.add('will-rise');el.offsetWidth;el.classList.add('rise-ready');io.observe(el);}
+    });
+  }
+})();
+</script>
+</body>
+</html>
