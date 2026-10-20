@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup dsgglobal-com-982c98 1 104b1d4c -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DSG Global | International Trade Compliance, Strategy and Training</title>
+<meta name="description" content="DSG Global LLC helps importers and exporters understand complex international trade rules and expand their global footprint.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --purple:#520afa; --purple-ink:#3d06c0; --purple-soft:#f1ecff;
+  --navy:#0f1d40; --navy-2:#182a57; --ink:#14182b; --muted:#4b5470;
+  --line:#e3e6ef; --paper:#f6f7fb; --green:#8cc63f; --white:#fff;
+  --r:14px; --wrap:1160px;
+  --head:"Inter Tight",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font:400 17px/1.6 var(--body);color:var(--ink);background:var(--white);overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--purple)}
+h1,h2,h3{font-family:var(--head);line-height:1.08;letter-spacing:-.02em;margin:0;color:var(--navy)}
+p{margin:0}
+:focus-visible{outline:3px solid var(--purple);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:12px;top:44px;background:#fff;padding:10px 14px;z-index:60}
+
+/* mockup banner */
+.mock{background:var(--navy);color:#e8ebf5;text-align:center;font:500 13px/1 var(--body);letter-spacing:.02em;padding:11px 16px}
+.mock b{color:#fff;font-weight:600}
+
+/* header */
+.top{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:saturate(1.4) blur(8px)}
+.top .wrap{display:flex;align-items:center;gap:28px;height:76px}
+.logo{display:block;flex:none}
+.logo img{width:176px;height:44px}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{color:var(--ink);text-decoration:none;font-size:15px;font-weight:500;padding:12px 12px;border-radius:8px}
+.nav a:hover{background:var(--paper)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;border-radius:10px;font:600 16px/1 var(--body);text-decoration:none;border:0;cursor:pointer;transition:background .2s,transform .2s,box-shadow .2s}
+.btn-p{background:var(--purple);color:#fff;box-shadow:0 1px 0 rgba(15,29,64,.08),0 6px 18px -8px rgba(82,10,250,.55)}
+.btn-p:hover{background:var(--purple-ink);transform:translateY(-1px)}
+.btn-g{background:transparent;color:var(--navy);box-shadow:inset 0 0 0 1.5px #c9cede}
+.btn-g:hover{box-shadow:inset 0 0 0 1.5px var(--navy)}
+.top .btn{min-height:44px;padding:0 18px;font-size:15px}
+.tel-top{color:var(--navy);font-weight:600;font-size:15px;text-decoration:none;padding:12px 4px;white-space:nowrap}
+
+/* hero */
+.hero{padding:76px 0 88px;background:linear-gradient(var(--white),var(--paper))}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.eyebrow{font:600 13px/1.2 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--purple)}
+.hero h1{font-size:clamp(40px,5.4vw,66px);font-weight:700;margin:18px 0 22px;max-width:12ch}
+.hero h1 span{color:var(--purple)}
+.lede{font-size:19px;color:var(--muted);max-width:33em}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.proof{display:flex;gap:28px;margin-top:40px;padding-top:26px;border-top:1px solid var(--line);font-size:14.5px;color:var(--muted)}
+.proof div{max-width:27ch}
+.proof div:first-child{flex:none}
+.proof b{white-space:nowrap;display:block;font:700 26px/1.1 var(--head);color:var(--navy);letter-spacing:-.02em;margin-bottom:4px}
+.photo{position:relative;max-width:600px;justify-self:end;width:100%}
+.photo img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:20px;box-shadow:0 30px 60px -30px rgba(15,29,64,.45)}
+
+/* news */
+.news{border-bottom:1px solid var(--line);background:#fff}
+.news .wrap{display:grid;grid-template-columns:170px 1fr 1fr;gap:40px;padding-top:34px;padding-bottom:34px}
+.news h2{font:600 13px/1.4 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--navy)}
+.news article{font-size:15px;line-height:1.55;color:var(--muted)}
+.news time{display:block;font-weight:600;color:var(--navy);margin-bottom:6px}
+
+/* sections */
+section{scroll-margin-top:90px}
+.sec{padding:112px 0}
+.sec-head{max-width:640px;margin-bottom:52px}
+.sec-head h2{font-size:clamp(32px,3.8vw,46px);font-weight:700;margin-top:14px}
+.sec-head p{margin-top:16px;color:var(--muted);font-size:18px}
+
+/* guide */
+.guide{display:grid;grid-template-columns:1fr 1.08fr;gap:28px;align-items:start}
+.sec-head h2{text-wrap:balance}
+.sec-head h2 .nb{white-space:nowrap}
+@media (min-width:981px){.sec-head h2 .nb{display:block}}
+.scores{margin-top:30px;padding-top:26px;border-top:1px solid #dde1ec}
+.scores h3{font:600 13px/1.4 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.scores ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.scores li{background:#fff;border-radius:14px;padding:16px 18px;box-shadow:0 1px 2px rgba(20,30,70,.06)}
+.scores b{display:block;font:600 16px/1.35 var(--head);color:var(--navy)}
+.scores small{display:block;margin-top:4px;font-size:14.5px;color:var(--muted)}
+.ask{background:var(--paper);border-radius:20px;padding:36px}
+fieldset{border:0;margin:0 0 30px;padding:0}
+fieldset:last-child{margin-bottom:0}
+legend{font:600 18px/1.3 var(--head);color:var(--navy);margin-bottom:14px;padding:0}
+legend span{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font-size:13px;margin-right:10px;vertical-align:1px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.chip label{display:flex;align-items:center;gap:9px;min-height:46px;padding:0 18px;border-radius:999px;background:#fff;box-shadow:inset 0 0 0 1.5px #d5d9e6;font-weight:500;font-size:15.5px;cursor:pointer;transition:box-shadow .2s,background .2s,color .2s;user-select:none}
+.chip label::before{content:"";width:14px;height:14px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #a6adc2;transition:all .2s;flex:none}
+.chip input:checked+label{background:var(--navy);color:#fff;box-shadow:none}
+.chip input:checked+label::before{box-shadow:inset 0 0 0 4px var(--green);background:#fff}
+.chip input:focus-visible+label{outline:3px solid var(--purple);outline-offset:2px}
+.chip label:hover{box-shadow:inset 0 0 0 1.5px var(--navy)}
+
+.answer{background:var(--navy);color:#dfe4f2;border-radius:20px;padding:36px 38px;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.answer .eyebrow{color:#c9b6ff}
+.answer .worry{margin-top:16px;font-size:16px;color:#b9c2db}
+.answer h3{color:#fff;font-size:clamp(26px,2.6vw,32px);font-weight:700;margin-top:6px;max-width:16ch}
+.answer .what{margin-top:14px;font-size:16.5px;max-width:34em}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;padding:0;list-style:none}
+.facts li{font-size:13.5px;font-weight:500;color:#fff;background:rgba(255,255,255,.09);padding:7px 12px;border-radius:999px}
+.then{margin-top:auto;padding-top:28px}
+.steps{list-style:none;margin:26px 0 0;padding:20px 0 0;border-top:1px solid rgba(255,255,255,.12);display:grid;gap:12px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:28px 1fr;gap:12px;font-size:15px;color:#cfd6ea;counter-increment:s}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.3);font:600 13px/1 var(--body);color:#fff}
+.steps b{color:#fff;font-weight:600}
+.answer .cta{margin-top:26px}
+.answer .btn-p{background:#fff;color:var(--navy);box-shadow:none}
+.answer .btn-p:hover{background:#ece7ff}
+.answer .btn-g{color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.35)}
+.answer .btn-g:hover{box-shadow:inset 0 0 0 1.5px #fff}
+.fade{transition:opacity .25s ease,transform .25s ease}
+.fade.swap{opacity:.15;transform:translateY(4px)}
+
+/* ten years */
+.ten{background:var(--paper)}
+.ten-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.ten blockquote{margin:28px 0 0;padding-left:22px;border-left:3px solid var(--purple);font:500 21px/1.45 var(--head);color:var(--navy);letter-spacing:-.01em}
+.ten cite{display:block;margin-top:12px;font:500 14px/1.4 var(--body);color:var(--muted);font-style:normal}
+.ten figure{margin:0}
+.ten figure img{width:100%;max-width:560px;border-radius:16px;box-shadow:0 24px 50px -28px rgba(15,29,64,.5)}
+.stats{display:grid;grid-template-columns:1fr 1fr;margin-top:80px;border-top:1px solid #d7dbe7}
+.stat{padding:28px 24px 0 0}
+.stat+.stat{padding-left:24px;border-left:1px solid #d7dbe7}
+.stat b{display:block;font:700 clamp(36px,4vw,52px)/1 var(--head);color:var(--navy);letter-spacing:-.03em}
+.stat span{display:block;margin-top:12px;color:var(--muted);font-size:15.5px;line-height:1.45;max-width:30ch}
+
+/* founder */
+.founder{background:var(--navy);color:#cfd6ea}
+.founder h2{color:#fff}
+.founder .eyebrow{color:#c9b6ff}
+.f-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px}
+.founder p{font-size:18px;line-height:1.65}
+.founder p+p{margin-top:18px}
+.mission{font:600 clamp(26px,3vw,36px)/1.2 var(--head);color:#fff;letter-spacing:-.02em;margin-top:34px}
+.mission span{color:var(--green)}
+.route{list-style:none;margin:60px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);position:relative}
+.route::before{content:"";position:absolute;left:8px;right:12%;top:8px;height:2px;background:linear-gradient(90deg,rgba(255,255,255,.5),var(--green));transform-origin:left;transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.route.draw::before{transform:scaleX(0)}
+.route li{position:relative;padding-top:34px;padding-right:12px}
+.route li::before{content:"";position:absolute;left:0;top:0;width:18px;height:18px;border-radius:50%;background:var(--navy);box-shadow:inset 0 0 0 2px #fff}
+.route li:last-child::before{background:var(--green);box-shadow:0 0 0 6px rgba(140,198,63,.2)}
+.route b{display:block;font:600 20px/1.2 var(--head);color:#fff}
+.route span{display:block;font-size:14.5px;color:#aeb8d4;margin-top:6px;line-height:1.45}
+
+/* values */
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line)}
+.value{padding:34px 34px 0 0}
+.value+.value{padding-left:34px;border-left:1px solid var(--line)}
+.value h3{font-size:22px;font-weight:600;margin-bottom:10px}
+.value p{color:var(--muted);font-size:16px}
+.value .n{font:600 13px/1 var(--body);color:var(--purple);letter-spacing:.1em;display:block;margin-bottom:18px}
+
+/* faq */
+.faq{background:var(--paper)}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;align-items:start}
+.qa{border-top:1px solid #d7dbe7}
+details{border-bottom:1px solid #d7dbe7}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:68px;padding:16px 0;font:600 19px/1.35 var(--head);color:var(--navy)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:12px;height:12px;border-right:2px solid var(--purple);border-bottom:2px solid var(--purple);transform:rotate(45deg) translateY(-3px);transition:transform .25s}
+details[open] summary::after{transform:rotate(-135deg) translateY(-3px)}
+details p{padding:0 40px 24px 0;color:var(--muted);font-size:16.5px}
+
+/* contact */
+.c-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:start}
+.direct{margin-top:34px;display:grid;gap:12px}
+.direct a{display:flex;align-items:center;gap:16px;padding:16px 18px;border-radius:var(--r);box-shadow:inset 0 0 0 1px var(--line);text-decoration:none;color:var(--navy);font-weight:600;min-height:64px}
+.direct a:hover{box-shadow:inset 0 0 0 1.5px var(--purple)}
+.direct small{display:block;font-weight:400;color:var(--muted);font-size:14px}
+.ico{flex:none;width:40px;height:40px;border-radius:10px;background:var(--purple-soft);display:grid;place-items:center}
+.ico svg{width:20px;height:20px;stroke:var(--purple);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+form.book{background:#fff;border-radius:20px;padding:36px;box-shadow:0 0 0 1px var(--line),0 30px 60px -40px rgba(15,29,64,.35)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:block;margin-bottom:18px}
+.field span{display:block;font-size:14px;font-weight:600;color:var(--navy);margin-bottom:7px}
+.field input,.field select,.field textarea{width:100%;font:400 16px/1.4 var(--body);color:var(--ink);background:#fff;border:1.5px solid #cfd4e2;border-radius:10px;padding:12px 14px;min-height:48px}
+.field textarea{min-height:110px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--purple);box-shadow:0 0 0 3px rgba(82,10,250,.15)}
+.book .btn{width:100%;margin-top:6px}
+.fine{font-size:13.5px;color:var(--muted);margin-top:14px;text-align:center}
+.thanks{display:none;margin-top:16px;padding:14px 16px;border-radius:10px;background:var(--purple-soft);color:var(--purple-ink);font-weight:600;text-align:center}
+.thanks.on{display:block}
+
+/* close */
+.close{background:var(--purple);color:#fff;text-align:center;padding:100px 0}
+.close h2{color:#fff;font-size:clamp(34px,4.4vw,54px);font-weight:700;max-width:16ch;margin:0 auto}
+.close p{margin:18px auto 0;font-size:19px;color:#ebe4ff;max-width:34em}
+.close .cta{justify-content:center}
+.close .btn-p{background:#fff;color:var(--purple-ink);box-shadow:0 10px 30px -12px rgba(0,0,0,.4)}
+.close .btn-p:hover{background:#f1ecff}
+.close .btn-g{color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.55)}
+.close .btn-g:hover{box-shadow:inset 0 0 0 1.5px #fff}
+
+/* footer */
+footer{background:#0b1531;color:#aeb8d4;font-size:14.5px;padding:64px 0 40px}
+.f-top{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.1)}
+footer h2{color:#fff;font-size:22px;font-weight:600}
+footer p{margin-top:10px;line-height:1.6}
+footer a{color:#fff}
+.news-form{display:flex;gap:10px;margin-top:16px}
+.news-form input{flex:1;min-width:0;font:400 16px var(--body);padding:0 14px;min-height:48px;border-radius:10px;border:1.5px solid rgba(255,255,255,.2);background:rgba(255,255,255,.05);color:#fff}
+.news-form input::placeholder{color:#97a2c2}
+.news-form input:focus{outline:none;border-color:#c9b6ff}
+.news-form .btn{background:#fff;color:var(--navy)}
+footer .thanks{background:rgba(255,255,255,.08);color:#fff;text-align:left}
+.legal{padding-top:28px;font-size:12.5px;line-height:1.6;color:#97a2c2}
+.legal .contact-line{font-size:14.5px;color:#cfd6ea;margin-bottom:14px}
+.made{margin-top:22px;font-size:13.5px;color:#cfd6ea}
+
+/* call bar */
+.callbar{display:none}
+
+/* rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+
+@media (max-width:980px){
+  .nav{display:none}
+  .tel-top{margin-left:auto}
+  .hero .wrap,.guide,.ten-grid,.f-grid,.faq-grid,.c-grid{grid-template-columns:1fr;gap:44px}
+  .photo{justify-self:start}
+  .news .wrap{grid-template-columns:1fr 1fr}
+  .news h2{grid-column:1/-1}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:72px}
+  .wrap{padding:0 20px}
+  .mock{font-size:12.5px;padding:10px 12px}
+  .top .wrap{height:64px;gap:12px}
+  .logo img{width:144px;height:36px}
+  .tel-top{display:none}
+  .top .btn{margin-left:auto;padding:0 16px}
+  .hero{padding:40px 0 76px}
+  .hero h1{font-size:40px;margin:14px 0 16px}
+  .lede{font-size:17px}
+  .cta{margin-top:26px}
+  .cta .btn{flex:1 1 100%}
+  .proof{gap:18px;margin-top:30px}
+  .proof b{font-size:22px}
+  .proof div{font-size:13.5px}
+  .photo img{border-radius:16px}
+  .news .wrap{grid-template-columns:1fr;gap:20px;padding-top:56px}
+  .sec{padding:76px 0}
+  .sec-head{margin-bottom:34px}
+  .sec-head p{font-size:17px}
+  .ask{padding:26px 20px;border-radius:16px}
+  .chip label{padding:0 15px;font-size:15px}
+  .answer{padding:28px 22px;border-radius:16px}
+  .ten blockquote{font-size:19px}
+  .stats{margin-top:52px}
+  .stat{padding:22px 14px 0 0}
+  .stat+.stat{padding-left:14px}
+  .stat span{font-size:14px}
+  .founder p{font-size:17px}
+  .route{grid-template-columns:1fr;gap:26px;margin-top:44px}
+  .route::before{left:8px;right:auto;top:8px;bottom:30px;width:2px;height:auto;background:linear-gradient(180deg,rgba(255,255,255,.5),var(--green));transform-origin:top}
+  .route.draw::before{transform:scaleY(0)}
+  .route li{padding:0 0 0 38px}
+  .values{grid-template-columns:1fr}
+  .value,.value+.value{padding:26px 0;border-left:0}
+  .value+.value{border-top:1px solid var(--line)}
+  .value .n{margin-bottom:10px}
+  summary{font-size:17px}
+  details p{padding-right:8px}
+  form.book{padding:24px 20px;border-radius:16px}
+  .row{grid-template-columns:1fr;gap:0}
+  .close{padding:76px 0}
+  .f-top{grid-template-columns:1fr;gap:36px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);box-shadow:0 -1px 0 var(--line),0 -10px 24px -16px rgba(15,29,64,.35)}
+  .callbar a{flex:1;min-height:48px;font-size:15px;padding:0 12px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+  .route.draw::before{transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Free mockup for <b>DSG Global</b></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#main" aria-label="DSG Global, home"><img src="https://images.squarespace-cdn.com/content/v1/5f0d113d66df150ca89bbd9c/1594949507080-LBA7OGR8QZEQ2X92CASN/dsgglobal-logo.jpg?format=1500w" alt="DSG Global: Compliance. Strategy. Training." width="176" height="44"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#guide">Solutions</a>
+      <a href="#about">About</a>
+      <a href="#story">Our story</a>
+      <a href="#questions">Questions</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="tel-top" href="tel:+14157417256">(415) 741-7256</a>
+    <a class="btn btn-p" href="#contact">Book an appointment</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">International trade compliance</p>
+        <h1 id="h1">Trade rules are complex. <span>Let us guide you.</span></h1>
+        <p class="lede">Complex trade rules can mean delays, tariffs and penalties. DSG Global walks importers and exporters through them personally, from small companies to the Fortune 500.</p>
+        <div class="cta">
+          <a class="btn btn-p" href="#contact">Book a free consultation</a>
+          <a class="btn btn-g" href="#guide">Find your first step</a>
+        </div>
+        <div class="proof">
+          <div><b>10 years</b>as DSG Global</div>
+          <div><b>1,000+</b>companies helped across our careers, before and since DSG Global</div>
+        </div>
+      </div>
+      <div class="photo">
+        <img src="https://images.squarespace-cdn.com/content/v1/5f0d113d66df150ca89bbd9c/1594949762017-5JHO3YK114VUYVRGOHRY/image-asset.jpeg?format=1500w" alt="Flags of many nations flying against a blue sky" width="1280" height="854">
+      </div>
+    </div>
+  </section>
+
+  <section class="news" id="news" aria-labelledby="news-h">
+    <div class="wrap">
+      <h2 id="news-h">Breaking news</h2>
+      <article>
+        <time datetime="2026-06-17">June 17, 2026</time>
+        Robert Bosch GmbH to pay a $36 million penalty to BIS for violations pertaining to shipments to Huawei, subject to the EAR under the Foreign Direct Product Rule.
+      </article>
+      <article>
+        <time datetime="2026-06-03">June 3, 2026</time>
+        President Trump signed an EO, “Strengthening Customs Enforcement”, which modifies compliance requirements for both domestic and foreign IORs and enhances enforcement for customs violations.
+      </article>
+    </div>
+  </section>
+
+  <section class="sec" id="guide" aria-labelledby="guide-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Solutions</p>
+        <h2 id="guide-h">Not sure where to start? <span class="nb">Two taps.</span></h2>
+        <p>Tell us what you ship and what keeps you up at night. We’ll point you to the right first step.</p>
+      </div>
+      <div class="guide">
+        <form class="ask" id="ask" onsubmit="return false">
+          <fieldset>
+            <legend><span>1</span>Your company mainly…</legend>
+            <div class="chips">
+              <div class="chip"><input type="radio" name="flow" id="f-ex" value="export" checked><label for="f-ex">Exports</label></div>
+              <div class="chip"><input type="radio" name="flow" id="f-im" value="import"><label for="f-im">Imports</label></div>
+              <div class="chip"><input type="radio" name="flow" id="f-bo" value="both"><label for="f-bo">Does both</label></div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend><span>2</span>What’s on your mind?</legend>
+            <div class="chips">
+              <div class="chip"><input type="radio" name="worry" id="w-pe" value="penalties" checked><label for="w-pe">Penalties</label></div>
+              <div class="chip"><input type="radio" name="worry" id="w-de" value="delays"><label for="w-de">Delays</label></div>
+              <div class="chip"><input type="radio" name="worry" id="w-ta" value="tariffs"><label for="w-ta">Tariffs</label></div>
+              <div class="chip"><input type="radio" name="worry" id="w-gr" value="grow"><label for="w-gr">Selling in new countries</label></div>
+              <div class="chip"><input type="radio" name="worry" id="w-tr" value="train"><label for="w-tr">Training my team</label></div>
+            </div>
+          </fieldset>
+          <div class="scores">
+            <h3>Our two quick scores</h3>
+            <ul>
+              <li><b>Export Compliance Score</b><small>25 questions · less than 10 minutes</small></li>
+              <li><b>International Trade Compliance Score</b><small>25 questions · less than 10 minutes · your risk areas</small></li>
+            </ul>
+          </div>
+        </form>
+
+        <div class="answer" aria-live="polite">
+          <div class="fade" id="ans">
+            <p class="eyebrow">Your first step</p>
+            <p class="worry" id="a-worry">Worried about a penalty on your exports?</p>
+            <h3 id="a-title">Get your Export Compliance Score</h3>
+            <p class="what" id="a-what">A quick 25-question assessment that shows where your company’s export compliance stands.</p>
+            <ul class="facts" id="a-facts"><li>25 questions</li><li>Less than 10 minutes</li><li>Your export compliance score</li></ul>
+            <ol class="steps" id="a-steps">
+              <li><span><b>Take the score</b> and see where you stand.</span></li>
+              <li><span><b>Book a free initial consultation</b> to walk through it with us.</span></li>
+            </ol>
+          </div>
+          <div class="then">
+            <div class="cta">
+              <a class="btn btn-p" id="a-main" href="#contact" data-topic="Export Compliance Score">Book a free consultation</a>
+              <a class="btn btn-g" id="a-alt" href="https://www.dsgglobal.com/">Find it on dsgglobal.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec ten" id="about" aria-labelledby="ten-h">
+    <div class="wrap">
+      <div class="ten-grid">
+        <div>
+          <p class="eyebrow">About DSG Global</p>
+          <h2 id="ten-h" style="font-size:clamp(32px,3.8vw,46px);font-weight:700;margin-top:14px">The personal alternative to the big consulting firms.</h2>
+          <blockquote>
+            “We wanted to give our DSG Global client family a more personal (and personable) experience as well as a ‘white glove’ service.”
+            <cite>On why we started DSG Global</cite>
+          </blockquote>
+        </div>
+        <figure>
+          <img src="https://images.squarespace-cdn.com/content/v1/5f0d113d66df150ca89bbd9c/f5af7776-8293-4a72-b757-f934e68ec653/Screen+Shot+2024-12-03+at+10.32.35+PM.png?format=1500w" alt="DSG Global, celebrating 10 years" width="1167" height="651" loading="lazy">
+        </figure>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>100s</b><span>of companies hand-held through their import-export journey as DSG Global</span></div>
+        <div class="stat"><b>1,000s</b><span>more reached free on our YouTube channel</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec founder" id="story" aria-labelledby="story-h">
+    <div class="wrap">
+      <div class="f-grid">
+        <div>
+          <p class="eyebrow">Our story</p>
+          <h2 id="story-h" style="font-size:clamp(32px,3.8vw,46px);font-weight:700;margin-top:14px">A global outlook, from the very start.</h2>
+          <p class="mission">Our mission: help our clients <span>cross borders</span> and build bridges.</p>
+        </div>
+        <div>
+          <p>Our founder, Deep SenGupta, spent his childhood between England, India and Canada. Those years shaped his global outlook early.</p>
+          <p>He came to the USA for graduate legal studies, then started a consulting group within one of the world’s leading transportation companies. There he helped over a thousand importers and exporters, every one with one foot in the USA and the other in a foreign country.</p>
+          <p>DSG Global carries that on: to be the preferred guide for importers and exporters to global trade rules and tariffs around the world.</p>
+        </div>
+      </div>
+      <ol class="route" id="route" aria-label="Deep SenGupta’s path">
+        <li><b>England</b><span>Childhood</span></li>
+        <li><b>India</b><span>Childhood</span></li>
+        <li><b>Canada</b><span>Childhood</span></li>
+        <li><b>USA</b><span>Graduate legal studies, then DSG Global</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="val-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">How we work</p>
+        <h2 id="val-h">Advisor and ally.</h2>
+      </div>
+      <div class="values">
+        <div class="value"><span class="n">01 · CLIENT FAMILY</span><h3>Built on trust</h3><p>Genuine relationships, built on trust and honesty, so you can always rely on us as both advisor and ally.</p></div>
+        <div class="value"><span class="n">02 · EDUCATION</span><h3>You learn the rules</h3><p>We educate our client family so you know enough to get the most out of international business.</p></div>
+        <div class="value"><span class="n">03 · QUALITY</span><h3>World-class work</h3><p>A premium on world-class quality and real value, with growth that is measurable and meaningful.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec faq" id="questions" aria-labelledby="faq-h">
+    <div class="wrap faq-grid">
+      <div class="sec-head" style="margin-bottom:0">
+        <p class="eyebrow">Questions</p>
+        <h2 id="faq-h">Straight answers.</h2>
+        <p>Anything else? Call <a href="tel:+14157417256">(415) 741-7256</a> or email <a href="mailto:deep@dsgglobal.com">deep@dsgglobal.com</a>.</p>
+      </div>
+      <div class="qa">
+        <details open><summary>How do I get started?</summary><p>Book a free initial consultation, or take one of our 25-question assessments first. Each takes less than 10 minutes.</p></details>
+        <details><summary>Which assessment is right for me?</summary><p>The Export Compliance Score shows where your export compliance stands. The International Trade Compliance Score shows your company’s trade compliance risk areas.</p></details>
+        <details><summary>Who do you work with?</summary><p>Importers and exporters of all sizes, from small and medium-sized companies to the Fortune 500.</p></details>
+        <details><summary>What do you help with?</summary><p>International trade compliance, global business strategy and training. We help you understand complex trade rules and expand your global footprint.</p></details>
+        <details><summary>Are you a law firm or a CPA firm?</summary><p>Neither. DSG Global is a management consulting firm. We don’t give legal advice, and we don’t provide attest services or audits.</p></details>
+        <details><summary>Can I learn on my own first?</summary><p>Yes. Watch our free videos on the <a href="https://www.youtube.com/@dsgglobalacademy9726/videos">DSG Global YouTube channel</a>, and sign up for Trade Insights, “Deep Thoughts on International Trade”.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="contact" aria-labelledby="c-h">
+    <div class="wrap c-grid">
+      <div>
+        <p class="eyebrow">Book an appointment</p>
+        <h2 id="c-h" style="font-size:clamp(32px,3.8vw,46px);font-weight:700;margin-top:14px">Your free initial consultation.</h2>
+        <p style="margin-top:16px;color:var(--muted);font-size:18px">Tell us a little about your business and what you’d like to talk about.</p>
+        <div class="direct">
+          <a href="tel:+14157417256"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><span>(415) 741-7256<small>Call us</small></span></a>
+          <a href="mailto:deep@dsgglobal.com"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><span>deep@dsgglobal.com<small>Email Deep</small></span></a>
+        </div>
+      </div>
+      <form class="book" id="book" novalidate>
+        <div class="row">
+          <label class="field"><span>Your name</span><input name="name" autocomplete="name" required></label>
+          <label class="field"><span>Company</span><input name="company" autocomplete="organization"></label>
+        </div>
+        <div class="row">
+          <label class="field"><span>Email</span><input type="email" name="email" autocomplete="email" required></label>
+          <label class="field"><span>Phone</span><input type="tel" name="phone" autocomplete="tel"></label>
+        </div>
+        <label class="field"><span>What would you like to talk about?</span>
+          <select name="topic" id="topic">
+            <option>Export Compliance Score</option>
+            <option>International Trade Compliance Score</option>
+            <option>International trade compliance</option>
+            <option>Global business strategy</option>
+            <option>Training</option>
+            <option>Something else</option>
+          </select>
+        </label>
+        <label class="field"><span>Anything we should know?</span><textarea name="msg" placeholder="What you ship, where to, and what’s on your mind."></textarea></label>
+        <button class="btn btn-p" type="submit">Request my free consultation</button>
+        <p class="thanks" id="book-thanks" role="status">Thanks. This is a mockup, so nothing was sent.</p>
+        <p class="fine">Or call <a href="tel:+14157417256">(415) 741-7256</a></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="close" aria-labelledby="close-h">
+    <div class="wrap">
+      <h2 id="close-h">How can DSG Global help your business?</h2>
+      <p>We’ll show you. It starts with a free initial consultation.</p>
+      <div class="cta">
+        <a class="btn btn-p" href="#contact">Book a free consultation</a>
+        <a class="btn btn-g" href="tel:+14157417256">Call (415) 741-7256</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div>
+        <h2>DSG Global LLC</h2>
+        <p>A consulting firm specializing in international trade compliance, training and global business strategy. We help companies of all sizes understand complex trade rules and expand their global footprint.</p>
+        <p><a href="https://www.youtube.com/@dsgglobalacademy9726/videos">DSG Global on YouTube</a></p>
+      </div>
+      <div>
+        <h2>Trade Insights</h2>
+        <p>Sign up for the latest “Deep Thoughts on International Trade.” We respect your privacy.</p>
+        <form class="news-form" id="nl" novalidate>
+          <label class="skip" for="nl-email">Email address</label>
+          <input id="nl-email" type="email" placeholder="Email address" autocomplete="email">
+          <button class="btn" type="submit">Count me in</button>
+        </form>
+        <p class="thanks" id="nl-thanks" role="status">Thanks. This is a mockup, so nothing was sent.</p>
+      </div>
+    </div>
+    <div class="legal">
+      <p class="contact-line">DSG Global LLC · <a href="tel:+14157417256">(415) 741-7256</a> · <a href="mailto:deep@dsgglobal.com">deep@dsgglobal.com</a></p>
+      <p>DSG Global is a management consulting firm and not a CPA firm, and does not provide attest services, audits, or other engagements in accordance with standards established by the AICPA or auditing standards promulgated by the Public Company Accounting Oversight Board (“PCAOB”). DSG Global is not a law firm; it does not offer, and is not authorized to provide, legal advice or counseling in any jurisdiction.</p>
+      <p class="made">Mockup made for DSG Global by Sunny Gupta, <a href="https://lifebaselabs.com">lifebaselabs.com</a></p>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-g" href="tel:+14157417256">Call</a>
+  <a class="btn btn-p" href="#contact">Book a free consultation</a>
+</div>
+
+<script>
+(function(){
+  var SITE='https://www.dsgglobal.com/';
+  var worryLine={
+    penalties:{export:'Worried about a penalty on your exports?',import:'Worried about a penalty on your imports?',both:'Worried about a penalty?'},
+    delays:{export:'Export shipments getting held up?',import:'Imports getting held up?',both:'Shipments getting held up?'},
+    tariffs:{export:'Tariffs changing around you?',import:'Tariffs changing under you?',both:'Tariffs changing under you?'},
+    grow:{export:'Ready to sell in new countries?',import:'Ready to source from new countries?',both:'Ready to grow across new borders?'},
+    train:{export:'Want your team to know the rules?',import:'Want your team to know the rules?',both:'Want your team to know the rules?'}
+  };
+  var plans={
+    exportScore:{title:'Get your Export Compliance Score',what:'A quick 25-question assessment that shows where your company’s export compliance stands.',facts:['25 questions','Less than 10 minutes','Your export compliance score'],steps:[['Take the score','and see where you stand.'],['Book a free initial consultation','to walk through it with us.']],topic:'Export Compliance Score',alt:['Find it on dsgglobal.com',SITE]},
+    tradeScore:{title:'Get your International Trade Compliance Score',what:'A quick 25-question assessment that shows your company’s international trade compliance risk areas.',facts:['25 questions','Less than 10 minutes','Your risk areas'],steps:[['Take the score','and see your risk areas.'],['Book a free initial consultation','to walk through it with us.']],topic:'International Trade Compliance Score',alt:['Find it on dsgglobal.com',SITE]},
+    strategy:{title:'Talk global strategy with us, free',what:'We help companies understand complex international trade rules and expand their global footprint.',facts:['Global business strategy','Free initial consultation'],steps:[['Book a free initial consultation','and tell us where you want to go.'],['Sign up for Trade Insights','for rules and tariffs as they change.']],topic:'Global business strategy',alt:['Get Trade Insights','#nl-email']},
+    training:{title:'Train your team with DSG Global',what:'Training is one of our three specialties, alongside compliance and strategy. Start free on our YouTube channel, then talk to us about your team.',facts:['Training','Free videos on YouTube'],steps:[['Watch our free videos','on the DSG Global YouTube channel.'],['Book a free initial consultation','about training for your team.']],topic:'Training',alt:['Watch on YouTube','https://www.youtube.com/@dsgglobalacademy9726/videos']}
+  };
+  var ask=document.getElementById('ask'),box=document.getElementById('ans');
+  var $=function(id){return document.getElementById(id)};
+  function esc(s){return s.replace(/[&<>]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
+  function pick(flow,worry){
+    if(worry==='grow')return plans.strategy;
+    if(worry==='train')return plans.training;
+    if(worry==='tariffs')return plans.tradeScore;
+    return flow==='export'?plans.exportScore:plans.tradeScore;
+  }
+  function render(){
+    var flow=ask.querySelector('[name=flow]:checked').value,worry=ask.querySelector('[name=worry]:checked').value,p=pick(flow,worry);
+    $('a-worry').textContent=worryLine[worry][flow];
+    $('a-title').textContent=p.title;
+    $('a-what').textContent=p.what;
+    $('a-facts').innerHTML=p.facts.map(function(f){return '<li>'+esc(f)+'</li>'}).join('');
+    $('a-steps').innerHTML=p.steps.map(function(s){return '<li><span><b>'+esc(s[0])+'</b> '+esc(s[1])+'</span></li>'}).join('');
+    $('a-main').setAttribute('data-topic',p.topic);
+    $('a-alt').textContent=p.alt[0];$('a-alt').setAttribute('href',p.alt[1]);
+  }
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  ask.addEventListener('change',function(){
+    if(reduce){render();return}
+    box.classList.add('swap');
+    setTimeout(function(){render();box.classList.remove('swap')},180);
+  });
+  $('a-main').addEventListener('click',function(){
+    var t=this.getAttribute('data-topic'),sel=$('topic');
+    for(var i=0;i<sel.options.length;i++){if(sel.options[i].text===t){sel.selectedIndex=i}}
+  });
+
+  function thanks(formId,msgId){
+    $(formId).addEventListener('submit',function(e){e.preventDefault();$(msgId).classList.add('on')});
+  }
+  thanks('book','book-thanks');thanks('nl','nl-thanks');
+
+  if(reduce||!('IntersectionObserver' in window))return;
+  var route=$('route');
+  var targets=document.querySelectorAll('.sec-head,.guide,.ten-grid,.stat,.f-grid,.value,.qa,.c-grid,.close .wrap,.news article');
+  var fold=window.innerHeight;
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting)return;
+      e.target.classList.remove('will-rise','draw');
+      io.unobserve(e.target);
+    });
+  },{rootMargin:'0px 0px -8% 0px'});
+  Array.prototype.forEach.call(targets,function(el){
+    if(el.getBoundingClientRect().top>fold){el.classList.add('rise','will-rise');io.observe(el)}
+  });
+  if(route.getBoundingClientRect().top>fold){route.classList.add('draw');io.observe(route)}
+})();
+</script>
+</body>
+</html>
