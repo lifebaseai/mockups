@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup procrewservice-com-eaa0f5 1 7a91ea47 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Professional Crew Services | Aircraft management and pilot staffing</title>
+<meta name="description" content="Aircraft management for jet owners, built on screened, type-rated pilots. Contract, full-time and on-demand crew.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0c1a2b;--navy2:#13263d;--ink:#14202e;--muted:#4d5b6b;--paper:#f6f3ee;--line:#dcd6cc;
+  --amber:#d99a3a;--sky:#a9c4e0;--white:#fff;
+  --sans:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font:400 17px/1.6 var(--sans);color:var(--ink);background:var(--paper)}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+.skip{position:absolute;left:-9999px;top:0}
+.skip:focus{left:12px;top:44px;background:#fff;padding:10px 14px;z-index:50}
+
+/* mockup banner */
+.mock{background:#e9e3d8;color:#2b3542;font:500 13px/1 var(--mono);letter-spacing:.04em;text-align:center;padding:9px 16px;border-bottom:1px solid #d3cbbd}
+
+/* header */
+header.top{background:var(--navy);color:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+.mark{width:38px;height:38px;flex:none}
+.brand b{display:block;font-weight:600;font-size:16px;letter-spacing:.01em;line-height:1.15}
+.brand small{display:block;font:400 11px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--sky)}
+.links{display:flex;align-items:center;gap:28px;font-size:15px}
+.links a{text-decoration:none;color:#d6e1ec;padding:10px 0}
+.links a:hover{color:#fff}
+.links .tel{color:#fff;border:1px solid #3a5372;border-radius:999px;padding:10px 18px;font-family:var(--mono);font-size:14px}
+
+/* hero */
+.hero{position:relative;background:var(--navy);color:#fff;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(169,196,224,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(169,196,224,.05) 1px,transparent 1px);background-size:56px 56px}
+.route{position:absolute;left:0;bottom:0;width:100%;height:auto;pointer-events:none}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding-top:72px;padding-bottom:88px}
+.eyebrow{font:500 12px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--sky);display:flex;gap:10px;align-items:center;margin:0 0 22px}
+.eyebrow i{display:inline-block;width:28px;height:2px;background:var(--amber)}
+h1{font-weight:600;font-size:clamp(38px,5.2vw,62px);line-height:1.04;letter-spacing:-.025em;margin:0 0 22px}
+h1 span{color:var(--sky)}
+.lede{font-size:19px;line-height:1.55;color:#d4dfea;max-width:31em;margin:0 0 34px}
+.ctas{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:600 16px/1 var(--sans);text-decoration:none;border:0;cursor:pointer;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn-amber{background:var(--amber);color:var(--navy)}
+.btn-amber:hover{background:#e6a849}
+.btn-ghost{color:#fff;border:1px solid #4a6585}
+.btn-ghost:hover{background:rgba(255,255,255,.06)}
+.btn-navy{background:var(--navy);color:#fff}
+.proof{display:flex;flex-wrap:wrap;gap:10px 26px;margin:38px 0 0;padding:0;list-style:none;font:400 13px/1.4 var(--mono);color:#b7c7d8;letter-spacing:.02em}
+.proof li{display:flex;align-items:center;gap:8px}
+.proof li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--amber)}
+
+/* brief builder */
+.brief{background:#f9f7f3;color:var(--ink);border-radius:18px;box-shadow:0 30px 60px -20px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.06);overflow:hidden}
+.brief-head{display:flex;justify-content:space-between;align-items:center;padding:16px 22px;border-bottom:1px solid var(--line);font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.brief-head b{color:var(--ink);font-weight:500}
+.brief form{padding:18px 22px 6px}
+fieldset{border:0;margin:0 0 16px;padding:0}
+legend{font:500 12px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;padding:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.chip span{display:inline-flex;align-items:center;min-height:44px;padding:0 15px;border:1px solid #cfc7ba;border-radius:10px;font-size:15px;background:#fff;transition:background .15s,border-color .15s,color .15s}
+.chip input:checked+span{background:var(--navy);border-color:var(--navy);color:#fff}
+.chip input:focus-visible+span{outline:3px solid var(--amber);outline-offset:2px}
+.chip.lead span{font-weight:600}
+select{width:100%;min-height:46px;border:1px solid #cfc7ba;border-radius:10px;background:#fff;font:400 15px var(--sans);color:var(--ink);padding:0 12px}
+.strip{margin:4px 22px 22px;border-radius:12px;background:var(--navy);color:#fff;font-family:var(--mono);overflow:hidden}
+.strip-top{display:grid;grid-template-columns:auto 1fr;border-bottom:1px dashed #3a5372}
+.strip-top div{padding:12px 16px}
+.strip-top div+div{border-left:1px dashed #3a5372}
+.strip small{display:block;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--sky);margin-bottom:4px}
+.strip strong{font-weight:500;font-size:15px;line-height:1.35}
+.strip-type{color:var(--amber)}
+.strip ul{list-style:none;margin:0;padding:12px 16px 14px;font-size:13.5px;line-height:1.55;color:#dbe5ef}
+.strip li{padding-left:18px;position:relative}
+.strip li::before{content:"✓";position:absolute;left:0;color:var(--amber)}
+.strip-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:0 16px 16px}
+.strip-foot span{font-size:12px;color:#b7c7d8}
+.strip .btn{min-height:46px;font-size:15px;padding:0 20px;white-space:nowrap;flex:none}
+.how{padding-bottom:24px}
+.flash{animation:flash .5s ease}
+@keyframes flash{from{background:#1d3654}to{background:var(--navy)}}
+
+/* sections */
+section{padding:104px 0}
+.kicker{font:500 12px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:#8a5a12;margin:0 0 16px;display:flex;gap:10px;align-items:center}
+.kicker::before{content:"";width:22px;height:2px;background:var(--amber)}
+h2{font-weight:600;font-size:clamp(30px,3.6vw,44px);line-height:1.1;letter-spacing:-.02em;margin:0 0 18px}
+h3{font-weight:600;font-size:20px;line-height:1.25;margin:0 0 8px}
+.sub{font-size:18px;color:var(--muted);max-width:36em;margin:0}
+
+/* management */
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:end;margin-bottom:52px}
+.sec-head h2{margin:0}
+.pillars{list-style:none;margin:0;padding:0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;column-gap:72px}
+.pillars li{display:grid;grid-template-columns:56px 1fr;gap:8px 18px;padding:28px 0;border-bottom:1px solid var(--line)}
+.pillars .n{font:500 14px/1.6 var(--mono);color:#8a5a12}
+.pillars p{margin:0;color:var(--muted)}
+.owner-note{margin-top:24px;padding:22px 24px;border-left:3px solid var(--amber);background:#fff;border-radius:0 12px 12px 0;font-size:16.5px;color:var(--ink)}
+
+/* staffing */
+.staff{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.roster{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.roster li{display:grid;grid-template-columns:56px 1fr 1.5fr 170px;gap:8px 18px;align-items:baseline;padding:28px 0;border-bottom:1px solid var(--line)}
+.roster .n{font:500 14px/1.6 var(--mono);color:#8a5a12}
+.roster h3{margin:0}
+.roster p{margin:0;color:var(--muted)}
+.roster .fit{font:500 12px/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink);text-align:right}
+
+/* aircraft */
+.fleet{background:var(--navy);color:#fff}
+.fleet .kicker{color:var(--sky)}
+.fleet .sub{color:#c3d1df}
+.fleet-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.types{display:flex;flex-wrap:wrap;gap:10px;margin:0;padding:0;list-style:none}
+.types li{font:500 15px/1 var(--mono);padding:14px 16px;border:1px solid #2f4a69;border-radius:10px;color:#e8eef5}
+.types li.g{border-color:var(--amber);color:#fff;font-family:var(--sans);font-weight:600}
+.std{margin:34px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:18px 28px}
+.std li{font-size:15.5px;color:#d4dfea;padding-top:14px;border-top:1px solid #2a4260}
+.std b{display:block;font:500 12px/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--amber);margin-bottom:4px}
+.jet{width:100%;height:auto;max-width:520px;margin:0 auto}
+.jet .draw{stroke-dasharray:1;stroke-dashoffset:0}
+.jet.play .draw{animation:draw 2.4s ease forwards}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:52px;counter-reset:s;position:relative}
+.steps::before{content:"";position:absolute;top:21px;left:22px;right:33%;height:2px;background:repeating-linear-gradient(90deg,var(--amber) 0 10px,transparent 10px 18px)}
+.step{position:relative;padding-right:40px}
+.step .dot{width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font:500 15px var(--mono);margin-bottom:22px;position:relative}
+.step p{margin:0;color:var(--muted)}
+
+/* faq */
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px}
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;align-items:center;padding:22px 0;font-weight:600;font-size:18px;min-height:44px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:400 26px/1 var(--mono);color:#8a5a12;transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin:0 0 22px;color:var(--muted);max-width:38em}
+
+/* contact */
+.contact{background:#fff;border-top:1px solid var(--line)}
+.contact .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+.direct{margin:32px 0 0;padding:0;list-style:none}
+.direct li{padding:18px 0;border-top:1px solid var(--line)}
+.direct small{display:block;font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.direct a{font-size:22px;font-weight:600;text-decoration:none;display:inline-block;min-height:44px;line-height:44px}
+.direct a:hover{text-decoration:underline}
+.direct span{font-size:20px;font-weight:600}
+.form{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:32px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:block;font-size:14px;font-weight:500;margin-bottom:6px}
+.field{margin-bottom:18px}
+input[type=text],input[type=email],input[type=tel],textarea{width:100%;min-height:48px;border:1px solid #c9c1b4;border-radius:10px;background:#fff;font:400 16px var(--sans);color:var(--ink);padding:10px 14px}
+textarea{min-height:130px;resize:vertical;font-family:var(--mono);font-size:14px;line-height:1.55}
+.form .btn{width:100%}
+.thanks{display:none;margin:16px 0 0;padding:14px 16px;border-radius:10px;background:var(--navy);color:#fff;font-weight:500}
+.thanks.show{display:block}
+
+/* close */
+.close{background:var(--navy);color:#fff;text-align:center;padding:96px 0}
+.close h2{max-width:16em;margin:0 auto 14px}
+.close p{color:#c3d1df;margin:0 auto 32px;max-width:32em;font-size:18px}
+.close .ctas{justify-content:center}
+
+footer{background:#08131f;color:#a9b8c8;font-size:14px;padding:36px 0 40px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px}
+footer a{color:#dbe5ef}
+
+.callbar{display:none}
+
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:960px){
+  .hero .wrap,.fleet-grid,.faq .wrap,.contact .wrap{grid-template-columns:1fr;gap:44px}
+  .links a:not(.tel){display:none}
+  .sec-head{grid-template-columns:1fr;gap:18px;margin-bottom:36px}
+  .pillars{grid-template-columns:1fr}
+  .roster li{grid-template-columns:44px 1fr;gap:6px 14px}
+  .roster li>p,.roster .fit{grid-column:2}
+  .roster .fit{text-align:left}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:68px}
+  .wrap{padding:0 20px}
+  .mock{font-size:12px;padding:8px 12px}
+  .nav{height:64px}
+  .links{display:none}
+  .hero .wrap{padding-top:44px;padding-bottom:56px;gap:40px}
+  h1{font-size:40px}
+  .lede{font-size:17px;margin-bottom:28px}
+  .ctas .btn{flex:1 1 100%}
+  .proof{margin-top:28px;gap:8px 18px}
+  .brief form{padding:16px 16px 4px}
+  .brief-head{padding:14px 16px}
+  .strip{margin:4px 14px 16px}
+  .strip-foot{flex-direction:column;align-items:stretch}
+  .strip .btn{width:100%}
+  section{padding:72px 0}
+  .std{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr;gap:30px;margin-top:36px}
+  .steps::before{top:22px;bottom:22px;left:21px;right:auto;width:2px;height:auto;background:repeating-linear-gradient(180deg,var(--amber) 0 10px,transparent 10px 18px)}
+  .step{display:grid;grid-template-columns:44px 1fr;gap:0 18px;padding:0}
+  .step .dot{margin:0;grid-row:span 2}
+  .row{grid-template-columns:1fr;gap:0}
+  .form{padding:22px}
+  .close{padding:72px 0}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(12,26,43,.97);border-top:1px solid #2a4260}
+  .callbar a{flex:1;min-height:48px;display:flex;align-items:center;justify-content:center;border-radius:999px;text-decoration:none;font-weight:600;font-size:15px}
+  .callbar .c1{background:var(--amber);color:var(--navy)}
+  .callbar .c2{border:1px solid #4a6585;color:#fff}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Free mockup for Professional Crew Services</div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Professional Crew Services, home">
+      <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect x="1" y="1" width="38" height="38" rx="9" fill="none" stroke="#a9c4e0" stroke-width="1.5"/><path d="M9 23.5 31 15l-5 9.5-6.5-1.6L15 28l-.6-5.4z" fill="#d99a3a"/></svg>
+      <span><b>Professional Crew Services</b><small>Aircraft management · Crew</small></span>
+    </a>
+    <nav class="links" aria-label="Main">
+      <a href="#management">Management</a>
+      <a href="#staffing">Pilot staffing</a>
+      <a href="#aircraft">Aircraft</a>
+      <a href="#questions">Questions</a>
+      <a class="tel" href="tel:+16026539277">602-653-9277</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="hero" id="top">
+  <svg class="route" viewBox="0 0 1440 300" preserveAspectRatio="xMinYMax meet" aria-hidden="true"><path d="M-20 296C320 286 580 226 790 118" fill="none" stroke="#d99a3a" stroke-width="1.5" stroke-dasharray="8 10" opacity=".5"/><path d="M826 98l-40 9 11 7-7 11z" fill="#d99a3a" opacity=".75"/></svg>
+  <div class="wrap">
+    <div>
+      <p class="eyebrow"><i></i>Aircraft management</p>
+      <h1>Your aircraft, <span>in professional hands.</span></h1>
+      <p class="lede">We're moving into aircraft management, built on the work we do every day: putting screened, qualified jet pilots in the right seat.</p>
+      <div class="ctas">
+        <a class="btn btn-amber" href="#brief">Build your aircraft brief</a>
+        <a class="btn btn-ghost" href="tel:+16026539277">Call 602-653-9277</a>
+      </div>
+      <ul class="proof">
+        <li>Citation pilots: ATP, type-rated</li>
+        <li>CJ1 to Citation X+</li>
+        <li>Part 91 jet captains</li>
+      </ul>
+    </div>
+
+    <div class="brief" id="brief" aria-labelledby="brief-title">
+      <div class="brief-head"><b id="brief-title">Aircraft brief</b><span>3 taps</span></div>
+      <form id="briefForm" onsubmit="return false">
+        <fieldset>
+          <legend>What you need</legend>
+          <div class="chips">
+            <label class="chip lead"><input type="radio" name="need" value="Aircraft management" checked><span>Aircraft management</span></label>
+            <label class="chip"><input type="radio" name="need" value="Contract pilot"><span>Contract pilot</span></label>
+            <label class="chip"><input type="radio" name="need" value="Full-time pilot"><span>Full-time pilot</span></label>
+            <label class="chip"><input type="radio" name="need" value="Short-notice crew"><span>Short-notice crew</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><label for="ac" style="margin:0;font:inherit">Your aircraft</label></legend>
+          <select id="ac" name="ac">
+            <optgroup label="Cessna Citation">
+              <option>Citation CJ1</option><option>Citation CJ2</option><option>Citation CJ3</option>
+              <option selected>Citation CJ3+</option><option>Citation CJ4</option>
+              <option>Citation XLS / XLS+</option><option>Citation Latitude</option>
+              <option>Citation Sovereign</option><option>Citation X / X+</option>
+            </optgroup>
+            <optgroup label="Other"><option>Another jet</option></optgroup>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>How you fly it</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="use" value="Business" checked><span>Business</span></label>
+            <label class="chip"><input type="radio" name="use" value="Private"><span>Private</span></label>
+            <label class="chip"><input type="radio" name="use" value="Charter"><span>Charter</span></label>
+          </div>
+        </fieldset>
+      </form>
+      <div class="strip" id="strip" aria-live="polite">
+        <div class="strip-top">
+          <div><small>Request</small><strong class="strip-type" id="sNeed">Management</strong></div>
+          <div><small>Aircraft · Use</small><strong id="sAc">Citation CJ3+ · Business</strong></div>
+        </div>
+        <ul id="sList">
+          <li>We'll talk through managing it with you</li>
+          <li>Your Citation CJ3+, flown for business</li>
+          <li>Screened, type-rated pilots in its seats</li>
+        </ul>
+        <div class="strip-foot">
+          <span id="sNote">Built on our crew work.</span>
+          <a class="btn btn-amber" href="#contact" id="sendBrief">Send this brief</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="mgmt" id="management" aria-labelledby="m-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="kicker">Aircraft management</p>
+        <h2 id="m-title">Management starts with who flies it.</h2>
+      </div>
+      <div>
+        <p class="sub">The people in the cockpit have always been our work. Now we're bringing that to the whole aircraft.</p>
+        <p class="owner-note">Tell us about your aircraft and how you use it, and we'll talk it through with you.</p>
+      </div>
+    </div>
+    <ol class="pillars">
+      <li><span class="n">01</span><div><h3>Screened, typed pilots on your aircraft</h3><p>The pilots who fly it come through our selection process. Our Citation pilots hold a valid ATP and a type rating for the exact model.</p></div></li>
+      <li><span class="n">02</span><div><h3>Discreet and service-minded</h3><p>Our focus: safety, discretion, flexibility and service.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="staff" id="staffing" aria-labelledby="s-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="kicker">Pilot staffing</p>
+        <h2 id="s-title">Still the crew you can call.</h2>
+      </div>
+      <p class="sub">Pilots, co-pilots and flight support staff for private, corporate and charter aviation. A captain for a single flight, long-term staffing or a full-time pilot.</p>
+    </div>
+    <ol class="roster">
+      <li><span class="n">01</span><h3>Contract pilots</h3><p>An experienced pilot for a one-time flight, a ferry flight or a relief role, without a long-term commitment.</p><span class="fit">Short or long term</span></li>
+      <li><span class="n">02</span><h3>Full-time placement</h3><p>Pilots matched with permanent positions in private and corporate aviation.</p><span class="fit">Permanent hire</span></li>
+      <li><span class="n">03</span><h3>Short-notice crew</h3><p>Qualified crew on short notice for corporate flight departments, private jet owners and charter operators.</p><span class="fit">On demand</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="fleet" id="aircraft" aria-labelledby="a-title">
+  <div class="wrap fleet-grid">
+    <div>
+      <p class="kicker">Aircraft</p>
+      <h2 id="a-title">The whole Citation family.</h2>
+      <p class="sub">Citation pilots for each model, from the CJ1 to the X+, and Part 91 jet captains.</p>
+      <ul class="std">
+        <li><b>Licence</b>A valid ATP</li>
+        <li><b>Rating</b>Type-rated for the model they fly</li>
+        <li><b>Experience</b>Hours in Citations, not just total time</li>
+        <li><b>Screening</b>Expertise, certifications and safety</li>
+      </ul>
+    </div>
+    <div>
+      <svg class="jet" id="jet" viewBox="0 0 520 260" role="img" aria-label="Line drawing of a business jet from above">
+        <g fill="none" stroke="#a9c4e0" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round">
+          <path class="draw" pathLength="1" d="M40 130c30-14 80-20 150-20h170c40 0 80 8 110 20-30 12-70 20-110 20H190c-70 0-120-6-150-20z"/>
+          <path class="draw" pathLength="1" d="M250 110 300 30h22l-12 80M250 150l50 80h22l-12-80"/>
+          <path class="draw" pathLength="1" d="M410 112 444 70h16l-8 44M410 148l34 42h16l-8-44"/>
+          <path class="draw" pathLength="1" d="M372 104h40v-12h-40zM372 168h40v-12h-40z"/>
+          <path class="draw" pathLength="1" stroke="#d99a3a" d="M60 130h-30"/>
+        </g>
+        <g fill="#d99a3a"><circle cx="70" cy="130" r="3"/><circle cx="470" cy="130" r="3"/></g>
+      </svg>
+      <ul class="types" aria-label="Aircraft types">
+        <li>CJ1</li><li>CJ2</li><li>CJ3</li><li>CJ3+</li><li>CJ4</li><li>XLS / XLS+</li><li>Latitude</li><li>Sovereign</li><li>X / X+</li><li class="g">Part 91 jet captains</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="how" aria-labelledby="h-title">
+  <div class="wrap">
+    <p class="kicker">How it works</p>
+    <h2 id="h-title">Three steps to the right pilot.</h2>
+    <div class="steps">
+      <div class="step"><span class="dot">1</span><div><h3>Request</h3><p>Tell us your aircraft, your travel plans and anything specific you need.</p></div></div>
+      <div class="step"><span class="dot">2</span><div><h3>Review</h3><p>Choose from qualified pilots who match what you asked for.</p></div></div>
+      <div class="step"><span class="dot">3</span><div><h3>Confirm and fly</h3><p>We make the arrangements. You focus on the trip.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="questions" aria-labelledby="q-title">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Questions</p>
+      <h2 id="q-title">Straight answers.</h2>
+      <p class="sub">Anything else, call <a href="tel:+16026539277">602-653-9277</a>.</p>
+    </div>
+    <div>
+      <details open><summary>Do you manage aircraft now?</summary><p>We're building it now, on top of our crew work. Send us your aircraft brief and we'll talk it through.</p></details>
+      <details><summary>What qualifications do your pilots hold?</summary><p>Our Citation pilots hold a valid ATP licence and a type rating for the specific model they fly. Every pilot holds valid licences and certifications for their aircraft.</p></details>
+      <details><summary>Which aircraft do you cover?</summary><p>The Citation family (CJ1 to CJ4, XLS and XLS+, Latitude, Sovereign, X and X+) and Part 91 jet captain roles.</p></details>
+      <details><summary>What is a contract pilot?</summary><p>A professional pilot hired for a specific assignment, like a one-time flight, a ferry flight or a relief role, with no long-term commitment.</p></details>
+      <details><summary>Contract or full-time: which do I need?</summary><p>Contract suits a single flight or a set assignment. Full-time suits a permanent position. We do both.</p></details>
+      <details><summary>Can you help on short notice?</summary><p>Yes. We provide qualified crew on short notice for corporate flight departments, private jet owners and charter operators.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact" aria-labelledby="c-title">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Contact</p>
+      <h2 id="c-title">Tell us about your aircraft.</h2>
+      <p class="sub">Your brief is already in the message. Add your details and send.</p>
+      <ul class="direct">
+        <li><small>Call</small><a href="tel:+16026539277">602-653-9277</a></li>
+        <li><small>Email</small><a href="mailto:pilots@procrewservice.com">pilots@procrewservice.com</a></li>
+      </ul>
+    </div>
+    <form class="form" id="contactForm" novalidate>
+      <div class="row">
+        <div class="field"><label for="f-name">Name</label><input id="f-name" type="text" name="name" autocomplete="name"></div>
+        <div class="field"><label for="f-phone">Phone</label><input id="f-phone" type="tel" name="phone" autocomplete="tel"></div>
+      </div>
+      <div class="field"><label for="f-email">Email</label><input id="f-email" type="email" name="email" autocomplete="email"></div>
+      <div class="field"><label for="f-msg">Your brief</label><textarea id="f-msg" name="message">Request: Aircraft management
+Aircraft: Citation CJ3+
+Use: Business</textarea></div>
+      <button class="btn btn-navy" type="submit">Send</button>
+      <p class="thanks" id="thanks" role="status">Thanks. This is a mockup, so nothing was sent.</p>
+    </form>
+  </div>
+</section>
+
+<section class="close" aria-labelledby="z-title">
+  <div class="wrap">
+    <h2 id="z-title">Your aircraft, in professional hands.</h2>
+    <p>Start with a three-tap brief, or just call.</p>
+    <div class="ctas">
+      <a class="btn btn-amber" href="#brief">Build your aircraft brief</a>
+      <a class="btn btn-ghost" href="tel:+16026539277">Call 602-653-9277</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Professional Crew Services ·<a href="https://www.procrewservice.com/">procrewservice.com</a></span>
+    <span>Mockup made for Professional Crew Services by Sunny Gupta, <a href="https://lifebaselabs.com">lifebaselabs.com</a></span>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick contact">
+  <a class="c1" href="tel:+16026539277">Call now</a>
+  <a class="c2" href="#brief">Aircraft brief</a>
+</div>
+
+<script>
+(function(){
+  var f=document.getElementById('briefForm'),strip=document.getElementById('strip');
+  var short={'Aircraft management':'Management','Contract pilot':'Contract pilot','Full-time pilot':'Full-time pilot','Short-notice crew':'Short-notice crew'};
+  var notes={'Aircraft management':'Built on our crew work.','Contract pilot':'For a trip, a ferry or a relief role.','Full-time pilot':'Matched to your flight department.','Short-notice crew':'Qualified crew when plans change.'};
+  function val(n){var c=f.querySelector('input[name="'+n+'"]:checked');return c?c.value:'';}
+  function render(flash){
+    var need=val('need'),ac=f.ac.value,use=val('use');
+    var typed=ac==='Another jet'?'your aircraft':'the '+ac;
+    document.getElementById('sNeed').textContent=short[need];
+    document.getElementById('sAc').textContent=ac+' · '+use;
+    document.getElementById('sNote').textContent=notes[need];
+    var flown={'Business':'flown for business','Private':'flown privately','Charter':'flown for charter'}[use];
+    var items=need==='Aircraft management'?["We'll talk through managing it with you",(ac==='Another jet'?'Your jet':'Your '+ac)+', '+flown,ac==='Another jet'?'Screened pilots, licensed for your aircraft':'Screened, type-rated pilots in its seats']:ac==='Another jet'?['Valid licences and certifications for your aircraft','Screened for expertise and safety']:['Pilots holding a valid ATP','Type-rated for '+typed,'Screened for expertise and safety'];
+    document.getElementById('sList').innerHTML=items.map(function(t){return '<li>'+t+'</li>';}).join('');
+    document.getElementById('f-msg').value='Request: '+need+'\nAircraft: '+ac+'\nUse: '+use;
+    if(flash){strip.classList.remove('flash');void strip.offsetWidth;strip.classList.add('flash');}
+  }
+  f.addEventListener('change',function(){render(true);});
+  render(false);
+
+  var cf=document.getElementById('contactForm');
+  cf.addEventListener('submit',function(e){e.preventDefault();document.getElementById('thanks').classList.add('show');});
+
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var jet=document.getElementById('jet');
+  if(!('IntersectionObserver' in window)||reduce)return;
+  var vh=window.innerHeight;
+  var els=document.querySelectorAll('section .kicker, section h2, .pillars li, .roster li, .types, .std, .step, details, .form, .direct');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(el){if(el.getBoundingClientRect().top>vh){el.classList.add('rise','will-rise');io.observe(el);}});
+  if(jet.getBoundingClientRect().top>vh){
+    var jo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){jet.classList.add('play');jo.disconnect();}});});
+    jo.observe(jet);
+  }
+})();
+</script>
+</body>
+</html>
