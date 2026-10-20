@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup hone-london-c020e2 1 0bd66404 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hone: workshops, a makerspace and studios in London and Bristol</title>
+<meta name="description" content="A place to do your best work. Workshops, a makerspace and studios in East London, Tottenham and Bristol. From £125 a month.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --mustard:#e7b841;--mustard-soft:#f6e7bd;--slate:#3c3a4b;--slate-deep:#2e2c3a;
+  --ink:#2b2a36;--muted:#5b5967;--cream:#faf8f3;--paper:#ffffff;--line:#e6e1d6;--stone:#f1ede4;
+  --sans:"Gill Sans Nova","Gill Sans","Gill Sans MT",Lato,"Segoe UI",sans-serif;
+  --r:14px;--wrap:1200px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.55;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-weight:400;line-height:1.08;letter-spacing:-.01em;margin:0}
+p{margin:0}
+:focus-visible{outline:3px solid var(--slate);outline-offset:3px;border-radius:6px}
+.dark :focus-visible{outline-color:var(--mustard)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 32px}
+.eyebrow{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--slate);color:#fff;padding:10px 14px;border-radius:8px;z-index:50}
+.skip:focus{top:44px}
+
+/* mockup banner */
+.mock{background:var(--slate-deep);color:#f4f1ea;font-size:14px;letter-spacing:.04em;text-align:center;padding:8px 16px;position:relative;z-index:30}
+.mock b{color:var(--mustard);font-weight:700}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(250,248,243,.94);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:28px;height:72px}
+.logo{display:inline-flex;flex-direction:column;align-items:flex-start;text-decoration:none;color:var(--slate);min-height:44px;justify-content:center}
+.logo span{font-size:26px;letter-spacing:.42em;line-height:1;margin-right:-.42em}
+.logo svg{margin-top:5px;width:96px;height:6px}
+.nav{display:flex;gap:4px;margin-left:12px}
+.nav a{text-decoration:none;font-size:16px;color:var(--ink);padding:12px 12px;border-radius:8px}
+.nav a:hover{background:var(--stone)}
+.top .btn{margin-left:auto}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;font:700 16px/1 var(--sans);letter-spacing:.01em;text-decoration:none;border:0;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s}
+.btn-gold{background:var(--mustard);color:var(--slate-deep);box-shadow:0 1px 0 rgba(0,0,0,.08)}
+.btn-gold:hover{background:#efc24f;transform:translateY(-1px);box-shadow:0 6px 16px -8px rgba(60,58,75,.5)}
+.btn-slate{background:var(--slate);color:#fff}
+.btn-slate:hover{background:var(--slate-deep)}
+.btn svg{width:16px;height:16px}
+
+/* hero */
+.hero{padding:64px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.hero h1{font-size:clamp(46px,6.2vw,84px);color:var(--slate);letter-spacing:-.025em;line-height:1}
+.lede{font-size:20px;color:var(--muted);max-width:30em;margin-top:22px}
+.finder{margin-top:36px;padding-top:28px;border-top:1px solid var(--line)}
+.finder .q{font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px;padding:0;border:0}
+.chips legend{padding:0;font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.chip{min-height:46px;padding:0 18px;border-radius:999px;border:1.5px solid #d5cfc2;background:var(--paper);color:var(--ink);font:400 17px/1 var(--sans);cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.chip:hover{border-color:var(--slate)}
+.chip[aria-pressed="true"]{background:var(--slate);border-color:var(--slate);color:#fff}
+.chip small{font-size:13px;opacity:.75;margin-left:6px}
+#pick-space,#pick-place{display:grid;gap:8px;max-width:520px}
+#pick-space{grid-template-columns:1fr 1fr}
+#pick-place{grid-template-columns:repeat(3,1fr)}
+#pick-space legend,#pick-place legend{grid-column:1/-1}
+.chips .chip{border-radius:12px;text-align:left;padding:0 16px}
+#pick-place .chip{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:3px;min-height:58px}
+#pick-place .chip small{margin:0}
+.hero-cta{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:6px}
+.hero-cta .note{font-size:15px;color:var(--muted)}
+
+.result{background:var(--paper);border-radius:20px;overflow:hidden;box-shadow:0 1px 0 var(--line),0 30px 60px -36px rgba(46,44,58,.45);border:1px solid var(--line)}
+.result figure{margin:0;position:relative;aspect-ratio:4/3;background:var(--stone);overflow:hidden}
+.result figure img{width:100%;height:100%;object-fit:cover;transition:opacity .35s}
+.result figure img.fade{opacity:0}
+.tag{position:absolute;left:16px;top:16px;background:rgba(250,248,243,.95);color:var(--slate);font-size:14px;letter-spacing:.06em;padding:7px 12px;border-radius:999px}
+.result .body{padding:26px 28px 28px}
+.result h2{font-size:30px;color:var(--slate)}
+.result .line{color:var(--muted);margin-top:6px}
+.price{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 12px;margin:18px 0 4px}
+.price b{font-size:44px;font-weight:400;color:var(--slate);letter-spacing:-.02em;line-height:1}
+.price span{color:var(--muted);font-size:16px}
+.price.two{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+.price.two div{display:flex;flex-direction:column;gap:6px}
+.price.two div+div{border-left:1px solid var(--line);padding-left:16px}
+.price.two span{font-size:15px;line-height:1.35}
+.avail{display:inline-flex;align-items:center;gap:8px;font-size:15px;color:var(--ink);background:var(--mustard-soft);padding:6px 12px;border-radius:999px;margin-top:10px}
+.avail:before{content:"";width:8px;height:8px;border-radius:50%;background:#b8860b}
+.facts{list-style:none;padding:0;margin:20px 0 0;border-top:1px solid var(--line)}
+.facts li{padding:10px 0 10px 26px;border-bottom:1px solid var(--line);position:relative;font-size:16px}
+.facts li:before{content:"";position:absolute;left:2px;top:20px;width:12px;height:2px;background:var(--mustard)}
+.result .go{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:22px}
+.result .go a.alt{font-size:16px;color:var(--slate);text-underline-offset:4px;min-height:44px;display:inline-flex;align-items:center}
+
+/* numbers strip */
+.nums{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper)}
+.nums .wrap{display:grid;grid-template-columns:repeat(3,1fr) 1.6fr;gap:32px;padding-top:34px;padding-bottom:34px;align-items:center}
+.nums b{display:block;font-size:40px;font-weight:400;color:var(--slate);line-height:1;letter-spacing:-.02em}
+.nums span{font-size:15px;color:var(--muted);display:block;margin-top:8px}
+.nums blockquote{margin:0;padding-left:28px;border-left:2px solid var(--mustard);font-size:19px;line-height:1.4;color:var(--ink)}
+.nums cite{display:block;font-style:normal;font-size:14px;color:var(--muted);margin-top:8px}
+
+/* spaces row */
+.spaces{background:var(--paper);border-bottom:1px solid var(--line)}
+.spaces .wrap{padding-top:30px;padding-bottom:30px}
+.spaces h2{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;font-weight:400}
+.spaces ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:0 28px}
+.spaces a{display:grid;grid-template-columns:64px 1fr;gap:4px 14px;align-items:center;text-decoration:none;padding:10px 0;min-height:64px;border-radius:10px}
+.spaces img{grid-row:1/3;width:64px;height:48px;object-fit:cover;border-radius:8px}
+.spaces b{font-weight:400;font-size:19px;color:var(--slate);align-self:end;line-height:1.15}
+.spaces span{font-size:15px;color:var(--muted);align-self:start;line-height:1.3}
+.spaces span em{font-style:normal;color:var(--ink)}
+.spaces a:hover b{text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--mustard)}
+
+/* sections */
+section{scroll-margin-top:84px}
+.sec{padding:110px 0}
+.sec-head{max-width:720px;margin-bottom:56px}
+.sec-head h2{font-size:clamp(36px,4.4vw,56px);color:var(--slate)}
+.sec-head p{font-size:19px;color:var(--muted);margin-top:16px}
+
+/* ladder */
+.dark{background:var(--slate);color:#f4f1ea}
+.dark .sec-head h2{color:#fff}
+.dark .sec-head p,.dark .eyebrow{color:#cfcbd9}
+.ladder{display:grid;grid-template-columns:repeat(4,1fr);align-items:end;gap:0;margin-top:8px}
+.step{border-top:2px solid var(--mustard);padding:22px 24px 0 0;position:relative}
+.step:nth-child(1){margin-top:108px}.step:nth-child(2){margin-top:72px}.step:nth-child(3){margin-top:36px}
+.step .n{font-size:14px;letter-spacing:.14em;color:var(--mustard)}
+.step h3{font-size:28px;color:#fff;margin:10px 0 8px}
+.step p{color:#d9d5e2;font-size:16px;max-width:15em}
+.step:after{content:"";position:absolute;right:0;top:-2px;width:2px;height:60px;background:var(--mustard);opacity:.6}
+.step:last-child:after{display:none}
+.ladder-foot{margin-top:56px;display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between;border-top:1px solid rgba(255,255,255,.14);padding-top:28px}
+.ladder-foot p{font-size:20px;color:#fff;max-width:34em}
+
+/* standard */
+.std .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:center}
+.std figure{margin:0;border-radius:20px;overflow:hidden;aspect-ratio:4/5;max-width:540px;position:relative}
+.std figure img{width:100%;height:100%;object-fit:cover;object-position:45% 50%}
+.std figcaption{position:absolute;left:16px;bottom:16px;right:16px;background:rgba(250,248,243,.95);color:var(--slate);font-size:15px;padding:10px 14px;border-radius:10px}
+.points{list-style:none;padding:0;margin:0;counter-reset:p}
+.points li{display:grid;grid-template-columns:52px 1fr;gap:4px 12px;padding:24px 0;border-top:1px solid var(--line)}
+.points li:last-child{border-bottom:1px solid var(--line)}
+.points li:before{counter-increment:p;content:"0" counter(p);font-size:15px;letter-spacing:.1em;color:#8a6a10;padding-top:6px}
+.points h3{font-size:24px;color:var(--slate)}
+.points p{grid-column:2;color:var(--muted);font-size:17px;margin-top:4px}
+
+/* kit band */
+.kit{background:var(--stone);padding:44px 0}
+.kit .wrap{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:baseline}
+.kit .lab{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-right:8px}
+.kit span.m{font-size:22px;color:var(--slate);white-space:nowrap}
+.kit span.m:not(:last-child):after{content:"·";color:#b8a87a;margin-left:26px}
+
+/* buildings */
+.sites{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.site{background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.site figure{margin:0;aspect-ratio:4/3;overflow:hidden;background:var(--stone)}
+.site figure img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.site:hover figure img{transform:scale(1.03)}
+.site .b{padding:24px 26px 26px;display:flex;flex-direction:column;flex:1}
+.site .area{font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:#8a6a10}
+.site h3{font-size:28px;color:var(--slate);margin:8px 0 10px}
+.site p{color:var(--muted);font-size:16px}
+.site .from{margin-top:auto;padding-top:18px;display:flex;flex-direction:column;align-items:flex-start;gap:2px;border-top:1px solid var(--line)}
+.site .b > p{margin-bottom:22px}
+.site .from b{font-size:24px;font-weight:400;color:var(--slate)}
+.site .from a{font-size:15px;text-underline-offset:4px;min-height:44px;display:inline-flex;align-items:center}
+.status{display:inline-block;font-size:13px;letter-spacing:.04em;background:var(--mustard-soft);color:var(--ink);padding:4px 10px;border-radius:999px;margin-left:8px;vertical-align:middle}
+
+/* founder */
+.founder .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:72px}
+.founder blockquote{margin:0;font-size:clamp(30px,3.4vw,44px);line-height:1.15;color:var(--slate);letter-spacing:-.015em}
+.founder .by{margin-top:22px;font-size:16px;color:var(--muted)}
+.founder .story p{color:var(--ink);font-size:18px}
+.founder .story p+p{margin-top:16px}
+.values{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.values span{font-size:15px;border:1px solid var(--line);background:var(--paper);padding:8px 14px;border-radius:999px}
+.team{margin-top:72px;border-top:1px solid var(--line);padding-top:36px}
+.team h3{font-size:24px;color:var(--slate)}
+.team > p{color:var(--muted);margin-top:6px}
+.roster{list-style:none;margin:26px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:0 28px}
+.roster li{padding:16px 0;border-bottom:1px solid var(--line)}
+.roster b{display:block;font-weight:700;font-size:17px;color:var(--slate)}
+.roster span{font-size:15px;color:var(--muted)}
+
+/* reviews */
+.feature{display:grid;grid-template-columns:1.15fr .85fr;background:var(--slate);border-radius:22px;overflow:hidden;box-shadow:0 30px 60px -40px rgba(46,44,58,.55)}
+.feat-q{margin:0;padding:64px 64px 56px;display:flex;flex-direction:column;justify-content:space-between;gap:40px}
+.feat-q blockquote{margin:0}
+.feat-q p{font-size:clamp(30px,3.3vw,44px);line-height:1.16;letter-spacing:-.015em;color:#fff}
+.feat-q p:before{content:"“";display:block;font-size:84px;line-height:.55;color:var(--mustard);margin-bottom:18px}
+.feat-q figcaption{font-size:16px;color:#d9d5e2;border-top:1px solid rgba(255,255,255,.16);padding-top:18px}
+.feat-img{margin:0;position:relative;min-height:420px}
+.feat-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:30% 50%}
+.more-q{display:grid;grid-template-columns:1fr 1fr;gap:28px 56px;margin-top:44px}
+.more-q figure{margin:0;padding-left:24px;border-left:2px solid var(--mustard)}
+.more-q blockquote{margin:0}
+.more-q p{font-size:21px;line-height:1.4;color:var(--slate)}
+.more-q figcaption{margin-top:10px;font-size:15px;color:var(--muted)}
+
+/* faq */
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px}
+.faq .sec-head{margin:0}
+details{border-top:1px solid var(--line)}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:20px 0;font-size:21px;color:var(--slate);min-height:44px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"";flex:none;width:12px;height:12px;border-right:2px solid var(--slate);border-bottom:2px solid var(--slate);transform:rotate(45deg) translateY(-3px);transition:transform .25s}
+details[open] summary:after{transform:rotate(-135deg) translateY(-3px)}
+details .a{padding:0 40px 22px 0;color:var(--muted);font-size:17px}
+
+/* tour */
+.tour{background:var(--slate)}
+.tour .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.tour dl{margin:28px 0 0;display:grid;grid-template-columns:110px 1fr;gap:0}
+.tour dt,.tour dd{padding:14px 0;border-top:1px solid rgba(255,255,255,.14);margin:0;font-size:17px}
+.tour dt{color:var(--mustard);font-size:14px;letter-spacing:.12em;text-transform:uppercase;padding-top:17px}
+.tour dd{color:#f4f1ea}
+.tour dd a{color:#fff;text-underline-offset:4px}
+.book{background:var(--paper);color:var(--ink);border-radius:20px;padding:32px;box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
+.book h3{font-size:30px;color:var(--slate)}
+.book .sub{color:var(--muted);font-size:16px;margin-top:4px}
+.slots{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:22px 0 24px;padding:0;border:0}
+.slots legend{font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;padding:0}
+.slot{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:12px 14px;border:1.5px solid #d5cfc2;border-radius:12px;background:var(--cream);cursor:pointer;font:400 15px/1.25 var(--sans);color:var(--ink);text-align:left;min-height:44px;transition:border-color .2s,background .2s}
+.slot b{font-size:20px;font-weight:400;color:var(--slate)}
+.slot:hover{border-color:var(--slate)}
+.slot[aria-pressed="true"]{background:var(--slate);border-color:var(--slate);color:#fff}
+.slot[aria-pressed="true"] b{color:#fff}
+.field{display:block;margin-bottom:14px}
+.field span{display:block;font-size:15px;color:var(--muted);margin-bottom:6px}
+.field input{width:100%;min-height:50px;border:1.5px solid #d5cfc2;border-radius:12px;padding:0 14px;font:400 17px var(--sans);color:var(--ink);background:#fff}
+.field input:focus{outline:3px solid var(--mustard);outline-offset:1px;border-color:var(--slate)}
+.interest{font-size:15px;color:var(--ink);background:var(--stone);border-radius:10px;padding:10px 14px;margin-bottom:18px}
+.interest b{font-weight:700}
+.book .btn{width:100%}
+.book .alt{margin-top:14px;font-size:15px;color:var(--muted);text-align:center}
+.book .alt a{color:var(--slate);text-underline-offset:3px}
+.thanks{display:none;margin-top:16px;padding:14px 16px;border-radius:12px;background:var(--mustard-soft);color:var(--ink);font-size:16px}
+.thanks.show{display:block}
+
+/* footer */
+.foot{background:var(--slate-deep);color:#d9d5e2;padding:56px 0 110px;font-size:15px}
+.foot .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+.foot .logo{color:#fff}
+.foot p{margin-top:14px;max-width:26em}
+.foot h2{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--mustard);margin-bottom:12px}
+.foot ul{list-style:none;padding:0;margin:0}
+.foot li a{display:inline-flex;min-height:36px;align-items:center;color:#f4f1ea;text-underline-offset:3px}
+.foot .made{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding-top:22px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;color:#bdb8c9}
+.foot .made a{color:#fff}
+
+/* phone bar */
+.bar{display:none}
+
+/* rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:980px){
+  .nav{display:none}
+  .hero .wrap,.std .wrap,.founder .wrap,.faq .wrap,.tour .wrap{grid-template-columns:1fr;gap:44px}
+  .nums .wrap{grid-template-columns:repeat(3,1fr)}
+  .nums blockquote{grid-column:1/-1}
+  .spaces ul{grid-template-columns:1fr 1fr;gap:4px 28px}
+  .sites{grid-template-columns:1fr 1fr}
+  .roster{grid-template-columns:repeat(2,1fr)}
+  .std figure{max-width:none;aspect-ratio:4/3}
+  .feature{grid-template-columns:1fr}
+  .feat-img{order:-1;aspect-ratio:5/4;min-height:0}
+}
+@media (max-width:640px){
+  body{font-size:17px}
+  .wrap{padding:0 20px}
+  .mock{font-size:13px;padding:7px 12px}
+  .top .wrap{height:62px}
+  .logo span{font-size:22px}
+  .logo svg{width:82px}
+  .top .btn{min-height:44px;padding:0 18px;font-size:15px}
+  .hero{padding:36px 0 48px}
+  .hero h1{font-size:46px}
+  .lede{font-size:18px;margin-top:16px}
+  .finder{margin-top:26px;padding-top:22px}
+  .chips .chip{font-size:16px;padding:0 12px}
+  .chips{margin-bottom:18px}
+  .hero-cta{display:none}
+  .result .body{padding:22px 20px 24px}
+  .result h2{font-size:26px}
+  .price b{font-size:38px}
+  .nums .wrap{grid-template-columns:1fr 1fr 1fr;gap:18px;padding-top:28px;padding-bottom:28px}
+  .nums b{font-size:28px}
+  .nums span{font-size:13px}
+  .nums blockquote{padding-left:18px;font-size:18px}
+  .sec{padding:76px 0}
+  .sec-head{margin-bottom:36px}
+  .sec-head h2{font-size:36px}
+  .sec-head p{font-size:17px}
+  .ladder{grid-template-columns:1fr;gap:0}
+  .step,.step:nth-child(n){margin-top:0;border-top:0;border-left:2px solid var(--mustard);padding:0 0 26px 22px}
+  .step:nth-child(2){margin-left:22px}.step:nth-child(3){margin-left:44px}.step:nth-child(4){margin-left:66px;padding-bottom:0}
+  .step:after{display:none}
+  .step h3{font-size:24px;margin:4px 0 4px}
+  .ladder-foot p{font-size:18px}
+  .points li{grid-template-columns:40px 1fr}
+  .points h3{font-size:21px}
+  .kit span.m{font-size:18px}
+  .kit span.m:not(:last-child):after{margin-left:14px}
+  .kit .wrap{gap:10px 14px}
+  .sites{grid-template-columns:1fr}
+  .roster{grid-template-columns:1fr 1fr;gap:0 18px}
+  .feat-q{padding:32px 24px 28px;gap:28px}
+  .feat-q p{font-size:26px}
+  .feat-q p:before{font-size:64px;margin-bottom:12px}
+  .more-q{grid-template-columns:1fr;margin-top:32px}
+  .more-q p{font-size:19px}
+  summary{font-size:19px}
+  details .a{padding-right:0}
+  .tour dl{grid-template-columns:104px 1fr}
+  .spaces ul{grid-template-columns:1fr;gap:0}
+  .spaces li+li{border-top:1px solid var(--line)}
+  .price.two b{font-size:34px}
+  .book{padding:24px 20px}
+  .slots{grid-template-columns:1fr 1fr}
+  .foot .wrap{grid-template-columns:1fr 1fr}
+  .foot .wrap > div:first-child{grid-column:1/-1}
+  .bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:25;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:var(--slate-deep);color:#f4f1ea;font-size:15px;box-shadow:0 -8px 24px -12px rgba(0,0,0,.4)}
+  .bar .btn{min-height:44px;padding:0 20px;font-size:15px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*:before,*:after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Free mockup for <b>Hone</b></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#main" aria-label="Hone, back to top">
+      <span>HONE</span>
+      <svg viewBox="0 0 96 6" aria-hidden="true"><path d="M0 1.2 L96 4.2 L96 5.2 L0 2.4 Z" fill="currentColor"/></svg>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#find">Spaces</a>
+      <a href="#buildings">Locations</a>
+      <a href="#about">About</a>
+      <a href="#questions">Questions</a>
+    </nav>
+    <a class="btn btn-gold" href="#tour">Book a tour</a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="find" aria-labelledby="hero-h">
+  <div class="wrap">
+    <div>
+      <h1 id="hero-h">A place to do your best work.</h1>
+      <p class="lede">Craft workshops, a makerspace and studios in London and Bristol, set up the way a working maker would set them up. From £125 a month.</p>
+
+      <div class="finder" role="group" aria-label="Find your space">
+        <fieldset class="chips" id="pick-space">
+          <legend>I’m looking for a</legend>
+          <button type="button" class="chip" data-space="makerspace" aria-pressed="false">Makerspace bench</button>
+          <button type="button" class="chip" data-space="jewellery" aria-pressed="false">Jewellery bench</button>
+          <button type="button" class="chip" data-space="woodwork" aria-pressed="true">Woodwork bench</button>
+          <button type="button" class="chip" data-space="studio" aria-pressed="false">Studio</button>
+        </fieldset>
+        <fieldset class="chips" id="pick-place">
+          <legend>In</legend>
+          <button type="button" class="chip" data-place="limehouse" aria-pressed="true">Limehouse <small>E14</small></button>
+          <button type="button" class="chip" data-place="tottenham" aria-pressed="false">Tottenham <small>N15</small></button>
+          <button type="button" class="chip" data-place="bristol" aria-pressed="false">Bristol <small>Fishponds</small></button>
+        </fieldset>
+        <div class="hero-cta">
+          <a class="btn btn-gold" href="#tour">Book a tour</a>
+          <span class="note">Tuesdays 3.30pm and Thursdays 11.30am. No pitch at the end.</span>
+        </div>
+      </div>
+    </div>
+
+    <article class="result" aria-live="polite" id="result">
+      <figure>
+        <img id="r-img" src="https://honeworkspace.com/_astro/ww-two-makers.CMuIBX9O_Z1b4rol.webp" alt="The woodwork shop at Hone Limehouse" width="2000" height="1329">
+        <span class="tag" id="r-tag">Hone Limehouse</span>
+      </figure>
+      <div class="body">
+        <h2 id="r-title">Woodwork</h2>
+        <p class="line" id="r-line">A fully kitted cabinet shop, without the lease, the machine finance or the maintenance.</p>
+        <div class="price two" id="r-price"><div><b>£220</b><span>a month, from, in Bristol</span></div><div><b>£877</b><span>from, in Limehouse, plus waste and sundries</span></div></div>
+        <span class="avail" id="r-avail">Limehouse: one bench free</span>
+        <ul class="facts" id="r-facts">
+          <li>Every bench private and full time</li>
+          <li>In the woodwork shops: Martin panel saws, Holz-Her edgebander, spray room</li>
+          <li>Bristol: a working cabinet shop in Fishponds</li>
+        </ul>
+        <div class="go">
+          <a class="btn btn-slate" href="#tour" id="r-cta">See it on a tour</a>
+          <a class="alt" href="#find" id="r-alt" data-jump="woodwork,bristol">See Bristol woodwork</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<div class="nums">
+  <div class="wrap">
+    <div><b>150+</b><span>makers, designers and founders</span></div>
+    <div><b>2018</b><span>open since, and most members stay for years</span></div>
+    <div><b>3</b><span>buildings in two cities</span></div>
+    <blockquote>A rare one in London with great community and natural lighting.<cite>Dhruv Kumar, LiveGrid · Google review</cite></blockquote>
+  </div>
+</div>
+
+<section class="spaces" aria-labelledby="spaces-h">
+  <div class="wrap">
+    <h2 id="spaces-h">The workshops your craft deserves</h2>
+    <ul>
+      <li><a href="#find" data-jump="makerspace,limehouse"><img src="https://honeworkspace.com/_astro/ms-main-bench-area.D4Out749_Z1UFj5E.webp" alt="" width="2048" height="1536" loading="lazy"><b>Makerspace</b><span>From <em>£125</em> · available now</span></a></li>
+      <li><a href="#find" data-jump="jewellery,limehouse"><img src="https://honeworkspace.com/_astro/jw-workshop-benches-window.CcGNuvFj_JeVTH.webp" alt="" width="2000" height="1500" loading="lazy"><b>Jewellery</b><span>From <em>£190</em> · eight benches available</span></a></li>
+      <li><a href="#find" data-jump="woodwork,bristol"><img src="https://honeworkspace.com/_astro/ww-two-makers.CMuIBX9O_Z1b4rol.webp" alt="" width="2000" height="1329" loading="lazy"><b>Woodwork</b><span>From <em>£220</em> in Bristol · one free in Limehouse</span></a></li>
+      <li><a href="#find" data-jump="studio,limehouse"><img src="https://honeworkspace.com/_astro/st-architects-office-in-use.BwLaBMdS_GLRj1.webp" alt="" width="2000" height="1600" loading="lazy"><b>Studios</b><span><em>£645</em> all in · three free now</span></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec dark" aria-labelledby="grow-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Room to grow</p>
+      <h2 id="grow-h">Start with a bench. Move down the corridor, not across town.</h2>
+      <p>Members don’t just rent a bench in one workshop: they get into the others too, and more opens up as they move up.</p>
+    </div>
+    <ol class="ladder" style="list-style:none;padding:0;margin:0">
+      <li class="step"><span class="n">01</span><h3>Hot Maker</h3><p>Into the makerspace, with the general induction included.</p></li>
+      <li class="step"><span class="n">02</span><h3>Shared bench</h3><p>In the makerspace or the jewellery workshop.</p></li>
+      <li class="step"><span class="n">03</span><h3>Private bench</h3><p>Makerspace, jewellery, or a private, full-time woodwork bench.</p></li>
+      <li class="step"><span class="n">04</span><h3>Studio</h3><p>Your own room, for two people to twenty. Paint the walls, bring your machines.</p></li>
+    </ol>
+    <div class="ladder-foot">
+      <p>Across three buildings, without leaving Hone.</p>
+      <a class="btn btn-gold" href="#find">Find your step</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec std" id="about" aria-labelledby="std-h">
+  <div class="wrap">
+    <figure>
+      <img src="https://honeworkspace.com/_astro/jw-workshop-benches-window.CcGNuvFj_JeVTH.webp" alt="The jewellery workshop at Hone Limehouse: benches and tools by a big window" width="2000" height="1500" loading="lazy">
+      <figcaption>The jewellery workshop at Hone Limehouse, with 24-hour access.</figcaption>
+    </figure>
+    <div>
+      <div class="sec-head" style="margin-bottom:36px">
+        <p class="eyebrow">What makes it Hone</p>
+        <h2 id="std-h">Built to the standard you’d set yourself.</h2>
+      </div>
+      <ol class="points">
+        <li><h3>The standard</h3><p>Kit, rooms and layouts set up the way working makers would set them up, because a working maker set them up. Named machines, not a list of perks.</p></li>
+        <li><h3>The company you keep</h3><p>More than 150 makers, designers and founders who share work, borrow skills and bring each other in on jobs.</p></li>
+        <li><h3>Room to grow</h3><p>Hot Maker to a studio, across three buildings, without leaving Hone.</p></li>
+        <li><h3>Trades under one roof</h3><p>A furniture maker, a jeweller, an architect and a product engineer in the same building, and work passing between them.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<div class="kit" aria-label="Some of the kit">
+  <div class="wrap">
+    <span class="lab">Named machines</span>
+    <span class="m">Laser cutters</span><span class="m">3D printers</span><span class="m">CNC</span><span class="m">Rolling mill</span><span class="m">Furnace</span><span class="m">Forge</span><span class="m">Martin panel saws</span><span class="m">Holz-Her edgebander</span><span class="m">Spray room</span>
+  </div>
+</div>
+
+<section class="sec" id="buildings" aria-labelledby="sites-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Locations</p>
+      <h2 id="sites-h">Three buildings, two cities.</h2>
+      <p>The same standard at every site. What changes is the place, and the price.</p>
+    </div>
+    <div class="sites">
+      <article class="site">
+        <figure><img src="https://honeworkspace.com/_astro/bl-pixley-street.B3JFNN-L_Z1gP1qH.jpg" alt="Hone Limehouse, the brick factory building on Pixley Street" width="1200" height="630"></figure>
+        <div class="b">
+          <span class="area">East London · E14</span>
+          <h3>Hone Limehouse</h3>
+          <p>Two 1911 factory buildings on the Limehouse Cut. Woodwork, jewellery, the makerspace and the studios, seven minutes from Westferry DLR.</p>
+          <div class="from"><b>From £125</b><a href="https://www.google.com/maps/search/?api=1&amp;query=16%20Pixley%20Street%2C%20London%20E14%207DF">16 Pixley Street, map</a></div>
+        </div>
+      </article>
+      <article class="site">
+        <figure><img src="https://honeworkspace.com/_astro/tt-bellini-1.CaiSy-uC_1q7yt8.webp" alt="Bellini, a studio workshop at Hone Tottenham, with a ladder up the wall" width="768" height="1024"></figure>
+        <div class="b">
+          <span class="area">North London · N15</span>
+          <h3>Hone Tottenham <span class="status">New</span></h3>
+          <p>Large studio workshops, open from 15 October 2026.</p>
+          <div class="from"><b>From £210 all in</b><a href="#find" data-jump="studio,tottenham">See the studios</a></div>
+        </div>
+      </article>
+      <article class="site">
+        <figure><img src="https://honeworkspace.com/_astro/br-hone-sign.C-Mm4XvE_2lNu3a.webp" alt="The Hone sign on the Hone Bristol building in Fishponds" width="1536" height="2048"></figure>
+        <div class="b">
+          <span class="area">Bristol · Fishponds</span>
+          <h3>Hone Bristol</h3>
+          <p>A working cabinet shop, open since 2023, co-founded with Austin. Jewellery opening early 2027.</p>
+          <div class="from"><b>Benches from £220</b><a href="#find" data-jump="woodwork,bristol">See the cabinet shop</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec founder" style="background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)" aria-labelledby="founder-h">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">The founder</p>
+      <h2 id="founder-h" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Built by someone who needed it</h2>
+      <blockquote>A place to do your best work, built by someone who needed it.</blockquote>
+      <p class="by">Vincent Cullane, cabinet maker and entrepreneur</p>
+    </div>
+    <div class="story">
+      <p>Vincent ran his own design and bespoke furniture companies for eighteen years. He knew exactly what a proper workshop needed, and he couldn’t rent one anywhere.</p>
+      <p>So he built one: two 1911 factory buildings on the Limehouse Cut, converted himself, with the brick, the timber floors and the light kept. Hone opened there in 2018, Bristol followed in 2023 and Tottenham in 2026: 30,000 square feet across two cities.</p>
+      <div class="values"><span>Everyone paid a Living Wage</span><span>Renewable electricity</span></div>
+    </div>
+    <div class="team" style="grid-column:1/-1">
+      <h3>The people who run the buildings</h3>
+      <p>The people who show you round are the people who run the place.</p>
+      <ul class="roster">
+        <li><b>Vincent Cullane</b><span>Founder · Limehouse</span></li>
+        <li><b>Austin</b><span>Co-founder of Hone Bristol, operations and community</span></li>
+        <li><b>Jai</b><span>Operations and community · Limehouse</span></li>
+        <li><b>Kim</b><span>Workshop manager · Limehouse</span></li>
+        <li><b>Lizzie</b><span>Studio manager · Limehouse</span></li>
+        <li><b>Erin</b><span>Jewellery lead · Limehouse</span></li>
+        <li><b>James</b><span>Workshop manager · Bristol</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="who-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Who’s here</p>
+      <h2 id="who-h">The company you keep.</h2>
+      <p>A furniture maker next to an architect next to a jeweller.</p>
+    </div>
+    <div class="feature">
+      <figure class="feat-q">
+        <blockquote><p>The community of artisans and craftspeople is an amazing source of inspiration and collaboration.</p></blockquote>
+        <figcaption>Jon Farmer · Google review</figcaption>
+      </figure>
+      <figure class="feat-img">
+        <img src="https://honeworkspace.com/_astro/st-architects-office-in-use.BwLaBMdS_GLRj1.webp" alt="A studio at Hone Limehouse in use: someone at work at a long desk in front of floor-to-ceiling bookshelves" width="2000" height="1600" loading="lazy">
+      </figure>
+    </div>
+    <div class="more-q">
+      <figure><blockquote><p>Lovely community of talented makers and creative people carving out their businesses in London.</p></blockquote><figcaption>Gustave Andre · Google review</figcaption></figure>
+      <figure><blockquote><p>I can’t imagine the day I would be wanting to leave this place.</p></blockquote><figcaption>Giulia Sanna · Jewellery workshop, member since 2022</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec faq" id="questions" style="padding-top:0" aria-labelledby="faq-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Your questions answered</p>
+      <h2 id="faq-h">Plain answers.</h2>
+      <p>If yours isn’t here, ask on the tour.</p>
+    </div>
+    <div>
+      <details open><summary>What does it cost?</summary><div class="a">Makerspace from £125 a month. Jewellery from £190. Woodwork from £220 in Bristol, and from £877 in Limehouse plus waste and sundries. Studios in Limehouse £645 a month, all in. Tottenham studio workshops from £210, all in.</div></details>
+      <details><summary>Which space is right for me?</summary><div class="a">Pick what you make and where at the <a href="#find">top of the page</a> and you’ll see the space, the price and what’s free now. Or come on a tour and see them all.</div></details>
+      <details><summary>Do I need to be a professional?</summary><div class="a">No. Hone is for people who make things, design things and build companies, and people on their way there.</div></details>
+      <details><summary>How do I see it?</summary><div class="a">The weekly tour in Limehouse, Tuesdays 3.30pm and Thursdays 11.30am, with Jai. About twenty minutes, longer if you get talking. <a href="#tour">Book it below.</a></div></details>
+      <details><summary>Can I use more than one workshop?</summary><div class="a">Yes. Members don’t just rent a bench in one: they get into the others too, and more opens up as they move up.</div></details>
+      <details><summary>Do people stay long?</summary><div class="a">Most stay for years, and some have been here more than five.</div></details>
+      <details><summary>What are the hours?</summary><div class="a">The jewellery workshop has 24-hour access. For the other spaces, ask on the tour.</div></details>
+      <details><summary>How do the contracts work?</summary><div class="a">The makerspace is rolling monthly to start. Woodwork benches are private and full time.</div></details>
+      <details><summary>Is the induction included?</summary><div class="a">Yes, the general induction is included with the makerspace.</div></details>
+      <details><summary>Where are you?</summary><div class="a">16 Pixley Street, Limehouse, London E14 7DF, seven minutes from Westferry DLR. Studio workshops in Tottenham, N15, and a cabinet shop in Fishponds, Bristol.</div></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec tour dark" id="tour" aria-labelledby="tour-h">
+  <div class="wrap">
+    <div>
+      <div class="sec-head" style="margin-bottom:0">
+        <p class="eyebrow">Book a tour</p>
+        <h2 id="tour-h">Come and see it for yourself.</h2>
+        <p>Round the makerspace, the workshops and the building, with whoever is making things that day.</p>
+      </div>
+      <dl>
+        <dt>When</dt><dd>Tuesdays 3.30pm and Thursdays 11.30am</dd>
+        <dt>Where</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=16%20Pixley%20Street%2C%20London%20E14%207DF">16 Pixley Street, Limehouse, London E14 7DF</a></dd>
+        <dt>Host</dt><dd>Jai</dd>
+        <dt>Takes</dt><dd>About twenty minutes, longer if you get talking</dd>
+        <dt>You’ll see</dt><dd>The makerspace and its machines, the woodwork and jewellery workshops, a free studio or two, the courtyard and the canal</dd>
+        <dt>Then</dt><dd>Choose a bench, or don’t. There’s no pitch at the end.</dd>
+      </dl>
+    </div>
+
+    <form class="book" id="book" novalidate>
+      <h3>Pick a time</h3>
+      <p class="sub">Hone Limehouse, with Jai.</p>
+      <fieldset class="slots" id="slots">
+        <legend>Next tours</legend>
+        <button type="button" class="slot" aria-pressed="true" data-label="Thursday 22 October, 11.30am"><span>Thu</span><b>22 Oct</b><span>11.30am</span></button>
+        <button type="button" class="slot" aria-pressed="false" data-label="Tuesday 27 October, 3.30pm"><span>Tue</span><b>27 Oct</b><span>3.30pm</span></button>
+        <button type="button" class="slot" aria-pressed="false" data-label="Thursday 29 October, 11.30am"><span>Thu</span><b>29 Oct</b><span>11.30am</span></button>
+        <button type="button" class="slot" aria-pressed="false" data-label="Tuesday 3 November, 3.30pm"><span>Tue</span><b>3 Nov</b><span>3.30pm</span></button>
+        <button type="button" class="slot" aria-pressed="false" data-label="Thursday 5 November, 11.30am"><span>Thu</span><b>5 Nov</b><span>11.30am</span></button>
+        <button type="button" class="slot" aria-pressed="false" data-label="Tuesday 10 November, 3.30pm"><span>Tue</span><b>10 Nov</b><span>3.30pm</span></button>
+      </fieldset>
+      <p class="interest" id="interest">Looking at: <b>a woodwork bench in Limehouse</b></p>
+      <label class="field"><span>Your name</span><input name="name" autocomplete="name" required></label>
+      <label class="field"><span>Email</span><input name="email" type="email" autocomplete="email" required></label>
+      <button class="btn btn-gold" type="submit" id="book-btn">Book Thursday 22 October</button>
+      <p class="thanks" id="thanks" role="status">Thanks. This is a mockup, so nothing was sent.</p>
+      <p class="alt">None of these work? <a href="mailto:info@honeworkspace.com">info@honeworkspace.com</a></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <a class="logo" href="#main" aria-label="Hone, back to top"><span>HONE</span><svg viewBox="0 0 96 6" aria-hidden="true"><path d="M0 1.2 L96 4.2 L96 5.2 L0 2.4 Z" fill="currentColor"/></svg></a>
+      <p>Workshops, makerspace and studios for makers, creators and entrepreneurs.</p>
+    </div>
+    <div>
+      <h2>Talk to us</h2>
+      <ul>
+        <li><a href="mailto:info@honeworkspace.com">info@honeworkspace.com</a></li>
+        <li><a href="https://www.instagram.com/hone.london/">Instagram</a></li>
+        <li><a href="https://www.facebook.com/honeworkspace.london">Facebook</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Buildings</h2>
+      <ul>
+        <li><a href="#buildings">Hone Limehouse</a></li>
+        <li><a href="#buildings">Hone Tottenham</a></li>
+        <li><a href="#buildings">Hone Bristol</a></li>
+      </ul>
+    </div>
+    <div class="made">
+      <span>© 2026 Hone · a trading name of Studio Vincent Ltd · 16 Pixley Street, London E14 7DF</span>
+      <span>Mockup made for Hone by Sunny Gupta, <a href="https://lifebaselabs.com">lifebaselabs.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="bar" aria-label="Quick action">
+  <span>Tours Tue 3.30pm · Thu 11.30am</span>
+  <a class="btn btn-gold" href="#tour">Book a tour</a>
+</div>
+
+<script>
+(function(){
+  var P={
+    ms:{src:"https://honeworkspace.com/_astro/ms-main-bench-area.D4Out749_Z1UFj5E.webp",alt:"The main bench area in the makerspace at Hone Limehouse"},
+    jw:{src:"https://honeworkspace.com/_astro/jw-workshop-benches-window.CcGNuvFj_JeVTH.webp",alt:"The jewellery workshop at Hone Limehouse"},
+    ww:{src:"https://honeworkspace.com/_astro/ww-two-makers.CMuIBX9O_Z1b4rol.webp",alt:"The woodwork shop at Hone Limehouse"},
+    st:{src:"https://honeworkspace.com/_astro/st-architects-office-in-use.BwLaBMdS_GLRj1.webp",alt:"A studio at Hone Limehouse in use"},
+    tt:{src:"https://honeworkspace.com/_astro/tt-bellini-1.CaiSy-uC_1q7yt8.webp",alt:"Bellini, a studio workshop at Hone Tottenham, with a ladder up the wall"},
+    br:{src:"https://honeworkspace.com/_astro/br-hone-sign.C-Mm4XvE_2lNu3a.webp",alt:"The Hone sign on the Hone Bristol building in Fishponds"}
+  };
+  var NAME={limehouse:"Limehouse",tottenham:"Tottenham",bristol:"Bristol"};
+  var KIND={makerspace:"a makerspace bench",jewellery:"a jewellery bench",woodwork:"a woodwork bench",studio:"a studio"};
+  var D={
+    "makerspace|limehouse":{img:"ms",tag:"Hone Limehouse",title:"Makerspace",line:"Laser cutters, 3D printers, CNC and electronics, with metalwork and woodwork next door.",price:"£125",per:"a month, from",avail:"Available now",facts:["Hot Maker, Shared Bench or Private Bench","General induction included","Rolling monthly to start"]},
+    "jewellery|limehouse":{img:"jw",tag:"Hone Limehouse",title:"Jewellery",line:"The kit you can’t keep at home, and a bench you can use at midnight.",price:"£190",per:"a month, from",avail:"Eight benches available",facts:["Shared bench or private bench","Rolling mill, furnace, forge, polishing","24-hour access"]},
+    "jewellery|bristol":{img:"br",tag:"Hone Bristol",title:"Jewellery, opening early 2027",line:"Jewellery is coming to the Fishponds building. Until then, the Limehouse workshop is open.",price:"Early 2027",per:"",avail:"Limehouse: eight benches available now",facts:["Limehouse jewellery from £190 a month","Rolling mill, furnace, forge, polishing","24-hour access"],alt:["See Limehouse jewellery","jewellery","limehouse"]},
+    "woodwork|limehouse":{img:"ww",tag:"Hone Limehouse",title:"Woodwork",line:"A fully kitted cabinet shop, without the lease, the machine finance or the maintenance.",two:[["£220","a month, from, in Bristol"],["£877","from, in Limehouse, plus waste and sundries"]],avail:"Limehouse: one bench free",facts:["Every bench private and full time","In the woodwork shops: Martin panel saws, Holz-Her edgebander, spray room","Bristol: a working cabinet shop in Fishponds"],alt:["See Bristol woodwork","woodwork","bristol"]},
+    "woodwork|bristol":{img:"br",tag:"Hone Bristol · Fishponds",title:"Woodwork",line:"A working cabinet shop, without the lease, the machine finance or the maintenance. Open since 2023.",price:"£220",per:"a month, from",avail:"Every bench private and full time",facts:["In the woodwork shops: Martin panel saws, Holz-Her edgebander, spray room","Jewellery opening here early 2027","Workshop manager: James"]},
+    "studio|limehouse":{img:"st",tag:"Hone Limehouse",title:"Studios",line:"Work in it, not just from it. Private studios for businesses that make, design and build, from two people to twenty.",price:"£645",per:"a month, all in",avail:"Three free now",facts:["Utilities, broadband, service charge, waste and coffee in the price","Member rates on the machine shops, the dance studios and the photography studios","Paint the walls, put in a bench, bring your machines"]},
+    "studio|tottenham":{img:"tt",tag:"Hone Tottenham · N15",title:"Studio workshops",line:"Large studio workshops in north London. Fit it out the way you work.",price:"£210",per:"a month, from, all in",avail:"Open from 15 October 2026",facts:["Paint the walls, put in a bench, bring your machines","When you need more room, you move down the corridor","Limehouse studios from £645 a month, all in"]}
+  };
+  var HOME={makerspace:"limehouse",jewellery:"limehouse",woodwork:"limehouse",studio:"limehouse"};
+  var WHERE={makerspace:"Limehouse",jewellery:"Limehouse, with Bristol from early 2027",woodwork:"Limehouse and Bristol",studio:"Limehouse and Tottenham"};
+  var state={space:"woodwork",place:"limehouse"};
+  var $=function(id){return document.getElementById(id)};
+  var img=$("r-img");
+  Object.keys(P).forEach(function(k){var i=new Image();i.src=P[k].src});
+
+  function render(){
+    var key=state.space+"|"+state.place,d=D[key],alt=null;
+    if(!d){
+      var home=HOME[state.space],h=D[state.space+"|"+home];
+      d={img:h.img,tag:"Not in "+NAME[state.place],title:h.title+(state.space==="studio"?" are in ":" is in ")+WHERE[state.space],line:h.line,price:h.price,per:h.per+", in "+NAME[home],two:h.two,avail:h.avail,facts:h.facts};
+      alt=["See it in "+NAME[home],state.space,home];
+    } else if(d.alt){alt=d.alt}
+    var p=P[d.img];
+    if(img.getAttribute("src")!==p.src){
+      img.classList.add("fade");
+      setTimeout(function(){img.src=p.src;img.alt=p.alt;img.classList.remove("fade")},180);
+    }
+    $("r-tag").textContent=d.tag;
+    $("r-title").textContent=d.title;
+    $("r-line").textContent=d.line;
+    var pr=$("r-price");pr.innerHTML="";
+    pr.className=d.two?"price two":"price";
+    (d.two||[[d.price,d.per]]).forEach(function(x){
+      var box=d.two?document.createElement("div"):pr,b=document.createElement("b"),s=document.createElement("span");
+      b.textContent=x[0];s.textContent=x[1];box.appendChild(b);box.appendChild(s);if(d.two)pr.appendChild(box);
+    });
+    $("r-avail").textContent=d.avail;
+    var ul=$("r-facts");ul.innerHTML="";
+    d.facts.forEach(function(f){var li=document.createElement("li");li.textContent=f;ul.appendChild(li)});
+    var a=$("r-alt");
+    if(alt){a.textContent=alt[0];a.setAttribute("href","#find");a.dataset.jump=alt[1]+","+alt[2]}
+    else{a.textContent="All three buildings";a.setAttribute("href","#buildings");delete a.dataset.jump}
+    document.querySelectorAll("[data-space]").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.space===state.space)});
+    document.querySelectorAll("[data-place]").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.place===state.place)});
+    var shown=D[key]?NAME[state.place]:NAME[HOME[state.space]];
+    $("interest").innerHTML="Looking at: <b></b>";
+    $("interest").lastChild.textContent=KIND[state.space]+" in "+shown;
+  }
+  document.querySelectorAll("[data-space]").forEach(function(b){b.addEventListener("click",function(){state.space=b.dataset.space;render()})});
+  document.querySelectorAll("[data-place]").forEach(function(b){b.addEventListener("click",function(){state.place=b.dataset.place;render()})});
+  document.addEventListener("click",function(e){
+    var j=e.target.closest("[data-jump]");if(!j)return;
+    var v=j.dataset.jump.split(",");state.space=v[0];state.place=v[1];render();
+  });
+
+  /* tour slots: the next six Tuesdays 3.30pm and Thursdays 11.30am from today */
+  var M=["January","February","March","April","May","June","July","August","September","October","November","December"];
+  var slots=$("slots"),now=new Date(),day=new Date(now.getFullYear(),now.getMonth(),now.getDate()+1),list=[];
+  while(list.length<6){var w=day.getDay();if(w===2||w===4)list.push(new Date(day));day.setDate(day.getDate()+1)}
+  slots.querySelectorAll(".slot").forEach(function(b,i){
+    var d=list[i],tue=d.getDay()===2,t=tue?"3.30pm":"11.30am",dn=tue?"Tuesday":"Thursday";
+    b.innerHTML="<span>"+dn.slice(0,3)+"</span><b>"+d.getDate()+" "+M[d.getMonth()].slice(0,3)+"</b><span>"+t+"</span>";
+    b.dataset.label=dn+" "+d.getDate()+" "+M[d.getMonth()]+", "+t;
+    b.dataset.short=dn+" "+d.getDate()+" "+M[d.getMonth()];
+  });
+  function pick(b){
+    slots.querySelectorAll(".slot").forEach(function(x){x.setAttribute("aria-pressed",x===b)});
+    $("book-btn").textContent="Book "+(b.dataset.short||b.dataset.label);
+    $("thanks").classList.remove("show");
+  }
+  slots.querySelectorAll(".slot").forEach(function(b){b.addEventListener("click",function(){pick(b)})});
+  pick(slots.querySelector(".slot"));
+  $("book").addEventListener("submit",function(e){e.preventDefault();$("thanks").classList.add("show")});
+
+  /* gentle rise for things below the first screen */
+  var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(!reduce&&"IntersectionObserver" in window){
+    var els=document.querySelectorAll(".sec-head,.step,.points li,.site,.rev,.founder blockquote,.story,.roster,.book,.tour dl,.kit .wrap"),vh=window.innerHeight;
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove("will-rise");io.unobserve(en.target)}})},{rootMargin:"0px 0px -8% 0px"});
+    els.forEach(function(el){if(el.getBoundingClientRect().top>vh){el.classList.add("rise","will-rise");io.observe(el)}});
+  }
+})();
+</script>
+</body>
+</html>
