@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup resource-yourself-com-c4174e 1 c4cd22c2 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Katharina Seidler · Art and a book · ReSource Yourself</title>
+<meta name="description" content="Katharina Seidler is an artist, and is just finishing a book. Creating is healing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,300;1,6..72,400&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#fbf8f3; --paper2:#f3eee6; --ink:#1f2a33; --soft:#4f5b66;
+  --deep:#0e4a73; --navy:#0b2f4a; --link:#11669f; --sky:#2ea3f2; --sky2:#60c0f0;
+  --rose:#a8173a; --line:#e2dbd0;
+  --w:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:16.5px/1.7 "Open Sans",system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:var(--link)}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--sky);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:Montserrat,system-ui,sans-serif;font-weight:300;color:var(--navy);margin:0;letter-spacing:-.01em}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 28px}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:10px 14px;z-index:99}
+.skip:focus{left:12px;top:44px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* mockup banner */
+.mock{background:var(--navy);color:#f2f6fa;text-align:center;font:500 13px/1.3 Montserrat,sans-serif;letter-spacing:.06em;padding:9px 16px;position:relative;z-index:30}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(251,248,243,.94);backdrop-filter:saturate(1.2) blur(8px);-webkit-backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid transparent;transition:border-color .3s}
+.top.scrolled{border-bottom-color:var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy);min-height:44px}
+.brand img{width:62px;height:52px;object-fit:cover;object-position:52% 50%}
+.brand b{font:500 17px/1.1 Montserrat,sans-serif;letter-spacing:.01em}
+.brand small{display:block;font:400 12.5px/1.3 "Open Sans",sans-serif;color:var(--soft);margin-top:2px}
+.nav{display:flex;gap:4px;align-items:center}
+.nav a{font:500 13.5px/1 Montserrat,sans-serif;color:var(--ink);text-decoration:none;padding:15px 12px;border-radius:999px;transition:color .2s,background .2s}
+.nav a:hover{color:var(--deep);background:var(--paper2)}
+.nav a.on{color:var(--deep);background:#e9f3fa}
+.nav a.cta{background:var(--deep);color:#fff;padding:15px 20px;margin-left:8px}
+.nav a.cta:hover{background:var(--navy)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:500 15px/1 Montserrat,sans-serif;text-decoration:none;border:1.5px solid var(--deep);transition:transform .2s,background .2s,color .2s;cursor:pointer}
+.btn.main{background:var(--deep);color:#fff;box-shadow:0 8px 22px -12px rgba(14,74,115,.7)}
+.btn.main:hover{background:var(--navy);transform:translateY(-1px)}
+.btn.ghost{color:var(--deep);background:transparent}
+.btn.ghost:hover{background:#fff}
+
+/* hero */
+.hero{padding:64px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
+.kicker{font:500 12.5px/1.4 Montserrat,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--rose);margin:0 0 22px}
+.hero h1{font-size:clamp(48px,7vw,88px);line-height:.98;font-weight:300;letter-spacing:-.03em}
+.hero h1 em{font-family:Newsreader,Georgia,serif;font-style:italic;font-weight:300;color:var(--deep)}
+.lede{font-size:20px;line-height:1.55;max-width:24em;margin:28px 0 0}
+.acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.sunframe{margin:0;max-width:600px;justify-self:end;width:100%}
+.sunframe .ph{border-radius:300px 300px 22px 22px;overflow:hidden;aspect-ratio:4/4.3;box-shadow:0 30px 60px -34px rgba(11,47,74,.55);background:#2a2a30}
+.sunframe img{width:100%;height:100%;object-fit:cover;object-position:56% 50%;animation:breathe 14s ease-in-out infinite alternate}
+@keyframes breathe{from{transform:scale(1)}to{transform:scale(1.04)}}
+
+/* chapters */
+.ch{padding:110px 0}
+.ch + .ch{border-top:1px solid var(--line)}
+.chhead{display:grid;grid-template-columns:220px 1fr;gap:40px;margin-bottom:46px}
+.chno{font:500 12.5px/1.4 Montserrat,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--rose);padding-top:16px;margin:0}
+.ch h2{font-size:clamp(34px,4.4vw,54px);line-height:1.08;letter-spacing:-.02em;max-width:15em}
+.ch .intro{font-size:18.5px;max-width:36em;margin:20px 0 0}
+.body{display:grid;grid-template-columns:220px 1fr;gap:40px}
+.body > .col{min-width:0}
+
+/* the spread: art and book, two facing pages */
+.spread{padding:0 0 20px}
+.pages{display:grid;grid-template-columns:1fr 1fr;background:#fff;border-radius:10px;position:relative;box-shadow:0 1px 0 var(--line),0 40px 70px -48px rgba(11,47,74,.55)}
+.pages::before{content:"";position:absolute;top:0;bottom:0;left:50%;width:56px;transform:translateX(-50%);background:linear-gradient(90deg,rgba(11,47,74,0),rgba(11,47,74,.05) 46%,rgba(11,47,74,.12) 50%,rgba(11,47,74,.05) 54%,rgba(11,47,74,0));pointer-events:none}
+.pg{padding:58px 60px 28px;display:flex;flex-direction:column;min-width:0}
+.pg .k{font:500 12.5px/1.4 Montserrat,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--rose);margin:0 0 14px}
+.pg h2{font-size:clamp(32px,3.4vw,44px);line-height:1.1;letter-spacing:-.02em}
+.pg .say{font-family:Newsreader,Georgia,serif;font-style:italic;font-weight:300;font-size:clamp(21px,2vw,25px);line-height:1.45;color:var(--navy);margin:22px 0 0;max-width:21em}
+.pg .acts{margin-top:30px}
+.pg .folio{margin:auto 0 0;padding-top:48px;text-align:center;font-family:Newsreader,Georgia,serif;font-style:italic;font-size:15px;color:var(--soft)}
+.notify{display:flex;gap:10px;margin-top:30px;flex-wrap:wrap}
+.notify input{flex:1 1 220px;width:auto}
+.notify .btn{flex:none}
+
+/* about */
+.about .grid{display:grid;grid-template-columns:380px 1fr;gap:70px;align-items:start}
+.portrait{border-radius:22px;overflow:hidden;box-shadow:0 30px 60px -36px rgba(11,47,74,.55)}
+.portrait img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover}
+.sig{font-family:Newsreader,Georgia,serif;font-style:italic;font-size:30px;color:var(--deep);margin:16px 0 0 4px}
+.about .pull{font-family:Newsreader,Georgia,serif;font-size:clamp(24px,2.6vw,32px);line-height:1.35;color:var(--navy);margin:0 0 26px}
+.about p{font-size:17px;max-width:36em}
+.facts{list-style:none;margin:34px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+.facts li{padding:16px 0;border-top:1px solid var(--line);font-size:15.5px;color:var(--soft)}
+.facts b{display:block;font:500 16px/1.35 Montserrat,sans-serif;color:var(--navy);margin-bottom:2px}
+
+/* healing practice, short */
+.practice{padding:0 0 30px}
+.practice .card{display:grid;grid-template-columns:auto 1fr auto;gap:30px;align-items:center;background:#fff;border-radius:22px;padding:30px 36px;box-shadow:0 1px 0 var(--line),0 24px 50px -40px rgba(11,47,74,.5)}
+.practice img{width:96px;height:80px;object-fit:cover;object-position:52% 50%}
+.practice .k{font:600 12px/1.4 Montserrat,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--rose);margin:0 0 4px}
+.practice h2{font-size:26px;font-weight:400}
+.practice p.s{margin:6px 0 0;color:var(--soft);font-size:16px;max-width:38em}
+.practice .acts{margin:0;flex-wrap:nowrap}
+
+/* faq */
+.faq details{border-top:1px solid var(--line)}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;align-items:center;padding:22px 0;font:400 19px/1.35 Montserrat,sans-serif;color:var(--navy);min-height:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";flex:none;width:14px;height:14px;border-right:1.5px solid var(--deep);border-bottom:1.5px solid var(--deep);transform:rotate(45deg) translate(-3px,-3px);transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(-135deg) translate(-3px,-3px)}
+.faq details p{margin:0 0 24px;max-width:40em;color:var(--soft);font-size:16.5px}
+
+/* write */
+.write{background:var(--paper2)}
+.letterwrap{display:grid;grid-template-columns:1fr 1.25fr;gap:56px;align-items:start}
+.pick{margin:0;padding:0;border:0;min-width:0}
+.pick legend{font:600 12.5px/1.4 Montserrat,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--deep);margin-bottom:14px;padding:0}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:8px;max-width:420px}
+.chip{appearance:none;border:1.5px solid #cfc6b8;background:#fff;color:var(--ink);font:500 14.5px/1.2 Montserrat,sans-serif;min-height:48px;padding:0 14px;border-radius:999px;cursor:pointer;transition:all .2s}
+.chip:hover{border-color:var(--deep)}
+.chip[aria-pressed="true"]{background:var(--deep);border-color:var(--deep);color:#fff}
+.next{margin:30px 0 0;padding:0;list-style:none;counter-reset:s}
+.next li{counter-increment:s;display:grid;grid-template-columns:34px 1fr;gap:10px;padding:12px 0;border-top:1px solid #ddd4c6;font-size:15.5px}
+.next li::before{content:counter(s);font:500 13px/30px Montserrat,sans-serif;width:30px;height:30px;border-radius:50%;background:#fff;color:var(--deep);text-align:center;border:1px solid #d9d0c2}
+.reach{margin:30px 0 0;padding:0;list-style:none}
+.reach a{display:flex;align-items:center;gap:12px;min-height:46px;color:var(--navy);text-decoration:none;font-size:15.5px;overflow-wrap:anywhere}
+.reach a:hover{color:var(--link)}
+.reach svg{width:18px;height:18px;flex:none;color:var(--deep)}
+.letter{background:#fff;border-radius:20px;padding:40px 42px 34px;box-shadow:0 1px 0 #e6dfd3,0 40px 70px -46px rgba(11,47,74,.55);position:relative;border-top:6px solid var(--deep)}
+.letter .to{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px;color:var(--soft);border-bottom:1px solid var(--line);padding-bottom:14px}
+.letter .re{font:400 22px/1.3 Montserrat,sans-serif;color:var(--navy);margin:18px 0 6px}
+.letter .re span{color:var(--rose)}
+label{display:block;font:500 13px/1.4 Montserrat,sans-serif;color:var(--soft);margin:18px 0 6px}
+input,textarea,select{width:100%;font:16px/1.5 "Open Sans",sans-serif;color:var(--ink);background:var(--paper);border:1.5px solid #d9d1c4;border-radius:12px;padding:12px 14px;min-height:48px;transition:border-color .2s,background .2s}
+input:focus,textarea:focus,select:focus{border-color:var(--deep);background:#fff;outline:none}
+textarea{min-height:150px;resize:vertical;font-family:Newsreader,Georgia,serif;font-size:18px;line-height:1.5}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.send{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:22px}
+.send small{color:var(--soft);font-size:13.5px}
+.thanks{display:none;margin:18px 0 0;padding:14px 16px;border-radius:12px;background:#eaf4fb;color:var(--navy);font-weight:600}
+.thanks.show{display:block}
+
+/* close */
+.close{padding:110px 0 120px;text-align:center}
+.close h2{font-size:clamp(40px,6vw,76px);font-weight:300;letter-spacing:-.03em}
+.close h2 em{font-family:Newsreader,Georgia,serif;font-weight:300;color:var(--deep)}
+.close p{font-size:18px;color:var(--soft);max-width:30em;margin:18px auto 0}
+.close .acts{justify-content:center}
+
+footer{background:var(--navy);color:#cfdbe5;padding:44px 0 40px;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px 30px;align-items:center}
+footer a{color:#fff;text-decoration-color:rgba(255,255,255,.4);text-underline-offset:3px;display:inline-flex;align-items:center;min-height:44px}
+footer .soc{display:flex;gap:18px;flex-wrap:wrap}
+footer .made{flex-basis:100%;border-top:1px solid rgba(255,255,255,.14);padding-top:18px;margin-top:4px;color:#b9c9d6}
+
+.callbar{display:none}
+
+/* gentle rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .8s ease,transform .8s ease}
+
+@media (max-width:980px){
+  .nav a:not(.cta){display:none}
+  .hero .wrap{grid-template-columns:1fr;gap:40px}
+  .sunframe{justify-self:start;max-width:560px}
+  .chhead,.body{grid-template-columns:1fr;gap:18px}
+  .pg{padding:48px 40px 26px}
+  .about .grid,.letterwrap{grid-template-columns:1fr;gap:44px}
+  .about .portrait{max-width:380px}
+  .practice .card{grid-template-columns:auto 1fr}
+  .practice .acts{grid-column:1/-1;flex-wrap:wrap}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:76px}
+  .wrap{padding:0 20px}
+  .mock{font-size:12px;padding:8px 12px}
+  .top .wrap{height:64px}
+  .brand img{width:52px;height:44px}
+  .brand b{font-size:15.5px}
+  .brand small{display:none}
+  .nav a.cta{padding:0 16px;min-height:44px;display:flex;align-items:center;font-size:13px;margin:0}
+  .hero{padding:34px 0 44px}
+  .hero h1{font-size:52px}
+  .lede{font-size:18px;margin-top:20px}
+  .acts{margin-top:26px}
+  .acts .btn{flex:1 1 100%}
+  .sunframe .ph{aspect-ratio:1/1;border-radius:200px 200px 18px 18px}
+  .spread{padding:0 0 8px}
+  .pages{grid-template-columns:1fr}
+  .pages::before{display:none}
+  .pg{padding:38px 24px 20px}
+  .pg + .pg{border-top:1px solid var(--line)}
+  .pg .folio{padding-top:30px}
+  .notify .btn{flex:1 1 100%}
+  .ch{padding:72px 0}
+  .chhead{margin-bottom:30px}
+  .ch .intro{font-size:17px}
+  .facts{grid-template-columns:1fr}
+  .practice{padding-bottom:16px}
+  .practice .card{padding:26px 22px;gap:18px}
+  .practice img{width:64px;height:54px}
+  .practice h2{font-size:22px}
+  .faq summary{font-size:17px}
+  .letter{padding:30px 20px 24px;border-radius:18px}
+  .letter .re{font-size:19px}
+  .chips{max-width:none}
+  .chip{font-size:14px;padding:0 10px}
+  .two{grid-template-columns:1fr;gap:0}
+  .send .btn{width:100%}
+  .close{padding:80px 0 88px}
+  .callbar{display:grid;grid-template-columns:1fr 1.3fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:25;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(251,248,243,.96);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-top:1px solid var(--line)}
+  .callbar a{min-height:48px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:8px;font:500 14.5px/1 Montserrat,sans-serif;text-decoration:none}
+  .callbar .c1{border:1.5px solid var(--deep);color:var(--deep)}
+  .callbar .c2{background:var(--deep);color:#fff}
+  .callbar svg{width:16px;height:16px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="mock" role="note">Free mockup for ReSource Yourself</div>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="brand" href="#main" aria-label="Katharina Seidler, back to the start">
+      <img src="https://ml4f9xrmu1wr.i.optimole.com/w:1920/h:1080/q:mauto/f:best/https://resource-yourself.com/wp-content/uploads/2018/08/flare19-2.png" alt="ReSource Yourself logo" width="62" height="52">
+      <span><b>Katharina Seidler</b><small>Art · a book · ReSource Yourself</small></span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#art">Art</a>
+      <a href="#book">The book</a>
+      <a href="#katharina">About me</a>
+      <a href="#healing">Healing</a>
+      <a class="cta" href="#write">Write to me</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Katharina Seidler · Artist · Writer</p>
+        <h1 id="h1">Creating is <em>healing.</em></h1>
+        <p class="lede">I am an artist, and I am just finishing a book.</p>
+        <div class="acts">
+          <a class="btn main" href="#write">Write to me</a>
+          <a class="btn ghost" href="#art">The art and the book</a>
+        </div>
+      </div>
+      <figure class="sunframe">
+        <div class="ph"><img src="https://ml4f9xrmu1wr.i.optimole.com/w:auto/h:auto/q:mauto/f:best/https://resource-yourself.com/wp-content/uploads/2018/08/girl-holding-sun.jpg" alt="A woman sits on a cliff at sunset, holding the sun in her open hand" width="600" height="645"></div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="spread" aria-label="My art and my book">
+    <div class="wrap">
+      <div class="pages" data-rise>
+        <article class="pg" id="art" aria-labelledby="h-art">
+          <p class="k">My art</p>
+          <h2 id="h-art">Reconnective Art</h2>
+          <p class="say">I start with anything that calls my attention, and don't stop before I can see the light and wholeness, and find peace in the depth of existence.</p>
+          <div class="acts"><a class="btn ghost" href="https://resource-yourself.com/art-katharina-seidler/">See my creations</a></div>
+          <p class="folio" aria-hidden="true">1</p>
+        </article>
+        <article class="pg" id="book" aria-labelledby="h-book">
+          <p class="k">My book</p>
+          <h2 id="h-book">The book</h2>
+          <p class="say">I am just finishing it.</p>
+          <form class="notify" id="notify" novalidate>
+            <label for="nmail" class="sr">Your email</label>
+            <input id="nmail" type="email" placeholder="Your email, to hear when it's out" autocomplete="email">
+            <button class="btn main" type="submit">Tell me</button>
+          </form>
+          <p class="thanks" id="nthanks" role="status">Thanks. This is a mockup, so nothing was sent.</p>
+          <p class="folio" aria-hidden="true">2</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="ch about" id="katharina" aria-labelledby="h-kat">
+    <div class="wrap">
+      <div class="chhead" data-rise>
+        <p class="chno">About me</p>
+        <h2 id="h-kat">Hi, I'm Katharina Seidler.</h2>
+      </div>
+      <div class="grid">
+        <figure style="margin:0" data-rise>
+          <div class="portrait"><img src="https://ml4f9xrmu1wr.i.optimole.com/w:643/h:643/q:mauto/f:best/https://resource-yourself.com/wp-content/uploads/2018/09/Copy-of-square-2-facebook-min.jpg" alt="Katharina Seidler, smiling, outdoors among flowers" width="380" height="380" loading="lazy"></div>
+          <figcaption class="sig">Katharina</figcaption>
+        </figure>
+        <div data-rise>
+          <p class="pull">“My work cannot be separated from my own process.”</p>
+          <p>I'm a classically trained psychologist. I explored many kinds of therapy and healing, until Reconnective Healing showed me that we are already whole, and that we can stop constantly “working” on ourselves.</p>
+          <p>Reconnective Healing… strongly enhanced my creative expression. Creating is always a healing process to me.</p>
+          <ul class="facts">
+            <li><b>Psychology, First Class</b>University of Würzburg</li>
+            <li><b>Founded ReSource Yourself</b>In 2008</li>
+            <li><b>Reconnective Healing</b>Foundational Practitioner since 2019</li>
+            <li><b>Three languages</b>German, English and Spanish</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="practice" id="healing" aria-labelledby="h-heal">
+    <div class="wrap">
+      <div class="card" data-rise>
+        <img src="https://ml4f9xrmu1wr.i.optimole.com/w:1920/h:1080/q:mauto/f:best/https://resource-yourself.com/wp-content/uploads/2018/08/flare19-2.png" alt="" width="96" height="80" loading="lazy">
+        <div>
+          <p class="k">My healing practice</p>
+          <h2 id="h-heal">ReSource Yourself</h2>
+          <p class="s">One-to-one Reconnective Healing, online, whether you are in Beijing, Baltimore or Berlin.</p>
+        </div>
+        <div class="acts">
+          <a class="btn ghost" href="https://resource-yourself.com/">Visit ReSource Yourself</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ch faq" id="questions" aria-labelledby="h-q">
+    <div class="wrap">
+      <div class="chhead" data-rise>
+        <p class="chno">Questions</p>
+        <h2 id="h-q">A few answers</h2>
+      </div>
+      <div class="body">
+        <div aria-hidden="true"></div>
+        <div class="col" data-rise>
+          <details open><summary>Where can I see your art?</summary><p>On <a href="https://resource-yourself.com/art-katharina-seidler/">my art page</a>. Or write to me.</p></details>
+          <details><summary>When is the book out?</summary><p>I am just finishing it. Leave your email beside the book above.</p></details>
+          <details><summary>Do you still offer healing sessions?</summary><p>Yes, through ReSource Yourself: one-to-one Reconnective Healing, online. All you have to do is set your expectations and hopes aside, and open up to what life has to give you.</p></details>
+          <details><summary>Which languages do you speak?</summary><p>German, English and Spanish.</p></details>
+          <details><summary>How soon will I hear back?</summary><p>I'll get back to you by email as soon as I can, usually within a day or so.</p></details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ch write" id="write" aria-labelledby="h-w">
+    <div class="wrap">
+      <div class="chhead" data-rise>
+        <p class="chno">Write to me</p>
+        <div>
+          <h2 id="h-w">Write to me.</h2>
+          <p class="intro">Choose what brings you here, and your letter is already started.</p>
+        </div>
+      </div>
+      <div class="letterwrap">
+        <div>
+          <fieldset class="pick">
+            <legend>What brings you here?</legend>
+            <div class="chips" id="chips">
+              <button type="button" class="chip" data-t="book" aria-pressed="true">The book</button>
+              <button type="button" class="chip" data-t="art" aria-pressed="false">My art</button>
+              <button type="button" class="chip" data-t="session" aria-pressed="false">A session</button>
+              <button type="button" class="chip" data-t="question" aria-pressed="false">A question</button>
+            </div>
+          </fieldset>
+          <ol class="next" id="next" aria-live="polite">
+            <li>Send your letter.</li>
+            <li>I reply by email, usually within a day or so.</li>
+          </ol>
+          <ul class="reach">
+            <li><a href="tel:+4915117366743"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>+49 151 17366743</a></li>
+            <li><a href="mailto:katharina@resource-yourself.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>katharina@resource-yourself.com</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&amp;query=V%C3%B6lkersbach%2C%20Baden-W%C3%BCrttemberg%2C%20Germany"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Völkersbach, Baden-Württemberg, Germany</a></li>
+          </ul>
+        </div>
+
+        <form class="letter" id="letter" novalidate>
+          <div class="to"><span>To: Katharina Seidler</span><span>Art · the book</span></div>
+          <p class="re" id="re">Re: <span>The book</span></p>
+          <div class="two">
+            <div><label for="fname">Your name</label><input id="fname" name="name" autocomplete="name" placeholder="Your name"></div>
+            <div><label for="fmail">Your email</label><input id="fmail" name="email" type="email" autocomplete="email" placeholder="you@example.com"></div>
+          </div>
+          <label for="fmsg">Your letter</label>
+          <textarea id="fmsg" name="message">Dear Katharina, I'd like to hear when your book is out.</textarea>
+          <div class="send">
+            <small>A question is welcome too.</small>
+            <button class="btn main" type="submit">Send the letter</button>
+          </div>
+          <p class="thanks" id="thanks" role="status">Thanks. This is a mockup, so nothing was sent.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="close" aria-labelledby="h-close">
+    <div class="wrap" data-rise>
+      <h2 id="h-close">Creating is <em>healing.</em></h2>
+      <p>Write to me about my art, the book, or anything that calls your attention.</p>
+      <div class="acts">
+        <a class="btn main" href="#write">Write to me</a>
+        <a class="btn ghost" href="tel:+4915117366743">Call +49 151 17366743</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Katharina Seidler · ReSource Yourself · Völkersbach, Germany</span>
+    <span class="soc">
+      <a href="https://www.facebook.com/resourceyourself">Facebook</a>
+      <a href="https://www.youtube.com/channel/UCzPtisGUICrKDvnFoEVQu7w">YouTube</a>
+      <a href="https://resource-yourself.com/art-katharina-seidler/">Art page</a>
+      <a href="https://resource-yourself.com/">ReSource Yourself</a>
+    </span>
+    <span class="made">Mockup made for ReSource Yourself by Sunny Gupta, <a href="https://lifebaselabs.com">lifebaselabs.com</a></span>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick contact">
+  <a class="c1" href="tel:+4915117366743"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Call</a>
+  <a class="c2" href="#write">Write to me</a>
+</nav>
+
+<script>
+(function(){
+  var re=document.querySelector('#re span'),msg=document.getElementById('fmsg'),next=document.getElementById('next');
+  var chips=document.querySelectorAll('.chip');
+  var reply='I reply by email, usually within a day or so.';
+  function topics(t){
+    if(t==='book')return{re:'The book',msg:"Dear Katharina, I'd like to hear when your book is out.",steps:['Send your letter.',reply]};
+    if(t==='art')return{re:'Your art',msg:"Dear Katharina, I'd love to hear more about your art.",steps:['Send your letter.',reply]};
+    if(t==='session')return{re:'A healing session',msg:"Dear Katharina, I'd like to book a one-to-one Reconnective Healing session online. Which times might work?",steps:['Send your letter. Add where you are in the world.',reply]};
+    return{re:'A question',msg:'Dear Katharina, I have a question: ',steps:['Ask anything, in German, English or Spanish.',reply]};
+  }
+  function pick(t){
+    var d=topics(t);
+    chips.forEach(function(c){c.setAttribute('aria-pressed',c.getAttribute('data-t')===t?'true':'false')});
+    re.textContent=d.re;msg.value=d.msg;
+    next.innerHTML=d.steps.map(function(s){return '<li>'+s+'</li>'}).join('');
+  }
+  chips.forEach(function(c){c.addEventListener('click',function(){pick(c.getAttribute('data-t'))})});
+
+  function done(form,id){form.addEventListener('submit',function(e){e.preventDefault();document.getElementById(id).classList.add('show')})}
+  done(document.getElementById('letter'),'thanks');
+  done(document.getElementById('notify'),'nthanks');
+
+  var top=document.getElementById('top');
+  addEventListener('scroll',function(){top.classList.toggle('scrolled',scrollY>10)},{passive:true});
+
+  if('IntersectionObserver' in window){
+    var links={};document.querySelectorAll('.nav a[href^="#"]:not(.cta)').forEach(function(a){links[a.getAttribute('href').slice(1)]=a});
+    var so=new IntersectionObserver(function(es){es.forEach(function(e){
+      var a=links[e.target.id];if(!a)return;
+      if(e.isIntersecting){Object.keys(links).forEach(function(k){links[k].classList.remove('on')});a.classList.add('on')}else a.classList.remove('on');
+    })},{rootMargin:'-45% 0px -50% 0px'});
+    Object.keys(links).forEach(function(id){var el=document.getElementById(id);if(el)so.observe(el)});
+
+    if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+      var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+      document.querySelectorAll('[data-rise]').forEach(function(el){
+        if(el.getBoundingClientRect().top>innerHeight){el.classList.add('rise','will-rise');io.observe(el)}
+      });
+    }
+  }
+})();
+</script>
+</body>
+</html>
