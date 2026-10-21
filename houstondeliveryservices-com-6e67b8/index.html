@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup houstondeliveryservices-com-6e67b8 1 0006ca8f -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Houston Delivery Services | Catering &amp; Restaurant Delivery in Houston, TX</title>
+<meta name="description" content="We pick up from any restaurant in the greater Houston area and deliver to your customers, office or event. Scheduled in advance, carried in thermal equipment, handed over in person.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f172a; --navy-2:#1e293b; --ink:#0f172a; --muted:#475569; --line:#e2e8f0;
+  --paper:#ffffff; --soft:#f6f7f9; --red:#d42a36; --red-dark:#b51f2b; --red-on-navy:#ff7b84;
+  --radius:18px; --wrap:1180px;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --display:"Inter Tight","Inter",system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--paper);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);letter-spacing:-.02em;line-height:1.08;margin:0}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:12px;top:44px;background:#fff;padding:10px 14px;z-index:50}
+
+/* mockup banner */
+.mock{background:var(--navy);color:#e2e8f0;font-size:13px;letter-spacing:.02em;text-align:center;padding:8px 16px;line-height:1.4}
+.mock b{color:#fff;font-weight:600}
+
+/* header */
+.top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+.brand img{width:160px;height:auto}
+.nav{display:flex;gap:6px;align-items:center}
+.nav a{text-decoration:none;font-size:15px;font-weight:500;color:var(--muted);padding:12px 12px;border-radius:10px}
+.nav a:hover{color:var(--ink);background:var(--soft)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:999px;font:600 16px/1 var(--sans);text-decoration:none;border:0;cursor:pointer;transition:background .2s,transform .2s,box-shadow .2s}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 6px 18px -8px rgba(212,42,54,.7)}
+.btn-red:hover{background:var(--red-dark);transform:translateY(-1px)}
+.btn-ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px #cbd5e1}
+.btn-ghost:hover{box-shadow:inset 0 0 0 1.5px var(--ink)}
+.top .btn{min-height:44px;padding:0 18px;font-size:15px}
+
+/* hero */
+.hero{padding:72px 0 88px;background:linear-gradient(#fff,#fff 60%,var(--soft))}
+.hero .wrap{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
+.kicker::before{content:"";width:22px;height:2px;background:var(--red)}
+.hero h1{font-size:clamp(40px,5.4vw,66px);font-weight:800;margin:20px 0 22px;max-width:13ch;text-wrap:balance}
+h2{text-wrap:balance}
+.hero h1 em{font-style:normal;color:var(--red)}
+.lede{font-size:19px;color:var(--muted);max-width:34em}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.hero-facts{display:flex;flex-wrap:wrap;gap:10px 22px;margin:36px 0 0;padding:0;list-style:none;font-size:14.5px;color:var(--muted);font-weight:500}
+.hero-facts li{display:flex;align-items:center;gap:8px}
+.hero-facts svg{flex:none}
+
+.stage{position:relative;max-width:520px;justify-self:end;width:100%}
+.stage .photo{border-radius:24px;overflow:hidden;aspect-ratio:1/1;box-shadow:0 30px 60px -30px rgba(15,23,42,.45)}
+.stage .photo img{width:100%;height:100%;object-fit:cover}
+.stage{margin-bottom:150px}
+.ticket{position:absolute;right:-24px;bottom:-150px;width:300px;background:#fff;border-radius:16px;padding:18px 20px 16px;box-shadow:0 24px 50px -18px rgba(15,23,42,.35),0 0 0 1px rgba(15,23,42,.06)}
+.ticket-head{display:flex;justify-content:space-between;align-items:baseline;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.ticket-route{font:700 17px/1.25 var(--display);margin:8px 0 12px;letter-spacing:-.01em}
+.ticket-route span{color:var(--muted);font-weight:600}
+.stages{list-style:none;margin:0;padding:0;position:relative}
+.stages li{display:flex;align-items:center;gap:12px;font-size:14px;padding:5px 0;color:var(--ink);position:relative}
+.stages li::before{content:"";flex:none;width:12px;height:12px;border-radius:50%;background:var(--red);box-shadow:0 0 0 4px rgba(212,42,54,.14);transition:background .35s,box-shadow .35s}
+.stages li:not(:last-child)::after{content:"";position:absolute;left:5px;top:22px;width:2px;height:14px;background:var(--red);transition:background .35s}
+.stages li.wait{color:#64748b}
+.stages li.wait::before{background:#cbd5e1;box-shadow:0 0 0 4px rgba(203,213,225,.35)}
+.stages li.wait::after{background:#e2e8f0}
+.stages li.now::before{animation:pulse 1.2s ease-in-out infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 8px rgba(212,42,54,.08)}}
+.stages time{margin-left:auto;font-variant-numeric:tabular-nums;color:var(--muted);font-size:13px}
+.ticket-foot{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);font-size:13px;color:var(--muted);display:flex;align-items:center;gap:8px}
+.ticket-foot b{color:#0f7a3d;font-weight:600}
+
+/* sections */
+section{scroll-margin-top:90px}
+.sec{padding:110px 0}
+.sec-head{max-width:640px;margin-bottom:52px}
+.sec-head h2{font-size:clamp(32px,3.8vw,48px);font-weight:800;margin-top:14px}
+.sec-head p{color:var(--muted);font-size:18px;margin-top:16px}
+
+/* planner */
+.planner{background:var(--soft)}
+.plan-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:start}
+.plan-form{background:#fff;border-radius:var(--radius);padding:32px;box-shadow:0 0 0 1px var(--line)}
+fieldset{border:0;margin:0 0 22px;padding:0}
+legend,.lab{display:block;font-size:14px;font-weight:600;margin-bottom:8px;color:var(--ink)}
+.who{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.who label{position:relative;display:block;cursor:pointer}
+.who input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.who span{display:block;height:100%;padding:14px 14px 13px;border-radius:12px;box-shadow:inset 0 0 0 1.5px var(--line);font-size:14px;line-height:1.35;color:var(--muted);transition:box-shadow .2s,background .2s}
+.who span b{display:block;font-size:15px;color:var(--ink);margin-bottom:3px}
+.who input:checked+span{box-shadow:inset 0 0 0 2px var(--red);background:#fff6f6}
+.who input:focus-visible+span{outline:3px solid var(--red);outline-offset:2px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:18px}
+.field{display:block}
+input[type=text],input[type=email],input[type=date],input[type=time],select,textarea{width:100%;min-height:48px;padding:12px 14px;border-radius:12px;border:1.5px solid #cbd5e1;background:#fff;font:16px/1.3 var(--sans);color:var(--ink);appearance:none;-webkit-appearance:none}
+select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23475569' stroke-width='2'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:38px}
+textarea{min-height:88px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--red);box-shadow:0 0 0 3px rgba(212,42,54,.15)}
+.check{display:flex;gap:12px;align-items:center;min-height:44px;font-size:15px;cursor:pointer;margin-bottom:18px}
+.check input{width:22px;height:22px;accent-color:var(--red);margin:0;flex:none}
+.form-note{font-size:14px;color:var(--muted);margin-top:14px}
+.sent{display:block;margin-top:14px;font-weight:600;color:#0f7a3d;min-height:1.6em}
+
+.req{position:sticky;top:100px;background:var(--navy);color:#e2e8f0;border-radius:var(--radius);padding:30px;overflow:hidden}
+.req-head{display:flex;justify-content:space-between;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#94a3b8;font-weight:600}
+.route{display:grid;grid-template-columns:14px 1fr;column-gap:16px;margin:22px 0 24px}
+.route .dot{width:14px;height:14px;border-radius:50%;border:3px solid var(--red-on-navy);margin-top:5px}
+.route .dot.end{background:var(--red-on-navy)}
+.route .rail{width:2px;margin:4px 0 4px 6px;background:repeating-linear-gradient(#475569 0 5px,transparent 5px 10px);min-height:28px}
+.route .stop small{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#94a3b8}
+.route .stop strong{display:block;font:700 21px/1.2 var(--display);color:#fff;letter-spacing:-.01em;word-break:break-word}
+.when{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:16px 0;border-top:1px solid #334155;border-bottom:1px solid #334155}
+.when small{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#94a3b8}
+.when strong{font-weight:600;color:#fff;font-size:16px}
+.steps-mini{list-style:none;padding:0;margin:20px 0 0;counter-reset:s}
+.steps-mini li{counter-increment:s;display:grid;grid-template-columns:28px 1fr;gap:10px;font-size:14.5px;line-height:1.5;padding:6px 0;color:#cbd5e1}
+.steps-mini li::before{content:counter(s);width:24px;height:24px;border-radius:50%;background:#1e293b;color:var(--red-on-navy);font-weight:700;font-size:12px;display:grid;place-items:center;margin-top:1px}
+.fit{margin-top:22px;background:#1e293b;border-radius:14px;padding:16px 18px}
+.fit small{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#94a3b8}
+.fit strong{display:block;color:#fff;font:700 18px/1.3 var(--display);margin:2px 0 6px}
+.fit p{font-size:14px;color:#cbd5e1}
+
+/* who we serve */
+.serve-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.crop{position:relative;overflow:hidden;border-radius:var(--radius);background:#e5e7eb}
+.crop img{position:absolute;max-width:none;height:auto}
+.crop-boxes{aspect-ratio:1100/600;max-width:1100px}
+.crop-boxes img{width:174.545%;left:-73.636%;top:-110%}
+.crop-bag{aspect-ratio:1/1;max-width:600px}
+.crop-bag img{width:320%;left:-108.333%;top:-1.667%}
+.crop-hand{aspect-ratio:1/1;max-width:600px}
+.crop-hand img{width:320%;left:-215%;top:-1.667%}
+.crop-sky{aspect-ratio:760/600;max-width:760px}
+.crop-sky img{width:252.63%;left:-1.316%;top:-110%}
+.serve-photo{position:relative}
+.serve-photo figcaption{font-size:14px;color:var(--muted);margin-top:12px}
+.svc{list-style:none;margin:0;padding:0}
+.svc>li{padding:26px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:150px 1fr;gap:20px}
+.svc>li:last-child{border-bottom:1px solid var(--line)}
+.svc .for{font-size:13px;font-weight:600;color:var(--red);letter-spacing:.04em;line-height:1.4;padding-top:5px}
+.svc h3{font-size:25px;font-weight:700}
+.svc p{color:var(--muted);margin-top:6px;font-size:16px}
+.svc ul{margin:10px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.svc ul li{font-size:13.5px;font-weight:500;padding:6px 12px;border-radius:999px;background:var(--soft);color:#334155}
+
+/* journey */
+.journey{background:var(--soft)}
+.track{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative}
+.track::before{content:"";position:absolute;left:12px;right:12px;top:15px;height:2px;background:#e2e8f0}
+.track::after{content:"";position:absolute;left:12px;top:15px;height:2px;background:var(--red);width:calc(100% - 24px);transform-origin:left;transition:transform 1.6s cubic-bezier(.3,.7,.2,1)}
+.track.idle::after{transform:scaleX(0)}
+.track>li{position:relative}
+.num{width:32px;height:32px;border-radius:50%;background:var(--red);color:#fff;font:700 14px/32px var(--display);text-align:center;position:relative;box-shadow:0 0 0 6px var(--soft)}
+.track h3{font-size:21px;font-weight:700;margin:22px 0 8px}
+.track p{font-size:15.5px;color:var(--muted)}
+.vis{margin-top:22px;aspect-ratio:1/1;border-radius:16px;overflow:hidden;position:relative}
+.ui{background:#fff;box-shadow:0 0 0 1px var(--line);padding:20px;display:flex;flex-direction:column;justify-content:center;gap:10px}
+.ui .uirow{display:flex;justify-content:space-between;gap:10px;font-size:13.5px;padding:9px 12px;border-radius:10px;background:var(--soft)}
+.ui .uirow span{color:var(--muted)}
+.ui .uirow b{font-weight:600;text-align:right}
+.ui .uihead{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.ui .ok{display:flex;align-items:center;gap:10px;font-weight:600;font-size:15px;color:#0f7a3d}
+.ui .bar{height:6px;border-radius:6px;background:#e2e8f0;overflow:hidden}
+.ui .bar i{display:block;height:100%;width:100%;background:#16a34a}
+
+/* food */
+.food{background:var(--navy);color:#cbd5e1}
+.food .sec-head h2{color:#fff}
+.food .kicker{color:var(--red-on-navy)}
+.food .kicker::before{background:var(--red-on-navy)}
+.food-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.big-quote{font:700 clamp(26px,2.8vw,36px)/1.25 var(--display);color:#fff;letter-spacing:-.015em}
+.big-quote span{color:var(--red-on-navy)}
+.food-grid .sub{margin-top:22px;font-size:17px;color:#cbd5e1;max-width:30em}
+.counts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:30px 32px}
+.counts li{display:grid;grid-template-columns:40px 1fr;gap:14px}
+.counts svg{width:40px;height:40px;padding:9px;border-radius:12px;background:#1e293b;color:var(--red-on-navy)}
+.counts h3{font-size:17px;color:#fff;font-weight:700;margin:2px 0 4px;letter-spacing:-.01em}
+.counts p{font-size:14.5px;line-height:1.55;color:#cbd5e1}
+
+/* restaurants */
+.rest-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.rest-list{list-style:none;padding:0;margin:30px 0 0}
+.rest-list li{padding:18px 0;border-top:1px solid var(--line)}
+.rest-list li:last-child{border-bottom:1px solid var(--line)}
+.rest-list h3{font-size:19px;font-weight:700}
+.rest-list p{color:var(--muted);font-size:15.5px;margin-top:4px}
+.bill{max-width:480px;justify-self:end;width:100%;background:#fff;border-radius:var(--radius);padding:30px 30px 26px;box-shadow:0 30px 60px -32px rgba(15,23,42,.4),0 0 0 1px rgba(15,23,42,.06);position:relative}
+.bill::before{content:"";position:absolute;left:30px;right:30px;top:0;height:4px;border-radius:0 0 4px 4px;background:var(--red)}
+.bill-head{display:flex;justify-content:space-between;gap:12px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;padding-bottom:16px;border-bottom:1px dashed var(--line)}
+.bill-rows{margin:0}
+.bill-rows div{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:15px 0;border-bottom:1px dashed var(--line)}
+.bill-rows dt{color:var(--muted);font-size:15px}
+.bill-rows dd{margin:0;font:700 17px/1.3 var(--display);color:var(--ink);text-align:right}
+.bill-split{margin-top:20px;background:#f8fafc;border-radius:14px;padding:18px 18px 16px}
+.bill-q{font-weight:600;font-size:15px}
+.bill-opts{list-style:none;margin:12px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:6px;position:relative}
+.bill-opts li{font-size:13px;line-height:1.3;color:var(--ink);font-weight:500;padding-top:22px;position:relative}
+.bill-opts li::before{content:"";position:absolute;left:0;top:0;width:12px;height:12px;border-radius:50%;background:var(--red);box-shadow:0 0 0 4px rgba(212,42,54,.14)}
+.bill-opts::before{content:"";position:absolute;left:6px;right:calc(33.33% - 2px);top:5px;height:2px;background:#cbd5e1}
+.bill-note{font-size:14px;color:var(--muted);margin-top:12px}
+
+/* coverage */
+.coverage{background:var(--soft)}
+.cov-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:center}
+.cities{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.cities button{min-height:44px;padding:0 16px;border-radius:999px;border:0;background:#fff;box-shadow:inset 0 0 0 1.5px var(--line);font:500 15px var(--sans);color:var(--ink);cursor:pointer;transition:box-shadow .2s,color .2s}
+.cities button:hover{box-shadow:inset 0 0 0 1.5px var(--red);color:var(--red-dark)}
+.cities button[aria-pressed=true]{box-shadow:inset 0 0 0 2px var(--red);color:var(--red-dark);font-weight:600}
+.cov-note{margin-top:22px;font-size:15px;color:var(--muted)}
+.cov-note a{font-weight:600;color:var(--ink)}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0 64px}
+.faq-grid div{padding:24px 0;border-top:1px solid var(--line)}
+.faq-grid h3{font-size:19px;font-weight:700;letter-spacing:-.01em}
+.faq-grid p{margin-top:8px;color:var(--muted);font-size:16px}
+
+/* contact */
+.contact{background:var(--navy);color:#cbd5e1}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.contact h2{color:#fff;font-size:clamp(34px,4vw,52px);font-weight:800}
+.contact .lede{color:#cbd5e1;margin-top:18px}
+.contact .kicker{color:var(--red-on-navy)}
+.contact .kicker::before{background:var(--red-on-navy)}
+.contact-lines{margin-top:32px;display:grid;gap:14px;font-size:16px}
+.contact-lines a{color:#fff;font-weight:600;text-decoration-color:#64748b;text-underline-offset:4px;display:inline-flex;align-items:center;min-height:44px}
+.contact-lines small{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#94a3b8}
+.cform{background:#fff;color:var(--ink);border-radius:var(--radius);padding:32px}
+.cform .field{margin-bottom:16px}
+
+footer{background:#0b1222;color:#94a3b8;font-size:14px;padding:44px 0 40px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px 32px;align-items:center}
+footer a{color:#e2e8f0}
+footer .made{width:100%;padding-top:20px;border-top:1px solid #1e293b;color:#94a3b8}
+
+.callbar{display:none}
+
+/* motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+
+/* tablet */
+@media (max-width:980px){
+  .nav a:not(.btn){display:none}
+  .hero .wrap,.plan-grid,.serve-grid,.food-grid,.rest-grid,.cov-grid,.contact-grid{grid-template-columns:1fr;gap:44px}
+  .stage{justify-self:start}
+  .req{position:static}
+  .track{grid-template-columns:1fr 1fr;gap:40px 24px}
+  .track::before,.track::after{display:none}
+}
+/* phone */
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:72px}
+  .wrap{padding:0 20px}
+  .mock{font-size:12.5px;padding:7px 12px}
+  .top .wrap{height:64px}
+  .brand img{width:124px}
+  .top .btn{padding:0 16px;font-size:14px}
+  .hero{padding:40px 0 76px}
+  .hero h1{font-size:40px;margin:16px 0 16px}
+  .lede{font-size:17px}
+  .actions{margin-top:26px}
+  .actions .btn{flex:1 1 100%}
+  .hero-facts{margin-top:28px;display:grid;gap:10px}
+  .stage{margin-top:4px}
+  .stage .photo{border-radius:20px}
+  .stage{margin-bottom:0}
+  .ticket{position:relative;right:auto;bottom:auto;width:auto;margin:-64px 14px 0}
+  .sec{padding:76px 0}
+  .sec-head{margin-bottom:36px}
+  .sec-head p{font-size:16.5px}
+  .plan-form,.cform{padding:22px 18px}
+  .who{grid-template-columns:1fr}
+  .who span{padding:13px 14px}
+  .row{grid-template-columns:1fr;gap:16px}
+  .req{padding:24px 20px}
+  .svc>li{grid-template-columns:1fr;gap:6px}
+  .svc .for{padding-top:0}
+  .track{grid-template-columns:1fr;gap:44px}
+  .counts{grid-template-columns:1fr;gap:24px}
+  .bill{padding:26px 20px 20px}
+  .bill::before{left:20px;right:20px}
+  .faq-grid{grid-template-columns:1fr}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line)}
+  .callbar .btn{flex:1;min-height:48px;font-size:15px}
+  footer{padding-bottom:40px}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Free mockup for <b>Houston Delivery Services</b></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Houston Delivery Services, home"><img src="https://www.houstondeliveryservices.com/_next/image?url=%2Fimages%2Fhds-logo.png&amp;w=640&amp;q=75" alt="Houston Delivery Services" width="400" height="150"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#how">How it works</a>
+      <a href="#services">Services</a>
+      <a href="#coverage">Coverage</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-red" href="#plan">Request delivery</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="h1">
+  <div class="wrap">
+    <div>
+      <span class="kicker">Catering &amp; restaurant delivery · Greater Houston</span>
+      <h1 id="h1">Catering that arrives the way the <em>kitchen sent it.</em></h1>
+      <p class="lede">We pick up from any restaurant in our coverage area and deliver to your customers, office or event. Scheduled in advance, carried in thermal equipment, handed over in person.</p>
+      <div class="actions">
+        <a class="btn btn-red" href="#plan">Plan a delivery
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn btn-ghost" href="#contact">Become a client</a>
+      </div>
+      <ul class="hero-facts">
+        <li><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M4 9.5l3 3 7-7" fill="none" stroke="#d42a36" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>No restaurant commissions</li>
+        <li><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M4 9.5l3 3 7-7" fill="none" stroke="#d42a36" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Confirmation once delivered</li>
+        <li><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M4 9.5l3 3 7-7" fill="none" stroke="#d42a36" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Basic setup help for catering</li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <div class="photo"><img src="https://www.houstondeliveryservices.com/images/hero-catering.jpg" alt="Hot catering trays of chicken, noodles and vegetables lined up at an event" width="1008" height="1008"></div>
+      <div class="ticket" id="ticket" aria-label="Example delivery, from scheduled to confirmed">
+        <div class="ticket-head"><span>Example order</span><span>Catering</span></div>
+        <div class="ticket-route">Restaurant <span>→</span> Office lunch</div>
+        <ol class="stages" id="stages">
+          <li>Scheduled in advance</li>
+          <li>Picked up &amp; verified</li>
+          <li>In thermal transport</li>
+          <li>Handed over in person</li>
+          <li>Delivery confirmed</li>
+        </ol>
+        <div class="ticket-foot" id="ticketFoot"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#16a34a"/><path d="M4.5 8.2l2.3 2.3 4.7-4.7" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Delivered and confirmed.</b> No need to call.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec planner" id="plan" aria-labelledby="plan-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Request a delivery</span>
+      <h2 id="plan-h">Plan it now. Know it’s handled.</h2>
+      <p>Tell us where the food is coming from and when it needs to arrive. Your request builds itself on the right.</p>
+    </div>
+    <div class="plan-grid">
+      <form class="plan-form" id="planForm" novalidate>
+        <fieldset>
+          <legend>I’m ordering as</legend>
+          <div class="who">
+            <label><input type="radio" name="who" value="consumer"><span><b>Individual</b>A party, office or family order</span></label>
+            <label><input type="radio" name="who" value="business" checked><span><b>Restaurant</b>Caterer, bakery or food business</span></label>
+            <label><input type="radio" name="who" value="enterprise"><span><b>Restaurant group</b>High-volume or large events</span></label>
+          </div>
+        </fieldset>
+        <div class="row">
+          <label class="field"><span class="lab" id="pickLab">Pickup restaurant</span><input type="text" id="pickup" name="pickup" placeholder="Restaurant name" value="Your restaurant" autocomplete="organization"></label>
+          <label class="field"><span class="lab">Deliver to</span>
+            <select id="city" name="city">
+              <option>Houston</option><option>Conroe</option><option>Spring</option><option selected>The Woodlands</option><option>Tomball</option><option>Cypress</option><option>Pearland</option><option>Sugar Land</option><option>Katy</option><option>Humble</option><option>Kingwood</option><option>League City</option><option>Missouri City</option><option>Pasadena</option><option>Baytown</option><option>Deer Park</option><option>La Porte</option><option>Channelview</option>
+            </select></label>
+        </div>
+        <div class="row">
+          <label class="field"><span class="lab">Delivery date</span><input type="date" id="date" name="date"></label>
+          <label class="field"><span class="lab">Preferred time</span>
+            <input type="time" id="time" name="time" value="11:30"></label>
+        </div>
+        <div class="row">
+          <label class="field"><span class="lab">The order</span>
+            <select id="order" name="order">
+              <option selected>Catering trays</option><option>Large restaurant order</option><option>Event catering</option>
+            </select></label>
+          <label class="field"><span class="lab">Destination</span><input type="text" id="dest" name="dest" placeholder="Office, venue or home" value="Office lunch"></label>
+        </div>
+        <label class="check"><input type="checkbox" id="setup" name="setup" checked> Help setting out the catering on arrival</label>
+        <label class="field"><span class="lab">Delivery instructions</span><textarea id="notes" name="notes" placeholder="Gate code, loading dock, who to hand it to"></textarea></label>
+        <div class="actions" style="margin-top:22px"><button class="btn btn-red" type="submit">Send delivery request</button></div>
+        <p class="sent" id="planSent" role="status" aria-live="polite"></p>
+        <p class="form-note">Deliveries are scheduled in advance rather than dispatched on demand, so the timing is agreed before anyone gets in a vehicle.</p>
+      </form>
+
+      <aside class="req" aria-label="Your delivery request" aria-live="polite">
+        <div class="req-head"><span>Delivery request</span><span id="reqType">Catering trays</span></div>
+        <div class="route">
+          <span class="dot" aria-hidden="true"></span>
+          <div class="stop"><small>Pickup</small><strong id="rPick">Your restaurant</strong></div>
+          <span class="rail" aria-hidden="true"></span><span></span>
+          <span class="dot end" aria-hidden="true"></span>
+          <div class="stop"><small>Deliver to</small><strong><span id="rDest">Office lunch</span>, <span id="rCity">The Woodlands</span></strong></div>
+        </div>
+        <div class="when">
+          <div><small>Date</small><strong id="rDate">Your chosen day</strong></div>
+          <div><small>Preferred time</small><strong id="rTime">11:30 AM</strong></div>
+        </div>
+        <ol class="steps-mini" id="rSteps">
+          <li><div>Pickup and delivery times are set in advance, around the kitchen’s timing.</div></li>
+          <li><div>Your driver arrives at <span class="rp">your restaurant</span>, verifies the order and secures it in thermal equipment.</div></li>
+          <li><div>Handed over in person in <span class="rc">The Woodlands</span><span id="rSetup">, with help setting out the catering</span>.</div></li>
+          <li><div>Follow the status from pickup to completion, then get a confirmation.</div></li>
+        </ol>
+        <div class="fit">
+          <small>Your service</small>
+          <strong id="fitName">Small Business</strong>
+          <p id="fitText">Scheduled catering delivery, not a marketplace listing. White-label deliveries that protect your brand. Flat-rate pricing with no commissions.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="services" aria-labelledby="serve-h">
+  <div class="wrap serve-grid">
+    <figure class="serve-photo" style="margin:0">
+      <div class="crop crop-boxes"><img src="https://www.houstondeliveryservices.com/images/hero-collage.jpg" alt="Boxed catering on a conference table beside a Houston Delivery Services thermal bag" width="1920" height="1280" loading="lazy"></div>
+      <figcaption>From one big order to a whole program, the same care.</figcaption>
+    </figure>
+    <div>
+      <div class="sec-head" style="margin-bottom:28px">
+        <span class="kicker">Who we serve</span>
+        <h2 id="serve-h">Logistics for every scale.</h2>
+      </div>
+      <ul class="svc">
+        <li><span class="for">Individuals &amp; large personal orders</span>
+          <div><h3>Consumer Direct</h3>
+          <p>Catering or a large order from a restaurant that doesn’t deliver itself.</p>
+          <ul><li>Parties, offices, family gatherings</li><li>Any restaurant in our coverage area</li><li>Careful handling, on-time arrival</li></ul></div></li>
+        <li><span class="for">Restaurants, caterers &amp; food businesses</span>
+          <div><h3>Small Business</h3>
+          <p>Reliable catering delivery without keeping your own fleet.</p>
+          <ul><li>Scheduled, not a marketplace</li><li>White-label, your brand</li><li>Flat rate, no commissions</li></ul></div></li>
+        <li><span class="for">Restaurant groups &amp; high-volume programs</span>
+          <div><h3>Enterprise</h3>
+          <p>Customized delivery programs that scale with you.</p>
+          <ul><li>Negotiated pricing</li><li>Consolidated billing</li><li>Large-event programs</li></ul></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec journey" id="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">How it works</span>
+      <h2 id="how-h">A catering delivery is a sequence. We run all of it.</h2>
+      <p>Most of what goes wrong happens in the gaps between the steps. So we don’t leave gaps.</p>
+    </div>
+    <ol class="track idle" id="track">
+      <li><div class="num">1</div>
+        <h3>Schedule</h3>
+        <p>Pickup restaurant, destination, times, order details and instructions, all set before the kitchen starts plating.</p>
+        <div class="vis ui" aria-hidden="true">
+          <div class="uihead">Scheduled delivery</div>
+          <div class="uirow"><span>Pickup</span><b>Restaurant</b></div>
+          <div class="uirow"><span>Deliver to</span><b>Your event</b></div>
+          <div class="uirow"><span>Arrive by</span><b>Set in advance</b></div>
+          <div class="uirow"><span>Instructions</span><b>Included</b></div>
+        </div></li>
+      <li><div class="num">2</div>
+        <h3>We pick up</h3>
+        <p>Your driver arrives on schedule, verifies the order and secures it in thermal equipment. Nothing travels loose.</p>
+        <div class="vis crop crop-bag"><img src="https://www.houstondeliveryservices.com/images/hero-collage.jpg" alt="A driver holding a Houston Delivery Services thermal bag in a restaurant kitchen" width="1920" height="1280" loading="lazy"></div></li>
+      <li><div class="num">3</div>
+        <h3>We deliver</h3>
+        <p>Handed over in person by a driver representing your brand, with help setting out catering where it applies.</p>
+        <div class="vis crop crop-hand"><img src="https://www.houstondeliveryservices.com/images/hero-collage.jpg" alt="A catering order handed over in person at the door" width="1920" height="1280" loading="lazy"></div></li>
+      <li><div class="num">4</div>
+        <h3>Tracked &amp; confirmed</h3>
+        <p>Follow the status from pickup through completion. You shouldn’t have to call to find an order.</p>
+        <div class="vis ui" aria-hidden="true">
+          <div class="uihead">Delivery status</div>
+          <div class="bar"><i></i></div>
+          <div class="uirow"><span>Picked up</span><b>Verified</b></div>
+          <div class="uirow"><span>Handoff</span><b>In person</b></div>
+          <div class="ok"><svg width="20" height="20" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#16a34a"/><path d="M4.5 8.2l2.3 2.3 4.7-4.7" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Delivery confirmed</div>
+        </div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec food" aria-labelledby="food-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Built around your food</span>
+      <h2 id="food-h">Moving catering is not moving a package.</h2>
+    </div>
+    <div class="food-grid">
+      <div>
+        <p class="big-quote">A dozen trays that need to <span>stay level, stay hot,</span> and arrive looking the way the kitchen intended.</p>
+        <p class="sub">It has to leave when the restaurant is ready and arrive before the meeting starts. That’s why the equipment, the loading and the handoff are part of the job, not details.</p>
+      </div>
+      <ul class="counts">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div><h3>On-time coordination</h3><p>Scheduled around the restaurant’s timing and your delivery window.</p></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a4 4 0 0 1 8 0v2M3 12h18"/></svg>
+          <div><h3>Thermal equipment</h3><p>Professional gear for catering trays, hot boxes and large orders.</p></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          <div><h3>Real-time tracking</h3><p>Visibility from pickup through completion, where live status is available.</p></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+          <div><h3>Professional delivery</h3><p>A customer-facing handoff by a driver who represents the restaurant.</p></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+          <div><h3>Delivery confirmation</h3><p>Status and completion details, so the record is not a guess.</p></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="2.5"/><circle cx="17" cy="17" r="2.5"/><path d="M19 5L5 19"/></svg>
+          <div><h3>No commissions</h3><p>You pay a delivery fee, never a percentage of your food sales.</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="rest-h">
+  <div class="wrap rest-grid">
+    <div>
+      <span class="kicker">For restaurants</span>
+      <h2 id="rest-h" style="font-size:clamp(32px,3.8vw,48px);font-weight:800;margin-top:14px">Stop turning down large orders.</h2>
+      <ul class="rest-list">
+        <li><h3>Keep more of the order</h3><p>A flat-rate fee you can pass on to your customers, in part or in full.</p></li>
+        <li><h3>Your brand at the door</h3><p>White-label deliveries, handed over by drivers who represent you with care.</p></li>
+        <li><h3>Drivers with their own gear</h3><p>Dedicated professionals who own their thermal equipment.</p></li>
+        <li><h3>Your team stays in the kitchen</h3><p>We handle the logistics. You cook and look after your customers.</p></li>
+      </ul>
+    </div>
+    <div class="bill" role="group" aria-label="How a catering delivery is billed">
+      <div class="bill-head"><span>Your catering delivery</span><span>How it’s billed</span></div>
+      <dl class="bill-rows">
+        <div><dt>Your food sales</dt><dd>No commission taken</dd></div>
+        <div><dt>Delivery</dt><dd>One flat-rate fee</dd></div>
+        <div><dt>Listed on</dt><dd>No marketplace</dd></div>
+        <div><dt>At the door</dt><dd>Your brand</dd></div>
+      </dl>
+      <div class="bill-split">
+        <p class="bill-q">Who pays the delivery fee?</p>
+        <ul class="bill-opts">
+          <li>Your restaurant</li><li>Split with the customer</li><li>Your customer</li>
+        </ul>
+        <p class="bill-note">Pass on part or all of it. Your call.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec coverage" id="coverage" aria-labelledby="cov-h">
+  <div class="wrap cov-grid">
+    <div class="crop crop-sky"><img src="https://www.houstondeliveryservices.com/images/hero-collage.jpg" alt="The Houston skyline above Buffalo Bayou" width="1920" height="1280" loading="lazy"></div>
+    <div>
+      <div class="sec-head" style="margin-bottom:24px">
+        <span class="kicker">Coverage</span>
+        <h2 id="cov-h">Houston is our home.</h2>
+        <p>Houston and all the surrounding areas. Tap your city to plan a delivery there.</p>
+      </div>
+      <div class="cities" id="cities">
+        <button type="button">Houston</button><button type="button">Conroe</button><button type="button">Spring</button><button type="button">The Woodlands</button><button type="button">Tomball</button><button type="button">Cypress</button><button type="button">Pearland</button><button type="button">Sugar Land</button><button type="button">Katy</button><button type="button">Humble</button><button type="button">Kingwood</button><button type="button">League City</button><button type="button">Missouri City</button><button type="button">Pasadena</button><button type="button">Baytown</button><button type="button">Deer Park</button><button type="button">La Porte</button><button type="button">Channelview</button>
+      </div>
+      <p class="cov-note">Not on the list? <a href="https://www.houstondeliveryservices.com/">See all service areas</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq" aria-labelledby="faq-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Questions</span>
+      <h2 id="faq-h">Straight answers.</h2>
+    </div>
+    <div class="faq-grid">
+      <div><h3>Can you pick up from any restaurant?</h3><p>Yes, any restaurant in our coverage area, including ones that don’t offer their own delivery.</p></div>
+      <div><h3>Is it on-demand?</h3><p>No. Every delivery is scheduled in advance, so the restaurant knows when the driver is coming and you know when the food arrives.</p></div>
+      <div><h3>Do you take a commission?</h3><p>Never. We’re a delivery and logistics provider, not a marketplace. You pay a delivery fee, not a percentage of your sales.</p></div>
+      <div><h3>Whose brand do my customers see?</h3><p>Yours. Deliveries are white-label, and the driver represents your restaurant at the handoff.</p></div>
+      <div><h3>Can I see where my order is?</h3><p>Yes. Follow the status from pickup through completion where live status is available, and get confirmation once it’s delivered.</p></div>
+      <div><h3>Will the driver help set up?</h3><p>For catering, we can help with basic setup and setting out the order.</p></div>
+      <div><h3>Can I pass the delivery cost on?</h3><p>Yes. Our flat-rate fee lets you pass part or all of it to your customers.</p></div>
+      <div><h3>We’re a restaurant group. Can you scale?</h3><p>Our Enterprise programs include negotiated pricing, consolidated billing and high-volume and large-event catering delivery.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec contact" id="contact" aria-labelledby="contact-h">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="kicker">Get started</span>
+      <h2 id="contact-h" style="margin-top:14px">Need reliable catering delivery in Houston?</h2>
+      <p class="lede">Become a client, or ask us anything. We’ll set up your deliveries around your kitchen.</p>
+      <div class="actions"><a class="btn btn-red" href="#plan">Plan a delivery</a></div>
+      <div class="contact-lines">
+        <div><small>Email</small><a href="mailto:info@houstondeliveryservices.com">info@houstondeliveryservices.com</a></div>
+        <div><small>Office</small><a href="https://www.google.com/maps/search/?api=1&amp;query=3707%20Cypress%20Creek%20Parkway%20Ste%20310%2C%20Houston%2C%20TX%2077068">3707 Cypress Creek Parkway, Ste 310 #2168, Houston, TX 77068</a></div>
+      </div>
+    </div>
+    <form class="cform" id="contactForm" novalidate>
+      <h3 style="font-size:24px;font-weight:700;margin-bottom:20px">Become a client</h3>
+      <label class="field"><span class="lab">Your name</span><input type="text" name="name" autocomplete="name"></label>
+      <label class="field"><span class="lab">Email</span><input type="email" name="email" autocomplete="email"></label>
+      <label class="field"><span class="lab">Business</span><input type="text" name="biz" autocomplete="organization" placeholder="Restaurant, caterer or company"></label>
+      <label class="field"><span class="lab">What do you deliver?</span><textarea name="msg" placeholder="Catering for offices, weekly orders, an event…"></textarea></label>
+      <button class="btn btn-red" type="submit" style="width:100%">Send</button>
+      <p class="sent" id="contactSent" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Houston Delivery Services. Delivering confidence with every order.</span>
+    <a href="https://www.houstondeliveryservices.com/">houstondeliveryservices.com</a>
+    <p class="made">Mockup made for Houston Delivery Services by Sunny Gupta, <a href="https://lifebaselabs.com">lifebaselabs.com</a></p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick actions">
+  <a class="btn btn-red" href="#plan">Plan a delivery</a>
+  <a class="btn btn-ghost" href="mailto:info@houstondeliveryservices.com">Email us</a>
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var $ = function(id){return document.getElementById(id)};
+
+  /* planner */
+  var fits = {
+    consumer:{name:'Consumer Direct',lab:'Restaurant you ordered from',pick:'The restaurant',text:'Perfect for parties, offices and family gatherings. Pickup from any restaurant in our coverage area. Careful handling and on-time arrival.'},
+    business:{name:'Small Business',lab:'Pickup restaurant',pick:'Your restaurant',text:'Scheduled catering delivery, not a marketplace listing. White-label deliveries that protect your brand. Flat-rate pricing with no commissions.'},
+    enterprise:{name:'Enterprise',lab:'Pickup location',pick:'Your kitchen',text:'Account-level pricing where it applies. Negotiated pricing and consolidated billing. High-volume and large-event catering delivery programs.'}
+  };
+  function fmtTime(v){ var m = /^(\d{1,2}):(\d{2})/.exec(v||''); if(!m) return 'To be agreed'; var h = +m[1]; return ((h%12)||12)+':'+m[2]+(h<12?' AM':' PM'); }
+  var form = $('planForm'), pickup = $('pickup'), city = $('city'), date = $('date'), time = $('time'), order = $('order'), dest = $('dest'), setup = $('setup');
+  var d = new Date(); d.setDate(d.getDate()+2); if(d.getDay()===0) d.setDate(d.getDate()+1); if(d.getDay()===6) d.setDate(d.getDate()+2);
+  var pad = function(n){return (n<10?'0':'')+n};
+  date.value = d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());
+  date.min = new Date().toISOString().slice(0,10);
+  var lastWho = 'business';
+  function render(){
+    var who = form.querySelector('input[name=who]:checked').value, f = fits[who];
+    if(who!==lastWho){ if(!pickup.value.trim() || pickup.value===fits[lastWho].pick) pickup.value = f.pick; lastWho = who; }
+    $('pickLab').textContent = f.lab;
+    var p = pickup.value.trim() || f.pick;
+    $('rPick').textContent = p;
+    document.querySelector('.rp').textContent = p;
+    $('rDest').textContent = dest.value.trim() || 'Your destination';
+    $('rCity').textContent = city.value;
+    document.querySelector('.rc').textContent = city.value;
+    $('rTime').textContent = fmtTime(time.value);
+    $('reqType').textContent = order.value;
+    $('rSetup').textContent = setup.checked ? ', with help setting out the catering' : '';
+    $('fitName').textContent = f.name; $('fitText').textContent = f.text;
+    if(date.value){ var x = new Date(date.value+'T12:00:00'); $('rDate').textContent = x.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'}); }
+    else $('rDate').textContent = 'Choose a day';
+    var cb = document.querySelectorAll('#cities button');
+    for(var i=0;i<cb.length;i++) cb[i].setAttribute('aria-pressed', cb[i].textContent===city.value ? 'true':'false');
+  }
+  form.addEventListener('input', render); form.addEventListener('change', render);
+  form.addEventListener('submit', function(e){ e.preventDefault(); $('planSent').textContent = 'Thanks. This is a mockup, so nothing was sent.'; });
+  $('contactForm').addEventListener('submit', function(e){ e.preventDefault(); $('contactSent').textContent = 'Thanks. This is a mockup, so nothing was sent.'; });
+  $('cities').addEventListener('click', function(e){
+    var b = e.target.closest('button'); if(!b) return;
+    city.value = b.textContent; render();
+    $('plan').scrollIntoView({behavior: reduce ? 'auto' : 'smooth'});
+  });
+  render();
+
+  /* hero ticket: finished first, replays only while on screen */
+  var items = $('stages').children, foot = $('ticketFoot'), timer = null, step = items.length;
+  function paint(n){ for(var i=0;i<items.length;i++){ items[i].className = i<n ? '' : (i===n ? 'now wait' : 'wait'); } foot.style.visibility = n>=items.length ? 'visible':'hidden'; }
+  function tick(){ step = step>=items.length ? 0 : step+1; paint(step); timer = setTimeout(tick, step>=items.length ? 4200 : 900); }
+  if(!reduce && 'IntersectionObserver' in window){
+    new IntersectionObserver(function(es){ es.forEach(function(en){
+      if(en.isIntersecting){ if(!timer) timer = setTimeout(tick, 3500); }
+      else { clearTimeout(timer); timer = null; step = items.length; paint(step); }
+    }); },{threshold:.4}).observe($('ticket'));
+  }
+
+  /* journey line draws while visible */
+  var track = $('track');
+  if(reduce || !('IntersectionObserver' in window)){ track.classList.remove('idle'); }
+  else {
+    var r = track.getBoundingClientRect();
+    if(r.top < innerHeight) track.classList.remove('idle');
+    new IntersectionObserver(function(es){ es.forEach(function(en){ if(en.isIntersecting) track.classList.remove('idle'); }); },{threshold:.3}).observe(track);
+  }
+
+  /* gentle rise for things below the first screen */
+  if(!reduce && 'IntersectionObserver' in window){
+    var els = document.querySelectorAll('.sec-head, .plan-form, .req, .svc > li, .serve-photo, .track > li, .food-grid > *, .rest-list li, .bill, .crop-sky, .cities, .faq-grid > div, .contact-grid > *');
+    var io = new IntersectionObserver(function(es){ es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.remove('will-rise'); io.unobserve(en.target); } }); },{rootMargin:'0px 0px -8% 0px'});
+    for(var i=0;i<els.length;i++){ var el = els[i]; if(el.getBoundingClientRect().top > innerHeight){ el.classList.add('rise','will-rise'); io.observe(el); } }
+  }
+})();
+</script>
+</body>
+</html>
