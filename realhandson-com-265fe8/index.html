@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup realhandson-com-265fe8 1 adb4f400 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Real Hands-On | KPI, Strategy & Performance Certifications</title>
+<meta name="description" content="International certifications and management consulting in KPIs, strategy and performance management, with The KPI Institute, across Egypt and MENA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f1b2d;--navy-2:#16253b;--ink:#0f1b2d;--slate:#374151;--muted:#4b5563;
+  --line:#e3e7ee;--paper:#f6f7f9;--green:#00a54b;--green-dk:#007a37;--red:#c0272d;--red-lt:#ff7a7a;
+  --on-dark:#c3cbd8;--radius:14px;
+  --head:"Inter Tight","Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font:400 16px/1.6 var(--body);color:var(--slate);background:#fff;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--head);color:var(--ink);letter-spacing:-.02em;line-height:1.08;margin:0}
+p{margin:0}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:12px;top:-60px;background:#fff;color:var(--ink);padding:10px 14px;border-radius:8px;z-index:100}
+.skip:focus{top:44px}
+
+/* Mockup banner */
+.mock{background:#e9edf3;color:#1f2a3a;font:500 13px/1.3 var(--body);text-align:center;padding:9px 16px;border-bottom:1px solid #d3d9e2;letter-spacing:.01em}
+.mock b{font-weight:600}
+
+/* Header */
+.top{background:var(--navy);color:#fff;position:sticky;top:0;z-index:50;border-bottom:1px solid rgba(255,255,255,.08)}
+.top .wrap{display:flex;align-items:center;gap:28px;height:72px}
+.logo{display:flex;align-items:center;min-height:44px}
+.logo img{height:40px;width:auto}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{color:#dfe5ee;text-decoration:none;font-size:14.5px;font-weight:500;padding:12px 12px;border-radius:8px}
+.nav a:hover{color:#fff;background:rgba(255,255,255,.06)}
+.top-call{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border:1px solid rgba(255,255,255,.22);border-radius:999px;color:#fff;text-decoration:none;font-weight:600;font-size:14.5px;white-space:nowrap}
+.top-call:hover{border-color:#fff}
+.top-call svg{width:16px;height:16px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;font:600 16px/1 var(--body);text-decoration:none;border:0;cursor:pointer;transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+.btn-go{background:var(--green);color:var(--navy)}
+.btn-go:hover{background:#12b85c;transform:translateY(-1px);box-shadow:0 8px 20px -8px rgba(0,165,75,.6)}
+.btn-ghost{color:#fff;border:1px solid rgba(255,255,255,.3);background:transparent}
+.btn-ghost:hover{border-color:#fff}
+.btn-dark{background:var(--navy);color:#fff}
+.btn-dark:hover{background:#1c2c45}
+.btn svg{width:18px;height:18px}
+
+/* Hero */
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden;padding:72px 0 0}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:56px 56px;mask-image:linear-gradient(180deg,#000 0%,transparent 85%);-webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 85%);pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:start}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:600 12.5px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--red-lt)}
+.eyebrow::before{content:"";width:22px;height:2px;background:currentColor}
+.hero h1{color:#fff;font-size:clamp(40px,5.6vw,68px);font-weight:800;margin:22px 0 22px;letter-spacing:-.03em}
+.hero h1 span{display:block}
+.hero h1 .hl{color:var(--red-lt)}
+.lede{font-size:18.5px;line-height:1.6;color:var(--on-dark);max-width:33em}
+.lede strong{color:#fff;font-weight:600}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:64px;border-top:1px solid rgba(255,255,255,.12)}
+.stat{padding:24px 0 30px}
+.stat + .stat{padding-left:24px;border-left:1px solid rgba(255,255,255,.12)}
+.stat b{display:block;font:800 34px/1 var(--head);color:#fff;letter-spacing:-.02em}
+.stat span{display:block;margin-top:8px;font-size:13.5px;color:var(--on-dark)}
+
+/* Finder */
+.finder{background:#fff;color:var(--slate);border-radius:20px;box-shadow:0 30px 60px -24px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.06);padding:28px;margin-top:6px}
+.finder h2{font-size:22px;margin:0 0 4px}
+.finder .sub{font-size:14.5px;color:var(--muted);margin-bottom:18px}
+.finder fieldset{border:0;margin:0;padding:0;display:grid;gap:8px}
+.finder legend{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.opt label{display:flex;align-items:center;gap:12px;min-height:48px;padding:10px 14px;border:1px solid var(--line);border-radius:12px;font-size:15px;font-weight:500;color:var(--ink);cursor:pointer;transition:border-color .2s,background .2s}
+.opt label::before{content:"";flex:none;width:18px;height:18px;border-radius:50%;border:2px solid #b9c2cf;transition:all .2s}
+.opt input:checked + label{border-color:var(--navy);background:#f3f6fa}
+.opt input:checked + label::before{border:5px solid var(--green)}
+.opt input:focus-visible + label{outline:3px solid var(--green);outline-offset:2px}
+.opt label:hover{border-color:#9aa6b6}
+.result{margin-top:18px;border-radius:14px;background:var(--navy);color:#fff;padding:22px;position:relative;overflow:hidden}
+.result.swap .r-in{animation:swap .35s ease}
+@keyframes swap{from{opacity:.2;transform:translateY(6px)}to{opacity:1;transform:none}}
+.r-top{display:flex;gap:14px;align-items:center}
+.code{flex:none;display:grid;place-items:center;width:58px;height:58px;border-radius:12px;background:#fff;color:var(--navy);font:800 13px/1 var(--head);letter-spacing:.02em;text-align:center}
+.code.in{background:var(--green)}
+.r-kicker{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--on-dark);font-weight:600}
+.r-name{font:700 19px/1.2 var(--head);color:#fff;margin-top:4px}
+.r-sol{margin-top:14px;font-size:14.5px;color:var(--on-dark);line-height:1.55}
+.r-sol b{color:#fff;font-weight:600}
+.r-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:500;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.08);color:#e7ecf3}
+.chip.hot{background:rgba(255,122,122,.14);color:#ffb3b3}
+.r-act{margin-top:18px;display:flex}
+.r-act .btn{min-height:48px;font-size:15px;width:100%}
+
+/* Sections */
+section{scroll-margin-top:80px}
+.sec{padding:104px 0}
+.sec-h{max-width:640px;margin-bottom:48px}
+.sec-h .eyebrow{color:var(--red)}
+.sec-h h2{font-size:clamp(32px,3.8vw,46px);font-weight:800;margin:16px 0 14px}
+.sec-h p{font-size:18px;color:var(--muted)}
+
+/* Certifications timetable */
+.table{border-top:2px solid var(--navy)}
+.row{display:grid;grid-template-columns:76px 1.5fr 1fr 1fr auto;gap:24px;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}
+.row .code{width:64px;height:64px;background:var(--paper);border:1px solid var(--line);font-size:13.5px}
+.row h3{font-size:19px;font-weight:700}
+.row p{font-size:14.5px;color:var(--muted);margin-top:4px}
+.fmt{font-size:14.5px;color:var(--ink);font-weight:500}
+.fmt small{display:block;color:var(--muted);font-weight:400;font-size:13.5px;margin-top:2px}
+.when{font-size:14.5px;font-weight:600;color:var(--ink)}
+.when small{display:block;font-weight:500;font-size:13.5px;color:var(--red);margin-top:2px}
+.when.ask{font-weight:500;color:var(--muted)}
+.row .link{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid #c8cfda;color:var(--ink);text-decoration:none;font-weight:600;font-size:14.5px;white-space:nowrap}
+.row .link:hover{border-color:var(--navy);background:var(--navy);color:#fff}
+.inhouse{margin-top:40px;display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:36px 40px}
+.inhouse h3{font-size:26px;font-weight:800}
+.inhouse p{margin-top:10px;font-size:16.5px;color:var(--muted)}
+.inhouse .btns{display:flex;justify-content:flex-end}
+
+/* Why */
+.why{background:var(--paper)}
+.why-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+.why-grid .sec-h{margin-bottom:32px}
+.badges{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.badges figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px;width:104px;height:104px;display:grid;place-items:center}
+.badges img{max-width:84px;max-height:84px;width:auto;height:auto}
+.badge-note{margin-top:14px;font-size:14px;color:var(--muted)}
+.reasons{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+.reasons li{padding:24px 0;border-top:1px solid #d9dee6}
+.reasons .n{font:700 13px/1 var(--head);color:var(--red);letter-spacing:.08em}
+.reasons h3{font-size:19px;margin:10px 0 8px}
+.reasons p{font-size:15px;color:var(--muted)}
+
+/* PEACE */
+.peace{background:var(--navy);color:#fff}
+.peace .sec-h h2{color:#fff}
+.peace .sec-h p{color:var(--on-dark)}
+.peace .sec-h .eyebrow{color:var(--red-lt)}
+.peace-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.letters{display:flex;gap:10px}
+.letters button{flex:1;aspect-ratio:1/1.15;min-height:64px;border-radius:14px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.03);color:#fff;font:800 clamp(28px,4vw,48px)/1 var(--head);cursor:pointer;transition:all .25s ease}
+.letters button:hover{border-color:rgba(255,255,255,.4)}
+.letters button[aria-pressed="true"]{background:#fff;color:var(--navy);border-color:#fff;transform:translateY(-4px)}
+.dim{margin-top:24px;min-height:150px}
+.dim h3{color:#fff;font-size:24px}
+.dim p{margin-top:10px;color:var(--on-dark);font-size:16.5px;max-width:34em}
+.peace-meta{margin-top:24px;display:flex;flex-wrap:wrap;gap:8px}
+.peace .cta{margin-top:28px}
+
+/* Alumni */
+.quote-main{font:700 clamp(26px,3vw,38px)/1.25 var(--head);color:var(--ink);letter-spacing:-.02em;max-width:22em;margin:0}
+.who{display:flex;align-items:center;gap:12px;margin-top:22px}
+.av{flex:none;width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font:700 14px/1 var(--head)}
+.who b{display:block;color:var(--ink);font-size:15px}
+.who div>span{display:block;font-size:13.5px;color:var(--muted)}
+.tag{display:inline-block;margin-left:6px;font-size:11.5px;font-weight:700;letter-spacing:.06em;padding:3px 7px;border-radius:6px;background:#eaf6ef;color:var(--green-dk);vertical-align:1px}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:64px;padding-top:40px;border-top:1px solid var(--line)}
+.quotes blockquote{margin:0}
+.quotes blockquote p{font-size:16.5px;color:var(--ink);line-height:1.55}
+
+/* FAQ */
+.faq{background:var(--paper)}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;align-items:start}
+details{border-bottom:1px solid #d9dee6}
+details:first-of-type{border-top:1px solid #d9dee6}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:64px;padding:16px 0;font:600 17.5px/1.35 var(--head);color:var(--ink)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:12px;height:12px;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);transform:rotate(45deg) translate(-3px,-3px);transition:transform .2s}
+details[open] summary::after{transform:rotate(-135deg) translate(-2px,-2px)}
+details p{padding:0 0 22px;font-size:16px;color:var(--muted);max-width:40em}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.direct{margin-top:32px;display:grid;gap:12px}
+.direct a{display:flex;align-items:center;gap:14px;min-height:60px;padding:12px 18px;border:1px solid var(--line);border-radius:14px;text-decoration:none;color:var(--ink);font-weight:600}
+.direct a:hover{border-color:var(--navy)}
+.direct a span{display:block;font-weight:400;font-size:13.5px;color:var(--muted)}
+.direct svg{flex:none;width:22px;height:22px;color:var(--green-dk)}
+form{background:#fff;border:1px solid var(--line);border-radius:20px;padding:32px;box-shadow:0 20px 50px -30px rgba(15,27,45,.35)}
+.f{display:grid;gap:6px;margin-bottom:16px}
+.f label{font-size:14px;font-weight:600;color:var(--ink)}
+.f input,.f select,.f textarea{font:400 16px/1.4 var(--body);color:var(--ink);background:#fff;border:1px solid #c5cdd8;border-radius:10px;padding:12px 14px;min-height:48px;width:100%}
+.f textarea{min-height:96px;resize:vertical}
+.f input:focus,.f select:focus,.f textarea:focus{outline:3px solid rgba(0,165,75,.35);border-color:var(--green-dk)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.seg{display:flex;gap:8px}
+.seg label{flex:1;position:relative}
+.seg input{position:absolute;opacity:0;inset:0;margin:0}
+.seg span{display:flex;align-items:center;justify-content:center;min-height:48px;border:1px solid #c5cdd8;border-radius:10px;font-size:15px;font-weight:500;color:var(--ink);cursor:pointer}
+.seg input:checked + span{border-color:var(--navy);background:var(--navy);color:#fff}
+.seg input:focus-visible + span{outline:3px solid var(--green);outline-offset:2px}
+form .btn{width:100%;margin-top:6px}
+.thanks{display:none;margin-top:14px;padding:14px 16px;border-radius:10px;background:#eaf6ef;color:#0b5e30;font-weight:600}
+.thanks.on{display:block}
+
+/* Footer */
+footer{background:var(--navy);color:var(--on-dark);padding:56px 0 40px;font-size:14.5px}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px;align-items:flex-start}
+.foot img{height:36px;width:auto}
+.foot nav{display:flex;flex-wrap:wrap;gap:4px}
+.foot nav a{color:#e3e8ef;text-decoration:none;min-height:44px;display:inline-flex;align-items:center;padding:0 10px;border-radius:8px}
+.foot nav a:hover{color:#fff;text-decoration:underline}
+.made{margin-top:40px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:13.5px}
+.made a{color:#fff}
+
+/* Phone call bar */
+.callbar{display:none}
+
+/* Rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .6s ease,transform .6s ease}
+
+@media (max-width:1000px){
+  .nav{display:none}
+  .top-call{margin-left:auto}
+  .hero .wrap{grid-template-columns:1fr;gap:40px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(3){padding-left:0;border-left:0}
+  .stat:nth-child(n+3){border-top:1px solid rgba(255,255,255,.12)}
+  .why-grid,.peace-grid,.faq-grid,.contact-grid{grid-template-columns:1fr;gap:40px}
+  .row{grid-template-columns:64px 1fr auto;gap:8px 18px}
+  .row .fmt,.row .when{grid-column:2}
+  .row .link{grid-column:3;grid-row:1/span 3;align-self:center}
+  .inhouse{grid-template-columns:1fr}
+  .inhouse .btns{justify-content:flex-start}
+}
+@media (max-width:640px){
+  body{padding-bottom:68px}
+  .wrap{padding:0 20px}
+  .top .wrap{height:64px}
+  .logo img{height:34px}
+  .top-call .lbl{display:none}
+  .top-call{width:44px;padding:0;justify-content:center}
+  .hero{padding-top:44px}
+  .hero h1{font-size:40px;margin:18px 0 16px}
+  .lede{font-size:17px}
+  .cta .btn{flex:1 1 100%}
+  .finder{padding:20px;border-radius:18px}
+  .stats{margin-top:48px}
+  .stat b{font-size:28px}
+  .stat{padding:20px 0 22px}
+  .stat + .stat{padding-left:18px}
+  .sec{padding:72px 0}
+  .sec-h{margin-bottom:36px}
+  .sec-h p{font-size:17px}
+  .row{grid-template-columns:52px 1fr;gap:6px 14px;padding:20px 0}
+  .row .code{width:52px;height:52px;font-size:12px;grid-row:1/span 3;align-self:start}
+  .row .link{grid-column:2;grid-row:auto;justify-self:start;margin-top:8px}
+  .row h3{font-size:17.5px}
+  .inhouse{padding:26px 22px}
+  .inhouse h3{font-size:22px}
+  .inhouse .btn{width:100%}
+  .reasons{grid-template-columns:1fr}
+  .badges figure{width:76px;height:76px;padding:8px}
+  .badges img{max-width:60px;max-height:60px}
+  .letters{gap:6px}
+  .quotes{grid-template-columns:1fr;gap:32px;margin-top:48px}
+  form{padding:22px}
+  .two{grid-template-columns:1fr}
+  .callbar{display:flex;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:rgba(15,27,45,.97);border-top:1px solid rgba(255,255,255,.12)}
+  .callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none}
+  .callbar .c1{color:#fff;border:1px solid rgba(255,255,255,.3)}
+  .callbar .c2{background:var(--green);color:var(--navy)}
+  .callbar svg{width:17px;height:17px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1!important;transform:none!important}
+  .letters button[aria-pressed="true"]{transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Free mockup for <b>Real Hands-On</b></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#main" aria-label="Real Hands-On, back to top"><img src="https://realhandson.com/rho-logo-white.png" alt="Real Hands On" width="94" height="40"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#certifications">Certifications</a>
+      <a href="#inhouse">In-house</a>
+      <a href="#engagement">Engagement</a>
+      <a href="#alumni">Alumni</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="top-call" href="tel:+201287652002" aria-label="Call +20 128 765 2002"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span class="lbl">+20 128 765 2002</span></a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" aria-labelledby="hero-h">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">With The KPI Institute · Egypt &amp; MENA</span>
+      <h1 id="hero-h"><span>Design KPIs.</span><span>Execute Strategy.</span><span class="hl">Measure Performance.</span></h1>
+      <p class="lede">International certifications and consulting that turn strategy into <strong>measurable results</strong>, with frameworks and templates you can apply on Monday morning.</p>
+      <div class="cta">
+        <a class="btn btn-go" href="#finder">Find your certification <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="#inhouse">Train your whole team</a>
+      </div>
+    </div>
+
+    <div class="finder" id="finder">
+      <h2>Where does performance break down?</h2>
+      <p class="sub">Pick the one that sounds most like you.</p>
+      <fieldset>
+        <legend>Your biggest gap</legend>
+        <div class="opt"><input type="radio" name="gap" id="g1" value="strategy"><label for="g1">Strategy isn't turning into execution</label></div>
+        <div class="opt"><input type="radio" name="gap" id="g2" value="kpi" checked><label for="g2">We have KPIs, but they don't drive performance</label></div>
+        <div class="opt"><input type="radio" name="gap" id="g3" value="data"><label for="g3">We have data, but no real insight</label></div>
+        <div class="opt"><input type="radio" name="gap" id="g4" value="team"><label for="g4">Our team needs execution capability</label></div>
+      </fieldset>
+      <div class="result" aria-live="polite">
+        <div class="r-in">
+          <div class="r-top">
+            <div class="code" id="r-code">C-KPI</div>
+            <div><div class="r-kicker">Start with</div><div class="r-name" id="r-name">Certified KPI Professional</div></div>
+          </div>
+          <p class="r-sol" id="r-sol"><b>The fix:</b> KPI architecture design and governance frameworks. Design meaningful KPIs that support management decisions.</p>
+          <div class="r-meta" id="r-meta"><span class="chip">5 days · Live online</span><span class="chip">1–5 Nov 2026</span><span class="chip hot">11 seats left</span></div>
+          <div class="r-act"><a class="btn btn-go" id="r-btn" href="#contact" data-topic="C-KPI">Register interest</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="stats" style="grid-column:1/-1">
+      <div class="stat"><b>8,000+</b><span>Certified alumni</span></div>
+      <div class="stat"><b>258+</b><span>Training batches</span></div>
+      <div class="stat"><b>84%</b><span>Satisfaction rate</span></div>
+      <div class="stat"><b>25 yrs</b><span>Of excellence</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="certifications" aria-labelledby="cert-h">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="eyebrow">Certifications</span>
+      <h2 id="cert-h">Six certifications. Real tools, not just certificates.</h2>
+      <p>Strategy execution and performance management, accredited by The KPI Institute and taught by practitioners.</p>
+    </div>
+    <div class="table" role="list">
+      <div class="row" role="listitem">
+        <div class="code">C-KPI</div>
+        <div><h3>Certified KPI Professional</h3><p>Design meaningful KPIs that support management decisions.</p></div>
+        <div class="fmt">5 days<small>Live online</small></div>
+        <div class="when">1–5 Nov 2026<small>11 seats left</small></div>
+        <a class="link" href="#contact" data-topic="C-KPI">Register interest</a>
+      </div>
+      <div class="row" role="listitem">
+        <div class="code">C-BSC</div>
+        <div><h3>Certified Balanced Scorecard Professional</h3><p>Translate strategy into measurable objectives and performance indicators.</p></div>
+        <div class="fmt">5 days<small>Live online</small></div>
+        <div class="when ask">Ask for next dates</div>
+        <a class="link" href="#contact" data-topic="C-BSC">Register interest</a>
+      </div>
+      <div class="row" role="listitem">
+        <div class="code">C-SBP</div>
+        <div><h3>Certified Strategy &amp; Business Planning Professional</h3><p>Design, communicate and execute business plans that get implemented.</p></div>
+        <div class="fmt">5 days<small>Live online</small></div>
+        <div class="when ask">Ask for next dates</div>
+        <a class="link" href="#contact" data-topic="C-SBP">Register interest</a>
+      </div>
+      <div class="row" role="listitem">
+        <div class="code">C-OKR</div>
+        <div><h3>Certified OKR Professional</h3><p>Set goals that inspire and deliver results.</p></div>
+        <div class="fmt">5 days<small>Live online</small></div>
+        <div class="when ask">Ask for next dates</div>
+        <a class="link" href="#contact" data-topic="C-OKR">Register interest</a>
+      </div>
+      <div class="row" role="listitem">
+        <div class="code">C-DA</div>
+        <div><h3>Certified Data Analysis Professional</h3><p>Turn data into decisions with practical analysis, visualization and storytelling skills.</p></div>
+        <div class="fmt">5 days<small>Live online</small></div>
+        <div class="when">6–10 Dec 2026<small>20 seats left</small></div>
+        <a class="link" href="#contact" data-topic="C-DA">Register interest</a>
+      </div>
+      <div class="row" role="listitem">
+        <div class="code">ODA</div>
+        <div><h3>Organization Design Architect</h3><p>The techniques and tools that make you the lead organization design resource for your organization.</p></div>
+        <div class="fmt">3 days<small>Face to face</small></div>
+        <div class="when ask">Ask for next dates</div>
+        <a class="link" href="#contact" data-topic="ODA">Register interest</a>
+      </div>
+    </div>
+
+    <div class="inhouse" id="inhouse">
+      <div>
+        <span class="eyebrow" style="color:var(--red)">For organizations</span>
+        <h3 style="margin-top:12px">Bring any certification to your team.</h3>
+        <p>In-house training with content, dates and delivery fully customized to your organization. Group discounts available.</p>
+      </div>
+      <div class="btns"><a class="btn btn-dark" href="#contact" data-topic="In-house training">Request a proposal</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec why" aria-labelledby="why-h">
+  <div class="wrap why-grid">
+    <div>
+      <div class="sec-h">
+        <span class="eyebrow">Why Real Hands-On</span>
+        <h2 id="why-h">Practical by design. It's in the name.</h2>
+        <p>International methodology, practitioner facilitators, and frameworks built for how business works in the Middle East and Africa.</p>
+      </div>
+      <div class="badges">
+        <figure><img src="https://realhandson.com/badges/certified-kpi-professional.png" alt="Certified KPI Professional badge, The KPI Institute" width="84" height="75" loading="lazy"></figure>
+        <figure><img src="https://realhandson.com/badges/strategy-and-business-planning.png" alt="Certified Strategy and Business Planning Professional badge" width="84" height="75" loading="lazy"></figure>
+        <figure><img src="https://realhandson.com/badges/okr-professional.png" alt="Certified OKR Professional badge" width="84" height="70" loading="lazy"></figure>
+        <figure><img src="https://realhandson.com/badges/cpd-credits.webp" alt="CPD credits badge" width="84" height="84" loading="lazy"></figure>
+      </div>
+      <p class="badge-note">Accredited by The KPI Institute. Recognized by employers across 30+ countries.</p>
+    </div>
+    <ol class="reasons">
+      <li><span class="n">01</span><h3>Built on real scenarios</h3><p>Every session works through real business cases. You leave with frameworks, templates and tools, not just a certificate.</p></li>
+      <li><span class="n">02</span><h3>Practitioners, not theorists</h3><p>Facilitators with 15+ years of consulting across the Middle East, Africa and Europe.</p></li>
+      <li><span class="n">03</span><h3>Support after day three</h3><p>An alumni network, post-training toolkits and consulting follow-up to help you implement.</p></li>
+      <li><span class="n">04</span><h3>Made for this region</h3><p>International methodology adapted to the Middle East and African context: culturally, linguistically and operationally.</p></li>
+      <li><span class="n">05</span><h3>Results you can count</h3><p>Outcome-tracking templates so your organization can quantify the return on its training.</p></li>
+      <li><span class="n">06</span><h3>Globally accredited</h3><p>Certifications from The KPI Institute, the world's leading authority on performance measurement.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec peace" id="engagement" aria-labelledby="peace-h">
+  <div class="wrap peace-grid">
+    <div class="sec-h" style="margin-bottom:0">
+      <span class="eyebrow">Employee engagement · PEACE®</span>
+      <h2 id="peace-h">Understand what drives your people.</h2>
+      <p>Engagement consulting across Egypt, Saudi Arabia and the region: programme design, workshops and action follow-through, with Corpmetrix® PEACE® listening technology and analytics.</p>
+      <div class="peace-meta"><span class="chip">Engagement survey</span><span class="chip">360° feedback</span><span class="chip">Used in 70+ countries</span><span class="chip">Arabic &amp; English</span></div>
+      <div class="cta"><a class="btn btn-go" href="#contact" data-topic="Engagement program">Discuss your engagement program</a></div>
+    </div>
+    <div>
+      <div class="letters" role="group" aria-label="The five dimensions of engagement">
+        <button type="button" data-i="0" aria-pressed="true" aria-label="Purpose">P</button>
+        <button type="button" data-i="1" aria-pressed="false" aria-label="Empowerment">E</button>
+        <button type="button" data-i="2" aria-pressed="false" aria-label="Achievement">A</button>
+        <button type="button" data-i="3" aria-pressed="false" aria-label="Culture">C</button>
+        <button type="button" data-i="4" aria-pressed="false" aria-label="Evolvement">E</button>
+      </div>
+      <div class="dim" aria-live="polite">
+        <h3 id="dim-h">Purpose</h3>
+        <p id="dim-p">When people understand the purpose of their role and how it connects to the organization's mission, work feels meaningful, not just busy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="alumni" aria-labelledby="alumni-h">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="eyebrow">What alumni say</span>
+      <h2 id="alumni-h" style="font-size:20px;font-weight:700;letter-spacing:0;color:var(--muted)">From the people who put it to work</h2>
+    </div>
+    <figure style="margin:0">
+      <blockquote style="margin:0"><p class="quote-main">“Real Hands-On truly lives up to its name. No fluff, no theory overload, just tools you actually use from day one.”</p></blockquote>
+      <figcaption class="who"><span class="av" aria-hidden="true">OR</span><div><b>Omar Al-Rashid <span class="tag">C-SBP</span></b><span>COO · Manufacturing Group</span></div></figcaption>
+    </figure>
+    <div class="quotes">
+      <figure style="margin:0">
+        <blockquote><p>“We thought we knew KPIs from daily practice. This program revealed how much value a proper methodology adds. Game-changing.”</p></blockquote>
+        <figcaption class="who"><span class="av" aria-hidden="true">ME</span><div><b>Mohamed El-Saied <span class="tag">C-KPI</span></b><span>Founder · Operatives</span></div></figcaption>
+      </figure>
+      <figure style="margin:0">
+        <blockquote><p>“The balanced scorecard programme transformed how our entire leadership team thinks about strategy. We built our first real strategy map within two weeks of completing the course.”</p></blockquote>
+        <figcaption class="who"><span class="av" aria-hidden="true">SK</span><div><b>Sarah El-Khoury <span class="tag">C-BSC</span></b><span>VP Strategy · Regional Bank</span></div></figcaption>
+      </figure>
+      <figure style="margin:0">
+        <blockquote><p>“Thank you for this terrific advanced training program. Inspiring, exceeded expectations, and immediately applicable to my role.”</p></blockquote>
+        <figcaption class="who"><span class="av" aria-hidden="true">AS</span><div><b>Amin Shawky <span class="tag">C-SBP</span></b><span>Deputy HR Manager · Audi Bank</span></div></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec faq" id="faq" aria-labelledby="faq-h">
+  <div class="wrap faq-grid">
+    <div class="sec-h">
+      <span class="eyebrow">Questions</span>
+      <h2 id="faq-h">Before you register</h2>
+      <p>Anything else? Call <a href="tel:+201287652002" style="color:var(--ink);font-weight:600">+20 128 765 2002</a>.</p>
+    </div>
+    <div>
+      <details open><summary>How long are the programs, and where?</summary><p>Most certifications run 5 days, live online. Organization Design Architect is 3 days, face to face.</p></details>
+      <details><summary>Who accredits the certifications?</summary><p>The KPI Institute. The certifications are recognized by employers across 30+ countries.</p></details>
+      <details><summary>Can you train our team in-house?</summary><p>Yes. Any certification can be delivered in-house, with content, dates and delivery fully customized to your organization. Group discounts are available.</p></details>
+      <details><summary>Is it theory, or will I use it?</summary><p>Every session is built around real business scenarios. You leave with frameworks, templates and tools you can apply on Monday morning.</p></details>
+      <details><summary>What happens after the course?</summary><p>Learning doesn't end on day three. You get the alumni network, post-training toolkits and consulting follow-up.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contact" aria-labelledby="contact-h">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="sec-h" style="margin-bottom:0">
+        <span class="eyebrow">Get started</span>
+        <h2 id="contact-h">Ready to certify yourself, or your team?</h2>
+        <p>Tell us which program you're after. We'll come back with dates, seats and options.</p>
+      </div>
+      <div class="direct">
+        <a href="tel:+201287652002"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><div>+20 128 765 2002<span>Tap to call</span></div></a>
+        <a href="mailto:info@realhandson.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg><div>info@realhandson.com<span>Email us</span></div></a>
+      </div>
+    </div>
+    <form id="form" novalidate>
+      <div class="two">
+        <div class="f"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name"></div>
+        <div class="f"><label for="f-contact">Email or phone</label><input id="f-contact" name="contact" autocomplete="email"></div>
+      </div>
+      <div class="f"><label for="f-topic">Interested in</label>
+        <select id="f-topic" name="topic">
+          <option>C-KPI</option><option>C-BSC</option><option>C-SBP</option><option>C-OKR</option><option>C-DA</option><option>ODA</option><option>In-house training</option><option>Engagement program</option>
+        </select>
+      </div>
+      <div class="f"><span style="font-size:14px;font-weight:600;color:var(--ink)" id="who-l">Who is it for?</span>
+        <div class="seg" role="radiogroup" aria-labelledby="who-l">
+          <label><input type="radio" name="who" value="me" checked><span>Just me</span></label>
+          <label><input type="radio" name="who" value="team"><span>My team</span></label>
+        </div>
+      </div>
+      <div class="f"><label for="f-msg">Anything we should know?</label><textarea id="f-msg" name="msg"></textarea></div>
+      <button class="btn btn-go" type="submit">Send</button>
+      <p class="thanks" id="thanks" role="status">Thanks. This is a mockup, so nothing was sent.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <img src="https://realhandson.com/rho-logo-white.png" alt="Real Hands On" width="84" height="36" loading="lazy">
+        <p style="margin-top:14px;max-width:26em">International certifications and management consulting in Egypt and MENA, with The KPI Institute.</p>
+      </div>
+      <nav aria-label="Contact and social">
+        <a href="tel:+201287652002">+20 128 765 2002</a>
+        <a href="mailto:info@realhandson.com">info@realhandson.com</a>
+        <a href="https://www.linkedin.com/company/realhandson/">LinkedIn</a>
+        <a href="https://facebook.com/realhandson">Facebook</a>
+        <a href="https://www.instagram.com/realhands_on">Instagram</a>
+        <a href="https://realhandson.com/">realhandson.com</a>
+      </nav>
+    </div>
+    <p class="made">Mockup made for Real Hands-On by Sunny Gupta, <a href="https://lifebaselabs.com">lifebaselabs.com</a></p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick actions">
+  <a class="c1" href="tel:+201287652002"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call</a>
+  <a class="c2" href="#finder">Find your certification</a>
+</div>
+
+<script>
+(function(){
+  var gaps={
+    strategy:{code:'C-BSC',name:'Certified Balanced Scorecard Professional',sol:'Strategy Maps and Balanced Scorecard implementation. Translate strategy into measurable objectives and performance indicators.',meta:['5 days · Live online','Ask for next dates'],hot:null,btn:'Register interest'},
+    kpi:{code:'C-KPI',name:'Certified KPI Professional',sol:'KPI architecture design and governance frameworks. Design meaningful KPIs that support management decisions.',meta:['5 days · Live online','1–5 Nov 2026'],hot:'11 seats left',btn:'Register interest'},
+    data:{code:'C-DA',name:'Certified Data Analysis Professional',sol:'Data analysis capability and performance dashboards. Turn data into decisions with practical analysis, visualization and storytelling.',meta:['5 days · Live online','6–10 Dec 2026'],hot:'20 seats left',btn:'Register interest'},
+    team:{code:'Team',name:'In-house training',sol:'Certification programs and in-house capability building. Any certification, with content, dates and delivery customized to you.',meta:['Group discounts'],hot:null,btn:'Request a proposal',topic:'In-house training',inhouse:true}
+  };
+  var $=function(id){return document.getElementById(id)};
+  var result=document.querySelector('.result');
+  function esc(s){return s.replace(/[&<>]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
+  function show(k){
+    var g=gaps[k];
+    $('r-code').textContent=g.code;
+    $('r-code').className='code'+(g.inhouse?' in':'');
+    $('r-name').textContent=g.name;
+    $('r-sol').innerHTML='<b>The fix:</b> '+esc(g.sol);
+    $('r-meta').innerHTML=g.meta.map(function(m){return '<span class="chip">'+esc(m)+'</span>'}).join('')+(g.hot?'<span class="chip hot">'+esc(g.hot)+'</span>':'');
+    $('r-btn').textContent=g.btn;
+    $('r-btn').setAttribute('data-topic',g.topic||g.code);
+    result.classList.remove('swap');void result.offsetWidth;result.classList.add('swap');
+  }
+  document.querySelectorAll('input[name="gap"]').forEach(function(r){r.addEventListener('change',function(){show(r.value)})});
+
+  // Preselect topic in the form
+  var sel=$('f-topic');
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('[data-topic]');
+    if(!a)return;
+    var t=a.getAttribute('data-topic');
+    for(var i=0;i<sel.options.length;i++){if(sel.options[i].text===t){sel.selectedIndex=i}}
+    if(t==='In-house training'){var tm=document.querySelector('input[name="who"][value="team"]');if(tm)tm.checked=true}
+  });
+
+  // PEACE dimensions
+  var dims=[
+    ['Purpose','When people understand the purpose of their role and how it connects to the organization’s mission, work feels meaningful, not just busy.'],
+    ['Empowerment','Empowered employees have clarity, trust, and the authority to make decisions. This unlocks ownership, initiative, and faster execution.'],
+    ['Achievement','Visible progress and recognition for results fuel motivation. Clear goals, fair measurement, and feedback turn effort into a sense of achievement.'],
+    ['Culture','Culture is the everyday experience of values, leadership, and behaviors. A healthy culture creates safety, inclusion, and pride in belonging.'],
+    ['Evolvement','Evolvement means continuously learning, adapting, and improving. When people see the organization evolving with them, they stay engaged for the long term.']
+  ];
+  var btns=document.querySelectorAll('.letters button');
+  btns.forEach(function(b){b.addEventListener('click',function(){
+    btns.forEach(function(x){x.setAttribute('aria-pressed','false')});
+    b.setAttribute('aria-pressed','true');
+    var d=dims[+b.getAttribute('data-i')];
+    $('dim-h').textContent=d[0];$('dim-p').textContent=d[1];
+  })});
+
+  // Form
+  $('form').addEventListener('submit',function(e){e.preventDefault();$('thanks').classList.add('on')});
+
+  // Gentle rise for content below the first screen
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce&&'IntersectionObserver' in window){
+    var els=document.querySelectorAll('.sec-h,.row,.inhouse,.reasons li,.badges,.letters,.quote-main,.quotes figure,details,form,.direct');
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target)}});
+    },{rootMargin:'0px 0px -6% 0px'});
+    els.forEach(function(el){
+      if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('rise','will-rise');io.observe(el)}
+    });
+  }
+})();
+</script>
+</body>
+</html>
