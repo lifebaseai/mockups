@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup oldemillinnofclarkston-com-ded6ef 1 ba696116 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Olde Mill Inn of Clarkston South | Lakefront rooms on Van Norman Lake</title>
+<meta name="description" content="Stay beside Van Norman Lake in Clarkston, Michigan, about five miles from Pine Knob. Lakefront rooms, complimentary kayaks and pedal boats.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#002046;--navy-2:#0b2c57;--green:#1d3b2a;--green-2:#25492f;--gold:#c9a54a;--gold-soft:#e6d29a;
+  --paper:#f7f3ea;--paper-2:#efe8d9;--ink:#13233a;--muted:#545b66;--line:#dcd3c0;--white:#fff;
+  --serif:"Playfair Display",Georgia,"Times New Roman",serif;--sans:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --r:14px;--wrap:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.12;margin:0;letter-spacing:-.01em}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--navy);color:#fff;padding:10px 14px;border-radius:8px;z-index:50}
+.skip:focus{top:12px}
+
+/* mockup banner */
+.mock{background:#132619;color:#efe6cf;text-align:center;font:500 13px/1.3 var(--sans);letter-spacing:.04em;padding:9px 16px;position:relative;z-index:30}
+.mock b{color:#e6d29a;font-weight:600}
+
+/* header */
+.top{background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:76px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:44px;height:auto;border-radius:50%/42%}
+.brand .wm{display:flex;flex-direction:column;line-height:1}
+.brand .wm i{font:italic 500 25px/1 var(--serif);color:var(--navy)}
+.brand .wm small{font:600 10.5px/1 var(--sans);letter-spacing:.2em;color:var(--green);margin-top:6px}
+.nav{display:flex;align-items:center;gap:4px}
+.nav a{text-decoration:none;font-size:15px;color:var(--ink);padding:12px 12px;border-radius:8px}
+.nav a:hover{background:var(--paper-2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;font:600 15.5px/1 var(--sans);text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .2s ease,background .2s ease,box-shadow .2s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-2);box-shadow:0 8px 20px -10px rgba(0,32,70,.6)}
+.btn-gold{background:var(--gold);color:#13233a}
+.btn-gold:hover{background:#d4b25a}
+.btn-line{border-color:currentColor;color:inherit;background:transparent}
+.nav .btn{margin-left:10px;padding:0 20px;color:#fff}
+.nav .btn:hover{background:var(--navy-2)}
+.only-phone{display:none}
+
+/* hero */
+.hero{position:relative;color:#fff;background:var(--navy)}
+.hero-media{position:relative;height:min(82vh,720px);min-height:520px;overflow:hidden}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:50% 58%}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,22,48,.08) 30%,rgba(0,22,48,.78) 100%),linear-gradient(90deg,rgba(0,22,48,.55) 0%,rgba(0,22,48,0) 60%)}
+.hero-copy{position:absolute;left:0;right:0;bottom:150px;z-index:2}
+.eyebrow{font:600 12.5px/1.2 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold-soft)}
+.hero h1{font-size:clamp(40px,5.6vw,74px);max-width:13ch;margin:16px 0 18px;text-shadow:0 2px 24px rgba(0,16,40,.35)}
+.hero .lede{font-size:19px;max-width:34em;color:#eef1f6}
+.hero .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero .btn-line{color:#fff;border-color:rgba(255,255,255,.7)}
+.hero .btn-line:hover{background:rgba(255,255,255,.1)}
+
+/* finder */
+.finder-sec{position:relative;z-index:3;margin-top:-110px;padding-bottom:28px}
+.finder{background:var(--green);color:#f3eedf;border-radius:22px;display:grid;grid-template-columns:1.05fr 1fr;overflow:hidden;box-shadow:0 30px 60px -30px rgba(10,25,15,.55),0 2px 0 rgba(255,255,255,.04) inset}
+.f-controls{padding:34px 36px 36px}
+.f-controls h2{font-size:30px;color:#fff}
+.f-controls .sub{color:#d8d3c2;font-size:15.5px;margin:6px 0 22px}
+fieldset{border:0;padding:0;margin:0 0 20px;min-width:0}
+legend{font:600 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:10px;padding:0}
+.dates{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
+.dates label{display:block;font-size:13px;color:#d8d3c2}
+.dates input{margin-top:6px;width:100%;min-width:0;display:block;-webkit-appearance:none;appearance:none;min-height:46px;border-radius:10px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.06);color:#fff;font:500 15px var(--sans);padding:0 12px;color-scheme:dark}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg input{position:absolute;opacity:0;width:1px;height:1px}
+.seg label{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid rgba(255,255,255,.26);font-size:15px;cursor:pointer;transition:background .2s,border-color .2s,color .2s;user-select:none}
+.seg label:hover{border-color:rgba(255,255,255,.55)}
+.seg input:checked+label{background:#f3eedf;color:var(--green);border-color:#f3eedf;font-weight:600}
+.seg input:focus-visible+label{outline:3px solid var(--gold);outline-offset:2px}
+.seg.num label{min-width:48px;justify-content:center;padding:0 12px}
+.seg.chk input:checked+label::before{content:"";width:12px;height:7px;border-left:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-45deg) translate(1px,-2px)}
+
+.f-result{background:#f8f4ea;color:var(--ink);padding:34px 36px 36px;display:flex;flex-direction:column}
+.f-sum{font-size:14px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 14px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.f-sum span{display:inline-flex;align-items:center;gap:6px}
+.f-sum span+span::before{content:"";width:4px;height:4px;border-radius:50%;background:var(--gold);margin-right:8px}
+.f-sum span:first-child{flex-basis:100%;color:var(--ink);font-weight:500}
+.f-sum span:nth-child(2)::before{display:none}
+.f-kicker{font:600 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--green);margin:20px 0 8px}
+.f-name{font-size:30px;color:var(--navy)}
+.f-tags{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0}
+.tag{font-size:13px;font-weight:500;padding:5px 11px;border-radius:999px;background:#e9e2cf;color:#3b3a2e}
+.tag.lake{background:#dfe8f3;color:#0b2c57}
+.f-desc{color:#3e4652;font-size:15.5px}
+.f-trip{margin-top:16px;padding:14px 16px;border-radius:12px;background:#fff;border:1px solid var(--line);font-size:15px;display:flex;gap:12px;align-items:flex-start}
+.f-trip svg{width:22px;height:22px;flex:none;color:var(--green);margin-top:1px}
+.f-also{margin-top:14px;font-size:14.5px;color:var(--muted)}
+.f-also a{color:var(--navy);font-weight:500}
+.f-acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;padding-top:22px}
+.f-acts .btn-line{color:var(--navy)}
+.f-result.swap .f-body{animation:fade .35s ease}
+@keyframes fade{from{opacity:.25;transform:translateY(4px)}to{opacity:1;transform:none}}
+
+/* strip */
+.strip{display:grid;grid-template-columns:repeat(5,auto);justify-content:space-between;gap:14px 20px;padding:26px 6px 0;font-size:14.5px;color:var(--muted)}
+.strip span{display:inline-flex;align-items:center;gap:10px;white-space:nowrap}
+.strip svg{width:20px;height:20px;flex:none;color:var(--green)}
+
+/* sections */
+section{scroll-margin-top:90px}
+.sec{padding:110px 0}
+.head{max-width:640px;margin-bottom:46px}
+.head h2{font-size:clamp(32px,3.8vw,48px);color:var(--navy);margin-top:12px}
+.head p{color:var(--muted);margin-top:14px;font-size:18px}
+.eyebrow.dk{color:var(--green)}
+
+/* intro */
+.intro{padding:100px 0 30px}
+.intro .wrap{display:grid;grid-template-columns:1fr 1.25fr;gap:60px;align-items:end}
+.intro h2{font-size:clamp(32px,3.8vw,48px);color:var(--navy);margin-top:12px}
+.intro p{font-size:19px;color:#3e4652}
+
+/* rooms */
+.rooms{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.r-group h3{font:600 12.5px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--green);padding-bottom:14px;border-bottom:2px solid var(--navy);display:flex;justify-content:space-between}
+.r-group h3 span{color:var(--muted);letter-spacing:.06em;text-transform:none;font-weight:500}
+.room{position:relative;isolation:isolate;padding:24px 0 26px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:184px minmax(0,1fr);gap:22px;align-items:start}
+.room .shot{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;background:var(--paper-2);box-shadow:0 14px 26px -18px rgba(20,30,40,.5)}
+.room::before{content:"";position:absolute;inset:0 -16px;z-index:-1;border-radius:4px;background:#fbf8f1;box-shadow:inset 3px 0 0 var(--gold);opacity:0;transition:opacity .3s}
+.room.hit::before{opacity:1}
+.room-top{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.room h4{font:500 24px/1.2 var(--serif);color:var(--navy);margin:0}
+.sleeps{font-size:14px;color:var(--muted);white-space:nowrap}
+.room p{color:#3e4652;font-size:15.5px;margin-top:8px}
+.room .f-tags{margin:12px 0 0}
+.rooms-note{margin-top:34px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;color:var(--muted)}
+
+/* lake */
+.lake{background:var(--paper-2)}
+.lake .wrap{display:grid;grid-template-columns:minmax(0,640px) 1fr;gap:64px;align-items:center}
+.lake figure{margin:0;position:relative}
+.lake figure img{width:100%;max-width:640px;border-radius:16px;box-shadow:0 30px 50px -30px rgba(20,30,20,.5)}
+.lake figcaption{font-size:13.5px;color:var(--muted);margin-top:12px}
+.perks{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:18px}
+.perks li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
+.perks .ic{width:44px;height:44px;border-radius:50%;background:var(--paper);border:1px solid var(--line);display:grid;place-items:center;color:var(--green)}
+.perks .ic svg{width:22px;height:22px}
+.perks b{display:block;font-weight:600;color:var(--navy)}
+.perks span{color:#4a525d;font-size:15.5px}
+
+/* pine knob */
+.knob{background:var(--navy);color:#e9edf4}
+.knob .wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:72px;align-items:start}
+.knob h2{font-size:clamp(32px,3.8vw,48px);color:#fff;margin-top:12px}
+.knob p{color:#c9d2e0;margin-top:16px;font-size:18px}
+.knob .eyebrow{color:var(--gold-soft)}
+.scale{list-style:none;margin:0;padding:0}
+.scale li{display:grid;grid-template-columns:1fr auto;gap:6px 16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.scale li:first-child{border-top:1px solid rgba(255,255,255,.12)}
+.scale .nm{font-weight:500;color:#fff}
+.scale .mi{font:500 22px/1 var(--serif);color:var(--gold-soft)}
+.scale .bar{grid-column:1/-1;height:6px;border-radius:6px;background:rgba(255,255,255,.08);position:relative;overflow:hidden}
+.scale .bar i{position:absolute;left:0;top:0;bottom:0;border-radius:6px;background:linear-gradient(90deg,#c9a54a,#e6d29a);width:var(--w);transform-origin:left;transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}
+.scale .note{grid-column:1/-1;font-size:14.5px;color:#b9c3d3}
+.scale.wait .bar i{transform:scaleX(0)}
+.scale-foot{font-size:14px;color:#b9c3d3;margin-top:14px}
+.scale-foot b{color:#fff;font-weight:500}
+.knob figure{margin:36px 0 0}
+.knob figure img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:14px;box-shadow:0 30px 50px -30px rgba(0,0,0,.7)}
+.knob figcaption{font-size:13.5px;color:#b9c3d3;margin-top:10px}
+.near{margin-top:34px}
+.near h3{font:600 12.5px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--gold-soft);padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.12)}
+.near ul{list-style:none;margin:0;padding:0}
+.near li{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.near b{display:block;font-weight:500;color:#fff}
+.near span{font-size:14.5px;color:#b9c3d3}
+.faq-sec figure{margin:34px 0 0}
+.faq-sec figure img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 0;border-radius:14px;box-shadow:0 24px 40px -28px rgba(20,30,20,.55)}
+.faq-sec figcaption{font-size:13.5px;color:var(--muted);margin-top:10px}
+
+/* locations */
+.locs{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.loc{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px}
+.loc.here{border:2px solid var(--navy)}
+.badge{display:inline-block;font:600 11.5px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;padding:6px 10px;border-radius:999px;background:var(--navy);color:#fff}
+.badge.alt{background:#efe5c8;color:#4c3f12}
+.loc h3{font-size:28px;color:var(--navy);margin:16px 0 6px}
+.loc address{font-style:normal;color:var(--muted)}
+.loc p{margin-top:12px;color:#3e4652}
+.loc .acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.loc .btn-line{color:var(--navy)}
+
+/* area */
+.area{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line)}
+.area div{padding:24px 26px 26px 0;border-bottom:1px solid var(--line)}
+.area div:not(:nth-child(3n+1)){padding-left:26px;border-left:1px solid var(--line)}
+.area h3{font:500 21px/1.25 var(--serif);color:var(--navy);display:flex;justify-content:space-between;gap:12px}
+.area h3 small{font:500 14px var(--sans);color:var(--green);white-space:nowrap;padding-top:4px}
+.area p{color:#4a525d;font-size:15.5px;margin-top:8px}
+.area.two{grid-template-columns:1fr 1fr}
+.area.two div:nth-child(2){padding-left:26px;border-left:1px solid var(--line)}
+.area.two h3{font-size:24px}
+
+/* faq */
+.faq-sec{background:var(--paper-2)}
+.faq-sec .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-child{border-top:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:64px;padding:12px 0;font:500 20px/1.3 var(--serif);color:var(--navy)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";width:12px;height:12px;flex:none;border-right:2px solid var(--green);border-bottom:2px solid var(--green);transform:rotate(45deg) translate(-3px,-3px);transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(-135deg) translate(-3px,-3px)}
+.faq details p{padding:0 40px 20px 0;color:#3e4652}
+
+/* contact */
+.contact .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:start}
+.ways{list-style:none;margin:28px 0 0;padding:0}
+.ways li{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.ways li:first-child{border-top:1px solid var(--line)}
+.ways .k{font:600 12px/1.9 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--green)}
+.ways a{color:var(--navy);font-weight:500;text-decoration:none;display:inline-block;min-height:28px;word-break:break-word}
+.ways a:hover{text-decoration:underline}
+form.note{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px;box-shadow:0 20px 40px -30px rgba(20,30,40,.35)}
+form.note h3{font-size:26px;color:var(--navy)}
+form.note .sub{color:var(--muted);font-size:15px;margin:6px 0 20px}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fields .full{grid-column:1/-1}
+.fields label{display:block;font-size:14px;font-weight:500;color:#2b3442}
+.fields input,.fields textarea{margin-top:6px;width:100%;min-height:48px;border-radius:10px;border:1px solid #cfc6b2;background:#fdfbf6;font:400 16px var(--sans);color:var(--ink);padding:10px 12px}
+.fields textarea{min-height:110px;resize:vertical}
+.fields input:focus,.fields textarea:focus{outline:2px solid var(--green);outline-offset:1px;border-color:var(--green)}
+form.note .btn{margin-top:18px;width:100%}
+.thanks{margin-top:14px;padding:12px 14px;border-radius:10px;background:#e8efe6;color:#1d3b2a;font-weight:500;font-size:15px}
+.thanks[hidden]{display:none}
+
+/* closing */
+.close{background:var(--green);color:#f3eedf;text-align:center;padding:100px 0}
+.close img{width:84px;margin:0 auto 22px;border-radius:50%/42%}
+.close h2{font-size:clamp(34px,4.4vw,56px);color:#fff;max-width:15ch;margin:0 auto}
+.close p{color:#d8d3c2;margin:16px auto 0;max-width:34em;font-size:18px}
+.close .acts{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:30px}
+.close .btn-line{color:#fff;border-color:rgba(255,255,255,.6)}
+
+footer{background:#0f1d14;color:#c8c6b8;font-size:14.5px;padding:46px 0 40px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px 40px}
+footer a{color:#efe6cf}
+footer .soc{display:flex;gap:6px;flex-wrap:wrap}
+footer .soc a{display:inline-flex;align-items:center;min-height:44px;padding:0 10px;text-decoration:none;border-radius:8px}
+footer .soc a:hover{background:rgba(255,255,255,.06)}
+footer .made{flex-basis:100%;border-top:1px solid rgba(255,255,255,.1);padding-top:18px;color:#a9a796}
+
+.callbar{display:none}
+
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:980px){
+  .nav a:not(.btn){display:none}
+  .finder{grid-template-columns:minmax(0,1fr)}
+  .strip{grid-template-columns:repeat(3,auto)}
+  .intro .wrap,.lake .wrap,.knob .wrap,.faq-sec .wrap,.contact .wrap{grid-template-columns:1fr;gap:40px}
+  .rooms{grid-template-columns:1fr;gap:40px}
+  .area{grid-template-columns:1fr 1fr}
+  .area div:not(:nth-child(3n+1)){padding-left:0;border-left:0}
+  .area div:nth-child(even){padding-left:22px;border-left:1px solid var(--line)}
+}
+@media (max-width:640px){
+  body{font-size:16.5px;padding-bottom:72px}
+  .wrap{padding:0 20px}
+  .mock{font-size:12px;padding:8px 12px}
+  .top .wrap{min-height:64px}
+  .brand img{width:38px}
+  .brand .wm i{font-size:21px}
+  .brand .wm small{font-size:9.5px}
+  .nav .btn{display:none}
+  .only-phone{display:inline-flex}
+  .nav .call-sm{display:inline-flex;min-height:44px;padding:0 14px;font-size:14px;color:var(--navy);border-color:var(--navy)}
+  .hero-media{height:auto;min-height:0;aspect-ratio:4/3}
+  .hero-media::after{background:linear-gradient(180deg,rgba(0,22,48,0) 55%,rgba(0,32,70,.9) 100%)}
+  .hero-copy{position:static;padding:4px 0 128px;background:var(--navy)}
+  .hero h1{font-size:40px;margin:12px 0 14px}
+  .hero .lede{font-size:17px}
+  .hero .acts .btn{flex:1 1 100%}
+  .finder-sec{margin-top:-96px}
+  .finder{border-radius:18px}
+  .f-controls,.f-result{padding:26px 20px 26px}
+  .f-controls h2{font-size:26px}
+  .f-name{font-size:26px}
+  .f-acts .btn{flex:1 1 100%}
+  .strip{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px 16px;font-size:14.5px;padding-top:22px}
+  .strip span{white-space:normal;align-items:flex-start}
+  .dates input{font-size:14px;padding:0 10px}
+  .sec{padding:76px 0}
+  .intro{padding:70px 0 10px}
+  .intro p{font-size:17.5px}
+  .room h4{font-size:21px}
+  .room{grid-template-columns:minmax(0,1fr);gap:16px}
+  .room .shot{aspect-ratio:3/2}
+  .room::before{inset:0 -10px}
+  .locs{grid-template-columns:1fr}
+  .area{grid-template-columns:1fr}
+  .area div:nth-child(even){padding-left:0;border-left:0}
+  .area div,.area.two div:nth-child(2){padding:20px 0;border-left:0}
+  .area.two{grid-template-columns:1fr}
+  .fields{grid-template-columns:1fr}
+  .ways li{grid-template-columns:1fr;gap:2px}
+  form.note{padding:22px}
+  .faq summary{font-size:18px}
+  .faq details p{padding-right:0}
+  .close{padding:76px 0}
+  .close .acts .btn{flex:1 1 100%}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:25;padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:rgba(247,243,234,.97);border-top:1px solid var(--line);box-shadow:0 -8px 24px -16px rgba(0,0,0,.3)}
+  .callbar .btn{min-height:48px;width:100%}
+  .callbar .btn-line{color:var(--navy)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .will-rise{opacity:1;transform:none}
+  .scale.wait .bar i{transform:none}
+}
+</style></head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="mock" role="note">Free mockup for <b>The Olde Mill Inn of Clarkston South</b></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="The Olde Mill Inn of Clarkston South, back to top">
+      <img src="https://oldemillinnofclarkston.com/_next/image?url=%2Fimages%2Flogo.png&w=384&q=75" width="292" height="350" alt="Olde Mill Inn of Clarkston South oval logo with the mill">
+      <span class="wm"><i>Olde Mill Inn</i><small>OF CLARKSTON SOUTH</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#rooms">Rooms</a>
+      <a href="#lake">The lake</a>
+      <a href="#pine-knob">Pine Knob</a>
+      <a href="#questions">Questions</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-navy" href="https://oldemillinnofclarkston.com/">Book now</a>
+      <a class="btn btn-line call-sm only-phone" href="tel:+12486230300" aria-label="Call the inn at (248) 623-0300">Call</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-h">
+    <div class="hero-media">
+      <img src="https://www.oldemillinnofclarkston.com/images/gallery/50.jpg" width="2048" height="1528" alt="Aerial view of the Olde Mill Inn along the shoreline of Van Norman Lake on a summer day" fetchpriority="high">
+    </div>
+    <div class="hero-copy">
+      <div class="wrap">
+        <p class="eyebrow">Lakefront lodging in Clarkston, Michigan</p>
+        <h1 id="hero-h">Stay on the lake. Minutes from Pine Knob.</h1>
+        <p class="lede">Rustic rooms on Van Norman Lake, with complimentary kayaks and pedal boats, about five miles from the concerts and the slopes.</p>
+        <div class="acts">
+          <a class="btn btn-gold" href="#finder">Find your room
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+          <a class="btn btn-line" href="tel:+12486230300">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+            Call (248) 623-0300</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="finder-sec" id="finder" aria-labelledby="finder-h">
+    <div class="wrap">
+      <div class="finder">
+        <form class="f-controls" id="finderForm" onsubmit="return false">
+          <h2 id="finder-h">Which room fits your trip?</h2>
+          <p class="sub">Tell us who's coming and why. We'll point you to the right room.</p>
+
+          <fieldset>
+            <legend>Dates</legend>
+            <div class="dates">
+              <label>Check-in<input type="date" id="cin" name="cin"></label>
+              <label>Check-out<input type="date" id="cout" name="cout"></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Guests</legend>
+            <div class="seg num">
+              <input type="radio" name="g" id="g1" value="1"><label for="g1">1</label>
+              <input type="radio" name="g" id="g2" value="2" checked><label for="g2">2</label>
+              <input type="radio" name="g" id="g3" value="3"><label for="g3">3</label>
+              <input type="radio" name="g" id="g4" value="4"><label for="g4">4</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>The trip</legend>
+            <div class="seg">
+              <input type="radio" name="t" id="t-concert" value="concert" checked><label for="t-concert">Concert at Pine Knob</label>
+              <input type="radio" name="t" id="t-ski" value="ski"><label for="t-ski">Ski day</label>
+              <input type="radio" name="t" id="t-lake" value="lake"><label for="t-lake">Lake weekend</label>
+              <input type="radio" name="t" id="t-long" value="long"><label for="t-long">Longer stay</label>
+            </div>
+          </fieldset>
+
+          <fieldset style="margin-bottom:0">
+            <legend>Must have</legend>
+            <div class="seg chk">
+              <input type="checkbox" name="m" id="m-lake" value="lake" checked><label for="m-lake">On the water</label>
+              <input type="checkbox" name="m" id="m-kitchen" value="kitchen"><label for="m-kitchen">A kitchen</label>
+              <input type="checkbox" name="m" id="m-fire" value="fire"><label for="m-fire">Fireplace</label>
+              <input type="checkbox" name="m" id="m-wash" value="wash"><label for="m-wash">Washer &amp; dryer</label>
+            </div>
+          </fieldset>
+        </form>
+
+        <div class="f-result" id="result" aria-live="polite">
+          <div class="f-sum" id="sum"><span>2 guests</span><span>Concert at Pine Knob</span><span>On the water</span></div>
+          <div class="f-body" id="fbody">
+            <p class="f-kicker">Your best fit</p>
+            <h3 class="f-name">Premium Queen</h3>
+            <div class="f-tags"><span class="tag lake">Lakefront</span><span class="tag">Queen bed</span><span class="tag">Sleeps 2</span><span class="tag">Kitchenette</span><span class="tag">Electric fireplace</span></div>
+            <p class="f-desc">A queen bed and rustic log furniture, set right by the water, with a kitchenette, a dual-burner stovetop and a wall-mounted electric fireplace.</p>
+            <div class="f-trip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg><span>Pine Knob Music Theatre is about 5 miles away. After the show, come back to a quiet lakefront instead of a highway hotel.</span></div>
+            <p class="f-also">Also fits: <a href="#room-p2">Premium Lakefront Room with Two Full Beds</a>, <a href="#room-ph">Presidential Honeymoon Suite</a></p>
+          </div>
+          <div class="f-acts">
+            <a class="btn btn-navy" href="https://oldemillinnofclarkston.com/">Check availability</a>
+            <a class="btn btn-line" href="tel:+12486230300">Call the inn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="strip" aria-label="At a glance">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M2 9c2.5-2 4.5-2 7 0s4.5 2 7 0 4.5-2 6 0M2 15c2.5-2 4.5-2 7 0s4.5 2 7 0 4.5-2 6 0"/></svg>Lakefront setting</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg>About 5 miles to Pine Knob</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 16c3 2 15 2 18 0M6 15l6-9 6 9M12 6v9"/></svg>Complimentary kayaks &amp; pedal boats</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M10 16V8h3a2.5 2.5 0 0 1 0 5h-3"/></svg>Parking available</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M4 10h16M8 6.5h.01M12 6.5h.01"/></svg>Selected kitchenettes</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro" aria-labelledby="intro-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow dk">Independent, local and welcoming</p>
+        <h2 id="intro-h">A different kind of Clarkston stay.</h2>
+      </div>
+      <p>The character and value of a family-operated inn, in a setting the chain hotels nearby can't offer: rooms beside Van Norman Lake, a covered waterfront patio, and Pine Knob, the ski areas, local dining and shopping close by.</p>
+    </div>
+  </section>
+
+  <section class="sec" id="rooms" aria-labelledby="rooms-h">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow dk">Rooms</p>
+        <h2 id="rooms-h">Warm wood, by the water.</h2>
+        <p>Every room has rustic log furniture. Off-water rooms still come with lake access and kayaks.</p>
+      </div>
+      <div class="rooms">
+        <div class="r-group">
+          <h3>On the water <span>3 room types</span></h3>
+          <article class="room" id="room-pq">
+            <img class="shot" src="https://oldemillinnofclarkston.com/_next/image?url=%2Fimages%2Fgallery%2F43.jpg&amp;w=828&amp;q=75" width="828" height="552" loading="lazy" alt="The Premium Queen room">
+            <div>
+            <div class="room-top"><h4>Premium Queen</h4><span class="sleeps">Sleeps 2</span></div>
+            <p>A queen bed, set right by the water. Kitchenette, dual-burner stovetop and a wall-mounted electric fireplace.</p>
+            <div class="f-tags"><span class="tag lake">Lakefront</span><span class="tag">Queen bed</span><span class="tag">Kitchenette</span><span class="tag">Fireplace</span></div>
+            </div>
+          </article>
+          <article class="room" id="room-p2">
+            <img class="shot" src="https://oldemillinnofclarkston.com/_next/image?url=%2Fimages%2Fgallery%2F36.jpg&amp;w=828&amp;q=75" width="828" height="552" loading="lazy" alt="The Premium Lakefront Room with two full beds">
+            <div>
+            <div class="room-top"><h4>Premium Lakefront Room with Two Full Beds</h4><span class="sleeps">Sleeps 4</span></div>
+            <p>Two full-size beds and room to spread out by the water. Kitchenette, dual-burner stovetop and a wall-mounted electric fireplace.</p>
+            <div class="f-tags"><span class="tag lake">Lakefront</span><span class="tag">Two full beds</span><span class="tag">Kitchenette</span><span class="tag">Fireplace</span></div>
+            </div>
+          </article>
+          <article class="room" id="room-ph">
+            <img class="shot" src="https://oldemillinnofclarkston.com/_next/image?url=%2Fimages%2Fgallery%2F23.jpg&amp;w=828&amp;q=75" width="828" height="552" loading="lazy" alt="The Presidential Honeymoon Suite: wood-paneled room with a bed, a brick fireplace and a full kitchen">
+            <div>
+            <div class="room-top"><h4>Presidential Honeymoon Suite</h4><span class="sleeps">Sleeps 4</span></div>
+            <p>The most accommodating lakefront suite. A full kitchen, an in-unit washer and dryer, and a large-screen TV above a fireplace.</p>
+            <div class="f-tags"><span class="tag lake">Lakefront</span><span class="tag">Full kitchen</span><span class="tag">Washer &amp; dryer</span><span class="tag">Fireplace</span></div>
+            </div>
+          </article>
+        </div>
+        <div class="r-group">
+          <h3>Off the water <span>2 room types</span></h3>
+          <article class="room" id="room-sf">
+            <img class="shot" src="https://oldemillinnofclarkston.com/_next/image?url=%2Fimages%2Fgallery%2F09.jpg&amp;w=828&amp;q=75" width="828" height="552" loading="lazy" alt="The Standard Full room">
+            <div>
+            <div class="room-top"><h4>Standard Full</h4><span class="sleeps">Sleeps 2</span></div>
+            <p>A full-size bed and warm log furniture. A comfortable, practical base for your Clarkston stay, with access to the lake and kayaks.</p>
+            <div class="f-tags"><span class="tag">Full bed</span><span class="tag">Lake access &amp; kayaks</span></div>
+            </div>
+          </article>
+          <article class="room" id="room-dq">
+            <img class="shot" src="https://oldemillinnofclarkston.com/_next/image?url=%2Fimages%2Fgallery%2F16.jpg&amp;w=828&amp;q=75" width="828" height="552" loading="lazy" alt="The Deluxe Queen room">
+            <div>
+            <div class="room-top"><h4>Deluxe Queen</h4><span class="sleeps">Sleeps 2</span></div>
+            <p>A queen bed, a wall-mounted electric fireplace and a kitchenette. Includes lake access and kayaks.</p>
+            <div class="f-tags"><span class="tag">Queen bed</span><span class="tag">Kitchenette</span><span class="tag">Fireplace</span><span class="tag">Lake access &amp; kayaks</span></div>
+            </div>
+          </article>
+          <div class="rooms-note">
+            <a class="btn btn-navy" href="https://oldemillinnofclarkston.com/">Check availability</a>
+            <a href="#finder" style="color:var(--navy);font-weight:500;min-height:44px;display:inline-flex;align-items:center">Not sure? Use the room finder</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec lake" id="lake" aria-labelledby="lake-h">
+    <div class="wrap">
+      <figure>
+        <img src="https://oldemillinnofclarkston.com/_next/image?url=%2Fimages%2Fgallery%2F64.jpg&amp;w=1200&amp;q=75" width="1200" height="800" loading="lazy" alt="Covered lakeside deck with log chairs looking out over Van Norman Lake">
+        <figcaption>The covered lakefront patio.</figcaption>
+      </figure>
+      <div>
+        <p class="eyebrow dk">Waterfront living</p>
+        <h2 id="lake-h" style="font-size:clamp(32px,3.8vw,48px);color:var(--navy);margin-top:12px">More than a room.</h2>
+        <p style="color:#3e4652;margin-top:14px;font-size:18px">Step outside and the lake is yours: coffee on the patio, an afternoon on the water, an evening by the shore.</p>
+        <ul class="perks">
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10 12 4l9 6M5 10v10M19 10v10M3 20h18"/></svg></span><div><b>Covered lakefront patio</b><span>A shaded space for morning coffee or an evening by the water.</span></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 16c3 2 15 2 18 0M6 15l6-9 6 9M12 6v9"/></svg></span><div><b>Kayaks &amp; pedal boats</b><span>Complimentary for registered guests, subject to season, weather, safety conditions and availability.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec knob" id="pine-knob" aria-labelledby="knob-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Going to Pine Knob?</p>
+        <h2 id="knob-h">Stay about five miles away.</h2>
+        <p>Make the inn your Clarkston home base for concerts, skiing and seasonal events, then come back to a quiet lakefront instead of a conventional highway hotel.</p>
+        <div style="margin-top:28px"><a class="btn btn-gold" href="#finder">Plan your Pine Knob stay</a></div>
+        <figure>
+          <img src="https://oldemillinnofclarkston.com/_next/image?url=%2Fimages%2Fgallery%2F56.jpg&amp;w=1080&amp;q=75" width="1080" height="810" loading="lazy" alt="The lakefront room building at the Olde Mill Inn seen from the water, with pedal boats at the shore">
+          <figcaption>The lakefront rooms, seen from Van Norman Lake.</figcaption>
+        </figure>
+      </div>
+      <div>
+        <ul class="scale" id="scale">
+          <li><span class="nm">Pine Knob Music Theatre</span><span class="mi">≈5 mi</span><span class="bar"><i style="--w:41.6%"></i></span><span class="note">Michigan's landmark outdoor amphitheater.</span></li>
+          <li><span class="nm">Pine Knob Ski and Snowboard Resort</span><span class="mi">≈5 mi</span><span class="bar"><i style="--w:41.6%"></i></span><span class="note">Downhill skiing, snowboarding and tubing.</span></li>
+          <li><span class="nm">Alpine Valley Ski Resort</span><span class="mi">≈8 mi</span><span class="bar"><i style="--w:66.6%"></i></span><span class="note">Runs for a range of abilities.</span></li>
+          <li><span class="nm">Mt. Holly Ski and Snowboard Resort</span><span class="mi">≈12 mi</span><span class="bar"><i style="--w:100%"></i></span><span class="note">Family-friendly slopes a short drive north.</span></li>
+        </ul>
+        <p class="scale-foot">Approximate distances from the inn.</p>
+        <div class="near" id="area">
+          <h3>Explore the area</h3>
+          <ul>
+            <li><b>Great Lakes Crossing Outlets</b><span>Michigan's largest indoor outlet mall, with shopping, dining and entertainment.</span></li>
+            <li><b>Downtown Clarkston</b><span>A walkable historic downtown with local dining, shops and community events.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="locations" aria-labelledby="loc-h">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow dk">Two locations in Clarkston</p>
+        <h2 id="loc-h">On the lake, or with your pet.</h2>
+      </div>
+      <div class="locs">
+        <div class="loc here">
+          <span class="badge">You are here</span>
+          <h3>Clarkston South</h3>
+          <address>5835 Dixie Hwy, Clarkston, MI 48346</address>
+          <p>Rooms on Van Norman Lake with online booking.</p>
+          <div class="acts">
+            <a class="btn btn-navy" href="tel:+12486230300">Call (248) 623-0300</a>
+            <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=5835%20Dixie%20Hwy%2C%20Clarkston%2C%20MI%2048346">Directions</a>
+          </div>
+        </div>
+        <div class="loc">
+          <span class="badge alt">Pet-friendly</span>
+          <h3>Clarkston North</h3>
+          <address>6853 Dixie Hwy, Clarkston, MI 48346</address>
+          <p>Pet-friendly studios with online booking. Extended stays by phone.</p>
+          <div class="acts">
+            <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=6853%20Dixie%20Hwy%2C%20Clarkston%2C%20MI%2048346">Directions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec faq-sec" id="questions" aria-labelledby="faq-h">
+    <div class="wrap">
+      <div class="head" style="margin-bottom:0">
+        <p class="eyebrow dk">Good to know</p>
+        <h2 id="faq-h">Questions guests ask.</h2>
+        <p>Anything else? Call <a href="tel:+12486230300" style="color:var(--navy);font-weight:500">(248) 623-0300</a> or text <a href="sms:+12487785068" style="color:var(--navy);font-weight:500">(248) 778-5068</a>.</p>
+        <figure>
+          <img src="https://oldemillinnofclarkston.com/_next/image?url=%2Fimages%2Fgallery%2F53.jpg&amp;w=1080&amp;q=75" width="1080" height="810" loading="lazy" alt="Pedal boats tied up beside the inn's dock on Van Norman Lake, seen from above">
+          <figcaption>Pedal boats at the inn's dock.</figcaption>
+        </figure>
+      </div>
+      <div class="faq">
+        <details open><summary>How far is Pine Knob?</summary><p>About five miles. That goes for both Pine Knob Music Theatre and the Pine Knob Ski and Snowboard Resort.</p></details>
+        <details><summary>Are the kayaks and pedal boats free?</summary><p>Yes, for registered guests, subject to season, weather, safety conditions and availability.</p></details>
+        <details><summary>Which rooms are right on the lake?</summary><p>The Premium Queen, the Premium Lakefront Room with Two Full Beds, and the Presidential Honeymoon Suite. The off-water rooms include lake access and kayaks.</p></details>
+        <details><summary>Which rooms sleep four?</summary><p>The Premium Lakefront Room with Two Full Beds and the Presidential Honeymoon Suite.</p></details>
+        <details><summary>Can I cook?</summary><p>Selected rooms have a kitchenette: the Premium Queen, the Two Full Beds room and the Deluxe Queen. The Presidential Honeymoon Suite has a full kitchen.</p></details>
+        <details><summary>Can I bring my pet?</summary><p>Pet-friendly studios are at our sister location, Clarkston North, 6853 Dixie Hwy.</p></details>
+        <details><summary>Is there parking?</summary><p>Yes, parking is available.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec contact" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow dk">Contact</p>
+        <h2 id="contact-h" style="font-size:clamp(32px,3.8vw,48px);color:var(--navy);margin-top:12px">Talk to the inn.</h2>
+        <ul class="ways">
+          <li><span class="k">Call</span><a href="tel:+12486230300">(248) 623-0300</a></li>
+          <li><span class="k">Text</span><a href="sms:+12487785068">(248) 778-5068</a></li>
+          <li><span class="k">Email</span><a href="mailto:oldmillinnofclarkston@gmail.com">oldmillinnofclarkston@gmail.com</a></li>
+          <li><span class="k">Find us</span><a href="https://www.google.com/maps/search/?api=1&amp;query=5835%20Dixie%20Hwy%2C%20Clarkston%2C%20MI%2048346">5835 Dixie Hwy, Clarkston, MI 48346</a></li>
+        </ul>
+      </div>
+      <form class="note" id="noteForm" novalidate>
+        <h3>Send a note</h3>
+        <p class="sub">Questions about a room, a tour or your dates.</p>
+        <div class="fields">
+          <label>Name<input name="name" autocomplete="name"></label>
+          <label>Phone or email<input name="reach" autocomplete="email"></label>
+          <label class="full">Dates you have in mind<input name="dates" placeholder="e.g. a Friday and Saturday in June"></label>
+          <label class="full">Message<textarea name="msg"></textarea></label>
+        </div>
+        <button class="btn btn-navy" type="submit">Send</button>
+        <p class="thanks" id="thanks" role="status" hidden>Thanks. This is a mockup, so nothing was sent.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="close" aria-labelledby="close-h">
+    <div class="wrap">
+      <img src="https://oldemillinnofclarkston.com/_next/image?url=%2Fimages%2Flogo.png&w=384&q=75" width="292" height="350" alt="" loading="lazy">
+      <h2 id="close-h">Your Clarkston lakefront stay starts here.</h2>
+      <p>Pick your room, check your dates, and come stay on the lake.</p>
+      <div class="acts">
+        <a class="btn btn-gold" href="#finder">Find your room</a>
+        <a class="btn btn-line" href="tel:+12486230300">Call the inn</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <p style="font:italic 500 22px/1.2 var(--serif);color:#efe6cf">The Olde Mill Inn of Clarkston South</p>
+      <p style="margin-top:8px">Independent, family-operated lakefront lodging on Van Norman Lake.<br>5835 Dixie Hwy, Clarkston, MI 48346 · <a href="tel:+12486230300">(248) 623-0300</a></p>
+    </div>
+    <nav class="soc" aria-label="Social">
+      <a href="https://www.facebook.com/people/The-Olde-Mill-Inn-of-Clarkston/61590417606921/">Facebook</a>
+      <a href="https://www.instagram.com/theoldemillinnofclarkston">Instagram</a>
+      <a href="https://www.yelp.com/biz/olde-mill-inn-clarkston-3">Yelp</a>
+    </nav>
+    <p class="made">Mockup made for The Olde Mill Inn of Clarkston South by Sunny Gupta, <a href="https://lifebaselabs.com">lifebaselabs.com</a></p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick actions">
+  <a class="btn btn-line" href="tel:+12486230300">Call</a>
+  <a class="btn btn-navy" href="https://oldemillinnofclarkston.com/">Book now</a>
+</div>
+
+<script>
+(function(){
+  var ROOMS=[
+    {id:'pq',name:'Premium Queen',sleeps:2,lake:true,kitchen:1,fire:true,wash:false,tags:['Queen bed','Sleeps 2','Kitchenette','Electric fireplace'],
+     desc:'A queen bed and rustic log furniture, set right by the water, with a kitchenette, a dual-burner stovetop and a wall-mounted electric fireplace.'},
+    {id:'p2',name:'Premium Lakefront Room with Two Full Beds',sleeps:4,lake:true,kitchen:1,fire:true,wash:false,tags:['Two full beds','Sleeps 4','Kitchenette','Electric fireplace'],
+     desc:'Two full-size beds and rustic log furniture, with room to spread out by the water. Kitchenette, dual-burner stovetop and a wall-mounted electric fireplace.'},
+    {id:'ph',name:'Presidential Honeymoon Suite',sleeps:4,lake:true,kitchen:2,fire:true,wash:true,tags:['Sleeps 4','Full kitchen','Washer & dryer','Fireplace'],
+     desc:'The most accommodating lakefront suite, filled with rustic log furniture. A full kitchen, an in-unit washer and dryer, and a large-screen TV above a fireplace.'},
+    {id:'sf',name:'Standard Full',sleeps:2,lake:false,kitchen:0,fire:false,wash:false,tags:['Full bed','Sleeps 2','Lake access & kayaks'],
+     desc:'A full-size bed and warm rustic log furniture. A comfortable, practical base for your Clarkston stay, with access to the lake and kayaks.'},
+    {id:'dq',name:'Deluxe Queen',sleeps:2,lake:false,kitchen:1,fire:true,wash:false,tags:['Queen bed','Sleeps 2','Kitchenette','Electric fireplace','Lake access & kayaks'],
+     desc:'A queen bed and rustic log furniture, with a wall-mounted electric fireplace and a kitchenette. Includes lake access and kayaks.'}
+  ];
+  var TRIPS={
+    concert:{label:'Concert at Pine Knob',icon:'<path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/>',
+      text:'Pine Knob Music Theatre is about 5 miles away. After the show, come back to a quiet lakefront instead of a highway hotel.'},
+    ski:{label:'Ski day',icon:'<path d="M3 20 21 6M8 7l4 3M14 4a2 2 0 1 0 0 .1"/>',
+      text:'Pine Knob Ski and Snowboard Resort is about 5 miles away, Alpine Valley about 8 and Mt. Holly about 12.'},
+    lake:{label:'Lake weekend',icon:'<path d="M3 16c3 2 15 2 18 0M6 15l6-9 6 9M12 6v9"/>',
+      text:'Kayaks and pedal boats are complimentary for registered guests, subject to season, weather, safety conditions and availability.'},
+    long:{label:'Longer stay',icon:'<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M4 10h16M8 6.5h.01M12 6.5h.01"/>',
+      text:'Rooms pair rustic details with practical amenities for longer stays. Extended stays at Clarkston North are booked by phone.'}
+  };
+  var MUST={lake:'On the water',kitchen:'A kitchen',fire:'Fireplace',wash:'Washer & dryer'};
+  var form=document.getElementById('finderForm'),body=document.getElementById('fbody'),sum=document.getElementById('sum'),res=document.getElementById('result');
+  var cin=document.getElementById('cin'),cout=document.getElementById('cout');
+  function iso(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
+  var d=new Date();d.setHours(12,0,0,0);var add=(5-d.getDay()+7)%7||7;d.setDate(d.getDate()+add);
+  var e=new Date(d);e.setDate(e.getDate()+2);
+  cin.value=iso(d);cout.value=iso(e);cin.min=iso(new Date());
+  function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+  function fmt(v){var p=v.split('-');var x=new Date(+p[0],p[1]-1,+p[2]);return x.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'})}
+  function render(anim){
+    var g=+form.querySelector('input[name=g]:checked').value;
+    var t=form.querySelector('input[name=t]:checked').value;
+    var m=[].slice.call(form.querySelectorAll('input[name=m]:checked')).map(function(x){return x.value});
+    var fit=ROOMS.filter(function(r){
+      return r.sleeps>=g&&m.every(function(k){return k==='kitchen'?r.kitchen>0:r[k]});
+    }).map(function(r,i){
+      var s=-(r.sleeps-g)*2-i*.1;
+      if(t==='lake'&&r.lake)s+=3;
+      if(t==='long'){s+=r.kitchen*2+(r.wash?3:0)}
+      return {r:r,s:s};
+    }).sort(function(a,b){return b.s-a.s}).map(function(x){return x.r});
+    var parts=[g+(g>1?' guests':' guest')];
+    if(cin.value&&cout.value&&cout.value>cin.value){
+      var n=Math.round((new Date(cout.value)-new Date(cin.value))/864e5);
+      parts.unshift(fmt(cin.value)+' to '+fmt(cout.value)+', '+n+(n>1?' nights':' night'));
+    }
+    parts.push(TRIPS[t].label);m.forEach(function(k){parts.push(MUST[k])});
+    sum.innerHTML=parts.map(function(p){return '<span>'+esc(p)+'</span>'}).join('');
+    var tr=TRIPS[t],html;
+    if(!fit.length){
+      html='<p class="f-kicker">No exact match</p><h3 class="f-name">Let the inn help.</h3><p class="f-desc" style="margin-top:12px">No single room has all of that for '+g+(g>1?' guests':' guest')+'. Try removing a must-have, or call (248) 623-0300 and the inn will help you choose.</p>';
+    }else{
+      var b=fit[0];
+      html='<p class="f-kicker">Your best fit</p><h3 class="f-name">'+esc(b.name)+'</h3><div class="f-tags">'+(b.lake?'<span class="tag lake">Lakefront</span>':'<span class="tag">Off-water</span>')+b.tags.map(function(x){return '<span class="tag">'+esc(x)+'</span>'}).join('')+'</div><p class="f-desc">'+esc(b.desc)+'</p>';
+      if(fit.length>1)html+='<p class="f-also">Also fits: '+fit.slice(1).map(function(r){return '<a href="#room-'+r.id+'">'+esc(r.name)+'</a>'}).join(', ')+'</p>';
+    }
+    html+='<div class="f-trip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+tr.icon+'</svg><span>'+esc(tr.text)+'</span></div>';
+    body.innerHTML=html;
+    document.querySelectorAll('.room').forEach(function(el){el.classList.toggle('hit',fit.length>0&&el.id==='room-'+fit[0].id)});
+    if(anim){res.classList.remove('swap');void res.offsetWidth;res.classList.add('swap')}
+  }
+  form.addEventListener('change',function(ev){
+    if(ev.target===cin&&cout.value<=cin.value){var x=new Date(cin.value+'T12:00');x.setDate(x.getDate()+1);cout.value=iso(x)}
+    render(true);
+  });
+  render(false);
+
+  document.getElementById('noteForm').addEventListener('submit',function(ev){ev.preventDefault();document.getElementById('thanks').hidden=false});
+
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce&&'IntersectionObserver' in window){
+    var vh=window.innerHeight;
+    var els=document.querySelectorAll('.head,.intro .wrap>*,.room,.lake figure,.perks li,.loc,.knob figure,.near li,.faq-sec figure,.faq details,form.note,.close h2');
+    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.remove('will-rise');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){if(el.getBoundingClientRect().top>vh){el.classList.add('rise','will-rise');io.observe(el)}});
+    var sc=document.getElementById('scale');
+    if(sc.getBoundingClientRect().top>vh){sc.classList.add('wait');
+      var io2=new IntersectionObserver(function(en){if(en[0].isIntersecting){sc.classList.remove('wait');io2.disconnect()}},{threshold:.3});io2.observe(sc)}
+  }
+})();
+</script>
+</body>
+</html>
