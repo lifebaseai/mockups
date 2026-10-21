@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup eltcenters-com-6c53da 1 1527a757 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Empowered Learning Transformational Centers | Building the ability to learn</title>
+<meta name="description" content="Brain-based training that builds the ability to learn, for all ages. Centers in Stamford, CT and West Long Branch, NJ. Free consultation by video call.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --yellow:#fff100; --blue:#0d39ff; --blue-d:#0a2bc4; --ink:#10153a; --muted:#4a4f6a;
+  --line:#e4e6ef; --soft:#f5f6fb; --cyan:#00a3e0;
+  --r:18px; --wrap:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:400 17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:Poppins,system-ui,sans-serif;line-height:1.12;letter-spacing:-.02em;margin:0}
+h2{font-size:clamp(30px,4vw,44px);font-weight:700}
+h3{font-size:20px;font-weight:600}
+p{margin:0}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.eyebrow{font:600 13px/1.2 Poppins,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.mark{background:linear-gradient(transparent 58%,var(--yellow) 58%,var(--yellow) 92%,transparent 92%);padding:0 .08em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:600 16px/1 Poppins,sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+.btn-main{background:var(--blue);color:#fff;box-shadow:0 8px 22px -10px rgba(13,57,255,.7)}
+.btn-main:hover{background:var(--blue-d);transform:translateY(-1px)}
+.btn-ghost{color:var(--ink);border-color:var(--line);background:#fff}
+.btn-ghost:hover{border-color:var(--ink)}
+.btn svg{width:18px;height:18px}
+
+/* mockup banner */
+.mock{background:var(--ink);color:#fff;font:500 13px/1.3 Inter,sans-serif;padding:6px 16px;letter-spacing:.02em;position:relative;z-index:30;display:flex;align-items:center;justify-content:center;gap:16px}
+.mock b{color:var(--yellow);font-weight:600}
+.mock a{flex:none;display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:0 14px;border:1px solid rgba(255,255,255,.4);border-radius:999px;color:#fff;font-weight:600;text-decoration:none;transition:background .2s,border-color .2s}
+.mock a:hover{background:rgba(255,255,255,.1);border-color:#fff}
+.mock a span{color:var(--yellow)}
+.sunny dl{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;margin:12px 0 0}
+.sunny dt{color:#c6cae0}
+.sunny dd{margin:0}
+.sunny{border:1px dashed rgba(255,255,255,.35);border-radius:14px;padding:18px 20px;max-width:640px}
+.sunny h2{margin:0 0 6px;font:600 15px/1.3 Poppins,sans-serif;letter-spacing:0;color:var(--yellow)}
+.sunny p{line-height:1.6}
+
+/* header */
+header.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+.logo img{width:132px;height:auto}
+.top nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+.top nav a{color:var(--ink);text-decoration:none;font:500 15px Poppins,sans-serif;padding:12px 0}
+.top nav a:hover{color:var(--blue)}
+.top .btn{min-height:46px;padding:0 20px;font-size:15px}
+
+/* hero */
+.hero{padding:72px 0 88px}
+.hero .wrap{display:grid;grid-template-columns:1.08fr .92fr;gap:64px;align-items:center}
+.hero h1{font-size:clamp(40px,5.6vw,68px);font-weight:700;margin:18px 0 22px}
+.hero .lede{font-size:19px;color:var(--muted);max-width:520px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 26px;margin:34px 0 0;padding:0;list-style:none;font-size:15px;color:var(--muted)}
+.facts li{display:flex;align-items:center;gap:8px}
+.facts li::before{content:"";width:8px;height:8px;background:var(--blue);border-radius:2px}
+.photo{position:relative;justify-self:end;width:100%;max-width:500px}
+.photo::before{content:"";position:absolute;inset:-22px 38% 30% -22px;background:var(--yellow);border-radius:6px}
+.photo img{position:relative;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:var(--r);box-shadow:0 30px 60px -30px rgba(16,21,58,.45)}
+.photo .tag{position:absolute;left:-28px;bottom:34px;background:#fff;border-radius:14px;padding:14px 18px;box-shadow:0 16px 40px -16px rgba(16,21,58,.35);font:600 15px/1.3 Poppins,sans-serif;max-width:240px}
+.photo .tag span{display:block;font:400 13px Inter,sans-serif;color:var(--muted);margin-top:3px}
+
+/* before / after */
+.ba{background:var(--soft);padding:96px 0}
+.ba-head{max-width:700px;margin-bottom:44px}
+.ba-head p{color:var(--muted);margin-top:14px;font-size:18px}
+.ba-grid{display:grid;grid-template-columns:1fr 64px 1fr;align-items:stretch}
+.ba-col{background:#fff;border-radius:var(--r);padding:32px 34px;border:1px solid var(--line)}
+.ba-col.after{border:2px solid var(--blue)}
+.ba-col h3{font-size:14px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px;color:var(--muted)}
+.ba-col.after h3{color:var(--blue)}
+.ba-col ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.ba-col li{display:flex;gap:12px;align-items:flex-start;font-size:16px;line-height:1.45}
+.ba-col li svg{flex:none;width:20px;height:20px;margin-top:1px}
+.before li{color:var(--muted)}
+.arrow{display:grid;place-items:center}
+.arrow span{width:44px;height:44px;border-radius:50%;background:var(--yellow);display:grid;place-items:center}
+.arrow svg{width:20px;height:20px}
+
+/* finder */
+.finder{padding:104px 0}
+.finder-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;margin-top:48px}
+.q{border:0;margin:0 0 28px;padding:0}
+.q legend{font:600 15px Poppins,sans-serif;margin-bottom:12px;display:flex;gap:10px;align-items:center}
+.q legend i{font-style:normal;width:26px;height:26px;border-radius:50%;background:var(--ink);color:#fff;display:inline-grid;place-items:center;font-size:13px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{position:relative}
+.chips input{position:absolute;opacity:0;width:1px;height:1px}
+.chips span{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border:1.5px solid var(--line);border-radius:999px;font:500 15px Inter,sans-serif;cursor:pointer;transition:all .18s;background:#fff}
+.chips span:hover{border-color:var(--ink)}
+.chips input:checked+span{background:var(--blue);border-color:var(--blue);color:#fff}
+.chips input:focus-visible+span{outline:3px solid var(--blue);outline-offset:3px}
+.q.off{opacity:.45}
+.q.off .chips span{cursor:default}
+.result{position:sticky;top:110px;background:var(--ink);color:#fff;border-radius:22px;padding:38px 38px 34px;overflow:hidden}
+.result::after{content:"";position:absolute;right:-40px;top:-40px;width:150px;height:150px;background:var(--yellow);transform:rotate(18deg);border-radius:10px;opacity:.95}
+.result .eyebrow{color:var(--yellow);position:relative}
+.result h3{font-size:30px;font-weight:700;margin:12px 0 4px;position:relative;max-width:80%}
+.result .soon{display:inline-block;background:var(--yellow);color:var(--ink);font:600 12px Poppins,sans-serif;padding:4px 10px;border-radius:999px;margin:8px 0 0;letter-spacing:.04em}
+.result .soon[hidden]{display:none}
+.result p.desc{color:#d6d9ea;margin:14px 0 18px}
+.result ul{margin:0 0 26px;padding:0;list-style:none;display:grid;gap:10px}
+.result li{display:flex;gap:10px;color:#fff;font-size:15.5px;line-height:1.45}
+.result li::before{content:"";flex:none;width:7px;height:7px;margin-top:8px;background:var(--yellow);border-radius:2px}
+.result .row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.result .btn-main{background:var(--yellow);color:var(--ink);box-shadow:none}
+.result .btn-main:hover{background:#fff}
+.result .call{color:#fff;text-decoration:none;font:500 15px Inter,sans-serif;padding:14px 8px;min-height:44px;display:inline-flex;align-items:center;gap:8px}
+.result .call:hover{text-decoration:underline}
+.result .where{margin-top:20px;padding-top:18px;border-top:1px solid rgba(255,255,255,.16);font-size:14px;color:#c6cae0}
+.fade{transition:opacity .25s}
+.fade.swap{opacity:.25}
+
+/* steps */
+.steps{background:var(--soft);padding:96px 0}
+.steps ol{list-style:none;margin:48px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0;counter-reset:s;border-top:2px solid var(--ink)}
+.steps li{padding:28px 32px 6px 0;position:relative}
+.steps li+li{padding-left:32px;border-left:1px solid var(--line)}
+.steps .n{font:700 15px Poppins,sans-serif;color:var(--blue);display:block;margin-bottom:14px}
+.steps h3{margin-bottom:10px}
+.steps p{color:var(--muted);font-size:16px}
+
+/* programs */
+.programs{padding:104px 0}
+.prog-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px}
+.track{border-radius:22px;padding:36px;border:1px solid var(--line)}
+.track.core{background:var(--yellow);border-color:var(--yellow)}
+.track h3{font-size:14px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
+.track>p{color:var(--muted);font-size:15px;margin-bottom:18px}
+.track.core>p{color:var(--ink)}
+.plist{list-style:none;margin:0;padding:0}
+.plist li{padding:18px 0;border-top:1px solid rgba(16,21,58,.14);display:grid;grid-template-columns:1fr auto;gap:4px 16px}
+.plist b{font:600 18px Poppins,sans-serif}
+.plist span{grid-column:1/-1;color:var(--muted);font-size:15.5px;line-height:1.5}
+.core .plist span{color:#2b2f4a}
+.plist em{font-style:normal;font:600 12px Poppins,sans-serif;background:var(--ink);color:#fff;border-radius:999px;padding:4px 10px;align-self:center}
+
+/* pyramid */
+.pyr{background:var(--ink);color:#fff;padding:104px 0}
+.pyr .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.pyr .eyebrow{color:var(--yellow)}
+.pyr h2{margin:14px 0 20px}
+.pyr p{color:#d6d9ea}
+.pyr p+p{margin-top:14px}
+.stack{display:grid;gap:8px;justify-items:center}
+.stack div{height:58px;border-radius:8px;display:flex;align-items:center;justify-content:center;gap:12px;font:600 15px Poppins,sans-serif;color:#fff;text-align:center;padding:0 12px}
+.stack b{font-weight:700;opacity:.7}
+.stack .l5{width:40%;background:var(--yellow);color:var(--ink)}
+.stack .l4{width:55%;background:#3a5cff}
+.stack .l3{width:70%;background:#2647ef}
+.stack .l2{width:85%;background:var(--blue)}
+.stack .l1{width:100%;background:#0a2bc4}
+.stack-note{margin-top:18px;text-align:center;font-size:14px;color:#aeb3cf}
+
+/* voices */
+.voice{padding:110px 0 96px}
+.voice .wrap{max-width:900px}
+.voice blockquote{margin:0;font:500 clamp(22px,2.7vw,30px)/1.45 Poppins,sans-serif;letter-spacing:-.01em}
+.voice blockquote::before{content:"\201C";display:block;font:700 96px/0.6 Poppins,sans-serif;color:var(--blue);margin-bottom:16px}
+.voice cite{display:block;margin-top:24px;font:500 16px Inter,sans-serif;font-style:normal;color:var(--muted)}
+.voice cite b{color:var(--ink)}
+.founder{margin-top:72px;display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:start;padding:34px;border-radius:22px;background:var(--soft)}
+.founder .init{width:64px;height:64px;border-radius:50%;background:var(--yellow);display:grid;place-items:center;font:700 22px Poppins,sans-serif}
+.founder p{font-size:17px}
+.founder .sig{margin-top:12px;font:600 15px Poppins,sans-serif}
+.founder .sig span{font:400 14px Inter,sans-serif;color:var(--muted);display:block}
+
+/* faq */
+.faq{padding:96px 0;background:var(--soft)}
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
+.faq p.sub{color:var(--muted);margin-top:14px}
+details{border-bottom:1px solid var(--line);background:#fff}
+details:first-of-type{border-radius:16px 16px 0 0}
+details:last-of-type{border-radius:0 0 16px 16px;border-bottom:0}
+summary{list-style:none;cursor:pointer;padding:22px 26px;font:600 17px/1.35 Poppins,sans-serif;display:flex;justify-content:space-between;gap:16px;align-items:center;min-height:44px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:500 24px/1 Poppins,sans-serif;color:var(--blue);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 26px 22px;color:var(--muted);font-size:16px}
+
+/* contact */
+.contact{padding:104px 0}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.contact h2{margin:14px 0 16px}
+.contact .sub{color:var(--muted);font-size:18px}
+.loc{margin-top:32px;display:grid;gap:14px}
+.loc article{border:1px solid var(--line);border-radius:16px;padding:22px 24px;display:grid;grid-template-columns:1fr auto;gap:6px 16px;align-items:center}
+.loc h3{font-size:18px}
+.loc address{font-style:normal;color:var(--muted);font-size:15px;grid-column:1}
+.loc .ph{grid-row:1/3;grid-column:2;display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;background:var(--soft);color:var(--ink);text-decoration:none;font:600 15px Poppins,sans-serif}
+.loc .ph:hover{background:var(--yellow)}
+.loc .map{grid-column:1;font-size:14px;display:inline-block;padding:10px 0}
+.hours{margin-top:18px;font-size:15px;color:var(--muted)}
+.hours b{color:var(--ink)}
+form.card{background:#fff;border-radius:22px;padding:36px;box-shadow:0 30px 70px -35px rgba(16,21,58,.35);border:1px solid var(--line)}
+form h3{font-size:22px;margin-bottom:6px}
+form .hint{color:var(--muted);font-size:15px;margin-bottom:22px}
+.field{display:grid;gap:6px;margin-bottom:16px}
+.field label{font:500 14px Inter,sans-serif}
+.field input,.field select,.field textarea{font:400 16px Inter,sans-serif;color:var(--ink);border:1.5px solid #cfd3e2;border-radius:12px;padding:12px 14px;min-height:48px;background:#fff;width:100%}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--blue);outline:none;box-shadow:0 0 0 3px rgba(13,57,255,.18)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+form .btn{width:100%;margin-top:6px}
+.thanks{margin-top:14px;padding:14px 16px;border-radius:12px;background:var(--yellow);font:600 15px Poppins,sans-serif}
+.thanks[hidden]{display:none}
+
+/* footer */
+footer{background:var(--ink);color:#c6cae0;padding:56px 0 40px;font-size:15px}
+footer .wrap{display:grid;gap:28px}
+.f-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:center}
+.f-top .name{font:600 17px Poppins,sans-serif;color:#fff;max-width:420px}
+.social{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0;padding:0}
+.social a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;color:#fff;text-decoration:none;border-radius:8px}
+.social a:hover{background:rgba(255,255,255,.1)}
+.f-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:14px}
+footer a{color:#fff}
+
+/* phone call bar */
+.callbar{display:none}
+
+/* motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:960px){
+  .top nav{display:none}
+  .hero{padding:40px 0 64px}
+  .hero .wrap,.finder-grid,.pyr .wrap,.faq .wrap,.contact .wrap,.prog-grid{grid-template-columns:1fr;gap:40px}
+  .photo{justify-self:center;max-width:520px;margin-left:22px}
+  .result{position:relative;top:0}
+  .ba-grid{grid-template-columns:1fr;gap:0}
+  .arrow{padding:14px 0}
+  .arrow svg{transform:rotate(90deg)}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:68px}
+  .wrap{padding:0 20px}
+  .mock{font-size:12px;padding:6px 6px 6px 14px;justify-content:space-between;gap:10px;text-align:left}
+  .mock a{min-height:44px;padding:0 14px;font-size:13px}
+  .top .wrap{height:64px}
+  .logo img{width:106px}
+  .top .btn{min-height:44px;padding:0 16px;font-size:14px}
+  .hero{padding:28px 0 56px}
+  .hero h1{margin:14px 0 16px}
+  .hero .lede{font-size:17px}
+  .cta .btn{flex:1 1 100%}
+  .facts{margin-top:26px;gap:8px 18px;font-size:14px}
+  .photo{margin:8px 0 0 14px;width:calc(100% - 14px)}
+  .photo::before{inset:-14px 40% 30% -14px}
+  .photo .tag{left:-10px;bottom:18px;padding:11px 14px;font-size:14px}
+  .ba,.finder,.steps,.programs,.pyr,.faq,.contact{padding:68px 0}
+  .voice{padding:72px 0 64px}
+  .ba-col{padding:24px 22px}
+  .steps ol{grid-template-columns:1fr}
+  .steps li,.steps li+li{padding:22px 0;border-left:0;border-bottom:1px solid var(--line)}
+  .track{padding:26px 22px}
+  .result{padding:30px 24px 26px}
+  .result h3{font-size:25px}
+  .result::after{width:100px;height:100px;right:-34px;top:-34px}
+  .result .btn{width:100%}
+  .stack div{height:50px;font-size:13px;gap:8px}
+  .stack .l5{width:46%}
+  .founder{grid-template-columns:1fr;padding:26px 22px;gap:16px}
+  .loc article{grid-template-columns:1fr}
+  .loc .ph{grid-row:auto;grid-column:1;justify-self:start}
+  .two{grid-template-columns:1fr;gap:0}
+  form.card{padding:26px 20px}
+  summary{padding:18px 20px;font-size:16px}
+  details p{padding:0 20px 18px}
+  .callbar{display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:6px;position:fixed;left:0;right:0;bottom:0;z-index:25;background:#fff;border-top:1px solid var(--line);padding:8px 10px calc(8px + env(safe-area-inset-bottom));box-shadow:0 -8px 24px -12px rgba(16,21,58,.25)}
+  .callbar a{min-height:46px;display:flex;align-items:center;justify-content:center;border-radius:12px;text-decoration:none;font:600 14px Poppins,sans-serif;color:var(--ink);background:var(--soft)}
+  .callbar a.go{background:var(--blue);color:#fff}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note"><p style="margin:0">Free mockup for <b>Empowered Learning Transformational Centers</b></p><a href="#from-sunny">Note from Sunny <span aria-hidden="true">↓</span></a></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Empowered Learning Transformational Centers, home"><img src="https://eltcenters.com/wp-content/uploads/2023/05/ELTCLogos-04.png" alt="Empowered Learning Transformational Centers" width="1348" height="667"></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#finder">Find a program</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#pyramid">Our method</a></li>
+        <li><a href="#visit">Locations</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-main" href="#visit">Free consultation</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Improving learning for all ages</p>
+        <h1 id="h1">We don’t tutor the content. We build the <span class="mark">ability to learn</span> it.</h1>
+        <p class="lede">Brain training that strengthens focus, attention and memory, with less stress and anxiety. The benefits don’t go away when the program ends.</p>
+        <div class="cta">
+          <a class="btn btn-main" href="#visit">Book a free consultation</a>
+          <a class="btn btn-ghost" href="#finder">Find the right program</a>
+        </div>
+        <ul class="facts">
+          <li>28 years of brain-based training</li>
+          <li>Stamford, CT &amp; West Long Branch, NJ</li>
+        </ul>
+      </div>
+      <div class="photo">
+        <img src="https://eltcenters.com/wp-content/uploads/2023/11/cropped-beau-1280x1280.jpg" alt="An instructor working with a student on cognitive skills" width="1280" height="1280">
+        <p class="tag">Step one is free<span>A video call about your child’s needs</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ba" aria-labelledby="ba-h">
+    <div class="wrap">
+      <div class="ba-head">
+        <p class="eyebrow">Sound familiar?</p>
+        <h2 id="ba-h" style="margin-top:12px">Bright, trying hard, and still stuck.</h2>
+        <p>We train children to focus and unlock their learning potential, giving them the tools to close gaps.</p>
+      </div>
+      <div class="ba-grid">
+        <div class="ba-col before">
+          <h3>Before</h3>
+          <ul>
+            <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15" stroke="#9aa0bb" stroke-width="2" stroke-linecap="round"/></svg>Bright, but struggles to keep focus</li>
+            <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15" stroke="#9aa0bb" stroke-width="2" stroke-linecap="round"/></svg>Battles over homework</li>
+            <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15" stroke="#9aa0bb" stroke-width="2" stroke-linecap="round"/></svg>Trouble following directions and finishing tasks</li>
+            <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15" stroke="#9aa0bb" stroke-width="2" stroke-linecap="round"/></svg>Failed classes, or special education services</li>
+            <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15" stroke="#9aa0bb" stroke-width="2" stroke-linecap="round"/></svg>Labeled AD/HD, prescribed medication</li>
+            <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15" stroke="#9aa0bb" stroke-width="2" stroke-linecap="round"/></svg>High achievers spending hours on homework</li>
+          </ul>
+        </div>
+        <div class="arrow" aria-hidden="true"><span><svg viewBox="0 0 20 20"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="#10153a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+        <div class="ba-col after">
+          <h3>After</h3>
+          <ul>
+            <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="#0d39ff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Better focus and attention</li>
+            <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="#0d39ff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Looks forward to assignments</li>
+            <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="#0d39ff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Better memory recall</li>
+            <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="#0d39ff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Stronger self-image and self-esteem</li>
+            <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="#0d39ff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Finds joy in learning</li>
+            <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="#0d39ff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Improved athletic performance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="finder" id="finder" aria-labelledby="f-h">
+    <div class="wrap">
+      <p class="eyebrow">Program finder</p>
+      <h2 id="f-h" style="margin-top:12px;max-width:640px">Find your program in three taps.</h2>
+      <div class="finder-grid">
+        <form id="pf" aria-label="Program finder" onsubmit="return false">
+          <fieldset class="q">
+            <legend><i>1</i>Who is the program for?</legend>
+            <div class="chips">
+              <label><input type="radio" name="who" value="child" checked><span>My child</span></label>
+              <label><input type="radio" name="who" value="me"><span>Myself</span></label>
+              <label><input type="radio" name="who" value="home"><span>Our homeschool</span></label>
+              <label><input type="radio" name="who" value="pro"><span>I’m a therapist or teacher</span></label>
+              <label><input type="radio" name="who" value="school"><span>Our school</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="q" id="q2">
+            <legend><i>2</i>How would you like to work?</legend>
+            <div class="chips">
+              <label><input type="radio" name="how" value="center" checked><span>At a center</span></label>
+              <label><input type="radio" name="how" value="hybrid"><span>Half at home</span></label>
+              <label><input type="radio" name="how" value="online"><span>Fully online</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="q">
+            <legend><i>3</i>Which center is closer?</legend>
+            <div class="chips">
+              <label><input type="radio" name="where" value="ct" checked><span>Stamford, CT</span></label>
+              <label><input type="radio" name="where" value="nj"><span>West Long Branch, NJ</span></label>
+            </div>
+          </fieldset>
+        </form>
+        <div class="result" aria-live="polite">
+          <div class="fade" id="res">
+            <p class="eyebrow" id="r-kicker">Our flagship program</p>
+            <h3 id="r-name">In-Center Program</h3>
+            <span class="soon" id="r-soon" hidden>Coming soon</span>
+            <p class="desc" id="r-desc">Comprehensive brain training at our center, for life-changing transformation in your child.</p>
+            <ul id="r-list">
+              <li>Builds the foundation of learning and focus, not just content</li>
+              <li>Tools to excel in school and beyond</li>
+              <li>A team of experts working with your child</li>
+            </ul>
+            <div class="row">
+              <a class="btn btn-main" href="#visit" id="r-go">Book a free consultation</a>
+              <a class="call" id="r-call" href="tel:+12033579610"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M5 3h4l2 5-2.5 1.5a11 11 0 006 6L16 13l5 2v4a2 2 0 01-2 2A16 16 0 013 5a2 2 0 012-2"/></svg><span id="r-phone">(203) 357-9610</span></a>
+            </div>
+            <p class="where" id="r-where">Stamford center: 1177 High Ridge Rd, Suite 123</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps" id="how" aria-labelledby="s-h">
+    <div class="wrap">
+      <p class="eyebrow">Your child’s road to success starts here</p>
+      <h2 id="s-h" style="margin-top:12px">Here’s how it works.</h2>
+      <ol>
+        <li><span class="n">01</span><h3>Meet a consultant by video call</h3><p>Book a free consultation to talk through your child’s individual needs.</p></li>
+        <li><span class="n">02</span><h3>Choose the program that fits your family</h3><p>Several programs, made for a variety of situations.</p></li>
+        <li><span class="n">03</span><h3>Work with your child’s team of experts</h3><p>Every program comes with specialized help to get you started.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="programs" id="programs" aria-labelledby="p-h">
+    <div class="wrap">
+      <p class="eyebrow">Programs &amp; training</p>
+      <h2 id="p-h" style="margin-top:12px;max-width:720px">The core program, and everything beyond it.</h2>
+      <div class="prog-grid">
+        <div class="track core">
+          <h3>The core program</h3>
+          <p>Brain training for children and learners of any age.</p>
+          <ul class="plist">
+            <li><b>In-Center Program</b><em>Flagship</em><span>Comprehensive brain training at our center, building lifelong learners.</span></li>
+            <li><b>Hybrid Program</b><span>Half at our center, half at home with you. We provide all the equipment and guidance.</span></li>
+            <li><b>Online Program</b><em>Coming soon</em><span>Sensory-visual exercises by video, with weekly calls with expert instructors.</span></li>
+          </ul>
+        </div>
+        <div class="track">
+          <h3>Beyond the core</h3>
+          <p>For families, professionals and schools.</p>
+          <ul class="plist">
+            <li><b>Memory &amp; Learning Strategy Courses</b><em>Online</em><span>Master the presidents, countries of the world, the periodic table, bones of the body and more.</span></li>
+            <li><b>Home Schooling Program</b><em>Online</em><span>Resources that fit right into your existing curriculum.</span></li>
+            <li><b>Become a Certified Trainer</b><span>For occupational and physical therapists and teachers: the training and resources to teach these learning abilities.</span></li>
+            <li><b>License it for your school</b><span>Schools can license the program, and we will train your staff.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pyr" id="pyramid" aria-labelledby="y-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">The Empowered Learning Pyramid</p>
+        <h2 id="y-h">Content sits at the top. We build everything under it.</h2>
+        <p>Tutoring works on the peak. Our program works below the level of content learning: it measures, then fixes underdeveloped abilities.</p>
+        <p>Once those foundations are in place and combined with Empowered Learning™ Learning Strategies™, students can learn any subject more effectively.</p>
+      </div>
+      <div>
+        <div class="stack" role="img" aria-label="The Empowered Learning Pyramid, from the top: 5 Content, 4 Learning Strategies, 3 Cognitive Skills, 2 Visual Processing, 1 Sensory-Motor Integration">
+          <div class="l5"><b>5</b>Content</div>
+          <div class="l4"><b>4</b>Learning Strategies</div>
+          <div class="l3"><b>3</b>Cognitive Skills</div>
+          <div class="l2"><b>2</b>Visual Processing</div>
+          <div class="l1"><b>1</b>Sensory-Motor Integration</div>
+        </div>
+        <p class="stack-note">The foundation of all learning</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="voice" aria-labelledby="v-h">
+    <div class="wrap">
+      <h2 id="v-h" class="eyebrow" style="font-size:13px;letter-spacing:.14em;margin-bottom:26px">Kind words from a parent</h2>
+      <blockquote>She was struggling in school with about a C average… After completing the program, she looks forward to her assignments (although they still take her much longer than they should), enjoys her reading and now averages about a B+. Her self-image and self-esteem have improved greatly.</blockquote>
+      <cite><b>Rosanne Z.</b>, parent</cite>
+      <div class="founder">
+        <div class="init" aria-hidden="true">PR</div>
+        <div>
+          <p>“For the past 28 years, we have been at the forefront of impacting countless lives. Unlike conventional tutoring, our approach delves deeper than mere content. We are here to uncover untapped potential and nurture the very foundation of learning and focus.”</p>
+          <p class="sig">Peter Riddle<span>President &amp; Co-Founder</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" aria-labelledby="q-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Questions</p>
+        <h2 id="q-h" style="margin-top:12px">What parents ask first.</h2>
+        <p class="sub">Anything else, ask on your free call.</p>
+      </div>
+      <div>
+        <details open><summary>Is this tutoring?</summary><p>No. Tutoring works on content. We train the abilities underneath it, like focus, attention, memory and visual processing, so students can learn any subject more effectively.</p></details>
+        <details><summary>How do we start?</summary><p>With a free consultation by video call, about your child’s individual needs. Then you choose the program that works for your family.</p></details>
+        <details><summary>Do we have to come to a center?</summary><p>Not for everything. The Hybrid Program is half at home, with all equipment provided. Memory and homeschool courses are online, and a full Online Program is coming soon.</p></details>
+        <details><summary>Who is it for?</summary><p>Learners of any age and ability: children who struggle, high achievers working too hard, homeschool families, and adults.</p></details>
+        <details><summary>Do the results last?</summary><p>These skills are brain enhancements that improve learning throughout a lifetime. The benefits don’t just go away when you finish the program.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="visit" aria-labelledby="c-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Ready to get started?</p>
+        <h2 id="c-h">Book your free consultation.</h2>
+        <p class="sub">Take the first step. Tell us a little, or call the center closer to you.</p>
+        <div class="loc">
+          <article>
+            <h3>Stamford, CT</h3>
+            <address>1177 High Ridge Rd, Suite 123, Stamford CT 06905</address>
+            <a class="ph" href="tel:+12033579610">(203) 357-9610</a>
+            <a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=1177%20High%20Ridge%20Rd%2C%20Suite%20123%2C%20Stamford%20CT%2006905">Open in Google Maps</a>
+          </article>
+          <article>
+            <h3>West Long Branch, NJ</h3>
+            <address>55 Oceanport Ave., West Long Branch, NJ 07764</address>
+            <a class="ph" href="tel:+17322173719">(732) 217-3719</a>
+            <a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=55%20Oceanport%20Ave.%2C%20West%20Long%20Branch%2C%20NJ%2007764">Open in Google Maps</a>
+          </article>
+        </div>
+        <p class="hours"><b>Business hours</b> Mon–Thu 4–7 · Sat–Sun 9–12</p>
+      </div>
+      <form class="card" id="cf" novalidate>
+        <h3>Request a free consultation</h3>
+        <p class="hint">A short video call about your needs.</p>
+        <div class="two">
+          <div class="field"><label for="c-name">Your name</label><input id="c-name" name="name" autocomplete="name"></div>
+          <div class="field"><label for="c-phone">Phone</label><input id="c-phone" name="phone" type="tel" autocomplete="tel"></div>
+        </div>
+        <div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" autocomplete="email"></div>
+        <div class="two">
+          <div class="field"><label for="c-prog">Interested in</label>
+            <select id="c-prog" name="program">
+              <option>In-Center Program</option><option>Hybrid Program</option><option>Online Program</option><option>Memory &amp; Learning Strategy Courses</option><option>Home Schooling Program</option><option>Become a Certified Trainer</option><option>School licensing</option><option>Not sure yet</option>
+            </select></div>
+          <div class="field"><label for="c-loc">Center</label>
+            <select id="c-loc" name="center"><option>Stamford, CT</option><option>West Long Branch, NJ</option></select></div>
+        </div>
+        <div class="field"><label for="c-msg">What would you like help with?</label><textarea id="c-msg" name="message" rows="3"></textarea></div>
+        <button class="btn btn-main" type="submit">Request my free consultation</button>
+        <p class="thanks" id="thanks" role="status" hidden>Thanks. This is a mockup, so nothing was sent.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <p class="name">Empowered Learning Transformational Centers<br><span style="font:400 15px Inter,sans-serif;color:#c6cae0">Building the ability to learn for a lifetime of knowledge.</span></p>
+      <ul class="social" aria-label="Social pages">
+        <li><a href="https://www.facebook.com/EmpoweredLearningCenters">Facebook</a></li>
+        <li><a href="https://www.instagram.com/empoweredlearningcenters/">Instagram</a></li>
+        <li><a href="https://www.youtube.com/channel/UCRb6e4FtINnMGHWCjpvfFnw">YouTube</a></li>
+        <li><a href="https://www.linkedin.com/company/empowered-learning-transformation-center">LinkedIn</a></li>
+        <li><a href="https://x.com/eltcenters1">X</a></li>
+        <li><a href="https://www.pinterest.com/eltcenters/">Pinterest</a></li>
+      </ul>
+    </div>
+    <aside class="sunny" id="from-sunny" aria-labelledby="sunny-h">
+      <h2 id="sunny-h">From Sunny, separate from your site</h2>
+      <p>Peter, you asked for my details. Wishing you a quick recovery.</p>
+      <dl>
+        <dt>Name</dt><dd>Sunny Gupta</dd>
+        <!-- SUNNY: add before sending. Use your confirmed details; nothing here was guessed.
+        <dt>Company</dt><dd>[exact company name]</dd>
+        <dt>Location</dt><dd>[city, state]</dd>
+        <dt>Phone</dt><dd><a href="tel:+1XXXXXXXXXX">[phone]</a></dd>
+        -->
+        <dt>Website</dt><dd><a href="https://lifebaselabs.com">lifebaselabs.com</a></dd>
+      </dl>
+    </aside>
+    <div class="f-bot">
+      <p>© Empowered Learning Transformation Centers</p>
+      <p><!-- SUNNY: the brief fixes this line's wording; confirm it still matches your company name. -->Mockup made for Empowered Learning Transformational Centers by Sunny Gupta, <a href="https://lifebaselabs.com">lifebaselabs.com</a></p>
+    </div>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick contact">
+  <a href="tel:+12033579610">Call CT</a>
+  <a href="tel:+17322173719">Call NJ</a>
+  <a class="go" href="#visit">Free consult</a>
+</nav>
+
+<script>
+(function(){
+  var P={
+    incenter:{k:'Our flagship program',n:'In-Center Program',d:'Comprehensive brain training at our center, for life-changing transformation.',l:['Builds the foundation of learning and focus, not just content','Tools to excel in school and beyond','A team of experts working with you'],p:'In-Center Program'},
+    hybrid:{k:'Best for time and distance',n:'Hybrid Program',d:'Half the curriculum at our center, half at home with your active help.',l:['We provide all necessary equipment and guidance','Our team supports you at home','You become part of the growth'],p:'Hybrid Program'},
+    online:{k:'From home',n:'Online Program',soon:1,d:'Training from the comfort of home, with engaging videos and step-by-step guidance.',l:['Sensory-visual exercises, step by step','Weekly video calls with expert instructors','Available now online: our Memory Courses'],p:'Online Program'},
+    memory:{k:'Available online',n:'Memory & Learning Strategy Courses',d:'Evidence-based techniques to boost memory and learn faster, for students, professionals and lifelong learners.',l:['Presidents, countries of the world, the periodic table','Bones of the body, timelines of history','Poems and public speaking'],p:'Memory & Learning Strategy Courses'},
+    home:{k:'For homeschool families',n:'Home Schooling Program',d:'A specialized online program that enriches homeschooling and group learning.',l:['Fits into your existing curriculum','Resources made for families','Online, from home'],p:'Home Schooling Program'},
+    pro:{k:'For OTs, PTs and teachers',n:'Become a Certified Trainer',d:'The training and resources to teach evidence-based learning abilities to others.',l:['Certifies occupational and physical therapists, and teachers','For schools or the corporate world','Become a leader in optimized learning'],p:'Become a Certified Trainer'},
+    school:{k:'For schools',n:'License the program',d:'Bring Empowered Learning into your school.',l:['Schools can license the program','We will train your staff','Certified Trainer options for teachers'],p:'School licensing'}
+  };
+  var C={ct:{t:'(203) 357-9610',h:'tel:+12033579610',w:'Stamford center: 1177 High Ridge Rd, Suite 123',o:'Stamford, CT'},nj:{t:'(732) 217-3719',h:'tel:+17322173719',w:'West Long Branch center: 55 Oceanport Ave.',o:'West Long Branch, NJ'}};
+  var f=document.getElementById('pf'),q2=document.getElementById('q2'),res=document.getElementById('res');
+  function val(n){var e=f.querySelector('input[name='+n+']:checked');return e?e.value:''}
+  function pick(){
+    var w=val('who'),h=val('how');
+    if(w==='home'||w==='pro'||w==='school')return w;
+    if(h==='hybrid')return 'hybrid';
+    if(h==='online')return w==='me'?'memory':'online';
+    return 'incenter';
+  }
+  function $(i){return document.getElementById(i)}
+  var cur='';
+  function render(){
+    var w=val('who'),off=(w==='home'||w==='pro'||w==='school');
+    q2.classList.toggle('off',off);
+    q2.querySelectorAll('input').forEach(function(i){i.disabled=off});
+    var key=pick(),p=P[key],c=C[val('where')];
+    function fill(){
+      $('r-kicker').textContent=p.k;$('r-name').textContent=p.n;$('r-desc').textContent=p.d;
+      $('r-soon').hidden=!p.soon;
+      var ul=$('r-list');ul.innerHTML='';
+      p.l.forEach(function(t){var li=document.createElement('li');li.textContent=t;ul.appendChild(li)});
+      $('r-phone').textContent=c.t;$('r-call').href=c.h;$('r-where').textContent=c.w;
+      $('r-go').textContent=key==='pro'||key==='school'?'Ask about this':'Book a free consultation';
+      $('r-go').dataset.prog=p.p;$('r-go').dataset.loc=c.o;
+      res.classList.remove('swap');
+    }
+    if(cur&&cur!==key+val('where')&&!matchMedia('(prefers-reduced-motion: reduce)').matches){res.classList.add('swap');setTimeout(fill,160)}else fill();
+    cur=key+val('where');
+  }
+  f.addEventListener('change',render);render();
+  $('r-go').addEventListener('click',function(){
+    var s=$('c-prog'),l=$('c-loc');
+    for(var i=0;i<s.options.length;i++)if(s.options[i].text===this.dataset.prog)s.selectedIndex=i;
+    for(var j=0;j<l.options.length;j++)if(l.options[j].text===this.dataset.loc)l.selectedIndex=j;
+  });
+  $('cf').addEventListener('submit',function(e){e.preventDefault();$('thanks').hidden=false});
+
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window){
+    var els=document.querySelectorAll('main section .wrap > *, .ba-col, .steps li, .track, .plist li, .loc article');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target)}})},{rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){
+      if(el.getBoundingClientRect().top>innerHeight){el.classList.add('rise','will-rise');io.observe(el)}
+    });
+  }
+})();
+</script>
+</body>
+</html>
