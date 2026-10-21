@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup sdmdiving-com-961483 1 b83d94dc -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SDM Diving · SDM Adventures: Ocean and Land Wildlife Safaris</title>
+<meta name="description" content="Small-group wildlife expeditions in the ocean and on land: sharks, whales, jaguars, polar bears and more, with SDM Adventures.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0c0e0f;--ink-2:#1a1e20;--paper:#fbfaf7;--sand:#efebe2;--line:#dcd6ca;
+  --text:#22282a;--muted:#5a6265;--teal:#1f7a73;--teal-d:#17605a;--teal-l:#6fd0c7;
+  --serif:"EB Garamond",Garamond,"Times New Roman",serif;
+  --sans:"Jost","Futura","Avenir Next",Helvetica,Arial,sans-serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--text);font:400 19px/1.55 var(--serif);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--teal-l);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.caps{font:500 13px/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;color:var(--ink)}
+h2{font-size:clamp(34px,4.4vw,54px);letter-spacing:-.01em}
+.eyebrow{display:block;color:var(--teal);margin-bottom:16px}
+.lede{font-size:21px;color:var(--muted);max-width:34em;margin:18px 0 0}
+.skip{position:absolute;left:12px;top:-60px;background:#fff;color:var(--ink);padding:10px 14px;z-index:99;font:500 14px var(--sans)}
+.skip:focus{top:44px}
+
+/* mockup banner */
+.mockup{background:var(--sand);color:#3a3f40;text-align:center;font:500 13px/1.3 var(--sans);letter-spacing:.06em;padding:9px 16px;border-bottom:1px solid var(--line)}
+
+/* header */
+.site-head{background:var(--ink);color:#fff;position:sticky;top:0;z-index:40}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:72px;max-width:1320px}
+.brand{text-decoration:none;display:flex;flex-direction:column;line-height:1}
+.brand b{font:600 22px/1 var(--sans);letter-spacing:.01em}
+.brand small{font:400 10.5px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:#b9c2c3;margin-top:6px}
+.nav{display:flex;gap:28px;align-items:center}
+.nav a{text-decoration:none;font:500 12.5px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:#d9dfe0;padding:14px 0}
+.nav a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;font:500 13.5px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.btn-primary{background:var(--teal);color:#fff}
+.btn-primary:hover{background:var(--teal-d)}
+.btn-ghost{border-color:rgba(255,255,255,.7);color:#fff;background:rgba(0,0,0,.15)}
+.btn-ghost:hover{background:#fff;color:var(--ink)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:#000}
+.btn-line{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-line:hover{background:var(--ink);color:#fff}
+.site-head .btn{min-height:44px;padding:0 20px;font-size:12px}
+
+/* hero */
+.hero{position:relative;background:var(--ink);color:#fff;overflow:hidden}
+.hero-img{position:absolute;top:0;right:0;bottom:0;width:61%;height:100%;object-fit:cover;object-position:18% 50%;max-width:none}
+.hero::after{content:"";position:absolute;top:0;bottom:0;left:39%;width:150px;background:linear-gradient(90deg,var(--ink),rgba(12,14,15,0))}
+.hero .wrap{position:relative;z-index:2;min-height:min(76vh,720px);display:flex;flex-direction:column;justify-content:center;padding-top:64px;padding-bottom:96px;max-width:1320px}
+.hero .wrap>*{max-width:min(500px,36vw)}
+.hero .eyebrow{color:var(--teal-l)}
+.hero h1{color:#fff;font-size:clamp(40px,4.3vw,62px);letter-spacing:-.015em;line-height:1.04}
+.hero h1 em{font-style:italic;color:#fff}
+.hero-sub{font:400 15px/1.5 var(--sans);letter-spacing:.06em;color:#e3e8e8;margin:26px 0 34px;display:flex;flex-wrap:wrap;gap:10px 22px}
+.hero-sub span{display:inline-flex;align-items:center;gap:10px}
+.hero-sub span+span::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--teal-l)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px}
+.next{position:absolute;z-index:3;right:28px;bottom:28px;background:rgba(251,250,247,.96);color:var(--ink);border-radius:14px;padding:18px 22px 18px 20px;display:flex;gap:16px;align-items:center;text-decoration:none;box-shadow:0 18px 40px -18px rgba(0,0,0,.6);max-width:360px;transition:transform .25s}
+.next:hover{transform:translateY(-2px)}
+.next .cal{flex:none;width:58px;height:62px;border-radius:9px;background:var(--ink);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--sans)}
+.next .cal b{font-size:24px;font-weight:500;line-height:1}
+.next .cal i{font-style:normal;font-size:10.5px;letter-spacing:.16em;margin-top:4px;color:var(--teal-l)}
+.next .caps{color:var(--teal);font-size:11.5px}
+.next strong{display:block;font:500 21px/1.15 var(--serif);margin:5px 0 2px}
+.next span.d{font:400 14px var(--sans);color:var(--muted)}
+.credit{position:absolute;z-index:2;right:24px;top:20px;text-shadow:0 1px 3px rgba(0,0,0,.6);font:400 12px var(--sans);color:rgba(255,255,255,.7);letter-spacing:.04em}
+
+/* proof strip */
+.proof{background:var(--ink);color:#cfd6d7;border-top:1px solid #23292b}
+.proof ul{list-style:none;margin:0 auto;padding:22px 28px;display:flex;flex-wrap:wrap;justify-content:center;gap:12px 46px;max-width:1320px}
+.proof li{font:400 14px/1.3 var(--sans);letter-spacing:.1em;text-transform:uppercase;display:flex;align-items:center;gap:12px}
+.proof svg{flex:none}
+
+section{scroll-margin-top:80px}
+.sec{padding:112px 0}
+
+/* finder */
+.finder-head{display:grid;grid-template-columns:1fr auto;align-items:end;gap:28px;margin-bottom:44px}
+.seg{display:inline-flex;background:var(--sand);border-radius:999px;padding:5px;gap:4px}
+.seg button{border:0;background:transparent;font:500 13px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:#3d4446;min-height:44px;padding:0 20px;border-radius:999px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.finder{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:48px;align-items:start}
+.group-label{color:var(--muted);margin:0 0 14px;display:flex;align-items:center;gap:12px}
+.group-label::after{content:"";flex:1;height:1px;background:var(--line)}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 30px;padding:0;list-style:none}
+.pill{border:1.5px solid var(--line);background:#fff;color:var(--ink);font:400 19px/1 var(--serif);min-height:46px;padding:0 18px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:9px;transition:border-color .2s,background .2s,color .2s}
+.pill:hover{border-color:var(--ink)}
+.pill[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.pill .dot{width:7px;height:7px;border-radius:50%;background:var(--teal);flex:none}
+.pill[aria-pressed="true"] .dot{background:var(--teal-l)}
+.pill.is-hidden{display:none}
+.fgroup.is-hidden{display:none}
+.legend{font:400 14px/1.4 var(--sans);color:var(--muted);display:flex;align-items:center;gap:9px;margin-top:-6px}
+.legend .dot{width:7px;height:7px;border-radius:50%;background:var(--teal)}
+
+.panel{position:sticky;top:96px;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 30px 60px -40px rgba(12,14,15,.45)}
+.finder>*{min-width:0}
+#panel{scroll-margin-top:84px}
+.panel-media{position:relative;aspect-ratio:16/10;background:var(--ink-2);overflow:hidden}
+.panel-media img{width:100%;height:100%;object-fit:cover}
+.panel.no-media .panel-media{display:none}
+.panel.no-media .panel-body{padding-top:34px}
+.panel.no-media .panel-body h3{font-size:42px}
+.panel-media .tag{position:absolute;left:18px;top:18px;background:var(--paper);color:var(--ink);border-radius:999px;padding:8px 14px;font:500 11.5px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase}
+.panel-body{padding:28px 30px 30px}
+.panel-body .caps{color:var(--teal)}
+.panel-body h3{font-size:36px;margin:10px 0 10px}
+.place{display:flex;align-items:center;gap:8px;font:400 15px/1.3 var(--sans);color:var(--muted);margin:0 0 16px}
+.panel-body p.note{margin:0 0 22px;font-size:19px}
+.panel-body .field{border-top:1px solid var(--line);padding-top:16px;margin:0 0 24px;font:400 14.5px/1.5 var(--sans);color:var(--muted)}
+.panel-body .field b{color:var(--ink);font-weight:500}
+.panel-actions{display:flex;flex-wrap:wrap;gap:12px}
+
+/* why */
+.why{background:var(--ink);color:#e6ebeb}
+.why .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center}
+.why figure{margin:0;position:relative}
+.why figure img{border-radius:6px;width:100%}
+.why figcaption{font:400 13px/1.4 var(--sans);color:#a9b3b4;margin-top:12px;letter-spacing:.03em}
+.why .eyebrow{color:var(--teal-l)}
+.why h2{color:#fff;font-style:italic;font-weight:400;font-size:clamp(38px,4.6vw,60px)}
+.why p{color:#cdd5d6;font-size:20px;margin:22px 0 0;max-width:30em}
+.why p.strong{color:#fff;font-style:italic}
+.why .mission{border-left:2px solid var(--teal-l);padding-left:18px;margin-top:32px;font:400 15px/1.55 var(--sans);letter-spacing:.02em;color:#dfe6e6}
+
+/* people */
+.people .grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px}
+.person{background:#fff;border:1px solid var(--line);border-radius:18px;padding:34px 34px 30px}
+.person-top{display:flex;align-items:center;gap:18px;margin-bottom:20px}
+.mono{width:64px;height:64px;border-radius:50%;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font:italic 500 28px/1 var(--serif);flex:none}
+.person h3{font-size:30px}
+.person .caps{color:var(--teal);font-size:12px;margin-top:6px;display:block}
+.person p{margin:0 0 14px}
+.person ul{list-style:none;padding:0;margin:18px 0 0;border-top:1px solid var(--line)}
+.person li{font:400 15px/1.4 var(--sans);color:var(--muted);padding:11px 0;border-bottom:1px solid var(--line)}
+.person li b{color:var(--ink);font-weight:500}
+
+/* gallery */
+.lens{padding:0 0 112px}
+.lens-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;grid-template-rows:auto auto;gap:14px;margin-top:40px}
+.lens-grid figure{margin:0;position:relative;overflow:hidden;border-radius:6px;background:var(--ink)}
+.lens-grid figure:first-child{grid-row:span 2}
+.lens-grid img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.lens-grid figure:hover img{transform:scale(1.02)}
+.lens-grid figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 16px 12px;font:400 13.5px/1.3 var(--sans);letter-spacing:.04em;color:#fff;background:linear-gradient(0deg,rgba(0,0,0,.72),rgba(0,0,0,0))}
+
+/* field reports */
+.field-sec{background:var(--sand)}
+.timeline{list-style:none;margin:48px 0 0;padding:0;border-top:1px solid #cfc8b9}
+.timeline li{display:grid;grid-template-columns:150px 150px minmax(0,1fr) auto;gap:24px;align-items:baseline;padding:24px 0;border-bottom:1px solid #cfc8b9}
+.timeline time{font:500 14px/1.3 var(--sans);letter-spacing:.06em;color:var(--ink)}
+.timeline .kind{font:500 12px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--teal-d)}
+.timeline h3{font-size:25px;margin:0 0 6px}
+.timeline p{margin:0;color:#4d5457;font-size:18px}
+.timeline .where{font:400 14px var(--sans);color:var(--muted);white-space:nowrap}
+.field-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;align-items:center;margin-top:36px}
+.field-foot p{margin:0;color:var(--muted)}
+.also{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:64px}
+.also a{display:block;text-decoration:none;background:var(--paper);border:1px solid #d6cfbf;border-radius:16px;padding:26px 28px;transition:border-color .2s}
+.also a:hover{border-color:var(--ink)}
+.also .caps{color:var(--teal-d);font-size:12px}
+.also h3{font-size:26px;margin:8px 0 8px}
+.also p{margin:0;color:#4d5457;font-size:18px}
+
+/* faq */
+.faq .grid{display:grid;grid-template-columns:1fr 1.5fr;gap:64px;align-items:start}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-child{border-top:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;font:500 23px/1.25 var(--serif);color:var(--ink);min-height:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .pm{flex:none;width:30px;height:30px;border-radius:50%;border:1.5px solid var(--line);position:relative;transition:transform .25s,border-color .2s}
+.faq summary .pm::before,.faq summary .pm::after{content:"";position:absolute;left:50%;top:50%;width:11px;height:1.5px;background:var(--ink);transform:translate(-50%,-50%)}
+.faq summary .pm::after{transform:translate(-50%,-50%) rotate(90deg);transition:opacity .2s}
+.faq details[open] .pm::after{opacity:0}
+.faq details[open] .pm{border-color:var(--ink)}
+.faq details p{margin:0 0 24px;color:#40474a;max-width:34em}
+
+/* contact */
+.contact{background:#fff;border-top:1px solid var(--line)}
+.contact .grid{display:grid;grid-template-columns:1fr 1.2fr;gap:72px;align-items:start}
+.reach{list-style:none;padding:0;margin:34px 0 0}
+.reach li{border-top:1px solid var(--line)}
+.reach li:last-child{border-bottom:1px solid var(--line)}
+.reach a{display:flex;gap:16px;align-items:center;padding:16px 0;text-decoration:none;min-height:56px}
+.reach a:hover b{color:var(--teal)}
+.reach .ic{width:40px;height:40px;border-radius:50%;background:var(--sand);display:flex;align-items:center;justify-content:center;flex:none}
+.reach small{display:block;font:500 11.5px/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.reach b{font:500 19px/1.3 var(--serif);color:var(--ink)}
+form{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:34px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:block;font:500 12px/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#3d4446;margin:0 0 8px}
+.field-w{margin-bottom:18px}
+input,select,textarea{width:100%;font:400 18px/1.4 var(--serif);color:var(--ink);background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:12px 14px;min-height:50px}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(31,122,115,.18)}
+.form-note{font:400 13.5px/1.4 var(--sans);color:var(--muted);margin:14px 0 0}
+.thanks{display:none;margin-top:16px;background:#e5f3f1;border:1px solid #b9ded9;color:#11433f;border-radius:10px;padding:14px 16px;font:500 15px/1.4 var(--sans)}
+.thanks.show{display:block}
+
+/* end */
+.end{background:var(--ink);color:#fff;text-align:center;padding:120px 0 128px;position:relative;overflow:hidden}
+.end svg.waves{position:absolute;left:0;right:0;bottom:0;width:100%;height:140px;opacity:.35}
+.end .eyebrow{color:var(--teal-l)}
+.end h2{color:#fff;font-style:italic;font-weight:400;font-size:clamp(40px,5.4vw,70px)}
+.end p{color:#c9d1d2;font-size:20px;margin:18px auto 34px;max-width:28em}
+.end .hero-cta{justify-content:center;position:relative}
+
+footer{background:#070809;color:#a7b0b1;font:400 14px/1.6 var(--sans)}
+footer .wrap{padding-top:44px;padding-bottom:44px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:center}
+footer nav{display:flex;flex-wrap:wrap;gap:4px 18px}
+footer nav a{text-decoration:none;color:#d4dbdc;padding:10px 0;display:inline-block}
+footer nav a:hover{color:#fff}
+footer .made{width:100%;border-top:1px solid #1f2426;padding-top:20px;color:#959fa0;font-size:13px}
+footer .made a{color:#d4dbdc}
+
+.callbar{display:none}
+
+/* motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+.panel-in{animation:panelIn .45s ease}
+@keyframes panelIn{from{opacity:.4;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+
+/* tablet */
+@media (max-width:1020px){
+  .nav a.opt{display:none}
+  .hero-img{width:56%}
+  .hero::after{left:44%;width:110px}
+  .hero .wrap>*{max-width:46vw}
+  .finder{grid-template-columns:1fr;gap:32px}
+  .panel{position:relative;top:0}
+  .why .grid,.faq .grid,.contact .grid{grid-template-columns:1fr;gap:44px}
+  .timeline li{grid-template-columns:130px minmax(0,1fr);gap:6px 20px}
+  .timeline .kind{grid-column:1}
+  .timeline li>div{grid-column:2;grid-row:1 / span 2}
+  .timeline .where{grid-column:2;white-space:normal}
+}
+/* phone */
+@media (max-width:720px){
+  body{font-size:18px;padding-bottom:72px}
+  .wrap{padding:0 20px}
+  .mockup{font-size:12px;padding:8px 12px}
+  .site-head .wrap{height:62px}
+  .nav{gap:0}
+  .nav a{display:none}
+  .brand b{font-size:20px}
+  .hero .wrap{min-height:0;padding-top:30px;padding-bottom:30px;justify-content:flex-start}
+  .hero .wrap>*{max-width:none}
+  .hero-img{position:relative;width:100%;height:auto;aspect-ratio:1500/1059;object-position:50% 50%}
+  .hero::after{display:none}
+  .hero h1{font-size:38px}
+  .hero-sub{font-size:13px;letter-spacing:.05em;gap:8px 16px;margin:20px 0 26px}
+  .hero-cta .btn{flex:1 1 100%}
+  .next{position:relative;right:auto;bottom:auto;margin:0 20px 24px;max-width:none;z-index:3}
+  .credit{top:12px;right:14px;font-size:11px}
+  .proof ul{justify-content:flex-start;gap:14px 22px;padding:20px}
+  .proof li{font-size:12px;letter-spacing:.08em;width:100%}
+  .sec{padding:76px 0}
+  .lede{font-size:19px}
+  .finder-head{grid-template-columns:1fr;gap:22px;margin-bottom:30px}
+  .seg{display:flex;width:100%}
+  .seg button{flex:1;padding:0 8px;font-size:12px;letter-spacing:.08em}
+  .finder{gap:22px}
+  .group-label{margin-bottom:10px}
+  .pills{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px 18px;padding:2px 64px 6px 20px;gap:8px;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 82%,transparent);mask-image:linear-gradient(90deg,#000 82%,transparent)}
+  .pills::-webkit-scrollbar{display:none}
+  .pills li{flex:none}
+  .pill{font-size:17px;padding:0 15px;white-space:nowrap}
+  .legend{margin-top:0}
+  .panel-body{padding:22px 22px 24px}
+  .panel-body h3{font-size:30px}
+  .panel-actions .btn{flex:1 1 100%}
+  .people .grid,.also{grid-template-columns:1fr}
+  .person{padding:26px 22px}
+  .lens{padding-bottom:76px}
+  .lens-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .lens-grid figure:first-child{grid-column:span 2;grid-row:auto}
+  .timeline li{grid-template-columns:auto 1fr;gap:8px 14px;padding:22px 0 24px}
+  .timeline time{grid-column:1;grid-row:1}
+  .timeline .kind{grid-column:2;grid-row:1}
+  .timeline li>div{grid-column:1 / -1;grid-row:2;margin-top:2px}
+  .timeline .where{grid-column:1 / -1;grid-row:3}
+  .timeline h3{font-size:23px}
+  .timeline p{font-size:17px}
+  .person h3{font-size:27px}
+  .person-top{gap:14px}
+  .mono{width:54px;height:54px;font-size:24px}
+  .person li{font-size:14.5px;line-height:1.5}
+  .faq summary{font-size:21px}
+  form{padding:22px}
+  .form-row{grid-template-columns:1fr;gap:0}
+  .end{padding:84px 0 96px}
+  .end .hero-cta .btn{flex:1 1 100%}
+  footer .wrap{padding-bottom:36px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(12,14,15,.97);border-top:1px solid #2a3133;padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px}
+  .callbar a{flex:1;min-height:48px;font-size:12.5px;padding:0 10px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="mockup" role="note">Free mockup for SDM Diving</div>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="SDM Adventures, back to top"><b>SDM adventures</b><small>Ocean &amp; land wildlife safaris</small></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#expeditions">Expeditions</a>
+      <a class="opt" href="#why">Why we do this</a>
+      <a class="opt" href="#field">From the field</a>
+      <a class="opt" href="#questions">Questions</a>
+      <a class="btn btn-primary" href="#join">Join an expedition</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <img class="hero-img" src="https://images.squarespace-cdn.com/content/v1/57c8fb18ebbd1ada66ecff91/89b45b54-06a2-4e32-99f6-3bb86db7cf6a/great+hammerhead+.jpg?format=1500w" width="1500" height="1059" alt="An underwater photographer kneels on white sand as a great hammerhead shark glides past" fetchpriority="high">
+    <div class="wrap">
+      <span class="eyebrow caps">Ocean and land wildlife safaris</span>
+      <h1 id="hero-title">Wildlife encounters for people who want <em>more than just a vacation.</em></h1>
+      <p class="hero-sub"><span>Small-group expeditions</span><span>Expert guides</span><span>20+ years of adventures</span></p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#expeditions">Find your expedition</a>
+        <a class="btn btn-ghost" href="#join">Ask about a trip</a>
+      </div>
+    </div>
+    <a class="next" href="#expeditions" data-pick="polar">
+      <span class="cal" aria-hidden="true"><b>1–7</b><i>NOV</i></span>
+      <span><span class="caps">Next departure</span><strong>Churchill Polar Bears</strong><span class="d">November 1–7, 2026</span></span>
+    </a>
+    <p class="credit">Great hammerhead</p>
+  </section>
+
+  <div class="proof" role="presentation">
+    <ul>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6fd0c7" stroke-width="1.6" aria-hidden="true"><path d="M3 15c3-3 6-3 9 0s6 3 9 0M3 10c3-3 6-3 9 0s6 3 9 0"/></svg>Private one-on-one photo workshops</li>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6fd0c7" stroke-width="1.6" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13.5" r="3.6"/><path d="M8.5 7l1.5-3h4l1.5 3"/></svg>Run by the former editor of Shark Diver Magazine</li>
+    </ul>
+  </div>
+
+  <section class="sec" id="expeditions" aria-labelledby="exp-title">
+    <div class="wrap">
+      <div class="finder-head">
+        <div>
+          <span class="eyebrow caps">Find your expedition</span>
+          <h2 id="exp-title">Which animal have you always wanted to meet?</h2>
+          <p class="lede">Pick one. See where we go and what the latest trip was like, then ask us about it in one tap.</p>
+        </div>
+        <div class="seg" role="group" aria-label="Show expeditions">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="water" aria-pressed="false">In the water</button>
+          <button type="button" data-filter="land" aria-pressed="false">On land</button>
+        </div>
+      </div>
+
+      <div class="finder">
+        <div>
+          <div class="fgroup" data-group="water">
+            <p class="group-label caps">In the water</p>
+            <ul class="pills">
+              <li><button type="button" class="pill" data-id="tiger" aria-pressed="false">Tiger sharks</button></li>
+              <li><button type="button" class="pill" data-id="white" aria-pressed="false">Great white sharks</button></li>
+              <li><button type="button" class="pill" data-id="orca" aria-pressed="false"><span class="dot" aria-hidden="true"></span>Orcas</button></li>
+              <li><button type="button" class="pill" data-id="humpback" aria-pressed="false">Humpback whales</button></li>
+              <li><button type="button" class="pill" data-id="blue" aria-pressed="false">Blue whales</button></li>
+              <li><button type="button" class="pill" data-id="sperm" aria-pressed="false">Sperm whales</button></li>
+              <li><button type="button" class="pill" data-id="right" aria-pressed="false"><span class="dot" aria-hidden="true"></span>Right whales</button></li>
+              <li><button type="button" class="pill" data-id="beluga" aria-pressed="false"><span class="dot" aria-hidden="true"></span>Belugas &amp; bears</button></li>
+              <li><button type="button" class="pill" data-id="dolphin" aria-pressed="false"><span class="dot" aria-hidden="true"></span>Pink river dolphins</button></li>
+              <li><button type="button" class="pill" data-id="anaconda" aria-pressed="false"><span class="dot" aria-hidden="true"></span>Anacondas</button></li>
+              <li><button type="button" class="pill" data-id="croc" aria-pressed="false">Crocodiles</button></li>
+              <li><button type="button" class="pill" data-id="sardine" aria-pressed="false">Sardine Run</button></li>
+            </ul>
+          </div>
+          <div class="fgroup" data-group="land">
+            <p class="group-label caps">On land</p>
+            <ul class="pills">
+              <li><button type="button" class="pill" data-id="polar" aria-pressed="true"><span class="dot" aria-hidden="true"></span>Polar bears</button></li>
+              <li><button type="button" class="pill" data-id="jaguar" aria-pressed="false"><span class="dot" aria-hidden="true"></span>Jaguars</button></li>
+              <li><button type="button" class="pill" data-id="africa" aria-pressed="false">African safaris</button></li>
+              <li><button type="button" class="pill" data-id="gorilla" aria-pressed="false">Gorilla treks</button></li>
+              <li><button type="button" class="pill" data-id="orangutan" aria-pressed="false">Orangutans</button></li>
+              <li><button type="button" class="pill" data-id="birds" aria-pressed="false">Birding</button></li>
+            </ul>
+          </div>
+          <p class="legend"><span class="dot" aria-hidden="true"></span>Reported from the field in 2026</p>
+        </div>
+
+        <article class="panel" id="panel" aria-live="polite">
+          <div class="panel-media" id="p-media">
+            <img src="https://images.squarespace-cdn.com/content/v1/57c8fb18ebbd1ada66ecff91/db06b439-c25a-41a9-a13d-6757b7006344/polar+bear+tours.jpg?format=1000w" width="1000" height="693" alt="A polar bear walking through snowy brush">
+            <span class="tag">Next departure</span>
+          </div>
+          <div class="panel-body">
+            <span class="caps" id="p-kind">Photography expedition · On land</span>
+            <h3 id="p-name">Churchill Polar Bears</h3>
+            <p class="place" id="p-place"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Churchill, Canada</span></p>
+            <p class="note" id="p-note">Our next trip: November 1–7, 2026, photographing the polar bears of Churchill.</p>
+            <p class="field" id="p-field"><b>From the field:</b> we spent four weeks in Churchill this summer with its belugas and polar bears.</p>
+            <div class="panel-actions">
+              <a class="btn btn-primary" href="#join" id="p-ask">Ask about this trip</a>
+              <a class="btn btn-line" href="tel:+19562798119">Call us</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec why" id="why" aria-labelledby="why-title">
+    <div class="wrap grid">
+      <figure>
+        <img src="https://images.squarespace-cdn.com/content/v1/57c8fb18ebbd1ada66ecff91/1779292324925-9QDXCNU7DE2QXWVE83J8/mountain+gorilla.jpg?format=1000w" width="1000" height="692" alt="A mountain gorilla looks out from green leaves" loading="lazy">
+        <figcaption>Mountain gorilla</figcaption>
+      </figure>
+      <div>
+        <span class="eyebrow caps">Why we do this</span>
+        <h2 id="why-title">We believe people protect what they love.</h2>
+        <p>Our goal is not just to show you wildlife. It’s to place you in front of moments powerful enough to change the way you see the natural world forever.</p>
+        <p class="strong">Because once you truly see it… you can never fully turn away from it again.</p>
+        <p class="mission">“Our mission is to help dispel the predator myth, because people will only protect what they love.” Giving back to the animals we love is our most important work.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec people" aria-labelledby="people-title">
+    <div class="wrap">
+      <span class="eyebrow caps">Every business has an origin story</span>
+      <h2 id="people-title">This one is ours.</h2>
+      <p class="lede">As the years went on, we expanded our expeditions to include a diverse range of wildlife such as whales, crocodiles, bears, and jaguars.</p>
+      <div class="grid">
+        <div class="person">
+          <div class="person-top"><span class="mono" aria-hidden="true">E</span><div><h3>Eli Martinez</h3><span class="caps">Owner / Operator</span></div></div>
+          <p>Explorer, storyteller and wildlife photographer, raised in deep South Texas. He has spent his life chasing the wild, not for the trophies, but for the stories.</p>
+          <p>As the former editor of <em>Shark Diver Magazine</em>, Eli challenged myths about sharks and helped reshape how the world sees them.</p>
+          <ul aria-label="Podcasts featuring Eli">
+            <li><b>Podcasts:</b> The Rio Grande Valley Podcast · Don’t Cut Your Own Bangs · Beyond the Wild · Under The Finfluence</li>
+          </ul>
+        </div>
+        <div class="person">
+          <div class="person-top"><span class="mono" aria-hidden="true">M</span><div><h3>Maritza Martinez</h3><span class="caps">Co-Owner / Operator</span></div></div>
+          <p>The friendly voice behind the emails. From your very first question to the final details of your journey, Maritza makes sure everything runs smoothly.</p>
+          <p>Flights, transfers, hotels, logistics: she handles it all with care, so you can focus on the adventure itself.</p>
+          <ul aria-label="What Maritza handles">
+            <li><b>Ask her about:</b> dates, flights, transfers, hotels and logistics</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lens" aria-labelledby="lens-title">
+    <div class="wrap">
+      <span class="eyebrow caps">Behind the lens</span>
+      <h2 id="lens-title">The moments you came for.</h2>
+      <div class="lens-grid">
+        <figure><img src="https://images.squarespace-cdn.com/content/v1/57c8fb18ebbd1ada66ecff91/1779291211038-7W7OUYYVFCCD0JK6TRL0/beluga+whale+diving+4.jpg?format=1000w" width="1000" height="654" alt="A white beluga whale swims toward the camera in green water" loading="lazy"><figcaption>Beluga whale</figcaption></figure>
+        <figure><img src="https://images.squarespace-cdn.com/content/v1/57c8fb18ebbd1ada66ecff91/1779291725824-ECU64K1A02BZ80DSIBAC/cross+fox+2+.JPG?format=1000w" width="1000" height="667" alt="A red and black cross fox in frosted brush" loading="lazy"><figcaption>Cross fox</figcaption></figure>
+        <figure><img src="https://images.squarespace-cdn.com/content/v1/57c8fb18ebbd1ada66ecff91/1779291026940-ST03D4YEJZ7JZ2RMJFE7/great+hammerhead+diving+3.jpg?format=1000w" width="1000" height="567" alt="A great hammerhead shark swimming over sand in blue water" loading="lazy"><figcaption>Great hammerhead</figcaption></figure>
+        <figure><img src="https://images.squarespace-cdn.com/content/v1/57c8fb18ebbd1ada66ecff91/1779291659491-XKLHMJ3SLV04MBEM7FVR/arctic+fox+BW+.JPG?format=1000w" width="1000" height="657" alt="An arctic fox walking across snow, in black and white" loading="lazy"><figcaption>Arctic fox</figcaption></figure>
+        <figure><img src="https://images.squarespace-cdn.com/content/v1/57c8fb18ebbd1ada66ecff91/1779291652617-SD4LLQ7E3Z83GPNWLWEC/baby+4+edit.JPG?format=1000w" width="1000" height="667" alt="A giant anteater carrying its baby on its back through grass" loading="lazy"><figcaption>Giant anteater and baby</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec field-sec" id="field" aria-labelledby="field-title">
+    <div class="wrap">
+      <span class="eyebrow caps" style="color:var(--teal-d)">From the field, 2026</span>
+      <h2 id="field-title">This is where we’ve been.</h2>
+      <p class="lede" style="color:#4d5457">Our site is updated daily, from wherever the wildlife is.</p>
+      <ol class="timeline">
+        <li><time datetime="2026-09-14">Sep 14, 2026</time><span class="kind">Trip report</span><div><h3>Right whale diving</h3><p>Daily reports and photographs from our time with southern right whales along the coast of Patagonia.</p></div><span class="where">Puerto Pirámides, Argentina</span></li>
+        <li><time datetime="2026-09-03">Sep 3, 2026</time><span class="kind">Trip report</span><div><h3>Anaconda diving</h3><p>Back in Bonito, in search of green anacondas, reporting in real time.</p></div><span class="where">Bonito, Brazil</span></li>
+        <li><time datetime="2026-08-19">Aug 19, 2026</time><span class="kind">Trip report</span><div><h3>Belugas and bears, week four</h3><p>Wrapping up another summer with the belugas and polar bears of Churchill.</p></div><span class="where">Churchill, Canada</span></li>
+        <li><time datetime="2026-08-05">Aug 5, 2026</time><span class="kind">Wild Minute</span><div><h3>Pantanal jaguars</h3><p>Jaguars, maned wolves, giant river otters and tapirs in the Northern Pantanal.</p></div><span class="where">Pantanal, Brazil</span></li>
+        <li><time datetime="2026-07-10">Jul 10, 2026</time><span class="kind">Trip report</span><div><h3>Pink river dolphins</h3><p>Two weeks swimming with botos, searching for sloths and monkeys.</p></div><span class="where">Brazilian Amazon</span></li>
+        <li><time datetime="2026-06-29">Jun 29, 2026</time><span class="kind">Wild Minute</span><div><h3>Baja orcas</h3><p>30 days at sea over five weeks in the Sea of Cortez, in ten episodes.</p></div><span class="where">Sea of Cortez, Mexico</span></li>
+      </ol>
+      <div class="field-foot">
+        <p>Every report, video and blog post is on our site.</p>
+        <a class="btn btn-dark" href="https://sdmdiving.com/">Read the latest</a>
+      </div>
+      <div class="also">
+        <a href="#join"><span class="caps">Private photo workshops</span><h3>Private, one-on-one instruction</h3><p>Underwater photography, or finishing your images in Photoshop, tailored to your equipment, experience and goals.</p></a>
+        <a href="https://sdmdiving.com/"><span class="caps">SDM shark logo caps · $30</span><h3>Take the ocean with you</h3><p>Raised 3D embroidered shark logo, breathable mesh back, adjustable snapback. Choose your colour.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec faq" id="questions" aria-labelledby="faq-title">
+    <div class="wrap grid">
+      <div>
+        <span class="eyebrow caps">Before you go</span>
+        <h2 id="faq-title">Good questions, straight answers.</h2>
+        <p class="lede">Anything else, ask Maritza. That’s what she’s there for.</p>
+      </div>
+      <div>
+        <details open><summary>When is the next trip?<span class="pm" aria-hidden="true"></span></summary><p>Churchill Polar Bears, November 1–7, 2026. For our other expeditions, ask us and we’ll share what’s coming up.</p></details>
+        <details><summary>Are sightings guaranteed?<span class="pm" aria-hidden="true"></span></summary><p>No. There are no guarantees in nature. Patience and realistic expectations are part of the adventure, and Eli writes about it in “Waiting For Wildlife.”</p></details>
+        <details><summary>Is it ethical to swim with whales?<span class="pm" aria-hidden="true"></span></summary><p>It’s a question we think about a lot. Most wildlife wants nothing to do with us. What matters is the difference between forcing an encounter and being invited into one.</p></details>
+        <details><summary>Who sorts out flights and hotels?<span class="pm" aria-hidden="true"></span></summary><p>Maritza. Flights, transfers, hotels and logistics, from your first question to the final details.</p></details>
+        <details><summary>Are orcas dangerous?<span class="pm" aria-hidden="true"></span></summary><p>Many people fear them after stories of attacks and captivity. Eli has swum with orcas in Baja, Norway and New Zealand, and has written about what he learned.</p></details>
+        <details><summary>Can you help me with my photography?<span class="pm" aria-hidden="true"></span></summary><p>Yes. We offer private, one-on-one instruction in underwater photography and in finishing your images in Photoshop, tailored to your equipment, experience and goals.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec contact" id="join" aria-labelledby="join-title">
+    <div class="wrap grid">
+      <div>
+        <span class="eyebrow caps">Join an expedition</span>
+        <h2 id="join-title">Tell us which animal.</h2>
+        <p class="lede">We’ll take it from there.</p>
+        <ul class="reach">
+          <li><a href="tel:+19562798119"><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0c0e0f" stroke-width="1.7"><path d="M5 4h3.5l1.8 4.5-2.3 1.4a11 11 0 005.1 5.1l1.4-2.3L19 14.5V18a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z"/></svg></span><span><small>Call</small><b>1 (956) 279-8119</b></span></a></li>
+          <li><a href="mailto:sdm@sharkdivermag.com"><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0c0e0f" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg></span><span><small>Email</small><b>sdm@sharkdivermag.com</b></span></a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=332%20East%2015th%20Street%2C%20San%20Juan%2C%20TX%2078589"><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0c0e0f" stroke-width="1.7"><path d="M12 21s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span><span><small>Office</small><b>332 East 15th Street, San Juan, TX 78589</b></span></a></li>
+        </ul>
+      </div>
+      <form id="ask" novalidate>
+        <div class="form-row">
+          <div class="field-w"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" placeholder="First and last name"></div>
+          <div class="field-w"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@example.com"></div>
+        </div>
+        <div class="field-w"><label for="f-trip">Expedition</label>
+          <select id="f-trip" name="trip">
+            <option>Churchill Polar Bears · Nov 1–7, 2026</option>
+            <option>Tiger sharks</option><option>Great white sharks</option><option>Orcas</option><option>Humpback whales</option><option>Blue whales</option><option>Sperm whales</option><option>Right whales</option><option>Belugas &amp; bears</option><option>Pink river dolphins</option><option>Anacondas</option><option>Crocodiles</option><option>Sardine Run</option><option>Jaguars</option><option>African safaris</option><option>Gorilla treks</option><option>Orangutans</option><option>Birding</option><option>Private photo workshop</option><option>Not sure yet</option>
+          </select>
+        </div>
+        <div class="field-w"><label for="f-msg">Anything we should know?</label><textarea id="f-msg" name="message" placeholder="When you’d like to travel, your diving or photography experience, questions…"></textarea></div>
+        <button class="btn btn-primary" type="submit" style="width:100%">Send my request</button>
+        <p class="thanks" id="thanks" role="status">Thanks. This is a mockup, so nothing was sent.</p>
+        <p class="form-note">Prefer to talk? Call 1 (956) 279-8119.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="end" aria-labelledby="end-title">
+    <svg class="waves" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke="#6fd0c7" stroke-width="1"><path d="M0 60 C240 30 480 90 720 60 S1200 30 1440 60"/><path d="M0 85 C240 55 480 115 720 85 S1200 55 1440 85"/><path d="M0 110 C240 80 480 140 720 110 S1200 80 1440 110"/></g></svg>
+    <div class="wrap">
+      <span class="eyebrow caps">More than just a vacation</span>
+      <h2 id="end-title">This is where your story starts…</h2>
+      <p>Pick the animal. We’ll handle the rest.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#expeditions">Find your expedition</a>
+        <a class="btn btn-ghost" href="tel:+19562798119">Call 1 (956) 279-8119</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><strong style="color:#fff;font:600 18px var(--sans)">SDM adventures</strong><br>332 East 15th Street, San Juan, TX 78589</div>
+    <nav aria-label="Social">
+      <a href="http://instagram.com/sdmdiving">Instagram</a>
+      <a href="https://www.facebook.com/SDMdiving/">Facebook</a>
+      <a href="https://www.youtube.com/c/sharkdivermag">YouTube</a>
+      <a href="https://www.facebook.com/elithesharkguy/">Eli on Facebook</a>
+      <a href="https://sdmdiving.com/">sdmdiving.com</a>
+    </nav>
+    <p class="made">Mockup made for SDM Diving by Sunny Gupta, <a href="https://lifebaselabs.com">lifebaselabs.com</a></p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick contact">
+  <a class="btn btn-ghost" href="tel:+19562798119">Call us</a>
+  <a class="btn btn-primary" href="#join">Ask about a trip</a>
+</div>
+
+<script>
+(function(){
+  var IMG='https://images.squarespace-cdn.com/content/v1/57c8fb18ebbd1ada66ecff91/';
+  var T={
+    tiger:{name:'Tiger shark diving',kind:'Diving expedition',g:'water',img:'1779292514445-O2RN4PUT8K26ZQ96JEFL/tiger+shark.JPG?format=1000w',alt:'A tiger shark swims beneath a school of fish'},
+    white:{name:'Great white shark diving',kind:'Diving expedition',g:'water'},
+    orca:{name:'Orca diving',kind:'Diving expedition',g:'water',img:'1779292323407-AVQVVWY5BJ6R653ZUZP2/orca+diving+2.JPG?format=1000w',alt:'An orca swims through deep blue water',place:'Sea of Cortez, Baja, Mexico',note:'Eli has swum with orcas in Baja, Norway and New Zealand.',field:'30 days at sea over five weeks in the Sea of Cortez, now in ten Wild Minute episodes (June 2026).'},
+    humpback:{name:'Humpback whale diving',kind:'Diving expedition',g:'water'},
+    blue:{name:'Blue whale diving',kind:'Diving expedition',g:'water'},
+    sperm:{name:'Sperm whale diving',kind:'Diving expedition',g:'water',img:'1779292482426-FI0IEOIS54DLL7AUXYBN/sperm+whale+diving+2.JPG?format=1000w',alt:'A pod of sperm whales swims below the surface'},
+    right:{name:'Right whale diving',kind:'Diving expedition',g:'water',img:'1779292386756-I4V3ZS24WMT4UNRFWEE9/right+whale+2+.JPG?format=1000w',alt:'A right whale glides over a sandy seabed',place:'Puerto Pirámides, Argentina',note:'Southern right whales along the coast of Patagonia.',field:'Our 2026 right whale expedition began in September, with daily reports and photographs.'},
+    beluga:{name:'Belugas and bears',kind:'In the water and on land',g:'water',place:'Churchill, Canada',img:'1779291211038-7W7OUYYVFCCD0JK6TRL0/beluga+whale+diving+4.jpg?format=1000w',alt:'A white beluga whale swims toward the camera',note:'A summer in the Canadian Arctic with belugas and polar bears.',field:'Our 2026 Churchill season ran four weeks, wrapping up in August.'},
+    dolphin:{name:'Pink river dolphins',kind:'Swimming expedition',g:'water',img:'1779292403296-Y65XN6AYPX015FYDNIXW/river+dolphin+diving+2.JPG?format=1000w',alt:'A pink river dolphin in dark river water',place:'Brazilian Amazon',note:'Swim with wild botos, and look for sloths and monkeys in one of the world’s greatest wildlife destinations.',field:'Two weeks in the Amazon in July 2026, with trip reports and Wild Minute episodes.'},
+    anaconda:{name:'Anaconda diving',kind:'Diving expedition',g:'water',place:'Bonito, Brazil',img:'1779290345151-8QLPSCL0HLFZVR6HVN9W/anaconda+diving+2+B.jpg?format=750w',alt:'A diver photographs a green anaconda on a riverbed',note:'In clear water with green anacondas.',field:'Back in Bonito in September 2026, reporting in real time.'},
+    croc:{name:'Crocodile diving',kind:'Diving expedition',g:'water',img:'1779291838394-NQ6L9TY784WASBY1NJH1/IMG_2647.JPG?format=1000w',alt:'A crocodile at the surface, seen above and below the waterline'},
+    sardine:{name:'The Sardine Run',kind:'Ocean expedition',g:'water'},
+    polar:{name:'Churchill Polar Bears',kind:'Photography expedition',g:'land',place:'Churchill, Canada',tag:'Next departure',img:'db06b439-c25a-41a9-a13d-6757b7006344/polar+bear+tours.jpg?format=1000w',alt:'A polar bear walking through snowy brush',note:'Our next trip: November 1–7, 2026, photographing the polar bears of Churchill.',field:'We spent four weeks in Churchill this summer with its belugas and polar bears.',opt:0},
+    jaguar:{name:'Jaguar photography',kind:'Photography expedition',g:'land',place:'Northern Pantanal, Brazil',img:'1779291865693-HF17KLNAHTC9JM56MQHK/jaguar+and+anaconda.JPG?format=1000w',alt:'A jaguar on a riverbank with an anaconda in its jaws',note:'Wild jaguars, plus maned wolves, giant river otters and tapirs.',field:'Our 2026 Pantanal Jaguars expedition, with two Wild Minute episodes now online.'},
+    africa:{name:'African safaris',kind:'Safari',g:'land'},
+    gorilla:{name:'Gorilla treks',kind:'Trek',g:'land',img:'1779292324925-9QDXCNU7DE2QXWVE83J8/mountain+gorilla.jpg?format=1000w',alt:'A mountain gorilla looks out from green leaves'},
+    orangutan:{name:'Orangutan photography',kind:'Photography expedition',g:'land'},
+    birds:{name:'Birding expeditions',kind:'Birding',g:'land',note:'For those who love birds. Our daily photo gallery, For the Birds, is dedicated to birds from around the world.'}
+  };
+  var label={tiger:'Tiger sharks',white:'Great white sharks',orca:'Orcas',humpback:'Humpback whales',blue:'Blue whales',sperm:'Sperm whales',right:'Right whales',beluga:'Belugas & bears',dolphin:'Pink river dolphins',anaconda:'Anacondas',croc:'Crocodiles',sardine:'Sardine Run',polar:'Churchill Polar Bears · Nov 1–7, 2026',jaguar:'Jaguars',africa:'African safaris',gorilla:'Gorilla treks',orangutan:'Orangutans',birds:'Birding'};
+  var $=function(id){return document.getElementById(id)};
+  var media=$('p-media'),current='polar';
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function show(id,anim){
+    var t=T[id];if(!t)return;current=id;
+    var tag=t.tag||(t.field?'In the field, 2026':'');
+    $('panel').classList.toggle('no-media',!t.img);
+    media.innerHTML=t.img?'<img src="'+esc(IMG+t.img)+'" alt="'+esc(t.alt)+'">'+(tag?'<span class="tag">'+esc(tag)+'</span>':''):'';
+    $('p-kind').textContent=t.kind+' · '+(t.g==='water'?'In the water':'On land');
+    $('p-name').textContent=t.name;
+    var pl=$('p-place');pl.style.display=t.place?'':'none';pl.querySelector('span').textContent=t.place||'';
+    $('p-note').textContent=t.note||'One of our expeditions. Ask us for the next dates and the details.';
+    var f=$('p-field');f.style.display=t.field?'':'none';f.innerHTML=t.field?'<b>From the field:</b> '+esc(t.field):'';
+    document.querySelectorAll('.pill').forEach(function(p){p.setAttribute('aria-pressed',p.dataset.id===id?'true':'false')});
+    if(anim){var pn=$('panel');pn.classList.remove('panel-in');void pn.offsetWidth;pn.classList.add('panel-in')}
+  }
+  document.querySelectorAll('.pill').forEach(function(p){p.addEventListener('click',function(){
+    show(p.dataset.id,true);
+    var r=$('panel').getBoundingClientRect();
+    if(r.top>window.innerHeight*.6){$('panel').scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'})}
+  })});
+  document.querySelectorAll('[data-pick]').forEach(function(a){a.addEventListener('click',function(){show(a.dataset.pick,false)})});
+  document.querySelectorAll('.seg button').forEach(function(b){b.addEventListener('click',function(){
+    var f=b.dataset.filter;
+    document.querySelectorAll('.seg button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+    document.querySelectorAll('.fgroup').forEach(function(g){g.classList.toggle('is-hidden',f!=='all'&&g.dataset.group!==f)});
+    if(f!=='all'&&T[current].g!==f){show(f==='water'?'orca':'polar',true)}
+  })});
+  var sel=$('f-trip');
+  $('p-ask').addEventListener('click',function(){
+    var want=label[current];
+    for(var i=0;i<sel.options.length;i++){if(sel.options[i].text===want){sel.selectedIndex=i;break}}
+  });
+  $('ask').addEventListener('submit',function(e){e.preventDefault();$('thanks').classList.add('show')});
+
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce&&'IntersectionObserver' in window){
+    var els=document.querySelectorAll('.sec .wrap > *, .lens .wrap > *, .timeline li, .person, .end .wrap > *');
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    var h=window.innerHeight;
+    els.forEach(function(el){if(el.getBoundingClientRect().top>h){el.classList.add('rise','will-rise');io.observe(el)}});
+  }
+})();
+</script>
+</body>
+</html>
