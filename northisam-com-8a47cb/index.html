@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup northisam-com-8a47cb 1 398a2e26 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northisam · Print your memories on demand, in Rawalpindi</title>
+<meta name="description" content="Pin your memories in a 3D room all year, then Northisam prints them into a book on demand, right here in Rawalpindi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f7f6f2; --paper-2:#efede6; --card:#fff; --ink:#141412; --ink-2:#2a2a27;
+  --muted:#5b5952; --line:#e3e0d7; --blue:#2340e8; --blue-ink:#1a32c2; --gold:#c9a24e;
+  --display:"Inter Tight","Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --wrap:1120px; --r:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.6 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2.5px solid var(--blue);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:#fff;padding:10px 14px;border-radius:8px;z-index:100;text-decoration:none}
+.skip:focus{top:44px}
+
+/* mockup banner */
+.mock{background:var(--ink);color:#f3f1ea;font:500 13px/1 var(--body);letter-spacing:.02em;text-align:center;padding:10px 16px;position:relative;z-index:60}
+.mock b{font-weight:600}
+
+/* header */
+header.top{position:sticky;top:0;z-index:50;background:rgba(247,246,242,.92);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font:700 21px/1 var(--display);letter-spacing:-.02em;text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
+.top nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0}
+.top nav a{text-decoration:none;color:var(--muted);font-size:14.5px;display:inline-flex;align-items:center;min-height:44px}
+.top nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:0 22px;border-radius:999px;font:600 15px/1 var(--body);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .2s ease,background .2s ease,box-shadow .2s ease}
+.btn svg{width:16px;height:16px;flex:none}
+.btn-main{background:var(--blue);color:#fff;box-shadow:0 1px 0 rgba(255,255,255,.25) inset,0 8px 20px -10px rgba(35,64,232,.7)}
+.btn-main:hover{background:var(--blue-ink);transform:translateY(-1px)}
+.btn-line{background:var(--card);color:var(--ink);border-color:var(--line)}
+.btn-line:hover{border-color:#cbc7bb;transform:translateY(-1px)}
+.btn-sm{min-height:44px;padding:0 18px;font-size:14px}
+
+.eyebrow{font:600 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin:0 0 18px}
+h1,h2,h3{font-family:var(--display);letter-spacing:-.03em;margin:0;font-weight:700}
+h2{font-size:clamp(32px,4.2vw,50px);line-height:1.04}
+.lede{color:var(--muted);font-size:18px;max-width:34em;margin:20px 0 0}
+section{padding:112px 0}
+.rule{border-top:1px solid var(--line)}
+
+/* hero */
+.hero{padding:72px 0 96px}
+.hero .wrap{display:grid;grid-template-columns:1.02fr 1fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(44px,6.1vw,78px);line-height:.98;letter-spacing:-.045em}
+.hero h1 em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em}
+.hero .lede{font-size:19px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.hero .where{display:flex;align-items:center;gap:8px;margin-top:28px;color:var(--muted);font-size:14px}
+.hero .where svg{width:16px;height:16px;color:var(--blue)}
+
+/* memory room */
+.room{position:relative;height:500px;perspective:1300px}
+.room-wall{position:absolute;inset:0 0 70px 0;border-radius:24px;background:var(--card);border:1px solid var(--line);box-shadow:0 30px 60px -40px rgba(20,20,18,.35);transform:rotateY(-9deg) rotateX(2deg);transform-origin:70% 50%;overflow:hidden}
+.room-wall::after{content:"";position:absolute;left:0;right:0;bottom:0;height:34%;background:linear-gradient(180deg,rgba(239,237,230,0),var(--paper-2))}
+.room-bar{position:absolute;top:16px;left:20px;right:20px;display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted);z-index:2}
+.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:5px 11px;font-size:12.5px;color:var(--ink-2);white-space:nowrap}
+.chip svg{width:13px;height:13px;color:var(--blue)}
+.print{position:absolute;background:#fff;padding:7px 7px 9px;border-radius:3px;box-shadow:0 1px 2px rgba(0,0,0,.08),0 14px 26px -14px rgba(20,20,18,.45);z-index:1;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.print img{width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:1px}
+.print::before{content:"";position:absolute;top:-5px;left:50%;width:11px;height:11px;margin-left:-5.5px;border-radius:50%;background:var(--blue);box-shadow:0 2px 3px rgba(0,0,0,.25),inset -2px -2px 0 rgba(0,0,0,.18)}
+.p1{width:170px;left:7%;top:66px;transform:rotate(-4deg)}
+.p2{width:140px;left:41%;top:52px;transform:rotate(2.5deg)}
+.p3{width:132px;right:6%;top:78px;transform:rotate(-1.5deg)}
+.p4{width:150px;left:22%;top:250px;transform:rotate(3deg)}
+.room .book-wrap{position:absolute;right:4%;bottom:0;z-index:3}
+.room .book{transform:rotateX(8deg) rotateY(-36deg)}
+.room .tag{position:absolute;left:4%;bottom:14px;z-index:3;display:flex;gap:8px}
+
+/* 3D book */
+.book-wrap{perspective:1600px;--w:200px;--h:262px;--t:28px}
+.book{position:relative;width:var(--w);height:var(--h);transform-style:preserve-3d;transform:rotateX(8deg) rotateY(-30deg);transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.face{position:absolute;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.f-front,.f-back{inset:0;border-radius:3px 7px 7px 3px}
+.f-front{transform:translateZ(calc(var(--t)/2));overflow:hidden}
+.f-back{transform:rotateY(180deg) translateZ(calc(var(--t)/2))}
+.f-spine{width:var(--t);height:var(--h);left:calc((var(--w) - var(--t))/2);transform:rotateY(-90deg) translateZ(calc(var(--w)/2));display:flex;align-items:center;justify-content:center;overflow:hidden}
+.f-spine span{writing-mode:vertical-rl;transform:rotate(180deg);font:400 calc(var(--t)*.5)/1 var(--serif);letter-spacing:.04em;white-space:nowrap}
+.f-pages{width:var(--t);height:calc(var(--h) - 8px);top:4px;left:calc((var(--w) - var(--t))/2);transform:rotateY(90deg) translateZ(calc(var(--w)/2 - 4px));background:repeating-linear-gradient(90deg,#fbfaf6 0 2px,#e6e2d6 2px 3px)}
+.f-top{width:calc(var(--w) - 6px);height:var(--t);top:calc((var(--h) - var(--t))/2);transform:rotateX(90deg) translateZ(calc(var(--h)/2 - 3px));background:repeating-linear-gradient(0deg,#fbfaf6 0 2px,#e6e2d6 2px 3px)}
+.shadow{position:absolute;left:4%;right:-14%;bottom:-24px;height:30px;background:radial-gradient(closest-side,rgba(20,20,18,.32),rgba(20,20,18,0));filter:blur(4px);transform:translateZ(-40px)}
+/* cover finishes */
+.book{--cover:#1d1e22;--cover-ink:#f2eee4}
+.book[data-cover="soft"]{--cover:#efe9dc;--cover-ink:#1d1e22}
+.book[data-cover="cloth"]{--cover:#26323f;--cover-ink:#efe9dc}
+.f-front,.f-back,.f-spine{background:var(--cover);color:var(--cover-ink)}
+.book[data-cover="cloth"] .f-front,.book[data-cover="cloth"] .f-back,.book[data-cover="cloth"] .f-spine{background-color:var(--cover);background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.045) 0 1px,transparent 1px 3px),repeating-linear-gradient(90deg,rgba(0,0,0,.09) 0 1px,transparent 1px 3px)}
+.book[data-cover="hard"] .f-front::after,.book[data-cover="cloth"] .f-front::after{content:"";position:absolute;top:0;bottom:0;left:9px;width:2px;background:rgba(0,0,0,.28);box-shadow:1px 0 0 rgba(255,255,255,.07)}
+.book[data-cover="soft"] .f-front,.book[data-cover="soft"] .f-back{border-radius:2px 3px 3px 2px}
+.cover{position:absolute;inset:0;padding:12% 13% 10% 17%;display:flex;flex-direction:column}
+.cover .win{position:relative;border-radius:2px;overflow:hidden;aspect-ratio:1;background:#0003;box-shadow:0 0 0 3px rgba(255,255,255,.06)}
+.cover .win img{width:100%;height:100%;object-fit:cover}
+.book[data-paper="gloss"] .cover .win::after{content:"";position:absolute;inset:0;background:linear-gradient(125deg,rgba(255,255,255,0) 35%,rgba(255,255,255,.32) 48%,rgba(255,255,255,0) 62%)}
+.cover .ttl{margin-top:auto;font:400 calc(var(--w)*.105)/1.05 var(--serif);letter-spacing:-.005em;overflow-wrap:anywhere}
+.cover .sub{margin-top:6px;font:600 calc(var(--w)*.036)/1.2 var(--body);letter-spacing:.16em;text-transform:uppercase;opacity:.72}
+.book[data-foil="on"] .ttl,.book[data-foil="on"] .f-spine span{background:linear-gradient(100deg,#9c7a2f,#f1d48a 40%,#b58d3a 60%,#e9c977);-webkit-background-clip:text;background-clip:text;color:transparent}
+.book[data-type="notebook"] .cover{justify-content:center}
+.book[data-type="notebook"] .cover .ttl{margin:auto 0 0}
+.book[data-type="notebook"][data-photo="none"] .cover .win{display:none}
+.ribbon{display:none;position:absolute;top:0;bottom:0;left:58%;width:16%;background:#a3322f;background-image:linear-gradient(90deg,rgba(0,0,0,.15),rgba(255,255,255,.12) 50%,rgba(0,0,0,.15));z-index:2}
+.ribbon.h{left:0;right:0;top:63%;bottom:auto;width:auto;height:11%;background-image:linear-gradient(180deg,rgba(0,0,0,.15),rgba(255,255,255,.12) 50%,rgba(0,0,0,.15))}
+.book[data-gift="on"] .ribbon{display:block}
+.book[data-gift="on"] .bow{display:block}
+.bow{display:none;position:absolute;left:66%;top:68%;width:40px;height:40px;margin:-20px 0 0 -20px;z-index:3}
+
+/* steps */
+.steps-head{display:flex;justify-content:space-between;align-items:end;gap:40px;flex-wrap:wrap}
+.year{margin:56px 0 0;position:relative}
+.months{display:grid;grid-template-columns:repeat(12,1fr);border-top:1px solid var(--ink);font:500 12px/1 var(--body);color:var(--muted);letter-spacing:.06em}
+.months span{padding-top:10px;border-left:1px solid var(--line);padding-left:6px;height:30px}
+.months span:first-child{border-left-color:var(--ink)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:40px;list-style:none;padding:0}
+.step .ill{height:150px;display:flex;align-items:end;margin-bottom:26px}
+.step .ill svg{height:150px;width:auto}
+.step .when{font:600 12px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
+.step h3{font-size:25px;margin:12px 0 8px;letter-spacing:-.02em}
+.step h3 b{font-family:var(--serif);font-weight:400;font-style:italic;color:var(--muted);margin-right:6px}
+.step p{margin:0;color:var(--muted);max-width:22em}
+
+/* builder */
+.builder-sec{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.builder{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;margin-top:52px;align-items:start}
+.stage{position:sticky;top:96px;background:var(--paper);border:1px solid var(--line);border-radius:24px;min-height:560px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 24px 28px;overflow:hidden;touch-action:pan-y;cursor:grab}
+.stage:active{cursor:grabbing}
+.stage .book-wrap{--w:260px;--h:340px;--t:36px;margin:10px 0 40px}
+.stage .book-wrap[data-type="soft"]{--t:16px}
+.stage-hint{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:8px}
+.stage-hint svg{width:16px;height:16px}
+.turns{display:flex;gap:6px;margin-top:10px}
+.turns button{min-height:44px;min-width:44px;padding:0 14px;border-radius:999px;border:1px solid var(--line);background:var(--card);font:500 13px/1 var(--body);color:var(--ink-2);cursor:pointer}
+.turns button[aria-pressed="true"]{border-color:var(--ink);color:var(--ink)}
+fieldset{border:0;margin:0 0 26px;padding:0;min-width:0}
+legend{font:600 14px/1 var(--body);margin-bottom:12px;padding:0;display:flex;gap:10px;align-items:baseline}
+legend small{font-weight:400;color:var(--muted);font-size:13px}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg label{position:relative}
+.seg input{position:absolute;opacity:0;width:1px;height:1px}
+.seg span{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border:1px solid var(--line);border-radius:12px;background:var(--paper);font-size:14.5px;cursor:pointer;transition:border-color .2s,background .2s,box-shadow .2s}
+.seg input:checked+span{border-color:var(--ink);background:var(--card);box-shadow:0 0 0 1px var(--ink) inset}
+.seg input:focus-visible+span{outline:2.5px solid var(--blue);outline-offset:2px}
+.seg .sw{width:14px;height:14px;border-radius:3px;border:1px solid rgba(0,0,0,.2)}
+.thumbs{display:flex;gap:10px;flex-wrap:wrap}
+.thumbs label{position:relative}
+.thumbs input{position:absolute;opacity:0;width:1px;height:1px}
+.thumbs span{display:block;width:60px;height:60px;border-radius:10px;overflow:hidden;border:1px solid var(--line);cursor:pointer;transition:box-shadow .2s}
+.thumbs img{width:100%;height:100%;object-fit:cover}
+.thumbs .none{display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);background:var(--paper)}
+.thumbs input:checked+span{box-shadow:0 0 0 2px var(--card),0 0 0 4px var(--ink)}
+.thumbs input:focus-visible+span{outline:2.5px solid var(--blue);outline-offset:5px}
+.field-in{width:100%;min-height:48px;padding:0 16px;border:1px solid var(--line);border-radius:12px;background:var(--paper);font:400 16px var(--body);color:var(--ink)}
+.field-in:focus{border-color:var(--ink);outline:none;box-shadow:0 0 0 3px rgba(35,64,232,.18)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.stepper{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+.stepper button{width:44px;height:46px;border:0;background:none;font:500 20px/1 var(--body);color:var(--ink);cursor:pointer;border-radius:12px}
+.stepper output{min-width:36px;text-align:center;font:600 16px var(--body)}
+.toggle{display:flex;align-items:center;gap:12px;min-height:46px;cursor:pointer;font-size:14.5px}
+.toggle input{appearance:none;-webkit-appearance:none;width:44px;height:26px;border-radius:99px;background:#d9d5ca;position:relative;margin:0;cursor:pointer;transition:background .2s;flex:none}
+.toggle input::after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25);transition:transform .2s}
+.toggle input:checked{background:var(--blue)}
+.toggle input:checked::after{transform:translateX(18px)}
+.summary{margin-top:6px;border-top:1px solid var(--line);padding-top:22px}
+.summary h3{font:600 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.summary p{font:400 24px/1.3 var(--serif);margin:12px 0 6px;color:var(--ink)}
+.summary .fine{font:400 14px/1.5 var(--body);color:var(--muted);margin:0 0 18px}
+
+/* product */
+.product .wrap{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.frame{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:14px;max-width:470px;box-shadow:0 30px 60px -45px rgba(20,20,18,.4)}
+.frame img{width:100%;max-width:440px;height:auto;aspect-ratio:1;object-fit:cover;border-radius:12px}
+.frame .chips{display:flex;gap:8px;margin-top:12px}
+.checks{list-style:none;padding:0;margin:28px 0 0}
+.checks li{display:flex;gap:12px;padding:14px 0;border-top:1px solid var(--line);font-weight:500}
+.checks li:last-child{border-bottom:1px solid var(--line)}
+.checks svg{width:20px;height:20px;color:var(--blue);flex:none;margin-top:2px}
+
+/* contents */
+.contents .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;align-items:start}
+.toc{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.toc li{display:grid;grid-template-columns:52px 1fr;gap:6px 18px;padding:22px 0;border-bottom:1px solid var(--line)}
+.toc .n{font:400 30px/1 var(--serif);color:var(--blue)}
+.toc h3{font-size:22px;letter-spacing:-.02em;display:flex;align-items:baseline;gap:12px}
+.toc h3::after{content:"";flex:1;border-bottom:1.5px dotted #c9c5b9;transform:translateY(-4px)}
+.toc p{grid-column:2;margin:0;color:var(--muted)}
+.contents .sticky{position:sticky;top:110px}
+.stamp{margin-top:34px;display:flex;flex-wrap:wrap;gap:8px}
+
+/* faq */
+.faq .wrap{max-width:860px}
+.qa{margin-top:40px;border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:68px;font:600 19px/1.3 var(--display);letter-spacing:-.015em;padding:10px 0}
+summary::-webkit-details-marker{display:none}
+summary .pm{width:30px;height:30px;border-radius:50%;border:1px solid var(--line);flex:none;position:relative;background:var(--card)}
+summary .pm::before,summary .pm::after{content:"";position:absolute;left:50%;top:50%;width:11px;height:1.5px;margin:-.75px 0 0 -5.5px;background:var(--ink);transition:transform .25s}
+summary .pm::after{transform:rotate(90deg)}
+details[open] summary .pm::after{transform:rotate(0)}
+details p{margin:0 0 22px;color:var(--muted);max-width:40em}
+
+/* final */
+.final{padding:0 0 112px}
+.final-card{background:var(--ink);color:#f3f1ea;border-radius:28px;padding:72px 64px;display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.final h2{font-size:clamp(34px,4.4vw,54px)}
+.final .lede{color:#bdb9ae}
+.final .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.final .btn-line{background:transparent;color:#f3f1ea;border-color:#4a4943}
+.visit{margin-top:44px;padding-top:24px;border-top:1px solid #34332f;color:#bdb9ae;font-size:15px}
+.visit strong{display:block;color:#f3f1ea;font:600 16px var(--body);margin-bottom:4px}
+.visit a{color:#f3f1ea;display:inline-flex;align-items:center;min-height:44px;gap:6px}
+form.talk{background:#1f1f1c;border:1px solid #34332f;border-radius:20px;padding:28px}
+form.talk h3{font-size:22px;letter-spacing:-.02em;margin-bottom:18px}
+form.talk label{display:block;font:500 13.5px var(--body);color:#d5d2c8;margin:0 0 7px}
+form.talk .f{margin-bottom:16px}
+form.talk input,form.talk select,form.talk textarea{width:100%;min-height:48px;padding:12px 14px;border-radius:12px;border:1px solid #3d3c37;background:#141412;color:#f3f1ea;font:400 16px/1.4 var(--body)}
+form.talk textarea{min-height:110px;resize:vertical}
+form.talk input:focus,form.talk select:focus,form.talk textarea:focus{outline:none;border-color:#8ea0ff;box-shadow:0 0 0 3px rgba(142,160,255,.25)}
+form.talk .btn{width:100%;margin-top:4px}
+.thanks{margin:14px 0 0;color:#cfd6ff;font-size:15px;min-height:1px}
+
+footer{border-top:1px solid var(--line);padding:56px 0 40px;font-size:14.5px;color:var(--muted)}
+footer .cols{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap}
+footer .logo{color:var(--ink)}
+footer p{margin:8px 0 0;max-width:24em}
+footer ul{list-style:none;margin:0;padding:0;display:flex;gap:28px;flex-wrap:wrap}
+footer ul a{text-decoration:none;display:inline-flex;min-height:44px;align-items:center}
+footer ul a:hover{color:var(--ink)}
+footer .base{margin-top:36px;padding-top:22px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13.5px}
+footer .base a{color:var(--ink)}
+
+.callbar{display:none}
+
+/* rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise-ready{transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+
+@media (max-width:960px){
+  .hero .wrap,.builder,.product .wrap,.contents .wrap,.final-card{grid-template-columns:1fr}
+  .stage{position:relative;top:0}
+  .contents .sticky{position:static}
+  .final-card{padding:48px 32px;gap:40px}
+}
+@media (max-width:720px){
+  section{padding:80px 0}
+  .wrap{padding:0 20px}
+  .top nav{display:none}
+  .top .wrap{height:60px}
+  .hero{padding:40px 0 64px}
+  .hero .wrap{gap:36px}
+  .hero h1{font-size:44px}
+  .hero .lede{font-size:17px}
+  .hero .ctas .btn{flex:1 1 auto}
+  .room{height:420px;perspective:900px}
+  .room-wall{inset:0 0 58px 0;transform:none}
+  .p1{width:122px;left:5%;top:58px}
+  .p2{width:100px;left:41%;top:50px}
+  .p3{width:86px;right:4%;top:74px}
+  .p4{width:110px;left:10%;top:214px}
+  .room .book-wrap{--w:132px;--h:173px;--t:20px;right:6%}
+  .room .tag{bottom:6px;left:2%;flex-direction:column;align-items:flex-start}
+  .year{display:none}
+  .steps{grid-template-columns:1fr;gap:48px}
+  .step .ill{height:120px;margin-bottom:18px}
+  .step .ill svg{height:120px}
+  .builder{margin-top:36px;gap:32px}
+  .stage{min-height:440px;padding:32px 16px 22px}
+  .stage .book-wrap{--w:200px;--h:262px;--t:28px;margin:6px 0 34px}
+  .row2{grid-template-columns:1fr}
+  .product .wrap{gap:44px}
+  .toc li{grid-template-columns:40px 1fr;gap:4px 12px}
+  .toc .n{font-size:24px}
+  .toc h3{font-size:20px}
+  summary{font-size:17px}
+  .final{padding-bottom:80px}
+  .final .wrap{padding:0 12px}
+  .final-card{padding:40px 20px 24px;border-radius:24px}
+  .final .ctas .btn{flex:1 1 auto}
+  form.talk{padding:22px 18px}
+  body{padding-bottom:68px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:55;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(247,246,242,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+  .callbar .btn{flex:1;min-height:46px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Free mockup for <b>Northisam</b></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Northisam, back to top">Northisam</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#product">The product</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#print">What we print</a></li>
+        <li><a href="#design">Design your book</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-line btn-sm" href="#contact">Contact
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="hero-h">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">On-demand book printing · Rawalpindi</p>
+      <h1 id="hero-h">Turn a year of memories into a book you can <em>hold.</em></h1>
+      <p class="lede">Pin photos, notes and moments in your own 3D memory room all year. When it’s done, we print and bind it into a book, one copy at a time, right here in Rawalpindi.</p>
+      <div class="ctas">
+        <a class="btn btn-main" href="#design">Design your book
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        <a class="btn btn-line" href="#how">How it works</a>
+      </div>
+      <p class="where"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 14.5s5-4.3 5-8.2A5 5 0 0 0 3 6.3c0 3.9 5 8.2 5 8.2z"/><circle cx="8" cy="6.3" r="1.8"/></svg>No minimums. Printed locally in Bahria Town.</p>
+    </div>
+
+    <div class="room" id="room" aria-label="A sample memory room with pinned photos and the printed book">
+      <div class="room-wall">
+        <div class="room-bar"><span>Your memory room</span><span class="chip">2026</span></div>
+        <figure class="print p1" style="margin:0"><img src="https://framerusercontent.com/images/0XSJjXWfBS7W8nAoYx8SBYelyMc.jpg?width=500&height=500" alt="A woman photographing mountains from a wooden balcony" width="500" height="500"></figure>
+        <figure class="print p2" style="margin:0"><img src="https://framerusercontent.com/images/EHOJHE25m9kIPjEHDlkehIUd3f8.jpg?width=500&height=493" alt="A man at a sea wall looking out at boats" width="500" height="493"></figure>
+        <figure class="print p3" style="margin:0"><img src="https://framerusercontent.com/images/wJqPvCFUNMHAuIXlBdcQM1bObc.jpg?width=500&height=493" alt="Two swimmers in a calm sea, on film" width="500" height="493"></figure>
+        <figure class="print p4" style="margin:0"><img src="https://framerusercontent.com/images/D7OEXqrnMPld2wwWZMdtf66UN8.jpg?width=500&height=500" alt="A father holding his sleeping baby on the beach" width="500" height="500"></figure>
+      </div>
+      <div class="tag"><span class="chip"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 14.5s5-4.3 5-8.2A5 5 0 0 0 3 6.3c0 3.9 5 8.2 5 8.2z"/></svg>Summer, 2026</span><span class="chip"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2.5" y="2.5" width="11" height="11" rx="2"/><path d="M2.5 11l3.5-3 3 2.5 2-1.5 2.5 2"/></svg>128 memories</span></div>
+      <div class="book-wrap" id="heroBook" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<section class="rule" id="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <div class="steps-head">
+      <div>
+        <p class="eyebrow">How it works</p>
+        <h2 id="how-h">From a year of moments<br>to a printed book.</h2>
+      </div>
+      <p class="lede" style="max-width:24em;margin:0">Pin your first memory in minutes. Print whenever you’re ready, with no commitment.</p>
+    </div>
+    <div class="year" aria-hidden="true">
+      <div class="months"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span></div>
+    </div>
+    <ol class="steps">
+      <li class="step" data-rise>
+        <div class="ill" aria-hidden="true">
+          <svg viewBox="0 0 220 150" fill="none">
+            <rect x="8" y="30" width="78" height="86" rx="3" fill="#fff" stroke="#e3e0d7" transform="rotate(-5 47 73)"/>
+            <rect x="15" y="36" width="64" height="62" rx="2" fill="#cfe0e8" transform="rotate(-5 47 73)"/>
+            <rect x="104" y="18" width="70" height="78" rx="3" fill="#fff" stroke="#e3e0d7" transform="rotate(4 139 57)"/>
+            <rect x="110" y="24" width="58" height="56" rx="2" fill="#d9e6cf" transform="rotate(4 139 57)"/>
+            <rect x="122" y="104" width="84" height="38" rx="2" fill="#fbf3c9" transform="rotate(-3 164 123)"/>
+            <path d="M132 120h56M132 130h38" stroke="#b9ad7a" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="45" cy="30" r="6" fill="#2340e8"/><circle cx="140" cy="19" r="6" fill="#2340e8"/>
+          </svg>
+        </div>
+        <p class="when">All year</p>
+        <h3><b>01</b>Pin as you go</h3>
+        <p>Add photos, ticket stubs, voice notes and little thoughts to your 3D room whenever they happen.</p>
+      </li>
+      <li class="step" data-rise>
+        <div class="ill" aria-hidden="true">
+          <svg viewBox="0 0 220 150" fill="none">
+            <rect x="10" y="14" width="200" height="34" rx="8" fill="#fff" stroke="#e3e0d7"/>
+            <rect x="10" y="58" width="200" height="34" rx="8" fill="#fff" stroke="#141412" stroke-width="1.5"/>
+            <rect x="10" y="102" width="200" height="34" rx="8" fill="#fff" stroke="#e3e0d7"/>
+            <text x="24" y="36" font-family="Georgia,serif" font-style="italic" font-size="14" fill="#5b5952">Chapter one</text>
+            <text x="24" y="80" font-family="Georgia,serif" font-style="italic" font-size="14" fill="#141412">Summer</text>
+            <text x="24" y="124" font-family="Georgia,serif" font-style="italic" font-size="14" fill="#5b5952">The beach</text>
+            <rect x="150" y="22" width="18" height="18" rx="2" fill="#cfe0e8"/><rect x="172" y="22" width="18" height="18" rx="2" fill="#d9e6cf"/>
+            <rect x="128" y="66" width="18" height="18" rx="2" fill="#f0d7c4"/><rect x="150" y="66" width="18" height="18" rx="2" fill="#cfe0e8"/><rect x="172" y="66" width="18" height="18" rx="2" fill="#e7e1cf"/>
+            <rect x="172" y="110" width="18" height="18" rx="2" fill="#d9e6cf"/>
+          </svg>
+        </div>
+        <p class="when">At year’s end</p>
+        <h3><b>02</b>Review &amp; arrange</h3>
+        <p>Pick your favourite moments and arrange them into chapters.</p>
+      </li>
+      <li class="step" data-rise>
+        <div class="ill" aria-hidden="true">
+          <svg viewBox="0 0 220 150" fill="none">
+            <path d="M40 132 L120 142 L190 118 L112 110 Z" fill="#141412" opacity=".08"/>
+            <path d="M44 40 L116 50 L116 138 L44 128 Z" fill="#1d1e22"/>
+            <path d="M116 50 L184 30 L184 116 L116 138 Z" fill="#fbfaf6" stroke="#e3e0d7"/>
+            <path d="M44 40 L112 20 L184 30 L116 50 Z" fill="#26323f"/>
+            <rect x="56" y="56" width="46" height="40" fill="#cfe0e8" transform="skewY(8) translate(0 -8)"/>
+            <path d="M58 112 L100 118" stroke="#c9a24e" stroke-width="3" stroke-linecap="round"/>
+            <path d="M126 58 L176 44M126 70 L176 56M126 82 L176 68" stroke="#e3e0d7" stroke-width="2"/>
+          </svg>
+        </div>
+        <p class="when">Whenever you’re ready</p>
+        <h3><b>03</b>Print on demand</h3>
+        <p>Place your order and we print and bind your book, one copy at a time.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="builder-sec" id="design" aria-labelledby="design-h">
+  <div class="wrap">
+    <p class="eyebrow">Design your book</p>
+    <h2 id="design-h">See it before we print it.</h2>
+    <p class="lede">Pick the book, the cover and the finish. Your book turns as you choose, and your choices go straight into a note to the shop.</p>
+
+    <div class="builder">
+      <div class="stage" id="stage">
+        <div class="book-wrap" id="liveBook" role="img" aria-label="Preview of your book"></div>
+        <p class="stage-hint"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 8a6 6 0 0 1 11-3.3M14 8a6 6 0 0 1-11 3.3M13 1.5v3.2H9.8M3 14.5v-3.2h3.2"/></svg>Drag to turn it</p>
+        <div class="turns" role="group" aria-label="View">
+          <button type="button" data-view="front" aria-pressed="true">Front</button>
+          <button type="button" data-view="spine" aria-pressed="false">Spine</button>
+          <button type="button" data-view="pages" aria-pressed="false">Pages</button>
+        </div>
+      </div>
+
+      <form id="bookForm" aria-label="Book options" onsubmit="return false">
+        <fieldset>
+          <legend>Book</legend>
+          <div class="seg">
+            <label><input type="radio" name="type" value="memory" checked><span>Memory book</span></label>
+            <label><input type="radio" name="type" value="photo"><span>Photo book</span></label>
+            <label><input type="radio" name="type" value="notebook"><span>Notebook / journal</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Cover</legend>
+          <div class="seg">
+            <label><input type="radio" name="cover" value="hard"><span><i class="sw" style="background:#1d1e22"></i>Hardcover</span></label>
+            <label><input type="radio" name="cover" value="soft"><span><i class="sw" style="background:#efe9dc"></i>Softcover</span></label>
+            <label><input type="radio" name="cover" value="cloth" checked><span><i class="sw" style="background:#26323f"></i>Cloth</span></label>
+          </div>
+        </fieldset>
+        <fieldset id="paperSet">
+          <legend>Pages <small id="paperNote">Laid out into chapters from your room</small></legend>
+          <div class="seg" id="paperOpts"></div>
+        </fieldset>
+        <fieldset>
+          <legend>Cover photo</legend>
+          <div class="thumbs" id="thumbs"></div>
+        </fieldset>
+        <div class="row2">
+          <fieldset>
+            <legend><label for="title">Title on the cover</label></legend>
+            <input class="field-in" id="title" name="title" maxlength="28" value="Summer, 2026" autocomplete="off">
+          </fieldset>
+          <fieldset>
+            <legend>Copies <small>No minimums</small></legend>
+            <div class="stepper"><button type="button" id="minus" aria-label="One fewer copy">−</button><output id="copies" aria-live="polite">1</output><button type="button" id="plus" aria-label="One more copy">+</button></div>
+          </fieldset>
+        </div>
+        <fieldset style="margin-bottom:12px">
+          <legend class="sr" style="position:absolute;left:-9999px">Finishing touches</legend>
+          <label class="toggle"><input type="checkbox" id="foil" checked> Foil title</label>
+          <label class="toggle"><input type="checkbox" id="gift"> Gift edition, wrapped and ready to give</label>
+        </fieldset>
+        <div class="summary">
+          <h3>Your book</h3>
+          <p id="sumText">One cloth-bound memory book, “Summer, 2026”, with a foil title.</p>
+          <p class="fine">Order extra copies whenever you want. We keep your files safe.</p>
+          <a class="btn btn-main" href="#contact" id="sendBook">Send this to Northisam
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="product" id="product" aria-labelledby="product-h">
+  <div class="wrap">
+    <div class="frame" data-rise>
+      <img src="https://framerusercontent.com/images/D7OEXqrnMPld2wwWZMdtf66UN8.jpg?width=500&height=500" alt="A father carrying his sleeping baby along the shore" width="500" height="500" loading="lazy">
+      <div class="chips"><span class="chip">Summer, 2026</span><span class="chip">128 memories</span></div>
+    </div>
+    <div>
+      <p class="eyebrow">The product</p>
+      <h2 id="product-h">A 3D room for the moments that matter.</h2>
+      <p class="lede">Drop in photos, ticket stubs, voice notes and little thoughts as the year unfolds. Arrange them in a space that’s yours, and revisit it anytime, from any device.</p>
+      <ul class="checks">
+        <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Add photos, notes and captions</li>
+        <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Rearrange them in an immersive 3D space</li>
+        <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Private by default. Only you hold the key.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="contents rule" id="print" aria-labelledby="print-h">
+  <div class="wrap">
+    <div class="sticky">
+      <p class="eyebrow">What we print</p>
+      <h2 id="print-h">On-demand printing, done locally.</h2>
+      <p class="lede">No minimums, no warehouses. We print and bind exactly what you need, when you need it, from a single keepsake to a small run for family and friends.</p>
+      <div class="stamp"><span class="chip">Bahria Town, Rawalpindi</span><span class="chip">One copy at a time</span></div>
+    </div>
+    <ol class="toc">
+      <li data-rise><span class="n">1</span><h3>Memory books</h3><p>Your 3D room, laid out into chapters and bound into a book.</p></li>
+      <li data-rise><span class="n">2</span><h3>Photo books</h3><p>High-quality photo printing on premium matte or gloss paper.</p></li>
+      <li data-rise><span class="n">3</span><h3>Notebooks &amp; journals</h3><p>Blank and lined notebooks with your own cover and paper stock.</p></li>
+      <li data-rise><span class="n">4</span><h3>Custom covers</h3><p>Hardcover, softcover and cloth finishes with foil options.</p></li>
+      <li data-rise><span class="n">5</span><h3>Gift editions</h3><p>Beautifully wrapped copies, ready to give to someone you love.</p></li>
+      <li data-rise><span class="n">6</span><h3>Reprints anytime</h3><p>Order extra copies whenever you want. We keep your files safe.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="faq rule" id="faq" aria-labelledby="faq-h">
+  <div class="wrap">
+    <p class="eyebrow">Questions</p>
+    <h2 id="faq-h">Good to know.</h2>
+    <div class="qa">
+      <details open><summary>Is there a minimum order?<span class="pm" aria-hidden="true"></span></summary><p>No. We print one copy at a time, from a single keepsake to a small run for family and friends.</p></details>
+      <details><summary>Do I have to print at the end of the year?<span class="pm" aria-hidden="true"></span></summary><p>No. Pin your first memory in minutes and print whenever you’re ready. There’s no commitment.</p></details>
+      <details><summary>Can I order more copies later?<span class="pm" aria-hidden="true"></span></summary><p>Yes. Order extra copies whenever you want. We keep your files safe.</p></details>
+      <details><summary>Who can see my memory room?<span class="pm" aria-hidden="true"></span></summary><p>Only you. Your room is private by default, and only you hold the key.</p></details>
+      <details><summary>What covers and paper can I choose?<span class="pm" aria-hidden="true"></span></summary><p>Hardcover, softcover and cloth, with foil options. Photo books come on premium matte or gloss paper, and notebooks come blank or lined.</p></details>
+      <details><summary>Where are you?<span class="pm" aria-hidden="true"></span></summary><p>We’re a local print shop in Bahria Town, Rawalpindi. Your book is printed and bound right here.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final" id="contact" aria-labelledby="final-h">
+  <div class="wrap">
+    <div class="final-card">
+      <div>
+        <p class="eyebrow" style="color:#a9b6ff">Start today</p>
+        <h2 id="final-h">Start your 2026 memory book today.</h2>
+        <p class="lede">Pin your first memory in minutes. Print whenever you’re ready, with no commitment.</p>
+        <div class="ctas">
+          <a class="btn btn-main" href="#design">Design your book
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+        <div class="visit">
+          <strong>Visit the shop</strong>
+          Bahria Town, Rawalpindi, Pakistan<br>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Northisam%2C%20Bahria%20Town%2C%20Rawalpindi%2C%20Pakistan">Open in Google Maps
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5"/></svg></a>
+        </div>
+      </div>
+      <form class="talk" id="talk" novalidate>
+        <h3>Talk to us</h3>
+        <div class="f"><label for="nm">Your name</label><input id="nm" name="name" autocomplete="name"></div>
+        <div class="f"><label for="ct">Phone or email</label><input id="ct" name="contact" autocomplete="email"></div>
+        <div class="f"><label for="wh">What would you like printed?</label>
+          <select id="wh" name="what">
+            <option>Memory book</option><option>Photo book</option><option>Notebook or journal</option><option>Gift edition</option><option>Reprint</option><option>Something else</option>
+          </select></div>
+        <div class="f"><label for="msg">Message</label><textarea id="msg" name="message" placeholder="Tell us about your book"></textarea></div>
+        <button class="btn btn-main" type="submit">Send message</button>
+        <p class="thanks" id="thanks" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="logo" href="#top">Northisam</a>
+        <p>A local print shop in Rawalpindi turning your memories into books, printed on demand.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="#product">The product</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#print">What we print</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://northisam.com/">northisam.com</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="base">
+      <span>© 2026 Northisam. Printed on demand. Bahria Town, Rawalpindi, Pakistan</span>
+      <span>Mockup made for Northisam by Sunny Gupta, <a href="https://lifebaselabs.com">lifebaselabs.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick actions">
+  <a class="btn btn-main" href="#design">Design your book</a>
+  <a class="btn btn-line" href="#contact">Talk to us</a>
+</div>
+
+<script>
+(function(){
+  var P=[
+    {src:"https://framerusercontent.com/images/0XSJjXWfBS7W8nAoYx8SBYelyMc.jpg?width=500&height=500",alt:"Mountains from a balcony"},
+    {src:"https://framerusercontent.com/images/D7OEXqrnMPld2wwWZMdtf66UN8.jpg?width=500&height=500",alt:"Father and baby on the beach"},
+    {src:"https://framerusercontent.com/images/sQiq9ZtxhRnXt5ZuSinG5VCjSk.jpg?width=500&height=493",alt:"Man on the rocks by the water"},
+    {src:"https://framerusercontent.com/images/EHOJHE25m9kIPjEHDlkehIUd3f8.jpg?width=500&height=493",alt:"Man at the sea wall"},
+    {src:"https://framerusercontent.com/images/wJqPvCFUNMHAuIXlBdcQM1bObc.jpg?width=500&height=493",alt:"Swimmers in the sea"}
+  ];
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  var SUB={memory:'A memory book',photo:'Photo book',notebook:'Journal'};
+  function bookHTML(c){
+    var win=c.photo==='none'?'':'<div class="win"><img src="'+P[c.photo].src+'" alt=""></div>';
+    return '<div class="book" data-type="'+c.type+'" data-cover="'+c.cover+'" data-foil="'+(c.foil?'on':'off')+'" data-gift="'+(c.gift?'on':'off')+'" data-paper="'+c.paper+'" data-photo="'+c.photo+'">'+
+      '<div class="shadow"></div>'+
+      '<div class="face f-back"></div>'+
+      '<div class="face f-top"></div>'+
+      '<div class="face f-pages"></div>'+
+      '<div class="face f-spine"><span>'+esc(c.title||'Northisam')+'</span></div>'+
+      '<div class="face f-front"><div class="cover">'+win+'<div class="ttl">'+esc(c.title||' ')+'</div><div class="sub">'+SUB[c.type]+'</div></div>'+
+        '<i class="ribbon"></i><i class="ribbon h"></i>'+
+        '<svg class="bow" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 20 C10 6 2 12 6 20 C2 28 10 34 20 20 Z" fill="#b93a36"/><path d="M20 20 C30 6 38 12 34 20 C38 28 30 34 20 20 Z" fill="#a3322f"/><circle cx="20" cy="20" r="4" fill="#7f2522"/></svg>'+
+      '</div></div>';
+  }
+
+  // hero book
+  document.getElementById('heroBook').innerHTML=bookHTML({type:'memory',cover:'cloth',foil:true,gift:false,paper:'matte',photo:2,title:'Summer, 2026'});
+
+  // builder
+  var state={type:'memory',cover:'cloth',foil:true,gift:false,paper:'chapters',photo:0,title:'Summer, 2026',copies:1};
+  var live=document.getElementById('liveBook');
+  var thumbs=document.getElementById('thumbs');
+  function renderThumbs(){
+    var h=P.map(function(p,i){return '<label><input type="radio" name="photo" value="'+i+'"'+(state.photo===i?' checked':'')+'><span><img src="'+p.src+'" alt="'+esc(p.alt)+'" width="60" height="60"></span></label>'}).join('');
+    if(state.type==='notebook')h+='<label><input type="radio" name="photo" value="none"'+(state.photo==='none'?' checked':'')+'><span class="none">None</span></label>';
+    thumbs.innerHTML=h;
+  }
+  var PAPER={
+    memory:{note:'Laid out into chapters from your room',opts:[]},
+    photo:{note:'Premium paper',opts:[['matte','Matte'],['gloss','Gloss']]},
+    notebook:{note:'Your own paper stock',opts:[['blank','Blank'],['lined','Lined']]}
+  };
+  function renderPaper(){
+    var p=PAPER[state.type];
+    document.getElementById('paperNote').textContent=p.note;
+    var box=document.getElementById('paperOpts');
+    if(!p.opts.length){box.innerHTML='<label><input type="radio" name="paper" value="chapters" checked><span>Chapters from your 3D room</span></label>';state.paper='chapters';return}
+    if(!p.opts.some(function(o){return o[0]===state.paper}))state.paper=p.opts[0][0];
+    box.innerHTML=p.opts.map(function(o){return '<label><input type="radio" name="paper" value="'+o[0]+'"'+(state.paper===o[0]?' checked':'')+'><span>'+o[1]+'</span></label>'}).join('');
+  }
+  var rot={x:8,y:-30};
+  function applyRot(b){b=b||live.querySelector('.book');if(b)b.style.transform='rotateX('+rot.x+'deg) rotateY('+rot.y+'deg)'}
+  var NAME={memory:['memory book','memory books'],photo:['photo book','photo books'],notebook:['notebook','notebooks']};
+  var COV={hard:'hardcover',soft:'softcover',cloth:'cloth-bound'};
+  var NUM=['One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten'];
+  function summary(){
+    var n=state.copies, w=n<=10?NUM[n-1]:String(n);
+    var s=w+' '+COV[state.cover]+' '+NAME[state.type][n>1?1:0];
+    if(state.title.trim())s+=', “'+state.title.trim()+'”';
+    var extras=[];
+    if(state.paper==='matte'||state.paper==='gloss')extras.push(state.paper+' paper');
+    if(state.paper==='blank'||state.paper==='lined')extras.push(state.paper+' pages');
+    if(state.foil&&state.title.trim())extras.push('a foil title');
+    if(state.gift)extras.push('gift wrapping');
+    if(extras.length)s+=', with '+(extras.length>1?extras.slice(0,-1).join(', ')+' and '+extras[extras.length-1]:extras[0]);
+    return s+'.';
+  }
+  function render(){
+    var wrap=live;
+    wrap.setAttribute('data-type',state.cover);
+    wrap.innerHTML=bookHTML(state);
+    var b=wrap.querySelector('.book');
+    b.style.transition='none';applyRot(b);void b.offsetWidth;b.style.transition='';
+    document.getElementById('sumText').textContent=summary();
+    wrap.setAttribute('aria-label','Preview: '+summary());
+  }
+  function full(){renderPaper();renderThumbs();render()}
+  var form=document.getElementById('bookForm');
+  form.addEventListener('change',function(e){
+    var t=e.target;
+    if(t.name==='type'){state.type=t.value;if(state.type!=='notebook'&&state.photo==='none')state.photo=0;full();return}
+    if(t.name==='cover')state.cover=t.value;
+    if(t.name==='paper')state.paper=t.value;
+    if(t.name==='photo')state.photo=t.value==='none'?'none':+t.value;
+    if(t.id==='foil')state.foil=t.checked;
+    if(t.id==='gift'){state.gift=t.checked;if(t.checked)setView('front')}
+    render();
+  });
+  document.getElementById('title').addEventListener('input',function(e){state.title=e.target.value;render()});
+  function setCopies(n){state.copies=Math.max(1,Math.min(50,n));document.getElementById('copies').textContent=state.copies;document.getElementById('sumText').textContent=summary()}
+  document.getElementById('minus').onclick=function(){setCopies(state.copies-1)};
+  document.getElementById('plus').onclick=function(){setCopies(state.copies+1)};
+  var VIEWS={front:{x:8,y:-30},spine:{x:6,y:55},pages:{x:10,y:-118}};
+  function setView(v){rot.x=VIEWS[v].x;rot.y=VIEWS[v].y;applyRot();
+    document.querySelectorAll('.turns button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.view===v?'true':'false')})}
+  document.querySelectorAll('.turns button').forEach(function(b){b.onclick=function(){setView(b.dataset.view)}});
+  // drag to turn
+  var stage=document.getElementById('stage'),drag=null;
+  stage.addEventListener('pointerdown',function(e){if(e.target.closest('button'))return;drag={x:e.clientX,y:e.clientY,rx:rot.x,ry:rot.y};var b=live.querySelector('.book');if(b)b.style.transition='none'});
+  window.addEventListener('pointermove',function(e){if(!drag)return;rot.y=drag.ry+(e.clientX-drag.x)*.5;rot.x=Math.max(-20,Math.min(30,drag.rx-(e.clientY-drag.y)*.2));applyRot()});
+  window.addEventListener('pointerup',function(){if(!drag)return;drag=null;var b=live.querySelector('.book');if(b)b.style.transition='';
+    document.querySelectorAll('.turns button').forEach(function(b){b.setAttribute('aria-pressed','false')})});
+  full();
+
+  // send to form
+  document.getElementById('sendBook').addEventListener('click',function(){
+    var map={memory:'Memory book',photo:'Photo book',notebook:'Notebook or journal'};
+    document.getElementById('wh').value=state.gift?'Gift edition':map[state.type];
+    document.getElementById('msg').value='I’d like: '+summary();
+  });
+  document.getElementById('talk').addEventListener('submit',function(e){e.preventDefault();document.getElementById('thanks').textContent='Thanks. This is a mockup, so nothing was sent.'});
+
+  // hero room: gentle parallax while on screen
+  var room=document.getElementById('room'),prints=room.querySelectorAll('.print'),onScreen=false;
+  if(!reduce&&'IntersectionObserver' in window){
+    new IntersectionObserver(function(es){onScreen=es[0].isIntersecting}).observe(room);
+    var base=[].map.call(prints,function(p){return getComputedStyle(p).transform});
+    room.addEventListener('pointermove',function(e){
+      if(!onScreen||e.pointerType!=='mouse')return;
+      var r=room.getBoundingClientRect(),dx=(e.clientX-r.left)/r.width-.5,dy=(e.clientY-r.top)/r.height-.5;
+      prints.forEach(function(p,i){var d=6+i*2;p.style.transform=(base[i]==='none'?'':base[i])+' translate('+(dx*d)+'px,'+(dy*d)+'px)'});
+    });
+    room.addEventListener('pointerleave',function(){prints.forEach(function(p){p.style.transform=''})});
+  }
+
+  // rise in
+  if(!reduce&&'IntersectionObserver' in window){
+    var els=document.querySelectorAll('[data-rise]'),vh=window.innerHeight;
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){if(el.getBoundingClientRect().top>vh){el.classList.add('will-rise');void el.offsetWidth;el.classList.add('rise-ready');io.observe(el)}});
+  }
+})();
+</script>
+</body>
+</html>
