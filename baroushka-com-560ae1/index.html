@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup baroushka-com-560ae1 1 6988b44b -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Baroushka · Lebanese restaurant, 90 Fisherton Street, Salisbury</title>
+<meta name="description" content="Authentic Lebanese cuisine in a relaxed dining room on Fisherton Street, Salisbury. Book a table, see the offers, or order a takeaway.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#2e6f40;
+  --deep:#173a22;
+  --deeper:#112c19;
+  --gold:#db9c2c;
+  --gold-ink:#8a5a12;
+  --cream:#f7f1e6;
+  --paper:#fffaf1;
+  --ink:#1b2a1f;
+  --muted:#4d5a50;
+  --line:#e3d8c4;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 17px/1.6 var(--sans);overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;letter-spacing:-.01em;text-wrap:balance}
+p{margin:0}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:12px;top:-60px;background:var(--paper);color:var(--ink);padding:10px 14px;border-radius:8px;z-index:50}
+.skip:focus{top:44px}
+.wrap{width:min(1160px,100% - 48px);margin-inline:auto}
+
+/* mockup banner */
+.mock{background:var(--ink);color:#efe6d3;text-align:center;font:500 13px/1.3 var(--sans);letter-spacing:.06em;padding:9px 16px}
+.mock b{color:var(--gold);font-weight:600}
+
+/* header */
+.top{background:var(--deep);color:var(--cream);border-bottom:1px solid rgba(219,156,44,.22)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:76px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{width:30px;height:30px;color:var(--gold)}
+.brand span{font:500 28px/1 var(--serif);letter-spacing:.01em}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{text-decoration:none;font-weight:500;font-size:15px;padding:12px 14px;border-radius:999px;color:#e9e1cf}
+.nav a:hover{color:#fff;background:rgba(255,255,255,.06)}
+.nav .tel{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 24px;border-radius:999px;font:600 16px/1 var(--sans);text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .2s ease,background .2s ease,box-shadow .2s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-gold{background:var(--gold);color:var(--ink);box-shadow:0 6px 18px -8px rgba(219,156,44,.7)}
+.btn-gold:hover{background:#e6a93a}
+.btn-line{border-color:rgba(247,241,230,.45);color:var(--cream)}
+.btn-line:hover{border-color:var(--cream)}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{background:#285f37}
+.nav .btn{min-height:44px;padding:0 20px;font-size:15px;margin-left:6px;color:var(--ink)}
+
+/* hero */
+.hero{position:relative;background:var(--deep);color:var(--cream);overflow:hidden}
+.lattice{position:absolute;inset:0;width:100%;height:100%;color:var(--gold);opacity:.13;pointer-events:none}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(23,58,34,0) 70%,var(--deep) 100%),linear-gradient(90deg,var(--deep) 0%,rgba(23,58,34,.9) 40%,rgba(23,58,34,.5) 100%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center;padding:72px 0 88px}
+.eyebrow{font:600 13px/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.hero h1{font-size:clamp(48px,6.4vw,88px);margin:20px 0 24px;font-weight:400}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.lede{font-size:19px;line-height:1.6;color:#e6dfcd;max-width:34ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin:40px 0 0;padding:22px 0 0;border-top:1px solid rgba(247,241,230,.16);list-style:none;font-size:15px;color:#ddd5c2}
+.facts li{display:flex;align-items:center;gap:9px}
+.facts svg{width:14px;height:14px;color:var(--gold);flex:none}
+.facts strong{color:var(--cream);font-weight:600}
+
+/* booking card */
+.book{background:var(--paper);color:var(--ink);border-radius:20px;padding:28px 28px 24px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6),0 0 0 1px rgba(219,156,44,.25);scroll-margin-top:24px}
+.book-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:18px}
+.book-head h2{font-size:28px}
+.book-head span{font-size:13px;color:var(--muted)}
+.book fieldset{border:0;margin:0 0 16px;padding:0;min-width:0}
+.book legend,.lbl{display:block;font:600 12px/1.2 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;padding:0}
+.days{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.days label{position:relative}
+.days input,.offers input{position:absolute;opacity:0;width:1px;height:1px}
+.days span{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:54px;border:1px solid var(--line);border-radius:10px;cursor:pointer;font-size:12px;color:var(--muted);line-height:1.2;transition:background .15s,border-color .15s}
+.days span b{font:600 17px/1.1 var(--sans);color:var(--ink)}
+.days input:checked+span{background:var(--green);border-color:var(--green);color:#e8f1ea}
+.later{display:flex;align-items:center;gap:12px;margin-top:8px;font-size:14px;color:var(--muted)}
+.later label{flex:none}
+.later input{flex:1;min-width:0;min-height:44px;border:1px solid var(--line);border-radius:10px;background:#fff;font:500 15px/1 var(--sans);color:var(--ink);padding:0 12px}
+.later input.on{border-color:var(--green);box-shadow:0 0 0 1px var(--green)}
+.avail{font-size:13px;color:var(--muted);margin-top:8px}
+.days input:checked+span b{color:#fff}
+.days input:focus-visible+span,.offers input:focus-visible+span{outline:3px solid var(--gold);outline-offset:2px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+select,input[type=text],input[type=tel],input[type=email]{width:100%;min-height:48px;border:1px solid var(--line);border-radius:10px;background:#fff;font:500 16px/1 var(--sans);color:var(--ink);padding:0 14px}
+select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%232e6f40' stroke-width='2' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px}
+.stepper{display:flex;align-items:center;justify-content:space-between;border:1px solid var(--line);border-radius:10px;background:#fff;min-height:48px}
+.stepper button{width:46px;height:46px;border:0;background:none;font:500 22px/1 var(--sans);color:var(--green);cursor:pointer;border-radius:10px}
+.stepper button:disabled{color:#b9b3a6;cursor:default}
+.stepper output{font:600 17px/1 var(--sans)}
+.offers{display:grid;gap:6px}
+.offers label{position:relative;display:block}
+.offers span{display:grid;grid-template-columns:18px 1fr auto;align-items:center;gap:12px;min-height:46px;padding:8px 14px;border:1px solid var(--line);border-radius:10px;cursor:pointer;font-size:15px;transition:background .15s,border-color .15s}
+.offers span::before{content:"";width:16px;height:16px;border-radius:50%;border:1.5px solid #9a9283;box-sizing:border-box}
+.offers span i{font-style:normal;font-weight:600;color:var(--green)}
+.offers span em{font-style:normal;min-width:0}
+.offers span small{color:var(--muted);font-size:13px;margin-left:8px}
+.offers input:checked+span{border-color:var(--green);background:#eef4ef}
+.offers input:checked+span::before{border:5px solid var(--green)}
+.offers input:disabled+span{opacity:.6}
+.summary{display:flex;align-items:center;justify-content:space-between;gap:14px;background:var(--deep);color:var(--cream);border-radius:12px;padding:14px 18px;margin:4px 0 14px}
+.summary p{font-size:14px;line-height:1.4;color:#ddd5c2}
+.summary p b{color:var(--cream);font-weight:600}
+.summary .total{font:500 30px/1 var(--serif);color:var(--gold);white-space:nowrap;text-align:right}
+.summary .total small{display:block;font:500 11px/1.4 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:#cfc6b2;margin-top:4px}
+.book .btn{width:100%}
+.note{font-size:13px;color:var(--muted);margin-top:10px;text-align:center}
+.thanks{display:none;margin-top:12px;padding:12px 14px;border-radius:10px;background:#eef4ef;color:var(--green);font-weight:600;font-size:15px;text-align:center}
+.thanks.show{display:block}
+
+/* sections */
+section{scroll-margin-top:12px}
+.sec{padding:112px 0}
+.kicker{font:600 13px/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold-ink)}
+.sec h2{font-size:clamp(36px,4.4vw,56px);margin-top:14px}
+.intro{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:56px}
+.intro p{max-width:40ch;color:var(--muted)}
+
+/* offers as a menu card */
+.menu{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.dish{display:grid;grid-template-columns:1fr auto;gap:8px 32px;padding:36px 40px 36px 0;border-bottom:1px solid var(--line)}
+.dish:nth-child(even){padding:36px 0 36px 40px;border-left:1px solid var(--line)}
+.dish h3{font-size:30px}
+.dish .price{font:400 46px/1 var(--serif);color:var(--green);text-align:right}
+.dish .price small{display:block;font:600 12px/1.4 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+.dish p{color:var(--muted);max-width:34ch}
+.dish .tag{font:600 12px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--gold-ink);margin-bottom:10px;display:block}
+.pick{grid-column:1/-1;justify-self:start;display:inline-flex;align-items:center;gap:8px;min-height:44px;margin-top:8px;padding:0;border:0;background:none;font:600 15px/1 var(--sans);color:var(--green);cursor:pointer;text-decoration:underline;text-decoration-color:rgba(46,111,64,.35);text-underline-offset:5px}
+.pick:hover{text-decoration-color:var(--green)}
+
+/* story */
+.story{background:var(--paper);border-block:1px solid var(--line)}
+.story .wrap{display:grid;grid-template-columns:1fr;max-width:760px}
+.story blockquote{margin:0;font:400 clamp(26px,2.8vw,36px)/1.3 var(--serif);color:var(--deep)}
+.story blockquote::before{content:"";display:block;width:48px;height:2px;background:var(--gold);margin-bottom:28px}
+.story .body{margin-top:28px;color:var(--muted);max-width:52ch}
+.occasions{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px;padding:0;list-style:none}
+.occasions li{border:1px solid var(--line);border-radius:999px;padding:9px 18px;font-size:15px;font-weight:500;background:var(--cream)}
+
+/* takeaway */
+.home{background:var(--deep);color:var(--cream);position:relative;overflow:hidden}
+.home .lattice{opacity:.08}
+.home .wrap{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.home .kicker{color:var(--gold)}
+.home h2{color:var(--cream)}
+.home .lede{margin-top:22px;max-width:40ch}
+.rules{list-style:none;padding:0;margin:36px 0 0;display:grid;gap:0}
+.rules li{display:grid;grid-template-columns:130px 1fr;gap:20px;padding:16px 0;border-top:1px solid rgba(247,241,230,.14);font-size:16px;color:#e6dfcd}
+.rules li:last-child{border-bottom:1px solid rgba(247,241,230,.14)}
+.rules b{font:600 12px/1.7 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.checker{background:var(--paper);color:var(--ink);border-radius:20px;padding:32px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.checker h3{font-size:28px}
+.checker > p{color:var(--muted);margin-top:8px;font-size:15px}
+.pc{display:flex;gap:10px;margin-top:22px}
+.pc input{text-transform:uppercase;font-weight:600;letter-spacing:.04em}
+.checker .pc .btn{flex:none;min-height:48px;width:auto;margin-top:0;padding:0 28px}
+.try{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:12px;font-size:13px;color:var(--muted)}
+.try button{min-height:44px;padding:0 14px;border:1px solid var(--line);border-radius:999px;background:#fff;font:600 13px/1 var(--sans);color:var(--ink);cursor:pointer}
+.try button:hover{border-color:var(--green)}
+.verdict{margin-top:20px;border-radius:14px;padding:20px 22px;background:#eef4ef;border:1px solid #cfe0d3}
+.verdict.collect{background:#fbf1de;border-color:#efd9ae}
+.verdict h4{margin:0;font:500 24px/1.2 var(--serif);color:var(--deep)}
+.verdict ul{margin:12px 0 0;padding:0;list-style:none;display:grid;gap:6px;font-size:15px;color:var(--ink)}
+.verdict li{display:flex;gap:10px;align-items:baseline}
+.verdict li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--green);flex:none;transform:translateY(-2px)}
+.verdict.collect li::before{background:var(--gold-ink)}
+.checker .btn{width:100%;margin-top:20px}
+.allergy{margin-top:16px;font-size:14px;color:var(--muted);text-align:center}
+.allergy a{color:var(--green);font-weight:600}
+
+/* visit */
+.visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:72px}
+.addr{font:400 clamp(30px,3.4vw,44px)/1.15 var(--serif);color:var(--deep);margin-top:22px;font-style:normal}
+.links{display:grid;gap:4px;margin-top:28px}
+.links a{display:flex;align-items:center;gap:14px;min-height:48px;text-decoration:none;font-weight:600;color:var(--green);font-size:17px}
+.links a svg{width:20px;height:20px;flex:none}
+.links a:hover span{text-decoration:underline;text-underline-offset:4px}
+.hours{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:32px}
+.hours-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.hours h3{font-size:28px}
+.status{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:8px 14px;border-radius:999px;background:#eef4ef;color:var(--green)}
+.status::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+.status.shut{background:#fbf1de;color:var(--gold-ink)}
+.hours table{width:100%;border-collapse:collapse;margin-top:22px;font-size:16px}
+.hours th{text-align:left;font-weight:500;padding:13px 0;border-top:1px solid var(--line)}
+.hours td{text-align:right;padding:13px 0;border-top:1px solid var(--line);color:var(--muted);font-variant-numeric:tabular-nums}
+.hours tr.today th,.hours tr.today td{color:var(--green);font-weight:700}
+.hours tr.today th::after{content:"Today";margin-left:10px;font:700 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;background:var(--green);color:#fff;padding:4px 7px;border-radius:5px;vertical-align:2px}
+.hours .small{font-size:14px;color:var(--muted);margin-top:14px}
+
+/* faq */
+.faq{background:var(--paper);border-top:1px solid var(--line)}
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px}
+.qs{border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:64px;padding:14px 0;font:500 21px/1.3 var(--serif);color:var(--deep)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:12px;height:12px;border-right:2px solid var(--green);border-bottom:2px solid var(--green);transform:rotate(45deg) translateY(-4px);transition:transform .25s}
+details[open] summary::after{transform:rotate(-135deg) translateY(-2px)}
+details p{padding:0 0 22px;color:var(--muted);max-width:56ch}
+details p a{color:var(--green);font-weight:600}
+
+/* newsletter + end */
+.end{background:var(--deep);color:var(--cream);text-align:center;position:relative;overflow:hidden}
+.end .lattice{opacity:.1}
+.end .wrap{position:relative}
+.end h2{color:var(--cream);font-size:clamp(40px,5.4vw,72px);font-weight:400}
+.end h2 em{color:var(--gold)}
+.end .lede{margin:20px auto 0;text-align:center}
+.end .cta{justify-content:center}
+.news{margin:72px auto 0;max-width:560px;padding-top:40px;border-top:1px solid rgba(247,241,230,.16)}
+.news h3{font-size:24px;color:var(--cream)}
+.news p{color:#ddd5c2;font-size:15px;margin-top:6px}
+.news form{display:flex;gap:10px;margin-top:18px}
+.news label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.news .thanks{background:rgba(255,255,255,.08);color:var(--cream)}
+
+footer{background:var(--deeper);color:#cdc5b3;font-size:14px;padding:40px 0 44px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px 32px;align-items:center}
+footer a{color:#efe6d3}
+footer .brand span{font-size:22px;color:var(--cream)}
+footer .brand svg{width:22px;height:22px}
+
+/* phone call bar */
+.callbar{display:none}
+
+/* motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise-ready{transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+}
+
+@media (max-width:960px){
+  .hero .wrap,.story .wrap,.home .wrap,.visit .wrap,.faq .wrap{grid-template-columns:1fr;gap:48px}
+  .nav a:not(.btn):not(.tel){display:none}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:72px}
+  .wrap{width:calc(100% - 36px)}
+  .mock{font-size:12px;padding:8px 12px}
+  .top .wrap{min-height:64px}
+  .brand span{font-size:24px}
+  .brand svg{width:24px;height:24px}
+  .nav .btn{display:none}
+  .nav .tel{padding:12px 4px;font-size:15px}
+  .hero::after{background:linear-gradient(180deg,rgba(23,58,34,.78) 0%,rgba(23,58,34,.86) 360px,var(--deep) 700px)}
+  .hero .wrap{padding:44px 0 56px;gap:40px}
+  .hero h1{font-size:52px;margin:16px 0 18px}
+  .lede{font-size:17px}
+  .cta{margin-top:26px}
+  .cta .btn{flex:1 1 100%}
+  .facts{margin-top:30px;gap:10px 20px;font-size:14px}
+  .book{padding:22px 18px 20px;border-radius:18px}
+  .book-head h2{font-size:25px}
+  .days{gap:4px}
+  .days span{min-height:52px;font-size:11px}
+  .days span b{font-size:16px}
+  .summary{padding:12px 14px}
+  .summary .total{font-size:26px}
+  .sec{padding:76px 0}
+  .intro{display:block;margin-bottom:36px}
+  .intro p{margin-top:16px}
+  .menu{grid-template-columns:1fr}
+  .dish,.dish:nth-child(even){padding:28px 0;border-left:0}
+  .dish h3{font-size:26px}
+  .dish .price{font-size:38px}
+  .rules li{grid-template-columns:1fr;gap:4px}
+  .checker,.hours{padding:24px 20px}
+  .pc{flex-wrap:wrap}
+  .checker .pc .btn{flex:1 1 100%}
+  .story .wrap{gap:36px}
+  summary{font-size:19px}
+  .news form{flex-wrap:wrap}
+  .news .btn{flex:1 1 100%}
+  footer{padding-bottom:28px}
+  footer .wrap{flex-direction:column;align-items:flex-start}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(17,44,25,.96);border-top:1px solid rgba(219,156,44,.3);backdrop-filter:blur(8px)}
+  .callbar .btn{min-height:48px;font-size:15px;padding:0 12px}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Free mockup for <b>Baroushka</b></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="star" viewBox="-12 -12 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="-7.5" y="-7.5" width="15" height="15"/><rect x="-7.5" y="-7.5" width="15" height="15" transform="rotate(45)"/><circle r="2.6"/></g></symbol>
+    <pattern id="tile" width="64" height="64" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="currentColor" stroke-width="1.1">
+        <g transform="translate(32 32)"><rect x="-13" y="-13" width="26" height="26"/><rect x="-13" y="-13" width="26" height="26" transform="rotate(45)"/><circle r="5"/></g>
+        <path d="M0 0L13.6 13.6M64 0L50.4 13.6M0 64L13.6 50.4M64 64L50.4 50.4"/>
+      </g>
+    </pattern>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#main" aria-label="Baroushka, back to top"><svg aria-hidden="true"><use href="#star"/></svg><span>Baroushka</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#offers">Offers</a>
+      <a href="#takeaway">Takeaway</a>
+      <a href="#visit">Visit</a>
+      <a class="tel" href="tel:+441722327628">01722 327628</a>
+      <a class="btn btn-gold" href="#book">Book a table</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Lebanese restaurant · Fisherton Street, Salisbury</p>
+        <h1 id="hero-title">Eat, drink <em>and be merry.</em></h1>
+        <p class="lede">Grilled meats, fragrant herbs and gently toasted spices, in a cool, chic and relaxed room. Set offers from £10 a head.</p>
+        <div class="cta">
+          <a class="btn btn-gold" href="#book">Book a table</a>
+          <a class="btn btn-line" href="#takeaway">Order a takeaway</a>
+        </div>
+        <ul class="facts">
+          <li><svg aria-hidden="true"><use href="#star"/></svg><span><strong>Open 7 days</strong>, lunch and dinner</span></li>
+          <li><svg aria-hidden="true"><use href="#star"/></svg><span>Delivery to <strong>SP1, SP2, SP4, SP5</strong></span></li>
+        </ul>
+      </div>
+
+      <form class="book" id="book" aria-labelledby="book-title" novalidate>
+        <div class="book-head"><h2 id="book-title">Plan your table</h2></div>
+        <fieldset>
+          <legend>Day · quick pick</legend>
+          <div class="days" id="days">
+            <label><input type="radio" name="day" value="0"><span>Mon<b>1</b></span></label>
+            <label><input type="radio" name="day" value="1"><span>Tue<b>2</b></span></label>
+            <label><input type="radio" name="day" value="2"><span>Wed<b>3</b></span></label>
+            <label><input type="radio" name="day" value="3" checked><span>Thu<b>4</b></span></label>
+            <label><input type="radio" name="day" value="4"><span>Fri<b>5</b></span></label>
+            <label><input type="radio" name="day" value="5"><span>Sat<b>6</b></span></label>
+            <label><input type="radio" name="day" value="6"><span>Sun<b>7</b></span></label>
+          </div>
+          <div class="later"><label for="later">Or any other date</label><input type="date" id="later" name="date"></div>
+        </fieldset>
+        <div class="row2">
+          <div>
+            <label class="lbl" for="time">Time</label>
+            <select id="time" name="time">
+              <option>12:00pm</option><option>12:30pm</option><option>1:00pm</option><option>1:30pm</option><option>2:00pm</option><option>2:30pm</option>
+              <option>5:00pm</option><option>5:30pm</option><option>6:00pm</option><option>6:30pm</option><option selected>7:00pm</option><option>7:30pm</option><option>8:00pm</option><option>8:30pm</option>
+            </select>
+          </div>
+          <div>
+            <span class="lbl" id="guests-lbl">Guests</span>
+            <div class="stepper" role="group" aria-labelledby="guests-lbl">
+              <button type="button" id="less" aria-label="One fewer guest">−</button>
+              <output id="guests" aria-live="polite">4</output>
+              <button type="button" id="more" aria-label="One more guest">+</button>
+            </div>
+          </div>
+        </div>
+        <fieldset>
+          <legend>Ask for an offer</legend>
+          <div class="offers" id="offer-list">
+            <label><input type="radio" name="offer" value="mezze" data-pp="15" checked><span><em>Bottomless Mezze</em><i>£15pp</i></span></label>
+            <label><input type="radio" name="offer" value="theatre" data-pp="15" data-from="17" data-to="19"><span><em>Pre-Theatre<small>early dinner</small></em><i>£15pp</i></span></label>
+            <label><input type="radio" name="offer" value="lunch" data-pp="10" data-from="12" data-to="15"><span><em>Lunch with Wine<small>lunchtime</small></em><i>£10pp</i></span></label>
+            <label><input type="radio" name="offer" value="thursday" data-pp="15" data-thu="1"><span><em>Mezze Thursdays<small>Thursdays</small></em><i>£15pp</i></span></label>
+            <label><input type="radio" name="offer" value="none" data-pp="0"><span><em>No offer, just the menu</em><i></i></span></label>
+          </div>
+          <p class="avail">Offers: please confirm availability when booking.</p>
+        </fieldset>
+        <div class="summary" aria-live="polite">
+          <p id="sum-text"><b>Today, 7:00pm</b><br>4 guests · asking for Bottomless Mezze</p>
+          <div class="total"><span id="sum-total">£60</span><small id="sum-label">4 × £15pp, if available</small></div>
+        </div>
+        <div class="row2">
+          <div><label class="lbl" for="bname">Name</label><input id="bname" name="name" type="text" autocomplete="name" placeholder="Your name"></div>
+          <div><label class="lbl" for="bphone">Phone</label><input id="bphone" name="phone" type="tel" autocomplete="tel" placeholder="Mobile number"></div>
+        </div>
+        <button class="btn btn-green" type="submit">Request this table</button>
+        <p class="thanks" role="status" id="book-thanks">Thanks. This is a mockup, so nothing was sent.</p>
+        <p class="note">Larger group? Call <a href="tel:+441722327628">01722 327628</a></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="sec" id="offers" aria-labelledby="offers-title">
+    <div class="wrap">
+      <div class="intro">
+        <div>
+          <p class="kicker">The set offers</p>
+          <h2 id="offers-title">Four good reasons to come in</h2>
+        </div>
+        <p>One price per person, no guesswork. Pick one and it goes straight into your table plan.</p>
+      </div>
+      <div class="menu">
+        <article class="dish">
+          <div><span class="tag">A flowing feast</span><h3>Bottomless Mezze</h3></div>
+          <div class="price">£15<small>per person</small></div>
+          <p>Indulge in a flowing feast at Baroushka, for just £15 a head.</p>
+          <button class="pick" type="button" data-pick="mezze">Plan a table with this</button>
+        </article>
+        <article class="dish">
+          <div><span class="tag">Early dinner</span><h3>Pre-Theatre</h3></div>
+          <div class="price">£15<small>per person</small></div>
+          <p>Two carefully crafted courses, perfect for an early dinner.</p>
+          <button class="pick" type="button" data-pick="theatre">Plan a table with this</button>
+        </article>
+        <article class="dish">
+          <div><span class="tag">Midday</span><h3>Lunch with Wine</h3></div>
+          <div class="price">£10<small>per person</small></div>
+          <p>A carefully prepared Lebanese dish, paired with a glass of wine.</p>
+          <button class="pick" type="button" data-pick="lunch">Plan a table with this</button>
+        </article>
+        <article class="dish">
+          <div><span class="tag">Thursdays</span><h3>Mezze Thursdays</h3></div>
+          <div class="price">£15<small>per person</small></div>
+          <p>Four carefully selected mezze plates, with a glass of Prosecco.</p>
+          <button class="pick" type="button" data-pick="thursday">Plan a table with this</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec story" id="story" aria-labelledby="story-title">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Welcome to Baroushka</p>
+        <h2 id="story-title" class="sr">The Baroushka experience</h2>
+        <blockquote>
+          The air is filled with the warm scent of grilled meats, fragrant herbs and gently toasted spices.
+        </blockquote>
+        <p class="body">Time-honoured North African and Mediterranean recipes, made with fresh, locally sourced ingredients and served with a modern, elegant touch. Dishes that are both vibrant and refined.</p>
+        <ul class="occasions" aria-label="Made for">
+          <li>A romantic evening</li>
+          <li>Gathering with friends</li>
+          <li>Simply exceptional food</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec home" id="takeaway" aria-labelledby="take-title">
+    <svg class="lattice" aria-hidden="true" focusable="false"><rect width="100%" height="100%" fill="url(#tile)"/></svg>
+    <div class="wrap">
+      <div>
+        <p class="kicker">Takeaway</p>
+        <h2 id="take-title">Take the taste of Baroushka home</h2>
+        <p class="lede">Every dish is freshly prepared. Order for delivery or collection, and tell us the time that suits you.</p>
+        <ul class="rules">
+          <li><b>When</b><span>5pm to 9pm, Monday to Sunday</span></li>
+          <li><b>Delivery</b><span>SP1, SP2, SP4 and SP5, on orders of £20 or more</span></li>
+          <li><b>Charge</b><span>£5 on deliveries to SP4 and SP5</span></li>
+          <li><b>Your time</b><span>Add your preferred delivery or collection time in the order comments at checkout</span></li>
+        </ul>
+      </div>
+      <div class="checker">
+        <h3>Do we deliver to you?</h3>
+        <p>Type your postcode and see straight away.</p>
+        <form class="pc" id="pc-form" novalidate>
+          <label class="lbl" for="pc" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Your postcode</label>
+          <input id="pc" type="text" value="SP2 7QY" autocomplete="postal-code" inputmode="text" maxlength="9">
+          <button class="btn btn-green" type="submit">Check</button>
+        </form>
+        <div class="try"><span>Try</span><button type="button" data-pc="SP1 1AA">SP1</button><button type="button" data-pc="SP4 6AB">SP4</button><button type="button" data-pc="BA12 9AA">BA12</button></div>
+        <div class="verdict" id="verdict" aria-live="polite">
+          <h4>Yes, we deliver to SP2.</h4>
+          <ul><li>Minimum order £20</li><li>Delivery from 5pm to 9pm, every day</li></ul>
+        </div>
+        <a class="btn btn-gold" href="https://www.baroushka.com/">Order a takeaway</a>
+        <p class="allergy">Food allergy or intolerance? Call us first on <a href="tel:+441722327628">01722 327628</a> so we can advise.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec visit" id="visit" aria-labelledby="visit-title">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Visit us</p>
+        <h2 id="visit-title">Find your table</h2>
+        <address class="addr">90 Fisherton Street<br>Salisbury, Wiltshire<br>SP2 7QY</address>
+        <div class="links">
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Baroushka%2C%2090%20Fisherton%20Street%2C%20Salisbury%20SP2%207QY"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Get directions</span></a>
+          <a href="tel:+441722327628"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 006 6L16 13l5 2v4a2 2 0 01-2 2A17 17 0 013 5a2 2 0 012-2z"/></svg><span>01722 327628</span></a>
+          <a href="mailto:info@baroushka.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span>info@baroushka.com</span></a>
+        </div>
+      </div>
+      <div class="hours">
+        <div class="hours-head"><h3>Opening hours</h3><span class="status" id="status">Open 7 days a week</span></div>
+        <table id="hours">
+          <caption class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Opening hours, by day</caption>
+          <tr data-d="0"><th scope="row">Monday</th><td>12–3pm · 5–9pm</td></tr>
+          <tr data-d="1"><th scope="row">Tuesday</th><td>12–3pm · 5–9pm</td></tr>
+          <tr data-d="2"><th scope="row">Wednesday</th><td>12–3pm · 5–9pm</td></tr>
+          <tr data-d="3"><th scope="row">Thursday</th><td>12–3pm · 5–9pm</td></tr>
+          <tr data-d="4"><th scope="row">Friday</th><td>12–9pm</td></tr>
+          <tr data-d="5"><th scope="row">Saturday</th><td>12–9pm</td></tr>
+          <tr data-d="6"><th scope="row">Sunday</th><td>12–9pm</td></tr>
+        </table>
+        <p class="small">Takeaway every day from 5pm to 9pm.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Good to know</p>
+        <h2 id="faq-title">Questions, answered</h2>
+      </div>
+      <div class="qs">
+        <details open><summary>Do you deliver to me?</summary><p>We deliver to all SP1, SP2, SP4 and SP5 postcodes. Outside those areas, you're welcome to collect. <a href="#takeaway">Check your postcode</a>.</p></details>
+        <details><summary>Is there a minimum order or delivery charge?</summary><p>Delivery is on orders of £20 or more. There's a £5 charge for all deliveries to SP4 and SP5.</p></details>
+        <details><summary>When can I order a takeaway?</summary><p>Between 5pm and 9pm, Monday to Sunday.</p></details>
+        <details><summary>Can I choose my delivery or collection time?</summary><p>Yes. Add your preferred time in the order comments field at checkout and we'll always do our best to fit it.</p></details>
+        <details><summary>I have a food allergy. Can you help?</summary><p>Please contact the restaurant in advance on <a href="tel:+441722327628">01722 327628</a> so we can advise and accommodate where possible.</p></details>
+        <details><summary>Are you open every day?</summary><p>Yes, seven days a week. Monday to Thursday 12–3pm and 5–9pm, Friday to Sunday 12–9pm.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec end" aria-labelledby="end-title">
+    <svg class="lattice" aria-hidden="true" focusable="false"><rect width="100%" height="100%" fill="url(#tile)"/></svg>
+    <div class="wrap">
+      <p class="eyebrow">90 Fisherton Street, Salisbury</p>
+      <h2 id="end-title" style="margin-top:18px">Your table at <em>Baroushka</em></h2>
+      <p class="lede">For a romantic evening, a night with friends, or just exceptional food.</p>
+      <div class="cta">
+        <a class="btn btn-gold" href="#book">Book a table</a>
+        <a class="btn btn-line" href="tel:+441722327628">Call 01722 327628</a>
+      </div>
+      <div class="news">
+        <h3>Sign up to our newsletter</h3>
+        <p>Be the first to receive special offers and exclusive event invites.</p>
+        <form id="news-form" novalidate>
+          <label for="nemail">Email address</label>
+          <input id="nemail" type="email" autocomplete="email" placeholder="Your email address">
+          <button class="btn btn-gold" type="submit">Subscribe</button>
+        </form>
+        <p class="thanks" role="status" id="news-thanks">Thanks. This is a mockup, so nothing was sent.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#main" aria-label="Baroushka, back to top"><svg aria-hidden="true"><use href="#star"/></svg><span>Baroushka</span></a>
+    <p>90 Fisherton Street, Salisbury SP2 7QY · <a href="tel:+441722327628">01722 327628</a> · <a href="mailto:info@baroushka.com">info@baroushka.com</a></p>
+    <p>Mockup made for Baroushka by Sunny Gupta, <a href="https://signalsetbase.com">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<div class="callbar" role="navigation" aria-label="Quick actions">
+  <a class="btn btn-line" href="tel:+441722327628">Call</a>
+  <a class="btn btn-gold" href="#book">Book a table</a>
+</div>
+
+<script>
+(function(){
+  // Hours, Monday = 0. Each session is [open, close] in hours.
+  var WEEKDAY=[[12,15],[17,21]], WEEKEND=[[12,21]];
+  function sessions(d){return d<4?WEEKDAY:WEEKEND;}
+  var NAMES=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+  var LONG=['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+
+  function london(t){
+    var f=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/London',weekday:'short',day:'numeric',hour:'numeric',minute:'numeric',hourCycle:'h23'});
+    var p={};f.formatToParts(t).forEach(function(x){p[x.type]=x.value;});
+    return {d:NAMES.indexOf(p.weekday),date:+p.day,h:+p.hour+(+p.minute)/60};
+  }
+  function fmt(h){var hr=Math.floor(h),m=Math.round((h-hr)*60),ap=hr>=12?'pm':'am',h12=hr%12||12;return h12+(m?':'+(m<10?'0':'')+m:'')+ap;}
+  function fmtSlot(h){var hr=Math.floor(h),m=Math.round((h-hr)*60),h12=hr%12||12;return h12+':'+(m<10?'0':'')+m+(hr>=12?'pm':'am');}
+
+  var now=london(new Date());
+
+  // Day chips: the next seven days, from today
+  var days=document.getElementById('days'), html='';
+  for(var i=0;i<7;i++){
+    var t=london(new Date(Date.now()+i*864e5));
+    html+='<label><input type="radio" name="day" value="'+t.d+'"'+(i===0?' checked':'')+'><span>'+(i===0?'Today':NAMES[t.d])+'<b>'+t.date+'</b></span></label>';
+  }
+  days.innerHTML=html;
+
+  var timeSel=document.getElementById('time');
+  var guestsOut=document.getElementById('guests'), guests=4;
+  var less=document.getElementById('less'), more=document.getElementById('more');
+  var later=document.getElementById('later'), laterDay=null, laterName='';
+
+  // The date field is for booking further ahead than the quick-pick chips
+  var t0=new Date(), iso=function(x){return x.getFullYear()+'-'+('0'+(x.getMonth()+1)).slice(-2)+'-'+('0'+x.getDate()).slice(-2);};
+  later.min=iso(t0);
+  later.addEventListener('change',function(){
+    if(!later.value){laterDay=null;later.classList.remove('on');var c=days.querySelector('input');if(c)c.checked=true;}
+    else{
+      var p=later.value.split('-'), dt=new Date(+p[0],+p[1]-1,+p[2]);
+      laterDay=(dt.getDay()+6)%7; laterName=NAMES[laterDay]+' '+dt.getDate()+' '+dt.toLocaleString('en-GB',{month:'short'});
+      later.classList.add('on'); days.querySelectorAll('input').forEach(function(x){x.checked=false;});
+    }
+    fillTimes();update();
+  });
+
+  function currentDay(){if(laterDay!==null)return laterDay;var c=days.querySelector('input:checked');return c?+c.value:now.d;}
+  function hourOf(v){var m=/^(\d+):(\d+)(am|pm)$/.exec(v);if(!m)return 0;var h=+m[1]%12+(m[3]==='pm'?12:0);return h+(+m[2])/60;}
+  function fillTimes(keep){
+    var d=currentDay(), opts='', want=keep||timeSel.value||'7:00pm', found=false;
+    sessions(d).forEach(function(s){for(var h=s[0];h<s[1];h+=.5){var v=fmtSlot(h);if(v===want)found=true;opts+='<option'+(v===want?' selected':'')+'>'+v+'</option>';}});
+    timeSel.innerHTML=opts;
+    if(!found){timeSel.value='7:00pm';}
+  }
+  // Lunch with Wine only at lunch times, Pre-Theatre only early evening, Mezze Thursdays only on Thursdays
+  function fits(o,d,h){
+    if(o.hasAttribute('data-thu')&&d!==3)return false;
+    var f=o.getAttribute('data-from');
+    return f===null||(h>=+f&&h<+o.getAttribute('data-to'));
+  }
+  function update(){
+    var d=currentDay(), h=hourOf(timeSel.value);
+    var all=document.querySelectorAll('input[name=offer]');
+    all.forEach(function(o){o.disabled=!fits(o,d,h);});
+    var o=document.querySelector('input[name=offer]:checked');
+    if(!o||o.disabled){o=document.querySelector('input[value=mezze]');o.checked=true;}
+    var pp=+o.getAttribute('data-pp');
+    var label=o.closest('label').querySelector('em').firstChild.textContent.trim();
+    var chip=days.querySelector('input:checked+span');
+    var dayName=laterDay!==null?laterName:(chip?chip.firstChild.textContent:LONG[d]);
+    guestsOut.textContent=guests;
+    less.disabled=guests<=1;
+    document.getElementById('sum-text').innerHTML='<b>'+dayName+', '+timeSel.value+'</b><br>'+guests+(guests===1?' guest':' guests')+' · '+(pp?'asking for '+label:'choosing from the menu');
+    document.getElementById('sum-total').textContent=pp?'£'+(pp*guests):'Menu';
+    document.getElementById('sum-label').textContent=pp?guests+' × £'+pp+'pp, if available':'prices on the night';
+  }
+  fillTimes('7:00pm'); update();
+  days.addEventListener('change',function(){laterDay=null;later.value='';later.classList.remove('on');fillTimes();update();});
+  timeSel.addEventListener('change',update);
+  // Choosing an offer moves the time into that offer's window when needed
+  function timeFor(v){
+    var r=document.querySelector('input[name=offer][value='+v+']'), f=r.getAttribute('data-from');
+    if(f===null)return;
+    var h=hourOf(timeSel.value);
+    if(h<+f||h>=+r.getAttribute('data-to'))fillTimes(v==='lunch'?'12:30pm':'5:30pm');
+  }
+  document.getElementById('offer-list').addEventListener('change',update);
+  document.getElementById('offer-list').addEventListener('click',function(e){
+    var r=e.target.closest('label')&&e.target.closest('label').querySelector('input');
+    if(!r||!r.disabled)return;
+    if(r.value==='thursday'){laterDay=null;later.value='';later.classList.remove('on');var th=days.querySelector('input[value="3"]');if(th){th.checked=true;fillTimes();}}
+    else timeFor(r.value);
+    update(); if(!r.disabled){r.checked=true;update();}
+  });
+  less.addEventListener('click',function(){if(guests>1){guests--;update();}});
+  more.addEventListener('click',function(){guests++;update();});
+
+  // Offer buttons fill in the planner
+  document.querySelectorAll('[data-pick]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var v=b.getAttribute('data-pick');
+      if(v==='thursday'){laterDay=null;later.value='';later.classList.remove('on');var th=days.querySelector('input[value="3"]');if(th){th.checked=true;fillTimes();}}
+      var r=document.querySelector('input[name=offer][value='+v+']');
+      timeFor(v); update(); if(!r.disabled){r.checked=true;}
+      update();
+      document.getElementById('book').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+      setTimeout(function(){r.focus({preventScroll:true});},500);
+    });
+  });
+
+  // Mockup forms
+  function mock(formId,msgId){
+    document.getElementById(formId).addEventListener('submit',function(e){e.preventDefault();document.getElementById(msgId).classList.add('show');});
+  }
+  mock('book','book-thanks'); mock('news-form','news-thanks');
+
+  // Postcode checker
+  var pc=document.getElementById('pc'), verdict=document.getElementById('verdict');
+  function check(){
+    var raw=pc.value.toUpperCase().replace(/[^A-Z0-9]/g,'');
+    if(raw.length>=5&&/\d[A-Z]{2}$/.test(raw))raw=raw.slice(0,-3);
+    if(!/^[A-Z]{1,2}\d[A-Z\d]?$/.test(raw)){
+      verdict.className='verdict collect';
+      verdict.innerHTML='<h4>Enter a postcode like SP2 7QY.</h4>';return;
+    }
+    var near={SP1:0,SP2:0,SP4:5,SP5:5};
+    if(raw in near){
+      verdict.className='verdict';
+      verdict.innerHTML='<h4>Yes, we deliver to '+raw+'.</h4><ul><li>Minimum order £20</li>'+(near[raw]?'<li>£5 delivery charge for '+raw+'</li>':'')+'<li>Delivery from 5pm to 9pm, every day</li></ul>';
+    }else{
+      verdict.className='verdict collect';
+      verdict.innerHTML='<h4>'+raw+' is outside our delivery area.</h4><ul><li>You can still order and collect from 90 Fisherton Street</li><li>Collection from 5pm to 9pm, every day</li></ul>';
+    }
+  }
+  document.getElementById('pc-form').addEventListener('submit',function(e){e.preventDefault();check();});
+  document.querySelectorAll('[data-pc]').forEach(function(b){b.addEventListener('click',function(){pc.value=b.getAttribute('data-pc');check();});});
+
+  // Open now, and today's row
+  var row=document.querySelector('#hours tr[data-d="'+now.d+'"]'); if(row)row.className='today';
+  var st=document.getElementById('status'), s=sessions(now.d), open=null, next=null;
+  s.forEach(function(x){if(now.h>=x[0]&&now.h<x[1])open=x;else if(next===null&&now.h<x[0])next=x;});
+  if(open){st.textContent='Open now, until '+fmt(open[1]);}
+  else{st.className='status shut';st.textContent=next?'Closed now, opens at '+fmt(next[0]):'Closed now, opens tomorrow at 12pm';}
+
+  // Gentle rise for things below the first screen
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window){
+    var els=document.querySelectorAll('.intro,.dish,.story .wrap > *,.home .wrap > *,.visit .wrap > *,.faq .wrap > *,.end .wrap > *');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){if(el.getBoundingClientRect().top>innerHeight){el.classList.add('will-rise');el.offsetWidth;el.classList.add('rise-ready');io.observe(el);}});
+  }
+})();
+</script>
+</body>
+</html>
