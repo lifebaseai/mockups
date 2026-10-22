@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup cotswoldestateagents-co-uk-436e10 1 49e40e14 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cotswold Estate Agents | Bishops Cleeve and Cheltenham since 1993</title>
+<meta name="description" content="Independent, family-run estate agents selling homes in Bishops Cleeve, Cheltenham and the surrounding villages since 1993.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#27286f; --navy-deep:#1c1d55; --red:#d32332; --red-dark:#b51c2a;
+  --ink:#1d1e3f; --muted:#55576f; --paper:#f7f4ee; --line:#e3ded4; --white:#fff;
+  --sans:"Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --wrap:1180px; --r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--white);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:0}
+h1,h2,h3{font-weight:600;letter-spacing:-.015em;line-height:1.15;margin:0}
+h2{font-size:clamp(28px,3.4vw,40px);color:var(--navy)}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin:0 0 14px}
+.lede{color:var(--muted);font-size:17px;max-width:560px;margin:14px 0 0}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:12px;top:12px;z-index:50;background:#fff;padding:10px 14px}
+
+/* mockup banner */
+.mock{background:#efe9de;color:var(--navy);font-size:13px;font-weight:500;text-align:center;padding:7px 16px;border-bottom:1px solid #ddd5c6;letter-spacing:.02em}
+
+/* header */
+.top{background:var(--navy);color:#fff;position:sticky;top:0;z-index:20;box-shadow:0 1px 0 rgba(255,255,255,.08)}
+.top .wrap{display:flex;align-items:center;gap:28px;height:84px}
+.logo img{width:150px;height:auto}
+.nav{display:flex;gap:26px;margin-left:auto;font-size:14px;font-weight:500}
+.nav a{text-decoration:none;opacity:.92;padding:12px 0}
+.nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:6px}
+.tel{display:flex;align-items:center;gap:8px;font-weight:600;text-decoration:none;font-size:15px;white-space:nowrap;min-height:44px}
+.tel svg{width:18px;height:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;font:600 15px/1 var(--sans);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .2s,transform .2s,box-shadow .2s}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-dark);transform:translateY(-1px);box-shadow:0 8px 20px -10px rgba(211,35,50,.7)}
+.btn-line{border-color:rgba(255,255,255,.55);color:#fff;background:transparent}
+.btn-line:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn-ink{border-color:var(--navy);color:var(--navy);background:transparent}
+.btn-ink:hover{background:var(--navy);color:#fff}
+.top .btn{min-height:44px;padding:0 20px;font-size:14px}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);background:var(--navy);color:#fff;min-height:600px}
+.hero-copy{padding:84px 56px 72px max(28px,calc((100vw - var(--wrap))/2 + 28px));display:flex;flex-direction:column;justify-content:center}
+.hero .kicker{color:#fff;opacity:.85;display:flex;align-items:center;gap:12px}
+.hero .kicker:before{content:"";width:28px;height:2px;background:var(--red)}
+.hero h1{font-size:clamp(36px,3.7vw,54px);line-height:1.06;letter-spacing:-.025em}
+.hero h1 .em{display:block;color:#fff;font-size:.92em;margin-top:6px}
+.hero p.sub{font-size:18px;line-height:1.6;color:#e4e4f3;max-width:470px;margin:22px 0 32px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-pic{position:relative;overflow:hidden;border-left:4px solid var(--red)}
+.hero-pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.rating{position:absolute;left:28px;bottom:28px;background:#fff;color:var(--ink);border-radius:12px;padding:14px 18px;display:flex;align-items:center;gap:14px;box-shadow:0 18px 40px -20px rgba(10,10,40,.55)}
+.rating b{font-size:28px;color:var(--navy);line-height:1}
+.rating small{display:block;font-size:13px;color:var(--muted);line-height:1.35}
+.stars{display:flex;gap:2px;color:var(--red)}
+.stars svg{width:15px;height:15px}
+
+/* proof strip */
+.proof{border-bottom:1px solid var(--line)}
+.proof ul{list-style:none;margin:0 auto;padding:22px 28px;display:flex;justify-content:space-between;gap:20px;max-width:var(--wrap);font-size:14px;font-weight:500;color:var(--navy)}
+.proof li{display:flex;align-items:center;gap:10px}
+.proof li:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--red);flex:none}
+
+/* sections */
+section{scroll-margin-top:90px}
+.sec{padding:104px 0}
+.paper{background:var(--paper)}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:44px}
+
+/* valuation tool */
+.tool{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:40px;align-items:start}
+.form{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:34px 34px 30px}
+fieldset{border:0;margin:0 0 24px;padding:0;min-width:0}
+legend{font-weight:600;font-size:15px;color:var(--navy);margin-bottom:12px;padding:0;display:flex;gap:10px;align-items:center}
+legend span{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--paper);color:var(--navy);font-size:12px;font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip span{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1.5px solid #d6d1c6;border-radius:999px;font-size:14px;font-weight:500;cursor:pointer;transition:border-color .15s,background .15s,color .15s;background:#fff;color:var(--ink)}
+.chip span:hover{border-color:var(--navy)}
+.chip input:checked+span{background:var(--navy);border-color:var(--navy);color:#fff}
+.chip input:focus-visible+span{outline:3px solid var(--red);outline-offset:2px}
+.is-off{opacity:.45;pointer-events:none}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label.f{display:block;font-size:13px;font-weight:600;color:var(--navy)}
+label.f input,label.f select,label.f textarea{display:block;width:100%;margin-top:6px;min-height:48px;padding:12px 14px;border:1.5px solid #d6d1c6;border-radius:10px;font:500 15px var(--sans);color:var(--ink);background:#fff}
+label.f textarea{min-height:96px;resize:vertical}
+label.f input:focus,label.f select:focus,label.f textarea:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(39,40,111,.15)}
+.form .btn{width:100%;margin-top:18px}
+.thanks{margin:14px 0 0;font-weight:600;color:var(--navy);background:var(--paper);border-radius:10px;padding:12px 14px}
+.thanks[hidden]{display:none}
+
+.card{background:var(--navy);color:#fff;border-radius:var(--r);padding:34px;position:sticky;top:110px;box-shadow:0 30px 60px -36px rgba(20,20,70,.6)}
+.card .kicker{color:#fff;opacity:.8}
+.summary{font-family:var(--serif);font-style:italic;font-size:27px;line-height:1.3;margin:0 0 28px;transition:opacity .25s}
+.summary.flash{opacity:.35}
+.summary b{font-weight:600;color:#fff;border-bottom:2px solid var(--red)}
+.steps{list-style:none;margin:0;padding:0;position:relative}
+.steps:before{content:"";position:absolute;left:15px;top:16px;bottom:16px;width:2px;background:rgba(255,255,255,.22)}
+.steps li{position:relative;padding:0 0 22px 50px;transition:opacity .3s}
+.steps li:last-child{padding-bottom:0}
+.steps .n{position:absolute;left:0;top:-2px;width:32px;height:32px;border-radius:50%;background:var(--red);display:grid;place-items:center;font-size:13px;font-weight:700}
+.steps h3{font-size:16px;font-weight:600;margin:0 0 4px}
+.steps p{margin:0;font-size:14px;line-height:1.55;color:#d9d9ee}
+.steps li.later{opacity:.55}
+.steps li.later .n{background:transparent;border:2px solid rgba(255,255,255,.5)}
+.later-note{display:none;font-size:13px;color:#d9d9ee;margin:0 0 12px 50px;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.card.side .later-note{display:block}
+
+/* homes */
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.homes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px}
+.home{margin:0}
+.home .ph{position:relative;border-radius:10px;overflow:hidden;aspect-ratio:3/2;background:var(--paper)}
+.home .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.home:hover .ph img{transform:scale(1.03)}
+.tag{position:absolute;left:12px;top:12px;background:#fff;color:var(--navy);font-size:12px;font-weight:600;padding:5px 10px;border-radius:999px}
+.home figcaption{padding:16px 2px 0}
+.price{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.price strong{font-size:19px;color:var(--navy)}
+.price small{font-size:12px;color:var(--muted);font-weight:500}
+.home .st{font-weight:600;margin:6px 0 0;font-size:15px}
+.home .pl{color:var(--muted);font-size:14px;margin:0}
+.spec{display:flex;gap:16px;margin-top:10px;font-size:14px;color:var(--muted)}
+.spec span{display:flex;align-items:center;gap:6px}
+.spec svg{width:18px;height:18px;color:var(--navy)}
+.more{margin-top:44px;border-top:1px solid var(--line)}
+.more h3{font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600;padding:22px 0 6px}
+.row{display:grid;grid-template-columns:1.4fr 1fr auto;gap:24px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line)}
+.row .st{font-weight:600}
+.row .pl{color:var(--muted);font-size:14px}
+.row strong{color:var(--navy);font-size:17px;text-align:right}
+.row small{display:block;font-weight:500;color:var(--muted);font-size:12px}
+.hide{display:none!important}
+.homes-foot{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-top:36px;flex-wrap:wrap}
+.homes-foot p{margin:0;color:var(--muted)}
+
+/* why */
+.why{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:72px;align-items:start}
+.since{background:var(--navy);color:#fff;border-radius:var(--r);padding:44px 40px;position:relative;overflow:hidden}
+.since .yr{font-family:var(--serif);font-style:italic;font-size:clamp(84px,10vw,132px);line-height:.9;letter-spacing:-.03em;margin:8px 0 24px}
+.since p{margin:0;color:#e1e1f1;font-size:17px}
+.since .who{margin-top:28px;padding-top:22px;border-top:1px solid rgba(255,255,255,.2);font-size:14px;color:#d4d4ea}
+.since .who b{color:#fff;display:block;font-size:16px}
+.sign{position:absolute;right:-6px;top:22px;width:110px;opacity:.16}
+.points{list-style:none;margin:36px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:34px 40px}
+.points .num{font-family:var(--serif);font-style:italic;color:var(--red);font-size:22px;display:block;margin-bottom:8px}
+.points h3{font-size:18px;color:var(--navy);margin-bottom:8px}
+.points p{margin:0;color:var(--muted);font-size:15px}
+
+/* reviews */
+.reviews-top{display:flex;align-items:center;gap:22px;margin-bottom:40px;flex-wrap:wrap}
+.big{font-size:64px;font-weight:600;color:var(--navy);line-height:1;letter-spacing:-.03em}
+.reviews-top .stars svg{width:20px;height:20px}
+.reviews-top p{margin:6px 0 0;color:var(--muted)}
+.quote-main{font-family:var(--serif);font-style:italic;font-size:clamp(24px,2.6vw,34px);line-height:1.35;color:var(--navy);margin:0;max-width:900px}
+.quote-main cite,.quotes cite{display:block;font:600 14px var(--sans);font-style:normal;color:var(--red);margin-top:16px;letter-spacing:.04em}
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;margin-top:56px;padding-top:40px;border-top:1px solid var(--line)}
+.quotes blockquote{margin:0;font-size:15px;color:var(--ink)}
+.quotes blockquote p{margin:0}
+
+/* faq */
+.faq{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:64px}
+details{border-bottom:1px solid var(--line)}
+details:first-child{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 0;font-weight:600;font-size:17px;color:var(--navy);min-height:44px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-size:24px;font-weight:400;color:var(--red);transition:transform .2s;flex:none}
+details[open] summary:after{transform:rotate(45deg)}
+details p{margin:0 0 22px;color:var(--muted);max-width:620px}
+
+/* contact */
+.contact{background:var(--navy);color:#fff}
+.contact .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:center}
+.contact h2{color:#fff;font-size:clamp(32px,4vw,50px)}
+.contact h2 .em{display:block}
+.contact .lede{color:#dcdcef}
+.ways{list-style:none;margin:32px 0 0;padding:0;display:grid;gap:4px}
+.ways a{display:flex;align-items:center;gap:14px;text-decoration:none;padding:10px 0;min-height:44px;font-weight:500}
+.ways a:hover span{text-decoration:underline;text-underline-offset:5px}
+.ways svg{width:20px;height:20px;color:#fff;opacity:.85;flex:none}
+.ways .call{font-size:26px;font-weight:600}
+.contact .actions{margin-top:28px}
+.contact .form{color:var(--ink)}
+.contact .form h3{font-size:20px;color:var(--navy);margin-bottom:18px}
+.contact .form label.f{margin-bottom:12px}
+
+/* footer */
+footer{background:var(--navy-deep);color:#d4d4ea;font-size:14px;padding:44px 0 36px}
+footer .wrap{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;align-items:flex-start}
+footer p{margin:0 0 6px}
+footer nav{display:flex;gap:6px;flex-wrap:wrap}
+footer nav a{text-decoration:none;padding:12px 10px;color:#fff}
+footer nav a:hover{text-decoration:underline}
+.made{width:100%;border-top:1px solid rgba(255,255,255,.14);padding-top:22px;margin-top:10px;font-size:13px}
+.made a{color:#fff}
+
+/* phone call bar */
+.callbar{display:none}
+
+/* gentle rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:1060px){
+  .nav{display:none}
+  .homes{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .why,.faq{grid-template-columns:1fr;gap:44px}
+  .tool{grid-template-columns:1fr}
+  .card{position:static}
+}
+@media (max-width:760px){
+  .wrap{padding:0 20px}
+  .mock{font-size:12px;padding:6px 12px}
+  .top .wrap{height:68px;gap:12px}
+  .logo img{width:124px}
+  .top .btn{display:none}
+  .tel{margin-left:auto;border:1.5px solid rgba(255,255,255,.5);border-radius:999px;padding:0 16px;font-size:14px}
+  .hero{grid-template-columns:1fr;min-height:0}
+  .hero-pic{order:-1;height:250px;border-left:0;border-bottom:4px solid var(--red)}
+  .hero-copy{padding:36px 20px 44px}
+  .hero h1{font-size:36px}
+  .hero p.sub{font-size:16.5px;margin:18px 0 26px}
+  .actions .btn{flex:1 1 100%}
+  .rating{left:16px;bottom:16px;padding:10px 14px;gap:10px}
+  .rating b{font-size:22px}
+  .proof ul{flex-direction:column;gap:10px;padding:22px 20px}
+  .sec{padding:68px 0}
+  .head{flex-direction:column;align-items:flex-start;gap:20px;margin-bottom:30px}
+  .form{padding:24px 20px}
+  .card{padding:28px 22px}
+  .summary{font-size:23px}
+  .fields{grid-template-columns:1fr}
+  .homes{grid-template-columns:1fr;gap:18px}
+  .home{display:grid;grid-template-columns:44% 1fr;gap:16px;align-items:start}
+  .home figcaption{padding:0}
+  .home .ph{aspect-ratio:1/1}
+  .price{flex-direction:column;align-items:flex-start;gap:0}
+  .price strong{font-size:18px}
+  .home .st{margin-top:4px}
+  .spec{flex-direction:column;gap:2px;margin-top:6px;font-size:13px}
+  .tag{left:8px;top:8px;font-size:11px;padding:3px 8px}
+  .row{grid-template-columns:1fr auto;gap:4px 16px}
+  .row .spec{grid-column:1;margin-top:0}
+  .row strong{grid-row:1 / span 2;grid-column:2}
+  .row .pl{grid-column:1}
+  .points{grid-template-columns:1fr;gap:28px}
+  .since{padding:34px 28px}
+  .quotes{grid-template-columns:1fr;gap:30px}
+  .big{font-size:52px}
+  .contact .wrap{grid-template-columns:1fr;gap:44px}
+  .ways .call{font-size:22px}
+  body{padding-bottom:72px}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;background:#fff;padding:10px 12px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -8px 24px -12px rgba(20,20,60,.35)}
+  .callbar .btn{min-height:48px;padding:0 12px;font-size:15px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*:before,*:after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Free mockup for Cotswold Estate Agents</div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#main" aria-label="Cotswold Estate Agents, home"><img src="https://www.cotswoldestateagents.co.uk/wp-content/uploads/2023/03/CotswoldLogo-300x107.png" width="172" height="61" alt="Cotswold Estate Agents"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#valuation">Valuations</a>
+      <a href="#homes">Homes for sale</a>
+      <a href="#about">About us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="tel" href="tel:+441242676767"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>01242 676767</a>
+    <a class="btn btn-red" href="#valuation">Book a valuation</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="kicker">Independent and family run</p>
+      <h1 id="hero-title">Selling homes in Bishops Cleeve and Cheltenham <span class="em">since 1993.</span></h1>
+      <p class="sub">An experienced local valuer comes to your home and gives you a valuation built around it. Then we market it with free drone photography and video.</p>
+      <div class="actions">
+        <a class="btn btn-red" href="#valuation">Book a valuation</a>
+        <a class="btn btn-line" href="#homes">See homes for sale</a>
+      </div>
+    </div>
+    <div class="hero-pic">
+      <img src="https://www.cotswoldestateagents.co.uk/wp-content/uploads/2024/06/gettyimages-1686787581-2048x2048-copy1-copy.jpg" width="1920" height="1147" alt="Green hillside looking out over the towns and fields of the vale below">
+      <div class="rating" aria-label="Rated 4.8 out of 5 from 89 reviews">
+        <b>4.8</b>
+        <div>
+          <div class="stars" aria-hidden="true"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8z"/></svg></div>
+          <small>from 89 reviews</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="proof">
+    <ul>
+      <li>Established in 1993</li>
+      <li>Members of The Property Ombudsman</li>
+      <li>On Rightmove, Zoopla and PrimeLocation</li>
+      <li>Office on Church Road, Bishops Cleeve</li>
+    </ul>
+  </div>
+
+  <section id="valuation" class="sec paper" aria-labelledby="val-title">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="kicker">Book a valuation</p>
+          <h2 id="val-title">Tell us about your home. <span class="em">We'll take it from there.</span></h2>
+          <p class="lede">Tap what fits. You'll see exactly what happens next.</p>
+        </div>
+      </div>
+      <div class="tool">
+        <form class="form" id="valForm" novalidate>
+          <fieldset>
+            <legend><span>1</span>What do you need?</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="need" value="sell" checked><span>Selling my home</span></label>
+              <label class="chip"><input type="radio" name="need" value="probate"><span>Probate valuation</span></label>
+              <label class="chip"><input type="radio" name="need" value="land"><span>Land appraisal</span></label>
+            </div>
+          </fieldset>
+          <fieldset id="fsType">
+            <legend><span>2</span>What kind of property?</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="type" value="detached house"><span>Detached</span></label>
+              <label class="chip"><input type="radio" name="type" value="semi-detached house" checked><span>Semi-detached</span></label>
+              <label class="chip"><input type="radio" name="type" value="terraced house"><span>Terraced</span></label>
+              <label class="chip"><input type="radio" name="type" value="bungalow"><span>Bungalow</span></label>
+              <label class="chip"><input type="radio" name="type" value="maisonette"><span>Maisonette</span></label>
+              <label class="chip"><input type="radio" name="type" value="park home"><span>Park home</span></label>
+            </div>
+          </fieldset>
+          <fieldset id="fsBeds">
+            <legend><span>3</span>Bedrooms</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="beds" value="1"><span>1</span></label>
+              <label class="chip"><input type="radio" name="beds" value="2"><span>2</span></label>
+              <label class="chip"><input type="radio" name="beds" value="3" checked><span>3</span></label>
+              <label class="chip"><input type="radio" name="beds" value="4"><span>4</span></label>
+              <label class="chip"><input type="radio" name="beds" value="5+"><span>5+</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend><span id="whereN">4</span>Where is it?</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="where" value="Bishops Cleeve" checked><span>Bishops Cleeve</span></label>
+              <label class="chip"><input type="radio" name="where" value="Cheltenham"><span>Cheltenham</span></label>
+              <label class="chip"><input type="radio" name="where" value="a nearby village"><span>A nearby village</span></label>
+            </div>
+          </fieldset>
+          <div class="fields">
+            <label class="f">Your name<input type="text" name="name" autocomplete="name"></label>
+            <label class="f">Phone or email<input type="text" name="reach" autocomplete="tel"></label>
+          </div>
+          <button class="btn btn-red" type="submit">Request my valuation</button>
+          <p class="thanks" role="status" hidden>Thanks. This is a mockup, so nothing was sent.</p>
+        </form>
+
+        <aside class="card" id="valCard" aria-live="polite" aria-label="Your valuation request">
+          <p class="kicker">Your request</p>
+          <p class="summary" id="summary">A valuation visit for your <b>3-bed semi-detached house</b> in <b>Bishops Cleeve</b>, ready to sell.</p>
+          <ol class="steps">
+            <li><span class="n">1</span><h3>We come to you</h3><p id="step1">One of our property experts visits and gives you a bespoke valuation that takes in everything that makes your home its own.</p></li>
+            <li class="sell-only"><p class="later-note">If you then decide to sell</p><span class="n">2</span><h3>Free drone photography and video</h3><p>Shot from above to show your home's position, garden and surroundings, as part of our marketing.</p></li>
+            <li class="sell-only"><span class="n">3</span><h3>On Rightmove, Zoopla and PrimeLocation</h3><p>Advertised on all the major property portals for maximum exposure.</p></li>
+            <li class="sell-only"><span class="n">4</span><h3>Matched with our registered buyers</h3><p>We keep an up-to-date list of buyers who have told us exactly what they're looking for.</p></li>
+          </ol>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="homes" class="sec" aria-labelledby="homes-title">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="kicker">On the market</p>
+          <h2 id="homes-title"><span class="em">Featured</span> homes for sale</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Filter by bedrooms">
+          <label class="chip"><input type="radio" name="bf" value="all" checked><span>All 7</span></label>
+          <label class="chip"><input type="radio" name="bf" value="2"><span>2 bed</span></label>
+          <label class="chip"><input type="radio" name="bf" value="3"><span>3 bed</span></label>
+          <label class="chip"><input type="radio" name="bf" value="4"><span>4 bed or more</span></label>
+        </div>
+      </div>
+
+      <div class="homes">
+        <figure class="home" data-beds="3">
+          <div class="ph"><img src="https://tpjcdn.co.uk/wp-cotswold.iomart.thepropertyjungle.com/resize/31127433/0/480" width="480" height="321" alt="Priory Lane, Bishops Cleeve: a red brick chalet home behind a mature garden" loading="lazy"><span class="tag">Available</span></div>
+          <figcaption>
+            <div class="price"><strong>£478,000</strong></div>
+            <p class="st">Priory Lane</p><p class="pl">Bishops Cleeve, GL52 8JL</p>
+            <div class="spec"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 18V7M3 13h18v5M21 13a3 3 0 0 0-3-3h-7v3M7 11.5a1.5 1.5 0 1 0 0-.01"/></svg>3 bedrooms</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12h16v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4zM6 12V5a2 2 0 0 1 4 0M7 19l-1 2M17 19l1 2"/></svg>2 bathrooms</span></div>
+          </figcaption>
+        </figure>
+        <figure class="home" data-beds="3">
+          <div class="ph"><img src="https://tpjcdn.co.uk/wp-cotswold.iomart.thepropertyjungle.com/resize/30764146/0/480" width="480" height="320" alt="Sedgley Road, Bishops Cleeve: a semi-detached house with a gravel drive" loading="lazy"><span class="tag">Available</span></div>
+          <figcaption>
+            <div class="price"><strong>£419,950</strong><small>Guide price</small></div>
+            <p class="st">Sedgley Road</p><p class="pl">Bishops Cleeve, GL52 8DD</p>
+            <div class="spec"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 18V7M3 13h18v5M21 13a3 3 0 0 0-3-3h-7v3M7 11.5a1.5 1.5 0 1 0 0-.01"/></svg>3 bedrooms</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12h16v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4zM6 12V5a2 2 0 0 1 4 0M7 19l-1 2M17 19l1 2"/></svg>2 bathrooms</span></div>
+          </figcaption>
+        </figure>
+        <figure class="home" data-beds="4">
+          <div class="ph"><img src="https://tpjcdn.co.uk/wp-cotswold.iomart.thepropertyjungle.com/resize/30717749/0/480" width="480" height="320" alt="Rivelands Road, Swindon Village: a semi-detached house with a Cotswold sale board" loading="lazy"><span class="tag">Available</span></div>
+          <figcaption>
+            <div class="price"><strong>£535,000</strong><small>Guide price</small></div>
+            <p class="st">Rivelands Road</p><p class="pl">Swindon Village, GL51 9RF</p>
+            <div class="spec"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 18V7M3 13h18v5M21 13a3 3 0 0 0-3-3h-7v3M7 11.5a1.5 1.5 0 1 0 0-.01"/></svg>4 bedrooms</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12h16v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4zM6 12V5a2 2 0 0 1 4 0M7 19l-1 2M17 19l1 2"/></svg>3 bathrooms</span></div>
+          </figcaption>
+        </figure>
+        <figure class="home" data-beds="2">
+          <div class="ph"><img src="https://tpjcdn.co.uk/wp-cotswold.iomart.thepropertyjungle.com/resize/30321182/0/480" width="480" height="321" alt="Fieldgate Road, Bishops Cleeve: a white bungalow with a wide driveway" loading="lazy"><span class="tag">Available</span></div>
+          <figcaption>
+            <div class="price"><strong>£335,000</strong><small>Guide price</small></div>
+            <p class="st">Fieldgate Road</p><p class="pl">Bishops Cleeve, GL52 8JJ</p>
+            <div class="spec"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 18V7M3 13h18v5M21 13a3 3 0 0 0-3-3h-7v3M7 11.5a1.5 1.5 0 1 0 0-.01"/></svg>2 bedrooms</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12h16v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4zM6 12V5a2 2 0 0 1 4 0M7 19l-1 2M17 19l1 2"/></svg>1 bathroom</span></div>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="more">
+        <h3>Also available</h3>
+        <div class="row" data-beds="4"><div><div class="st">Fairmont Street</div><div class="pl">Bishops Cleeve, GL52 7AJ</div></div><div class="spec">4 bed · 3 bath</div><strong><small>Guide price</small>£545,000</strong></div>
+        <div class="row" data-beds="2"><div><div class="st">Lavender Mews</div><div class="pl">Bishops Cleeve, GL52 8LN</div></div><div class="spec">2 bed · 1 bath</div><strong><small>Offers over</small>£215,000</strong></div>
+        <div class="row" data-beds="4"><div><div class="st">The Lawns</div><div class="pl">Gotherington, GL52 9QT</div></div><div class="spec">5 bed · 2 bath</div><strong><small>Guide price</small>£550,000</strong></div>
+      </div>
+
+      <div class="homes-foot">
+        <p>Looking to buy? Register and hear about new homes first.</p>
+        <a class="btn btn-ink" href="#contact" data-topic="Register as a buyer">Register with us</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="sec paper" aria-labelledby="about-title">
+    <div class="wrap why">
+      <div class="since">
+        <svg class="sign" viewBox="0 0 100 160" fill="#fff" aria-hidden="true"><rect x="44" y="10" width="10" height="150"/><path d="M8 18h70l14 11-14 11H8z"/><path d="M92 50H30l-12 9 12 9h62z"/></svg>
+        <p class="kicker">Established</p>
+        <p class="yr">1993</p>
+        <p>Over 30 years selling homes in Bishops Cleeve, Cheltenham and the villages around them. Still independent, still family run.</p>
+        <p class="who"><b>Simon Davis</b>Director and Senior Valuer, who set up Cotswold Estate Agents in 1993</p>
+      </div>
+      <div>
+        <p class="kicker">Why sell with Cotswold</p>
+        <h2 id="about-title">Local know-how, <span class="em">with the latest tools.</span></h2>
+        <ul class="points">
+          <li><span class="num">01</span><h3>Drone photos and video, free</h3><p>Our drones fly at over 100 metres. Rightmove listings with drone imagery typically get 36% more views and 31% more leads.</p></li>
+          <li><span class="num">02</span><h3>Buyers already waiting</h3><p>An up-to-date list of buyers who have given us their exact search. We match the right buyer to your home.</p></li>
+          <li><span class="num">03</span><h3>Everywhere buyers look</h3><p>Rightmove, Zoopla and PrimeLocation, for maximum exposure.</p></li>
+          <li><span class="num">04</span><h3>Peace of mind</h3><p>Members of The Property Ombudsman. Fully insured and professionally regulated.</p></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="sec" aria-labelledby="rev-title">
+    <div class="wrap">
+      <p class="kicker">Reviews</p>
+      <div class="reviews-top">
+        <span class="big">4.8</span>
+        <div>
+          <div class="stars" aria-hidden="true"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8z"/></svg></div>
+          <h2 id="rev-title" style="font-size:20px;margin-top:6px">Rated 4.8 from 89 reviews</h2>
+        </div>
+      </div>
+      <blockquote class="quote-main">
+        <p>“Simon, Sharon and Ben were excellent during the process of selling my home. They always dealt with issues in a calm and professional way and made me feel confident and well looked after.”</p>
+        <cite>T Armstrong</cite>
+      </blockquote>
+      <div class="quotes">
+        <blockquote><p>“Needing to sell my parents park home remotely… the process went very smoothly, which resulted in a stress free sale.”</p><cite>A Fry</cite></blockquote>
+        <blockquote><p>“Going into buy in my first property, I was extremely overwhelmed… Cotswold estate agents were incredibly helpful throughout the whole process.”</p><cite>C Leonard</cite></blockquote>
+        <blockquote><p>“Simon, with his many years experience meant you felt you were always in safe hands.”</p><cite>C Fells</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="sec paper" aria-labelledby="faq-title">
+    <div class="wrap faq">
+      <div>
+        <p class="kicker">Questions</p>
+        <h2 id="faq-title">What people <span class="em">ask us first.</span></h2>
+        <p class="lede">Anything else, just call the office on <a href="tel:+441242676767">01242 676767</a>.</p>
+      </div>
+      <div>
+        <details open><summary>What happens at a valuation?</summary><p>One of our property experts visits you and gives a bespoke valuation that takes into account the individuality and unique identity of your home.</p></details>
+        <details><summary>Which areas do you cover?</summary><p>Bishops Cleeve, Cheltenham and the surrounding villages. Our office is at 41A Church Road, Bishops Cleeve.</p></details>
+        <details><summary>Is the drone photography extra?</summary><p>No. Professional drone photography and video are free, as part of our property marketing. They suit every kind of home, not just large estates.</p></details>
+        <details><summary>Where will my home be advertised?</summary><p>On all the major property portals, including Rightmove, Zoopla and PrimeLocation, and to the buyers registered with us.</p></details>
+        <details><summary>Do you value for probate, or land?</summary><p>Yes. We cover residential sales, probate valuations and land appraisals.</p></details>
+        <details><summary>Are you regulated?</summary><p>We are members of The Property Ombudsman, fully insured and professionally regulated.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact sec" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div>
+        <p class="kicker" style="color:#fff;opacity:.85">Get in touch</p>
+        <h2 id="contact-title">Thinking of selling? <span class="em">Let's start with a valuation.</span></h2>
+        <ul class="ways">
+          <li><a href="tel:+441242676767" class="call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>01242 676767</span></a></li>
+          <li><a href="tel:+441242226422"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>or 01242 226422</span></a></li>
+          <li><a href="mailto:cleeve@cotswoldestateagents.co.uk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg><span>cleeve@cotswoldestateagents.co.uk</span></a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=41A%20Church%20Road%2C%20Bishops%20Cleeve%2C%20Cheltenham%20GL52%208LP"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>41A Church Road, Bishops Cleeve, Cheltenham GL52 8LP</span></a></li>
+        </ul>
+        <div class="actions"><a class="btn btn-red" href="#valuation">Book a valuation</a></div>
+      </div>
+      <form class="form" id="msgForm" novalidate>
+        <h3>Send us a message</h3>
+        <label class="f">How can we help?
+          <select name="topic" id="topic">
+            <option>Book a valuation</option>
+            <option>Register as a buyer</option>
+            <option>Independent mortgage advice</option>
+            <option>Something else</option>
+          </select>
+        </label>
+        <label class="f">Your name<input type="text" name="name" autocomplete="name"></label>
+        <label class="f">Phone or email<input type="text" name="reach"></label>
+        <label class="f">Message<textarea name="msg" rows="3"></textarea></label>
+        <button class="btn btn-red" type="submit">Send message</button>
+        <p class="thanks" role="status" hidden>Thanks. This is a mockup, so nothing was sent.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <p><strong style="color:#fff">Cotswold Estate Agents</strong></p>
+      <p>Established in 1993, an independent family run business.</p>
+      <p>41A Church Road, Bishops Cleeve, Cheltenham GL52 8LP</p>
+    </div>
+    <nav aria-label="Social and website">
+      <a href="https://www.facebook.com/CotswoldEstateAgents/">Facebook</a>
+      <a href="https://www.instagram.com/cotswoldestateagents/">Instagram</a>
+      <a href="https://www.tiktok.com/@cotswold.estate.a">TikTok</a>
+      <a href="https://www.cotswoldestateagents.co.uk/">Current website</a>
+    </nav>
+    <p class="made">Mockup made for Cotswold Estate Agents by Sunny Gupta, <a href="https://signalsetbase.com">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick contact">
+  <a class="btn btn-ink" href="tel:+441242676767">Call the office</a>
+  <a class="btn btn-red" href="#valuation">Book a valuation</a>
+</div>
+
+<script>
+(function(){
+  var form=document.getElementById('valForm'), card=document.getElementById('valCard'),
+      sum=document.getElementById('summary'), s1=document.getElementById('step1'),
+      fsType=document.getElementById('fsType'), fsBeds=document.getElementById('fsBeds'),
+      whereN=document.getElementById('whereN');
+  function val(n){var el=form.querySelector('input[name="'+n+'"]:checked');return el?el.value:'';}
+  function update(){
+    var need=val('need'), type=val('type'), beds=val('beds'), where=val('where'), home, text;
+    var land=need==='land';
+    fsType.classList.toggle('is-off',land); fsBeds.classList.toggle('is-off',land);
+    fsType.disabled=land; fsBeds.disabled=land;
+    whereN.textContent=land?'2':'4';
+    home=(type==='park home'?'':beds+'-bed ')+type;
+    if(need==='sell'){
+      text='A valuation visit for your <b>'+home+'</b> in <b>'+where+'</b>, ready to sell.';
+      s1.textContent='One of our property experts visits and gives you a bespoke valuation that takes in everything that makes your home its own.';
+    }else if(need==='probate'){
+      text='A probate valuation for a <b>'+home+'</b> in <b>'+where+'</b>.';
+      s1.textContent='One of our property experts visits and values the property for probate.';
+    }else{
+      text='A land appraisal in <b>'+where+'</b>.';
+      s1.textContent='One of our property experts visits and appraises the land.';
+    }
+    card.classList.toggle('side',need!=='sell');
+    card.querySelectorAll('.sell-only').forEach(function(li){li.classList.toggle('later',need!=='sell');});
+    sum.classList.add('flash');
+    setTimeout(function(){sum.innerHTML=text;sum.classList.remove('flash');},140);
+  }
+  form.addEventListener('change',update);
+
+  function thanks(f){f.addEventListener('submit',function(e){e.preventDefault();f.querySelector('.thanks').hidden=false;});}
+  thanks(form); thanks(document.getElementById('msgForm'));
+
+  // bedroom filter for homes
+  document.querySelectorAll('input[name="bf"]').forEach(function(r){
+    r.addEventListener('change',function(){
+      var v=r.value;
+      document.querySelectorAll('[data-beds]').forEach(function(el){
+        el.classList.toggle('hide',v!=='all'&&el.getAttribute('data-beds')!==v);
+      });
+    });
+  });
+
+  // "Register with us" preselects the topic
+  document.querySelectorAll('[data-topic]').forEach(function(a){
+    a.addEventListener('click',function(){document.getElementById('topic').value=a.getAttribute('data-topic');});
+  });
+
+  // gentle rise for things below the first screen
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window){
+    var els=document.querySelectorAll('.sec .head, .tool, .home, .more, .since, .points li, .reviews-top, .quote-main, .quotes blockquote, .faq details, .contact .wrap > *');
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target);}});
+    },{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){
+      if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('rise','will-rise');io.observe(el);}
+    });
+  }
+})();
+</script>
+</body>
+</html>
