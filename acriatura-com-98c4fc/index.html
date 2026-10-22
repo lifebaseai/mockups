@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup acriatura-com-98c4fc 1 28d6dc27 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Criatura Estúdio | Design, VFX &amp; Animation for Brands</title>
+<meta name="description" content="Design, VFX and animation for brands, agencies and artists worldwide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1b1b1b; --ink-2:#232323; --ink-3:#2c2c2c; --line:#3a3a3a;
+  --paper:#f3f1ec; --white:#fff; --mute:#a9a9a9; --mute-2:#5b5a57;
+  --red:#ff4560; --red-btn:#e01e3c; --red-dark:#c8102e;
+  --wrap:1160px; --r:14px;
+  --head:"Inter Tight","Helvetica Neue",Arial,sans-serif;
+  --body:"Inter",-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--white);font:400 17px/1.55 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.label{font:600 12px/1.2 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+h1,h2,h3{font-family:var(--head);font-weight:800;letter-spacing:-.025em;line-height:1;margin:0}
+.red{color:var(--red)}
+.skip{position:absolute;left:12px;top:-60px;background:var(--white);color:var(--ink);padding:10px 14px;border-radius:8px;z-index:50}
+.skip:focus{top:44px}
+
+/* mockup banner */
+.mock{background:#0e0e0e;color:#d6d6d6;font:500 13px/1 var(--body);letter-spacing:.04em;text-align:center;padding:11px 16px;border-bottom:1px solid #2a2a2a;position:relative;z-index:40}
+.mock b{color:var(--white);font-weight:600}
+.mock i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--red);margin-right:9px;vertical-align:1px}
+
+/* header */
+.top{position:sticky;top:0;z-index:30;background:rgba(27,27,27,.92);backdrop-filter:saturate(1.2) blur(10px);-webkit-backdrop-filter:saturate(1.2) blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
+.top.scrolled{border-bottom-color:#303030}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{display:flex;align-items:center;min-height:44px}
+.brand img{height:44px;width:auto}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{font:600 12px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:#d8d8d8;padding:16px 14px;border-radius:999px}
+.nav a:hover{color:var(--white)}
+.nav a.pill{border:1.5px solid #d8d8d8;padding:14px 20px;margin-left:8px;color:var(--white)}
+.nav a.pill:hover{background:var(--white);color:var(--ink)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:52px;padding:0 26px;border-radius:999px;font:600 13px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .2s,background .2s,color .2s}
+.btn svg{width:14px;height:14px;flex:none}
+.btn-red{background:var(--red-btn);color:var(--white)}
+.btn-red:hover{background:#c9132f;transform:translateY(-1px)}
+.btn-line{border-color:#d8d8d8;color:var(--white);background:transparent}
+.btn-line:hover{background:var(--white);color:var(--ink)}
+
+/* hero */
+.hero{padding:72px 0 56px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(48px,7.4vw,96px);line-height:.94;letter-spacing:-.04em}
+.hero h1 span{display:block}
+.hero .sub{font-size:20px;color:#cfcfcf;max-width:30ch;margin:26px 0 36px}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero .what{display:flex;gap:10px;margin-top:40px;flex-wrap:wrap}
+.hero .what span{font:600 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:#d0d0d0;border:1px solid var(--line);border-radius:999px;padding:10px 14px}
+.creature{position:relative;margin:0;justify-self:end;width:100%;max-width:460px}
+.creature .frame{border-radius:28px;overflow:hidden;background:#e9e8e6;box-shadow:0 30px 60px -30px rgba(0,0,0,.8),0 0 0 1px rgba(255,255,255,.06)}
+.creature img{width:100%;aspect-ratio:1125/1302;object-fit:cover}
+.creature figcaption{position:absolute;left:18px;bottom:18px;background:rgba(27,27,27,.88);color:var(--white);font:600 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;padding:11px 14px;border-radius:999px}
+.creature figcaption i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--red);margin-right:8px;vertical-align:1px}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-1.2deg)}50%{transform:translateY(-10px) rotate(.6deg)}}
+.creature.play .frame{animation:bob 7s ease-in-out infinite}
+
+/* clients strip */
+.clients{border-top:1px solid #2e2e2e;border-bottom:1px solid #2e2e2e;padding:22px 0;overflow:hidden;display:flex;align-items:center;gap:28px}
+.clients .label{flex:none;padding-left:max(24px,calc((100vw - var(--wrap))/2 + 24px));white-space:nowrap}
+.track{overflow:hidden;flex:1;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.track ul{display:flex;gap:40px;margin:0;padding:0;list-style:none;width:max-content}
+.track li{font:700 22px/1 var(--head);letter-spacing:-.01em;color:#e6e6e6;white-space:nowrap;display:flex;align-items:center;gap:40px}
+.track li::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--red)}
+@keyframes slide{to{transform:translateX(-50%)}}
+.track.play ul{animation:slide 60s linear infinite}
+
+/* section heads */
+section{scroll-margin-top:80px}
+.sec{padding:110px 0}
+.head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:44px}
+.head h2{font-size:clamp(38px,5vw,64px)}
+.head p{margin:0;color:#c9c9c9;max-width:36ch}
+
+/* featured work */
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.tile{margin:0;grid-column:span 6}
+.tile.w7{grid-column:span 7}.tile.w5{grid-column:span 5}
+.tile .ph{border-radius:var(--r);overflow:hidden;background:var(--ink-3);aspect-ratio:16/9}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.tile:hover img{transform:scale(1.025)}
+.tile.cap576{max-width:576px}
+.tile.cap576.right{justify-self:end}
+.tile a{display:block;text-decoration:none;border-radius:var(--r)}
+.tile .cap{display:flex;justify-content:space-between;gap:16px;margin:0;padding:14px 2px 0;font-size:15px}
+.tile .cap b{font-weight:600}
+.tile .cap span{color:var(--mute)}
+.tile a:hover .cap b{color:var(--red)}
+
+/* index */
+.index{margin-top:80px}
+.index h3{font-size:28px;letter-spacing:-.02em;margin-bottom:6px}
+.index .intro{color:var(--mute);margin:0 0 26px}
+.rows{list-style:none;margin:0;padding:0;border-top:1px solid var(--line);columns:2;column-gap:48px}
+.rows li{break-inside:avoid;border-bottom:1px solid #2f2f2f}
+.rows a{display:grid;grid-template-columns:34px 1fr auto;gap:12px;align-items:baseline;padding:15px 4px 15px 0;min-height:44px;text-decoration:none;transition:background .2s,padding .2s}
+.rows a:hover{background:#222;padding-left:8px}
+.rows a:hover .t b{color:var(--red)}
+.rows .n{font:500 12px/1 var(--body);color:#8f8f8f;font-variant-numeric:tabular-nums}
+.rows .t{font-size:16px}
+.rows .t b{font-weight:600}
+.rows .t span{color:#bdbdbd}
+.rows .go{color:#8f8f8f;font-size:14px}
+.rows a:hover .go{color:var(--white)}
+.tag{font:600 11px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--red);border:1px solid #5a2a33;border-radius:999px;padding:6px 9px;white-space:nowrap}
+.more{margin-top:32px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.more .toggle{display:none}
+
+/* brief starter */
+.brief{background:var(--ink-2);border-top:1px solid #2e2e2e;border-bottom:1px solid #2e2e2e}
+.bgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.panel{background:var(--ink);border:1px solid #333;border-radius:20px;padding:30px}
+.step{display:flex;align-items:center;gap:12px;margin:0 0 18px;font:600 12px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:#d0d0d0}
+.step i{font-style:normal;display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--red-btn);color:var(--white);letter-spacing:0;font-size:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;border:0;margin:0;padding:0}
+.chips legend{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.chips label{position:relative}
+.chips input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.chips span{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;border:1.5px solid #4a4a4a;font-size:15px;font-weight:500;color:#e2e2e2;transition:background .2s,border-color .2s,color .2s;cursor:pointer}
+.chips input:checked+span{background:var(--white);border-color:var(--white);color:var(--ink)}
+.chips input:focus-visible+span{outline:3px solid var(--red);outline-offset:3px}
+.match{margin-top:28px;border-top:1px solid #333;padding-top:24px}
+.match h3{font:600 15px/1.4 var(--body);letter-spacing:0;color:#d6d6d6;margin:0 0 14px}
+.match h3 b{color:var(--white)}
+.mgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mgrid[hidden],.mlist[hidden]{display:none}
+.mcard{display:block;text-decoration:none;border-radius:12px;overflow:hidden;background:var(--ink-3);border:1px solid #363636;transition:border-color .2s}
+.mcard:hover{border-color:#6a6a6a}
+.mcard img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.mcap{display:block;padding:10px 12px;font-size:14px}
+.mcap b{font-weight:600}
+.mcap span{color:#bdbdbd}
+.mlist{list-style:none;margin:12px 0 0;padding:0;border-top:1px solid #333}
+.mgrid[hidden]+.mlist{margin-top:0}
+.mlist a{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:48px;padding:10px 2px;border-bottom:1px solid #333;text-decoration:none;font-size:15px}
+.mlist a b{font-weight:600}
+.mlist a span span{color:#bdbdbd}
+.mlist .go{flex:none;font:600 11px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
+.mlist a:hover b{color:var(--red)}
+form{display:grid;gap:14px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field label{display:block;font-size:13px;font-weight:600;color:#d6d6d6;margin-bottom:7px}
+.field input,.field select,.field textarea{width:100%;min-height:48px;background:#151515;border:1.5px solid #404040;border-radius:10px;color:var(--white);font:400 16px/1.4 var(--body);padding:12px 14px}
+.field textarea{min-height:96px;resize:vertical}
+.field select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%23ddd' stroke-width='1.6'%3E%3Cpath d='M1 1l5 5 5-5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:38px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--white)}
+.field input::placeholder,.field textarea::placeholder{color:#8a8a8a}
+.letter{background:var(--paper);color:var(--ink);border-radius:14px;padding:20px 22px;font-size:15px;line-height:1.6}
+.letter .to{font:600 11px/1.4 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--mute-2);padding-bottom:12px;margin-bottom:12px;border-bottom:1px solid #dcd8cf;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.letter p{margin:0}
+.letter em{font-style:normal;color:var(--red-dark);font-weight:600}
+.letter .blank{color:#6a6863;font-style:italic}
+.sent{display:none;background:#14281b;border:1px solid #2f6b44;color:#d9f2e1;border-radius:10px;padding:14px 16px;font-weight:500}
+.sent.show{display:block}
+
+/* studio */
+.studio{background:var(--paper);color:var(--ink)}
+.studio .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.studio .label{color:var(--mute-2)}
+.studio h2{font-size:clamp(52px,7vw,92px);margin:16px 0 26px;letter-spacing:-.04em}
+.studio p.big{font-size:21px;line-height:1.5;margin:0 0 18px;max-width:34ch}
+.studio p{color:#3b3a37;margin:0;max-width:44ch}
+.ship{margin:0;background:var(--white);border-radius:24px;padding:24px;box-shadow:0 24px 50px -30px rgba(0,0,0,.35)}
+.ship img{width:100%;max-width:560px;margin:0 auto}
+@keyframes hover{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.ship.play img{animation:hover 5s ease-in-out infinite}
+
+/* answers */
+.qa{display:grid;grid-template-columns:repeat(2,1fr);gap:0 48px;border-top:1px solid var(--line)}
+.qa div{padding:26px 0;border-bottom:1px solid #2f2f2f}
+.qa h3{font:700 21px/1.25 var(--head);letter-spacing:-.01em;margin:0 0 8px}
+.qa p{margin:0;color:#c9c9c9}
+.qa a{color:var(--white);text-underline-offset:4px}
+
+/* closing */
+.end{padding:120px 0 110px;text-align:center;border-top:1px solid #2e2e2e}
+.end h2{font-size:clamp(48px,8vw,108px);letter-spacing:-.045em;line-height:.94}
+.end .mail{display:inline-block;margin:34px 0 10px;font:700 clamp(22px,3vw,34px)/1.2 var(--head);color:var(--white);text-decoration:none;border-bottom:2px solid var(--red);padding-bottom:4px}
+.end .tel{display:block;width:max-content;margin:0 auto;color:#d0d0d0;font-size:18px;text-decoration:none;padding:12px}
+.end .clock{color:var(--mute);font-size:14px;margin:4px 0 34px}
+.end .actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+
+footer{border-top:1px solid #2e2e2e;padding:40px 0 48px;color:#b5b5b5;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer .links{display:flex;gap:6px;flex-wrap:wrap}
+footer .links a{text-decoration:none;padding:12px 10px;display:inline-block}
+footer .links a:hover{color:var(--white)}
+footer .made{width:100%;color:#a0a0a0;font-size:13px;margin-top:6px}
+footer .made a{color:#d0d0d0}
+
+/* phone call bar */
+.callbar{display:none}
+
+/* rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:900px){
+  .hero .wrap,.bgrid,.studio .wrap{grid-template-columns:1fr}
+  .creature{justify-self:start;max-width:420px}
+  .grid{grid-template-columns:1fr 1fr;gap:16px}
+  .tile,.tile.w7,.tile.w5{grid-column:span 1}
+  .rows{columns:1}
+  .qa{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:76px}
+  .wrap{padding:0 20px}
+  .mock{font-size:12px;padding:10px 12px}
+  .top .wrap{height:64px}
+  .brand img{height:36px}
+  .nav a:not(.pill){display:none}
+  .nav a.pill{padding:13px 16px;margin:0;letter-spacing:.12em}
+  .hero{padding:40px 0 40px}
+  .hero .wrap{gap:36px}
+  .hero h1{font-size:50px}
+  .hero .sub{font-size:18px;margin:20px 0 28px}
+  .hero .actions .btn{flex:1 1 auto}
+  .hero .what{margin-top:28px}
+  .creature{max-width:100%}
+  .creature img{aspect-ratio:1/1;object-position:50% 62%}
+  .clients{flex-direction:column;align-items:flex-start;gap:14px;padding:20px 0}
+  .clients .label{padding-left:20px}
+  .track{width:100%}
+  .track li{font-size:19px}
+  .sec{padding:76px 0}
+  .head{flex-direction:column;align-items:flex-start;margin-bottom:30px;gap:14px}
+  .grid{grid-template-columns:1fr}
+  .tile.cap576{max-width:none}
+  .tile figcaption{font-size:14px}
+  .index{margin-top:56px}
+  .index .intro{margin-bottom:18px}
+  .rows a{grid-template-columns:26px 1fr auto;gap:10px;padding:12px 2px 12px 0;align-items:center}
+  .rows .t{font-size:15px;line-height:1.35}
+  .rows .tag{font-size:10px;letter-spacing:.08em;padding:5px 7px}
+  .rows.short li:nth-child(n+9){display:none}
+  .more{margin-top:24px}
+  .more .toggle:not([hidden]){display:inline-flex;width:100%}
+  .more .btn{flex:1 1 auto}
+  .panel{padding:22px 18px;border-radius:16px}
+  .row2{grid-template-columns:1fr}
+  .studio .wrap{gap:40px}
+  .studio p.big{font-size:19px}
+  .ship{padding:14px;border-radius:18px}
+  .end{padding:84px 0 80px}
+  .end .actions .btn{width:100%}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:35;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(20,20,20,.96);border-top:1px solid #333;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+  .callbar a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:999px;font:600 13px/1 var(--body);letter-spacing:.1em;text-transform:uppercase;text-decoration:none}
+  .callbar svg{width:15px;height:15px}
+  .callbar .c1{border:1.5px solid #d8d8d8;color:var(--white)}
+  .callbar .c2{background:var(--red-btn);color:var(--white)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body id="top">
+<div class="mock" role="note"><i aria-hidden="true"></i>Free mockup for <b>Criatura Estudio</b></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top" id="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Criatura Estudio, back to top">
+      <img src="https://images.squarespace-cdn.com/content/v1/5c9e47f27980b33ca54d8fbc/7009a453-75cc-4392-9377-3ee0c3ba2596/logo.fw.png" alt="Criatura Estudio">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#studio">Studio</a>
+      <a class="pill" href="#brief">Start a project</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <h1 id="h1"><span>Ideas into</span><span>striking</span><span class="red">visual stories.</span></h1>
+        <p class="sub">Design, VFX and animation for brands, agencies and artists worldwide.</p>
+        <div class="actions">
+          <a class="btn btn-red" href="#brief">Start a project <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 12L12 2M4.5 2H12v7.5"/></svg></a>
+          <a class="btn btn-line" href="#work">See the work</a>
+        </div>
+        <div class="what" aria-label="What the studio does"><span>Design</span><span>VFX</span><span>Animation</span></div>
+      </div>
+      <figure class="creature" id="creature">
+        <div class="frame"><img src="https://images.squarespace-cdn.com/content/v1/5c9e47f27980b33ca54d8fbc/1610567294987-L52GP35OZL1V71VB1IRL/iphone+wallpaper+mobile+fallback.jpg?format=1500w" width="1125" height="1302" alt="Criatura's mascot, a one-eyed red octopus"></div>
+        <figcaption><i aria-hidden="true"></i>Meet the Criatura</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="clients" aria-label="Made for">
+    <p class="label" style="margin:0">Made for</p>
+    <div class="track" id="track">
+      <ul>
+        <li>Mondelez</li><li>Samsung</li><li>Twitch</li><li>Natura</li><li>Banco do Brasil</li><li>Hotmart</li><li>Localiza</li><li>iFood</li><li>VIVO</li><li>Bob's</li><li>Philco</li><li>Skol Beats</li><li>Lojas Americanas</li><li>Inter</li><li>Chamyto</li><li>Sesi Lab</li><li>Raimundos</li><li>Diogo Defante</li><li>Tial</li><li>Strass</li><li>Wals</li><li>Surf Junkie Club</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="sec" id="work" aria-labelledby="work-h">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="work-h">Selected work</h2>
+        <p>Characters, packshots, campaigns and films for brands and artists.</p>
+      </div>
+      <div class="grid">
+        <figure class="tile w7"><a href="https://acriatura.com/diogo-defante-humanoide">
+          <div class="ph"><img loading="lazy" src="https://images.squarespace-cdn.com/content/v1/5c9e47f27980b33ca54d8fbc/1789594632907-27QIAVJVNKOWWIM3TC5K/image-asset.gif?format=750w" width="750" height="422" alt="Diogo Defante, Humanoide: key art with faces breaking through shattered glass"></div>
+          <p class="cap"><b>Diogo Defante</b><span>Humanoide</span></p></a>
+        </figure>
+        <figure class="tile w5"><a href="https://acriatura.com/hotmart-fire-2026">
+          <div class="ph"><img loading="lazy" src="https://images.squarespace-cdn.com/content/v1/5c9e47f27980b33ca54d8fbc/1790001143012-69J8UJPPJQQ2NGU8UU3N/image-asset.gif?format=750w" width="750" height="422" alt="Hotmart Fire 2026 intro: an orange rocket blasting through space"></div>
+          <p class="cap"><b>Hotmart</b><span>Fire 2026 Intro</span></p></a>
+        </figure>
+        <figure class="tile w5"><a href="https://acriatura.com/localiza-simplifica">
+          <div class="ph"><img loading="lazy" src="https://images.squarespace-cdn.com/content/v1/5c9e47f27980b33ca54d8fbc/1790001648165-EE0XHSKQ8IG3NSVH6LU3/image-asset.gif?format=750w" width="750" height="422" alt="Localiza, Simplifica e Vai: a car driving a stylised road past Rio landmarks"></div>
+          <p class="cap"><b>Localiza</b><span>Simplifica e Vai</span></p></a>
+        </figure>
+        <figure class="tile w7"><a href="https://acriatura.com/mondelez-liz">
+          <div class="ph"><img loading="lazy" src="https://images.squarespace-cdn.com/content/v1/5c9e47f27980b33ca54d8fbc/1778515717740-BPZFW306DC1DL2Y7GBIV/image-asset.gif?format=750w" width="750" height="422" alt="Mondelez, Liz: a smiling 3D character on a violet background"></div>
+          <p class="cap"><b>Mondelez</b><span>Liz (3D Character)</span></p></a>
+        </figure>
+        <figure class="tile cap576"><a href="https://acriatura.com/bobs-orgulho-de-ser-cria-do-rio">
+          <div class="ph"><img loading="lazy" src="https://images.squarespace-cdn.com/content/v1/5c9e47f27980b33ca54d8fbc/1701208622768-JZQ3W9O30R1RUK424WLE/KV_BOBS_ORGULHO%2BDE%2BSER%2BCRIA%2BDO%2BRIO_VERTICAL%2Bcopy.jpg?format=750w" width="576" height="324" alt="Bob's campaign key visual: a burger and shake on a Rio beach at sunset"></div>
+          <p class="cap"><b>Bob's</b><span>Orgulho de Ser Cria do Rio</span></p></a>
+        </figure>
+        <figure class="tile cap576 right"><a href="https://acriatura.com/chamyto">
+          <div class="ph"><img loading="lazy" src="https://images.squarespace-cdn.com/content/v1/5c9e47f27980b33ca54d8fbc/1701208792987-H26LZE0WX2TZAHCKHLLQ/image-asset.gif?format=750w" width="576" height="324" alt="Chamyto 3D character film: a pack of Chamyto on a kitchen table"></div>
+          <p class="cap"><b>Chamyto</b><span>3D Character</span></p></a>
+        </figure>
+      </div>
+
+      <div class="index">
+        <h3>Every project, at a glance</h3>
+        <p class="intro">23 projects from the studio's site, from 3D packshots to a documentary.</p>
+        <ol class="rows" id="rows">
+          <li><a href="https://acriatura.com/diogo-defante-humanoide"><span class="n">01</span><span class="t"><b>Diogo Defante</b> <span>Humanoide</span></span><span class="go" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://acriatura.com/hotmart-fire-2026"><span class="n">02</span><span class="t"><b>Hotmart</b> <span>Fire 2026 Intro</span></span><span class="go" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://acriatura.com/localiza-simplifica"><span class="n">03</span><span class="t"><b>Localiza</b> <span>Simplifica e Vai</span></span><span class="go" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://acriatura.com/mondelez-liz"><span class="n">04</span><span class="t"><b>Mondelez</b> <span>Liz</span></span><span class="tag">3D character</span></a></li>
+          <li><a href="https://acriatura.com/bobs-orgulho-de-ser-cria-do-rio"><span class="n">05</span><span class="t"><b>Bob's</b> <span>Orgulho de Ser Cria do Rio</span></span><span class="go" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://acriatura.com/chamyto"><span class="n">06</span><span class="t"><b>Chamyto</b></span><span class="tag">3D character</span></a></li>
+          <li><a href="https://acriatura.com/philco"><span class="n">07</span><span class="t"><b>Philco</b> <span>Nova linha de TVs</span></span><span class="go" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://acriatura.com/natura-packshot-1"><span class="n">08</span><span class="t"><b>Natura</b></span><span class="tag">3D packshot</span></a></li>
+          <li><a href="https://acriatura.com/vivo-fibra"><span class="n">09</span><span class="t"><b>VIVO</b></span><span class="tag">3D ASMR</span></a></li>
+          <li><a href="https://acriatura.com/clube-ifood"><span class="n">10</span><span class="t"><b>iFood</b> <span>Caio Castro</span></span><span class="go" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://acriatura.com/andar-na-pedra-a-historia-dos-raimundos"><span class="n">11</span><span class="t"><b>Raimundos</b> <span>Andar na Pedra</span></span><span class="tag">Documentary</span></a></li>
+          <li><a href="https://acriatura.com/tial"><span class="n">12</span><span class="t"><b>Tial</b></span><span class="tag">3D packshot</span></a></li>
+          <li><a href="https://acriatura.com/strass-packshot"><span class="n">13</span><span class="t"><b>Strass</b></span><span class="tag">3D packshot</span></a></li>
+          <li><a href="https://acriatura.com/americanas-95-anos"><span class="n">14</span><span class="t"><b>Lojas Americanas</b> <span>Aniversário</span></span><span class="go" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://acriatura.com/sesi-lab"><span class="n">15</span><span class="t"><b>Sesi Lab</b></span><span class="tag">2D animation</span></a></li>
+          <li><a href="https://acriatura.com/samsung-box-absurdo"><span class="n">16</span><span class="t"><b>Samsung</b> <span>Galaxy A</span></span><span class="go" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://acriatura.com/inter-cartao-win"><span class="n">17</span><span class="t"><b>Inter</b> <span>Cartão</span></span><span class="go" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://acriatura.com/wals-lagoinha"><span class="n">18</span><span class="t"><b>Wals</b> <span>Copo Lagoinha</span></span><span class="go" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://acriatura.com/beats"><span class="n">19</span><span class="t"><b>Skol Beats</b> <span>Anita</span></span><span class="go" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://acriatura.com/bb-amigos-imaginarios"><span class="n">20</span><span class="t"><b>Banco do Brasil</b> <span>Amigos Imaginários</span></span><span class="go" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://acriatura.com/orakh"><span class="n">21</span><span class="t"><b>Twitch</b> <span>Orakh</span></span><span class="go" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://acriatura.com/criatura-concept-1"><span class="n">22</span><span class="t"><b>Criatura</b> <span>Reel '26</span></span><span class="go" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://acriatura.com/surf-junkie-club"><span class="n">23</span><span class="t"><b>Surf Junkie Club</b></span><span class="go" aria-hidden="true">↗</span></a></li>
+        </ol>
+        <div class="more">
+          <button class="btn btn-line toggle" type="button" id="showall" hidden aria-controls="rows" aria-expanded="false">Show all 23</button>
+          <a class="btn btn-red" href="https://acriatura.com/">Watch every film <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 12L12 2M4.5 2H12v7.5"/></svg></a>
+          <a class="btn btn-line" href="https://acriatura.com/criatura-concept-1">Watch Reel '26</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec brief" id="brief" aria-labelledby="brief-h">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="brief-h">Start a project</h2>
+        <p>Pick what you need. See real Criatura films to point to, then send a short brief.</p>
+      </div>
+      <div class="bgrid">
+        <div class="panel">
+          <p class="step"><i>1</i>What do you need?</p>
+          <fieldset class="chips" id="chips">
+            <legend>What do you need?</legend>
+            <label><input type="radio" name="need" value="char" checked><span>Characters</span></label>
+            <label><input type="radio" name="need" value="pack"><span>3D packshot</span></label>
+            <label><input type="radio" name="need" value="asmr"><span>3D ASMR</span></label>
+            <label><input type="radio" name="need" value="2d"><span>2D animation</span></label>
+            <label><input type="radio" name="need" value="doc"><span>Documentary</span></label>
+            <label><input type="radio" name="need" value="vfx"><span>VFX</span></label>
+            <label><input type="radio" name="need" value="design"><span>Design</span></label>
+            <label><input type="radio" name="need" value="other"><span>Something else</span></label>
+          </fieldset>
+          <div class="match" aria-live="polite">
+            <h3 id="match-h">For example:</h3>
+            <div class="mgrid" id="mgrid">
+              <a class="mcard" href="https://acriatura.com/mondelez-liz"><img src="https://images.squarespace-cdn.com/content/v1/5c9e47f27980b33ca54d8fbc/1778515717740-BPZFW306DC1DL2Y7GBIV/image-asset.gif?format=750w" width="750" height="422" alt="Mondelez, Liz (3D Character)"><span class="mcap"><b>Mondelez</b> <span>Liz (3D Character)</span></span></a>
+              <a class="mcard" href="https://acriatura.com/chamyto"><img src="https://images.squarespace-cdn.com/content/v1/5c9e47f27980b33ca54d8fbc/1701208792987-H26LZE0WX2TZAHCKHLLQ/image-asset.gif?format=750w" width="576" height="324" alt="Chamyto, 3D Character"><span class="mcap"><b>Chamyto</b> <span>3D Character</span></span></a>
+            </div>
+            <ul class="mlist" id="mlist">
+              <li><a href="https://acriatura.com/bb-amigos-imaginarios"><span><b>Banco do Brasil</b> <span>Amigos Imaginários</span></span><span class="go" aria-hidden="true">Watch ↗</span></a></li>
+              <li><a href="https://acriatura.com/orakh"><span><b>Twitch</b> <span>Orakh</span></span><span class="go" aria-hidden="true">Watch ↗</span></a></li>
+              <li><a href="https://acriatura.com/sesi-lab"><span><b>Sesi Lab</b> <span>2D Animation</span></span><span class="go" aria-hidden="true">Watch ↗</span></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="panel">
+          <p class="step"><i>2</i>Tell the studio about it</p>
+          <form id="form" novalidate>
+            <div class="row2">
+              <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" placeholder="Ana Souza"></div>
+              <div class="field"><label for="f-co">Brand or agency</label><input id="f-co" name="company" autocomplete="organization" placeholder="Company"></div>
+            </div>
+            <div class="row2">
+              <div class="field"><label for="f-mail">Email</label><input id="f-mail" name="email" type="email" autocomplete="email" placeholder="you@company.com"></div>
+              <div class="field"><label for="f-when">When do you need it?</label>
+                <select id="f-when" name="when">
+                  <option value="">Not sure yet</option>
+                  <option>Within a month</option>
+                  <option>In 1 to 3 months</option>
+                  <option>Later this year</option>
+                </select>
+              </div>
+            </div>
+            <div class="field"><label for="f-msg">The idea, in a few lines</label><textarea id="f-msg" name="msg" placeholder="What it's for, where it will run, any references."></textarea></div>
+            <div class="letter" aria-live="polite">
+              <div class="to"><span>To: contato@acriatura.com</span><span id="l-subj">New project: Characters</span></div>
+              <p id="letter">Hi Criatura, I'm <span class="blank">your name</span> from <span class="blank">your company</span>. We're looking for <em>a character</em>, timing not fixed yet.</p>
+            </div>
+            <button class="btn btn-red" type="submit">Send the brief <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 12L12 2M4.5 2H12v7.5"/></svg></button>
+            <p class="sent" id="sent" role="status">Thanks. This is a mockup, so nothing was sent.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec studio" id="studio" aria-labelledby="studio-h">
+    <div class="wrap">
+      <div>
+        <p class="label">About the studio</p>
+        <h2 id="studio-h">Welcome.</h2>
+        <p class="big">We specialize in creating and developing mixed media content for international brands, agencies, and artists.</p>
+        <p>Our mission is to help our clients better understand and communicate with their audiences, all while delivering high standards of creativity, inspiration, and visual imagery.</p>
+      </div>
+      <figure class="ship" id="ship">
+        <img loading="lazy" src="https://images.squarespace-cdn.com/content/5c9e47f27980b33ca54d8fbc/1edf037e-0610-4af5-b7da-5f5da29babc2/criatura-nave.webp?content-type=image%2Fwebp" width="881" height="503" alt="The Criatura octopus piloting a small chrome spaceship">
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec" id="answers" aria-labelledby="qa-h">
+    <div class="wrap">
+      <div class="head"><h2 id="qa-h">Quick answers</h2></div>
+      <div class="qa">
+        <div><h3>What does Criatura make?</h3><p>Design, VFX and animation: audiovisual content from 3D characters and packshots to 2D animation and documentary.</p></div>
+        <div><h3>Who do you work with?</h3><p>Brands, agencies and artists worldwide, from Mondelez and Samsung to Twitch and Banco do Brasil.</p></div>
+        <div><h3>Where can I see the reel?</h3><p>Criatura's <a href="https://acriatura.com/criatura-concept-1">Reel '26</a> is on acriatura.com, next to every film.</p></div>
+        <div><h3>How do I start?</h3><p>Send a brief <a href="#brief">above</a>, email <a href="mailto:contato@acriatura.com">contato@acriatura.com</a> or call <a href="tel:+5531984216166">+55 31 98421-6166</a>.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="end" id="contact" aria-labelledby="end-h">
+    <div class="wrap">
+      <p class="label" style="margin:0 0 20px">Let's create together</p>
+      <h2 id="end-h">Got an idea?<br><span class="red">Let's make it move.</span></h2>
+      <a class="mail" href="mailto:contato@acriatura.com">contato@acriatura.com</a>
+      <a class="tel" href="tel:+5531984216166">+55 31 98421-6166</a>
+      <p class="clock" id="clock">Studio phone in Brazil (UTC−3)</p>
+      <div class="actions">
+        <a class="btn btn-red" href="#brief">Start a project <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 12L12 2M4.5 2H12v7.5"/></svg></a>
+        <a class="btn btn-line" href="tel:+5531984216166">Call the studio</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Criatura Studio LTDA</span>
+    <nav class="links" aria-label="Contact and social">
+      <a href="tel:+5531984216166">+55 31 98421-6166</a>
+      <a href="mailto:contato@acriatura.com">contato@acriatura.com</a>
+      <a href="https://www.instagram.com/criaturaestudio/">Instagram</a>
+      <a href="https://www.linkedin.com/company/76809205">LinkedIn</a>
+    </nav>
+    <p class="made">Mockup made for Criatura Estudio by Sunny Gupta, <a href="https://signalsetbase.com">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick contact">
+  <a class="c1" href="tel:+5531984216166"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 006 6L16 13l5 2v4a2 2 0 01-2 2A17 17 0 013 5a2 2 0 012-2"/></svg>Call</a>
+  <a class="c2" href="#brief">Start a project</a>
+</div>
+
+<script>
+(function(){
+  var S='https://images.squarespace-cdn.com/content/v1/5c9e47f27980b33ca54d8fbc/',W='https://acriatura.com/';
+  /* client, title, page, image */
+  var P={
+    defante:['Diogo Defante','Humanoide','diogo-defante-humanoide',S+'1789594632907-27QIAVJVNKOWWIM3TC5K/image-asset.gif?format=750w'],
+    hotmart:['Hotmart','Fire 2026 Intro','hotmart-fire-2026',S+'1790001143012-69J8UJPPJQQ2NGU8UU3N/image-asset.gif?format=750w'],
+    liz:['Mondelez','Liz (3D Character)','mondelez-liz',S+'1778515717740-BPZFW306DC1DL2Y7GBIV/image-asset.gif?format=750w'],
+    chamyto:['Chamyto','3D Character','chamyto',S+'1701208792987-H26LZE0WX2TZAHCKHLLQ/image-asset.gif?format=750w'],
+    natura:['Natura','Packshot 3D','natura-packshot-1'],
+    tial:['Tial','3D Packshot','tial'],
+    strass:['Strass','3D Packshot','strass-packshot'],
+    vivo:['VIVO','3D ASMR','vivo-fibra'],
+    raimundos:['Raimundos','Andar na Pedra (documentário)','andar-na-pedra-a-historia-dos-raimundos'],
+    sesi:['Sesi Lab','2D Animation','sesi-lab'],
+    bb:['Banco do Brasil','Amigos Imaginários','bb-amigos-imaginarios'],
+    twitch:['Twitch','Orakh','orakh'],
+    samsung:['Samsung','Galaxy A','samsung-box-absurdo'],
+    reel:['Criatura',"Reel '26",'criatura-concept-1']
+  };
+  var RANGE=['defante','hotmart','samsung','twitch','reel'];
+  var GROUP={char:['liz','chamyto','bb','twitch','sesi'],pack:['natura','tial','strass'],asmr:['vivo'],"2d":['sesi'],doc:['raimundos'],vfx:RANGE,design:RANGE,other:RANGE};
+  var NEED={char:'a character',pack:'a 3D packshot',asmr:'a 3D ASMR film',"2d":'2D animation',doc:'a documentary',vfx:'VFX',design:'design',other:'something new'};
+  var LABEL={char:'Characters',pack:'3D packshot',asmr:'3D ASMR',"2d":'2D animation',doc:'Documentary',vfx:'VFX',design:'Design',other:'Something else'};
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+
+  /* brief starter */
+  var mgrid=document.getElementById('mgrid'),mlist=document.getElementById('mlist'),mh=document.getElementById('match-h');
+  var f=document.getElementById('form'),letter=document.getElementById('letter'),subj=document.getElementById('l-subj');
+  function need(){var c=document.querySelector('input[name=need]:checked');return c?c.value:'char'}
+  function renderMatch(){
+    var k=need(),list=GROUP[k].map(function(id){return P[id]});
+    mh.innerHTML=(k==='vfx'||k==='design')?'<b>'+LABEL[k]+'</b> is one of the three things Criatura makes. A taste of the range:'
+      :k==='other'?'Tell the studio what you have in mind. A taste of the range:':'For example:';
+    var pics=list.filter(function(p){return p[3]}),rest=list.filter(function(p){return !p[3]});
+    mgrid.innerHTML=pics.map(function(p){
+      return '<a class="mcard" href="'+W+p[2]+'"><img src="'+p[3]+'" alt="'+esc(p[0]+', '+p[1])+'"><span class="mcap"><b>'+esc(p[0])+'</b> <span>'+esc(p[1])+'</span></span></a>';
+    }).join('');
+    mgrid.hidden=!pics.length;
+    mlist.innerHTML=rest.map(function(p){
+      return '<li><a href="'+W+p[2]+'"><span><b>'+esc(p[0])+'</b> <span>'+esc(p[1])+'</span></span><span class="go" aria-hidden="true">Watch ↗</span></a></li>';
+    }).join('');
+    mlist.hidden=!rest.length;
+  }
+  function blank(v,t){return v?esc(v):'<span class="blank">'+t+'</span>'}
+  function renderLetter(){
+    var k=need(),n=f.name.value.trim(),c=f.company.value.trim(),w=f.when.value,m=f.msg.value.trim();
+    subj.textContent='New project: '+LABEL[k];
+    letter.innerHTML='Hi Criatura, I\'m '+blank(n,'your name')+' from '+blank(c,'your company')+'. We\'re looking for <em>'+NEED[k]+'</em>, '+(w?'needed '+esc(w.charAt(0).toLowerCase()+w.slice(1)):'timing not fixed yet')+'.'+(m?' '+esc(m):'');
+  }
+  document.getElementById('chips').addEventListener('change',function(){renderMatch();renderLetter()});
+  f.addEventListener('input',renderLetter);
+  f.addEventListener('change',renderLetter);
+  f.addEventListener('submit',function(e){e.preventDefault();document.getElementById('sent').classList.add('show')});
+  renderMatch();renderLetter();
+
+  /* project index: 8 rows on phones, the rest one tap away */
+  var rows=document.getElementById('rows'),all=document.getElementById('showall');
+  rows.classList.add('short');all.hidden=false;
+  all.addEventListener('click',function(){
+    var open=rows.classList.toggle('short')===false;
+    all.setAttribute('aria-expanded',open);
+    all.textContent=open?'Show fewer':'Show all 23';
+    if(!open)rows.scrollIntoView({block:'start'});
+  });
+
+  /* time in Brazil */
+  var clock=document.getElementById('clock');
+  function tick(){try{clock.textContent='It is '+new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',timeZone:'America/Sao_Paulo'})+' in Brazil right now'}catch(e){}}
+  tick();setInterval(tick,30000);
+
+  /* header line */
+  var top=document.getElementById('topbar');
+  addEventListener('scroll',function(){top.classList.toggle('scrolled',scrollY>40)},{passive:true});
+
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!('IntersectionObserver' in window)) return;
+
+  /* motion that only plays while on screen */
+  var track=document.getElementById('track');
+  if(!reduce){var ul=track.querySelector('ul');ul.innerHTML+=ul.innerHTML.replace(/<li>/g,'<li aria-hidden="true">');}
+  var play=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle('play',e.isIntersecting&&!reduce)})});
+  [track,document.getElementById('creature'),document.getElementById('ship')].forEach(function(el){play.observe(el)});
+
+  /* gentle rise for things below the first screen */
+  if(reduce) return;
+  var els=document.querySelectorAll('.head,.tile,.index,.panel,.studio .wrap>*,.qa>div,.end .wrap');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(el){
+    if(el.getBoundingClientRect().top>innerHeight){el.classList.add('rise','will-rise');io.observe(el)}
+  });
+})();
+</script>
+</body>
+</html>
