@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup riverplacepress-com-c608e3 1 379f275a -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RiverPlace Press · Publishing made simple</title>
+<meta name="description" content="RiverPlace Press is a small, personal publisher with over 50 years of experience. Editing, design, printing and more. Your first consultation is free.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@1,8..60,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f7f2ea; --paper-2:#efe7db; --card:#fffdf9;
+  --ink:#2b2430; --ink-2:#564c58;
+  --plum:#5d4a62; --plum-deep:#3f3244; --plum-tile:#6b5a6e;
+  --tan:#a3826c; --tan-text:#7a5c48;
+  --rust:#9a4a22; --olive:#86a03a; --blue:#6f8fb3; --violet:#7b4796; --clay:#b4614c;
+  --rule:#ddd2c4;
+  --display:"Marcellus",Georgia,"Times New Roman",serif;
+  --sans:"Source Sans 3",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  --serif:"Source Serif 4",Georgia,serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 18px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.1;margin:0;letter-spacing:.005em}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.eyebrow{font:600 13px/1.2 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--tan-text);margin-bottom:18px;display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--tan);border-radius:2px}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:#fff;padding:10px 14px;z-index:20;border-radius:6px}
+.skip:focus{top:44px}
+
+/* mockup banner */
+.mock{background:var(--plum-deep);color:#f3ecef;text-align:center;font:600 13px/1.3 var(--sans);letter-spacing:.06em;padding:9px 16px;border-bottom:1px solid #2a2030}
+
+/* header */
+.top{border-bottom:1px solid var(--rule);background:var(--paper)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:84px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.brand img{width:34px;height:57px;border-radius:3px;box-shadow:0 1px 2px rgba(43,36,48,.25)}
+.brand span{font:400 23px/1 var(--display);letter-spacing:.06em;color:var(--plum-deep)}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{text-decoration:none;font-weight:600;font-size:15px;color:var(--ink-2);padding:12px 12px;border-radius:6px}
+.nav a:hover{color:var(--plum)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 26px;border-radius:999px;font:600 17px/1 var(--sans);text-decoration:none;border:2px solid var(--plum);background:var(--plum);color:#fff;cursor:pointer;transition:background .2s,transform .2s,box-shadow .2s}
+.btn:hover{background:var(--plum-deep);border-color:var(--plum-deep);transform:translateY(-1px);box-shadow:0 6px 18px rgba(63,50,68,.22)}
+.btn.ghost{background:transparent;color:var(--plum)}
+.btn.ghost:hover{background:var(--plum);color:#fff}
+.btn.small{min-height:44px;padding:0 18px;font-size:15px}
+.nav .btn{color:#fff;margin-left:8px}
+
+/* hero */
+.hero{padding:72px 0 88px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.hero h1{font-size:clamp(46px,6.4vw,84px);color:var(--plum-deep);margin-bottom:26px}
+.hero .lede{font-size:21px;line-height:1.55;color:var(--ink-2);max-width:31em;margin-bottom:34px}
+.hero .lede strong{color:var(--ink);font-weight:600}
+.actions{display:flex;flex-wrap:wrap;gap:14px}
+.pull{margin-top:48px;padding-top:24px;border-top:1px solid var(--rule);max-width:30em;display:flex;gap:16px;align-items:flex-start}
+.pull .mark{font:400 58px/0.8 var(--display);color:var(--tan)}
+.pull p{font:italic 19px/1.45 var(--serif);color:var(--ink)}
+.pull cite{display:block;margin-top:8px;font:600 14px/1.4 var(--sans);font-style:normal;color:var(--ink-2)}
+.shelf{position:relative;justify-self:center;width:100%;max-width:440px}
+.shelf::before{content:"";position:absolute;inset:22px -22px -22px 22px;background:var(--plum-tile);border-radius:6px;opacity:.16}
+.shelf img{position:relative;width:100%;border-radius:4px;box-shadow:0 2px 4px rgba(43,36,48,.08),0 24px 50px -18px rgba(43,36,48,.45)}
+.shelf figcaption{position:relative;margin-top:34px;font:italic 15px/1.4 var(--serif);color:var(--ink-2);text-align:center}
+
+/* promise band */
+.promise{position:relative;background:var(--plum);color:#f6eff2;padding:120px 0 104px}
+.promise .edge{position:absolute;left:0;top:-1px;width:100%;height:70px;display:block}
+.promise .eyebrow{color:#e6d6c9}
+.promise .eyebrow::before{background:#e6d6c9}
+.promise h2{font-size:clamp(36px,4.6vw,60px);max-width:14em;margin-bottom:28px;color:#fff}
+.promise .intro{font-size:20px;max-width:36em;color:#eadfe4}
+.vows{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:64px;border-top:1px solid rgba(255,255,255,.22)}
+.vow{padding:30px 34px 6px 0}
+.vow + .vow{padding-left:34px;border-left:1px solid rgba(255,255,255,.22)}
+.vow h3{font-size:25px;color:#fff;margin-bottom:12px}
+.vow p{color:#e3d8dd;font-size:17px}
+.vow .dot{display:block;width:12px;height:12px;border-radius:50%;margin-bottom:18px}
+
+/* planner */
+.plan{padding:120px 0}
+.plan-head{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:end;margin-bottom:56px}
+.plan-head h2{font-size:clamp(36px,4.4vw,56px);color:var(--plum-deep)}
+.plan-head p{font-size:19px;color:var(--ink-2);max-width:28em}
+.planner{display:grid;grid-template-columns:1fr 1.02fr;gap:48px;align-items:start}
+.planner fieldset{border:0;margin:0 0 36px;padding:0}
+.planner legend{font:400 24px/1.2 var(--display);color:var(--ink);margin-bottom:6px;padding:0}
+.planner .hint{font-size:15px;color:var(--ink-2);margin-bottom:18px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
+.chip span{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 18px;border:1.5px solid #cbbfb1;border-radius:999px;background:var(--card);font-weight:600;font-size:16px;color:var(--ink);cursor:pointer;transition:border-color .15s,background .15s,color .15s}
+.chip span::before{content:"";width:16px;height:16px;border-radius:50%;border:1.5px solid #a99b8c;flex:none;transition:all .15s}
+.chip input[type=checkbox] + span::before{border-radius:4px}
+.chip span:hover{border-color:var(--plum)}
+.chip input:checked + span{background:var(--plum);border-color:var(--plum);color:#fff}
+.chip input:checked + span::before{background:#fff;border-color:#fff;box-shadow:inset 0 0 0 3px var(--plum)}
+.chip input:focus-visible + span{outline:3px solid var(--blue);outline-offset:3px}
+
+.page{position:relative;background:var(--card);border-radius:4px 10px 10px 4px;padding:54px 52px 44px;box-shadow:0 1px 2px rgba(43,36,48,.06),0 30px 60px -30px rgba(43,36,48,.4);border-left:10px solid var(--plum-tile)}
+.page::after{content:"";position:absolute;top:0;bottom:0;left:0;width:18px;background:linear-gradient(90deg,rgba(43,36,48,.08),rgba(43,36,48,0))}
+.page .kicker{font:600 12px/1 var(--sans);letter-spacing:.28em;text-transform:uppercase;color:var(--tan-text);text-align:center}
+.page h3{font-size:34px;text-align:center;color:var(--plum-deep);margin:14px 0 6px}
+.page .for{text-align:center;font:italic 16px/1.4 var(--serif);color:var(--ink-2);margin-bottom:30px}
+.toc{list-style:none;margin:0;padding:0}
+.toc li{padding:14px 0;border-bottom:1px dotted #cdbfae;animation:none}
+.toc li:last-child{border-bottom:0}
+.toc .row{display:flex;align-items:baseline;gap:10px}
+.toc .bar{width:8px;height:8px;border-radius:50%;flex:none;transform:translateY(-2px)}
+.toc .t{font:400 20px/1.25 var(--display);color:var(--ink)}
+.toc .lead{flex:1;border-bottom:2px dotted #c9baa8;transform:translateY(-5px);min-width:20px}
+.toc .n{font:italic 17px/1 var(--serif);color:var(--tan-text);min-width:2.2em;text-align:right}
+.toc .d{margin:4px 0 0 18px;font-size:15.5px;line-height:1.45;color:var(--ink-2);max-width:32em}
+.toc li.new{animation:inkin .45s ease both}
+@keyframes inkin{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.page .foot{margin-top:24px;padding-top:20px;border-top:1px solid var(--rule);display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+.page .foot p{font-size:15px;color:var(--ink-2);max-width:20em}
+
+/* river */
+.river{padding:0 28px}
+.river-in{position:relative;max-width:1280px;margin:0 auto}
+.river img{width:100%;height:580px;object-fit:cover;border-radius:6px}
+.river .card{position:absolute;right:48px;bottom:-56px;max-width:470px;background:var(--card);padding:40px 42px;border-radius:6px;box-shadow:0 30px 60px -28px rgba(43,36,48,.45)}
+.river h2{font-size:clamp(30px,3.2vw,42px);color:var(--plum-deep);margin-bottom:16px}
+.river .card p{color:var(--ink-2);font-size:17px}
+.net{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;padding:0;list-style:none}
+.net li{font-size:14px;font-weight:600;color:var(--plum-deep);background:var(--paper-2);border-radius:999px;padding:7px 14px}
+
+/* voices */
+.voices{padding:180px 0 110px}
+.feature{display:grid;grid-template-columns:auto 1fr;gap:28px;max-width:980px;margin:0 auto 80px}
+.feature .mark{font:400 140px/0.75 var(--display);color:var(--tan)}
+.feature blockquote{margin:0}
+.feature p{font:italic clamp(24px,2.6vw,33px)/1.4 var(--serif);color:var(--ink)}
+.feature cite{display:block;margin-top:22px;font:600 16px/1.4 var(--sans);font-style:normal;color:var(--ink-2)}
+.feature cite i{font-family:var(--serif);font-weight:400}
+.voices h2{font-size:clamp(30px,3vw,40px);color:var(--plum-deep);margin-bottom:34px}
+.quotes{columns:2;column-gap:64px}
+.quotes figure{break-inside:avoid;margin:0 0 40px;padding-top:24px;border-top:1px solid var(--rule)}
+.quotes blockquote{margin:0;font:italic 18.5px/1.55 var(--serif);color:var(--ink)}
+.quotes figcaption{margin-top:12px;font-size:15px;font-weight:600;color:var(--ink-2)}
+.quotes figcaption i{font-family:var(--serif);font-weight:400}
+
+/* q&a */
+.qa{background:var(--paper-2);padding:110px 0}
+.qa-grid{display:grid;grid-template-columns:.8fr 1.6fr;gap:64px}
+.qa h2{font-size:clamp(36px,4vw,52px);color:var(--plum-deep)}
+.qa .side p{margin-top:18px;color:var(--ink-2);font-size:17px;max-width:18em}
+.qa dl{margin:0;display:grid;grid-template-columns:1fr 1fr;gap:38px 48px}
+.qa dt{font:400 22px/1.25 var(--display);color:var(--ink);margin-bottom:10px}
+.qa dd{margin:0;color:var(--ink-2);font-size:17px}
+
+/* contact */
+.contact{padding:120px 0}
+.contact .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+.contact h2{font-size:clamp(44px,5.4vw,72px);color:var(--plum-deep);margin-bottom:22px}
+.contact .lede{font-size:20px;color:var(--ink-2);max-width:24em}
+.direct{margin-top:36px;padding-top:26px;border-top:1px solid var(--rule)}
+.direct span{display:block;font-size:14px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--tan-text);margin-bottom:6px}
+.direct a{font:400 22px/1.4 var(--display);color:var(--plum);text-decoration-thickness:1px;text-underline-offset:5px;display:inline-block;padding:6px 0}
+form.ask{background:var(--card);padding:44px;border-radius:10px;box-shadow:0 1px 2px rgba(43,36,48,.06),0 30px 60px -32px rgba(43,36,48,.4)}
+.field{margin-bottom:20px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+label.l{display:block;font-weight:600;font-size:15px;margin-bottom:7px;color:var(--ink)}
+input.i,select.i,textarea.i{width:100%;font:400 17px/1.4 var(--sans);color:var(--ink);background:#fff;border:1.5px solid #cbbfb1;border-radius:8px;padding:12px 14px;min-height:50px}
+textarea.i{min-height:140px;resize:vertical}
+input.i:focus,select.i:focus,textarea.i:focus{border-color:var(--plum);outline:3px solid rgba(111,143,179,.5);outline-offset:1px}
+form.ask .btn{width:100%;margin-top:6px}
+.sent{margin-top:16px;font-weight:600;color:var(--plum);min-height:1.6em}
+
+/* footer */
+footer{background:var(--plum-deep);color:#e9dfe4;padding:64px 0 40px}
+.foot-grid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px;align-items:flex-start}
+.foot-brand{display:flex;gap:18px;align-items:center}
+.foot-brand img{width:46px;height:77px;border-radius:3px}
+.foot-brand b{display:block;font:400 24px/1.2 var(--display);letter-spacing:.05em;color:#fff;font-weight:400}
+.foot-brand small{font-size:15px;color:#d9ccd3}
+.foot-links{display:flex;flex-wrap:wrap;gap:6px 22px}
+.foot-links a{font-weight:600;font-size:16px;text-decoration:none;padding:10px 0;display:inline-block}
+.foot-links a:hover{text-decoration:underline}
+.credit{margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,255,255,.16);font-size:14px;color:#d4c6cd}
+
+/* phone bar */
+.callbar{display:none}
+
+/* rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise-ready{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:980px){
+  .nav a:not(.btn){display:none}
+  .hero .wrap,.plan-head,.planner,.qa-grid,.contact .wrap{grid-template-columns:1fr;gap:40px}
+  .vows{grid-template-columns:1fr}
+  .vow,.vow + .vow{padding:28px 0 22px;border-left:0}
+  .vow + .vow{border-top:1px solid rgba(255,255,255,.22)}
+  .river .card{position:relative;right:auto;bottom:auto;margin:-80px 20px 0;max-width:none}
+  .voices{padding-top:100px}
+}
+@media (max-width:720px){
+  body{font-size:17px;padding-bottom:72px}
+  .wrap{padding:0 20px}
+  .top .wrap{min-height:72px}
+  .brand img{width:28px;height:47px}
+  .brand span{font-size:19px}
+  .nav .btn{display:none}
+  .hero{padding:44px 0 64px}
+  .hero h1{font-size:46px;margin-bottom:20px}
+  .hero .lede{font-size:18.5px;margin-bottom:28px}
+  .actions .btn{flex:1 1 100%}
+  .pull{margin-top:36px}
+  .shelf{max-width:none}
+  .shelf::before{inset:14px -10px -14px 10px}
+  .shelf img{max-height:400px;width:100%;object-fit:cover;object-position:top}
+  .shelf figcaption{margin-top:26px}
+  .promise{padding:92px 0 72px}
+  .promise .edge{height:36px}
+  .promise .intro{font-size:18px}
+  .vows{margin-top:40px}
+  .plan{padding:84px 0}
+  .plan-head{margin-bottom:36px;gap:16px}
+  .page{padding:38px 22px 30px 26px;border-left-width:8px}
+  .page h3{font-size:28px}
+  .toc .t{font-size:18px}
+  .toc .d{margin-left:18px;font-size:15px}
+  .page .foot .btn{width:100%}
+  .river{padding:0}
+  .river img{height:320px;border-radius:0}
+  .river .card{margin:-60px 16px 0;padding:30px 24px}
+  .voices{padding:76px 0 70px}
+  .feature{grid-template-columns:1fr;gap:0;margin-bottom:56px}
+  .feature .mark{font-size:96px;height:56px}
+  .quotes{columns:1}
+  .qa{padding:80px 0}
+  .qa dl{grid-template-columns:1fr;gap:28px}
+  .contact{padding:84px 0}
+  form.ask{padding:28px 20px}
+  .pair{grid-template-columns:1fr;gap:0}
+  .callbar{display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:10;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(247,242,234,.96);border-top:1px solid var(--rule);box-shadow:0 -6px 20px rgba(43,36,48,.08)}
+  .callbar .btn{flex:1;min-height:48px;padding:0 14px;font-size:16px}
+  .callbar .btn.ghost{flex:0 0 auto}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Free mockup for RiverPlace Press</div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="RiverPlace Press, back to top">
+      <img src="https://images.squarespace-cdn.com/content/v1/5e29d9f1afc5412ab351342f/6499f3f0-af33-4575-8a06-2bd467c9bc44/RiverPlacePress+logo.jpg?format=1500w" alt="RiverPlace Press logo" width="34" height="57">
+      <span>RiverPlace Press</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#why">Why us</a>
+      <a href="#plan">Plan your book</a>
+      <a href="#authors">Authors</a>
+      <a href="#qa">Q&amp;A</a>
+      <a class="btn small" href="#contact">Free consultation</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">A small, personal publisher</p>
+        <h1 id="hero-h">Publishing made simple.</h1>
+        <p class="lede">Editing, design, printing and more, with the personal touch that makes your dream come alive. <strong>Over 50 years of experience, and your consultation visit is always free.</strong></p>
+        <div class="actions">
+          <a class="btn" href="#contact">Book a free consultation</a>
+          <a class="btn ghost" href="#plan">Plan your book</a>
+        </div>
+        <div class="pull">
+          <span class="mark" aria-hidden="true">“</span>
+          <p>They really know how to make heroes out of their clients.<cite>Tom Lutz, author of <i>North of Freedom</i></cite></p>
+        </div>
+      </div>
+      <figure class="shelf">
+        <img src="https://images.squarespace-cdn.com/content/v1/5e29d9f1afc5412ab351342f/31498122-8083-4f83-aed9-900f70f21dbc/Riverplace+Covers.jpg?format=1500w" alt="A collage of book covers from RiverPlace Press authors, including Arrival and Departure, Legends and Legacies, I Had a Comrade and Shelterbelts" width="1059" height="1664">
+        <figcaption>Books from RiverPlace Press authors</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="promise" id="why" aria-labelledby="why-h">
+    <svg class="edge" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path fill="#f7f2ea" d="M0 0H1440V14C1250 58 1060 62 860 36C640 8 470 6 300 30C190 46 90 50 0 40Z"/></svg>
+    <div class="wrap">
+      <p class="eyebrow">Why authors choose us</p>
+      <h2 id="why-h">No templates, no shortcuts, no “good enough.”</h2>
+      <p class="intro">The internet is packed with wolves reaching out to new authors, hoping to empty their pockets. RiverPlace is the opposite: a small firm that treats each book individually, with care and accuracy.</p>
+      <div class="vows">
+        <div class="vow"><span class="dot" style="background:#d98a63" aria-hidden="true"></span><h3>Simple, clear terms</h3><p>Business arrangements that are clearly defined, respect the author, and aim for mutual success.</p></div>
+        <div class="vow"><span class="dot" style="background:#a9c25e" aria-hidden="true"></span><h3>Your book, your call</h3><p>You keep full control over your whole journey through the complex, yet beautiful world of bringing your book to reality.</p></div>
+        <div class="vow"><span class="dot" style="background:#9fb9d6" aria-hidden="true"></span><h3>Every email answered</h3><p>A high level of communication and clarity is the groundwork. We will answer all emails received.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="plan" id="plan" aria-labelledby="plan-h">
+    <div class="wrap">
+      <div class="plan-head">
+        <div>
+          <p class="eyebrow">Plan your book</p>
+          <h2 id="plan-h">Pick the help you need. See your book take shape.</h2>
+        </div>
+        <p>All of it, or just a part: we help with self-publishing, the design of covers and content, or the whole road to print and eBook. Choose below and send us your plan.</p>
+      </div>
+
+      <div class="planner">
+        <div>
+          <fieldset>
+            <legend>Where is your book now?</legend>
+            <p class="hint">Choose one.</p>
+            <div class="chips" id="stage">
+              <label class="chip"><input type="radio" name="stage" value="Still writing"><span>Still writing</span></label>
+              <label class="chip"><input type="radio" name="stage" value="Manuscript finished" checked><span>Manuscript finished</span></label>
+              <label class="chip"><input type="radio" name="stage" value="Ready to design and print"><span>Ready to design and print</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>What help would you like?</legend>
+            <p class="hint">Choose as many as you like.</p>
+            <div class="chips" id="help">
+              <label class="chip"><input type="checkbox" value="edit" checked><span>Editing</span></label>
+              <label class="chip"><input type="checkbox" value="design" checked><span>Cover &amp; interior design</span></label>
+              <label class="chip"><input type="checkbox" value="production"><span>Production</span></label>
+              <label class="chip"><input type="checkbox" value="print" checked><span>Printing</span></label>
+              <label class="chip"><input type="checkbox" value="ebook"><span>eBook</span></label>
+              <label class="chip"><input type="checkbox" value="market"><span>Marketing</span></label>
+              <label class="chip"><input type="checkbox" value="self"><span>Self-publishing help</span></label>
+            </div>
+          </fieldset>
+        </div>
+
+        <article class="page" aria-labelledby="toc-h">
+          <p class="kicker">Contents</p>
+          <h3 id="toc-h">Your book, step by step</h3>
+          <p class="for" id="toc-for">Manuscript finished</p>
+          <ol class="toc" id="toc" aria-live="polite">
+            <li><div class="row"><span class="bar" style="background:var(--rust)"></span><span class="t">A free consultation visit</span><span class="lead"></span><span class="n">i</span></div><p class="d">There’s never any cost. We learn together if your book is a good fit with us.</p></li>
+            <li><div class="row"><span class="bar" style="background:var(--olive)"></span><span class="t">Editing</span><span class="lead"></span><span class="n">ii</span></div><p class="d">Work with talented and constructive editors.</p></li>
+            <li><div class="row"><span class="bar" style="background:var(--blue)"></span><span class="t">Cover &amp; interior design</span><span class="lead"></span><span class="n">iii</span></div><p class="d">Graphic design of your cover and content, with high-level designers and illustrators.</p></li>
+            <li><div class="row"><span class="bar" style="background:var(--violet)"></span><span class="t">Printing</span><span class="lead"></span><span class="n">iv</span></div><p class="d">Only the best quality printers.</p></li>
+            <li><div class="row"><span class="bar" style="background:var(--clay)"></span><span class="t">Your proposal</span><span class="lead"></span><span class="n">v</span></div><p class="d">When you’re ready, we prepare a proposal and walk you through every step of the process.</p></li>
+          </ol>
+          <div class="foot">
+            <p>You keep full control of your book, start to finish.</p>
+            <a class="btn" href="#contact" id="send-plan">Send this plan</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="river" aria-labelledby="river-h">
+    <div class="river-in">
+      <img src="https://images.squarespace-cdn.com/content/v1/5e29d9f1afc5412ab351342f/1580082370519-BDZXK44RQGKLZJJNPGZA/River.jpg?format=1500w" alt="A turquoise river winding between pine forests in autumn" width="1280" height="879">
+      <div class="card">
+        <h2 id="river-h">Publish locally, with a world-wide reach.</h2>
+        <p>We’re well plugged in to every service an author needs for success, and our network gives your book professional leadership.</p>
+        <ul class="net">
+          <li>Editors</li><li>Publicists</li><li>Designers</li><li>Illustrators</li><li>Best quality printers</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="voices" id="authors" aria-labelledby="authors-h">
+    <div class="wrap">
+      <figure class="feature">
+        <span class="mark" aria-hidden="true">“</span>
+        <div>
+          <blockquote><p>Not only did they know their craft, but they grasped mine, as well. With technical know-how, artistry, and intuition, RiverPlace brought into being the cover I’d dreamed.</p></blockquote>
+          <cite>Donna Salli, author of <i>A Notion of Pelicans</i></cite>
+        </div>
+      </figure>
+
+      <h2 id="authors-h">What our authors say</h2>
+      <div class="quotes">
+        <figure><blockquote>“When I approached Chip Borkenhagen about publishing my book of poetry, <i>Arrival and Departure</i>, he was enthusiastic and knowledgeable. As a result my book is artistically designed inside and out.”</blockquote><figcaption>Doris Lueth Stengel, author of <i>Arrival &amp; Departure</i></figcaption></figure>
+        <figure><blockquote>“Bookstore managers and book lovers are consistent in their high praise for the exceptional design and production artistry in both of my two WW II publications. I credit the skill of Chip and Jean Borkenhagen at RiverPlace Press for these very favorable comments.”</blockquote><figcaption>Paul Sailer, author of <i>The Oranges are Sweet</i> and <i>I Had a Comrade</i></figcaption></figure>
+        <figure><blockquote>“RiverPlace Press created a beautiful and artistic book that was beyond our expectations… They are extremely professional and knowledgeable, and very easy to work with!”</blockquote><figcaption>Candace Simar, author of <i>Farm Girls</i> and the <i>Pomme De Terre</i> series</figcaption></figure>
+        <figure><blockquote>“The staff at RiverPlace Press were an absolute joy to work with when publishing my book… Great people, superb skills, excellent results!”</blockquote><figcaption>Ray Gildow, author of <i>Legends and Legacies</i></figcaption></figure>
+        <figure><blockquote>“RiverPlace is a shining example of quality… Everything they do is first class; from inception and early design, through production to a superb final product.”</blockquote><figcaption>Tom Lutz, author of <i>Navigating Your Change Mazes</i></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="qa" id="qa" aria-labelledby="qa-h">
+    <div class="wrap qa-grid">
+      <div class="side">
+        <p class="eyebrow">Q&amp;A</p>
+        <h2 id="qa-h">Plain answers.</h2>
+        <p>Finding the right publisher is like shopping for a shirt. When it fits just so, life is very good.</p>
+      </div>
+      <dl>
+        <div><dt>What does a consultation cost?</dt><dd>Nothing. There’s never any cost for a consultation visit to learn if your book is a good fit with us.</dd></div>
+        <div><dt>Can you help with just part of it?</dt><dd>Yes. Help with self-publishing, just the graphic design of covers and content, or guidance through printing and eBook production and distribution.</dd></div>
+        <div><dt>Do I keep control of my book?</dt><dd>Yes, full control over your whole journey. Our arrangements are clearly defined and built on great respect for the author.</dd></div>
+        <div><dt>Why not an online printing outfit?</dt><dd>Why take chances, when you can publish with local, experienced professionals who treat each book individually?</dd></div>
+        <div><dt>What happens after we talk?</dt><dd>When you’re ready, we prepare a proposal and walk you through every step of the process.</dd></div>
+        <div><dt>Who works on my book?</dt><dd>Our small team, with over 50 years of experience, and our network of editors, publicists, designers, illustrators and the best quality printers.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Book a free consultation</p>
+        <h2 id="contact-h">Let’s visit.</h2>
+        <p class="lede">Tell us a little about your book. The consultation costs nothing, and we answer every email.</p>
+        <div class="direct">
+          <span>Or write to Chip directly</span>
+          <a href="mailto:chip@riverplace-mn.com">chip@riverplace-mn.com</a>
+        </div>
+      </div>
+      <form class="ask" id="ask" novalidate>
+        <div class="pair">
+          <div class="field"><label class="l" for="f-name">Your name</label><input class="i" id="f-name" name="name" autocomplete="name"></div>
+          <div class="field"><label class="l" for="f-email">Email</label><input class="i" id="f-email" name="email" type="email" autocomplete="email"></div>
+        </div>
+        <div class="field"><label class="l" for="f-stage">Where is your book now?</label>
+          <select class="i" id="f-stage" name="stage">
+            <option>Still writing</option>
+            <option selected>Manuscript finished</option>
+            <option>Ready to design and print</option>
+          </select>
+        </div>
+        <div class="field"><label class="l" for="f-msg">About your book</label>
+          <textarea class="i" id="f-msg" name="message">I’d like help with: Editing, Cover & interior design, Printing.
+</textarea>
+        </div>
+        <button class="btn" type="submit">Ask for a free consultation</button>
+        <p class="sent" id="sent" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="https://images.squarespace-cdn.com/content/v1/5e29d9f1afc5412ab351342f/6499f3f0-af33-4575-8a06-2bd467c9bc44/RiverPlacePress+logo.jpg?format=1500w" alt="RiverPlace Press logo" width="46" height="77" loading="lazy">
+        <div><b>Riverplace Press LLC</b><small>Publishing made simple.</small></div>
+      </div>
+      <nav class="foot-links" aria-label="Footer">
+        <a href="mailto:chip@riverplace-mn.com">chip@riverplace-mn.com</a>
+        <a href="https://www.facebook.com/riverplacepress/">Facebook</a>
+        <a href="https://www.riverplacepress.com/">Current website</a>
+      </nav>
+    </div>
+    <p class="credit">Mockup made for RiverPlace Press by Sunny Gupta, <a href="https://signalsetbase.com">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick contact">
+  <a class="btn" href="#contact">Book a free consultation</a>
+  <a class="btn ghost" href="mailto:chip@riverplace-mn.com">Email</a>
+</div>
+
+<script>
+(function(){
+  var services={
+    edit:{t:'Editing',d:'Work with talented and constructive editors.',c:'var(--olive)'},
+    design:{t:'Cover & interior design',d:'Graphic design of your cover and content, with high-level designers and illustrators.',c:'var(--blue)'},
+    production:{t:'Production',d:'Your book treated individually, with care and accuracy.',c:'var(--tan)'},
+    print:{t:'Printing',d:'Only the best quality printers.',c:'var(--violet)'},
+    ebook:{t:'eBook',d:'Guidance through eBook production and distribution.',c:'var(--blue)'},
+    market:{t:'Marketing',d:'Marketing assistance, with publicists from our network.',c:'var(--rust)'},
+    self:{t:'Self-publishing help',d:'Understandable and effective assistance if you publish it yourself.',c:'var(--olive)'}
+  };
+  var roman=['i','ii','iii','iv','v','vi','vii','viii','ix','x'];
+  var toc=document.getElementById('toc'),forEl=document.getElementById('toc-for');
+  var msg=document.getElementById('f-msg'),stageSel=document.getElementById('f-stage');
+  var prev=['edit','design','print'];
+  function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+  function item(t,d,c,n,isNew){
+    return '<li'+(isNew?' class="new"':'')+'><div class="row"><span class="bar" style="background:'+c+'"></span><span class="t">'+esc(t)+'</span><span class="lead"></span><span class="n">'+n+'</span></div><p class="d">'+esc(d)+'</p></li>';
+  }
+  function picked(){
+    return Array.prototype.map.call(document.querySelectorAll('#help input:checked'),function(i){return i.value});
+  }
+  function stage(){var s=document.querySelector('#stage input:checked');return s?s.value:'';}
+  function render(){
+    var keys=picked(),k=0,html=item('A free consultation visit','There’s never any cost. We learn together if your book is a good fit with us.','var(--rust)',roman[k++],false);
+    keys.forEach(function(key){var s=services[key];html+=item(s.t,s.d,s.c,roman[k++],prev.indexOf(key)<0);});
+    html+=item('Your proposal','When you’re ready, we prepare a proposal and walk you through every step of the process.','var(--clay)',roman[k++],false);
+    toc.innerHTML=html;prev=keys;
+    forEl.textContent=stage();
+  }
+  function fill(){
+    var names=picked().map(function(k){return services[k].t});
+    msg.value=names.length?'I’d like help with: '+names.join(', ')+'.\n':'I’d like to talk about my book.\n';
+    stageSel.value=stage();
+  }
+  document.getElementById('help').addEventListener('change',render);
+  document.getElementById('stage').addEventListener('change',render);
+  document.getElementById('send-plan').addEventListener('click',fill);
+
+  document.getElementById('ask').addEventListener('submit',function(e){
+    e.preventDefault();
+    document.getElementById('sent').textContent='Thanks. This is a mockup, so nothing was sent.';
+  });
+
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce||!('IntersectionObserver' in window))return;
+  var els=document.querySelectorAll('.promise .wrap > *, .vow, .plan-head, .planner > *, .river .card, .feature, .quotes figure, .qa .side, .qa dl > div, .contact .wrap > *');
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target);}});
+  },{rootMargin:'0px 0px -8% 0px'});
+  Array.prototype.forEach.call(els,function(el){
+    if(el.getBoundingClientRect().top>window.innerHeight){
+      el.classList.add('will-rise');
+      requestAnimationFrame(function(){el.classList.add('rise-ready')});
+      io.observe(el);
+    }
+  });
+})();
+</script>
+</body>
+</html>
