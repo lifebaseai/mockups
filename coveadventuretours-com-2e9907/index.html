@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup coveadventuretours-com-2e9907 1 e9a44fd1 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cove Adventure Tours - Explore Northern Vancouver Island</title>
+<meta name="description" content="Guided hiking tours to San Josef Bay in Cape Scott Provincial Park, plus custom tours on North Vancouver Island. Small groups, year round.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --deep:#223f3e; --forest:#3e6647; --bark:#7a4f31; --sand:#f4efe4; --sand2:#e9e0cc;
+  --ink:#1d2b2a; --muted:#4a5a58; --line:#d9cfb9; --white:#fff;
+  --serif:'Bitter',Georgia,serif; --sans:'Source Sans 3',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--sans);font-size:18px;line-height:1.55;color:var(--ink);background:var(--sand);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--forest)}
+:focus-visible{outline:3px solid #c9822e;outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--serif);color:var(--deep);line-height:1.12;margin:0;font-weight:700;letter-spacing:-.01em}
+p{margin:0}
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+.eyebrow{font-family:var(--serif);font-weight:600;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--forest)}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:12px;top:44px;background:#fff;padding:10px 14px;z-index:50}
+
+/* mockup banner */
+.mock{background:var(--deep);color:#e8efe9;text-align:center;font-size:14px;letter-spacing:.04em;padding:9px 16px;position:relative;z-index:30}
+
+/* header */
+header.top{background:#fff;border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:84px}
+.logo img{width:132px;height:auto}
+.top nav ul{display:flex;gap:6px;list-style:none;margin:0;padding:0;align-items:center}
+.top nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;font-family:var(--serif);font-size:14px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--deep);text-decoration:none}
+.top nav a:hover{color:var(--forest);text-decoration:underline;text-underline-offset:6px}
+.top .call{border:1.5px solid var(--deep);border-radius:999px;padding:0 18px;letter-spacing:.04em;text-transform:none;font-size:16px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font-family:var(--sans);font-weight:700;font-size:17px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .2s,transform .2s}
+.btn.main{background:var(--forest);color:#fff}
+.btn.main:hover{background:var(--deep);transform:translateY(-1px)}
+.btn.ghost{border-color:var(--deep);color:var(--deep);background:transparent}
+.btn.ghost:hover{background:#fff}
+
+/* hero */
+.hero{padding:56px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(44px,6vw,78px);margin:16px 0 22px}
+.hero h1 span{display:block;color:var(--forest)}
+.hero .lede{font-size:21px;color:var(--muted);max-width:30em}
+.hero .acts{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.hero figure{margin:0;position:relative}
+.hero .photo{border-radius:20px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(34,63,62,.55);aspect-ratio:4/5;max-width:520px;margin-left:auto}
+.hero .photo img{width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.hero figcaption{position:absolute;left:-28px;bottom:36px;background:#fff;border-radius:14px;padding:14px 18px;box-shadow:0 14px 30px -16px rgba(0,0,0,.35);font-size:15px;line-height:1.35;max-width:250px;color:var(--ink)}
+.hero figcaption b{display:block;font-family:var(--serif);color:var(--deep);font-size:17px}
+
+/* facts strip */
+.facts{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fbf8f1}
+.facts ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr)}
+.facts li{padding:22px 20px;border-left:1px solid var(--line);font-size:16px;color:var(--muted)}
+.facts li:first-child{border-left:0;padding-left:0}
+.facts b{display:block;font-family:var(--serif);font-size:20px;color:var(--deep);font-weight:700}
+
+section{padding:96px 0}
+.head{max-width:640px;margin-bottom:44px}
+.head h2{font-size:clamp(34px,4.2vw,50px);margin:12px 0 14px}
+.head p{font-size:19px;color:var(--muted)}
+
+/* trail piece */
+.trail{background:var(--deep);color:#e3ebe6}
+.trail h2{color:#fff}
+.trail .eyebrow{color:#b9d3bf}
+.trail .head p{color:#c9d8d0}
+.trail-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:40px;align-items:stretch}
+.map{background:#f4efe4;border-radius:20px;padding:12px;position:relative;display:flex;align-items:center;overflow:hidden}
+.map svg{width:100%;height:auto;display:block}
+.map .stop{cursor:pointer}
+.map .stop circle.dot{fill:#fff;stroke:var(--deep);stroke-width:3;transition:fill .3s}
+.map .stop.on circle.dot{fill:var(--bark);stroke:var(--bark)}
+.map .stop text{font-family:var(--serif);font-weight:600;font-size:17px;fill:var(--deep)}
+.map .stop .hit{fill:transparent}
+.map .stop .num{display:none;font-size:24px;font-weight:700;text-anchor:middle;fill:var(--deep)}
+.map .stop.on .num{fill:#fff}
+.panel{display:flex;flex-direction:column}
+.tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:18px}
+.tabs button{min-height:48px;border-radius:12px;border:1.5px solid rgba(255,255,255,.28);background:transparent;color:#e3ebe6;font:600 15px var(--sans);cursor:pointer;padding:6px 8px;line-height:1.2}
+.tabs button[aria-selected=true]{background:#fff;color:var(--deep);border-color:#fff}
+.card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:30px 30px 32px;flex:1}
+.card .n{font-family:var(--serif);font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:#d8b48f}
+.card h3{color:#fff;font-size:30px;margin:10px 0 14px}
+.card p{font-size:18px;color:#d5e1da}
+.card ul{margin:18px 0 0;padding:0;list-style:none}
+.card li{padding:9px 0 9px 28px;position:relative;border-top:1px solid rgba(255,255,255,.12);font-size:17px}
+.card li::before{content:"";position:absolute;left:4px;top:18px;width:10px;height:10px;border-radius:50%;border:2px solid #d8b48f}
+.step[hidden]{display:none}
+.progress{height:3px;background:rgba(255,255,255,.15);border-radius:3px;margin-top:18px;overflow:hidden}
+.progress i{display:block;height:100%;width:0;background:#d8b48f}
+
+/* review */
+.review{padding:96px 0 40px;text-align:center}
+.review blockquote{margin:0 auto;max-width:880px}
+.review blockquote p{font-family:var(--serif);font-weight:500;font-size:clamp(26px,3.2vw,38px);line-height:1.3;color:var(--deep)}
+.review cite{display:block;margin-top:20px;font-style:normal;font-weight:700;color:var(--bark);letter-spacing:.06em}
+.press{display:flex;justify-content:center;flex-wrap:wrap;gap:12px 36px;margin-top:40px;font-size:16px;color:var(--muted)}
+.press span{display:inline-flex;align-items:center;gap:10px}
+.press span::before{content:"";width:22px;height:1.5px;background:var(--bark)}
+
+/* tours */
+.tours-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:28px}
+.tour{background:#fff;border-radius:20px;padding:36px;border:1px solid var(--line)}
+.tour.feature{background:var(--forest);color:#eef4ef;border:0;display:flex;flex-direction:column}
+.tour.feature h3{color:#fff}
+.tour h3{font-size:30px;margin:10px 0 14px}
+.tour .eyebrow{color:var(--bark)}
+.tour.feature .eyebrow{color:#e7d2b6}
+.tour p{font-size:18px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 28px}
+.tags span{font-size:15px;font-weight:600;padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.14)}
+.tour.feature .btn{background:#fff;color:var(--deep);margin-top:auto;align-self:flex-start}
+.tour.feature .btn:hover{background:var(--sand)}
+.side{display:grid;gap:28px}
+.places{margin:18px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.places li{font-size:15px;font-weight:600;padding:7px 14px;border-radius:999px;background:var(--sand);color:var(--deep)}
+.van{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:28px;background:#fff;border-radius:20px;overflow:hidden;border:1px solid var(--line)}
+.van .pic{overflow:hidden;min-height:300px;position:relative;max-width:560px}
+.van .pic img{position:absolute;inset:-4%;width:108%;height:108%;max-width:none;object-fit:cover}
+.van .txt{padding:40px 40px 42px;align-self:center}
+.van h3{font-size:30px;margin:10px 0 14px}
+.van .eyebrow{color:var(--bark)}
+
+/* about */
+.about{background:var(--sand2)}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.about h2{font-size:clamp(32px,3.8vw,46px);margin:12px 0 0}
+.about .tagline{font-family:var(--serif);font-style:italic;font-weight:500;font-size:22px;color:var(--bark);margin-top:22px}
+.about .body p+p{margin-top:16px}
+.about .body p{color:#2f3d3b}
+.about .pledge{margin-top:26px;padding:22px 24px;border-left:4px solid var(--forest);background:rgba(255,255,255,.55);border-radius:0 14px 14px 0}
+.about .pledge b{font-family:var(--serif);color:var(--deep)}
+
+/* faq */
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
+details{border-top:1px solid var(--line)}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:64px;padding:12px 0;font-family:var(--serif);font-weight:600;font-size:20px;color:var(--deep)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:12px;height:12px;border-right:2px solid var(--forest);border-bottom:2px solid var(--forest);transform:rotate(45deg) translateY(-3px);transition:transform .25s}
+details[open] summary::after{transform:rotate(225deg)}
+details p{padding:0 0 22px;color:var(--muted);max-width:36em}
+
+/* book */
+.book{background:#fff;border-top:1px solid var(--line)}
+.book .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.book h2{font-size:clamp(34px,4.2vw,50px);margin:12px 0 16px}
+.book .lede{color:var(--muted);font-size:19px}
+.contact{margin-top:32px;display:grid;gap:12px}
+.contact a{display:flex;align-items:center;gap:14px;min-height:56px;padding:0 18px;border:1px solid var(--line);border-radius:14px;text-decoration:none;color:var(--deep);font-weight:600;background:var(--sand)}
+.contact a small{display:block;font-weight:400;color:var(--muted);font-size:14px}
+.contact svg{flex:none}
+form{background:var(--sand);border-radius:20px;padding:32px;border:1px solid var(--line)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:block;font-weight:600;font-size:15px;color:var(--deep);margin-bottom:16px}
+input,select,textarea{display:block;width:100%;margin-top:6px;font:inherit;font-size:17px;color:var(--ink);background:#fff;border:1.5px solid #c9bea6;border-radius:10px;padding:11px 12px;min-height:48px}
+textarea{min-height:96px;resize:vertical}
+input:focus,select:focus,textarea:focus{border-color:var(--forest);outline:3px solid rgba(62,102,71,.25);outline-offset:0}
+.stepper{display:flex;align-items:center;margin-top:6px;background:#fff;border:1.5px solid #c9bea6;border-radius:10px;overflow:hidden}
+.stepper button{width:48px;height:46px;border:0;background:transparent;font-size:22px;color:var(--deep);cursor:pointer}
+.stepper output{flex:1;text-align:center;font-weight:700;font-size:18px}
+.summary{display:flex;gap:14px;align-items:flex-start;background:var(--deep);color:#eaf1ec;border-radius:14px;padding:16px 18px;margin:4px 0 20px;font-size:16px}
+.summary b{color:#fff}
+.summary svg{flex:none;margin-top:2px}
+form .btn{width:100%}
+.done{display:none;margin-top:16px;padding:14px 16px;border-radius:12px;background:#fff;border:1.5px solid var(--forest);color:var(--deep);font-weight:600}
+.done.show{display:block}
+.alt{margin-top:14px;font-size:15px;color:var(--muted);text-align:center}
+
+/* end */
+.end{background:var(--forest);color:#eef4ef;text-align:center;padding:84px 0}
+.end h2{color:#fff;font-size:clamp(34px,4.4vw,54px)}
+.end p{margin:14px auto 30px;max-width:34em;font-size:19px;color:#dfe9e1}
+.end .acts{display:flex;justify-content:center;flex-wrap:wrap;gap:14px}
+.end .btn.main{background:#fff;color:var(--deep)}
+.end .btn.ghost{border-color:#fff;color:#fff}
+.end .btn.ghost:hover{background:rgba(255,255,255,.1)}
+
+footer{background:var(--deep);color:#c9d8d0;padding:56px 0 40px;font-size:16px}
+footer .wrap{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px}
+footer h2{font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:#fff;margin-bottom:14px;font-family:var(--serif)}
+footer a{color:#e7efe9;display:inline-flex;align-items:center;min-height:44px}
+footer ul{list-style:none;margin:0;padding:0}
+footer .flogo{background:#fff;border-radius:14px;padding:10px 14px;display:inline-block;margin-bottom:16px}
+footer .flogo img{width:120px;height:auto}
+.credit{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);padding-top:22px;margin-top:8px;font-size:15px}
+
+.callbar{display:none}
+
+/* motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:980px){
+  .top nav li.hide-m{display:none}
+  .hero .wrap,.trail-grid,.tours-grid,.about .wrap,.faq .wrap,.book .wrap{grid-template-columns:1fr;gap:36px}
+  .hero .photo{margin:0;max-width:none;aspect-ratio:4/3}
+  .hero figcaption{left:16px;bottom:16px}
+  .facts ul{grid-template-columns:1fr 1fr}
+  .facts li:nth-child(3){border-left:0;padding-left:0}
+  .facts li{border-top:1px solid var(--line)}
+  .facts li:nth-child(-n+2){border-top:0}
+  .van{grid-template-columns:1fr}
+  .van .pic{max-width:none;min-height:0;aspect-ratio:3/2}
+  footer .wrap{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  body{font-size:17px;padding-bottom:72px}
+  .wrap{padding:0 20px}
+  .mock{font-size:13px}
+  .top .wrap{min-height:72px}
+  .logo img{width:104px}
+  .top nav a:not(.call){display:none}
+  .top .call{font-size:15px;padding:0 14px}
+  .hero{padding:32px 0 44px}
+  .hero h1{font-size:46px;margin:12px 0 16px}
+  .hero .lede{font-size:18px}
+  .hero .acts{margin-top:24px}
+  .hero .acts .btn{flex:1 1 100%}
+  .hero figcaption{position:static;max-width:none;box-shadow:none;border:1px solid var(--line);margin-top:12px}
+  .hero .photo{aspect-ratio:1/1}
+  .facts li{padding:16px 12px;font-size:15px}
+  .facts li:nth-child(even){padding-right:0}
+  .facts b{font-size:18px}
+  section{padding:64px 0}
+  .head{margin-bottom:28px}
+  .head p{font-size:17px}
+  .tabs{grid-template-columns:1fr 1fr}
+  .card{padding:24px 22px}
+  .card h3{font-size:26px}
+  .map{padding:6px;border-radius:16px}
+  .map .stop .lbl,#walker{display:none}
+  .map .stop .num{display:inline}
+  .map .stop circle.dot{r:20px}
+  .map .stop .hit{r:34px}
+  .review{padding:64px 0 24px}
+  .press{flex-direction:column;align-items:center;gap:10px}
+  .tour{padding:26px 22px}
+  .tour h3,.van h3{font-size:26px}
+  .van .txt{padding:26px 22px 28px}
+  .row{grid-template-columns:1fr;gap:0}
+  form{padding:22px 18px}
+  footer .wrap{grid-template-columns:1fr;gap:28px}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid var(--line);box-shadow:0 -6px 18px -10px rgba(0,0,0,.25)}
+  .callbar a{min-height:48px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:700;text-decoration:none;font-size:16px}
+  .callbar .c1{background:var(--forest);color:#fff}
+  .callbar .c2{border:2px solid var(--deep);color:var(--deep)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Free mockup for Cove Adventure Tours</div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#main" aria-label="Cove Adventure Tours, back to top"><img src="https://images.squarespace-cdn.com/content/v1/58d19a1937c5810b753b087a/1490133231171-JTR3TIJD6TGQV5RGTE1O/Cove_Header+Logo_Colour.png?format=500w" alt="Cove Adventure Tours Ltd. logo" width="132" height="75"></a>
+    <nav aria-label="Main">
+      <ul>
+        <li class="hide-m"><a href="#day">Your day</a></li>
+        <li class="hide-m"><a href="#tours">Tours</a></li>
+        <li class="hide-m"><a href="#faq">FAQ</a></li>
+        <li class="hide-m"><a href="#book">Book</a></li>
+        <li><a class="call" href="tel:+12502304575">(250) 230-4575</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Vancouver Island North</p>
+        <h1 id="h1">San Josef Bay. <span>Stress free.</span></h1>
+        <p class="lede">We drive the rough logging roads, pack the safety gear and walk you through old growth rainforest to one of the best beaches in the world. You just enjoy it.</p>
+        <div class="acts">
+          <a class="btn main" href="#book">Book San Josef Bay</a>
+          <a class="btn ghost" href="tel:+12502304575">Call (250) 230-4575</a>
+        </div>
+      </div>
+      <figure>
+        <div class="photo"><img src="https://images.squarespace-cdn.com/content/v1/58d19a1937c5810b753b087a/ac6fe082-36e6-48e5-923c-b8fce7796f92/IMG_3703.jpg?format=1500w" alt="A rope swing hanging over the wide sandy beach at San Josef Bay at low tide, forested islands behind" width="1011" height="1349" fetchpriority="high"></div>
+        <figcaption><b>San Josef Bay</b>Cape Scott Provincial Park, named one of the 50 Best Beaches in the World</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="facts" role="region" aria-label="Tour at a glance">
+    <div class="wrap">
+      <ul>
+        <li><b>1.5 hours</b>Easy hike, round trip</li>
+        <li><b>Small groups</b>With knowledgeable guides</li>
+        <li><b>Year round</b>Tours in every season</li>
+        <li><b>We drive</b>The active logging roads</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="trail" id="day" aria-labelledby="day-h">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Your day, stop by stop</p>
+        <h2 id="day-h">The hard part is ours. The beach is yours.</h2>
+        <p>San Josef Bay is rugged and raw, and getting there takes local knowledge. Tap each stop to see what we take care of.</p>
+      </div>
+      <div class="trail-grid">
+        <div class="map">
+          <svg viewBox="10 70 590 300" role="img" aria-labelledby="map-t">
+            <title id="map-t">A drawn trail from the logging road, past the trailhead and through the rainforest, to San Josef Bay</title>
+            <path d="M600 0H430c-10 40 20 70 0 110s30 60 10 100 40 70 20 110 20 50 0 60h140z" fill="#cfe0dd"/>
+            <path d="M600 0H470c-6 40 18 70 2 110s26 60 10 100 34 70 18 110 14 50 2 60h98z" fill="#b6d0cc"/>
+            <g fill="#3e6647" opacity=".9">
+              <path d="M215 150l14 30h-28z"/><path d="M238 140l16 36h-32z"/><path d="M262 152l13 28h-26z"/><path d="M286 136l17 40h-34z"/><path d="M309 150l13 30h-26z"/>
+              <path d="M228 178l12 26h-24z"/><path d="M252 172l14 32h-28z"/><path d="M276 180l12 26h-24z"/><path d="M299 174l14 30h-28z"/><path d="M330 160l12 28h-24z"/>
+            </g>
+            <g fill="#223f3e" opacity=".55">
+              <path d="M480 150l10 22h-20z"/><path d="M496 140l12 30h-24z"/><path d="M512 152l9 20h-18z"/>
+              <path d="M520 250l9 20h-18z"/><path d="M536 242l11 28h-22z"/>
+            </g>
+            <g stroke="#7a4f31" stroke-width="1.2" fill="none" opacity=".35">
+              <path d="M30 120c40-20 80-20 120 0s80 20 120 0"/><path d="M20 80c50-22 100-22 150 0"/><path d="M60 40c40-16 70-16 110 0"/>
+            </g>
+            <path id="route" d="M50 330C120 330 110 270 170 262S250 286 270 230S330 200 360 176S430 150 470 120" fill="none" stroke="#7a4f31" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 12" opacity=".55"/>
+            <path id="walked" d="M50 330C120 330 110 270 170 262S250 286 270 230S330 200 360 176S430 150 470 120" fill="none" stroke="#7a4f31" stroke-width="5" stroke-linecap="round"/>
+            <g class="stop" data-i="0"><circle class="hit" cx="50" cy="330" r="24"/><circle class="dot" cx="50" cy="330" r="11"/><text class="lbl" x="70" y="356">Logging road</text><text class="num" x="50" y="338">1</text></g>
+            <g class="stop" data-i="1"><circle class="hit" cx="170" cy="262" r="24"/><circle class="dot" cx="170" cy="262" r="11"/><text class="lbl" x="156" y="248" text-anchor="end">Trailhead</text><text class="num" x="170" y="270">2</text></g>
+            <g class="stop" data-i="2"><circle class="hit" cx="270" cy="230" r="24"/><circle class="dot" cx="270" cy="230" r="11"/><text class="lbl" x="214" y="122">Old growth forest</text><text class="num" x="270" y="238">3</text></g>
+            <g class="stop" data-i="3"><circle class="hit" cx="470" cy="120" r="24"/><circle class="dot" cx="470" cy="120" r="11"/><text class="lbl" x="384" y="96">San Josef Bay</text><text class="num" x="470" y="128">4</text></g>
+            <circle id="walker" cx="50" cy="330" r="6" fill="#fff"/>
+          </svg>
+        </div>
+        <div class="panel">
+          <div class="tabs" role="tablist" aria-label="Stops on the day">
+            <button role="tab" id="t0" aria-controls="s0" aria-selected="true">1. The road</button>
+            <button role="tab" id="t1" aria-controls="s1" aria-selected="false" tabindex="-1">2. Gear up</button>
+            <button role="tab" id="t2" aria-controls="s2" aria-selected="false" tabindex="-1">3. Forest</button>
+            <button role="tab" id="t3" aria-controls="s3" aria-selected="false" tabindex="-1">4. The bay</button>
+          </div>
+          <div class="card">
+            <div class="step" id="s0" role="tabpanel" aria-labelledby="t0">
+              <p class="n">Stop 1</p>
+              <h3>We drive. You look out the window.</h3>
+              <p>Most places we go are on active logging roads. Our van is equipped for all road conditions and made for the rough road into San Josef Bay.</p>
+              <ul><li>No driving the logging roads yourself</li><li>A safe and timely way to the remote west coast beaches</li></ul>
+            </div>
+            <div class="step" id="s1" role="tabpanel" aria-labelledby="t1" hidden>
+              <p class="n">Stop 2</p>
+              <h3>No cell signal. No worry.</h3>
+              <p>Out here there is no cellular reception, which can mean real risk for some people. That's why we pack the safety gear and know the way.</p>
+              <ul><li>Safety gear packed for you</li><li>Guides who know the area</li></ul>
+            </div>
+            <div class="step" id="s2" role="tabpanel" aria-labelledby="t2" hidden>
+              <p class="n">Stop 3</p>
+              <h3>Through old growth rainforest.</h3>
+              <p>The trail runs through old growth rainforest in Cape Scott Provincial Park. Your guides keep it fun and casual.</p>
+              <ul><li>An inside take on the area and its history</li><li>Pack it in, pack it out, always</li></ul>
+            </div>
+            <div class="step" id="s3" role="tabpanel" aria-labelledby="t3" hidden>
+              <p class="n">Stop 4</p>
+              <h3>Out onto the sand.</h3>
+              <p>The trees open onto a vast sandy beach. Centre stage goes to the nature around us.</p>
+              <ul><li>Sea stacks and sea caves</li><li>Tidal pools to explore</li><li>Endless spots to unfasten on the sand</li></ul>
+            </div>
+          </div>
+          <div class="progress" aria-hidden="true"><i></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="review" aria-labelledby="rev-h">
+    <div class="wrap">
+      <h2 id="rev-h" class="eyebrow">What guests say</h2>
+      <blockquote>
+        <p>“This was the best tour ever for me...loved the energy, knowledge, passion and support of both Chris and Brookes. I felt totally looked after on every level.”</p>
+        <cite>Kim D.</cite>
+      </blockquote>
+      <div class="press">
+        <span>Globe and Mail travel article by John Lee, July 2017</span>
+        <span>Recommended on Tripadvisor</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="tours" aria-labelledby="tours-h">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Hiking tours</p>
+        <h2 id="tours-h">Pick your beach. We'll get you there.</h2>
+      </div>
+      <div class="tours-grid">
+        <article class="tour feature">
+          <p class="eyebrow">Our favourite</p>
+          <h3>San Josef Bay Hiking Tour</h3>
+          <p>Visit Cape Scott Provincial Park, hike through old growth rainforest and come out on a vast sandy beach with sea stacks, sea caves and tidal pools.</p>
+          <div class="tags"><span>Easy 1.5 hr round trip</span><span>Small groups</span><span>Year round</span></div>
+          <a class="btn" href="#book" data-tour="San Josef Bay Hiking Tour">Book this tour</a>
+        </article>
+        <div class="side">
+          <article class="tour">
+            <p class="eyebrow">Your idea, our guides</p>
+            <h3>Custom Hiking Tours</h3>
+            <p>Want a particular experience? There are so many remote places to see on North Vancouver Island. Tell us and we'll plan it with you.</p>
+            <ul class="places" aria-label="Other tours">
+              <li>Grant Bay</li><li>Palmerston Beach</li><li>Create-Your-Own-Adventure</li><li>Team Building</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+      <div class="van">
+        <div class="pic"><img src="https://images.squarespace-cdn.com/content/v1/58d19a1937c5810b753b087a/1510530454895-V7VICM3EL8ROKZUW38LW/image-asset.jpeg?format=1000w" alt="The white Cove Adventure Tours van with roof rack, parked above the water" width="925" height="616" loading="lazy"></div>
+        <div class="txt">
+          <p class="eyebrow">Private bookings</p>
+          <h3>Your group. Our guides and van.</h3>
+          <p>We keep our weekly schedule light on purpose, so you can book our guides and our 10 passenger van privately. We'll take you wherever you like on the North Island.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" aria-labelledby="about-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">About Cove Adventure Tours</p>
+        <h2 id="about-h">Friends who love the North Island, showing it off.</h2>
+        <p class="tagline">“Sharing the beauty of Vancouver Island North one hike at a time.”</p>
+      </div>
+      <div class="body">
+        <p>Cove Adventure Tours Ltd. started as an idea among friends who love hiking, exploring the outdoors and, most of all, Northern Vancouver Island. The goal: be ambassadors for our remote corner of the coast, and share it in a safe and dependable way.</p>
+        <p>Our guides bring a fun, casual atmosphere, knowledge of the local area, and a push to protect our environment.</p>
+        <div class="pledge"><b>Pack it in, pack it out.</b> We always carry garbage bags for impromptu beach cleanups.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq" aria-labelledby="faq-h">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Good to know</p>
+        <h2 id="faq-h">Questions before you go</h2>
+        <p>Something not here? Email or call, and we'll answer.</p>
+      </div>
+      <div>
+        <details open><summary>How hard is the San Josef Bay hike?</summary><p>It's an easy 1.5 hour hike, round trip, through old growth rainforest to the beach.</p></details>
+        <details><summary>Can I just drive there myself?</summary><p>The roads are active, often rough logging roads with no cellular reception. We drive them every trip in a van equipped for all road conditions, and we pack the safety gear.</p></details>
+        <details><summary>When do you run tours?</summary><p>We're available for tours year round. Contact us for the schedule and to book.</p></details>
+        <details><summary>How big are the groups?</summary><p>Small. You can also book our guides and 10 passenger van privately for your own group.</p></details>
+        <details><summary>Can you take us somewhere else?</summary><p>Yes. We offer custom hiking tours and are happy to take guests wherever they like on the North Island.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="book" id="book" aria-labelledby="book-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Book your day</p>
+        <h2 id="book-h">Tell us when. We'll handle the rest.</h2>
+        <p class="lede">Send a request with your tour and date, or call us directly.</p>
+        <div class="contact">
+          <a href="tel:+12502304575"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3e6647" stroke-width="2" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><span>(250) 230-4575<small>Tap to call</small></span></a>
+          <a href="mailto:info@coveadventuretours.com"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3e6647" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>info@coveadventuretours.com<small>Email us</small></span></a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Port%20Hardy%2C%20British%20Columbia%2C%20Canada"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3e6647" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Port Hardy, British Columbia<small>Open in Google Maps</small></span></a>
+        </div>
+      </div>
+      <form id="req" novalidate>
+        <label for="tour">Tour
+          <select id="tour" name="tour">
+            <option>San Josef Bay Hiking Tour</option>
+            <option>Grant Bay</option>
+            <option>Palmerston Beach</option>
+            <option>Create-Your-Own-Adventure Tour</option>
+            <option>Team Building</option>
+            <option>Custom Hiking Tour</option>
+          </select>
+        </label>
+        <div class="row">
+          <label for="date">Preferred date
+            <input id="date" name="date" type="date">
+          </label>
+          <div>
+            <label for="ppl-out" id="ppl-l" style="margin-bottom:0">Hikers</label>
+            <div class="stepper" style="margin-bottom:16px">
+              <button type="button" id="minus" aria-label="One fewer hiker">−</button>
+              <output id="ppl-out" aria-live="polite" aria-labelledby="ppl-l">2</output>
+              <button type="button" id="plus" aria-label="One more hiker">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <label for="name">Your name<input id="name" name="name" autocomplete="name"></label>
+          <label for="email">Email<input id="email" name="email" type="email" autocomplete="email"></label>
+        </div>
+        <label for="msg">Anything we should know? <span style="font-weight:400">(optional)</span><textarea id="msg" name="msg"></textarea></label>
+        <div class="summary" aria-live="polite">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d8b48f" stroke-width="2" aria-hidden="true"><path d="M4 20 10 8l4 6 2-3 4 9z"/></svg>
+          <p id="sum"><b>San Josef Bay Hiking Tour</b> for <b>2 hikers</b>, date to be confirmed.</p>
+        </div>
+        <button class="btn main" type="submit">Send booking request</button>
+        <p class="done" id="done" role="status">Thanks. This is a mockup, so nothing was sent.</p>
+        <p class="alt">Prefer to see the schedule? <a href="https://www.coveadventuretours.com/">Book on our current site</a></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="end" aria-labelledby="end-h">
+    <div class="wrap">
+      <h2 id="end-h">The beach is waiting. The road is on us.</h2>
+      <p>Start planning your ultimate North Island adventure.</p>
+      <div class="acts">
+        <a class="btn main" href="#book">Book San Josef Bay</a>
+        <a class="btn ghost" href="tel:+12502304575">Call (250) 230-4575</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <span class="flogo"><img src="https://images.squarespace-cdn.com/content/v1/58d19a1937c5810b753b087a/1490133231171-JTR3TIJD6TGQV5RGTE1O/Cove_Header+Logo_Colour.png?format=500w" alt="Cove Adventure Tours Ltd." width="120" height="69" loading="lazy"></span>
+      <p>Cove Adventure Tours Ltd.<br>Port Hardy, British Columbia, Canada</p>
+    </div>
+    <div>
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="tel:+12502304575">(250) 230-4575</a></li>
+        <li><a href="mailto:info@coveadventuretours.com">info@coveadventuretours.com</a></li>
+        <li><a href="https://www.coveadventuretours.com/">coveadventuretours.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Follow along</h2>
+      <ul>
+        <li><a href="http://www.facebook.com/coveadventuretours">Facebook</a></li>
+        <li><a href="https://www.instagram.com/coveadventuretours">Instagram</a></li>
+        <li><a href="http://youtube.com/@CoveAdventureTours_Official">YouTube</a></li>
+        <li><a href="http://tiktok.com/@coveadventure">TikTok</a></li>
+        <li><a href="https://twitter.com/coveadvtours">Twitter</a></li>
+      </ul>
+    </div>
+    <p class="credit">Mockup made for Cove Adventure Tours by Sunny Gupta, <a href="https://signalsetbase.com">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick actions" role="region">
+  <a class="c1" href="tel:+12502304575">Call now</a>
+  <a class="c2" href="#book">Book a tour</a>
+</div>
+
+<script>
+(function(){
+  var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* gentle rise for things below the first screen */
+  if(!still && 'IntersectionObserver' in window){
+    var els = document.querySelectorAll('.head,.trail-grid,.review blockquote,.tour,.van,.about .wrap>div,.faq details,.book form,.contact,.end .wrap');
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.remove('will-rise'); io.unobserve(e.target); } });
+    },{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){
+      if(el.getBoundingClientRect().top > innerHeight){ el.classList.add('rise','will-rise'); io.observe(el); }
+    });
+  }
+
+  /* the trail */
+  var route = document.getElementById('walked'), walker = document.getElementById('walker');
+  var tabs = [].slice.call(document.querySelectorAll('[role=tab]'));
+  var steps = [].slice.call(document.querySelectorAll('.step'));
+  var stops = [].slice.call(document.querySelectorAll('.map .stop'));
+  var bar = document.querySelector('.progress i');
+  var L = route.getTotalLength();
+  var pts = [[50,330],[170,262],[270,230],[470,120]];
+  var at = pts.map(function(p){ var best=0,bd=1e9; for(var s=0;s<=L;s+=2){ var q=route.getPointAtLength(s), d=(q.x-p[0])*(q.x-p[0])+(q.y-p[1])*(q.y-p[1]); if(d<bd){bd=d;best=s;} } return best; });
+  route.style.strokeDasharray = L + ' ' + L;
+  var cur = 0, shown = 0, anim;
+  function place(len){ route.style.strokeDashoffset = L - len; var q = route.getPointAtLength(len); walker.setAttribute('cx',q.x); walker.setAttribute('cy',q.y); }
+  function go(i, focus){
+    tabs.forEach(function(t,k){ t.setAttribute('aria-selected', k===i); t.tabIndex = k===i?0:-1; });
+    steps.forEach(function(s,k){ s.hidden = k!==i; });
+    stops.forEach(function(s,k){ s.classList.toggle('on', k<=i); });
+    if(focus) tabs[i].focus();
+    var from = shown, to = at[i]; cur = i;
+    cancelAnimationFrame(anim);
+    if(still){ shown = to; place(to); return; }
+    var t0 = performance.now();
+    (function tick(now){ var p = Math.min(1,(now-t0)/900), e = 1-Math.pow(1-p,3); shown = from+(to-from)*e; place(shown); if(p<1) anim = requestAnimationFrame(tick); })(t0);
+  }
+  /* finished picture first: the whole walk, landing on stop 1 */
+  var svg = document.querySelector('.map svg'), mq = matchMedia('(max-width:640px)');
+  function frame(){ svg.setAttribute('viewBox', mq.matches ? '22 92 476 264' : '10 70 590 300'); }
+  frame(); if(mq.addEventListener) mq.addEventListener('change', frame);
+  shown = at[3]; place(shown); stops.forEach(function(s){ s.classList.add('on'); });
+  go(0);
+
+  var auto = !still, onScreen = false, timer, started;
+  function stopAuto(){ auto = false; clearInterval(timer); bar.style.transition='none'; bar.style.width='0'; }
+  tabs.forEach(function(t,k){
+    t.addEventListener('click', function(){ stopAuto(); go(k); });
+    t.addEventListener('keydown', function(e){
+      var n = e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(n){ e.preventDefault(); stopAuto(); go((cur+n+4)%4, true); }
+    });
+  });
+  stops.forEach(function(s,k){ s.addEventListener('click', function(){ stopAuto(); go(k); }); });
+
+  function cycle(){
+    bar.style.transition='none'; bar.style.width='0';
+    requestAnimationFrame(function(){ requestAnimationFrame(function(){ bar.style.transition='width 5s linear'; bar.style.width='100%'; }); });
+  }
+  if(auto && 'IntersectionObserver' in window){
+    new IntersectionObserver(function(es){
+      onScreen = es[0].isIntersecting;
+      clearInterval(timer);
+      if(onScreen && auto){ cycle(); timer = setInterval(function(){ go((cur+1)%4); cycle(); }, 5000); }
+      else { bar.style.transition='none'; bar.style.width='0'; }
+    },{threshold:.4}).observe(document.querySelector('.trail-grid'));
+  }
+
+  /* booking request */
+  var n = 2, out = document.getElementById('ppl-out'), sum = document.getElementById('sum');
+  var tour = document.getElementById('tour'), date = document.getElementById('date');
+  function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+  function upd(){
+    out.textContent = n;
+    var d = date.value ? new Date(date.value+'T12:00').toLocaleDateString('en-CA',{weekday:'short',month:'long',day:'numeric'}) : '';
+    sum.innerHTML = '<b>'+esc(tour.value)+'</b> for <b>'+n+' hiker'+(n>1?'s':'')+'</b>'+(d?', on <b>'+esc(d)+'</b>.':', date to be confirmed.');
+  }
+  document.getElementById('minus').addEventListener('click',function(){ if(n>1){n--;upd();} });
+  document.getElementById('plus').addEventListener('click',function(){ if(n<30){n++;upd();} });
+  tour.addEventListener('change',upd); date.addEventListener('change',upd);
+  var today = new Date(); date.min = today.toISOString().slice(0,10);
+  document.querySelectorAll('[data-tour]').forEach(function(a){ a.addEventListener('click',function(){ tour.value = a.getAttribute('data-tour'); upd(); }); });
+  document.getElementById('req').addEventListener('submit',function(e){ e.preventDefault(); document.getElementById('done').classList.add('show'); });
+})();
+</script>
+</body>
+</html>
