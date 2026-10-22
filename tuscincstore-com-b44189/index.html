@@ -1,0 +1,777 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup tuscincstore-com-b44189 1 30c04279 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TSI Sheds | Sheds, Garages &amp; Cabins in PA &amp; NY</title>
+<meta name="description" content="Prebuilt sheds, garages and cabins in Pennsylvania and New York. See what's ready to deliver, with real prices, from TSI Sheds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#c21300;--red-d:#9e1000;--ink:#161412;--ink-2:#3d3833;--mute:#625a52;
+  --sand:#ccc1b3;--sand-l:#f3eee8;--sand-m:#e6ddd2;--line:#ddd3c7;--white:#fff;
+  --display:"Archivo","Arial Black",system-ui,sans-serif;
+  --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r:14px;--shadow:0 1px 2px rgba(22,20,18,.06),0 8px 28px rgba(22,20,18,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font:400 17px/1.6 var(--body);color:var(--ink);background:var(--white);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:#fff;padding:10px 16px;border-radius:8px;z-index:100;text-decoration:none}
+.skip:focus{top:44px}
+
+/* mockup banner */
+.mock{background:var(--ink);color:#efe7dc;text-align:center;font:500 13px/1.2 var(--body);letter-spacing:.04em;padding:9px 16px;position:relative;z-index:60}
+
+/* header */
+.site-head{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
+.site-head .wrap{display:flex;align-items:center;gap:28px;height:76px}
+.brand{display:flex;align-items:center;text-decoration:none;flex:none}
+.brand img{height:54px;width:auto}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{font:600 15px/1 var(--body);text-decoration:none;color:var(--ink-2);padding:14px 12px;border-radius:8px}
+.nav a:hover{color:var(--red)}
+.head-call{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px;border-radius:999px;background:var(--red);color:#fff;text-decoration:none;font:700 15px/1 var(--body)}
+.head-call:hover{background:var(--red-d)}
+.head-call svg{width:16px;height:16px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:10px;font:700 16px/1 var(--body);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .2s,transform .2s,border-color .2s}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-d)}
+.btn-ghost{border-color:rgba(255,255,255,.75);color:#fff;background:rgba(0,0,0,.18)}
+.btn-ghost:hover{background:rgba(0,0,0,.4)}
+.btn-line{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-line:hover{background:var(--ink);color:#fff}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* hero */
+.hero{position:relative;min-height:min(760px,calc(100vh - 110px));display:flex;align-items:center;color:#fff;overflow:hidden;background:#2a2723}
+.hero > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 50%}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,12,10,.86) 0%,rgba(14,12,10,.62) 38%,rgba(14,12,10,.08) 72%,rgba(14,12,10,0) 100%);z-index:1}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-top:72px;padding-bottom:72px}
+.eyebrow{font:800 13px/1 var(--display);letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin:0 0 16px}
+.hero .eyebrow{color:#f1e7db}
+.hero h1{font:900 clamp(44px,6.2vw,84px)/.95 var(--display);text-transform:uppercase;letter-spacing:-.01em;margin:0;max-width:11ch}
+.hero h1 span{color:#fff;box-shadow:inset 0 -.14em 0 var(--red)}
+.hero p.lede{font-size:19px;line-height:1.55;max-width:31em;margin:30px 0 32px;color:#f4eee7}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
+
+.proof{background:var(--ink);color:#f1e9df}
+.proof ul{list-style:none;margin:0 auto;padding:0 32px;max-width:1200px;display:grid;grid-template-columns:repeat(4,1fr)}
+.proof li{display:flex;align-items:center;gap:12px;padding:22px 0;font:500 15px/1.3 var(--body)}
+.proof li + li{padding-left:24px;border-left:1px solid #3a3530}
+.proof b{font:800 22px/1 var(--display);color:#fff}
+.stars{color:#ff5a45;letter-spacing:2px;font-size:15px}
+
+/* sections */
+section{scroll-margin-top:84px}
+.sec{padding:112px 0}
+.sec-head{max-width:720px;margin:0 0 48px}
+.sec-head h2,.h2{font:900 clamp(34px,4.2vw,54px)/1 var(--display);text-transform:uppercase;letter-spacing:-.01em;margin:0}
+.sec-head p{font-size:18px;color:var(--mute);margin:18px 0 0;max-width:36em}
+
+/* stock tool */
+#stock{background:var(--sand-l)}
+.tool{background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);overflow:hidden}
+.controls{display:flex;flex-wrap:wrap;gap:20px 32px;align-items:flex-end;padding:24px 28px;border-bottom:1px solid var(--line)}
+.ctl legend{font:700 12px/1 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--mute);padding:0;margin:0 0 10px}
+.ctl{border:0;margin:0;padding:0;min-width:0}
+.seg{display:inline-flex;background:var(--sand-l);border:1px solid var(--line);border-radius:12px;padding:4px;gap:2px;flex-wrap:wrap}
+.seg button{font:600 15px/1 var(--body);color:var(--ink-2);background:transparent;border:0;border-radius:9px;min-height:44px;padding:0 16px;cursor:pointer;transition:background .2s,color .2s}
+.seg button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.seg button:hover:not([aria-pressed="true"]){background:#fff}
+.summary{margin-left:auto;text-align:right}
+.summary .n{font:900 30px/1 var(--display);display:block}
+.summary .s{font-size:14px;color:var(--mute)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.card{display:flex;flex-direction:column;padding:26px 28px 28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);transition:background .25s}
+.card:hover{background:#fdfbf8}
+.card[hidden]{display:none}
+.draw{height:200px;margin:0 -8px 14px;background:linear-gradient(#fff 0 82%,var(--sand-l) 82%);border-radius:10px;position:relative}
+.draw svg{width:100%;height:100%;display:block}
+.tag{position:absolute;left:10px;top:10px;font:700 11px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;color:#0b5a2b;background:#e3f3e8;border-radius:999px;padding:6px 9px}
+.card h3{font:800 22px/1.15 var(--display);margin:0;text-transform:uppercase;letter-spacing:-.005em}
+.where{font-size:14px;color:var(--mute);margin:6px 0 16px;display:flex;gap:6px;align-items:center}
+.where svg{width:14px;height:14px;color:var(--red)}
+.price{font:900 34px/1 var(--display);margin:0}
+.price small{font:600 16px/1 var(--body);color:var(--mute)}
+.dep{font-size:14px;color:var(--ink-2);margin:8px 0 2px}
+.alt{font-size:13px;color:var(--mute);margin:0 0 18px}
+.model{font:600 12px/1 var(--body);letter-spacing:.06em;color:var(--mute);text-transform:uppercase}
+.card .ask{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:18px}
+.ask button{font:700 15px/1 var(--body);color:var(--red);background:none;border:0;padding:12px 0;min-height:44px;cursor:pointer}
+.ask button:hover{text-decoration:underline;text-underline-offset:4px}
+.tool-foot{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between;padding:20px 28px;background:var(--sand-l);font-size:15px;color:var(--ink-2)}
+.tool-foot a{font-weight:700;color:var(--red);text-underline-offset:4px}
+.none{padding:48px 28px;text-align:center;color:var(--mute);grid-column:1/-1}
+
+/* lineup */
+.mosaic{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.tile{position:relative;border-radius:var(--r);overflow:hidden;background:#3a3631;min-height:340px;color:#fff;margin:0}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.tile:hover img{transform:scale(1.025)}
+.tile figcaption{position:absolute;left:0;right:0;bottom:0;padding:60px 24px 22px;background:linear-gradient(transparent,rgba(12,10,8,.82))}
+.tile h3{font:900 26px/1 var(--display);text-transform:uppercase;margin:0 0 6px}
+.tile p{margin:0;font-size:15px;color:#f1ebe4}
+.t-sheds{grid-column:span 7;min-height:440px}
+.t-garages{grid-column:span 5;min-height:440px}
+.t-cabins{grid-column:span 5}
+.t-pav{grid-column:span 7}
+.t-green{grid-column:span 6}
+.t-poly{grid-column:span 6}
+.t-poly img{object-position:50% 62%}
+.t-sheds img{object-position:50% 60%}
+.badge{position:absolute;top:16px;left:16px;font:700 11px/1 var(--body);letter-spacing:.1em;text-transform:uppercase;background:#fff;color:var(--ink);padding:7px 10px;border-radius:999px;z-index:2}
+.lineup-note{margin:28px 0 0;color:var(--mute);font-size:16px}
+.lineup-note a{color:var(--red);font-weight:700;text-underline-offset:4px}
+
+/* process */
+#how{background:var(--ink);color:#f1e9df}
+#how .eyebrow{color:#ff6b57}
+#how .sec-head p{color:#c9bfb3}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;counter-reset:s}
+.steps::before{content:"";position:absolute;left:0;right:0;top:27px;height:2px;background:#3d3731}
+.steps li{position:relative;padding-right:28px}
+.num{width:56px;height:56px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font:900 20px/1 var(--display);position:relative;box-shadow:0 0 0 8px var(--ink)}
+.steps h3{font:800 21px/1.2 var(--display);text-transform:uppercase;margin:26px 0 10px;color:#fff}
+.steps p{margin:0;font-size:16px;color:#cfc5b9}
+
+/* reviews */
+.reviews{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:start}
+.big-quote{margin:0}
+.big-quote blockquote{margin:0;font:800 clamp(30px,3.6vw,48px)/1.08 var(--display);letter-spacing:-.01em}
+.big-quote blockquote::before{content:"\201C";display:block;font:900 80px/0.5 var(--display);color:var(--red);margin:10px 0 6px}
+.big-quote p.ctx{font-size:17px;color:var(--ink-2);margin:24px 0 0;max-width:34em}
+.who{margin-top:20px;font:600 15px/1.4 var(--body);color:var(--mute)}
+.who b{color:var(--ink)}
+.rating{display:flex;align-items:center;gap:14px;margin-bottom:28px}
+.rating .big{font:900 56px/1 var(--display)}
+.rating .stars{color:var(--red);font-size:20px}
+.rating .c{font-size:15px;color:var(--mute)}
+.qs{display:grid;gap:16px}
+.q{margin:0;background:var(--sand-l);border-radius:var(--r);padding:24px 26px}
+.q blockquote{margin:0;font-size:17px;line-height:1.55}
+.q figcaption{margin-top:12px;font:600 14px/1 var(--body);color:var(--mute)}
+.q figcaption b{color:var(--ink)}
+
+/* delivery */
+#delivery{background:var(--sand-l)}
+.finder{display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 22px;margin:0 0 28px;box-shadow:var(--shadow)}
+.finder label{font:700 15px/1.2 var(--body)}
+.finder select{font:600 16px/1 var(--body);min-height:48px;padding:0 40px 0 14px;border:1.5px solid var(--ink);border-radius:10px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23161412' stroke-width='2' fill='none'/%3E%3C/svg%3E") no-repeat right 14px center;appearance:none;color:var(--ink)}
+.finder output{font-size:16px;color:var(--ink-2);flex:1 1 320px}
+.finder output b{color:var(--ink)}
+.lots{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.lot{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px;transition:border-color .3s,box-shadow .3s,transform .3s}
+.lot.on{border-color:var(--red);box-shadow:0 0 0 1px var(--red),var(--shadow)}
+.lot .st{font:700 12px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.lot h3{font:900 26px/1.05 var(--display);text-transform:uppercase;margin:8px 0 18px}
+.ring{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+.ring svg{width:76px;height:76px;flex:none}
+.ring p{margin:0;font:600 16px/1.35 var(--body)}
+.towns{list-style:none;margin:0 0 16px;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.towns li{font-size:13px;line-height:1;padding:7px 10px;border-radius:999px;background:var(--sand-l);color:var(--ink-2)}
+.towns li.hit{background:var(--ink);color:#fff}
+.counties{font-size:14px;color:var(--mute);margin:0}
+.del-note{margin:28px 0 0;font-size:16px;color:var(--ink-2)}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:64px;align-items:start}
+.faq details{border-top:1px solid var(--line)}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;font:800 19px/1.3 var(--display);min-height:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";width:14px;height:14px;flex:none;background:linear-gradient(var(--red),var(--red)) center/14px 2px no-repeat,linear-gradient(var(--red),var(--red)) center/2px 14px no-repeat;transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin:0 0 24px;color:var(--ink-2);max-width:40em}
+
+/* contact */
+#contact{background:var(--ink);color:#f1e9df}
+#contact .eyebrow{color:#ff6b57}
+.contact{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:start}
+.contact .h2{color:#fff}
+.contact .lead{font-size:18px;color:#cfc5b9;margin:18px 0 32px;max-width:28em}
+.bigtel{display:inline-flex;align-items:center;gap:14px;font:900 clamp(30px,3.4vw,44px)/1 var(--display);color:#fff;text-decoration:none;min-height:44px}
+.bigtel svg{width:30px;height:30px;color:#ff6b57}
+.bigtel:hover{color:#ffd9d3}
+.mail{display:inline-block;margin-top:14px;color:#efe7dc;font-weight:600;text-underline-offset:4px;padding:10px 0}
+.lotlist{list-style:none;padding:0;margin:32px 0 0;border-top:1px solid #3a3530}
+.lotlist li{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid #3a3530;font-size:15px}
+.lotlist li span:last-child{color:#c9bfb3}
+.form{background:#fff;color:var(--ink);border-radius:20px;padding:34px;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+.form h3{font:900 24px/1.1 var(--display);text-transform:uppercase;margin:0 0 22px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.field label{font:600 14px/1.2 var(--body);color:var(--ink-2)}
+.field input,.field select,.field textarea{font:400 16px/1.4 var(--body);color:var(--ink);border:1.5px solid #bfb3a5;border-radius:10px;padding:12px 14px;min-height:48px;background:#fff;width:100%}
+.field textarea{min-height:104px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 3px rgba(194,19,0,.25)}
+.form .btn{width:100%;margin-top:6px}
+.sent{margin:14px 0 0;font-weight:600;color:#0b5a2b;min-height:1.6em}
+.flash{animation:flash 1.2s ease}
+@keyframes flash{0%{box-shadow:0 0 0 0 rgba(194,19,0,.0)}25%{box-shadow:0 0 0 6px rgba(194,19,0,.35)}100%{box-shadow:0 0 0 0 rgba(194,19,0,0)}}
+
+/* footer */
+.foot{background:#0e0c0b;color:#c9bfb3;padding:44px 0 40px;font-size:14px}
+.foot .wrap{display:flex;flex-wrap:wrap;gap:18px 32px;justify-content:space-between;align-items:center}
+.foot .name{font:900 18px/1 var(--display);color:#fff;text-transform:uppercase;letter-spacing:.02em}
+.foot .name span{display:block;font:600 11px/1 var(--body);letter-spacing:.16em;color:#a99e91;margin-top:6px}
+.foot nav{display:flex;gap:6px;flex-wrap:wrap}
+.foot nav a{color:#efe7dc;text-decoration:none;padding:12px 10px;font-weight:600}
+.foot nav a:hover{color:#fff;text-decoration:underline}
+.credit{flex-basis:100%;border-top:1px solid #2b2622;padding-top:18px;margin:0;color:#a99e91}
+.credit a{color:#efe7dc}
+
+/* phone call bar */
+.callbar{display:none}
+
+/* motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+
+/* tablet */
+@media (max-width:1020px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr);row-gap:44px}
+  .steps::before{display:none}
+  .reviews,.faq-grid,.contact{grid-template-columns:1fr;gap:44px}
+  .lots{grid-template-columns:1fr}
+  .proof ul{grid-template-columns:repeat(2,1fr)}
+  .proof li:nth-child(3){border-left:0;padding-left:0}
+  .nav{display:none}
+  .head-call{margin-left:auto}
+}
+/* phone */
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:68px}
+  .wrap{padding:0 20px}
+  .mock{font-size:12px;padding:8px 12px}
+  .site-head .wrap{height:64px}
+  .brand img{height:44px}
+  .head-call{padding:0 14px;font-size:14px}
+  .hero{min-height:640px;align-items:flex-end}
+  .hero > img{object-position:64% 50%}
+  .hero::before{background:linear-gradient(180deg,rgba(14,12,10,.1) 0%,rgba(14,12,10,.55) 38%,rgba(14,12,10,.9) 72%)}
+  .hero .wrap{padding-top:180px;padding-bottom:36px}
+  .hero h1{font-size:44px}
+  .hero p.lede{font-size:17px;margin:18px 0 24px}
+  .hero .ctas .btn{flex:1 1 100%}
+  .proof ul{padding:0 20px}
+  .proof li{padding:16px 0;font-size:14px}
+  .proof li + li{padding-left:16px}
+  .proof b{font-size:19px}
+  .sec{padding:72px 0}
+  .sec-head{margin-bottom:32px}
+  .sec-head p{font-size:16px}
+  .controls{padding:20px;gap:18px}
+  .ctl,.seg{width:100%}
+  .seg{flex-wrap:nowrap}
+  .seg button{flex:1 1 auto;padding:0 10px;font-size:14px;white-space:nowrap}
+  .seg button[data-v="all"]{flex:0 0 auto;padding:0 14px}
+  .summary{margin-left:0;text-align:left}
+  .grid{grid-template-columns:1fr}
+  .card{border-right:0;padding:22px 20px 22px}
+  .tool-foot{padding:18px 20px}
+  .mosaic{gap:12px}
+  .tile,.t-sheds,.t-garages{grid-column:1/-1;min-height:260px}
+  .t-poly{min-height:380px}
+  .tile h3{font-size:23px}
+  .steps{grid-template-columns:1fr;row-gap:32px}
+  .steps li{padding:0 0 0 76px}
+  .num{position:absolute;left:0;top:0}
+  .steps h3{margin-top:12px}
+  .big-quote blockquote::before{font-size:72px}
+  .lot{padding:22px 20px}
+  .finder{padding:16px}
+  .finder select{width:100%}
+  .form{padding:24px 20px}
+  .row{grid-template-columns:1fr;gap:0}
+  .lotlist li{flex-direction:column;gap:2px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:70;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:rgba(22,20,18,.97);border-top:1px solid #3a3530}
+  .callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:10px;font:700 15px/1 var(--body);text-decoration:none;color:#fff}
+  .callbar .c1{background:var(--red)}
+  .callbar .c2{border:1.5px solid #6b625a}
+  .callbar svg{width:17px;height:17px}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Free mockup for TSI Sheds</div>
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="TSI Sheds, back to top">
+      <img src="https://www.tsisheds.com/assets/tsi-logo-ojLYeoh1.png" alt="TSI - Space For What Matters" width="108" height="54">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#stock">In stock</a>
+      <a href="#lineup">Buildings</a>
+      <a href="#how">How it works</a>
+      <a href="#delivery">Delivery</a>
+      <a href="#faq">Questions</a>
+    </nav>
+    <a class="head-call" href="tel:+17174365591"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>717-436-5591</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-h">
+    <img src="https://wsrv.nl/?url=https://utmywxtwgylxpbbnggut.supabase.co/storage/v1/object/public/media/pages/home/hero-poolside-porch-shed.webp&amp;w=1440&amp;output=webp&amp;q=75" alt="Gray poolside storage shed with timber-frame porch beside an in-ground pool" width="1440" height="961" fetchpriority="high">
+    <div class="wrap">
+      <p class="eyebrow">Space for what matters</p>
+      <h1 id="hero-h">Sheds, garages &amp; cabins in <span>PA&nbsp;&amp;&nbsp;NY</span></h1>
+      <p class="lede">Pick one that's ready to deliver, or design your own. Our crew sets it exactly where you want it, and local delivery is free.</p>
+      <div class="ctas">
+        <a class="btn btn-red" href="#stock">See what's in stock<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="tel:+17174365591">Call 717-436-5591</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="proof" role="region" aria-label="Why TSI">
+    <ul>
+      <li><b>5.0</b><span><span class="stars" aria-hidden="true">★★★★★</span><br>193 reviews</span></li>
+      <li><b>10,000+</b><span>structures<br>built</span></li>
+      <li><b>35+</b><span>years in<br>business</span></li>
+      <li><b>Free</b><span>local<br>delivery</span></li>
+    </ul>
+  </div>
+
+  <section class="sec" id="stock" aria-labelledby="stock-h">
+    <div class="wrap">
+      <div class="sec-head rise">
+        <p class="eyebrow">In stock now</p>
+        <h2 id="stock-h">Ready to deliver. Real prices.</h2>
+        <p>Buildings sitting on our lots right now. Filter by lot, then see each one priced to buy outright or rent-to-own.</p>
+      </div>
+
+      <div class="tool rise" id="tool">
+        <div class="controls">
+          <fieldset class="ctl">
+            <legend>Lot</legend>
+            <div class="seg" data-group="lot">
+              <button type="button" data-v="all" aria-pressed="true">All</button>
+              <button type="button" data-v="Mifflintown" aria-pressed="false">Mifflintown, PA</button>
+              <button type="button" data-v="Spencerport" aria-pressed="false">Spencerport, NY</button>
+            </div>
+          </fieldset>
+          <fieldset class="ctl">
+            <legend>Type</legend>
+            <div class="seg" data-group="type">
+              <button type="button" data-v="all" aria-pressed="true">All</button>
+              <button type="button" data-v="shed" aria-pressed="false">Sheds</button>
+              <button type="button" data-v="garage" aria-pressed="false">Garages</button>
+            </div>
+          </fieldset>
+          <fieldset class="ctl">
+            <legend>Pay</legend>
+            <div class="seg" data-group="pay">
+              <button type="button" data-v="buy" aria-pressed="true">Buy</button>
+              <button type="button" data-v="rto" aria-pressed="false">Rent-to-own</button>
+            </div>
+          </fieldset>
+          <div class="summary" aria-live="polite"><span class="n" id="sum-n">6 buildings</span><span class="s" id="sum-s">from $5,684</span></div>
+        </div>
+
+        <div class="grid" id="grid">
+          <article class="card" data-lot="Mifflintown" data-type="shed" data-style="af" data-w="10" data-l="16" data-buy="5684" data-dep="1137" data-mo="279" data-rdep="734" data-model="AF20626" data-name="10x16 A-Frame">
+            <div class="draw" aria-hidden="true"><span class="tag">Ready for delivery</span></div>
+            <h3>10x16 A-Frame</h3>
+            <p class="where"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Mifflintown, PA</p>
+            <p class="price"><span class="pv">$5,684</span></p>
+            <p class="dep">$1,137 deposit to purchase</p>
+            <p class="alt">Rent-to-own: $279/mo · $734 deposit</p>
+            <div class="ask"><span class="model">Model #AF20626</span><button type="button">Ask about this one</button></div>
+          </article>
+          <article class="card" data-lot="Mifflintown" data-type="shed" data-style="hsb" data-w="10" data-l="16" data-buy="6025" data-dep="1205" data-mo="296" data-rdep="778" data-model="HSB20126" data-name="10x16 Hi-Side Barn">
+            <div class="draw" aria-hidden="true"><span class="tag">Ready for delivery</span></div>
+            <h3>10x16 Hi-Side Barn</h3>
+            <p class="where"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Mifflintown, PA</p>
+            <p class="price"><span class="pv">$6,025</span></p>
+            <p class="dep">$1,205 deposit to purchase</p>
+            <p class="alt">Rent-to-own: $296/mo · $778 deposit</p>
+            <div class="ask"><span class="model">Model #HSB20126</span><button type="button">Ask about this one</button></div>
+          </article>
+          <article class="card" data-lot="Mifflintown" data-type="shed" data-style="af" data-w="10" data-l="12" data-buy="6208" data-dep="1242" data-mo="305" data-rdep="802" data-model="AF19426" data-name="10x12 A-Frame">
+            <div class="draw" aria-hidden="true"><span class="tag">Ready for delivery</span></div>
+            <h3>10x12 A-Frame</h3>
+            <p class="where"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Mifflintown, PA</p>
+            <p class="price"><span class="pv">$6,208</span></p>
+            <p class="dep">$1,242 deposit to purchase</p>
+            <p class="alt">Rent-to-own: $305/mo · $802 deposit</p>
+            <div class="ask"><span class="model">Model #AF19426</span><button type="button">Ask about this one</button></div>
+          </article>
+          <article class="card" data-lot="Spencerport" data-type="shed" data-style="mb" data-w="10" data-l="12" data-buy="6332" data-dep="1266" data-mo="317" data-rdep="824" data-model="MB20326" data-name="10x12 Mini Barn">
+            <div class="draw" aria-hidden="true"><span class="tag">Ready for delivery</span></div>
+            <h3>10x12 Mini Barn</h3>
+            <p class="where"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Spencerport, NY</p>
+            <p class="price"><span class="pv">$6,332</span></p>
+            <p class="dep">$1,266 deposit to purchase</p>
+            <p class="alt">Rent-to-own: $317/mo · $824 deposit</p>
+            <div class="ask"><span class="model">Model #MB20326</span><button type="button">Ask about this one</button></div>
+          </article>
+          <article class="card" data-lot="Mifflintown" data-type="garage" data-style="hsbg" data-w="12" data-l="24" data-buy="9163" data-dep="1833" data-mo="450" data-rdep="1183" data-model="HSBG20426" data-name="12x24 Hi-Side Barn Garage">
+            <div class="draw" aria-hidden="true"><span class="tag">Ready for delivery</span></div>
+            <h3>12x24 Hi-Side Barn Garage</h3>
+            <p class="where"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Mifflintown, PA</p>
+            <p class="price"><span class="pv">$9,163</span></p>
+            <p class="dep">$1,833 deposit to purchase</p>
+            <p class="alt">Rent-to-own: $450/mo · $1,183 deposit</p>
+            <div class="ask"><span class="model">Model #HSBG20426</span><button type="button">Ask about this one</button></div>
+          </article>
+          <article class="card" data-lot="Spencerport" data-type="garage" data-style="afg" data-w="12" data-l="24" data-buy="10601" data-dep="2120" data-mo="530" data-rdep="1378" data-model="AFG20526" data-name="12x24 A-Frame Garage">
+            <div class="draw" aria-hidden="true"><span class="tag">Ready for delivery</span></div>
+            <h3>12x24 A-Frame Garage</h3>
+            <p class="where"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Spencerport, NY</p>
+            <p class="price"><span class="pv">$10,601</span></p>
+            <p class="dep">$2,120 deposit to purchase</p>
+            <p class="alt">Rent-to-own: $530/mo · $1,378 deposit</p>
+            <div class="ask"><span class="model">Model #AFG20526</span><button type="button">Ask about this one</button></div>
+          </article>
+        </div>
+
+        <div class="tool-foot">
+          <span>Drawings are sized by footprint, so you can compare at a glance.</span>
+          <a href="https://www.tsisheds.com/">Browse all inventory or design yours in 3D on tsisheds.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="lineup" aria-labelledby="lineup-h">
+    <div class="wrap">
+      <div class="sec-head rise">
+        <p class="eyebrow">The lineup</p>
+        <h2 id="lineup-h">Pre-built or custom</h2>
+        <p>Every structure we build, from backyard sheds to timber-frame pavilions.</p>
+      </div>
+      <div class="mosaic">
+        <figure class="tile t-sheds rise">
+          <img loading="lazy" src="https://wsrv.nl/?url=https%3A%2F%2Futmywxtwgylxpbbnggut.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fmedia%2Fpages%2Fhome%2FTSI-Chalet-category.jpg&amp;w=1800&amp;output=webp&amp;q=92&amp;we" alt="Gray Chalet shed with metal roof in a landscaped backyard garden" width="1600" height="1073">
+          <figcaption><h3>Sheds</h3><p>Storage, workshops &amp; backyard barns</p></figcaption>
+        </figure>
+        <figure class="tile t-garages rise">
+          <img loading="lazy" src="https://wsrv.nl/?url=https%3A%2F%2Futmywxtwgylxpbbnggut.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fmedia%2Fpages%2Fhome%2FTSI-Hi-Sided-Barn-Garage-category.jpg&amp;w=1800&amp;output=webp&amp;q=92&amp;we" alt="Red Hi-Side Barn garage with white overhead door" width="1800" height="1208">
+          <figcaption><h3>Garages</h3><p>1 &amp; 2-car prebuilt garages</p></figcaption>
+        </figure>
+        <figure class="tile t-cabins rise">
+          <img loading="lazy" src="https://wsrv.nl/?url=https%3A%2F%2Futmywxtwgylxpbbnggut.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fmedia%2Fpages%2Fhome%2FTSI-Lakeview-Park-Model-category.jpg&amp;w=1800&amp;output=webp&amp;q=92&amp;we" alt="Lakeview Park Model cabin with timber-frame porch among trees" width="1600" height="1073">
+          <figcaption><h3>Cabins</h3><p>Park models &amp; custom getaways</p></figcaption>
+        </figure>
+        <figure class="tile t-pav rise">
+          <img loading="lazy" src="https://wsrv.nl/?url=https%3A%2F%2Futmywxtwgylxpbbnggut.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fmedia%2Fpages%2Fpavilions%2Fpavilion-hero.jpg&amp;w=1800&amp;output=webp&amp;q=92&amp;we" alt="Timber-frame pavilion on a gravel pad" width="1500" height="992">
+          <figcaption><h3>Pavilions</h3><p>Timber-frame outdoor living</p></figcaption>
+        </figure>
+        <figure class="tile t-green rise">
+          <img loading="lazy" src="https://wsrv.nl/?url=https%3A%2F%2Futmywxtwgylxpbbnggut.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fmedia%2Fpages%2Fhome%2FTSI-Greenhouse-Shed-category.jpg&amp;w=1800&amp;output=webp&amp;q=92&amp;we" alt="Greenhouse shed with large windows beside a raised garden bed" width="822" height="710">
+          <figcaption><h3>Greenhouses</h3><p>Year-round growing &amp; potting sheds</p></figcaption>
+        </figure>
+        <figure class="tile t-poly rise">
+          <span class="badge">Finch dealer</span>
+          <img loading="lazy" src="https://wsrv.nl/?url=https%3A%2F%2Futmywxtwgylxpbbnggut.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fmedia%2Fpoly-furniture%2Fassets%2Ffinch-wave-table-dining-set-on-ocean-front-home-patio.webp&amp;w=1800&amp;output=webp&amp;q=92&amp;we" alt="Finch Wave poly dining table and chairs on an oceanfront patio" width="1400" height="2100">
+          <figcaption><h3>Poly furniture</h3><p>Low-maintenance outdoor seating &amp; dining</p></figcaption>
+        </figure>
+      </div>
+      <p class="lineup-note rise">Cabins are available through our Mifflintown, PA location. Want something your own way? <a href="https://www.tsisheds.com/">Design it in 3D with live pricing</a>.</p>
+    </div>
+  </section>
+
+  <section class="sec" id="how" aria-labelledby="how-h">
+    <div class="wrap">
+      <div class="sec-head rise">
+        <p class="eyebrow">Our process</p>
+        <h2 id="how-h">Quote. Site prep. Delivery. Keys.</h2>
+        <p>We keep it simple, from your first call to your finished structure.</p>
+      </div>
+      <ol class="steps">
+        <li class="rise"><div class="num" aria-hidden="true">1</div><h3>Get your quote</h3><p>Visit a lot or ask for a quote. We'll help you pick the right size, style and options for your needs and budget.</p></li>
+        <li class="rise"><div class="num" aria-hidden="true">2</div><h3>Site prep</h3><p>We'll show you what a level, accessible spot looks like: gravel pad, clearance and access. Need help? Our crew offers full site prep.</p></li>
+        <li class="rise"><div class="num" aria-hidden="true">3</div><h3>Delivery &amp; placement</h3><p>Our crew delivers and sets your structure exactly where you want it. Local delivery and placement are included, no hidden fees.</p></li>
+        <li class="rise"><div class="num" aria-hidden="true">4</div><h3>Walk-through &amp; keys</h3><p>A final walk-through with you to make sure everything looks great. Then the keys are yours.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec" id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <h2 id="rev-h" class="eyebrow">What customers say</h2>
+      <div class="reviews">
+        <figure class="big-quote rise">
+          <blockquote>The man was a total surgeon with a truck/trailer/mule!</blockquote>
+          <p class="ctx">"Delivery was a real challenge, due to the tough access to our property and drop site. Hats off to our driver, Dan. Although it turned into a long and difficult morning, he never gave up, he made sure things were exactly how we wanted them&hellip;"</p>
+          <figcaption class="who"><b>Brandon Martin</b> · 10x20 garage/shed · Jun 2026</figcaption>
+        </figure>
+        <div class="rise">
+          <div class="rating"><span class="big">5.0</span><span><span class="stars" aria-hidden="true">★★★★★</span><br><span class="c">from 193 reviews</span></span></div>
+          <div class="qs">
+            <figure class="q"><blockquote>"Outstanding experience from start to finish! I want to shout out Tom, Ben and Dan! They helped me get all the documents I needed for my permit."</blockquote><figcaption><b>Evan Hickernell</b> · Jun 2026</figcaption></figure>
+            <figure class="q"><blockquote>"Everything was seamless from the first contact through delivery of our shed."</blockquote><figcaption><b>Amy R</b> · Jun 2026</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="delivery" aria-labelledby="del-h">
+    <div class="wrap">
+      <div class="sec-head rise">
+        <p class="eyebrow">Delivery area</p>
+        <h2 id="del-h">Free local delivery from three lots</h2>
+        <p>We deliver across Pennsylvania and New York. Find your town to see which lot serves you.</p>
+      </div>
+      <div class="finder rise">
+        <label for="town">Your town</label>
+        <select id="town">
+          <optgroup label="Pennsylvania">
+            <option>Lewistown</option><option>State College</option><option selected>Harrisburg</option><option>Selinsgrove</option><option>Carlisle</option><option>Huntingdon</option><option>Mifflinburg</option><option>Hershey</option><option>Lewisburg</option><option>Duncannon</option>
+          </optgroup>
+          <optgroup label="New York, Western">
+            <option>Rochester</option><option>Brockport</option><option>Batavia</option><option>Greece</option><option>Webster</option><option>Canandaigua</option><option>Geneseo</option><option>Albion</option><option>Buffalo</option><option>Newark</option>
+          </optgroup>
+          <optgroup label="New York, Central">
+            <option>Utica</option><option>Rome</option><option>Herkimer</option><option>New Hartford</option><option>Oneida</option><option>Syracuse</option><option>Boonville</option><option>Little Falls</option><option>Camden</option><option>Ilion</option>
+          </optgroup>
+        </select>
+        <output id="town-out" for="town"><b>Harrisburg</b> is served from <b>TSI Mifflintown</b>. Free delivery within 50 miles of the lot; call to ask about delivery beyond that.</output>
+      </div>
+      <div class="lots">
+        <article class="lot on rise" data-lot="Mifflintown">
+          <span class="st">Pennsylvania</span>
+          <h3>TSI Mifflintown</h3>
+          <div class="ring"><svg viewBox="0 0 76 76" aria-hidden="true"><circle cx="38" cy="38" r="35" fill="none" stroke="#c21300" stroke-width="2" stroke-dasharray="4 4"/><circle cx="38" cy="38" r="22" fill="#f3eee8"/><circle cx="38" cy="38" r="5" fill="#c21300"/></svg><p>Free delivery within 50 miles of Mifflintown</p></div>
+          <ul class="towns"><li>Lewistown</li><li>State College</li><li>Harrisburg</li><li>Selinsgrove</li><li>Carlisle</li><li>Huntingdon</li><li>Mifflinburg</li><li>Hershey</li><li>Lewisburg</li><li>Duncannon</li></ul>
+          <p class="counties">Serving Juniata, Mifflin, Perry, Snyder, Huntingdon, Centre, Cumberland, Dauphin, Lebanon &amp; Northumberland counties.</p>
+        </article>
+        <article class="lot rise" data-lot="Spencerport">
+          <span class="st">New York, Western</span>
+          <h3>TSI Spencerport</h3>
+          <div class="ring"><svg viewBox="0 0 76 76" aria-hidden="true"><circle cx="38" cy="38" r="28" fill="none" stroke="#c21300" stroke-width="2" stroke-dasharray="4 4"/><circle cx="38" cy="38" r="17" fill="#f3eee8"/><circle cx="38" cy="38" r="5" fill="#c21300"/></svg><p>Free delivery within 30 miles of Spencerport</p></div>
+          <ul class="towns"><li>Rochester</li><li>Brockport</li><li>Batavia</li><li>Greece</li><li>Webster</li><li>Canandaigua</li><li>Geneseo</li><li>Albion</li><li>Buffalo</li><li>Newark</li></ul>
+          <p class="counties">Serving Monroe, Orleans, Genesee, Livingston, Ontario, Wayne, Erie, Niagara, Wyoming &amp; Seneca counties.</p>
+        </article>
+        <article class="lot rise" data-lot="Stittville">
+          <span class="st">New York, Central</span>
+          <h3>TSI Stittville</h3>
+          <div class="ring"><svg viewBox="0 0 76 76" aria-hidden="true"><circle cx="38" cy="38" r="28" fill="none" stroke="#c21300" stroke-width="2" stroke-dasharray="4 4"/><circle cx="38" cy="38" r="17" fill="#f3eee8"/><circle cx="38" cy="38" r="5" fill="#c21300"/></svg><p>Free delivery within 30 miles of Stittville</p></div>
+          <ul class="towns"><li>Utica</li><li>Rome</li><li>Herkimer</li><li>New Hartford</li><li>Oneida</li><li>Syracuse</li><li>Boonville</li><li>Little Falls</li><li>Camden</li><li>Ilion</li></ul>
+          <p class="counties">Serving Oneida, Herkimer, Madison, Otsego, Lewis, Oswego, Onondaga, Chenango, Fulton &amp; Montgomery counties.</p>
+        </article>
+      </div>
+      <p class="del-note rise">Not sure we cover your area? Just ask and we'll figure it out.</p>
+    </div>
+  </section>
+
+  <section class="sec" id="faq" aria-labelledby="faq-h">
+    <div class="wrap faq-grid">
+      <div class="sec-head rise" style="margin:0">
+        <p class="eyebrow">FAQ</p>
+        <h2 id="faq-h">Before you buy</h2>
+        <p>The questions we hear most. If yours isn't here, call us at <a href="tel:+17174365591">717-436-5591</a>.</p>
+      </div>
+      <div class="faq rise">
+        <details open>
+          <summary>How much does a shed or garage cost?</summary>
+          <p>It depends on size, style and options. Buildings in stock right now run from $5,684 for a 10x16 A-Frame to $10,601 for a 12x24 A-Frame Garage, or from $279 a month on rent-to-own. For anything custom, our site has instant pricing.</p>
+        </details>
+        <details>
+          <summary>How long from order to delivery?</summary>
+          <p>Buildings marked "Ready for delivery" are built and waiting on our lots. For a custom build, call us for timing.</p>
+        </details>
+        <details>
+          <summary>Is delivery included?</summary>
+          <p>Local delivery and placement are included, no hidden fees. Delivery is free within 50 miles of Mifflintown and within 30 miles of Spencerport and Stittville.</p>
+        </details>
+        <details>
+          <summary>What site prep do I need?</summary>
+          <p>A level, accessible spot: gravel pad, clearance and access. We'll walk you through it, and our crew offers full site prep so your building lands ready to use.</p>
+        </details>
+        <details>
+          <summary>Do I need a permit?</summary>
+          <p>Ask us when you call. As one customer put it, "They helped me get all the documents I needed for my permit."</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="contact" aria-labelledby="contact-h">
+    <div class="wrap contact">
+      <div class="rise">
+        <p class="eyebrow">Get your quote</p>
+        <h2 id="contact-h" class="h2">Let's find your building</h2>
+        <p class="lead">Call, visit a lot, or send a note. We'll help you pick the right size, style and options for your budget.</p>
+        <a class="bigtel" href="tel:+17174365591"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>717-436-5591</a><br>
+        <a class="mail" href="mailto:sales@tuscinc.com">sales@tuscinc.com</a>
+        <ul class="lotlist">
+          <li><span>TSI Mifflintown</span><span>Pennsylvania</span></li>
+          <li><span>TSI Spencerport</span><span>New York, Western</span></li>
+          <li><span>TSI Stittville</span><span>New York, Central</span></li>
+        </ul>
+      </div>
+      <form class="form rise" id="quote" novalidate>
+        <h3>Ask for a quote</h3>
+        <div class="row">
+          <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name"></div>
+          <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="f-town">Town</label><input id="f-town" name="town" autocomplete="address-level2"></div>
+          <div class="field"><label for="f-what">Looking for</label>
+            <select id="f-what" name="what">
+              <option>A shed</option><option>A garage</option><option>A cabin</option><option>A greenhouse</option><option>A pavilion</option><option>Poly furniture</option><option>A building from stock</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label for="f-msg">Anything we should know?</label><textarea id="f-msg" name="msg" placeholder="Size, where it will go, questions about site prep"></textarea></div>
+        <button class="btn btn-red" type="submit">Send my request</button>
+        <p class="sent" id="sent" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="name">TSI Sheds<span>Space for what matters</span></div>
+    <nav aria-label="Footer">
+      <a href="#stock">In stock</a>
+      <a href="#delivery">Delivery</a>
+      <a href="https://www.tsisheds.com/">tsisheds.com</a>
+      <a href="https://www.facebook.com/tuscinc">Facebook</a>
+      <a href="https://www.instagram.com/tsi.sheds.cabins/">Instagram</a>
+    </nav>
+    <p class="credit">Mockup made for TSI Sheds by Sunny Gupta, <a href="https://signalsetbase.com">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick actions">
+  <a class="c1" href="tel:+17174365591"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>Call 717-436-5591</a>
+  <a class="c2" href="#stock">In stock</a>
+</nav>
+
+<script>
+(function(){
+  var NS='http://www.w3.org/2000/svg';
+  function poly(pts,fill,stroke,sw){var p=document.createElementNS(NS,'polygon');p.setAttribute('points',pts.map(function(q){return q[0].toFixed(1)+','+q[1].toFixed(1)}).join(' '));p.setAttribute('fill',fill);p.setAttribute('stroke',stroke||'#1b1916');p.setAttribute('stroke-width',sw||1.3);p.setAttribute('stroke-linejoin','round');return p}
+  function line(a,b,c,w,dash){var l=document.createElementNS(NS,'line');l.setAttribute('x1',a[0]);l.setAttribute('y1',a[1]);l.setAttribute('x2',b[0]);l.setAttribute('y2',b[1]);l.setAttribute('stroke',c);l.setAttribute('stroke-width',w||1);if(dash)l.setAttribute('stroke-dasharray',dash);return l}
+  function text(x,y,t,anchor){var e=document.createElementNS(NS,'text');e.setAttribute('x',x);e.setAttribute('y',y);e.setAttribute('font-size','11');e.setAttribute('font-family','Inter,system-ui,sans-serif');e.setAttribute('font-weight','600');e.setAttribute('fill','#625a52');e.setAttribute('text-anchor',anchor||'middle');e.textContent=t;return e}
+  function add(p,v){return [p[0]+v[0],p[1]+v[1]]}
+  /* oblique drawing of a building, to scale by width and length */
+  function draw(style,W,L){
+    var s=7.8,G=164,fw=W*s,garage=/g$/.test(style);
+    var wh={mb:5,hsb:7,af:7,hsbg:8.5,afg:8.5}[style]*s;
+    var d=[L*s*.5,-L*s*.24];
+    var totalW=fw+d[0],x0=(300-totalW)/2;
+    var BL=[x0,G],BR=[x0+fw,G],ER=[x0+fw,G-wh],EL=[x0,G-wh];
+    var gamb=(style==='mb'||style==='hsb'||style==='hsbg');
+    var roof;
+    if(gamb){var kr=[x0+fw*.86,G-wh-W*s*.27],kl=[x0+fw*.14,G-wh-W*s*.27],ap=[x0+fw/2,G-wh-W*s*.40];roof=[ap,kr,ER];var front=[BL,BR,ER,kr,ap,kl,EL];}
+    else{var ap2=[x0+fw/2,G-wh-W*s*.36];roof=[ap2,ER];var front=[BL,BR,ER,ap2,EL];}
+    var svg=document.createElementNS(NS,'svg');svg.setAttribute('viewBox','0 0 300 200');svg.setAttribute('focusable','false');
+    /* shadow */
+    svg.appendChild(poly([BL,BR,add(BR,d),add(add(BR,d),[14,0]),add(BR,[14,0])],'rgba(22,20,18,.09)','none',0));
+    svg.appendChild(line([x0-26,G],[x0+totalW+26,G],'#cbbfb1',1));
+    /* side wall */
+    svg.appendChild(poly([BR,add(BR,d),add(ER,d),ER],'#d6cbbd'));
+    /* side windows */
+    [.3,.62].forEach(function(t,i){ if(garage&&i===0){ var a=add(BR,[d[0]*.14,d[1]*.14]),b=add(BR,[d[0]*.28,d[1]*.28]); svg.appendChild(poly([a,b,add(b,[0,-wh*.8]),add(a,[0,-wh*.8])],'#fbf8f4')); return;}
+      var a1=add(BR,[d[0]*t,d[1]*t-wh*.42]),b1=add(BR,[d[0]*(t+.13),d[1]*(t+.13)-wh*.42]);
+      svg.appendChild(poly([a1,b1,add(b1,[0,-wh*.3]),add(a1,[0,-wh*.3])],'#9fb4bf'));});
+    /* roof facets */
+    for(var i=0;i<roof.length-1;i++){var p=roof[i],q=roof[i+1];svg.appendChild(poly([p,q,add(q,d),add(p,d)],i===0&&roof.length>2?'#3b3733':'#2b2825'));}
+    /* front face */
+    svg.appendChild(poly(front,'#ece4d9'));
+    /* roof edge trim */
+    var trim=document.createElementNS(NS,'polyline');trim.setAttribute('points',front.slice(2).concat([EL]).map(function(q){return q.join(',')}).join(' '));trim.setAttribute('fill','none');trim.setAttribute('stroke','#2b2825');trim.setAttribute('stroke-width','3.2');trim.setAttribute('stroke-linejoin','round');svg.appendChild(trim);
+    /* door */
+    if(garage){var dw=fw*.64,dh=wh*.8,dx=x0+(fw-dw)/2;svg.appendChild(poly([[dx,G],[dx+dw,G],[dx+dw,G-dh],[dx,G-dh]],'#fff'));for(var k=1;k<4;k++)svg.appendChild(line([dx,G-dh*k/4],[dx+dw,G-dh*k/4],'#b9ad9f',1));}
+    else{var dw2=fw*.44,dh2=wh*.82,dx2=x0+(fw-dw2)/2;svg.appendChild(poly([[dx2,G],[dx2+dw2,G],[dx2+dw2,G-dh2],[dx2,G-dh2]],'#fff'));svg.appendChild(line([dx2+dw2/2,G],[dx2+dw2/2,G-dh2],'#1b1916',1.1));
+      svg.appendChild(line([dx2,G],[dx2+dw2/2,G-dh2],'#cfc4b6',1));svg.appendChild(line([dx2+dw2/2,G],[dx2+dw2,G-dh2],'#cfc4b6',1));}
+    /* dimensions */
+    svg.appendChild(line([x0,G+12],[x0+fw,G+12],'#8a7f73',1));
+    svg.appendChild(text(x0+fw/2,G+26,W+' ft'));
+    var r0=add(BR,[8,8]),r1=add(add(BR,d),[8,8]);
+    svg.appendChild(line(r0,r1,'#8a7f73',1));
+    var t=text((r0[0]+r1[0])/2+10,(r0[1]+r1[1])/2+16,L+' ft','start');svg.appendChild(t);
+    return svg;
+  }
+  var cards=[].slice.call(document.querySelectorAll('.card'));
+  cards.forEach(function(c){c.querySelector('.draw').appendChild(draw(c.dataset.style,+c.dataset.w,+c.dataset.l));});
+
+  /* stock filter */
+  var state={lot:'all',type:'all',pay:'buy'};
+  function money(n){return '$'+n.toLocaleString('en-US')}
+  function render(){
+    var shown=[],grid=document.getElementById('grid');
+    cards.forEach(function(c){
+      var ok=(state.lot==='all'||c.dataset.lot===state.lot)&&(state.type==='all'||c.dataset.type===state.type);
+      c.hidden=!ok; if(ok)shown.push(c);
+      var b=+c.dataset.buy,dep=+c.dataset.dep,mo=+c.dataset.mo,rd=+c.dataset.rdep;
+      if(state.pay==='buy'){c.querySelector('.price').innerHTML=money(b);c.querySelector('.dep').textContent=money(dep)+' deposit to purchase';c.querySelector('.alt').textContent='Rent-to-own: '+money(mo)+'/mo · '+money(rd)+' deposit';}
+      else{c.querySelector('.price').innerHTML=money(mo)+'<small> /mo</small>';c.querySelector('.dep').textContent='Rent-to-own · '+money(rd)+' deposit';c.querySelector('.alt').textContent='Or buy outright: '+money(b)+' · '+money(dep)+' deposit';}
+    });
+    var none=grid.querySelector('.none'); if(none)none.remove();
+    if(!shown.length){var n=document.createElement('p');n.className='none';n.textContent='Nothing matching on that lot right now. Call 717-436-5591 and we’ll check what’s coming.';grid.appendChild(n);}
+    var key=state.pay==='buy'?'buy':'mo',min=Math.min.apply(null,shown.map(function(c){return +c.dataset[key]}));
+    document.getElementById('sum-n').textContent=shown.length+(shown.length===1?' building':' buildings');
+    document.getElementById('sum-s').textContent=shown.length?('from '+money(min)+(state.pay==='buy'?'':' a month')):'';
+    /* grid borders: drop right border on last column */
+    var cols=window.matchMedia('(max-width:640px)').matches?1:window.matchMedia('(max-width:1020px)').matches?2:3;
+    shown.forEach(function(c,i){c.style.borderRight=((i+1)%cols===0)?'0':'';c.style.borderBottom=(i>=shown.length-((shown.length%cols)||cols))?'0':'';});
+  }
+  [].forEach.call(document.querySelectorAll('.seg'),function(seg){
+    seg.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
+      [].forEach.call(seg.querySelectorAll('button'),function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+      state[seg.dataset.group]=b.dataset.v;render();});
+  });
+  window.addEventListener('resize',render);
+  render();
+
+  /* ask about this one -> fill the form */
+  cards.forEach(function(c){c.querySelector('.ask button').addEventListener('click',function(){
+    document.getElementById('f-what').value='A building from stock';
+    var lotName=c.dataset.lot==='Mifflintown'?'Mifflintown, PA':'Spencerport, NY';
+    document.getElementById('f-msg').value='I’m interested in the '+c.dataset.name+' (Model #'+c.dataset.model+') at '+lotName+'. '+(state.pay==='rto'?'I’d like to hear about rent-to-own.':'Is it still available?');
+    var f=document.getElementById('quote');f.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth',block:'center'});
+    f.classList.remove('flash');void f.offsetWidth;f.classList.add('flash');
+    setTimeout(function(){document.getElementById('f-name').focus({preventScroll:true})},600);
+  });});
+
+  /* town finder */
+  var map={Mifflintown:['Lewistown','State College','Harrisburg','Selinsgrove','Carlisle','Huntingdon','Mifflinburg','Hershey','Lewisburg','Duncannon'],
+    Spencerport:['Rochester','Brockport','Batavia','Greece','Webster','Canandaigua','Geneseo','Albion','Buffalo','Newark'],
+    Stittville:['Utica','Rome','Herkimer','New Hartford','Oneida','Syracuse','Boonville','Little Falls','Camden','Ilion']};
+  var miles={Mifflintown:50,Spencerport:30,Stittville:30};
+  var sel=document.getElementById('town'),out=document.getElementById('town-out');
+  function town(){var t=sel.value,lot;Object.keys(map).forEach(function(k){if(map[k].indexOf(t)>-1)lot=k});
+    out.innerHTML='<b>'+t+'</b> is served from <b>TSI '+lot+'</b>. Free delivery within '+miles[lot]+' miles of the lot; call to ask about delivery beyond that.';
+    [].forEach.call(document.querySelectorAll('.lot'),function(l){l.classList.toggle('on',l.dataset.lot===lot)});
+    [].forEach.call(document.querySelectorAll('.towns li'),function(li){li.classList.toggle('hit',li.textContent===t)});}
+  sel.addEventListener('change',town);town();
+
+  /* form */
+  document.getElementById('quote').addEventListener('submit',function(e){e.preventDefault();document.getElementById('sent').textContent='Thanks. This is a mockup, so nothing was sent.';});
+
+  /* gentle rise, only for things below the first screen */
+  if(!matchMedia('(prefers-reduced-motion:reduce)').matches&&'IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target);}})},{rootMargin:'0px 0px -8% 0px'});
+    [].forEach.call(document.querySelectorAll('.rise'),function(el){if(el.getBoundingClientRect().top>innerHeight){el.classList.add('will-rise');io.observe(el);}});
+  }
+})();
+</script>
+</body>
+</html>
