@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup greenmediastudio-com-601aea 1 59e036b8 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Green Media Studio · Sustainable space for your shoot, Los Angeles</title>
+<meta name="description" content="Green Media Studio: sustainable space for your shoot in Los Angeles. Plan your shoot and send a hold request, or call Kevin Foley on his cell.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f4f1ea;--paper2:#ebe6db;--card:#fbfaf6;--ink:#1c1d1b;--muted:#5a5d58;
+  --rust:#9a3f1c;--rust-d:#7f3315;--green:#23382b;--green-t:#eef0e6;--green-m:#bac6b4;
+  --line:#d6d0c3;--sun:#e8b04a;
+  --sans:"Jost",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --wrap:1200px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-weight:500;line-height:1.08;margin:0;letter-spacing:-.01em}
+p{margin:0}
+:focus-visible{outline:3px solid var(--rust);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 32px}
+.kicker{font:500 12.5px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--rust)}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:var(--paper);padding:10px 14px;z-index:50}
+.skip:focus{top:12px}
+
+/* mockup banner */
+.mock{background:var(--ink);color:#e9e5dc;text-align:center;font:500 12.5px/1 var(--mono);letter-spacing:.08em;padding:10px 16px}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(244,241,234,.94);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:24px}
+.mark{font:500 15px/1 var(--sans);letter-spacing:.3em;text-transform:uppercase;text-decoration:none;white-space:nowrap;padding:14px 0}
+.mark b{font-weight:600;color:var(--rust)}
+.nav{display:flex;align-items:center;gap:28px}
+.nav a{font:500 12.5px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;padding:16px 0}
+.nav a:hover{color:var(--rust)}
+.nav .call{border:1.5px solid var(--ink);padding:13px 16px;border-radius:2px}
+.nav .call:hover{background:var(--ink);color:var(--paper)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;font:500 14px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border-radius:2px;border:1.5px solid transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn-main{background:var(--rust);color:#fff}
+.btn-main:hover{background:var(--rust-d)}
+.btn-line{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-line:hover{background:var(--ink);color:var(--paper)}
+.btn small{font:400 13px/1 var(--mono);letter-spacing:.02em;text-transform:none;opacity:.85}
+
+/* hero */
+.hero{padding:64px 0 88px}
+.hero-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:end}
+.hero h1{font-size:clamp(46px,7vw,98px);font-weight:500;letter-spacing:-.025em;line-height:.95;margin-top:18px}
+.hero h1 span{color:var(--rust)}
+.hero .lede{font-size:19px;line-height:1.55;color:#33352f;max-width:30em}
+.hero .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero-media{margin-top:48px}
+.photo{margin:0}
+.photo img{width:100%;height:auto;aspect-ratio:1802/1015;object-fit:cover;border-radius:3px;background:var(--paper2);filter:saturate(.86) contrast(1.02)}
+
+/* contact card beside the photo */
+.card{border-top:1px solid var(--ink);display:flex;flex-direction:column}
+.card .who{padding:22px 0 20px;border-bottom:1px solid var(--line)}
+.card .who b{display:block;font:500 30px/1.1 var(--sans);letter-spacing:-.01em;margin-top:10px}
+.card .who span{display:block;margin-top:6px;color:var(--muted)}
+.card .tel{display:block;padding:20px 0;border-bottom:1px solid var(--line);text-decoration:none;font:500 32px/1 var(--sans);letter-spacing:-.01em}
+.card .tel small{display:block;margin-bottom:10px;font:500 12px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.card .tel:hover{color:var(--rust)}
+.card .soc{display:flex;justify-content:space-between;align-items:center;min-height:56px;border-bottom:1px solid var(--line);text-decoration:none;font:400 15px/1.3 var(--mono)}
+.card .soc i{font-style:normal;color:var(--rust)}
+.card .soc:hover{color:var(--rust)}
+
+/* sections */
+section{scroll-margin-top:80px}
+.sec{padding:120px 0}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:end;margin-bottom:56px}
+.sec-head h2{font-size:clamp(34px,4.6vw,60px);letter-spacing:-.02em;margin-top:14px}
+.sec-head p{color:var(--muted);font-size:18px;max-width:30em}
+
+/* powered by nature: one column statement band */
+.solar{background:var(--green);color:var(--green-t);padding:96px 0}
+.solar .kicker{color:var(--sun)}
+.solar h2{font-size:clamp(44px,8.4vw,120px);letter-spacing:-.035em;line-height:.95;margin-top:20px;max-width:11em}
+.solar h2 span{color:var(--sun)}
+.solar-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px 40px;margin-top:44px;padding-top:24px;border-top:1px solid rgba(238,240,230,.25)}
+.solar-foot p{font-size:19px;line-height:1.5;max-width:34em}
+.solar-foot a{display:inline-flex;align-items:center;min-height:48px;font:500 14px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border-bottom:1.5px solid var(--sun);color:#fff}
+
+/* studio in action */
+.reel-band{background:var(--paper2)}
+.links{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.links a{display:grid;grid-template-columns:200px 1fr auto;gap:24px;align-items:center;padding:26px 0;border-bottom:1px solid var(--line);text-decoration:none;transition:color .2s,padding .2s}
+.links b{font:500 12.5px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--rust)}
+.links strong{font:500 clamp(24px,3vw,38px)/1.15 var(--sans);letter-spacing:-.015em}
+.links i{font:400 26px/1 var(--mono);font-style:normal;color:var(--rust);transition:transform .2s}
+.links a:hover strong{color:var(--rust)}
+.links a:hover i{transform:translateX(4px)}
+
+/* planner */
+.plan-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:48px;align-items:start}
+fieldset{border:0;margin:0 0 30px;padding:0;min-width:0}
+legend,.lbl{display:block;font:500 12.5px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--rust);margin-bottom:12px;padding:0}
+.hint{margin:-4px 0 12px;font-size:15px;color:var(--muted)}
+.field{display:block;width:100%;min-height:52px;padding:12px 14px;font:400 17px/1.3 var(--sans);color:var(--ink);background:var(--card);border:1.5px solid #bdb6a7;border-radius:2px}
+.field:focus{border-color:var(--ink);outline:none;box-shadow:0 0 0 3px rgba(154,63,28,.25)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.chip span{display:flex;align-items:center;gap:8px;min-height:46px;padding:0 16px;border:1.5px solid #bdb6a7;border-radius:2px;background:var(--card);font-size:16px;transition:background .15s,border-color .15s,color .15s}
+.chip input:checked+span{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.chip input:focus-visible+span{outline:3px solid var(--rust);outline-offset:2px}
+.chip.box span::before{content:"";width:14px;height:14px;border:1.5px solid currentColor;border-radius:2px;flex:0 0 14px}
+.chip.box input:checked+span::before{background:var(--rust);border-color:var(--rust);box-shadow:inset 0 0 0 2px var(--ink)}
+.range-row{display:flex;align-items:center;gap:16px}
+.range-row output{font:500 24px/1 var(--sans);min-width:3ch;text-align:right}
+input[type=range]{flex:1;accent-color:var(--rust);height:44px;margin:0}
+
+.callsheet{background:var(--card);border:1px solid var(--line);border-radius:3px;box-shadow:0 1px 0 rgba(0,0,0,.03),0 18px 40px -24px rgba(28,29,27,.35);position:sticky;top:96px}
+.cs-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:22px 26px;border-bottom:2px solid var(--ink)}
+.cs-head .t{font:500 13px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase}
+.cs-head .n{font:500 12px/1.3 var(--sans);letter-spacing:.28em;text-transform:uppercase;margin-top:6px}
+.cs-date{text-align:right;font:500 24px/1.1 var(--sans)}
+.cs-date small{display:block;font:400 12px/1.3 var(--mono);color:var(--muted);letter-spacing:.06em;margin-top:4px}
+.cs-rows{margin:0;padding:6px 26px 4px}
+.cs-rows div{display:grid;grid-template-columns:120px 1fr;gap:16px;padding:12px 0;border-bottom:1px dashed var(--line)}
+.cs-rows div:last-child{border-bottom:0}
+.cs-rows dt{font:500 11.5px/1.6 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.cs-rows dd{margin:0;font-size:16px;line-height:1.45}
+.asks{list-style:none;margin:0;padding:0}
+.asks li{position:relative;padding-left:20px}
+.asks li::before{content:"?";position:absolute;left:0;top:0;font:500 13px/1.75 var(--mono);color:var(--rust)}
+.cs-status{margin:0 26px;padding:12px 0 16px;font:400 13px/1.5 var(--mono);color:var(--muted);border-top:1px solid var(--line)}
+.cs-send{padding:20px 26px 24px;border-top:2px solid var(--ink);background:var(--paper)}
+.cs-send .two{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
+.cs-send label{display:block;font:500 11.5px/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.cs-send .btn{width:100%}
+.cs-send .or{margin-top:12px;text-align:center;font:400 13px/1.5 var(--mono);color:var(--muted)}
+.cs-send .or a{color:var(--ink);font-weight:500;display:inline-block;padding:10px 2px}
+.thanks{margin-top:12px;padding:12px 14px;background:var(--green);color:var(--green-t);border-radius:2px;font-size:15px}
+.thanks[hidden]{display:none}
+
+/* faq */
+.faq{border-top:1px solid var(--ink);max-width:880px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:64px;padding:16px 0;font-size:21px;font-weight:500}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:400 26px/1 var(--mono);color:var(--rust);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 22px;color:#33352f;max-width:40em}
+
+/* end */
+.end{background:var(--ink);color:#f1ede4}
+.end .kicker{color:var(--sun)}
+.end h2{font-size:clamp(48px,8vw,112px);letter-spacing:-.03em;line-height:.95;margin-top:18px}
+.end h2 span{color:#e07a4c}
+.end .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.end .btn-line{border-color:#f1ede4;color:#f1ede4}
+.end .btn-line:hover{background:#f1ede4;color:var(--ink)}
+.contact{display:grid;grid-template-columns:repeat(3,1fr);margin-top:80px;border-top:1px solid #45463f}
+.contact div{padding:20px 20px 0 0}
+.contact div+div{padding-left:20px;border-left:1px solid #45463f}
+.contact b{display:block;font:500 12px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#a9a597;margin-bottom:8px}
+.contact a{text-decoration:none;display:inline-block;padding:6px 0;border-bottom:1px solid #6b6a60}
+.contact a:hover{border-color:#e07a4c}
+footer{background:var(--ink);color:#a9a597;font:400 13px/1.6 var(--mono);border-top:1px solid #33342f}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:24px;padding-bottom:28px}
+footer a{color:#e9e5dc}
+
+/* phone call bar */
+.callbar{display:none}
+
+/* rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (min-width:981px){
+  /* photo held to ~860px so the 1802px original stays sharp on retina; Kevin's card stands beside it */
+  .hero-media{display:grid;grid-template-columns:minmax(0,860px) 1fr;gap:44px;align-items:stretch}
+  .card .soc:last-child{border-bottom:0}
+  .card .who{flex:1;display:flex;flex-direction:column;justify-content:center}
+}
+@media (max-width:980px){
+  .nav a:not(.call){display:none}
+  .hero-grid,.sec-head,.plan-grid{grid-template-columns:1fr;gap:28px}
+  .card{margin-top:32px}
+  .callsheet{position:static}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:68px}
+  .wrap{padding:0 20px}
+  .mock{font-size:11.5px;padding:9px 12px}
+  .top .wrap{height:62px}
+  .mark{font-size:12.5px;letter-spacing:.22em}
+  .nav .call{padding:12px 12px;font-size:12px;letter-spacing:.1em}
+  .hero{padding:36px 0 56px}
+  .hero h1{font-size:50px}
+  .hero .lede{font-size:17px}
+  .hero .acts .btn{flex:1 1 100%}
+  /* full 16:9 frame on phones so the name on the wall shows */
+  .photo{margin-top:32px;margin-left:-20px;margin-right:-20px}
+  .photo img{border-radius:0}
+  .card .who b{font-size:26px}
+  .card .tel{font-size:28px}
+  .sec{padding:80px 0}
+  .sec-head{margin-bottom:36px}
+  .solar{padding:72px 0}
+  .solar h2{font-size:46px}
+  .solar-foot p{font-size:17px}
+  .links a{grid-template-columns:1fr auto;gap:6px 16px;padding:20px 0}
+  .links b{grid-column:1/-1}
+  .links strong{font-size:24px;overflow-wrap:anywhere}
+  .cs-head,.cs-rows,.cs-send{padding-left:18px;padding-right:18px}
+  .cs-status{margin:0 18px}
+  .cs-rows div{grid-template-columns:1fr;gap:2px}
+  .cs-send .two{grid-template-columns:1fr}
+  .faq summary{font-size:18px}
+  .end h2{font-size:56px}
+  .end .acts .btn{flex:1 1 100%}
+  .contact{grid-template-columns:1fr;margin-top:56px}
+  .contact div,.contact div+div{padding:16px 0;border-left:0;border-bottom:1px solid #45463f}
+  .callbar{display:grid;grid-template-columns:1.3fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:rgba(28,29,27,.97)}
+  .callbar a{display:flex;align-items:center;justify-content:center;min-height:48px;border-radius:2px;text-decoration:none;font:500 13px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase}
+  .callbar .c1{background:var(--rust);color:#fff}
+  .callbar .c2{border:1.5px solid #f1ede4;color:#f1ede4}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Free mockup for Green Media Studio</div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Green Media Studio, back to top"><b>Green</b> Media Studio</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#nature">Powered by nature</a>
+      <a href="#action">Studio in action</a>
+      <a href="#plan">Plan a shoot</a>
+      <a class="call" href="tel:+13107091231">Call Kevin</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="h-hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="kicker">Studio · Los Angeles</p>
+          <h1 id="h-hero">Sustainable space for your <span>shoot.</span></h1>
+        </div>
+        <div>
+          <p class="lede">You and your client will create some of your best work here. Pick a date and send Kevin a hold request in a minute, or call his cell.</p>
+          <div class="acts">
+            <a class="btn btn-main" href="#plan">Plan your shoot</a>
+            <a class="btn btn-line" href="tel:+13107091231">Call Kevin <small>310-709-1231</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-media">
+        <figure class="photo">
+          <img src="https://static1.squarespace.com/static/538f6be9e4b00d251aafa6f8/t/5942d887db29d667f6f4414e/1497553052718/Screen+Shot+2017-06-15+at+11.56.43+AM.png?format=2500w" width="1802" height="1015" alt="A black Tesla beside a vintage red pump in front of the corrugated steel studio wall with the rust-red Green Media Studio letters" fetchpriority="high">
+        </figure>
+        <div class="card">
+          <div class="who">
+            <p class="kicker">Your contact</p>
+            <b>Kevin Foley</b>
+            <span>Green Media Studio, Los Angeles</span>
+          </div>
+          <a class="tel" href="tel:+13107091231"><small>Cell</small>310-709-1231</a>
+          <a class="soc" href="http://instagram.com/greenmediastudio">Instagram <i aria-hidden="true">→</i></a>
+          <a class="soc" href="https://www.facebook.com/GreenMediaStudio/">Facebook <i aria-hidden="true">→</i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="solar" id="nature" aria-labelledby="h-nature">
+    <div class="wrap">
+      <p class="kicker">Powered by nature</p>
+      <h2 id="h-nature">Green is in the <span>name.</span></h2>
+      <div class="solar-foot">
+        <p>A sustainable space for your shoot. Want to know what that means on your shoot day? Put it on your hold request and ask Kevin.</p>
+        <a href="#plan">Add your questions</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec reel-band" id="action" aria-labelledby="h-action">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="kicker">Studio in action</p>
+          <h2 id="h-action">See the space before you book.</h2>
+        </div>
+        <p>Photos and video of the studio at work, on Green Media Studio's own pages.</p>
+      </div>
+      <ul class="links">
+        <li><a href="http://instagram.com/greenmediastudio"><b>Instagram</b><strong>@greenmediastudio</strong><i aria-hidden="true">→</i></a></li>
+        <li><a href="https://www.facebook.com/GreenMediaStudio/"><b>Facebook</b><strong>GreenMediaStudio</strong><i aria-hidden="true">→</i></a></li>
+        <li><a href="http://www.greenmediastudio.com/"><b>Photo gallery</b><strong>greenmediastudio.com</strong><i aria-hidden="true">→</i></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" id="plan" aria-labelledby="h-plan">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="kicker">Plan your shoot</p>
+          <h2 id="h-plan">Build your hold request.</h2>
+        </div>
+        <p>Tell Kevin your date, your shoot and what you need to know. The sheet fills in as you go, ready to send.</p>
+      </div>
+      <form class="plan-grid" id="planner" novalidate>
+        <div class="controls">
+          <fieldset>
+            <label class="lbl" for="p-date">Shoot date</label>
+            <input class="field" type="date" id="p-date" name="date" value="2026-11-12">
+          </fieldset>
+          <fieldset>
+            <legend>How many days</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="days" value="1 day" checked><span>1 day</span></label>
+              <label class="chip"><input type="radio" name="days" value="2 days"><span>2 days</span></label>
+              <label class="chip"><input type="radio" name="days" value="3 days or more"><span>3 or more</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Kind of shoot</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="kind" value="Stills"><span>Stills</span></label>
+              <label class="chip"><input type="radio" name="kind" value="Commercial" checked><span>Commercial</span></label>
+              <label class="chip"><input type="radio" name="kind" value="Music video"><span>Music video</span></label>
+              <label class="chip"><input type="radio" name="kind" value="Fashion"><span>Fashion</span></label>
+              <label class="chip"><input type="radio" name="kind" value="Editorial"><span>Editorial</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <label class="lbl" for="p-crew">People on set</label>
+            <div class="range-row">
+              <input type="range" id="p-crew" name="crew" min="1" max="80" value="18" aria-describedby="p-crew-out">
+              <output id="p-crew-out" for="p-crew">18</output>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Ask Kevin about</legend>
+            <p class="hint">Tick what you need answered before you book.</p>
+            <div class="chips">
+              <label class="chip box"><input type="checkbox" name="ask" value="Rates for your dates" checked><span>Rates</span></label>
+              <label class="chip box"><input type="checkbox" name="ask" value="Seeing the space first" checked><span>Seeing the space</span></label>
+              <label class="chip box"><input type="checkbox" name="ask" value="Size, light and ceiling height"><span>Size and light</span></label>
+              <label class="chip box"><input type="checkbox" name="ask" value="Power for your lighting" checked><span>Power</span></label>
+              <label class="chip box"><input type="checkbox" name="ask" value="Parking for your crew"><span>Parking</span></label>
+              <label class="chip box"><input type="checkbox" name="ask" value="Grip and lighting"><span>Grip and lighting</span></label>
+              <label class="chip box"><input type="checkbox" name="ask" value="Hair, makeup and wardrobe"><span>Hair, makeup, wardrobe</span></label>
+              <label class="chip box"><input type="checkbox" name="ask" value="Food on set"><span>Food on set</span></label>
+              <label class="chip box"><input type="checkbox" name="ask" value="Address and directions"><span>Directions</span></label>
+            </div>
+          </fieldset>
+        </div>
+
+        <aside class="callsheet" aria-label="Your hold request">
+          <div class="cs-head">
+            <div>
+              <p class="t">Hold request</p>
+              <p class="n">Green Media Studio</p>
+            </div>
+            <p class="cs-date"><span id="o-date">Thu 12 Nov</span><small id="o-year">2026 · 1 day</small></p>
+          </div>
+          <dl class="cs-rows" aria-live="polite">
+            <div><dt>Shoot</dt><dd id="o-kind">Commercial</dd></div>
+            <div><dt>On set</dt><dd id="o-crew">18 people</dd></div>
+            <div><dt>Ask Kevin</dt><dd><ul class="asks" id="o-ask"><li>Rates for your dates</li><li>Seeing the space first</li><li>Power for your lighting</li></ul></dd></div>
+            <div><dt>To</dt><dd>Kevin Foley · cell 310-709-1231</dd></div>
+          </dl>
+          <p class="cs-status">A request, not a booking. Your date is held once Kevin confirms it.</p>
+          <div class="cs-send">
+            <div class="two">
+              <div><label for="p-name">Your name</label><input class="field" id="p-name" name="name" autocomplete="name" placeholder="Name"></div>
+              <div><label for="p-contact">Email or phone</label><input class="field" id="p-contact" name="contact" autocomplete="email" placeholder="you@studio.com"></div>
+            </div>
+            <button class="btn btn-main" type="submit">Send hold request</button>
+            <p class="thanks" id="thanks" role="status" hidden>Thanks. This is a mockup, so nothing was sent.</p>
+            <p class="or">Rather talk it through? <a href="tel:+13107091231">Call Kevin, 310-709-1231</a></p>
+          </div>
+        </aside>
+      </form>
+    </div>
+  </section>
+
+  <section class="sec" id="faq" aria-labelledby="h-faq" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="kicker">Before you book</p>
+          <h2 id="h-faq">Questions producers ask.</h2>
+        </div>
+      </div>
+      <div class="faq">
+        <details open><summary>How do I hold a date?</summary><p>Fill in the hold request above and send it, or call Kevin Foley on his cell, 310-709-1231.</p></details>
+        <details><summary>What does it cost?</summary><p>Rates aren't listed here. Send your date and the kind of shoot, tick "Rates", and Kevin can quote you.</p></details>
+        <details><summary>Where is the studio?</summary><p>In Los Angeles. Tick "Directions" on your hold request, or ask Kevin when you call.</p></details>
+        <details><summary>What's on the property?</summary><p>Tick what your shoot needs in the planner, from power and parking to hair and makeup, and Kevin will tell you what's there.</p></details>
+        <details><summary>What makes it green?</summary><p>Green Media Studio is a sustainable space for your shoot, powered by nature. For what that means on your production, ask Kevin.</p></details>
+        <details><summary>Can I see it first?</summary><p>See the studio in action on Instagram and Facebook. To walk the space, call Kevin.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec end" id="contact" aria-labelledby="h-end">
+    <div class="wrap">
+      <p class="kicker">Green Media Studio · Los Angeles</p>
+      <h2 id="h-end">Do some of your best work <span>here.</span></h2>
+      <div class="acts">
+        <a class="btn btn-main" href="#plan">Plan your shoot</a>
+        <a class="btn btn-line" href="tel:+13107091231">Call Kevin <small>310-709-1231</small></a>
+      </div>
+      <div class="contact">
+        <div><b>Kevin Foley, cell</b><a href="tel:+13107091231">310-709-1231</a></div>
+        <div><b>Instagram</b><a href="http://instagram.com/greenmediastudio">@greenmediastudio</a></div>
+        <div><b>Facebook</b><a href="https://www.facebook.com/GreenMediaStudio/">GreenMediaStudio</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© Green Media Studio · Los Angeles</p>
+    <p>Mockup made for Green Media Studio by Sunny Gupta, <a href="https://signalsetbase.com">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick actions">
+  <a class="c1" href="tel:+13107091231">Call Kevin</a>
+  <a class="c2" href="#plan">Plan a shoot</a>
+</nav>
+
+<script>
+(function(){
+  var f=document.getElementById('planner');
+  var $=function(id){return document.getElementById(id)};
+  var days=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],mons=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  function vals(n){return [].slice.call(f.querySelectorAll('input[name="'+n+'"]:checked')).map(function(i){return i.value})}
+  function update(){
+    var d=$('p-date').value.split('-'),len=vals('days')[0]||'1 day';
+    if(d.length===3){var dt=new Date(+d[0],+d[1]-1,+d[2]);$('o-date').textContent=days[dt.getDay()]+' '+dt.getDate()+' '+mons[dt.getMonth()];$('o-year').textContent=d[0]+' · '+len}
+    else{$('o-date').textContent='Pick a date';$('o-year').textContent=len}
+    $('o-kind').textContent=vals('kind')[0]||'—';
+    var c=+$('p-crew').value;$('p-crew-out').textContent=c;
+    $('o-crew').textContent=c+(c===1?' person':' people');
+    var a=vals('ask'),ul=$('o-ask');ul.textContent='';
+    (a.length?a:['Nothing yet. Tick a question.']).forEach(function(t){var li=document.createElement('li');li.textContent=t;ul.appendChild(li)});
+  }
+  f.addEventListener('input',update);f.addEventListener('change',update);
+  f.addEventListener('submit',function(e){e.preventDefault();$('thanks').hidden=false});
+  update();
+
+  // gentle rise for things below the first screen
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce&&'IntersectionObserver' in window){
+    var els=document.querySelectorAll('.sec-head,.solar h2,.solar-foot,.links,.controls,.callsheet,.faq,.contact');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    [].forEach.call(els,function(el){if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('rise','will-rise');io.observe(el)}});
+  }
+})();
+</script>
+</body>
+</html>
