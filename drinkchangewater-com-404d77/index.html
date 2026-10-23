@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup drinkchangewater-com-404d77 1 beb0f33d -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SaulPaul's Change Water: Quench your thirst for change</title>
+<meta name="description" content="Premium electrolyte water from the Carrizo-Wilcox aquifer in Texas. pH balanced, oxygenated, and 50% of proceeds go to the SaulPaul Foundation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#004274; --deep:#002642; --ink:#0d1b2a; --muted:#46566a;
+  --gold:#e3c02d; --gold-ink:#7a6000; --paper:#f5f7fa; --line:#dde3ea;
+  --r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:12px;top:44px;z-index:50;background:#fff;padding:8px 12px}
+
+/* mockup banner */
+.mock{background:var(--deep);color:#dfe8f2;text-align:center;font-size:13px;font-weight:600;letter-spacing:.02em;padding:8px 16px;border-bottom:1px solid rgba(255,255,255,.12)}
+
+/* header */
+header.site{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;height:68px}
+.brand{display:flex;flex-direction:column;text-decoration:none;line-height:1}
+.brand small{font-size:10px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+.word{font-weight:800;font-size:21px;letter-spacing:.06em;color:var(--ink);white-space:nowrap}
+.word .tri{display:inline-block;width:.78em;height:.72em;background:currentColor;clip-path:polygon(50% 0,100% 100%,0 100%);margin:0 .02em;vertical-align:-.02em}
+.word .lt{font-weight:500;color:var(--navy)}
+nav.main ul{display:flex;gap:6px;list-style:none;margin:0;padding:0;align-items:center}
+nav.main a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;font-size:14px;font-weight:600;text-decoration:none;color:var(--ink);border-radius:8px}
+nav.main a:hover{color:var(--navy);background:var(--paper)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 24px;border-radius:999px;font:700 15px/1 Montserrat,system-ui,sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn-gold{background:var(--gold);color:var(--deep)}
+.btn-gold:hover{background:#f0cf3c}
+.btn-ghost{border-color:rgba(255,255,255,.7);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--deep)}
+nav.main .btn{min-height:44px;padding:0 18px;font-size:14px;color:#fff}
+nav.main .btn:hover{background:var(--deep);color:#fff}
+
+/* hero */
+.hero{position:relative;color:#fff;background:var(--deep);overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 30%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,26,46,.92) 0%,rgba(0,38,66,.78) 38%,rgba(0,38,66,.15) 70%,rgba(0,38,66,0) 100%)}
+.hero .wrap{position:relative;z-index:1;min-height:min(640px,calc(100vh - 104px));display:flex;flex-direction:column;justify-content:center;padding:72px 0 88px}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin:0 0 18px}
+.hero .eyebrow{color:var(--gold)}
+.hero h1{font-size:clamp(40px,6.2vw,76px);line-height:1.02;letter-spacing:-.02em;font-weight:800;margin:0 0 22px;max-width:11ch}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p.lead{font-size:clamp(17px,1.6vw,20px);max-width:34ch;margin:0 0 32px;color:#e8eef5;font-weight:500}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero figcaption{position:absolute;right:20px;bottom:16px;z-index:1;font-size:12px;color:#fff;background:rgba(0,26,46,.7);padding:4px 10px;border-radius:999px}
+
+/* value strip */
+.why{background:#fff;border-bottom:1px solid var(--line)}
+.why ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr)}
+.why li{padding:30px 28px;display:flex;gap:16px;align-items:flex-start}
+.why li+li{border-left:1px solid var(--line)}
+.why svg{flex:none;width:40px;height:40px}
+.why b{display:block;font-size:17px;font-weight:800;line-height:1.3;margin-bottom:2px}
+.why span{font-size:14px;color:var(--muted);line-height:1.5}
+
+section{scroll-margin-top:72px}
+.sec{padding:104px 0}
+.sec-head{max-width:640px;margin-bottom:48px}
+.sec-head .eyebrow{color:var(--gold-ink)}
+h2{font-size:clamp(30px,3.6vw,46px);line-height:1.08;letter-spacing:-.015em;font-weight:800;margin:0 0 16px}
+.sec-head p{font-size:18px;color:var(--muted);margin:0}
+
+/* journey */
+.journey{background:var(--paper)}
+.jgrid{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
+.stage{position:relative;margin:0;justify-self:center;width:100%;max-width:480px;border-radius:24px;overflow:hidden;background:var(--deep);box-shadow:0 30px 60px -30px rgba(0,38,66,.55)}
+.shot{position:relative;aspect-ratio:560/562;overflow:hidden}
+.stage img{position:absolute;left:0;top:0;height:100%;width:178.6%;max-width:none;object-fit:cover;object-position:left center;transform-origin:22% 55%;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.stage[data-step="2"] img,.stage[data-step="3"] img{transform:scale(1.04)}
+.stage[data-step="4"] img{transform:scale(1.08)}
+.stage .tag{position:absolute;right:16px;top:16px;margin:0;color:#fff;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;background:rgba(0,26,46,.85);padding:8px 12px;border-radius:999px}
+.stage .tag b{color:var(--gold)}
+.cap{color:#fff;padding:18px 22px 20px;border-top:4px solid var(--gold);min-height:84px;transition:opacity .25s}
+.cap.swap{opacity:0}
+.cap b{display:block;font-size:19px;font-weight:800;line-height:1.2}
+.cap span{display:block;font-size:14px;color:#c9d6e3;margin-top:2px}
+.stage[data-step="5"] .cap b{color:var(--gold)}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{border-top:1px solid var(--line)}
+.steps li:last-child{border-bottom:1px solid var(--line)}
+.steps button{all:unset;box-sizing:border-box;display:flex;align-items:center;gap:16px;width:100%;min-height:60px;padding:12px 4px;cursor:pointer;font-weight:700;font-size:18px;color:var(--muted)}
+.steps button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.steps .n{flex:none;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;border:2px solid var(--line);font-size:13px;font-weight:800;color:var(--muted);transition:all .3s}
+.js .steps li:not(.on) .d{display:none}
+.steps .d{margin:0 0 20px 50px;color:var(--muted);font-size:16px;max-width:42ch}
+.steps li.on button{color:var(--ink)}
+.steps li.on .n{background:var(--navy);border-color:var(--navy);color:#fff}
+.jnav{display:flex;gap:10px;margin-top:24px;align-items:center}
+.jnav button{min-height:44px;min-width:44px;border-radius:999px;border:2px solid var(--line);background:#fff;font:700 14px Montserrat,sans-serif;padding:0 18px;cursor:pointer;color:var(--ink)}
+.jnav button:hover{border-color:var(--navy)}
+.jnav small{color:var(--muted);font-size:13px;margin-left:6px}
+
+/* impact */
+.impact{background:var(--deep);color:#fff}
+.impact .sec-head .eyebrow{color:var(--gold)}
+.impact .sec-head p{color:#c9d6e3}
+.igrid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.stat{border:1px solid rgba(255,255,255,.16);border-radius:var(--r);padding:36px}
+.stat .big{font-size:clamp(64px,8vw,104px);font-weight:800;line-height:.9;color:var(--gold);letter-spacing:-.03em}
+.stat p{margin:16px 0 0;font-size:17px;color:#e3ebf3;max-width:36ch}
+.orgs{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.16);margin-top:16px;padding-top:28px;gap:24px}
+.orgs div b{display:block;font-size:16px;line-height:1.35}
+.orgs div span{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.found{grid-column:1/-1;color:#c9d6e3;font-size:16px;max-width:70ch;margin:8px 0 0}
+
+/* changemakers */
+.cm{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.cm figure{margin:0;border-radius:24px;overflow:hidden;aspect-ratio:4/5}
+.cm figure img{width:100%;height:100%;object-fit:cover;object-position:66% 50%}
+.cm .tagline{font-size:22px;font-weight:800;color:var(--navy);margin:0 0 12px}
+.cm p{color:var(--muted);font-size:17px;margin:0 0 22px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 30px}
+.chips li{border:1.5px solid var(--line);border-radius:999px;padding:8px 14px;font-size:14px;font-weight:600}
+
+/* out and about */
+.about{background:var(--paper)}
+.event{margin-bottom:56px}
+.event:last-child{margin-bottom:0}
+.event h3{font-size:22px;font-weight:800;margin:0 0 18px;display:flex;align-items:center;gap:12px}
+.event h3::before{content:"";width:22px;height:4px;background:var(--gold);border-radius:2px}
+.g1{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.g1 figure{aspect-ratio:3/2}
+.g2{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.g2 figure{aspect-ratio:3/4}
+.event figure{margin:0;border-radius:var(--r);overflow:hidden;background:#cfd8e2}
+.event figure img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.event figure:hover img{transform:scale(1.03)}
+
+/* faq */
+.faq{display:grid;grid-template-columns:1fr 1.5fr;gap:64px}
+details{border-top:1px solid var(--line)}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:64px;font-weight:700;font-size:17px;padding:10px 0}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:24px;font-weight:500;color:var(--navy);transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin:0 0 22px;color:var(--muted);max-width:60ch}
+
+/* contact */
+.contact{background:var(--navy);color:#fff}
+.cgrid{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:start}
+.contact .eyebrow{color:var(--gold)}
+.contact .intro p{color:#d9e4ef;font-size:18px;margin:0 0 24px}
+form{background:#fff;color:var(--ink);border-radius:20px;padding:32px;box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
+fieldset{border:0;margin:0 0 18px;padding:0}
+legend,label{display:block;font-size:14px;font-weight:700;margin-bottom:8px}
+input[type=text],input[type=email],textarea{width:100%;font:500 16px Montserrat,sans-serif;padding:12px 14px;border:1.5px solid #b9c4d0;border-radius:10px;min-height:48px;color:var(--ink);background:#fff}
+input:focus,textarea:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(0,66,116,.18)}
+textarea{min-height:110px;resize:vertical}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px}
+.pick{display:flex;flex-wrap:wrap;gap:8px}
+.pick label{margin:0;font-weight:600;font-size:14px}
+.pick input{position:absolute;opacity:0;width:1px;height:1px}
+.pick span{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1.5px solid #b9c4d0;border-radius:999px;cursor:pointer}
+.pick input:checked+span{background:var(--navy);border-color:var(--navy);color:#fff}
+.pick input:focus-visible+span{outline:3px solid var(--gold);outline-offset:2px}
+form .btn{width:100%;margin-top:6px}
+.thanks{display:none;margin:14px 0 0;padding:12px 14px;border-radius:10px;background:#eef6ee;color:#1d5a26;font-weight:600}
+.thanks.show{display:block}
+
+footer{background:var(--deep);color:#c9d6e3;padding:40px 0;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;justify-content:space-between;align-items:center}
+footer .word{color:#fff;font-size:18px}
+footer .word .lt{color:#9fc0e0}
+footer a{color:#fff}
+footer p{margin:0}
+
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:900px){
+  .jgrid,.cm,.faq,.cgrid,.igrid{grid-template-columns:1fr;gap:36px}
+  .orgs{grid-template-columns:1fr 1fr}
+  .why ul{grid-template-columns:1fr}
+  .why li{padding:20px 0}
+  .why li+li{border-left:0;border-top:1px solid var(--line)}
+  .cm figure{aspect-ratio:4/3;order:-1}
+}
+@media (max-width:760px){
+  nav.main li:not(:last-child){display:none}
+  .bar{height:62px}
+  .word{font-size:17px}
+  .sec{padding:72px 0}
+  .hero .wrap{min-height:0;padding:56px 0 64px;justify-content:flex-end}
+  .hero{min-height:640px;display:flex;align-items:flex-end}
+  .hero img{height:58%;object-position:66% 20%}
+  .hero::after{background:linear-gradient(0deg,var(--deep) 0%,var(--deep) 44%,rgba(0,38,66,.6) 54%,rgba(0,38,66,0) 72%)}
+  .hero .wrap{padding:0 0 48px}
+  .hero figcaption{display:none}
+  .cta .btn{flex:1 1 auto}
+  .g1{grid-template-columns:1fr}
+  .g2{grid-template-columns:1fr 1fr}
+  .g2 figure:first-child{grid-column:1/-1;aspect-ratio:4/5}
+  .stat{padding:28px}
+  .orgs{grid-template-columns:1fr}
+  .row{grid-template-columns:1fr}
+  form{padding:24px}
+  .steps .d{margin-left:50px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Free mockup for SaulPaul's Change Water</div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="SaulPaul's Change Water, home">
+      <small>SaulPaul's</small>
+      <span class="word" aria-hidden="true">CH<span class="tri"></span>NGE <span class="lt">W<span class="tri"></span>TER</span></span>
+    </a>
+    <nav class="main" aria-label="Main">
+      <ul>
+        <li><a href="#journey">The water</a></li>
+        <li><a href="#impact">The change</a></li>
+        <li><a href="#changemakers">ChangeMakers</a></li>
+        <li><a href="#out-and-about">Out and about</a></li>
+        <li><a class="btn btn-navy" href="#contact">Get in touch</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="h-hero">
+    <img src="https://drinkchangewater.com/wp-content/uploads/2021/11/Notley3-scaled.jpeg" alt="Performing on stage at the Notley Fellows Homecoming Block Party, in a Be The Change shirt, with Change Water bottles behind" width="2560" height="1707" fetchpriority="high">
+    <div class="wrap">
+      <p class="eyebrow">Premium electrolyte water from Texas</p>
+      <h1 id="h-hero">Quench your thirst <em>for change.</em></h1>
+      <p class="lead">Oxygenated, pH balanced water from deep in the heart of Texas. And 50% of the proceeds go to the SaulPaul Foundation.</p>
+      <div class="cta">
+        <a class="btn btn-gold" href="#contact">Get in touch</a>
+        <a class="btn btn-ghost" href="#journey">Follow a bottle</a>
+      </div>
+    </div>
+    <figcaption>Notley Fellows Homecoming Block Party</figcaption>
+  </section>
+
+  <section class="why" aria-label="Why Change Water">
+    <div class="wrap">
+      <ul>
+        <li>
+          <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M4 30h32M4 35h32" stroke="#004274" stroke-width="2.5" stroke-linecap="round"/><path d="M20 5c5 7 8 11 8 15a8 8 0 0 1-16 0c0-4 3-8 8-15z" fill="#004274"/></svg>
+          <div><b>From the Carrizo-Wilcox aquifer</b><span>Sourced deep in the heart of Texas.</span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="13" cy="25" r="7" fill="none" stroke="#004274" stroke-width="2.5"/><circle cx="27" cy="14" r="5" fill="none" stroke="#004274" stroke-width="2.5"/><circle cx="29" cy="30" r="3.5" fill="#004274"/></svg>
+          <div><b>pH balanced, electrolytes, oxygenated</b><span>It tastes better, so you drink more.</span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="15" fill="none" stroke="#004274" stroke-width="2.5"/><path d="M20 5a15 15 0 0 1 0 30z" fill="#e3c02d"/></svg>
+          <div><b>50% of proceeds given back</b><span>To the SaulPaul Foundation, for the places it's sold.</span></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec journey" id="journey" aria-labelledby="h-journey">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Follow one bottle</p>
+        <h2 id="h-journey">Every bottle does two things.</h2>
+        <p>It quenches your thirst. Then 50% of the proceeds go to work for change. Here is the whole trip.</p>
+      </div>
+      <div class="jgrid">
+        <figure class="stage" id="stage" data-step="1">
+          <div class="shot">
+            <img src="https://drinkchangewater.com/wp-content/uploads/2021/07/Change-Water-Landing.jpeg" alt="A clear bottle of Change Water with its purple CHANGE label, standing on a wooden barrel by a city street" width="1000" height="562" loading="lazy">
+            <p class="tag">Stop <b id="stopNum">1</b> of 5</p>
+          </div>
+          <figcaption class="cap" id="cap" aria-live="polite"><b id="capBig">Carrizo-Wilcox aquifer</b><span id="capSmall">Deep in the heart of Texas</span></figcaption>
+        </figure>
+        <div>
+          <ol class="steps" id="steps">
+            <li class="on" data-big="Carrizo-Wilcox aquifer" data-small="Deep in the heart of Texas"><button type="button" aria-expanded="true"><span class="n">1</span>Source</button><p class="d">It starts deep in the Carrizo-Wilcox aquifer, in the heart of Texas.</p></li>
+            <li data-big="pH balanced, with electrolytes" data-small="For a healthier water"><button type="button" aria-expanded="false"><span class="n">2</span>Balanced</button><p class="d">pH balanced, with electrolytes, for a healthier water.</p></li>
+            <li data-big="Oxygenated" data-small="It tastes better, so you drink more"><button type="button" aria-expanded="false"><span class="n">3</span>Oxygenated</button><p class="d">Oxygenated water tastes better. And when your water tastes better, you drink more.</p></li>
+            <li data-big="Pristine taste" data-small="In the bottle it has become famous for"><button type="button" aria-expanded="false"><span class="n">4</span>In your hand</button><p class="d">The pristine taste and the beautiful bottle it has become famous for.</p></li>
+            <li data-big="50% to the SaulPaul Foundation" data-small="Of the proceeds, donated directly"><button type="button" aria-expanded="false"><span class="n">5</span>Half goes back</button><p class="d">50% of the proceeds go straight to the SaulPaul Foundation, which supports nonprofits where Change Water is sold.</p></li>
+          </ol>
+          <div class="jnav">
+            <button type="button" id="prev" aria-label="Previous stop">←</button>
+            <button type="button" id="next">Next stop →</button>
+            <small id="autoNote">Plays on its own until you tap.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec impact" id="impact" aria-labelledby="h-impact">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Our philanthropy</p>
+        <h2 id="h-impact">Where half the proceeds go.</h2>
+        <p>The SaulPaul Foundation is a 501(c)3 funded and supported by the owners, employees and corporate affiliates of Change Water. It is a launchpad for young people, and a platform for community members to lead.</p>
+      </div>
+      <div class="igrid">
+        <div class="stat"><div class="big">50%</div><p>of the proceeds from every purchase, donated directly to the SaulPaul Foundation.</p></div>
+        <div class="stat"><div class="big">14</div><p>nonprofit organizations supported by Change Water's proceeds in a single six-month stretch.</p></div>
+        <div class="orgs" role="list" aria-label="Some of the organizations supported">
+          <div role="listitem"><span>Texas</span><b>The Center for Child Protection</b></div>
+          <div role="listitem"><span>Pennsylvania</span><b>Live Arts Everywhere</b></div>
+          <div role="listitem"><span>New York</span><b>Wings Over Haiti</b></div>
+          <div role="listitem"><span>And more</span><b>A number of elementary schools</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="changemakers" aria-labelledby="h-cm">
+    <div class="wrap cm">
+      <figure><img src="https://drinkchangewater.com/wp-content/uploads/2021/11/Notley5-scaled.jpeg" alt="Walking through the Notley Fellows Homecoming Block Party with a bottle of Change Water, in a Be The Change shirt" width="2560" height="1707" loading="lazy"></figure>
+      <div>
+        <p class="eyebrow" style="color:var(--gold-ink)">Our ambassador program</p>
+        <h2 id="h-cm">Become a ChangeMaker.</h2>
+        <p class="tagline">#BeTheChange</p>
+        <p>Change Water ChangeMakers is a movement of engaged citizens, organizations and corporations using their collective voice. Local and national campaigns, built to amplify the actions of ChangeMakers from around the world.</p>
+        <ul class="chips" aria-label="How ChangeMakers works">
+          <li>Content and events</li><li>Chapters and volunteers</li><li>SEL education in schools</li><li>Our action platform</li>
+        </ul>
+        <a class="btn btn-navy" href="#contact" data-topic="changemakers">I want to join</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec about" id="out-and-about" aria-labelledby="h-about">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Out and about</p>
+        <h2 id="h-about">Where you'll find us.</h2>
+      </div>
+      <div class="event">
+        <h3>Notley Fellows Homecoming Block Party</h3>
+        <div class="g1">
+          <figure><img src="https://drinkchangewater.com/wp-content/uploads/2021/11/Notley2-scaled.jpeg" alt="Two performers on an outdoor stage under string lights, with Change Water boxes and bottles beside them" width="2560" height="1706" loading="lazy"></figure>
+          <figure><img src="https://drinkchangewater.com/wp-content/uploads/2021/11/Notley1-scaled.jpeg" alt="Playing guitar at the block party, with cases of Change Water lit up behind" width="2560" height="1707" loading="lazy"></figure>
+        </div>
+      </div>
+      <div class="event">
+        <h3>Austin Young Chamber FAVE Awards</h3>
+        <div class="g2">
+          <figure><img src="https://drinkchangewater.com/wp-content/uploads/2021/11/IMG_6294-scaled.jpg" alt="Two guests holding Change Water in front of the Austin Young Chamber backdrop" width="1920" height="2560" loading="lazy"></figure>
+          <figure><img src="https://drinkchangewater.com/wp-content/uploads/2021/11/IMG_1691-scaled.jpg" alt="Two smiling guests holding Change Water at the FAVE Awards" width="1920" height="2560" loading="lazy"></figure>
+          <figure><img src="https://drinkchangewater.com/wp-content/uploads/2021/11/2021-11-04-20-56-43-scaled.jpeg" alt="A guest holding up a bottle of Change Water at the FAVE Awards" width="1920" height="2560" loading="lazy"></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="questions" aria-labelledby="h-faq">
+    <div class="wrap faq">
+      <div class="sec-head">
+        <p class="eyebrow">Questions</p>
+        <h2 id="h-faq">The short answers.</h2>
+      </div>
+      <div>
+        <details open><summary>Where does Change Water come from?</summary><p>The Carrizo-Wilcox aquifer, deep in the heart of Texas.</p></details>
+        <details><summary>What makes it different from other water?</summary><p>It is pH balanced with electrolytes, and it is oxygenated. It has become famous for its pristine taste and beautiful bottles.</p></details>
+        <details><summary>Why oxygenated?</summary><p>Oxygenated water tastes better. And when your water tastes better, you drink more.</p></details>
+        <details><summary>Where does my money go?</summary><p>50% of the proceeds are donated directly to the SaulPaul Foundation, which supports nonprofit organizations in the areas where Change Water is sold.</p></details>
+        <details><summary>What is the SaulPaul Foundation?</summary><p>A 501(c)3 funded and supported by the owners, employees and corporate affiliates of Change Water. A launchpad for young people, and a platform for community members to serve as community leaders.</p></details>
+        <details><summary>How do I become a ChangeMaker?</summary><p>Send a note below and pick "ChangeMakers". The program brings together citizens, organizations and corporations to #BeTheChange.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec contact" id="contact" aria-labelledby="h-contact">
+    <div class="wrap cgrid">
+      <div class="intro">
+        <p class="eyebrow">Get in touch</p>
+        <h2 id="h-contact">Quench your thirst for change.</h2>
+        <p>Want Change Water, want to know about the Foundation, or want to become a ChangeMaker? Tell us here and we'll get back to you.</p>
+      </div>
+      <form id="form" novalidate>
+        <fieldset>
+          <legend>What's it about?</legend>
+          <div class="pick">
+            <label><input type="radio" name="topic" value="water" checked><span>Change Water</span></label>
+            <label><input type="radio" name="topic" value="foundation"><span>The Foundation</span></label>
+            <label><input type="radio" name="topic" value="changemakers"><span>ChangeMakers</span></label>
+            <label><input type="radio" name="topic" value="other"><span>Something else</span></label>
+          </div>
+        </fieldset>
+        <div class="row">
+          <div><label for="f-name">Your name</label><input id="f-name" type="text" name="name" autocomplete="name"></div>
+          <div><label for="f-email">Email</label><input id="f-email" type="email" name="email" autocomplete="email"></div>
+        </div>
+        <label for="f-msg">Message</label>
+        <textarea id="f-msg" name="message">Hi, I'd like to know more about Change Water.</textarea>
+        <button class="btn btn-gold" type="submit">Send</button>
+        <p class="thanks" id="thanks" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="word" aria-label="Change Water">CH<span class="tri"></span>NGE <span class="lt">W<span class="tri"></span>TER</span></span>
+    <p>© Change Water. <a href="https://drinkchangewater.com/">drinkchangewater.com</a></p>
+    <p>Mockup made for SaulPaul's Change Water by Sunny Gupta, <a href="https://signalsetbase.com">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // journey
+  var stage = document.getElementById('stage'), items = [].slice.call(document.querySelectorAll('#steps li'));
+  var num = document.getElementById('stopNum'), note = document.getElementById('autoNote');
+  var cur = 1, timer = null, visible = false, manual = reduce;
+  if (reduce) note.textContent = '';
+  function go(n){
+    cur = (n - 1 + 5) % 5 + 1;
+    stage.setAttribute('data-step', cur); num.textContent = cur;
+    var li = items[cur - 1], cap = document.getElementById('cap');
+    cap.classList.add('swap');
+    setTimeout(function(){
+      document.getElementById('capBig').textContent = li.getAttribute('data-big');
+      document.getElementById('capSmall').textContent = li.getAttribute('data-small');
+      cap.classList.remove('swap');
+    }, reduce ? 0 : 250);
+    items.forEach(function(li, i){ var on = i === cur - 1; li.classList.toggle('on', on); li.querySelector('button').setAttribute('aria-expanded', on); });
+  }
+  function stop(){ manual = true; clearInterval(timer); timer = null; note.textContent = ''; }
+  function play(){ if (manual || timer || !visible) return; timer = setInterval(function(){ go(cur + 1); }, 4200); }
+  items.forEach(function(li, i){ li.querySelector('button').addEventListener('click', function(){ stop(); go(i + 1); }); });
+  document.getElementById('next').addEventListener('click', function(){ stop(); go(cur + 1); });
+  document.getElementById('prev').addEventListener('click', function(){ stop(); go(cur - 1); });
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function(es){ es.forEach(function(e){ visible = e.isIntersecting; if (visible) play(); else { clearInterval(timer); timer = null; } }); }, {threshold:.4}).observe(stage);
+  }
+
+  // topic shortcuts
+  [].forEach.call(document.querySelectorAll('[data-topic]'), function(a){
+    a.addEventListener('click', function(){ var r = document.querySelector('input[name=topic][value="' + a.getAttribute('data-topic') + '"]'); if (r) r.checked = true; });
+  });
+
+  // form
+  document.getElementById('form').addEventListener('submit', function(e){
+    e.preventDefault();
+    var t = document.getElementById('thanks'); t.textContent = 'Thanks. This is a mockup, so nothing was sent.'; t.classList.add('show');
+  });
+
+  // gentle rise
+  if (!reduce && 'IntersectionObserver' in window) {
+    var els = document.querySelectorAll('.sec-head, .jgrid, .igrid, .cm, .event, .faq > div:last-child, .cgrid form');
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.remove('will-rise'); io.unobserve(e.target); } }); }, {rootMargin:'0px 0px -8% 0px'});
+    [].forEach.call(els, function(el){
+      if (el.getBoundingClientRect().top > window.innerHeight) { el.classList.add('will-rise', 'rise'); io.observe(el); }
+    });
+  }
+})();
+</script>
+</body>
+</html>
