@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup greatfaithdetroit-org-8ec37d 1 db4fdd9b -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Great Faith Ministries International | Detroit Church, Saturdays at 12 PM</title>
+<meta name="description" content="Great Faith Ministries International, a Spirit-filled Detroit church led by Apostle Wayne T. Jackson and Dr. Beverly Y. Jackson. Sabbath Service every Saturday at 12 PM ET, 10735 Grand River Ave.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0a192f;--navy-2:#11264a;--ink:#14213a;--gold:#c5a059;--gold-ink:#7a5c22;
+  --ivory:#f7f3ea;--paper:#fffdf8;--line:#e4dccb;--muted:#4c5668;
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --sans:Inter,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:400 17px/1.6 var(--sans);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.05;margin:0;letter-spacing:-.01em}
+p{margin:0}
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+.eyebrow{font:600 12px/1.2 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--gold-ink)}
+.on-navy .eyebrow{color:var(--gold)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--navy);color:#fff;padding:10px 14px;z-index:50}
+.skip:focus{top:44px}
+
+/* mockup banner */
+.mock{background:#06101f;color:#e9dcc0;text-align:center;font:500 13px/1.3 var(--sans);letter-spacing:.04em;padding:9px 16px;border-bottom:1px solid rgba(197,160,89,.35)}
+
+/* header */
+.top{background:var(--ivory);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;min-height:72px;gap:24px}
+.logo{display:block;width:176px;height:34px;overflow:hidden;position:relative;flex:none}
+.logo img{position:absolute;width:191px;max-width:none;left:-7px;top:-67px;mix-blend-mode:multiply}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{text-decoration:none;font:500 15px/1 var(--sans);color:var(--ink);padding:14px 12px;border-radius:6px}
+.nav a:hover{color:var(--gold-ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;font:600 15px/1 var(--sans);text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .2s ease,background .2s ease,box-shadow .2s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-gold{background:var(--gold);color:var(--navy)}
+.btn-gold:hover{background:#d4b170;box-shadow:0 8px 24px -10px rgba(197,160,89,.8)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-ghost{border-color:rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{border-color:#fff}
+.btn-line{border-color:var(--navy);color:var(--navy)}
+.nav .btn{padding:0 20px;margin-left:8px;color:#fff}
+.top-call{display:none}
+
+/* hero */
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(900px 500px at 85% 20%,rgba(197,160,89,.10),transparent 60%);pointer-events:none}
+.hero .wrap{display:grid;grid-template-columns:1fr 560px;gap:64px;align-items:center;padding-top:84px;padding-bottom:96px;position:relative}
+.hero h1{font-size:88px;margin:18px 0 22px}
+.tagline{font:500 19px/1.55 var(--sans);color:#d9dfe9;max-width:30ch}
+.tagline span{display:block}
+.when{margin-top:26px;font:500 16px/1.5 var(--sans);color:#fff;display:flex;gap:10px;align-items:flex-start}
+.when svg{flex:none;margin-top:3px}
+.when b{color:var(--gold);font-weight:600}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.frame{position:relative}
+.frame:before{content:"";position:absolute;inset:-14px 14px 14px -14px;border:1px solid rgba(197,160,89,.55);border-radius:6px}
+.frame img{position:relative;width:100%;height:auto;aspect-ratio:1024/682;object-fit:cover;border-radius:6px;box-shadow:0 30px 60px -30px rgba(0,0,0,.7)}
+.ticket{position:absolute;left:-36px;bottom:-34px;background:var(--paper);color:var(--ink);border-radius:10px;padding:16px 20px 16px 18px;display:flex;gap:16px;align-items:center;box-shadow:0 20px 44px -18px rgba(0,0,0,.6);min-width:300px}
+.ticket .day{font:700 15px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--navy);background:var(--gold);border-radius:8px;width:62px;height:62px;display:grid;place-items:center;text-align:center;flex:none}
+.ticket .day b{display:block;font:700 30px/1 var(--serif);letter-spacing:0;margin-top:2px}
+.ticket small{display:block;font:600 11px/1.2 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--gold-ink)}
+.ticket strong{display:block;font:700 22px/1.15 var(--serif);margin:3px 0 2px}
+.ticket span{font-size:14px;color:var(--muted)}
+
+/* quick paths */
+.paths{background:var(--ivory);border-bottom:1px solid var(--line)}
+.paths ul{list-style:none;margin:0 auto;padding:0 28px;max-width:1160px;display:grid;grid-template-columns:repeat(4,1fr)}
+.paths li+li{border-left:1px solid var(--line)}
+.paths a{display:flex;gap:14px;align-items:center;padding:26px 22px;text-decoration:none;min-height:44px}
+.paths a:hover h2{color:var(--gold-ink)}
+.paths svg{flex:none;color:var(--gold-ink)}
+.paths h2{font:600 16px/1.2 var(--sans);letter-spacing:0;transition:color .2s}
+.paths p{font-size:14px;color:var(--muted);margin-top:3px}
+
+/* sections */
+section{scroll-margin-top:80px}
+.sec{padding:110px 0}
+.head{max-width:640px;margin-bottom:48px}
+.head h2{font-size:58px;margin-top:14px}
+.head p{margin-top:16px;color:var(--muted);font-size:18px}
+
+/* planner */
+.planner{display:grid;grid-template-columns:1fr 1.08fr;gap:44px;align-items:start}
+.step{font:600 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold-ink);margin:0 0 14px;padding:0}
+fieldset{border:0;margin:0 0 34px;padding:0;min-width:0}
+.opts{display:grid;gap:12px}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.opt label{display:grid;grid-template-columns:86px 1fr auto;gap:16px;align-items:center;padding:18px 20px;border:1.5px solid var(--line);border-radius:12px;background:#fff;cursor:pointer;transition:border-color .2s,box-shadow .2s}
+.opt input:checked+label{border-color:var(--navy);box-shadow:0 0 0 3px rgba(197,160,89,.35)}
+.opt input:focus-visible+label{outline:3px solid var(--gold);outline-offset:3px}
+.opt .d{font:600 12px/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold-ink)}
+.opt .n{font:700 22px/1.15 var(--serif);color:var(--ink)}
+.opt .s{font-size:14px;color:var(--muted)}
+.opt .t{font:600 15px/1 var(--sans);color:var(--navy);white-space:nowrap}
+.dates{display:flex;flex-wrap:wrap;gap:10px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;margin:0;width:100%;height:100%;cursor:pointer}
+.chip label{display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:0 18px;border:1.5px solid var(--line);border-radius:999px;background:#fff;font:500 15px/1 var(--sans);cursor:pointer}
+.chip input:checked+label{background:var(--navy);border-color:var(--navy);color:#fff}
+.chip input:focus-visible+label{outline:3px solid var(--gold);outline-offset:3px}
+.chip .dot{width:7px;height:7px;border-radius:50%;background:#d0721b}
+.card{background:var(--navy);color:#fff;border-radius:16px;overflow:hidden;box-shadow:0 30px 60px -36px rgba(10,25,47,.7)}
+.pass{padding:30px 32px 26px;position:relative}
+.pass:after{content:"";position:absolute;left:0;right:0;bottom:0;border-bottom:2px dashed rgba(197,160,89,.45)}
+.pass .eyebrow{color:var(--gold)}
+.pass h3{font-size:40px;margin:10px 0 4px}
+.pass .date{font:500 18px/1.4 var(--sans);color:#e9edf3}
+.count{display:flex;gap:10px;margin:22px 0 4px}
+.count div{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:10px 0;min-width:76px;text-align:center}
+.count b{display:block;font:700 34px/1 var(--serif);color:var(--gold)}
+.count span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#c9d1dd}
+.count-note{font-size:14px;color:#c9d1dd;margin-top:6px}
+.facts{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:12px}
+.facts li{display:flex;gap:12px;font-size:16px;color:#e9edf3}
+.facts svg{flex:none;color:var(--gold);margin-top:3px}
+.facts a{color:#fff;text-decoration-color:rgba(197,160,89,.7);text-underline-offset:3px}
+.extra{margin-top:20px;background:rgba(208,114,27,.16);border:1px solid rgba(232,150,70,.5);border-radius:10px;padding:14px 16px;font-size:15px;color:#fbe7d2}
+.extra b{color:#fff}
+.extra[hidden]{display:none}
+.rsvp{padding:26px 32px 32px;background:var(--navy-2)}
+.rsvp h4{margin:0 0 14px;font:600 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.field label{display:block;font-size:13px;font-weight:500;color:#d9dfe9;margin-bottom:6px}
+.field input,.field select,.field textarea{width:100%;min-height:48px;border-radius:10px;border:1.5px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:#fff;font:400 16px/1.3 var(--sans);padding:12px 14px}
+.field select option{color:#000}
+.field input::placeholder,.field textarea::placeholder{color:#a9b4c4}
+.rsvp .row+.row,.rsvp .check,.rsvp .btn{margin-top:12px}
+.check{display:flex;gap:10px;align-items:center;font-size:15px;color:#e9edf3;min-height:44px}
+.check input{width:20px;height:20px;accent-color:var(--gold)}
+.check[hidden]{display:none}
+.thanks{font:600 17px/1.5 var(--sans);color:var(--gold);padding:8px 0}
+.rsvp .btn{width:100%}
+
+/* trunk or treat */
+.tot{background:var(--ivory)}
+.tot .wrap{display:grid;grid-template-columns:320px 1fr;gap:72px;align-items:center}
+.flyer{width:300px;transform:rotate(-2deg);border-radius:8px;box-shadow:0 30px 50px -28px rgba(10,25,47,.6);border:6px solid #fff;justify-self:center}
+.flyer img{width:100%;height:auto;aspect-ratio:941/1672;border-radius:2px}
+.tags{display:flex;flex-wrap:wrap;gap:8px 22px;list-style:none;padding:0;margin:26px 0}
+.tags li{display:flex;align-items:center;gap:9px;font-weight:500}
+.tags li:before{content:"";width:8px;height:8px;border-radius:50%;background:#d0721b}
+.badge{display:inline-block;font:600 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:#8a3f00;background:#fbe3c8;border-radius:999px;padding:8px 12px}
+.tot h2{font-size:60px;margin:16px 0 14px}
+.tot .lead{font-size:20px;line-height:1.5;max-width:34ch}
+.meta{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:22px;font-weight:500}
+.meta div{display:flex;gap:10px;align-items:center}
+.meta svg{color:var(--gold-ink)}
+.vol{border-left:3px solid var(--gold);padding:4px 0 4px 18px;color:var(--muted);font-size:15px;max-width:58ch}
+.vol b{color:var(--ink)}
+
+/* pastors & legacy */
+.legacy .wrap{display:grid;grid-template-columns:400px 1fr;gap:80px;align-items:start}
+.portrait{position:sticky;top:110px}
+.portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 78%;border-radius:8px;background:#f1efe9}
+.portrait figcaption{margin-top:16px;font-size:15px;color:var(--muted)}
+.portrait figcaption b{display:block;font:700 22px/1.2 var(--serif);color:var(--ink)}
+.mission{font:600 italic 30px/1.3 var(--serif);color:var(--ink);margin:26px 0 0;padding:0;max-width:30ch}
+.mission cite{display:block;margin-top:10px;font:500 13px/1 var(--sans);font-style:normal;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-ink)}
+.line{list-style:none;margin:48px 0 0;padding:0;position:relative}
+.line:before{content:"";position:absolute;left:96px;top:8px;bottom:8px;width:1px;background:var(--line)}
+.line li{display:grid;grid-template-columns:130px 1fr;padding:0 0 30px;position:relative}
+.line li:after{content:"";position:absolute;left:91px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--paper);border:2px solid var(--gold)}
+.line .y{font:700 22px/1.2 var(--serif);color:var(--gold-ink);white-space:nowrap}
+.line p{color:var(--muted)}
+.line p b{color:var(--ink);font-weight:600}
+.stat{display:flex;gap:44px;margin-top:20px;padding-top:30px;border-top:1px solid var(--line)}
+.stat b{display:block;font:700 46px/1 var(--serif);color:var(--navy)}
+.stat span{font-size:14px;color:var(--muted)}
+
+/* watch */
+.watch{background:var(--navy);color:#fff}
+.watch .wrap{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.watch img{width:100%;max-width:540px;aspect-ratio:1024/682;object-fit:cover;border-radius:8px}
+.watch h2{font-size:58px;margin:14px 0 14px}
+.watch .sub{color:#d9dfe9;font-size:18px}
+.msgs{list-style:none;padding:0;margin:28px 0 30px;border-top:1px solid rgba(255,255,255,.14)}
+.msgs li{border-bottom:1px solid rgba(255,255,255,.14)}
+.msgs a{display:flex;align-items:center;gap:16px;padding:16px 0;text-decoration:none;min-height:44px}
+.msgs .play{width:40px;height:40px;border-radius:50%;border:1.5px solid var(--gold);display:grid;place-items:center;color:var(--gold);flex:none;transition:background .2s,color .2s}
+.msgs a:hover .play{background:var(--gold);color:var(--navy)}
+.msgs b{display:block;font-weight:600}
+.msgs span{font-size:14px;color:#c9d1dd}
+.onl{display:flex;gap:12px;align-items:center;margin-bottom:28px;font-size:15px;color:#d9dfe9}
+.onl b{color:#fff}
+.live{width:10px;height:10px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 0 rgba(197,160,89,.6);animation:pulse 2.4s infinite;flex:none}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(197,160,89,0)}100%{box-shadow:0 0 0 0 rgba(197,160,89,0)}}
+
+/* prayer */
+.prayer .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:72px;align-items:start}
+.prayer img{width:100%;max-width:500px;aspect-ratio:4/3;object-fit:cover;object-position:50% 30%;border-radius:8px;margin-top:34px}
+.verse{margin-top:22px;font:600 italic 22px/1.4 var(--serif);color:var(--ink)}
+.verse span{display:block;font:500 13px/1 var(--sans);font-style:normal;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-ink);margin-top:8px}
+.pform{background:#fff;border:1px solid var(--line);border-radius:16px;padding:32px;box-shadow:0 24px 50px -40px rgba(10,25,47,.5)}
+.pform .step{margin-bottom:12px}
+.cats{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.cats .chip label{min-height:44px;font-size:14px;padding:0 15px}
+.pform .field label{color:var(--ink)}
+.pform .field input,.pform .field textarea{background:var(--paper);border-color:var(--line);color:var(--ink)}
+.pform .field input::placeholder,.pform .field textarea::placeholder{color:#6b7385}
+.pform textarea{min-height:120px;resize:vertical}
+.pform .row{margin-top:12px}
+.pform .check{color:var(--ink);margin-top:8px}
+.pform .btn{margin-top:14px;width:100%}
+.pform .thanks{color:var(--gold-ink)}
+.small{font-size:14px;color:var(--muted);margin-top:14px}
+
+/* ministries */
+.min{background:var(--ivory)}
+.min .wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px}
+.mlist{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.mlist li{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:18px 0;border-bottom:1px solid var(--line);font:700 26px/1.2 var(--serif)}
+.mlist li span{font:500 13px/1.2 var(--sans);color:var(--muted);text-align:right}
+.school{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:36px}
+.school h3{font-size:36px;margin:12px 0 14px}
+.school p{color:var(--muted)}
+.prog{margin-top:22px;display:grid;gap:18px}
+.prog div{padding-left:18px;border-left:3px solid var(--gold)}
+.prog b{display:block;font:700 21px/1.2 var(--serif);color:var(--ink)}
+.prog p{font-size:15px;margin-top:4px}
+.cert{margin-top:22px;font-size:15px;display:flex;gap:10px;align-items:flex-start}
+.cert svg{flex:none;color:var(--gold-ink);margin-top:2px}
+
+/* testimony */
+.testi .wrap{display:grid;grid-template-columns:420px 1fr;gap:80px;align-items:center}
+.testi img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:50% 50% 8px 8px}
+.testi blockquote{margin:0;font:600 36px/1.3 var(--serif);color:var(--ink)}
+.testi blockquote:before{content:"\201C";display:block;font:700 90px/0.6 var(--serif);color:var(--gold);margin-bottom:14px}
+.testi figcaption{margin-top:22px;font-weight:600}
+.testi figcaption span{display:block;font-weight:400;color:var(--muted);font-size:15px}
+
+/* faq */
+.faq{background:var(--ivory)}
+.faq .wrap{max-width:860px}
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;cursor:pointer;font:700 25px/1.25 var(--serif);min-height:44px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"";width:12px;height:12px;border-right:2px solid var(--gold-ink);border-bottom:2px solid var(--gold-ink);transform:rotate(45deg);transition:transform .25s;flex:none;margin-right:6px}
+details[open] summary:after{transform:rotate(-135deg)}
+details p{padding:0 0 24px;color:var(--muted);max-width:62ch}
+details a{color:var(--gold-ink);font-weight:600}
+
+/* final */
+.final{background:var(--navy);color:#fff;text-align:center;padding:120px 0}
+.final h2{font-size:76px;margin:16px 0 18px}
+.final p{color:#d9dfe9;font-size:19px}
+.final .cta{justify-content:center}
+footer{background:#06101f;color:#c9d1dd;padding:64px 0 40px;font-size:15px}
+footer .grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
+footer h2{font:600 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+footer .name{font:700 26px/1.15 var(--serif);color:#fff}
+footer p+p{margin-top:8px}
+footer a{color:#fff;text-decoration:none;display:inline-block;padding:3px 0}
+footer a:hover{color:var(--gold)}
+footer .soc{display:flex;flex-direction:column}
+.fine{margin-top:48px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:13px;color:#a9b4c4}
+.fine a{color:#e9dcc0;display:inline;text-decoration:underline;text-underline-offset:2px}
+
+.callbar{display:none}
+
+/* motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*:before,*:after{animation:none!important;transition:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+
+/* responsive */
+@media (max-width:1080px){
+  .hero .wrap{grid-template-columns:1fr 460px;gap:48px}
+  .hero h1{font-size:72px}
+  .nav a.hide-md{display:none}
+}
+@media (max-width:900px){
+  .hero .wrap,.planner,.tot .wrap,.legacy .wrap,.watch .wrap,.prayer .wrap,.min .wrap,.testi .wrap{grid-template-columns:1fr}
+  .portrait{position:static;max-width:420px}
+  .paths ul{grid-template-columns:1fr 1fr}
+  .paths li:nth-child(3){border-left:0}
+  .paths li:nth-child(n+3){border-top:1px solid var(--line)}
+  footer .grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  body{font-size:16px;padding-bottom:68px}
+  .wrap{padding:0 20px}
+  .mock{font-size:12px;padding:8px 12px}
+  .top .wrap{min-height:62px}
+  .logo{width:160px;height:31px}
+  .logo img{width:170px;left:-6px;top:-60px}
+  .nav{display:none}
+  .top-call{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:var(--navy);color:#fff;text-decoration:none;font:600 14px/1 var(--sans)}
+  .hero .wrap{padding-top:44px;padding-bottom:78px;gap:44px}
+  .hero h1{font-size:60px;margin:14px 0 16px}
+  .tagline{font-size:17px}
+  .cta .btn{flex:1 1 auto}
+  .frame:before{inset:-10px 10px 10px -10px}
+  .ticket{left:12px;right:12px;bottom:-40px;min-width:0;padding:12px 14px;gap:12px}
+  .ticket .day{width:54px;height:54px;font-size:13px}
+  .ticket .day b{font-size:26px}
+  .ticket strong{font-size:19px}
+  .paths ul{padding:0}
+  .paths a{padding:20px 16px;gap:10px;align-items:flex-start}
+  .paths p{font-size:13px}
+  .sec{padding:76px 0}
+  .head{margin-bottom:32px}
+  .head h2,.watch h2{font-size:44px}
+  .opt label{grid-template-columns:1fr auto;gap:4px 12px;padding:16px}
+  .opt .d{grid-column:1/-1}
+  .pass,.rsvp{padding-left:22px;padding-right:22px}
+  .pass h3{font-size:34px}
+  .count div{min-width:0;flex:1}
+  .row{grid-template-columns:1fr}
+  .tot .wrap{gap:40px}
+  .flyer{width:240px}
+  .tot h2{font-size:46px}
+  .tot .lead{font-size:18px}
+  .legacy .wrap{gap:44px}
+  .mission{font-size:25px}
+  .line:before{left:8px}
+  .line li{grid-template-columns:1fr;padding-left:36px}
+  .line li:after{left:3px}
+  .line .y{padding-right:0;margin-bottom:2px}
+  .stat{gap:28px}
+  .stat b{font-size:38px}
+  .watch .wrap,.prayer .wrap,.min .wrap,.testi .wrap{gap:40px}
+  .pform,.school{padding:24px 20px}
+  .mlist li{font-size:22px}
+  .testi img{max-width:300px}
+  .testi blockquote{font-size:27px}
+  summary{font-size:21px}
+  .final{padding:84px 0}
+  .final h2{font-size:52px}
+  footer .grid{grid-template-columns:1fr;gap:30px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--navy);border-top:1px solid rgba(197,160,89,.4);padding:8px 10px calc(8px + env(safe-area-inset-bottom));gap:8px}
+  .callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:999px;font:600 15px/1 var(--sans);text-decoration:none;color:#fff;border:1.5px solid rgba(255,255,255,.3)}
+  .callbar a.main{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Free mockup for Great Faith Ministries International</div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#main" aria-label="Great Faith Ministries International, home">
+      <img src="https://media.base44.com/images/public/6a4d1ce5a33103c7d145526c/fbff7442b_generated_6d18ebad.png" alt="Great Faith" width="1024" height="1024">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#visit">Plan Your Visit</a>
+      <a href="#watch">Watch Live</a>
+      <a href="#pray">Prayer</a>
+      <a href="#about" class="hide-md">About</a>
+      <a href="https://greatfaithdetroit.org/" class="hide-md">Give</a>
+      <a class="btn btn-navy" href="tel:+13134913900">Call 313-491-3900</a>
+    </nav>
+    <a class="top-call" href="tel:+13134913900" aria-label="Call 313-491-3900">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Call
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero on-navy" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Great Faith Ministries International · Detroit</p>
+        <h1 id="hero-title">Welcome Home.</h1>
+        <p class="tagline"><span>Growing Believers.</span><span>Building Families.</span><span>Changing Nations.</span></p>
+        <p class="when">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c5a059" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <span>Worship with us every <b>Saturday at 12 PM ET</b>, 10735 Grand River Ave. Come as you are.</span>
+        </p>
+        <div class="cta">
+          <a class="btn btn-gold" href="#visit">Plan Your Visit</a>
+          <a class="btn btn-ghost" href="#watch">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg>Watch Live
+          </a>
+        </div>
+      </div>
+      <div class="frame">
+        <img src="https://media.base44.com/images/public/6a4d1ce5a33103c7d145526c/394b1daa3_ChatGPTImageJul14202605_34_17PM.png" alt="The Great Faith congregation in worship, hands raised" width="1024" height="682" fetchpriority="high">
+        <div class="ticket" aria-live="polite">
+          <div class="day">Sat<b id="hDay">12</b></div>
+          <div>
+            <small id="hLabel">Every Saturday</small>
+            <strong>Sabbath Service</strong>
+            <span id="hWhen">12:00 PM ET · All are welcome</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="paths" aria-label="Quick links">
+    <ul>
+      <li><a href="#watch"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2.5" y="5" width="19" height="13" rx="2"/><path d="M10 9v5l4.5-2.5z" fill="currentColor"/></svg><div><h2>Watch Live</h2><p>Join us for live worship</p></div></a></li>
+      <li><a href="#visit"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></svg><div><h2>New Here?</h2><p>We'd love to welcome you</p></div></a></li>
+      <li><a href="#pray"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.3-9.2C1.5 8.6 3.6 5 7 5c2 0 3.6 1.2 5 3 1.4-1.8 3-3 5-3 3.4 0 5.5 3.6 4.3 6.8C19.5 16.4 12 21 12 21z"/></svg><div><h2>Prayer Request</h2><p>Let us pray with you</p></div></a></li>
+      <li><a href="https://greatfaithdetroit.org/"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3v18"/><path d="M17 7.5c0-1.9-2.2-3-5-3s-5 1.2-5 3.3S9 10.6 12 11.5s5 1.6 5 3.7-2.2 3.3-5 3.3-5-1.1-5-3"/></svg><div><h2>Give Online</h2><p>Support the ministry</p></div></a></li>
+    </ul>
+  </nav>
+
+  <section id="visit" class="sec" aria-labelledby="visit-title">
+    <div class="wrap">
+      <div class="head rise">
+        <p class="eyebrow">Plan your visit</p>
+        <h2 id="visit-title">Pick a day. We'll see you there.</h2>
+        <p>Come as you are. You're always welcome here.</p>
+      </div>
+      <div class="planner">
+        <form id="plan" class="rise" onsubmit="return false">
+          <fieldset>
+            <legend class="step">1 · Choose a gathering</legend>
+            <div class="opts">
+              <div class="opt"><input type="radio" name="g" id="g1" value="sabbath" checked><label for="g1"><span class="d">Saturday</span><span><span class="n">Sabbath Service</span><br><span class="s">Our main weekly worship gathering</span></span><span class="t">12:00 PM ET</span></label></div>
+              <div class="opt"><input type="radio" name="g" id="g2" value="noon"><label for="g2"><span class="d">Tuesday</span><span><span class="n">Noonday Service</span><br><span class="s">Midday prayer and worship</span></span><span class="t">12:00 PM ET</span></label></div>
+              <div class="opt"><input type="radio" name="g" id="g3" value="emp"><label for="g3"><span class="d">Tuesday · Online</span><span><span class="n">Empowerment Tuesdays</span><br><span class="s">Online only: prayer and Bible study</span></span><span class="t">7:00 PM ET</span></label></div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend class="step">2 · Choose a date</legend>
+            <div class="dates" id="dates">
+              <div class="chip"><input type="radio" name="d" id="d0" checked><label for="d0">Every week</label></div>
+            </div>
+          </fieldset>
+        </form>
+
+        <div class="card rise">
+          <div class="pass" aria-live="polite">
+            <p class="eyebrow" id="tkLabel">Your visit</p>
+            <h3 id="tkName">Sabbath Service</h3>
+            <p class="date" id="tkDate">Every Saturday · 12:00 PM ET</p>
+            <div class="count" id="tkCount" hidden>
+              <div><b id="cD">0</b><span>days</span></div>
+              <div><b id="cH">0</b><span>hours</span></div>
+              <div><b id="cM">0</b><span>min</span></div>
+            </div>
+            <ul class="facts" id="tkFacts">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><span>10735 Grand River Ave, Detroit, MI 48204 · <a href="https://www.google.com/maps/search/?api=1&amp;query=10735%20Grand%20River%20Ave%2C%20Detroit%2C%20MI%2048204">Get directions</a></span></li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Our main weekly worship gathering</span></li>
+            </ul>
+            <p class="extra" id="tkExtra" hidden><b>Trunk or Treat follows service.</b> Free, all ages, in person: bouncy house, food trucks, giveaways, treats and fellowship.</p>
+          </div>
+          <form class="rsvp" id="rsvp">
+            <h4>3 · Tell us you're coming</h4>
+            <div id="rsvpBody">
+              <div class="row">
+                <div class="field"><label for="rn">Your name</label><input id="rn" name="name" autocomplete="name" required placeholder="First and last name"></div>
+                <div class="field"><label for="rc">Phone or email</label><input id="rc" name="contact" autocomplete="email" placeholder="So we can welcome you"></div>
+              </div>
+              <div class="row">
+                <div class="field"><label for="rp">How many are coming?</label>
+                  <select id="rp" name="party"><option>Just me</option><option selected>2 of us</option><option>3 of us</option><option>4 of us</option><option>5 or more</option></select></div>
+                <div class="field"><label for="rk">Bringing children?</label>
+                  <select id="rk" name="kids"><option>No</option><option>Yes</option></select></div>
+              </div>
+              <label class="check" id="rtot" hidden><input type="checkbox" name="tot" checked> We're staying for Trunk or Treat</label>
+              <button class="btn btn-gold" type="submit">Send, and see you there</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tot sec" aria-labelledby="tot-title">
+    <div class="wrap">
+      <figure class="flyer rise" style="margin:0">
+        <img src="https://media.base44.com/images/public/6a4d1ce5a33103c7d145526c/327e270e9_AnnualTrunkorTreatCelebration.png" alt="Flyer: Judah's House Children's Ministry Annual Trunk or Treat, Saturday October 31, 2026, immediately following service" width="941" height="1672" loading="lazy">
+      </figure>
+      <div class="rise">
+        <span class="badge">Featured event · Free · All ages · In person</span>
+        <h2 id="tot-title">Trunk or Treat 2026</h2>
+        <p class="lead">Worship together. Then let the kids celebrate with candy, games, and family fun.</p>
+        <div class="meta">
+          <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Saturday, Oct 31 · 12 PM ET service, then Trunk or Treat</div>
+          <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>GFMI Detroit, 10735 Grand River Ave</div>
+        </div>
+        <ul class="tags"><li>Bouncy House</li><li>Food Trucks</li><li>Giveaways</li><li>Treats &amp; Fellowship</li></ul>
+        <p class="vol"><b>Volunteer your trunk.</b> Decorate your car with a fun, child-friendly theme and hand out treats. Candy and monetary donations are welcome to fill treat bags for every child. Family-friendly only: no blood, gore, or scary costumes. Contact Judah's House Children's Ministry to volunteer.</p>
+        <div class="cta">
+          <a class="btn btn-navy" href="#visit" id="totPlan">Reserve your spot</a>
+          <a class="btn btn-line" href="tel:+13134913900">Call to volunteer</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="legacy sec" aria-labelledby="about-title">
+    <div class="wrap">
+      <figure class="portrait rise" style="margin:0">
+        <img src="https://greatfaithdetroit.org/images/gfmi-pastors-service.jpg" alt="Apostle Wayne T. Jackson and Dr. Beverly Y. Jackson" width="941" height="1672" loading="lazy">
+        <figcaption><b>Apostle Wayne T. Jackson &amp; Dr. Beverly Y. Jackson</b>Senior Pastors</figcaption>
+      </figure>
+      <div>
+        <div class="rise">
+          <p class="eyebrow">Our story</p>
+          <h2 id="about-title" style="font-size:clamp(44px,5vw,58px);margin-top:14px">A legacy of faith since 1973.</h2>
+          <blockquote class="mission">“To teach the Word of GOD, demonstrate the Power of GOD's Love, equip the believers and Impact the world!”<cite>Our mission</cite></blockquote>
+        </div>
+        <ol class="line">
+          <li class="rise"><span class="y">1973</span><p><b>Founded January 7 as Faith Apostolic Temple</b> by the late Elder Royal Titus Bozeman and Corrine Yvonne Bozeman, Dr. Beverly Jackson's parents.</p></li>
+          <li class="rise"><span class="y">1987</span><p><b>A new season as Greater Faith Ministries</b> under Wayne T. and Dr. Beverly Y. Jackson, entrusted with the mantle in 1986.</p></li>
+          <li class="rise"><span class="y">1992</span><p><b>From Inkster to Detroit,</b> for greater influence in the city, the nation and the world.</p></li>
+          <li class="rise"><span class="y">2000s</span><p><b>Impact Network launches,</b> now reaching more than 90 million homes across the United States, the Caribbean and parts of Africa.</p></li>
+          <li class="rise"><span class="y">2024</span><p><b>Impact Great Faith Global</b> brings live worship, teaching, prayer and fellowship to believers anywhere.</p></li>
+        </ol>
+        <div class="stat rise">
+          <div><b>1973</b><span>Our roots</span></div>
+          <div><b>3,000+</b><span>Members</span></div>
+          <div><b>90M</b><span>Homes reached by Impact Network</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="watch" class="watch sec on-navy" aria-labelledby="watch-title">
+    <div class="wrap">
+      <img class="rise" src="https://media.base44.com/images/public/6a4d1ce5a33103c7d145526c/d5b348763_ChatGPTImageJul14202605_43_45PM.png" alt="Apostle Jackson ministering from the stage as the congregation listens" width="1024" height="682" loading="lazy">
+      <div class="rise">
+        <p class="eyebrow">Watch &amp; listen</p>
+        <h2 id="watch-title">Worship with us from anywhere.</h2>
+        <p class="sub">Join us for live worship, or revisit recent messages.</p>
+        <ul class="msgs">
+          <li><a href="https://www.youtube.com/c/GreatFaithMinistriesInternational"><span class="play"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg></span><span><b>Great Faith Live Stream</b><span>October 20, 2026 · Latest message</span></span></a></li>
+          <li><a href="https://www.youtube.com/c/GreatFaithMinistriesInternational"><span class="play"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg></span><span><b>Great Faith Live Stream</b><span>October 17, 2026</span></span></a></li>
+        </ul>
+        <p class="onl"><span class="live" aria-hidden="true"></span><span><b>Empowerment Tuesdays</b> · online only, prayer and Bible study, 7:00 PM ET</span></p>
+        <div class="cta" style="margin-top:0">
+          <a class="btn btn-gold" href="https://www.youtube.com/c/GreatFaithMinistriesInternational">Watch on YouTube</a>
+          <a class="btn btn-ghost" href="https://www.facebook.com/greatfaithministriesinternational">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pray" class="prayer sec" aria-labelledby="pray-title">
+    <div class="wrap">
+      <div class="rise">
+        <p class="eyebrow">We're here to pray</p>
+        <h2 id="pray-title" style="font-size:clamp(44px,5vw,58px);margin-top:14px">You are never alone.</h2>
+        <p style="margin-top:16px;color:var(--muted);font-size:18px;max-width:42ch">Cast your cares upon Him. Our intercessory prayer team prays over every request that comes in, and stands in agreement with you for breakthrough, healing, and answered prayer.</p>
+        <p class="verse">“The prayer of a righteous person is powerful and effective.”<span>James 5:16</span></p>
+        <img src="https://media.base44.com/images/public/6a4d1ce5a33103c7d145526c/704cf3733_PrayerRequestPhoto.jpg" alt="Apostle Jackson in prayer" width="1024" height="683" loading="lazy">
+      </div>
+      <form class="pform rise" id="prayer">
+        <div id="prayBody">
+          <p class="step" id="pcat">What can we pray with you about?</p>
+          <div class="cats" role="radiogroup" aria-labelledby="pcat">
+            <div class="chip"><input type="radio" name="c" id="c1" checked><label for="c1">Healing</label></div>
+            <div class="chip"><input type="radio" name="c" id="c2"><label for="c2">Family</label></div>
+            <div class="chip"><input type="radio" name="c" id="c3"><label for="c3">Finances</label></div>
+            <div class="chip"><input type="radio" name="c" id="c4"><label for="c4">Spiritual Growth</label></div>
+            <div class="chip"><input type="radio" name="c" id="c5"><label for="c5">Relationships</label></div>
+            <div class="chip"><input type="radio" name="c" id="c6"><label for="c6">Career</label></div>
+            <div class="chip"><input type="radio" name="c" id="c7"><label for="c7">Grief</label></div>
+            <div class="chip"><input type="radio" name="c" id="c8"><label for="c8">Praise Report</label></div>
+            <div class="chip"><input type="radio" name="c" id="c9"><label for="c9">Other</label></div>
+          </div>
+          <div class="field"><label for="pm">Your request</label><textarea id="pm" name="message" placeholder="Share as much or as little as you like."></textarea></div>
+          <div class="row">
+            <div class="field"><label for="pn">Name (optional)</label><input id="pn" name="name" autocomplete="name"></div>
+            <div class="field"><label for="pe">Email (optional)</label><input id="pe" name="email" type="email" autocomplete="email"></div>
+          </div>
+          <label class="check"><input type="checkbox" name="public"> Share publicly on the prayer wall</label>
+          <button class="btn btn-navy" type="submit">Submit prayer request</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="min sec" aria-labelledby="min-title">
+    <div class="wrap">
+      <div class="rise">
+        <p class="eyebrow">Get involved</p>
+        <h2 id="min-title" style="font-size:clamp(44px,5vw,58px);margin:14px 0 16px">There's a place for everyone.</h2>
+        <p style="color:var(--muted);font-size:18px;margin-bottom:32px">Discover your calling and connect with a community that shares your passion.</p>
+        <ul class="mlist">
+          <li>Artistry Under Anointing</li>
+          <li>Brothers to Brothers</li>
+          <li>Children's Ministry <span>Judah's House</span></li>
+          <li>Forever Young Ministry</li>
+          <li>Girlfriends</li>
+          <li>Global Ministry</li>
+        </ul>
+      </div>
+      <div class="school rise">
+        <p class="eyebrow">GFMI School of Ministry</p>
+        <h3>Revelation I &amp; II Certificate Programs</h3>
+        <p>Grow in your understanding of GOD's Word and prepare for effective Kingdom service.</p>
+        <div class="prog">
+          <div><b>Revelation I</b><p>A strong biblical foundation: GOD, Scripture, covenant, and foundational Christian doctrine.</p></div>
+          <div><b>Revelation II</b><p>Advanced teaching on ministry, spiritual gifts, the HOLY SPIRIT, and service in the Body of CHRIST.</p></div>
+        </div>
+        <p class="cert"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></svg><span>Complete the program requirements and receive a GFMI School of Ministry Certificate of Completion.</span></p>
+        <a class="btn btn-line" style="margin-top:22px" href="tel:+13134913900">Ask about enrolling</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="testi sec" aria-labelledby="testi-title">
+    <div class="wrap">
+      <img class="rise" src="https://media.base44.com/images/public/6a4d1ce5a33103c7d145526c/b17cb67d4_ChatGPTImageJul14202605_49_25PM.png" alt="Dr. Beverly Jackson embracing a member of the congregation" width="1024" height="1001" loading="lazy">
+      <figure class="rise" style="margin:0">
+        <h2 id="testi-title" class="eyebrow" style="font-family:var(--sans);margin-bottom:22px">Lives transformed</h2>
+        <blockquote>Apostle Jackson and Dr Beverly are awesome spiritual parents. They love people, they feed people, they pray for people…</blockquote>
+        <figcaption>C. Wasson<span>Attendee</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="faq sec" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="head rise">
+        <p class="eyebrow">Good to know</p>
+        <h2 id="faq-title">Questions, answered.</h2>
+      </div>
+      <div class="rise">
+        <details open><summary>What day is service?</summary><p>Saturday. Sabbath Service, our main weekly worship gathering, is every Saturday at 12:00 PM ET. On Tuesdays there's Noonday Service at 12:00 PM ET and Empowerment Tuesdays online at 7:00 PM ET.</p></details>
+        <details><summary>Where are you?</summary><p>10735 Grand River Ave, Detroit, MI 48204. <a href="https://www.google.com/maps/search/?api=1&amp;query=10735%20Grand%20River%20Ave%2C%20Detroit%2C%20MI%2048204">Get directions</a>.</p></details>
+        <details><summary>What should I wear?</summary><p>Come as you are. You're always welcome here.</p></details>
+        <details><summary>Can I worship online?</summary><p>Yes. Join us for live worship on <a href="https://www.youtube.com/c/GreatFaithMinistriesInternational">YouTube</a>. Empowerment Tuesdays, our prayer and Bible study, is online only.</p></details>
+        <details><summary>Is Trunk or Treat free?</summary><p>Yes. It's free, for all ages, and in person, on Saturday, October 31, right after the 12 PM Sabbath Service.</p></details>
+        <details><summary>How do I send a prayer request?</summary><p>Use the <a href="#pray">prayer form</a> on this page. Our intercessory prayer team prays over every request that comes in.</p></details>
+        <details><summary>How can I give?</summary><p>Give online at <a href="https://greatfaithdetroit.org/">greatfaithdetroit.org</a> to support the ministry.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final on-navy" aria-labelledby="final-title">
+    <div class="wrap rise">
+      <p class="eyebrow">Grace and peace, family</p>
+      <h2 id="final-title">See you Saturday.</h2>
+      <p>12:00 PM ET · 10735 Grand River Ave, Detroit</p>
+      <div class="cta">
+        <a class="btn btn-gold" href="#visit">Plan Your Visit</a>
+        <a class="btn btn-ghost" href="tel:+13134913900">Call 313-491-3900</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <p class="name">Great Faith Ministries International</p>
+        <p style="margin-top:12px">Growing Believers. Building Families. Changing Nations. Serving the Detroit community and the world with the love of Christ since 1973.</p>
+      </div>
+      <div>
+        <h2>Visit us</h2>
+        <p><a href="https://www.google.com/maps/search/?api=1&amp;query=10735%20Grand%20River%20Ave%2C%20Detroit%2C%20MI%2048204">10735 Grand River Ave<br>Detroit, MI 48204</a></p>
+        <p><a href="tel:+13134913900">313-491-3900</a></p>
+        <p><a href="mailto:info@greatfaithdetroit.org">info@greatfaithdetroit.org</a></p>
+      </div>
+      <div>
+        <h2>Service times</h2>
+        <p>Saturday: 12:00 PM ET</p>
+        <p>Tuesday: 12:00 PM &amp; 7:00 PM ET</p>
+      </div>
+      <div class="soc">
+        <h2>Stay connected</h2>
+        <a href="https://www.youtube.com/c/GreatFaithMinistriesInternational">YouTube</a>
+        <a href="https://www.facebook.com/greatfaithministriesinternational">Facebook</a>
+        <a href="https://www.instagram.com/greatfaithministriesintl">Instagram</a>
+      </div>
+    </div>
+    <div class="fine">
+      <span>© 2026 Great Faith Ministries International · Religious Charity ID # 38-2976411</span>
+      <span>Mockup made for Great Faith Ministries International by Sunny Gupta, <a href="https://signalsetbase.com">signalsetbase.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar" role="navigation" aria-label="Call or get directions">
+  <a class="main" href="tel:+13134913900"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Call</a>
+  <a href="https://www.google.com/maps/search/?api=1&amp;query=10735%20Grand%20River%20Ave%2C%20Detroit%2C%20MI%2048204">Directions</a>
+  <a href="#visit">Plan visit</a>
+</div>
+
+<script>
+(function(){
+  var MAP='https://www.google.com/maps/search/?api=1&query=10735%20Grand%20River%20Ave%2C%20Detroit%2C%20MI%2048204';
+  var YT='https://www.youtube.com/c/GreatFaithMinistriesInternational';
+  var PIN='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>';
+  var PPL='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>';
+  var SCR='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2.5" y="5" width="19" height="13" rx="2"/><path d="M10 9v5l4.5-2.5z" fill="currentColor"/></svg>';
+  var PH='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>';
+  var EV={
+    sabbath:{wd:6,h:12,name:'Sabbath Service',time:'12:00 PM ET',
+      facts:[[PIN,'10735 Grand River Ave, Detroit, MI 48204 · <a href="'+MAP+'">Get directions</a>'],[PPL,'Our main weekly worship gathering']]},
+    noon:{wd:2,h:12,name:'Noonday Service',time:'12:00 PM ET',
+      facts:[[PPL,'Midday prayer and worship'],[PH,'Ask us how to join: <a href="tel:+13134913900">313-491-3900</a>']]},
+    emp:{wd:2,h:19,name:'Empowerment Tuesdays',time:'7:00 PM ET',
+      facts:[[SCR,'Online only · <a href="'+YT+'">Great Faith on YouTube</a>'],[PPL,'Prayer and Bible study']]}
+  };
+  var WD={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6};
+  var TOT='2026-10-31';
+
+  function now(){
+    var o={};
+    new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',year:'numeric',month:'numeric',day:'numeric',hour:'numeric',minute:'numeric',hourCycle:'h23',weekday:'short'})
+      .formatToParts(new Date()).forEach(function(p){o[p.type]=p.value;});
+    return {y:+o.year,m:+o.month,d:+o.day,wd:WD[o.weekday],mins:(+o.hour%24)*60+(+o.minute)};
+  }
+  function next(ev,n){
+    var t=now(),days=(ev.wd-t.wd+7)%7,out=[];
+    if(days===0&&t.mins>=ev.h*60)days=7;
+    for(var i=0;i<n;i++){
+      var dd=days+i*7,dt=new Date(Date.UTC(t.y,t.m-1,t.d+dd));
+      out.push({date:dt,key:dt.toISOString().slice(0,10),until:dd*1440+ev.h*60-t.mins});
+    }
+    return out;
+  }
+  function fmt(dt,o){return dt.toLocaleDateString('en-US',Object.assign({timeZone:'UTC'},o));}
+  function split(m){return {d:Math.floor(m/1440),h:Math.floor(m%1440/60),m:m%60};}
+  function rel(m){var s=split(m);if(s.d>0)return 'in '+s.d+(s.d===1?' day':' days')+(s.h?', '+s.h+(s.h===1?' hour':' hours'):'');if(s.h>0)return 'in '+s.h+(s.h===1?' hour':' hours');return 'in '+s.m+' min';}
+
+  var $=function(id){return document.getElementById(id);};
+  var cur='sabbath',picked=null,list=[];
+
+  function hero(){
+    var n=next(EV.sabbath,1)[0];
+    $('hDay').textContent=fmt(n.date,{day:'numeric'});
+    $('hLabel').textContent='Next · '+fmt(n.date,{weekday:'long',month:'short',day:'numeric'});
+    $('hWhen').textContent='12:00 PM ET · starts '+rel(n.until);
+  }
+  function drawDates(){
+    list=next(EV[cur],4);
+    if(!picked||!list.some(function(x){return x.key===picked;}))picked=list[0].key;
+    var box=$('dates');box.innerHTML='';
+    list.forEach(function(x,i){
+      var w=document.createElement('div');w.className='chip';
+      var id='dt'+i;
+      w.innerHTML='<input type="radio" name="d" id="'+id+'" value="'+x.key+'"'+(x.key===picked?' checked':'')+'><label for="'+id+'">'+(x.key===TOT&&cur==='sabbath'?'<span class="dot" aria-hidden="true"></span>':'')+fmt(x.date,{weekday:'short',month:'short',day:'numeric'})+'</label>';
+      box.appendChild(w);
+    });
+  }
+  function drawTicket(){
+    var ev=EV[cur],x=list.filter(function(i){return i.key===picked;})[0]||list[0];
+    var first=x===list[0];
+    $('tkLabel').textContent=first?'Your next visit':'Your visit';
+    $('tkName').textContent=ev.name;
+    $('tkDate').textContent=fmt(x.date,{weekday:'long',month:'long',day:'numeric'})+' · '+ev.time;
+    var s=split(x.until);
+    $('cD').textContent=s.d;$('cH').textContent=s.h;$('cM').textContent=s.m;
+    $('tkCount').hidden=false;
+    $('tkFacts').innerHTML=ev.facts.map(function(f){return '<li>'+f[0]+'<span>'+f[1]+'</span></li>';}).join('');
+    var tot=(x.key===TOT&&cur==='sabbath');
+    $('tkExtra').hidden=!tot;
+    $('rtot').hidden=!tot;
+  }
+  function update(){hero();drawTicket();}
+
+  document.querySelectorAll('input[name="g"]').forEach(function(r){
+    r.addEventListener('change',function(){cur=r.value;picked=null;drawDates();drawTicket();});
+  });
+  $('dates').addEventListener('change',function(e){if(e.target.name==='d'){picked=e.target.value;drawTicket();}});
+  $('totPlan').addEventListener('click',function(){
+    cur='sabbath';$('g1').checked=true;picked=TOT;drawDates();drawTicket();
+  });
+
+  // countdown ticks only while the planner or hero is on screen
+  var seen=0;
+  hero();drawDates();drawTicket();
+  if('IntersectionObserver' in window){
+    var tio=new IntersectionObserver(function(es){es.forEach(function(e){seen+=e.isIntersecting?1:-1;});seen=Math.max(0,seen);});
+    tio.observe(document.querySelector('.hero'));tio.observe(document.querySelector('.card'));
+  }
+  setInterval(function(){if(seen>0&&!document.hidden)update();},30000);
+
+  function thanks(form,body){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      $(body).innerHTML='<p class="thanks" role="status">Thanks. This is a mockup, so nothing was sent.</p>';
+    });
+  }
+  thanks($('rsvp'),'rsvpBody');
+  thanks($('prayer'),'prayBody');
+
+  // gentle rise for things below the first screen
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce&&'IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.rise').forEach(function(el){
+      if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('will-rise');io.observe(el);}
+    });
+  }
+})();
+</script>
+</body>
+</html>
