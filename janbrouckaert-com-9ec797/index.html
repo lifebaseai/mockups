@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup janbrouckaert-com-9ec797 1 1b3d9b35 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jan Brouckaert Photography · janbrouckaert.com</title>
+<meta name="description" content="Documentary, street and portrait photography by Jan Brouckaert, based in Brussels.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0d0d0c; --ink2:#151514; --line:#2a2927;
+  --paper:#ece8e1; --mute:#a29d95; --red:#b8322a; --red-hi:#ff6f61;
+  --sans:"Jost","Futura","Avenir Next",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--paper);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+img{display:block}
+:focus-visible{outline:2px solid var(--red-hi);outline-offset:3px}
+.wrap{width:min(1240px,100% - 48px);margin-inline:auto}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:12px;top:44px;background:var(--paper);color:var(--ink);padding:10px 14px;z-index:20}
+
+/* mockup banner */
+.mockbar{background:#e6e2da;color:#2b2925;text-align:center;font:500 13px/1.3 var(--sans);letter-spacing:.04em;padding:9px 16px;border-bottom:1px solid #cfc9bf}
+
+/* header */
+.top{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:26px 0 0}
+.mark{text-decoration:none;display:inline-block;line-height:1}
+.mark b{display:block;font-weight:600;font-size:24px;letter-spacing:.01em}
+.mark span{display:block;font-weight:400;font-size:11px;letter-spacing:.62em;text-transform:uppercase;color:var(--mute);margin-top:7px}
+.nav{display:flex;gap:6px}
+.nav a{text-decoration:none;font-size:15px;color:var(--mute);padding:12px 12px;min-height:44px;display:inline-flex;align-items:center;transition:color .2s}
+.nav a:hover{color:var(--paper)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:center;padding:48px 0 72px}
+.eyebrow{color:var(--mute);margin:0 0 22px}
+h1{font-weight:500;font-size:clamp(36px,3.6vw,52px);line-height:1.06;letter-spacing:-.015em;margin:0 0 24px}
+h1 em{font-style:normal;color:var(--red-hi)}
+.lede{font-size:19px;line-height:1.55;color:#d3cec6;max-width:30em;margin:0 0 34px;font-weight:300}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;font:500 16px var(--sans);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.btn.solid{background:var(--red);color:#fff}
+.btn.solid:hover{background:#9d2a23}
+.btn.ghost{border-color:#4a4843;color:var(--paper);background:transparent}
+.btn.ghost:hover{border-color:var(--paper)}
+.btn[hidden]{display:none}
+
+.lead-photo{margin:0}
+.lead-photo img{width:100%;height:auto;max-width:1500px;box-shadow:0 40px 80px -40px rgba(0,0,0,.9)}
+.lead-photo figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:20px;margin-top:14px;font-size:15px;color:#cfcac2}
+.lead-photo figcaption .mono{color:var(--mute);white-space:nowrap}
+.showing{display:inline-flex;align-items:baseline;gap:10px;text-align:right}
+.showing::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--red-hi);transform:translateY(-1px)}
+
+/* news strip */
+.news{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.news .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.news-item{padding:26px 28px 26px 0;border-right:1px solid var(--line);margin-right:28px}
+.news-item:last-child{border-right:0;margin-right:0}
+.news-item .mono{color:var(--red-hi);display:block;margin-bottom:6px}
+.news-item p{margin:0;font-size:16px;line-height:1.45}
+.news-item a{text-underline-offset:3px}
+
+/* sections */
+section{padding:112px 0}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin-bottom:44px;flex-wrap:wrap}
+h2{font-weight:500;font-size:clamp(30px,3.2vw,44px);line-height:1.1;margin:0;letter-spacing:-.01em}
+.sec-head p{margin:0;color:var(--mute);max-width:28em}
+.num{font-family:var(--mono);color:var(--mute);font-size:12px;letter-spacing:.08em}
+
+/* collections */
+.coll{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:48px;align-items:start}
+.coll-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.coll-list button{all:unset;box-sizing:border-box;display:grid;grid-template-columns:34px 56px 1fr auto;align-items:center;gap:14px;width:100%;padding:10px 6px;border-bottom:1px solid var(--line);cursor:pointer;min-height:56px;transition:background .2s,padding .25s}
+.coll-list button:hover{background:var(--ink2)}
+.coll-list button:focus-visible{outline:2px solid var(--red-hi);outline-offset:-2px}
+.coll-list .th{width:56px;height:56px;object-fit:cover;filter:saturate(.85);opacity:.82;transition:opacity .2s}
+.coll-list .t{font-size:20px;font-weight:400;line-height:1.25}
+.coll-list .p{color:var(--mute);font-size:14px;text-align:right}
+.coll-list button[aria-selected="true"]{padding-left:14px;background:var(--ink2)}
+.coll-list button[aria-selected="true"] .num{color:var(--red-hi)}
+.coll-list button[aria-selected="true"] .t{font-weight:500}
+.coll-list button[aria-selected="true"] .th,.coll-list button:hover .th{opacity:1}
+.panel{background:var(--paper);color:var(--ink);padding:32px;position:sticky;top:24px}
+.panel-body{display:grid;grid-template-columns:minmax(0,296px) minmax(0,1fr);gap:30px;align-items:start;transition:opacity .25s}
+.panel-body.swap{opacity:0}
+.panel figure{margin:0}
+.panel figure img{width:100%;height:auto;box-shadow:0 18px 36px -22px rgba(0,0,0,.55)}
+.panel .big{font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:#5f5a52;display:flex;justify-content:space-between;gap:10px;text-transform:uppercase}
+.panel h3{font-weight:500;font-size:clamp(30px,2.6vw,38px);line-height:1.08;margin:18px 0 14px;letter-spacing:-.01em}
+.panel .desc{font-size:18px;line-height:1.5;margin:0 0 20px}
+.panel ul{list-style:none;margin:0 0 26px;padding:0;border-top:1px solid #cfc9bf}
+.panel li{padding:10px 0;border-bottom:1px solid #cfc9bf;font-size:15px;line-height:1.45}
+.panel li span{display:block;font-family:var(--mono);font-size:11px;color:#5f5a52;letter-spacing:.08em;text-transform:uppercase}
+
+/* statement */
+.about{background:var(--ink2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.about-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:64px}
+.langs{display:flex;gap:4px;margin-top:28px}
+.langs button{all:unset;box-sizing:border-box;min-width:48px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:13px;letter-spacing:.08em;border:1px solid #3b3935;color:var(--mute);cursor:pointer}
+.langs button[aria-pressed="true"]{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.langs button:focus-visible{outline:2px solid var(--red-hi);outline-offset:2px}
+blockquote{margin:0;font-weight:300;font-size:clamp(24px,2.5vw,34px);line-height:1.32;letter-spacing:-.005em}
+blockquote::before{content:"\201C";display:block;font-size:72px;line-height:.6;color:var(--red-hi);margin-bottom:10px;font-weight:500}
+.bio{color:#cfcac2;margin:28px 0 0;font-size:17px;max-width:40em}
+.sig{margin-top:20px;color:var(--mute)}
+[lang-pane][hidden]{display:none}
+
+/* contact sheet accent */
+.sheet{background:#1b1a18;padding:16px 14px 14px;border:1px solid var(--line);margin-top:40px;max-width:420px}
+.sheet-edge{display:flex;justify-content:space-between;color:#c9a75a;margin:0 2px 10px;font-size:10px}
+.frames{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 8px}
+.frame{margin:0;position:relative}
+.crop{position:relative;width:100%;aspect-ratio:256/128;overflow:hidden;background:#000}
+.crop img{position:absolute;width:312.5%;height:auto;max-width:none}
+.frame figcaption{color:#c9a75a;font-family:var(--mono);font-size:10px;margin-top:4px;letter-spacing:.06em}
+.frame.pick .crop{overflow:visible}
+.frame.pick .crop::after{content:"";position:absolute;inset:-4px;border:2px solid var(--red-hi);border-radius:6px;transform:rotate(-1.5deg);pointer-events:none}
+.frame.pick .crop .clip{position:absolute;inset:0;overflow:hidden}
+.frame.pick figcaption{color:var(--red-hi)}
+
+/* record */
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.filters button{all:unset;box-sizing:border-box;min-height:44px;padding:0 16px;display:inline-flex;align-items:center;border:1px solid #3b3935;font-size:15px;color:var(--mute);cursor:pointer;border-radius:999px}
+.filters button[aria-pressed="true"]{border-color:var(--paper);color:var(--paper)}
+.filters button:focus-visible{outline:2px solid var(--red-hi);outline-offset:2px}
+.filters small{font-family:var(--mono);font-size:11px;margin-left:8px;opacity:.8}
+.record{list-style:none;margin:0;padding:0;columns:2;column-gap:56px;border-top:1px solid var(--line)}
+.record li{break-inside:avoid;display:grid;grid-template-columns:86px 1fr;gap:14px;padding:15px 0;border-bottom:1px solid var(--line)}
+.record li:focus{outline:none}
+.record .y{font-family:var(--mono);font-size:13px;color:var(--mute);padding-top:3px}
+.record .k{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--red-hi);margin-bottom:2px}
+.record li[hidden]{display:none}
+.more{margin-top:24px;width:100%}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:64px;align-items:start}
+.contact-grid h2{font-size:clamp(38px,4.4vw,60px);line-height:1.04}
+.contact-grid .lede{margin-top:22px}
+.direct{list-style:none;padding:0;margin:32px 0 0;border-top:1px solid var(--line)}
+.direct li{border-bottom:1px solid var(--line)}
+.direct a{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:56px;text-decoration:none;font-size:17px;overflow-wrap:anywhere}
+.direct a span{color:var(--mute);font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.direct a:hover{color:var(--red-hi)}
+form{background:var(--ink);border:1px solid var(--line);padding:36px}
+label{display:block;font-size:14px;color:#cfcac2;margin-bottom:7px}
+input,select,textarea{width:100%;font:400 17px var(--sans);color:var(--paper);background:var(--ink2);border:1px solid #3b3935;padding:12px 14px;min-height:48px;border-radius:0}
+textarea{min-height:130px;resize:vertical}
+select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--mute) 50%),linear-gradient(135deg,var(--mute) 50%,transparent 50%);background-position:calc(100% - 20px) 21px,calc(100% - 15px) 21px;background-size:5px 5px;background-repeat:no-repeat}
+input:focus,select:focus,textarea:focus{border-color:var(--paper);outline:none}
+.field{margin-bottom:18px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+form .btn{width:100%;margin-top:6px}
+.thanks{margin:16px 0 0;color:var(--red-hi);font-weight:500;min-height:1.6em}
+
+footer{border-top:1px solid var(--line);padding:36px 0 44px;color:var(--mute);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:var(--paper)}
+
+/* rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:1100px){
+  .panel-body{grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:24px}
+}
+@media (max-width:980px){
+  .hero{grid-template-columns:1fr;gap:40px;padding:40px 0 64px}
+  .coll,.about-grid,.contact-grid{grid-template-columns:1fr;gap:36px}
+  .panel{position:static}
+  .panel-body{grid-template-columns:minmax(0,296px) minmax(0,1fr)}
+  .news .wrap{grid-template-columns:1fr}
+  .news-item{border-right:0;margin-right:0;padding:18px 0;border-bottom:1px solid var(--line)}
+  .news-item:last-child{border-bottom:0}
+  .record{columns:1}
+  section{padding:80px 0}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .mockbar{font-size:12px;padding:8px 12px}
+  .wrap{width:calc(100% - 40px)}
+  .top{padding-top:16px}
+  .nav{display:none}
+  .hero{padding:18px 0 52px;gap:26px}
+  .lead-photo{order:-1;margin-inline:-20px}
+  .lead-photo figcaption{flex-direction:column;gap:4px;padding:0 20px;margin-top:10px;font-size:14px}
+  .showing{text-align:left}
+  .eyebrow{margin-bottom:14px;font-size:11px}
+  h1{font-size:33px;margin-bottom:16px}
+  .lede{font-size:17px;margin-bottom:24px}
+  .btns .btn{flex:1 1 100%}
+  .coll-list button{grid-template-columns:26px 52px 1fr;gap:12px;padding:8px 4px}
+  .coll-list .th{width:52px;height:52px}
+  .coll-list .p{display:none}
+  .coll-list .t{font-size:18px}
+  .panel{padding:22px 22px 24px}
+  .panel-body{grid-template-columns:1fr;gap:20px}
+  .panel figure img{max-width:296px}
+  .panel h3{margin-top:12px}
+  .sheet{max-width:none}
+  .record li{grid-template-columns:64px 1fr}
+  form{padding:24px 18px}
+  .two{grid-template-columns:1fr;gap:0}
+  section{padding:68px 0}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mockbar" role="note">Free mockup for Jan Brouckaert Photography (janbrouckaert.com)</div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="wrap top">
+  <a class="mark" href="#main" aria-label="Jan Brouckaert Photography, top of page"><b>Jan Brouckaert</b><span>Photography</span></a>
+  <nav class="nav" aria-label="Main">
+    <a href="#collections">Collections</a>
+    <a href="#about">About</a>
+    <a href="#record">Exhibitions &amp; awards</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="wrap hero">
+    <div>
+      <p class="eyebrow mono">Documentary · Street · Portrait · Brussels</p>
+      <h1>People, small against the <em>power of the world</em> around them.</h1>
+      <p class="lede">Jan Brouckaert photographs everyday life in Brussels, Lisbon, Tunis and along the sea. His work has been shown from Antwerp to Athens, Tunis and Paris.</p>
+      <div class="btns">
+        <a class="btn solid" href="#contact">Write to Jan</a>
+        <a class="btn ghost" href="#collections">See the collections</a>
+      </div>
+    </div>
+
+    <figure class="lead-photo">
+      <img src="https://www.janbrouckaert.com/bw-images/images/seascapes/JJMB-20130228-polesapartI-bewerkt.jpg" width="1500" height="1002" alt="A lone wooden post on a wide, wet beach under a heavy grey sky, in black and white">
+      <figcaption><span class="mono">Seascape</span><span class="showing">Part of it will be shown at the Carrousel du Louvre, Paris, 23 to 25 October</span></figcaption>
+    </figure>
+  </div>
+
+  <div class="news" aria-label="News">
+    <div class="wrap">
+      <div class="news-item"><span class="mono">2026 · Published</span><p>Eye Shot Magazine, Deepstreets #21.</p></div>
+      <div class="news-item"><span class="mono">2025 · Finalist</span><p>Brussels Street Photography Festival.</p></div>
+      <div class="news-item"><span class="mono">2003 to 2026</span><p><a href="#record">18 exhibitions, awards and publications</a>, from Knokke to Athens.</p></div>
+    </div>
+  </div>
+
+  <section id="collections" aria-labelledby="coll-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="coll-h">Eight collections</h2>
+        <p>Choose one to see it, then ask Jan about it directly.</p>
+      </div>
+      <div class="coll">
+        <ul class="coll-list" role="tablist" aria-label="Collections" id="collList"></ul>
+        <div class="panel" id="panel" role="tabpanel" aria-live="polite">
+          <div class="panel-body" id="panelBody">
+            <figure><img src="https://www.janbrouckaert.com/bw-images/images/seascapes/JJMB-20070618-20071506v2s.jpg" width="1500" height="1008" alt="A row of wooden posts running into a still sea under a dark sky, in black and white"></figure>
+            <div>
+              <div class="big"><span>01 / 08</span><span>The sea</span></div>
+              <h3>Seascape</h3>
+              <p class="desc">"Seascapes has been one of my first passions and image subjects when I started out photography."</p>
+              <ul><li><span>Showing</span>Part of it at the Paris Carrousel du Louvre Expo, 23 to 25 October</li></ul>
+              <a class="btn solid" id="askBtn" href="#contact">Ask Jan about Seascape</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about" aria-labelledby="about-h">
+    <div class="wrap about-grid">
+      <div>
+        <h2 id="about-h">About the artist</h2>
+        <div class="langs" role="group" aria-label="Language">
+          <button type="button" aria-pressed="true" data-lang="en">EN</button>
+          <button type="button" aria-pressed="false" data-lang="nl">NL</button>
+          <button type="button" aria-pressed="false" data-lang="fr">FR</button>
+        </div>
+        <div class="sheet" role="group" aria-label="Six frames from Jan's work, laid out like a contact sheet">
+          <div class="sheet-edge mono" aria-hidden="true"><span>Jan Brouckaert</span><span>1 – 6</span></div>
+          <div class="frames">
+            <figure class="frame"><div class="crop"><img src="https://www.janbrouckaert.com/about-me/images/about-me/FBCover2024-1.jpg?3875434000" alt="A harbour pier with a red light tower on calm blue water" style="left:-1.6%;top:-5%" width="800" height="299"></div><figcaption>1</figcaption></figure>
+            <figure class="frame"><div class="crop"><img src="https://www.janbrouckaert.com/about-me/images/about-me/FBCover2024-1.jpg?3875434000" alt="A crowd of young people on a harbour wall, one jumping into the sea" style="left:-106.5%;top:-5%" width="800" height="299"></div><figcaption>2</figcaption></figure>
+            <figure class="frame"><div class="crop"><img src="https://www.janbrouckaert.com/about-me/images/about-me/FBCover2024-1.jpg?3875434000" alt="A waterside kiosk under trees, a person walking past" style="left:-211.5%;top:-5%" width="800" height="299"></div><figcaption>3</figcaption></figure>
+            <figure class="frame pick"><div class="crop"><div class="clip"><img src="https://www.janbrouckaert.com/about-me/images/about-me/FBCover2024-1.jpg?3875434000" alt="Two small figures seen through a stone arch at sunset" style="left:-1.6%;top:-117%" width="800" height="299"></div></div><figcaption>4</figcaption></figure>
+            <figure class="frame"><div class="crop"><img src="https://www.janbrouckaert.com/about-me/images/about-me/FBCover2024-1.jpg?3875434000" alt="A woman in bright colours sitting under a wall of graffiti" style="left:-106.5%;top:-117%" width="800" height="299"></div><figcaption>5</figcaption></figure>
+            <figure class="frame"><div class="crop"><img src="https://www.janbrouckaert.com/about-me/images/about-me/FBCover2024-1.jpg?3875434000" alt="A person in red walking past a row of brick buildings" style="left:-211.5%;top:-117%" width="800" height="299"></div><figcaption>6</figcaption></figure>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div lang-pane="en" lang="en">
+          <blockquote>The central theme throughout my work is the contrast of human being overwhelmed by power of nature; and forces he cannot understand.</blockquote>
+          <p class="bio">Jan got into photography when he was 18. His main focus was land- and seascapes; later he developed an interest in portrait and documentary photojournalism, which are nowadays his main themes. Feelings of alienation, loneliness and nostalgia are discreetly used to underline the ephemeral presence of human life.</p>
+        </div>
+        <div lang-pane="nl" lang="nl" hidden>
+          <blockquote>Het centrale thema in mijn werk is het contrast tussen het menselijk bestaan en de overweldigende kracht van de natuur.</blockquote>
+          <p class="bio">Jan startte met fotograferen toen hij 18 was. Zijn belangrijkste focus waren land- en zeezichten, later ontwikkelde hij ook een interesse in portret- en documentaire fotojournalistiek, wat tegenwoordig zijn hoofdthema's zijn. Gevoelens van vervreemding, eenzaamheid en nostalgie worden discreet gebruikt om de kortstondige aanwezigheid van het menselijk leven te onderstrepen.</p>
+        </div>
+        <div lang-pane="fr" lang="fr" hidden>
+          <blockquote>Le thème central de mon travail est le contraste de l'être humain submergé par le pouvoir de la nature, et des forces qu'il ne peut pas comprendre.</blockquote>
+          <p class="bio">Jan s'est lancé dans la photographie à l'âge de 18 ans. Son objectif principal était le paysage terrestre et marin, puis il a développé un intérêt pour la photo-portrait et le photojournalisme documentaire, qui sont aujourd'hui ses principaux thèmes. Les sentiments d'aliénation, de solitude et de nostalgie sont discrètement utilisés pour souligner la présence éphémère de la vie humaine.</p>
+        </div>
+        <p class="sig mono">Jan Brouckaert · Brussels</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="record" aria-labelledby="rec-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="rec-h">Exhibitions, awards &amp; publications</h2>
+        <div class="filters" role="group" aria-label="Filter the list">
+          <button type="button" aria-pressed="true" data-f="all">All<small id="c-all"></small></button>
+          <button type="button" aria-pressed="false" data-f="award">Awards<small id="c-award"></small></button>
+          <button type="button" aria-pressed="false" data-f="expo">Exhibitions<small id="c-expo"></small></button>
+          <button type="button" aria-pressed="false" data-f="pub">Publications<small id="c-pub"></small></button>
+        </div>
+      </div>
+      <ol class="record" id="record-list" reversed>
+        <li data-k="pub"><span class="y">2026</span><span><span class="k">Publication</span>Eye Shot Magazine, Deepstreets #21</span></li>
+        <li data-k="award"><span class="y">2025</span><span><span class="k">Finalist</span>Brussels Street Photography Festival</span></li>
+        <li data-k="award"><span class="y">2021</span><span><span class="k">Nominee</span>16th Annual Black &amp; White Spider Awards</span></li>
+        <li data-k="expo"><span class="y">2020</span><span><span class="k">Group exhibition</span>'Carte De Visite', Brussels, 7 to 9 February</span></li>
+        <li data-k="expo"><span class="y">2019</span><span><span class="k">Exhibition</span>'Tunis, Mon Guide', Galerie Fahrenheit 451, Tunis Carthage, 28 September to 15 November</span></li>
+        <li data-k="award"><span class="y">2019</span><span><span class="k">Honourable mentions</span>13th Annual Black &amp; White Spider Awards</span></li>
+        <li data-k="expo"><span class="y">2018</span><span><span class="k">Group exhibitions</span>Blank Wall Gallery, Athens, with black &amp; white fine art images</span></li>
+        <li data-k="award"><span class="y">2015</span><span><span class="k">3rd Place</span>Honor of Distinction in People, 10th Annual Black &amp; White Spider Awards</span></li>
+        <li data-k="award"><span class="y">2015</span><span><span class="k">Nominee</span>Architectural, Fine Art &amp; Photojournalism</span></li>
+        <li data-k="expo"><span class="y">2015</span><span><span class="k">Solo exhibition</span>'Brussels in Fragments', centre of Brussels</span></li>
+        <li data-k="pub"><span class="y">2011</span><span><span class="k">Publication</span>Image published in The Photo Paper, December 2010</span></li>
+        <li data-k="award"><span class="y">2011</span><span><span class="k">Nominee</span>Fine Arts, 6th International B&amp;W Spider Awards</span></li>
+        <li data-k="expo"><span class="y">2010</span><span><span class="k">Group exhibition</span>Fotomuseum Antwerpen</span></li>
+        <li data-k="expo"><span class="y">2008–09</span><span><span class="k">Exhibition</span>Shown in 18 cities in Flanders, with the PhotoCircuit</span></li>
+        <li data-k="award"><span class="y">2008</span><span><span class="k">Honourable mention</span>PX3, Paris</span></li>
+        <li data-k="award"><span class="y">2007</span><span><span class="k">Silver Award, 2nd Prize</span>International photo contest, Knokke-Le Zoute</span></li>
+        <li data-k="award"><span class="y">2005</span><span><span class="k">Award</span>Nikon Award, Belgium</span></li>
+        <li data-k="award"><span class="y">2003</span><span><span class="k">Bronze Award, 3rd Prize</span>Photo competition, Knokke-Le Zoute</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="contact" class="about" aria-labelledby="contact-h">
+    <div class="wrap contact-grid">
+      <div>
+        <h2 id="contact-h">Write to Jan.</h2>
+        <p class="lede">About a collection, an exhibition or the book 'Tunis, Mon Guide'.</p>
+        <ul class="direct">
+          <li><a href="mailto:info@janbrouckaert.com">info@janbrouckaert.com<span>Email</span></a></li>
+          <li><a href="https://www.instagram.com/jan_brouckaert_photography">@jan_brouckaert_photography<span>Instagram</span></a></li>
+        </ul>
+      </div>
+      <form id="form" novalidate>
+        <div class="two">
+          <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name"></div>
+          <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email"></div>
+        </div>
+        <div class="field"><label for="f-about">About</label><select id="f-about" name="about"></select></div>
+        <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message">Hello Jan, I saw the Seascape collection and would like to know more.</textarea></div>
+        <button class="btn solid" type="submit">Send to Jan</button>
+        <p class="thanks" id="thanks" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Jan Brouckaert Photography · Brussels · <a href="https://www.janbrouckaert.com/home/index.html">janbrouckaert.com</a></span>
+    <span>Mockup made for Jan Brouckaert Photography by Sunny Gupta, <a href="https://signalsetbase.com">signalsetbase.com</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var H='https://www.janbrouckaert.com/home/images/home/',Q='?3875431000';
+  var C=[
+    {t:"Seascape",p:"The sea",d:"“Seascapes has been one of my first passions and image subjects when I started out photography.”",f:[["Showing","Part of it at the Paris Carrousel du Louvre Expo, 23 to 25 October"]],
+      i:"https://www.janbrouckaert.com/bw-images/images/seascapes/JJMB-20070618-20071506v2s.jpg",w:1500,h:1008,a:"A row of wooden posts running into a still sea under a dark sky, in black and white"},
+    {t:"Echoes of Desire",p:"Expo collection",d:"The collection Jan showed at 'Expressions Mixtes'.",f:[["Shown","Part of the expo 'Expressions Mixtes', organised by Artfusion in Brussels"]],
+      i:H+"JJMB-20180203-DSC09692-bewerkt-2.jpg"+Q,w:266,h:400,a:"Black and white portrait of a man against a pale wall"},
+    {t:"The Classic series",p:"Brussels",d:"Black and white images from Brussels.",f:[],
+      i:H+"Brussels3Reworkedv2-7.jpg"+Q,w:295,h:440,a:"A figure with an umbrella crossing a wet Brussels street at night, in black and white"},
+    {t:"Lockdown",p:"Brussels",d:"A series on the lockdown in central Brussels.",f:[],
+      i:H+"JJMB%20-20200423-SRX01033-bewerkt.jpg"+Q,w:295,h:443,a:"Two people sitting on the steps of a building under an 'Accords parfaits' banner"},
+    {t:"Tunis",p:"Tunisia",d:"A view on the city of Tunis from 2009 onwards.",f:[["Book","Published in 'Tunis, Mon Guide'"],["Shown","Galerie Fahrenheit 451, Tunis Carthage, 2019"]],
+      i:H+"Ancien%20Club%20de%20Tennis%20La%20Goulette.jpg"+Q,w:296,h:444,a:"An old van parked in a sunny lane under palm trees"},
+    {t:"Lisbon",p:"Portugal",d:"Day-to-day life in Lisbon.",f:[],
+      i:H+"JJMB%20-20210515-XT3D0021.jpg"+Q,w:296,h:444,a:"A narrow Lisbon street with washing on the balconies, climbing to a church"},
+    {t:"Le Nord",p:"Nord-Pas de Calais",d:"The seaside of Le Nord.",f:[],
+      i:H+"DSC03802S.jpg"+Q,w:281,h:423,a:"A street between two houses opening onto the sea under a blue-grey sky"},
+    {t:"Ibiza",p:"Spain",d:"A photographic story from the holiday season in Ibiza.",f:[],
+      i:H+"DSC09351-2-bewerkt-bewerkt-bewerkt.jpg"+Q,w:306,h:436,a:"Sun loungers beside a pool, seen from above in black and white"}
+  ];
+  var list=document.getElementById('collList'),body=document.getElementById('panelBody'),sel=document.getElementById('f-about'),msg=document.getElementById('f-msg');
+  function pad(n){return (n<10?'0':'')+n}
+  function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;')}
+  C.forEach(function(c,i){
+    var li=document.createElement('li');li.setAttribute('role','presentation');
+    li.innerHTML='<button type="button" role="tab" id="tab'+i+'" aria-controls="panel" aria-selected="'+(i===0)+'" tabindex="'+(i===0?0:-1)+'"><span class="num">'+pad(i+1)+'</span><img class="th" src="'+c.i+'" width="56" height="56" alt=""><span class="t">'+esc(c.t)+'</span><span class="p">'+esc(c.p)+'</span></button>';
+    list.appendChild(li);
+    var o=document.createElement('option');o.textContent=c.t+' collection';o.value=c.t;sel.appendChild(o);
+  });
+  ['An exhibition','The book Tunis, Mon Guide','Something else'].forEach(function(t){var o=document.createElement('option');o.textContent=t;o.value=t;sel.appendChild(o)});
+  var cur=0,msgTouched=false;
+  msg.addEventListener('input',function(){msgTouched=true});
+  function render(i){
+    var c=C[i];
+    var facts=c.f.map(function(f){return '<li><span>'+f[0]+'</span>'+esc(f[1])+'</li>'}).join('');
+    body.innerHTML='<figure><img src="'+c.i+'" width="'+c.w+'" height="'+c.h+'" alt="'+esc(c.a)+'" style="max-width:'+Math.min(c.w,296)+'px"></figure><div><div class="big"><span>'+pad(i+1)+' / 08</span><span>'+esc(c.p)+'</span></div><h3>'+esc(c.t)+'</h3><p class="desc">'+esc(c.d)+'</p>'+(facts?'<ul>'+facts+'</ul>':'')+'<a class="btn solid" id="askBtn" href="#contact">Ask Jan about '+esc(c.t)+'</a></div>';
+    document.getElementById('panel').setAttribute('aria-labelledby','tab'+i);
+  }
+  function pick(i,focus){
+    var tabs=list.querySelectorAll('[role=tab]');
+    tabs.forEach(function(b,j){b.setAttribute('aria-selected',j===i);b.tabIndex=j===i?0:-1});
+    if(focus)tabs[i].focus();
+    cur=i;
+    if(matchMedia('(prefers-reduced-motion: reduce)').matches){render(i);return}
+    body.classList.add('swap');setTimeout(function(){render(i);body.classList.remove('swap')},180);
+    if(innerWidth<=980){var p=document.getElementById('panel');setTimeout(function(){p.scrollIntoView({behavior:'smooth',block:'start'})},220)}
+  }
+  list.addEventListener('click',function(e){var b=e.target.closest('[role=tab]');if(b)pick(+b.id.slice(3))});
+  list.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'||e.key==='ArrowRight'){e.preventDefault();pick((cur+1)%C.length,true)}
+    if(e.key==='ArrowUp'||e.key==='ArrowLeft'){e.preventDefault();pick((cur+C.length-1)%C.length,true)}
+  });
+  render(0);sel.value=C[0].t;
+  body.addEventListener('click',function(e){
+    if(!e.target.closest('#askBtn'))return;
+    sel.value=C[cur].t;
+    if(!msgTouched)msg.value='Hello Jan, I saw the '+C[cur].t+' collection and would like to know more.';
+  });
+  sel.addEventListener('change',function(){
+    if(msgTouched)return;
+    var v=sel.value,isColl=C.some(function(c){return c.t===v});
+    msg.value=isColl?'Hello Jan, I saw the '+v+' collection and would like to know more.':'Hello Jan, ';
+  });
+
+  // statement languages
+  var lb=document.querySelectorAll('.langs button');
+  lb.forEach(function(b){b.addEventListener('click',function(){
+    lb.forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+    document.querySelectorAll('[lang-pane]').forEach(function(p){p.hidden=p.getAttribute('lang-pane')!==b.dataset.lang});
+  })});
+
+  // record filter; on phones the full list starts with the latest 6
+  var rl=document.getElementById('record-list'),items=rl.querySelectorAll('li'),fb=document.querySelectorAll('.filters button');
+  var count={all:items.length,award:0,expo:0,pub:0};
+  items.forEach(function(li){count[li.dataset.k]++});
+  Object.keys(count).forEach(function(k){document.getElementById('c-'+k).textContent=count[k]});
+  var more=document.createElement('button');more.type='button';more.className='btn ghost more';more.textContent='Show all '+items.length;
+  rl.after(more);
+  var phone=matchMedia('(max-width:640px)'),open=false,filt='all';
+  function apply(){
+    var clip=phone.matches&&!open&&filt==='all',n=0;
+    items.forEach(function(li){var show=filt==='all'||li.dataset.k===filt;if(show){n++;if(clip&&n>6)show=false}li.hidden=!show});
+    more.hidden=!clip;
+  }
+  more.addEventListener('click',function(){open=true;apply();items[6].tabIndex=-1;items[6].focus()});
+  fb.forEach(function(b){b.addEventListener('click',function(){
+    fb.forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+    filt=b.dataset.f;apply();
+  })});
+  if(phone.addEventListener)phone.addEventListener('change',apply);
+  apply();
+
+  // form
+  document.getElementById('form').addEventListener('submit',function(e){
+    e.preventDefault();
+    document.getElementById('thanks').textContent='Thanks. This is a mockup, so nothing was sent.';
+  });
+
+  // gentle rise, only for things below the first screen
+  if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var els=document.querySelectorAll('.news-item, .sec-head, .coll, .about-grid, .record, .contact-grid');
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.remove('will-rise');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(el){
+    if(el.getBoundingClientRect().top>innerHeight){el.classList.add('rise','will-rise');io.observe(el)}
+  });
+})();
+</script>
+</body>
+</html>
