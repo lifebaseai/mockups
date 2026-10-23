@@ -1,0 +1,873 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup questnine-co-8eebb6 1 b25d705b -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QUEST NINE · Murals by Kori ‘Q’ Thomas</title>
+<meta name="description" content="Quest Nine: murals and public art by Kori ‘Q’ Thomas, for restaurants, schools, cities and businesses.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,500..800,100&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#f3f0e3; --paper:#faf8f0; --ink:#1f2b23; --ink2:#46524a; --line:#d9d4c0;
+  --mag:#c8326e; --mag-t:#a8235a; --sun:#e9a92b; --teal:#1f9a8f; --teal-t:#11655d; --coral:#ef6a4a; --violet:#6b4a9a;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Nunito Sans",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 17px/1.6 var(--sans);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--mag);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:var(--cream);padding:10px 14px;border-radius:8px;z-index:50;text-decoration:none}
+.skip:focus{top:44px}
+
+/* mockup banner */
+.mock{background:var(--ink);color:#efe9d2;text-align:center;font:600 13px/1.3 var(--sans);letter-spacing:.06em;padding:9px 16px;position:relative;z-index:40}
+.mock b{font-weight:800;letter-spacing:.08em}
+
+/* header */
+.top{position:sticky;top:0;z-index:30;background:rgba(243,240,227,.94);backdrop-filter:saturate(1.2) blur(8px);-webkit-backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid transparent;transition:border-color .3s}
+.top.scrolled{border-bottom-color:var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.mark{font:800 22px/1 var(--serif);font-variation-settings:"SOFT" 100,"opsz" 40;letter-spacing:.02em;text-decoration:none;display:flex;align-items:center;gap:10px;min-height:44px}
+.mark svg{flex:none}
+.nav{display:flex;align-items:center;gap:4px}
+.nav a{text-decoration:none;font-weight:600;font-size:15px;padding:12px 12px;border-radius:999px;min-height:44px;display:inline-flex;align-items:center}
+.nav a:hover{background:rgba(31,43,35,.07)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;font:700 16px/1 var(--sans);text-decoration:none;border:2px solid var(--ink);cursor:pointer;transition:transform .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn.solid{background:var(--ink);color:var(--cream)}
+.btn.solid:hover{background:#2c3d31}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--cream)}
+.nav .btn{margin-left:10px;min-height:44px;padding:0 20px;font-size:15px}
+.nav .btn:hover{background:#2c3d31}
+.menu-btn{display:none}
+
+/* hero */
+html{overflow-x:clip}
+.hero{padding:56px 0 72px;overflow:clip}
+.hero .wrap{display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center}
+.eyebrow{font:800 13px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--mag-t);margin:0 0 18px}
+h1,h2,h3{font-family:var(--serif);font-variation-settings:"SOFT" 100,"opsz" 96;font-weight:700;letter-spacing:-.01em;margin:0}
+h1{font-size:clamp(44px,6.4vw,84px);line-height:.98}
+.glitch{position:relative;display:inline-block;text-shadow:-3px 0 0 rgba(31,154,143,.55),3px 0 0 rgba(200,50,110,.5)}
+.lede{font-size:20px;line-height:1.55;color:var(--ink2);max-width:33ch;margin:24px 0 32px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero-art{position:relative;justify-self:center;width:min(100%,470px)}
+.rings{position:absolute;left:50%;top:50%;width:132%;aspect-ratio:1;transform:translate(-50%,-44%);z-index:0}
+.arch{position:relative;z-index:1;aspect-ratio:3/4;border-radius:999px 999px 28px 28px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(31,43,35,.45);background:#e8e2cc}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.inset{position:absolute;z-index:2;right:-30px;top:30%;width:34%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:6px solid var(--cream);box-shadow:0 16px 34px -16px rgba(31,43,35,.55);background:#e8e2cc}
+.inset img{width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.tag{position:absolute;z-index:2;left:-22px;bottom:34px;background:var(--paper);border-radius:16px;padding:12px 16px;box-shadow:0 14px 30px -14px rgba(31,43,35,.4);font-size:14px;line-height:1.35;max-width:230px}
+.tag b{display:block;font:700 18px/1.2 var(--serif)}
+
+/* proof */
+.proof{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper)}
+.proof .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.proof .wrap>div{padding:28px 28px 28px 0}
+.proof .wrap>div+div{padding-left:28px;border-left:1px solid var(--line)}
+.proof b{display:block;font:700 30px/1.1 var(--serif);font-variation-settings:"SOFT" 100;margin-bottom:6px}
+.proof span{color:var(--ink2);font-size:15.5px}
+
+section{scroll-margin-top:80px}
+.sec{padding:104px 0}
+.kicker{font:800 13px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--teal-t);margin:0 0 14px;display:flex;align-items:center;gap:10px}
+.kicker::before{content:"";width:22px;height:11px;border-radius:22px 22px 0 0;background:currentColor}
+h2{font-size:clamp(34px,4.4vw,56px);line-height:1.04}
+.sub{color:var(--ink2);font-size:18.5px;max-width:58ch;margin:18px 0 0}
+
+/* why colour */
+.why .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.effects{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.effects li{display:grid;grid-template-columns:52px 1fr;gap:18px;padding:24px 0;border-bottom:1px solid var(--line);align-items:start}
+.effects .dot{width:44px;height:22px;border-radius:44px 44px 0 0;margin-top:8px}
+.effects h3{font-size:24px;line-height:1.2}
+.effects p{margin:4px 0 0;color:var(--ink2)}
+.joy{margin:34px 0 0;font:500 22px/1.45 var(--serif);font-style:italic;font-variation-settings:"SOFT" 100,"opsz" 30;max-width:30ch}
+.joy small{display:block;font:600 14px/1.4 var(--sans);font-style:normal;color:var(--ink2);margin-top:10px}
+
+/* planner */
+.planner{background:var(--ink);color:var(--cream)}
+.planner .kicker{color:var(--sun)}
+.planner .sub{color:#cfd3c6}
+.plan{display:grid;grid-template-columns:340px 1fr;gap:28px;margin-top:44px;align-items:stretch}
+.controls{background:#26352b;border-radius:24px;padding:28px}
+.field{margin-bottom:24px}
+.field>label,.field>.lbl{display:flex;justify-content:space-between;font:700 15px/1.3 var(--sans);margin-bottom:10px}
+.field output{font-family:var(--serif);font-weight:700;font-size:19px;color:var(--sun)}
+input[type=range]{width:100%;accent-color:var(--sun);height:44px;margin:0;cursor:pointer}
+.kinds{display:grid;gap:8px}
+.kinds label{display:flex;align-items:center;gap:12px;min-height:46px;padding:8px 14px;border-radius:14px;border:1.5px solid #3c4d41;cursor:pointer;font-weight:600;font-size:15.5px;transition:border-color .2s,background .2s}
+.kinds input{accent-color:var(--sun);width:18px;height:18px;margin:0}
+.kinds label:has(input:checked){border-color:var(--sun);background:#2f4034}
+.stage{background:var(--paper);color:var(--ink);border-radius:24px;padding:26px 28px 28px;display:flex;flex-direction:column}
+.stage-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.stage-head h3{font-size:28px}
+.stage-head p{margin:0;color:var(--ink2);font-size:15px}
+.draw{margin:16px 0 6px;aspect-ratio:16/8;width:100%}
+.draw svg{width:100%;height:100%;display:block;overflow:visible}
+.draw .r{transition:all .45s cubic-bezier(.2,.7,.2,1)}
+.legend{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:14px;color:var(--ink2);margin:0 0 18px}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+.legend i{display:inline-block;width:22px;height:12px;border-radius:3px}
+.result{display:grid;grid-template-columns:1fr 1fr;gap:22px;border-top:1px solid var(--line);padding-top:20px}
+.result h4{margin:0 0 8px;font:800 12.5px/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--mag-t)}
+.result p{margin:0;font-size:16px}
+.result ul{list-style:none;margin:0;padding:0;font-size:15.5px}
+.result li{padding:5px 0;border-bottom:1px dashed var(--line)}
+.result li:last-child{border:0}
+.result li small{color:var(--ink2)}
+.stage .btn{margin-top:22px;align-self:flex-start}
+
+/* work index */
+.work-head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:36px 0 10px}
+.filters button{font:700 14.5px/1 var(--sans);min-height:44px;padding:0 18px;border-radius:999px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+.filters button[aria-pressed=true]{background:var(--ink);color:var(--cream)}
+.filters button:hover{background:rgba(31,43,35,.08)}
+.filters button[aria-pressed=true]:hover{background:var(--ink)}
+.gallery{columns:3;column-gap:20px;margin:22px 0 0}
+.gallery figure{break-inside:avoid;margin:0 0 20px;display:block}
+.gallery figure[hidden]{display:none}
+.gallery img{width:100%;height:auto;border-radius:14px;background:#e8e2cc;box-shadow:0 18px 34px -24px rgba(31,43,35,.55)}
+.gallery figcaption{padding:10px 2px 0;line-height:1.3}
+.gallery figcaption b{display:block;font:700 18px/1.25 var(--serif);font-variation-settings:"SOFT" 100,"opsz" 30}
+.gallery figcaption span{display:block;font-size:14.5px;color:var(--ink2);margin-top:3px}
+.showall{margin:0}
+.showall .btn[hidden]{display:none}
+.index-h{font-size:26px;margin:64px 0 16px}
+.index{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.index li{display:grid;grid-template-columns:110px 1fr 260px 150px;gap:20px;align-items:baseline;padding:20px 0;border-bottom:1px solid var(--line)}
+.index li[hidden]{display:none}
+.index .yr{font:700 15px/1.3 var(--sans);color:var(--ink2);font-variant-numeric:tabular-nums}
+.index .t{font:700 23px/1.2 var(--serif);font-variation-settings:"SOFT" 100,"opsz" 40}
+.index .t em{font-style:normal;font-weight:500;color:var(--ink2);font-size:.82em}
+.index .pl{color:var(--ink2);font-size:15.5px}
+.index .note{font-size:14px;font-weight:700;text-align:right}
+.index .note span{display:inline-block;padding:4px 10px;border-radius:999px;background:#ebe5cf}
+.index .note .big{background:var(--sun);color:var(--ink)}
+.more{margin:26px 0 0;display:flex;align-items:center;gap:16px;flex-wrap:wrap;color:var(--ink2)}
+.places{margin-top:56px;padding:30px 32px;border-radius:24px;background:var(--paper);display:grid;grid-template-columns:240px 1fr;gap:24px;align-items:center}
+.places h3{font-size:26px;line-height:1.15}
+.places p{margin:0;font:500 21px/1.55 var(--serif);font-variation-settings:"SOFT" 100,"opsz" 30}
+.places p span{white-space:nowrap}
+.places p span::after{content:" ·";color:var(--mag)}
+.places p span:last-child::after{content:""}
+
+/* about */
+.about{background:var(--paper)}
+.about .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;align-items:center}
+.portrait{position:relative;max-width:400px;width:100%;justify-self:center}
+.portrait .frame{border-radius:28px 28px 200px 200px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 60px -32px rgba(31,43,35,.5)}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.portrait::before{content:"";position:absolute;inset:-14px 14px 14px -14px;border:2px solid var(--teal);border-radius:28px 28px 200px 200px;z-index:-1}
+.portrait{z-index:0}
+.about p{margin:0 0 16px;max-width:60ch}
+.about .big{font:500 23px/1.5 var(--serif);font-variation-settings:"SOFT" 100,"opsz" 30;margin:22px 0 20px}
+.inspo{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;padding:0;list-style:none}
+.inspo li{font-size:14px;font-weight:700;padding:7px 12px;border-radius:999px;border:1.5px solid var(--line);background:var(--cream)}
+.glitchnote{margin-top:28px;padding:20px 22px;border-left:4px solid var(--mag);background:var(--cream);border-radius:0 16px 16px 0}
+.glitchnote p{margin:0}
+
+/* canvas & more */
+.also .grid{display:grid;grid-template-columns:330px 1fr;gap:24px;margin-top:40px;align-items:stretch}
+.also article{border-radius:24px;padding:30px;background:var(--paper);border:1px solid var(--line)}
+.also article.lead{background:var(--sun);border-color:var(--sun);display:flex;flex-direction:column;justify-content:flex-end}
+.also article.lead .btn{align-self:flex-start}
+.canvases{display:grid;grid-template-columns:.75fr 1.32fr .743fr;gap:14px;align-items:end}
+.canvases figure{margin:0;border-radius:14px;overflow:hidden;box-shadow:0 18px 34px -22px rgba(31,43,35,.5);background:#e8e2cc}
+.canvases img{width:100%;height:auto}
+.also .alsoline{margin:30px 0 0;padding-top:22px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;font-size:17px}
+.alsoline a{font-weight:700;min-height:44px;display:inline-flex;align-items:center;gap:6px;text-underline-offset:3px}
+.also h3{font-size:27px;line-height:1.15;margin-bottom:10px}
+.also p{margin:0 0 16px}
+.also article.lead .btn{border-color:var(--ink)}
+.small{font-size:14px;color:var(--ink2)}
+
+/* faq */
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
+details{border-bottom:1px solid var(--line)}
+details:first-child{border-top:2px solid var(--ink)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;min-height:44px;font:700 21px/1.3 var(--serif);font-variation-settings:"SOFT" 100,"opsz" 30}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:14px;height:14px;border-right:2.5px solid var(--ink);border-bottom:2.5px solid var(--ink);transform:rotate(45deg) translate(-3px,-3px);transition:transform .25s}
+details[open] summary::after{transform:rotate(-135deg) translate(-3px,-3px)}
+details p{margin:0 0 22px;color:var(--ink2);max-width:60ch}
+
+/* contact */
+.contact{background:var(--ink);color:var(--cream)}
+.contact .kicker{color:var(--sun)}
+.contact .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.contact .sub{color:#cfd3c6}
+.direct{margin-top:30px;display:grid;gap:12px}
+.direct a{display:flex;align-items:center;gap:14px;min-height:52px;text-decoration:none;font-weight:700;font-size:17px}
+.direct a svg{flex:none}
+.direct a:hover span{text-decoration:underline}
+form{background:var(--paper);color:var(--ink);border-radius:24px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+form .full{grid-column:1/-1}
+form label{display:block;font:700 14.5px/1.3 var(--sans);margin-bottom:7px}
+form input,form select,form textarea{width:100%;font:400 16px/1.4 var(--sans);color:var(--ink);background:#fff;border:1.5px solid #c9c2a8;border-radius:12px;padding:12px 14px;min-height:48px}
+form textarea{min-height:110px;resize:vertical}
+form input:focus,form select:focus,form textarea:focus{border-color:var(--ink);outline:3px solid rgba(200,50,110,.35);outline-offset:1px}
+form .btn{width:100%}
+.thanks{grid-column:1/-1;margin:0;padding:14px 16px;border-radius:12px;background:#e3f1ec;color:#0f4d46;font-weight:700}
+.thanks[hidden]{display:none}
+
+/* end */
+.end{padding:110px 0 120px;text-align:center;position:relative;overflow:hidden}
+.end svg.bg{position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);width:min(1100px,150%);height:auto;z-index:0}
+.end .wrap{position:relative;z-index:1}
+.end h2{font-size:clamp(38px,5.4vw,68px);max-width:16ch;margin:0 auto}
+.end p{color:var(--ink2);font-size:19px;margin:18px auto 30px;max-width:44ch}
+.end .ctas{justify-content:center}
+.end .ctas .btn.ghost{background:var(--cream)}
+
+footer{background:var(--paper);border-top:1px solid var(--line);padding:40px 0 34px;font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+footer nav{display:flex;flex-wrap:wrap;gap:4px 8px}
+footer nav a{text-decoration:none;min-height:44px;display:inline-flex;align-items:center;padding:0 8px;font-weight:600}
+footer nav a:hover{text-decoration:underline}
+.credit{width:100%;color:var(--ink2);font-size:14px;margin:8px 0 0;padding-top:18px;border-top:1px solid var(--line)}
+
+.callbar{display:none}
+
+/* rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise-ready{transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+@media (prefers-reduced-motion:reduce){.rise-ready,.draw .r,.btn,summary::after{transition:none!important}.will-rise{opacity:1;transform:none}}
+
+/* ---------- tablet ---------- */
+@media (max-width:1020px){
+  .nav a:not(.btn){display:none}
+  .hero .wrap{grid-template-columns:1fr 1fr;gap:36px}
+  .plan{grid-template-columns:1fr}
+  .kinds{grid-template-columns:1fr 1fr}
+  .index li{grid-template-columns:90px 1fr 200px;}
+  .index .note{grid-column:2/-1;text-align:left}
+  .why .wrap,.faq .wrap,.contact .wrap{grid-template-columns:1fr;gap:40px}
+  .about .wrap{grid-template-columns:1fr 1.3fr;gap:44px}
+  .also .grid{grid-template-columns:1fr}
+}
+/* ---------- phone ---------- */
+@media (max-width:700px){
+  body{font-size:16.5px;padding-bottom:68px}
+  .wrap{padding:0 20px}
+  .mock{font-size:12px;padding:8px 12px}
+  .top .wrap{height:62px}
+  .mark{font-size:19px}
+  .nav .btn{min-height:44px;padding:0 16px;font-size:14.5px;margin:0}
+  .hero{padding:30px 0 52px}
+  .hero .wrap{grid-template-columns:1fr;gap:42px}
+  h1{font-size:46px}
+  .lede{font-size:18px;margin:18px 0 26px}
+  .ctas .btn{flex:1 1 auto}
+  .hero-art{width:80%;margin-top:6px}
+  .rings{width:122%}
+  .tag{left:-14px;bottom:20px;font-size:13px;max-width:190px;padding:10px 13px}
+  .tag b{font-size:16px}
+  .proof .wrap{grid-template-columns:1fr}
+  .proof .wrap>div,.proof .wrap>div+div{padding:20px 0;border-left:0}
+  .proof .wrap>div+div{border-top:1px solid var(--line)}
+  .proof b{font-size:26px}
+  .sec{padding:72px 0}
+  .sub{font-size:17px}
+  .effects li{grid-template-columns:44px 1fr;gap:14px}
+  .effects .dot{width:36px;height:18px}
+  .effects h3{font-size:21px}
+  .joy{font-size:20px}
+  .plan{margin-top:30px;gap:16px}
+  .controls{padding:22px 20px}
+  .kinds{grid-template-columns:1fr}
+  .stage{padding:22px 18px}
+  .stage-head h3{font-size:24px}
+  .draw{aspect-ratio:16/10}
+  .result{grid-template-columns:1fr}
+  .stage .btn{width:100%}
+  .filters{margin-top:26px}
+  .filters button{padding:0 14px;font-size:14px}
+  .gallery{columns:2;column-gap:12px;margin-top:16px}
+  .gallery figure{margin-bottom:16px}
+  .gallery img{border-radius:10px}
+  .gallery figcaption{padding-top:7px}
+  .gallery figcaption b{font-size:15.5px}
+  .gallery figcaption span{font-size:13px}
+  .clip .extra{display:none}
+  .showall .btn{width:100%}
+  .index-h{font-size:23px;margin-top:48px}
+  .index li{grid-template-columns:1fr;gap:2px;padding:13px 0}
+  .index .yr{font-size:13.5px}
+  .index .t{font-size:19px}
+  .index .pl{font-size:14.5px}
+  .index .note{grid-column:auto;margin-top:6px}
+  .places{grid-template-columns:1fr;padding:24px 22px;gap:12px}
+  .places p{font-size:18.5px}
+  .about .wrap{grid-template-columns:1fr;gap:44px}
+  .portrait{max-width:300px}
+  .about .big{font-size:20px}
+  .also .grid{grid-template-columns:1fr;gap:16px}
+  .also article{padding:24px}
+  .canvases{grid-template-columns:1fr 1fr;grid-template-areas:"c1 c3" "c2 c2";gap:12px}
+  .canvases .c1{grid-area:c1}.canvases .c2{grid-area:c2}.canvases .c3{grid-area:c3}
+  .alsoline{font-size:16px}
+  .inset{right:-18px;top:26%;width:36%;border-width:4px}
+  summary{font-size:19px;padding:18px 0}
+  form{grid-template-columns:1fr;padding:22px 18px}
+  .end{padding:80px 0 96px}
+  .end .ctas .btn{width:100%}
+  footer .wrap{flex-direction:column;align-items:flex-start}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:35;gap:8px;padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:rgba(31,43,35,.97);box-shadow:0 -8px 24px -12px rgba(0,0,0,.4)}
+  .callbar a{flex:1;min-height:48px;display:flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;text-decoration:none;font-weight:800;font-size:15.5px}
+  .callbar .a1{background:var(--sun);color:var(--ink)}
+  .callbar .a2{border:1.5px solid #6d7a70;color:var(--cream)}
+}
+@media (max-width:380px){
+  h1{font-size:40px}
+  .mark span{font-size:17px}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Free mockup for <b>QUEST NINE</b></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="mark" href="#main" aria-label="QUEST NINE, back to top">
+      <svg width="30" height="16" viewBox="0 0 30 16" aria-hidden="true"><path d="M1 16a14 14 0 0 1 28 0" fill="none" stroke="#c8326e" stroke-width="3"/><path d="M6 16a9 9 0 0 1 18 0" fill="none" stroke="#e9a92b" stroke-width="3"/><path d="M11 16a4 4 0 0 1 8 0" fill="none" stroke="#1f9a8f" stroke-width="3"/></svg>
+      <span>QUEST NINE</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#plan">Plan a wall</a>
+      <a href="#about">About</a>
+      <a href="#canvas">Canvas</a>
+      <a href="https://www.questnine.co/shop">Shop</a>
+      <a class="btn solid" href="#contact">Start a mural</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="h-hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Murals by Kori ‘Q’ Thomas</p>
+      <h1 id="h-hero">Murals that breathe new&nbsp;<span class="glitch">life</span> into a&nbsp;place.</h1>
+      <p class="lede">Big, joyful walls for restaurants, schools, cities and businesses, painted to bring people together and leave them with hope.</p>
+      <div class="ctas">
+        <a class="btn solid" href="#plan">Plan your wall</a>
+        <a class="btn ghost" href="#work">See the murals</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg class="rings" viewBox="0 0 200 200" aria-hidden="true">
+        <g fill="none" stroke-width="9">
+          <circle cx="100" cy="100" r="95" stroke="#c8326e" opacity=".9"/>
+          <circle cx="100" cy="100" r="84" stroke="#ef6a4a" opacity=".9"/>
+          <circle cx="100" cy="100" r="73" stroke="#e9a92b" opacity=".9"/>
+          <circle cx="100" cy="100" r="62" stroke="#1f9a8f" opacity=".9"/>
+          <circle cx="100" cy="100" r="51" stroke="#6b4a9a" opacity=".85"/>
+        </g>
+      </svg>
+      <div class="arch">
+        <img src="https://images.squarespace-cdn.com/content/v1/5e98f3df8a3476717a28e783/f6fb9bef-24f0-48a8-8649-24185d30b6a3/A9B5A74C-7818-4B7B-A997-F4174D2057A8.JPG?format=1500w" width="1440" height="1791" alt="The finished Joint of Miami mural: a magenta wall with a woman’s face in turquoise and red under a striped gold sun, with rainbow bands running along the wall" fetchpriority="high">
+      </div>
+      <div class="inset">
+        <img src="https://images.squarespace-cdn.com/content/v1/5e98f3df8a3476717a28e783/2f783aff-9d41-4637-bbd4-7eb70571d93b/7610C147-0EFD-46D1-BFD0-9E7489C34FC3.jpeg?format=1500w" width="1143" height="1747" alt="Kori Thomas at work, brushing gold paint onto a striped mural on a brick wall">
+      </div>
+      <p class="tag"><b>40′ × 12′ in 3 days</b>The Joint of Miami, Wynwood, Art Basel 2021</p>
+    </div>
+  </div>
+</section>
+
+<div class="proof" role="region" aria-label="At a glance">
+  <div class="wrap">
+    <div><b>California to Montreal</b><span>Murals in Miami, Atlanta, Nashville, Detroit, the Pacific Northwest and across New England.</span></div>
+    <div><b>Placemaking, trained</b><span>A student of Purdue University’s first Creative Placemaking Certification.</span></div>
+    <div><b>Every kind of wall</b><span>Restaurants, schools, city barriers, festivals, a warehouse and apartments.</span></div>
+  </div>
+</div>
+
+<!-- WHY COLOUR -->
+<section class="sec why" id="why" aria-labelledby="h-why">
+  <div class="wrap">
+    <div>
+      <p class="kicker">What a wall can do</p>
+      <h2 id="h-why">Colour changes how a place feels, and how people act in it.</h2>
+      <p class="joy">Round things, pops of bright color, symmetrical shapes, lightness or elevation all innately bring us joy.<small>Quest Nine</small></p>
+    </div>
+    <div>
+      <ul class="effects">
+        <li><span class="dot" style="background:var(--sun)" aria-hidden="true"></span><div><h3>In offices</h3><p>Researchers have found people in more colourful offices are more alert, confident, friendly and productive.</p></div></li>
+        <li><span class="dot" style="background:var(--coral)" aria-hidden="true"></span><div><h3>In schools and restaurants</h3><p>Attendance and clientele improve.</p></div></li>
+        <li><span class="dot" style="background:var(--teal)" aria-hidden="true"></span><div><h3>In public spaces</h3><p>Graffiti disappears.</p></div></li>
+        <li><span class="dot" style="background:var(--mag)" aria-hidden="true"></span><div><h3>For the people who live there</h3><p>Quest Nine’s focus is a more connected community, and residents and youth left with hope, joy and a sense of inclusion.</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PLANNER -->
+<section class="sec planner" id="plan" aria-labelledby="h-plan">
+  <div class="wrap">
+    <p class="kicker">Plan your wall</p>
+    <h2 id="h-plan">See your wall beside the ones Kori has painted.</h2>
+    <p class="sub">Set the size and the kind of place. You’ll see it to scale next to her closest real wall, the projects most like yours, and a plan you can send her in one tap.</p>
+
+    <div class="plan">
+      <div class="controls" role="group" aria-label="Your wall">
+        <div class="field">
+          <label for="w">Width <output id="wo" for="w">24 ft</output></label>
+          <input type="range" id="w" min="4" max="80" step="1" value="24">
+        </div>
+        <div class="field">
+          <label for="h">Height <output id="ho" for="h">10 ft</output></label>
+          <input type="range" id="h" min="4" max="30" step="1" value="10">
+        </div>
+        <fieldset class="field" style="border:0;padding:0;margin:0">
+          <legend class="lbl" style="font:700 15px/1.3 var(--sans);margin-bottom:10px;padding:0">Kind of place</legend>
+          <div class="kinds">
+            <label><input type="radio" name="kind" value="food" checked> Restaurant or bar</label>
+            <label><input type="radio" name="kind" value="school"> School or youth space</label>
+            <label><input type="radio" name="kind" value="city"> City, street or festival</label>
+            <label><input type="radio" name="kind" value="biz"> Office, warehouse or apartments</label>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="stage" aria-live="polite">
+        <div class="stage-head">
+          <h3 id="sizeline">Your wall: 24′ × 10′</h3>
+          <p id="arealine">240 sq ft</p>
+        </div>
+        <div class="draw">
+          <svg id="svg" viewBox="0 0 46 18" role="img" aria-labelledby="svgt">
+            <title id="svgt">Your 24 by 10 foot wall drawn to scale beside Girls Inc. of NH, 25 by 7 feet, and a person for scale.</title>
+            <defs>
+              <clipPath id="clipw"><rect id="cliprect" x="1" y="5" width="24" height="10"/></clipPath>
+            </defs>
+            <line x1="0" y1="15" x2="46" y2="15" stroke="#1f2b23" stroke-width=".12"/>
+            <g clip-path="url(#clipw)" id="fill">
+              <rect id="wallbg" class="r" x="1" y="5" width="24" height="10" fill="#f6e7c4"/>
+              <g id="arcs"></g>
+            </g>
+            <rect id="wall" class="r" x="1" y="5" width="24" height="10" fill="none" stroke="#1f2b23" stroke-width=".14"/>
+            <rect id="cmp" class="r" x="1" y="8" width="25" height="7" fill="none" stroke="#a8235a" stroke-width=".16" stroke-dasharray=".5 .35"/>
+            <g id="person" transform="translate(28.5 15)">
+              <circle cx="0" cy="-5.05" r=".55" fill="#1f2b23"/>
+              <path d="M-.75 -4.25 h1.5 a.35 .35 0 0 1 .35 .35 v2.3 h-.45 v1.6 h-.5 v-1.6 h-.3 v1.6 h-.5 v-1.6 h-.45 v-2.3 a.35 .35 0 0 1 .35 -.35z" fill="#1f2b23"/>
+            </g>
+          </svg>
+        </div>
+        <p class="legend">
+          <span><i style="background:#f6e7c4;border:1.5px solid #1f2b23"></i>Your wall</span>
+          <span><i style="border:2px dashed #a8235a"></i><span id="cmplegend">Girls Inc. of NH, 25′ × 7′</span></span>
+          <span><i style="background:#1f2b23;width:8px;border-radius:4px"></i>A person, for scale</span>
+        </p>
+        <div class="result">
+          <div>
+            <h4>Closest wall she has painted</h4>
+            <p id="cmptext">Girls Inc. of NH, Manchester, May 2022: 25′ × 7′. Yours is about the same width and 3′ taller.</p>
+            <h4 style="margin-top:18px">What colour can do here</h4>
+            <p id="effect">In schools and restaurants, attendance and clientele improve.</p>
+          </div>
+          <div>
+            <h4>Her work in places like yours</h4>
+            <ul id="matches">
+              <li>Sahel Afro-Caribbean Restaurant <small>· portraits, entryway and bar, 2021</small></li>
+              <li>Afrofusion Restaurant <small>· Webster, MA, 2022</small></li>
+              <li>Drip Back Yard Bar <small>· Hampton, NH, 2021</small></li>
+              <li>Smuttynose Brewing Co. <small>· ‘Pucker Up’, 2021</small></li>
+              <li>Platforms Dance Club <small>· Providence, 2021</small></li>
+            </ul>
+          </div>
+        </div>
+        <a class="btn solid" id="sendplan" href="#contact">Send this plan to Kori</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section class="sec work" id="work" aria-labelledby="h-work">
+  <div class="wrap">
+    <div class="work-head">
+      <div>
+        <p class="kicker">Mural portfolio</p>
+        <h2 id="h-work">Walls she has painted</h2>
+      </div>
+      <p class="sub" style="margin:0;max-width:40ch">Pick your kind of place and see the walls she has painted for places like it.</p>
+    </div>
+
+    <div class="filters" role="group" aria-label="Filter murals">
+      <button type="button" data-f="all" aria-pressed="true">All</button>
+      <button type="button" data-f="food" aria-pressed="false">Restaurants &amp; bars</button>
+      <button type="button" data-f="school" aria-pressed="false">Schools &amp; youth</button>
+      <button type="button" data-f="city" aria-pressed="false">Cities &amp; festivals</button>
+      <button type="button" data-f="biz" aria-pressed="false">Business &amp; homes</button>
+    </div>
+
+    <div class="gallery" id="gallery">
+      <figure data-k="city"><img src="https://images.squarespace-cdn.com/content/v1/5e98f3df8a3476717a28e783/1641934095399-S1OJQB6DBOL1MZW7WCFC/IMG-1687.jpg?format=750w" width="750" height="563" loading="lazy" alt="Magenta wall with a red figure sitting cross-legged in front of a gold sun, rainbow stripes running behind"><figcaption><b>The Joint of Miami</b><span>Wynwood, Art Basel · 40′ × 12′ in 3 days</span></figcaption></figure>
+      <figure data-k="city"><img src="https://images.squarespace-cdn.com/content/v1/5e98f3df8a3476717a28e783/b0a6a8d1-7357-48a2-a9d8-3c6d14b21170/IMG_0239.jpeg?format=750w" width="750" height="563" loading="lazy" alt="Long brick wall painted with women’s faces between bright vertical stripes of teal, orange, yellow and violet"><figcaption><b>‘I am Woman’</b><span>Beyond Walls, Art Up Lowell · 2022</span></figcaption></figure>
+      <figure data-k="city"><img src="https://images.squarespace-cdn.com/content/v1/5e98f3df8a3476717a28e783/404c4eeb-9cda-468f-9cd5-a303c8ca328f/IMG_9434.jpeg?format=750w" width="750" height="1000" loading="lazy" alt="Tall brick building painted with Jack Kerouac, a typewriter and a fan of rainbow rays"><figcaption><b>Jack Kerouac Memorial</b><span>Lowell, MA · 2023</span></figcaption></figure>
+      <figure data-k="biz"><img src="https://images.squarespace-cdn.com/content/v1/5e98f3df8a3476717a28e783/d60d8287-9f54-442b-ab2b-bc321d563d35/IMG_6861.jpeg?format=750w" width="750" height="1000" loading="lazy" alt="Two-storey office block inside a warehouse, painted with Martin Luther King Jr., an Atlanta skyline and the Bosch name"><figcaption><b>Bosch Warehouse</b><span>Atlanta, GA · 2023</span></figcaption></figure>
+      <figure data-k="food"><img src="https://images.squarespace-cdn.com/content/v1/5e98f3df8a3476717a28e783/fe300a4c-a2f8-4795-9402-7468f55538e7/37F7979C-DB1D-4509-803F-2857473A6EE5.JPG?format=750w" width="750" height="557" loading="lazy" alt="Restaurant wall in red with overlapping head silhouettes in pink, blue, yellow and teal"><figcaption><b>Afrofusion Restaurant</b><span>Webster, MA · 2022</span></figcaption></figure>
+      <figure data-k="school"><img src="https://images.squarespace-cdn.com/content/v1/5e98f3df8a3476717a28e783/f8466a38-74f8-4418-accb-eeac357f1d60/IMG-7828+%281%29.JPG?format=750w" width="750" height="500" loading="lazy" alt="School wall reading Dream Big, Work Hard in bubble letters over rainbow rings, beside two painted faces"><figcaption><b>‘Dream Big’</b><span>Pennichuck Middle School · 2021</span></figcaption></figure>
+      <figure data-k="food"><img src="https://images.squarespace-cdn.com/content/v1/5e98f3df8a3476717a28e783/b43d412f-e52c-47a7-8889-0e2f4f7a27b5/E9636193-4093-4908-8D85-2EA82689EBBD.JPG?format=750w" width="750" height="937" loading="lazy" alt="Teal wall with a dripping pastel ice-cream cone among rainbow rings and clouds"><figcaption><b>Drip Back Yard Bar</b><span>Hampton, NH · 8′ × 8′</span></figcaption></figure>
+      <figure data-k="food"><img src="https://images.squarespace-cdn.com/content/v1/5e98f3df8a3476717a28e783/e825917a-0f32-47c0-bc05-5e91eade775b/IMG-8073.jpg?format=750w" width="750" height="563" loading="lazy" alt="Dance club wall with two DJs at turntables in red and blue, a checkerboard tunnel and black and white rays"><figcaption><b>‘Spin to the Void’</b><span>Platforms Dance Club, Providence · 2021</span></figcaption></figure>
+      <figure data-k="city"><img src="https://images.squarespace-cdn.com/content/v1/5e98f3df8a3476717a28e783/990b5eb7-2db6-4ddb-ad6a-5ade132a9a7f/IMG_1188.jpeg?format=750w" width="750" height="1000" loading="lazy" alt="Bob Marley portrait in yellow, green and red, painted in an alley doorway"><figcaption><b>Bob Marley Tribute</b><span>Denver Walls Festival · 2023</span></figcaption></figure>
+      <figure data-k="school"><img src="https://images.squarespace-cdn.com/content/v1/5e98f3df8a3476717a28e783/a3e9b4cb-6926-4a99-9a75-78606efed057/E2BA3264-4134-4DA7-B36C-B4CC0E89AD09.JPG?format=750w" width="750" height="566" loading="lazy" alt="Long room wall with a rising sun, rainbows and hills, and the words Big Dreams"><figcaption><b>‘Dream Big Dreams’</b><span>Girls Inc. of NH, Manchester · 25′ × 7′</span></figcaption></figure>
+      <figure data-k="food"><img src="https://images.squarespace-cdn.com/content/v1/5e98f3df8a3476717a28e783/1629207699728-1ZJ3D19UYYN1TR1114P3/6E4962D4-2366-4D6F-8F9B-F27719E17B42.jpg?format=750w" width="750" height="710" loading="lazy" alt="Two framed panels in a restaurant entry: bold rings in orange, green and red, and a woman in a patterned head wrap"><figcaption><b>Sahel Afro-Caribbean Restaurant</b><span>Entryway · 2021</span></figcaption></figure>
+      <figure data-k="food biz"><img src="https://images.squarespace-cdn.com/content/v1/5e98f3df8a3476717a28e783/76b60026-4a5e-4a2a-94b0-cdbb17a8d547/2A81805F-71D0-4B88-88CF-2F50902577F6.JPG?format=750w" width="750" height="665" loading="lazy" alt="Coral wall with two cans pouring paint and the words Pucker Up"><figcaption><b>‘Pucker Up’</b><span>Smuttynose Brewing Co. · 2021</span></figcaption></figure>
+      <figure data-k="biz"><img src="https://images.squarespace-cdn.com/content/v1/5e98f3df8a3476717a28e783/1623700526206-0V1A4JTL8Z03K1TEYM4D/IMG-7018.jpg?format=750w" width="750" height="460" loading="lazy" alt="Pale wall with two masks joined by a DNA strand and a reclining golden figure with flowers"><figcaption><b>DNAture</b><span>Boston Apartments · 2021</span></figcaption></figure>
+      <figure data-k="city"><img src="https://images.squarespace-cdn.com/content/v1/5e98f3df8a3476717a28e783/1629212242723-4834HXMFRZHDNH363WKG/IMG-8390.jpg?format=750w" width="750" height="685" loading="lazy" alt="A row of painted concrete street barriers in front of The Worthen, a historic Lowell building"><figcaption><b>City of Lowell Barriers</b><span>The Worthen Cafe · 2021</span></figcaption></figure>
+      <figure data-k="school"><img src="https://images.squarespace-cdn.com/content/v1/5e98f3df8a3476717a28e783/d1aff1b7-5320-478e-890b-a85a9bfef10d/4CDE92BF-FD80-4B66-ACD4-22E1A2761970.jpeg?format=750w" width="750" height="563" loading="lazy" alt="Lime-green stairwell with stepped stripes and the words Stay grounded, keep growing"><figcaption><b>Oyster River Middle School</b><span>Durham, NH · 2022</span></figcaption></figure>
+    </div>
+    <p class="showall"><button type="button" class="btn ghost" data-more="gallery" hidden>Show all murals</button></p>
+
+    <h3 class="index-h">Every wall, by date</h3>
+    <ul class="index" id="index">
+      <li data-k="city"><span class="yr">Sept 2023</span><span class="t">Bob Marley Tribute</span><span class="pl">Denver Walls Festival</span><span class="note"></span></li>
+      <li data-k="biz"><span class="yr">July 2023</span><span class="t">Bosch Warehouse</span><span class="pl">Atlanta, GA</span><span class="note"></span></li>
+      <li data-k="city"><span class="yr">2023</span><span class="t">Jack Kerouac Memorial</span><span class="pl">Lowell, MA</span><span class="note"></span></li>
+      <li data-k="city"><span class="yr">Aug 2022</span><span class="t">‘I am Woman’</span><span class="pl">Beyond Walls Mural Festival, Art Up Lowell</span><span class="note"></span></li>
+      <li data-k="school"><span class="yr">July 2022</span><span class="t">Oyster River Middle School</span><span class="pl">Durham, NH</span><span class="note"></span></li>
+      <li data-k="school"><span class="yr">May 2022</span><span class="t">Girls Inc. of NH <em>‘Dream Big Dreams’</em></span><span class="pl">Manchester, NH</span><span class="note"><span>25′ × 7′</span></span></li>
+      <li data-k="food"><span class="yr">Jan 2022</span><span class="t">Afrofusion Restaurant</span><span class="pl">Webster, MA</span><span class="note"></span></li>
+      <li data-k="city"><span class="yr">Dec 2021</span><span class="t">The Joint of Miami</span><span class="pl">Wynwood, Art Basel</span><span class="note"><span class="big">40′ × 12′ · 3 days</span></span></li>
+      <li data-k="food"><span class="yr">July 2021</span><span class="t">Sahel Afro-Caribbean Restaurant</span><span class="pl">Two portraits, the entryway, streetside and the bar</span><span class="note"><span>Phase 1</span></span></li>
+      <li data-k="city"><span class="yr">June 2021</span><span class="t">City of Lowell Barriers</span><span class="pl">The Old Court, 1981 Ramen Bar, The Worthen Cafe</span><span class="note"></span></li>
+      <li data-k="food"><span class="yr">June 2021</span><span class="t">Platforms Dance Club <em>‘Spin to the Void’</em></span><span class="pl">Providence</span><span class="note"></span></li>
+      <li data-k="school"><span class="yr">May 2021</span><span class="t">Pennichuck Middle School <em>‘Dream Big’</em></span><span class="pl">School mural</span><span class="note"></span></li>
+      <li data-k="city"><span class="yr">April 2021</span><span class="t">‘Sound Waves’</span><span class="pl">Nashua Barrier Project</span><span class="note"></span></li>
+      <li data-k="food"><span class="yr">March 2021</span><span class="t">Drip Back Yard Bar</span><span class="pl">Hampton, NH</span><span class="note"><span>8′ × 8′</span></span></li>
+      <li data-k="food biz"><span class="yr">March 2021</span><span class="t">Smuttynose Brewing Co. <em>‘Pucker Up’</em></span><span class="pl">Brewery mural</span><span class="note"></span></li>
+      <li data-k="biz"><span class="yr">Feb 2021</span><span class="t">DNAture</span><span class="pl">Boston Apartments</span><span class="note"></span></li>
+      <li data-k="all-only"><span class="yr">March 2020</span><span class="t">‘Peace Love n Glitch’</span><span class="pl">Mural</span><span class="note"></span></li>
+    </ul>
+    <p class="showall"><button type="button" class="btn ghost" data-more="index" hidden>Show the full list</button></p>
+    <p class="more">More of her work on <a href="http://instagram.com/quest.nine">Instagram, @quest.nine</a></p>
+
+    <div class="places">
+      <h3>Painted from coast to coast</h3>
+      <p><span>Northern &amp; Southern California</span> <span>Pacific Northwest</span> <span>Flint &amp; Detroit</span> <span>Denver</span> <span>Atlanta</span> <span>Nashville</span> <span>Miami</span> <span>Providence</span> <span>Boston</span> <span>Lowell</span> <span>Manchester</span> <span>Montreal</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec about" id="about" aria-labelledby="h-about">
+  <div class="wrap">
+    <div class="portrait">
+      <div class="frame">
+        <img src="https://images.squarespace-cdn.com/content/v1/5e98f3df8a3476717a28e783/ae0872bd-f5f5-46e9-9b88-545d3789c5c0/IMG_6973.jpg?format=1500w" width="824" height="1236" alt="Kori ‘Q’ Thomas smiling in front of a bright mural of rainbow rings and a dripping cloud" loading="lazy">
+      </div>
+    </div>
+    <div>
+      <p class="kicker">About the artist</p>
+      <h2 id="h-about">Meet Q.</h2>
+      <p class="big">Kori ‘Q’ Thomas is an artist and designer living in New England. She started creating after a profound healing experience with art therapy in 2015.</p>
+      <p>Her style grew from a passion for street art while living in Detroit for most of her 20s. Today she is a travelling artist, and her aim is simple: to draw people out of their everyday lives for a moment, into the present.</p>
+      <p>Beyond murals, she designs clothing for her brand Satori Soul Society, illustrates and writes a children’s book series, and is raising her young son, Theo.</p>
+      <div class="glitchnote">
+        <p><strong>Look for the glitches.</strong> She adds them to her work. They stand for the unpredictability of life itself: bursts of energy, and fleeting moments of joy, pain and emotion.</p>
+      </div>
+      <ul class="inspo" aria-label="What inspires her">
+        <li>Street art</li><li>Comics</li><li>Graphic novels</li><li>Anime</li><li>Indigenous cultures</li><li>Spirituality</li><li>World politics</li><li>Social &amp; environmental justice</li><li>Psychedelic research</li><li>Mental health awareness</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CANVAS & MORE -->
+<section class="sec also" id="canvas" aria-labelledby="h-also">
+  <div class="wrap">
+    <p class="kicker">Beyond the wall</p>
+    <h2 id="h-also">A Quest Nine piece for indoors, too.</h2>
+    <div class="grid">
+      <article class="lead">
+        <h3>Canvas commissions</h3>
+        <p>A limited number of canvas commissions are available. Tell Kori what you have in mind.</p>
+        <a class="btn solid" href="mailto:quest9design@gmail.com?subject=Canvas%20commission">Ask about a canvas</a>
+      </article>
+      <div class="canvases" role="group" aria-label="From her canvas portfolio">
+        <figure class="c1"><img src="https://images.squarespace-cdn.com/content/v1/5e98f3df8a3476717a28e783/49ba2d45-3ca8-4e1b-aef7-090789f70628/IMG_3430.jpg?format=750w" width="750" height="1000" loading="lazy" alt="Canvas: two women in blue and green against magenta, with small rainbow glitch bars"></figure>
+        <figure class="c2"><img src="https://images.squarespace-cdn.com/content/v1/5e98f3df8a3476717a28e783/962d514a-9a50-4a73-b275-496b82f88779/IMG_7859.jpg?format=750w" width="750" height="568" loading="lazy" alt="Canvas: a reclining figure in orange and green, mirrored across a white column on magenta"></figure>
+        <figure class="c3"><img src="https://images.squarespace-cdn.com/content/v1/5e98f3df8a3476717a28e783/3405811e-3c39-4415-8070-932c00681622/IMG_7871.jpeg?format=750w" width="750" height="1009" loading="lazy" alt="Canvas: faces gathered in a glowing yellow and orange sphere around a meditating figure"></figure>
+      </div>
+    </div>
+    <p class="alsoline"><span>Kori also designs clothing for her brand, <strong>Satori Soul Society</strong>.</span> <a href="https://www.questnine.co/shop">Visit the Quest Nine shop <span aria-hidden="true">→</span></a></p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec faq" id="faq" aria-labelledby="h-faq" style="padding-top:24px">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Questions</p>
+      <h2 id="h-faq">Before you write</h2>
+    </div>
+    <div>
+      <details open>
+        <summary>What kinds of places do you paint?</summary>
+        <p>Restaurants and bars, schools and youth groups, city barriers and memorials, mural festivals, a warehouse and apartments. The portfolio above shows each one.</p>
+      </details>
+      <details>
+        <summary>Will you travel to my city?</summary>
+        <p>Kori is based in New England and is a travelling artist. She has painted murals in Northern and Southern California, the Pacific Northwest, Flint and Detroit, Atlanta, Nashville, Miami and Montreal.</p>
+      </details>
+      <details>
+        <summary>How big can a mural be?</summary>
+        <p>Her walls run from an 8′ × 8′ piece at Drip Back Yard Bar to 40′ × 12′ at The Joint of Miami for Art Basel, which she completed in 3 days. Try your own size in the <a href="#plan">wall planner</a>.</p>
+      </details>
+      <details>
+        <summary>What are the “glitches” in your work?</summary>
+        <p>They stand for the unpredictability of life itself: bursts of energy, and fleeting moments of joy, pain and emotion.</p>
+      </details>
+      <details>
+        <summary>Do you take canvas commissions?</summary>
+        <p>Yes, a limited number. Email <a href="mailto:quest9design@gmail.com">quest9design@gmail.com</a> with your interest.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec contact" id="contact" aria-labelledby="h-contact">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Start a mural</p>
+      <h2 id="h-contact">Tell Kori about your wall.</h2>
+      <p class="sub">Where it is, how big it is and who walks past it.</p>
+      <div class="direct">
+        <a href="mailto:quest9design@gmail.com"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e9a92b" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg><span>quest9design@gmail.com</span></a>
+        <a href="http://instagram.com/quest.nine"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e9a92b" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="#e9a92b" stroke="none"/></svg><span>@quest.nine on Instagram</span></a>
+      </div>
+    </div>
+    <form id="form" novalidate>
+      <div><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required></div>
+      <div><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+      <div><label for="f-org">Business, school or group</label><input id="f-org" name="org" autocomplete="organization"></div>
+      <div><label for="f-city">City</label><input id="f-city" name="city" autocomplete="address-level2"></div>
+      <div class="full"><label for="f-type">What would you like?</label>
+        <select id="f-type" name="type"><option>A mural</option><option>A canvas commission</option><option>Something else</option></select></div>
+      <div class="full"><label for="f-msg">About your wall</label><textarea id="f-msg" name="msg">Wall plan: 24 ft wide × 10 ft high (240 sq ft), for a restaurant or bar.</textarea></div>
+      <div class="full"><button class="btn solid" type="submit">Send to Kori</button></div>
+      <p class="thanks" id="thanks" role="status" hidden>Thanks. This is a mockup, so nothing was sent.</p>
+    </form>
+  </div>
+</section>
+
+<!-- END -->
+<section class="end" aria-labelledby="h-end">
+  <svg class="bg" viewBox="0 0 1100 300" aria-hidden="true" preserveAspectRatio="xMidYMax meet">
+    <g fill="none" stroke-width="26" opacity=".16">
+      <path d="M150 300a400 400 0 0 1 800 0" stroke="#c8326e"/>
+      <path d="M190 300a360 360 0 0 1 720 0" stroke="#ef6a4a"/>
+      <path d="M230 300a320 320 0 0 1 640 0" stroke="#e9a92b"/>
+      <path d="M270 300a280 280 0 0 1 560 0" stroke="#1f9a8f"/>
+      <path d="M310 300a240 240 0 0 1 480 0" stroke="#6b4a9a"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <h2 id="h-end">Got a forgotten wall?</h2>
+    <p>Let’s give it new life. Plan it in a minute, or send Kori a note.</p>
+    <div class="ctas">
+      <a class="btn solid" href="#plan">Plan your wall</a>
+      <a class="btn ghost" href="mailto:quest9design@gmail.com">Email Kori</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="mark" href="#main" aria-label="QUEST NINE, back to top"><svg width="30" height="16" viewBox="0 0 30 16" aria-hidden="true"><path d="M1 16a14 14 0 0 1 28 0" fill="none" stroke="#c8326e" stroke-width="3"/><path d="M6 16a9 9 0 0 1 18 0" fill="none" stroke="#e9a92b" stroke-width="3"/><path d="M11 16a4 4 0 0 1 8 0" fill="none" stroke="#1f9a8f" stroke-width="3"/></svg><span>QUEST NINE</span></a>
+    <nav aria-label="Footer">
+      <a href="#work">Work</a><a href="#plan">Plan a wall</a><a href="#about">About</a><a href="#canvas">Canvas</a><a href="https://www.questnine.co/shop">Shop</a><a href="https://www.questnine.co/events">Events</a><a href="#faq">Questions</a><a href="mailto:quest9design@gmail.com">Email</a><a href="http://instagram.com/quest.nine">Instagram</a>
+    </nav>
+    <p class="credit">Mockup made for QUEST NINE by Sunny Gupta, <a href="https://signalsetbase.com">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick actions">
+  <a class="a1" href="#plan">Plan your wall</a>
+  <a class="a2" href="mailto:quest9design@gmail.com">Email Kori</a>
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* header line on scroll */
+  var top = document.getElementById('top');
+  addEventListener('scroll', function(){ top.classList.toggle('scrolled', scrollY > 10); }, {passive:true});
+
+  /* gentle rise for things below the first screen */
+  if (!reduce && 'IntersectionObserver' in window) {
+    var els = document.querySelectorAll('.sec h2, .sub, .effects li, .plan, .gallery figure, .index-h, .index, .places, .portrait, .about .big, .also article, .canvases, details, form, .end h2');
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.remove('will-rise'); io.unobserve(e.target); } });
+    }, {rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){
+      if (el.getBoundingClientRect().top > innerHeight) { el.classList.add('will-rise','rise-ready'); io.observe(el); }
+    });
+  }
+
+  /* portfolio filter */
+  /* photos and list follow the same filter; on phones each starts at six with a "show all" */
+  var btns = document.querySelectorAll('.filters button');
+  var groups = {gallery: document.getElementById('gallery'), index: document.getElementById('index')};
+  var open = {gallery: false, index: false};
+  function clip(name){
+    var box = groups[name], n = 0;
+    var more = document.querySelector('[data-more=' + name + ']');
+    Array.prototype.forEach.call(box.children, function(el){
+      if (el.hidden) { el.classList.remove('extra'); return; }
+      el.classList.toggle('extra', ++n > 6);
+    });
+    box.classList.toggle('clip', !open[name]);
+    more.hidden = open[name] || n <= 6 || !phone.matches;
+  }
+  var phone = matchMedia('(max-width:700px)');
+  if (phone.addEventListener) phone.addEventListener('change', function(){ clip('gallery'); clip('index'); });
+  function applyFilter(f){
+    ['gallery', 'index'].forEach(function(name){
+      Array.prototype.forEach.call(groups[name].children, function(el){
+        var k = el.getAttribute('data-k').split(' ');
+        el.hidden = !(f === 'all' || k.indexOf(f) > -1);
+      });
+      clip(name);
+    });
+  }
+  btns.forEach(function(b){
+    b.addEventListener('click', function(){
+      btns.forEach(function(x){ x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+      applyFilter(b.getAttribute('data-f'));
+    });
+  });
+  document.querySelectorAll('[data-more]').forEach(function(m){
+    m.addEventListener('click', function(){ open[m.getAttribute('data-more')] = true; clip(m.getAttribute('data-more')); });
+  });
+  applyFilter('all');
+
+  /* wall planner */
+  var walls = [
+    {n:'Drip Back Yard Bar', where:'Hampton, NH, March 2021', w:8, h:8, extra:''},
+    {n:'Girls Inc. of NH', where:'Manchester, May 2022', w:25, h:7, extra:''},
+    {n:'The Joint of Miami', where:'Wynwood, Art Basel, Dec. 2021', w:40, h:12, extra:' She completed it in 3 days.'}
+  ];
+  var kinds = {
+    food:{label:'a restaurant or bar', effect:'In schools and restaurants, attendance and clientele improve.',
+      m:[['Sahel Afro-Caribbean Restaurant','portraits, entryway and bar, 2021'],['Afrofusion Restaurant','Webster, MA, 2022'],['Drip Back Yard Bar','Hampton, NH, 2021'],['Smuttynose Brewing Co.','‘Pucker Up’, 2021'],['Platforms Dance Club','Providence, 2021']]},
+    school:{label:'a school or youth space', effect:'In schools and restaurants, attendance and clientele improve, and residents and youth are left with hope, joy and inclusion.',
+      m:[['Girls Inc. of NH','‘Dream Big Dreams’, Manchester, 2022'],['Oyster River Middle School','Durham, NH, 2022'],['Pennichuck Middle School','‘Dream Big’, 2021']]},
+    city:{label:'a city, street or festival', effect:'In public spaces, graffiti disappears, and a forgotten place gets new life.',
+      m:[['Jack Kerouac Memorial','Lowell, MA, 2023'],['The Joint of Miami','Wynwood, Art Basel, 2021'],['‘I am Woman’','Beyond Walls, Art Up Lowell, 2022'],['Bob Marley Tribute','Denver Walls Festival, 2023'],['City of Lowell Barriers','2021'],['‘Sound Waves’','Nashua Barrier Project, 2021']]},
+    biz:{label:'an office, warehouse or apartments', effect:'People in more colourful offices are more alert, confident, friendly and productive.',
+      m:[['Bosch Warehouse','Atlanta, GA, 2023'],['DNAture','Boston Apartments, 2021'],['Smuttynose Brewing Co.','‘Pucker Up’, 2021']]}
+  };
+  var cols = ['#c8326e','#ef6a4a','#e9a92b','#1f9a8f','#6b4a9a','#f6e7c4'];
+  var NS = 'http://www.w3.org/2000/svg';
+  var $ = function(id){ return document.getElementById(id); };
+  var W = $('w'), H = $('h');
+
+  function closest(w, h){
+    var best = walls[0], bd = Infinity;
+    walls.forEach(function(c){ var d = Math.abs(Math.log((w*h)/(c.w*c.h))) + 0.5*Math.abs(Math.log((w/h)/(c.w/c.h))); if (d < bd) { bd = d; best = c; } });
+    return best;
+  }
+  function diff(a, b, word1, word2){
+    var d = a - b;
+    if (Math.abs(d) <= 1) return 'about the same ' + word1;
+    return Math.abs(d) + '′ ' + (d > 0 ? word2[0] : word2[1]);
+  }
+  function setRect(el, x, y, w, h){ el.setAttribute('x', x); el.setAttribute('y', y); el.setAttribute('width', w); el.setAttribute('height', h); }
+
+  function update(){
+    var w = +W.value, h = +H.value;
+    var kindEl = document.querySelector('input[name=kind]:checked');
+    var k = kinds[kindEl ? kindEl.value : 'food'];
+    var c = closest(w, h);
+    $('wo').textContent = w + ' ft'; $('ho').textContent = h + ' ft';
+    $('sizeline').textContent = 'Your wall: ' + w + '′ × ' + h + '′';
+    $('arealine').textContent = (w*h).toLocaleString() + ' sq ft';
+
+    /* drawing, in feet */
+    var maxW = Math.max(w, c.w), maxH = Math.max(h, c.h, 6.5);
+    var vw = maxW + 9, vh = maxH + 2.2;
+    var ratio = matchMedia('(max-width:700px)').matches ? 1.6 : 2;
+    if (vw / vh < ratio) vw = vh * ratio; else vh = vw / ratio;
+    var ground = vh - 0.6, x0 = 1;
+    var svg = $('svg');
+    svg.setAttribute('viewBox', '0 0 ' + vw.toFixed(2) + ' ' + vh.toFixed(2));
+    var s = vw / 46; /* keep strokes visually even */
+    var line = svg.querySelector('line'); line.setAttribute('y1', ground); line.setAttribute('y2', ground); line.setAttribute('x2', vw); line.setAttribute('stroke-width', .12*s);
+    setRect($('wall'), x0, ground - h, w, h); $('wall').setAttribute('stroke-width', .14*s);
+    setRect($('wallbg'), x0, ground - h, w, h);
+    setRect($('cliprect'), x0, ground - h, w, h);
+    setRect($('cmp'), x0, ground - c.h, c.w, c.h);
+    $('cmp').setAttribute('stroke-width', .17*s); $('cmp').setAttribute('stroke-dasharray', (.55*s) + ' ' + (.38*s));
+    $('person').setAttribute('transform', 'translate(' + (x0 + maxW + 3.2) + ' ' + ground + ')');
+
+    /* rings, Quest Nine style, anchored to the bottom centre of the wall */
+    var g = $('arcs'); while (g.firstChild) g.removeChild(g.firstChild);
+    var cx = x0 + w/2, R = Math.min(w*0.62, h*1.25), band = R/6.2;
+    for (var i = 0; i < 6; i++) {
+      var ci = document.createElementNS(NS, 'circle');
+      ci.setAttribute('cx', cx); ci.setAttribute('cy', ground + band*0.4); ci.setAttribute('r', Math.max(R - i*band, .1));
+      ci.setAttribute('fill', cols[i]);
+      g.appendChild(ci);
+    }
+    /* one glitch slice */
+    var gl = document.createElementNS(NS, 'rect');
+    setRect(gl, cx + R*0.22, ground - R*0.72, R*0.5, Math.max(band*0.45, .2));
+    gl.setAttribute('fill', '#f6e7c4'); gl.setAttribute('opacity', '.9');
+    g.appendChild(gl);
+
+    /* words */
+    var name = c.n + ', ' + c.w + '′ × ' + c.h + '′';
+    $('cmplegend').textContent = name;
+    $('cmptext').textContent = c.n + ', ' + c.where + ': ' + c.w + '′ × ' + c.h + '′. Yours is ' +
+      diff(w, c.w, 'width', ['wider','narrower']) + ' and ' + diff(h, c.h, 'height', ['taller','shorter']) + '.' + c.extra;
+    $('effect').textContent = k.effect;
+    var ul = $('matches'); ul.innerHTML = '';
+    k.m.forEach(function(p){ var li = document.createElement('li'); li.textContent = p[0] + ' '; var sm = document.createElement('small'); sm.textContent = '· ' + p[1]; li.appendChild(sm); ul.appendChild(li); });
+    $('svgt').textContent = 'Your ' + w + ' by ' + h + ' foot wall drawn to scale beside ' + c.n + ', ' + c.w + ' by ' + c.h + ' feet, and a person for scale.';
+    plan = 'Wall plan: ' + w + ' ft wide × ' + h + ' ft high (' + (w*h).toLocaleString() + ' sq ft), for ' + k.label + '.';
+  }
+  var plan = '';
+  [W, H].forEach(function(el){ el.addEventListener('input', update); });
+  document.querySelectorAll('input[name=kind]').forEach(function(el){ el.addEventListener('change', update); });
+  addEventListener('resize', function(){ clearTimeout(window.__rz); window.__rz = setTimeout(update, 150); });
+  update();
+
+  $('sendplan').addEventListener('click', function(){
+    $('f-msg').value = plan + '\n\n';
+    $('f-type').value = 'A mural';
+    setTimeout(function(){ $('f-name').focus({preventScroll:true}); }, 500);
+  });
+
+  /* form */
+  $('form').addEventListener('submit', function(e){
+    e.preventDefault();
+    $('thanks').hidden = false;
+  });
+})();
+</script>
+</body>
+</html>
