@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup sgutrade-com-cec94f 1 73ef7bad -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SGU Trade | Food &amp; Beverage Ingredients, Sourced and Manufactured</title>
+<meta name="description" content="SGU Trade Pvt Ltd: importer, exporter and contract manufacturer of premium food and beverage ingredients, serving 35+ countries from Indore, India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f172a;--slate:#1e293b;--green:#1a8905;--green-d:#147004;--green-l:#74d961;
+  --ink:#0f172a;--mute:#475569;--line:#e2e8f0;--paper:#f8fafc;--cream:#fbf6ef;--orange:#c2540a;
+  --serif:"Playfair Display",Georgia,"Times New Roman",serif;
+  --sans:"Outfit",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --r:18px;--wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--sans);color:var(--ink);background:#fff;font-size:17px;line-height:1.55;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--serif);font-weight:700;letter-spacing:-.01em;line-height:1.1;margin:0}
+h2{font-size:clamp(32px,4.2vw,50px)}
+p{margin:0}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--green-d)}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:12px;top:12px;background:#fff;padding:10px 14px;z-index:99}
+
+/* mockup banner */
+.mock{background:#e9f5e6;color:#14380c;text-align:center;font-size:14px;font-weight:500;padding:8px 16px;border-bottom:1px solid #cfe7c8;position:relative;z-index:30}
+.mock b{font-weight:600}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:86px;gap:24px}
+.logo{--s:.42;display:block;position:relative;overflow:hidden;width:calc(272px*var(--s));height:calc(172px*var(--s))}
+.logo img{position:absolute;max-width:none;width:calc(336px*var(--s));height:calc(210px*var(--s));left:calc(-36px*var(--s));top:calc(-19px*var(--s))}
+.nav{display:flex;align-items:center;gap:30px;font-size:15px;font-weight:500}
+.nav a{text-decoration:none;color:var(--slate);padding:12px 0}
+.nav a:hover{color:var(--green-d)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 24px;border-radius:999px;font:600 16px/1 var(--sans);text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s}
+.btn-g{background:var(--green);color:#fff;box-shadow:0 6px 18px -8px rgba(26,137,5,.7)}
+.btn-g:hover{background:var(--green-d);transform:translateY(-1px)}
+.btn-o{border-color:#cbd5e1;color:var(--navy);background:#fff}
+.btn-o:hover{border-color:var(--navy)}
+.nav .btn{min-height:44px;padding:0 20px;font-size:15px;color:#fff}
+.nav .btn:hover{color:#fff}
+
+/* hero */
+.hero{padding:72px 0 84px;background:linear-gradient(180deg,#fff 0,#fff 60%,var(--paper) 100%)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.hero h1{font-size:clamp(40px,5.4vw,70px);margin:18px 0 22px}
+.hero h1 em{font-style:normal;color:var(--green)}
+.lead{font-size:19px;color:var(--mute);max-width:520px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.promise{display:flex;gap:22px;margin-top:30px;font-size:14px;color:var(--mute);flex-wrap:wrap}
+.promise span{display:inline-flex;align-items:center;gap:8px}
+.promise svg{flex:none}
+.stage{position:relative;justify-self:end;width:100%;max-width:470px}
+.frame{position:relative;aspect-ratio:4/5;border-radius:26px;overflow:hidden;background:#efe7dc;box-shadow:0 40px 80px -40px rgba(15,23,42,.45)}
+.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 38%;transition:opacity 1.2s ease}
+.frame img+img{opacity:0}
+.frame img.on{opacity:1}
+.frame-tag{position:absolute;left:18px;bottom:18px;background:rgba(15,23,42,.82);color:#fff;font-size:14px;font-weight:500;padding:9px 15px;border-radius:999px;backdrop-filter:blur(6px)}
+.seal{position:absolute;left:-44px;top:40px;background:#fff;border-radius:16px;padding:16px 18px;box-shadow:0 20px 40px -18px rgba(15,23,42,.35);width:210px;border:1px solid var(--line)}
+.seal p{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--green-d);margin-bottom:8px}
+.seal ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.seal li{font-size:12.5px;font-weight:600;color:var(--slate);border:1px solid var(--line);border-radius:6px;padding:3px 7px}
+
+/* numbers */
+.nums{background:var(--navy);color:#fff}
+.nums ul{list-style:none;margin:0 auto;padding:44px 28px;display:grid;grid-template-columns:repeat(5,1fr);max-width:var(--wrap)}
+.nums li{padding:0 20px;border-left:1px solid #2b3a52}
+.nums li:first-child{border-left:0;padding-left:0}
+.nums b{display:block;font-family:var(--serif);font-size:clamp(30px,3.4vw,44px);line-height:1;color:var(--green-l)}
+.nums span{display:block;margin-top:10px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#cbd5e1}
+
+section{scroll-margin-top:100px}
+.sec{padding:110px 0}
+.head{max-width:640px;margin-bottom:48px}
+.head h2{margin:14px 0 16px}
+.head p{color:var(--mute);font-size:18px}
+
+/* industries explorer */
+.explore{display:grid;grid-template-columns:300px 1fr;gap:48px;align-items:start}
+.tabs{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.tabs button{width:100%;text-align:left;display:flex;justify-content:space-between;align-items:center;gap:12px;background:none;border:0;border-bottom:1px solid var(--line);padding:15px 4px;min-height:54px;font:500 18px var(--sans);color:var(--slate);cursor:pointer;transition:color .2s,padding .25s}
+.tabs button span{font-size:13px;color:#64748b;font-variant-numeric:tabular-nums}
+.tabs button:hover{color:var(--green-d)}
+.tabs button[aria-pressed="true"]{color:var(--green-d);font-weight:600;padding-left:14px;box-shadow:inset 3px 0 0 var(--green)}
+.panel{display:grid;grid-template-columns:minmax(0,420px) 1fr;gap:44px;align-items:center;background:var(--cream);border-radius:28px;padding:28px}
+.pic{aspect-ratio:4/5;border-radius:20px;overflow:hidden;background:#eadfce;position:relative}
+.pic img{width:100%;height:100%;object-fit:cover;object-position:50% 38%}
+.typo{position:absolute;inset:0;display:none;align-items:flex-end;padding:30px;background:var(--navy);color:#fff}
+.typo b{font-family:var(--serif);font-size:44px;line-height:1.05}
+.typo i{position:absolute;top:28px;left:30px;font-style:normal;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--green-l)}
+.pic.no-photo img{display:none}
+.pic.no-photo .typo{display:flex}
+.panel h3{font-size:clamp(30px,3vw,40px);margin:12px 0 16px}
+.panel p{color:var(--mute);font-size:18px;max-width:380px}
+.panel .btn{margin-top:28px}
+.panel-n{font-size:13px;font-weight:600;letter-spacing:.16em;color:var(--green-d);text-transform:uppercase}
+
+/* enquiry builder */
+.desk{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.builder{display:grid;grid-template-columns:1.25fr .9fr;grid-template-areas:"a b" "c b";gap:20px 36px;align-items:start}
+.builder>.card:first-child{grid-area:a}
+.builder>.card-b{grid-area:c}
+.builder>.brief{grid-area:b}
+.card-b fieldset{margin-bottom:22px}
+.card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:34px;box-shadow:0 24px 60px -40px rgba(15,23,42,.35)}
+fieldset{border:0;margin:0 0 28px;padding:0;min-width:0}
+legend{font-weight:600;font-size:16px;margin-bottom:12px;padding:0;display:flex;align-items:center;gap:10px}
+legend i{font-style:normal;display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font-size:13px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{position:relative}
+.chips input{position:absolute;opacity:0;width:1px;height:1px}
+.chips span{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1.5px solid var(--line);border-radius:999px;font-size:15px;font-weight:500;color:var(--slate);cursor:pointer;transition:all .18s;background:#fff}
+.chips span:hover{border-color:#94a3b8}
+.chips input:checked+span{background:var(--navy);border-color:var(--navy);color:#fff}
+.chips input:focus-visible+span{outline:3px solid var(--green);outline-offset:2px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.f label{display:block;font-size:14px;font-weight:600;margin-bottom:7px;color:var(--slate)}
+.f input{width:100%;min-height:50px;border:1.5px solid #cbd5e1;border-radius:12px;padding:0 14px;font:16px var(--sans);color:var(--ink);background:#fff}
+.f input:focus{border-color:var(--green);outline:none;box-shadow:0 0 0 3px rgba(26,137,5,.18)}
+.f input::placeholder{color:#64748b}
+.f+.f{margin-top:0}
+.brief{position:sticky;top:104px;background:var(--navy);color:#fff;border-radius:24px;overflow:hidden}
+.brief-top{display:flex;gap:16px;align-items:center;padding:24px 26px;border-bottom:1px solid #2b3a52}
+.thumb{width:64px;height:64px;border-radius:14px;overflow:hidden;flex:none;background:var(--slate);display:grid;place-items:center;font-family:var(--serif);font-size:26px;color:var(--green-l)}
+.thumb img{width:100%;height:100%;object-fit:cover;object-position:50% 38%}
+.brief-top p{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--green-l);font-weight:600}
+.brief-top h3{font-family:var(--sans);font-size:21px;font-weight:600;margin-top:4px;line-height:1.25}
+.brief dl{margin:0;padding:10px 26px 4px}
+.brief dl div{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px dashed #334155;font-size:15.5px}
+.brief dt{color:#cbd5e1}
+.brief dd{margin:0;font-weight:600;text-align:right}
+.sentence{padding:18px 26px 6px;font-family:var(--serif);font-size:20px;line-height:1.4;color:#e2e8f0}
+.sentence b{color:#fff;font-weight:700}
+.next{margin:18px 26px 26px;background:#16233b;border-radius:14px;padding:16px 18px;font-size:14.5px;color:#cbd5e1;display:flex;gap:12px}
+.next svg{flex:none;margin-top:2px}
+.send{margin-top:6px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.send small{color:var(--mute);font-size:14px}
+.thanks{display:none;margin-top:18px;background:#e9f5e6;color:#14380c;border-radius:12px;padding:14px 16px;font-weight:500}
+.thanks.show{display:block}
+
+/* operations */
+.ops{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line)}
+.op{padding:34px 34px 38px 0;border-bottom:1px solid var(--line)}
+.op:not(:nth-child(3n+1)){padding-left:34px;border-left:1px solid var(--line)}
+.op b{font-size:13px;letter-spacing:.14em;color:var(--green-d);font-weight:600}
+.op h3{font-size:25px;margin:12px 0 10px}
+.op p{color:var(--mute);font-size:16px}
+
+/* quality */
+.quality{background:var(--navy);color:#fff}
+.quality .eyebrow{color:var(--green-l)}
+.q{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:center}
+.q-img{border-radius:24px;overflow:hidden;max-width:520px;aspect-ratio:1/1}
+.q-img img{width:100%;height:100%;object-fit:cover}
+.quality h2{margin:14px 0 18px}
+.quality .intro{color:#cbd5e1;font-size:18px;max-width:520px}
+.certs{list-style:none;margin:30px 0 36px;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.certs li{border:1px solid #3b4d68;border-radius:10px;padding:9px 14px;font-weight:600;font-size:14.5px;letter-spacing:.03em}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;border-top:1px solid #2b3a52;padding-top:28px}
+.pillars h3{font-family:var(--sans);font-size:17px;font-weight:600;margin-bottom:6px}
+.pillars p{font-size:14.5px;color:#cbd5e1}
+
+/* faq */
+.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;font-weight:600;font-size:19px;min-height:44px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:12px;height:12px;border-right:2px solid var(--green);border-bottom:2px solid var(--green);transform:rotate(45deg) translateY(-3px);transition:transform .25s}
+details[open] summary::after{transform:rotate(-135deg) translateY(-3px)}
+details p{padding:0 40px 24px 0;color:var(--mute)}
+
+/* final */
+.final{padding:0 0 110px}
+.final-box{background:var(--cream);border-radius:32px;padding:72px 64px;display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.final h2{margin:14px 0 16px}
+.final p{color:var(--mute);font-size:18px;max-width:520px}
+.contact{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.contact a{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px;text-decoration:none;min-height:60px;transition:border-color .2s}
+.contact a:hover{border-color:var(--green)}
+.contact small{display:block;font-size:12.5px;color:#64748b;letter-spacing:.1em;text-transform:uppercase}
+.contact b{font-weight:600}
+.ico{width:40px;height:40px;border-radius:12px;background:#e9f5e6;display:grid;place-items:center;flex:none}
+.social{display:flex;gap:10px;margin-top:26px;flex-wrap:wrap}
+.social a{width:46px;height:46px;border-radius:50%;border:1px solid #cbd5e1;display:grid;place-items:center;color:var(--slate);background:#fff;transition:all .2s}
+.social a:hover{border-color:var(--green);color:var(--green-d)}
+
+footer{background:var(--navy);color:#cbd5e1;padding:44px 0 40px;font-size:14.5px}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+footer a{color:#fff}
+.callbar{display:none}
+
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:1020px){
+  .hero .wrap{grid-template-columns:1fr;gap:56px}
+  .stage{justify-self:center}
+  .explore{grid-template-columns:1fr;gap:24px}
+  .tabs{display:flex;overflow-x:auto;border:0;gap:8px;padding-bottom:6px;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tabs li{flex:none}
+  .tabs button{border:1.5px solid var(--line);border-radius:999px;padding:0 16px;min-height:44px;font-size:15px;white-space:nowrap;width:auto}
+  .tabs button span{display:none}
+  .tabs button[aria-pressed="true"]{padding-left:16px;box-shadow:none;background:var(--navy);color:#fff;border-color:var(--navy)}
+  .builder{grid-template-columns:1fr;grid-template-areas:"a" "b" "c"}
+  .brief{position:static}
+  .q{grid-template-columns:1fr;gap:44px}
+  .faq{grid-template-columns:1fr;gap:28px}
+  .final-box{grid-template-columns:1fr}
+  .nums ul{grid-template-columns:repeat(3,1fr);row-gap:30px}
+  .nums li:nth-child(4){border-left:0;padding-left:0}
+}
+@media (max-width:760px){
+  body{font-size:16px;padding-bottom:64px}
+  .wrap{padding:0 20px}
+  .nav a:not(.btn){display:none}
+  .top .wrap{height:74px}
+  .logo{--s:.36}
+  .hero{padding:40px 0 64px}
+  .hero h1{font-size:40px;margin:14px 0 16px}
+  .lead{font-size:17px}
+  .cta .btn{flex:1 1 100%}
+  .promise{gap:10px 18px}
+  .stage{max-width:none}
+  .frame{aspect-ratio:1/1.05}
+  .seal{position:static;width:auto;margin-top:14px;padding:14px 16px;box-shadow:none;display:flex;align-items:center;gap:10px 12px;flex-wrap:wrap}
+  .seal p{margin:0}
+  .seal li{font-size:11.5px}
+  .nums ul{grid-template-columns:1fr 1fr;padding:36px 20px;row-gap:26px}
+  .nums li,.nums li:nth-child(4){border-left:0;padding:0}
+  .nums li:last-child{grid-column:1/-1;border-top:1px solid #2b3a52;padding-top:22px}
+  .nums span{font-size:12px}
+  .sec{padding:72px 0}
+  .head{margin-bottom:32px}
+  .head p{font-size:16.5px}
+  .panel{grid-template-columns:1fr;padding:14px 14px 26px;gap:22px;border-radius:24px}
+  .panel>div:last-child{padding:0 8px}
+  .pic{aspect-ratio:1/1}
+  .card{padding:22px 18px;border-radius:20px}
+  .row{grid-template-columns:1fr}
+  .send .btn{width:100%}
+  .ops{grid-template-columns:1fr}
+  .op,.op:not(:nth-child(3n+1)){padding:26px 0;border-left:0}
+  .q-img{aspect-ratio:4/3}
+  .pillars{grid-template-columns:1fr;gap:18px}
+  summary{font-size:17px;padding:18px 0}
+  .final{padding:0 0 72px}
+  .final-box{padding:40px 22px;border-radius:24px}
+  footer{padding:32px 0 36px}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:40;background:rgba(255,255,255,.97);border-top:1px solid var(--line);padding:8px 12px calc(8px + env(safe-area-inset-bottom))}
+  .callbar a{min-height:46px;font-size:15px;padding:0 12px}
+}
+@media (min-width:761px) and (max-width:1020px){
+  .ops{grid-template-columns:1fr 1fr}
+  .op,.op:not(:nth-child(3n+1)){padding:30px 30px 34px 0;border-left:0}
+  .op:nth-child(even){padding-left:30px;border-left:1px solid var(--line)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Free mockup for <b>SGU Trade</b></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#main" aria-label="SGU Trade, home"><img src="https://sgutrade.com/logo.webp" alt="SGU Trade, The Pure Delight" width="336" height="210"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#industries">Industries</a>
+      <a href="#what-we-do">What we do</a>
+      <a href="#quality">Certifications</a>
+      <a href="#faq">Questions</a>
+      <a class="btn btn-g" href="#enquiry">Request quote</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">SGU Trade Pvt. Ltd. · Indore, India</p>
+      <h1 id="h1">World-class food &amp; beverage ingredients, <em>from one partner.</em></h1>
+      <p class="lead">We source, import, export and contract-manufacture premium ingredients for food makers in 35+ countries, backed by precise logistics and reliable delivery.</p>
+      <div class="cta">
+        <a class="btn btn-g" href="#enquiry">Get pricing &amp; specs
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn btn-o" href="tel:+917312939000">Call +91 731 293 9000</a>
+      </div>
+      <div class="promise">
+        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="#1a8905" stroke-width="2"/><path d="M12 7v5l3 2" stroke="#1a8905" stroke-width="2" stroke-linecap="round"/></svg>Fast 24-hour response</span>
+        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 5 6v5c0 4.5 3 8.3 7 10 4-1.7 7-5.5 7-10V6l-7-3Z" stroke="#1a8905" stroke-width="2" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="#1a8905" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>100% confidential</span>
+      </div>
+    </div>
+    <div class="stage">
+      <div class="frame" id="frame">
+        <img class="on" src="https://sgutrade.com/video/ezgif-frame-001.jpg" alt="Dusted chocolate bundt cake, for the bakery industry" width="1080" height="1920" data-tag="Bakery">
+        <img src="https://sgutrade.com/video/ezgif-frame-001%20copy%202.jpg" alt="Ice cream with toppings in a bowl" width="1080" height="1920" loading="lazy" data-tag="Ice Cream &amp; Toppings">
+        <img src="https://sgutrade.com/video/ezgif-frame-001%20copy%205.jpg" alt="Milk, powder and cheese, for the dairy industry" width="1080" height="1920" loading="lazy" data-tag="Dairy">
+        <span class="frame-tag" id="frameTag" aria-live="off">Bakery</span>
+      </div>
+      <div class="seal">
+        <p>Quality verified</p>
+        <ul><li>FSSAI Central</li><li>ISO 22000</li><li>HACCP</li><li>HALAL</li><li>KOSHER</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="nums" aria-label="SGU Trade in numbers">
+  <ul>
+    <li><b>35+</b><span>Countries served</span></li>
+    <li><b>1000+</b><span>Active partners</span></li>
+    <li><b>10k+</b><span>Annual tonnage</span></li>
+    <li><b>500+</b><span>Ingredients</span></li>
+    <li><b>15Y+</b><span>Experience</span></li>
+  </ul>
+</section>
+
+<section class="sec" id="industries" aria-labelledby="ind-h">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Industry verticals</p>
+      <h2 id="ind-h">Eight industries. One supply partner.</h2>
+      <p>Specialised food &amp; beverage ingredient solutions, with uncompromised quality. Pick yours.</p>
+    </div>
+    <div class="explore">
+      <ul class="tabs" id="tabs"></ul>
+      <div class="panel" aria-live="polite">
+        <div class="pic" id="pic">
+          <img id="picImg" src="https://sgutrade.com/video/ezgif-frame-001%20copy.jpg" alt="Chocolate truffles, for the confectionery industry" width="1080" height="1920" loading="lazy">
+          <div class="typo"><i>SGU Trade</i><b id="typoName">Confectionery</b></div>
+        </div>
+        <div>
+          <p class="panel-n" id="panelN">02 of 08</p>
+          <h3 id="panelH">Confectionery</h3>
+          <p id="panelP">Solutions for candies, chocolates, coating, gum and sweet applications.</p>
+          <a class="btn btn-g" href="#enquiry" id="panelBtn">Enquire for Confectionery</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec desk" id="enquiry" aria-labelledby="enq-h">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Fast sourcing &amp; quotes</p>
+      <h2 id="enq-h">What food ingredients do you want?</h2>
+      <p>Pick your industry and need, name the ingredient, and watch your brief build. Our trade desk comes back with detailed specifications and custom pricing for your manufacturing needs.</p>
+    </div>
+    <form class="builder" id="form" novalidate>
+      <div class="card">
+        <fieldset>
+          <legend><i>1</i>Your industry</legend>
+          <div class="chips" id="indChips"></div>
+        </fieldset>
+        <fieldset>
+          <legend><i>2</i>What you need from us</legend>
+          <div class="chips" id="svcChips"></div>
+        </fieldset>
+        <fieldset>
+          <legend><i>3</i>The ingredient</legend>
+          <div class="row">
+            <div class="f"><label for="ing">Food ingredient</label><input id="ing" name="ingredient" value="Cocoa Powder" placeholder="e.g. Cocoa Powder, Whey Protein"></div>
+            <div class="f"><label for="dest">Deliver to (country)</label><input id="dest" name="country" value="India" placeholder="e.g. India"></div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="card card-b">
+        <fieldset>
+          <legend><i>4</i>Where we reply</legend>
+          <div class="row">
+            <div class="f"><label for="nm">Full name</label><input id="nm" name="name" autocomplete="name" placeholder="e.g. Rahul Sharma"></div>
+            <div class="f"><label for="co">Company name</label><input id="co" name="company" autocomplete="organization" placeholder="e.g. Bakers Delight Ltd."></div>
+            <div class="f"><label for="ph">Mobile number</label><input id="ph" name="phone" type="tel" autocomplete="tel" placeholder="+91 98765 43210"></div>
+            <div class="f"><label for="em">Email</label><input id="em" name="email" type="email" autocomplete="email" placeholder="you@company.com"></div>
+          </div>
+        </fieldset>
+        <div class="send">
+          <button class="btn btn-g" type="submit">Request callback &amp; pricing</button>
+          <small>100% confidential · Fast 24-hour response</small>
+        </div>
+        <p class="thanks" id="thanks" role="status">Thanks. This is a mockup, so nothing was sent.</p>
+      </div>
+
+      <aside class="brief" aria-label="Your enquiry, as our trade desk will see it">
+        <div class="brief-top">
+          <div class="thumb" id="bThumb"><img src="https://sgutrade.com/video/ezgif-frame-001%20copy.jpg" alt="" width="1080" height="1920" loading="lazy"></div>
+          <div><p>Your enquiry</p><h3 id="bTitle">Cocoa Powder for Confectionery</h3></div>
+        </div>
+        <p class="sentence" id="bSentence">A <b>confectionery</b> maker needs <b>Cocoa Powder</b>, via <b>global import</b>, delivered to <b>India</b>.</p>
+        <dl>
+          <div><dt>Industry</dt><dd id="bInd">Confectionery</dd></div>
+          <div><dt>Service</dt><dd id="bSvc">Global import</dd></div>
+          <div><dt>Ingredient</dt><dd id="bIng">Cocoa Powder</dd></div>
+          <div><dt>Deliver to</dt><dd id="bDest">India</dd></div>
+        </dl>
+        <div class="next">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="#74d961" stroke-width="2"/><path d="M12 7v5l3 2" stroke="#74d961" stroke-width="2" stroke-linecap="round"/></svg>
+          <span>Next: our trade desk replies within 24 hours with detailed specifications and custom pricing. 100% confidential.</span>
+        </div>
+      </aside>
+    </form>
+  </div>
+</section>
+
+<section class="sec" id="what-we-do" aria-labelledby="ops-h">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Our operations</p>
+      <h2 id="ops-h">Six ways we keep your line running.</h2>
+      <p>An export-import partner and contract manufacturer, with absolute transparency and logistical precision.</p>
+    </div>
+    <div class="ops">
+      <article class="op"><b>01</b><h3>Contract Manufacturing</h3><p>Specialty ingredients made in India for dairy, bakery &amp; other industries.</p></article>
+      <article class="op"><b>02</b><h3>Global Importer</h3><p>Food and beverage ingredients imported from certified suppliers across the globe.</p></article>
+      <article class="op"><b>03</b><h3>International Exporter</h3><p>A wide range of quality ingredients exported to food manufacturers in 35+ countries.</p></article>
+      <article class="op"><b>04</b><h3>Wholesale Distribution</h3><p>Competitively sourced, high-grade food &amp; beverage ingredients, distributed.</p></article>
+      <article class="op"><b>05</b><h3>Trader &amp; Supplier</h3><p>High-quality ingredients through an extensive sourcing network of 100+ global &amp; local suppliers.</p></article>
+      <article class="op"><b>06</b><h3>Research &amp; Formulation</h3><p>Specialised ingredients researched and developed to create the perfect blend for your formulation.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec quality" id="quality" aria-labelledby="q-h">
+  <div class="wrap q">
+    <div class="q-img"><img src="https://sgutrade.com/hero-technical.png" alt="Jars of white ingredient powders with cocoa, cocoa beans and milk on slate" width="640" height="640" loading="lazy"></div>
+    <div>
+      <p class="eyebrow">Quality verified</p>
+      <h2 id="q-h">Certified for safety. Built on trust.</h2>
+      <p class="intro">Every ingredient meets exact specifications for premium production, certified for safety and quality assurance.</p>
+      <ul class="certs" aria-label="Certifications">
+        <li>FSSAI Central</li><li>ISO 9001:2005</li><li>ISO 22000</li><li>HACCP</li><li>HALAL</li><li>KOSHER</li><li>MSME</li><li>DPIIT</li>
+      </ul>
+      <div class="pillars">
+        <div><h3>Global reach</h3><p>A supply chain across 35+ countries, with end-to-end tracking.</p></div>
+        <div><h3>Direct sourcing</h3><p>No middlemen: competitive pricing, farm-to-factory delivery.</p></div>
+        <div><h3>Transparency</h3><p>One clear, compliant platform for manufacturers worldwide.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq" aria-labelledby="faq-h">
+  <div class="wrap faq">
+    <div class="head">
+      <p class="eyebrow">Questions</p>
+      <h2 id="faq-h">What buyers ask us first.</h2>
+    </div>
+    <div>
+      <details open><summary>How fast will I get a price?</summary><p>Our trade desk responds fast, within 24 hours, with detailed specifications and custom pricing. Your enquiry stays 100% confidential.</p></details>
+      <details><summary>Which industries do you supply?</summary><p>Bakery, Confectionery, Ice Cream &amp; Toppings, Beverages, Health &amp; Nutrition, Dairy, Sauces &amp; Condiments, and Edible Fat &amp; Other Products.</p></details>
+      <details><summary>Which certifications do you hold?</summary><p>FSSAI Central, ISO 9001:2005, ISO 22000, HACCP, HALAL, KOSHER, MSME and DPIIT.</p></details>
+      <details><summary>Do you export outside India?</summary><p>Yes. We export quality food ingredients to food manufacturers in 35+ countries, from our base in Indore, India.</p></details>
+      <details><summary>Can you manufacture ingredients for us?</summary><p>Yes. We are a contract manufacturer of specialty food ingredients in India, for dairy, bakery &amp; other industries, with research &amp; formulation support.</p></details>
+      <details><summary>How is your pricing competitive?</summary><p>We source directly and cut out middlemen, delivering farm-to-factory for industrial needs.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final" aria-labelledby="fin-h">
+  <div class="wrap">
+    <div class="final-box">
+      <div>
+        <p class="eyebrow">Talk to our trade desk</p>
+        <h2 id="fin-h">Build your ingredient supply chain with us.</h2>
+        <p>Detailed specifications and custom pricing for your manufacturing needs, within 24 hours.</p>
+        <div class="cta"><a class="btn btn-g" href="#enquiry">Request pricing quote</a></div>
+        <nav class="social" aria-label="SGU Trade on social media">
+          <a href="https://www.linkedin.com/company/subnutra-food-ingredients/" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4V21H3V9.5Zm6.5 0h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75V21h-4V9.5Z"/></svg></a>
+          <a href="https://www.instagram.com/sgu_trade/" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></a>
+          <a href="https://www.facebook.com/SGUtrade" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.87.25-1.46 1.5-1.46h1.6V4.46A21 21 0 0 0 14.3 4.3c-2.3 0-3.8 1.4-3.8 3.96v2.24H8v3h2.5V21h3Z"/></svg></a>
+          <a href="https://x.com/subnutra" aria-label="X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8L17.8 3Zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5Z"/></svg></a>
+          <a href="https://in.pinterest.com/sgu_trade/" aria-label="Pinterest"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.64 19.3c-.09-.8-.17-2.02.03-2.9l1.2-5.1s-.3-.6-.3-1.5c0-1.4.8-2.45 1.82-2.45.86 0 1.27.64 1.27 1.42 0 .86-.55 2.15-.83 3.35-.24 1 .5 1.82 1.5 1.82 1.78 0 3.15-1.88 3.15-4.6 0-2.4-1.73-4.08-4.2-4.08-2.86 0-4.54 2.15-4.54 4.37 0 .86.33 1.79.75 2.3.08.1.09.18.07.28l-.28 1.13c-.04.18-.15.22-.34.13-1.25-.58-2.03-2.4-2.03-3.87 0-3.15 2.29-6.04 6.6-6.04 3.46 0 6.15 2.47 6.15 5.76 0 3.44-2.17 6.2-5.18 6.2-1.01 0-1.96-.52-2.29-1.15l-.62 2.38c-.23.87-.84 1.96-1.25 2.62A10 10 0 1 0 12 2Z"/></svg></a>
+        </nav>
+      </div>
+      <ul class="contact">
+        <li><a href="tel:+917312939000"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z" stroke="#147004" stroke-width="2" stroke-linejoin="round"/></svg></span><span><small>Call us directly</small><b>+91 731 293 9000</b></span></a></li>
+        <li><a href="mailto:info@sgutrade.com"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#147004" stroke-width="2"/><path d="m4 7 8 6 8-6" stroke="#147004" stroke-width="2" stroke-linejoin="round"/></svg></span><span><small>Email</small><b>info@sgutrade.com</b></span></a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=SGU%20Trade%20Pvt%20Ltd%2C%20Indore%2C%20India"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z" stroke="#147004" stroke-width="2"/><circle cx="12" cy="9.5" r="2.5" stroke="#147004" stroke-width="2"/></svg></span><span><small>Based in</small><b>Indore, India</b></span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© SGU Trade Pvt. Ltd. · <a href="https://sgutrade.com/">sgutrade.com</a></p>
+    <p>Mockup made for SGU Trade by Sunny Gupta, <a href="https://signalsetbase.com">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick contact">
+  <a class="btn btn-o" href="tel:+917312939000">Call now</a>
+  <a class="btn btn-g" href="#enquiry">Get a quote</a>
+</div>
+
+<script>
+(function(){
+  var P='https://sgutrade.com/video/ezgif-frame-001';
+  var IND=[
+    ['Bakery','High performance functional food ingredients for breads, cakes, cookies and pastries.',P+'.jpg','Dusted chocolate bundt cake, for the bakery industry'],
+    ['Confectionery','Solutions for candies, chocolates, coating, gum and sweet applications.',P+'%20copy.jpg','Chocolate truffles, for the confectionery industry'],
+    ['Ice Cream & Toppings','Enhancing creaminess, mouthfeel and melting resistance for ice-cream manufacturers.',P+'%20copy%202.jpg','Ice cream with toppings in a bowl'],
+    ['Beverages','Stabilizers and functional solutions for juices, drinks and healthy beverages.',null,''],
+    ['Health & Nutrition','Nutrition-focused products that boost overall health, performance, and daily balance.',P+'%20copy%204.jpg','Protein shaker with powder, strawberries and nuts'],
+    ['Dairy','Ingredients that improve texture, stability and nutrition in dairy products.',P+'%20copy%205.jpg','Milk, powder and cheese, for the dairy industry'],
+    ['Sauces & Condiments','Innovative ingredient solutions for sauces, dressings, condiments and culinary applications.',null,''],
+    ['Edible Fat & Other Products','High-quality edible fats and versatile ingredient solutions for diverse food and bakery applications.',null,'']
+  ];
+  var SVC=['Global import','Export','Contract manufacturing','Wholesale','Trade & supply','Formulation support'];
+  var $=function(id){return document.getElementById(id)};
+  var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+
+  /* industries explorer */
+  var tabs=$('tabs');
+  tabs.innerHTML=IND.map(function(d,i){return '<li><button type="button" aria-pressed="'+(i===1)+'" data-i="'+i+'">'+esc(d[0])+'<span>0'+(i+1)+'</span></button></li>'}).join('');
+  var cur=1;
+  function show(i){
+    cur=i;var d=IND[i];
+    tabs.querySelectorAll('button').forEach(function(b){b.setAttribute('aria-pressed',String(+b.dataset.i===i))});
+    var pic=$('pic');
+    if(d[2]){pic.classList.remove('no-photo');$('picImg').src=d[2];$('picImg').alt=d[3]}else{pic.classList.add('no-photo')}
+    $('typoName').textContent=d[0];
+    $('panelN').textContent='0'+(i+1)+' of 08';
+    $('panelH').textContent=d[0];
+    $('panelP').textContent=d[1];
+    $('panelBtn').textContent='Enquire for '+d[0];
+  }
+  tabs.addEventListener('click',function(e){var b=e.target.closest('button');if(b)show(+b.dataset.i)});
+  $('panelBtn').addEventListener('click',function(){var r=document.querySelector('#indChips input[value="'+cur+'"]');if(r){r.checked=true;update()}});
+
+  /* enquiry builder */
+  $('indChips').innerHTML=IND.map(function(d,i){return '<label><input type="radio" name="industry" value="'+i+'"'+(i===1?' checked':'')+'><span>'+esc(d[0])+'</span></label>'}).join('');
+  $('svcChips').innerHTML=SVC.map(function(s,i){return '<label><input type="radio" name="service" value="'+i+'"'+(i===0?' checked':'')+'><span>'+esc(s)+'</span></label>'}).join('');
+  var form=$('form');
+  function update(){
+    var ii=+form.industry.value||0,si=+form.service.value||0,d=IND[ii];
+    var ing=form.ingredient.value.trim()||'your ingredient',dest=form.country.value.trim()||'your country';
+    var art=/^[aeiou]/i.test(d[0])?'An ':'A ';
+    $('bTitle').textContent=ing+' for '+d[0];
+    $('bSentence').innerHTML=art+'<b>'+esc(d[0].toLowerCase())+'</b> maker needs <b>'+esc(ing)+'</b>, via <b>'+esc(SVC[si].toLowerCase())+'</b>, delivered to <b>'+esc(dest)+'</b>.';
+    $('bInd').textContent=d[0];$('bSvc').textContent=SVC[si];$('bIng').textContent=ing;$('bDest').textContent=dest;
+    $('bThumb').innerHTML=d[2]?'<img src="'+d[2]+'" alt="" width="1080" height="1920">':esc(d[0].charAt(0));
+  }
+  form.addEventListener('input',update);form.addEventListener('change',update);
+  form.addEventListener('submit',function(e){e.preventDefault();var t=$('thanks');t.classList.add('show');t.focus&&t.setAttribute('tabindex','-1');t.focus()});
+
+  var still=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* hero frame: gentle cross-fade, only while on screen */
+  var imgs=[].slice.call(document.querySelectorAll('#frame img')),k=0,timer=null;
+  function step(){imgs[k].classList.remove('on');k=(k+1)%imgs.length;imgs[k].classList.add('on');$('frameTag').textContent=imgs[k].dataset.tag}
+  if(!still&&'IntersectionObserver' in window){
+    new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){if(!timer)timer=setInterval(step,4200)}else{clearInterval(timer);timer=null}})},{threshold:.3}).observe($('frame'));
+  }
+
+  /* gentle rise for things below the first screen */
+  if(!still&&'IntersectionObserver' in window){
+    var els=document.querySelectorAll('.head,.panel,.card,.brief,.op,.q-img,.quality .q>div:last-child,details,.final-box');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('rise','will-rise');io.observe(el)}});
+  }
+})();
+</script>
+</body>
+</html>
