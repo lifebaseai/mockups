@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup getbellasbagels-com-c9a6dc 1 89ed4ddd -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bella's Bagels | Baked for Boosting Happiness | Colorado Springs</title>
+<meta name="description" content="Award-winning, authentic NJ/NY bagels, scratch-made in Colorado Springs. Breakfast, lunch, coffee and catering.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#54a2cc; --blue-ink:#2a6f98; --blue-soft:#e3f0f7;
+  --char:#3e4756; --navy:#1f2733; --cream:#fdfaee; --paper:#fffdf6;
+  --line:#e6dfc9; --text:#2b313b; --muted:#555d6a;
+  --display:"Anton","Impact","Arial Narrow",sans-serif;
+  --body:"Inter",-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --r:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--text);font:400 17px/1.55 var(--body);overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid #f2b705;outline-offset:3px;border-radius:6px}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.01em;line-height:1.02;margin:0}
+h2{font-size:clamp(38px,5.4vw,64px);color:var(--blue-ink)}
+.kicker{font:700 13px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--blue-ink);margin:0 0 14px}
+.lede{font-size:19px;color:var(--muted);max-width:34em;margin:16px 0 0}
+section{padding:96px 0}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:12px;top:56px;z-index:50;background:#fff;padding:10px 14px}
+
+/* mockup banner */
+.mock{height:44px;display:flex;align-items:center;justify-content:center;background:var(--navy);color:#f4efe0;font:500 15px/1.2 var(--body);text-align:center;padding:0 12px;width:100%}
+.mock a{color:#a9d6ee;text-decoration:underline;text-underline-offset:3px}
+
+/* header */
+.top{background:var(--blue);position:relative;z-index:5}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:78px}
+.logo{display:block;width:150px}
+.logo img{width:150px;height:auto}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{text-decoration:none;color:var(--navy);font-weight:600;font-size:15px;padding:12px 12px;border-radius:999px}
+.nav a:hover{background:rgba(255,255,255,.25)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:0 24px;border-radius:999px;font:700 15px/1 var(--body);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s ease,background .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-dark{background:var(--navy);color:#fdfaee}
+.btn-ghost{background:transparent;border-color:var(--navy);color:var(--navy)}
+.btn-blue{background:var(--blue-ink);color:#fff}
+.btn-cream{background:var(--cream);color:var(--navy)}
+.nav .btn{color:#fdfaee;margin-left:8px;min-height:46px;padding:0 20px}
+.nav .btn:hover{background:var(--navy)}
+
+/* hero */
+.hero{background:var(--blue);padding:40px 0 0;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1fr 1.08fr;gap:48px;align-items:center;padding-bottom:84px}
+.hero .eyebrow{font:600 15px/1.4 var(--body);color:var(--navy);margin:0 0 18px;display:flex;align-items:center;gap:10px}
+.hero .eyebrow svg{width:34px;flex:none}
+.hero h1{font-size:clamp(56px,7.4vw,104px);color:var(--navy);line-height:.94}
+.hero h1 span{display:inline;background:linear-gradient(transparent 64%,rgba(255,255,255,.6) 64%,rgba(255,255,255,.6) 90%,transparent 90%)}
+.hero .sub{font-size:20px;color:var(--navy);max-width:28em;margin:22px 0 30px;font-weight:500}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.photo-frame{position:relative;max-width:620px;justify-self:end;width:100%}
+.photo-frame .ph{border-radius:22px;overflow:hidden;box-shadow:0 30px 60px -28px rgba(31,39,51,.55);transform:rotate(1.4deg);background:#eee;aspect-ratio:16/9}
+.photo-frame .ph img{width:100%;height:100%;object-fit:cover}
+.ticket{position:absolute;left:-34px;bottom:-46px;background:var(--paper);color:var(--text);border-radius:14px;padding:18px 22px 18px 22px;width:280px;box-shadow:0 18px 40px -18px rgba(31,39,51,.5);transform:rotate(-2deg)}
+.ticket:before{content:"";position:absolute;left:12px;right:12px;top:-6px;height:12px;background:radial-gradient(circle at 6px 0,transparent 5px,var(--paper) 5.5px) 0 0/12px 12px repeat-x}
+.ticket .t-head{font:700 12px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--blue-ink)}
+.status{display:flex;align-items:center;gap:9px;font:400 26px/1.1 var(--display);text-transform:uppercase;margin:10px 0 8px;color:var(--navy)}
+.dot{width:12px;height:12px;border-radius:50%;background:var(--blue);flex:none;box-shadow:0 0 0 4px rgba(84,162,204,.22)}
+.dot.open{background:#1f8a4c;box-shadow:0 0 0 4px rgba(31,138,76,.2);animation:pulse 2.4s ease-in-out infinite}
+.dot.closed{background:#b0443a;box-shadow:0 0 0 4px rgba(176,68,58,.18)}
+@keyframes pulse{50%{box-shadow:0 0 0 8px rgba(31,138,76,.05)}}
+.ticket p{margin:0;font-size:14px;color:var(--muted);line-height:1.5}
+.ticket a{font-weight:600;color:var(--blue-ink)}
+.ticket p.t-note{font-size:12px;line-height:1.4;margin:6px 0 8px}
+.smile-rule{display:block;width:100%;height:46px;background:var(--cream);clip-path:ellipse(70% 100% at 50% 100%)}
+
+/* awards */
+.awards{padding-top:70px}
+.aw-head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:40px}
+.rating{display:flex;align-items:center;gap:14px;text-decoration:none}
+.rating b{font:400 64px/1 var(--display);color:var(--navy)}
+.rating span{font-size:14px;color:var(--muted);line-height:1.4}
+.stars{color:#b77d00;letter-spacing:2px;font-size:16px}
+.aw-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:20px}
+.aw-big{background:var(--char);color:#f4efe0;border-radius:var(--r);display:grid;grid-template-columns:1fr 1fr;overflow:hidden;min-height:400px}
+.aw-big .txt{padding:38px 34px;display:flex;flex-direction:column;justify-content:space-between;gap:22px}
+.aw-big h3{font-size:clamp(40px,4.4vw,58px);color:#fff}
+.tag{display:inline-block;border:1px solid #d9b45a;color:#f0cf7b;border-radius:999px;padding:7px 12px;font:700 12px/1 var(--body);letter-spacing:.12em;text-transform:uppercase}
+.aw-big p{margin:0;color:#e4e0d3;font-size:16px}
+.aw-big .img{background:#2d343f}
+.aw-big .img img{width:100%;height:100%;object-fit:cover;max-width:450px}
+.aw-side{display:grid;gap:20px}
+.aw-sm{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:30px 30px;display:flex;gap:22px;align-items:center}
+.aw-sm .num{font:400 66px/1 var(--display);color:var(--blue-ink);min-width:96px}
+.aw-sm h3{font-size:28px;color:var(--navy)}
+.aw-sm p{margin:6px 0 0;color:var(--muted);font-size:15px}
+.aw-sm .src{font:700 12px/1 var(--body);letter-spacing:.14em;color:var(--blue-ink);text-transform:uppercase;margin:0 0 8px}
+
+/* menu board */
+.menu{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.menu-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.menu-photos{display:grid;gap:18px;position:sticky;top:24px}
+.menu-photos figure{margin:0;background:#fff;border-radius:var(--r);border:1px solid var(--line);overflow:hidden;position:relative}
+.menu-photos img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.menu-photos figcaption{position:absolute;left:16px;bottom:14px;font:400 22px/1 var(--display);text-transform:uppercase;color:var(--navy);background:var(--cream);padding:8px 12px;border-radius:8px}
+.board{list-style:none;margin:34px 0 0;padding:0;border-top:2px solid var(--navy)}
+.board li{display:grid;grid-template-columns:150px 1fr;gap:22px;padding:20px 0;border-bottom:1px dashed #cfc6aa}
+.board h3{font-size:30px;color:var(--navy)}
+.board p{margin:2px 0 0;color:var(--muted);font-size:16px}
+.menu-foot{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:30px}
+.menu-foot small{color:var(--muted);font-size:14px}
+
+/* specials */
+.drops{padding:72px 0}
+.drops-inner{display:grid;grid-template-columns:1fr 1.3fr;gap:48px;align-items:center}
+.drops h2{font-size:clamp(34px,4.2vw,50px)}
+.drop-now{background:var(--blue);border-radius:var(--r);padding:28px 30px;color:var(--navy);position:relative}
+.drop-now .k{font:700 12px/1 var(--body);letter-spacing:.16em;text-transform:uppercase}
+.drop-now h3{font-size:44px;margin:10px 0 8px}
+.drop-now p{margin:0;font-size:16px;max-width:30em}
+.always{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.always span{border:1.5px solid var(--navy);border-radius:999px;padding:9px 14px;font-weight:600;font-size:14px;color:var(--navy);background:var(--cream)}
+.always-k{margin:22px 0 0;font:700 12px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--blue-ink)}
+
+/* catering planner */
+.cater{background:var(--char);color:#f4efe0}
+.cater h2{color:#fff}
+.cater .kicker{color:#a9d6ee}
+.cater .lede{color:#d8d4c8}
+.facts{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.facts span{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:10px 14px;font-size:14px;color:#e8e4d8}
+.facts b{font:400 22px/1 var(--display);color:#a9d6ee;margin-right:6px}
+.plan{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;margin-top:48px;align-items:start}
+.controls{display:grid;gap:26px}
+.ctl-label{display:block;font:700 13px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:#a9d6ee;margin-bottom:12px}
+.stepper{display:flex;align-items:center;gap:10px}
+.stepper button{width:52px;height:52px;border-radius:50%;border:2px solid rgba(255,255,255,.35);background:transparent;color:#fff;font:600 26px/1 var(--body);cursor:pointer}
+.stepper button:hover{background:rgba(255,255,255,.1)}
+.stepper input{width:110px;height:58px;text-align:center;font:400 40px/1 var(--display);background:var(--paper);color:var(--navy);border:0;border-radius:12px}
+.stepper .unit{font-size:16px;color:#d8d4c8;margin-left:4px}
+.range{width:100%;margin-top:14px;accent-color:#a9d6ee}
+.items{display:grid;gap:12px}
+.item{display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.16);border-radius:14px;padding:16px 18px;cursor:pointer;transition:border-color .2s,background .2s}
+.item:has(input:checked){border-color:#a9d6ee;background:rgba(169,214,238,.1)}
+.item input{width:22px;height:22px;margin:2px 0 0;accent-color:#54a2cc;flex:none}
+.item b{display:block;font:400 22px/1.1 var(--display);text-transform:uppercase;color:#fff;letter-spacing:.02em}
+.item small{display:block;font-size:14px;color:#d8d4c8;margin-top:3px}
+.item em{font-style:normal;color:#f0cf7b;font-size:13px;font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:100%;height:100%;margin:0;cursor:pointer}
+.chip span{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;border:1.5px solid rgba(255,255,255,.3);font-weight:600;font-size:15px;color:#f4efe0}
+.chip input:checked+span{background:#a9d6ee;border-color:#a9d6ee;color:var(--navy)}
+.chip input:focus-visible+span{outline:3px solid #f2b705;outline-offset:2px}
+/* the order ticket */
+.order{background:var(--paper);color:var(--text);border-radius:16px;padding:30px 28px 26px;position:relative;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.order:before,.order:after{content:"";position:absolute;left:14px;right:14px;height:12px;background:radial-gradient(circle at 6px 0,transparent 5px,var(--paper) 5.5px) 0 0/12px 12px repeat-x}
+.order:before{top:-6px}
+.order:after{bottom:-6px;transform:rotate(180deg)}
+.order-h{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--navy);padding-bottom:12px}
+.order-h h3{font-size:30px;color:var(--navy)}
+.order-h span{font-size:14px;color:var(--muted)}
+.lines{list-style:none;margin:0;padding:0}
+.lines li{display:grid;grid-template-columns:44px 1fr;gap:12px;padding:14px 0;border-bottom:1px dashed #cfc6aa}
+.lines .q{font:400 30px/1 var(--display);color:var(--blue-ink)}
+.lines b{display:block;font-weight:700;color:var(--navy)}
+.lines small{display:block;color:var(--muted);font-size:14px}
+.lines li.flash{animation:flash .6s ease}
+@keyframes flash{from{background:#e3f0f7}to{background:transparent}}
+.order .empty{padding:18px 0;color:var(--muted);font-size:15px}
+.order form{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+.order label{font:600 13px/1.2 var(--body);color:var(--navy);display:grid;gap:6px}
+.order label.full{grid-column:1/-1}
+.order input{min-height:46px;border:1.5px solid #cfc6aa;border-radius:10px;padding:0 12px;font:400 16px var(--body);background:#fff;color:var(--text);width:100%}
+.order .btn{grid-column:1/-1;margin-top:4px}
+.ready{font-size:14px;color:var(--muted);margin:12px 0 0}
+.ready b{color:var(--navy)}
+.sent{grid-column:1/-1;background:var(--blue-soft);border-radius:10px;padding:14px;color:var(--navy);font-weight:600;margin:0}
+.note{font-size:13px;color:var(--muted);margin:12px 0 0}
+
+/* locations */
+.loc-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;margin-top:44px}
+.loc{border-radius:var(--r);overflow:hidden;background:var(--paper);border:1px solid var(--line);display:flex;flex-direction:column}
+.loc .img{aspect-ratio:16/10;overflow:hidden;position:relative;background:#ddd}
+.loc .img img{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;top:16px;left:16px;background:var(--cream);color:var(--navy);border-radius:999px;padding:8px 14px;font:700 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase}
+.badge.soon{background:#f0cf7b}
+.loc .body{padding:28px 30px 30px;display:flex;flex-direction:column;gap:14px;flex:1}
+.loc h3{font-size:38px;color:var(--navy)}
+.loc .where{font-weight:600;color:var(--blue-ink);margin:0}
+.loc p{margin:0;color:var(--muted)}
+.hours{display:grid;grid-template-columns:auto 1fr;gap:4px 18px;margin:4px 0;font-size:16px}
+.hours dt{font-weight:700;color:var(--navy)}
+.hours dd{margin:0;color:var(--text)}
+.hours .today{background:var(--blue-soft);border-radius:6px;padding:0 6px;margin:0 -6px}
+.loc .acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;padding-top:8px}
+.loc .btn-ghost{min-height:48px}
+
+/* story */
+.story{background:var(--blue);color:var(--navy);padding:90px 0;position:relative;overflow:hidden}
+.story-grid{display:grid;grid-template-columns:auto 1fr;gap:56px;align-items:center}
+.story .mark{display:block;width:150px;height:150px;border-radius:24px}
+.story h2{color:var(--navy);font-size:clamp(34px,4.6vw,58px);max-width:15em}
+.story p{font-size:19px;max-width:36em;margin:18px 0 0;font-weight:500}
+.dogs{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.dogs span{background:var(--cream);border-radius:999px;padding:8px 14px;font:400 18px/1 var(--display);text-transform:uppercase;letter-spacing:.03em}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
+.faq details{border-bottom:1px solid var(--line);padding:4px 0}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:64px;font:600 19px/1.35 var(--body);color:var(--navy)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";font:400 30px/1 var(--body);color:var(--blue-ink);transition:transform .2s}
+.faq details[open] summary:after{transform:rotate(45deg)}
+.faq details p{margin:0 0 20px;color:var(--muted);max-width:40em}
+.faq details a{color:var(--blue-ink);font-weight:600}
+
+/* closing */
+.close{background:var(--navy);color:#f4efe0;text-align:center;padding:100px 0}
+.close h2{color:#fff;font-size:clamp(48px,7vw,92px)}
+.close p{font-size:19px;color:#d8d4c8;margin:16px auto 30px;max-width:30em}
+.close .cta{justify-content:center}
+.close .btn-ghost{border-color:#f4efe0;color:#f4efe0}
+.close svg{width:90px;margin:0 auto 24px;display:block}
+
+footer{background:#171d26;color:#cfcabb;padding:52px 0 40px;font-size:15px}
+.f-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:32px}
+footer h3{font:700 13px/1 var(--body);letter-spacing:.14em;color:#a9d6ee;margin:0 0 14px}
+footer p{margin:0 0 6px}
+footer a{color:#f4efe0}
+.social{display:flex;gap:10px;flex-wrap:wrap}
+.social a{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border:1px solid #3c4553;border-radius:999px;text-decoration:none;font-weight:600}
+.mockline{border-top:1px solid #2e3643;margin-top:36px;padding-top:22px;font-size:14px;color:#b7b2a4}
+
+/* phone call bar */
+.callbar{display:none}
+
+/* gentle rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:980px){
+  .hero-grid,.aw-grid,.menu-grid,.plan,.loc-grid,.faq-grid,.drops-inner{grid-template-columns:1fr}
+  .photo-frame{justify-self:stretch}
+  .menu-photos{position:static;grid-template-columns:1fr 1fr}
+  .nav a:not(.btn){display:none}
+}
+@media (max-width:760px){
+  body{font-size:16px;padding-bottom:72px}
+  section{padding:68px 0}
+  .wrap{width:calc(100% - 36px)}
+  .mock{font-size:14px}
+  .top .wrap{min-height:68px}
+  .logo,.logo img{width:120px}
+  .nav .btn{min-height:44px;padding:0 16px;font-size:13px}
+  .hero{padding-top:28px}
+  .hero-grid{gap:34px;padding-bottom:40px}
+  .hero h1{font-size:clamp(50px,15vw,72px)}
+  .hero .sub{font-size:18px;margin:18px 0 24px}
+  .cta .btn{flex:1 1 auto}
+  .ticket{position:relative;left:auto;right:auto;bottom:auto;width:auto;margin:-16px 14px 0;transform:rotate(-1deg)}
+  .photo-frame .ph{transform:none}
+  .awards{padding-top:64px}
+  .aw-big{grid-template-columns:1fr;min-height:0}
+  .aw-big .img{order:-1;aspect-ratio:5/4}
+  .aw-big .img img{max-width:none}
+  .aw-big .txt{padding:28px 24px}
+  .aw-sm{padding:24px 22px;gap:16px}
+  .aw-sm .num{font-size:50px;min-width:70px}
+  .aw-sm h3{font-size:24px}
+  .menu-photos{grid-template-columns:1fr 1fr;gap:10px}
+  .menu-photos figcaption{font-size:16px;left:8px;bottom:8px;padding:6px 8px}
+  .board li{grid-template-columns:1fr;gap:4px}
+  .board h3{font-size:28px}
+  .drop-now h3{font-size:38px}
+  .order{padding:26px 20px 22px}
+  .order form{grid-template-columns:1fr}
+  .stepper input{width:96px}
+  .loc .body{padding:24px 22px}
+  .loc h3{font-size:32px}
+  .story-grid{grid-template-columns:1fr;gap:24px}
+  .story .mark{width:96px;height:96px;border-radius:16px}
+  .f-grid{grid-template-columns:1fr}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:40;background:rgba(31,39,51,.97);padding:10px 12px calc(10px + env(safe-area-inset-bottom))}
+  .callbar a{display:flex;align-items:center;justify-content:center;min-height:48px;border-radius:999px;text-decoration:none;font:700 14px/1 var(--body);letter-spacing:.06em;text-transform:uppercase}
+  .callbar .c1{background:var(--cream);color:var(--navy)}
+  .callbar .c2{background:var(--blue);color:var(--navy)}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .will-rise{opacity:1;transform:none}
+  .btn:hover{transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="smile" viewBox="0 0 120 70">
+    <path d="M10 14 L16 10 M110 14 L104 10 M14 13 C30 58 90 58 106 13" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M70 46 C70 62 76 66 82 66 C90 66 94 58 88 42" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#main" aria-label="Bella's Bagels, back to top"><img src="https://cdn.prod.website-files.com/6a4bd95ed0346ee8d2e2d270/6a61758e22dad98433b3ce3e_bellas%20bagel%20logo%20white-darkblue.webp" alt="Bella's Bagels" width="150" height="80"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#menu">Menu</a>
+      <a href="#awards">Awards</a>
+      <a href="#catering">Catering</a>
+      <a href="#visit">Locations</a>
+      <a class="btn btn-dark" href="https://getbellasbagels.com/">Order online</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow"><svg aria-hidden="true" viewBox="0 0 120 70" style="color:#1f2733"><use href="#smile"/></svg>Award-winning NJ/NY bagels · Colorado Springs</p>
+      <h1 id="h1">Baked for boosting <span>happiness.</span></h1>
+      <p class="sub">Authentic bagels, scratch-made and baked fresh daily. Breakfast, lunch, coffee and catering.</p>
+      <div class="cta">
+        <a class="btn btn-dark" href="https://getbellasbagels.com/">Order online</a>
+        <a class="btn btn-ghost" href="#catering">Plan catering</a>
+      </div>
+    </div>
+    <div class="photo-frame">
+      <div class="ph"><img src="https://cdn.prod.website-files.com/6a4bd95ed0346ee8d2e2d270%2F6a6bbd3d1627eedf94231fdc_Bellas%20Bagel%20Hero%20Video%20FInal%20Draft%20v1_poster.0000000.jpg" alt="Bella's bagel sandwiches: bacon, egg and cheese, lox, turkey and more" width="1280" height="720"></div>
+      <div class="ticket" aria-live="polite">
+        <div class="t-head">Bella's North</div>
+        <div class="status"><span class="dot" id="dot"></span><span id="status">Baked fresh daily</span></div>
+        <p id="statusline">Mon–Fri 6AM–2PM · Sat–Sun 7AM–2PM</p>
+        <p class="t-note">Based on posted hours. Any closure is posted at the top of this site.</p>
+        <p><a href="https://www.google.com/maps/search/?api=1&amp;query=3582%20Blue%20Horizon%20View%2C%20Ste%20148%2C%20Colorado%20Springs%2C%20CO%2080924">Directions</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="awards" id="awards" aria-labelledby="aw-h">
+  <div class="wrap">
+    <div class="aw-head">
+      <div>
+        <p class="kicker">You made this happen</p>
+        <h2 id="aw-h">Yes, those are real awards.</h2>
+      </div>
+      <div class="rating"><b>4.7</b><span><span class="stars" aria-hidden="true">★★★★★</span><br>on Google reviews</span></div>
+    </div>
+    <div class="aw-grid">
+      <article class="aw-big">
+        <div class="txt">
+          <div>
+            <span class="tag">BagelFest West 2026 · Los Angeles</span>
+            <h3 style="margin-top:18px">Schmear of the year</h3>
+          </div>
+          <p>The West Coast's bagel championship crowned our <strong style="color:#fff">Pueblo Green Chile Cream Cheese</strong> #1. Colorado heat on an LA stage.</p>
+        </div>
+        <div class="img"><img src="https://cdn.prod.website-files.com/6a4bd95ed0346ee8d2e2d270/6a5d5586781dae66fe66d503_Bellas%20Bagels%20-%20Pueblo%20Green%20Chile%20Cream%20Cheese.webp" alt="A tub of Bella's Pueblo Green Chile Cream Cheese" width="900" height="720" loading="lazy"></div>
+      </article>
+      <div class="aw-side">
+        <article class="aw-sm">
+          <div class="num">100</div>
+          <div><p class="src">Yelp · 2025</p><h3>Top 100 Local Businesses</h3><p>Named one of Yelp&rsquo;s Top 100 local businesses, 2025.</p></div>
+        </article>
+        <article class="aw-sm">
+          <div class="num">’26</div>
+          <div><p class="src">The Gazette</p><h3>Best of the Springs</h3><p>Decided by the people who stand in our line every week.</p></div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="menu" id="menu" aria-labelledby="menu-h">
+  <div class="wrap menu-grid">
+    <div class="menu-photos">
+      <figure><img src="https://cdn.prod.website-files.com/6a4bd961d0346ee8d2e2d32a/6a6e533c93bf55bda98b7b79_6a4c0f9500e5f767e24cdd60_Copilot_20260706_115810.png" alt="Bacon, egg and cheese on a golden bagel" width="1536" height="1024" loading="lazy"><figcaption>The Bella</figcaption></figure>
+      <figure><img src="https://cdn.prod.website-files.com/6a4bd961d0346ee8d2e2d32a/6a6e533d93bf55bda98b7b85_6a4c1050b448acefbcb78566_Copilot_20260706_120534.png" alt="Turkey, bacon, lettuce and tomato on a seeded bagel" width="1536" height="1024" loading="lazy"><figcaption>The Shana</figcaption></figure>
+    </div>
+    <div>
+      <p class="kicker">Signature bagels &amp; sandwiches</p>
+      <h2 id="menu-h">Every sandwich earned its name.</h2>
+      <p class="lede">The sandwiches people drive across town for, each named after one of Jason &amp; Michelle's dogs.</p>
+      <ul class="board">
+        <li><h3>The Bella</h3><p>Thick-sliced bacon, sausage or porkroll/Taylor Ham, over-medium or scrambled eggs, and American cheese.</p></li>
+        <li><h3>The Shana</h3><p>Roasted deli turkey, thick-sliced bacon, lettuce, tomato, and your choice of house-made aioli.</p></li>
+        <li><h3>The Cooper</h3><p>Fresh, creamy sliced mozzarella, vine-ripened tomatoes, balsamic glaze and salt.</p></li>
+        <li><h3>The Gibson</h3><p>House-made chicken salad, lettuce, sliced tomato and red onion.</p></li>
+        <li><h3>The Sammie</h3><p>House-made egg salad, lettuce, sliced tomato and red onion.</p></li>
+        <li><h3>The Shelby</h3><p>Brooklyn's finest imported Nova Lox, cream cheese, red onion, tomato and capers.</p></li>
+      </ul>
+      <div class="menu-foot">
+        <a class="btn btn-blue" href="https://getbellasbagels.com/">Order online</a>
+        <a class="btn btn-ghost" href="https://getbellasbagels.com/menu">Full North menu</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="drops" aria-labelledby="drops-h">
+  <div class="wrap drops-inner">
+    <div>
+      <p class="kicker">Small batches. Zero warning.</p>
+      <h2 id="drops-h">Weekend specialty bagels</h2>
+      <p class="lede">They drop when the bakers feel inspired, get announced on Instagram, and are usually gone by noon.</p>
+      <p style="margin-top:20px"><a class="btn btn-ghost" href="https://www.instagram.com/BellasBagelsCOS">Follow the drops</a></p>
+    </div>
+    <div>
+      <div class="drop-now">
+        <div class="k">Currently offered · Sep–Oct</div>
+        <h3>Pumpkin Spice</h3>
+        <p>Baked golden with cinnamon, ginger, nutmeg and cloves, with or without the cinnamon sugar glaze. Daily while supplies last.</p>
+      </div>
+      <p class="always-k">All the months</p>
+      <div class="always"><span>Cinnamon Sugar Crunch</span><span>4-Cheese</span><span>Roasted Garlic &amp; Thyme</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="cater" id="catering" aria-labelledby="cater-h">
+  <div class="wrap">
+    <p class="kicker">Catering &amp; big orders</p>
+    <h2 id="cater-h">Catering: Holy Schmear!</h2>
+    <p class="lede">Tell us how many you're feeding. We'll work out the bagels, the coffee and the platters. Office hero status: unlocked.</p>
+    <div class="facts"><span><b>12</b>servings per platter</span><span><b>48 hrs</b>lead time, please</span></div>
+
+    <div class="plan">
+      <div class="controls">
+        <div>
+          <label class="ctl-label" for="people">How many people?</label>
+          <div class="stepper">
+            <button type="button" id="minus" aria-label="Fewer people">−</button>
+            <input id="people" type="number" inputmode="numeric" min="4" max="200" value="24" aria-describedby="ppl-unit">
+            <button type="button" id="plus" aria-label="More people">+</button>
+            <span class="unit" id="ppl-unit">people</span>
+          </div>
+          <input class="range" id="range" type="range" min="4" max="120" step="1" value="24" aria-label="People, slider">
+        </div>
+        <fieldset style="border:0;padding:0;margin:0">
+          <legend class="ctl-label">What are you serving?</legend>
+          <div class="items">
+            <label class="item"><input type="checkbox" id="box" checked><span><b>The Bagel Box</b><small>One dozen assorted scratch-made bagels and one pound of assorted cream cheese.</small></span></label>
+            <label class="item"><input type="checkbox" id="coffee" checked><span><b>Coffee in a Box</b><small>96oz of Loyal Coffee with cups, lids, creamer &amp; sweetener for eight. <em>Ready to pour</em></small></span></label>
+          </div>
+        </fieldset>
+        <fieldset style="border:0;padding:0;margin:0">
+          <legend class="ctl-label">Add platters (each feeds a dozen)</legend>
+          <div class="chips" id="platters">
+            <label class="chip"><input type="checkbox" value="Lox" checked><span>Lox</span></label>
+            <label class="chip"><input type="checkbox" value="Deli"><span>Deli</span></label>
+            <label class="chip"><input type="checkbox" value="Frittata"><span>Frittata</span></label>
+            <label class="chip"><input type="checkbox" value="Fruit"><span>Fruit</span></label>
+            <label class="chip"><input type="checkbox" value="Muffin"><span>Muffins</span></label>
+            <label class="chip"><input type="checkbox" value="Cookie"><span>Cookies</span></label>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="order" aria-labelledby="order-h">
+        <div class="order-h"><h3 id="order-h">Your order</h3><span id="feeds">for 24 people</span></div>
+        <ul class="lines" id="lines" aria-live="polite">
+          <li><span class="q">2</span><span><b>Bagel Boxes</b><small>24 bagels · 2 lb cream cheese</small></span></li>
+          <li><span class="q">3</span><span><b>Coffee in a Box</b><small>288oz · cups for 24</small></span></li>
+          <li><span class="q">2</span><span><b>Lox platters</b><small>Brooklyn Nova · 24 servings</small></span></li>
+        </ul>
+        <p class="ready" id="ready">Ready with <b>48 hrs</b> notice.</p>
+        <form id="cform" novalidate>
+          <label>Your name<input name="name" autocomplete="name" required></label>
+          <label>Phone<input name="phone" type="tel" autocomplete="tel" required></label>
+          <label class="full">Day you need it<input name="date" id="date" type="date"></label>
+          <button class="btn btn-blue" type="submit">Send this to Bella's</button>
+        </form>
+        <p class="note">A starting point. Bella's confirms the details with you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="visit" aria-labelledby="visit-h">
+  <div class="wrap">
+    <p class="kicker">Two locations · one Bella's brand</p>
+    <h2 id="visit-h">One Bella's you love, one you're gonna love.</h2>
+    <div class="loc-grid">
+      <article class="loc">
+        <div class="img"><img src="https://cdn.prod.website-files.com/6a4bd95ed0346ee8d2e2d270/6a5e947082f457e0db3288d5_IMG_3519.webp" alt="Inside Bella's North: blue walls, bagel lights and the bb logo" width="5712" height="4284"><span class="badge">Serving daily</span></div>
+        <div class="body">
+          <h3>Bagel Shop · Bella's North</h3>
+          <p class="where">Powers &amp; Old Ranch Road</p>
+          <p>The flagship: NJ/NY-style bagels, thoughtfully crafted sandwiches and exceptional coffee, served fresh from open to close.</p>
+          <dl class="hours" id="hours">
+            <dt>Mon–Fri</dt><dd id="h-wk">6AM–2PM</dd>
+            <dt>Sat–Sun</dt><dd id="h-we">7AM–2PM</dd>
+          </dl>
+          <p>3582 Blue Horizon View, Ste 148, Colorado Springs, CO 80924</p>
+          <div class="acts">
+            <a class="btn btn-blue" href="https://www.google.com/maps/search/?api=1&amp;query=3582%20Blue%20Horizon%20View%2C%20Ste%20148%2C%20Colorado%20Springs%2C%20CO%2080924">Directions</a>
+            <a class="btn btn-ghost" href="tel:+17193586343">Call 719.358.6343</a>
+          </div>
+        </div>
+      </article>
+      <article class="loc">
+        <div class="img"><img src="https://cdn.prod.website-files.com/6a4bd95ed0346ee8d2e2d270/6a70d7751ea0a746aac1d376_CreekwalkBellas.webp" alt="The Creekwalk building, future home of Bella's South, with the mountains behind" width="2048" height="1365"><span class="badge soon">Early 2027</span></div>
+        <div class="body">
+          <h3>Bagels &amp; Bistro · Bella's South</h3>
+          <p class="where">Creekwalk · under construction</p>
+          <p>Bella's, the full vision: same bagels, expanded menu, longer visits, and even dinner. Same soul, bigger table.</p>
+          <div class="acts">
+            <a class="btn btn-ghost" href="https://www.instagram.com/BellasBagelsCOS">Follow the build</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="story" aria-labelledby="story-h">
+  <div class="wrap story-grid">
+    <img class="mark" src="https://cdn.prod.website-files.com/6a4bd95ed0346ee8d2e2d270/6a4c0d1724800f4eb62bae45_smile-square-charcoal.webp" alt="" width="512" height="512" loading="lazy">
+    <div>
+      <h2 id="story-h">Two crazy technologists who have a deep love for bagels (and dogs!)</h2>
+      <p>Bella&rsquo;s is Jason &amp; Michelle&rsquo;s: authentic NJ/NY bagels, scratch-made and baked every morning in Colorado Springs, with the signature sandwiches named after their dogs.</p>
+      <div class="dogs" aria-label="The dogs"><span>Bella</span><span>Shana</span><span>Cooper</span><span>Gibson</span><span>Sammie</span><span>Shelby</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" aria-labelledby="faq-h">
+  <div class="wrap faq-grid">
+    <div>
+      <p class="kicker">Good to know</p>
+      <h2 id="faq-h">Before you head over</h2>
+    </div>
+    <div>
+      <details open><summary>Are you open right now?</summary><p>Mon–Fri 6AM–2PM, Sat–Sun 7AM–2PM at Bella's North. If we're ever closed during normal hours, you'll see a message at the top of the website, so pretty please don't call just to ask.</p></details>
+      <details><summary>Can I order ahead?</summary><p>Yes. Order online for pickup or delivery.</p></details>
+      <details><summary>How much notice for catering?</summary><p>48 hours, please. Each platter has 12 servings. Use the planner above to work out your order.</p></details>
+      <details><summary>Where's the full menu?</summary><p>Six signatures up top, but the full menu runs deeper: breakfast sandwiches, lox, schmears, coffee, the works. <a href="https://getbellasbagels.com/menu">See the North menu</a>.</p></details>
+      <details><summary>Do you have an allergen list?</summary><p>Yes, it's on our <a href="https://getbellasbagels.com/menu">menu page</a>.</p></details>
+      <details><summary>When does Bella's South open?</summary><p>The Bagels &amp; Bistro at Creekwalk is under construction, with its menu coming early 2027. Follow the build on <a href="https://www.instagram.com/BellasBagelsCOS">Instagram</a>.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="close" aria-labelledby="close-h">
+  <div class="wrap">
+    <svg aria-hidden="true" viewBox="0 0 120 70" style="color:#a9d6ee"><use href="#smile"/></svg>
+    <h2 id="close-h">Come hungry.</h2>
+    <p>Scratch-made NJ/NY bagels, baked fresh daily at Powers &amp; Old Ranch Road.</p>
+    <div class="cta">
+      <a class="btn btn-cream" href="https://getbellasbagels.com/">Order online</a>
+      <a class="btn btn-ghost" href="tel:+17193586343">Call 719.358.6343</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h3>Bella's Bagels</h3>
+        <p>3582 Blue Horizon View, Ste 148<br>Colorado Springs, CO 80924</p>
+        <p><a href="tel:+17193586343">719.358.6343</a></p>
+      </div>
+      <div>
+        <h3>Hours · North</h3>
+        <p>Mon–Fri 6AM–2PM</p>
+        <p>Sat–Sun 7AM–2PM</p>
+      </div>
+      <div>
+        <h3>Follow along</h3>
+        <div class="social">
+          <a href="https://www.instagram.com/BellasBagelsCOS">Instagram</a>
+          <a href="https://www.facebook.com/BellasBagelsCOS">Facebook</a>
+          <a href="https://www.tiktok.com/discover/bellas-bagels-colorado-springs">TikTok</a>
+        </div>
+      </div>
+    </div>
+    <p class="mockline">© 2026 Bella's Bagels, baked for boosting happiness.<br>Mockup made for Bella's Bagels by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick actions">
+  <a class="c1" href="tel:+17193586343">Call</a>
+  <a class="c2" href="https://getbellasbagels.com/">Order online</a>
+</nav>
+
+<script>
+(function(){
+  /* open-now ticket, from the posted hours, in Colorado time */
+  try{
+    var parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/Denver',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+    var get=function(t){for(var i=0;i<parts.length;i++)if(parts[i].type===t)return parts[i].value};
+    var days=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    var d=days.indexOf(get('weekday')), h=+get('hour')%24, m=+get('minute'), now=h+m/60;
+    var openAt=function(day){return (day===0||day===6)?7:6};
+    var st=document.getElementById('status'), dot=document.getElementById('dot'), line=document.getElementById('statusline');
+    var weekend=(d===0||d===6);
+    document.getElementById(weekend?'h-we':'h-wk').parentNode && document.getElementById(weekend?'h-we':'h-wk').classList.add('today');
+    if(now>=openAt(d)&&now<14){
+      st.textContent='Open now'; dot.className='dot open';
+      line.textContent='Until 2PM today. Come hungry.';
+    }else{
+      var next=now<openAt(d)?d:(d+1)%7;
+      st.textContent='Closed now'; dot.className='dot closed';
+      line.textContent='Opens '+(next===d?'today':'tomorrow')+' at '+openAt(next)+'AM.';
+    }
+  }catch(e){}
+
+  /* catering planner */
+  var ppl=document.getElementById('people'), range=document.getElementById('range');
+  var box=document.getElementById('box'), cof=document.getElementById('coffee');
+  var lines=document.getElementById('lines'), feeds=document.getElementById('feeds');
+  var plats=document.querySelectorAll('#platters input');
+  var names={Lox:['Lox platter','Brooklyn Nova'],Deli:['Deli platter','Deli platters &amp; scoops'],Frittata:['Frittata platter','Frittatas'],Fruit:['Fruit platter','Fresh fruit'],Muffin:['Muffin platter','Muffins'],Cookie:['Cookie platter','The cookie finish']};
+  var last='';
+  function clamp(n){n=parseInt(n,10);if(isNaN(n))n=24;return Math.max(4,Math.min(200,n))}
+  function li(q,b,s){return '<li><span class="q">'+q+'</span><span><b>'+b+'</b><small>'+s+'</small></span></li>'}
+  function render(){
+    var n=clamp(ppl.value), html='';
+    feeds.textContent='for '+n+' people';
+    if(box.checked){var b=Math.ceil(n/12);html+=li(b,b>1?'Bagel Boxes':'Bagel Box',(b*12)+' bagels · '+b+' lb cream cheese')}
+    if(cof.checked){var c=Math.ceil(n/8);html+=li(c,'Coffee in a Box',(c*96)+'oz · cups for '+(c*8))}
+    for(var i=0;i<plats.length;i++){if(plats[i].checked){var p=Math.ceil(n/12),nm=names[plats[i].value];html+=li(p,nm[0]+(p>1?'s':''),nm[1]+' · '+(p*12)+' servings')}}
+    if(!html)html='<li class="empty" style="display:block">Pick something on the left to build your order.</li>';
+    if(html!==last){lines.innerHTML=html;last=html;var f=lines.querySelectorAll('li');for(var k=0;k<f.length;k++)f[k].classList.add('flash')}
+  }
+  function setN(n){n=clamp(n);ppl.value=n;range.value=Math.min(n,120);render()}
+  document.getElementById('minus').addEventListener('click',function(){setN(clamp(ppl.value)-1)});
+  document.getElementById('plus').addEventListener('click',function(){setN(clamp(ppl.value)+1)});
+  ppl.addEventListener('change',function(){setN(ppl.value)});
+  ppl.addEventListener('input',function(){if(ppl.value!=='')render()});
+  range.addEventListener('input',function(){ppl.value=range.value;render()});
+  [box,cof].concat([].slice.call(plats)).forEach(function(el){el.addEventListener('change',render)});
+  last=lines.innerHTML;
+
+  /* earliest date: 48 hours from now */
+  var dt=document.getElementById('date'), ready=document.getElementById('ready');
+  var e=new Date(Date.now()+48*3600*1000);
+  var iso=e.getFullYear()+'-'+String(e.getMonth()+1).padStart(2,'0')+'-'+String(e.getDate()).padStart(2,'0');
+  dt.min=iso; dt.value=iso;
+  ready.innerHTML='Earliest day: <b>'+e.toLocaleDateString('en-US',{weekday:'long',month:'short',day:'numeric'})+'</b> (48 hrs lead time, please).';
+
+  document.getElementById('cform').addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var old=this.querySelector('.sent'); if(old)old.remove();
+    var p=document.createElement('p');p.className='sent';p.setAttribute('role','status');
+    p.textContent='Thanks. This is a mockup, so nothing was sent.';
+    this.appendChild(p);
+  });
+
+  /* gentle rise for things below the first screen */
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce&&'IntersectionObserver' in window){
+    var els=document.querySelectorAll('main section > .wrap > *, .loc, .aw-big, .aw-sm, .board li');
+    var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.remove('will-rise');io.unobserve(x.target)}})},{rootMargin:'0px 0px -6% 0px'});
+    var vh=window.innerHeight;
+    els.forEach(function(el){if(el.getBoundingClientRect().top>vh){el.classList.add('rise','will-rise');io.observe(el)}});
+  }
+})();
+</script>
+</body>
+</html>
