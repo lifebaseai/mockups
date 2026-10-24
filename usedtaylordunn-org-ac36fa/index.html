@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup usedtaylordunn-org-ac36fa 1 8a377f66 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Value Vehicles · Used Taylor Dunn &amp; Cushman industrial vehicles · Call 866-330-0260</title>
+<meta name="description" content="Refurbished Taylor Dunn and Cushman industrial vehicles from Fremont, OH and Highland, CA. Call Michelle at 866-330-0260 for pricing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --orange:#f7901e; --orange-deep:#e2780a; --orange-text:#a34c00;
+  --ink:#141414; --ink-2:#3b3b3b; --muted:#5c5c5c;
+  --line:#e6e1da; --paper:#faf8f5; --white:#fff;
+  --r:14px; --shadow:0 1px 2px rgba(0,0,0,.05),0 8px 28px rgba(20,20,20,.07);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Ubuntu,"Segoe UI",system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--white);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid #1f6feb;outline-offset:3px;border-radius:6px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+h1,h2,h3{line-height:1.12;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(30px,4vw,44px);font-weight:700}
+.kicker{font-size:14px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--orange-text);margin:0 0 12px}
+.lede{color:var(--ink-2);font-size:19px;max-width:560px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:12px;top:56px;background:#fff;padding:10px 14px;z-index:50}
+
+/* banner */
+.mock-banner{display:flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;background:#1c1a17;color:#f3efe9;font-size:15px;line-height:1.3;text-align:center;white-space:nowrap}
+.mock-banner a{color:#ffc27a;text-decoration:underline;text-underline-offset:3px;font-weight:500}
+
+/* header */
+.top{background:var(--orange);position:sticky;top:0;z-index:20;box-shadow:0 1px 0 rgba(0,0,0,.12)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:78px}
+.brand img{width:188px;height:auto}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{text-decoration:none;font-weight:500;font-size:16px;color:var(--ink);padding:12px 12px;border-radius:8px}
+.nav a:hover{background:rgba(0,0,0,.08)}
+.nav .call{background:var(--ink);color:#fff;padding:12px 18px;margin-left:8px;border-radius:999px;display:inline-flex;gap:8px;align-items:center}
+.nav .call:hover{background:#000}
+.call svg{width:18px;height:18px;flex:none}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;font:500 17px/1 Ubuntu,system-ui,sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:#000}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:#fff}
+.btn-orange{background:var(--orange);color:var(--ink)}
+.btn-orange:hover{background:#ff9d2e}
+.btn svg{width:20px;height:20px}
+
+/* hero */
+.hero{padding:64px 0 0;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.02fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(40px,5.6vw,66px);font-weight:700;letter-spacing:-.02em;margin-bottom:20px}
+.hero h1 span{display:block;color:var(--orange-text)}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.stage{position:relative;padding-bottom:18px}
+.stage::after{content:"";position:absolute;left:6%;right:6%;bottom:0;height:8px;border-radius:8px;background:var(--orange)}
+.stage img{width:100%;max-width:620px;margin:0 auto;transition:opacity .45s ease}
+.stage img.fading{opacity:0}
+.tag{position:absolute;left:4%;top:6%;background:var(--ink);color:#fff;font-size:14px;font-weight:500;padding:8px 14px 8px 12px;border-radius:999px;display:flex;gap:8px;align-items:center}
+.tag i{width:8px;height:8px;border-radius:50%;background:var(--orange);display:block}
+.dots{display:flex;gap:4px;justify-content:center;margin-top:16px}
+.dots button{width:44px;height:44px;border:0;background:none;cursor:pointer;padding:0;display:grid;place-items:center}
+.dots button::before{content:"";width:9px;height:9px;border-radius:50%;background:#cfc8bf;transition:background .2s,transform .2s}
+.dots button[aria-current="true"]::before{background:var(--ink);transform:scale(1.25)}
+
+.facts{margin-top:56px;background:var(--ink);color:#fff}
+.facts ul{list-style:none;margin:0 auto;padding:26px 28px;max-width:1160px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.facts li{display:flex;flex-direction:column;gap:2px;padding-left:16px;border-left:3px solid var(--orange)}
+.facts b{font-size:22px;font-weight:700}
+.facts span{font-size:15px;color:#d9d4cd}
+
+/* price request tool */
+.tool{background:var(--paper);padding:96px 0}
+.tool-head{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:36px}
+.tool-head p{margin:0;max-width:420px;color:var(--ink-2)}
+.picks{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:28px}
+.pick{appearance:none;font:inherit;color:inherit;text-align:left;background:#fff;border:2px solid var(--line);border-radius:var(--r);padding:10px 10px 14px;cursor:pointer;position:relative;transition:border-color .15s,box-shadow .15s,transform .15s}
+.pick:hover{border-color:#c9c0b4;transform:translateY(-2px)}
+.pick img{aspect-ratio:16/9;object-fit:contain;width:100%;max-width:220px}
+.pick .nm{display:block;font-weight:500;font-size:16px;margin:8px 4px 0;line-height:1.25}
+.pick .ck{position:absolute;top:10px;right:10px;width:26px;height:26px;border-radius:50%;border:2px solid #cfc8bf;background:#fff;display:grid;place-items:center}
+.pick .ck svg{width:14px;height:14px;opacity:0}
+.pick[aria-pressed="true"]{border-color:var(--orange-deep);box-shadow:0 0 0 3px rgba(247,144,30,.25)}
+.pick[aria-pressed="true"] .ck{background:var(--orange);border-color:var(--orange)}
+.pick[aria-pressed="true"] .ck svg{opacity:1}
+.parts-icon{aspect-ratio:16/9;display:grid;place-items:center;background:#f1ede7;border-radius:8px}
+.parts-icon svg{width:46px;height:46px}
+
+.tool-body{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.form{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px;box-shadow:var(--shadow)}
+.form h3{font-size:22px;margin-bottom:18px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:block;font-size:15px;font-weight:500;margin:0 0 6px}
+.field{margin-bottom:16px}
+input,textarea,select{width:100%;font:inherit;font-size:16px;color:var(--ink);background:#fff;border:1.5px solid #cfc8bf;border-radius:10px;padding:12px 14px;min-height:48px}
+textarea{min-height:96px;resize:vertical}
+input:focus,textarea:focus{border-color:var(--ink);outline:none;box-shadow:0 0 0 3px rgba(247,144,30,.35)}
+.form .btn{width:100%;margin-top:6px}
+.sent{margin:14px 0 0;padding:12px 14px;border-radius:10px;background:#fff3e3;color:var(--ink);font-weight:500}
+.sent[hidden]{display:none}
+
+.ticket{position:sticky;top:104px;background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.ticket-top{background:var(--ink);color:#fff;padding:18px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.ticket-top b{font-size:17px;font-weight:500}
+.ticket-top span{font-size:14px;color:#d9d4cd}
+.ticket-img{background:#fff;border-bottom:1px dashed var(--line)}
+.ticket-img img{max-width:420px;width:100%;margin:0 auto;transition:opacity .3s}
+.ticket dl{margin:0;padding:20px 24px 6px}
+.ticket dl div{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid #f0ebe4}
+.ticket dt{color:var(--muted);font-size:15px}
+.ticket dd{margin:0;font-weight:500;overflow-wrap:anywhere}
+.ticket dd.hint{color:var(--muted);font-weight:400;font-style:italic}
+input::placeholder,textarea::placeholder{color:#6e6e6e;opacity:1}
+.ticket .foot{padding:16px 24px 22px;font-size:15px;color:var(--ink-2)}
+.ticket .foot a{font-weight:500}
+
+/* how it works */
+.how{padding:100px 0}
+.how h2{max-width:640px;margin-bottom:48px}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0;counter-reset:s;border-top:2px solid var(--ink)}
+.steps li{padding:28px 28px 8px 0;position:relative}
+.steps li+li{padding-left:28px;border-left:1px solid var(--line)}
+.num{font-size:14px;font-weight:700;color:var(--orange-text);letter-spacing:.06em}
+.steps h3{font-size:24px;margin:10px 0 10px}
+.steps p{margin:0 0 18px;color:var(--ink-2)}
+.who{display:flex;align-items:center;gap:12px;font-size:15px}
+.who i{width:40px;height:40px;border-radius:50%;background:var(--orange);color:var(--ink);font-style:normal;font-weight:700;display:grid;place-items:center;font-size:15px;flex:none}
+.who b{display:block;font-weight:500}
+.who span{color:var(--muted)}
+
+/* team */
+.team{background:var(--paper);padding:100px 0}
+.team .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.photo{margin:0;max-width:640px}
+.photo img{border-radius:var(--r);box-shadow:var(--shadow);width:100%}
+.photo figcaption{font-size:15px;color:var(--muted);margin-top:10px}
+.team h2{margin-bottom:18px}
+.team p{color:var(--ink-2);margin:0 0 16px}
+.big{font-size:clamp(56px,7vw,84px);font-weight:700;line-height:1;color:var(--ink);letter-spacing:-.03em}
+.big small{font-size:18px;font-weight:500;letter-spacing:0;color:var(--ink-2);display:block;margin-top:6px}
+.duo{display:flex;gap:36px;margin:8px 0 28px}
+.roster{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.roster li{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.roster b{display:block;font-weight:500}
+.roster span{font-size:15px;color:var(--muted)}
+
+/* faq */
+.faq{padding:100px 0}
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
+.faq h2{margin-bottom:14px}
+details{border-bottom:1px solid var(--line)}
+details:first-child{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:22px 44px 22px 0;font-weight:500;font-size:19px;position:relative;min-height:44px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";position:absolute;right:8px;top:50%;width:12px;height:12px;border-right:2.5px solid var(--ink);border-bottom:2.5px solid var(--ink);transform:translateY(-70%) rotate(45deg);transition:transform .2s}
+details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+details p{margin:-6px 0 22px;color:var(--ink-2);max-width:620px}
+
+/* closing */
+.close{background:var(--orange);padding:88px 0}
+.close .wrap{display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}
+.close h2{max-width:560px}
+.close p{margin:12px 0 0;font-size:19px;color:var(--ink)}
+.close .actions{display:flex;gap:12px;flex-wrap:wrap}
+.close .btn-line:hover{background:var(--ink);color:var(--orange)}
+
+footer{background:var(--ink);color:#d9d4cd;padding:56px 0 40px;font-size:15px}
+footer .wrap{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:32px}
+footer img{width:170px}
+footer h2{font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#fff;font-weight:500;margin:0 0 12px}
+footer p{margin:0 0 6px}
+footer a{color:#fff;text-decoration:none;display:inline-block;padding:4px 0}
+footer a:hover{text-decoration:underline}
+.made{grid-column:1/-1;border-top:1px solid #333;padding-top:22px;margin-top:12px;color:#bdb6ad}
+.made a{display:inline;color:#ffc27a;text-decoration:underline}
+
+.callbar{display:none}
+
+/* motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .6s ease,transform .6s ease}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+
+/* responsive */
+@media (max-width:1020px){
+  .picks{grid-template-columns:repeat(3,1fr)}
+  .nav a:not(.call){display:none}
+}
+@media (max-width:860px){
+  .hero .wrap,.tool-body,.team .wrap,.faq .wrap{grid-template-columns:1fr}
+  .tool-head{flex-direction:column;align-items:start}
+  .ticket{position:static}
+  .steps{grid-template-columns:1fr;border-top:0}
+  .steps li,.steps li+li{padding:24px 0;border-left:0;border-top:1px solid var(--line)}
+  .steps li:first-child{border-top:2px solid var(--ink)}
+  .facts ul{grid-template-columns:1fr 1fr}
+  footer .wrap{grid-template-columns:1fr 1fr}
+  footer .wrap>div:first-child{grid-column:1/-1}
+}
+@media (max-width:600px){
+  body{font-size:16px;padding-bottom:68px}
+  .wrap{padding:0 20px}
+  .mock-banner{font-size:15px;padding:10px 12px}
+  .top .wrap{height:64px}
+  .brand img{width:150px}
+  .nav .call{padding:0;width:48px;height:48px;justify-content:center;margin:0}
+  .nav .call .t{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  .hero{padding-top:36px}
+  .hero .wrap{gap:28px}
+  .hero .lede{font-size:17px}
+  .hero .actions .btn{flex:1 1 100%}
+  .tag{font-size:13px;top:2%}
+  .facts{margin-top:36px}
+  .facts ul{padding:22px 20px;gap:18px 14px}
+  .facts b{font-size:19px}
+  .facts span{font-size:14px}
+  .tool,.how,.team,.faq{padding:68px 0}
+  .picks{grid-template-columns:repeat(2,1fr);gap:10px}
+  .form{padding:22px}
+  .row{grid-template-columns:1fr}
+  .ticket dl div{grid-template-columns:96px 1fr}
+  .roster{grid-template-columns:1fr}
+  .duo{gap:24px}
+  summary{font-size:17px}
+  .close{padding:64px 0}
+  .close .actions,.close .btn{width:100%}
+  footer .wrap{grid-template-columns:1fr}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--ink);padding:10px 14px calc(10px + env(safe-area-inset-bottom));gap:10px}
+  .callbar a{flex:1;min-height:48px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-weight:500}
+  .callbar .c{background:var(--orange);color:var(--ink)}
+  .callbar .p{flex:0 0 auto;padding:0 18px;color:#fff;border:1.5px solid #555}
+  .callbar svg{width:18px;height:18px}
+}
+@media (max-width:380px){
+  .mock-banner{font-size:14px}
+}
+</style>
+</head>
+<body>
+<div class="mock-banner">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Value Vehicles, home"><img src="https://www.usedtaylordunn.org/uploads/7/2/0/8/7208448/published/value-vehicles-main-logo.png?1718093199" alt="Value Vehicles" width="313" height="100"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#price">Vehicles</a>
+      <a href="#how">How it works</a>
+      <a href="#team">Our team</a>
+      <a href="#faq">Questions</a>
+      <a class="call" href="tel:+18663300260"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span class="t">Call Michelle 866-330-0260</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="h1">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Refurbished Taylor Dunn &amp; Cushman</p>
+      <h1 id="h1">New-vehicle performance. <span>Half the price.</span></h1>
+      <p class="lede">Burden carriers, step savers, tugs, stock chasers and tow tractors, rebuilt in Fremont, Ohio and delivered to your door.</p>
+      <div class="actions">
+        <a class="btn btn-dark" href="tel:+18663300260"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Call Michelle 866-330-0260</a>
+        <a class="btn btn-line" href="#price">Ask for a price</a>
+      </div>
+    </div>
+    <div>
+      <div class="stage">
+        <span class="tag"><i></i><span id="heroName">Burden Carrier</span></span>
+        <img id="heroImg" src="https://www.usedtaylordunn.org/uploads/7/2/0/8/7208448/longbed_orig.png" alt="Orange Taylor Dunn burden carrier with a long flat bed" width="768" height="432">
+      </div>
+      <div class="dots" id="dots" role="group" aria-label="Show a vehicle type"></div>
+    </div>
+  </div>
+  <div class="facts">
+    <ul>
+      <li><b>Since 2014</b><span>Refurbishing and selling</span></li>
+      <li><b>35+ years</b><span>John Murphy, in the industry</span></li>
+      <li><b>Ohio &amp; California</b><span>Fremont, OH and Highland, CA</span></li>
+      <li><b>To your door</b><span>From first call to delivery</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="tool" id="price" aria-labelledby="price-h">
+  <div class="wrap">
+    <div class="tool-head">
+      <div>
+        <p class="kicker">Pick your vehicle</p>
+        <h2 id="price-h">Ask Michelle for a price.</h2>
+      </div>
+      <p>Pricing is by phone. Choose what you need, tell us the job, and Michelle has what she needs to price it and the shipping.</p>
+    </div>
+
+    <div class="picks" id="picks" role="group" aria-label="Vehicle types">
+      <button type="button" class="pick" data-name="Burden Carrier" data-img="https://www.usedtaylordunn.org/uploads/7/2/0/8/7208448/longbed_orig.png" aria-pressed="true"><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="#141414" stroke-width="2.5"><path d="M3 8.5 6.5 12 13 4.5"/></svg></span><img src="https://www.usedtaylordunn.org/uploads/7/2/0/8/7208448/longbed_orig.png" alt="" width="768" height="432" loading="lazy"><span class="nm">Burden Carriers</span></button>
+      <button type="button" class="pick" data-name="Step Saver" data-img="https://www.usedtaylordunn.org/uploads/7/2/0/8/7208448/ss536_orig.png" aria-pressed="false"><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="#141414" stroke-width="2.5"><path d="M3 8.5 6.5 12 13 4.5"/></svg></span><img src="https://www.usedtaylordunn.org/uploads/7/2/0/8/7208448/ss536_orig.png" alt="" width="768" height="432" loading="lazy"><span class="nm">Step Savers</span></button>
+      <button type="button" class="pick" data-name="Tug" data-img="https://www.usedtaylordunn.org/uploads/7/2/0/8/7208448/c432s_orig.png" aria-pressed="false"><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="#141414" stroke-width="2.5"><path d="M3 8.5 6.5 12 13 4.5"/></svg></span><img src="https://www.usedtaylordunn.org/uploads/7/2/0/8/7208448/c432s_orig.png" alt="" width="768" height="432" loading="lazy"><span class="nm">Tugs</span></button>
+      <button type="button" class="pick" data-name="Stock Chaser" data-img="https://www.usedtaylordunn.org/uploads/7/2/0/8/7208448/stockchaser-td_orig.png" aria-pressed="false"><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="#141414" stroke-width="2.5"><path d="M3 8.5 6.5 12 13 4.5"/></svg></span><img src="https://www.usedtaylordunn.org/uploads/7/2/0/8/7208448/stockchaser-td_orig.png" alt="" width="768" height="432" loading="lazy"><span class="nm">Stock Chasers</span></button>
+      <button type="button" class="pick" data-name="Tow Tractor" data-img="https://www.usedtaylordunn.org/uploads/7/2/0/8/7208448/tow-tractors_orig.png" aria-pressed="false"><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="#141414" stroke-width="2.5"><path d="M3 8.5 6.5 12 13 4.5"/></svg></span><img src="https://www.usedtaylordunn.org/uploads/7/2/0/8/7208448/tow-tractors_orig.png" alt="" width="768" height="432" loading="lazy"><span class="nm">Tow Tractors</span></button>
+      <button type="button" class="pick" data-name="Parts" data-img="" aria-pressed="false"><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="#141414" stroke-width="2.5"><path d="M3 8.5 6.5 12 13 4.5"/></svg></span><span class="parts-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="#141414" stroke-width="2.5" stroke-linejoin="round"><circle cx="24" cy="24" r="7"/><path d="M24 5v6M24 37v6M5 24h6M37 24h6M10.6 10.6l4.2 4.2M33.2 33.2l4.2 4.2M10.6 37.4l4.2-4.2M33.2 14.8l4.2-4.2"/></svg></span><span class="nm">Parts</span></button>
+    </div>
+
+    <div class="tool-body">
+      <div class="form" id="reqForm" role="group" aria-labelledby="req-h">
+        <h3 id="req-h">About the job</h3>
+        <div class="row">
+          <div class="field"><label for="qty">How many</label><input id="qty" name="qty" type="number" min="1" max="99" value="1" inputmode="numeric"></div>
+          <div class="field"><label for="ship">Ship to (city, state)</label><input id="ship" name="ship" placeholder="e.g. Toledo, OH" autocomplete="address-level2"></div>
+        </div>
+        <div class="field"><label for="job">What does it need to do?</label><textarea id="job" name="job" placeholder="e.g. Haul tools and supplies between buildings, mostly indoors"></textarea></div>
+        <div class="row">
+          <div class="field"><label for="nm">Your name</label><input id="nm" name="nm" autocomplete="name" placeholder="Name"></div>
+          <div class="field"><label for="ct">Phone or email</label><input id="ct" name="ct" autocomplete="tel" placeholder="So Michelle can reply"></div>
+        </div>
+        <a class="btn btn-dark" id="sendBtn" href="mailto:michelle@value-vehicles.com?subject=Price%20request%3A%20Burden%20Carrier">Email this to Michelle</a>
+        <p class="sent" id="sent" role="status" hidden>Your email to Michelle is filled in. Press send in your email app and it reaches her.</p>
+      </div>
+
+      <aside class="ticket" aria-label="Your price request">
+        <div class="ticket-top"><b>Your price request</b><span>To Michelle Gillard</span></div>
+        <div class="ticket-img"><img id="tImg" src="https://www.usedtaylordunn.org/uploads/7/2/0/8/7208448/longbed_orig.png" alt="The vehicle you picked" width="768" height="432"></div>
+        <dl>
+          <div><dt>Vehicle</dt><dd id="tVeh">Burden Carrier</dd></div>
+          <div><dt>How many</dt><dd id="tQty">1</dd></div>
+          <div><dt>Ship to</dt><dd id="tShip" class="hint">Add a city and state</dd></div>
+          <div><dt>The job</dt><dd id="tJob" class="hint">Tell us what it needs to do</dd></div>
+        </dl>
+        <p class="foot">Rather talk it through? <a href="tel:+18663300260">Call Michelle at 866-330-0260</a></p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <p class="kicker">From first call to your door</p>
+    <h2 id="how-h">Three people, one vehicle that does exactly what you need.</h2>
+    <ol class="steps">
+      <li>
+        <span class="num">01</span>
+        <h3>Tell us the job</h3>
+        <p>We learn your application first, so the vehicle you buy does exactly what you want and need.</p>
+        <div class="who"><i aria-hidden="true">MG</i><div><b>Michelle Gillard</b><span>General Manager / Sales</span></div></div>
+      </li>
+      <li>
+        <span class="num">02</span>
+        <h3>Rebuilt in Fremont, Ohio</h3>
+        <p>At Gearheads Repair Solutions, our partner shop, industrial vehicles go for rebirth and a new life.</p>
+        <div class="who"><i aria-hidden="true">SK</i><div><b>Steve Karr</b><span>Owner, Gearheads shop</span></div></div>
+      </li>
+      <li>
+        <span class="num">03</span>
+        <h3>Delivered to your door</h3>
+        <p>Shipping is handled for you, right up to when the unit arrives. Ask for shipping prices with your quote.</p>
+        <div class="who"><i aria-hidden="true">TF</i><div><b>Tammy Fikes</b><span>Shipping Manager</span></div></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="team" id="team" aria-labelledby="team-h">
+  <div class="wrap">
+    <figure class="photo">
+      <img src="https://www.usedtaylordunn.org/uploads/7/2/0/8/7208448/published/john-murphy-about-us.jpg?1580970303" alt="John Murphy and a colleague standing outside open shop doors, with an orange industrial vehicle inside" width="640" height="351" loading="lazy">
+      <figcaption>John Murphy, owner</figcaption>
+    </figure>
+    <div>
+      <p class="kicker">Who you're buying from</p>
+      <h2 id="team-h">An educated buy, from people who know these vehicles.</h2>
+      <div class="duo">
+        <div class="big">35+<small>years for John Murphy, owner</small></div>
+        <div class="big">55<small>years combined with Steve Karr</small></div>
+      </div>
+      <p>John and Steve teamed up in 2015 with one shared aim: the best refurbished industrial vehicles anywhere in the USA.</p>
+      <ul class="roster">
+        <li><b>John Murphy</b><span>Owner</span></li>
+        <li><b>Steve Karr</b><span>Owner, Gearheads, Fremont OH shop</span></li>
+        <li><b>Michelle Gillard</b><span>General Manager / Sales</span></li>
+        <li><b>Tammy Fikes</b><span>Shipping Manager</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq" aria-labelledby="faq-h">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Good to know</p>
+      <h2 id="faq-h">Questions, answered.</h2>
+      <p class="lede">Anything else, Michelle is a call away.</p>
+    </div>
+    <div>
+      <details open><summary>How much does a vehicle cost?</summary><p>Pricing is by phone. Call Michelle at 866-330-0260, or send a price request above. The aim: the reliable performance of new, at half the price.</p></details>
+      <details><summary>Which brands do you sell?</summary><p>Refurbished Taylor Dunn and Cushman industrial vehicles.</p></details>
+      <details><summary>Can you ship it to me?</summary><p>Yes. We take care of it from the first call or email to when the unit arrives at your door. Ask Michelle for shipping prices.</p></details>
+      <details><summary>Where are you located?</summary><p>Fremont, Ohio and Highland, California.</p></details>
+      <details><summary>Who does the refurbishing?</summary><p>Gearheads Repair Solutions in Fremont, Ohio, owned and run by Steve Karr.</p></details>
+      <details><summary>Do you sell parts?</summary><p>Yes. Tell Michelle the part you need by phone or email, or pick Parts in the price request above.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="close" aria-labelledby="close-h">
+  <div class="wrap">
+    <div>
+      <h2 id="close-h">Need a vehicle that works like new?</h2>
+      <p>Call Michelle for pricing and shipping.</p>
+    </div>
+    <div class="actions">
+      <a class="btn btn-dark" href="tel:+18663300260">Call 866-330-0260</a>
+      <a class="btn btn-line" href="mailto:michelle@value-vehicles.com">Email Michelle</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <img src="https://www.usedtaylordunn.org/uploads/7/2/0/8/7208448/published/value-vehicles-main-logo.png?1718093199" alt="Value Vehicles" width="313" height="100" loading="lazy">
+      <p style="margin-top:14px">Refurbishing and selling Taylor Dunn &amp; Cushman industrial vehicles since 2014.</p>
+    </div>
+    <div>
+      <h2>Talk to Michelle</h2>
+      <p><a href="tel:+18663300260">866-330-0260</a></p>
+      <p><a href="mailto:michelle@value-vehicles.com">michelle@value-vehicles.com</a></p>
+    </div>
+    <div>
+      <h2>Locations</h2>
+      <p>Fremont, Ohio</p>
+      <p>Highland, California</p>
+    </div>
+    <p class="made">Mockup made for Value Vehicles by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick contact">
+  <a class="c" href="tel:+18663300260"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Call Michelle</a>
+  <a class="p" href="#price">Get a price</a>
+</nav>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var base = 'https://www.usedtaylordunn.org/uploads/7/2/0/8/7208448/';
+  var fleet = [
+    {n:'Burden Carrier', f:'longbed_orig.png', a:'Orange Taylor Dunn burden carrier with a long flat bed'},
+    {n:'Step Saver', f:'ss536_orig.png', a:'Yellow Taylor Dunn step saver with a seat and rear rail'},
+    {n:'Tug', f:'c432s_orig.png', a:'Orange Taylor Dunn tug with a low cargo bed'},
+    {n:'Stock Chaser', f:'stockchaser-td_orig.png', a:'Orange Taylor Dunn stand-up stock chaser'},
+    {n:'Tow Tractor', f:'tow-tractors_orig.png', a:'Orange Taylor Dunn tow tractor'}
+  ];
+
+  /* hero showroom: cycles only while on screen */
+  var img = document.getElementById('heroImg'), name = document.getElementById('heroName'), dots = document.getElementById('dots');
+  var cur = 0, timer = null, visible = false;
+  fleet.forEach(function(v,i){
+    var b = document.createElement('button'); b.type='button';
+    b.setAttribute('aria-label','Show '+v.n); if(i===0) b.setAttribute('aria-current','true');
+    b.addEventListener('click',function(){ show(i); restart(); });
+    dots.appendChild(b);
+    var pre = new Image(); pre.src = base + v.f;
+  });
+  function show(i){
+    if(i===cur) return; cur=i;
+    var v = fleet[i];
+    [].forEach.call(dots.children,function(d,j){ d.setAttribute('aria-current', j===i?'true':'false'); });
+    if(reduce){ img.src=base+v.f; img.alt=v.a; name.textContent=v.n; return; }
+    img.classList.add('fading');
+    setTimeout(function(){ img.src=base+v.f; img.alt=v.a; name.textContent=v.n; img.classList.remove('fading'); },300);
+  }
+  function restart(){ clearInterval(timer); timer=null; if(visible && !reduce) timer=setInterval(function(){ show((cur+1)%fleet.length); },3800); }
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){ visible = es[0].isIntersecting; restart(); },{threshold:.3}).observe(img);
+  }
+
+  /* price request */
+  var picks = [].slice.call(document.querySelectorAll('.pick'));
+  var tImg = document.getElementById('tImg'), last = picks[0];
+  var $ = function(id){ return document.getElementById(id); };
+  function update(){
+    var on = picks.filter(function(p){ return p.getAttribute('aria-pressed')==='true'; });
+    var qty = Math.max(1, parseInt($('qty').value,10) || 1);
+    var names = on.map(function(p){ var n=p.dataset.name; return (qty>1 && n!=='Parts') ? n+'s' : n; });
+    $('tVeh').textContent = names.length ? names.join(', ') : 'Pick a vehicle above';
+    $('tQty').textContent = qty;
+    [['ship','tShip','Add a city and state'],['job','tJob','Tell us what it needs to do']].forEach(function(f){
+      var v = $(f[0]).value.trim(), d = $(f[1]);
+      d.textContent = v || f[2]; d.classList.toggle('hint', !v);
+    });
+    var showP = (last && last.getAttribute('aria-pressed')==='true' && last.dataset.img) ? last : on.filter(function(p){return p.dataset.img;}).pop();
+    if(showP && tImg.getAttribute('src')!==showP.dataset.img){ tImg.src = showP.dataset.img; tImg.alt = showP.dataset.name; }
+    tImg.parentNode.style.display = showP ? '' : 'none';
+    var g = function(id){ return $(id).value.trim(); };
+    var veh = names.length ? names.join(', ') : 'Not sure yet';
+    var body = 'Hi Michelle,\n\nI would like a price on:\n\nVehicle: '+veh+'\nHow many: '+qty+'\nShip to: '+(g('ship')||'')+'\nThe job: '+(g('job')||'')+'\n\nName: '+(g('nm')||'')+'\nPhone or email: '+(g('ct')||'')+'\n';
+    $('sendBtn').href = 'mailto:michelle@value-vehicles.com?subject='+encodeURIComponent('Price request: '+veh)+'&body='+encodeURIComponent(body);
+  }
+  picks.forEach(function(p){
+    p.addEventListener('click',function(){
+      var now = p.getAttribute('aria-pressed')!=='true';
+      p.setAttribute('aria-pressed', now?'true':'false');
+      if(now) last = p;
+      update();
+    });
+  });
+  ['qty','ship','job','nm','ct'].forEach(function(id){ $(id).addEventListener('input',update); });
+  update();
+  $('sendBtn').addEventListener('click',function(){ update(); $('sent').hidden=false; });
+
+  /* gentle rise for what starts below the first screen */
+  if(!reduce && 'IntersectionObserver' in window){
+    var fold = window.innerHeight;
+    var els = document.querySelectorAll('.tool-head,.picks,.tool-body,.how h2,.steps li,.team .photo,.team .wrap>div,.faq .wrap>div,.close .wrap');
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.remove('will-rise'); io.unobserve(en.target); } });
+    },{rootMargin:'0px 0px -8% 0px'});
+    [].forEach.call(els,function(el){
+      if(el.getBoundingClientRect().top > fold){ el.classList.add('rise','will-rise'); io.observe(el); }
+    });
+  }
+})();
+</script>
+</body>
+</html>
