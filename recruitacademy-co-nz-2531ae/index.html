@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup recruitacademy-co-nz-2531ae 1 b2e9f070 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Recruit Academy | NZ Police Preparation Course</title>
+<meta name="description" content="Prepare for the NZ Police psychometric tests, the PAT and interviews with coaches who are ex-NZ Police officers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#051223;--navy:#0d1b2d;--navy2:#142234;--line:#24344a;
+  --cyan:#29bdf0;--cyan-dk:#0a6a92;--gold:#f2b134;
+  --paper:#f4f2ed;--text:#e9eef5;--mute:#a9b6c6;--dark:#0d1b2d;--grey:#4a5666;
+  --head:"Oswald","Arial Narrow",Arial,sans-serif;
+  --body:"Source Sans 3",-apple-system,"Segoe UI",Roboto,sans-serif;
+  --wrap:1200px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--text);font:400 18px/1.55 var(--body)}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--head);font-weight:600;text-transform:uppercase;letter-spacing:.01em;line-height:1.02;margin:0}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:12px;top:56px;z-index:50;background:#fff;color:var(--dark);padding:10px 14px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.eyebrow{font:600 13px/1.3 var(--head);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.eyebrow span{color:var(--mute);font-weight:500}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;
+  font:600 16px/1 var(--head);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border-radius:3px;
+  border:2px solid transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.btn-main{background:var(--cyan);color:var(--ink)}
+.btn-main:hover{background:#5ccff6}
+.btn-ghost{border-color:#3a4c64;color:var(--text);background:transparent}
+.btn-ghost:hover{border-color:var(--cyan)}
+.btn svg{width:16px;height:16px}
+
+/* Mockup banner */
+.mock{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:var(--paper);
+  color:var(--dark);font:400 15px/1.3 var(--body);text-align:center;border-bottom:1px solid #ddd8cc}
+.mock a{color:var(--cyan-dk);font-weight:700;text-decoration:underline;text-underline-offset:3px;margin-left:.3em}
+
+/* Header */
+.top{position:sticky;top:0;z-index:20;background:rgba(5,18,35,.94);backdrop-filter:blur(8px);border-bottom:1px solid #16263a}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:24px}
+.logo img{width:190px;height:auto}
+.nav{display:flex;align-items:center;gap:28px}
+.nav a{font:500 14px/1 var(--head);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--mute);padding:14px 0}
+.nav a:hover{color:#fff}
+.nav .tel{color:#fff}
+.nav .btn{min-height:44px;padding:0 18px;font-size:14px;color:var(--ink)}
+
+/* Hero */
+.hero{padding:56px 0 64px;background:linear-gradient(180deg,var(--ink) 0%,var(--navy) 100%)}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.12fr;gap:56px;align-items:center}
+.hero h1{font-size:76px;margin:18px 0 22px;color:#fff}
+.hero h1 em{font-style:normal;color:var(--cyan)}
+.lede{font-size:20px;color:#cdd7e3;max-width:30em}
+.lede strong{color:#fff;font-weight:600}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.quote-mini{margin-top:36px;padding-left:18px;border-left:2px solid var(--gold);font-size:16px;color:var(--mute);max-width:28em}
+.quote-mini b{display:block;margin-top:6px;font:500 13px/1 var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.stars{color:var(--gold);letter-spacing:2px;font-size:14px}
+
+.frame{position:relative;aspect-ratio:1475/1152;border-radius:4px;overflow:hidden;background:var(--navy2);box-shadow:0 30px 60px -30px rgba(0,0,0,.8)}
+.frame img{width:100%;height:100%;object-fit:cover}
+.frame::after{content:"";position:absolute;inset:55% 0 0 0;background:linear-gradient(180deg,rgba(5,18,35,0),rgba(5,18,35,.92))}
+.road{position:absolute;left:5%;right:5%;bottom:7%;z-index:2;display:flex;align-items:center;gap:12px}
+.pin{flex:none;font:600 13px/1 var(--head);letter-spacing:.14em;text-transform:uppercase;padding:9px 12px;border-radius:2px}
+.pin-a{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.35)}
+.pin-b{background:var(--cyan);color:var(--ink)}
+.track{position:relative;flex:1;height:2px;background:linear-gradient(90deg,rgba(255,255,255,.5),var(--cyan));transform-origin:left}
+.track::after{content:"";position:absolute;right:-1px;top:-4px;border:5px solid transparent;border-left:7px solid var(--cyan);border-right:0}
+.track span{position:absolute;left:50%;top:-30px;transform:translateX(-50%);white-space:nowrap;font:600 12px/1 var(--head);letter-spacing:.2em;color:#fff;text-transform:uppercase}
+@media (prefers-reduced-motion:no-preference){
+  .draw .track{animation:draw 1.6s cubic-bezier(.6,0,.2,1) .3s both}
+  .draw .pin-b{animation:pop .5s ease 1.8s both}
+}
+@keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes pop{from{transform:scale(.85);opacity:.4}to{transform:none;opacity:1}}
+
+/* Intake */
+.intake{background:var(--navy);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.intake .wrap{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:36px;padding-top:26px;padding-bottom:26px}
+.when{display:flex;align-items:baseline;gap:10px;font-family:var(--head);text-transform:uppercase}
+.when .d{font-size:58px;font-weight:600;color:#fff;line-height:.9}
+.when .m{font-size:18px;letter-spacing:.12em;color:var(--cyan);line-height:1.15}
+.when .m small{display:block;color:var(--mute);font-size:13px}
+.intake h2{font-size:22px;color:#fff;margin:6px 0 4px;letter-spacing:.03em}
+.intake p{font-size:16px;color:var(--mute)}
+.intake p b{color:var(--gold);font-weight:600}
+.intake.past .wrap{grid-template-columns:1fr auto}
+
+/* Stats */
+.stats{background:var(--paper);color:var(--dark)}
+.stats ul{list-style:none;margin:0 auto;padding:40px 28px;max-width:var(--wrap);display:grid;grid-template-columns:repeat(4,1fr)}
+.stats li{padding:0 24px;border-left:1px solid #d6d1c4}
+.stats li:first-child{border-left:0;padding-left:0}
+.stats strong{display:block;font:600 48px/1 var(--head);color:var(--dark)}
+.stats span{display:block;margin-top:8px;font-size:15px;color:var(--grey);line-height:1.35}
+
+/* Sections */
+section{scroll-margin-top:80px}
+.sec{padding:110px 0}
+.sec-head{max-width:720px;margin-bottom:52px}
+.sec-head h2{font-size:56px;color:#fff;margin-top:14px}
+.sec-head p{margin-top:18px;color:var(--mute);font-size:19px}
+.light{background:var(--paper);color:var(--dark)}
+.light .sec-head h2{color:var(--dark)}
+.light .sec-head p{color:var(--grey)}
+.light .eyebrow{color:#9a5d00}
+.light .eyebrow span{color:#6b7380}
+
+/* Path finder */
+.finder{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:start}
+.finder fieldset{border:0;margin:0;padding:0}
+.finder legend{font:600 22px/1.2 var(--head);text-transform:uppercase;letter-spacing:.03em;color:var(--dark);margin-bottom:18px;padding:0}
+.opt{position:relative;display:block;margin-bottom:10px}
+.opt input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.opt>span{display:flex;align-items:center;gap:14px;min-height:60px;padding:14px 18px;background:#fff;border:1px solid #ddd8cc;border-radius:4px;
+  font-size:18px;font-weight:600;color:var(--dark);transition:border-color .2s,box-shadow .2s,background .2s}
+.opt>span::before{content:"";flex:none;width:18px;height:18px;border-radius:50%;border:2px solid #9aa3ae;transition:all .2s}
+.opt small{display:block;font-weight:400;font-size:15px;color:var(--grey)}
+.opt input:hover+span{border-color:#9aa3ae}
+.opt input:checked+span{border-color:var(--dark);box-shadow:inset 4px 0 0 var(--dark)}
+.opt input:checked+span::before{border-color:var(--dark);background:var(--dark);box-shadow:inset 0 0 0 3px #fff}
+.stats+.sec{padding-top:72px}
+.stats ul{border-bottom:1px solid #d6d1c4}
+.opt input:focus-visible+span{outline:3px solid var(--cyan-dk);outline-offset:2px}
+
+.result{background:var(--navy);color:var(--text);border-radius:6px;padding:40px;box-shadow:0 30px 60px -36px rgba(5,18,35,.7);position:sticky;top:96px}
+.r-tag{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.chip{font:600 12px/1 var(--head);letter-spacing:.14em;text-transform:uppercase;padding:7px 10px;border-radius:2px;background:rgba(41,189,240,.14);color:var(--cyan)}
+.chip.g{background:rgba(242,177,52,.14);color:var(--gold)}
+.result h3{font-size:36px;color:#fff;margin:18px 0 14px}
+.result .why{font-size:18px;color:#cdd7e3}
+.result ul{list-style:none;padding:0;margin:24px 0 0;border-top:1px solid var(--line)}
+.result li{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:17px}
+.result li::before{content:"";flex:none;width:14px;height:8px;margin-top:8px;border-left:2px solid var(--cyan);border-bottom:2px solid var(--cyan);transform:rotate(-45deg)}
+.result .also{margin-top:18px;font-size:16px;color:var(--mute)}
+.result .cta{margin-top:28px}
+.result.swap{animation:fade .35s ease}
+@keyframes fade{from{opacity:.3;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* Journey */
+.journey{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:0 0 80px;padding:0;list-style:none;counter-reset:w}
+.journey::before{content:"";position:absolute;left:0;right:0;top:11px;height:2px;background:linear-gradient(90deg,var(--line),var(--cyan))}
+.journey li{position:relative;padding:44px 28px 0 0}
+.journey li::before{content:"";position:absolute;left:0;top:4px;width:16px;height:16px;border-radius:50%;background:var(--ink);border:2px solid var(--cyan)}
+.journey li:last-child::before{background:var(--cyan)}
+.journey .wk{font:500 14px/1 var(--head);letter-spacing:.16em;text-transform:uppercase;color:var(--cyan)}
+.journey h3{font-size:26px;color:#fff;margin:10px 0 0;max-width:12ch}
+.pillars{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--line)}
+.pillar{display:grid;grid-template-columns:64px 1fr;gap:8px;padding:34px 36px 34px 0;border-bottom:1px solid var(--line)}
+.pillar:nth-child(even){padding-left:36px;padding-right:0;border-left:1px solid var(--line)}
+.pillar .n{font:600 34px/1 var(--head);color:var(--cyan)}
+.pillar h3{font-size:24px;color:#fff;margin-bottom:10px}
+.pillar p{font-size:17px;color:var(--mute)}
+.pat{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;padding:0;list-style:none}
+.pat li{font:500 13px/1 var(--head);letter-spacing:.1em;text-transform:uppercase;padding:8px 10px;border:1px solid #33465f;border-radius:2px;color:#dfe7f0}
+
+/* Badge / community */
+.badge-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:start}
+.group{border-radius:4px;overflow:hidden;aspect-ratio:4/3;background:#ddd}
+.group img{width:100%;height:100%;object-fit:cover}
+.cap{margin-top:12px;font-size:15px;color:var(--grey)}
+.parent{position:relative;margin:0;padding:0}
+.parent blockquote{margin:0;font:500 26px/1.28 var(--head);text-transform:none;color:var(--dark)}
+.parent blockquote::before{content:"\201C";display:block;font:600 80px/.6 var(--head);color:#9a5d00;margin-bottom:12px}
+.parent figcaption{margin-top:20px;font-size:16px;color:var(--grey)}
+.parent figcaption b{display:block;font:600 15px/1.2 var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--dark)}
+.prashant{margin-top:36px;padding:24px 26px;background:#fff;border:1px solid #e1dccf;border-radius:4px;font-size:17px;color:#2c3746}
+.prashant b{display:block;margin-top:10px;font:600 13px/1.2 var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--grey)}
+.voices{display:grid;grid-template-columns:repeat(2,1fr);gap:56px;margin-top:72px;padding-top:44px;border-top:1px solid #d6d1c4}
+.voices figure{margin:0}
+.voices blockquote{margin:10px 0 0;font-size:20px;line-height:1.5;color:#26303d}
+.voices figcaption{margin-top:12px;font:600 14px/1 var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--dark)}
+.voices .stars{color:#9a5d00}
+
+/* Coaches + values */
+.coaches{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.video{position:relative;display:flex;flex-direction:column;justify-content:flex-end;aspect-ratio:4/5;padding:28px;text-decoration:none;color:#fff;
+  background:var(--navy2);border:1px solid var(--line);border-radius:6px;box-shadow:0 30px 60px -30px rgba(0,0,0,.7);overflow:hidden;transition:border-color .2s}
+.video img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 12%}
+.video::after{content:"";position:absolute;inset:35% 0 0 0;background:linear-gradient(180deg,rgba(5,18,35,0),rgba(5,18,35,.94) 62%)}
+.video>span{position:relative;z-index:1}
+.video:hover{border-color:var(--cyan)}
+.v-play{display:grid;place-items:center;width:72px;height:72px;margin-bottom:22px;border-radius:50%;background:var(--gold);color:var(--ink);
+  box-shadow:0 0 0 10px rgba(242,177,52,.18);transition:transform .2s}
+.v-play svg{width:28px;height:28px;margin-left:4px}
+.video:hover .v-play{transform:scale(1.06)}
+.v-title{font:600 44px/1 var(--head);text-transform:uppercase}
+.v-who{display:block;margin-top:12px;font:600 17px/1.3 var(--head);letter-spacing:.06em;text-transform:uppercase}
+.v-who span{display:block;margin-top:4px;font:500 13px/1.2 var(--head);letter-spacing:.16em;color:var(--cyan)}
+.v-cta{margin-top:16px;font-size:16px;color:#cdd7e3;text-decoration:underline;text-underline-offset:3px}
+.coach q{quotes:"\201C" "\201D";color:#dfe7f0}
+.sessions{display:grid;grid-template-columns:1.35fr 1fr;gap:16px;margin:0 0 72px}
+.sessions figure{margin:0;border-radius:4px;overflow:hidden;aspect-ratio:3/2;background:var(--navy2)}
+.sessions figure+figure{aspect-ratio:auto}
+.sessions img{width:100%;height:100%;object-fit:cover;object-position:50% 14%}
+.sessions-cap{grid-column:1/-1;font-size:15px;color:var(--mute);margin-top:-4px}
+.coach-list{display:grid;gap:0;border-top:1px solid var(--line)}
+.coach{padding:26px 0;border-bottom:1px solid var(--line)}
+.coach h3{font-size:30px;color:#fff}
+.coach p{margin-top:8px;color:var(--mute);font-size:17px}
+.coach .role{font:500 13px/1 var(--head);letter-spacing:.16em;text-transform:uppercase;color:var(--cyan);margin-top:10px}
+.values{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:72px;border:1px solid var(--line);border-radius:4px}
+.values div{padding:24px;border-left:1px solid var(--line)}
+.values div:first-child{border-left:0}
+.values b{display:block;font:600 22px/1 var(--head);text-transform:uppercase;letter-spacing:.04em;color:var(--gold)}
+.values span{display:block;margin-top:8px;font-size:15px;color:var(--mute)}
+
+/* FAQ */
+.faq{max-width:860px}
+.faq details{border-bottom:1px solid #d6d1c4}
+.faq details:first-child{border-top:1px solid #d6d1c4}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:44px;padding:22px 0;
+  font:600 22px/1.25 var(--head);text-transform:uppercase;letter-spacing:.02em;color:var(--dark)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";flex:none;width:12px;height:12px;border-right:2px solid var(--dark);border-bottom:2px solid var(--dark);transform:rotate(45deg) translate(-3px,-3px);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(-135deg)}
+.faq details p{padding:0 40px 24px 0;color:#2c3746;font-size:18px}
+
+/* Enrol */
+.enrol{background:var(--navy)}
+.enrol-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.enrol h2{font-size:58px;color:#fff;margin:14px 0 20px}
+.contact-list{list-style:none;margin:36px 0 0;padding:0;border-top:1px solid var(--line)}
+.contact-list li{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:16px 0;border-bottom:1px solid var(--line);font-size:17px}
+.contact-list .k{font:500 13px/1.8 var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.contact-list a{color:#fff;text-decoration:none;border-bottom:1px solid #3a4c64;padding:6px 0}
+.contact-list a:hover{border-color:var(--cyan)}
+.socials{display:flex;gap:10px;margin-top:22px}
+.socials a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid #3a4c64;border-radius:3px;color:#fff}
+.socials a:hover{border-color:var(--cyan)}
+.socials svg{width:20px;height:20px;fill:currentColor}
+form{background:var(--paper);color:var(--dark);border-radius:6px;padding:36px}
+form h3{font-size:26px;margin-bottom:6px}
+form .sub{font-size:16px;color:var(--grey);margin-bottom:22px}
+.field{margin-bottom:16px}
+.field label{display:block;font:600 13px/1 var(--head);letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
+.field input,.field select,.field textarea{width:100%;min-height:50px;padding:12px 14px;font:400 17px/1.4 var(--body);color:var(--dark);background:#fff;border:1px solid #c9c3b5;border-radius:3px}
+.field textarea{min-height:96px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:3px solid var(--cyan-dk);outline-offset:1px;border-color:var(--dark)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+form .btn{width:100%;margin-top:6px;background:var(--dark);color:#fff}
+form .btn:hover{background:#1d3352}
+.thanks{display:none;margin-top:16px;padding:14px 16px;background:#fff;border-left:4px solid var(--cyan-dk);font-size:17px}
+.sent .thanks{display:block}
+
+/* Footer */
+footer{padding:48px 0 40px;border-top:1px solid #16263a;font-size:15px;color:var(--mute)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;align-items:center}
+footer img{width:160px;height:auto}
+footer a{color:#cdd7e3}
+.made{width:100%;padding-top:20px;border-top:1px solid #16263a}
+
+/* Phone call bar */
+.callbar{display:none}
+
+/* Rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:1080px){
+  .hero h1{font-size:60px}
+  .nav .hide-m{display:none}
+}
+@media (max-width:900px){
+  body{font-size:17px}
+  .wrap{padding:0 20px}
+  .nav a:not(.btn){display:none}
+  .top .wrap{height:64px}
+  .logo img{width:160px}
+  .hero{padding:0 0 44px}
+  .hero .wrap{grid-template-columns:1fr;gap:28px;padding:0}
+  .hero .copy{padding:0 20px;order:2}
+  .frame{order:1;border-radius:0;box-shadow:none}
+  .hero h1{font-size:46px;margin:12px 0 16px}
+  .lede{font-size:18px}
+  .cta{margin-top:24px}
+  .cta .btn{flex:1 1 100%}
+  .quote-mini{margin-top:28px}
+  .pin{font-size:11px;padding:8px 9px}
+  .track span{font-size:11px;top:-24px}
+  .intake .wrap{grid-template-columns:auto 1fr;gap:18px 22px}
+  .intake .btn{grid-column:1/-1}
+  .when .d{font-size:50px}
+  .intake h2{font-size:18px;line-height:1.15}
+  .intake .eyebrow{font-size:12px}
+  .stats ul{grid-template-columns:1fr 1fr;gap:28px 0;padding:32px 20px}
+  .stats li{padding:0 16px}
+  .stats li:nth-child(odd){border-left:0;padding-left:0}
+  .stats strong{font-size:40px}
+  .sec{padding:76px 0}
+  .sec-head{margin-bottom:36px}
+  .sec-head h2{font-size:40px}
+  .sec-head p{font-size:17px}
+  .finder{grid-template-columns:1fr;gap:20px}
+  .result{position:static;padding:28px 22px}
+  .result h3{font-size:30px}
+  .journey{grid-template-columns:1fr;margin-bottom:56px}
+  .journey::before{left:7px;right:auto;top:6px;bottom:6px;width:2px;height:auto;background:linear-gradient(180deg,var(--line),var(--cyan))}
+  .journey li{padding:0 0 30px 40px}
+  .journey li:last-child{padding-bottom:0}
+  .journey li::before{top:2px}
+  .pillars{grid-template-columns:1fr}
+  .pillar,.pillar:nth-child(even){grid-template-columns:48px 1fr;padding:26px 0;border-left:0}
+  .pillar .n{font-size:28px}
+  .badge-grid,.coaches,.enrol-grid{grid-template-columns:1fr;gap:36px}
+  .parent blockquote{font-size:21px}
+  .video{padding:22px 20px}
+  .v-play{width:64px;height:64px;margin-bottom:18px}
+  .v-play svg{width:26px;height:26px}
+  .v-title{font-size:34px}
+  .sessions{grid-template-columns:1fr 1fr;gap:10px;margin-bottom:52px}
+  .sessions figure,.sessions figure+figure{aspect-ratio:3/4}
+  .intake.past .wrap{grid-template-columns:1fr}
+  .journey li{padding-bottom:24px}
+  .voices{grid-template-columns:1fr;gap:30px;margin-top:48px}
+  .values{grid-template-columns:1fr 1fr;margin-top:48px}
+  .values div:nth-child(3){border-left:0}
+  .values div:nth-child(n+3){border-top:1px solid var(--line)}
+  .faq summary{font-size:19px;padding:18px 0}
+  .faq details p{padding-right:0;font-size:17px}
+  .enrol h2{font-size:42px}
+  .contact-list li{grid-template-columns:96px 1fr}
+  form{padding:26px 20px}
+  .two{grid-template-columns:1fr;gap:0}
+  body{padding-bottom:68px}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:8px 10px calc(8px + env(safe-area-inset-bottom));
+    background:rgba(5,18,35,.97);border-top:1px solid var(--line)}
+  .callbar .btn{min-height:48px;font-size:15px;padding:0 10px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Here's your free mockup from <a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="The Recruit Academy, home"><img src="https://recruitacademy.co.nz/manus-storage/logo_2996934e.webp" alt="The Recruit Academy" width="2048" height="383"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#path">Programmes</a>
+      <a href="#journey">The 8 weeks</a>
+      <a href="#badge" class="hide-m">Graduates</a>
+      <a href="#faq" class="hide-m">FAQ</a>
+      <a class="tel" href="tel:0211537107">021 153 7107</a>
+      <a class="btn btn-main" href="#enrol">Enrol now</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="h1">
+  <div class="wrap">
+    <div class="copy">
+      <p class="eyebrow">Nau mai, haere mai <span>/ NZ Police preparation</span></p>
+      <h1 id="h1">Your police journey <em>starts here.</em></h1>
+      <p class="lede">Eight weeks to master the psychometric tests, train for the PAT and walk into recruitment with total confidence. <strong>Coached by ex-NZ Police officers who have walked this path.</strong></p>
+      <div class="cta">
+        <a class="btn btn-main" href="#enrol">Enrol now
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8 3.5 12.5 8 8 12.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></a>
+        <a class="btn btn-ghost" href="#path">Find your programme</a>
+      </div>
+      <p class="quote-mini"><span class="stars" aria-label="5 stars">★★★★★</span><br>"This course prepared me for the psychometric test, PAT and interview. Can't recommend it enough."<b>Keilia Toailoa</b></p>
+    </div>
+    <figure class="frame" id="road" style="margin:0">
+      <img src="https://recruitacademy.co.nz/manus-storage/banner_cropped_02c87dde.webp" width="1475" height="1152" alt="A young recruit in a hoodie stands face to face with a uniformed NZ Police constable in The Recruit Academy gym">
+      <div class="road" aria-hidden="true">
+        <span class="pin pin-a">Start here</span>
+        <span class="track"><span>8 weeks</span></span>
+        <span class="pin pin-b">Finish here</span>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<section class="intake" id="intake" aria-labelledby="intake-h">
+  <div class="wrap">
+    <div class="when" id="when" aria-hidden="true"><span class="d">27</span><span class="m">Oct<small>2026</small></span></div>
+    <div>
+      <p class="eyebrow" id="i-eye">Next intake <span id="days">/ starts Tuesday</span></p>
+      <h2 id="intake-h">8-week programme · Evening class · Auckland (Papakura)</h2>
+      <p id="i-line">Starting Tuesday 27 October 2026 · <b>5 spots remaining</b></p>
+    </div>
+    <a class="btn btn-main" href="#enrol" id="i-go" data-pick="8-week programme">Secure your spot</a>
+  </div>
+</section>
+
+<section class="stats" aria-label="The Recruit Academy in numbers">
+  <ul>
+    <li><strong>100+</strong><span>students prepared</span></li>
+    <li><strong>100%</strong><span>psychometrics success rate</span></li>
+    <li><strong>5 Star</strong><span>Google reviews</span></li>
+    <li><strong>Ex-NZ</strong><span>Police officers as instructors</span></li>
+  </ul>
+</section>
+
+<section class="sec light" id="path" aria-labelledby="path-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Ō mātou hōtaka <span>/ Our programmes</span></p>
+      <h2 id="path-h">Find your path to the badge</h2>
+      <p>Whether you're just starting out or fine-tuning your application, there's a programme for where you are right now.</p>
+    </div>
+    <div class="finder">
+      <fieldset>
+        <legend>What's standing between you and the badge?</legend>
+        <label class="opt"><input type="radio" name="need" value="all" checked><span><span class="t">All of it<small>I'm starting from scratch</small></span></span></label>
+        <label class="opt"><input type="radio" name="need" value="psych"><span><span class="t">The psychometric test<small>Verbal, numerical and abstract reasoning</small></span></span></label>
+        <label class="opt"><input type="radio" name="need" value="pat"><span><span class="t">The PAT<small>The Physical Appraisal Test</small></span></span></label>
+        <label class="opt"><input type="radio" name="need" value="interview"><span><span class="t">The interview<small>Presenting yourself and your values</small></span></span></label>
+        <label class="opt"><input type="radio" name="need" value="home"><span><span class="t">I need to study from home<small>Self-paced, online</small></span></span></label>
+      </fieldset>
+      <article class="result" id="result" aria-live="polite">
+        <div class="r-tag"><span class="chip" id="r-kind">Kāinga · In-person</span><span class="chip g" id="r-badge">Most popular</span></div>
+        <h3 id="r-title">8-week programme</h3>
+        <p class="why" id="r-why">Our flagship intensive: psychometrics, PAT conditioning, interview prep and mindset coaching. Delivered in Auckland.</p>
+        <ul id="r-list">
+          <li>Numerical, verbal &amp; abstract reasoning</li>
+          <li>PAT-specific physical conditioning</li>
+          <li>Decision making under pressure</li>
+          <li>Interview &amp; values coaching</li>
+          <li>Ongoing support after the 8 weeks</li>
+        </ul>
+        <p class="also" id="r-also">Next intake: Tuesday 27 October 2026, evening class in Papakura.</p>
+        <div class="cta"><a class="btn btn-main" href="#enrol" id="r-go" data-pick="8-week programme">Enquire about this</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="journey" aria-labelledby="journey-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Te ara <span>/ The journey</span></p>
+      <h2 id="journey-h">Your 8-week journey</h2>
+    </div>
+    <ol class="journey">
+      <li><p class="wk">Weeks 1–2</p><h3>Foundations &amp; assessment</h3></li>
+      <li><p class="wk">Weeks 3–4</p><h3>Cognitive mastery</h3></li>
+      <li><p class="wk">Weeks 5–6</p><h3>Physical excellence</h3></li>
+      <li><p class="wk">Weeks 7–8</p><h3>Peak performance</h3></li>
+    </ol>
+    <div class="sessions">
+      <figure><img src="https://recruitacademy.co.nz/manus-storage/photo_03_3aee6c6e.jpg" width="1920" height="2560" loading="lazy" alt="A full class training on the gym floor under The Recruit Academy sign, with an instructor watching from the middle of the room"></figure>
+      <figure><img src="https://recruitacademy.co.nz/manus-storage/photo_05_994b3c48.jpg" width="1920" height="2560" loading="lazy" alt="Students working through a core session together while an instructor looks on"></figure>
+      <p class="sessions-cap">Real sessions at The Recruit Academy.</p>
+    </div>
+    <div class="sec-head" style="margin-bottom:28px">
+      <p class="eyebrow">Ngā pou <span>/ The pillars</span></p>
+      <h2 style="font-size:38px">Four pillars of preparation</h2>
+    </div>
+    <div class="pillars">
+      <div class="pillar"><span class="n">01</span><div><h3>Psychometric mastery</h3><p>Verbal, numerical and abstract reasoning, with proven techniques and timed practice that mirrors the actual NZ Police assessment.</p></div></div>
+      <div class="pillar"><span class="n">02</span><div><h3>PAT conditioning</h3><p>A personalised, progressive fitness programme to help you meet the standard.</p>
+        <ul class="pat"><li>2.4km run</li><li>Press-ups</li><li>Vertical jump</li><li>Grip test</li></ul></div></div>
+      <div class="pillar"><span class="n">03</span><div><h3>Mindset &amp; decision making</h3><p>The mental resilience, sound judgment and PRIMED values the NZ Police looks for in every recruit.</p></div></div>
+      <div class="pillar"><span class="n">04</span><div><h3>Interview preparation</h3><p>How to present yourself confidently, answer behavioural questions and show the values of a future police officer.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec light" id="badge" aria-labelledby="badge-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Ō mātou tauira <span>/ Our graduates</span></p>
+      <h2 id="badge-h">From our academy to the badge.</h2>
+      <p>We're incredibly proud of our candidates who recently graduated from Police College, now ready to serve and protect their communities.</p>
+    </div>
+    <div class="badge-grid">
+      <div>
+        <div class="group"><img src="https://recruitacademy.co.nz/manus-storage/photo_06_a6d1a509.jpg" width="1920" height="1440" loading="lazy" alt="A cohort of Recruit Academy students together in front of The Recruit Academy sign in the gym"></div>
+        <p class="cap">You belong here. From day one. A cohort at the academy.</p>
+      </div>
+      <div>
+        <figure class="parent">
+          <blockquote>Thank you Prashant for believing in my daughter. I am so so proud of her. Maya worked extremely hard for this and I will be forever grateful to you and your team, family and to her many supporters. She will make the best cop and will do us all proud.</blockquote>
+          <figcaption><b>Marcia May</b>Parent review · Facebook</figcaption>
+        </figure>
+        <p class="prashant">"At our seminar last year, we promised her mum that she would soon become a Constable, and today that promise has become a reality. You never gave up, and we never stopped believing in you. Kia kaha!"<b>Prashant Naikar, The Recruit Academy</b></p>
+      </div>
+    </div>
+    <div class="voices">
+      <figure><span class="stars" aria-label="5 stars">★★★★★</span><blockquote>"I would highly recommend this course to anyone considering a career in the police or wanting proper preparation before applying. It significantly improved my readiness and mindset."</blockquote><figcaption>Jazz</figcaption></figure>
+      <figure><span class="stars" aria-label="5 stars">★★★★★</span><blockquote>"I highly recommend The Recruit Academy to anyone preparing to join the NZ Police. When I first started the programme, I had no knowledge of the psychometric testing process."</blockquote><figcaption>Poao Nove</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="coaches" aria-labelledby="coaches-h">
+  <div class="wrap">
+    <div class="coaches">
+      <div>
+        <div class="sec-head" style="margin:0 0 36px">
+          <p class="eyebrow">Ā mātou kaiako <span>/ Our instructors</span></p>
+          <h2 id="coaches-h">Taught by people who've lived it.</h2>
+          <p>Your lead instructors are Prashant Naikar and Zion Leaupepe. Around them is a cohort who share the same dream: you support each other, push each other and celebrate each other's wins.</p>
+        </div>
+        <div class="coach-list">
+          <div class="coach"><h3>Prashant Naikar</h3><p class="role">Lead instructor</p><p>Prashant to a recent Police College graduate: <q>We are incredibly proud of your achievement… Wishing you all the very best, stay safe and make us proud!</q></p></div>
+          <div class="coach"><h3>Zion Leaupepe</h3><p class="role">Ex-NZ Police officer · Lead instructor</p><p>Zion is an ex-NZ Police officer and one of our lead instructors. She has been through the recruitment process you're about to start.</p></div>
+        </div>
+      </div>
+      <a class="video" href="https://recruitacademy.co.nz/" target="_blank" rel="noopener" aria-label="Watch What to expect, Zion Leaupepe's 0:38 programme overview, on recruitacademy.co.nz (opens in a new tab)">
+        <img src="https://recruitacademy.co.nz/manus-storage/photo_04_4479b488.jpg" width="1920" height="2560" loading="lazy" alt="">
+        <span class="v-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span>
+        <span class="v-title">What to expect.</span>
+        <span class="v-who">Zion's programme overview <span>0:38 · psychometrics, the PAT and everything in between</span></span>
+        <span class="v-cta">Watch it on recruitacademy.co.nz</span>
+      </a>
+    </div>
+    <div class="values" aria-label="Our values">
+      <div><b>Ārahitanga</b><span>Guidance</span></div>
+      <div><b>Kaha</b><span>Strength</span></div>
+      <div><b>Tūāhu</b><span>Dedication</span></div>
+      <div><b>Whānau</b><span>Community</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec light" id="faq" aria-labelledby="faq-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Ngā pātai <span>/ Questions</span></p>
+      <h2 id="faq-h">What people ask us</h2>
+    </div>
+    <div class="faq">
+      <details open><summary>What does the 8-week programme cover?</summary><p>Everything in the recruitment process: psychometric tests, PAT conditioning, mindset and decision making, and interview preparation. Support carries on after the 8 weeks.</p></details>
+      <details><summary>I'm starting from zero. Is that okay?</summary><p>Yes. Whether you're just starting out or fine-tuning your application, there's a programme for where you are right now. One of our students started with no knowledge of the psychometric testing process.</p></details>
+      <details><summary>What's in the PAT?</summary><p>The NZ Police Physical Appraisal Test is a 2.4km run, press-ups, a vertical jump and a grip test. PAT preparation is included in the 8-week programme.</p></details>
+      <details><summary>Can I prepare online?</summary><p>Yes. The online psychometrics course comes with an e-learning platform: verbal, numerical and abstract reasoning with timed practice tests. Your account is active for 8 weeks from activation.</p></details>
+      <details><summary>Who teaches it?</summary><p>Our lead instructors, Prashant Naikar and Zion Leaupepe. Zion is an ex-NZ Police officer. Her 0:38 overview video on our site breaks down exactly what the programme covers.</p></details>
+      <details><summary>Where are you?</summary><p>The 8-week programme is delivered in Auckland, at 3/46 Broadway, Papakura. We also list Christchurch (Somerfield), Wellington (72 Kemp Street, Kilbirnie) and Hamilton (46B Boundary Road, Claudelands). Ask us what's on near you.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec enrol" id="enrol" aria-labelledby="enrol-h">
+  <div class="wrap enrol-grid">
+    <div>
+      <p class="eyebrow">Tīmata mai <span>/ Begin your journey</span></p>
+      <h2 id="enrol-h">Your future in the NZ Police starts with one decision.</h2>
+      <p class="lede">Join the next cohort and give yourself the best possible chance. Nau mai, haere mai. We're ready when you are.</p>
+      <ul class="contact-list">
+        <li><span class="k">Call</span><span><a href="tel:0211537107">021 153 7107</a></span></li>
+        <li><span class="k">Toll free</span><span><a href="tel:0800250311">0800 250 311</a></span></li>
+        <li><span class="k">Email</span><span><a href="mailto:info@recruitacademy.co.nz">info@recruitacademy.co.nz</a></span></li>
+        <li><span class="k">Hours</span><span>Monday to Friday, 9am – 5pm</span></li>
+        <li><span class="k">Auckland</span><span><a href="https://www.google.com/maps/search/?api=1&amp;query=3%2F46%20Broadway%2C%20Papakura%2C%20Auckland" target="_blank" rel="noopener">3/46 Broadway, Papakura</a></span></li>
+      </ul>
+      <div class="socials">
+        <a href="https://www.facebook.com/recruitacademynz/" target="_blank" rel="noopener" aria-label="The Recruit Academy on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-7.5H16l.4-3h-2.9V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H8v3h2.5V21h3z"/></svg></a>
+        <a href="https://www.instagram.com/therecruitacademy/" target="_blank" rel="noopener" aria-label="The Recruit Academy on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.3A4.7 4.7 0 1 0 12 16.7 4.7 4.7 0 0 0 12 7.3zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm4.9-8.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2zM21 7.9c-.1-1.5-.4-2.8-1.5-3.9S17.1 2.6 15.6 2.5c-1.5-.1-5.8-.1-7.3 0-1.5.1-2.8.4-3.9 1.5S3.1 6.4 3 7.9c-.1 1.5-.1 5.8 0 7.3.1 1.5.4 2.8 1.5 3.9s2.4 1.4 3.9 1.5c1.5.1 5.8.1 7.3 0 1.5-.1 2.8-.4 3.9-1.5s1.4-2.4 1.5-3.9c.1-1.5.1-5.8 0-7.3zm-2 9.4a3 3 0 0 1-1.7 1.7c-1.2.5-4 .4-5.3.4s-4.1.1-5.3-.4A3 3 0 0 1 5 17.3c-.5-1.2-.4-4-.4-5.3s-.1-4.1.4-5.3A3 3 0 0 1 6.7 5c1.2-.5 4-.4 5.3-.4s4.1-.1 5.3.4A3 3 0 0 1 19 6.7c.5 1.2.4 4 .4 5.3s.1 4.1-.4 5.3z"/></svg></a>
+        <a href="https://www.youtube.com/channel/UCrMD8yLk8Uybsae7dTyxctQ" target="_blank" rel="noopener" aria-label="The Recruit Academy on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3L10 15z"/></svg></a>
+      </div>
+    </div>
+    <form id="form" novalidate>
+      <h3>Enrol or ask a question</h3>
+      <p class="sub">Tell us where you're starting from, and which programme you have in mind.</p>
+      <div class="two">
+        <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+      </div>
+      <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email"></div>
+      <div class="field"><label for="f-prog">Programme</label>
+        <select id="f-prog" name="programme">
+          <option>8-week programme</option>
+          <option>Online psychometrics course</option>
+          <option>PAT preparation</option>
+          <option>1-on-1 coaching</option>
+          <option>Not sure yet</option>
+        </select></div>
+      <div class="field"><label for="f-msg">Where are you in the process?</label><textarea id="f-msg" name="message" placeholder="e.g. Applied last month, worried about the run"></textarea></div>
+      <button class="btn" type="submit">Send</button>
+      <p class="thanks" role="status">Thanks. This is a mockup, so nothing was sent.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="https://recruitacademy.co.nz/manus-storage/logo_2996934e.webp" alt="The Recruit Academy" width="2048" height="383" loading="lazy">
+    <p>© 2026 The Recruit Academy Limited · <a href="https://recruitacademy.co.nz/">recruitacademy.co.nz</a></p>
+    <p class="made">Mockup made for The Recruit Academy by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick contact">
+  <a class="btn btn-ghost" href="tel:0211537107">Call us</a>
+  <a class="btn btn-main" href="#enrol">Enrol now</a>
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Next intake: days to go
+  var start = new Date(2026, 9, 27), now = new Date();
+  now.setHours(0,0,0,0);
+  var d = Math.round((start - now) / 864e5), days = document.getElementById('days'), past = d < 0;
+  if (d > 1) days.textContent = '/ starts in ' + d + ' days';
+  else if (d === 1) days.textContent = '/ starts tomorrow';
+  else if (d === 0) days.textContent = '/ starts today';
+  if (past) {
+    // Once the date has gone, drop the countdown and spot count
+    var when = document.getElementById('when');
+    when.parentNode.removeChild(when);
+    document.getElementById('intake').classList.add('past');
+    document.getElementById('i-eye').textContent = 'Next intake';
+    document.getElementById('intake-h').textContent = 'Next intake: ask us for dates';
+    document.getElementById('i-line').textContent = 'The 8-week programme, delivered in Auckland. Ask us when the next one starts.';
+    document.getElementById('i-go').textContent = 'Enquire now';
+    document.getElementById('r-also').textContent = 'Next intake: ask us for dates.';
+  }
+
+  // Path finder
+  var P = {
+    all:{kind:'Kāinga · In-person',badge:'Most popular',title:'8-week programme',prog:'8-week programme',
+      why:'Our flagship intensive: psychometrics, PAT conditioning, interview prep and mindset coaching. Delivered in Auckland.',
+      list:['Numerical, verbal & abstract reasoning','PAT-specific physical conditioning','Decision making under pressure','Interview & values coaching','Ongoing support after the 8 weeks'],
+      also:'Next intake: Tuesday 27 October 2026, evening class in Papakura.'},
+    psych:{kind:'Ipurangi · Online',badge:'Self-paced',title:'Online psychometrics course',prog:'Online psychometrics course',
+      why:'Structured verbal, numerical and abstract reasoning preparation, with an e-learning platform. Two in one.',
+      list:['Verbal reasoning','Numerical reasoning','Abstract reasoning','Timed practice tests','Account active for 8 weeks from activation'],
+      also:'Prefer a coach in the room? The 8-week programme covers psychometrics in person.'},
+    pat:{kind:'Tinana · Physical',badge:'Included in 8-week',title:'PAT preparation',prog:'PAT preparation',
+      why:'Targeted, progressive conditioning for the NZ Police Physical Appraisal Test, to help you meet the standard.',
+      list:['2.4km run','Press-ups','Vertical jump','Grip test'],
+      also:'PAT preparation comes with the 8-week programme, alongside psychometrics and interview coaching.'},
+    interview:{kind:'Pillar 04 · 8-week programme',badge:'Or 1-on-1 by enquiry',title:'Interview preparation',prog:'8-week programme',
+      why:'Structured coaching on how to present yourself and show the values of a future police officer.',
+      list:['Presenting yourself with confidence','Answering behavioural questions','Showing the values of a future police officer'],
+      also:'Want focused help on one area? 1-on-1 coaching with ex-NZ Police officers is available by enquiry.'},
+    home:{kind:'Ipurangi · Online',badge:'Self-paced',title:'Online psychometrics course',prog:'Online psychometrics course',
+      why:'Prepare for the psychometric test on your own schedule, on our e-learning platform.',
+      list:['Verbal, numerical & abstract reasoning','Timed practice tests','Self-paced','Account active for 8 weeks from activation'],
+      also:'Want help with the PAT and interview too? Talk to us about the 8-week programme.'}
+  };
+  if (past) P.all.also = 'Next intake: ask us for dates.';
+  var $ = function(id){return document.getElementById(id)}, result = $('result');
+  function show(k){
+    var p = P[k];
+    $('r-kind').textContent = p.kind; $('r-badge').textContent = p.badge;
+    $('r-title').textContent = p.title; $('r-why').textContent = p.why; $('r-also').textContent = p.also;
+    $('r-list').innerHTML = '';
+    p.list.forEach(function(t){var li = document.createElement('li'); li.textContent = t; $('r-list').appendChild(li)});
+    $('r-go').setAttribute('data-pick', p.prog);
+    if (!reduce){ result.classList.remove('swap'); void result.offsetWidth; result.classList.add('swap'); }
+  }
+  document.querySelectorAll('input[name=need]').forEach(function(r){ r.addEventListener('change', function(){ show(r.value) }) });
+
+  // Prefill the form from any "enquire" button
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('[data-pick]');
+    if (a) $('f-prog').value = a.getAttribute('data-pick');
+  });
+
+  // Form
+  $('form').addEventListener('submit', function(e){
+    e.preventDefault();
+    this.classList.add('sent');
+    this.querySelector('.thanks').focus && this.querySelector('.thanks').setAttribute('tabindex','-1');
+  });
+
+  // Hero road draws while on screen
+  if (!reduce && 'IntersectionObserver' in window) {
+    var road = $('road');
+    new IntersectionObserver(function(es){ es.forEach(function(e){ road.classList.toggle('draw', e.isIntersecting) }) }, {threshold:.4}).observe(road);
+
+    // Gentle rise for things below the first screen
+    var vh = window.innerHeight;
+    var items = document.querySelectorAll('.sec-head, .finder, .journey li, .sessions, .pillar, .badge-grid > div, .voices figure, .coach, .video, .values, .faq, .enrol-grid > *');
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.remove('will-rise'); io.unobserve(e.target) } });
+    }, {rootMargin:'0px 0px -8% 0px'});
+    items.forEach(function(el){
+      if (el.getBoundingClientRect().top > vh){ el.classList.add('rise','will-rise'); io.observe(el); }
+    });
+  }
+})();
+</script>
+</body>
+</html>
