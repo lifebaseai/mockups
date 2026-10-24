@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup triggliveevents-com-b36d27 1 14bfd596 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trigg Watson: magic for the future</title>
+<meta name="description" content="America's Got Talent magician Trigg Watson blends cutting-edge technology with interactive illusion for unforgettable events.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@300;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0c0b10;--surface:#15131b;--surface2:#1c1a24;--line:#2b2834;
+  --text:#f3f1f6;--muted:#b7b2c2;--pink:#ff4fa3;--btn:#d81b74;--btn-h:#c0125f;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --head:"Inter Tight","Inter",system-ui,sans-serif;
+  --serif:"Instrument Serif",Georgia,serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--pink);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--head);line-height:1.08;margin:0;letter-spacing:-.02em}
+h2{font-size:clamp(32px,4.2vw,52px);font-weight:700}
+h3{font-size:24px;font-weight:600}
+p{margin:0}
+.eyebrow{font:600 13px/1.2 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--pink)}
+.lede{color:var(--muted);font-size:18px;max-width:560px}
+.skip{position:absolute;left:12px;top:-60px;background:#fff;color:#000;padding:10px 14px;z-index:50}
+.skip:focus{top:56px}
+
+/* Signal Set banner */
+.mock-banner{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:#f3efe8;color:#24212b;font:500 15px/1.3 var(--sans);text-align:center;border-bottom:1px solid #dcd5c9}
+.mock-banner a{color:#a8104f;text-decoration:underline;text-underline-offset:3px;font-weight:600}
+
+/* header */
+.site-head{border-bottom:1px solid var(--line)}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:24px}
+.mark{font:300 22px/1 var(--head);letter-spacing:.06em;text-decoration:none;white-space:nowrap}
+.mark b{font-weight:600}
+.mark span{font:400 13px var(--sans);letter-spacing:.02em;color:var(--muted);margin-left:10px}
+.nav{display:flex;align-items:center;gap:28px}
+.nav a{text-decoration:none;font-size:15px;color:var(--muted)}
+.nav a:hover{color:var(--text)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 24px;border-radius:999px;font:600 16px/1 var(--sans);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:background .2s,border-color .2s,transform .2s}
+.btn-main{background:var(--btn);color:#fff}
+.btn-main:hover{background:var(--btn-h)}
+.btn-ghost{border-color:#4a4656;color:var(--text);background:transparent}
+.btn-ghost:hover{border-color:var(--text)}
+.nav .btn{min-height:44px;padding:0 20px;font-size:15px;color:#fff}
+
+/* hero */
+.hero{padding:64px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.02fr .98fr;gap:64px;align-items:center}
+.hero h1{font-size:clamp(44px,5.6vw,78px);font-weight:700;letter-spacing:-.035em;margin:18px 0 22px}
+.hero h1 em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em;color:var(--pink)}
+.hero .lede{font-size:19px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.trust{margin-top:28px;font-size:14px;color:var(--muted)}
+.trust b{color:var(--text);font-weight:600}
+.hero-pic{position:relative;border-radius:22px;overflow:hidden;box-shadow:0 30px 80px -30px rgba(0,0,0,.9),0 0 0 1px rgba(255,255,255,.06)}
+.hero-pic img{width:100%;aspect-ratio:2515/2560;object-fit:cover}
+.hero-pic::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.14) 50%,transparent 60%);transform:translateX(-120%);animation:glint 2.6s 1s ease-out 1 forwards;pointer-events:none}
+@keyframes glint{to{transform:translateX(120%)}}
+.hero-pic figcaption{position:absolute;left:16px;bottom:16px;right:16px;font-size:13px;color:#fff;background:rgba(12,11,16,.72);backdrop-filter:blur(6px);padding:10px 14px;border-radius:12px;max-width:max-content}
+
+/* seen on */
+.seen{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:30px 0}
+.seen .wrap{display:flex;align-items:baseline;gap:28px;flex-wrap:wrap}
+.seen .eyebrow{color:var(--muted)}
+.seen ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 34px}
+.seen li{font:600 19px/1.3 var(--head);letter-spacing:-.01em}
+.seen li small{font:400 13px var(--sans);color:var(--muted);margin-left:6px;letter-spacing:0}
+
+/* big quote */
+.quote-big{padding:110px 0 100px;text-align:center}
+.quote-big blockquote{margin:0 auto;max-width:900px;font:italic 400 clamp(34px,4.6vw,60px)/1.12 var(--serif);letter-spacing:-.01em}
+
+/* shows */
+.shows{padding:40px 0 110px}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:56px}
+.sec-head .lede{max-width:430px}
+.show{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding:44px 0;border-top:1px solid var(--line)}
+.show:nth-child(even) .show-pic{order:2}
+.show-num{font:300 15px var(--head);color:var(--muted);letter-spacing:.1em}
+.show h3{font-size:clamp(32px,3.4vw,44px);font-weight:700;margin:10px 0 6px}
+.show .tag{font:italic 400 24px/1.3 var(--serif);color:var(--pink);margin-bottom:16px}
+.show p.body{color:var(--muted);max-width:470px}
+.show-pic{border-radius:18px;overflow:hidden;background:var(--surface);box-shadow:0 0 0 1px rgba(255,255,255,.06)}
+.show-pic img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.show-pic.closeup img{object-position:50% 30%}
+.show-pic.wide img{aspect-ratio:1000/562}
+.show-link{display:inline-flex;align-items:center;min-height:44px;margin-top:14px;color:var(--text);font-weight:600;text-decoration:none;border-bottom:1px solid var(--pink)}
+
+/* proof */
+.proof{background:#f6f3ee;color:#1b1922;padding:100px 0}
+.proof .eyebrow{color:#a8104f}
+.proof h2{margin:14px 0 0;max-width:700px}
+.logos{margin:48px 0 0;background:#fff;border-radius:20px;padding:28px 36px;box-shadow:0 1px 0 #e3ddd3,0 20px 50px -30px rgba(40,20,30,.35)}
+.logos img{width:100%;max-width:960px;margin:0 auto;height:auto}
+.quotes{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:28px}
+.quotes figure{margin:0;padding:34px 36px;border-radius:20px;background:#fff;box-shadow:0 1px 0 #e3ddd3}
+.quotes blockquote{margin:0;font:italic 400 32px/1.15 var(--serif)}
+.quotes figcaption{margin-top:16px;font:600 13px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#5d5868}
+.cases{margin-top:44px;display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.cases span.lbl{font-weight:600;margin-right:6px}
+.cases span.chip{padding:8px 14px;border:1px solid #d9d2c6;border-radius:999px;font-size:14px;color:#3b3743}
+.cases a{display:inline-flex;align-items:center;min-height:44px;margin-left:6px;color:#a8104f;font-weight:600}
+
+/* about */
+.about{padding:110px 0}
+.about .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+.about-pic{border-radius:18px;overflow:hidden;box-shadow:0 0 0 1px rgba(255,255,255,.06)}
+.about-pic img{width:100%;aspect-ratio:1000/562;object-fit:cover}
+.about-pic + p{font-size:13px;color:var(--muted);margin-top:10px}
+.about h2{margin:14px 0 24px}
+.about .big{font:400 24px/1.4 var(--head);letter-spacing:-.01em;margin-bottom:22px}
+.about p.body{color:var(--muted);margin-bottom:16px;max-width:600px}
+.creds{list-style:none;padding:0;margin:34px 0 0;border-top:1px solid var(--line)}
+.creds li{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:16px 0;border-bottom:1px solid var(--line)}
+.creds b{font:600 13px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--pink);padding-top:3px}
+
+/* planner */
+.plan{padding:100px 0;background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.plan .sec-head{margin-bottom:44px}
+.planner{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:start}
+.pform{background:var(--bg);border:1px solid var(--line);border-radius:22px;padding:34px}
+fieldset{border:0;margin:0 0 26px;padding:0}
+legend,.lab{font:600 14px var(--sans);margin-bottom:12px;display:block;padding:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{position:relative}
+.chips input{position:absolute;opacity:0;width:1px;height:1px}
+.chips span{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;border:1px solid #3d3948;font-size:15px;color:var(--text);cursor:pointer;transition:all .15s}
+.chips input:checked + span{background:var(--text);color:var(--bg);border-color:var(--text)}
+.chips input:focus-visible + span{outline:3px solid var(--pink);outline-offset:2px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
+.field input,.field textarea{width:100%;min-height:48px;padding:12px 14px;border-radius:12px;border:1px solid #3d3948;background:#100f15;color:var(--text);font:16px var(--sans);color-scheme:dark}
+.field textarea{min-height:96px;resize:vertical}
+.field input:focus,.field textarea:focus{border-color:var(--pink);outline:none;box-shadow:0 0 0 3px rgba(255,79,163,.25)}
+.pform .btn{width:100%;margin-top:6px}
+.thanks{margin-top:14px;padding:14px 16px;border-radius:12px;background:#22121b;border:1px solid #5a2140;color:#ffd6ea;font-weight:500}
+.thanks[hidden]{display:none}
+.brief{position:sticky;top:24px;border-radius:22px;padding:34px;background:linear-gradient(180deg,#22101b,#17131d);border:1px solid #4a1f37}
+.brief .eyebrow{display:flex;justify-content:space-between}
+.brief .eyebrow small{color:var(--muted);letter-spacing:.1em}
+.brief-line{font:400 30px/1.25 var(--head);letter-spacing:-.015em;margin:18px 0 24px}
+.brief-line b{font-weight:600;color:#fff;border-bottom:2px solid var(--pink)}
+.brief dl{display:grid;grid-template-columns:auto 1fr;gap:10px 18px;margin:0 0 26px;font-size:15px}
+.brief dt{color:var(--muted)}
+.brief dd{margin:0;font-weight:500}
+.brief dd.empty{color:var(--muted);font-weight:400;font-style:italic}
+.next{border-top:1px solid #4a1f37;padding-top:22px}
+.next h3{font-size:16px;margin-bottom:12px}
+.next ol{margin:0;padding:0;list-style:none;counter-reset:n}
+.next li{counter-increment:n;display:grid;grid-template-columns:30px 1fr;gap:10px;padding:7px 0;color:var(--muted);font-size:15px}
+.next li::before{content:counter(n);width:24px;height:24px;border-radius:50%;background:#3a1529;color:#fff;font:600 12px/24px var(--sans);text-align:center}
+.next li b{color:var(--text);font-weight:600}
+
+/* faq */
+.faq{padding:110px 0}
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-child{border-top:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:68px;font:600 19px/1.3 var(--head)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:300 28px var(--head);color:var(--pink);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{color:var(--muted);padding:0 40px 22px 0;max-width:620px}
+
+/* closing */
+.close{padding:120px 0;text-align:center;border-top:1px solid var(--line)}
+.close h2{font-size:clamp(40px,5.4vw,72px);letter-spacing:-.035em}
+.close h2 em{font-family:var(--serif);font-weight:400;color:var(--pink)}
+.close p{margin:20px auto 34px;color:var(--muted);font-size:18px;max-width:520px}
+.close .actions{justify-content:center}
+
+footer{border-top:1px solid var(--line);padding:48px 0 40px;font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;align-items:start}
+footer .social{display:flex;flex-wrap:wrap;gap:4px 18px}
+footer .social a{display:inline-flex;align-items:center;min-height:44px;color:var(--text);text-decoration:none}
+footer .social a:hover{color:var(--pink)}
+.made{width:100%;margin-top:24px;padding-top:20px;border-top:1px solid var(--line)}
+.made a{color:var(--text)}
+
+.mbar{display:none}
+
+/* motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .will-rise{opacity:1;transform:none}
+}
+
+/* tablet */
+@media (max-width:960px){
+  .nav a:not(.btn){display:none}
+  .hero .wrap,.show,.about .wrap,.planner,.faq .wrap{grid-template-columns:1fr;gap:36px}
+  .show:nth-child(even) .show-pic{order:0}
+  .brief{position:static}
+  .sec-head{flex-direction:column;align-items:start;gap:16px}
+}
+/* phone */
+@media (max-width:640px){
+  body{padding-bottom:76px}
+  .wrap{padding:0 20px}
+  .mock-banner{font-size:15px;padding:8px 12px}
+  .site-head .wrap{height:64px}
+  .mark{font-size:19px}
+  .mark span{display:none}
+  .nav .btn{display:none}
+  .hero{padding:36px 0 56px}
+  .hero h1{font-size:44px;margin:14px 0 16px}
+  .hero .lede{font-size:17px}
+  .actions .btn{flex:1 1 100%}
+  .hero-pic{border-radius:18px}
+  .seen{padding:26px 0}
+  .seen .wrap{gap:14px}
+  .seen ul{flex-direction:column;gap:8px}
+  .seen li{font-size:18px}
+  .quote-big{padding:76px 0 64px}
+  .shows{padding:20px 0 70px}
+  .sec-head{margin-bottom:28px}
+  .show{padding:34px 0;gap:22px}
+  .show .tag{font-size:22px}
+  .proof,.about,.plan,.faq{padding:72px 0}
+  .logos{padding:16px;border-radius:16px;margin-top:32px}
+  .quotes{grid-template-columns:1fr;gap:16px}
+  .quotes figure{padding:26px}
+  .quotes blockquote{font-size:28px}
+  .about .big{font-size:21px}
+  .creds li{grid-template-columns:1fr;gap:4px}
+  .pform,.brief{padding:22px;border-radius:18px}
+  .row2{grid-template-columns:1fr}
+  .brief-line{font-size:25px}
+  .faq .wrap{gap:28px}
+  .faq summary{font-size:17px}
+  .close{padding:80px 0}
+  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(12,11,16,.94);backdrop-filter:blur(8px);border-top:1px solid var(--line)}
+  .mbar .btn{width:100%;min-height:50px}
+}
+</style>
+</head>
+<body>
+<div class="mock-banner" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Trigg Watson, home"><b>TRIGG</b> WATSON <span>magic for the future</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#shows">Shows</a>
+      <a href="#clients">Clients</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-main" href="#plan">Check Availability</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">As seen on America's Got Talent</p>
+        <h1 id="hero-title">Interactive magic for <em>unforgettable</em> events.</h1>
+        <p class="lede">He prefers his iPad to a deck of cards. Trigg blends cutting-edge tech with interactive illusion: close up, on stage, or live on Zoom.</p>
+        <div class="actions">
+          <a class="btn btn-main" href="#plan">Check Trigg's Availability</a>
+          <a class="btn btn-ghost" href="https://www.youtube.com/user/triggmagic" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5v11l9.5-5.5z" fill="currentColor"/></svg>Watch Video</a>
+        </div>
+        <p class="trust">Trusted by <b>Amazon, Deloitte, PwC</b> and 200+ companies.</p>
+      </div>
+      <figure class="hero-pic" style="margin:0">
+        <img src="https://cdn.gxbsites.com/blobs/e1a4b8c0545cb3c87fbcd7d86140decd28de9254d0f459b0d9c4d2df91bd6036/asset.jpg" width="2515" height="2560" alt="A holographic version of Trigg hands the real Trigg some cards through a TV screen." fetchpriority="high">
+        <figcaption>A holographic Trigg hands the real Trigg cards through a TV screen.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="seen" aria-label="Seen on TV">
+    <div class="wrap">
+      <p class="eyebrow">Seen on</p>
+      <ul>
+        <li>America's Got Talent<small>NBC</small></li>
+        <li>Penn &amp; Teller: Fool Us</li>
+        <li>Masters of Illusion<small>The CW</small></li>
+        <li>Don't Blink<small>Pop TV</small></li>
+        <li>Magic for Humans<small>Netflix, creative consultant</small></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="quote-big" aria-label="What people say">
+    <div class="wrap">
+      <blockquote>“Wow wow wow wow… I mean you just kept it coming! It was amazing. Well done!”</blockquote>
+    </div>
+  </section>
+
+  <section class="shows" id="shows" aria-labelledby="shows-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">Three ways to book Trigg</p>
+          <h2 id="shows-title" style="margin-top:14px">Pick the room. He brings the impossible.</h2>
+        </div>
+        <p class="lede">Every show is modern, interactive, and built to keep your people laughing.</p>
+      </div>
+
+      <div class="show-list">
+        <article class="show">
+          <div class="show-pic closeup"><img src="https://cdn.gxbsites.com/blobs/7b7464efefd5bf87fbd9714887e910684327a8b1eafbc9c40a399d6473cf0093/asset.jpg" width="2515" height="2560" alt="Guests at an event laugh and gasp as Trigg performs close-up magic beside their table." loading="lazy"></div>
+          <div>
+            <p class="show-num">01</p>
+            <h3>Close Up</h3>
+            <p class="tag">A “professional icebreaker”</p>
+            <p class="body">Trigg brings people together with modern, interactive close-up magic. The illusions happen in your guests' own hands, while he keeps them laughing and engaged.</p>
+            <a class="show-link" href="#plan" data-format="Close Up">Plan a close-up set</a>
+          </div>
+        </article>
+        <article class="show">
+          <div class="show-pic wide"><img src="https://cdn.gxbsites.com/blobs/e3d03418a0b440298678b409c805019926859c0595e2f9bd4ff91acc9f7c1c8a/asset.jpg" width="1000" height="562" alt="Trigg Watson performing on stage on Masters of Illusion." loading="lazy"></div>
+          <div>
+            <p class="show-num">02</p>
+            <h3>Stage</h3>
+            <p class="tag">A magic show for tomorrow. Today.</p>
+            <p class="body">Original stage illusions blended with interactive tech, for a high-impact theatrical experience your audience won't easily forget.</p>
+            <a class="show-link" href="#plan" data-format="Stage">Plan a stage show</a>
+          </div>
+        </article>
+        <article class="show">
+          <div class="show-pic wide"><img src="https://cdn.gxbsites.com/blobs/164ea67655d439f6e10e4866b5955d7d3a979ab8d9cb06a919ce13e9ba905c59/asset.jpg" width="1000" height="563" alt="Trigg Watson on America's Got Talent." loading="lazy"></div>
+          <div>
+            <p class="show-num">03</p>
+            <h3>Online</h3>
+            <p class="tag">Magic that crosses any distance.</p>
+            <p class="body">A high-tech virtual magic show on Zoom. Mind-boggling magic and interactive entertainment for teams wherever they are.</p>
+            <a class="show-link" href="#plan" data-format="Online">Plan a virtual show</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof" id="clients" aria-labelledby="clients-title">
+    <div class="wrap">
+      <p class="eyebrow">Trusted by</p>
+      <h2 id="clients-title">Amazon, Deloitte, PwC and 200+ companies.</h2>
+      <div class="logos"><img src="https://cdn.gxbsites.com/blobs/266425f6f57d511c972d27d37b6747a7eec52a94d42a1767860cd26fb7910fbc/asset.jpg" width="1920" height="384" alt="Past clients: HP, Citi, Celebrity Cruises, Activision, JCPenney, Anytime Fitness, IBM, Frito-Lay, Deloitte, Disney, PwC and Salesforce." loading="lazy"></div>
+      <div class="quotes">
+        <figure><blockquote>“So fun! So exciting! So original!”</blockquote></figure>
+        <figure><blockquote>“Thank you again for the awesome show! The team loved it!!!”</blockquote></figure>
+      </div>
+      <div class="cases">
+        <span class="lbl">Case studies:</span>
+        <span class="chip">Deloitte</span><span class="chip">Electrolit</span><span class="chip">Homecare Homebase</span><span class="chip">LeadHer</span><span class="chip">McKesson</span><span class="chip">Plymouth Rock</span><span class="chip">Solventum</span><span class="chip">SprintRay</span>
+        <a href="https://triggmagic.com/">Read them on triggmagic.com</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <div>
+        <div class="about-pic"><img src="https://cdn.gxbsites.com/blobs/5e245ffc47d9a82919ca9fefa53e9c0d0e89e179bf824b2b684047ff5fb7d8e3/asset.jpg" width="1000" height="563" alt="Trigg on stage on Penn and Teller: Fool Us, beside a giant smartphone." loading="lazy"></div>
+        <p>On Penn &amp; Teller: Fool Us.</p>
+      </div>
+      <div>
+        <p class="eyebrow">Impossibility and possibility</p>
+        <h2 id="about-title">A new breed of magician.</h2>
+        <p class="big">He likes robots more than rabbits. And before magic was his full-time job, he was a technology consultant at Deloitte.</p>
+        <p class="body">That corporate experience is why Trigg uses magic to connect leadership with employees, communicate a message, and inspire positive change. His tech-infused shows have wowed audiences from London to Las Vegas and on cruise ships around the world.</p>
+        <p class="body">He caught the magic bug at a friend's fourth birthday party in Australia, emptied the local library of its magic books, and never stopped. Today he lives in Los Angeles.</p>
+        <ul class="creds">
+          <li><b>Awards</b><span>Highest scoring American magician at the World Magic Seminar in Las Vegas. Two-time winner of the Texas Magicians Contest.</span></li>
+          <li><b>Television</b><span>America's Got Talent, Penn &amp; Teller: Fool Us, Masters of Illusion, Don't Blink. Creative consultant on Netflix's Magic for Humans.</span></li>
+          <li><b>Training</b><span>Southern Methodist University, dual degrees in business management and theater studies (AKA “Show Biz”).</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="plan" id="plan" aria-labelledby="plan-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">Check availability</p>
+          <h2 id="plan-title" style="margin-top:14px">Tell Trigg about your event.</h2>
+        </div>
+        <p class="lede">Trigg puts together a free custom concept for every potential client. Start here, and your brief builds as you go.</p>
+      </div>
+
+      <div class="planner">
+        <form class="pform" id="planForm" novalidate>
+          <fieldset>
+            <legend>What are you planning?</legend>
+            <div class="chips">
+              <label><input type="radio" name="event" value="Corporate event"><span>Corporate event</span></label>
+              <label><input type="radio" name="event" value="Conference"><span>Conference</span></label>
+              <label><input type="radio" name="event" value="Holiday party"><span>Holiday party</span></label>
+              <label><input type="radio" name="event" value="Private party"><span>Private party</span></label>
+              <label><input type="radio" name="event" value="Question"><span>Just a question</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="evonly">
+            <legend>Which show?</legend>
+            <div class="chips">
+              <label><input type="radio" name="format" value="Close Up"><span>Close Up</span></label>
+              <label><input type="radio" name="format" value="Stage"><span>Stage</span></label>
+              <label><input type="radio" name="format" value="Online"><span>Online</span></label>
+              <label><input type="radio" name="format" value="Not sure yet"><span>Not sure yet</span></label>
+            </div>
+          </fieldset>
+          <div class="row2 evonly">
+            <div class="field"><label class="lab" for="date">Event date</label><input id="date" name="date" type="date"></div>
+            <div class="field"><label class="lab" for="guests">About how many guests?</label><input id="guests" name="guests" type="number" min="1" step="10" inputmode="numeric" placeholder="A rough number is fine"></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label class="lab" for="name">Your name</label><input id="name" name="name" autocomplete="name" placeholder="First and last name"></div>
+            <div class="field"><label class="lab" for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com"></div>
+          </div>
+          <div class="field" style="margin-bottom:20px"><label class="lab" for="note">Anything Trigg should know?</label><textarea id="note" name="note" placeholder="The theme, the message, the room."></textarea></div>
+          <button class="btn btn-main" type="submit" id="sendBtn">Check Availability</button>
+          <p class="thanks" id="thanks" role="status" hidden>Thanks. This is a mockup, so nothing was sent.</p>
+        </form>
+
+        <aside class="brief" aria-label="Your event brief" aria-live="polite">
+          <p class="eyebrow">Your brief <small id="briefTag">For Trigg</small></p>
+          <p class="brief-line" id="briefLine">Pick your event and a show, and your brief for Trigg <b>writes itself here</b>.</p>
+          <dl id="briefList">
+            <dt>Event</dt><dd id="bEvent" class="empty">Not picked yet</dd>
+            <dt>Show</dt><dd id="bShow" class="empty">Not picked yet</dd>
+            <dt>Date</dt><dd id="bDate" class="empty">Pick a date</dd>
+            <dt>Guests</dt><dd id="bGuests" class="empty">Add a number</dd>
+          </dl>
+          <div class="next">
+            <h3>What happens next</h3>
+            <ol id="nextSteps">
+              <li><span><b>Trigg checks your date</b> and reads your note.</span></li>
+              <li><span>He puts together a <b>free custom concept</b> for your event.</span></li>
+              <li><span>You talk it through on a <b>quick 15-minute concept call</b>.</span></li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Questions</p>
+        <h2 id="faq-title" style="margin-top:14px">Before you book.</h2>
+      </div>
+      <div>
+        <details open><summary>What happens after I check availability?</summary><p>Trigg puts together a free custom concept for every potential client, then talks it through with you on a quick 15-minute concept call.</p></details>
+        <details><summary>What kinds of events does Trigg perform at?</summary><p>Corporate events, conferences, holiday parties and private parties. He has performed from London to Las Vegas and on cruise ships around the world.</p></details>
+        <details><summary>Can the magic carry our company's message?</summary><p>Yes. Trigg worked as a technology consultant for Deloitte, and he uses his magic to connect leadership with employees, communicate a message, and inspire positive change.</p></details>
+        <details><summary>Our team is remote. Can we still book him?</summary><p>Yes. Trigg performs a high-tech, interactive virtual magic show on Zoom.</p></details>
+        <details><summary>Where is Trigg based?</summary><p>Los Angeles, California.</p></details>
+        <details><summary>Can I just send a question or a press inquiry?</summary><p>Of course. Pick “Just a question” in the form above. Trigg reads every message.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="close" aria-labelledby="close-title">
+    <div class="wrap">
+      <h2 id="close-title">Let's make your event <em>unforgettable.</em></h2>
+      <p>See if Trigg is free for your date. The custom concept is on him.</p>
+      <div class="actions"><a class="btn btn-main" href="#plan">Check Trigg's Availability</a></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><a class="mark" href="#top"><b>TRIGG</b> WATSON</a><p style="margin-top:10px">Magic for the future. Los Angeles, California.</p></div>
+    <nav class="social" aria-label="Follow Trigg">
+      <a href="https://www.instagram.com/triggwatson/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/in/triggwatson/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.facebook.com/TRIGGwatson/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.youtube.com/user/triggmagic" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://twitter.com/TRiGGwatson" target="_blank" rel="noopener">Twitter</a>
+    </nav>
+    <p class="made">Mockup made for Trigg Watson by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<div class="mbar"><a class="btn btn-main" href="#plan">Check Trigg's Availability</a></div>
+
+<script>
+(function(){
+  var f=document.getElementById('planForm');
+  var showInfo={'Close Up':'Close Up: magic in your guests’ hands','Stage':'Stage: original illusions with interactive tech','Online':'Online: a high-tech show on Zoom','Not sure yet':'Not sure yet: Trigg will suggest one'};
+  function val(n){var e=f.querySelector('input[name="'+n+'"]:checked');return e?e.value:'';}
+  function fmtDate(v){
+    if(!v)return '';var p=v.split('-');if(p.length<3)return '';
+    var d=new Date(+p[0],+p[1]-1,+p[2]);
+    return d.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric',year:'numeric'});
+  }
+  function b(t){return '<b>'+t.replace(/[&<>]/g,'')+'</b>';}
+  function update(){
+    var ev=val('event'),fm=val('format'),dt=fmtDate(f.date.value),g=parseInt(f.guests.value,10);
+    var q=ev==='Question';
+    [].forEach.call(f.querySelectorAll('.evonly'),function(el){el.hidden=q;});
+    document.getElementById('briefList').hidden=q;
+    document.getElementById('sendBtn').textContent=q?'Send Trigg a Message':'Check Availability';
+    var steps=document.getElementById('nextSteps');
+    if(q){
+      document.getElementById('briefTag').textContent='Message';
+      document.getElementById('briefLine').innerHTML='A '+b('message')+' for Trigg. Press inquiry, question, or just saying hi: '+b('he reads every one')+'.';
+      steps.parentNode.hidden=true;return;
+    }
+    steps.parentNode.hidden=false;
+    document.getElementById('briefTag').textContent='For Trigg';
+    var line;
+    if(!ev&&!fm&&!dt&&!(g>0)){
+      line='Pick your event and a show, and your brief for Trigg '+b('writes itself here');
+    }else{
+      var show=fm==='Not sure yet'?'Trigg-picked':fm;
+      line=(fm?'A '+b(show)+' show':'A show')+' for your '+(ev?b(ev.toLowerCase()):'event');
+      if(dt)line+=' on '+b(dt);
+      if(g>0)line+=', for about '+b(g+' guests');
+    }
+    document.getElementById('briefLine').innerHTML=line+'.';
+    set('bEvent',ev,'Not picked yet');
+    set('bShow',showInfo[fm]||fm,'Not picked yet');
+    set('bDate',dt,'Pick a date');
+    set('bGuests',g>0?'About '+g:'','Add a number');
+  }
+  function set(id,v,empty){var el=document.getElementById(id);el.textContent=v||empty;el.classList.toggle('empty',!v);}
+  f.addEventListener('input',update);f.addEventListener('change',update);
+  f.addEventListener('submit',function(e){e.preventDefault();document.getElementById('thanks').hidden=false;});
+  [].forEach.call(document.querySelectorAll('[data-format]'),function(a){
+    a.addEventListener('click',function(){var r=f.querySelector('input[name="format"][value="'+a.getAttribute('data-format')+'"]');if(r){r.checked=true;update();}});
+  });
+  update();
+
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce||!('IntersectionObserver' in window))return;
+  var els=document.querySelectorAll('.quote-big blockquote,.sec-head,.show,.logos,.quotes figure,.about-pic,.about h2,.creds,.pform,.brief,.faq details,.close h2');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px'});
+  [].forEach.call(els,function(el){
+    if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('will-rise','rise');io.observe(el);}
+  });
+})();
+</script>
+</body>
+</html>
