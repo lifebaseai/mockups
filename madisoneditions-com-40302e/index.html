@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup madisoneditions-com-40302e 1 cd6a8ec9 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Madison Editions · Fine Art &amp; Giclée Printing, Wrentham MA</title>
+<meta name="description" content="Giclée prints, canvas and drop-shipping for artists, photographers and art consultants. Upload a file and order a print.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#c20000; --red-dark:#9e0000; --gold:#b39558; --gold-soft:#e9dfc9;
+  --ink:#2b2a28; --muted:#5d5a55; --paper:#f8f6f2; --wall:#efebe4; --line:#e2ddd3; --char:#3d3c3a;
+  --head:"Barlow Condensed","DIN Condensed","Arial Narrow",sans-serif;
+  --body:"Jost","Futura","Avenir Next",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+h1,h2,h3{font-family:var(--head);font-weight:500;line-height:1.05;margin:0;letter-spacing:.01em}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.kicker{font:500 13px/1 var(--body);letter-spacing:.22em;text-transform:uppercase;color:var(--red);margin:0 0 18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 26px;border-radius:2px;font:500 13px/1 var(--body);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-dark)}
+.btn-line{border-color:#bdb6a8;color:var(--ink);background:transparent}
+.btn-line:hover{border-color:var(--ink)}
+
+/* mockup banner */
+.mock{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:#24231f;color:#efe9dc;font:400 15px/1.3 var(--body);text-align:center}
+.mock a{color:#fff;text-decoration:underline;text-underline-offset:3px;font-weight:500}
+
+/* header */
+header.top{background:var(--paper);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;min-height:84px;gap:20px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.brand img{width:52px;height:52px}
+.brand span{font:500 22px/1 var(--head);letter-spacing:.14em;text-transform:uppercase}
+nav.main ul{display:flex;gap:30px;list-style:none;margin:0;padding:0}
+nav.main a{font:500 13px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;padding:14px 0;display:block}
+nav.main a:hover{color:var(--red)}
+.top-tel{font:500 15px/1 var(--body);text-decoration:none;white-space:nowrap;padding:14px 0}
+.top-tel:hover{color:var(--red)}
+
+/* hero */
+.hero{padding:72px 0 88px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.hero h1{font-size:clamp(52px,7.4vw,104px);text-transform:uppercase;letter-spacing:.015em}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero .lede{font-size:19px;max-width:30em;color:var(--muted);margin:26px 0 34px}
+.hero .lede strong{color:var(--ink);font-weight:500}
+.actions{display:flex;flex-wrap:wrap;gap:14px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:8px 26px;margin:38px 0 0;padding:22px 0 0;border-top:1px solid var(--line);list-style:none;font-size:14px;color:var(--muted)}
+.hero-meta li::before{content:"";display:inline-block;width:7px;height:7px;background:var(--gold);margin-right:10px;vertical-align:2px}
+.hero-art{position:relative;background:var(--wall);padding:56px 56px 40px;display:flex;flex-direction:column;align-items:center}
+.hero-art::after{content:"";position:absolute;left:0;right:0;bottom:0;height:10px;background:#e3ddd2}
+.framed{background:#fff;padding:22px;box-shadow:0 1px 1px rgba(0,0,0,.06),0 18px 40px -16px rgba(40,30,20,.35);max-width:420px}
+.framed img{width:100%;height:auto;aspect-ratio:1500/1899}
+.caption{margin:22px 0 0;font-size:13px;letter-spacing:.06em;color:var(--muted);text-align:center}
+.caption b{font-weight:500;color:var(--ink)}
+
+/* sections */
+section{scroll-margin-top:20px}
+.sec{padding:110px 0}
+.sec-head{max-width:720px;margin:0 0 54px}
+.sec-head h2{font-size:clamp(40px,5vw,64px);text-transform:uppercase}
+.sec-head p{color:var(--muted);font-size:18px;margin:18px 0 0}
+
+/* order studio */
+.studio{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.steps{display:flex;gap:10px 34px;flex-wrap:wrap;list-style:none;margin:-26px 0 40px;padding:0;font:500 14px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.steps li{display:flex;align-items:center;gap:10px}
+.steps b{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--red);color:#fff;font-weight:500;letter-spacing:0}
+.board{display:grid;grid-template-columns:1.2fr .8fr;border:1px solid var(--line);background:var(--paper)}
+.stage{position:relative;background:var(--wall);min-height:520px;display:flex;flex-direction:column}
+.stage-top{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.room{position:relative;flex:1;min-height:440px}
+.floor{position:absolute;left:0;right:0;bottom:0;height:18%;background:#d9d1c3;border-top:6px solid #e7e1d6}
+.bench{position:absolute;bottom:18%;left:50%;transform:translateX(-50%);height:auto;color:#6d6458}
+.print{position:absolute;left:50%;transform:translate(-50%,0);transition:width .35s ease,height .35s ease,bottom .35s ease;background:#fff}
+.print .img{position:absolute;inset:0;background-size:cover;background-position:center}
+.print.paper{padding:0;box-shadow:0 1px 2px rgba(0,0,0,.12),0 14px 26px -12px rgba(40,30,20,.45)}
+.print.paper .img{inset:7%}
+.print.photo{box-shadow:0 1px 2px rgba(0,0,0,.15),0 14px 26px -12px rgba(40,30,20,.45)}
+.print.photo .img{inset:4%}
+.print.photo::after{content:"";position:absolute;inset:4%;background:linear-gradient(120deg,rgba(255,255,255,.22),rgba(255,255,255,0) 40%)}
+.print.canvas{background:#f3efe8;box-shadow:0 1px 2px rgba(0,0,0,.15),0 14px 26px -12px rgba(40,30,20,.45)}
+.print.canvas .img{inset:5%}
+.print.wrap{background:transparent;box-shadow:6px 8px 0 -1px rgba(0,0,0,.18),0 22px 34px -14px rgba(40,30,20,.55)}
+.print.wrap .img{inset:0}
+.dim{position:absolute;left:50%;transform:translateX(-50%);font-size:12px;letter-spacing:.08em;color:var(--muted);white-space:nowrap;transition:bottom .35s ease}
+.scale-note{position:absolute;left:20px;bottom:calc(18% + 8px);font-size:12px;color:#6d6458;display:none}
+
+.controls{padding:28px 28px 30px;display:flex;flex-direction:column;gap:24px;background:#fff;border-left:1px solid var(--line)}
+.ctl-label{display:block;font:500 12px/1 var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:0 0 12px}
+.drop{display:flex;gap:16px;align-items:center;border:1px dashed #bdb6a8;padding:14px;background:var(--paper);cursor:pointer;transition:border-color .2s,background .2s;position:relative}
+.drop:hover,.drop.over{border-color:var(--red);background:#fdf9f9}
+.drop input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%}
+.thumb{width:64px;height:64px;flex:none;background:#ddd center/cover no-repeat;border:1px solid var(--line)}
+.file-name,.file-meta,.file-act{display:block}
+.file-name{font-weight:500;font-size:15px;line-height:1.3;word-break:break-word}
+.file-meta{font-size:14px;color:var(--muted);line-height:1.4}
+.file-act{font-size:13px;color:var(--red);font-weight:500;letter-spacing:.06em;text-transform:uppercase;margin-top:4px}
+.mats{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.mats label{position:relative;display:block;border:1px solid var(--line);padding:11px 12px;cursor:pointer;font-size:14px;line-height:1.3;min-height:58px;transition:border-color .2s,background .2s}
+.mats label small{display:block;color:var(--muted);font-size:12.5px}
+.mats input{position:absolute;opacity:0;pointer-events:none}
+.mats input:checked+span{color:var(--ink)}
+.mats label:has(input:checked){border-color:var(--red);background:#fdf8f7;box-shadow:inset 3px 0 0 var(--red)}
+.mats label:has(input:focus-visible){outline:3px solid var(--gold);outline-offset:2px}
+.size-row{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:6px}
+.size-out{font:500 28px/1 var(--head);letter-spacing:.02em}
+input[type=range]{width:100%;accent-color:var(--red);height:44px;margin:0}
+.meter{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--muted)}
+.dot{width:10px;height:10px;border-radius:50%;flex:none;background:#3c8a4f}
+.meter.mid .dot{background:var(--gold)}
+.meter.low .dot{background:var(--red)}
+.size-note{margin:6px 0 12px;font-size:13px;line-height:1.4;color:var(--muted)}
+.meter strong{color:var(--ink);font-weight:500}
+.opts{display:flex;flex-direction:column;gap:2px}
+.opts label{display:flex;align-items:center;gap:12px;min-height:44px;font-size:15px;cursor:pointer}
+.opts input{width:20px;height:20px;accent-color:var(--red);flex:none}
+.row2{display:flex;gap:18px;align-items:flex-end}
+.qty{display:flex;align-items:center;border:1px solid var(--line)}
+.qty button{width:44px;height:44px;border:0;background:none;font-size:20px;cursor:pointer;color:var(--ink)}
+.qty output{min-width:34px;text-align:center;font-weight:500}
+.seg{display:flex;border:1px solid var(--line)}
+.seg label{position:relative;min-height:44px;display:flex;align-items:center;padding:0 14px;font-size:14px;cursor:pointer}
+.seg input{position:absolute;opacity:0}
+.seg label:has(input:checked){background:var(--ink);color:#fff}
+.seg label:has(input:focus-visible){outline:3px solid var(--gold);outline-offset:2px}
+.summary{border-top:1px solid var(--line);padding-top:20px}
+.summary p{margin:0 0 14px;font-size:15px;line-height:1.5}
+.summary .btn{width:100%}
+.mock-note{margin:12px 0 0;font-size:13px;color:var(--muted)}
+.sent{margin:12px 0 0;padding:12px 14px;background:#f2efe8;font-size:14px;display:none}
+.sent.show{display:block}
+
+/* process */
+.process .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+.process figure{margin:0;position:sticky;top:30px}
+.process figure img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+.process figcaption{font-size:13px;color:var(--muted);margin-top:12px;letter-spacing:.04em}
+.flow{list-style:none;margin:0;padding:0;counter-reset:s}
+.flow li{display:grid;grid-template-columns:64px 1fr;gap:0 18px;padding:26px 0;border-top:1px solid var(--line)}
+.flow li:last-child{border-bottom:1px solid var(--line)}
+.flow li::before{counter-increment:s;content:counter(s,decimal-leading-zero);font:500 30px/1 var(--head);color:var(--red);grid-row:span 2}
+.flow h3{font-size:28px;text-transform:uppercase;margin:0 0 6px}
+.flow p{margin:0;color:var(--muted);font-size:16px}
+
+/* materials */
+.materials{background:var(--char);color:#f1ece2}
+.materials .sec-head p{color:#cfc8ba}
+.materials .kicker{color:#e3c88f}
+.mat-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #5a5853}
+.mat-grid div{padding:28px 24px 8px 0}
+.mat-grid div+div{padding-left:24px;border-left:1px solid #5a5853}
+.mat-grid h3{font-size:26px;text-transform:uppercase;color:#fff;margin:0 0 10px}
+.mat-grid p{margin:0;color:#cfc8ba;font-size:15.5px}
+.swatch{height:6px;width:44px;margin:0 0 22px;background:var(--gold)}
+
+/* partners */
+.who{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.who article img{width:100%;max-width:360px;height:auto;aspect-ratio:1;object-fit:cover;margin:0 0 22px}
+.who h3{font-size:32px;text-transform:uppercase;color:var(--red);margin:0 0 10px}
+.who p{margin:0;color:var(--muted);font-size:16px}
+.who .credit{font-size:12.5px;margin-top:10px;letter-spacing:.03em}
+
+/* faq */
+.faq{background:#fff;border-top:1px solid var(--line)}
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
+details{border-top:1px solid var(--line)}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:64px;padding:14px 0;font:500 24px/1.15 var(--head);letter-spacing:.02em}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:400 26px/1 var(--body);color:var(--red);transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin:0 0 22px;color:var(--muted);max-width:40em}
+
+/* contact */
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:72px}
+.contact h2{font-size:clamp(44px,5.6vw,76px);text-transform:uppercase}
+.contact .lede{color:var(--muted);font-size:18px;margin:20px 0 32px;max-width:28em}
+.facts{list-style:none;margin:36px 0 0;padding:0;border-top:1px solid var(--line)}
+.facts li{display:grid;grid-template-columns:110px 1fr;padding:16px 0;border-bottom:1px solid var(--line);font-size:16px}
+.facts span{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);padding-top:4px}
+.facts a{text-decoration:none;border-bottom:1px solid #cfc7b8;display:inline-block;padding:2px 0}
+.facts a:hover{color:var(--red);border-color:var(--red)}
+form.ask{background:#fff;border:1px solid var(--line);padding:34px}
+form.ask h3{font-size:30px;text-transform:uppercase;margin:0 0 22px}
+.field{margin:0 0 16px}
+.field label{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 7px}
+.field input,.field select,.field textarea{width:100%;min-height:48px;border:1px solid #cfc7b8;background:var(--paper);padding:11px 13px;font:400 16px/1.4 var(--body);color:var(--ink);border-radius:0}
+.field textarea{min-height:110px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--gold);outline-offset:0;border-color:var(--gold)}
+form.ask .btn{width:100%;margin-top:6px}
+
+/* footer */
+footer{background:var(--char);color:#d9d3c7;padding:64px 0 40px;font-size:15px}
+footer .wrap{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
+footer .brand span{color:#fff}
+footer h2{font:500 14px/1 var(--body);letter-spacing:.18em;text-transform:uppercase;color:#e3c88f;margin:0 0 16px}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{margin:0 0 4px}
+footer a{text-decoration:none;display:inline-block;padding:6px 0}
+footer a:hover{color:#fff;text-decoration:underline}
+.fine{grid-column:1/-1;border-top:1px solid #5a5853;padding-top:22px;margin-top:10px;font-size:13.5px;color:#bdb6a8;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.fine a{padding:0;text-decoration:underline}
+
+/* phone call bar */
+.callbar{display:none}
+
+/* rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .will-rise{opacity:1;transform:none}
+  .rise,.print,.dim,summary::after{transition:none}
+}
+
+@media (max-width:1020px){
+  nav.main{display:none}
+  .hero .wrap{grid-template-columns:1fr;gap:48px}
+  .board{grid-template-columns:1fr}
+  .controls{border-left:0;border-top:1px solid var(--line)}
+  .process .wrap,.faq .wrap,.contact .wrap{grid-template-columns:1fr;gap:44px}
+  .process figure{position:static}
+  .mat-grid{grid-template-columns:1fr 1fr}
+  .mat-grid div:nth-child(3){padding-left:0;border-left:0}
+  .mat-grid div:nth-child(n+3){border-top:1px solid #5a5853;margin-top:20px}
+}
+@media (max-width:680px){
+  body{font-size:16px;padding-bottom:64px}
+  .wrap{padding:0 20px}
+  .mock{font-size:15px}
+  .top .wrap{min-height:72px}
+  .brand img{width:44px;height:44px}
+  .brand span{font-size:19px;letter-spacing:.12em}
+  .top-tel{display:none}
+  .hero{padding:44px 0 64px}
+  .hero h1{font-size:58px}
+  .hero .lede{font-size:17px;margin:20px 0 28px}
+  .actions .btn{width:100%}
+  .hero-art{padding:34px 30px 30px}
+  .framed{padding:14px}
+  .sec{padding:76px 0}
+  .sec-head{margin-bottom:38px}
+  .steps{margin:-14px 0 28px;gap:12px 20px;font-size:12.5px}
+  .stage{min-height:0}
+  .room{min-height:330px}
+  .controls{padding:22px 18px 24px}
+  .flow li{grid-template-columns:48px 1fr}
+  .flow h3{font-size:25px}
+  .mat-grid{grid-template-columns:1fr}
+  .mat-grid div,.mat-grid div+div{padding:24px 0 6px;border-left:0}
+  .mat-grid div+div{border-top:1px solid #5a5853;margin-top:18px}
+  .who{grid-template-columns:1fr;gap:48px}
+  .who article img{max-width:100%}
+  summary{font-size:21px}
+  form.ask{padding:24px 18px}
+  .facts li{grid-template-columns:86px 1fr}
+  footer .wrap{grid-template-columns:1fr;gap:30px}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:20;background:#24231f;box-shadow:0 -6px 20px rgba(0,0,0,.18)}
+  .callbar a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:56px;color:#fff;text-decoration:none;font:500 13px/1 var(--body);letter-spacing:.16em;text-transform:uppercase}
+  .callbar a+a{background:var(--red)}
+}
+</style>
+</head>
+<body>
+
+<div class="mock" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Madison Editions, back to top">
+      <img src="https://images.squarespace-cdn.com/content/v1/5bd0b831755be2627edcf666/1540405351486-Y9OCCAPADZKF49XPVJNW/MadisonEditions_logo.png" alt="Madison Editions logo" width="52" height="52">
+      <span>Madison Editions</span>
+    </a>
+    <nav class="main" aria-label="Main">
+      <ul>
+        <li><a href="#order">Order a print</a></li>
+        <li><a href="#process">Services</a></li>
+        <li><a href="#partners">Partner with us</a></li>
+        <li><a href="#questions">Questions</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="top-tel" href="tel:+15083843981">(508) 384-3981</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Fine art &amp; giclée printing · Wrentham, MA</p>
+        <h1 id="hero-h">True to the <em>original.</em></h1>
+        <p class="lede"><strong>Fine art printing for artists and pro photographers.</strong> Upload your file or bring your painting. We capture, color-match, proof, print and drop-ship, so you can get back to making art.</p>
+        <div class="actions">
+          <a class="btn btn-red" href="#order">Upload a file to order</a>
+          <a class="btn btn-line" href="#contact">Schedule a consultation</a>
+        </div>
+        <ul class="hero-meta">
+          <li>Giclée on Hahnemühle paper</li>
+          <li>Canvas gallery wraps</li>
+          <li>Branded drop-shipping</li>
+        </ul>
+      </div>
+      <div class="hero-art">
+        <div class="framed">
+          <img src="https://images.squarespace-cdn.com/content/v1/5bd0b831755be2627edcf666/1542836316253-R8ZPW224ZIE10GFOFTJW/The_Pawnee_James_Bama.jpg?format=1500w" alt="The Pawnee by James Bama: a man with a red roach headdress and painted face, wrapped in a buffalo robe" width="1500" height="1899">
+        </div>
+        <p class="caption"><b>The Pawnee</b>, James Bama</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec studio" id="order" aria-labelledby="order-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Order a print</p>
+        <h2 id="order-h">Upload it. See it on the wall.</h2>
+        <p>Drop in a high-resolution photo of your art, choose the material and size, and see it to scale before you order.</p>
+      </div>
+      <ol class="steps" aria-label="How ordering works">
+        <li><b>1</b> Upload</li>
+        <li><b>2</b> Choose</li>
+        <li><b>3</b> Send for print</li>
+      </ol>
+
+      <div class="board">
+        <div class="stage">
+          <div class="stage-top"><span>Preview on a wall</span><span id="scaleTxt">Shown to scale</span></div>
+          <div class="room" id="room" aria-hidden="true">
+            <div class="print paper" id="print"><div class="img" id="printImg"></div></div>
+            <div class="dim" id="dim"></div>
+            <svg class="bench" id="bench" viewBox="0 0 320 300" preserveAspectRatio="none" fill="currentColor"><rect x="0" y="0" width="320" height="16" rx="2"/><rect x="14" y="16" width="8" height="284"/><rect x="298" y="16" width="8" height="284"/><rect x="14" y="214" width="292" height="8"/><g opacity=".55"><rect x="44" y="150" width="11" height="64" rx="1"/><rect x="57" y="140" width="14" height="74" rx="1" opacity=".7"/><rect x="73" y="156" width="10" height="58" rx="1"/><rect x="85" y="146" width="13" height="68" rx="1" opacity=".8"/><rect x="100" y="162" width="9" height="52" rx="1" transform="rotate(-14 109 214)" opacity=".7"/></g><g opacity=".5"><rect x="200" y="200" width="78" height="14" rx="1"/><rect x="206" y="187" width="66" height="12" rx="1" opacity=".75"/><rect x="202" y="175" width="72" height="11" rx="1"/></g></svg>
+            <div class="floor"></div>
+          </div>
+        </div>
+
+        <form class="controls" id="orderForm" novalidate>
+          <div>
+            <span class="ctl-label" id="fileLbl">1 · Your file</span>
+            <label class="drop" id="drop">
+              <input type="file" id="file" accept="image/*" aria-labelledby="fileLbl fileName">
+              <span class="thumb" id="thumb"></span>
+              <span>
+                <span class="file-name" id="fileName">Sample: The Pawnee, web copy</span>
+                <span class="file-meta" id="fileMeta">1500 × 1899 px</span>
+                <span class="file-act">Choose or drop your own file</span>
+              </span>
+            </label>
+          </div>
+
+          <fieldset style="border:0;margin:0;padding:0">
+            <legend class="ctl-label">2 · Material</legend>
+            <div class="mats">
+              <label><input type="radio" name="mat" value="paper" checked><span>Fine art paper<small>Giclée on Hahnemühle</small></span></label>
+              <label><input type="radio" name="mat" value="photo"><span>Photo paper<small>Giclée, photo based</small></span></label>
+              <label><input type="radio" name="mat" value="canvas"><span>Canvas print<small>Giclée on canvas</small></span></label>
+              <label><input type="radio" name="mat" value="wrap"><span>Gallery wrap<small>Handcrafted canvas</small></span></label>
+            </div>
+          </fieldset>
+
+          <div>
+            <div class="size-row"><label class="ctl-label" for="size" style="margin:0">Size</label><span class="size-out" id="sizeOut">6.3 × 8 in</span></div>
+            <input type="range" id="size" min="6" max="40" step="1" value="8" aria-describedby="sizeNote meter">
+            <p class="size-note" id="sizeNote">Sample range, to be set with you. Sizes are confirmed with the studio.</p>
+            <div class="meter mid" id="meter" role="status"><span class="dot"></span><span id="meterTxt"><strong>237 pixels per inch.</strong> Good at a normal viewing distance.</span></div>
+          </div>
+
+          <div class="row2">
+            <div>
+              <span class="ctl-label" id="edLbl">Edition</span>
+              <div class="seg" role="radiogroup" aria-labelledby="edLbl">
+                <label><input type="radio" name="ed" value="Open" checked>Open</label>
+                <label><input type="radio" name="ed" value="Limited">Limited</label>
+              </div>
+            </div>
+            <div>
+              <span class="ctl-label" id="qtyLbl">Prints</span>
+              <div class="qty" role="group" aria-labelledby="qtyLbl">
+                <button type="button" id="minus" aria-label="One fewer print">−</button>
+                <output id="qty" aria-live="polite">1</output>
+                <button type="button" id="plus" aria-label="One more print">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="opts">
+            <label><input type="checkbox" name="x" value="proof" checked> Proof for my approval first</label>
+            <label><input type="checkbox" name="x" value="sig"> Remove my signature so I can sign each print</label>
+            <label><input type="checkbox" name="x" value="ship"> Branded drop-ship to my client</label>
+            <label><input type="checkbox" name="x" value="rush"> Rush turnaround</label>
+          </div>
+
+          <div class="summary">
+            <p id="summary" aria-live="polite">1 open edition print, 6.3 × 8 in, giclée on Hahnemühle fine art paper. Proof first.</p>
+            <button class="btn btn-red" type="submit">Send for print</button>
+            <p class="sent" id="orderSent" role="status">Thanks. This is a mockup, so nothing was sent.</p>
+            <p class="mock-note">Your file stays on your device in this preview. Prices and checkout plug in here on the live site.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec process" id="process" aria-labelledby="process-h">
+    <div class="wrap">
+      <figure>
+        <img src="https://images.squarespace-cdn.com/content/v1/5bd0b831755be2627edcf666/1545955412576-FROQXO9RQDSHMV65ZI52/image-asset.jpeg?format=1500w" alt="The print head of a large-format giclée printer over the print bed" width="1500" height="1000" loading="lazy">
+        <figcaption>World class technology meets boutique service.</figcaption>
+      </figure>
+      <div>
+        <div class="sec-head" style="margin-bottom:34px">
+          <p class="kicker">Services</p>
+          <h2 id="process-h">We handle every step.</h2>
+          <p>More than printing: a partner in selling your work.</p>
+        </div>
+        <ol class="flow">
+          <li><h3>Capture</h3><p>High-resolution digital capture of your original, in our studio or on-site. Film scanning too.</p></li>
+          <li><h3>Prepare</h3><p>Expert color correction, editing and retouching for a reproduction true to the original. You get the finished files.</p></li>
+          <li><h3>Proof</h3><p>A proportional 11 × 14 in proof for your approval before printing. Full-size proofs on request.</p></li>
+          <li><h3>Print</h3><p>Giclée on fine art paper, photo paper and canvas, in open or limited editions, on demand.</p></li>
+          <li><h3>Ship</h3><p>Canvas stretching, branded packaging and drop-shipping straight to your client.</p></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec materials" aria-labelledby="mat-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Premium-quality materials</p>
+        <h2 id="mat-h">Made to last for generations.</h2>
+        <p>Pigment-based inks, fade-resistant and non-water soluble, on archival-quality papers and canvas.</p>
+      </div>
+      <div class="mat-grid">
+        <div><span class="swatch"></span><h3>Fine art paper</h3><p>Giclée prints on Hahnemühle fine art papers.</p></div>
+        <div><span class="swatch"></span><h3>Photo paper</h3><p>Giclée prints on photo based paper, and fine photo printing.</p></div>
+        <div><span class="swatch"></span><h3>Canvas</h3><p>Giclée prints on canvas.</p></div>
+        <div><span class="swatch"></span><h3>Gallery wraps</h3><p>Handcrafted canvas gallery wraps.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="partners" aria-labelledby="who-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Your partner</p>
+        <h2 id="who-h">Who we print for.</h2>
+        <p>Let us handle the time-consuming details so you can focus on what you love: creating art.</p>
+      </div>
+      <div class="who">
+        <article>
+          <img src="https://images.squarespace-cdn.com/content/v1/5bd0b831755be2627edcf666/1545961134498-YD31TSU1RW7NV1F4DKAU/Mrs.Jones_Giovanni_Decunto.jpg?format=500w" alt="Mrs. Jones by Giovanni DeCunto: a white orchid in thick, textured paint" width="500" height="500" loading="lazy">
+          <h3>Galleries</h3>
+          <p>Masterful reproductions for artist and photographer-owned galleries, meeting your customers at a variety of price points.</p>
+          <p class="credit">Mrs. Jones, Giovanni DeCunto</p>
+        </article>
+        <article>
+          <img src="https://images.squarespace-cdn.com/content/v1/5bd0b831755be2627edcf666/1545961141102-X6JB75BJVVLFLQP31R1G/TJ_Walton3.jpg?format=500w" alt="A painting by TJ Walton: pink flowers in a red vase on a pale green ground" width="500" height="500" loading="lazy">
+          <h3>Photographers</h3>
+          <p>Your digital images turned into works of art and drop-shipped to your clients, so you can focus on your next shoot.</p>
+          <p class="credit">TJ Walton</p>
+        </article>
+        <article>
+          <img src="https://images.squarespace-cdn.com/content/v1/5bd0b831755be2627edcf666/1545961156018-M77EV5OEQVY4QAMA6I56/Proud_Men_Howard_Terpning.jpg?format=500w" alt="Proud Men by Howard Terpning: two men in feathered headdresses in profile" width="500" height="500" loading="lazy">
+          <h3>Art consultants</h3>
+          <p>Original works reproduced for your clients in hospitality, healthcare and other commercial industries.</p>
+          <p class="credit">Proud Men, Howard Terpning</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec faq" id="questions" aria-labelledby="faq-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Questions</p>
+        <h2 id="faq-h">Before you print.</h2>
+        <p>Something else? Call <a href="tel:+15083843981">(508) 384-3981</a>.</p>
+      </div>
+      <div>
+        <details open>
+          <summary>What can you print from?</summary>
+          <p>Original paintings, photographs, film and digital art. Giclée prints can be made from all of them.</p>
+        </details>
+        <details>
+          <summary>Do I have to bring my painting in?</summary>
+          <p>Most local artists in New England bring their art to our studio. For very large paintings or many works, we can photograph on location at your studio or gallery. From out of state, ship the original to us.</p>
+        </details>
+        <details>
+          <summary>Do I have to print my whole edition at once?</summary>
+          <p>No. Once your proof is approved, prints are made as needed. Your signed-off proof stays on file so every print matches.</p>
+        </details>
+        <details>
+          <summary>Will a reorder next year match?</summary>
+          <p>Yes. We archive your files and keep custom ICC profiles for every camera, monitor, scanner and printer we use, for consistency in every print run.</p>
+        </details>
+        <details>
+          <summary>Can you remove my signature?</summary>
+          <p>Yes. Some artists ask us to, so they can sign each print by hand. It adds value and shows the buyer you approved the print.</p>
+        </details>
+        <details>
+          <summary>Do I get the digital files?</summary>
+          <p>Yes. You receive the finished files for your own use, and we keep a copy so you can reorder any time.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec contact" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Get started</p>
+        <h2 id="contact-h">Let's print your work.</h2>
+        <p class="lede">Upload a file to order, or tell us about your project and we'll set up a consultation.</p>
+        <div class="actions">
+          <a class="btn btn-red" href="#order">Upload a file to order</a>
+          <a class="btn btn-line" href="tel:+15083843981">Call (508) 384-3981</a>
+        </div>
+        <ul class="facts">
+          <li><span>Studio</span><a href="https://www.google.com/maps/search/?api=1&amp;query=81%20Madison%20Street%2C%20Wrentham%2C%20MA%2002093">81 Madison Street, Wrentham, MA 02093</a></li>
+          <li><span>Phone</span><a href="tel:+15083843981">(508) 384-3981</a></li>
+          <li><span>Email</span><a href="mailto:madisoneditions1@mac.com">madisoneditions1@mac.com</a></li>
+        </ul>
+      </div>
+      <form class="ask" id="askForm">
+        <h3>Schedule a consultation</h3>
+        <div class="field"><label for="n">Name</label><input id="n" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="e">Email</label><input id="e" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="w">I am</label>
+          <select id="w" name="who"><option>An artist</option><option>A photographer</option><option>A gallery</option><option>An art consultant</option></select></div>
+        <div class="field"><label for="m">About your project</label><textarea id="m" name="msg" placeholder="What you'd like printed, sizes, how many"></textarea></div>
+        <button class="btn btn-red" type="submit">Send</button>
+        <p class="sent" id="askSent" role="status">Thanks. This is a mockup, so nothing was sent.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="#top"><img src="https://images.squarespace-cdn.com/content/v1/5bd0b831755be2627edcf666/1540405351486-Y9OCCAPADZKF49XPVJNW/MadisonEditions_logo.png" alt="" width="44" height="44" style="width:44px;height:44px"><span>Madison Editions</span></a>
+      <p style="margin:18px 0 0;max-width:24em">Fine art and giclée printing for artists, photographers and art consultants.</p>
+    </div>
+    <div>
+      <h2>Visit</h2>
+      <p style="margin:0">81 Madison Street<br>Wrentham, MA 02093</p>
+      <a href="tel:+15083843981">(508) 384-3981</a><br>
+      <a href="mailto:madisoneditions1@mac.com">Email us</a>
+    </div>
+    <div>
+      <h2>Follow</h2>
+      <ul>
+        <li><a href="http://www.facebook.com/madisoneditions">Facebook</a></li>
+        <li><a href="https://twitter.com/MadisonEditions">Twitter</a></li>
+        <li><a href="https://www.madisoneditions.com/">Current website</a></li>
+      </ul>
+    </div>
+    <div class="fine">
+      <span>Copyright © 2026 Madison Editions</span>
+      <span>Mockup made for Madison Editions by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick actions">
+  <a href="tel:+15083843981">Call</a>
+  <a href="#order">Upload a file</a>
+</nav>
+
+<script>
+(function(){
+  var SAMPLE = "https://images.squarespace-cdn.com/content/v1/5bd0b831755be2627edcf666/1542836316253-R8ZPW224ZIE10GFOFTJW/The_Pawnee_James_Bama.jpg?format=1500w";
+  var state = {src:SAMPLE, w:1500, h:1899, mat:'paper', size:8, qty:1};
+  var WALL_IN = 38, TABLE_W = 40, TABLE_H = 24;
+  var $ = function(id){return document.getElementById(id)};
+  var room=$('room'), pr=$('print'), img=$('printImg'), dim=$('dim'), bench=$('bench');
+  var matNames={paper:'giclée on Hahnemühle fine art paper',photo:'giclée on photo paper',canvas:'giclée on canvas',wrap:'canvas gallery wrap'};
+  function fmt(n){return (Math.round(n*10)/10).toString().replace(/\.0$/,'')}
+  function dims(){
+    var long=state.size, r=state.w/state.h;
+    return r>=1 ? {w:long,h:long/r} : {w:long*r,h:long};
+  }
+  function render(){
+    var d=dims(), rw=room.clientWidth, rh=room.clientHeight, px=rw/WALL_IN;
+    var floorH=rh*0.18, gap=7;
+    var fit=(rh-floorH-40)/(TABLE_H+gap+d.h);
+    if(fit<px){px=fit}
+    bench.style.width=(TABLE_W*px)+'px'; bench.style.height=(TABLE_H*px)+'px';
+    var bw=d.w*px, bh=d.h*px, bottom=floorH+(TABLE_H+gap)*px;
+    pr.className='print '+state.mat;
+    pr.style.width=bw+'px'; pr.style.height=bh+'px'; pr.style.bottom=bottom+'px';
+    img.style.backgroundImage='url("'+state.src+'")';
+    dim.style.bottom=(bottom+bh+10)+'px';
+    dim.textContent=fmt(d.w)+' × '+fmt(d.h)+' in';
+    $('scaleTxt').textContent='To scale over a '+TABLE_W+' in sideboard';
+    $('sizeOut').textContent=fmt(d.w)+' × '+fmt(d.h)+' in';
+    var ppi=Math.round(Math.min(state.w/d.w,state.h/d.h)), m=$('meter'), t;
+    m.className='meter';
+    if(ppi>=250){t='Sharp, even up close.'}
+    else if(ppi>=150){t='Good at a normal viewing distance.';m.className='meter mid'}
+    else {t=state.src===SAMPLE?'This sample is a web copy. For this size, send your full resolution file.':'Too few pixels for this size. Send a larger file, or ask about image capture.';m.className='meter low'}
+    $('meterTxt').innerHTML='<strong>'+ppi+' pixels per inch.</strong> '+t;
+    var ed=document.querySelector('input[name=ed]:checked').value.toLowerCase();
+    var x=[].map.call(document.querySelectorAll('input[name=x]:checked'),function(i){return i.value});
+    var extra={proof:'Proof first',sig:'signature removed',ship:'branded drop-ship',rush:'rush'};
+    var tail=x.map(function(k){return extra[k]}).join(', ');
+    $('summary').textContent=state.qty+' '+ed+' edition print'+(state.qty>1?'s':'')+', '+fmt(d.w)+' × '+fmt(d.h)+' in, '+matNames[state.mat]+'.'+(tail?' '+tail.charAt(0).toUpperCase()+tail.slice(1)+'.':'');
+  }
+  $('thumb').style.backgroundImage='url("'+SAMPLE+'")';
+  $('size').addEventListener('input',function(e){state.size=+e.target.value;render()});
+  [].forEach.call(document.querySelectorAll('input[name=mat]'),function(i){i.addEventListener('change',function(){state.mat=i.value;render()})});
+  [].forEach.call(document.querySelectorAll('input[name=ed],input[name=x]'),function(i){i.addEventListener('change',render)});
+  $('minus').addEventListener('click',function(){if(state.qty>1){state.qty--;$('qty').textContent=state.qty;render()}});
+  $('plus').addEventListener('click',function(){if(state.qty<99){state.qty++;$('qty').textContent=state.qty;render()}});
+  function useFile(f){
+    if(!f)return;
+    var url=URL.createObjectURL(f), im=new Image();
+    $('fileName').textContent=f.name;
+    $('fileMeta').textContent='Reading…';
+    im.onload=function(){
+      state.src=url; state.w=im.naturalWidth; state.h=im.naturalHeight;
+      $('thumb').style.backgroundImage='url("'+url+'")';
+      $('fileMeta').textContent=state.w+' × '+state.h+' px · '+(f.size/1048576).toFixed(1)+' MB';
+      render();
+    };
+    im.onerror=function(){$('fileMeta').textContent='Your browser can’t preview this file type. We can still print it.'};
+    im.src=url;
+  }
+  $('file').addEventListener('change',function(e){useFile(e.target.files[0])});
+  var drop=$('drop');
+  ['dragenter','dragover'].forEach(function(t){drop.addEventListener(t,function(e){e.preventDefault();drop.classList.add('over')})});
+  ['dragleave','drop'].forEach(function(t){drop.addEventListener(t,function(e){e.preventDefault();drop.classList.remove('over')})});
+  drop.addEventListener('drop',function(e){useFile(e.dataTransfer.files[0])});
+  $('orderForm').addEventListener('submit',function(e){e.preventDefault();$('orderSent').classList.add('show')});
+  $('askForm').addEventListener('submit',function(e){e.preventDefault();$('askSent').classList.add('show')});
+  window.addEventListener('resize',render);
+  render();
+
+  // gentle rise for things below the first screen
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce && 'IntersectionObserver' in window){
+    var els=document.querySelectorAll('.sec-head,.board,.flow li,.mat-grid > div,.who article,details,.process figure,form.ask,.facts');
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target)}});
+    },{rootMargin:'0px 0px -6% 0px'});
+    [].forEach.call(els,function(el){
+      if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('rise','will-rise');io.observe(el)}
+    });
+  }
+})();
+</script>
+</body>
+</html>
