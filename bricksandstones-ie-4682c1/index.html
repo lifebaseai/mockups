@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup bricksandstones-ie-4682c1 1 fcde34d9 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bricks &amp; Stones | FlexOre stone and brick veneer, Dublin</title>
+<meta name="description" content="FlexOre by Bricks &amp; Stones: a thin, flexible, handcrafted veneer with the look of natural stone and brick. Irish owned. Indoors or out.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f4f2ee;--paper2:#ebe6df;--ink:#2b0d00;--brown:#633a29;--deep:#49261d;
+  --muted:#674c41;--line:#ddd5cb;--cream:#f6eee6;--cream2:#d9c4b6;
+  --sans:"Inter Tight",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --wrap:1200px;--pad:clamp(20px,4vw,48px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.55 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--brown);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
+.mono{font:500 12px/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:10px 14px;z-index:99}
+.skip:focus{left:8px;top:8px}
+
+/* Signal Set banner */
+.ss{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:var(--ink);color:var(--cream);font:400 15px/1.3 var(--sans);text-align:center;white-space:nowrap}
+.ss a{color:#fff;text-decoration:underline;text-underline-offset:3px;font-weight:500}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(244,242,238,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:28px;height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font:600 18px/1 var(--sans);letter-spacing:.04em;text-transform:uppercase;min-height:44px}
+.brand svg{width:30px;height:22px}
+.nav{display:flex;gap:26px;margin-left:auto}
+.nav a{text-decoration:none;font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;padding:14px 0;color:var(--deep)}
+.nav a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:5px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;border:1px solid var(--ink);background:var(--ink);color:var(--cream);text-decoration:none;font:500 13px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:background .2s,color .2s}
+.btn:hover{background:var(--brown);border-color:var(--brown)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--cream)}
+.btn.sm{min-height:44px;padding:0 16px;font-size:12px}
+.btn .arr{font-family:var(--sans);font-size:16px;letter-spacing:0}
+
+/* hero */
+.hero{position:relative;border-bottom:1px solid var(--line);background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:80px 80px;background-position:center -1px}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--paper) 0,var(--paper) 38%,rgba(244,242,238,.55) 62%,rgba(244,242,238,0) 100%);pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.08fr .92fr;grid-template-rows:1fr 1fr;grid-template-areas:"a s" "b s";column-gap:40px;align-items:center;min-height:min(640px,calc(100vh - 116px));padding-top:64px;padding-bottom:64px}
+.h-top{grid-area:a;align-self:end}
+.h-bot{grid-area:b;align-self:start}
+.stage{grid-area:s}
+.eyebrow{color:var(--brown);margin:0 0 22px}
+h1{font:300 clamp(44px,6.4vw,84px)/1.0 var(--sans);letter-spacing:-.035em;margin:0 0 26px}
+h1 em{font-style:normal;color:var(--brown)}
+.lede{font-size:clamp(18px,1.6vw,20px);line-height:1.5;color:var(--muted);max-width:30em;margin:0 0 34px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.proof{display:flex;flex-wrap:wrap;gap:10px 26px;margin:40px 0 0;padding:0;list-style:none;color:var(--deep)}
+.proof li{display:flex;align-items:center;gap:9px}
+.proof li::before{content:"";width:7px;height:7px;background:var(--brown)}
+
+.stage{position:relative;display:grid;place-items:center;height:440px;padding-bottom:56px;perspective:1300px}
+.tilt{transform:rotateX(-20deg);transform-style:preserve-3d}
+.cube{--s:270px;position:relative;width:var(--s);height:var(--s);transform-style:preserve-3d;transform:rotateY(-32deg);animation:spin 36s linear infinite}
+.cube.paused{animation-play-state:paused}
+@keyframes spin{from{transform:rotateY(-32deg)}to{transform:rotateY(-392deg)}}
+.face{position:absolute;inset:0;overflow:hidden;backface-visibility:hidden;box-shadow:inset 0 0 0 1px rgba(43,13,0,.08)}
+.face svg{width:100%;height:100%}
+.face.photo{background-size:cover;background-position:center}
+.face.photo svg{display:none}
+.face .tag{position:absolute;left:12px;bottom:12px;background:rgba(244,242,238,.92);color:var(--ink);padding:6px 9px;font:500 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.f1{transform:translateZ(calc(var(--s)/2))}
+.f2{transform:rotateY(90deg) translateZ(calc(var(--s)/2))}
+.f3{transform:rotateY(180deg) translateZ(calc(var(--s)/2))}
+.f4{transform:rotateY(270deg) translateZ(calc(var(--s)/2))}
+.f5{transform:rotateX(90deg) translateZ(calc(var(--s)/2));filter:brightness(1.08)}
+.f2,.f4{filter:brightness(.86)}
+.shadow{position:absolute;left:50%;bottom:62px;width:340px;height:40px;margin-left:-170px;background:radial-gradient(closest-side,rgba(43,13,0,.22),rgba(43,13,0,0));pointer-events:none}
+.stage-cap{position:absolute;bottom:0;left:0;right:0;text-align:center;color:var(--muted)}
+
+/* sections */
+section{scroll-margin-top:80px}
+.sec{padding:clamp(72px,10vw,128px) 0}
+.head{display:grid;grid-template-columns:1fr 1fr;gap:24px 48px;align-items:end;margin-bottom:48px}
+h2{font:300 clamp(34px,4.4vw,56px)/1.05 var(--sans);letter-spacing:-.03em;margin:0}
+.head p{margin:0;color:var(--muted);max-width:34em}
+.label{color:var(--brown);margin:0 0 16px}
+
+/* range finder */
+.finder{display:grid;grid-template-columns:1.25fr .75fr;gap:0;background:#fff;border:1px solid var(--line);box-shadow:0 1px 0 rgba(43,13,0,.04),0 30px 60px -40px rgba(43,13,0,.35)}
+.picks{grid-column:1/-1;display:grid;grid-template-columns:repeat(6,1fr);border-bottom:1px solid var(--line)}
+.pick{appearance:none;border:0;border-right:1px solid var(--line);background:#fff;padding:12px 12px 14px;text-align:left;cursor:pointer;color:var(--ink);font:inherit;display:flex;flex-direction:column;gap:10px;min-height:44px;transition:background .2s}
+.pick:last-child{border-right:0}
+.pick .sw{height:64px;overflow:hidden;outline:1px solid rgba(43,13,0,.06)}
+.pick .sw svg{width:100%;height:100%}
+.pick b{font:500 15px/1.2 var(--sans)}
+.pick:hover{background:var(--paper)}
+.pick[aria-pressed="true"]{background:var(--paper2);box-shadow:inset 0 -3px 0 var(--brown)}
+.preview{position:relative;min-height:440px;border-right:1px solid var(--line);overflow:hidden;background:var(--paper2)}
+.preview svg{position:absolute;inset:0;width:100%;height:100%;transition:opacity .25s}
+.preview .note{position:absolute;left:14px;bottom:14px;right:14px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 12px;align-items:flex-end;pointer-events:none}
+.preview .note span{background:rgba(244,242,238,.94);padding:7px 10px;font:500 11px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--deep)}
+.info{padding:30px 30px 32px;display:flex;flex-direction:column}
+.info .mono{color:var(--brown);margin:0 0 10px}
+.info h3{font:300 40px/1 var(--sans);letter-spacing:-.025em;margin:0 0 6px}
+.info .look{font-weight:500;color:var(--deep);margin:0 0 14px}
+.info .txt{color:var(--muted);margin:0 0 18px;font-size:16px}
+.facts{list-style:none;margin:0 0 20px;padding:0;border-top:1px solid var(--line)}
+.facts li{padding:10px 0;border-bottom:1px solid var(--line);font-size:15px;display:flex;gap:10px}
+.facts li::before{content:"";flex:none;width:6px;height:6px;margin-top:9px;background:var(--brown)}
+.rq{margin:0 0 20px;padding-left:14px;border-left:2px solid var(--cream2)}
+.rq[hidden]{display:none}
+.rq blockquote{margin:0 0 6px;font:300 16px/1.45 var(--sans);color:var(--ink)}
+.rq figcaption{font-size:13px;color:var(--muted)}
+.ctrl{display:flex;flex-wrap:wrap;gap:16px 22px;margin:0 0 22px}
+.seg{border:0;margin:0;padding:0;min-width:0}
+.seg legend{font:500 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;padding:0}
+.seg div{display:flex;border:1px solid var(--ink)}
+.seg button{appearance:none;border:0;border-right:1px solid var(--ink);background:transparent;color:var(--ink);min-height:44px;padding:0 14px;font:500 13px/1 var(--sans);cursor:pointer}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--cream)}
+.info .btn{margin-top:auto;width:100%}
+
+/* benefits */
+.dark{background:var(--deep);color:var(--cream)}
+.dark .label{color:var(--cream2)}
+.dark .head p{color:var(--cream2)}
+.bens{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(246,238,230,.22)}
+.ben{padding:30px 26px 6px 0}
+.ben+.ben{padding-left:26px;border-left:1px solid rgba(246,238,230,.22)}
+.ben svg{width:64px;height:48px;margin-bottom:22px}
+.ben h3{font:400 22px/1.2 var(--sans);margin:0 0 10px;letter-spacing:-.01em}
+.ben p{margin:0;color:var(--cream2);font-size:15.5px}
+.tested{display:grid;grid-template-columns:auto 1fr;gap:24px 40px;align-items:center;margin-top:64px;padding-top:36px;border-top:1px solid rgba(246,238,230,.22)}
+.tested .big{font:300 clamp(30px,3.4vw,44px)/1.05 var(--sans);letter-spacing:-.02em;margin:0}
+.tested p{margin:0;color:var(--cream2);max-width:40em}
+
+/* faq */
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:0 56px;margin:0}
+.qa{padding:24px 0;border-top:1px solid var(--line)}
+.qa dt{font:500 19px/1.3 var(--sans);margin:0 0 8px;letter-spacing:-.01em}
+.qa dd{margin:0;color:var(--muted);font-size:16px}
+.qa dd strong{color:var(--ink);font-weight:600}
+
+/* reviews */
+.reviews{background:var(--ink);color:var(--cream)}
+.reviews .label{color:var(--cream2)}
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:52px}
+.rev{margin:0;display:flex;flex-direction:column}
+.rev .mono{color:var(--cream2);margin-bottom:18px;display:flex;align-items:center;gap:10px}
+.rev .mono i{display:inline-block;width:22px;height:1px;background:var(--cream2)}
+.rev blockquote{margin:0 0 22px;font:300 20px/1.45 var(--sans);letter-spacing:-.005em}
+.rev figcaption{margin-top:auto;padding-top:16px;border-top:1px solid rgba(246,238,230,.22);font-size:15px}
+.rev figcaption span{color:var(--cream2)}
+
+/* about */
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.about p{margin:0 0 18px;color:var(--muted)}
+.about p.lead{font:300 clamp(24px,2.4vw,30px)/1.3 var(--sans);color:var(--ink);letter-spacing:-.01em}
+
+/* contact */
+.contact{background:var(--paper2);border-top:1px solid var(--line)}
+.cgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
+form{background:#fff;border:1px solid var(--line);padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.fld{display:flex;flex-direction:column;gap:7px}
+.fld.full{grid-column:1/-1}
+label{font:500 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--deep)}
+input,select,textarea{font:400 16px/1.4 var(--sans);color:var(--ink);background:var(--paper);border:1px solid #c9bdb0;border-radius:0;padding:12px 14px;min-height:48px;width:100%}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--brown);outline-offset:0;border-color:var(--brown)}
+form .btn{grid-column:1/-1}
+.sent{grid-column:1/-1;margin:0;padding:14px 16px;background:var(--paper2);border-left:3px solid var(--brown);font-weight:500}
+.sent[hidden]{display:none}
+.details{display:grid;gap:26px}
+.details h3{font:500 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--brown);margin:0 0 10px}
+.details p{margin:0;font-size:18px}
+.details a{text-decoration:underline;text-decoration-color:var(--cream2);text-underline-offset:4px;display:inline-block;padding:4px 0}
+.details a:hover{text-decoration-color:var(--ink)}
+.hours{display:grid;grid-template-columns:auto 1fr;gap:4px 20px;font-size:17px;margin:0}
+.hours dt{color:var(--muted)}
+.hours dd{margin:0}
+
+footer{background:var(--ink);color:var(--cream2);padding:56px 0 40px;font-size:14px}
+footer .wrap{display:grid;gap:28px}
+.fbig{display:flex;align-items:center;gap:18px;color:var(--cream);font:600 clamp(30px,6vw,72px)/1 var(--sans);letter-spacing:.01em;text-transform:uppercase}
+.fbig svg{width:clamp(48px,7vw,90px);height:auto;flex:none}
+.frow{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;border-top:1px solid rgba(246,238,230,.18)}
+footer a{color:var(--cream)}
+
+.callbar{display:none}
+
+/* motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:980px){
+  .nav{display:none}
+  .top .btn{margin-left:auto}
+  .hero .wrap{grid-template-columns:1fr;grid-template-rows:auto;grid-template-areas:"a" "s" "b";min-height:0;gap:0;padding-top:40px;padding-bottom:40px}
+  .h-top h1{margin-bottom:8px}
+  .hero::before{background:linear-gradient(180deg,var(--paper) 0,var(--paper) 55%,rgba(244,242,238,.5) 100%)}
+  .stage{height:350px;padding-bottom:50px}
+  .cube{--s:180px}
+  .shadow{width:240px;margin-left:-120px;bottom:52px}
+  .head{grid-template-columns:1fr;margin-bottom:32px}
+  .finder{grid-template-columns:1fr}
+  .picks{grid-template-columns:repeat(3,1fr)}
+  .pick:nth-child(3){border-right:0}
+  .pick:nth-child(-n+3){border-bottom:1px solid var(--line)}
+  .preview{min-height:280px;border-right:0;border-bottom:1px solid var(--line)}
+  .bens{grid-template-columns:1fr 1fr}
+  .ben:nth-child(3){padding-left:0;border-left:0}
+  .ben:nth-child(n+3){border-top:1px solid rgba(246,238,230,.22);margin-top:24px}
+  .tested{grid-template-columns:1fr}
+  .faq{grid-template-columns:1fr}
+  .revs{grid-template-columns:1fr;gap:44px}
+  .about,.cgrid{grid-template-columns:1fr;gap:36px}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:64px}
+  .ss{font-size:14px;padding:8px 10px}
+  .top .wrap{height:64px;gap:12px}
+  .brand{font-size:15px;gap:10px}
+  .brand svg{width:26px;height:19px}
+  h1{font-size:46px}
+  .ctas .btn{flex:1 1 100%}
+  .proof{gap:10px 18px;margin-top:30px}
+  .picks{grid-template-columns:repeat(3,1fr)}
+  .pick{padding:10px 10px 12px;gap:8px}
+  .pick .sw{height:48px}
+  .pick b{font-size:14px}
+  .info{padding:24px 20px 26px}
+  .info h3{font-size:34px}
+  .bens{grid-template-columns:1fr}
+  .ben,.ben+.ben{padding:26px 0 0;border-left:0}
+  .ben:nth-child(n+2){border-top:1px solid rgba(246,238,230,.22);margin-top:26px}
+  form{grid-template-columns:1fr;padding:22px}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--ink);border-top:1px solid rgba(246,238,230,.2)}
+  .callbar a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:56px;color:var(--cream);text-decoration:none;font:500 13px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase}
+  .callbar a+a{background:var(--brown)}
+  .eyebrow{margin-bottom:16px}
+  .stage{height:262px;padding-bottom:38px}
+  .cube{--s:158px}
+  .shadow{bottom:40px;width:200px;margin-left:-100px}
+  .face .tag{left:8px;bottom:8px;font-size:10px;padding:5px 7px}
+  .lede{margin-bottom:24px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .cube{animation:none}
+  .will-rise{opacity:1;transform:none}
+  .rise,.preview svg{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="ss" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#main" aria-label="Bricks &amp; Stones, home">
+      <svg viewBox="0 0 30 22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M2 1v8M2 5h10M28 1v8M28 5H18M2 13v8M2 17h10M28 13v8M28 17H18"/></svg>
+      Bricks &amp; Stones
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#ranges">Ranges</a>
+      <a href="#flexore">FlexOre</a>
+      <a href="#questions">Questions</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn sm" href="#contact">Enquire</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="wrap">
+      <div class="h-top">
+        <p class="eyebrow mono">FlexOre · handcrafted brick &amp; stone veneer</p>
+        <h1 id="hero-h">Stone walls, <em>without the stonework.</em></h1>
+      </div>
+      <div class="h-bot">
+        <p class="lede">FlexOre is a thin, flexible veneer with the look and texture of natural stone and brick. It cuts by hand, bends around corners and goes up indoors or out.</p>
+        <div class="ctas">
+          <a class="btn" href="#ranges">Find your range <span class="arr" aria-hidden="true">→</span></a>
+          <a class="btn ghost" href="#contact">Make an enquiry</a>
+        </div>
+        <ul class="proof mono" aria-label="At a glance">
+          <li>Irish owned</li>
+          <li>20 years in development</li>
+          <li>2-year warranty</li>
+        </ul>
+      </div>
+      <div class="stage" aria-hidden="true">
+        <div class="shadow"></div>
+        <div class="tilt">
+          <div class="cube" id="cube">
+            <div class="face f1" data-c="b20"></div>
+            <div class="face f2" data-c="calnat"></div>
+            <div class="face f3" data-c="black"></div>
+            <div class="face f4" data-c="beige"></div>
+            <div class="face f5" data-c="basalt"></div>
+          </div>
+        </div>
+        <p class="stage-cap mono">Six ranges, one flexible formula</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="ranges" aria-labelledby="ranges-h">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="label mono">Our product ranges</p>
+          <h2 id="ranges-h">Six ranges, side by side.</h2>
+        </div>
+        <p>Pick a range to see how it's laid, grouted or seamless, and what makes it different. The drawings show the pattern only, so ask us about colours when one feels right.</p>
+      </div>
+
+      <div class="finder" id="finder">
+        <div class="picks" role="group" aria-label="Choose a range">
+          <button class="pick" type="button" data-r="longe" aria-pressed="true"><span class="sw" aria-hidden="true"></span><span><b>The Longe</b></span></button>
+          <button class="pick" type="button" data-r="medieval" aria-pressed="false"><span class="sw" aria-hidden="true"></span><span><b>The Medieval</b></span></button>
+          <button class="pick" type="button" data-r="mediterran" aria-pressed="false"><span class="sw" aria-hidden="true"></span><span><b>The Mediterran</b></span></button>
+          <button class="pick" type="button" data-r="evia" aria-pressed="false"><span class="sw" aria-hidden="true"></span><span><b>The Evia</b></span></button>
+          <button class="pick" type="button" data-r="monastery" aria-pressed="false"><span class="sw" aria-hidden="true"></span><span><b>The Monastery</b></span></button>
+          <button class="pick" type="button" data-r="slab" aria-pressed="false"><span class="sw" aria-hidden="true"></span><span><b>The Slab</b></span></button>
+        </div>
+        <div class="preview" id="preview" role="img" aria-label="Pattern guide for The Longe, grouted. An illustration, not the actual product.">
+          <div class="note"><span id="pv-name">The Longe · grouted</span><span>Pattern guide, not actual product</span></div>
+        </div>
+        <div class="info" aria-live="polite">
+          <p class="mono" id="r-num">Range 01 / 06</p>
+          <h3 id="r-name">The Longe</h3>
+          <p class="look" id="r-look">A clean, rectangular ashlar-style finish</p>
+          <p class="txt" id="r-txt">Timeless appeal in thin, lightweight, flexible panels. Available in a wide selection of colours and patterns, for anywhere from contemporary interiors to classic exteriors.</p>
+          <ul class="facts" id="r-facts">
+            <li>16 products in the range</li>
+            <li>Wide selection of colours and patterns, including Basalt 20</li>
+            <li>Interiors and exteriors</li>
+          </ul>
+          <figure class="rq" id="r-quote" hidden><blockquote id="r-q"></blockquote><figcaption id="r-qby"></figcaption></figure>
+          <div class="ctrl">
+            <fieldset class="seg"><legend>Finish</legend><div><button type="button" data-g="1" aria-pressed="true">Grouted</button><button type="button" data-g="0" aria-pressed="false">Seamless</button></div></fieldset>
+          </div>
+          <a class="btn" href="#contact" id="r-cta">Enquire about The Longe <span class="arr" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec dark" id="flexore" aria-labelledby="flex-h">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="label mono">Why FlexOre</p>
+          <h2 id="flex-h">Every range, the same easy formula.</h2>
+        </div>
+        <p>Developed over 20 years and handcrafted, so no two pieces are ever the same. Whichever range you choose, you get all four of these.</p>
+      </div>
+      <div class="bens">
+        <div class="ben">
+          <svg viewBox="0 0 64 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="20" width="56" height="4"/><path d="M4 32h56M4 36h56" opacity=".4"/><path d="M32 6v10M27 11l5 5 5-5"/></svg>
+          <h3>Ultra-lightweight</h3>
+          <p>Thin, light panels that are easy to handle, with none of the heavy lifting of solid brick.</p>
+        </div>
+        <div class="ben">
+          <svg viewBox="0 0 64 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 40V18a12 12 0 0 1 12-12h40"/><path d="M12 40V18a6 6 0 0 1 6-6h40" opacity=".4"/></svg>
+          <h3>Highly flexible</h3>
+          <p>Panels bend naturally around corners and curved surfaces at room temperature.</p>
+        </div>
+        <div class="ben">
+          <svg viewBox="0 0 64 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="6" y="14" width="40" height="22"/><path d="M26 14v22" stroke-dasharray="3 3"/><path d="M44 6l14 14-6 2-10-10z"/></svg>
+          <h3>DIY-friendly</h3>
+          <p>Cut or shape it by hand, and lay it with or without grout.</p>
+        </div>
+        <div class="ben">
+          <svg viewBox="0 0 64 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M10 6v36M54 6v36" opacity=".4"/><path d="M14 24h12M50 24H38M22 20l4 4-4 4M42 20l-4 4 4 4"/></svg>
+          <h3>Space-saving</h3>
+          <p>A thin veneer, so your walls keep their room and you get the look of stone.</p>
+        </div>
+      </div>
+      <div class="tested">
+        <p class="big">Made for Irish weather.</p>
+        <p>Made in Hungary, every piece has been tested against rain, frost and heat. It's UV and weather resistant, so the colour holds outdoors too. Every product comes with a 2-year warranty.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="questions" aria-labelledby="q-h">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="label mono">Before you start</p>
+          <h2 id="q-h">Good to know.</h2>
+        </div>
+        <p>The questions people ask us most, answered straight.</p>
+      </div>
+      <dl class="faq">
+        <div class="qa"><dt>Can I fit it myself?</dt><dd>Yes. FlexOre is made for DIY-friendly installation. We recommend asking a qualified specialist which adhesive suits your surface.</dd></div>
+        <div class="qa"><dt>Can it go outside?</dt><dd>Yes. It's UV and weather resistant. Outdoors, <strong>waterproofing is essential</strong>.</dd></div>
+        <div class="qa"><dt>Bathrooms and other wet areas?</dt><dd>Yes, as long as you seal the finish with a protective lacquer.</dd></div>
+        <div class="qa"><dt>Floors or driveways?</dt><dd>No. FlexOre is <strong>for walls only</strong>.</dd></div>
+        <div class="qa"><dt>Will it go around corners?</dt><dd>Yes. Panels bend naturally around corners and curved surfaces at room temperature.</dd></div>
+        <div class="qa"><dt>Can I mix ranges?</dt><dd>Yes. Collections combine across the range for a balanced, cohesive finish, grouted or seamless.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="sec reviews" id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <p class="label mono">What our customers have to say</p>
+      <h2 id="rev-h">Real walls, around Ireland.</h2>
+      <div class="revs">
+        <figure class="rev">
+          <p class="mono"><i></i>The Slab · interior</p>
+          <blockquote>“It gave us that seamless, premium natural brick finish without the heavy lifting or structural concerns.”</blockquote>
+          <figcaption>Liam Murphy <span>· Cork</span></figcaption>
+        </figure>
+        <figure class="rev">
+          <p class="mono"><i></i>The Evia · Basalt Black</p>
+          <blockquote>“It genuinely looks like heavy traditional cladding but was a total breeze to install.”</blockquote>
+          <figcaption>Declan Kelly <span>· Galway</span></figcaption>
+        </figure>
+        <figure class="rev">
+          <p class="mono"><i></i>The Mediterran · exterior</p>
+          <blockquote>“We don’t have to worry about the harsh weather or the colours fading over time. Fantastic Irish-owned company.”</blockquote>
+          <figcaption>Siobhan O'Connor <span>· Dublin</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="about" aria-labelledby="about-h">
+    <div class="wrap about">
+      <div>
+        <p class="label mono">About us</p>
+        <h2 id="about-h">Proudly Irish owned.</h2>
+      </div>
+      <div>
+        <p class="lead">Bricks &amp; Stones comes from the same team behind Creative Fitting, an official IKEA partner in flat-pack furniture assembly for nearly a decade.</p>
+        <p>We bring that same reliability and attention to detail to every Bricks &amp; Stones project, along with the design freedom of FlexOre: handcrafted for individuality and engineered for durability.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec contact" id="contact" aria-labelledby="c-h">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="label mono">Make an enquiry</p>
+          <h2 id="c-h">Found your range? Tell us about your wall.</h2>
+        </div>
+        <p>Tell us which range you like, or say you're not sure, and we'll get back to you.</p>
+      </div>
+      <div class="cgrid">
+        <form id="enq" novalidate>
+          <div class="fld"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name"></div>
+          <div class="fld"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+          <div class="fld full"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email"></div>
+          <div class="fld full"><label for="f-range">What product(s) are you interested in?</label>
+            <select id="f-range" name="range">
+              <option>The Longe</option><option>The Medieval</option><option>The Mediterran</option><option>The Slab</option><option>The Evia</option><option>The Monastery</option><option>Not sure</option>
+            </select>
+          </div>
+          <div class="fld full"><label for="f-msg">Your wall</label><textarea id="f-msg" name="message" placeholder="Where it's going, rough size, indoors or out"></textarea></div>
+          <button class="btn" type="submit">Send enquiry <span class="arr" aria-hidden="true">→</span></button>
+          <p class="sent" id="sent" role="status" hidden>Thanks. This is a mockup, so nothing was sent.</p>
+        </form>
+        <div class="details">
+          <div><h3>Call us</h3><p><a href="tel:+353877508162">087 750 8162</a></p></div>
+          <div><h3>Email</h3><p><a href="mailto:hello@bricksandstones.ie">hello@bricksandstones.ie</a></p></div>
+          <div><h3>Find us</h3><p><a href="https://www.google.com/maps/search/?api=1&amp;query=20%20Harcourt%20St%2C%20Dublin%202%2C%20D02%20H364%2C%20Ireland" target="_blank" rel="noopener">20 Harcourt St, Saint Kevin's,<br>Dublin 2, D02 H364</a></p></div>
+          <div><h3>Opening times</h3>
+            <dl class="hours"><dt>Mon – Fri</dt><dd>8:00 am – 5:00 pm</dd><dt>Sat &amp; Sun</dt><dd>Closed</dd></dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fbig"><svg viewBox="0 0 30 22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 1v8M2 5h10M28 1v8M28 5H18M2 13v8M2 17h10M28 13v8M28 17H18"/></svg>Bricks &amp; Stones</div>
+    <p style="margin:0;max-width:44em">Experience a new era of bricks, crafted to perform and designed to inspire.</p>
+    <div class="frow">
+      <span>© 2026 Bricks &amp; Stones · <a href="https://www.bricksandstones.ie/">bricksandstones.ie</a></span>
+      <span>Mockup made for Bricks &amp; Stones by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick contact">
+  <a href="tel:+353877508162">Call 087 750 8162</a>
+  <a href="#contact">Enquire</a>
+</nav>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- range patterns, laid in their named colours ---------- */
+  function rng(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+  var U='https://www.bricksandstones.ie/wp-content/uploads/2026/08/';
+  var TONES={
+    /* range drawings use one plain guide tone: they show the layout, never a colour */
+    guide:{p:['#c9bfb3','#bdb2a5','#d3cabf','#b3a799','#c4b9ac'],grout:'#efebe5',seam:'#8a7d6f'},
+    b20:{n:'Basalt 20',src:U+'1.webp',p:['#cfcac2','#c3bdb3','#dad5cd','#b9b2a7','#cac4ba'],grout:'#f1eee9',seam:'#8f887e'},
+    black:{n:'Basalt Black',src:U+'2.webp',p:['#3c3a38','#302e2c','#474441','#272524','#413e3b'],grout:'#d4cec6',seam:'#151413'},
+    basalt:{n:'Basalt',src:U+'3.webp',p:['#8e8a84','#7e7a74','#9b9790','#706c66','#87837d'],grout:'#e8e4de',seam:'#45423e'},
+    beige:{n:'Beige',src:U+'4.webp',p:['#e3d7c1','#d7c9af','#ece2d0','#cdbea1','#ded1b9'],grout:'#f6f2ea',seam:'#9a8b70'},
+    calnat:{n:'Calcare Natural',src:U+'5.webp',p:['#d6b57e','#cba76d','#dec290','#c09a5f','#d2b077'],grout:'#f4ede0',seam:'#86683a'},
+    calcare:{n:'Calcare',src:U+'6.webp',p:['#ebe4d5','#e0d8c5','#f2ecdf','#d7cdb9','#e6decd'],grout:'#faf7f1',seam:'#a69c86'}
+  };
+  /* their own swatch photos replace the drawn tile wherever they load */
+  function photo(k,cb){var im=new Image();im.onload=function(){cb('url("'+TONES[k].src+'")');};im.src=TONES[k].src;}
+  var uid=0;
+  function draw(kind,o){
+    o=o||{};var W=o.w||640,H=o.h||420,tone=TONES[o.tone||'b20'],grout=o.grout!==false;
+    var r=rng(o.seed||7),g=grout?5:1.2,out='',id='t'+(++uid);
+    function col(){return tone.p[Math.floor(r()*tone.p.length)];}
+    function rect(x,y,w,h,rx){out+='<rect x="'+(x+g/2).toFixed(1)+'" y="'+(y+g/2).toFixed(1)+'" width="'+Math.max(0,w-g).toFixed(1)+'" height="'+Math.max(0,h-g).toFixed(1)+'" rx="'+(rx||1)+'" fill="'+col()+'"/>';}
+    function rows(rowH,wf,rx,stag){
+      for(var y=0,i=0;y<H;y+=rowH,i++){
+        var x=stag?(i%2?-stag/2:0)-r()*8:-r()*140;
+        while(x<W){var w=wf();rect(x,y,w,rowH,rx);x+=w;}
+      }
+    }
+    if(kind==='longe')rows(30,function(){return 110+r()*120;},1);
+    else if(kind==='monastery')rows(36,function(){return 104+(r()-.5)*6;},2,104);
+    else if(kind==='medieval'){
+      for(var y=0;y<H;y+=42){var x=-r()*80;while(x<W){var w=66+r()*58,jy=(r()-.5)*4;rect(x,y+jy,w,42-Math.abs(jy)-r()*3,6);x+=w;}}
+    }
+    else if(kind==='evia'){var L=[30,62,124];rows(22,function(){return L[Math.floor(r()*3)];},1);}
+    else if(kind==='slab')rows(120,function(){return 240+r()*90;},1);
+    else if(kind==='mediterran'){
+      var cw=92,ch=70,nx=Math.ceil(W/cw)+2,ny=Math.ceil(H/ch)+2,P=[];
+      for(var i=0;i<=nx;i++){P[i]=[];for(var j=0;j<=ny;j++){P[i][j]=[(i-1)*cw+(r()-.5)*44+(j%2?cw/2:0),(j-1)*ch+(r()-.5)*36];}}
+      for(i=0;i<nx;i++)for(j=0;j<ny;j++){
+        var q=[P[i][j],P[i+1][j],P[i+1][j+1],P[i][j+1]],cx=0,cy=0;
+        q.forEach(function(p){cx+=p[0]/4;cy+=p[1]/4;});
+        var inset=grout?6:2.2,pts=q.map(function(p){var dx=cx-p[0],dy=cy-p[1],d=Math.sqrt(dx*dx+dy*dy)||1;return (p[0]+dx/d*inset).toFixed(1)+','+(p[1]+dy/d*inset).toFixed(1);}).join(' ');
+        var c=col();out+='<polygon points="'+pts+'" fill="'+c+'" stroke="'+c+'" stroke-width="3" stroke-linejoin="round"/>';
+      }
+    }
+    return '<svg viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">'+
+      '<defs><filter id="'+id+'" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" seed="'+(o.seed||7)+'" result="n"/>'+
+      '<feColorMatrix in="n" type="matrix" values="0 0 0 0 .17  0 0 0 0 .06  0 0 0 0 0  .75 0 0 0 -.28" result="d"/>'+
+      '<feComposite in="d" in2="SourceGraphic" operator="in" result="m"/><feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="m"/></feMerge></filter></defs>'+
+      '<rect width="100%" height="100%" fill="'+(grout?tone.grout:tone.seam)+'"/><g filter="url(#'+id+')">'+out+'</g></svg>';
+  }
+
+  /* cube faces */
+  [].forEach.call(document.querySelectorAll('.face'),function(f,i){
+    var k=f.getAttribute('data-c');f.insertAdjacentHTML('afterbegin',draw('longe',{w:300,h:300,tone:k,seed:11+i}));
+    /* colour names appear only on their own photos, never on a drawing */
+    photo(k,function(u){f.style.backgroundImage=u;f.classList.add('photo');if(k!=='basalt')f.insertAdjacentHTML('beforeend','<span class="tag">'+TONES[k].n+'</span>');});
+  });
+
+  /* range finder */
+  var R={
+    longe:{n:'The Longe',look:'A clean, rectangular ashlar-style finish',txt:'Timeless appeal in thin, lightweight, flexible panels. Available in a wide selection of colours and patterns, for anywhere from contemporary interiors to classic exteriors.',f:['16 products in the range','Wide selection of colours and patterns, including Basalt 20','Interiors and exteriors']},
+    medieval:{n:'The Medieval',look:'A charming, rustic finish',txt:'Inspired by historic brick buildings. It bends easily around corners and curved surfaces, and cuts by hand or with a knife.',f:['15 products in the range','Just 3mm thin, in 23 × 46cm panels','Cosy indoor spaces to classic exteriors']},
+    mediterran:{n:'The Mediterran',look:'An organic, natural rocky look',txt:'Random shapes and sizes, without the disruption of traditional masonry. Lay it with or without grout and cut it by hand.',f:['16 products in the range','Random shapes and sizes','Indoor or outdoor settings']},
+    evia:{n:'The Evia',look:'A distinctive, natural brick look',txt:'Thin, lightweight panels in random shapes and sizes that are easy to cut or crack by hand, with or without grout.',f:['6 products in the range','Colours: Adria 2, Basalt 4, Green, Etna, White 2 and Terra','Cut or cracked by hand, indoors or out'],
+      q:['“Because you can mix and match the 7cm, 15cm, and 30cm lengths, the wall has this brilliant organic, random look.”','Declan Kelly, Galway, on The Evia in Basalt Black']},
+    monastery:{n:'The Monastery',look:'A classic, natural brick look',txt:'Classic brick character in the FlexOre formula: ultra-lightweight, highly flexible and DIY-friendly.',f:['6 products in the range','Combines with other ranges','Grouted or seamless']},
+    slab:{n:'The Slab',look:'Part of the FlexOre range',txt:'The same thin, flexible, handcrafted formula as every range. Ask us for the full details and colours of The Slab.',f:['Ultra-lightweight and highly flexible','Combines with other ranges','Grouted or seamless'],
+      q:['“Remarkably lightweight and easy to work with compared to actual solid brick slabs.”','Liam Murphy, Cork, on The Slab']}
+  };
+  var order=['longe','medieval','mediterran','evia','monastery','slab'];
+  var state={r:'longe',g:true};
+  var pv=document.getElementById('preview'),$=function(id){return document.getElementById(id);};
+  var picks=document.querySelectorAll('.pick');
+  [].forEach.call(picks,function(b,i){b.querySelector('.sw').innerHTML=draw(b.getAttribute('data-r'),{w:220,h:90,tone:'guide',seed:31+i});});
+  [].forEach.call(picks,function(b){b.addEventListener('click',function(){state.r=b.getAttribute('data-r');render();});});
+  function setPressed(sel,attr,val){[].forEach.call(document.querySelectorAll(sel),function(b){b.setAttribute('aria-pressed',String(b.getAttribute(attr)===val));});}
+  [].forEach.call(document.querySelectorAll('[data-g]'),function(b){b.addEventListener('click',function(){state.g=b.getAttribute('data-g')==='1';render();});});
+  function render(){
+    var d=R[state.r],i=order.indexOf(state.r),fin=state.g?'grouted':'seamless';
+    setPressed('.pick','data-r',state.r);setPressed('[data-g]','data-g',state.g?'1':'0');
+    var old=pv.querySelector('svg');if(old)old.remove();
+    pv.insertAdjacentHTML('afterbegin',draw(state.r,{w:720,h:520,grout:state.g,tone:'guide',seed:5+i}));
+    pv.setAttribute('aria-label','Pattern guide for '+d.n+', '+fin+'. An illustration, not the actual product.');
+    $('pv-name').textContent=d.n+' · '+fin;
+    $('r-num').textContent='Range 0'+(i+1)+' / 06';
+    $('r-name').textContent=d.n;$('r-look').textContent=d.look;$('r-txt').textContent=d.txt;
+    $('r-facts').innerHTML=d.f.map(function(x){return '<li>'+x+'</li>';}).join('');
+    var rq=$('r-quote');if(d.q){$('r-q').textContent=d.q[0];$('r-qby').textContent=d.q[1];rq.hidden=false;}else{rq.hidden=true;}
+    $('r-cta').innerHTML='Enquire about '+d.n+' <span class="arr" aria-hidden="true">→</span>';
+  }
+  render();
+  $('r-cta').addEventListener('click',function(){$('f-range').value=R[state.r].n;});
+
+  /* form */
+  $('enq').addEventListener('submit',function(e){e.preventDefault();$('sent').hidden=false;});
+
+  /* cube only turns while on screen */
+  var cube=$('cube');
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){es.forEach(function(e){cube.classList.toggle('paused',!e.isIntersecting);});}).observe(cube);
+  }
+
+  /* gentle rise for things below the first screen */
+  if(!reduce && 'IntersectionObserver' in window){
+    var els=document.querySelectorAll('.head,.finder,.ben,.tested,.qa,.rev,.about>div,.cgrid>*');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px'});
+    [].forEach.call(els,function(el){
+      if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('rise','will-rise');io.observe(el);}
+    });
+  }
+})();
+</script>
+</body>
+</html>
