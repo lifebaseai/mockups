@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup vanilbyyael-com-5e5c8d 1 177637e0 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VANIL by Yael Schonfeld · Kosher dessert atelier, Lakewood NJ</title>
+<meta name="description" content="VANIL is a boutique dessert atelier in Lakewood, NJ: refined kosher desserts on a weekly menu, and custom cakes for special occasions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+<style>
+:root{
+  --choc:#362105; --blush:#f6e0d5; --blush-2:#fbefe8; --cream:#fffaf6;
+  --rust:#8a3a12; --muted:#6a5240; --line:#e7cfc2;
+  --sans:"Josefin Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --script:"Mrs Saint Delafield","Brush Script MT",cursive;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--sans);font-weight:300;color:var(--choc);background:var(--cream);font-size:17px;line-height:1.6}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-weight:300;line-height:1.12;margin:0;letter-spacing:-.01em}
+p{margin:0}
+:focus-visible{outline:2px solid var(--rust);outline-offset:3px;border-radius:2px}
+.wrap{width:min(1180px,100% - 48px);margin-inline:auto}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--rust)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:14px 26px 12px;font:600 13px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border:1px solid var(--choc);background:var(--choc);color:var(--blush);cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.btn:hover{background:#4d3210}
+.btn.ghost{background:transparent;color:var(--choc)}
+.btn.ghost:hover{background:var(--choc);color:var(--blush)}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:12px;top:56px;background:#fff;padding:8px 12px;z-index:50}
+
+/* Mockup banner */
+.mock{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:var(--choc);color:var(--blush);font-size:15px;line-height:1.3;text-align:center;white-space:nowrap}
+.mock a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+
+/* Header */
+.top{position:sticky;top:0;z-index:20;background:rgba(255,250,246,.94);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:24px}
+.brand{display:flex;align-items:baseline;gap:10px;text-decoration:none}
+.brand svg{width:116px;height:auto;color:var(--choc)}
+.brand .by{font-family:var(--script);font-size:26px;line-height:1;color:var(--choc);transform:translateY(4px)}
+.nav{display:flex;gap:30px;font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+.nav a{text-decoration:none;padding:12px 0;font-weight:400}
+.nav a:hover{color:var(--rust)}
+.top .btn{min-height:44px;padding:13px 20px 11px}
+
+/* Hero */
+.hero{position:relative;background:#f3e2d9;overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:right center}
+.hero .wrap{position:relative;min-height:min(640px,78vh);display:flex;align-items:center;padding:64px 0}
+.hero-copy{max-width:480px}
+.hero h1{font-size:clamp(40px,5vw,62px);margin:18px 0 20px}
+.hero h1 em{font-style:normal;color:var(--rust)}
+.hero .lede{font-size:19px;color:#4a3420;max-width:420px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:30px;padding:0;list-style:none;font-size:14px;color:#4a3420}
+.facts li{display:flex;align-items:center;gap:8px}
+.facts svg{width:16px;height:16px;color:var(--rust);flex:none}
+
+/* Values strip */
+.values{background:var(--choc);color:var(--blush)}
+.values ul{list-style:none;margin:0;padding:30px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.values li{padding-left:18px;border-left:1px solid rgba(246,224,213,.28)}
+.values b{display:block;font-weight:600;font-size:13px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:6px;color:#fff}
+.values span{font-size:15px;line-height:1.5;color:#ecd6ca}
+
+/* Sections */
+section{scroll-margin-top:80px}
+.sec{padding:110px 0}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:48px}
+.sec-head h2{font-size:clamp(34px,4vw,50px);margin-top:12px}
+.sec-head p{color:var(--muted);max-width:460px;justify-self:end}
+
+/* Order planner */
+.order{background:var(--blush-2)}
+.planner{display:grid;grid-template-columns:1.45fr 1fr;gap:28px;align-items:start}
+.menu-card{background:#fff;border:1px solid var(--line);box-shadow:0 1px 0 rgba(54,33,5,.03),0 18px 40px -28px rgba(54,33,5,.35)}
+.menu-top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:22px 28px;border-bottom:1px solid var(--line);font-size:14px;color:var(--muted)}
+.menu-top strong{font-weight:600;color:var(--choc);letter-spacing:.12em;text-transform:uppercase;font-size:13px}
+.menu-top [lang=he]{font-size:16px;color:var(--choc)}
+.dish{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:20px;padding:16px 28px;border-bottom:1px solid #f1e2d9;transition:background .2s}
+.dish:last-child{border-bottom:0}
+.dish.on{background:#fdf5f0}
+.dish h3{font-size:21px;font-weight:400}
+.price{font-size:17px;font-variant-numeric:tabular-nums;color:var(--muted);min-width:64px;text-align:right}
+.qty{display:flex;align-items:center;border:1px solid var(--line);background:#fff}
+.qty button{width:44px;height:44px;border:0;background:none;font:300 22px/1 var(--sans);color:var(--choc);cursor:pointer}
+.qty button:hover{background:var(--blush-2)}
+.qty button:disabled{color:#b9a597;cursor:default;background:none}
+.qty output{width:28px;text-align:center;font-weight:600;font-variant-numeric:tabular-nums}
+.extras{padding:22px 28px;border-top:1px solid var(--line);display:grid;gap:22px}
+.extras legend,.lbl{display:block;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px;padding:0}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip span{display:flex;flex-direction:column;justify-content:center;min-height:44px;padding:10px 16px 8px;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:15px;line-height:1.3;transition:border-color .2s,background .2s}
+.chip small{font-size:13px;color:var(--muted)}
+.chip input:checked+span{border-color:var(--choc);background:var(--blush-2);box-shadow:inset 0 0 0 1px var(--choc)}
+.chip input:focus-visible+span{outline:2px solid var(--rust);outline-offset:2px}
+.plaque-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.toggle{display:flex;align-items:center;gap:12px;min-height:44px;cursor:pointer;font-size:16px}
+.toggle input{width:22px;height:22px;accent-color:var(--choc);margin:0}
+textarea,input[type=text],input[type=tel],input[type=email],input[type=date],select{width:100%;font:300 16px/1.4 var(--sans);color:var(--choc);background:#fff;border:1px solid var(--line);padding:12px 14px;min-height:48px;border-radius:0}
+textarea{resize:vertical;min-height:84px}
+textarea:focus,input:focus,select:focus{border-color:var(--choc);outline:none;box-shadow:0 0 0 1px var(--choc)}
+.hint{font-size:14px;color:var(--muted);margin-top:6px}
+
+.summary{position:sticky;top:96px;background:var(--choc);color:var(--blush);padding:30px 28px}
+.summary h3{font-size:26px;color:#fff;margin-bottom:6px}
+.summary .when{font-size:15px;color:#e6cdbf}
+.lines{list-style:none;margin:22px 0 0;padding:0;border-top:1px solid rgba(246,224,213,.22)}
+.lines li{display:flex;justify-content:space-between;gap:14px;padding:12px 0;border-bottom:1px solid rgba(246,224,213,.22);font-size:16px}
+.lines li span:last-child{font-variant-numeric:tabular-nums;white-space:nowrap}
+.lines .empty{color:#e6cdbf}
+.total{display:flex;justify-content:space-between;align-items:baseline;margin:18px 0 22px}
+.total span{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+.total strong{font-size:40px;font-weight:300;color:#fff;font-variant-numeric:tabular-nums}
+.summary .btn{width:100%;background:var(--blush);color:var(--choc);border-color:var(--blush)}
+.summary .btn:hover{background:#fff}
+.summary .small{font-size:14px;color:#e6cdbf;margin-top:14px;line-height:1.5}
+.sent{margin-top:14px;padding:12px 14px;border:1px solid rgba(246,224,213,.4);font-size:15px;color:#fff}
+.sent[hidden]{display:none}
+
+/* Collection */
+.shelf{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.shelf figure{margin:0}
+.shelf .ph{overflow:hidden;background:#ece6df;aspect-ratio:4/5}
+.shelf img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.shelf figure:hover img{transform:scale(1.03)}
+.shelf figcaption{margin-top:14px;font-size:19px}
+.also{margin-top:44px;padding-top:26px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 28px}
+.also .lbl{margin:0}
+.also p{flex:1;min-width:260px;color:var(--muted);font-size:16px}
+.also a{font-size:15px;font-weight:400;text-underline-offset:4px;padding:12px 0}
+
+/* Custom cakes */
+.cakes{background:var(--blush)}
+.cakes-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.cakes-photo{position:relative}
+.cakes-photo img{width:100%;max-width:600px;aspect-ratio:1280/1077;object-fit:cover;box-shadow:0 30px 60px -36px rgba(54,33,5,.5)}
+.cakes h2{font-size:clamp(34px,4vw,50px);margin:12px 0 18px}
+.cakes .body{color:#4a3420;margin-bottom:26px;max-width:500px}
+.occ{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 26px;padding:0;list-style:none}
+.occ li{padding:10px 16px 8px;border:1px solid rgba(54,33,5,.3);font-size:15px}
+.inq{display:grid;grid-template-columns:1fr 1fr;gap:12px;background:#fff;padding:22px;border:1px solid var(--line)}
+.inq .full{grid-column:1/-1}
+.inq label span{display:block;font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px}
+.inq .sent{color:var(--choc);border-color:var(--line);background:var(--blush-2);margin:0}
+
+/* Reviews */
+.reviews .lead-q{max-width:880px;margin:0 auto;text-align:center}
+.stars{color:var(--rust);letter-spacing:.2em;font-size:15px}
+.lead-q blockquote{margin:18px 0 18px;font-size:clamp(26px,3.2vw,38px);line-height:1.3;font-weight:300}
+.lead-q cite{font-style:normal;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.more-q{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:70px;border-top:1px solid var(--line)}
+.more-q figure{margin:0;padding:28px 24px 0;border-left:1px solid var(--line)}
+.more-q figure:first-child{border-left:0;padding-left:0}
+.more-q blockquote{margin:10px 0 14px;font-size:16px;line-height:1.55;color:#4a3420}
+.more-q figcaption{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+/* Yael */
+.yael{background:var(--blush-2);text-align:center;padding:96px 0}
+.yael blockquote{margin:0 auto;max-width:760px;font-size:clamp(21px,2.4vw,27px);line-height:1.5;font-style:italic;font-weight:300}
+.sig{font-family:var(--script);font-size:64px;line-height:1;margin-top:22px;color:var(--choc)}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
+.faq-grid h2{font-size:clamp(34px,4vw,50px);margin-top:12px}
+.faq-side p{color:var(--muted);margin-top:16px;max-width:340px}
+details{border-bottom:1px solid var(--line)}
+details:first-child{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:64px;padding:16px 0;font-size:20px;font-weight:400}
+summary::-webkit-details-marker{display:none}
+summary .pm{flex:none;width:14px;height:14px;position:relative}
+summary .pm::before,summary .pm::after{content:"";position:absolute;left:0;top:6px;width:14px;height:1.5px;background:var(--choc);transition:transform .25s}
+summary .pm::after{transform:rotate(90deg)}
+details[open] summary .pm::after{transform:rotate(0)}
+details p{padding:0 40px 22px 0;color:#4a3420}
+
+/* Contact / end */
+.end{background:var(--choc);color:var(--blush);padding:110px 0 90px}
+.end-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:end}
+.end h2{font-size:clamp(38px,5vw,64px);color:#fff}
+.end h2 .script{font-family:var(--script);font-size:1.25em;color:var(--blush);display:block;line-height:1;margin-bottom:4px}
+.end p.sub{color:#e6cdbf;margin:20px 0 30px;max-width:440px}
+.end .btn{background:var(--blush);color:var(--choc);border-color:var(--blush)}
+.end .btn.ghost{background:transparent;color:var(--blush);border-color:rgba(246,224,213,.6)}
+.end .btn.ghost:hover{background:var(--blush);color:var(--choc)}
+.ways{list-style:none;margin:0;padding:0;border-top:1px solid rgba(246,224,213,.25)}
+.ways li{border-bottom:1px solid rgba(246,224,213,.25)}
+.ways a{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;text-decoration:none;min-height:44px}
+.ways small{display:block;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#e6cdbf;margin-bottom:2px}
+.ways b{font-weight:400;font-size:21px;color:#fff}
+.ways svg{width:18px;height:18px;flex:none;transition:transform .2s}
+.ways a:hover svg{transform:translateX(4px)}
+
+footer{background:#2a1904;color:#e6cdbf;font-size:14px;padding:30px 0}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer a{color:#fff;text-underline-offset:3px}
+
+.callbar{display:none}
+
+/* Gentle rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+
+/* Tablet */
+@media (max-width:980px){
+  .nav{display:none}
+  .planner{grid-template-columns:1fr}
+  .summary{position:static}
+  .shelf{grid-template-columns:repeat(2,1fr)}
+  .more-q{grid-template-columns:1fr 1fr}
+  .more-q figure:nth-child(3){border-left:0;padding-left:0}
+  .cakes-grid,.faq-grid,.end-grid{grid-template-columns:1fr;gap:44px}
+  .sec-head{grid-template-columns:1fr;gap:14px}
+  .sec-head p{justify-self:start}
+  .values ul{grid-template-columns:1fr 1fr}
+}
+/* Phone */
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:64px}
+  .wrap{width:calc(100% - 40px)}
+  .mock{font-size:14px;padding:8px 10px}
+  .top .wrap{height:62px}
+  .brand svg{width:92px}
+  .brand .by{font-size:21px}
+  .top .btn{padding:13px 14px 11px;font-size:12px;letter-spacing:.12em}
+  .brand .by{display:none}
+  .top .btn{white-space:nowrap}
+  .hero{display:flex;flex-direction:column}
+  .hero-img{position:relative;order:2;height:280px;object-position:80% 40%}
+  .hero .wrap{min-height:0;padding:40px 0 34px}
+  .hero h1{font-size:40px;margin:14px 0 14px}
+  .hero .lede{font-size:17px}
+  .ctas .btn{flex:1 1 100%}
+  .facts{gap:10px 18px;margin-top:24px}
+  .values ul{grid-template-columns:1fr 1fr;gap:20px 16px;padding:26px 0}
+  .values li{padding-left:12px}
+  .values span{font-size:14px}
+  .sec{padding:72px 0}
+  .sec-head{margin-bottom:30px}
+  .menu-top{flex-direction:column;gap:4px;padding:18px 18px}
+  .dish{grid-template-columns:1fr auto;grid-template-areas:"n q" "p q";gap:2px 14px;padding:14px 18px}
+  .dish h3{grid-area:n;font-size:18px}
+  .dish .price{grid-area:p;text-align:left;font-size:15px}
+  .dish .qty{grid-area:q}
+  .extras{padding:20px 18px}
+  .summary{padding:26px 20px}
+  .shelf{gap:14px}
+  .shelf figcaption{font-size:16px;margin-top:10px}
+  .inq{grid-template-columns:1fr;padding:18px}
+  .more-q{grid-template-columns:1fr;margin-top:48px}
+  .more-q figure,.more-q figure:nth-child(3){border-left:0;padding:24px 0 0}
+  .more-q figure+figure{border-top:1px solid var(--line);margin-top:24px}
+  .yael{padding:70px 0}
+  .sig{font-size:54px}
+  summary{font-size:18px}
+  details p{padding-right:0}
+  .end{padding:76px 0 70px}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--choc);border-top:1px solid rgba(246,224,213,.2)}
+  .callbar a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:56px;color:var(--blush);text-decoration:none;font:600 13px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase}
+  .callbar a+a{background:var(--blush);color:var(--choc)}
+  .callbar svg{width:16px;height:16px}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="VANIL by Yael Schonfeld, back to top">
+      <svg viewBox="0 0 268 72" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="miter" aria-hidden="true">
+        <path d="M2 4 31 68 60 4"/><path d="M66 68 95 4l29 64Z"/><path d="M138 68V4l48 64V4"/><path d="M204 4v64"/><path d="M224 4v64h42"/>
+      </svg>
+      <span class="by" aria-hidden="true">By Yael Schonfeld</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#order">Weekly menu</a>
+      <a href="#collection">The collection</a>
+      <a href="#cakes">Custom cakes</a>
+      <a href="#questions">Questions</a>
+    </nav>
+    <a class="btn" href="#order">Order now</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <img class="hero-img" src="https://cdn.prod.website-files.com/69667e365229b272d9070326/698531106f487eb4a08aeecf_hero-new1.webp" width="2160" height="1093" alt="A hand placing a glazed caramel dome on top of a VANIL pastry crowned with cream petals" fetchpriority="high">
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">Dessert atelier · Lakewood, NJ</p>
+        <h1 id="hero-title">Refined kosher desserts, <em>new every week.</em></h1>
+        <p class="lede">A short weekly menu, prepared fresh under the hashgacha of KCL and finished with precision.</p>
+        <div class="ctas">
+          <a class="btn" href="#order">Plan this week's order</a>
+          <a class="btn ghost" href="#cakes">Custom cakes</a>
+        </div>
+        <ul class="facts">
+          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1.5 4.5h8v6h-8zM9.5 6.5h3l2 2v2h-5"/><circle cx="4.5" cy="11.5" r="1.3"/><circle cx="12" cy="11.5" r="1.3"/></svg>Thursday to Brooklyn</li>
+          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1.5 4.5h8v6h-8zM9.5 6.5h3l2 2v2h-5"/><circle cx="4.5" cy="11.5" r="1.3"/><circle cx="12" cy="11.5" r="1.3"/></svg>Friday in Lakewood</li>
+          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M8 14.5s5-4.3 5-8.2A5 5 0 0 0 3 6.3c0 3.9 5 8.2 5 8.2Z"/><circle cx="8" cy="6.3" r="1.7"/></svg>Pickup in Lakewood</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="values" role="region" aria-label="What we stand for">
+    <ul class="wrap">
+      <li><b>Kashrus</b><span>Prepared under the hashgacha of KCL, with careful attention to every detail.</span></li>
+      <li><b>Fresh</b><span>Prepared fresh for exceptional flavor and consistent quality.</span></li>
+      <li><b>Premium</b><span>High-quality ingredients chosen for flavor and excellence.</span></li>
+      <li><b>Craft</b><span>Thoughtfully designed, finished with precision and elegance.</span></li>
+    </ul>
+  </div>
+
+  <section class="sec order" id="order" aria-labelledby="order-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">Weekly menu</p>
+          <h2 id="order-title">Choose this week's desserts.</h2>
+        </div>
+        <p>The selection changes every week and often sells out, so order early. Pick your desserts, add a plaque or a note, and choose how they reach you.</p>
+      </div>
+
+      <form class="planner" id="planner" novalidate>
+        <div class="menu-card">
+          <div class="menu-top">
+            <strong>Menu for October 23, 2026</strong>
+            <span lang="he" dir="rtl">פרשת לך-לך</span>
+          </div>
+          <div id="dishes"></div>
+          <div class="extras">
+            <fieldset>
+              <legend>Golden celebration plaque · $5</legend>
+              <div class="plaque-row">
+                <label class="toggle"><input type="checkbox" id="plaque" checked> Add a plaque on top</label>
+                <div class="chips" id="plaqueText">
+                  <label class="chip"><input type="radio" name="plaque" value="Happy Birthday" checked><span>Happy Birthday</span></label>
+                  <label class="chip"><input type="radio" name="plaque" value="Happy Anniversary"><span>Happy Anniversary</span></label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Delivery or pickup</legend>
+              <div class="chips">
+                <label class="chip"><input type="radio" name="when" value="Thursday delivery to Brooklyn"><span>Thursday<small>Delivery to Brooklyn</small></span></label>
+                <label class="chip"><input type="radio" name="when" value="Friday delivery in Lakewood" checked><span>Friday<small>Delivery in Lakewood</small></span></label>
+                <label class="chip"><input type="radio" name="when" value="Pickup in Lakewood"><span>Pickup<small>Lakewood, NJ</small></span></label>
+              </div>
+              <p class="hint" id="whenHint">Some Lakewood deliveries come Thursday, depending on the route. You'll be notified in advance.</p>
+            </fieldset>
+            <div>
+              <label class="lbl" for="note">A note to print with your order · no charge</label>
+              <textarea id="note" rows="2">Happy birthday, Ima. With love from all of us.</textarea>
+              <p class="hint">Sending it as a gift? Add their name and delivery details at checkout.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="summary" aria-live="polite" aria-label="Your order">
+          <h3>Your order</h3>
+          <p class="when" id="sumWhen">Friday delivery in Lakewood</p>
+          <ul class="lines" id="lines"></ul>
+          <div class="total"><span>Subtotal</span><strong id="total">$0</strong></div>
+          <button class="btn" type="submit">Place order</button>
+          <p class="sent" id="orderSent" hidden role="status">Thanks. This is a mockup, so nothing was sent.</p>
+          <p class="small">Orders are accepted until capacity is reached. Ingredients are listed on each dessert; some contain nuts, gluten or dairy.</p>
+        </aside>
+      </form>
+    </div>
+  </section>
+
+  <section class="sec" id="collection" aria-labelledby="col-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">The collection</p>
+          <h2 id="col-title">Signature desserts, across the seasons.</h2>
+        </div>
+        <p>Each week's menu draws from a curated collection. A few favourites:</p>
+      </div>
+      <div class="shelf">
+        <figure><div class="ph"><img loading="lazy" src="https://cdn.prod.website-files.com/696ee4aa20f9f175765a9164/6aa86b54337f0c91d9b52850_HAZEL%20NOIR%20FULL%20(1).webp" width="1184" height="1531" alt="Hazel Noir Tart: a dark chocolate tart with ruffled hazelnut cream and glossy chocolate domes"></div><figcaption>Hazel Noir Tart</figcaption></figure>
+        <figure><div class="ph"><img loading="lazy" src="https://cdn.prod.website-files.com/696ee4aa20f9f175765a9164/6aa8682b7fe25bffd155e8cd_YUZU%20MERINGUE%20TART%20FULL%20(1).webp" width="1184" height="1531" alt="Yuzu Meringue Tart with sweeping toasted meringue over a yellow curd"></div><figcaption>Yuzu Meringue Tart</figcaption></figure>
+        <figure><div class="ph"><img loading="lazy" src="https://cdn.prod.website-files.com/696ee4aa20f9f175765a9164/6a84eab2371fd7b16fae0341_PASSION%20FRUIT%20CREME%20BRULEE%20(1).webp" width="1184" height="1479" alt="Passionfruit Crème Brûlée tart with a piped cream border and passion fruit seeds"></div><figcaption>Passionfruit Crème Brûlée</figcaption></figure>
+        <figure><div class="ph"><img loading="lazy" src="https://cdn.prod.website-files.com/696ee4aa20f9f175765a9164/6a7ba19c6f777a148ac8705d_PINA%20COLADA%20FULL%20(1).webp" width="1184" height="1479" alt="Piña Colada cake with a glossy golden top and coconut sides"></div><figcaption>Piña Colada</figcaption></figure>
+      </div>
+      <div class="also">
+        <p class="lbl">Also in the collection</p>
+        <p>Mont Rosé · Ruby · Authentic Lemon Meringue Tart · Pistachio Crème Brûlée · Blueberry Pavlova · Pastel Macarons · Signature Crème Brûlée · Exotic Cheesecake · Classic Tiramisu · Chocolate Explosion</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec cakes" id="cakes" aria-labelledby="cakes-title">
+    <div class="wrap cakes-grid">
+      <div class="cakes-photo">
+        <img loading="lazy" src="https://cdn.prod.website-files.com/69667e365229b272d9070326/6983e3fe078060d12215d06e_cake1%20copy.webp" width="1280" height="1077" alt="A VANIL meringue tart on a marble stand, surrounded by spring flowers">
+      </div>
+      <div>
+        <p class="eyebrow">Custom cakes</p>
+        <h2 id="cakes-title">A cake made for your celebration.</h2>
+        <p class="body">Beyond the weekly menu, VANIL creates custom cakes with the same attention to detail, refined presentation and premium quality. Tell us about your event and we'll be happy to help.</p>
+        <ul class="occ" aria-label="Occasions">
+          <li>Birthdays</li><li>Weddings</li><li>Special celebrations</li>
+        </ul>
+        <form class="inq" id="inq" novalidate>
+          <label><span>Name</span><input type="text" name="name" autocomplete="name"></label>
+          <label><span>Phone</span><input type="tel" name="phone" autocomplete="tel"></label>
+          <label><span>Occasion</span><select name="occasion"><option>Birthday</option><option>Wedding</option><option>Special celebration</option></select></label>
+          <label><span>Event date</span><input type="date" name="date"></label>
+          <label class="full"><span>Your event details</span><textarea name="msg" rows="3" placeholder="The day, how many guests, flavours you love…"></textarea></label>
+          <button class="btn full" type="submit">Send cake inquiry</button>
+          <p class="sent full" id="inqSent" hidden role="status">Thanks. This is a mockup, so nothing was sent.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec reviews" aria-labelledby="rev-title">
+    <div class="wrap">
+      <h2 id="rev-title" class="eyebrow" style="text-align:center;font-size:13px">Loved &amp; trusted</h2>
+      <figure class="lead-q" style="margin:18px auto 0">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>“The desserts from VANIL are on another level. Every detail feels intentional, from the flavors to the presentation. It's become our Shabbat tradition.”</blockquote>
+        <figcaption><cite>Rivka S.</cite></figcaption>
+      </figure>
+      <div class="more-q">
+        <figure><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“I'm always excited to see what's coming each week. Guests always ask where they're from.”</blockquote><figcaption>Leah M.</figcaption></figure>
+        <figure><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“Like something you'd find in a boutique pastry shop abroad. Beautiful, balanced, and never too heavy.”</blockquote><figcaption>Esther K.</figcaption></figure>
+        <figure><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“We've ordered many times and it's consistently excellent. The quality, the creativity, and the taste are always impressive.”</blockquote><figcaption>Miriam R.</figcaption></figure>
+        <figure><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“Every dessert feels thoughtfully made and refined. It's the kind of treat that elevates the entire table.”</blockquote><figcaption>Chana B.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="yael" aria-label="A note from Yael">
+    <div class="wrap">
+      <blockquote>“Every dessert I create is made with intention, care, and a deep love for the moments you're celebrating. Thank you for allowing me to be part of your table.”</blockquote>
+      <p class="sig">Yael</p>
+    </div>
+  </section>
+
+  <section class="sec" id="questions" aria-labelledby="faq-title">
+    <div class="wrap faq-grid">
+      <div class="faq-side">
+        <p class="eyebrow">Questions answered</p>
+        <h2 id="faq-title">Before you order.</h2>
+        <p>Anything else? Message Yael on WhatsApp or text 518-487-8754.</p>
+      </div>
+      <div>
+        <details open><summary>When should I place my order?<span class="pm" aria-hidden="true"></span></summary><p>Orders are accepted until capacity is reached. Order early: the weekly selection often sells out.</p></details>
+        <details><summary>When do you deliver?<span class="pm" aria-hidden="true"></span></summary><p>Usually Thursday to Brooklyn and Friday in Lakewood, with some Lakewood deliveries on Thursday depending on the route. You'll be notified in advance. Pickup is in Lakewood, with the address given at checkout.</p></details>
+        <details><summary>What is VANIL's kashrut?<span class="pm" aria-hidden="true"></span></summary><p>All desserts are prepared under the hashgacha of KCL Kashrus, following strict kosher standards.</p></details>
+        <details><summary>Can I add a birthday message?<span class="pm" aria-hidden="true"></span></summary><p>Yes. Add a golden “Happy Birthday” plaque on the dessert for $5. You can also write a short note at checkout, and it's printed and included with your order at no charge.</p></details>
+        <details><summary>Can I send a dessert as a gift?<span class="pm" aria-hidden="true"></span></summary><p>Yes. Place the order for someone else and include a note. Just make sure the delivery or pickup details are filled out accurately.</p></details>
+        <details><summary>Do you accommodate allergies?<span class="pm" aria-hidden="true"></span></summary><p>Some desserts may contain nuts, gluten, dairy or other allergens. Ingredients are listed, but we can't guarantee an allergen-free environment.</p></details>
+        <details><summary>How do I order a custom cake?<span class="pm" aria-hidden="true"></span></summary><p>Send your event details on WhatsApp or through the cake inquiry form above. Custom orders are handled separately from the weekly menu.</p></details>
+        <details><summary>Can I change or cancel my order?<span class="pm" aria-hidden="true"></span></summary><p>Because desserts are prepared fresh, changes and cancellations aren't guaranteed. Reach out as soon as possible and we'll do our best.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="end" id="contact" aria-labelledby="end-title">
+    <div class="wrap end-grid">
+      <div>
+        <h2 id="end-title"><span class="script">Get in touch</span>This week's menu sells out.</h2>
+        <p class="sub">Order early, or ask about a custom cake for your next celebration. We'd be happy to help you choose.</p>
+        <div class="ctas">
+          <a class="btn" href="#order">Plan this week's order</a>
+          <a class="btn ghost" href="tel:+15184878754">Call 518-487-8754</a>
+        </div>
+      </div>
+      <ul class="ways">
+        <li><a href="tel:+15184878754"><span><small>WhatsApp (preferred) or text</small><b>+1 (518) 487-8754</b></span><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a></li>
+        <li><a href="https://www.instagram.com/vanil_by_yael_schonfeld" target="_blank" rel="noopener"><span><small>Instagram</small><b>@vanil_by_yael_schonfeld</b></span><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Lakewood%2C%20NJ" target="_blank" rel="noopener"><span><small>Pickup</small><b>Lakewood, NJ</b></span><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 VANIL by Yael Schonfeld · Kosher dessert atelier, Lakewood, NJ</span>
+    <span>Mockup made for VANIL By Yael Schonfeld by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></span>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick actions">
+  <a href="tel:+15184878754"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5.5 2.5 3 2.6C2.6 8.6 7.4 13.4 13.4 13l.1-2.5-3-1-1.3 1.4a8 8 0 0 1-3.6-3.6L7 6 5.5 2.5Z"/></svg>Call</a>
+  <a href="#order">Order now</a>
+</nav>
+
+<script>
+(function(){
+  var menu=[
+    ["Passion Fruit St. Honoré",85,0],
+    ["Jumbo Macaron Mousse",95,0],
+    ["Pistachio Strawberry Tart",85,1],
+    ["Snickers Tart",95,0],
+    ["Authentic Lemon Meringue Tart",85,0],
+    ["Signature Crème Brûlée",90,1]
+  ];
+  var dishes=document.getElementById('dishes');
+  dishes.innerHTML=menu.map(function(d,i){
+    return '<div class="dish" data-i="'+i+'"><h3>'+d[0]+'</h3><span class="price">$'+d[1]+'</span>'+
+      '<div class="qty"><button type="button" data-d="-1" aria-label="One less '+d[0]+'">−</button><output aria-live="polite">0</output><button type="button" data-d="1" aria-label="One more '+d[0]+'">+</button></div></div>';
+  }).join('');
+  var plaque=document.getElementById('plaque'),plaqueText=document.getElementById('plaqueText');
+  var form=document.getElementById('planner');
+  function money(n){return '$'+n}
+  function render(){
+    var lines=[],total=0,count=0;
+    menu.forEach(function(d,i){
+      var row=dishes.children[i];row.classList.toggle('on',d[2]>0);
+      row.querySelector('output').textContent=d[2];
+      row.querySelector('[data-d="-1"]').disabled=d[2]===0;
+      if(d[2]){lines.push([d[2]+' × '+d[0],d[1]*d[2]]);total+=d[1]*d[2];count+=d[2]}
+    });
+    plaqueText.style.opacity=plaque.checked?1:.45;
+    if(plaque.checked){var t=form.querySelector('[name=plaque]:checked').value;lines.push(['Golden plaque · '+t,5]);total+=5}
+    var ul=document.getElementById('lines');
+    ul.innerHTML=count?lines.map(function(l){return '<li><span>'+l[0]+'</span><span>'+money(l[1])+'</span></li>'}).join(''):'<li class="empty"><span>Add a dessert from the menu to begin.</span></li>';
+    if(!count){total=0}
+    document.getElementById('total').textContent=money(total);
+    document.getElementById('sumWhen').textContent=form.querySelector('[name=when]:checked').value;
+    var w=form.querySelector('[name=when]:checked').value;
+    document.getElementById('whenHint').textContent=w.indexOf('Pickup')===0?'The pickup address is provided at checkout.':w.indexOf('Thursday')===0?"You'll be notified in advance of your delivery.":"Some Lakewood deliveries come Thursday, depending on the route. You'll be notified in advance.";
+    document.getElementById('orderSent').hidden=true;
+  }
+  dishes.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    var i=+b.closest('.dish').dataset.i;menu[i][2]=Math.max(0,Math.min(9,menu[i][2]+(+b.dataset.d)));render();
+  });
+  form.addEventListener('change',render);
+  form.addEventListener('submit',function(e){e.preventDefault();document.getElementById('orderSent').hidden=false});
+  var inq=document.getElementById('inq');
+  inq.addEventListener('submit',function(e){e.preventDefault();document.getElementById('inqSent').hidden=false});
+  render();
+
+  // Gentle rise for things below the first screen
+  if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var els=document.querySelectorAll('.sec-head,.menu-card,.summary,.shelf figure,.also,.cakes-photo,.cakes-grid>div:last-child,.lead-q,.more-q figure,.yael blockquote,.sig,.faq-grid>div,.end-grid>*');
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target)}})},{rootMargin:'0px 0px -6% 0px'});
+  var fold=innerHeight;
+  els.forEach(function(el){if(el.getBoundingClientRect().top>fold){el.classList.add('rise','will-rise');io.observe(el)}});
+})();
+</script>
+</body>
+</html>
