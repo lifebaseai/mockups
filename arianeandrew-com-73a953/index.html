@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup arianeandrew-com-73a953 1 76d0f49c -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ARIANE ANDREW | Tools to help you get unstuck &amp; get moving</title>
+<meta name="description" content="No gatekeeping. No smoke & mirrors. Practical tools from Ariane Andrew, starting with The AI Side Hustle Starter Kit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0b0a09; --ink2:#141210; --line:#2a2620;
+  --gold:#d4b06a; --gold-2:#e6cb92; --cream:#f1e8d4;
+  --text:#f3eee5; --muted:#b8b0a2;
+  --serif:"Bodoni Moda", "Didot", Georgia, serif;
+  --sans:"Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--text);font:400 16px/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold-2);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1160px,100% - 48px);margin-inline:auto}
+.skip{position:absolute;left:-9999px;top:0}
+.skip:focus{left:12px;top:56px;z-index:50;background:var(--cream);color:var(--ink);padding:10px 14px}
+
+/* Signal Set banner */
+.ss-banner{display:flex;align-items:center;justify-content:center;min-height:44px;padding:0 16px;background:var(--cream);color:#1d1a15;font:500 15px/1.2 var(--sans);text-align:center;white-space:nowrap}
+.ss-banner a{color:#5a3f0e;text-decoration:underline;text-underline-offset:3px;margin-left:.3em}
+
+/* Header */
+.top{border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:84px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.mono{width:94px;height:72px;overflow:hidden;position:relative;flex:none}
+.mono img{position:absolute;width:120px;height:120px;max-width:none;left:-13px;top:-25px}
+.brand b{font:500 13px/1 var(--sans);letter-spacing:.28em;color:var(--text)}
+.nav{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.nav a{font-size:14px;text-decoration:none;color:var(--muted);padding:12px 12px;border-radius:999px;transition:color .2s}
+.nav a:hover{color:var(--gold-2)}
+.nav a.cta{color:var(--ink);background:var(--gold);font-weight:500;padding:12px 18px}
+.nav a.cta:hover{background:var(--gold-2);color:var(--ink)}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:500 15px/1 var(--sans);text-decoration:none;border:1px solid transparent;cursor:pointer;white-space:nowrap;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-gold:hover{background:var(--gold-2);transform:translateY(-1px)}
+.btn-line{border-color:#5b513f;color:var(--text);background:transparent}
+.btn-line:hover{border-color:var(--gold);color:var(--gold-2)}
+.btn small{font-size:13px;opacity:.75;font-weight:400}
+
+.eyebrow{font:500 12px/1.4 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.05;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(34px,4.6vw,56px)}
+em.g{font-style:italic;color:var(--gold)}
+
+/* Hero */
+.hero{position:relative;padding:72px 0 88px;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-10%;top:-20%;width:70%;height:140%;background:radial-gradient(closest-side,rgba(212,176,106,.13),transparent 70%);pointer-events:none}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center;position:relative}
+.hero h1{font-size:clamp(44px,5vw,68px);margin:20px 0 26px}
+.hero h1 span{display:block}
+.hero .lede{font-size:18px;color:var(--muted);max-width:33em;margin:0 0 36px}
+.hero .lede strong{color:var(--text);font-weight:500}
+.actions{display:flex;flex-wrap:wrap;gap:14px}
+.steps-mini{display:flex;align-items:center;gap:12px;margin-top:40px;font:italic 400 18px/1 var(--serif);color:var(--muted);flex-wrap:wrap}
+.steps-mini i{font-style:normal;color:var(--gold);font-family:var(--sans);font-size:14px}
+.cover{position:relative;justify-self:center;width:min(100%,420px)}
+.cover img{width:100%;height:auto;border-radius:6px;box-shadow:0 40px 80px -30px rgba(0,0,0,.9),0 0 0 1px rgba(212,176,106,.25)}
+.tag{position:absolute;left:-28px;bottom:36px;background:var(--cream);color:var(--ink);border-radius:999px;padding:12px 20px;display:flex;align-items:baseline;gap:10px;box-shadow:0 18px 40px -16px rgba(0,0,0,.8)}
+.tag b{font:500 24px/1 var(--serif)}
+.tag s{font-size:14px;color:#5e574b}
+.tag span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#6b4d14;font-weight:600}
+
+/* Kit + planner */
+.kit{padding:110px 0;background:var(--ink2);border-block:1px solid var(--line)}
+.kit-head{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end;margin-bottom:56px}
+.kit-head p{color:var(--muted);max-width:36em;margin:18px 0 0;font-size:17px}
+.buy{text-align:right}
+.price{font:400 44px/1 var(--serif);color:var(--text)}
+.price s{font:400 18px var(--sans);color:var(--muted);margin-left:8px}
+.buy .note{display:block;font-size:13px;color:var(--muted);margin:8px 0 18px}
+
+.planner{border:1px solid var(--line);border-radius:18px;background:var(--ink);padding:36px;box-shadow:0 30px 60px -40px rgba(0,0,0,.9)}
+.planner-top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:26px;flex-wrap:wrap}
+.planner-top h3{font-size:28px}
+.planner-top p{margin:6px 0 0;color:var(--muted);font-size:14px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
+.step{position:relative;padding:20px;border-radius:12px;background:#17150f;border:1px solid var(--line);transition:border-color .3s}
+.step:focus-within{border-color:var(--gold)}
+.step:not(:last-child)::after{content:"→";position:absolute;right:-15px;top:22px;color:var(--gold);font-size:16px;z-index:1}
+.step label{display:block;font:500 12px/1.3 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.step label span{display:block;letter-spacing:0;text-transform:none;font-weight:400;color:var(--muted);font-size:13px;margin-top:4px}
+.step textarea{display:block;width:100%;margin-top:12px;background:transparent;border:0;border-bottom:1px solid #4a4235;color:var(--text);font:400 16px/1.45 var(--sans);padding:6px 0;min-height:56px;resize:none}
+.step textarea:focus{outline:none;border-bottom-color:var(--gold)}
+.out{margin-top:22px;padding:26px 28px;border-radius:12px;background:var(--cream);color:var(--ink);display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}
+.out .eyebrow{color:#6b4d14}
+.out p{margin:8px 0 0;font:400 20px/1.5 var(--serif)}
+.out p mark{background:none;color:#7a5514;font-style:italic}
+.out-btns{display:flex;flex-direction:column;gap:10px}
+.out .btn{min-height:46px;font-size:14px}
+.btn-ink{background:var(--ink);color:var(--cream)}
+.btn-ink:hover{background:#2a251c}
+.btn-soft{border-color:#b9a782;color:var(--ink);background:transparent}
+.btn-soft:hover{border-color:var(--ink)}
+.status{font-size:13px;color:#5e574b;min-height:1.3em;margin:6px 0 0;text-align:center}
+
+/* Free guide */
+.guide{background:var(--cream);color:var(--ink);padding:100px 0}
+.guide .wrap{display:grid;grid-template-columns:auto 1fr;gap:72px;align-items:center}
+.five{font:italic 400 clamp(150px,18vw,240px)/.8 var(--serif);color:#a07a2e;position:relative;padding-right:10px}
+.five small{position:absolute;bottom:4px;right:-6px;font:600 12px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--ink);font-style:normal;background:var(--cream);padding:6px 0}
+.guide .eyebrow{color:#6b4d14}
+.guide h2{margin:14px 0 14px}
+.guide p.sub{margin:0 0 28px;color:#4a443a;font-size:17px}
+.form{display:grid;grid-template-columns:1fr 1.3fr auto;gap:12px;max-width:640px}
+.form label{position:absolute;left:-9999px}
+.form input{min-height:54px;border-radius:999px;border:1px solid #bfae8a;background:#fbf7ee;padding:0 22px;font:400 16px var(--sans);color:var(--ink)}
+.form input:focus{outline:2px solid #6b4d14;outline-offset:1px}
+.thanks{margin:16px 0 0;font-weight:500;color:#3b3427;min-height:1.6em}
+
+/* More from Ariane */
+.more{padding:110px 0}
+.more-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:36px}
+.list{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:70px 1fr auto;align-items:center;gap:24px;padding:28px 4px;border-bottom:1px solid var(--line);text-decoration:none;transition:padding .3s,background .3s}
+.row:hover{background:#12100d;padding-left:16px}
+.row .n{font:italic 400 20px var(--serif);color:var(--gold)}
+.row h3{font-size:clamp(26px,3.2vw,40px)}
+.row .k{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:14px}
+.row .k::after{content:"→";color:var(--gold);font-size:18px;letter-spacing:0;transition:transform .3s}
+.row:hover .k::after{transform:translateX(4px)}
+
+/* About */
+.about{padding:20px 0 110px}
+.about .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;align-items:center}
+.about-mark{aspect-ratio:1;max-width:420px;width:100%;border-radius:18px;overflow:hidden;border:1px solid var(--line)}
+.about-mark img{width:100%;height:100%;object-fit:cover;transform:scale(1.18)}
+.about h2{margin:16px 0 20px}
+.about p{color:var(--muted);font-size:17px;max-width:34em;margin:0 0 28px}
+.worlds{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.worlds li{border:1px solid #4a4235;border-radius:999px;padding:9px 18px;font:italic 400 18px/1 var(--serif);color:var(--gold-2)}
+
+/* FAQ */
+.faq{padding:100px 0;background:var(--ink2);border-block:1px solid var(--line)}
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px}
+details{border-bottom:1px solid var(--line)}
+details:first-child{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;font:400 22px/1.3 var(--serif);min-height:44px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:300 26px/1 var(--sans);color:var(--gold);transition:transform .3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin:0 0 24px;color:var(--muted);max-width:36em}
+details a{color:var(--gold-2)}
+
+/* Close */
+.close{padding:120px 0 90px;text-align:center;position:relative;overflow:hidden}
+.close h2{font-size:clamp(46px,7vw,96px);margin:18px 0 22px}
+.close p{color:var(--muted);margin:0 auto 36px;max-width:30em;font-size:17px}
+.close .actions{justify-content:center}
+.reach{margin-top:56px;display:flex;flex-direction:column;align-items:center;gap:18px}
+.reach a.mail{font:italic 400 22px var(--serif);color:var(--gold-2);text-decoration:none;border-bottom:1px solid #5b513f;padding-bottom:4px}
+.social{display:flex;gap:10px;list-style:none;margin:0;padding:0}
+.social a{width:46px;height:46px;border-radius:50%;border:1px solid #4a4235;display:grid;place-items:center;color:var(--text);transition:border-color .2s,color .2s}
+.social a:hover{border-color:var(--gold);color:var(--gold)}
+.social svg{width:18px;height:18px}
+
+footer{border-top:1px solid var(--line);padding:34px 0 40px;font-size:13px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer b{color:var(--text);letter-spacing:.24em;font-weight:500}
+footer a{color:var(--muted)}
+
+/* Phone buy bar */
+.bar{display:none}
+
+/* Rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:960px){
+  .nav a:not(.cta){display:none}
+  .hero .wrap,.about .wrap,.faq .wrap{grid-template-columns:1fr;gap:48px}
+  .kit-head{grid-template-columns:1fr}
+  .buy{text-align:left}
+  .steps{grid-template-columns:1fr 1fr}
+  .step:nth-child(2)::after{display:none}
+  .guide .wrap{grid-template-columns:1fr;gap:28px}
+}
+@media (max-width:640px){
+  .wrap{width:calc(100% - 40px)}
+  .ss-banner{font-size:15px;padding:0 10px}
+  .top .wrap{min-height:68px}
+  .mono{width:74px;height:56px}
+  .mono img{width:94px;height:94px;left:-10px;top:-19px}
+  .brand b{display:none}
+  .nav a.cta{padding:12px 16px;font-size:13px}
+  .hero{padding:40px 0 64px}
+  .hero h1{font-size:44px;margin:16px 0 20px}
+  .hero h1 span{display:inline}
+  .hero .lede{font-size:16px;margin-bottom:28px}
+  .actions .btn{width:100%}
+  .steps-mini{font-size:16px;gap:8px;margin-top:30px}
+  .cover{width:min(100%,300px)}
+  .tag{left:-14px;bottom:22px;padding:10px 16px}
+  .kit,.more,.faq,.guide{padding:76px 0}
+  .planner{padding:22px 18px;border-radius:14px}
+  .steps{grid-template-columns:1fr;gap:12px}
+  .step::after{display:none}
+  .out{grid-template-columns:1fr;padding:22px 20px}
+  .out p{font-size:18px}
+  .form{grid-template-columns:1fr}
+  .five{font-size:120px;justify-self:start;padding-right:0}
+  .five small{position:static;display:block;margin-top:14px;padding:0}
+  .row{grid-template-columns:40px 1fr;gap:6px 14px;padding:22px 0}
+  .row .k{grid-column:2}
+  .row:hover{padding-left:0}
+  .about{padding:0 0 76px}
+  .about-mark{max-width:260px}
+  .close{padding:84px 0 70px}
+  .bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px 10px 20px;background:rgba(11,10,9,.96);border-top:1px solid var(--line);backdrop-filter:blur(8px)}
+  .bar p{margin:0;font-size:13px;line-height:1.3;color:var(--muted)}
+  .bar p b{display:block;color:var(--text);font-weight:500;font-size:14px}
+  .bar .btn{min-height:44px;padding:0 20px;font-size:14px}
+  footer{padding-bottom:100px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="ss-banner">Here's your free mockup from<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Ariane Andrew, Double A Academy, home">
+      <span class="mono"><img src="https://images.squarespace-cdn.com/content/v1/57c4799859cc689e97f9b863/e8a9af0f-173e-4f7b-b2a8-729b0214839d/ChatGPT+Image+Sep+8%2C+2026%2C+12_44_20+AM+%281%29.png?format=1500w" alt="Double A Academy logo" width="120" height="120"></span>
+      <b>ARIANE ANDREW</b>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#guide">Free guide</a>
+      <a href="#more">Off the Mat</a>
+      <a href="#more">Fitness app</a>
+      <a href="#more">Merch</a>
+      <a href="#contact">Contact</a>
+      <a class="cta" href="#kit">Get the kit</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Creator • Entrepreneur • Entertainer</p>
+        <h1 id="h1"><span>Tools to help you</span> <span>get unstuck &amp;</span> <em class="g">get moving.</em></h1>
+        <p class="lede"><strong>No gatekeeping. No smoke &amp; mirrors.</strong> Just practical tools, resources, and real-life experiments designed to help you turn your ideas into action.</p>
+        <div class="actions">
+          <a class="btn btn-gold" href="#kit">Get the AI Starter Kit <small>$19.99</small></a>
+          <a class="btn btn-line" href="#guide">Free guide: 5 AI prompts</a>
+        </div>
+        <p class="steps-mini" aria-label="From skill to idea to offer to launch">From skill <i>→</i> idea <i>→</i> offer <i>→</i> launch.</p>
+      </div>
+      <figure class="cover" style="margin:0">
+        <img src="https://images.squarespace-cdn.com/content/v1/57c4799859cc689e97f9b863/15066f12-1a24-4085-b0fb-b50f09fd3d03/468da4df-3d9a-4808-a6bb-46937215793c.png?format=1500w" alt="Cover of The AI Side Hustle Starter Kit, created by Ariane Andrew" width="941" height="1216">
+        <figcaption class="tag"><span>Sale</span><b>$19.99</b><s>$37.00</s></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="kit" id="kit" aria-labelledby="kit-h">
+    <div class="wrap">
+      <div class="kit-head" data-rise>
+        <div>
+          <p class="eyebrow">The AI Side Hustle Starter Kit</p>
+          <h2 id="kit-h" style="margin-top:14px">Stop asking AI <em class="g">random questions.</em></h2>
+          <p>Use it to figure out what you can actually sell. A smarter way to build your next chapter, from skill to idea to offer to launch.</p>
+        </div>
+        <div class="buy">
+          <div class="price">$19.99<s>$37.00</s></div>
+          <span class="note">On sale now</span>
+          <a class="btn btn-gold" href="https://www.arianeandrew.com/products-store/p/the-ai-side-hustle-starter-kit">Get the AI Starter Kit</a>
+        </div>
+      </div>
+
+      <div class="planner" data-rise>
+        <div class="planner-top">
+          <div>
+            <h3>Try the four steps</h3>
+            <p>Here's an example. Type over it with your own.</p>
+          </div>
+          <button class="btn btn-line" type="button" id="another" style="min-height:44px;font-size:14px">Show another example</button>
+        </div>
+        <div class="steps">
+          <div class="step"><label for="s1">Skill<span>What you're already good at</span></label><textarea id="s1" rows="2"></textarea></div>
+          <div class="step"><label for="s2">Idea<span>Who it could help</span></label><textarea id="s2" rows="2"></textarea></div>
+          <div class="step"><label for="s3">Offer<span>What you'd sell</span></label><textarea id="s3" rows="2"></textarea></div>
+          <div class="step"><label for="s4">Launch<span>Your first move</span></label><textarea id="s4" rows="2"></textarea></div>
+        </div>
+        <div class="out" aria-live="polite">
+          <div>
+            <p class="eyebrow">Your focused question for AI</p>
+            <p id="prompt">I'm good at <mark>meal prep</mark>. I want to help <mark>busy parents who dread weeknight dinners</mark>. Help me shape that into <mark>a 4-week dinner plan for $15</mark>, and plan my launch, starting with <mark>sharing three recipes this week</mark>. What should I do first?</p>
+          </div>
+          <div class="out-btns">
+            <button class="btn btn-ink" type="button" id="copy">Copy my question</button>
+            <a class="btn btn-soft" href="https://www.arianeandrew.com/products-store/p/the-ai-side-hustle-starter-kit">Get the full kit</a>
+            <p class="status" id="status" role="status"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="guide" id="guide" aria-labelledby="guide-h">
+    <div class="wrap">
+      <div class="five" aria-hidden="true">5<small>AI prompts</small></div>
+      <div data-rise>
+        <p class="eyebrow">Free guide</p>
+        <h2 id="guide-h">5 AI prompts, <em style="font-style:italic">free.</em></h2>
+        <p class="sub">Not ready for the kit yet? Start with the free guide. Tell us where to send it.</p>
+        <form class="form" id="guide-form" novalidate>
+          <label for="fn">First name</label><input id="fn" name="name" placeholder="First name" autocomplete="given-name">
+          <label for="em">Email</label><input id="em" name="email" type="email" placeholder="Email address" autocomplete="email">
+          <button class="btn btn-ink" type="submit">Send me the guide</button>
+        </form>
+        <p class="thanks" id="thanks" role="status"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="more" id="more" aria-labelledby="more-h">
+    <div class="wrap">
+      <div class="more-head" data-rise>
+        <div>
+          <p class="eyebrow">More from Ariane</p>
+          <h2 id="more-h" style="margin-top:14px">Read it, train with it, <em class="g">wear it.</em></h2>
+        </div>
+      </div>
+      <div class="list" data-rise>
+        <a class="row" href="https://www.arianeandrew.com/offthemat"><span class="n">01</span><h3>Off the Mat</h3><span class="k">E-book</span></a>
+        <a class="row" href="https://www.arianeandrew.com/new-index"><span class="n">02</span><h3>DoubleAAcademy</h3><span class="k">Fitness app</span></a>
+        <a class="row" href="https://www.arianeandrew.com/merchandise"><span class="n">03</span><h3>Merchandise</h3><span class="k">Store</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" aria-labelledby="about-h">
+    <div class="wrap">
+      <div class="about-mark" data-rise><img src="https://images.squarespace-cdn.com/content/v1/57c4799859cc689e97f9b863/e8a9af0f-173e-4f7b-b2a8-729b0214839d/ChatGPT+Image+Sep+8%2C+2026%2C+12_44_20+AM+%281%29.png?format=1500w" alt="Double A Academy gold monogram" width="1254" height="1254" loading="lazy"></div>
+      <div data-rise>
+        <p class="eyebrow">Ariane Andrew</p>
+        <h2 id="about-h">The next <em class="g">chapter.</em></h2>
+        <p>Ariane Andrew is groomed, excited and perfectly poised to carve out the next chapter of her career, with a focused drive and passion for acting, and staying connected to her brand in sports, hosting and the fitness world.</p>
+        <ul class="worlds" aria-label="Ariane's worlds">
+          <li>Acting</li><li>Sports</li><li>Hosting</li><li>Fitness</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" aria-labelledby="faq-h">
+    <div class="wrap">
+      <div data-rise>
+        <p class="eyebrow">Good to know</p>
+        <h2 id="faq-h" style="margin-top:14px">Quick answers</h2>
+      </div>
+      <div data-rise>
+        <details open><summary>What does the AI Starter Kit help me do?</summary><p>Stop asking AI random questions and use it to figure out what you can actually sell. It takes you from skill to idea to offer to launch.</p></details>
+        <details><summary>How much is it?</summary><p>$19.99 right now, on sale from $37.00.</p></details>
+        <details><summary>Is there something free to start with?</summary><p>Yes. The free guide gives you 5 AI prompts. <a href="#guide">Get it here.</a></p></details>
+        <details><summary>How do I reach Ariane?</summary><p>Email <a href="mailto:info@arianeandrew.com">info@arianeandrew.com</a>, or find Ariane on Instagram, TikTok, YouTube and Facebook.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="close" id="contact" aria-labelledby="close-h">
+    <div class="wrap" data-rise>
+      <p class="eyebrow">Turn your ideas into action</p>
+      <h2 id="close-h">Get unstuck. <em class="g">Get moving.</em></h2>
+      <p>The AI Side Hustle Starter Kit, from skill to idea to offer to launch. $19.99 while it's on sale.</p>
+      <div class="actions">
+        <a class="btn btn-gold" href="https://www.arianeandrew.com/products-store/p/the-ai-side-hustle-starter-kit">Get the AI Starter Kit <small>$19.99</small></a>
+        <a class="btn btn-line" href="#guide">Free guide: 5 AI prompts</a>
+      </div>
+      <div class="reach">
+        <a class="mail" href="mailto:info@arianeandrew.com">info@arianeandrew.com</a>
+        <ul class="social">
+          <li><a href="https://www.instagram.com/ArianeAndrew/" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a></li>
+          <li><a href="https://www.tiktok.com/@arianeandrew" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 3c.4 2.2 1.8 3.7 4 3.9v3.2c-1.5 0-2.8-.4-4-1.2v6.3c0 3.4-2.6 5.8-5.8 5.8S5 18.6 5 15.4s2.6-5.8 5.8-5.8c.3 0 .6 0 .9.1v3.3a2.6 2.6 0 1 0 1.7 2.4V3h3.2z"/></svg></a></li>
+          <li><a href="https://www.youtube.com/channel/UCVg18sOIhlwGIqWKw8-VZ3A" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 8.2c-.2-1.6-1-2.6-2.6-2.8C17.1 5.1 12 5.1 12 5.1s-5.1 0-7.4.3C3 5.6 2.2 6.6 2 8.2 1.8 9.5 1.8 12 1.8 12s0 2.5.2 3.8c.2 1.6 1 2.6 2.6 2.8 2.3.3 7.4.3 7.4.3s5.1 0 7.4-.3c1.6-.2 2.4-1.2 2.6-2.8.2-1.3.2-3.8.2-3.8s0-2.5-.2-3.8zM10 15.2V8.8l5.4 3.2-5.4 3.2z"/></svg></a></li>
+          <li><a href="https://www.facebook.com/ArianeNAndrew" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.6h2.6l.4-3h-3V8.5c0-.9.3-1.5 1.5-1.5h1.6V4.3c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21h3.1z"/></svg></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><b>ARIANE ANDREW</b> &nbsp;·&nbsp; © 2026 Ariane Andrew. All Rights Reserved.</span>
+    <span>Mockup made for Ariane Andrew by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></span>
+  </div>
+</footer>
+
+<div class="bar" aria-label="Get the kit">
+  <p><b>AI Side Hustle Starter Kit</b>$19.99 <s>$37.00</s></p>
+  <a class="btn btn-gold" href="#kit">Get the kit</a>
+</div>
+
+<script>
+(function(){
+  var examples=[
+    ['meal prep','busy parents who dread weeknight dinners','a 4-week dinner plan for $15','sharing three recipes this week'],
+    ['photo editing','small shops with dull product photos','a pack of 10 photo presets for $12','posting before-and-after shots'],
+    ['spreadsheets','freelancers who never know what they earned','a simple budget template for $9','giving a free sample to my followers']
+  ];
+  var ids=['s1','s2','s3','s4'], ex=0;
+  var inputs=ids.map(function(id){return document.getElementById(id)});
+  var out=document.getElementById('prompt'), status=document.getElementById('status');
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function val(i){var v=inputs[i].value.trim();return esc(v||inputs[i].placeholder)}
+  function render(){
+    out.innerHTML="I'm good at <mark>"+val(0)+"</mark>. I want to help <mark>"+val(1)+"</mark>. Help me shape that into <mark>"+val(2)+"</mark>, and plan my launch, starting with <mark>"+val(3)+"</mark>. What should I do first?";
+    status.textContent='';
+  }
+  function load(n){examples[n].forEach(function(v,i){inputs[i].value=v;inputs[i].placeholder=v});render()}
+  inputs.forEach(function(el){el.addEventListener('input',render)});
+  document.getElementById('another').addEventListener('click',function(){ex=(ex+1)%examples.length;load(ex)});
+  document.getElementById('copy').addEventListener('click',function(){
+    var text=out.textContent;
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){status.textContent='Copied. Paste it into your AI.'},function(){status.textContent='Select the text above to copy it.'});
+    }else{status.textContent='Select the text above to copy it.'}
+  });
+  load(0);
+
+  document.getElementById('guide-form').addEventListener('submit',function(e){
+    e.preventDefault();
+    var first=document.getElementById('fn').value.trim().split(/\s+/)[0];
+    document.getElementById('thanks').textContent='Thanks'+(first?', '+first:'')+'. Your 5 AI prompts are on their way.';
+  });
+
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  var els=[].slice.call(document.querySelectorAll('[data-rise]'));
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target)}});
+  },{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(el){
+    if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('rise','will-rise');io.observe(el)}
+  });
+})();
+</script>
+</body>
+</html>
