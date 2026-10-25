@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup bossrentals-kiwi-4bacd4 1 8f221f09 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boss Auto Rentals | Car Hire in Christchurch, Rolleston &amp; Queenstown</title>
+<meta name="description" content="Automatic, insured hire cars from Christchurch Airport, Rolleston and Queenstown Airport. No hidden fees. Book any time, 24/7.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112..125,700..900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --orange:#ff3600; --orange-ink:#d02e00; --orange-dark:#b02700;
+  --ink:#0f1b2d; --ink-2:#3b4757; --muted:#556170;
+  --snow:#f3f5f8; --line:#e2e6ec; --white:#fff;
+  --display:"Archivo","Arial Black",system-ui,sans-serif;
+  --body:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--body);color:var(--ink);background:var(--white);font-size:17px;line-height:1.55;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);font-stretch:118%;font-weight:800;line-height:1.05;letter-spacing:-.01em;margin:0}
+h2{font-size:clamp(30px,4vw,46px)}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-ink);margin:0 0 14px}
+.kicker::before{content:"";width:22px;height:3px;background:var(--orange);border-radius:2px}
+.lede{color:var(--ink-2);font-size:19px;max-width:560px;margin:16px 0 0}
+
+/* mockup banner */
+.mock-banner{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:var(--ink);color:#e8edf3;font-size:15px;line-height:1.3;text-align:center;white-space:nowrap}
+.mock-banner a{color:#fff;text-decoration:underline;text-underline-offset:3px;font-weight:700}
+
+/* header */
+.site-head{background:#fff;border-bottom:1px solid var(--line);position:relative;z-index:5}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:84px}
+.logo img{width:150px;height:auto}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{text-decoration:none;font-weight:500;font-size:16px;padding:12px 14px;border-radius:10px;color:var(--ink-2)}
+.nav a:hover{color:var(--ink);background:var(--snow)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;border:2px solid transparent;font:700 17px/1 var(--body);text-decoration:none;cursor:pointer;transition:background .2s,transform .2s,box-shadow .2s}
+.btn-main{background:var(--orange-ink);color:#fff;box-shadow:0 8px 22px -10px rgba(208,46,0,.7)}
+.btn-main:hover{background:var(--orange-dark);transform:translateY(-1px)}
+.btn-ghost{border-color:rgba(255,255,255,.75);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.btn .arr{width:18px;height:18px}
+.nav .btn{min-height:46px;padding:0 20px;font-size:16px;margin-left:10px;color:#fff}
+.nav .btn:hover{background:var(--orange-dark);color:#fff}
+
+/* hero */
+.hero{position:relative;background:var(--ink);color:#fff;overflow:hidden}
+.hero-media{position:absolute;inset:0;max-width:1877px;margin-inline:auto}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:60% 55%}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,18,32,.86) 0%,rgba(9,18,32,.62) 38%,rgba(9,18,32,.05) 70%)}
+.hero-copy{position:relative;padding:84px 0 168px;max-width:620px}
+.hero h1{font-size:clamp(40px,5.6vw,70px);text-shadow:0 2px 24px rgba(0,0,0,.25)}
+.hero h1 em{font-style:normal;color:#fff;background:linear-gradient(transparent 78%,var(--orange) 78%,var(--orange) 92%,transparent 92%)}
+.hero p{font-size:20px;margin:22px 0 0;max-width:500px;color:#f2f5f9}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+
+.promises{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:34px;font-weight:500;font-size:15px}
+.promises li{display:flex;align-items:center;gap:8px}
+.promises li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--orange);box-shadow:0 0 0 3px rgba(255,54,0,.28)}
+
+/* planner */
+.planner-sec{position:relative;margin-top:-112px;z-index:3;padding-bottom:40px}
+.planner{background:#fff;border-radius:22px;box-shadow:0 30px 70px -30px rgba(15,27,45,.45),0 2px 6px rgba(15,27,45,.06);display:grid;grid-template-columns:1.35fr 1fr;overflow:hidden}
+.plan-form{padding:36px 40px 40px}
+.plan-form h2{font-size:clamp(26px,2.6vw,32px)}
+.plan-form .sub{color:var(--muted);margin:8px 0 0;font-size:16px}
+fieldset{border:0;margin:26px 0 0;padding:0;min-width:0}
+legend{font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);margin-bottom:12px;padding:0;display:flex;gap:10px;align-items:center}
+legend b{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--ink);color:#fff;font-size:13px;letter-spacing:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips.four{display:grid;grid-template-columns:repeat(4,1fr)}
+.chips.trips{display:grid;grid-template-columns:repeat(6,1fr)}
+.chips.trips .chip{grid-column:span 2}
+.chips.trips .chip:nth-child(n+4){grid-column:span 3}
+.chips.four .chip span,.chips.trips .chip span{height:100%}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip span{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;min-height:46px;padding:10px 16px;border:1.5px solid var(--line);border-radius:12px;font-weight:500;font-size:15px;line-height:1.25;cursor:pointer;background:#fff;transition:border-color .15s,background .15s}
+.chip span small{display:block;color:var(--muted);font-size:13px;font-weight:400}
+.chip span:hover{border-color:#b9c1cc}
+.chip input:checked + span{border-color:var(--orange-ink);background:#fff4f0;box-shadow:inset 0 0 0 1px var(--orange-ink)}
+.chip input:focus-visible + span{outline:3px solid var(--orange);outline-offset:2px}
+.dates{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.field label{display:block;font-size:14px;font-weight:500;color:var(--ink-2);margin-bottom:6px}
+.field input{width:100%;min-height:50px;padding:10px 14px;border:1.5px solid var(--line);border-radius:12px;font:500 16px var(--body);color:var(--ink);background:#fff}
+.field input:focus{border-color:var(--ink);outline:none;box-shadow:0 0 0 3px rgba(255,54,0,.25)}
+
+.ticket{background:var(--ink);color:#fff;padding:36px 36px 34px;display:flex;flex-direction:column;position:relative}
+.ticket::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:repeating-linear-gradient(180deg,var(--orange) 0 18px,transparent 18px 30px)}
+.t-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#b8c3d1;font-weight:700}
+.t-days{font-family:var(--display);font-stretch:118%;font-weight:900;font-size:72px;line-height:1;margin:18px 0 4px;letter-spacing:-.02em}
+.t-days small{font-size:22px;font-weight:800;margin-left:6px;letter-spacing:0}
+.t-len{color:#d4dbe5;margin:0;font-size:15px}
+.t-rows{margin:22px 0 0;padding:0;display:grid;gap:14px}
+.t-rows div{display:grid;grid-template-columns:96px 1fr;gap:12px;font-size:15px;padding-top:14px;border-top:1px dashed rgba(255,255,255,.22)}
+.t-rows dt{color:#b8c3d1}
+.t-rows dd{margin:0;font-weight:500}
+.t-car{display:flex;align-items:center;gap:14px;margin-top:22px;padding:16px;border-radius:14px;background:rgba(255,255,255,.07)}
+.t-car svg{width:92px;flex:none}
+.t-car svg path:first-child,.t-car svg rect{fill:#fff}
+.t-car svg path:nth-child(2){fill:#0f1b2d;opacity:1}
+.t-road{padding-top:24px;display:flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.t-road .end-pt{flex:none;padding:7px 11px;border-radius:8px;background:#fff;color:var(--ink)}
+.t-road .end-pt.to{background:var(--orange-ink);color:#fff;max-width:55%;text-align:center}
+.t-road i{flex:1;height:2px;min-width:30px;background:repeating-linear-gradient(90deg,#8794a6 0 10px,transparent 10px 18px)}
+.t-car b{display:block;font-size:17px}
+.t-car span{display:block;font-size:14px;color:#d4dbe5;line-height:1.4}
+.t-incl{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:6px;font-size:14.5px;color:#e6ebf1}
+.t-incl li{display:flex;gap:10px;align-items:baseline}
+.t-incl li::before{content:"";flex:none;width:12px;height:7px;border-left:2px solid var(--orange);border-bottom:2px solid var(--orange);transform:rotate(-45deg) translateY(-2px)}
+.t-note{margin:14px 0 0;font-size:14px;color:#ffd2c2;min-height:1.4em}
+@media (min-width:981px){
+  .t-days{font-size:88px}
+  .t-len{margin-bottom:22px}
+  .t-rows{margin-bottom:22px}
+  .t-car{margin-bottom:20px;padding:20px 18px}
+  .t-rows,.t-car,.t-incl{margin-top:auto}
+}
+.plan-form{grid-column:1;grid-row:1}
+.ticket{grid-column:2;grid-row:1 / span 2}
+.send{grid-column:1;grid-row:2;margin:0 40px 40px;padding-top:24px;border-top:1px solid var(--line)}
+.send .who{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.send .btn{margin-top:16px;width:100%}
+.thanks{margin:14px 0 0;padding:14px 16px;border-radius:12px;background:#eaf6ee;color:#14532d;font-weight:500}
+.thanks[hidden]{display:none}
+
+/* sections */
+section{scroll-margin-top:20px}
+.sec{padding:110px 0}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:54px}
+.sec-head .lede{margin:0}
+
+/* pickup */
+.pickup{background:var(--snow)}
+.stops{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);position:relative}
+.stops::before{content:"";position:absolute;left:0;right:0;top:27px;height:14px;background:var(--ink);border-radius:8px}
+.stops::after{content:"";position:absolute;left:12px;right:12px;top:33px;height:2px;background:repeating-linear-gradient(90deg,#fff 0 18px,transparent 18px 34px)}
+.stops li{position:relative;padding:0 24px 0 0}
+.pin{position:relative;z-index:1;width:68px;height:68px;border-radius:50%;background:#fff;border:3px solid var(--ink);display:grid;place-items:center;font-family:var(--display);font-stretch:118%;font-weight:900;font-size:16px;color:var(--ink);box-shadow:0 0 0 6px var(--snow)}
+.stops li.air .pin{background:var(--orange-ink);border-color:var(--orange-ink);color:#fff}
+.stops h3{font-size:22px;margin:26px 0 8px}
+.stops p{margin:0;color:var(--ink-2);font-size:16px}
+
+/* fleet */
+.makes{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 28px;padding:30px 0;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);font-family:var(--display);font-stretch:112%;font-weight:900;font-size:clamp(22px,2.6vw,34px);text-transform:uppercase;letter-spacing:.01em;margin:0;list-style:none}
+.makes li:nth-child(even){color:var(--orange-ink)}
+.classes{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:46px}
+.cls{padding:8px 26px 0;border-left:1px solid var(--line)}
+.cls:first-child{border-left:0;padding-left:0}
+.cls svg{width:100%;max-width:170px;height:auto;margin-bottom:18px}
+.cls h3{font-size:20px;margin-bottom:6px}
+.cls p{margin:0;color:var(--ink-2);font-size:16px}
+.auto-note{margin-top:48px;display:flex;align-items:center;gap:18px;font-size:18px;color:var(--ink-2)}
+.auto-note strong{font-family:var(--display);font-stretch:118%;font-size:22px;color:var(--ink);white-space:nowrap}
+
+/* seasons */
+.seasons{display:grid;grid-template-columns:1fr 1fr;min-height:440px}
+.season{padding:80px max(48px,calc((100vw - 1160px)/2)) 80px 56px;position:relative;overflow:hidden}
+.season:first-child{padding-left:max(20px,calc((100vw - 1160px)/2));padding-right:56px}
+.winter{background:#13243b;color:#fff}
+.summer{background:#fff1ea;color:var(--ink)}
+.season .tag{font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+.winter .tag{color:#9fc3ff}
+.summer .tag{color:var(--orange-dark)}
+.season h3{font-size:clamp(28px,3.4vw,42px);margin:14px 0 14px}
+.season p{margin:0;max-width:430px;font-size:18px}
+.winter p{color:#dbe4f0}
+.season .car{margin-top:30px;display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:15px;padding:10px 16px;border-radius:999px}
+.winter .car{background:rgba(255,255,255,.1)}
+.summer .car{background:#fff}
+.season>:not(.deco){position:relative;z-index:1}
+.season svg.deco{position:absolute;right:-20px;bottom:-10px;width:300px;opacity:.9;pointer-events:none}
+
+/* why */
+.why-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}
+.why-list{list-style:none;margin:0;padding:0;counter-reset:w}
+.why-list li{counter-increment:w;display:grid;grid-template-columns:64px 1fr;gap:4px 18px;padding:26px 0;border-top:1px solid var(--line)}
+.why-list li:last-child{border-bottom:1px solid var(--line)}
+.why-list li::before{content:"0" counter(w);font-family:var(--display);font-stretch:118%;font-weight:900;font-size:22px;color:var(--orange-ink);grid-row:span 2;padding-top:2px}
+.why-list h3{font-size:21px}
+.why-list p{margin:0;color:var(--ink-2);font-size:16.5px}
+.quote{position:sticky;top:30px;background:var(--ink);color:#fff;border-radius:22px;padding:44px 42px}
+.quote p{font-family:var(--display);font-stretch:112%;font-weight:800;font-size:clamp(26px,2.8vw,34px);line-height:1.15;margin:0}
+.quote p span{color:#ff8a66}
+.quote .by{margin-top:22px;font-size:15px;color:#c3ccd8;font-family:var(--body);font-weight:500}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.14);border-radius:14px;overflow:hidden;margin-top:34px}
+.facts div{background:#18263b;padding:18px 18px}
+.facts b{display:block;font-family:var(--display);font-stretch:118%;font-size:24px;font-weight:900}
+.facts span{font-size:14px;color:#c3ccd8}
+
+/* faq */
+.faq{background:var(--snow)}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}
+details{border-top:1px solid #d5dbe3}
+details:last-child{border-bottom:1px solid #d5dbe3}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:64px;padding:16px 0;font-weight:700;font-size:18px}
+summary::-webkit-details-marker{display:none}
+summary .pm{flex:none;width:30px;height:30px;border-radius:50%;border:1.5px solid var(--ink);position:relative}
+summary .pm::before,summary .pm::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:2px;background:var(--ink);transform:translate(-50%,-50%)}
+summary .pm::after{transform:translate(-50%,-50%) rotate(90deg);transition:transform .2s}
+details[open] summary .pm{background:var(--ink)}
+details[open] summary .pm::before{background:#fff}
+details[open] summary .pm::after{transform:translate(-50%,-50%) rotate(0);background:#fff}
+details p{margin:0 0 22px;color:var(--ink-2);max-width:620px}
+
+/* end */
+.end{background:var(--ink);color:#fff;text-align:center;padding:110px 0}
+.end h2{max-width:820px;margin-inline:auto}
+.end p{color:#d4dbe5;font-size:19px;margin:20px auto 34px;max-width:560px}
+.end .actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
+
+footer{background:#0a1322;color:#c3ccd8;padding:56px 0 40px;font-size:15px}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:30px;align-items:flex-start}
+.foot-logo{background:#fff;border-radius:12px;padding:10px 14px;display:inline-block}
+.foot-logo img{width:120px;height:auto}
+.foot p{max-width:360px;margin:16px 0 0}
+.social{display:flex;gap:10px;list-style:none;margin:0;padding:0}
+.social a{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.22);color:#fff}
+.social a:hover{background:rgba(255,255,255,.1)}
+.social svg{width:19px;height:19px}
+.copy{margin:40px 0 0;font-size:14px;color:#a9b4c2}
+.mock-line{margin-top:14px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);font-size:14px;color:#a9b4c2}
+.mock-line a{color:#d4dbe5}
+
+.mbar{display:none}
+
+/* rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .6s ease,transform .6s ease}
+
+@media (max-width:980px){
+  .nav a:not(.btn){display:none}
+  .planner{grid-template-columns:1fr}
+  .plan-form,.ticket,.send{grid-column:auto;grid-row:auto}
+  .send{border-top:0;margin:0;padding:28px 40px 36px}
+  .sec-head,.why-grid,.faq-grid{grid-template-columns:1fr;gap:22px}
+  .quote{position:static;order:2;margin-top:10px}
+  .stops{grid-template-columns:1fr 1fr;gap:40px 0}
+  .stops::before,.stops::after{display:none}
+  .classes{grid-template-columns:1fr 1fr;row-gap:36px}
+  .cls:nth-child(3){border-left:0;padding-left:0}
+  .seasons{grid-template-columns:1fr}
+  .season,.season:first-child{padding:64px 20px}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:72px}
+  .mock-banner{font-size:14.5px;padding:8px 10px}
+  .site-head .wrap{min-height:70px}
+  .logo img{width:116px}
+  .nav .btn{margin-left:0;padding:0 16px}
+  .hero-media img{object-position:74% 50%}
+  .hero-media::after{background:linear-gradient(180deg,rgba(9,18,32,.88) 0%,rgba(9,18,32,.72) 50%,rgba(9,18,32,0) 68%)}
+  .hero-copy{padding:36px 0 300px}
+  .hero h1{font-size:40px}
+  .hero p{font-size:17.5px;margin-top:16px}
+  .hero .actions{margin-top:24px}
+  .hero .btn{flex:1 1 auto}
+  .promises{display:none}
+  .planner-sec{margin-top:-70px}
+  .wrap{width:calc(100% - 28px)}
+  .planner-sec .wrap{width:calc(100% - 20px)}
+  .plan-form{padding:26px 20px 28px}
+  .ticket{padding:28px 22px 28px 28px}
+  .send{padding:24px 20px 28px}
+  .t-days{font-size:60px}
+  .t-car svg{width:76px}
+  .dates,.send .who{grid-template-columns:1fr}
+  .chip{flex:1 1 calc(50% - 8px)}
+  .chips.four,.chips.trips{grid-template-columns:1fr 1fr}
+  .chips.trips .chip,.chips.trips .chip:nth-child(n+4){grid-column:auto}
+  .chips.trips .chip:last-child{grid-column:1 / -1}
+  .chip span{height:100%}
+  .sec{padding:76px 0}
+  .sec-head{margin-bottom:36px}
+  .lede{font-size:17px}
+  .stops{grid-template-columns:1fr;gap:0}
+  .stops li{display:grid;grid-template-columns:60px 1fr;gap:0 18px;padding:0 0 26px;position:relative}
+  .stops li:not(:last-child)::after{content:"";position:absolute;left:26px;top:60px;bottom:0;width:8px;background:var(--ink);border-radius:4px}
+  .pin{width:60px;height:60px;font-size:14px;grid-row:span 2}
+  .stops h3{margin:8px 0 4px;font-size:20px}
+  .makes{justify-content:flex-start;gap:6px 20px;font-size:24px;padding:22px 0}
+  .classes{grid-template-columns:1fr 1fr;gap:30px 18px}
+  .cls,.cls:first-child,.cls:nth-child(3){padding:0;border:0}
+  .cls h3{font-size:18px}
+  .cls p{font-size:15px}
+  .auto-note{flex-direction:column;align-items:flex-start;gap:6px;font-size:16px}
+  .season svg.deco{width:200px;opacity:.5}
+  .why-list li{grid-template-columns:44px 1fr}
+  .quote{padding:32px 24px}
+  .facts b{font-size:20px}
+  summary{font-size:17px}
+  .end{padding:80px 0}
+  .end .btn{width:100%}
+  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;gap:10px;align-items:center;justify-content:space-between;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid var(--line);box-shadow:0 -8px 24px -12px rgba(15,27,45,.3)}
+  .mbar span{font-size:14px;color:var(--ink-2);line-height:1.25}
+  .mbar span b{display:block;color:var(--ink);font-size:15px}
+  .mbar .btn{min-height:48px;padding:0 20px;font-size:16px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock-banner" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Boss Auto Rentals New Zealand, home"><img src="https://bossrentals.kiwi/wp-content/uploads/2026/06/cropped-Boss-Auto-Rentals-New-Zealand-Car-Rental-Services-300x129.png" alt="Boss Auto Rentals New Zealand" width="300" height="129"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#pickup">Pick-up</a>
+      <a href="#fleet">Our fleet</a>
+      <a href="#why">Why Boss</a>
+      <a href="#questions">Questions</a>
+      <a class="btn btn-main" href="#plan">Book a rental</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-media"><img src="https://bossrentals.kiwi/wp-content/uploads/2026/08/Boss_Auto_Rentals_Hero_Banner.webp" alt="A Boss Auto Rentals SUV driving a snowy lakeside road below the Southern Alps" width="1877" height="838" fetchpriority="high"></div>
+    <div class="wrap">
+      <div class="hero-copy">
+        <h1 id="hero-title">Land. Collect. <em>Explore the South&nbsp;Island.</em></h1>
+        <p>Automatic, insured hire cars from Christchurch Airport, Rolleston and Queenstown Airport. What you see is what you pay.</p>
+        <div class="actions">
+          <a class="btn btn-main" href="#plan">Plan your hire <svg class="arr" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="btn btn-ghost" href="#fleet">Our fleet</a>
+        </div>
+        <ul class="promises">
+          <li>For locals &amp; visitors</li>
+          <li>Airport pickup</li>
+          <li>Fully insured vehicles</li>
+          <li>No hidden fees</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="planner-sec" id="plan" aria-labelledby="plan-title">
+    <div class="wrap">
+      <form class="planner" id="planner" novalidate>
+        <div class="plan-form">
+          <h2 id="plan-title">Plan your hire</h2>
+          <p class="sub">Three choices and your request is ready. Same-day bookings welcome.</p>
+
+          <fieldset>
+            <legend><b>1</b> Where do you collect?</legend>
+            <div class="chips four">
+              <label class="chip"><input type="radio" name="where" value="Christchurch Airport (CHC)" checked><span>Christchurch Airport<small>CHC</small></span></label>
+              <label class="chip"><input type="radio" name="where" value="Christchurch city collection"><span>Christchurch city<small>City collection</small></span></label>
+              <label class="chip"><input type="radio" name="where" value="Rolleston"><span>Rolleston<small>Local branch</small></span></label>
+              <label class="chip"><input type="radio" name="where" value="Queenstown Airport"><span>Queenstown Airport<small>ZQN</small></span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><b>2</b> When?</legend>
+            <div class="dates">
+              <div class="field"><label for="from">Pick-up date</label><input type="date" id="from" name="from" value="2026-11-09"></div>
+              <div class="field"><label for="to">Return date</label><input type="date" id="to" name="to" value="2026-11-16"></div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><b>3</b> What's the trip?</legend>
+            <div class="chips trips" id="trips">
+              <label class="chip"><input type="radio" name="trip" value="city"><span>Getting around Christchurch</span></label>
+              <label class="chip"><input type="radio" name="trip" value="road" checked><span>South Island road trip</span></label>
+              <label class="chip"><input type="radio" name="trip" value="ski"><span>Ski fields, like Mount Hutt</span></label>
+              <label class="chip"><input type="radio" name="trip" value="summer"><span>Summer drives, like Akaroa</span></label>
+              <label class="chip"><input type="radio" name="trip" value="family"><span>Family holiday</span></label>
+            </div>
+          </fieldset>
+        </div>
+
+        <aside class="ticket" aria-label="Your hire summary" aria-live="polite">
+          <div class="t-top"><span>Your hire</span><span id="t-code">CHC</span></div>
+          <div class="t-days"><span id="t-n">7</span><small id="t-unit">days</small></div>
+          <p class="t-len" id="t-len">A week on the road</p>
+          <dl class="t-rows">
+            <div><dt>Collect</dt><dd id="t-where">Christchurch Airport (CHC)</dd></div>
+            <div><dt>Dates</dt><dd id="t-dates">Mon 9 Nov to Mon 16 Nov</dd></div>
+            <div><dt>Trip</dt><dd id="t-trip">South Island road trip</dd></div>
+          </dl>
+          <div class="t-car">
+            <svg id="t-svg" viewBox="0 0 120 46" fill="none" aria-hidden="true"><path d="M7 37V22q0-4 6-4l11-10q2-2 8-2h54q6 0 10 5l7 8q11 1 11 9v9Z" fill="#0f1b2d"/><path d="M30 10h18v9H20Zm22 0h32q4 0 7 3l5 6H52Z" fill="#fff" opacity=".85"/><rect x="34" y="2" width="52" height="3" rx="1.5" fill="#0f1b2d"/><circle cx="29" cy="37" r="8.5" fill="#ff3600"/><circle cx="92" cy="37" r="8.5" fill="#ff3600"/><circle cx="29" cy="37" r="3.6" fill="#fff"/><circle cx="92" cy="37" r="3.6" fill="#fff"/></svg>
+            <div><b id="t-car">A spacious SUV</b><span id="t-why">Built for South Island highways.</span></div>
+          </div>
+          <ul class="t-incl">
+            <li>Basic insurance included</li>
+            <li>No hidden fees or surprise charges at pickup</li>
+            <li>Almost all our cars are automatic</li>
+          </ul>
+          <p class="t-note" id="t-note">Peak times fill fast, so book ahead.</p>
+          <div class="t-road" aria-hidden="true"><span class="end-pt" id="r-from">CHC</span><i></i><span class="end-pt to" id="r-to">The South Island</span></div>
+        </aside>
+
+        <div class="send">
+          <div class="who">
+            <div class="field"><label for="nm">Your name</label><input id="nm" name="name" autocomplete="name" placeholder="e.g. Sam Taylor"></div>
+            <div class="field"><label for="em">Email or phone</label><input id="em" name="contact" autocomplete="email" placeholder="So we can confirm"></div>
+          </div>
+          <button class="btn btn-main" type="submit">Send booking request</button>
+          <p class="thanks" id="thanks" role="status" hidden>Thanks. This is a mockup, so nothing was sent.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="sec pickup" id="pickup" aria-labelledby="pickup-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="kicker">Pick-up &amp; return</p><h2 id="pickup-title">Your car, where you need it.</h2></div>
+        <p class="lede">Straight off the plane or around the corner. No queues, no paperwork hassle, and a car ready when and where you need it.</p>
+      </div>
+      <ol class="stops">
+        <li class="air"><div class="pin">CHC</div><div><h3>Christchurch Airport</h3><p>Collect as you land. Perfect for arriving travellers.</p></div></li>
+        <li><div class="pin">CITY</div><div><h3>Christchurch city</h3><p>Arrange a convenient city collection.</p></div></li>
+        <li><div class="pin">ROL</div><div><h3>Rolleston</h3><p>Our local branch.</p></div></li>
+        <li class="air"><div class="pin">ZQN</div><div><h3>Queenstown Airport</h3><p>Pick up directly at the airport.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec" id="fleet" aria-labelledby="fleet-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="kicker">Our fleet</p><h2 id="fleet-title">Well kept. Well known. Ready to go.</h2></div>
+        <p class="lede">Every car is regularly serviced and safety-checked, so you always drive away in a clean, roadworthy car.</p>
+      </div>
+      <ul class="makes" aria-label="Makes in our fleet">
+        <li>Toyota</li><li>Suzuki</li><li>Subaru</li><li>Nissan</li><li>Mitsubishi</li>
+      </ul>
+      <div class="classes">
+        <div class="cls">
+          <svg viewBox="0 0 120 46" fill="none" aria-hidden="true"><path d="M8 36V29q2-6 12-7l14-10q4-2 12-2h26q8 0 13 6l8 7q12 1 14 7v6Z" fill="#0f1b2d"/><path d="M38 14h14v8H28Zm18 0h16q5 0 9 4l4 4H56Z" fill="#fff" opacity=".85"/><circle cx="28" cy="36" r="8" fill="#ff3600"/><circle cx="91" cy="36" r="8" fill="#ff3600"/><circle cx="28" cy="36" r="3.4" fill="#fff"/><circle cx="91" cy="36" r="3.4" fill="#fff"/></svg>
+          <h3>Compact hatchbacks</h3><p>Perfect for city driving.</p>
+        </div>
+        <div class="cls">
+          <svg viewBox="0 0 120 46" fill="none" aria-hidden="true"><path d="M5 36v-7q2-5 14-6l18-10q4-2 12-2h22q7 0 12 5l9 7q16 1 22 8v5Z" fill="#0f1b2d"/><path d="M40 15h12v8H26Zm16 0h15q5 0 9 3l5 5H56Z" fill="#fff" opacity=".85"/><circle cx="27" cy="36" r="8" fill="#ff3600"/><circle cx="96" cy="36" r="8" fill="#ff3600"/><circle cx="27" cy="36" r="3.4" fill="#fff"/><circle cx="96" cy="36" r="3.4" fill="#fff"/></svg>
+          <h3>Sedans</h3><p>Fuel-efficient and easy on the budget.</p>
+        </div>
+        <div class="cls">
+          <svg viewBox="0 0 120 46" fill="none" aria-hidden="true"><path d="M7 37V22q0-4 6-4l11-10q2-2 8-2h54q6 0 10 5l7 8q11 1 11 9v9Z" fill="#0f1b2d"/><path d="M30 10h18v9H20Zm22 0h32q4 0 7 3l5 6H52Z" fill="#fff" opacity=".85"/><rect x="34" y="2" width="52" height="3" rx="1.5" fill="#0f1b2d"/><circle cx="29" cy="37" r="8.5" fill="#ff3600"/><circle cx="92" cy="37" r="8.5" fill="#ff3600"/><circle cx="29" cy="37" r="3.6" fill="#fff"/><circle cx="92" cy="37" r="3.6" fill="#fff"/></svg>
+          <h3>SUVs</h3><p>Spacious, with AWD and 4WD-capable models for alpine roads.</p>
+        </div>
+        <div class="cls">
+          <svg viewBox="0 0 120 46" fill="none" aria-hidden="true"><path d="M7 37V15q0-8 10-8h74q6 0 10 5l8 10q5 2 5 8v7Z" fill="#0f1b2d"/><path d="M14 12h20v9H14Zm24 0h22v9H38Zm26 0h26q4 0 6 3l5 6H64Z" fill="#fff" opacity=".85"/><circle cx="29" cy="37" r="8" fill="#ff3600"/><circle cx="96" cy="37" r="8" fill="#ff3600"/><circle cx="29" cy="37" r="3.4" fill="#fff"/><circle cx="96" cy="37" r="3.4" fill="#fff"/></svg>
+          <h3>People-movers</h3><p>Room for the whole family road trip.</p>
+        </div>
+      </div>
+      <p class="auto-note"><strong>Almost all automatic.</strong> Ideal if you're new to New Zealand roads. GPS-friendly, spacious and road-trip ready.</p>
+    </div>
+  </section>
+
+  <section class="seasons" aria-label="Hire cars for every Canterbury season">
+    <div class="season winter">
+      <span class="tag">Winter</span>
+      <h3>Up to Mount Hutt.</h3>
+      <p>AWD and 4WD-capable SUVs give you the grip and clearance alpine roads demand.</p>
+      <span class="car">Suggested: AWD or 4WD-capable SUV</span>
+      <svg class="deco" viewBox="0 0 300 160" aria-hidden="true"><path d="M0 160 90 50l30 30 50-70 130 150Z" fill="#1d3352"/><path d="m90 50 14 17 8-6 8 19-30-14-14 6Zm80-40 22 30-14-6-10 10-10-12-18 8Z" fill="#e8eef7"/></svg>
+    </div>
+    <div class="season summer">
+      <span class="tag">Summer</span>
+      <h3>Out to Akaroa.</h3>
+      <p>Fuel-efficient hatchbacks and sedans keep summer drives easy on the budget.</p>
+      <span class="car">Suggested: hatchback or sedan</span>
+      <svg class="deco" viewBox="0 0 300 160" aria-hidden="true"><circle cx="210" cy="60" r="38" fill="#ffc9b3"/><path d="M0 160c40-50 90-70 140-50s90 10 160-30v80Z" fill="#ffd9c9"/><path d="M0 160c60-30 120-30 180-12s90 0 120-20v32Z" fill="#ffb59a"/></svg>
+    </div>
+  </section>
+
+  <section class="sec" id="why" aria-labelledby="why-title">
+    <div class="wrap why-grid">
+      <div class="quote">
+        <p>Reliable cars, fair prices, and <span>people who care.</span></p>
+        <p class="by">Boss Auto Rentals, locally owned and operated in Christchurch and Rolleston</p>
+        <div class="facts">
+          <div><b>24/7</b><span>Book online any time</span></div>
+          <div><b>Same day</b><span>Bookings welcome</span></div>
+          <div><b>Day to month</b><span>Short and long-term hire</span></div>
+          <div><b>Debit cards</b><span>Accepted</span></div>
+        </div>
+      </div>
+      <div>
+        <p class="kicker">Why choose Boss</p>
+        <h2 id="why-title">Car hire, kept refreshingly straightforward.</h2>
+        <ol class="why-list" style="margin-top:34px">
+          <li><h3>What you see is what you pay</h3><p>Our rates include basic insurance, with no hidden fees or surprise charges at pickup.</p></li>
+          <li><h3>Reliable vehicles</h3><p>Every car is regularly serviced and safety-checked, from compact hatchbacks to SUVs.</p></li>
+          <li><h3>Tourist-friendly, locally loved</h3><p>Automatic cars for visitors. Temporary, replacement or special-occasion cars for locals.</p></li>
+          <li><h3>A local team that knows the South Island</h3><p>Responsive local support throughout your trip, from people who want it to go smoothly.</p></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec faq" id="questions" aria-labelledby="faq-title">
+    <div class="wrap faq-grid">
+      <div>
+        <p class="kicker">Good to know</p>
+        <h2 id="faq-title">Questions before you book</h2>
+        <p class="lede">Anything else? Message our team directly. We're happy to help.</p>
+      </div>
+      <div>
+        <details open><summary>Can I pick up at the airport?<span class="pm" aria-hidden="true"></span></summary><p>Yes. Collect directly at Christchurch International Airport (CHC) or Queenstown Airport. Locals can also arrange pickup and drop-off across Christchurch and the wider Canterbury region.</p></details>
+        <details><summary>Is insurance included?<span class="pm" aria-hidden="true"></span></summary><p>Yes. Our hire rates include basic insurance, with no hidden fees or surprise charges at pickup.</p></details>
+        <details><summary>Are the cars automatic?<span class="pm" aria-hidden="true"></span></summary><p>Almost all of them, which is ideal if you're not used to New Zealand roads.</p></details>
+        <details><summary>Can I book for today?<span class="pm" aria-hidden="true"></span></summary><p>Yes, same-day bookings are welcome, and you can book online 24/7.</p></details>
+        <details><summary>Do you accept debit cards?<span class="pm" aria-hidden="true"></span></summary><p>Yes, debit cards are accepted.</p></details>
+        <details><summary>How long can I hire for?<span class="pm" aria-hidden="true"></span></summary><p>A day, a weekend, a week or a month. We offer flexible short and long-term hire.</p></details>
+        <details><summary>Which car for a ski trip?<span class="pm" aria-hidden="true"></span></summary><p>For Mount Hutt and other alpine roads, choose one of our AWD or 4WD-capable SUVs. Book ahead, as peak times fill fast.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="end" aria-labelledby="end-title">
+    <div class="wrap">
+      <h2 id="end-title">Ready to explore New Zealand, or just get around Christchurch?</h2>
+      <p>Choose your pick-up, your dates and your trip. Your car will be ready and waiting.</p>
+      <div class="actions"><a class="btn btn-main" href="#plan">Plan your hire <svg class="arr" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <span class="foot-logo"><img src="https://bossrentals.kiwi/wp-content/uploads/2026/06/cropped-Boss-Auto-Rentals-New-Zealand-Car-Rental-Services-300x129.png" alt="Boss Auto Rentals New Zealand" width="300" height="129" loading="lazy"></span>
+        <p>Affordable, reliable car rentals in Christchurch, Rolleston and Queenstown. For tourists, families and travellers exploring Canterbury and the South Island.</p>
+      </div>
+      <ul class="social" aria-label="Boss Auto Rentals on social media">
+        <li><a href="https://www.facebook.com/share/1CxJ9nDcYk/" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v7h4v-7h3l.5-4h-3.5V8.8c0-.5.3-.8.5-.8Z"/></svg></a></li>
+        <li><a href="https://www.instagram.com/boss_autorentals_nz" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a></li>
+        <li><a href="https://x.com/BossRentalsNZ" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.2-8.3L1.8 3h6.4l4.4 5.8Zm-1.1 16.2h1.7L7.4 4.7H5.6Z"/></svg></a></li>
+        <li><a href="https://www.linkedin.com/in/boss-auto-rentals-nz-3760a2400/" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 9h4v12H4Zm2-6a2.2 2.2 0 1 1 0 4.4A2.2 2.2 0 0 1 6 3Zm4.5 6h3.8v1.7c.6-1 1.9-2 3.9-2 4 0 4.8 2.6 4.8 6V21h-4v-5.6c0-1.4 0-3.1-1.9-3.1s-2.2 1.5-2.2 3V21h-4Z"/></svg></a></li>
+      </ul>
+    </div>
+    <p class="copy">© 2026 BOSS Auto Rentals NZ. All rights reserved.</p>
+    <p class="mock-line">Mockup made for Boss Auto Rentals by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<div class="mbar" aria-hidden="false">
+  <span><b>Boss Auto Rentals</b>Airport pickup, 24/7 booking</span>
+  <a class="btn btn-main" href="#plan">Plan your hire</a>
+</div>
+
+<script>
+(function(){
+  var cars = {
+    city:  {name:'A compact hatchback', why:'Perfect for city driving.', svg:'hatch', to:'Around town'},
+    road:  {name:'A spacious SUV', why:'Built for South Island highways.', svg:'suv', to:'The South Island'},
+    ski:   {name:'An AWD or 4WD-capable SUV', why:'The grip and clearance alpine roads demand.', svg:'suv', to:'Mount Hutt'},
+    summer:{name:'A hatchback or sedan', why:'Fuel-efficient, so summer drives stay easy on the budget.', svg:'sedan', to:'Akaroa'},
+    family:{name:'An SUV or people-mover', why:'Room for the whole family road trip.', svg:'van', to:'Family road trip'}
+  };
+  var shapes = {};
+  document.querySelectorAll('.cls svg').forEach(function(s,i){ shapes[['hatch','sedan','suv','van'][i]] = s.innerHTML; });
+  var codes = {'Christchurch Airport (CHC)':'CHC','Christchurch city collection':'CITY','Rolleston':'ROL','Queenstown Airport':'ZQN'};
+  var f = document.getElementById('planner'), from = document.getElementById('from'), to = document.getElementById('to');
+  var $ = function(id){ return document.getElementById(id); };
+  function iso(d){ return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2); }
+  function parse(v){ var p = v.split('-'); return new Date(+p[0], +p[1]-1, +p[2]); }
+  var fmt = function(d){ return d.toLocaleDateString('en-NZ',{weekday:'short',day:'numeric',month:'short'}).replace(',',''); };
+  var today = new Date(); today.setHours(0,0,0,0);
+  var start = new Date(today); start.setDate(start.getDate()+14);
+  var end = new Date(start); end.setDate(end.getDate()+7);
+  from.value = iso(start); to.value = iso(end); from.min = iso(today); to.min = iso(start);
+
+  function update(){
+    var where = f.where.value, trip = f.trip.value;
+    var a = from.value ? parse(from.value) : today, b = to.value ? parse(to.value) : a;
+    if (b <= a) { b = new Date(a); b.setDate(b.getDate()+1); to.value = iso(b); }
+    to.min = iso(new Date(a.getTime()+864e5));
+    var n = Math.round((b - a)/864e5);
+    $('t-n').textContent = n;
+    $('t-unit').textContent = n === 1 ? 'day' : 'days';
+    $('t-len').textContent = n <= 1 ? 'A day out' : n <= 3 ? 'A weekend away' : n <= 13 ? (n < 7 ? 'A few days on the road' : 'A week on the road') : n < 28 ? 'A proper South Island road trip' : 'A long-term hire';
+    $('t-where').textContent = where;
+    $('t-trip').textContent = f.querySelector('input[name=trip]:checked').nextElementSibling.textContent;
+    $('t-code').textContent = codes[where];
+    $('t-dates').textContent = fmt(a) + ' to ' + fmt(b);
+    var c = cars[trip];
+    $('t-car').textContent = c.name; $('t-why').textContent = c.why;
+    $('t-svg').innerHTML = shapes[c.svg];
+    $('r-from').textContent = codes[where]; $('r-to').textContent = c.to;
+    $('t-note').textContent = a.getTime() === today.getTime() ? 'Same-day bookings welcome.' : 'Peak times fill fast, so book ahead.';
+    $('thanks').hidden = true;
+  }
+  f.addEventListener('change', update);
+  f.addEventListener('submit', function(e){ e.preventDefault(); $('thanks').hidden = false; });
+  update();
+
+  // gentle rise for things below the first screen
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduce && 'IntersectionObserver' in window) {
+    var els = document.querySelectorAll('.sec-head, .stops li, .makes, .cls, .auto-note, .season, .quote, .why-list li, details, .end .wrap');
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if (en.isIntersecting) { en.target.classList.remove('will-rise'); io.unobserve(en.target); } });
+    }, {rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){
+      if (el.getBoundingClientRect().top > window.innerHeight) { el.classList.add('rise','will-rise'); io.observe(el); }
+    });
+  }
+})();
+</script>
+</body>
+</html>
