@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup harbouryvr-com-7f9458 1 a2597b84 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harbour Oyster + Bar · 1408 Commercial Drive, Vancouver</title>
+<meta name="description" content="Oysters of the day, lobster rolls and seafood boils at 1408 Commercial Drive. Happy hour 11:00 am to 5:00 pm.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&family=Outfit:wght@400;500;600;700&family=Sacramento&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#fbf8ee; --paper:#fffdf6; --sage:#d3eadf; --sage2:#bfe0d1; --aqua:#52c2c8;
+  --teal:#1a5f62; --deep:#0f3b3d; --ink:#141614; --rope:#8cc5b0;
+  --wrap:1200px; --r:22px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 17px/1.55 Outfit,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+[hidden]{display:none!important}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px;border-radius:6px}
+.wrap{width:min(var(--wrap),100% - 48px);margin-inline:auto}
+.mono{font-family:"DM Mono",ui-monospace,Menlo,monospace}
+.script{font-family:Sacramento,cursive;font-weight:400;text-transform:none;letter-spacing:0}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:var(--cream);padding:10px 14px;z-index:50}
+.skip:focus{top:56px}
+
+/* mockup banner */
+.mock{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:var(--deep);color:#f4efe0;font:500 15px/1.3 Outfit,system-ui,sans-serif;text-align:center;white-space:nowrap}
+.mock a{color:#fff;text-decoration:underline;text-underline-offset:3px;margin-left:.3em}
+
+/* header */
+.top{background:var(--cream);border-bottom:1px solid #e6e1cf;position:relative;z-index:5}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:96px}
+.brand{display:flex;align-items:center;text-decoration:none}
+.brand img{width:76px;height:76px}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;text-decoration:none;font-weight:500;font-size:15px;letter-spacing:.08em;text-transform:uppercase;border-radius:999px}
+.nav a:hover{background:var(--sage)}
+.nav .tel{background:var(--ink);color:var(--cream);margin-left:8px;letter-spacing:.04em}
+.nav .tel:hover{background:var(--deep)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:600 15px/1 Outfit,sans-serif;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border:2px solid var(--ink);transition:background .2s,color .2s,transform .2s}
+.btn.solid{background:var(--ink);color:var(--cream)}
+.btn.solid:hover{background:var(--deep);border-color:var(--deep);transform:translateY(-1px)}
+.btn.line{background:transparent;color:var(--ink)}
+.btn.line:hover{background:var(--ink);color:var(--cream)}
+
+/* hero */
+.hero{padding:56px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.12fr;gap:56px;align-items:center}
+.kicker{font:500 13px/1.4 "DM Mono",monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin:0 0 18px}
+h1{font:400 clamp(76px,9vw,138px)/.86 "Bebas Neue",Impact,sans-serif;margin:0;letter-spacing:.01em;color:var(--ink)}
+h1 .s{display:block;font-family:Sacramento,cursive;font-size:clamp(34px,3.8vw,54px);line-height:1.1;color:var(--teal);margin:10px 0 0 4px;letter-spacing:0;white-space:nowrap}
+.lede{font-size:20px;line-height:1.5;max-width:30ch;margin:24px 0 30px}
+.lede b{font-weight:600}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 26px;margin:34px 0 0;padding:20px 0 0;border-top:1px dashed var(--rope);list-style:none;font:500 13px/1.4 "DM Mono",monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--teal)}
+.facts li{display:flex;gap:8px;align-items:center}
+.facts li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--aqua)}
+.photo{position:relative;margin:0}
+.frame{border:6px dotted var(--rope);border-radius:34px;padding:10px;box-shadow:inset 0 0 0 1px #cfe5da}
+.pic{overflow:hidden;border-radius:22px;aspect-ratio:5/4}
+.pic img{width:100%;height:100%;object-fit:cover;transform:scale(1.42);transform-origin:58% 100%}
+.ticket{position:absolute;left:-28px;bottom:34px;background:var(--sage);border-radius:18px;padding:16px 22px 18px;box-shadow:0 14px 30px -18px rgba(15,59,61,.55);transform:rotate(-2deg)}
+.ticket .script{display:block;font-size:44px;line-height:.9;color:var(--deep)}
+.ticket .mono{display:block;font-size:13px;letter-spacing:.06em;color:var(--teal);margin-top:6px}
+.ticket strong{display:block;font:700 17px/1.2 Outfit,sans-serif;letter-spacing:.06em;text-transform:uppercase;margin-top:8px}
+
+/* section heads */
+section{scroll-margin-top:12px}
+.head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 32px;margin-bottom:34px}
+h2{font:400 clamp(52px,6vw,84px)/.9 "Bebas Neue",Impact,sans-serif;margin:0;letter-spacing:.01em}
+h2 .script{display:block;font-size:.62em;line-height:1;color:var(--teal);margin-bottom:2px}
+.head p{margin:0;max-width:44ch;color:#2a3230}
+
+/* planner */
+.when{background:var(--aqua);padding:84px 0 92px;color:var(--ink)}
+.when h2 .script{color:var(--deep)}
+.when .head p{color:#0c2324}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 26px;padding:0}
+.chip{appearance:none;cursor:pointer;display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-height:64px;padding:10px 22px;border-radius:18px;border:2px solid var(--ink);background:transparent;color:var(--ink);font:inherit;text-align:left;transition:background .2s,color .2s}
+.chip b{font:700 15px/1.2 Outfit,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.chip span{font:500 13px/1.2 "DM Mono",monospace}
+.chip:hover{background:rgba(255,255,255,.35)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--cream)}
+.nowline{font:500 13px/1.4 "DM Mono",monospace;margin:-10px 0 22px;color:#0c2324}
+.win{background:var(--paper);border-radius:28px;padding:40px;display:grid;grid-template-columns:1.25fr 1fr;gap:44px;box-shadow:0 30px 60px -40px rgba(15,59,61,.7)}
+.win+.win{margin-top:20px}
+.win h3{font:400 52px/1 Sacramento,cursive;color:var(--teal);margin:0 0 4px}
+.win .time{font:400 34px/1 "Bebas Neue",sans-serif;letter-spacing:.03em;margin:0 0 22px}
+.list{list-style:none;margin:0;padding:0;columns:2;column-gap:34px}
+.list li{break-inside:avoid;display:flex;align-items:baseline;gap:8px;padding:7px 0;border-bottom:1px dashed #cfe0d8;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase}
+.list li i{flex:1;font-style:normal}
+.list li em{font:500 14px "DM Mono",monospace;font-style:normal;color:var(--teal);white-space:nowrap}
+.calc{background:var(--sage);border-radius:22px;padding:28px;align-self:start}
+.calc h4{margin:0 0 4px;font:700 15px/1.3 Outfit,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+.calc .sub{margin:0 0 18px;font:500 13px/1.5 "DM Mono",monospace;color:var(--teal)}
+.step{display:flex;align-items:center;gap:14px}
+.step button{appearance:none;cursor:pointer;width:52px;height:52px;border-radius:50%;border:2px solid var(--ink);background:var(--paper);font:500 26px/1 Outfit,sans-serif;color:var(--ink)}
+.step button:hover{background:var(--ink);color:var(--cream)}
+.step output{min-width:2.2ch;text-align:center;font:400 64px/1 "Bebas Neue",sans-serif}
+.step label{font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:15px}
+.quick{display:flex;gap:8px;margin:16px 0 0}
+.quick button,.seg button{appearance:none;cursor:pointer;min-height:44px;padding:0 16px;border-radius:999px;border:1.5px solid var(--ink);background:transparent;font:600 14px Outfit,sans-serif;letter-spacing:.06em;color:var(--ink)}
+.quick button[aria-pressed="true"],.seg button[aria-pressed="true"]{background:var(--ink);color:var(--cream)}
+.total{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-top:22px;padding-top:18px;border-top:2px solid var(--ink)}
+.total span{font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:14px}
+.total strong{font:400 58px/1 "Bebas Neue",sans-serif}
+.fine{margin:10px 0 0;font:500 12.5px/1.5 "DM Mono",monospace;color:var(--teal)}
+.seg{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+.seg-l{display:block;font:500 12.5px "DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin:0 0 8px}
+.pot{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.pot li{background:var(--paper);border-radius:999px;padding:5px 12px;font:500 13px "DM Mono",monospace}
+.late-note{font-size:16px;margin:22px 0 0;max-width:34ch}
+
+/* menu */
+.menu{padding:96px 0 40px}
+.switch{display:inline-flex;padding:5px;border-radius:999px;background:var(--sage);gap:4px}
+.switch button{appearance:none;cursor:pointer;min-height:46px;padding:0 26px;border:0;border-radius:999px;background:transparent;font:600 15px Outfit,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--ink)}
+.switch button[aria-pressed="true"]{background:var(--ink);color:var(--cream)}
+.jump{display:flex;flex-wrap:wrap;gap:8px;margin:-6px 0 26px}
+.jump a{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;border:1.5px solid var(--sage2);background:var(--paper);font:500 13px "DM Mono",monospace;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:var(--deep)}
+.jump a:hover{background:var(--sage)}
+.card{scroll-margin-top:16px}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;align-items:start}
+.cols+.cols{margin-top:28px}
+.card{border-radius:var(--r);padding:30px 28px 26px}
+.card.mint{background:var(--sage)}
+.card.line{border:2px solid var(--sage2);background:var(--paper)}
+.card.rope{border:5px dotted var(--rope);background:var(--paper)}
+.card+.card{margin-top:28px}
+.card h3{font:400 46px/.95 "Bebas Neue",sans-serif;letter-spacing:.02em;margin:0 0 16px;color:var(--deep)}
+.card h3 .script{display:block;font-size:.8em;color:var(--teal);margin-bottom:-2px}
+.items{list-style:none;margin:0;padding:0}
+.items li{padding:9px 0}
+.items li+li{border-top:1px dashed rgba(26,95,98,.25)}
+.nm{display:flex;align-items:baseline;gap:8px;font-weight:700;font-size:15.5px;letter-spacing:.06em;text-transform:uppercase;line-height:1.25}
+.nm i{flex:1;font-style:normal}
+.nm em{font:500 15px "DM Mono",monospace;font-style:normal;white-space:nowrap}
+.nm small{font:500 11.5px "DM Mono",monospace;letter-spacing:0;text-transform:none;color:var(--teal);white-space:nowrap}
+.ds{margin:3px 0 0;font:400 12.5px/1.55 "DM Mono",monospace;color:var(--teal)}
+.ds b{font-weight:500;color:var(--ink)}
+.note{margin:14px 0 0;font:500 12.5px/1.5 "DM Mono",monospace;color:var(--teal)}
+.boil{display:grid;grid-template-columns:1fr;gap:12px}
+.boil div{display:grid;grid-template-columns:1fr auto;align-items:baseline;column-gap:12px}
+.boil div p{grid-column:1/-1}
+.boil div{border-radius:16px;padding:16px;background:var(--sage)}
+.boil div:first-child{background:var(--paper);border:2px solid var(--sage2)}
+.boil b{display:block;font:400 30px/1 Sacramento,cursive;color:var(--deep)}
+.boil strong{display:block;font:700 15px/1.3 Outfit,sans-serif;letter-spacing:.06em;margin-top:6px}
+.boil p{margin:6px 0 0;font:400 12px/1.55 "DM Mono",monospace;color:var(--teal)}
+.warn{margin:40px auto 0;max-width:860px;text-align:center;border:5px dotted var(--rope);border-radius:999px;padding:24px 64px;font:400 27px/1.2 Sacramento,cursive;color:var(--teal)}
+.warn span{display:block;font:500 12.5px "DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase;margin-top:8px;color:var(--teal)}
+
+/* questions */
+.qs{padding:80px 0}
+.qgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:0 56px;border-top:2px solid var(--ink)}
+.q{padding:24px 0;border-bottom:1px dashed var(--rope)}
+.q h3{margin:0 0 6px;font:700 17px/1.35 Outfit,sans-serif;letter-spacing:.02em}
+.q p{margin:0;color:#283230}
+
+/* visit */
+.visit{padding:20px 0 96px}
+.vgrid{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:stretch}
+.vcard{border:6px dotted var(--rope);border-radius:30px;padding:36px;background:var(--paper)}
+.vcard h3,.formcard h3{font:400 44px/1 "Bebas Neue",sans-serif;margin:0 0 18px;letter-spacing:.02em}
+.vrow{display:grid;grid-template-columns:110px 1fr;gap:12px;padding:14px 0;border-top:1px dashed #cfe0d8}
+.vrow dt{font:500 12.5px/1.8 "DM Mono",monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--teal)}
+.vrow dd{margin:0;font-size:17px}
+.vrow a{text-decoration-color:var(--aqua);text-decoration-thickness:2px;text-underline-offset:4px;display:inline-block;padding:6px 0}
+.vcard dl{margin:0}
+.formcard{background:var(--sage);border-radius:30px;padding:36px}
+.formcard p.intro{margin:-8px 0 20px;color:#203230}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fld{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.fld label{font:500 12.5px "DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--deep)}
+.fld input,.fld select,.fld textarea{font:inherit;font-size:16px;color:var(--ink);background:var(--paper);border:1.5px solid #9cc9b8;border-radius:14px;padding:12px 14px;min-height:50px;width:100%}
+.fld textarea{min-height:110px;resize:vertical}
+.fld input:focus,.fld select:focus,.fld textarea:focus{outline:3px solid var(--ink);outline-offset:1px}
+.sent{margin:14px 0 0;font-weight:600;min-height:1.5em}
+
+/* end */
+.end{background:var(--ink);color:var(--cream);padding:96px 0;text-align:center}
+.end .script{display:block;font-size:44px;color:var(--aqua);line-height:1}
+.end h2{font-size:clamp(72px,10vw,150px);color:var(--cream)}
+.end h2 br{display:none}.end p{margin:16px auto 30px;max-width:40ch;color:#e9e4d4}
+.end .ctas{justify-content:center}
+.end .btn.solid{background:var(--aqua);border-color:var(--aqua);color:var(--ink)}
+.end .btn.solid:hover{background:var(--cream);border-color:var(--cream)}
+.end .btn.line{color:var(--cream);border-color:var(--cream)}
+.end .btn.line:hover{background:var(--cream);color:var(--ink)}
+footer{background:var(--ink);color:#d9d4c4;border-top:1px solid #2c302d;padding:30px 0 36px;font-size:14.5px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;justify-content:space-between}
+footer a{color:#fff;display:inline-flex;align-items:center;min-height:44px}
+footer .made{color:#bdb8a9}
+
+/* phone call bar */
+.callbar{display:none}
+
+/* rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .will-rise{opacity:1;transform:none}
+  .rise,.btn,.chip{transition:none}
+}
+
+@media (max-width:1060px){
+  .cols{grid-template-columns:1fr 1fr}
+  .win{grid-template-columns:1fr}
+}
+@media (max-width:860px){
+  .hero .wrap{grid-template-columns:1fr;gap:36px}
+  .ticket{left:14px;bottom:14px}
+  .vgrid,.qgrid{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  body{font-size:16.5px;padding-bottom:72px}
+  .wrap{width:calc(100% - 36px)}
+  .mock{font-size:14.5px;padding:8px 10px}
+  .top .wrap{min-height:76px}
+  .brand img{width:58px;height:58px}
+  .nav{gap:0}
+  .nav a{padding:0 10px;font-size:13px;letter-spacing:.06em}
+  .nav .tel{display:none}
+  .hero{padding:30px 0 52px}
+  h1{font-size:84px}
+  .lede{font-size:18px;margin:18px 0 24px}
+  .ctas .btn{flex:1 1 auto}
+  .facts{gap:10px 18px;margin-top:26px}
+  .frame{padding:7px;border-width:5px;border-radius:26px}
+  .pic{aspect-ratio:4/3.4;border-radius:17px}
+  .ticket{padding:12px 16px 14px;left:10px;bottom:12px}
+  .ticket .script{font-size:36px}
+  .ticket strong{font-size:15px}
+  .when{padding:60px 0 64px}
+  .chips{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+  .chip{padding:10px 12px;min-height:66px}
+  .chip b{font-size:13px;letter-spacing:.05em}
+  .chip span{font-size:11.5px}
+  .win{padding:24px 20px;border-radius:24px;gap:26px}
+  .win h3{font-size:44px}
+  .list{columns:1}
+  .calc{padding:22px}
+  .menu{padding:68px 0 24px}
+  .cols{grid-template-columns:1fr;gap:20px}
+  .cols+.cols{margin-top:20px}
+  .card{padding:24px 20px 20px}
+  .card+.card{margin-top:20px}
+  .boil{grid-template-columns:1fr}
+  .warn{border-radius:28px;padding:18px 20px;font-size:26px}
+  .qs{padding:60px 0}
+  .vcard,.formcard{padding:26px 22px;border-radius:24px}
+  .vrow{grid-template-columns:1fr;gap:2px}
+  .f2{grid-template-columns:1fr;gap:0}
+  .end{padding:72px 0 80px}
+  .end .script{font-size:34px}
+  .end h2{font-size:92px}
+  .end h2 br{display:inline}
+  .vcard h3,.formcard h3{font-size:36px}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:rgba(251,248,238,.96);border-top:1px solid #dcd6c2;box-shadow:0 -10px 24px -18px rgba(0,0,0,.4)}
+  .callbar a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:999px;font:600 14px Outfit,sans-serif;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:2px solid var(--ink)}
+  .callbar a:first-child{background:var(--ink);color:var(--cream)}
+}
+</style>
+</head>
+<body>
+<div class="mock">Here's your free mockup from <a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Harbour Oyster + Bar, home"><img src="https://images.squarespace-cdn.com/content/v1/5cc4d29db10f25110b700dec/1556403573609-GCUDPG4RTZX2QU56QYY7/circle+logo.png?format=300w" alt="Harbour Oyster + Bar" width="76" height="76"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#when">What's on</a>
+      <a href="#menu">Menu</a>
+      <a href="#visit">Visit</a>
+      <a class="tel" href="tel:+16042516900">604.251.6900</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Oyster + Bar · Commercial Drive</p>
+        <h1 id="h1">Shuck<br>with us.<span class="s">oysters, lobster rolls &amp; boils</span></h1>
+        <p class="lede">Today's oysters, signature lobster rolls and seafood boils for the table. From 11 to 5, <b>oysters of the day are $2 each.</b></p>
+        <div class="ctas">
+          <a class="btn solid" href="#menu">See the menu</a>
+          <a class="btn line" href="tel:+16042516900">Call 604.251.6900</a>
+        </div>
+        <ul class="facts">
+          <li>Happy hour 11 am–5 pm</li>
+          <li>Boils after 5 pm</li>
+          <li>1408 Commercial Dr</li>
+        </ul>
+      </div>
+      <figure class="photo">
+        <div class="frame"><div class="pic"><img src="https://images.squarespace-cdn.com/content/v1/5cc4d29db10f25110b700dec/1556404381205-VLICN3VT1IDDKZDU3RMW/DSC08988.jpg?format=1500w" alt="The long wooden bar at Harbour, with mint panelling and a row of black stools" width="1500" height="1000"></div></div>
+        <div class="ticket" aria-hidden="true">
+          <span class="script">Happy hour</span>
+          <span class="mono">11:00 am – 5:00 pm</span>
+          <strong>Oysters $2 each</strong>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="when" id="when" aria-labelledby="when-h">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="when-h"><span class="script">pick your time</span>What's on when you come in</h2>
+        <p>The menu changes with the clock. Tap a time and see what's on.</p>
+      </div>
+      <div class="chips" role="group" aria-label="Time of day">
+        <button class="chip" type="button" data-win="hh" aria-pressed="true"><b>Happy hour</b><span>11 am – 5 pm</span></button>
+        <button class="chip" type="button" data-win="boil" aria-pressed="false"><b>Seafood boils</b><span>after 5 pm</span></button>
+        <button class="chip" type="button" data-win="late" aria-pressed="false"><b>Late list</b><span>9 pm – close</span></button>
+      </div>
+      <p class="nowline" id="nowline" aria-live="polite">Tap a time to see what's on.</p>
+
+      <div class="win" id="win-hh">
+        <div>
+          <h3>Happy hour</h3>
+          <p class="time">11:00 am – 5:00 pm</p>
+          <ul class="list">
+            <li><i>Oysters of the day</i><em>2 / per</em></li>
+            <li><i>Shuck N Shotty</i><em>10</em></li>
+            <li><i>Steamed mussels</i><em>16</em></li>
+            <li><i>Steamed clams</i><em>16</em></li>
+            <li><i>Garlic prawns</i><em>16</em></li>
+            <li><i>Chili crunch prawns</i><em>16</em></li>
+            <li><i>Crisp fried oysters</i><em>4 each</em></li>
+            <li><i>Shrimp po boys</i><em>5 each</em></li>
+            <li><i>Harbour amber ale 16 oz</i><em>7.5</em></li>
+            <li><i>Harbour lager 16 oz</i><em>7.5</em></li>
+            <li><i>White wine 7 oz</i><em>8.5</em></li>
+            <li><i>Red wine 7 oz</i><em>8.5</em></li>
+            <li><i>Tequila shot 1 oz</i><em>7.5</em></li>
+          </ul>
+        </div>
+        <div class="calc" aria-labelledby="oy-h">
+          <h4 id="oy-h">Oysters for the table</h4>
+          <p class="sub">Oysters of the day at $2 each, 11 to 5.</p>
+          <div class="step">
+            <button type="button" data-oy="-1" aria-label="One fewer oyster">−</button>
+            <output id="oy-n" aria-live="polite">12</output>
+            <button type="button" data-oy="1" aria-label="One more oyster">+</button>
+            <label for="oy-n">oysters</label>
+          </div>
+          <div class="quick" role="group" aria-label="Quick pick">
+            <button type="button" data-set="6" aria-pressed="false">Half dozen</button>
+            <button type="button" data-set="12" aria-pressed="true">Dozen</button>
+            <button type="button" data-set="24" aria-pressed="false">Two dozen</button>
+          </div>
+          <div class="total"><span>Happy hour total</span><strong id="oy-t">$24</strong></div>
+          <p class="fine" id="oy-f">The same 12 at today's price is from $48. Plus applicable taxes.</p>
+        </div>
+      </div>
+
+      <div class="win" id="win-boil">
+        <div>
+          <h3>Fresh seafood</h3>
+          <p class="time">After 5:00 pm</p>
+          <ul class="list">
+            <li><i>Mussels &amp; clams boil</i><em>50 / person</em></li>
+            <li><i>Lobster boil</i><em>75 / person</em></li>
+            <li><i>Seafood tower</i><em>110</em></li>
+            <li><i>Crab bucket ½ lb</i><em>24</em></li>
+            <li><i>Crab bucket 1 lb</i><em>48</em></li>
+            <li><i>Today's oysters</i><em>4+</em></li>
+          </ul>
+          <p class="late-note">Both boils are made for 2 or 4 and come with garlic toast and a basket of fries.</p>
+        </div>
+        <div class="calc" aria-labelledby="bo-h">
+          <h4 id="bo-h">Plan a boil</h4>
+          <p class="sub">Available for 2 or 4, after 5:00 pm.</p>
+          <span class="seg-l" id="bo-k">Which boil</span>
+          <div class="seg" role="group" aria-labelledby="bo-k">
+            <button type="button" data-boil="lobster" aria-pressed="true">Lobster · 75</button>
+            <button type="button" data-boil="mussels" aria-pressed="false">Mussels &amp; clams · 50</button>
+          </div>
+          <span class="seg-l" id="bo-p">How many</span>
+          <div class="seg" role="group" aria-labelledby="bo-p">
+            <button type="button" data-ppl="2" aria-pressed="true">For 2</button>
+            <button type="button" data-ppl="4" aria-pressed="false">For 4</button>
+          </div>
+          <span class="seg-l">In the pot</span>
+          <ul class="pot" id="bo-pot">
+            <li>Fresh lobster</li><li>Mussels</li><li>Clams</li><li>Prawns</li><li>Corn</li><li>Chorizo</li><li>Potatoes</li><li>Garlic toast</li><li>Basket of fries</li>
+          </ul>
+          <div class="total"><span id="bo-l">Lobster boil for 2</span><strong id="bo-t">$150</strong></div>
+          <p class="fine">Plus applicable taxes.</p>
+        </div>
+      </div>
+
+      <div class="win" id="win-late">
+        <div>
+          <h3>Late list</h3>
+          <p class="time">9:00 pm – close</p>
+          <ul class="list">
+            <li><i>Harbour amber ale 16 oz</i><em>7.5</em></li>
+            <li><i>Harbour lager 16 oz</i><em>7.5</em></li>
+            <li><i>Highballs 1 oz</i><em>7</em></li>
+            <li><i>White wine 7 oz</i><em>8.5</em></li>
+            <li><i>Red wine 7 oz</i><em>8.5</em></li>
+            <li><i>Tequila shot 1 oz</i><em>5</em></li>
+          </ul>
+          <p class="late-note">A 16 oz Harbour lager or amber ale is 8.5 on the regular list, and 7.5 here.</p>
+        </div>
+        <div class="calc" aria-labelledby="la-h">
+          <h4 id="la-h">A round for the table</h4>
+          <p class="sub">16 oz Harbour lager or amber ale at 7.5, from 9 to close.</p>
+          <div class="step">
+            <button type="button" data-pint="-1" aria-label="One fewer beer">−</button>
+            <output id="pi-n" aria-live="polite">4</output>
+            <button type="button" data-pint="1" aria-label="One more beer">+</button>
+            <label for="pi-n">beers</label>
+          </div>
+          <div class="total"><span>Late list total</span><strong id="pi-t">$30</strong></div>
+          <p class="fine" id="pi-f">The same 4 on the regular list are $34. Plus applicable taxes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu" aria-labelledby="menu-h">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="menu-h"><span class="script">the</span>Menu</h2>
+        <div class="switch" role="group" aria-label="Show food or drinks">
+          <button type="button" data-tab="food" aria-pressed="true">Food</button>
+          <button type="button" data-tab="drinks" aria-pressed="false">Drinks</button>
+        </div>
+      </div>
+
+      <div id="tab-food">
+        <nav class="jump" aria-label="Food sections">
+          <a href="#m-snacks">Snacks</a><a href="#m-mains">Mains</a><a href="#m-rolls">Lobster rolls</a><a href="#m-after5">After 5</a><a href="#m-hand">Handhelds</a><a href="#m-dessert">Dessert</a>
+        </nav>
+        <div class="cols">
+          <div class="card mint" id="m-snacks">
+            <h3>Snacks / Shares</h3>
+            <ul class="items">
+              <li><p class="nm"><i>Today's oysters</i><em>4+</em></p><p class="ds">Ask about our fresh oysters of the day. <b>Add caviar +10</b></p></li>
+              <li><p class="nm"><i>Boston chowda' or lobster bisque</i><em>16</em></p><p class="ds">Made in house. <b>Add garlic bread +2</b></p></li>
+              <li><p class="nm"><i>Crisp fried oysters</i><em>18</em></p><p class="ds">Beer battered, golden fried, with sweet corn tomato salsa, chimichurri mayo</p></li>
+              <li><p class="nm"><i>Caesar salad</i><em>15</em></p><p class="ds"><b>Add prawns +8</b></p></li>
+              <li><p class="nm"><i>Lobster poutine</i><em>24</em></p><p class="ds">Jalapeños, corn, cheesy bechamel, local cheese curds, green onion</p></li>
+              <li><p class="nm"><i>Mussels or clams</i><em>25</em></p><p class="ds">Choice of red wine nduja, Cajun lemon garlic, white wine garlic, with house made garlic bread</p></li>
+              <li><p class="nm"><i>Basket of fries</i><em>13</em></p><p class="ds">Choice of Cajun, classic Old Bay, parmesan garlic, honey garlic or naked</p></li>
+              <li><p class="nm"><i>Oysters Rockefeller</i><em>20</em></p><p class="ds">Bacon, shallots, Grana Padano parmesan, panko. <b>Add 1 or more +4 each</b></p></li>
+              <li><p class="nm"><i>Sea salt shishito peppers</i><em>16</em></p><p class="ds">Blistered peppers with a house made lemon mayo</p></li>
+              <li><p class="nm"><i>Cajun garlic prawns</i><em>20</em></p><p class="ds">Lemon garlic butter sauce</p></li>
+              <li><p class="nm"><i>Pan seared oysters</i><em>19</em></p><p class="ds">Panko crusted, house coleslaw, spicy mayo</p></li>
+              <li><p class="nm"><i>Steak tartare</i><em>26</em></p><p class="ds">Local grass fed beef, miso mayo, fresh garlic, capers, Grana Padano</p></li>
+              <li><p class="nm"><i>Classic prawn cocktail</i><em>19</em></p><p class="ds">Poached prawns and house made cocktail sauce</p></li>
+              <li><p class="nm"><i>Chili crunch prawns</i><em>20</em></p><p class="ds">House made chili crunch, gulf prawns</p></li>
+              <li><p class="nm"><i>Crab buckets</i><em>24 / 48</em></p><p class="ds">Poached snow crab legs, served with clarified butter. ½ lb or 1 lb</p></li>
+              <li><p class="nm"><i>Seafood tower</i><em>110</em></p><p class="ds">Poached prawns, one dozen oysters, caviar, chilled mussels, clams escabeche, albacore tuna tataki. <b>Add lobster +45 · fresh scallop on the shell +12 · ½ lb crab legs +12</b></p></li>
+            </ul>
+          </div>
+          <div>
+            <div class="card line" id="m-mains">
+              <h3>Mains</h3>
+              <ul class="items">
+                <li><p class="nm"><i>Lobster linguini</i><em>36</em></p><p class="ds">Caramelized fennel, chorizo, Grana Padano, bisque cream</p></li>
+                <li><p class="nm"><i>Halibut fish n chips</i><em>25</em></p><p class="ds">Beer battered fresh halibut, crispy fries, house made tartar sauce, coleslaw</p></li>
+                <li><p class="nm"><i>Chef's cut steak</i><em>39</em></p><p class="ds">Roasted broccolini, garlic butter, smashed potato, Harbour peppercorn sauce. <b>Add lobster tail 18</b></p></li>
+                <li><p class="nm"><i>Blackened miso sablefish</i><em>39</em></p><p class="ds">Miso marinated sablefish, served with lemon miso broth, charred bok choy and toasted garlic panko</p></li>
+                <li><p class="nm"><i>Ahi tuna poke bowl</i><em>24</em></p><p class="ds">Rice, green onion, spicy mayo, pineapple, edamame, cucumber, pickled onion, radish, avocado crema</p></li>
+                <li><p class="nm"><i>Rock crab cakes</i><em>25</em></p><p class="ds">House made, corn salsa, tartar sauce, house green salad. <b>Add a cake 7</b></p></li>
+                <li><p class="nm"><i>Clams vongole</i><em>28</em></p><p class="ds">Clams cooked with olive oil, garlic, parsley, white wine, linguini, chili flakes and lemon juice, topped with a garlic paprika toast panko. Served with garlic bread</p></li>
+                <li><p class="nm"><i>Buttery lobster mac &amp; cheese</i><em>28</em></p><p class="ds">Butter poached lobster &amp; elbow macaroni tossed in three cheese garlic parm cream, baked with mozzarella, topped with chili garlic panko &amp; chives</p></li>
+              </ul>
+            </div>
+            <div class="card mint" id="m-rolls">
+              <h3><span class="script">Signature</span>Lobster rolls</h3>
+              <ul class="items">
+                <li><p class="nm"><i>The "OG" lobster prawn rolls</i><em>26</em></p><p class="ds">Lobster and prawn mix, iceberg lettuce, griddled brioche buns</p></li>
+                <li><p class="nm"><i>New England lobster BLT rolls</i><em>27</em></p><p class="ds">Harbour's famous lobster prawn mix, lemon mayo, romaine, tomato &amp; bacon served on brioche</p></li>
+                <li><p class="nm"><i>Crobster prawn rolls</i><em>33</em></p><p class="ds">Harbour's famous lobster prawn mix, Dungeness crab, romaine lettuce, lemon mayo served on a brioche bun</p></li>
+              </ul>
+              <p class="note">Add fries +3 · lemon butter +1.50 · caviar +5</p>
+            </div>
+          </div>
+          <div>
+            <div class="card rope" id="m-after5">
+              <h3><span class="script">Fresh seafood</span>After 5:00 pm</h3>
+              <div class="boil">
+                <div><b>Mussels &amp; Clams Boil</b><strong>50 / person</strong><p>For 2 or 4. Mussels, clams, prawns, corn, chorizo, potatoes, garlic toast, basket of fries</p></div>
+                <div><b>Lobster Boil</b><strong>75 / person</strong><p>For 2 or 4. Fresh lobster, mussels, clams, prawns, corn, chorizo, potatoes, garlic toast, basket of fries</p></div>
+              </div>
+            </div>
+            <div class="card line" id="m-hand">
+              <h3><span class="script">Handhelds</span></h3>
+              <ul class="items">
+                <li><p class="nm"><i>Shrimp po boys</i><em>20</em></p><p class="ds">Rock gulf shrimp, crisp fried, spicy chili crunch, crisp lettuce. <b>Add fries +3</b></p></li>
+                <li><p class="nm"><i>BC burger</i><em>22</em></p><p class="ds">Fresh ground wagyu beef, bacon, cheddar, hothouse tomato, iceberg lettuce, Harbour sauce. <b>Substitute Caesar +3 · soup of day +4</b></p></li>
+                <li><p class="nm"><i>Spicy halibut sando</i><em>23</em></p><p class="ds">Beer battered halibut, served on brioche with a chili crunch mayo, lettuce, tomatoes and pickled red onions</p></li>
+                <li><p class="nm"><i>Lobster grilled cheese</i><em>24</em></p><p class="ds">Lobster, sourdough, tomato, double cheese, with fries or salad. <b>Substitute Caesar +3 · soup of day +4</b></p></li>
+                <li><p class="nm"><i>Blackened halibut tacos</i><em>20</em></p><p class="ds">Fresh westcoast halibut, corn tortillas, coleslaw, pineapple, corn, jalapeño, cilantro, feta, avocado crema, pickled red onion</p></li>
+                <li><p class="nm"><i>Tuna melt</i><em>20</em></p><p class="ds">Harbour's tuna salad mix, a roasted red pepper romesco, lemon mayo, lettuce, tomatoes, pickles and pickled red onions served on sourdough</p></li>
+              </ul>
+            </div>
+            <div class="card mint" id="m-dessert">
+              <h3><span class="script">Dessert</span></h3>
+              <ul class="items">
+                <li><p class="nm"><i>Vanilla crème brûlée</i><em>11</em></p><p class="ds">French vanilla custard, icing sugar, orange segments</p></li>
+                <li><p class="nm"><i>Chocolate brownie sundae</i><em>12</em></p><p class="ds">Salted chocolate brownie, vanilla gelato, granola, cocoa powder</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-drinks">
+        <div class="cols">
+          <div class="card mint">
+            <h3>Cocktails</h3>
+            <ul class="items">
+              <li><p class="nm"><i>Harbour Caesar <small>1.5 oz</small></i><em>16</em></p><p class="ds">Smirnoff vodka, Caesar mix, Clamato, rimmed glass, prawn, olive, pickled corn</p></li>
+              <li><p class="nm"><i>Mule <small>1.5 oz</small></i><em>15</em></p><p class="ds">Smirnoff vodka, ginger syrup, lime, ginger ale</p></li>
+              <li><p class="nm"><i>Margarita <small>2 oz</small></i><em>16</em></p><p class="ds">El Tequileño tequila, lime, simple syrup, triple sec, rimmed glass</p></li>
+              <li><p class="nm"><i>Mojito <small>1.5 oz</small></i><em>15</em></p><p class="ds">Captain Morgan's rum, soda, simple syrup, lime, mint</p></li>
+              <li><p class="nm"><i>Aperol spritz <small>1.5 oz</small></i><em>14</em></p><p class="ds">Aperol, bubbles, soda, orange</p></li>
+              <li><p class="nm"><i>Seasonal sangria <small>1.5 oz</small></i><em>16</em></p><p class="ds">Wine, seasonal fruit</p></li>
+              <li><p class="nm"><i>Harbour High 5 <small>2 oz</small></i><em>16</em></p><p class="ds">Gordon's gin, Aperol, grapefruit, lime, simple syrup</p></li>
+              <li><p class="nm"><i>Bees knees <small>1.5 oz</small></i><em>16</em></p><p class="ds">Gordon's gin, lemon, honey syrup</p></li>
+              <li><p class="nm"><i>Negroni <small>2 oz</small></i><em>15</em></p><p class="ds">Gordon's gin, Campari, vermouth, orange</p></li>
+              <li><p class="nm"><i>Boulevardier <small>2 oz</small></i><em>17</em></p><p class="ds">Bourbon, Campari, vermouth, orange</p></li>
+              <li><p class="nm"><i>Old fashioned <small>2 oz</small></i><em>17</em></p><p class="ds">Bourbon, demerara, orange, bitters</p></li>
+              <li><p class="nm"><i>Ships ahoy <small>1.5 oz</small></i><em>16</em></p><p class="ds">Captain white rum, blue curaçao, lemon, Sprite</p></li>
+            </ul>
+            <p class="note">Ask about our feature cocktail. Plus applicable taxes.</p>
+          </div>
+          <div>
+            <div class="card line">
+              <h3><span class="script">Draught</span>Beer <small class="mono" style="font-size:13px;color:var(--teal);letter-spacing:0">16 oz</small></h3>
+              <ul class="items">
+                <li><p class="nm"><i>Harbour lager</i><em>8.5</em></p></li>
+                <li><p class="nm"><i>Harbour amber ale</i><em>8.5</em></p></li>
+                <li><p class="nm"><i>Twin Sails Dat Juice</i><em>9</em></p></li>
+                <li><p class="nm"><i>Strongbow</i><em>9</em></p></li>
+                <li><p class="nm"><i>Harbour rotator</i><em>9</em></p></li>
+                <li><p class="nm"><i>Phillips Dinosour</i><em>9</em></p></li>
+                <li><p class="nm"><i>Phillips Glitterbomb</i><em>9</em></p></li>
+                <li><p class="nm"><i>Olde Style Pilsner</i><em>9</em></p></li>
+                <li><p class="nm"><i>Granville Island IPA</i><em>9</em></p></li>
+                <li><p class="nm"><i>Driftwood Fat Tug IPA</i><em>9</em></p></li>
+                <li><p class="nm"><i>Please Beverage Co. cocktail rotator</i><em>9.5</em></p></li>
+              </ul>
+            </div>
+            <div class="card mint">
+              <h3>Bottled beer</h3>
+              <ul class="items">
+                <li><p class="nm"><i>Heineken</i><em>8.5</em></p></li>
+                <li><p class="nm"><i>Corona</i><em>8.5</em></p></li>
+                <li><p class="nm"><i>Guinness</i><em>9</em></p></li>
+                <li><p class="nm"><i>Coors Banquet</i><em>7.25</em></p></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="card line">
+              <h3><span class="script">White</span>Wine</h3>
+              <ul class="items">
+                <li><p class="nm"><i>Benvolio <small>7 oz / btl</small></i><em>13/46</em></p><p class="ds">Pinot grigio, Friuli, Italy</p></li>
+                <li><p class="nm"><i>Gehringer <small>7 oz / btl</small></i><em>13/46</em></p><p class="ds">Riesling, British Columbia VQA</p></li>
+                <li><p class="nm"><i>Murphy-Goode <small>7 oz / btl</small></i><em>15/49</em></p><p class="ds">Chardonnay, California, USA</p></li>
+                <li><p class="nm"><i>Kim Crawford <small>7 oz / btl</small></i><em>15/54</em></p><p class="ds">Sauvignon blanc, New Zealand</p></li>
+                <li><p class="nm"><i>Unsworth <small>btl</small></i><em>59</em></p><p class="ds">Pinot gris, BC VQA</p></li>
+                <li><p class="nm"><i>Benvolio <small>7 oz / btl</small></i><em>13/46</em></p><p class="ds">Prosecco</p></li>
+                <li><p class="nm"><i>Veuve Clicquot <small>btl</small></i><em>150</em></p><p class="ds">Brut, ABV 12%</p></li>
+              </ul>
+            </div>
+            <div class="card mint">
+              <h3><span class="script">Red</span>Wine</h3>
+              <ul class="items">
+                <li><p class="nm"><i>Sumac Ridge <small>7 oz / btl</small></i><em>11/39</em></p><p class="ds">Merlot, BC VQA</p></li>
+                <li><p class="nm"><i>Murphy-Goode <small>7 oz / btl</small></i><em>16/54</em></p><p class="ds">Cabernet sauvignon, California, USA</p></li>
+                <li><p class="nm"><i>Alamos <small>7 oz / btl</small></i><em>13/46</em></p><p class="ds">Malbec, Argentina</p></li>
+                <li><p class="nm"><i>J Lohr <small>btl</small></i><em>59</em></p><p class="ds">Cabernet sauvignon, California, USA</p></li>
+                <li><p class="nm"><i>La Crema <small>btl</small></i><em>69</em></p><p class="ds">Pinot noir, Monterey, USA</p></li>
+              </ul>
+            </div>
+            <div class="card line">
+              <h3>Rosé</h3>
+              <ul class="items">
+                <li><p class="nm"><i>Mr. Pink <small>7 oz / btl</small></i><em>15/54</em></p><p class="ds">Rosé, Washington, USA</p></li>
+                <li><p class="nm"><i>Serena 1881 <small>7 oz / btl</small></i><em>13/46</em></p><p class="ds">Rosé prosecco</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="warn">“Consumption of raw oysters poses increased risk of illness. A cooking step is needed to eliminate potential bacterial or viral contamination.” – Medical Health Office<span>Gratuity of 20% for groups of 6+</span></p>
+    </div>
+  </section>
+
+  <section class="qs" id="questions" aria-labelledby="qs-h">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="qs-h"><span class="script">good to know</span>Before you come in</h2>
+      </div>
+      <div class="qgrid">
+        <div class="q"><h3>When is happy hour?</h3><p>11:00 am to 5:00 pm. Oysters of the day are $2 each, and 16 oz Harbour lager or amber ale is 7.5.</p></div>
+        <div class="q"><h3>When can we get a seafood boil?</h3><p>After 5:00 pm, for 2 or 4. Mussels &amp; clams is 50 per person; lobster is 75 per person.</p></div>
+        <div class="q"><h3>Which oysters are on today?</h3><p>They change. Ask about our fresh oysters of the day.</p></div>
+        <div class="q"><h3>Is there a late-night list?</h3><p>From 9:00 pm to close: 16 oz Harbour lager or amber ale 7.5, highballs 7, wine 8.5, tequila shots 5.</p></div>
+        <div class="q"><h3>Coming with a group?</h3><p>A 20% gratuity applies to groups of 6 or more. Send us a note below or call 604.251.6900.</p></div>
+        <div class="q"><h3>Where are you?</h3><p>1408 Commercial Drive, Vancouver, BC V5L 3X9.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit" aria-labelledby="visit-h">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="visit-h"><span class="script">come by</span>Visit Harbour</h2>
+      </div>
+      <div class="vgrid">
+        <div class="vcard">
+          <h3>Harbour Oyster + Bar</h3>
+          <dl>
+            <div class="vrow"><dt>Address</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=1408%20Commercial%20Drive%2C%20Vancouver%2C%20BC%20V5L%203X9">1408 Commercial Drive<br>Vancouver, BC V5L 3X9</a></dd></div>
+            <div class="vrow"><dt>Phone</dt><dd><a href="tel:+16042516900">604.251.6900</a></dd></div>
+            <div class="vrow"><dt>Email</dt><dd><a href="mailto:manager@harbouryvr.com">manager@harbouryvr.com</a></dd></div>
+            <div class="vrow"><dt>Instagram</dt><dd><a href="https://www.instagram.com/harbouryvr/">@harbouryvr</a></dd></div>
+            <div class="vrow"><dt>Happy hour</dt><dd>11:00 am – 5:00 pm</dd></div>
+            <div class="vrow"><dt>Late list</dt><dd>9:00 pm – close</dd></div>
+          </dl>
+        </div>
+        <div class="formcard">
+          <h3>Send us a note</h3>
+          <p class="intro">Planning a group, or have a question? Write to us here.</p>
+          <form id="note" novalidate>
+            <div class="f2">
+              <div class="fld"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name"></div>
+              <div class="fld"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email"></div>
+            </div>
+            <div class="fld"><label for="f-sub">About</label>
+              <select id="f-sub" name="subject"><option>A group visit</option><option>A question about the menu</option><option>Something else</option></select></div>
+            <div class="fld"><label for="f-msg">Message</label><textarea id="f-msg" name="message"></textarea></div>
+            <button class="btn solid" type="submit">Send</button>
+            <p class="sent" id="sent" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="end" aria-labelledby="end-h">
+    <div class="wrap">
+      <span class="script" aria-hidden="true">1408 Commercial Drive</span>
+      <h2 id="end-h">Shuck <br class="pb">with us.</h2>
+      <p>Oysters of the day are $2 each from 11 to 5. Boils for the table start after 5.</p>
+      <div class="ctas">
+        <a class="btn solid" href="#menu">See the menu</a>
+        <a class="btn line" href="https://www.google.com/maps/search/?api=1&amp;query=1408%20Commercial%20Drive%2C%20Vancouver%2C%20BC%20V5L%203X9">Get directions</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Harbour Oyster + Bar · 1408 Commercial Drive, Vancouver · <a href="tel:+16042516900">604.251.6900</a> · <a href="https://www.instagram.com/harbouryvr/">Instagram</a></span>
+    <span class="made">Mockup made for Harbour Oyster + Bar by Sunny Gupta, signalsetbase.com</span>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick actions">
+  <a href="tel:+16042516900">Call 604.251.6900</a>
+  <a href="#menu">Menu</a>
+</nav>
+
+<script>
+(function(){
+  var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* time windows */
+  var wins={hh:$('#win-hh'),boil:$('#win-boil'),late:$('#win-late')};
+  function show(k){
+    Object.keys(wins).forEach(function(w){wins[w].hidden=(w!==k)});
+    $$('.chip').forEach(function(c){c.setAttribute('aria-pressed',String(c.dataset.win===k))});
+  }
+  $$('.chip').forEach(function(c){c.addEventListener('click',function(){show(c.dataset.win);$('#nowline').textContent='Showing '+c.querySelector('b').textContent.toLowerCase()+', '+c.querySelector('span').textContent+'.'})});
+  var d=new Date(),h=d.getHours(),k='hh';
+  if(h>=17&&h<21)k='boil'; else if(h>=21||h<2)k='late';
+  show(k);
+  var t=d.toLocaleTimeString([], {hour:'numeric',minute:'2-digit'}).toLowerCase();
+  var names={hh:'happy hour',boil:'the after-5 seafood',late:'the late list'};
+  $('#nowline').textContent=(h>=11||h<2)?'It’s '+t+' where you are, so here’s '+names[k]+'.':'Tap a time to see what’s on.';
+
+  /* oysters */
+  var oy=12;
+  function drawOy(){
+    $('#oy-n').textContent=oy;$('#oy-t').textContent='$'+(oy*2);
+    $('#oy-f').textContent='The same '+oy+' at today’s price is from $'+(oy*4)+'. Plus applicable taxes.';
+    $$('[data-set]').forEach(function(b){b.setAttribute('aria-pressed',String(+b.dataset.set===oy))});
+  }
+  $$('[data-oy]').forEach(function(b){b.addEventListener('click',function(){oy=Math.max(1,Math.min(96,oy+(+b.dataset.oy)));drawOy()})});
+  $$('[data-set]').forEach(function(b){b.addEventListener('click',function(){oy=+b.dataset.set;drawOy()})});
+
+  /* boil */
+  var boil='lobster',ppl=2;
+  var pots={lobster:['Fresh lobster','Mussels','Clams','Prawns','Corn','Chorizo','Potatoes','Garlic toast','Basket of fries'],mussels:['Mussels','Clams','Prawns','Corn','Chorizo','Potatoes','Garlic toast','Basket of fries']};
+  function drawBoil(){
+    var price=boil==='lobster'?75:50;
+    $('#bo-t').textContent='$'+(price*ppl);
+    $('#bo-l').textContent=(boil==='lobster'?'Lobster boil':'Mussels & clams boil')+' for '+ppl;
+    $('#bo-pot').innerHTML=pots[boil].map(function(x){return '<li>'+x+'</li>'}).join('');
+    $$('[data-boil]').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.boil===boil))});
+    $$('[data-ppl]').forEach(function(b){b.setAttribute('aria-pressed',String(+b.dataset.ppl===ppl))});
+  }
+  $$('[data-boil]').forEach(function(b){b.addEventListener('click',function(){boil=b.dataset.boil;drawBoil()})});
+  $$('[data-ppl]').forEach(function(b){b.addEventListener('click',function(){ppl=+b.dataset.ppl;drawBoil()})});
+
+  /* pints */
+  var pi=4;
+  function fmt(n){return '$'+(n%1?n.toFixed(2):n)}
+  function drawPi(){
+    $('#pi-n').textContent=pi;$('#pi-t').textContent=fmt(pi*7.5);
+    $('#pi-f').textContent='The same '+pi+' on the regular list '+(pi===1?'is ':'are ')+fmt(pi*8.5)+'. Plus applicable taxes.';
+  }
+  $$('[data-pint]').forEach(function(b){b.addEventListener('click',function(){pi=Math.max(1,Math.min(40,pi+(+b.dataset.pint)));drawPi()})});
+
+  /* food / drinks */
+  function tab(k){
+    $('#tab-food').hidden=k!=='food';$('#tab-drinks').hidden=k!=='drinks';
+    $$('[data-tab]').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.tab===k))});
+  }
+  $$('[data-tab]').forEach(function(b){b.addEventListener('click',function(){tab(b.dataset.tab)})});
+  tab('food');
+
+  /* form */
+  $('#note').addEventListener('submit',function(e){e.preventDefault();$('#sent').textContent='Thanks. This is a mockup, so nothing was sent.'});
+
+  /* gentle rise */
+  if(!reduce&&'IntersectionObserver' in window){
+    var vh=window.innerHeight;
+    var els=$$('.head,.win:not([hidden]),.card,.q,.vcard,.formcard,.warn,.end .wrap').filter(function(el){return el.getBoundingClientRect().top>vh});
+    els.forEach(function(el){el.classList.add('will-rise','rise')});
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){io.observe(el)});
+  }
+})();
+</script>
+</body>
+</html>
