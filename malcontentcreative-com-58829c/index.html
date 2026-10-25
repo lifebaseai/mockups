@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup malcontentcreative-com-58829c 1 2861c2b6 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Malcontent Creative · Hand-made graphic design from Victoria BC</title>
+<meta name="description" content="Independent graphic designer & illustrator Jesse Ladret. Hand-made logos, branding and packaging from Victoria BC.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Saira:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#17140F; --ink2:#2A251E; --paper:#F5F0E6; --card:#FFFDF8;
+  --orange:#C2410C; --hot:#FF7A3D; --muted:#5E564B; --rule:#D9D0BF;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 Jost,"Futura","Century Gothic",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--hot);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:Saira,"Arial Black",sans-serif;font-weight:800;line-height:1.02;letter-spacing:-.01em;margin:0}
+.label{font:600 13px/1.2 Jost,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--orange)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* banner */
+.mock{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:#E8DFCC;color:var(--ink);font:500 15px/1.3 Jost,sans-serif;text-align:center;border-bottom:1px solid var(--rule)}
+.mock a{color:var(--orange);text-decoration:underline;text-underline-offset:3px;font-weight:600}
+
+/* header */
+header.top{background:var(--paper)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:84px}
+.mark{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
+.mark img{width:150px;height:auto}
+nav ul{display:flex;gap:6px;list-style:none;margin:0;padding:0}
+nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-weight:500;font-size:15px;letter-spacing:.06em;text-transform:uppercase}
+nav a:hover{color:var(--orange)}
+nav .go{background:var(--ink);color:var(--paper);border-radius:3px;padding:0 18px;margin-left:8px}
+nav .go:hover{background:var(--orange);color:#fff}
+
+/* hero */
+.hero{padding:28px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.12fr;gap:56px;align-items:center}
+.nw{white-space:nowrap}
+.hero h1{font-size:clamp(44px,5.3vw,76px);color:var(--orange);text-transform:uppercase;margin:18px 0 22px}
+.hero p.lede{font-size:20px;line-height:1.55;max-width:31em;margin:0 0 32px;color:var(--ink2)}
+.acts{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 30px;background:var(--orange);color:#fff;text-decoration:none;font:600 15px/1 Jost,sans-serif;letter-spacing:.14em;text-transform:uppercase;border:0;border-radius:3px;cursor:pointer;box-shadow:0 2px 0 #8a2e08;transition:transform .15s,box-shadow .15s,background .15s}
+.btn:hover{background:#A9370A;transform:translateY(-1px);box-shadow:0 3px 0 #6f2506}
+.link{display:inline-flex;align-items:center;min-height:44px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:15px;text-decoration:none;border-bottom:2px solid var(--ink)}
+.link:hover{color:var(--orange);border-color:var(--orange)}
+.stamp{position:relative;margin:0;border-radius:4px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(23,20,15,.55),0 2px 6px rgba(23,20,15,.2);background:var(--ink)}
+.stamp img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.stamp figcaption{position:absolute;left:16px;bottom:14px;color:#E8DFCC;font:500 12px/1 Jost,sans-serif;letter-spacing:.16em;text-transform:uppercase;background:rgba(23,20,15,.72);padding:7px 10px;border-radius:2px}
+.made{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px 0;margin:44px 0 0;padding:16px 0 0;border-top:1px solid var(--rule);list-style:none;font:500 14px/1.2 Jost,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.made li:not(:last-child)::after{content:"/";margin:0 12px;color:var(--rule)}
+
+/* work */
+section{padding:96px 0}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:40px;padding-bottom:18px;border-bottom:1px solid var(--rule)}
+.head h2{font-size:clamp(34px,4.2vw,54px);text-transform:uppercase}
+.head p{margin:0;max-width:26em;color:var(--muted)}
+.work{background:var(--card)}
+.grid{display:grid;grid-template-columns:minmax(0,560px) minmax(0,480px);justify-content:space-between;gap:40px}
+.grid figure{margin:0}
+.grid img{border-radius:3px;box-shadow:0 18px 40px -24px rgba(23,20,15,.5)}
+.grid .stack{display:grid;gap:36px;align-content:start}
+.grid figcaption{display:flex;justify-content:space-between;gap:12px;padding-top:12px;font-size:15px;border-top:0}
+.grid figcaption b{font-weight:600}
+.grid figcaption span{color:var(--muted)}
+.more{margin-top:40px;display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;color:var(--muted);font-size:16px}
+
+/* manifesto */
+.manifesto{background:var(--ink);color:#EDE6D8}
+.manifesto .wrap{display:grid;grid-template-columns:1fr 1.25fr;gap:64px;align-items:start}
+.manifesto .label{color:var(--hot)}
+.manifesto h2{font-size:clamp(36px,4.6vw,62px);text-transform:uppercase;color:#fff;margin-top:16px}
+.manifesto h2 em{font-style:normal;color:var(--hot)}
+.manifesto blockquote{margin:0;font-size:22px;line-height:1.55;color:#EDE6D8}
+.manifesto blockquote p{margin:0 0 20px}
+.manifesto blockquote p.strong{font-family:Saira,sans-serif;font-weight:700;font-size:26px;line-height:1.3;color:#fff}
+.manifesto cite{display:block;font-style:normal;font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:#BDB3A2;margin-top:28px}
+
+/* brief / work order */
+.brief .wrap{display:grid;grid-template-columns:1fr 1.08fr;gap:56px;align-items:start}
+.brief h2{font-size:clamp(34px,4.2vw,54px);text-transform:uppercase;margin:14px 0 16px}
+.brief .intro{color:var(--ink2);margin:0 0 28px;max-width:30em}
+fieldset{border:0;margin:0;padding:0}
+legend{font:600 13px/1.2 Jost,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.picks{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pick{display:flex;align-items:center;gap:12px;min-height:56px;padding:10px 14px;background:var(--card);border:1.5px solid var(--rule);border-radius:3px;text-align:left;font:500 16px/1.25 Jost,sans-serif;color:var(--ink);cursor:pointer;transition:border-color .15s,background .15s}
+.pick:hover{border-color:var(--ink)}
+.pick i{flex:none;width:22px;height:22px;border:1.5px solid var(--ink);border-radius:2px;display:grid;place-items:center;background:#fff}
+.pick i svg{opacity:0;transition:opacity .12s}
+.pick[aria-pressed="true"]{border-color:var(--orange);background:#FFF4EC}
+.pick[aria-pressed="true"] i{background:var(--orange);border-color:var(--orange)}
+.pick[aria-pressed="true"] i svg{opacity:1}
+
+.ticket{position:relative;background:var(--card);border:1px solid var(--rule);border-radius:4px;box-shadow:0 30px 60px -36px rgba(23,20,15,.5);padding:0}
+.ticket::before,.ticket::after{content:"";position:absolute;top:96px;width:22px;height:22px;border-radius:50%;background:var(--paper);border:1px solid var(--rule)}
+.ticket::before{left:-12px;clip-path:inset(0 0 0 50%)}
+.ticket::after{right:-12px;clip-path:inset(0 50% 0 0)}
+.t-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:24px 28px 22px;border-bottom:2px dashed var(--rule);min-height:107px}
+.t-head h3{font-size:30px;text-transform:uppercase;letter-spacing:.01em}
+.t-head p{margin:4px 0 0;font-size:14px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.t-count{font:800 44px/1 Saira,sans-serif;color:var(--orange);text-align:right}
+.t-count small{display:block;font:500 12px/1.3 Jost,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.t-body{padding:22px 28px 6px}
+.t-svc{padding:0 0 18px;margin:0 0 18px;border-bottom:1px solid #EAE3D5}
+.t-svc h4{margin:0 0 8px;font:700 19px/1.2 Saira,sans-serif;display:flex;justify-content:space-between;gap:12px}
+.t-svc h4 span{font:500 13px/1.6 Jost,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.t-svc ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:4px 18px;font-size:15px;color:var(--ink2)}
+.t-svc li{position:relative;padding-left:16px}
+.t-svc li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;background:var(--orange);border-radius:1px}
+.t-svc.pop{animation:pop .35s ease}
+@keyframes pop{from{background:#FFF0E3}to{background:transparent}}
+.t-empty{padding:8px 0 26px;color:var(--muted)}
+.t-form{padding:4px 28px 28px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.t-form label{display:grid;gap:6px;font:600 13px/1.2 Jost,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.t-form .full{grid-column:1/-1}
+.t-form input,.t-form textarea{font:400 16px/1.4 Jost,sans-serif;color:var(--ink);background:#fff;border:1.5px solid var(--rule);border-radius:3px;padding:12px 12px;min-height:48px;width:100%}
+.t-form textarea{min-height:96px;resize:vertical}
+.t-form input:focus,.t-form textarea:focus{border-color:var(--ink);outline:none;box-shadow:0 0 0 3px rgba(255,122,61,.35)}
+.t-form .btn{width:100%}
+.t-note{grid-column:1/-1;margin:0;font-size:14px;color:var(--muted);text-align:center}
+.thanks{grid-column:1/-1;margin:0;padding:14px;background:var(--ink);color:#fff;border-radius:3px;text-align:center;font-weight:500}
+
+/* faq */
+.faq{background:var(--card)}
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
+.faq h2{font-size:clamp(34px,4.2vw,54px);text-transform:uppercase;margin-top:14px}
+details{border-bottom:1px solid var(--rule)}
+details:first-of-type{border-top:1px solid var(--rule)}
+summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:64px;padding:12px 0;cursor:pointer;font:700 20px/1.3 Saira,sans-serif}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:500 28px/1 Jost,sans-serif;color:var(--orange);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin:0 0 20px;color:var(--ink2);max-width:34em}
+
+/* end */
+.end{background:var(--orange);color:#fff;text-align:center;padding:100px 0}
+.end h2{font-size:clamp(40px,6vw,80px);text-transform:uppercase}
+.end p{font-size:20px;margin:18px auto 34px;max-width:32em;text-wrap:balance}
+h1,h2,summary{text-wrap:balance}
+.end .btn{background:var(--ink);box-shadow:0 2px 0 #000}
+.end .btn:hover{background:#000}
+footer{background:var(--ink);color:#D8CFBF;padding:44px 0 110px;font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;align-items:center}
+footer .mark img{width:132px}
+footer ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+footer ul a{display:inline-flex;align-items:center;min-height:44px;padding:0 10px;text-decoration:none;letter-spacing:.08em;text-transform:uppercase;font-size:14px}
+footer ul a:hover{color:var(--hot)}
+.credit{width:100%;margin:8px 0 0;padding-top:20px;border-top:1px solid #3A342B;color:#BDB3A2;font-size:14px}
+.credit a{color:#E8DFCC}
+
+/* phone bar */
+.bar{display:none}
+
+/* motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .6s ease,transform .6s ease}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+
+@media (max-width:960px){
+  .hero .wrap,.manifesto .wrap,.brief .wrap,.faq .wrap{grid-template-columns:1fr;gap:40px}
+  .grid{grid-template-columns:1fr;justify-items:start}
+  .grid > figure{max-width:560px}
+  .grid .stack{grid-template-columns:1fr 1fr;gap:24px}
+}
+@media (max-width:720px){
+  body{font-size:16px}
+  .wrap{padding:0 20px}
+  nav li:not(:last-child){display:none}
+  .top .wrap{min-height:72px}
+  .top .mark img{width:124px}
+  .hero{padding:12px 0 56px}
+  .hero h1{font-size:44px;margin:14px 0 18px}
+  .hero p.lede{font-size:18px}
+  .acts .btn{width:100%}
+  .made{font-size:12.5px;margin-top:36px}
+  .made li:not(:last-child)::after{margin:0 8px}
+  section{padding:68px 0}
+  .head{display:block}
+  .head p{margin-top:12px}
+  .grid .stack{grid-template-columns:1fr}
+  .manifesto blockquote{font-size:19px}
+  .manifesto blockquote p.strong{font-size:22px}
+  .picks{grid-template-columns:1fr 1fr}
+  .pick{font-size:15px;padding:10px 12px;gap:10px}
+  .t-head{padding:20px 20px 18px}
+  .t-head h3{font-size:24px}
+  .t-body{padding:20px 20px 4px}
+  .t-svc ul{grid-template-columns:1fr}
+  .t-form{grid-template-columns:1fr;padding:4px 20px 22px}
+  .end{padding:72px 0}
+  .end p{font-size:18px}
+  .bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(23,20,15,.96);border-top:1px solid #3A342B}
+  .bar a{flex:1;min-height:48px;display:flex;align-items:center;justify-content:center;background:var(--orange);color:#fff;text-decoration:none;font:600 15px/1 Jost,sans-serif;letter-spacing:.14em;text-transform:uppercase;border-radius:3px}
+}
+</style>
+</head>
+<body>
+<div class="mock">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top"><img src="https://images.squarespace-cdn.com/content/v1/5c390df296d4556dfc9762cf/44c55ce3-4214-412a-9252-3669f468ab66/malcontent-creative-logo-design-victoria-bc-01.png?format=750w" width="466" height="226" alt="Malcontent Creative Co., home"></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#brief">Services</a></li>
+        <li><a href="#faq">Questions</a></li>
+        <li><a class="go" href="#brief">Start a project</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <p class="label">Graphic design from Victoria BC</p>
+        <h1 id="h1"><span class="nw">Hand-made</span> design that gets you noticed</h1>
+        <p class="lede">Logos, branding and packaging by independent designer &amp; illustrator Jesse Ladret. 20+ years of craft, and every project starts with an idea, not a template.</p>
+        <div class="acts">
+          <a class="btn" href="#brief">Start a project</a>
+          <a class="link" href="#work">See the work</a>
+        </div>
+      </div>
+      <figure class="stamp">
+        <img src="https://static1.squarespace.com/static/5c390df296d4556dfc9762cf/t/5da10bd5ae57b1663c2098e5/1570835417404/malcontent-creative-logo.jpg?format=1500w" width="1500" height="1125" alt="The Malcontent Creative “Design &amp; Conquer” stamp: a rider on a motorcycle inside a circle of lettering, printed on cracked dark paint">
+        <figcaption>Design &amp; Conquer</figcaption>
+      </figure>
+    </div>
+    <div class="wrap">
+      <ul class="made" aria-label="What Malcontent Creative designs">
+        <li>Logos</li><li>Branding</li><li>Print</li><li>Illustration</li><li>Signage</li><li>Packaging</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="work" id="work" aria-labelledby="work-h">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="work-h">Drawn first.<br>Then built.</h2>
+        <p>Strong typography, memorable forms, and ideas that hold up on signs, labels, merch and print.</p>
+      </div>
+      <div class="grid">
+        <figure>
+          <img src="https://images.squarespace-cdn.com/content/v1/5c390df296d4556dfc9762cf/9ba77e59-42e2-4c4f-bdef-b2a93f4cd009/malcontent-creative-type--typography-lettering-custom-font-victoria-bc-illustration-vancouver-island.jpg?format=1000w" width="878" height="878" loading="lazy" alt="“Cozy Skull” hand lettered in pencil on paper, with the guide lines still showing">
+          <figcaption><b>Cozy Skull</b><span>Custom lettering, in pencil</span></figcaption>
+        </figure>
+        <div class="stack">
+          <figure>
+            <img src="https://images.squarespace-cdn.com/content/v1/5c390df296d4556dfc9762cf/1773523332341-XUC9FN8J959RW26KB7NW/malcontent-creative-graphic-design-victoria-bc-logic-league-consulting-logo.jpg?format=500w" width="500" height="320" loading="lazy" alt="Logic League Consulting logo, a cluster of teal and orange hexagons, pressed into white card">
+            <figcaption><b>Logic League Consulting</b><span>Logo</span></figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.squarespace-cdn.com/content/v1/5c390df296d4556dfc9762cf/1773523502461-2I9CIED5NS4UX7KF21IY/malcontent-creative-graphic-design-victoria-bc-lg-whittaker-logo-card-design.jpg?format=500w" width="500" height="338" loading="lazy" alt="L.G. Whittaker Instrument Repair business cards with an ornate letterpressed logo on black stock">
+            <figcaption><b>L.G. Whittaker Instrument Repair</b><span>Logo &amp; cards</span></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="more">
+        <span>More of the work on</span>
+        <a class="link" href="https://www.instagram.com/malcontentcreative" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="manifesto" aria-labelledby="why-h">
+    <div class="wrap">
+      <div>
+        <p class="label">Why hand-made</p>
+        <h2 id="why-h">Recognizable, <em>not forgettable.</em></h2>
+      </div>
+      <blockquote>
+        <p>These days, anyone can type a prompt into an AI generator and get something that looks like a logo.</p>
+        <p class="strong">But looking like a logo and building a memorable brand are two very different things.</p>
+        <p>Original work with character, built to stand apart. The goal isn’t just to look professional. It’s to look unmistakably like you.</p>
+        <cite>Jesse Ladret, Malcontent Creative Co.</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="brief" id="brief" aria-labelledby="brief-h">
+    <div class="wrap">
+      <div>
+        <p class="label">Start a project</p>
+        <h2 id="brief-h">Tick what you need</h2>
+        <p class="intro">Your work order fills in as you go, with what each kind of project includes. Add a few words about the idea and send it to Jesse.</p>
+        <fieldset>
+          <legend>Services</legend>
+          <div class="picks" id="picks"></div>
+        </fieldset>
+      </div>
+
+      <div class="ticket" aria-live="polite">
+        <div class="t-head">
+          <div>
+            <h3>Work order</h3>
+            <p>Malcontent Creative Co. · Victoria BC</p>
+          </div>
+          <div class="t-count"><span id="count">2</span><small>services</small></div>
+        </div>
+        <div class="t-body" id="ticket">
+          <div class="t-svc"><h4>Logo Design <span>Includes</span></h4><ul><li>Custom concept development</li><li>Typography and symbol design</li><li>Multiple initial directions</li><li>Refinement and revisions</li><li>Vector files for professional use</li><li>Brand-ready file packages</li></ul></div>
+          <div class="t-svc"><h4>Packaging &amp; Labels <span>Includes</span></h4><ul><li>Custom beverage &amp; liquor labels</li><li>Retail &amp; product packaging</li><li>Boxes and containers</li></ul></div>
+        </div>
+        <form class="t-form" id="form" novalidate>
+          <label>Your name<input name="name" autocomplete="name" placeholder="First and last"></label>
+          <label>Email<input name="email" type="email" autocomplete="email" placeholder="you@yourbusiness.ca"></label>
+          <label class="full">The idea<textarea name="idea" placeholder="Your business, what it’s for, any dates"></textarea></label>
+          <button class="btn full" type="submit">Send my work order</button>
+          <p class="t-note" id="note">Every project starts with an idea, not a template.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq" aria-labelledby="faq-h">
+    <div class="wrap">
+      <div>
+        <p class="label">Good to know</p>
+        <h2 id="faq-h">Questions, answered</h2>
+      </div>
+      <div>
+        <details open>
+          <summary>Do you only work with Victoria businesses?</summary>
+          <p>No. Jesse is based in Victoria, BC, and works with businesses across Canada and beyond.</p>
+        </details>
+        <details>
+          <summary>Isn’t branding just a logo?</summary>
+          <p>A logo is just the beginning. Branding turns your business into one coherent visual system, so it feels consistent whether someone sees your storefront, business card, packaging or social media.</p>
+        </details>
+        <details>
+          <summary>Will it work on signs, merch and packaging?</summary>
+          <p>That’s the point. The logo work is built to hold up everywhere your brand lives: signage, packaging, merch, vehicles, websites and print.</p>
+        </details>
+        <details>
+          <summary>Why does print need its own designer?</summary>
+          <p>Because print is where craft still matters. Menus, posters, brochures and cards have to hold up in the real world: on walls, in hands, on tables and in shop windows. If it’s going to be printed, it should be designed by someone who actually understands print.</p>
+        </details>
+        <details>
+          <summary>How do I start a project?</summary>
+          <p>Tick what you need on the <a href="#brief">work order</a> above, add a few words about the idea, and send it.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="end" aria-labelledby="end-h">
+    <div class="wrap">
+      <h2 id="end-h">Let’s build it properly</h2>
+      <p>Something recognizable instead of forgettable, from the ground up.</p>
+      <a class="btn" href="#brief">Start a project</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="mark" href="#top"><img src="https://images.squarespace-cdn.com/content/v1/5c390df296d4556dfc9762cf/44c55ce3-4214-412a-9252-3669f468ab66/malcontent-creative-logo-design-victoria-bc-01.png?format=750w" width="466" height="226" loading="lazy" alt="Malcontent Creative Co., back to top"></a>
+    <ul aria-label="Social pages">
+      <li><a href="https://www.instagram.com/malcontentcreative" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.facebook.com/malcontentmedia/" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://www.linkedin.com/in/jesse-ladret-577754a9" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+    <p class="credit">Mockup made for Malcontent Creative by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<div class="bar"><a href="#brief">Start a project</a></div>
+
+<script>
+(function(){
+  var S=[
+    {n:'Logo Design',i:['Custom concept development','Typography and symbol design','Multiple initial directions','Refinement and revisions','Vector files for professional use','Brand-ready file packages']},
+    {n:'Branding & Identity',i:['Logo systems and variations','Typography selection','Colour palettes','Graphic elements and textures','Brand guidelines','Stationery and marketing materials']},
+    {n:'Print & Editorial',i:['Posters and event graphics','Menus and restaurant materials','Brochures and catalogues','Flyers and advertising','Book and editorial layout','Business cards and stationery']},
+    {n:'Illustration & Artwork',i:['Apparel and merchandise','Posters and promotional art','Packaging graphics','Brand illustration systems','Album artwork']},
+    {n:'Signage & Environmental',i:['Storefront signage','Window graphics','Vehicle wraps','Trade show graphics','Wayfinding and environmental design']},
+    {n:'Packaging & Labels',i:['Custom beverage & liquor labels','Retail & product packaging','Boxes and containers']}
+  ];
+  var on={0:1,5:1};
+  var picks=document.getElementById('picks'),ticket=document.getElementById('ticket'),count=document.getElementById('count');
+  var tick='<svg width="13" height="13" viewBox="0 0 13 13" aria-hidden="true"><path d="M2 6.8l3 3 6-6.6" fill="none" stroke="#fff" stroke-width="2.2"/></svg>';
+  function esc(s){return s.replace(/&/g,'&amp;')}
+  S.forEach(function(s,k){
+    var b=document.createElement('button');b.type='button';b.className='pick';
+    b.setAttribute('aria-pressed',on[k]?'true':'false');
+    b.innerHTML='<i>'+tick+'</i>'+esc(s.n);
+    b.addEventListener('click',function(){
+      if(on[k])delete on[k];else on[k]=1;
+      b.setAttribute('aria-pressed',on[k]?'true':'false');
+      render(on[k]?k:-1);
+    });
+    picks.appendChild(b);
+  });
+  function render(fresh){
+    var h='',n=0;
+    S.forEach(function(s,k){ if(!on[k])return; n++;
+      h+='<div class="t-svc'+(k===fresh?' pop':'')+'"><h4>'+esc(s.n)+' <span>Includes</span></h4><ul>'+s.i.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul></div>';
+    });
+    ticket.innerHTML=h||'<p class="t-empty">Tick a service to add it, or just tell Jesse about the idea below.</p>';
+    count.textContent=n;
+    count.nextElementSibling.textContent=n===1?'service':'services';
+  }
+  document.getElementById('form').addEventListener('submit',function(e){
+    e.preventDefault();
+    var note=document.getElementById('note');
+    var t=document.createElement('p');t.className='thanks';t.setAttribute('role','status');
+    t.textContent='Thanks. This is a mockup, so nothing was sent.';
+    note.replaceWith(t);
+  });
+
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce||!('IntersectionObserver' in window))return;
+  var els=document.querySelectorAll('.head, .grid figure, .manifesto .wrap > *, .brief .wrap > *, .faq .wrap > *, .end .wrap > *');
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(el){
+    if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('will-rise','rise');io.observe(el)}
+  });
+})();
+</script>
+</body>
+</html>
