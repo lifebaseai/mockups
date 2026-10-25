@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup benmoore-org-uk-d8d32d 1 f71a528b -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ben Moore | Artist &amp; Curator, London</title>
+<meta name="description" content="Ben Moore, artist and curator. Founder of Art Below and Art Wars.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#111;--soft:#555;--line:#e4e4e4;--paper:#fff;--tint:#f5f4f2;--accent:#c4125a;--w:1200px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Jost,"Futura","Century Gothic",system-ui,sans-serif;color:var(--ink);background:var(--paper);font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 32px}
+.eyebrow{font-size:13px;letter-spacing:.18em;text-transform:uppercase;font-weight:500}
+h1,h2,h3{font-weight:500;letter-spacing:.01em;margin:0}
+h2{font-size:clamp(30px,4vw,48px);line-height:1.08;text-transform:uppercase;letter-spacing:.02em}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:12px;top:56px;z-index:50;background:#fff;padding:10px 14px}
+
+/* mockup banner */
+.mock{background:#1d1d1d;color:#f2f2f2;min-height:44px;display:flex;align-items:center;justify-content:center;font-size:15px;padding:0 16px;text-align:center;white-space:nowrap}
+.mock a{color:#fff;text-decoration:underline;text-underline-offset:3px;font-weight:500}
+
+/* header */
+header.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo img{height:22px;width:auto}
+nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0;align-items:center}
+nav a{text-decoration:none;font-size:14px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;display:inline-flex;align-items:center;min-height:44px}
+nav a:hover{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 26px;font:500 14px/1 Jost,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border:1.5px solid var(--ink);background:var(--ink);color:#fff;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn:hover{background:var(--accent);border-color:var(--accent)}
+.btn.ghost{background:transparent;color:inherit;border-color:currentColor}
+.btn.ghost:hover{background:#fff;color:var(--ink);border-color:#fff}
+nav .btn{min-height:44px;padding:0 18px;color:#fff}
+nav .btn:hover{color:#fff}
+
+/* hero */
+.hero{position:relative;min-height:min(86vh,820px);display:flex;align-items:flex-end;color:#fff;background:#2b2a26;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,10,.82) 0%,rgba(10,10,10,.62) 42%,rgba(10,10,10,.12) 75%),linear-gradient(0deg,rgba(10,10,10,.55),rgba(10,10,10,0) 45%)}
+.hero .wrap{position:relative;z-index:1;width:100%;padding-top:120px;padding-bottom:64px}
+.hero h1{font-size:clamp(44px,7vw,96px);line-height:.98;text-transform:uppercase;letter-spacing:.005em;max-width:11em;margin:18px 0 22px;text-wrap:balance}
+.hero p.lead{font-size:clamp(18px,1.6vw,21px);max-width:34em;margin:0 0 32px;color:#f1f1f1}
+.hero .acts{display:flex;gap:14px;flex-wrap:wrap}
+.hero .btn{background:#fff;color:var(--ink);border-color:#fff}
+.hero .btn:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+.hero .btn.ghost{background:transparent;color:#fff;border-color:#fff}
+.hero .btn.ghost:hover{background:#fff;color:var(--ink)}
+.cap{position:absolute;right:32px;bottom:22px;z-index:1;font-size:13px;letter-spacing:.06em;color:#eee}
+
+/* venues */
+.venues{border-bottom:1px solid var(--line)}
+.venues .wrap{display:flex;align-items:center;gap:36px;padding-top:26px;padding-bottom:26px;flex-wrap:wrap}
+.venues .eyebrow{color:var(--soft)}
+.venues ul{display:flex;flex-wrap:wrap;gap:10px 36px;list-style:none;margin:0;padding:0;font-size:17px;font-weight:500;text-transform:uppercase;letter-spacing:.08em}
+
+/* explorer */
+.shows{padding:110px 0 100px}
+.shows header{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:44px}
+.shows header p{max-width:25em;margin:0;color:var(--soft)}
+.explorer{display:grid;grid-template-columns:300px 1fr;gap:48px;align-items:start}
+.tabs{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.tabs button{all:unset;box-sizing:border-box;display:grid;grid-template-columns:64px 1fr;gap:8px;align-items:baseline;width:100%;padding:16px 4px;min-height:56px;border-bottom:1px solid var(--line);cursor:pointer;transition:color .2s,padding .25s}
+.tabs button span:first-child{font-size:14px;color:var(--soft);letter-spacing:.06em}
+.tabs button span:last-child{font-size:19px;font-weight:500;text-transform:uppercase;letter-spacing:.04em}
+.tabs button:hover{color:var(--accent)}
+.tabs button[aria-selected="true"]{color:var(--accent);padding-left:14px;border-bottom-color:var(--accent)}
+.tabs button[aria-selected="true"] span:first-child{color:var(--accent)}
+.tabs button:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
+.panel{display:grid;grid-template-columns:1.35fr 1fr;gap:36px;align-items:start}
+.panel figure{margin:0;position:relative;background:var(--tint);aspect-ratio:4/3;overflow:hidden}
+.panel figure img{width:100%;height:100%;object-fit:cover;transition:opacity .35s}
+.panel figure.type{display:flex;align-items:center;justify-content:center;background:var(--ink);color:#fff;padding:32px}
+.panel figure.type div{font-size:clamp(28px,3vw,42px);line-height:1.04;text-transform:uppercase;font-weight:500;text-align:center}
+.panel figure.type small{display:block;font-size:14px;letter-spacing:.18em;color:#ddd;margin-top:16px;font-weight:400}
+.panel figcaption{font-size:13px;color:var(--soft);margin-top:10px}
+.panel .meta{color:var(--accent);margin-bottom:10px}
+.panel h3{font-size:clamp(28px,2.6vw,36px);line-height:1.05;text-transform:uppercase;margin-bottom:14px}
+.panel p{margin:0 0 22px;font-size:17px}
+.figs{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line);margin:0}
+.figs div{padding:14px 0 12px;border-bottom:1px solid var(--line)}
+.figs div:nth-child(odd){padding-right:14px}
+.figs dt{font-size:30px;font-weight:500;line-height:1.1}
+.figs dd{margin:4px 0 0;font-size:14px;color:var(--soft);line-height:1.35}
+.pane{animation:none}
+.pane.in{animation:fade .45s ease}
+@keyframes fade{from{opacity:.0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* artists marquee */
+.names{background:var(--ink);color:#fff;padding:70px 0 74px;overflow:hidden}
+.names .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:34px;flex-wrap:wrap}
+.names .wrap p{margin:0;color:#cfcfcf;max-width:28em}
+.track{display:flex;width:max-content;gap:0}
+.track ul{display:flex;list-style:none;margin:0;padding:0}
+.track li{font-size:clamp(28px,3.4vw,46px);text-transform:uppercase;font-weight:500;white-space:nowrap;padding:0 22px;letter-spacing:.02em}
+.track li::after{content:"";display:inline-block;width:9px;height:9px;background:var(--accent);border-radius:50%;margin-left:44px;vertical-align:middle}
+.names.run .track{animation:slide 70s linear infinite}
+.names.paused .track{animation-play-state:paused}
+@keyframes slide{to{transform:translateX(-50%)}}
+.names .wrap p.cities{max-width:none;margin-top:40px;border-top:1px solid #333;padding-top:26px;display:flex;gap:10px 30px;flex-wrap:wrap;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:#ddd}
+.cities strong{color:#fff;font-weight:500}
+
+/* artist */
+.artist{padding:110px 0}
+.artist .wrap{display:grid;grid-template-columns:minmax(0,480px) 1fr;gap:72px;align-items:center}
+.artist figure{margin:0}
+.artist figcaption{font-size:13px;color:var(--soft);margin-top:10px}
+.artist p{margin:0 0 18px}
+.artist h2{margin:14px 0 26px}
+blockquote{margin:34px 0 0;padding:0 0 0 22px;border-left:3px solid var(--accent)}
+blockquote p{font-size:24px!important;line-height:1.3;margin:0 0 8px!important}
+blockquote cite{font-style:normal;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+
+/* tom */
+.tom{background:var(--tint)}
+.tom .img{position:relative}
+.tom .img img{width:100%;max-height:640px;object-fit:cover}
+.tom .img span{position:absolute;left:32px;bottom:18px;font-size:13px;color:#fff;background:rgba(0,0,0,.6);padding:4px 10px}
+.tom .wrap{display:grid;grid-template-columns:1fr 1fr;gap:72px;padding-top:80px;padding-bottom:100px}
+.tom p{margin:0 0 18px}
+.tom ul{list-style:none;margin:0;padding:0;border-top:1px solid #d6d4cf}
+.tom li{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid #d6d4cf;font-size:17px}
+.tom li b{font-weight:500;color:var(--accent)}
+
+/* press */
+.press{padding:100px 0;text-align:center}
+.press .q{font-size:clamp(28px,3.6vw,46px);line-height:1.12;text-transform:uppercase;max-width:18em;margin:20px auto 16px;font-weight:500}
+.press .by{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+.press .row{display:flex;justify-content:center;gap:56px;margin-top:56px;flex-wrap:wrap}
+.press .row div{max-width:300px}
+.press .row strong{display:block;font-size:20px;font-weight:500;margin-bottom:4px}
+.press .row span{font-size:15px;color:var(--soft)}
+
+/* contact */
+.contact{background:var(--ink);color:#fff;padding:110px 0}
+.contact .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:72px}
+.contact h2{margin:14px 0 22px}
+.contact p{color:#d6d6d6;margin:0 0 26px;max-width:26em}
+.social{list-style:none;margin:0;padding:0;border-top:1px solid #333}
+.social a{display:flex;justify-content:space-between;align-items:center;min-height:52px;border-bottom:1px solid #333;text-decoration:none;font-size:16px;letter-spacing:.06em}
+.social a:hover{color:#ff7fae}
+form{display:grid;gap:18px}
+fieldset{border:0;margin:0;padding:0}
+legend,label{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#cfcfcf;margin-bottom:10px;display:block}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips input{position:absolute;opacity:0;width:1px;height:1px}
+.chips label{margin:0;display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1px solid #555;color:#eee;text-transform:none;letter-spacing:.02em;font-size:16px;cursor:pointer;transition:all .2s}
+.chips input:checked+label{background:#fff;color:var(--ink);border-color:#fff}
+.chips input:focus-visible+label{outline:3px solid #ff7fae;outline-offset:2px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+input[type=text],input[type=email],textarea{width:100%;background:transparent;border:0;border-bottom:1px solid #666;color:#fff;font:inherit;font-size:18px;padding:10px 0;min-height:46px;border-radius:0}
+input:focus,textarea:focus{outline:none;border-bottom-color:#fff}
+input:focus-visible,textarea:focus-visible{outline:2px solid #ff7fae;outline-offset:4px}
+textarea{min-height:110px;resize:vertical}
+::placeholder{color:#9a9a9a}
+.check{display:flex;gap:12px;align-items:center;font-size:16px;color:#ddd;text-transform:none;letter-spacing:0;margin:0;min-height:44px;cursor:pointer}
+.check input{width:20px;height:20px;accent-color:#fff}
+.contact .btn{background:#fff;color:var(--ink);border-color:#fff;justify-self:start}
+.contact .btn:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+.sent{font-size:20px;color:#fff;border-left:3px solid var(--accent);padding-left:16px;margin:0}
+
+footer{padding:44px 0 56px;font-size:15px;color:var(--soft)}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+footer img{height:18px;width:auto}
+footer a{color:var(--ink)}
+
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:980px){
+  .explorer{grid-template-columns:1fr;gap:26px}
+  .tabs{display:flex;overflow-x:auto;border-top:0;gap:8px;padding-bottom:6px;scrollbar-width:none;margin:0 -32px;padding:0 32px 4px}
+  .tabs::-webkit-scrollbar{display:none}
+  .tabs li{flex:0 0 auto}
+  .tabs button{display:flex;flex-direction:column;align-items:flex-start;gap:0;border:1px solid var(--line);padding:9px 16px;min-height:56px}
+  .tabs button[aria-selected="true"]{padding-left:16px;border-color:var(--accent);background:#fdf2f6}
+  .tabs button span:last-child{font-size:16px}
+  .tabs button span:first-child{font-size:12px}
+  .artist .wrap,.tom .wrap,.contact .wrap{grid-template-columns:1fr;gap:44px}
+}
+@media (max-width:760px){
+  body{font-size:17px}
+  .wrap{padding:0 22px}
+  .tabs{margin:0 -22px;padding:0 22px 4px}
+  .mock{font-size:14px;padding:0 10px}
+  nav li:not(.cta){display:none}
+  .bar{height:60px}
+  .logo img{height:18px}
+  .hero{min-height:620px}
+  .hero::after{background:linear-gradient(0deg,rgba(10,10,10,.9) 0%,rgba(10,10,10,.72) 55%,rgba(10,10,10,.25) 100%)}
+  .hero .wrap{padding-top:160px;padding-bottom:70px}
+  .hero h1{margin:12px 0 18px}
+  .hero .acts .btn{flex:1 1 100%}
+  .cap{left:22px;right:auto;bottom:22px;font-size:12px}
+  .venues .wrap{gap:12px;padding-top:22px;padding-bottom:22px}
+  .venues ul{gap:6px 22px;font-size:15px}
+  .shows,.artist,.press,.contact{padding:76px 0}
+  .shows header{flex-direction:column;align-items:flex-start;margin-bottom:28px}
+  .panel{grid-template-columns:1fr;gap:22px}
+  .names{padding:60px 0}
+  .tom .img img{aspect-ratio:4/3;max-height:none}
+  .tom .img span{left:22px}
+  .tom .wrap{padding-top:56px;padding-bottom:72px}
+  .tom li{grid-template-columns:84px 1fr}
+  .two{grid-template-columns:1fr}
+  .press .row{gap:32px}
+  footer .wrap{flex-direction:column;align-items:flex-start}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .will-rise{opacity:1;transform:none}
+  .track{flex-wrap:wrap;width:auto;max-width:var(--w);margin:0 auto;padding:0 32px}
+  .track ul[aria-hidden]{display:none}
+  .track ul{flex-wrap:wrap;row-gap:6px}
+  .track li{padding:0 22px 0 0}
+  .track li::after{margin-left:22px}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="Ben Moore, home"><img src="https://images.squarespace-cdn.com/content/v1/5348cfcbe4b0d93882407646/3af896f7-7a6a-4b5f-9a8d-16763f0d4e43/bmlogo.png" alt="Ben Moore" width="180" height="22"></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#shows">Exhibitions</a></li>
+        <li><a href="#artist">Artist</a></li>
+        <li><a href="#tom">Biography</a></li>
+        <li class="cta"><a class="btn" href="#contact">Plan a show</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="h1">
+    <img src="https://images.squarespace-cdn.com/content/v1/5348cfcbe4b0d93882407646/1647003963315-OCJDVODRLSVDNHC53D4Y/fulham-town-hall-ben-moore-artist-stone-henge-2.jpg?format=1500w" alt="A stone circle on green turf inside the grand hall of Fulham Town Hall, during Art in the Age of Now" width="1500" height="1000">
+    <div class="wrap">
+      <div class="eyebrow">Artist &amp; Curator · London</div>
+      <h1 id="h1">Art where nobody expects it</h1>
+      <p class="lead">On London Underground billboards. Inside stormtrooper helmets. Across a 52,000 sq ft town hall. Ben Moore curates shows that sell out, draw crowds and raise money for causes that matter.</p>
+      <div class="acts">
+        <a class="btn" href="#contact">Plan a show with Ben</a>
+        <a class="btn ghost" href="#shows">See the shows</a>
+      </div>
+    </div>
+    <span class="cap">Art in the Age of Now, Fulham Town Hall, 2021</span>
+  </section>
+
+  <section class="venues" aria-label="Venues">
+    <div class="wrap">
+      <span class="eyebrow">Curated at</span>
+      <ul>
+        <li>The V&amp;A</li>
+        <li>Saatchi Gallery</li>
+        <li>Somerset House</li>
+        <li>Pacific Design Centre, LA</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="shows" id="shows" aria-labelledby="shows-h">
+    <div class="wrap">
+      <header>
+        <div>
+          <div class="eyebrow" style="color:var(--accent)">Exhibitions &amp; projects</div>
+          <h2 id="shows-h" style="margin-top:12px">Six shows, one idea</h2>
+        </div>
+        <p>Pick a show to see where it ran, who took part and what it achieved.</p>
+      </header>
+      <div class="explorer">
+        <ul class="tabs" role="tablist" aria-label="Shows">
+          <li role="presentation"><button role="tab" id="t0" aria-controls="pane" aria-selected="true" data-i="0"><span>2013</span><span>Art Wars</span></button></li>
+          <li role="presentation"><button role="tab" id="t1" aria-controls="pane" aria-selected="false" tabindex="-1" data-i="1"><span>2006 on</span><span>Art Below</span></button></li>
+          <li role="presentation"><button role="tab" id="t2" aria-controls="pane" aria-selected="false" tabindex="-1" data-i="2"><span>2019</span><span>UnMissable</span></button></li>
+          <li role="presentation"><button role="tab" id="t3" aria-controls="pane" aria-selected="false" tabindex="-1" data-i="3"><span>2019</span><span>One Small Step</span></button></li>
+          <li role="presentation"><button role="tab" id="t4" aria-controls="pane" aria-selected="false" tabindex="-1" data-i="4"><span>2021</span><span>Me, My Brain and I</span></button></li>
+          <li role="presentation"><button role="tab" id="t5" aria-controls="pane" aria-selected="false" tabindex="-1" data-i="5"><span>2021</span><span>Art in the Age of Now</span></button></li>
+        </ul>
+        <div class="panel pane" id="pane" role="tabpanel" aria-labelledby="t0" aria-live="polite">
+          <div>
+            <figure id="fig"><img id="pimg" src="https://images.squarespace-cdn.com/content/v1/5348cfcbe4b0d93882407646/1586186339850-BS3809BBXFE0EO97PAUM/Ben-Moore-Art-Wars-Damien-Hirst.jpg?format=1500w" alt="Art Wars posters of spotted stormtrooper helmets on a London Underground platform" width="1500" height="1125"></figure>
+            <figcaption id="pcap">Art Wars on the London Underground</figcaption>
+          </div>
+          <div>
+            <div class="eyebrow meta" id="pmeta">Saatchi Gallery · Frieze Week 2013</div>
+            <h3 id="ptitle">Art Wars</h3>
+            <p id="ptext">Twenty artists, each given a stormtrooper helmet and one brief: “Turn the Dark into the Art”. It sold out and drew media attention worldwide, then went on to Miami, Los Angeles, Las Vegas, Dubai and Gothenburg.</p>
+            <dl class="figs" id="pfigs">
+              <div><dt>20</dt><dd>artists at the first show, including Damien Hirst</dd></div>
+              <div><dt>Millions</dt><dd>in sales across the project</dd></div>
+              <div><dt>6</dt><dd>cities with sold-out shows</dd></div>
+              <div><dt>Missing People</dt><dd>official charity partner</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="names" id="names" aria-labelledby="names-h">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow" style="color:#ff8fb8">Who he has worked with</div>
+        <h2 id="names-h" style="margin-top:12px">Thousands of artists</h2>
+      </div>
+      <p>From emerging names on the Underground to Turner Prize winners and Royal Academicians.</p>
+    </div>
+    <div class="track">
+      <ul>
+        <li>Damien Hirst</li><li>Anish Kapoor</li><li>Tracey Emin</li><li>David Bailey</li><li>Jake &amp; Dinos Chapman</li><li>Joana Vasconcelos</li><li>Mat Collishaw</li><li>Gavin Turk</li><li>Antony Micallef</li><li>Alison Jackson</li><li>Blek Le Rat</li><li>Ben Eine</li><li>Retna</li><li>D*Face</li><li>Mr. Brainwash</li><li>Chris Levine</li><li>Andrew Ainsworth</li><li>Lauren Baker</li>
+      </ul>
+      <ul aria-hidden="true">
+        <li>Damien Hirst</li><li>Anish Kapoor</li><li>Tracey Emin</li><li>David Bailey</li><li>Jake &amp; Dinos Chapman</li><li>Joana Vasconcelos</li><li>Mat Collishaw</li><li>Gavin Turk</li><li>Antony Micallef</li><li>Alison Jackson</li><li>Blek Le Rat</li><li>Ben Eine</li><li>Retna</li><li>D*Face</li><li>Mr. Brainwash</li><li>Chris Levine</li><li>Andrew Ainsworth</li><li>Lauren Baker</li>
+      </ul>
+    </div>
+    <div class="wrap" style="display:block">
+      <p class="cities"><strong>Shown in</strong> London · Tokyo · Berlin · New York · Los Angeles · Miami · Las Vegas · Dubai · Gothenburg</p>
+    </div>
+  </section>
+
+  <section class="artist" id="artist" aria-labelledby="artist-h">
+    <div class="wrap">
+      <figure>
+        <img src="https://images.squarespace-cdn.com/content/v1/5348cfcbe4b0d93882407646/1585603769647-OUOQ0T9OVO4V68AOKXHK/Ben-Moore-Pink-Storm?format=750w" alt="Pink Storm Trooper: a figure in a pink suit and pink stormtrooper helmet in front of the Hollywood sign" width="583" height="548" loading="lazy">
+        <figcaption>Pink Storm Trooper, Ben Moore</figcaption>
+      </figure>
+      <div>
+        <div class="eyebrow" style="color:var(--accent)">The artist</div>
+        <h2 id="artist-h">An artist first</h2>
+        <p>Ben is a British artist with a degree in filmmaking and a master's in fine art. He's based in West London and is a father of three.</p>
+        <p>In 2006 he founded Art Below to turn ad space into art space, putting work by emerging artists on billboards across the London Underground.</p>
+        <blockquote>
+          <p>“What would London do without eccentric lateral thinkers such as Ben Moore?”</p>
+          <cite>The Evening Standard</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="tom" id="tom" aria-labelledby="tom-h">
+    <div class="img">
+      <img src="https://images.squarespace-cdn.com/content/v1/5348cfcbe4b0d93882407646/1586030359411-18ORGPSXVF0H3GIXKVYF/Ben-Moore-and-Pete-Doherty.jpg?format=2500w" alt="Ben Moore and Pete Doherty in a church, holding a 'have you seen him?' poster" width="2000" height="937" loading="lazy">
+      <span>Ben Moore with Pete Doherty</span>
+    </div>
+    <div class="wrap">
+      <div>
+        <div class="eyebrow" style="color:var(--accent)">Why the shows give back</div>
+        <h2 id="tom-h" style="margin:14px 0 24px">Art that does good</h2>
+        <p>Ben's brother Tom went missing in 2003. Since then Ben has worked closely with the charity Missing People and has run the London Marathon for them twice.</p>
+        <p>Many of his shows now raise money for causes like it.</p>
+      </div>
+      <ul>
+        <li><b>Art Wars</b><span>Significant donations to Missing People, its official charity partner</span></li>
+        <li><b>2019</b><span>UnMissable, for the charity's 25th anniversary. All proceeds to Missing People</span></li>
+        <li><b>2019</b><span>One Small Step raised over £100K for MAG, which clears landmines</span></li>
+        <li><b>2021</b><span>Me, My Brain and I, for Parkinson's UK</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="press" aria-labelledby="press-h">
+    <div class="wrap">
+      <h2 id="press-h" class="eyebrow" style="font-size:13px;color:var(--accent)">What they said</h2>
+      <p class="q">“Unlike anything else in London”</p>
+      <p class="by">Ed Vaizey, Minister of Arts &amp; Culture, on Art in the Age of Now</p>
+      <div class="row">
+        <div><strong>Forbes</strong><span>Top 5 “must see” exhibitions</span></div>
+        <div><strong>The Other Art Fair</strong><span>UnMissable was celebrated as the highlight of the fair</span></div>
+        <div><strong>Saatchi Gallery, 2013</strong><span>Art Wars sold out and drew media attention worldwide</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow" style="color:#ff8fb8">Plan a show</div>
+        <h2 id="contact-h">What's the next one?</h2>
+        <p>A venue to fill, a cause to raise money for, a story to write? Tell Ben a little about it.</p>
+        <ul class="social">
+          <li><a href="https://www.instagram.com/benmoore_curator/" target="_blank" rel="noopener">Instagram · @benmoore_curator <span aria-hidden="true">→</span></a></li>
+          <li><a href="https://www.instagram.com/artbelow/" target="_blank" rel="noopener">Instagram · @artbelow <span aria-hidden="true">→</span></a></li>
+          <li><a href="http://www.youtube.com/channel/UC6E1Jz4fXavOLGWJ6xVbGAQ" target="_blank" rel="noopener">YouTube <span aria-hidden="true">→</span></a></li>
+          <li><a href="http://www.linkedin.com/pub/ben-moore/1a/28/748" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">→</span></a></li>
+        </ul>
+      </div>
+      <form id="form" novalidate>
+        <fieldset>
+          <legend>What's it for?</legend>
+          <div class="chips">
+            <input type="radio" name="kind" id="k1" value="exhibition" checked><label for="k1">An exhibition at my venue</label>
+            <input type="radio" name="kind" id="k2" value="charity"><label for="k2">A charity show</label>
+            <input type="radio" name="kind" id="k3" value="press"><label for="k3">Press</label>
+            <input type="radio" name="kind" id="k4" value="other"><label for="k4">Something else</label>
+          </div>
+        </fieldset>
+        <div class="two">
+          <div><label for="n">Your name</label><input type="text" id="n" name="name" autocomplete="name" placeholder="Jane Smith"></div>
+          <div><label for="e">Email</label><input type="email" id="e" name="email" autocomplete="email" placeholder="you@example.com"></div>
+        </div>
+        <div><label for="m">Tell Ben about it</label><textarea id="m" name="message" placeholder="The space, the cause, the dates you have in mind"></textarea></div>
+        <label class="check"><input type="checkbox" name="news"> Send me the newsletter too</label>
+        <button class="btn" type="submit">Send to Ben</button>
+        <p class="sent" id="sent" hidden>Thanks. This is a mockup, so nothing was sent.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="https://images.squarespace-cdn.com/content/v1/5348cfcbe4b0d93882407646/3af896f7-7a6a-4b5f-9a8d-16763f0d4e43/bmlogo.png" alt="Ben Moore" width="148" height="18">
+    <span>Mockup made for Ben Moore by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var B='https://images.squarespace-cdn.com/content/v1/5348cfcbe4b0d93882407646/';
+  var shows=[
+    {meta:'Saatchi Gallery · Frieze Week 2013',title:'Art Wars',img:B+'1586186339850-BS3809BBXFE0EO97PAUM/Ben-Moore-Art-Wars-Damien-Hirst.jpg?format=1500w',alt:"Art Wars posters of spotted stormtrooper helmets on a London Underground platform",cap:"Art Wars on the London Underground",
+     text:'Twenty artists, each given a stormtrooper helmet and one brief: “Turn the Dark into the Art”. It sold out and drew media attention worldwide, then went on to Miami, Los Angeles, Las Vegas, Dubai and Gothenburg.',
+     figs:[['20','artists at the first show, including Damien Hirst'],['Millions','in sales across the project'],['6','cities with sold-out shows'],['Missing People','official charity partner']]},
+    {meta:'London Underground · Since 2006',title:'Art Below',img:B+'1585920733166-WPUJOXT007DHCUM3PDKX/Ben-Moore-UnMissable-1.jpg?format=1500w',alt:'#Unmissable portraits of missing people on a billboard beside a London Underground platform',cap:'#Unmissable portraits on an Underground billboard',
+     text:'Turning ad space into art space. Art Below puts work by emerging artists on billboard space across the London Underground, and has taken it to Tokyo, Berlin, New York and Los Angeles.',
+     figs:[['2006','founded by Ben'],['Thousands','of artists shown'],['Worldwide','Tokyo, Berlin, New York, LA'],['Billboards','the gallery is the platform']]},
+    {meta:'The Other Art Fair, Saatchi Art · March 2019',title:'UnMissable',img:B+'1647004131752-9VNQO74GF48WTZ5K9OW0/image-asset.jpeg?format=2500w',alt:'A lit #Unmissable billboard at night: an exhibition of portraits of missing people',cap:'#Unmissable billboard, London',
+     text:'Commissioned for the 25th anniversary of the charity Missing People: portraits of missing people by leading artists. It was celebrated as the highlight of the fair, with national coverage on radio, TV and in print.',
+     figs:[['25th','anniversary of Missing People'],['100%','of proceeds to the charity'],['Radio, TV, print','national coverage'],['Highlight','of the art fair']]},
+    {meta:'London, then America · 2019',title:'One Small Step',img:B+'1585598076963-Z555M5XRUPEP4ZQWWDUW/Ben-Moore-One-Small-Step.jpg?format=1500w',alt:"One Small Step posters of astronaut helmets on a London Underground platform",cap:"One Small Step on the London Underground",
+     text:'Fifty years after the Moon landings, twelve leading artists, including Chris Levine, D*Face and Mr. Brainwash, each transformed a life-size astronaut helmet. Unveiled in London, it toured America as the headline of The Other Art Fair.',
+     figs:[['12','artists, one helmet each'],['£100K+','raised for MAG, which clears landmines'],['50th','anniversary of the Moon landings'],['US tour','headline of The Other Art Fair']]},
+    {meta:"For Parkinson's UK · 2021",title:'Me, My Brain and I',type:true,
+     text:"A charity exhibition for Parkinson's UK, with artists including Tracey Emin, David Bailey and Gavin Turk.",
+     figs:[["Parkinson's UK",'the charity it supported'],['Emin · Bailey · Turk','among the artists']]},
+    {meta:'Fulham Town Hall · 2021',title:'Art in the Age of Now',img:B+'1647003963315-OCJDVODRLSVDNHC53D4Y/fulham-town-hall-ben-moore-artist-stone-henge-2.jpg?format=1500w',alt:'A stone circle on green turf inside the grand hall of Fulham Town Hall',cap:'The grand hall, Fulham Town Hall',
+     text:"Commissioned by Lamington Hotel Group: a year to fill a Grade II listed town hall, from the ballroom to the courtroom, with contemporary art, live music, talks and performance. Free to the public, and celebrated as London's first free public art exhibition since lockdown.",
+     figs:[['52,000','sq ft, every room curated'],['Thousands','of visitors through the doors each day'],['Top 5','“must see” exhibitions, Forbes'],['Free','for the public']]}
+  ];
+  var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));
+  var pane=document.getElementById('pane'),fig=document.getElementById('fig');
+  function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+  function show(i,focus){
+    var s=shows[i];
+    tabs.forEach(function(t,j){t.setAttribute('aria-selected',j===i);t.tabIndex=j===i?0:-1});
+    pane.setAttribute('aria-labelledby','t'+i);
+    if(s.type){fig.className='type';fig.innerHTML='<div>'+esc(s.title)+'<small>Parkinson’s UK · 2021</small></div>';document.getElementById('pcap').textContent='';}
+    else{fig.className='';fig.innerHTML='<img id="pimg" src="'+s.img+'" alt="'+s.alt.replace(/"/g,'&quot;')+'">';document.getElementById('pcap').textContent=s.cap;}
+    document.getElementById('pmeta').textContent=s.meta;
+    document.getElementById('ptitle').textContent=s.title;
+    document.getElementById('ptext').textContent=s.text;
+    document.getElementById('pfigs').innerHTML=s.figs.map(function(f){return '<div><dt>'+esc(f[0])+'</dt><dd>'+esc(f[1])+'</dd></div>'}).join('');
+    pane.classList.remove('in');void pane.offsetWidth;pane.classList.add('in');
+    if(focus){tabs[i].focus();tabs[i].scrollIntoView({block:'nearest',inline:'nearest'})}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(i)});
+    t.addEventListener('keydown',function(e){
+      var k=e.key,n=null;
+      if(k==='ArrowRight'||k==='ArrowDown')n=(i+1)%tabs.length;
+      if(k==='ArrowLeft'||k==='ArrowUp')n=(i-1+tabs.length)%tabs.length;
+      if(n!==null){e.preventDefault();show(n,true)}
+    });
+  });
+  // preload the other show photos so switching is instant
+  shows.forEach(function(s){if(s.img){var im=new Image();im.src=s.img}});
+
+  var form=document.getElementById('form');
+  form.addEventListener('submit',function(e){e.preventDefault();var s=document.getElementById('sent');s.hidden=false;form.querySelector('button[type=submit]').disabled=true});
+
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var names=document.getElementById('names');
+  if('IntersectionObserver' in window){
+    if(!reduce){
+      new IntersectionObserver(function(es){es.forEach(function(e){
+        if(e.isIntersecting){names.classList.add('run');names.classList.remove('paused')}else if(names.classList.contains('run')){names.classList.add('paused')}
+      })}).observe(names);
+      var els=[].slice.call(document.querySelectorAll('main section > .wrap, .tom .img, .names .track'));
+      var vh=window.innerHeight;
+      var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+      els.forEach(function(el){if(el.getBoundingClientRect().top>vh){el.classList.add('rise','will-rise');io.observe(el)}});
+    }
+  }
+})();
+</script>
+</body>
+</html>
