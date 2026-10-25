@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup thehockeyplayground-com-d76139 1 333c8758 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Hockey Playground | Off-Ice Hockey with Real Pucks in Richmond Hill</title>
+<meta name="description" content="Richmond Hill's off-ice hockey facility. Shoot real pucks on real nets. Drop-ins from $23, birthday parties, team events and memberships.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#12385f; --deep:#0b2540; --blue:#235eac; --gold:#f5a623; --ice:#f3f7fb; --line:#d9e3ee;
+  --ink:#0f2338; --muted:#4a5d72; --white:#fff;
+  --cond:"Barlow Condensed","Arial Narrow",sans-serif; --body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1160px; --r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:400 17px/1.55 var(--body);color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--cond);line-height:.98;margin:0;letter-spacing:.005em}
+h2{font-size:clamp(38px,5vw,60px);font-weight:800;text-transform:uppercase;font-style:italic}
+.eyebrow{font:700 14px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin:0 0 14px}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:12px;top:12px;z-index:99;background:#fff;padding:10px 14px}
+
+/* Signal Set banner */
+.mock{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:#fdf1d8;color:#3d2a05;font:500 15px/1.3 var(--body);text-align:center;border-bottom:1px solid #f0d9a8}
+.mock a{color:#3d2a05;text-decoration:underline;text-underline-offset:2px;font-weight:700}
+
+/* header */
+.top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.top .wrap{display:flex;align-items:center;gap:28px;height:76px}
+.brand img{width:180px;height:auto}
+.nav{display:flex;gap:26px;margin-left:auto}
+.nav a{color:var(--ink);text-decoration:none;font:700 15px/1 var(--body);letter-spacing:.06em;text-transform:uppercase;padding:14px 0}
+.nav a:hover{color:var(--blue)}
+.tel{font:700 16px/1 var(--body);color:var(--navy);text-decoration:none;padding:14px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;border:2px solid transparent;font:800 19px/1 var(--cond);letter-spacing:.05em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-gold{background:var(--gold);color:var(--deep);box-shadow:0 3px 0 #c98410}
+.btn-gold:hover{background:#ffb735}
+.btn-line{border-color:rgba(255,255,255,.55);color:#fff;background:transparent}
+.btn-line:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-sm{min-height:44px;padding:0 18px;font-size:17px}
+
+/* hero */
+.hero{background:var(--deep);color:#fff;position:relative;overflow:hidden;padding:64px 0 150px}
+.hero:before{content:"";position:absolute;inset:0;background:
+  linear-gradient(90deg,transparent 0 49.85%,rgba(214,40,57,.35) 49.85% 50.15%,transparent 50.15%),
+  radial-gradient(circle at 50% 50%,transparent 0 179px,rgba(255,255,255,.07) 180px 182px,transparent 183px);opacity:.9;pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero .eyebrow{color:var(--gold)}
+.hero h1{font-size:clamp(58px,8.4vw,112px);font-weight:800;font-style:italic;text-transform:uppercase;line-height:.88}
+.hero h1 span{display:block;color:var(--gold)}
+.lede{font-size:20px;line-height:1.5;color:#d6e2ef;max-width:33em;margin:24px 0 30px}
+.lede strong{color:#fff;font-weight:600}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.proof{display:flex;align-items:center;gap:10px;margin-top:26px;color:#d6e2ef;font-size:16px}
+.stars{color:var(--gold);letter-spacing:2px;font-size:18px}
+.net{width:100%;max-width:470px;justify-self:end;filter:drop-shadow(0 30px 40px rgba(0,0,0,.35))}
+.net .streak{stroke-dasharray:6 9}
+.net.play .puck{animation:shoot 3.2s cubic-bezier(.3,.6,.2,1) infinite}
+.net.play .hit{animation:glow 3.2s ease infinite}
+@keyframes shoot{0%{transform:translate(-230px,190px) scale(1.5);opacity:0}8%{opacity:1}38%,100%{transform:none;opacity:1}}
+@keyframes glow{0%,34%{fill:rgba(245,166,35,.15)}40%,85%{fill:var(--gold)}100%{fill:rgba(245,166,35,.15)}}
+
+/* planner */
+.planner{position:relative;margin-top:-104px;z-index:2}
+.card{background:#fff;border-radius:22px;box-shadow:0 1px 0 var(--line),0 30px 60px -28px rgba(11,37,64,.45);border:1px solid var(--line)}
+.plan{display:grid;grid-template-columns:1.25fr .95fr;overflow:hidden}
+.plan-l{padding:36px 40px 38px}
+.plan-l h2{font-size:clamp(34px,3.6vw,46px);color:var(--navy)}
+.plan-l > p{margin:10px 0 26px;color:var(--muted)}
+.field{margin:0 0 22px;border:0;padding:0}
+.field legend,.field label.lab{display:block;font:700 13px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 10px;padding:0}
+.days{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.chip{appearance:none;border:1.5px solid var(--line);background:#fff;color:var(--ink);border-radius:12px;min-height:48px;font:700 16px/1 var(--body);cursor:pointer;transition:border-color .15s,background .15s}
+.chip:hover{border-color:var(--blue)}
+.chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.lens{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.len{position:relative;padding:14px 10px 12px;min-height:84px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
+.len b{font:800 30px/1 var(--cond)}
+.len small{font:600 14px/1 var(--body);color:var(--muted)}
+.len[aria-pressed="true"] small{color:#c9d8e8}
+.len .tag{position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--deep);font:800 11px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;padding:4px 8px;border-radius:99px;white-space:nowrap}
+select,input,textarea{font:500 17px/1.3 var(--body);color:var(--ink);width:100%;min-height:48px;border:1.5px solid var(--line);border-radius:12px;padding:10px 14px;background:#fff}
+select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' stroke='%2312385f' stroke-width='2.2' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:44px}
+select:focus,input:focus,textarea:focus{border-color:var(--blue);outline:none;box-shadow:0 0 0 3px rgba(35,94,172,.18)}
+
+/* ticket */
+.ticket{background:var(--navy);color:#fff;padding:36px 36px 34px;position:relative;display:flex;flex-direction:column}
+.ticket:before{content:"";position:absolute;left:-1px;top:28px;bottom:28px;border-left:2px dashed rgba(255,255,255,.22)}
+.t-k{font:700 13px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:#a9c1dc}
+.t-day{font:800 italic 26px/1 var(--cond);text-transform:uppercase;margin:14px 0 4px;color:var(--gold)}
+.t-time{font:800 54px/.95 var(--cond);letter-spacing:.01em}
+.t-row{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid rgba(255,255,255,.16);padding:14px 0;margin-top:18px}
+.t-row + .t-row{margin-top:0}
+.t-row span{color:#c9d8e8;font-size:16px}
+.t-row b{font:800 30px/1 var(--cond)}
+.t-row b small{font:600 15px var(--body);color:#c9d8e8;margin-left:4px}
+.t-bring{font-size:15px;color:#c9d8e8;margin:4px 0 22px}
+.t-bring strong{color:#fff;font-weight:600}
+.ticket form{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:auto}
+.ticket form input{border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.07);color:#fff}
+.ticket form input::placeholder{color:#a9c1dc}
+.ticket form .btn{grid-column:1/-1}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.thanks{font-weight:600;padding:14px 16px;border-radius:12px;background:rgba(245,166,35,.16);border:1px solid rgba(245,166,35,.5);margin:12px 0 0}
+.thanks[hidden]{display:none}
+
+/* sections */
+section{scroll-margin-top:90px}
+.sec{padding:110px 0}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:44px}
+.head p{max-width:30em;color:var(--muted);margin:0}
+.head h2{color:var(--navy);max-width:12em}
+
+/* games board */
+.board{display:grid;grid-template-columns:repeat(3,1fr);border-radius:22px;overflow:hidden;background:var(--deep);gap:1px;border:1px solid var(--deep)}
+.game{background:var(--navy);color:#fff;padding:30px 30px 28px;display:flex;align-items:center;gap:20px;min-height:128px}
+.game svg{flex:none;width:56px;height:56px}
+.game span{font:700 14px/1 var(--body);color:var(--gold);letter-spacing:.1em}
+.game h3{font-size:34px;font-weight:800;font-style:italic;text-transform:uppercase;margin-top:6px}
+.extra{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 30px;margin-top:22px;padding:22px 28px;border-radius:18px;background:var(--ice);border:1px solid var(--line)}
+.extra p{margin:0}
+.extra strong{color:var(--navy)}
+
+/* reps band */
+.reps{background:var(--ice);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.reps .wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.reps h2{color:var(--navy)}
+.reps p{color:var(--muted);margin:20px 0 0;max-width:32em}
+.skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px;padding:0;list-style:none}
+.skills li{background:#fff;border:1px solid var(--line);border-radius:99px;padding:8px 14px;font-weight:600;font-size:15px;color:var(--navy)}
+blockquote.big{margin:0;padding:44px 44px 40px;background:var(--navy);color:#fff;border-radius:22px;position:relative}
+blockquote.big p{font:800 italic clamp(34px,3.6vw,48px)/1 var(--cond);text-transform:uppercase;margin:0;color:#fff}
+blockquote.big p + p{color:var(--gold);margin-top:10px}
+.member{margin-top:22px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 28px;background:#fff;border:1px solid var(--line);border-radius:18px}
+.member b{font:800 40px/1 var(--cond);color:var(--navy)}
+.member b small{font:600 16px var(--body);color:var(--muted)}
+.member p{margin:4px 0 0;font-size:15px;color:var(--muted)}
+
+/* parties */
+.party{display:grid;grid-template-columns:420px 1fr;gap:70px;align-items:center}
+.party figure{margin:0;position:relative}
+.party img{width:100%;max-width:420px;height:auto;border-radius:22px;box-shadow:0 30px 60px -30px rgba(11,37,64,.5)}
+.party figcaption{position:absolute;left:18px;bottom:18px;background:#fff;border-radius:99px;padding:8px 14px;font:700 14px/1 var(--body);color:var(--navy);box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.party h2{color:var(--navy)}
+.party > div > p{color:var(--muted);font-size:19px;margin:20px 0 28px;max-width:31em}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:30px}
+.opt{border:1.5px solid var(--line);border-radius:18px;padding:22px 22px 20px}
+.opt h3{font-size:30px;font-weight:800;font-style:italic;text-transform:uppercase;color:var(--navy)}
+.opt p{margin:8px 0 0;color:var(--muted);font-size:16px}
+.incl{list-style:none;padding:0;margin:0 0 30px;display:grid;gap:10px}
+.incl li{display:flex;gap:12px;align-items:flex-start;font-weight:500}
+.incl svg{flex:none;margin-top:3px}
+
+/* reviews */
+.reviews{background:var(--deep);color:#fff}
+.reviews .head h2{color:#fff}
+.reviews .head p{color:#c9d8e8}
+.score{display:flex;align-items:center;gap:16px}
+.score b{font:800 84px/.8 var(--cond);color:var(--gold)}
+.score span{font-size:16px;color:#c9d8e8;line-height:1.35}
+.quotes{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:20px}
+.q{margin:0;padding:30px;border-radius:20px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);display:flex;flex-direction:column}
+.q:first-child{background:var(--gold);color:var(--deep);border-color:var(--gold)}
+.q .stars{font-size:16px}
+.q:first-child .stars{color:var(--deep)}
+.q p{margin:14px 0 20px;font-size:19px;line-height:1.45}
+.q:first-child p{font:800 italic 32px/1.02 var(--cond);text-transform:uppercase}
+.q cite{margin-top:auto;font-style:normal;font-weight:700;font-size:15px}
+
+/* faq */
+.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}
+.faq h2{color:var(--navy)}
+.faq .intro p{color:var(--muted)}
+details{border-bottom:1px solid var(--line)}
+details:first-child{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 0;min-height:44px;font:700 24px/1.1 var(--cond);text-transform:uppercase;color:var(--navy);letter-spacing:.01em}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"";flex:none;width:26px;height:26px;border-radius:50%;background:var(--ice) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath d='M6 1v10M1 6h10' stroke='%23235eac' stroke-width='2'/%3E%3C/svg%3E") center no-repeat;transition:transform .2s}
+details[open] summary:after{transform:rotate(45deg)}
+details p{margin:-6px 0 22px;color:var(--muted);max-width:38em}
+
+/* visit */
+.visit{background:var(--ice);border-top:1px solid var(--line)}
+.vgrid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.vcard{padding:34px}
+.vcard h3{font-size:30px;font-weight:800;font-style:italic;text-transform:uppercase;color:var(--navy);margin-bottom:16px}
+.addr{font-size:19px;line-height:1.45;margin:0 0 18px}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
+.btn-soft{background:var(--ice);color:var(--navy);border-color:var(--line);font-size:17px;min-height:44px;padding:0 18px}
+table{width:100%;border-collapse:collapse;font-size:17px}
+th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line)}
+th{font-weight:600}
+td{text-align:right;font-variant-numeric:tabular-nums}
+tr.today{background:#fff4dd}
+tr.today th:after{content:"Today";margin-left:10px;background:var(--gold);color:var(--deep);font:800 11px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;padding:4px 7px;border-radius:99px;vertical-align:2px}
+.cform{display:grid;gap:14px}
+.cform .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cform label{display:grid;gap:6px;font:600 15px/1.2 var(--body);color:var(--ink)}
+textarea{min-height:100px;resize:vertical}
+.cform .thanks{background:#fff4dd;border-color:#f0d9a8;color:var(--ink);margin:0}
+
+/* close */
+.close{background:var(--deep);color:#fff;text-align:center;padding:110px 0;position:relative;overflow:hidden}
+.close:before{content:"";position:absolute;left:50%;top:50%;width:420px;height:420px;margin:-210px 0 0 -210px;border-radius:50%;border:2px solid rgba(255,255,255,.07)}
+.close .wrap{position:relative}
+.close h2{font-size:clamp(46px,7vw,92px);color:#fff}
+.close h2 span{color:var(--gold)}
+.close p{color:#c9d8e8;font-size:19px;max-width:34em;margin:20px auto 32px}
+.close .ctas{justify-content:center}
+
+footer{background:#081c31;color:#c9d8e8;padding:50px 0 40px;font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:30px;align-items:center;justify-content:space-between}
+footer .f-id{display:flex;align-items:center;gap:18px}
+footer img{width:72px;height:auto;border-radius:50%}
+footer a{color:#fff}
+footer p{margin:0}
+.made{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:22px;color:#a9bdd3;font-size:14px}
+.made a{color:#c9d8e8}
+
+/* phone call bar */
+.callbar{display:none}
+
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .6s ease,transform .6s ease}
+
+@media (max-width:980px){
+  .nav{display:none}
+  .hero .wrap,.plan,.reps .wrap,.party,.faq,.vgrid{grid-template-columns:1fr}
+  .net{justify-self:center;max-width:380px}
+  .ticket:before{display:none}
+  .party{gap:40px}
+  .party figure{max-width:420px}
+  .quotes{grid-template-columns:1fr}
+  .board{grid-template-columns:1fr 1fr}
+  .head{flex-direction:column;align-items:flex-start;gap:16px}
+  .faq{gap:30px}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:68px}
+  .wrap{padding:0 18px}
+  .mock{font-size:14px;padding:8px 10px}
+  .top .wrap{height:64px;gap:12px}
+  .brand img{width:150px}
+  .tel{display:none}
+  .hero .eyebrow{font-size:13px}
+  .top .btn{margin-left:auto}
+  .hero{padding:40px 0 120px}
+  .hero h1{font-size:64px}
+  .lede{font-size:18px;margin:18px 0 24px}
+  .ctas .btn{flex:1 1 100%}
+  .net{display:none}
+  .planner{margin-top:-90px}
+  .plan-l{padding:26px 18px 24px}
+  .days{gap:4px}
+  .chip{font-size:14px;border-radius:10px}
+  .len b{font-size:26px}
+  .ticket{padding:28px 18px 24px}
+  .t-time{font-size:46px}
+  .ticket form{grid-template-columns:1fr}
+  .sec{padding:76px 0}
+  .board{grid-template-columns:1fr}
+  .game{padding:20px 22px;min-height:0}
+  .game svg{width:44px;height:44px}
+  .game h3{font-size:30px}
+  .extra{padding:20px}
+  blockquote.big{padding:30px 24px}
+  .member{flex-direction:column;align-items:flex-start}
+  .opts{grid-template-columns:1fr}
+  .vcard{padding:24px 18px}
+  .cform .two{grid-template-columns:1fr}
+  th,td{padding:10px 8px}
+  .close{padding:80px 0}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:rgba(8,28,49,.97);border-top:1px solid rgba(255,255,255,.1)}
+  .callbar a{min-height:48px;font-size:18px}
+  .callbar .call{background:#fff;color:var(--navy)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*:before,*:after{animation:none!important;transition:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="The Hockey Playground, home"><img src="https://thehockeyplayground.com/wp-content/uploads/2026/01/LOGO-1-e1769723176876.png" alt="The Hockey Playground, the coolest place off the ice" width="1280" height="368"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#games">Games</a>
+      <a href="#plan">Rates</a>
+      <a href="#parties">Parties</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="tel" href="tel:+14168924785">416-892-4785</a>
+    <a class="btn btn-gold btn-sm" href="#plan">Book a Drop-In</a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="h1">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Richmond Hill · The coolest place off the ice</p>
+      <h1 id="h1">Off-Ice Hockey. <span>Real Pucks.</span></h1>
+      <p class="lede"><strong>Use your ice time to skate. Come here to shoot.</strong> Fire real pucks on real nets, sharpen your release, or take on a friend. No ice, no skates, all ages.</p>
+      <div class="ctas">
+        <a class="btn btn-gold" href="#plan">Book a Drop-In</a>
+        <a class="btn btn-line" href="#parties">Parties &amp; Teams</a>
+      </div>
+      <p class="proof"><span class="stars" aria-hidden="true">★★★★★</span> 5.0 · 50+ five-star reviews</p>
+    </div>
+    <svg class="net" id="net" viewBox="0 0 470 400" role="img" aria-label="A hockey net with four targets, a puck flying into the top corner">
+      <defs>
+        <pattern id="mesh" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0H16M0 0V16" stroke="rgba(255,255,255,.16)" stroke-width="1.2"/></pattern>
+      </defs>
+      <ellipse cx="235" cy="372" rx="210" ry="18" fill="rgba(0,0,0,.25)"/>
+      <rect x="40" y="70" width="390" height="290" rx="6" fill="#0e3157"/>
+      <rect x="40" y="70" width="390" height="290" rx="6" fill="url(#mesh)"/>
+      <path d="M40 360V82a12 12 0 0 1 12-12h366a12 12 0 0 1 12 12v278" fill="none" stroke="#d62839" stroke-width="12" stroke-linecap="round"/>
+      <g fill="rgba(245,166,35,.15)" stroke="#f5a623" stroke-width="3">
+        <circle cx="105" cy="295" r="36"/><circle cx="365" cy="295" r="36"/><circle cx="105" cy="135" r="36"/>
+        <circle class="hit" cx="365" cy="135" r="36" fill="#f5a623"/>
+      </g>
+      <path class="streak" d="M120 400 Q 250 250 352 150" fill="none" stroke="#f5a623" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+      <g class="puck" style="transform-origin:365px 135px;transform-box:view-box">
+        <ellipse cx="365" cy="140" rx="20" ry="7" fill="#05101c"/>
+        <rect x="345" y="128" width="40" height="12" fill="#111"/>
+        <ellipse cx="365" cy="128" rx="20" ry="7" fill="#2a2f36"/>
+      </g>
+      <rect x="150" y="20" width="170" height="36" rx="18" fill="#f5a623"/>
+      <text x="235" y="44" text-anchor="middle" font-family="Barlow Condensed,Arial Narrow,sans-serif" font-weight="800" font-style="italic" font-size="19" fill="#0b2540" letter-spacing="1.5">REAL PUCKS · REAL NETS</text>
+    </svg>
+  </div>
+</section>
+
+<section class="planner" id="plan" aria-labelledby="plan-h">
+  <div class="wrap">
+    <div class="card plan">
+      <div class="plan-l">
+        <h2 id="plan-h">Plan your drop-in</h2>
+        <p>Pick a day, a start time and how long you want to shoot. All ages, all skill levels.</p>
+        <fieldset class="field">
+          <legend>Day</legend>
+          <div class="days" id="days"></div>
+        </fieldset>
+        <fieldset class="field">
+          <legend>How long</legend>
+          <div class="lens" id="lens">
+            <button type="button" class="chip len" data-min="60" data-price="23" aria-pressed="false"><b>60 min</b><small>$23 +HST</small></button>
+            <button type="button" class="chip len" data-min="90" data-price="31" aria-pressed="true"><span class="tag">Most popular</span><b>90 min</b><small>$31 +HST</small></button>
+            <button type="button" class="chip len" data-min="120" data-price="36" aria-pressed="false"><b>120 min</b><small>$36 +HST</small></button>
+          </div>
+        </fieldset>
+        <div class="field" style="margin:0">
+          <label class="lab" for="start">Start time</label>
+          <select id="start"><option>1:00 pm</option></select>
+        </div>
+      </div>
+      <div class="ticket" aria-live="polite">
+        <p class="t-k" style="margin:0">Your drop-in</p>
+        <p class="t-day" id="t-day">Saturday</p>
+        <p class="t-time" id="t-time" style="margin:0">1:00–2:30 pm</p>
+        <div class="t-row"><span id="t-len">90 min of shooting</span><b id="t-price">$31<small>+HST</small></b></div>
+        <div class="t-row"><span>Drop-in hours that day</span><b id="t-hours" style="font-size:24px">10am–5pm</b></div>
+        <p class="t-bring"><strong>Bring:</strong> hockey stick, clean indoor shoes, gloves (recommended). No skates.</p>
+        <form id="tform" novalidate>
+          <label class="sr" for="tn">Your name</label><input id="tn" name="name" placeholder="Your name" autocomplete="name">
+          <label class="sr" for="tp">Phone</label><input id="tp" name="phone" placeholder="Phone" inputmode="tel" autocomplete="tel">
+          <button class="btn btn-gold" type="submit">Request this time</button>
+        </form>
+        <p class="thanks" hidden role="status">Thanks. This is a mockup, so nothing was sent.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="games" aria-labelledby="games-h">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="eyebrow">The challenges</p>
+        <h2 id="games-h">More shots. More puck touches.</h2>
+      </div>
+      <p>Bring your stick and clean shoes and get to work. Shoot real pucks, sharpen your release and accuracy, or take on a friend across our hockey challenges.</p>
+    </div>
+    <div class="board">
+      <div class="game"><svg viewBox="0 0 56 56" aria-hidden="true"><path d="M6 40h24l18-26" stroke="#f5a623" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 14h12v12" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><div><span>01</span><h3>Hardest Shot</h3></div></div>
+      <div class="game"><svg viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="22" stroke="#fff" stroke-width="3.5" fill="none"/><circle cx="28" cy="28" r="12" stroke="#fff" stroke-width="3.5" fill="none"/><circle cx="28" cy="28" r="4.5" fill="#f5a623"/></svg><div><span>02</span><h3>Accuracy</h3></div></div>
+      <div class="game"><svg viewBox="0 0 56 56" aria-hidden="true"><g fill="#f5a623"><ellipse cx="14" cy="38" rx="9" ry="4"/><ellipse cx="28" cy="28" rx="9" ry="4" opacity=".75"/><ellipse cx="42" cy="18" rx="9" ry="4" opacity=".5"/></g><path d="M6 48h44" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/></svg><div><span>03</span><h3>Rapid Fire</h3></div></div>
+      <div class="game"><svg viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="31" r="19" stroke="#fff" stroke-width="3.5" fill="none"/><path d="M28 31V19" stroke="#f5a623" stroke-width="4" stroke-linecap="round"/><path d="M22 6h12M28 6v6" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/></svg><div><span>04</span><h3>Stop the Clock</h3></div></div>
+      <div class="game"><svg viewBox="0 0 56 56" aria-hidden="true"><path d="M10 10l22 30h12" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="30" cy="48" rx="8" ry="3.5" fill="#f5a623"/><path d="M20 48c-6 0-10-3-12-6M40 48c6 0 9-3 10-6" stroke="#f5a623" stroke-width="2.5" fill="none" stroke-dasharray="3 4" stroke-linecap="round"/></svg><div><span>05</span><h3>Stickhandling</h3></div></div>
+      <div class="game"><svg viewBox="0 0 56 56" aria-hidden="true"><path d="M31 4L13 32h13l-3 20 20-30H29z" fill="#f5a623"/></svg><div><span>06</span><h3>Reaction</h3></div></div>
+    </div>
+    <div class="extra">
+      <p><strong>Need a breather?</strong> Take a break with air hockey and bubble hockey between shooting sessions.</p>
+      <a class="btn btn-navy btn-sm" href="#plan">Plan a drop-in</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec reps" aria-labelledby="reps-h">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">For players &amp; parents</p>
+      <h2 id="reps-h">Save your ice time for skating.</h2>
+      <p>Ice time is expensive and limited. The Hockey Playground gives players somewhere to get extra shooting, puck touches and reps, without renting ice.</p>
+      <ul class="skills" aria-label="What players work on">
+        <li>Shot power</li><li>Accuracy</li><li>Quick release</li><li>Stickhandling</li><li>Reaction speed</li>
+      </ul>
+    </div>
+    <div>
+      <blockquote class="big">
+        <p>Players think they're playing.</p>
+        <p>Parents know they're getting reps.</p>
+      </blockquote>
+      <div class="member">
+        <div>
+          <b>$99<small> /month and up</small></b>
+          <p>Membership: unlimited off-ice practice all season, one flat price. Cancel anytime.</p>
+        </div>
+        <a class="btn btn-navy btn-sm" href="#contact" data-topic="Membership">Become a member</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="parties" aria-labelledby="party-h">
+  <div class="wrap party">
+    <figure>
+      <img src="https://thehockeyplayground.com/wp-content/uploads/2026/03/C54BFBA8-1314-460F-B1DE-382D554579A0-768x1024.jpg" alt="The Hockey Playground crew in referee shirts, standing in front of the shooting nets" width="768" height="1024" loading="lazy">
+      <figcaption>At The Playground, Richmond Hill</figcaption>
+    </figure>
+    <div>
+      <p class="eyebrow">Private events</p>
+      <h2 id="party-h">Take over the Playground.</h2>
+      <p>Book the whole facility for a birthday party or team event. We handle setup and cleanup; you just show up and celebrate.</p>
+      <div class="opts">
+        <div class="opt"><h3>Birthday parties</h3><p>A private hockey birthday with games, competitions and your own party room.</p></div>
+        <div class="opt"><h3>Team events</h3><p>Bring the whole team for competitions, bonding and hockey activities.</p></div>
+      </div>
+      <ul class="incl">
+        <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#235eac"/><path d="M5.5 10.5l3 3 6-7" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Private access to every game</li>
+        <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#235eac"/><path d="M5.5 10.5l3 3 6-7" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Your own party room for cake, food, presents and hanging out</li>
+        <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#235eac"/><path d="M5.5 10.5l3 3 6-7" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Setup and cleanup handled by us</li>
+      </ul>
+      <div class="ctas">
+        <a class="btn btn-gold" href="#contact" data-topic="Birthday party">Ask about a party</a>
+        <a class="btn btn-navy" href="#contact" data-topic="Team event">Plan a team event</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec reviews" aria-labelledby="rev-h">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="eyebrow" style="color:var(--gold)">Parents, players &amp; coaches</p>
+        <h2 id="rev-h">No one wanted to leave.</h2>
+      </div>
+      <div class="score"><b>5.0</b><span><span class="stars" aria-hidden="true">★★★★★</span><br>50+ five-star reviews</span></div>
+    </div>
+    <div class="quotes">
+      <figure class="q"><span class="stars" aria-label="5 stars">★★★★★</span><blockquote style="margin:0"><p>Unreal place for the hockey fanatic, kids loved it. No one wanted to leave (including adults!)</p></blockquote><figcaption><cite>David A.</cite></figcaption></figure>
+      <figure class="q"><span class="stars" aria-label="5 stars">★★★★★</span><blockquote style="margin:0"><p>We had an awesome experience celebrating our son's 10th birthday! From start to finish, everything was so fun and seamless. Easy breezy.</p></blockquote><figcaption><cite>Gina, Local Guide</cite></figcaption></figure>
+      <figure class="q"><span class="stars" aria-label="5 stars">★★★★★</span><blockquote style="margin:0"><p>Amazing set up!!! Great place to kill time between tournament games. Dustin is great with getting the kids set up to shoot.</p></blockquote><figcaption><cite>Daniel B.</cite></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="faq-h">
+  <div class="wrap faq">
+    <div class="intro">
+      <p class="eyebrow">Before you come</p>
+      <h2 id="faq-h">Good to know.</h2>
+      <p>Anything else? Call us at <a href="tel:+14168924785">416-892-4785</a>.</p>
+    </div>
+    <div>
+      <details open><summary>Do I need skates?</summary><p>No skates. It's off-ice. Bring a hockey stick and clean indoor shoes; gloves are recommended.</p></details>
+      <details><summary>Are the pucks real?</summary><p>Yes. We use real pucks on real nets.</p></details>
+      <details><summary>Who can play?</summary><p>All ages and all skill levels: kids, teens and adults. Just show up and play.</p></details>
+      <details><summary>How much is a drop-in?</summary><p>60 minutes is $23, 90 minutes is $31 and 120 minutes is $36, plus HST.</p></details>
+      <details><summary>Is there a membership?</summary><p>Yes. Unlimited off-ice practice all season at one flat price, from $99 a month. Cancel anytime.</p></details>
+      <details><summary>Can we book the whole place?</summary><p>Yes, for a birthday party or team event: private access to every game plus your own party room. We handle setup and cleanup.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec visit" id="visit" aria-labelledby="visit-h">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="eyebrow">Visit the Playground</p>
+        <h2 id="visit-h">Leslie Street, Richmond Hill.</h2>
+      </div>
+    </div>
+    <div class="vgrid">
+      <div class="card vcard">
+        <h3>Where &amp; when</h3>
+        <p class="addr">9821 Leslie Street, Unit 109<br>Richmond Hill, Ontario L4B 3Y4</p>
+        <div class="links">
+          <a class="btn btn-soft" href="https://www.google.com/maps/search/?api=1&amp;query=9821%20Leslie%20Street%2C%20Unit%20109%2C%20Richmond%20Hill%2C%20ON%20L4B%203Y4" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn-soft" href="tel:+14168924785">416-892-4785</a>
+        </div>
+        <table aria-label="Drop-in hours">
+          <tbody id="hours">
+            <tr data-d="1"><th scope="row">Monday</th><td>10am – 8pm</td></tr>
+            <tr data-d="2"><th scope="row">Tuesday</th><td>10am – 8pm</td></tr>
+            <tr data-d="3"><th scope="row">Wednesday</th><td>10am – 8pm</td></tr>
+            <tr data-d="4"><th scope="row">Thursday</th><td>10am – 8pm</td></tr>
+            <tr data-d="5"><th scope="row">Friday</th><td>10am – 6pm</td></tr>
+            <tr data-d="6"><th scope="row">Saturday</th><td>10am – 5pm</td></tr>
+            <tr data-d="0"><th scope="row">Sunday</th><td>10am – 4pm</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card vcard" id="contact">
+        <h3>Send us a note</h3>
+        <form class="cform" id="cform" novalidate>
+          <div class="two">
+            <label>Name<input name="name" autocomplete="name"></label>
+            <label>Phone or email<input name="reach" autocomplete="email"></label>
+          </div>
+          <label>What's it about?
+            <select name="topic" id="topic">
+              <option>Drop-in</option><option>Birthday party</option><option>Team event</option><option>Membership</option><option>Gift card</option><option>Something else</option>
+            </select>
+          </label>
+          <label>Message<textarea name="msg" placeholder="Date, group size, questions"></textarea></label>
+          <button class="btn btn-gold" type="submit">Send</button>
+          <p class="thanks" hidden role="status">Thanks. This is a mockup, so nothing was sent.</p>
+        </form>
+        <p style="margin:18px 0 0;font-size:15px;color:var(--muted)">Or email <a href="mailto:contact@thehockeyplayground.com">contact@thehockeyplayground.com</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="close" aria-labelledby="close-h">
+  <div class="wrap">
+    <h2 id="close-h">Ready to hit <span>the Playground?</span></h2>
+    <p>Whether you're working on your shot, challenging a friend, or just looking to get more puck touches, come see what THP is about.</p>
+    <div class="ctas">
+      <a class="btn btn-gold" href="#plan">Book a Drop-In</a>
+      <a class="btn btn-line" href="tel:+14168924785">Call 416-892-4785</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-id">
+      <img src="https://thehockeyplayground.com/wp-content/uploads/2026/01/Logo-3-e1769723417744-913x1024.png" alt="The Hockey Playground crest" width="800" height="897" loading="lazy">
+      <p>The Hockey Playground<br>9821 Leslie St, Unit 109, Richmond Hill, ON</p>
+    </div>
+    <p><a href="tel:+14168924785">416-892-4785</a> · <a href="mailto:contact@thehockeyplayground.com">Email</a> · <a href="https://www.instagram.com/thehockeyplayground" target="_blank" rel="noopener">@thehockeyplayground</a></p>
+    <p class="made">Mockup made for The Hockey Playground by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick actions">
+  <a class="btn call" href="tel:+14168924785">Call</a>
+  <a class="btn btn-gold" href="#plan">Book a Drop-In</a>
+</nav>
+
+<script>
+(function(){
+  var HOURS={0:[10,16],1:[10,20],2:[10,20],3:[10,20],4:[10,20],5:[10,18],6:[10,17]};
+  var NAMES=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  var ORDER=[1,2,3,4,5,6,0];
+  var today=new Date().getDay();
+  var state={day:today,min:90,price:31,start:null};
+  var daysEl=document.getElementById('days'),startEl=document.getElementById('start');
+
+  function fmt(h){var hh=Math.floor(h),m=Math.round((h-hh)*60),ap=hh>=12?'pm':'am',d=hh%12||12;return d+(m?':'+(m<10?'0':'')+m:'')+(arguments[1]?' '+ap:'');}
+  function hm(h){var hh=Math.floor(h),m=Math.round((h-hh)*60);return (hh%12||12)+':'+(m<10?'0':'')+m;}
+  function ap(h){return h>=12?'pm':'am';}
+
+  ORDER.forEach(function(d){
+    var b=document.createElement('button');b.type='button';b.className='chip';
+    b.textContent=NAMES[d].slice(0,3);b.setAttribute('aria-label',NAMES[d]);b.dataset.d=d;
+    b.addEventListener('click',function(){state.day=d;render();});
+    daysEl.appendChild(b);
+  });
+  document.querySelectorAll('.len').forEach(function(b){
+    b.addEventListener('click',function(){state.min=+b.dataset.min;state.price=+b.dataset.price;render();});
+  });
+  startEl.addEventListener('change',function(){state.start=+startEl.value;render(true);});
+
+  function render(keep){
+    var h=HOURS[state.day],len=state.min/60,last=h[1]-len,slots=[];
+    for(var t=h[0];t<=last+1e-9;t+=.5)slots.push(t);
+    if(state.start===null||state.start>last||state.start<h[0])state.start=Math.max(h[0],Math.min(15.5,last-1));
+    if(!keep){
+      startEl.innerHTML='';
+      slots.forEach(function(t){var o=document.createElement('option');o.value=t;o.textContent=hm(t)+' '+ap(t);startEl.appendChild(o);});
+    }
+    startEl.value=state.start;
+    daysEl.querySelectorAll('.chip').forEach(function(b){b.setAttribute('aria-pressed',+b.dataset.d===state.day?'true':'false');});
+    document.querySelectorAll('.len').forEach(function(b){b.setAttribute('aria-pressed',+b.dataset.min===state.min?'true':'false');});
+    var end=state.start+len;
+    document.getElementById('t-day').textContent=(state.day===today?'Today, ':'')+NAMES[state.day];
+    document.getElementById('t-time').textContent=hm(state.start)+(ap(state.start)!==ap(end)?' '+ap(state.start):'')+'–'+hm(end)+' '+ap(end);
+    document.getElementById('t-len').textContent=state.min+' min of shooting';
+    document.getElementById('t-price').innerHTML='$'+state.price+'<small>+HST</small>';
+    document.getElementById('t-hours').textContent=fmt(h[0])+ap(h[0])+'–'+fmt(h[1])+ap(h[1]);
+  }
+  render();
+
+  var tr=document.querySelector('#hours tr[data-d="'+today+'"]');if(tr)tr.className='today';
+
+  document.querySelectorAll('form').forEach(function(f){
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      var t=f.parentNode.querySelector('.thanks')||f.querySelector('.thanks');
+      if(t){t.hidden=false;}
+    });
+  });
+  document.querySelectorAll('[data-topic]').forEach(function(a){
+    a.addEventListener('click',function(){document.getElementById('topic').value=a.dataset.topic;});
+  });
+
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var net=document.getElementById('net');
+  if(!reduce&&'IntersectionObserver' in window){
+    new IntersectionObserver(function(es){es.forEach(function(e){net.classList.toggle('play',e.isIntersecting);});}).observe(net);
+    var els=document.querySelectorAll('.sec .head, .game, .extra, .reps .wrap > div, .party figure, .party > div, .q, details, .vcard, .close .wrap');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){
+      if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('rise','will-rise');io.observe(el);}
+    });
+  }
+})();
+</script>
+</body>
+</html>
