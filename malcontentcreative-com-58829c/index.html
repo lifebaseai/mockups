@@ -73,6 +73,9 @@ section{padding:96px 0}
 .grid figcaption b{font-weight:600}
 .grid figcaption span{color:var(--muted)}
 .more{margin-top:40px;display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;color:var(--muted);font-size:16px}
+.grid .head{display:block;margin:0;padding:0;border:0;align-self:center}
+.grid .head p{margin-top:20px}
+.grid .more{margin-top:32px}
 
 /* manifesto */
 .manifesto{background:var(--ink);color:#EDE6D8}
@@ -173,6 +176,7 @@ footer ul a:hover{color:var(--hot)}
   .hero .wrap,.manifesto .wrap,.brief .wrap,.faq .wrap{grid-template-columns:1fr;gap:40px}
   .grid{grid-template-columns:1fr;justify-items:start}
   .grid > figure{max-width:560px}
+  .grid .head{order:-1}
   .grid .stack{grid-template-columns:1fr 1fr;gap:24px}
 }
 @media (max-width:720px){
@@ -250,29 +254,19 @@ footer ul a:hover{color:var(--hot)}
 
   <section class="work" id="work" aria-labelledby="work-h">
     <div class="wrap">
-      <div class="head">
-        <h2 id="work-h">Drawn first.<br>Then built.</h2>
-        <p>Strong typography, memorable forms, and ideas that hold up on signs, labels, merch and print.</p>
-      </div>
       <div class="grid">
         <figure>
           <img src="https://images.squarespace-cdn.com/content/v1/5c390df296d4556dfc9762cf/9ba77e59-42e2-4c4f-bdef-b2a93f4cd009/malcontent-creative-type--typography-lettering-custom-font-victoria-bc-illustration-vancouver-island.jpg?format=1000w" width="878" height="878" loading="lazy" alt="“Cozy Skull” hand lettered in pencil on paper, with the guide lines still showing">
           <figcaption><b>Cozy Skull</b><span>Custom lettering, in pencil</span></figcaption>
         </figure>
-        <div class="stack">
-          <figure>
-            <img src="https://images.squarespace-cdn.com/content/v1/5c390df296d4556dfc9762cf/1773523332341-XUC9FN8J959RW26KB7NW/malcontent-creative-graphic-design-victoria-bc-logic-league-consulting-logo.jpg?format=500w" width="500" height="320" loading="lazy" alt="Logic League Consulting logo, a cluster of teal and orange hexagons, pressed into white card">
-            <figcaption><b>Logic League Consulting</b><span>Logo</span></figcaption>
-          </figure>
-          <figure>
-            <img src="https://images.squarespace-cdn.com/content/v1/5c390df296d4556dfc9762cf/1773523502461-2I9CIED5NS4UX7KF21IY/malcontent-creative-graphic-design-victoria-bc-lg-whittaker-logo-card-design.jpg?format=500w" width="500" height="338" loading="lazy" alt="L.G. Whittaker Instrument Repair business cards with an ornate letterpressed logo on black stock">
-            <figcaption><b>L.G. Whittaker Instrument Repair</b><span>Logo &amp; cards</span></figcaption>
-          </figure>
+        <div class="head">
+          <h2 id="work-h">Drawn first.<br>Then built.</h2>
+          <p>Strong typography, memorable forms, and ideas that hold up on signs, labels, merch and print.</p>
+          <div class="more">
+            <span>More of the work on</span>
+            <a class="link" href="https://www.instagram.com/malcontentcreative" target="_blank" rel="noopener">Instagram</a>
+          </div>
         </div>
-      </div>
-      <div class="more">
-        <span>More of the work on</span>
-        <a class="link" href="https://www.instagram.com/malcontentcreative" target="_blank" rel="noopener">Instagram</a>
       </div>
     </div>
   </section>
