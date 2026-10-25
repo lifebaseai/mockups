@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup hoylakesocial-com-42852f 1 bb9a3a1d -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hoylake Social Club | Your Community Club in Hoylake</title>
+<meta name="description" content="Hoylake Social Club, 11 Trinity Road, Hoylake. Bingo, snooker, live music and function rooms for your party. Open Tuesday to Saturday from 7pm.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#170d1a; --plum:#21132a; --plum2:#2c1a35; --line:rgba(212,160,23,.28);
+  --gold:#d4a017; --gold2:#e8bb3c; --red:#c41e3a; --lav:#b3a5c0; --cream:#f6eedd; --text:#efe7f2;
+  --serif:"DM Serif Display",Georgia,serif; --sans:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--text);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold2);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;margin:0;letter-spacing:-.005em}
+h2{font-size:clamp(34px,4.4vw,54px)}
+h2 em,h1 em{font-style:italic;color:var(--gold2)}
+p{margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.kicker{font:700 13px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold2);margin-bottom:18px;display:flex;align-items:center;gap:12px}
+.kicker:before{content:"";width:28px;height:1px;background:var(--gold)}
+.lede{color:var(--lav);font-size:18px;max-width:34em}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:12px;top:56px;z-index:50;background:var(--cream);color:var(--ink);padding:10px 14px}
+
+/* mockup banner */
+.mockbar{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:var(--cream);color:#2a1830;font:500 15px/1.3 var(--sans);text-align:center;border-bottom:1px solid #d9caa6}
+.mockbar a{color:#7a1023;text-decoration:underline;text-underline-offset:3px;font-weight:700}
+
+/* header */
+header.top{position:sticky;top:0;z-index:20;background:rgba(23,13,26,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid rgba(212,160,23,.18)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{width:42px;height:42px;flex:none}
+.brand b{font:400 21px/1 var(--serif);letter-spacing:.01em}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{text-decoration:none;font-size:15px;font-weight:500;color:var(--text);padding:12px 14px;border-radius:8px}
+.nav a:hover{color:var(--gold2)}
+.nav .call{border:1px solid var(--gold);color:var(--gold2);margin-left:8px}
+.nav .call:hover{background:var(--gold);color:var(--ink)}
+.nav .call .short{display:none}
+@media (max-width:760px){.nav .call .short{display:inline}}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:700 16px/1 var(--sans);text-decoration:none;border:0;cursor:pointer;transition:transform .2s ease,background .2s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-gold:hover{background:var(--gold2)}
+.btn-ghost{border:1px solid rgba(239,231,242,.45);color:#fff;background:rgba(23,13,26,.35)}
+.btn-ghost:hover{border-color:var(--gold2);color:var(--gold2)}
+.btn svg{width:18px;height:18px}
+
+/* hero */
+.hero{position:relative;min-height:min(780px,calc(100svh - 112px));display:flex;align-items:flex-end;overflow:hidden;background:#120a14}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:22% 40%}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(270deg,rgba(18,10,20,.94) 0%,rgba(18,10,20,.8) 36%,rgba(18,10,20,.05) 62%),linear-gradient(0deg,rgba(18,10,20,.7) 0%,rgba(18,10,20,0) 28%)}
+.hero-copy{margin-left:auto;max-width:600px}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-top:80px;padding-bottom:72px}
+.hero h1{font-size:clamp(44px,4.6vw,68px);text-shadow:0 2px 24px rgba(0,0,0,.4)}
+.hero .lede{color:#e6dcea;font-size:19px;margin-top:22px;max-width:30em}
+.hero .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.tonight{display:inline-flex;align-items:center;gap:12px;margin-bottom:26px;padding:10px 18px 10px 14px;border-radius:999px;background:rgba(23,13,26,.72);border:1px solid var(--line);font-size:15px;color:#f3ecf5}
+.tonight i{width:9px;height:9px;border-radius:50%;background:var(--gold2);box-shadow:0 0 0 4px rgba(232,187,60,.18);flex:none}
+.tonight.closed i{background:var(--lav);box-shadow:0 0 0 4px rgba(179,165,192,.18)}
+.tonight b{color:var(--gold2);font-weight:700}
+
+/* facts strip */
+.facts{border-bottom:1px solid rgba(212,160,23,.16);background:var(--plum)}
+.facts .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.fact{padding:30px 10px;text-align:center;border-left:1px solid rgba(212,160,23,.14)}
+.fact:first-child{border-left:0}
+.fact b{display:block;font:400 42px/1 var(--serif);color:var(--gold2)}
+.fact span{display:block;margin-top:8px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--lav)}
+
+section{padding:110px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:48px}
+.sec-head .lede{max-width:26em}
+
+/* week */
+.week{display:grid;grid-template-columns:repeat(7,1fr);border:1px solid rgba(212,160,23,.2);border-radius:18px;overflow:hidden;background:var(--plum)}
+.day{position:relative;padding:22px 18px 24px;border-left:1px solid rgba(212,160,23,.14);min-height:210px}
+.day:first-child{border-left:0}
+.day h3{font:700 13px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--lav)}
+.day .date{font:400 34px/1 var(--serif);margin:10px 0 16px;color:#fff}
+.day ul{list-style:none;margin:0;padding:0;font-size:15px;line-height:1.4}
+.day li{padding:7px 0;border-top:1px solid rgba(255,255,255,.08)}
+.day li strong{display:block;color:#fff;font-weight:700}
+.day li span{color:var(--lav);font-size:14px}
+.day li.star strong{color:var(--gold2)}
+.day.off{background:#1b1020}
+.day.off .date{color:#8d7f99}
+.day.off li{color:#a99bb5}
+.day.today{background:var(--plum2);box-shadow:inset 0 3px 0 var(--gold)}
+.day.today h3{color:var(--gold2)}
+.day .badge{position:absolute;top:18px;right:14px;font:700 11px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;background:var(--gold);color:var(--ink);padding:5px 8px;border-radius:999px}
+.week-note{margin-top:20px;color:var(--lav);font-size:15px}
+.week-note a{color:var(--gold2)}
+
+/* next up */
+.next{background:linear-gradient(180deg,var(--ink),var(--plum))}
+.next .wrap{display:grid;grid-template-columns:minmax(0,420px) 1fr;gap:80px;align-items:center}
+.poster{position:relative}
+.poster:before{content:"";position:absolute;inset:26px -26px -26px 26px;background:var(--red);border-radius:14px}
+.poster img{position:relative;border-radius:12px;width:100%;max-width:420px;height:auto;box-shadow:0 30px 60px rgba(0,0,0,.45)}
+.next dl{display:grid;grid-template-columns:auto 1fr;gap:14px 28px;margin:34px 0 36px;font-size:17px}
+.next dt{color:var(--lav);font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding-top:4px}
+.next dd{margin:0;color:#fff}
+.next dd b{font:400 26px/1 var(--serif);color:var(--gold2)}
+
+/* party planner */
+.party{background:var(--cream);color:#24152b}
+.party .kicker{color:#8a1328}
+.party .kicker:before{background:#8a1328}
+.party .lede{color:#5a4964}
+.party h2 em{color:var(--red)}
+.planner{display:grid;grid-template-columns:1fr 1.1fr;background:#fffaf0;border-radius:22px;box-shadow:0 1px 0 #e3d5b5,0 30px 70px -30px rgba(60,30,50,.35);overflow:hidden}
+.pl-in{padding:40px}
+.pl-out{padding:40px;background:var(--plum);color:var(--text)}
+.step{margin-bottom:30px}
+.step label.q,.step .q{display:block;font:700 13px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:#6b4f5f;margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;border:0;margin:0;padding:0}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips label{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;border:1px solid #d6c6a6;background:#fff;font-size:15px;font-weight:500;cursor:pointer;color:#2c1a35}
+.chips input:checked+label{background:#2c1a35;border-color:#2c1a35;color:#fff}
+.chips input:focus-visible+label{outline:3px solid var(--red);outline-offset:2px}
+.guests{display:flex;align-items:center;gap:18px}
+.guests output{font:400 52px/1 var(--serif);min-width:2.4em;color:#2c1a35}
+.guests small{display:block;font-size:14px;color:#6b5a72}
+input[type=range]{width:100%;height:44px;accent-color:var(--red);cursor:pointer}
+.out-head{font:400 30px/1.15 var(--serif);color:#fff;min-height:2.3em}
+.out-head em{color:var(--gold2)}
+.seats{display:grid;grid-template-columns:repeat(20,1fr);gap:5px;margin:24px 0 10px;max-width:440px}
+.seats i{aspect-ratio:1;border-radius:50%;background:rgba(179,165,192,.22);transition:background .25s ease,transform .25s ease}
+.seats i.on{background:var(--gold2)}
+.seat-key{font-size:14px;color:var(--lav)}
+.fit{margin-top:22px;padding:14px 16px;border-radius:12px;background:rgba(212,160,23,.1);border:1px solid var(--line);font-size:15px}
+.fit.over{background:rgba(196,30,58,.16);border-color:rgba(196,30,58,.5)}
+.incl-box{margin-top:34px;padding-top:28px;border-top:1px solid #e6d8bb}
+.incl-box .q{display:block;font:700 13px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:#6b4f5f;margin-bottom:14px}
+.incl{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;font-size:15px;color:#2c1a35}
+.incl li{display:flex;gap:10px;align-items:flex-start}
+.incl svg{width:18px;height:18px;flex:none;margin-top:3px;color:var(--red)}
+.price{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-top:26px;padding:18px 22px;border-radius:14px;background:#f3e7cc}
+.price span{color:#5a4964;font-size:15px;font-weight:500}
+.price b{font:400 44px/1 var(--serif);color:#8a1328}
+.price b small{font:500 15px var(--sans);color:#5a4964;margin-right:6px}
+form.enq{margin-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+form.enq .full{grid-column:1/-1}
+form.enq label{display:block;font-size:13px;color:var(--lav);margin-bottom:6px}
+form.enq input,form.enq textarea{width:100%;min-height:48px;padding:12px 14px;border-radius:10px;border:1px solid rgba(179,165,192,.4);background:#1a0f1f;color:#fff;font:400 16px/1.4 var(--sans)}
+form.enq textarea{min-height:84px;resize:vertical}
+form.enq .btn{width:100%}
+
+/* the club */
+.club .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:70px;align-items:center}
+.club-pics{position:relative;padding:0 0 70px 0}
+.club-pics .p1{border-radius:16px;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;max-width:640px}
+.club-pics .p2{position:absolute;right:-10px;bottom:0;width:42%;max-width:260px;height:auto;aspect-ratio:730/841;object-fit:cover;border-radius:12px;border:6px solid var(--ink);box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.nights{margin-top:34px;display:grid;gap:0}
+.night{display:grid;grid-template-columns:120px 1fr;gap:20px;padding:20px 0;border-top:1px solid rgba(212,160,23,.18)}
+.night:last-child{border-bottom:1px solid rgba(212,160,23,.18)}
+.night h3{font-size:24px;color:var(--gold2)}
+.night p{color:#ddd2e2;font-size:16px}
+.night p a{color:var(--gold2)}
+
+/* reviews */
+.reviews{background:var(--plum)}
+.rv{display:grid;grid-template-columns:1.3fr 1fr;gap:28px}
+.rv figure{margin:0;padding:34px;border-radius:18px;background:var(--plum2);border:1px solid rgba(212,160,23,.14)}
+.rv figure.big{grid-row:span 2;display:flex;flex-direction:column;justify-content:space-between;background:var(--red);border:0}
+.rv blockquote{margin:0;font:400 21px/1.4 var(--serif);color:#fff}
+.rv .big blockquote{font-size:clamp(26px,2.6vw,34px);line-height:1.25}
+.rv figcaption{margin-top:22px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--lav)}
+.rv .big figcaption{color:#ffe7ea}
+.stars{color:var(--gold2);letter-spacing:4px;font-size:16px;margin-bottom:14px}
+.rv .big .stars{color:#ffd76a}
+
+/* faq */
+.faq .wrap{display:grid;grid-template-columns:1fr 1.6fr;gap:70px}
+details{border-top:1px solid rgba(212,160,23,.2)}
+details:last-child{border-bottom:1px solid rgba(212,160,23,.2)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;min-height:44px;font:400 22px/1.25 var(--serif);color:#fff}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font:400 28px/1 var(--sans);color:var(--gold2);transition:transform .2s}
+details[open] summary:after{transform:rotate(45deg)}
+details p{padding:0 0 22px;color:#d6cbdc;max-width:36em}
+details p a{color:var(--gold2)}
+
+/* visit */
+.visit{background:var(--plum);padding-bottom:120px}
+.visit .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:70px;align-items:start}
+.visit h2{font-size:clamp(40px,5vw,64px)}
+.visit .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.card{background:var(--ink);border:1px solid rgba(212,160,23,.2);border-radius:18px;padding:32px}
+.card h3{font:700 13px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold2);margin-bottom:14px}
+.card + .card{margin-top:16px}
+.hours{width:100%;border-collapse:collapse;font-size:16px}
+.hours td{padding:9px 0;border-top:1px solid rgba(255,255,255,.08)}
+.hours td:last-child{text-align:right;color:#fff}
+.hours tr.now td{color:var(--gold2);font-weight:700}
+.card address{font-style:normal;font-size:17px;line-height:1.55;color:#fff}
+.card a.link{display:inline-flex;align-items:center;min-height:44px;color:var(--gold2);font-weight:700;text-decoration:none}
+.card a.link:hover{text-decoration:underline}
+.card .lines a{display:flex;align-items:center;min-height:44px;color:#fff;text-decoration:none;border-top:1px solid rgba(255,255,255,.08)}
+.card .lines a:hover{color:var(--gold2)}
+
+footer{padding:40px 0 48px;border-top:1px solid rgba(212,160,23,.18);color:var(--lav);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer .brand b{font-size:18px}
+footer a{color:var(--lav)}
+
+.callbar{display:none}
+
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:1000px){
+  .week{grid-template-columns:repeat(4,1fr)}
+  .day:nth-child(5){border-left:0}
+  .day{border-top:1px solid rgba(212,160,23,.14);min-height:0}
+  .next .wrap,.club .wrap,.faq .wrap,.visit .wrap{grid-template-columns:1fr;gap:56px}
+  .next .wrap{max-width:640px}
+  .planner{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  body{font-size:16px;padding-bottom:68px}
+  .wrap{padding:0 20px}
+  .nav a:not(.call){display:none}
+  .nav .call{margin:0;padding:12px 16px}
+  .top .wrap{height:62px}
+  .brand svg{width:36px;height:36px}
+  .brand b{font-size:19px}
+  .hero{display:block;min-height:0;background:var(--ink)}
+  .hero img{position:relative;height:310px;object-position:30% 55%}
+  .hero:after{bottom:auto;height:310px;background:linear-gradient(0deg,var(--ink) 0%,rgba(23,13,26,0) 35%)}
+  .hero-copy{margin-left:0;max-width:none}
+  .hero .wrap{margin-top:-30px;padding-top:0;padding-bottom:48px}
+  .hero h1{font-size:44px}
+  .brand b{white-space:nowrap}
+  .nav .call .num{display:none}
+  .hero .lede{font-size:17px}
+  .hero .acts .btn{flex:1 1 100%}
+  .tonight{font-size:14px;border-radius:14px;align-items:flex-start}
+  .tonight i{margin-top:6px}
+  .facts .wrap{grid-template-columns:1fr 1fr;padding:0}
+  .fact{padding:22px 8px;border-top:1px solid rgba(212,160,23,.14)}
+  .fact:nth-child(3){border-left:0}
+  .fact b{font-size:34px}
+  .fact span{font-size:12px}
+  section{padding:76px 0}
+  .sec-head{display:block;margin-bottom:30px}
+  .sec-head .lede{margin-top:16px}
+  .week{grid-template-columns:1fr;border-radius:14px}
+  .day{display:grid;grid-template-columns:78px 1fr;gap:4px 14px;padding:16px 16px;border-left:0;min-height:0}
+  .day h3{grid-column:1;align-self:end}
+  .day .date{grid-column:1;grid-row:2;margin:0;font-size:30px}
+  .day ul{grid-column:2;grid-row:1/3}
+  .day li:first-child{border-top:0;padding-top:0}
+  .day .badge{position:static;grid-column:1;grid-row:3;justify-self:start;margin-top:6px}
+  .day.off{display:none}
+  .day.off.keep{display:grid}
+  .poster:before{inset:16px -12px -16px 16px}
+  .poster{margin-right:12px}
+  .next dl{grid-template-columns:1fr;gap:4px}
+  .next dd{margin-bottom:12px}
+  .pl-in,.pl-out{padding:26px 20px}
+  .seats{gap:4px}
+  .incl{grid-template-columns:1fr}
+  form.enq{grid-template-columns:1fr}
+  .out-head{font-size:26px}
+  .price b{font-size:38px}
+  .club-pics{padding-bottom:50px}
+  .club-pics .p2{right:-6px;width:44%;border-width:4px}
+  .night{grid-template-columns:1fr;gap:6px}
+  .rv{grid-template-columns:1fr}
+  .rv figure{padding:26px}
+  summary{font-size:19px}
+  .card{padding:24px}
+  .visit .acts .btn{flex:1 1 100%}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:rgba(23,13,26,.96);border-top:1px solid rgba(212,160,23,.3)}
+  .callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none}
+  .callbar .c1{background:var(--gold);color:var(--ink)}
+  .callbar .c2{border:1px solid rgba(239,231,242,.4);color:#fff}
+  .callbar svg{width:17px;height:17px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*:before,*:after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mockbar" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="hsc" viewBox="0 0 48 48"><path d="M24 2 43 13v22L24 46 5 35V13z" fill="#c41e3a"/><path d="M24 6.5 39.2 15.3v17.4L24 41.5 8.8 32.7V15.3z" fill="none" stroke="#d4a017" stroke-width="1.2"/><text x="24" y="29.5" text-anchor="middle" font-family="DM Serif Display,Georgia,serif" font-size="14.5" fill="#fff4d6">HSC</text></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></symbol>
+  <symbol id="tick" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#main" aria-label="Hoylake Social Club, back to top"><svg aria-hidden="true"><use href="#hsc"/></svg><b>Hoylake Social Club</b></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#week">What's on</a>
+      <a href="#party">Room hire</a>
+      <a href="#club">Snooker &amp; bingo</a>
+      <a href="#visit">Find us</a>
+      <a class="call" href="tel:01516323035" aria-label="Call 0151 632 3035"><span class="num">0151 632 3035</span><span class="short">Call</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-h" style="padding:0">
+    <img src="https://wjsermrx.website.one/media/2026/08/Club20at20night.jpg" width="1536" height="1024" alt="Hoylake Social Club at dusk, the sign lit and festoon lights along the building" fetchpriority="high">
+    <div class="wrap"><div class="hero-copy">
+      <p class="tonight" id="tonight"><i></i><span id="tonight-txt">Open <b>Tuesday to Saturday from 7pm</b>. Bingo every Tuesday from 8pm.</span></p>
+      <h1 id="hero-h">A warm welcome, and a place to call <em>your own</em>.</h1>
+      <p class="lede">Live music, Tuesday bingo, two match-size snooker tables and function rooms for your big day. 11 Trinity Road, Hoylake.</p>
+      <div class="acts">
+        <a class="btn btn-gold" href="#party">Plan your party</a>
+        <a class="btn btn-ghost" href="tel:01516323035"><svg aria-hidden="true"><use href="#phone"/></svg>Call 0151 632 3035</a>
+      </div>
+    </div></div>
+  </section>
+
+  <div class="facts" role="list" aria-label="The club in numbers">
+    <div class="wrap">
+      <div class="fact" role="listitem"><b>140</b><span>Seated capacity</span></div>
+      <div class="fact" role="listitem"><b>50</b><span>Lounge capacity</span></div>
+      <div class="fact" role="listitem"><b>2</b><span>Snooker tables</span></div>
+      <div class="fact" role="listitem"><b>£75</b><span>Room hire from</span></div>
+    </div>
+  </div>
+
+  <section id="week" aria-labelledby="week-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="kicker">This week at the club</p><h2 id="week-h">Something to look <em>forward to</em>.</h2></div>
+        <p class="lede">Doors open at 7pm, Tuesday to Saturday. Live music acts, tribute nights and themed evenings run throughout the year.</p>
+      </div>
+      <div class="week" id="weekgrid">
+        <div class="day" data-dow="2"><h3>Tue</h3><p class="date">27</p><ul><li class="star"><strong>Bingo, 8pm</strong><span>Light-hearted, cash prizes</span></li><li><strong>Open 7pm – late</strong><span>Snooker off tonight</span></li></ul></div>
+        <div class="day" data-dow="3"><h3>Wed</h3><p class="date">28</p><ul><li><strong>Open 7pm – late</strong><span>Snooker tables open</span></li></ul></div>
+        <div class="day" data-dow="4"><h3>Thu</h3><p class="date">29</p><ul><li><strong>Open 7pm – late</strong><span>Snooker tables open</span></li></ul></div>
+        <div class="day" data-dow="5"><h3>Fri</h3><p class="date">30</p><ul><li><strong>Open 7pm – late</strong><span>Snooker tables open</span></li></ul></div>
+        <div class="day" data-dow="6"><h3>Sat</h3><p class="date">31</p><ul><li class="star party-li"><strong>Halloween Party</strong><span>12 – 4pm, family fun</span></li><li><strong>Open 7pm – late</strong><span>Snooker tables open</span></li></ul></div>
+        <div class="day off" data-dow="0"><h3>Sun</h3><p class="date">1</p><ul><li>Closed</li></ul></div>
+        <div class="day off" data-dow="1"><h3>Mon</h3><p class="date">2</p><ul><li>Closed</li></ul></div>
+      </div>
+      <p class="week-note">Live acts are announced first on <a href="https://www.facebook.com/hoylakesocialclub" target="_blank" rel="noopener">our Facebook page</a>.</p>
+    </div>
+  </section>
+
+  <section class="next" id="next" aria-labelledby="next-h">
+    <div class="wrap">
+      <div class="poster"><img src="https://wjsermrx.website.one/media/2026/10/Halloween.png" width="869" height="1302" loading="lazy" alt="Poster: Halloween Party at Hoylake Social Club, Saturday 31st October, 12 to 4pm, adults £5, children £5, food, games, disco, best fancy dress for children"></div>
+      <div>
+        <p class="kicker">Next up</p>
+        <h2 id="next-h">Halloween Party. <em>Spooky fun for everyone.</em></h2>
+        <dl>
+          <dt>When</dt><dd>Saturday 31st October, 12 – 4pm</dd>
+          <dt>Tickets</dt><dd><b>£5</b> adults &nbsp;·&nbsp; <b>£5</b> children</dd>
+          <dt>On the day</dt><dd>Food, games, a disco, and a prize for the best fancy dress for children.</dd>
+        </dl>
+        <a class="btn btn-gold" href="tel:01516323035"><svg aria-hidden="true"><use href="#phone"/></svg>Call the club</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="party" id="party" aria-labelledby="party-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="kicker">Function rooms</p><h2 id="party-h">Your special occasion, <em>sorted</em>.</h2></div>
+        <p class="lede">Birthday, anniversary, wedding reception or any other do. Tell us the size of your party and see how it fits.</p>
+      </div>
+      <div class="planner">
+        <div class="pl-in">
+          <div class="step">
+            <fieldset class="chips"><legend class="q">The occasion</legend>
+              <input type="radio" name="occ" id="o1" value="birthday" checked><label for="o1">Birthday</label>
+              <input type="radio" name="occ" id="o2" value="anniversary"><label for="o2">Anniversary</label>
+              <input type="radio" name="occ" id="o3" value="wedding reception"><label for="o3">Wedding reception</label>
+              <input type="radio" name="occ" id="o4" value="christening"><label for="o4">Christening</label>
+              <input type="radio" name="occ" id="o5" value="party"><label for="o5">Something else</label>
+            </fieldset>
+          </div>
+          <div class="step">
+            <label class="q" for="g">How many guests</label>
+            <div class="guests"><output id="gout" for="g">70</output><div style="flex:1"><input type="range" id="g" min="10" max="180" step="5" value="70" aria-describedby="gout"><small>Drag to set your guest count</small></div></div>
+          </div>
+          <div class="step" style="margin-bottom:0">
+            <fieldset class="chips"><legend class="q">Food</legend>
+              <input type="radio" name="food" id="f1" value="own" checked><label for="f1">We'll bring our own</label>
+              <input type="radio" name="food" id="f2" value="talk"><label for="f2">Not sure yet</label>
+            </fieldset>
+          </div>
+          <div class="incl-box">
+            <p class="q">With your room</p>
+            <ul class="incl">
+              <li><svg aria-hidden="true"><use href="#tick"/></svg>Exclusive bar access</li>
+              <li><svg aria-hidden="true"><use href="#tick"/></svg>PA system included</li>
+              <li><svg aria-hidden="true"><use href="#tick"/></svg>Dance floor available</li>
+              <li><svg aria-hidden="true"><use href="#tick"/></svg>Off-road parking</li>
+              <li id="foodli"><svg aria-hidden="true"><use href="#tick"/></svg>Own catering welcome</li>
+            </ul>
+            <div class="price"><span>Room hire</span><b><small>from</small>£75</b></div>
+          </div>
+        </div>
+        <div class="pl-out" aria-live="polite">
+          <p class="out-head" id="ohead">A birthday for <em>70 guests</em>: plenty of room.</p>
+          <div class="seats" id="seats" aria-hidden="true"></div>
+          <p class="seat-key">Each dot is a seat: 140 seated in all.</p>
+          <p class="fit" id="fit">Your party fills about half of the 140 seats.</p>
+          <form class="enq" id="enq" novalidate>
+            <div><label for="n">Your name</label><input id="n" name="name" autocomplete="name"></div>
+            <div><label for="t">Phone</label><input id="t" name="tel" type="tel" autocomplete="tel"></div>
+            <div class="full"><label for="d">Date you have in mind</label><input id="d" name="date" type="date"></div>
+            <div class="full"><label for="m">Your enquiry</label><textarea id="m" name="msg">Hello, we'd like to hire a room for a birthday, about 70 guests. We'll bring our own food.</textarea></div>
+            <div class="full"><a class="btn btn-gold" id="send" href="mailto:hoylakesocial2025@gmail.com?subject=Function%20room%20enquiry">Send enquiry</a></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="club" id="club" aria-labelledby="club-h">
+    <div class="wrap">
+      <div class="club-pics">
+        <img class="p1" src="https://wjsermrx.website.one/media/2026/08/6470.jpg" width="2040" height="1536" loading="lazy" alt="One of the two full match-size snooker tables at the club">
+        <img class="p2" src="https://wjsermrx.website.one/media/2026/08/Lounge.jpg" width="730" height="841" loading="lazy" alt="The lounge, with round tables and armchairs">
+      </div>
+      <div>
+        <p class="kicker">Welcome to the club</p>
+        <h2 id="club-h">Warm atmosphere, <em>friendly faces</em>.</h2>
+        <p class="lede" style="margin-top:20px">At the heart of the Hoylake community for years, with a welcoming space for everyone.</p>
+        <div class="nights">
+          <div class="night"><h3>Bingo</h3><p>Every Tuesday from 8pm. Light-hearted, with cash prizes.</p></div>
+          <div class="night"><h3>Snooker</h3><p>Two full match-size tables, open during opening hours except Tuesday evenings. Contact Andy Thornton to book a table.</p></div>
+          <div class="night"><h3>Live music</h3><p>Live acts, tribute nights and themed evenings throughout the year. Dates go up on <a href="https://www.facebook.com/hoylakesocialclub" target="_blank" rel="noopener">Facebook</a>.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews" aria-labelledby="rv-h">
+    <div class="wrap">
+      <div class="sec-head"><div><p class="kicker">What people say</p><h2 id="rv-h">Loved by <em>the Hoylake community</em>.</h2></div></div>
+      <div class="rv">
+        <figure class="big"><div><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“We hired the big room for my mum’s 70th birthday and it was absolutely perfect. The staff were so helpful and the room looked wonderful. Will definitely be back!”</blockquote></div><figcaption>Sarah M., Hoylake</figcaption></figure>
+        <figure><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“Tuesday bingo nights are brilliant fun. Such a friendly crowd and great cash prizes. It’s become our regular weekly outing!”</blockquote><figcaption>Dave &amp; Carol T., West Kirby</figcaption></figure>
+        <figure><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“Fantastic community club. The snooker room is brilliant and the atmosphere is always warm and welcoming. Proud to be a regular!”</blockquote><figcaption>John B., Hoylake</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" aria-labelledby="faq-h">
+    <div class="wrap">
+      <div><p class="kicker">Good to know</p><h2 id="faq-h">Your questions, <em>answered</em>.</h2></div>
+      <div>
+        <details open><summary>When are you open?</summary><p>Tuesday to Saturday from 7pm until late. We're closed on Sundays and Mondays.</p></details>
+        <details><summary>How much is room hire?</summary><p>Room hire starts from £75. <a href="tel:01516323035">Call 0151 632 3035</a> with your date and numbers.</p></details>
+        <details><summary>How many people can we fit?</summary><p>Up to 140 seated, and the lounge holds 50.</p></details>
+        <details><summary>Can we bring our own food?</summary><p>Yes. Own catering is welcome, and the PA system is included.</p></details>
+        <details><summary>Can I play snooker on a Tuesday?</summary><p>The tables are open during opening hours except Tuesday evenings, when it's bingo. Contact Andy Thornton to book a table.</p></details>
+        <details><summary>Is there parking?</summary><p>Yes, safe off-road parking at the club on Trinity Road.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit" aria-labelledby="visit-h">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Ready to visit or book a room?</p>
+        <h2 id="visit-h">See you on <em>Trinity Road</em>.</h2>
+        <p class="lede" style="margin-top:20px">Call us or drop us an email. We'd love to hear from you.</p>
+        <div class="acts">
+          <a class="btn btn-gold" href="#party">Plan your party</a>
+          <a class="btn btn-ghost" href="tel:01516323035"><svg aria-hidden="true"><use href="#phone"/></svg>Call 0151 632 3035</a>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Opening hours</h3>
+          <table class="hours" id="hours">
+            <tr data-d="2,3,4,5"><td>Tuesday to Friday</td><td>7pm – late</td></tr>
+            <tr data-d="6"><td>Saturday</td><td>7pm – late</td></tr>
+            <tr data-d="0,1"><td>Sunday &amp; Monday</td><td>Closed</td></tr>
+          </table>
+        </div>
+        <div class="card">
+          <h3>Find us</h3>
+          <address>11 Trinity Road<br>Hoylake, Wirral<br>CH47 2BR</address>
+          <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=11%20Trinity%20Road%2C%20Hoylake%2C%20Wirral%20CH47%202BR" target="_blank" rel="noopener">Open in Google Maps →</a>
+          <div class="lines">
+            <a href="tel:01516323035">0151 632 3035</a>
+            <a href="mailto:hoylakesocial2025@gmail.com">hoylakesocial2025@gmail.com</a>
+            <a href="https://www.facebook.com/hoylakesocialclub" target="_blank" rel="noopener">Facebook</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="brand"><svg aria-hidden="true" style="width:32px;height:32px"><use href="#hsc"/></svg><b>Hoylake Social Club</b></span>
+    <span>© 2026 Hoylake Social Club · 11 Trinity Road, Hoylake, CH47 2BR</span>
+    <span>Mockup made for Hoylake Social Club by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></span>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick contact">
+  <a class="c1" href="tel:01516323035"><svg aria-hidden="true"><use href="#phone"/></svg>Call the club</a>
+  <a class="c2" href="#party">Plan your party</a>
+</nav>
+
+<script>
+(function(){
+  // Tonight line, this week's dates, hours highlight
+  var now=new Date(), dow=now.getDay();
+  var names=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  var t=document.getElementById('tonight'), tt=document.getElementById('tonight-txt');
+  if(dow===0||dow===1){t.classList.add('closed');tt.innerHTML='Closed today. Open again <b>Tuesday from 7pm</b>, bingo at 8pm.';}
+  else if(dow===2){tt.innerHTML='Open tonight <b>from 7pm</b>. Bingo starts at 8pm.';}
+  else{tt.innerHTML='Open tonight <b>from 7pm</b>. Snooker tables open.';}
+
+  // dates for the club week: Tue–Sat this week; on Sun/Mon the week starts today
+  var first=(dow===0||dow===1)?dow:2;
+  var start=new Date(now.getFullYear(),now.getMonth(),now.getDate()+(first-dow));
+  var party=new Date(2026,9,31), grid=document.getElementById('weekgrid');
+  var pos=function(el){return (+el.dataset.dow-first+7)%7;};
+  [].slice.call(grid.querySelectorAll('.day')).sort(function(a,b){return pos(a)-pos(b);}).forEach(function(el){
+    var d=+el.dataset.dow, dt=new Date(start); dt.setDate(start.getDate()+pos(el));
+    grid.appendChild(el);
+    el.querySelector('.date').textContent=dt.getDate();
+    if(d===dow){el.classList.add('today');el.classList.add('keep');var b=document.createElement('span');b.className='badge';b.textContent='Today';el.appendChild(b);}
+    var pl=el.querySelector('.party-li');
+    if(pl&&dt.getTime()!==party.getTime()) pl.remove();
+  });
+  if(now>new Date(2026,9,31,16)){var nx=document.getElementById('next');if(nx)nx.remove();}
+  document.querySelectorAll('#hours tr').forEach(function(r){if(r.dataset.d.split(',').indexOf(String(dow))>-1)r.classList.add('now');});
+
+  // Party planner
+  var seats=document.getElementById('seats'), g=document.getElementById('g'), gout=document.getElementById('gout');
+  for(var i=0;i<140;i++){seats.appendChild(document.createElement('i'));}
+  var dots=seats.children, msg=document.getElementById('m'), touched=false;
+  msg.addEventListener('input',function(){touched=true;});
+  function pick(n){var e=document.querySelector('input[name='+n+']:checked');return e?e.value:'';}
+  function update(){
+    var n=+g.value, occ=pick('occ'), food=pick('food');
+    gout.textContent=n;
+    for(var i=0;i<dots.length;i++) dots[i].classList.toggle('on',i<n);
+    var label={'birthday':'A birthday','anniversary':'An anniversary','wedding reception':'A wedding reception','christening':'A christening','party':'Your party'}[occ];
+    var head=document.getElementById('ohead'), fit=document.getElementById('fit');
+    fit.classList.toggle('over',n>140);
+    if(n>140){head.innerHTML=label+' for <em>'+n+' guests</em>: a big one.';fit.textContent='That is more than our 140 seats. Give us a call and we can talk it through.';}
+    else if(n<=50){head.innerHTML=label+' for <em>'+n+' guests</em>: plenty of room.';fit.textContent='A smaller gathering. The lounge holds 50, with 140 seated in all.';}
+    else{var share=n<=70?'about half':n<=105?'most':'nearly all';head.innerHTML=label+' for <em>'+n+' guests</em>: it fits.';fit.textContent='Your party fills '+share+' of the 140 seats.';}
+    document.getElementById('foodli').lastChild.textContent=food==='own'?'Own catering welcome':'Own catering welcome, if you want it';
+    if(!touched) msg.value="Hello, we'd like to hire a room for "+(occ==='party'?'a party':'a '+occ)+", about "+n+" guests."+(food==='own'?" We'll bring our own food.":"");
+  }
+  g.addEventListener('input',update);
+  document.querySelectorAll('.planner input[type=radio]').forEach(function(r){r.addEventListener('change',update);});
+  update();
+  // Send enquiry opens an email to the club with the details filled in
+  var enq=document.getElementById('enq'), send=document.getElementById('send');
+  function mail(){
+    var v=function(id){return document.getElementById(id).value.trim();};
+    var body='Name: '+v('n')+'\nPhone: '+v('t')+'\nDate: '+v('d')+'\n\n'+v('m');
+    send.href='mailto:hoylakesocial2025@gmail.com?subject='+encodeURIComponent('Function room enquiry')+'&body='+encodeURIComponent(body);
+  }
+  enq.addEventListener('input',mail);
+  g.addEventListener('input',mail);
+  document.querySelectorAll('.planner input[type=radio]').forEach(function(r){r.addEventListener('change',mail);});
+  enq.addEventListener('submit',function(e){e.preventDefault();mail();send.click();});
+  mail();
+
+  // Gentle rise for things below the first screen
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window)) return;
+  var vh=window.innerHeight, els=document.querySelectorAll('.sec-head, .week, .poster, .next .wrap > div:last-child, .planner, .club-pics, .nights, .rv figure, .faq details, .card');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(el){if(el.getBoundingClientRect().top>vh){el.classList.add('rise','will-rise');io.observe(el);}});
+})();
+</script>
+</body>
+</html>
