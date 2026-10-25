@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup ryanwaneka-com-ce4396 1 985d6173 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ryan Waneka | Commercial &amp; Event Photographer, Del Mar, California</title>
+<meta name="description" content="Ryan Waneka is a commercial and event photographer based in Del Mar, California, between San Diego and LA, available for travel worldwide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#27260c;          /* their brand colour */
+  --ink-soft:#4a4934;
+  --muted:#5f5e4c;
+  --page:#ecebe6;         /* the warm grey of their current site */
+  --paper:#f6f5f1;
+  --line:#d4d2c8;
+  --warm:#a8551f;         /* golden-hour accent from the work */
+  --sans:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:"Instrument Serif",Georgia,serif;
+  --wrap:1320px;
+  --pad:clamp(20px,4vw,56px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--warm);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:#fff;padding:10px 14px;z-index:50;text-decoration:none}
+.skip:focus{top:52px}
+
+/* mockup banner */
+.mock{background:var(--ink);color:#efeee6;min-height:44px;display:flex;align-items:center;justify-content:center;padding:0 16px;font:500 15px/1.2 var(--sans);text-align:center;white-space:nowrap}
+.mock a{color:#fff;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(236,235,230,.92);backdrop-filter:saturate(1.2) blur(10px);-webkit-backdrop-filter:saturate(1.2) blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
+.top.scrolled{border-bottom-color:var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+.logo{display:flex;align-items:center;min-height:44px}
+.logo img{width:200px;height:auto}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{font:600 12px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:16px 12px;color:var(--ink-soft)}
+.nav a:hover{color:var(--ink)}
+.nav .cta{background:var(--ink);color:#f6f5f1;border-radius:999px;padding:14px 20px;margin-left:8px}
+.nav .cta:hover{background:#3a391a;color:#fff}
+
+/* hero */
+.hero{padding:clamp(32px,5vw,64px) 0 clamp(56px,7vw,96px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,4vw,64px);align-items:end}
+.eyebrow{font:600 12px/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}
+.eyebrow span{display:inline-block;width:28px;height:1px;background:currentColor;vertical-align:middle;margin:0 10px 2px}
+h1{font:600 clamp(42px,5.4vw,80px)/.98 var(--sans);letter-spacing:-.035em;margin:0 0 26px}
+h1 em,h2 em{font:italic 400 1.08em/1 var(--serif);letter-spacing:-.01em}
+.lede{font-size:clamp(17px,1.35vw,19px);color:var(--ink-soft);max-width:30em;margin:0 0 34px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:600 15px/1 var(--sans);text-decoration:none;border:1.5px solid var(--ink);transition:background .2s,color .2s,transform .2s;cursor:pointer}
+.btn.solid{background:var(--ink);color:#f6f5f1}
+.btn.solid:hover{background:#3a391a;transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#f6f5f1}
+.btn svg{width:16px;height:16px}
+.hero-photo{margin:0;position:relative}
+.hero-photo img{width:100%;max-width:1500px;aspect-ratio:2500/1663;object-fit:cover;border-radius:3px;box-shadow:0 30px 60px -30px rgba(39,38,12,.45)}
+.credit{display:flex;justify-content:space-between;gap:12px;font:500 12px/1.4 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:12px}
+.credit b{color:var(--ink);font-weight:600}
+
+/* clients */
+.clients{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:clamp(36px,5vw,56px) 0}
+.clients .wrap{display:grid;grid-template-columns:200px 1fr;gap:32px;align-items:baseline}
+.label{font:600 12px/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0}
+.clients ul{list-style:none;margin:0;padding:0;font:500 clamp(19px,1.9vw,26px)/1.5 var(--sans);letter-spacing:-.01em}
+.clients ul{display:flex;flex-wrap:wrap}
+.clients li{white-space:nowrap}
+.clients li:not(:last-child)::after{content:"/";color:#a3a192;margin:0 .45em;font-weight:400}
+.clients li.more{font:italic 400 1.1em var(--serif);color:var(--muted)}
+
+/* work */
+.work{padding:clamp(72px,9vw,128px) 0 clamp(56px,7vw,96px)}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:clamp(36px,5vw,64px)}
+h2{font:600 clamp(34px,4vw,56px)/1 var(--sans);letter-spacing:-.03em;margin:10px 0 0}
+.sec-head p{max-width:24em;color:var(--ink-soft);margin:0}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,620px));justify-content:center;gap:0 clamp(24px,4vw,64px)}
+.col{display:flex;flex-direction:column;gap:clamp(44px,5vw,72px)}
+.col.b{padding-top:clamp(60px,9vw,140px)}
+.shot{margin:0}
+.shot .frame{overflow:hidden;border-radius:3px;background:#dcdad2}
+.shot img{width:100%;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.shot:hover img{transform:scale(1.025)}
+.shot figcaption{display:flex;gap:14px;align-items:baseline;margin-top:14px;font-size:15px}
+.shot .n{font:500 12px/1 var(--sans);color:var(--muted);letter-spacing:.08em;min-width:22px}
+.shot .c{font-weight:600;letter-spacing:-.005em}
+.shot .w{color:var(--muted);margin-left:auto;text-align:right;font-size:14px}
+.note{background:var(--paper);border-radius:3px;padding:clamp(28px,3.5vw,44px)}
+.note blockquote{margin:0;font:italic 400 clamp(26px,2.6vw,36px)/1.15 var(--serif);letter-spacing:-.005em}
+.note p{margin:18px 0 0;font:600 12px/1.4 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.more-link{display:inline-flex;align-items:center;gap:10px;font-weight:600;text-decoration:none;border-bottom:1.5px solid var(--ink);padding:12px 0 6px;align-self:flex-start;min-height:44px}
+.more-link:hover{color:var(--warm);border-color:var(--warm)}
+.more p{margin:0 0 6px;color:var(--muted);font-size:15px;line-height:1.5;max-width:34ch}
+.more p a{color:var(--ink-soft);text-underline-offset:3px}
+.more p a:hover{color:var(--warm)}
+.more-links{display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px}
+.more-link.quiet{border-bottom-color:transparent;color:var(--muted)}
+.more-link.quiet:hover{color:var(--warm)}
+
+/* about */
+.about{background:var(--ink);color:#e9e8df;padding:clamp(72px,9vw,128px) 0}
+.about .label{color:#b9b7a6}
+.about h2{color:#fff}
+.about-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(32px,6vw,96px);margin-top:8px}
+.about-copy p{margin:0 0 18px;color:#d9d7cb;max-width:34em}
+.about-copy p:first-child{font-size:clamp(19px,1.6vw,22px);color:#fff;line-height:1.5}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:#4a4934;border:1px solid #4a4934;margin-top:40px;border-radius:3px;overflow:hidden}
+.fact{background:var(--ink);padding:22px 22px 24px}
+.fact strong{display:block;font:600 clamp(26px,2.4vw,34px)/1 var(--sans);letter-spacing:-.02em;color:#fff;margin-bottom:8px}
+.fact strong em{font:italic 400 1.1em/1 var(--serif)}
+.fact span{font-size:14px;color:#c4c2b3}
+.stack h3{font:600 12px/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:#b9b7a6;margin:0 0 14px}
+.stack + .stack{margin-top:40px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.tags li{border:1px solid #5d5c45;border-radius:999px;padding:8px 14px;font-size:15px;color:#f1f0e8}
+.places{font:italic 400 clamp(24px,2.3vw,32px)/1.3 var(--serif);color:#fff;margin:0}
+.places span{white-space:nowrap}
+.places span:not(:last-child)::after{content:"·";color:#9e9c88;font-style:normal;font-family:var(--sans);font-size:.6em;vertical-align:middle;margin:0 .55em}
+
+/* faq */
+.faq{padding:clamp(72px,9vw,120px) 0 clamp(40px,5vw,64px)}
+.faq-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(32px,6vw,96px)}
+details{border-top:1px solid var(--line)}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;min-height:44px;font:600 clamp(18px,1.6vw,21px)/1.3 var(--sans);letter-spacing:-.01em}
+summary::-webkit-details-marker{display:none}
+summary i{flex:none;width:28px;height:28px;border:1.5px solid var(--ink);border-radius:50%;position:relative;transition:transform .3s}
+summary i::before,summary i::after{content:"";position:absolute;left:50%;top:50%;width:10px;height:1.5px;background:var(--ink);transform:translate(-50%,-50%)}
+summary i::after{transform:translate(-50%,-50%) rotate(90deg);transition:opacity .2s}
+details[open] summary i::after{opacity:0}
+details p{margin:-6px 0 24px;color:var(--ink-soft);max-width:36em}
+
+/* brief */
+.brief{padding:clamp(56px,7vw,96px) 0 clamp(80px,10vw,140px)}
+.brief-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,4vw,56px);align-items:start;margin-top:clamp(32px,4vw,48px)}
+form{background:var(--paper);border-radius:4px;padding:clamp(22px,3vw,40px);box-shadow:0 1px 0 var(--line)}
+fieldset{border:0;padding:0;margin:0 0 28px}
+legend,.fl{display:block;font:600 12px/1.4 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 12px;padding:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.chip span{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border:1.5px solid #c9c7bb;border-radius:999px;font-size:15px;font-weight:500;background:#fff;transition:all .2s;cursor:pointer}
+.chip input:checked + span{background:var(--ink);border-color:var(--ink);color:#f6f5f1}
+.chip input:focus-visible + span{outline:3px solid var(--warm);outline-offset:2px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
+.field{display:flex;flex-direction:column}
+.field input,.field select,.field textarea{font:400 16px/1.4 var(--sans);color:var(--ink);background:#fff;border:1.5px solid #c9c7bb;border-radius:6px;padding:12px 14px;min-height:48px;width:100%}
+.field textarea{min-height:96px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 3px rgba(168,85,31,.35)}
+.form-foot{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:8px}
+.thanks{font-weight:600;color:var(--ink);margin:0}
+.card{position:sticky;top:100px;background:var(--ink);color:#e9e8df;border-radius:4px;padding:clamp(24px,3vw,36px);box-shadow:0 30px 60px -30px rgba(39,38,12,.6)}
+.card .top-row{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #4a4934;padding-bottom:16px;margin-bottom:22px}
+.card .top-row img{width:110px;filter:brightness(0) invert(1);opacity:.9}
+.card .label{color:#b9b7a6}
+.card .sentence{font:italic 400 clamp(26px,2.4vw,34px)/1.2 var(--serif);color:#fff;margin:0 0 22px;min-height:3.6em}
+.card .sentence b{font-style:italic;font-weight:400;color:#f0c49b}
+.card dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 18px;font-size:15px}
+.card dt{color:#b9b7a6}
+.card dd{margin:0;color:#fff}
+.card .aside{margin:22px 0 0;padding-top:18px;border-top:1px solid #4a4934;font-size:15px;color:#d9d7cb}
+
+/* footer */
+footer{background:#1d1c08;color:#cfcdbf;padding:56px 0 40px}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.foot img{width:150px;filter:brightness(0) invert(1);opacity:.85}
+.social{display:flex;gap:6px;list-style:none;margin:0;padding:0}
+.social a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 12px;font:600 12px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:#efeee6}
+.social a:hover{color:#f0c49b}
+.made{margin:36px 0 0;padding-top:20px;border-top:1px solid #3a391a;font-size:14px;color:#b9b7a6}
+.made a{color:#efeee6}
+
+/* rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+
+@media (max-width:980px){
+  .hero .wrap{grid-template-columns:minmax(0,1fr)}
+  .about-grid,.faq-grid,.brief-grid{grid-template-columns:minmax(0,1fr)}
+  .card{position:static}
+  .clients .wrap{grid-template-columns:minmax(0,1fr);gap:14px}
+}
+@media (max-width:720px){
+  body{font-size:16px}
+  .mock{font-size:14px}
+  .top .wrap{height:64px}
+  .logo img{width:132px}
+  .nav a:not(.cta){display:none}
+  .nav .cta{padding:13px 16px;margin:0}
+  .hero{padding-top:28px}
+  h1{font-size:clamp(40px,11.5vw,56px)}
+  .eyebrow span{display:none}
+  .btn{flex:1 1 auto}
+  .credit{font-size:11px}
+  .sec-head{flex-direction:column;align-items:flex-start}
+  .gallery{display:flex;flex-direction:column;gap:40px}
+  .col,.col.b{display:contents}
+  .col.a .shot:nth-child(1){order:1}
+  .col.b .shot:nth-child(1){order:2}
+  .col.a .shot:nth-child(2){order:3}
+  .col.b .shot:nth-child(2){order:4}
+  .col.a .shot:nth-child(3){order:5}
+  .col.b .shot:nth-child(3){order:6}
+  .col.b .shot:nth-child(4){order:7}
+  .note{order:8}
+  .more{order:9}
+  .shot .w{font-size:13px}
+  .facts{grid-template-columns:1fr 1fr}
+  .fact{padding:18px 16px}
+  .row{grid-template-columns:minmax(0,1fr)}
+  .form-foot .btn{width:100%}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="#main" aria-label="Ryan Waneka, back to top">
+      <img src="https://images.squarespace-cdn.com/content/v1/61de2ba51c1e3c4bbcd2ee25/179b4e76-7866-4627-8aba-e932275b5ba5/RyanWanekaSignatureLogo%28660752%29.png?format=1500w" alt="Ryan Waneka" width="1500" height="426">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#questions">Questions</a>
+      <a class="cta" href="#brief">Start a project</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="h-hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Commercial &amp; event photography<span></span>Del Mar, CA</p>
+        <h1 id="h-hero">Authentic moments, made for <em>your brand.</em></h1>
+        <p class="lede">Fitness, lifestyle, music and portrait photography that tells a story, for brands like New Belgium, Lululemon and Booking.com. Now on the west coast between San Diego and LA, and still traveling worldwide.</p>
+        <div class="btns">
+          <a class="btn solid" href="#brief">Start a project
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></a>
+          <a class="btn ghost" href="#work">See the work</a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="http://static1.squarespace.com/static/61de2ba51c1e3c4bbcd2ee25/t/6ad86ed75825d56fc8dbfe2b/1792569047649/3-15-26_NewBelgiumUpdateLifestyle_RyanWanekaPhotographyBanner_2.jpg?format=1500w" alt="A can of New Belgium Fat Tire on a table while hands deal playing cards in the background" width="2500" height="1663" fetchpriority="high">
+        <figcaption class="credit"><span><b>New Belgium</b> &nbsp;Fat Tire</span><span>Lifestyle</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="clients" aria-labelledby="h-clients">
+    <div class="wrap">
+      <h2 class="label" id="h-clients">A few clients</h2>
+      <ul>
+        <li>New Belgium Brewing</li><li>Lululemon</li><li>Booking.com</li><li>Southwest Airlines</li><li>Blundstone</li><li>Ka’Chava</li><li>Otterbox</li><li>Contentful</li><li>Blue Financial Credit Union</li><li>Rodelle</li><li>Akinz Boardwear</li><li>Gates Carbon Drive</li><li>Sea’sons</li><li class="more">and more</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="work" id="work" aria-labelledby="h-work">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="label">Selected client work</p>
+          <h2 id="h-work">Real people, <em>really living.</em></h2>
+        </div>
+        <p>Brands, events and campaigns, shot on location from ski lifts to conference stages.</p>
+      </div>
+      <div class="gallery">
+        <div class="col a">
+          <figure class="shot">
+            <div class="frame"><img src="https://images.squarespace-cdn.com/content/v1/61de2ba51c1e3c4bbcd2ee25/d698213a-2be2-49af-98fc-af419df5cfbf/Ryan+Waneka+Commercial+Photography+Brewery+Denver+Colorado-banner_6.jpg?format=750w" alt="A woman with a backpack smiling on a grassy hillside under a blue sky" width="640" height="408" loading="lazy"></div>
+            <figcaption><span class="n">01</span><span class="c">Blue Financial Credit Union</span><span class="w">Lifestyle</span></figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="frame"><img src="https://images.squarespace-cdn.com/content/v1/61de2ba51c1e3c4bbcd2ee25/1707092210902-CLJ25OHWSWJNO0YUT36K/3-11-22+Akinz+Winter+Shoot+Ryan+Waneka+Photography-448.jpg?format=750w" alt="A laughing woman in a teal knit beanie in a golden field" width="640" height="426" loading="lazy"></div>
+            <figcaption><span class="n">03</span><span class="c">Akinz Boardwear</span><span class="w">Winter shoot</span></figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="frame"><img src="https://images.squarespace-cdn.com/content/v1/61de2ba51c1e3c4bbcd2ee25/551045b0-1493-4e34-9aa9-a48a4e8930d0/Ryan-Waneka-Photography-Brand-Content-Work-Erem-Desert-Footwear-Scottsdale-Arizona_2.jpg?format=750w" alt="Two pairs of hiking boots striding across a desert trail" width="640" height="374" loading="lazy"></div>
+            <figcaption><span class="n">05</span><span class="c">Erem</span><span class="w">Scottsdale, Arizona</span></figcaption>
+          </figure>
+          <div class="note">
+            <blockquote>“I love looking at photos, so I hope you can enjoy looking at some of mine. Take your time.”</blockquote>
+            <p>Ryan</p>
+          </div>
+          <div class="more">
+            <p>More client work: <a href="https://www.ryanwaneka.com/commercial-photography/lululemon">Lululemon</a>, <a href="https://www.ryanwaneka.com/commercial-photography/kachava">Ka’Chava</a>, <a href="https://www.ryanwaneka.com/commercial-photography/rodelle">Rodelle</a>, <a href="https://www.ryanwaneka.com/commercial-photography/ginger-baker">Ginger &amp; Baker</a>, <a href="https://www.ryanwaneka.com/commercial-photography/seasons">Sea’sons</a> and others.</p>
+            <div class="more-links">
+              <a class="more-link" href="https://www.ryanwaneka.com/commercial-photography">See every client project
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></a>
+              <a class="more-link quiet" href="https://www.instagram.com/ryanwaneka/" target="_blank" rel="noopener">Instagram
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6" stroke="currentColor" stroke-width="1.6"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="col b">
+          <figure class="shot">
+            <div class="frame"><img src="https://images.squarespace-cdn.com/content/v1/61de2ba51c1e3c4bbcd2ee25/1707445332048-83RK06XZK6YYGHOQYO7E/Ryan+Waneka+Photography+Aspen+Colorado+Booking.com+travel+tourism+destination-4.jpg?format=750w" alt="An empty chairlift above a snowy run with one skier in red far below" width="640" height="426" loading="lazy"></div>
+            <figcaption><span class="n">02</span><span class="c">Booking.com</span><span class="w">Aspen, Colorado</span></figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="frame"><img src="https://images.squarespace-cdn.com/content/v1/61de2ba51c1e3c4bbcd2ee25/c27ac8c1-3a2b-4e5e-beb2-7df916eaaa2b/8-29Blundstone1351W%28Jackie%29-2.jpg?format=750w" alt="A woman in a plaid blazer crouching to adjust her Blundstone boots on a platform" width="640" height="495" loading="lazy"></div>
+            <figcaption><span class="n">04</span><span class="c">Blundstone</span><span class="w">Product &amp; lifestyle</span></figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="frame"><img src="https://images.squarespace-cdn.com/content/v1/61de2ba51c1e3c4bbcd2ee25/091369d5-2d9c-469a-a5bc-b6b88404eff3/Ryan+Waneka+Photography+Contentful+Denver+Business+Conference-11.jpg?format=750w" alt="A smiling speaker in a blue polo gesturing on a conference stage" width="640" height="427" loading="lazy"></div>
+            <figcaption><span class="n">06</span><span class="c">Contentful</span><span class="w">Conference, Denver</span></figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="frame"><img src="https://images.squarespace-cdn.com/content/v1/61de2ba51c1e3c4bbcd2ee25/f8539cc3-0086-4c1c-8d11-0c6a5ec740ba/10-26-23+Wyoming+Cessation+Department+of+Health+Anti+Tobacco+Campaign+Ryan+Waneka+Photography_1.jpg?format=750w" alt="A man at the wheel of an old truck, head bowed into his arm" width="640" height="302" loading="lazy"></div>
+            <figcaption><span class="n">07</span><span class="c">Wyoming Dept of Health</span><span class="w">Campaign</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about" aria-labelledby="h-about">
+    <div class="wrap">
+      <p class="label">About</p>
+      <h2 id="h-about">Hey, I’m <em>Ryan.</em></h2>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>Colorado-born and raised, I found photography as a young teen. I love capturing authentic moments of people experiencing what life has to offer.</p>
+          <p>After a degree in Journalism and Media Communication from CSU, I spent six years at a photo and video company in Fort Collins, shooting product, lifestyle, event, music, portrait and commercial work. In 2021 I opened my own business in Colorado Springs.</p>
+          <p>As of April 2026, I’ve started a new chapter in Del Mar, California, between San Diego and LA. Passport freshly renewed. Let’s go!</p>
+          <div class="facts">
+            <div class="fact"><strong>11+ <em>years</em></strong><span>working in the industry</span></div>
+            <div class="fact"><strong>2021</strong><span>opened my own business</span></div>
+            <div class="fact"><strong>Del Mar</strong><span>home base since April 2026</span></div>
+            <div class="fact"><strong><em>Worldwide</em></strong><span>available for travel</span></div>
+          </div>
+        </div>
+        <div>
+          <div class="stack">
+            <h3>What I shoot</h3>
+            <ul class="tags">
+              <li>Commercial</li><li>Fitness</li><li>Event</li><li>Lifestyle</li><li>Music</li><li>Portrait</li><li>Product</li>
+            </ul>
+          </div>
+          <div class="stack">
+            <h3>Where the work has taken me</h3>
+            <p class="places"><span>Italy</span> <span>South Africa</span> <span>Costa Rica</span> <span>Guatemala</span> <span>Mexico</span> <span>Portugal</span> <span>all over the United States</span></p>
+          </div>
+          <div class="stack">
+            <h3>Year-long projects</h3>
+            <ul class="tags">
+              <li>Double exposures</li><li>Hyperlapses</li><li>The Brenizer method</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="questions" aria-labelledby="h-faq">
+    <div class="wrap faq-grid">
+      <div>
+        <p class="label">Good to know</p>
+        <h2 id="h-faq">Quick <em>answers.</em></h2>
+      </div>
+      <div>
+        <details open>
+          <summary>Where are you based?<i aria-hidden="true"></i></summary>
+          <p>Del Mar, California, since April 2026, conveniently between San Diego and LA. Before that, Colorado Springs and Fort Collins.</p>
+        </details>
+        <details>
+          <summary>Will you travel for a shoot?<i aria-hidden="true"></i></summary>
+          <p>Yes, I’m available locally and worldwide. Work has taken me to Italy, South Africa, Costa Rica, Guatemala, Mexico, Portugal and all over the US.</p>
+        </details>
+        <details>
+          <summary>What kind of work do you take on?<i aria-hidden="true"></i></summary>
+          <p>Commercial, fitness, event and lifestyle photography first, plus music and portrait work. I’m always up for new and challenging projects, so don’t hesitate to throw one my way.</p>
+        </details>
+        <details>
+          <summary>What do you do when you’re not shooting?<i aria-hidden="true"></i></summary>
+          <p>Volleyball, CrossFit, board games, movies, time with family, and learning to surf. I like my life to be as interesting as my photo shoots, and vice versa.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="brief" id="brief" aria-labelledby="h-brief">
+    <div class="wrap">
+      <p class="label">Start a project</p>
+      <h2 id="h-brief">Let’s bring your <em>vision</em> to life.</h2>
+      <div class="brief-grid">
+        <form id="briefForm" novalidate>
+          <fieldset>
+            <legend>What are we shooting?</legend>
+            <div class="chips" data-group="kind">
+              <label class="chip"><input type="radio" name="kind" value="commercial"><span>Commercial</span></label>
+              <label class="chip"><input type="radio" name="kind" value="fitness"><span>Fitness</span></label>
+              <label class="chip"><input type="radio" name="kind" value="event"><span>Event</span></label>
+              <label class="chip"><input type="radio" name="kind" value="lifestyle" checked><span>Lifestyle</span></label>
+              <label class="chip"><input type="radio" name="kind" value="music"><span>Music</span></label>
+              <label class="chip"><input type="radio" name="kind" value="portrait"><span>Portrait</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Where?</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="where" value="San Diego" checked><span>San Diego</span></label>
+              <label class="chip"><input type="radio" name="where" value="Los Angeles"><span>Los Angeles</span></label>
+              <label class="chip"><input type="radio" name="where" value="elsewhere in the US"><span>Elsewhere in the US</span></label>
+              <label class="chip"><input type="radio" name="where" value="abroad"><span>Abroad</span></label>
+            </div>
+          </fieldset>
+          <div class="row">
+            <div class="field">
+              <label class="fl" for="f-brand">Brand or company</label>
+              <input id="f-brand" name="brand" type="text" autocomplete="organization" placeholder="e.g. your brand">
+            </div>
+            <div class="field">
+              <label class="fl" for="f-when">When</label>
+              <select id="f-when" name="when"></select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="field">
+              <label class="fl" for="f-name">Your name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name">
+            </div>
+            <div class="field">
+              <label class="fl" for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email">
+            </div>
+          </div>
+          <div class="field" style="margin-bottom:20px">
+            <label class="fl" for="f-note">Tell me about it</label>
+            <textarea id="f-note" name="note" placeholder="The story you want to tell, the people in it, the feel."></textarea>
+          </div>
+          <div class="form-foot">
+            <button class="btn solid" type="submit">Send the brief
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></button>
+            <p class="thanks" id="thanks" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+
+        <aside class="card" aria-label="Your project brief, updating as you fill in the form">
+          <div class="top-row">
+            <p class="label">Your brief</p>
+            <img src="https://images.squarespace-cdn.com/content/v1/61de2ba51c1e3c4bbcd2ee25/179b4e76-7866-4627-8aba-e932275b5ba5/RyanWanekaSignatureLogo%28660752%29.png?format=1500w" alt="" width="1500" height="426">
+          </div>
+          <p class="sentence" id="sentence">A <b>lifestyle</b> shoot for <b>your brand</b> in <b>San Diego</b>, <b>dates flexible</b>.</p>
+          <dl>
+            <dt>Shoot</dt><dd id="d-kind">Lifestyle</dd>
+            <dt>Location</dt><dd id="d-where">San Diego</dd>
+            <dt>Timing</dt><dd id="d-when">Flexible</dd>
+            <dt>From</dt><dd id="d-from">You</dd>
+          </dl>
+          <p class="aside" id="aside">Close to home: Del Mar sits right between San Diego and LA.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <img src="https://images.squarespace-cdn.com/content/v1/61de2ba51c1e3c4bbcd2ee25/179b4e76-7866-4627-8aba-e932275b5ba5/RyanWanekaSignatureLogo%28660752%29.png?format=1500w" alt="Ryan Waneka" width="1500" height="426">
+      <ul class="social" aria-label="Social pages">
+        <li><a href="https://www.instagram.com/ryanwaneka/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@ryanwaneka" target="_blank" rel="noopener">TikTok</a></li>
+        <li><a href="https://www.pinterest.com/ryanwaneka/" target="_blank" rel="noopener">Pinterest</a></li>
+      </ul>
+    </div>
+    <p class="made">Mockup made for Ryan Waneka by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var top=document.getElementById('top');
+  function onScroll(){top.classList.toggle('scrolled',window.scrollY>10)}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  // Months for the "When" picker, starting next month
+  var sel=document.getElementById('f-when');
+  var names=['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var opt=document.createElement('option');opt.value='';opt.textContent='Flexible';sel.appendChild(opt);
+  var d=new Date();
+  for(var i=1;i<=12;i++){
+    var m=new Date(d.getFullYear(),d.getMonth()+i,1);
+    var o=document.createElement('option');o.value=o.textContent=names[m.getMonth()]+' '+m.getFullYear();sel.appendChild(o);
+  }
+
+  // Live brief
+  var form=document.getElementById('briefForm');
+  var asides={
+    'San Diego':'Close to home: Del Mar sits right between San Diego and LA.',
+    'Los Angeles':'Close to home: Del Mar sits right between San Diego and LA.',
+    'elsewhere in the US':'Work has already taken Ryan all over the United States.',
+    'abroad':'Passport freshly renewed. Italy, South Africa, Costa Rica, Guatemala, Mexico and Portugal so far.'
+  };
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function cap(s){return s.charAt(0).toUpperCase()+s.slice(1)}
+  function update(){
+    var kind=(form.querySelector('input[name=kind]:checked')||{}).value||'lifestyle';
+    var where=(form.querySelector('input[name=where]:checked')||{}).value||'San Diego';
+    var brand=form.brand.value.trim()||'your brand';
+    var when=sel.value;
+    var name=form.name.value.trim();
+    var art=/^[aeiou]/.test(kind)?'An':'A';
+    var place=where==='abroad'?'<b>abroad</b>':'in <b>'+esc(where)+'</b>';
+    document.getElementById('sentence').innerHTML=art+' <b>'+esc(kind)+'</b> shoot for <b>'+esc(brand)+'</b> '+place+', '+(when?'around <b>'+esc(when)+'</b>':'<b>dates flexible</b>')+'.';
+    document.getElementById('d-kind').textContent=cap(kind);
+    document.getElementById('d-where').textContent=cap(where);
+    document.getElementById('d-when').textContent=when||'Flexible';
+    document.getElementById('d-from').textContent=name||'You';
+    document.getElementById('aside').textContent=asides[where];
+  }
+  form.addEventListener('input',update);form.addEventListener('change',update);
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    document.getElementById('thanks').textContent='Thanks, I’ll be in touch soon.';
+  });
+  update();
+
+  // Gentle rise for things below the first screen
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce&&'IntersectionObserver' in window){
+    var items=document.querySelectorAll('.shot,.note,.more,.clients ul,.sec-head,.about-grid > div,.faq-grid > div,.brief-grid > *');
+    var vh=window.innerHeight;
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target)}});
+    },{rootMargin:'0px 0px -8% 0px'});
+    items.forEach(function(el){
+      if(el.getBoundingClientRect().top>vh){el.classList.add('will-rise','rise');io.observe(el)}
+    });
+  }
+})();
+</script>
+</body>
+</html>
