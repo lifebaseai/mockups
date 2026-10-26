@@ -249,6 +249,55 @@ footer .made a{color:#ffb466}
 /* Phone action bar */
 .pbar{display:none}
 
+/* Video. Video is what 4WT makes, so the page is built around it. Every
+   frame holds stand-in footage (free stock, Mixkit) and says so, until their
+   own films go in. */
+.stand{font:600 11px/1 var(--head);letter-spacing:.16em;text-transform:uppercase;color:rgba(243,238,231,.85);background:rgba(20,18,16,.66);border:1px solid rgba(243,238,231,.22);padding:7px 9px;border-radius:2px;white-space:nowrap;pointer-events:none}
+.vf-video{position:absolute;top:0;bottom:0;left:28px;right:28px;overflow:hidden;background:#0f0d0b}
+.vf-video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
+.vf-video::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,18,16,.94) 0%,rgba(20,18,16,.72) 45%,rgba(20,18,16,.28) 100%),linear-gradient(0deg,rgba(20,18,16,.92) 0%,rgba(20,18,16,0) 38%)}
+.vf>.stand{position:absolute;right:72px;top:52px;z-index:2}
+
+.reel-frame{position:relative;aspect-ratio:16/9;background:#0f0d0b;overflow:hidden;border:1px solid var(--line-dark);border-radius:2px;cursor:pointer}
+.reel-frame video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.reel-frame::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(0deg,rgba(20,18,16,.8) 0%,rgba(20,18,16,0) 32%),linear-gradient(180deg,rgba(20,18,16,.6) 0%,rgba(20,18,16,0) 24%)}
+.reel-hud{position:absolute;z-index:2;top:18px;left:22px;right:22px;display:flex;justify-content:space-between;align-items:center;gap:12px;font:500 13px/1 var(--head);letter-spacing:.18em;text-transform:uppercase;color:var(--on-dark-muted)}
+.reel-bar{position:absolute;z-index:2;left:22px;right:22px;bottom:18px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.reel-dots{display:flex;gap:6px}
+.reel-dots i{width:22px;height:3px;background:rgba(243,238,231,.3);transition:background .3s}
+.reel-dots i.on{background:var(--orange)}
+.reel-bar .btn{min-height:44px;padding:0 18px;font-size:12.5px}
+
+.work-lanes{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:56px}
+.work-lane h3{font:600 14px/1 var(--head);letter-spacing:.22em;text-transform:uppercase;color:var(--on-dark-muted);margin-bottom:16px;display:flex;gap:12px}
+.work-lane h3 span{color:var(--orange)}
+.tiles{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.tile{position:relative;display:block;width:100%;aspect-ratio:4/5;padding:0;border:0;background:#0f0d0b;color:var(--on-dark);cursor:pointer;overflow:hidden;border-radius:2px;text-align:left;font:inherit}
+.tile video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.tile::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,18,16,.88) 0%,rgba(20,18,16,0) 58%);pointer-events:none}
+.tile:hover video,.tile:focus-visible video{transform:scale(1.04)}
+.tile .meta{position:absolute;z-index:2;left:14px;right:14px;bottom:14px}
+.tile .meta b{display:block;font:700 19px/1.1 var(--head);text-transform:uppercase;letter-spacing:.02em}
+.tile .meta small{display:block;margin-top:6px;font:500 11px/1 var(--head);letter-spacing:.16em;text-transform:uppercase;color:var(--on-dark-muted)}
+.tile .play{position:absolute;z-index:2;top:12px;left:12px;width:34px;height:34px;border-radius:50%;background:var(--orange);display:grid;place-items:center}
+.tile .play::before{content:"";margin-left:3px;border-left:11px solid var(--ink);border-top:7px solid transparent;border-bottom:7px solid transparent}
+.tile .stand{position:absolute;z-index:2;top:12px;right:10px;font-size:9.5px;padding:6px 7px}
+.tile .stand .long{display:none}
+
+.stage-clip{position:relative;margin-top:26px;aspect-ratio:16/9;max-width:330px;background:#0f0d0b;overflow:hidden;border-radius:2px;border:1px solid var(--line-dark)}
+.stage-clip video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.88}
+.stage-clip .stand{position:absolute;right:8px;bottom:8px;font-size:9.5px;padding:5px 6px}
+
+.lb{border:0;padding:0;background:transparent;width:min(1100px,94vw);max-width:none}
+.lb::backdrop{background:rgba(10,9,8,.88)}
+.lb-in{position:relative;background:#0f0d0b;border:1px solid var(--line-dark)}
+.lb video{display:block;width:100%;aspect-ratio:16/9;background:#000}
+.lb-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px 12px 18px;color:var(--on-dark)}
+.lb-bar b{font:700 18px/1.1 var(--head);text-transform:uppercase;letter-spacing:.02em}
+.lb-bar span{display:flex;align-items:center;gap:12px}
+.lb-x{min-width:44px;min-height:44px;background:transparent;border:1px solid var(--line-dark);color:var(--on-dark);font:600 22px/1 var(--head);cursor:pointer;border-radius:2px}
+.lb-x:hover{border-color:var(--orange);color:var(--orange)}
+
 /* Motion */
 .will-rise{opacity:0;transform:translateY(12px)}
 .rise{transition:opacity .7s ease,transform .7s ease}
@@ -262,6 +311,7 @@ footer .made a{color:#ffb466}
   .proof ul{grid-template-columns:1fr 1fr}
   .proof li:nth-child(3){border-left:0;padding-left:0}
   .proof li:nth-child(n+3){border-top:1px solid var(--line-dark)}
+  .work-lanes{grid-template-columns:1fr}
 }
 @media (max-width:700px){
   body{font-size:16px}
@@ -322,6 +372,24 @@ footer .made a{color:#ffb466}
   .pbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:rgba(20,18,16,.96);border-top:1px solid var(--line-dark)}
   .pbar a{flex:1;min-height:48px}
   .pbar .btn-g{flex:0 0 auto;padding:0 18px}
+  .vf-video{left:0;right:0}
+  .vf>.stand{right:20px;top:42px;font-size:10px;padding:6px 7px}
+  .reel-frame{aspect-ratio:4/3}
+  .reel-hud{top:12px;left:14px;right:14px;font-size:11px;letter-spacing:.14em}
+  .reel-bar{left:12px;right:12px;bottom:12px}
+  .reel-bar .btn{padding:0 14px;font-size:12px}
+  .reel-dots i{width:14px}
+  .work-lanes{gap:32px;margin-top:36px}
+  .tiles{gap:8px}
+  .tile{aspect-ratio:3/4}
+  .tile .meta{left:9px;right:9px;bottom:10px}
+  .tile .meta b{font-size:14px}
+  .tile .meta small{display:none}
+  .tile .play{width:28px;height:28px;top:8px;left:8px}
+  .tile .play::before{border-left-width:9px;border-top-width:6px;border-bottom-width:6px;margin-left:2px}
+  .tile .stand{right:6px;top:8px;font-size:9px;padding:5px 5px}
+  .stage-clip{max-width:none}
+  .lb-bar b{font-size:15px}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -342,7 +410,7 @@ footer .made a{color:#ffb466}
       <span>4WT Media</span>
     </a>
     <nav class="nav" aria-label="Main">
-      <a href="#work">Our work</a>
+      <a href="#reel">Our work</a>
       <a href="#services">Services</a>
       <a href="#creatives">Creatives</a>
       <a href="#story">About</a>
@@ -354,6 +422,8 @@ footer .made a{color:#ffb466}
 <main id="main">
   <section class="hero" id="top" aria-labelledby="h1">
     <div class="vf">
+      <div class="vf-video" aria-hidden="true"><video id="hero-v" muted loop playsinline preload="none" poster="https://assets.mixkit.co/videos/13241/13241-thumb-720-0.jpg"></video></div>
+      <span class="stand">Stand-in footage</span>
       <span class="corner c1" aria-hidden="true"></span><span class="corner c2" aria-hidden="true"></span>
       <span class="corner c3" aria-hidden="true"></span><span class="corner c4" aria-hidden="true"></span>
       <span class="cross" aria-hidden="true"></span>
@@ -366,7 +436,7 @@ footer .made a{color:#ffb466}
         <p class="lede">Award-winning video for brands, plus film, TV and stories that matter. From the first idea to the audience it was made for.</p>
         <div class="cta">
           <a class="btn btn-o" href="#brief">Request a director</a>
-          <a class="btn btn-g" href="#work">See what we make</a>
+          <a class="btn btn-g" href="#reel">Watch the work</a>
         </div>
       </div>
       <div class="lower" aria-hidden="true">
@@ -384,6 +454,44 @@ footer .made a{color:#ffb466}
       <li><b>Award-winning</b><span>High impact content</span></li>
     </ul>
   </div>
+
+  <section class="sec dark" id="reel" aria-labelledby="reel-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">Our work</p>
+          <h2 id="reel-h">Watch the work.</h2>
+        </div>
+        <p>Hundreds of projects seen by millions around the world, for brands and for stories that matter. Play the reel, or pick a project.</p>
+      </div>
+      <div class="reel-frame" id="reel-frame" data-clips="31698,46353,20769,1512,43400,30487">
+        <video id="reel-v" muted playsinline preload="none" poster="https://assets.mixkit.co/videos/31698/31698-thumb-720-0.jpg" aria-label="4WT Media reel"></video>
+        <div class="reel-hud"><span class="rec"><i></i>Reel</span><span class="stand">Stand-in footage</span></div>
+        <div class="reel-bar">
+          <span class="reel-dots" id="reel-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          <button class="btn btn-g" type="button" id="reel-btn">Play the reel</button>
+        </div>
+      </div>
+      <div class="work-lanes">
+        <div class="work-lane">
+          <h3><span>01</span>Branded content</h3>
+          <ul class="tiles">
+            <li><button class="tile" type="button" data-clip="1512" data-title="Campaigns" aria-label="Play Campaigns, branded content"><video muted loop playsinline preload="none" poster="https://assets.mixkit.co/videos/1512/1512-thumb-720-0.jpg"></video><span class="play" aria-hidden="true"></span><span class="stand">Stand-in<span class="long"> footage</span></span><span class="meta"><b>Campaigns</b><small>Branded content</small></span></button></li>
+            <li><button class="tile" type="button" data-clip="50610" data-title="Product launches" aria-label="Play Product launches, branded content"><video muted loop playsinline preload="none" poster="https://assets.mixkit.co/videos/50610/50610-thumb-720-0.jpg"></video><span class="play" aria-hidden="true"></span><span class="stand">Stand-in<span class="long"> footage</span></span><span class="meta"><b>Product launches</b><small>Branded content</small></span></button></li>
+            <li><button class="tile" type="button" data-clip="30487" data-title="Brand awareness" aria-label="Play Brand awareness, branded content"><video muted loop playsinline preload="none" poster="https://assets.mixkit.co/videos/30487/30487-thumb-720-0.jpg"></video><span class="play" aria-hidden="true"></span><span class="stand">Stand-in<span class="long"> footage</span></span><span class="meta"><b>Brand awareness</b><small>Branded content</small></span></button></li>
+          </ul>
+        </div>
+        <div class="work-lane">
+          <h3><span>02</span>Original content</h3>
+          <ul class="tiles">
+            <li><button class="tile" type="button" data-clip="20769" data-title="Film" aria-label="Play Film, original content"><video muted loop playsinline preload="none" poster="https://assets.mixkit.co/videos/20769/20769-thumb-720-0.jpg"></video><span class="play" aria-hidden="true"></span><span class="stand">Stand-in<span class="long"> footage</span></span><span class="meta"><b>Film</b><small>Original content</small></span></button></li>
+            <li><button class="tile" type="button" data-clip="43400" data-title="TV" aria-label="Play TV, original content"><video muted loop playsinline preload="none" poster="https://assets.mixkit.co/videos/43400/43400-thumb-720-0.jpg"></video><span class="play" aria-hidden="true"></span><span class="stand">Stand-in<span class="long"> footage</span></span><span class="meta"><b>TV</b><small>Original content</small></span></button></li>
+            <li><button class="tile" type="button" data-clip="23421" data-title="Shows" aria-label="Play Shows, original content"><video muted loop playsinline preload="none" poster="https://assets.mixkit.co/videos/23421/23421-thumb-720-0.jpg"></video><span class="play" aria-hidden="true"></span><span class="stand">Stand-in<span class="long"> footage</span></span><span class="meta"><b>Shows</b><small>Original content</small></span></button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="sec" id="work" aria-labelledby="work-h">
     <div class="wrap">
@@ -432,16 +540,19 @@ footer .made a{color:#ffb466}
           <span class="step">Stage one</span>
           <h3>Creative</h3>
           <p>Exceptional content starts with excellent creative. Brilliant writers, directors and producers at the ready, so every project has that special touch.</p>
+          <div class="stage-clip"><video muted loop playsinline preload="none" data-clip="37046" poster="https://assets.mixkit.co/videos/37046/37046-thumb-720-0.jpg" aria-hidden="true"></video><span class="stand">Stand-in footage</span></div>
         </div>
         <div class="stage">
           <span class="step">Stage two</span>
           <h3>Production</h3>
           <p>From concept to delivery, we execute part or the entire production process, using newer, more efficient methods without giving up quality.</p>
+          <div class="stage-clip"><video muted loop playsinline preload="none" data-clip="46353" poster="https://assets.mixkit.co/videos/46353/46353-thumb-720-0.jpg" aria-hidden="true"></video><span class="stand">Stand-in footage</span></div>
         </div>
         <div class="stage">
           <span class="step">Stage three</span>
           <h3>Distribution</h3>
           <p>Getting to the right audience is key. Reach millions to raise brand awareness, or drive conversion for a select few.</p>
+          <div class="stage-clip"><video muted loop playsinline preload="none" data-clip="21829" poster="https://assets.mixkit.co/videos/21829/21829-thumb-720-0.jpg" aria-hidden="true"></video><span class="stand">Stand-in footage</span></div>
         </div>
       </div>
       <div class="ends" aria-hidden="true"><span><b>Concept</b></span><span><b>Delivery</b></span></div>
@@ -637,6 +748,13 @@ footer .made a{color:#ffb466}
   <a class="btn btn-g" href="mailto:info@4wtmedia.com">Email</a>
 </div>
 
+<dialog class="lb" id="lb" aria-label="Video player">
+  <div class="lb-in">
+    <video id="lb-v" controls playsinline></video>
+    <div class="lb-bar"><b id="lb-t"></b><span><span class="stand">Stand-in footage</span><button class="lb-x" type="button" id="lb-x" aria-label="Close the player">&times;</button></span></div>
+  </div>
+</dialog>
+
 <script>
 (function(){
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -707,6 +825,65 @@ footer .made a{color:#ffb466}
     var to=new IntersectionObserver(function(es){ if(es[0].isIntersecting){ track.classList.remove('will-draw'); to.disconnect(); } },{threshold:.4});
     to.observe(track);
   }
+})();
+</script>
+<script>
+(function(){
+  // Stand-in footage (Mixkit, free licence) in every frame where 4WT's own
+  // films go. Phones get the small files; nothing plays for reduced motion.
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var small = window.matchMedia('(max-width: 700px)').matches;
+  var hover = window.matchMedia('(hover: hover)').matches;
+  var M = 'https://assets.mixkit.co/videos/';
+  function clip(id, q){ return M + id + '/' + id + '-' + q + '.mp4'; }
+  function play(v){ var p = v.play(); if (p && p.catch) p.catch(function(){}); }
+  var $ = function(id){ return document.getElementById(id); };
+  var seen = 'IntersectionObserver' in window;
+  function whileSeen(el, on, off, t){
+    if (!seen) return;
+    new IntersectionObserver(function(es){ es.forEach(function(e){ (e.isIntersecting ? on : off)(); }); }, { threshold: t || .25 }).observe(el);
+  }
+
+  // The viewfinder
+  var hv = $('hero-v');
+  if (!reduce) whileSeen(document.querySelector('.hero'), function(){ if (!hv.getAttribute('src')) hv.src = clip(13241, small ? 360 : 720); play(hv); }, function(){ hv.pause(); });
+
+  // The reel: one clip after another, while it is on screen
+  var frame = $('reel-frame'), rv = $('reel-v'), btn = $('reel-btn'), dots = $('reel-dots').children;
+  var reel = frame.getAttribute('data-clips').split(','), ri = 0, on = !reduce, visible = false;
+  function load(i){ ri = (i + reel.length) % reel.length; rv.src = clip(reel[ri], small ? 360 : 720); for (var k = 0; k < dots.length; k++) dots[k].className = k === ri ? 'on' : ''; }
+  function sync(){ if (on && visible){ if (!rv.getAttribute('src')) load(ri); play(rv); } else rv.pause(); btn.textContent = on ? 'Pause the reel' : 'Play the reel'; }
+  rv.addEventListener('ended', function(){ load(ri + 1); sync(); });
+  btn.addEventListener('click', function(e){ e.stopPropagation(); on = !on; visible = visible || !seen; sync(); });
+  whileSeen(frame, function(){ visible = true; sync(); }, function(){ visible = false; sync(); }, .4);
+  if (!seen) visible = true;
+  sync();
+
+  // Projects: a preview on hover, the full clip in the player on a click
+  [].forEach.call(document.querySelectorAll('.tile'), function(t){
+    var v = t.querySelector('video'), id = t.getAttribute('data-clip');
+    if (hover && !reduce){
+      t.addEventListener('mouseenter', function(){ if (!v.getAttribute('src')) v.src = clip(id, 360); play(v); });
+      t.addEventListener('mouseleave', function(){ v.pause(); });
+    }
+    t.addEventListener('click', function(){ open(id, t.getAttribute('data-title')); });
+  });
+
+  // Concept to delivery, each stage moving while it is on screen
+  if (!reduce) [].forEach.call(document.querySelectorAll('.stage-clip video'), function(v){
+    whileSeen(v, function(){ if (!v.getAttribute('src')) v.src = clip(v.getAttribute('data-clip'), 360); play(v); }, function(){ v.pause(); });
+  });
+
+  // The player
+  var lb = $('lb'), lv = $('lb-v');
+  function open(id, title){
+    if (!lb.showModal) return;
+    rv.pause(); lv.src = clip(id, 720); $('lb-t').textContent = title; lb.showModal(); play(lv);
+  }
+  frame.addEventListener('click', function(){ open(reel[ri], 'The reel'); });
+  $('lb-x').addEventListener('click', function(){ lb.close(); });
+  lb.addEventListener('click', function(e){ if (e.target === lb) lb.close(); });
+  lb.addEventListener('close', function(){ lv.pause(); lv.removeAttribute('src'); lv.load(); sync(); });
 })();
 </script>
 </body>
