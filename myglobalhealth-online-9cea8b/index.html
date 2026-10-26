@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup myglobalhealth-online-9cea8b 1 2165250d -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Global Health · Licensed online doctors in Europe and Brazil</title>
+<meta name="description" content="See a doctor online, registered in your country: Ireland, Portugal, Spain, Czechia, Romania or Brazil.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#06251c;--deep:#0a2f24;--panel:#0f3a2c;--panel2:#134433;--brand:#1d4b36;
+  --lime:#b0f122;--lime-soft:#d6f88c;--text:#eef5ef;--mute:#a9c4b7;--line:rgba(214,248,140,.14);
+  --r:18px;--max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--text);font:400 17px/1.6 "Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{margin:0;line-height:1.08;letter-spacing:-.025em;font-weight:700}
+p{margin:0}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+:focus-visible{outline:3px solid var(--lime);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--lime);color:var(--ink);padding:10px 14px;border-radius:8px;z-index:50;font-weight:700}
+.skip:focus{top:56px}
+
+/* mockup banner */
+.mock{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:#eaf6d4;color:var(--ink);font-size:15px;line-height:1.35;text-align:center;font-weight:500}
+.mock a{color:#14432f;text-decoration:underline;text-underline-offset:3px;font-weight:700}
+
+/* header */
+.top{position:relative;z-index:5;border-bottom:1px solid var(--line);background:rgba(6,37,28,.92)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:76px}
+.logo img{width:86px;height:auto}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;text-decoration:none;color:var(--mute);font-size:15px;font-weight:500;border-radius:999px}
+.nav a:hover{color:var(--text)}
+.nav .call{color:var(--ink);background:var(--lime);font-weight:700;margin-left:8px}
+.nav .call:hover{color:var(--ink);background:var(--lime-soft)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-1}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:70% 50%}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,37,28,.97) 0%,rgba(6,37,28,.9) 40%,rgba(6,37,28,.55) 100%),linear-gradient(0deg,var(--ink) 0%,rgba(6,37,28,0) 30%)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding-top:72px;padding-bottom:64px}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;color:var(--lime);font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--lime)}
+.hero h1{margin-top:22px;font-size:clamp(42px,4.6vw,64px);font-weight:800}
+.hero h1 em{font-style:normal;color:var(--lime)}
+.lede{margin-top:22px;max-width:520px;font-size:19px;color:#d3e3da}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;font:inherit;font-size:16px;font-weight:700;text-decoration:none;cursor:pointer;border:0;transition:transform .2s ease,background .2s ease}
+.btn-main{background:var(--lime);color:var(--ink)}
+.btn-main:hover{background:var(--lime-soft);transform:translateY(-1px)}
+.btn-ghost{background:transparent;color:var(--text);box-shadow:inset 0 0 0 1.5px rgba(238,245,239,.35)}
+.btn-ghost:hover{box-shadow:inset 0 0 0 1.5px var(--lime)}
+.btn svg{width:18px;height:18px}
+.rating{display:flex;align-items:center;gap:10px;margin-top:30px;font-size:15px;color:var(--mute)}
+.rating b{color:var(--text);font-weight:700}
+.stars{color:var(--lime);letter-spacing:2px;font-size:15px}
+
+/* planner */
+.planner{background:rgba(10,47,36,.94);border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 30px 70px -30px rgba(0,0,0,.7),inset 0 1px 0 rgba(255,255,255,.05)}
+.planner h2{font-size:22px;letter-spacing:-.01em}
+.planner .sub{margin-top:6px;color:var(--mute);font-size:15px}
+.step{margin-top:22px}
+.step-label{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.step-label span{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--brand);color:var(--lime);font-size:12px;letter-spacing:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chip{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 14px;border-radius:12px;border:1px solid var(--line);background:var(--panel);color:var(--text);font:inherit;font-size:15px;font-weight:600;cursor:pointer;transition:background .2s,border-color .2s}
+.chip:hover{border-color:rgba(176,241,34,.5)}
+.chip[aria-pressed="true"]{background:var(--lime);border-color:var(--lime);color:var(--ink)}
+.flag{display:inline-block;width:20px;height:14px;border-radius:3px;box-shadow:0 0 0 1px rgba(255,255,255,.18)}
+.f-ie{background:linear-gradient(90deg,#169b62 33.3%,#fff 33.3% 66.6%,#ff883e 66.6%)}
+.f-cz{background:linear-gradient(to top right,#11457e 50%,transparent 50%) 0 0/50% 50% no-repeat,linear-gradient(to bottom right,#11457e 50%,transparent 50%) 0 100%/50% 50% no-repeat,linear-gradient(#fff 50%,#d7141a 50%)}
+.f-pt{background:linear-gradient(90deg,#046a38 40%,#da291c 40%)}
+.f-es{background:linear-gradient(#aa151b 25%,#f1bf00 25% 75%,#aa151b 75%)}
+.f-ro{background:linear-gradient(90deg,#002b7f 33.3%,#fcd116 33.3% 66.6%,#ce1126 66.6%)}
+.f-br{background:radial-gradient(circle,#002776 0 3.2px,transparent 3.6px),linear-gradient(135deg,#009c3b 30%,transparent 30%),linear-gradient(225deg,#009c3b 30%,transparent 30%),linear-gradient(45deg,#009c3b 30%,transparent 30%),linear-gradient(315deg,#009c3b 30%,#ffdf00 30%)}
+.result{margin-top:22px;padding:20px;border-radius:16px;background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid rgba(176,241,34,.28)}
+.result h3{font-size:19px;letter-spacing:-.01em}
+.result ul{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:10px}
+.result li{display:grid;grid-template-columns:20px 1fr;gap:10px;font-size:15px;line-height:1.45;color:#d6e6dc}
+.result li svg{width:18px;height:18px;margin-top:2px;color:var(--lime)}
+.result .btn{margin-top:18px;width:100%}
+.result.flash{animation:flash .5s ease}
+@keyframes flash{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:none}}
+.note{margin-top:10px;font-size:13px;color:var(--mute)}
+
+/* proof strip */
+.proof{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--deep)}
+.proof .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:30px 24px;border-left:1px solid var(--line)}
+.stat:first-child{border-left:0;padding-left:0}
+.stat b{display:block;font-size:40px;line-height:1;font-weight:800;letter-spacing:-.03em;color:var(--lime)}
+.stat span{display:block;margin-top:10px;font-size:15px;color:var(--mute);line-height:1.4}
+.proof small{display:block;padding:0 0 18px;color:#8fac9f;font-size:13px}
+
+/* sections */
+section.band{padding:110px 0}
+.head{max-width:640px}
+.head h2{margin-top:16px;font-size:clamp(32px,3.8vw,48px)}
+.head p{margin-top:16px;color:var(--mute);font-size:18px}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start;margin-top:56px}
+.svc-photo{position:sticky;top:28px}
+.svc-photo img{width:100%;max-width:480px;height:auto;border-radius:22px;border:1px solid var(--line)}
+.svc-photo p{margin-top:14px;font-size:15px;color:var(--mute);max-width:440px}
+.svc-list{list-style:none;margin:0;padding:0;counter-reset:s}
+.svc-list li{display:grid;grid-template-columns:56px 1fr;gap:8px;padding:26px 0;border-top:1px solid var(--line)}
+.svc-list li:last-child{border-bottom:1px solid var(--line)}
+.svc-list li::before{counter-increment:s;content:"0" counter(s);font-size:14px;font-weight:700;color:var(--lime);padding-top:4px}
+.svc-list h3{font-size:22px;letter-spacing:-.01em}
+.svc-list p{margin-top:8px;color:var(--mute);font-size:16px}
+
+/* how */
+.how{background:var(--deep);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.steps{list-style:none;margin:56px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0;position:relative}
+.steps::before{content:"";position:absolute;left:0;right:0;top:27px;height:2px;background:linear-gradient(90deg,var(--lime),rgba(176,241,34,.15))}
+.steps li{position:relative;padding-right:40px}
+.num{position:relative;display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:var(--ink);border:2px solid var(--lime);color:var(--lime);font-size:20px;font-weight:800}
+.steps h3{margin-top:26px;font-size:24px}
+.steps p{margin-top:10px;color:var(--mute)}
+
+/* treatments */
+.tx{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.tx-card{position:relative}
+.tx-card img{width:100%;max-width:400px;height:auto;border-radius:22px;margin-left:auto}
+.price-tag{position:absolute;left:0;bottom:36px;background:var(--lime);color:var(--ink);border-radius:18px;padding:18px 22px;box-shadow:0 20px 40px -20px rgba(0,0,0,.6)}
+.price-tag small{display:block;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.price-tag b{display:block;font-size:46px;line-height:1;font-weight:800;letter-spacing:-.03em;margin-top:4px}
+.tx-list{list-style:none;margin:30px 0 0;padding:0}
+.tx-list li{display:flex;justify-content:space-between;gap:20px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line)}
+.tx-list li:first-child{border-top:1px solid var(--line)}
+.tx-list strong{display:block;font-size:17px;font-weight:600}
+.tx-list span{display:block;margin-top:3px;font-size:14px;color:var(--mute)}
+.tx-list em{font-style:normal;font-weight:700;color:var(--lime);white-space:nowrap;font-size:15px}
+.tx-foot{margin-top:18px;font-size:15px;color:var(--mute)}
+.ticks{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:22px;padding:0;list-style:none;font-size:15px;color:#d6e6dc}
+.ticks li{display:flex;gap:8px;align-items:center}
+.ticks svg{width:16px;height:16px;color:var(--lime);flex:none}
+
+/* regulators */
+.reg{background:var(--deep);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.reg-table{margin-top:48px;border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.reg-row{display:grid;grid-template-columns:220px 1fr 1.1fr;gap:24px;align-items:center;padding:20px 28px;border-top:1px solid var(--line)}
+.reg-row:first-child{border-top:0}
+.reg-row.th{background:var(--panel);font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);padding-top:14px;padding-bottom:14px}
+.reg-row .c{display:flex;align-items:center;gap:12px;font-weight:700;font-size:18px}
+.reg-row .r{color:#d6e6dc}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags span{font-size:13px;font-weight:600;padding:5px 10px;border-radius:999px;background:var(--panel2);color:#d6e6dc}
+.reg-note{margin-top:20px;color:var(--mute);font-size:15px}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start}
+.faq details{border-top:1px solid var(--line)}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:64px;padding:16px 0;font-size:19px;font-weight:600}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";flex:none;width:12px;height:12px;border-right:2px solid var(--lime);border-bottom:2px solid var(--lime);transform:rotate(45deg) translateY(-3px);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(-135deg) translateY(-3px)}
+.faq details p{padding:0 40px 22px 0;color:var(--mute)}
+
+/* request */
+.request .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.request h2{font-size:clamp(36px,4.4vw,56px);margin-top:16px;font-weight:800}
+.request h2 em{font-style:normal;color:var(--lime)}
+.contact-lines{margin-top:30px;display:grid;gap:10px}
+.contact-lines a{display:flex;align-items:center;gap:12px;min-height:44px;text-decoration:none;font-weight:600;font-size:18px}
+.contact-lines a:hover{color:var(--lime)}
+.contact-lines svg{width:20px;height:20px;color:var(--lime)}
+.emerg{margin-top:28px;padding:16px 18px;border-left:3px solid var(--lime);background:var(--panel);border-radius:0 12px 12px 0;font-size:15px;color:#d6e6dc;max-width:460px}
+form{background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:30px}
+.field{display:grid;gap:8px;margin-bottom:16px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{font-size:14px;font-weight:600;color:#d6e6dc}
+input,select,textarea{font:inherit;font-size:16px;color:var(--text);background:var(--ink);border:1px solid rgba(214,248,140,.22);border-radius:12px;min-height:50px;padding:12px 14px;width:100%}
+textarea{min-height:96px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--lime);box-shadow:0 0 0 3px rgba(176,241,34,.25)}
+form .btn{width:100%;margin-top:6px}
+.sent{margin-top:14px;font-weight:600;color:var(--lime);min-height:1.6em}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:56px 0 40px;background:#041c15}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px;align-items:flex-start}
+.foot img{width:96px;height:auto}
+.foot p{color:var(--mute);font-size:15px;margin-top:12px;max-width:340px}
+.social{display:flex;flex-wrap:wrap;gap:4px}
+.social a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;color:var(--mute);text-decoration:none;font-size:15px;font-weight:500}
+.social a:hover{color:var(--lime)}
+.legal{margin-top:36px;padding-top:22px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:14px;color:#8fac9f}
+.legal a{color:var(--mute)}
+
+/* phone call bar */
+.callbar{display:none}
+
+/* motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:980px){
+  .hero .wrap{grid-template-columns:1fr;gap:40px;padding-top:48px}
+  .svc-grid,.tx,.faq-grid,.request .wrap{grid-template-columns:1fr;gap:40px}
+  .svc-photo{position:static}
+  .proof .wrap{grid-template-columns:1fr 1fr}
+  .stat:nth-child(3){border-left:0;padding-left:0}
+  .stat{border-top:1px solid var(--line)}
+  .stat:nth-child(-n+2){border-top:0}
+  .reg-row{grid-template-columns:160px 1fr;}
+  .reg-row .tags{grid-column:2}
+  .reg-row.th span:last-child{display:none}
+}
+@media (max-width:720px){
+  body{font-size:16px;padding-bottom:72px}
+  .wrap{padding:0 20px}
+  .nav a:not(.call){display:none}
+  .top .wrap{min-height:68px}
+  .logo img{width:72px}
+  .hero-bg img{object-position:78% 50%}
+  .hero-bg::after{background:linear-gradient(180deg,rgba(6,37,28,.82) 0%,rgba(6,37,28,.95) 45%,var(--ink) 75%)}
+  .hero .wrap{padding-top:36px;padding-bottom:44px}
+  .hero h1{font-size:40px}
+  .lede{font-size:17px;margin-top:16px}
+  .ctas{margin-top:24px}
+  .ctas .btn{flex:1 1 100%}
+  .planner{padding:22px 18px;border-radius:20px}
+  .chip{padding:0 12px;font-size:14px}
+  .stat{padding:22px 14px}
+  .stat:nth-child(odd){padding-left:0}
+  .stat b{font-size:32px}
+  .stat span{font-size:14px}
+  section.band{padding:76px 0}
+  .svc-grid{margin-top:36px}
+  .svc-list li{grid-template-columns:44px 1fr;padding:22px 0}
+  .svc-list h3{font-size:20px}
+  .steps{grid-template-columns:1fr;gap:34px;margin-top:40px}
+  .steps::before{left:27px;right:auto;top:0;bottom:0;width:2px;height:auto;background:linear-gradient(180deg,var(--lime),rgba(176,241,34,.15))}
+  .steps li{display:grid;grid-template-columns:56px 1fr;gap:0 18px;padding:0}
+  .steps h3{margin-top:12px;font-size:21px}
+  .steps p{grid-column:2}
+  .tx-card img{max-width:100%;margin:0 auto}
+  .price-tag{left:14px;bottom:14px;padding:14px 18px}
+  .price-tag b{font-size:38px}
+  .tx-list li{flex-direction:column;gap:4px}
+  .reg-table{border-radius:16px}
+  .reg-row{grid-template-columns:1fr;gap:8px;padding:18px 18px}
+  .reg-row .tags{grid-column:auto}
+  .reg-row.th{display:none}
+  .faq summary{font-size:17px}
+  .faq details p{padding-right:0}
+  .two{grid-template-columns:1fr;gap:0}
+  form{padding:22px 18px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(4,28,21,.96);border-top:1px solid var(--line);backdrop-filter:blur(8px)}
+  .callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:999px;text-decoration:none;font-weight:700;font-size:15px}
+  .callbar .c1{box-shadow:inset 0 0 0 1.5px rgba(238,245,239,.35)}
+  .callbar .c2{background:var(--lime);color:var(--ink)}
+  .callbar svg{width:18px;height:18px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#main" aria-label="Global Health, back to top"><img src="https://www.myglobalhealth.online/logos/global-health-light.png" alt="Global Health" width="399" height="260"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#how">How it works</a>
+      <a href="#countries">Countries</a>
+      <a href="#faq">Questions</a>
+      <a class="call" href="#plan">Book a doctor</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="hero-bg"><img src="https://www.myglobalhealth.online/images/hero/country-entry-clinic-hero-2560.avif" alt="" width="2560" height="1440"></div>
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Online medical clinic</p>
+        <h1 id="hero-h">See a doctor online, <em>registered in your&nbsp;country.</em></h1>
+        <p class="lede">Licensed doctors by secure video in Ireland, Portugal, Spain, Czechia, Romania and Brazil. Treatment plans, certificates and referrals follow the call when appropriate.</p>
+        <div class="ctas">
+          <a class="btn btn-main" href="#plan">Choose your country
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-ghost" href="tel:+353894715849">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+            +353 89 471 5849</a>
+        </div>
+      </div>
+
+      <div class="planner" id="plan" aria-labelledby="plan-h">
+        <h2 id="plan-h">Find your doctor</h2>
+        <p class="sub">You only see doctors registered where you need care.</p>
+        <div class="step">
+          <p class="step-label" id="lbl-country"><span>1</span>Where do you need care?</p>
+          <div class="chips" role="group" aria-labelledby="lbl-country" id="countries-chips"></div>
+        </div>
+        <div class="step">
+          <p class="step-label" id="lbl-need"><span>2</span>What do you need?</p>
+          <div class="chips" role="group" aria-labelledby="lbl-need" id="needs-chips"></div>
+        </div>
+        <div class="result" id="result" aria-live="polite">
+          <h3 id="r-title">GP consultation in Ireland</h3>
+          <ul id="r-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Your doctor is registered with the Irish Medical Council</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>A licensed GP by secure video, usually the same or next day</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Your data protected under the GDPR</span></li>
+          </ul>
+          <a class="btn btn-main" id="r-btn" href="#request">Request this consultation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="proof" aria-label="Global Health in numbers">
+    <div class="wrap">
+      <div class="stat"><b>68</b><span>registered doctors</span></div>
+      <div class="stat"><b>6</b><span>countries: 5 in Europe, plus Brazil</span></div>
+      <div class="stat"><b>6</b><span>languages for consultations</span></div>
+      <div class="stat"><b>4.89</b><span>out of 5 from 24 reviews on Doctify</span></div>
+    </div>
+    <div class="wrap"><small>Figures from October 2026.</small></div>
+  </div>
+
+  <section class="band" id="services" aria-labelledby="svc-h">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">What a video call can do</p>
+        <h2 id="svc-h">Six ways Global Health looks after you online</h2>
+      </div>
+      <div class="svc-grid">
+        <div class="svc-photo">
+          <img src="https://www.myglobalhealth.online/_next/image?url=%2Fimages%2Fstock%2Fprescriptions.jpg&amp;w=640&amp;q=75&amp;dpl=577457d620ca6a6f885652ae14005a653c4f152e" alt="A doctor writing up a treatment plan during a video consultation" width="640" height="480" loading="lazy">
+          <p>No waiting room, no travel. The doctor sees you by video and writes up what comes next.</p>
+        </div>
+        <ol class="svc-list">
+          <li><div><h3>Online GP consultations</h3><p>A licensed general practitioner by secure video, usually the same or next day.</p></div></li>
+          <li><div><h3>Specialist consultations</h3><p>Cardiologists, psychiatrists, psychologists, dermatologists and other specialists, in your language.</p></div></li>
+          <li><div><h3>Online treatment</h3><p>If the doctor decides treatment is appropriate, your digital treatment plan goes electronically to a local pharmacy.</p></div></li>
+          <li><div><h3>Medical certificates</h3><p>Sick certificates and fitness notes after an online consultation, where the doctor's assessment supports it.</p></div></li>
+          <li><div><h3>Health and lab tests</h3><p>Order blood tests and health checks, then go through the results with a doctor online.</p></div></li>
+          <li><div><h3>Referrals</h3><p>When you need further care, the doctor can write a referral letter to a specialist or hospital.</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="band how" id="how" aria-labelledby="how-h">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">How it works</p>
+        <h2 id="how-h">Three steps to a doctor</h2>
+      </div>
+      <ol class="steps">
+        <li><div class="num">1</div><h3>Choose your country</h3><p>Pick where you need care. You only see doctors registered there.</p></li>
+        <li><div class="num">2</div><h3>Book a doctor</h3><p>Compare profiles, languages and times, then book and pay online.</p></li>
+        <li><div class="num">3</div><h3>Join the video call</h3><p>Meet the doctor by secure video. Treatment plans, certificates or referrals follow when appropriate.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="band" id="treatments" aria-labelledby="tx-h">
+    <div class="wrap tx">
+      <div>
+        <p class="eyebrow">Online treatment in Ireland</p>
+        <h2 id="tx-h" style="margin-top:16px;font-size:clamp(32px,3.8vw,48px)">New or repeat treatment, reviewed by an Irish&#8209;registered doctor</h2>
+        <ul class="tx-list">
+          <li><div><strong>Asthma treatment</strong><span>Replacement inhalers for adults with stable, diagnosed asthma</span></div><em>from €25</em></li>
+          <li><div><strong>Contraception: pill, patch or ring</strong><span>Request it online, reviewed by a doctor</span></div><em>from €25</em></li>
+          <li><div><strong>Anaphylaxis: adrenaline pens</strong><span>Replacements for people already diagnosed with anaphylaxis risk</span></div><em>from €25</em></li>
+          <li><div><strong>Acne treatment</strong><span>Online acne treatment, doctor reviewed</span></div><em>from €25</em></li>
+          <li><div><strong>Cold sore treatment</strong><span>Including antiviral tablets</span></div><em>from €25</em></li>
+        </ul>
+        <p class="tx-foot">17 treatment consultations in the Ireland network. If suitable, it's sent to your chosen pharmacy.</p>
+        <ul class="ticks">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>No hidden fees</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>No membership required</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Notes by email after every consultation</li>
+        </ul>
+      </div>
+      <div class="tx-card">
+        <img src="https://www.myglobalhealth.online/_next/image?url=https%3A%2F%2Fapi.myglobalhealth.online%2Fapi%2Fmedia%2Fmedia%2F8c3e77e8-aaef-532e-9627-e6b82a10f66b-acne-treatment.webp&amp;w=640&amp;q=75" alt="Smiling woman with clear skin, for acne treatment" width="512" height="512" loading="lazy">
+        <div class="price-tag"><small>Doctor review</small><b>€25</b></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band reg" id="countries" aria-labelledby="reg-h">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Registered where you are</p>
+        <h2 id="reg-h">A doctor licensed in your country, not just somewhere</h2>
+        <p>Every doctor profile shows registration details, specialties and spoken languages.</p>
+      </div>
+      <div class="reg-table" role="table" aria-label="Countries, regulators and services">
+        <div class="reg-row th" role="row"><span role="columnheader">Country</span><span role="columnheader">Doctors registered with</span><span role="columnheader">Online services</span></div>
+        <div class="reg-row" role="row"><span class="c" role="cell"><i class="flag f-ie" aria-hidden="true"></i>Ireland</span><span class="r" role="cell">Irish Medical Council</span><span class="tags" role="cell"><span>GP</span><span>Specialists</span><span>Treatment</span></span></div>
+        <div class="reg-row" role="row"><span class="c" role="cell"><i class="flag f-cz" aria-hidden="true"></i>Czechia</span><span class="r" role="cell">Czech Medical Chamber (ČLK)</span><span class="tags" role="cell"><span>GP</span></span></div>
+        <div class="reg-row" role="row"><span class="c" role="cell"><i class="flag f-pt" aria-hidden="true"></i>Portugal</span><span class="r" role="cell">Ordem dos Médicos</span><span class="tags" role="cell"><span>GP</span><span>Specialists</span><span>Treatment</span></span></div>
+        <div class="reg-row" role="row"><span class="c" role="cell"><i class="flag f-es" aria-hidden="true"></i>Spain</span><span class="r" role="cell">The relevant Colegio Oficial de Médicos</span><span class="tags" role="cell"><span>GP</span><span>Specialists</span><span>Treatment</span></span></div>
+        <div class="reg-row" role="row"><span class="c" role="cell"><i class="flag f-ro" aria-hidden="true"></i>Romania</span><span class="r" role="cell">Colegiul Medicilor din România</span><span class="tags" role="cell"><span>GP</span><span>Specialists</span><span>Treatment</span></span></div>
+        <div class="reg-row" role="row"><span class="c" role="cell"><i class="flag f-br" aria-hidden="true"></i>Brazil</span><span class="r" role="cell">A Conselho Regional de Medicina (CRM)</span><span class="tags" role="cell"><span>GP</span></span></div>
+      </div>
+      <p class="reg-note">Each country has its own doctors, services and prices. Patient data is protected under the GDPR in the EU and the LGPD in Brazil.</p>
+    </div>
+  </section>
+
+  <section class="band faq" id="faq" aria-labelledby="faq-h">
+    <div class="wrap faq-grid">
+      <div class="head">
+        <p class="eyebrow">Questions</p>
+        <h2 id="faq-h">What people ask first</h2>
+      </div>
+      <div>
+        <details open><summary>Are the doctors licensed in my country?</summary><p>Yes. You're seen by a doctor registered in the country where you receive care, and every profile shows their registration details.</p></details>
+        <details><summary>Can I get treatment or a sick certificate online?</summary><p>Yes, where the doctor's assessment supports it. Treatment plans are shared electronically for a local pharmacy, and sick certificates and fitness notes can be issued after the consultation.</p></details>
+        <details><summary>Which languages do the doctors speak?</summary><p>Consultations run in 6 languages, depending on which clinicians are available. Each doctor's profile lists the languages they speak. The site itself is in English, Portuguese, Spanish, Czech, Romanian and German.</p></details>
+        <details><summary>Is my medical data safe?</summary><p>Consultations take place by secure video, and your data is protected under the GDPR in the European Union and the LGPD in Brazil.</p></details>
+        <details><summary>What is Global Health?</summary><p>An online medical clinic serving patients in Ireland, Portugal, Spain, Czechia, Romania and Brazil, with doctors registered in each country.</p></details>
+        <details><summary>Can I use Global Health in an emergency?</summary><p>No. Online care does not replace emergency services. In an emergency, call your local emergency number.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="band request how" id="request" aria-labelledby="req-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Book a doctor</p>
+        <h2 id="req-h">Your country.<br>Your language.<br><em>Your doctor.</em></h2>
+        <div class="contact-lines">
+          <a href="tel:+353894715849"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>+353 89 471 5849</a>
+          <a href="mailto:info@myglobalhealth.online"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>info@myglobalhealth.online</a>
+        </div>
+        <p class="emerg">In an emergency, call your local emergency number. Online care does not replace emergency services.</p>
+      </div>
+      <form id="req-form" novalidate>
+        <div class="two">
+          <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+        </div>
+        <div class="two">
+          <div class="field"><label for="f-country">Country</label>
+            <select id="f-country" name="country"><option>Ireland</option><option>Czechia</option><option>Portugal</option><option>Spain</option><option>Romania</option><option>Brazil</option></select></div>
+          <div class="field"><label for="f-need">I need</label>
+            <select id="f-need" name="need"><option>GP consultation</option><option>Specialist consultation</option><option>Online treatment</option><option>Medical certificate</option><option>Health and lab tests</option><option>Referral</option></select></div>
+        </div>
+        <div class="field"><label for="f-msg">Anything the doctor should know? (optional)</label><textarea id="f-msg" name="message"></textarea></div>
+        <button class="btn btn-main" type="submit">Request a consultation</button>
+        <p class="sent" id="sent" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <img src="https://www.myglobalhealth.online/logos/global-health-light.png" alt="Global Health" width="399" height="260" loading="lazy">
+        <p>Licensed online clinic. GDPR compliant. Doctors registered locally.</p>
+      </div>
+      <nav class="social" aria-label="Global Health on social media">
+        <a href="https://www.instagram.com/globalhealth_ie/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@globalhealth.online" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.linkedin.com/company/myglobalhealth.online" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.youtube.com/@GlobalHealth-y9o" target="_blank" rel="noopener">YouTube</a>
+      </nav>
+    </div>
+    <div class="legal">
+      <span>© 2026 Global Health</span>
+      <span>Mockup made for Global Health by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick contact">
+  <a class="c1" href="tel:+353894715849"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call</a>
+  <a class="c2" href="#plan">Book a doctor</a>
+</div>
+
+<script>
+(function(){
+  var C=[
+    {id:'Ireland',f:'ie',reg:'the Irish Medical Council',needs:['gp','spec','tx']},
+    {id:'Czechia',f:'cz',reg:'the Czech Medical Chamber (ČLK)',needs:['gp']},
+    {id:'Portugal',f:'pt',reg:'the Ordem dos Médicos',needs:['gp','spec','tx']},
+    {id:'Spain',f:'es',reg:'the relevant Colegio Oficial de Médicos',needs:['gp','spec','tx']},
+    {id:'Romania',f:'ro',reg:'the Colegiul Medicilor din România',needs:['gp','spec','tx']},
+    {id:'Brazil',f:'br',reg:'a Conselho Regional de Medicina (CRM)',needs:['gp']}
+  ];
+  var N={
+    gp:{label:'GP consultation',form:'GP consultation',line:'A licensed GP by secure video, usually the same or next day'},
+    spec:{label:'Specialist',form:'Specialist consultation',line:'Cardiologists, psychiatrists, psychologists, dermatologists and more, in your language'},
+    tx:{label:'Online treatment',form:'Online treatment',line:'If the doctor decides it is appropriate, your treatment plan goes to a local pharmacy'}
+  };
+  var tick='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>';
+  var cBox=document.getElementById('countries-chips'),nBox=document.getElementById('needs-chips');
+  var state={c:C[0],n:'gp'};
+  function chip(html,on,fn){var b=document.createElement('button');b.type='button';b.className='chip';b.innerHTML=html;b.setAttribute('aria-pressed',on?'true':'false');b.addEventListener('click',fn);return b}
+  function render(animate){
+    cBox.innerHTML='';
+    C.forEach(function(c){cBox.appendChild(chip('<i class="flag f-'+c.f+'" aria-hidden="true"></i>'+c.id,c===state.c,function(){state.c=c;if(c.needs.indexOf(state.n)<0)state.n='gp';render(true)}))});
+    nBox.innerHTML='';
+    state.c.needs.forEach(function(k){nBox.appendChild(chip(N[k].label,k===state.n,function(){state.n=k;render(true)}))});
+    var c=state.c,n=N[state.n];
+    document.getElementById('r-title').textContent=(state.n==='spec'?'Specialist consultation':n.label)+' in '+c.id;
+    var items=['Your doctor is registered with '+c.reg,n.line];
+    if(state.n==='tx'&&c.id==='Ireland')items[1]='From €25 for a doctor review, sent to your chosen Irish pharmacy if suitable';
+    items.push('Your data protected under the '+(c.id==='Brazil'?'LGPD':'GDPR'));
+    document.getElementById('r-list').innerHTML=items.map(function(t){return '<li>'+tick+'<span>'+t+'</span></li>'}).join('');
+    var r=document.getElementById('result');
+    if(animate){r.classList.remove('flash');void r.offsetWidth;r.classList.add('flash')}
+  }
+  render(false);
+  document.getElementById('r-btn').addEventListener('click',function(){
+    document.getElementById('f-country').value=state.c.id;
+    document.getElementById('f-need').value=N[state.n].form;
+  });
+  document.getElementById('req-form').addEventListener('submit',function(e){
+    e.preventDefault();
+    document.getElementById('sent').textContent='Thanks. This is a mockup, so nothing was sent.';
+  });
+
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce||!('IntersectionObserver' in window))return;
+  var els=document.querySelectorAll('.head, .svc-list li, .svc-photo, .steps li, .tx-card, .tx-list, .reg-table, .faq details, form, .stat');
+  var vh=window.innerHeight,io=new IntersectionObserver(function(es){
+    es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target)}});
+  },{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(el){
+    if(el.getBoundingClientRect().top>vh){el.classList.add('rise','will-rise');io.observe(el)}
+  });
+})();
+</script>
+</body>
+</html>
