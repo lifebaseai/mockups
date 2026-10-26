@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup janeflowers-com-1b5a46 1 1abc43d9 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jane Flowers Artist | Australian Contemporary Landscape Art</title>
+<meta name="description" content="Award winning Australian artist Jane Flowers: landscapes, seascapes and nautical scenes in oils on canvas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1b3361;      /* their navy */
+  --blue:#2f5597;     /* link blue, deepened for contrast */
+  --mist:#f1f2f4;     /* their page grey */
+  --line:#d5dae3;
+  --text:#2b3340;
+  --soft:#566072;
+  --white:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--mist);color:var(--text);font:400 17px/1.65 Raleway,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid #f0b429;outline-offset:3px;border-radius:2px}
+.wrap{width:min(1120px,100% - 48px);margin-inline:auto}
+h1,h2,h3{color:var(--ink);font-weight:300;letter-spacing:-.01em;line-height:1.12;margin:0}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin:0 0 14px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:#fff;padding:10px 14px;z-index:50}
+.skip:focus{top:52px}
+
+/* Signal Set banner */
+.mock{height:44px;display:flex;align-items:center;justify-content:center;background:#e4e8ef;color:#1d2a40;font-size:15px;line-height:1;border-bottom:1px solid #cdd4df;padding:0 12px;white-space:nowrap}
+.mock a{color:#1b3361;font-weight:600;text-decoration:underline;text-underline-offset:3px;margin-left:.3em}
+
+/* header */
+.top{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;min-height:76px;gap:24px}
+.brand{display:flex;flex-direction:column;gap:2px;text-decoration:none;color:var(--ink)}
+.brand img{width:146px;height:27px;margin-left:-4px}
+.brand span{font-size:26px;font-weight:300;letter-spacing:-.01em;line-height:1}
+.nav{display:flex;gap:6px;align-items:center}
+.nav a{font-size:15px;font-weight:500;text-decoration:none;color:var(--ink);padding:12px 12px;min-height:44px;display:inline-flex;align-items:center}
+.nav a:hover{color:var(--blue);text-decoration:underline;text-underline-offset:5px}
+.nav .cta{background:var(--ink);color:#fff;border-radius:2px;padding:12px 18px;margin-left:8px}
+.nav .short{display:none}
+.nav .cta:hover{background:var(--blue);color:#fff;text-decoration:none}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 26px;border-radius:2px;font:600 15px/1 Raleway,Arial,sans-serif;letter-spacing:.04em;text-decoration:none;border:1px solid var(--ink);cursor:pointer;transition:background .2s,color .2s}
+.btn-main{background:var(--ink);color:#fff}
+.btn-main:hover{background:var(--blue);border-color:var(--blue)}
+.btn-line{background:rgba(255,255,255,.7);color:var(--ink)}
+.btn-line:hover{background:#fff}
+
+/* hero */
+.hero{position:relative;min-height:min(86vh,780px);display:flex;align-items:flex-start;overflow:hidden;background:#cfdde9}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 62%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(241,244,248,.82) 0%,rgba(241,244,248,.5) 34%,rgba(241,244,248,0) 58%)}
+.hero .wrap{position:relative;z-index:1;padding:clamp(56px,10vh,112px) 0 48px}
+.hero h1{font-size:clamp(44px,7vw,92px);font-weight:300;letter-spacing:-.025em;max-width:11ch}
+.hero .lead{font-size:clamp(19px,2vw,23px);line-height:1.45;color:#22324d;max-width:30ch;margin:22px 0 32px;font-weight:400}
+.hero .actions{display:flex;gap:12px;flex-wrap:wrap}
+.credit{position:absolute;right:16px;bottom:12px;z-index:1;font-size:12px;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.6);margin:0}
+
+/* horizon rule motif */
+.horizon{height:1px;background:var(--line);position:relative}
+
+/* recognition */
+.honours{background:var(--white)}
+.honours .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.honour{padding:40px 32px 44px;border-left:1px solid var(--line)}
+.honour:first-child{border-left:0;padding-left:0}
+.honour .yr{font-size:15px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin:0 0 10px}
+.honour h2{font-size:24px;font-weight:400;margin-bottom:10px}
+.honour p{margin:0;color:var(--soft);font-size:16px;line-height:1.55}
+.honour em{font-style:normal;color:var(--ink);font-weight:500}
+
+/* about */
+section{scroll-margin-top:90px}
+.about{padding:clamp(72px,10vw,128px) 0}
+.about .wrap{display:grid;grid-template-columns:5fr 6fr;gap:clamp(32px,6vw,96px);align-items:start}
+.about h2{font-size:clamp(36px,4.6vw,58px)}
+.about .body p{margin:0 0 18px;font-size:18px}
+.about .body p:first-child{font-size:21px;line-height:1.5;color:var(--ink)}
+.tags{display:flex;flex-wrap:wrap;gap:0 32px;margin:30px 0 0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.tags li{flex:0 0 auto;padding:16px 0 0;font-size:14px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}
+.quote{margin:34px 0 0;font-size:clamp(22px,2.4vw,28px);font-weight:300;line-height:1.35;color:var(--ink);max-width:16ch}
+
+/* planner */
+.planner{background:var(--white);padding:clamp(72px,9vw,112px) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.planner .head{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:40px;flex-wrap:wrap}
+.planner h2{font-size:clamp(34px,4.4vw,54px);max-width:14ch}
+.planner .head p{max-width:40ch;margin:0;color:var(--soft)}
+.tool{display:grid;grid-template-columns:330px 1fr;gap:0;border:1px solid var(--line);border-radius:3px;overflow:hidden;box-shadow:0 1px 0 rgba(27,51,97,.04),0 18px 40px -24px rgba(27,51,97,.25)}
+.controls{padding:28px;background:#f8f9fb;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:24px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend,.lab{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);margin-bottom:10px;padding:0;display:block}
+.sizes{display:grid;gap:8px}
+.sizes label{display:flex;gap:12px;align-items:center;min-height:52px;padding:10px 14px;border:1px solid var(--line);border-radius:2px;background:#fff;cursor:pointer;font-size:15px;line-height:1.3}
+.sizes label small{display:block;color:var(--soft);font-size:13px}
+.sizes input{accent-color:var(--ink);width:18px;height:18px;flex:none;margin:0}
+.sizes label:has(input:checked){border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.own{display:none;gap:8px;margin-top:8px}
+.own.show{display:flex}
+.own label{flex:1;font-size:13px;color:var(--soft)}
+input[type=number],select,input[type=text],input[type=email],textarea{width:100%;font:500 16px Raleway,Arial,sans-serif;color:var(--ink);background:#fff;border:1px solid #b9c2d0;border-radius:2px;padding:11px 12px;min-height:46px}
+.range{display:flex;align-items:center;gap:12px}
+.range input[type=range]{flex:1;accent-color:var(--ink);height:44px;margin:0}
+.range output{min-width:74px;text-align:right;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+.stage{padding:24px 28px 28px;display:flex;flex-direction:column;gap:18px;min-width:0}
+.stage svg{width:100%;height:auto;background:#eef0f3;border-radius:2px}
+.readout{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line)}
+.readout div{padding:14px 16px 0 0}
+.readout b{display:block;font-size:30px;font-weight:300;color:var(--ink);font-variant-numeric:tabular-nums;line-height:1.1}
+.readout span{font-size:14px;color:var(--soft)}
+.stage .go{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.stage .go p{margin:0;font-size:15px;color:var(--soft);max-width:44ch}
+
+/* questions */
+.faq{padding:clamp(72px,9vw,112px) 0}
+.faq .wrap{display:grid;grid-template-columns:5fr 7fr;gap:clamp(32px,6vw,96px)}
+.faq h2{font-size:clamp(34px,4.2vw,50px)}
+details{border-top:1px solid var(--line)}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;min-height:44px;font-size:20px;font-weight:500;color:var(--ink)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";width:12px;height:12px;border-right:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink);transform:rotate(45deg) translateY(-4px);transition:transform .25s;flex:none}
+details[open] summary::after{transform:rotate(225deg) translateX(-4px)}
+details p{margin:-6px 0 24px;color:var(--text);max-width:56ch}
+
+/* contact */
+.contact{position:relative;padding:clamp(80px,10vw,128px) 0;overflow:hidden;background:#c9d3dc}
+.contact img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.contact::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(241,243,246,.94) 0%,rgba(241,243,246,.86) 45%,rgba(241,243,246,.15) 100%)}
+.contact .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1fr 470px;gap:48px;align-items:center}
+.contact h2{font-size:clamp(40px,5.4vw,70px);max-width:10ch}
+.contact .intro p{font-size:19px;max-width:30ch;color:#22324d;margin:20px 0 0}
+form{background:#fff;padding:32px;border-radius:3px;box-shadow:0 24px 60px -30px rgba(20,35,70,.45);display:grid;gap:16px}
+form label{display:grid;gap:6px;font-size:14px;font-weight:600;color:var(--ink)}
+textarea{min-height:120px;resize:vertical;line-height:1.5}
+.who{display:flex;flex-wrap:wrap;gap:8px}
+.who label{display:flex;align-items:center;gap:8px;font-weight:500;font-size:15px;min-height:44px;padding:0 14px;border:1px solid #b9c2d0;border-radius:2px;cursor:pointer}
+.who label:has(input:checked){border-color:var(--ink);background:#eef2f8}
+.who input{accent-color:var(--ink);margin:0}
+.sent{margin:0;font-size:15px;color:var(--ink);font-weight:600;min-height:1.2em}
+
+/* footer */
+footer{background:var(--ink);color:#dfe5ef;padding:56px 0 40px;font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;align-items:end}
+footer .name{font-size:30px;font-weight:300;color:#fff;margin:0 0 6px}
+footer a{color:#fff}
+footer p{margin:0}
+footer .made{width:100%;border-top:1px solid rgba(255,255,255,.18);padding-top:20px;margin-top:8px;color:#c4cede}
+
+/* gentle rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rise,.btn,summary::after{transition:none}
+  .will-rise{opacity:1;transform:none}
+}
+
+/* phone */
+@media (max-width:860px){
+  .nav a:not(.cta){display:none}
+  .brand span{font-size:22px}
+  .brand img{width:120px;height:auto}
+  .honours .wrap{grid-template-columns:1fr}
+  .honour{border-left:0;border-top:1px solid var(--line);padding:28px 0}
+  .honour:first-child{border-top:0}
+  .about .wrap,.faq .wrap,.contact .wrap{grid-template-columns:1fr}
+  .tool{grid-template-columns:1fr}
+  .controls{border-right:0;border-bottom:1px solid var(--line);padding:22px}
+  .stage{padding:18px 18px 22px}
+  .contact::before{background:linear-gradient(180deg,rgba(241,243,246,.94) 0%,rgba(241,243,246,.88) 40%,rgba(241,243,246,.5) 100%)}
+}
+@media (max-width:520px){
+  .wrap{width:calc(100% - 40px)}
+  .mock{font-size:14px}
+  .top .wrap{min-height:68px}
+  .nav .cta{padding:12px 16px;font-size:14px}
+  .nav .long{display:none}
+  .nav .short{display:inline}
+  .hero{min-height:640px}
+  .hero img.bg{object-position:58% 70%}
+  .hero::after{background:linear-gradient(180deg,rgba(241,244,248,.86) 0%,rgba(241,244,248,.6) 45%,rgba(241,244,248,0) 70%)}
+  .hero .wrap{padding-top:44px}
+  .hero .actions .btn{flex:1 1 100%}
+  .readout b{font-size:24px}
+  .readout span{font-size:13px}
+  form{padding:22px}
+  summary{font-size:18px}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Here's your free mockup from<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Jane Flowers Artist, home">
+      <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=150x27:format=gif/path/s22cbeb9988d83d82/logo/version/1399979941/image.gif" alt="Jane Flowers signature" width="146" height="27">
+      <span>Jane Flowers Artist</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#honours">Awards</a>
+      <a href="#plan">Plan your wall</a>
+      <a href="#questions">Questions</a>
+      <a class="cta" href="#ask"><span class="long">Ask about a painting</span><span class="short">Enquire</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <img class="bg" src="https://images.unsplash.com/photo-1468581264429-2548ef9eb732?w=2400&q=70&auto=format&fit=crop" alt="A calm sea under a pale sky, with a far shoreline on the horizon" width="2400" height="1600">
+    <div class="wrap">
+      <p class="eyebrow">Australian Contemporary Landscape Art</p>
+      <h1 id="hero-title">Jane Flowers Artist</h1>
+      <p class="lead">Award winning oils on canvas that bring the sea, the land and the sky into your room.</p>
+      <div class="actions">
+        <a class="btn btn-main" href="#ask">Ask about a painting</a>
+        <a class="btn btn-line" href="#plan">See a size on your wall</a>
+      </div>
+    </div>
+    <p class="credit">Photograph: Unsplash</p>
+  </section>
+
+  <section class="honours" id="honours" aria-label="Awards and exhibitions">
+    <div class="wrap">
+      <div class="honour">
+        <p class="yr">2014 · Winner</p>
+        <h2>ANL Maritime Art Award</h2>
+        <p>Mission to Seafarers Maritime Arts Awards, Docklands Melbourne, for <em>David and Goliath</em>, oil on canvas, 140 × 140 cm.</p>
+      </div>
+      <div class="honour">
+        <p class="yr">Highly Commended</p>
+        <h2><em style="font-weight:400">Opportunity</em></h2>
+        <p>Oil on canvas, 140 × 140 cm.</p>
+      </div>
+      <div class="honour">
+        <p class="yr">2022 · Exhibition</p>
+        <h2>Quietitude</h2>
+        <p>Salamanca Arts Centre, Hobart, September 2022, including <em>Huon Valley</em>, oil on canvas, 90 × 200 cm.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">About Jane Flowers</p>
+        <h2 id="about-title">The sea, the land and the sky, in oils.</h2>
+        <p class="quote">Paintings that make a room come to life.</p>
+      </div>
+      <div class="body">
+        <p>Jane Flowers is an award winning Australian artist who specialises in oils on canvas: landscapes, seascapes, nautical scenes and nature.</p>
+        <p>Her deep affinity with nature and the ocean turns the beauty of the outdoors into something you live with indoors. Regular travels around the world feed the work, each painting catching the feel of one time and place.</p>
+        <p>She keeps pushing further, combining gold leaf with oils and exploring abstract themes. Her work has a strong following among art lovers, collectors and interior designers.</p>
+        <p>Away from the easel she cares about protecting the wildlife and marine life of Australia's natural ecosystems.</p>
+        <ul class="tags" aria-label="Away from the easel">
+          <li>Diver</li><li>Beachcomber</li><li>Sailor</li><li>Adventurer</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="planner" id="plan" aria-labelledby="plan-title">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="eyebrow">Wall planner</p>
+          <h2 id="plan-title">See the size on your wall.</h2>
+        </div>
+        <p>These canvases are large. Enter your wall and what sits below it, and see one drawn to scale before you ask.</p>
+      </div>
+
+      <div class="tool">
+        <div class="controls">
+          <fieldset>
+            <legend>Canvas size</legend>
+            <div class="sizes">
+              <label><input type="radio" name="size" value="200x90" checked><span>90 × 200 cm, wide<small>The size of <i>Huon Valley</i></small></span></label>
+              <label><input type="radio" name="size" value="140x140"><span>140 × 140 cm, square<small>The size of <i>David and Goliath</i></small></span></label>
+              <label><input type="radio" name="size" value="own"><span>Another size<small>Type it in, in cm</small></span></label>
+            </div>
+            <div class="own" id="own">
+              <label>Height<input type="number" id="ownH" min="20" max="300" value="100" inputmode="numeric"></label>
+              <label>Width<input type="number" id="ownW" min="20" max="500" value="120" inputmode="numeric"></label>
+            </div>
+          </fieldset>
+          <div>
+            <label class="lab" for="wall">Wall width</label>
+            <div class="range"><input type="range" id="wall" min="150" max="700" step="10" value="360"><output id="wallOut" for="wall">360 cm</output></div>
+          </div>
+          <div>
+            <label class="lab" for="furn">Below the painting</label>
+            <select id="furn">
+              <option value="sofa" selected>A sofa</option>
+              <option value="sideboard">A sideboard</option>
+              <option value="bed">A bed</option>
+              <option value="none">Nothing, open wall</option>
+            </select>
+          </div>
+          <div id="furnWrap">
+            <label class="lab" for="fw">Its width</label>
+            <div class="range"><input type="range" id="fw" min="60" max="400" step="10" value="220"><output id="fwOut" for="fw">220 cm</output></div>
+          </div>
+        </div>
+
+        <div class="stage">
+          <svg id="wallSvg" viewBox="0 0 400 260" role="img" aria-labelledby="svgTitle"><title id="svgTitle">Scale drawing of the canvas on your wall</title></svg>
+          <div class="readout" aria-live="polite">
+            <div><b id="rSide">80 cm</b><span>clear wall each side</span></div>
+            <div><b id="rCover">56%</b><span>of the wall's width</span></div>
+            <div><b id="rFurn">20 cm</b><span id="rFurnLab">narrower than the sofa</span></div>
+          </div>
+          <div class="go">
+            <p id="summary">A 90 × 200 cm canvas on a 360 cm wall, above a 220 cm sofa.</p>
+            <a class="btn btn-main" href="#ask" id="askSize">Ask about this size</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="questions" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Questions</p>
+        <h2 id="faq-title">Good to know.</h2>
+      </div>
+      <div>
+        <details open>
+          <summary>What does Jane Flowers paint?</summary>
+          <p>Landscapes, seascapes, nautical scenes and nature, in oils on canvas. She also combines gold leaf with oils and explores abstract themes.</p>
+        </details>
+        <details>
+          <summary>How big are the paintings?</summary>
+          <p>Works on her site include canvases of 90 × 200 cm and 140 × 140 cm. Try either one in the wall planner above.</p>
+        </details>
+        <details>
+          <summary>Where has her work been shown?</summary>
+          <p>Her exhibition <i>Quietitude</i> was at Salamanca Arts Centre, Hobart, in September 2022. <i>David and Goliath</i> won the 2014 ANL Maritime Art Award at the Mission to Seafarers Maritime Arts Awards in Docklands, Melbourne.</p>
+        </details>
+        <details>
+          <summary>Who collects her work?</summary>
+          <p>Art lovers, collectors and interior designers.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="ask" aria-labelledby="ask-title">
+    <img class="bg" src="https://images.unsplash.com/photo-1655962833912-4350def99cd8?w=2000&q=65&auto=format&fit=crop" alt="" width="2000" height="1333" loading="lazy">
+    <div class="wrap">
+      <div class="intro">
+        <p class="eyebrow">Get in touch</p>
+        <h2 id="ask-title">Ask about a painting.</h2>
+        <p>Say which painting you're after, or the room it's for.</p>
+      </div>
+      <form id="form" novalidate>
+        <label>Your name<input type="text" name="name" autocomplete="name" required></label>
+        <label>Email<input type="email" name="email" autocomplete="email" required></label>
+        <fieldset>
+          <legend class="lab" style="font-size:14px;letter-spacing:0;text-transform:none;margin-bottom:8px">I'm</legend>
+          <div class="who">
+            <label><input type="radio" name="who" value="Art lover" checked> An art lover</label>
+            <label><input type="radio" name="who" value="Collector"> A collector</label>
+            <label><input type="radio" name="who" value="Interior designer"> An interior designer</label>
+          </div>
+        </fieldset>
+        <label>Message<textarea name="message" id="msg" placeholder="Which painting, which room, any sizes."></textarea></label>
+        <button class="btn btn-main" type="submit">Send enquiry</button>
+        <p class="sent" id="sent" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <p class="name">Jane Flowers Artist</p>
+      <p>Australian contemporary landscape art, oils on canvas.</p>
+    </div>
+    <p><a href="https://www.janeflowers.com/">janeflowers.com</a> · © Jane Flowers Artist</p>
+    <p class="made">Mockup made for Jane Flowers Artist by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var $ = function(id){return document.getElementById(id)};
+  var svg = $('wallSvg'), NS = 'http://www.w3.org/2000/svg';
+  var FURN = {sofa:{h:85,label:'sofa'},sideboard:{h:80,label:'sideboard'},bed:{h:110,label:'bed'}};
+  var WALL_H = 270;
+
+  function el(tag, attrs, text){
+    var n = document.createElementNS(NS, tag);
+    for (var k in attrs) n.setAttribute(k, attrs[k]);
+    if (text != null) n.textContent = text;
+    svg.appendChild(n); return n;
+  }
+  function size(){
+    var v = document.querySelector('input[name=size]:checked').value;
+    $('own').classList.toggle('show', v === 'own');
+    if (v === 'own') return {w: Math.max(20, +$('ownW').value || 120), h: Math.max(20, +$('ownH').value || 100)};
+    var p = v.split('x'); return {w:+p[0], h:+p[1]};
+  }
+  function draw(){
+    var s = size(), W = +$('wall').value, f = $('furn').value, fw = +$('fw').value;
+    var hasF = f !== 'none';
+    $('furnWrap').style.display = hasF ? '' : 'none';
+    $('wallOut').textContent = W + ' cm';
+    $('fwOut').textContent = fw + ' cm';
+    fw = Math.min(fw, W);
+
+    var pad = 30, vw = W + pad * 2, vh = WALL_H + 34;
+    svg.setAttribute('viewBox', '0 0 ' + vw + ' ' + vh);
+    while (svg.lastChild && svg.lastChild.nodeName !== 'title') svg.removeChild(svg.lastChild);
+    var u = vw / 400; // keep strokes and labels a steady size
+    var floor = WALL_H;
+
+    el('rect', {x:pad, y:0, width:W, height:floor, fill:'#f7f6f2'});
+    el('rect', {x:pad - 2*u, y:floor, width:W + 4*u, height:4*u, fill:'#c9cdd4'});
+
+    var fh = hasF ? FURN[f].h : 0, fx = pad + (W - fw) / 2;
+    if (hasF) {
+      if (f === 'sofa') {
+        el('rect', {x:fx, y:floor - fh, width:fw, height:fh - 12, rx:10, fill:'#c7ced9'});
+        el('rect', {x:fx + 8, y:floor - fh + 30, width:fw - 16, height:fh - 42, rx:6, fill:'#b4bdcb'});
+        el('rect', {x:fx + 10, y:floor - 12, width:5, height:12, fill:'#8e98a8'});
+        el('rect', {x:fx + fw - 15, y:floor - 12, width:5, height:12, fill:'#8e98a8'});
+      } else if (f === 'sideboard') {
+        el('rect', {x:fx, y:floor - fh, width:fw, height:fh - 10, rx:2, fill:'#c7ced9'});
+        el('line', {x1:fx + fw/2, y1:floor - fh + 6, x2:fx + fw/2, y2:floor - 16, stroke:'#aab3c2', 'stroke-width':1.2*u});
+        el('rect', {x:fx + 8, y:floor - 10, width:4, height:10, fill:'#8e98a8'});
+        el('rect', {x:fx + fw - 12, y:floor - 10, width:4, height:10, fill:'#8e98a8'});
+      } else {
+        el('rect', {x:fx, y:floor - fh, width:fw, height:fh, rx:4, fill:'#b4bdcb'});
+        el('rect', {x:fx, y:floor - 55, width:fw, height:55, rx:3, fill:'#c7ced9'});
+      }
+    }
+
+    // canvas: 25 cm above furniture, otherwise centred 150 cm from the floor
+    var cy = hasF ? floor - fh - 25 - s.h : floor - 150 - s.h / 2;
+    if (cy < 8) cy = 8;
+    var cx = pad + (W - s.w) / 2;
+    var fits = s.w <= W;
+    el('rect', {x:cx + 2*u, y:cy + 3*u, width:s.w, height:s.h, fill:'rgba(27,51,97,.12)'});
+    el('rect', {x:cx, y:cy, width:s.w, height:s.h, fill:'#e3e9f1', stroke:'#1b3361', 'stroke-width':1.4*u});
+    el('text', {x:cx + s.w/2, y:cy + s.h/2 + 5*u, 'text-anchor':'middle', 'font-size':13*u, 'font-family':'Raleway, Arial, sans-serif', 'font-weight':600, fill:'#1b3361'}, s.h + ' × ' + s.w + ' cm');
+
+    // dimension line across the canvas
+    var dy = cy - 9*u;
+    if (dy > 6*u) {
+      el('line', {x1:cx, y1:dy, x2:cx + s.w, y2:dy, stroke:'#2f5597', 'stroke-width':u});
+      el('line', {x1:cx, y1:dy - 4*u, x2:cx, y2:dy + 4*u, stroke:'#2f5597', 'stroke-width':u});
+      el('line', {x1:cx + s.w, y1:dy - 4*u, x2:cx + s.w, y2:dy + 4*u, stroke:'#2f5597', 'stroke-width':u});
+    }
+    // wall width label
+    el('text', {x:pad + W/2, y:floor + 22*u, 'text-anchor':'middle', 'font-size':12*u, 'font-family':'Raleway, Arial, sans-serif', 'font-weight':500, fill:'#566072'}, 'Wall ' + W + ' cm');
+
+    var side = Math.round((W - s.w) / 2);
+    $('rSide').textContent = fits ? side + ' cm' : 'Too wide';
+    $('rCover').textContent = Math.round(s.w / W * 100) + '%';
+    if (hasF) {
+      var d = s.w - fw;
+      $('rFurn').textContent = Math.abs(d) + ' cm';
+      $('rFurnLab').textContent = d > 0 ? 'wider than the ' + FURN[f].label : d < 0 ? 'narrower than the ' + FURN[f].label : 'same width as the ' + FURN[f].label;
+    } else {
+      $('rFurn').textContent = Math.round(s.h / WALL_H * 100) + '%';
+      $('rFurnLab').textContent = 'of a 270 cm high wall';
+    }
+    var sum = 'A ' + s.h + ' × ' + s.w + ' cm canvas on a ' + W + ' cm wall' + (hasF ? ', above a ' + fw + ' cm ' + FURN[f].label + '.' : '.');
+    $('summary').textContent = sum;
+    return sum;
+  }
+  ['wall','fw','furn','ownW','ownH'].forEach(function(id){ $(id).addEventListener('input', draw); });
+  document.querySelectorAll('input[name=size]').forEach(function(r){ r.addEventListener('change', draw); });
+  draw();
+
+  $('askSize').addEventListener('click', function(){
+    $('msg').value = draw().replace(/^A /, "I'm planning a ") + ' Could you tell me about paintings that would suit?';
+  });
+
+  $('form').addEventListener('submit', function(e){
+    e.preventDefault();
+    $('sent').textContent = 'Thanks. This is a mockup, so nothing was sent.';
+  });
+
+  // gentle rise for things below the first screen
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduce && 'IntersectionObserver' in window) {
+    var items = document.querySelectorAll('.honour, .about .wrap > div, .planner .head, .tool, .faq .wrap > div, .contact .intro, .contact form');
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting) { en.target.classList.remove('will-rise'); io.unobserve(en.target); }
+      });
+    }, {rootMargin:'0px 0px -40px 0px'});
+    items.forEach(function(n){
+      if (n.getBoundingClientRect().top > window.innerHeight) {
+        n.classList.add('rise', 'will-rise'); io.observe(n);
+      }
+    });
+  }
+})();
+</script>
+</body>
+</html>
