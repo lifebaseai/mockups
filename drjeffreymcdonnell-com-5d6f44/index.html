@@ -164,10 +164,7 @@ a.map:hover{text-decoration:underline}
 .training li small{display:block;color:var(--soft);font-size:14px}
 
 /* art */
-.art .wrap{display:grid;grid-template-columns:minmax(0,560px) 1fr;gap:72px;align-items:center}
-.art figure{margin:0}
-.art img{width:100%;max-width:560px;border-radius:2px;box-shadow:0 30px 60px -35px rgba(40,30,20,.45)}
-.art figcaption{font-size:13.5px;color:var(--soft);margin-top:12px}
+.art .wrap{max-width:860px;text-align:center}
 .art blockquote{margin:0;font:400 clamp(26px,2.8vw,36px)/1.3 var(--serif)}
 .art blockquote em{color:var(--gold-ink)}
 
@@ -531,10 +528,6 @@ footer nav a{text-decoration:none;min-height:44px;display:inline-flex;align-item
 
   <section class="sec art" aria-labelledby="h-art">
     <div class="wrap">
-      <figure>
-        <img src="https://images.squarespace-cdn.com/content/v1/5f28288cc49b910f24494485/1602416465324-92INNDQSMQXBUOJ7MTNM/Cezanne.jpg?format=1500w" width="1280" height="1015" alt="Still life with apples by Paul Cézanne" loading="lazy">
-        <figcaption>Paul Cézanne, still life with apples</figcaption>
-      </figure>
       <div>
         <h2 id="h-art" class="eyebrow" style="font-family:var(--sans);margin-bottom:18px">Outside the consulting room</h2>
         <blockquote>“Outside of my clinical work (but no doubt influencing it) I have an interest in the <em>Arts, Literature and Philosophy</em>.”</blockquote>
@@ -644,7 +637,7 @@ footer nav a{text-decoration:none;min-height:44px;display:inline-flex;align-item
 
   var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if(!reduce&&'IntersectionObserver' in window){
-    var els=document.querySelectorAll('.sec-head, .plan, .help-grid, .models, .steps li, .insurers, .place, .online, .timeline, .reg, .training, .art figure, .art blockquote, .faq details, form.ask');
+    var els=document.querySelectorAll('.sec-head, .plan, .help-grid, .models, .steps li, .insurers, .place, .online, .timeline, .reg, .training, .art blockquote, .faq details, form.ask');
     var io=new IntersectionObserver(function(entries){
       entries.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target);}});
     },{rootMargin:'0px 0px -40px 0px'});
