@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup robsonrebuild-com-au-aa522a 1 88d7fc50 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robson Rebuild | Sydney Home Builders, Design and Construction</title>
+<meta name="description" content="Robson Rebuild builds quality new homes and transforms existing and heritage homes across Sydney and surrounds. Call 1300 REBUILD (732 845).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#2e3d4c; --ink:#1f2a35; --muted:#55606b; --paper:#f6f3ee; --white:#fff;
+  --sand:#b88a5a; --sand-soft:#e9dfd2; --line:#ddd6cc;
+  --head:'Archivo',Arial,Helvetica,sans-serif; --body:'Jost','Futura','Century Gothic',Arial,sans-serif;
+  --wrap:1200px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--body);font-size:18px;line-height:1.6;color:var(--ink);background:var(--white)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--head);color:var(--navy);margin:0;letter-spacing:-.015em;line-height:1.08}
+h2{font-size:clamp(30px,4vw,46px);font-weight:800}
+h3{font-size:21px;font-weight:700;line-height:1.25}
+p{margin:0}
+:focus-visible{outline:3px solid var(--sand);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.eyebrow{font-family:var(--body);font-size:14px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#7a5733;display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--sand)}
+.skip{position:absolute;left:12px;top:-60px;background:var(--navy);color:#fff;padding:10px 14px;z-index:50}
+.skip:focus{top:56px}
+
+/* banner */
+.mock-banner{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:var(--navy);color:#fff;font-size:15px;line-height:1.3;text-align:center}
+.mock-banner a{color:#fff;text-decoration:underline;text-underline-offset:3px;font-weight:500}
+
+/* header */
+.site-head{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:84px}
+.logo{display:block;width:150px}
+.logo img{width:150px;height:auto}
+.nav{display:flex;align-items:center;gap:30px}
+.nav a{font-size:16px;text-decoration:none;color:var(--muted);text-transform:lowercase;letter-spacing:.04em;padding:10px 0}
+.nav a:hover{color:var(--navy)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;font-family:var(--head);font-weight:700;font-size:16px;letter-spacing:.01em;text-decoration:none;border:2px solid var(--navy);border-radius:2px;cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.btn-solid{background:var(--navy);color:#fff}
+.btn-solid:hover{background:var(--ink);border-color:var(--ink)}
+.btn-line{background:transparent;color:var(--navy)}
+.btn-line:hover{background:var(--navy);color:#fff}
+.head-call{min-height:46px;padding:0 18px;font-size:15px}
+.nav .head-call{color:var(--navy);text-transform:none;letter-spacing:.01em;padding:0 18px}
+.nav .head-call:hover{color:#fff}
+
+/* hero */
+.hero{padding:64px 0 96px;background:var(--white)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6.4fr);gap:56px;align-items:center}
+.hero h1{font-size:clamp(40px,4.6vw,60px);font-weight:800;margin:20px 0 22px}
+.hero h1 span{display:block;color:#8a6136}
+.hero .lead{font-size:20px;color:var(--muted);max-width:30em}
+.hero .actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.hero-photo{position:relative;margin:0}
+.hero-photo img{width:100%;max-width:1000px;aspect-ratio:3/2;object-fit:cover;box-shadow:0 30px 60px -30px rgba(31,42,53,.45)}
+.hero-photo::before{content:"";position:absolute;left:-18px;top:-18px;width:120px;height:120px;border-left:2px solid var(--sand);border-top:2px solid var(--sand)}
+.hero-photo figcaption{position:absolute;right:0;bottom:-22px;background:var(--white);padding:12px 18px;font-size:15px;color:var(--muted);box-shadow:0 10px 30px -14px rgba(31,42,53,.35)}
+.hero-photo figcaption b{font-family:var(--head);color:var(--navy);font-weight:700}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:40px;padding-top:24px;border-top:1px solid var(--line);font-size:15px;color:var(--muted)}
+.facts b{display:block;font-family:var(--head);color:var(--navy);font-size:17px}
+
+/* sections */
+section{padding:104px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:48px}
+.sec-head p{max-width:30em;color:var(--muted)}
+.sec-head h2{margin-top:14px}
+
+/* projects viewer */
+.projects{background:var(--paper)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:22px}
+.tab{min-height:48px;padding:0 22px;border:1px solid var(--line);background:var(--white);color:var(--navy);font-family:var(--head);font-weight:700;font-size:16px;cursor:pointer;border-radius:2px}
+.tab[aria-selected="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.viewer{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:28px;align-items:start}
+.stage{position:relative;margin:0;background:var(--sand-soft);overflow:hidden}
+.stage img{width:100%;aspect-ratio:3/2;object-fit:cover;transition:opacity .35s}
+.stage img.fade{opacity:0}
+.side{display:flex;flex-direction:column;gap:18px}
+.side .where{font-family:var(--head);font-size:30px;font-weight:800;color:var(--navy);line-height:1.1}
+.side .room{font-size:16px;color:var(--muted)}
+.thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.thumb{padding:0;border:2px solid transparent;background:none;cursor:pointer;min-height:44px}
+.thumb img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.thumb[aria-current="true"]{border-color:var(--sand)}
+.side .note{font-size:16px;color:var(--muted);border-top:1px solid var(--line);padding-top:18px}
+
+/* process */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0;position:relative;counter-reset:s}
+.steps-wrap{position:relative}
+.steps-wrap::before{content:"";position:absolute;left:0;right:0;top:27px;height:2px;background:var(--line)}
+.steps-wrap .bar{position:absolute;left:0;top:27px;height:2px;width:100%;background:var(--sand);transform-origin:left;transform:scaleX(1)}
+.steps li{position:relative;padding-right:36px}
+.steps .dot{width:56px;height:56px;border-radius:50%;background:var(--white);border:2px solid var(--sand);display:grid;place-items:center;font-family:var(--head);font-weight:800;color:var(--navy);position:relative;z-index:1;margin-bottom:24px}
+.steps p{color:var(--muted);margin-top:10px;font-size:17px}
+.team-line{margin-top:56px;padding:28px 32px;background:var(--paper);border-left:3px solid var(--sand);font-size:19px;color:var(--ink);max-width:880px}
+
+/* about */
+.about{background:var(--navy);color:#e9edf1}
+.about .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:72px;align-items:center}
+.about h2{color:#fff}
+.about .eyebrow{color:#e2c7a6}
+.about-photo{margin:0;max-width:440px}
+.about-photo img{width:100%;max-width:500px}
+.quote{font-family:var(--head);font-size:clamp(24px,2.6vw,32px);line-height:1.3;color:#fff;font-weight:600;margin:26px 0 26px}
+.quote::before{content:"";display:block;width:40px;height:3px;background:var(--sand);margin-bottom:22px}
+.about p.body{color:#d5dce3;font-size:18px}
+.cred{display:flex;gap:14px;align-items:center;margin-top:30px;padding-top:24px;border-top:1px solid rgba(255,255,255,.18)}
+.cred b{font-family:var(--head);color:#fff;font-size:18px;display:block}
+.cred span{font-size:15px;color:#c3ccd5}
+
+/* planner */
+.plan{background:var(--paper)}
+.plan-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:40px;align-items:start}
+.panel{background:var(--white);padding:36px;border:1px solid var(--line)}
+fieldset{border:0;padding:0;margin:0 0 28px}
+legend{font-family:var(--head);font-weight:700;color:var(--navy);font-size:17px;margin-bottom:12px;padding:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip span{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border:1px solid var(--line);border-radius:2px;font-size:16px;cursor:pointer;color:var(--ink);background:var(--white);transition:all .15s}
+.chip input:checked + span{background:var(--navy);border-color:var(--navy);color:#fff}
+.chip input:focus-visible + span{outline:3px solid var(--sand);outline-offset:2px}
+label.f{display:block;font-size:15px;color:var(--muted);margin-bottom:6px}
+.field{width:100%;min-height:50px;padding:12px 14px;font:inherit;font-size:17px;color:var(--ink);border:1px solid #b9b0a4;border-radius:2px;background:#fff}
+textarea.field{min-height:96px;resize:vertical}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.row{margin-bottom:16px}
+.brief{position:sticky;top:110px;background:var(--navy);color:#e9edf1;padding:36px}
+.brief .eyebrow{color:#e2c7a6}
+.brief h3{color:#fff;font-size:26px;margin:16px 0 18px;line-height:1.2}
+.brief dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 18px;font-size:16px}
+.brief dt{color:#b9c4cf}
+.brief dd{margin:0;color:#fff}
+.path{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:10px}
+.path li{display:flex;gap:12px;align-items:center;font-size:16px;color:#d5dce3}
+.path li i{width:10px;height:10px;border-radius:50%;border:2px solid #e2c7a6;flex:none}
+.path li.on i{background:#e2c7a6}
+.path li.on{color:#fff}
+.brief .send{margin-top:28px;width:100%;background:#fff;color:var(--navy);border-color:#fff}
+.brief .send:hover{background:var(--sand-soft);border-color:var(--sand-soft)}
+.thanks{margin-top:16px;padding:14px 16px;background:rgba(255,255,255,.1);border-left:3px solid #e2c7a6;color:#fff;font-size:16px}
+.thanks[hidden]{display:none}
+
+/* faq */
+.faq-list{max-width:860px}
+details{border-top:1px solid var(--line)}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:64px;padding:16px 0;font-family:var(--head);font-weight:700;font-size:19px;color:var(--navy)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";width:12px;height:12px;border-right:2px solid var(--sand);border-bottom:2px solid var(--sand);transform:rotate(45deg);transition:transform .2s;flex:none;margin-right:6px}
+details[open] summary::after{transform:rotate(-135deg)}
+details p{padding:0 0 22px;color:var(--muted);max-width:44em}
+
+/* end */
+.end{background:var(--white);text-align:center;padding:110px 0 120px;border-top:1px solid var(--line)}
+.end h2{font-size:clamp(34px,4.6vw,56px);max-width:16ch;margin:18px auto 20px}
+.end .eyebrow{justify-content:center}
+.end p{color:var(--muted);max-width:34em;margin:0 auto}
+.end .actions{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-top:36px}
+.contacts{display:flex;justify-content:center;flex-wrap:wrap;gap:12px 36px;margin-top:40px;font-size:17px}
+.contacts a{color:var(--navy);text-decoration:none;border-bottom:1px solid var(--sand);padding:10px 0}
+
+footer{background:var(--ink);color:#c3ccd5;padding:36px 0 40px;font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px 32px}
+footer a{color:#fff}
+
+.callbar{display:none}
+
+/* motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+
+/* responsive */
+@media (max-width:980px){
+  .nav a:not(.head-call){display:none}
+  .hero .wrap,.about .wrap,.plan-grid{grid-template-columns:1fr}
+  .viewer{grid-template-columns:1fr}
+  .brief{position:static}
+  .about-photo{max-width:360px}
+  .sec-head{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:640px){
+  body{font-size:17px;padding-bottom:68px}
+  .wrap{padding:0 20px}
+  .site-head .wrap{height:70px}
+  .logo,.logo img{width:118px}
+  .head-call{display:none}
+  .hero{padding:36px 0 56px}
+  .hero .wrap{gap:36px}
+  .hero h1{font-size:40px;margin:16px 0 16px}
+  .hero .lead{font-size:18px}
+  .hero .actions{margin-top:26px}
+  .hero .actions .btn{flex:1 1 100%}
+  .hero-photo::before{left:-8px;top:-8px;width:70px;height:70px}
+  .hero-photo figcaption{right:12px;bottom:-18px;font-size:14px}
+  .facts{gap:16px 24px;margin-top:30px}
+  section{padding:72px 0}
+  .sec-head{margin-bottom:32px}
+  .tab{flex:1 1 auto;padding:0 14px}
+  .steps{grid-template-columns:1fr;gap:34px}
+  .steps-wrap::before,.steps-wrap .bar{left:27px;right:auto;top:0;bottom:0;width:2px;height:auto}
+  .steps-wrap .bar{transform-origin:top}
+  .steps li{padding:0 0 0 80px;min-height:56px}
+  .steps .dot{position:absolute;left:0;top:0;margin:0}
+  .team-line{padding:22px 22px;font-size:17px;margin-top:40px}
+  .about .wrap{gap:40px}
+  .about-photo{max-width:100%}
+  .panel,.brief{padding:24px 20px}
+  .two{grid-template-columns:1fr}
+  summary{font-size:18px}
+  .end{padding:80px 0 88px}
+  .end .actions .btn{flex:1 1 100%}
+  .contacts{flex-direction:column;align-items:center;gap:4px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid var(--line);box-shadow:0 -6px 20px -12px rgba(31,42,53,.4)}
+  .callbar .btn{flex:1;min-height:50px;padding:0 10px;font-size:15px}
+  footer{padding-bottom:30px}
+}
+</style>
+</head>
+<body>
+<div class="mock-banner" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Robson Rebuild, home">
+      <img src="https://images.squarespace-cdn.com/content/v1/558355b1e4b0f18d168eccb1/1564455475818-PBU8RICEU1ES2AT0V2R4/Logo_DesignConstruction.JPG?format=750w" alt="Robson Rebuild, Design | Construction" width="750" height="341">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#homes">portfolio</a>
+      <a href="#process">process</a>
+      <a href="#about">about</a>
+      <a href="#questions">questions</a>
+      <a href="#start">contact</a>
+      <a class="btn btn-line head-call" href="tel:1300732845">1300 REBUILD</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="hero" id="top">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Sydney home builders</p>
+        <h1>Robson Rebuild. <span>New homes, and old homes made new.</span></h1>
+        <p class="lead">We build quality new homes and transform existing ones across Sydney, including heritage homes in some of its most beautiful suburbs, made for modern life without losing their elegance.</p>
+        <div class="actions">
+          <a class="btn btn-solid" href="#start">Start your project</a>
+          <a class="btn btn-line" href="tel:1300732845">Call 1300 REBUILD</a>
+        </div>
+        <div class="facts">
+          <div><b>Design to move-in</b>with you the whole way</div>
+          <div><b>Sydney &amp; surrounds</b>new builds and renovations</div>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="https://images.squarespace-cdn.com/content/v1/558355b1e4b0f18d168eccb1/1633491265587-7VPFU933H8MBGJN7JNBI/15A_Wharf_Road_Birchgrove_High_Backyard_4_V2.jpg?format=1000w" alt="Terraced backyard with a pool, sandstone walls and a three-level home behind, Birchgrove" width="1000" height="667" fetchpriority="high">
+        <figcaption><b>Birchgrove</b> &middot; a Robson Rebuild home</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <section class="projects" id="homes" aria-labelledby="homes-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">Our homes</p>
+          <h2 id="homes-h">Walk through a few of our homes.</h2>
+        </div>
+        <p>Pick a suburb, then a room. Every photo here is a home we built or transformed.</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Choose a home">
+        <button class="tab" role="tab" aria-selected="true" aria-controls="viewer" id="t-0" data-home="0">Birchgrove</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="viewer" id="t-1" data-home="1" tabindex="-1">Bondi</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="viewer" id="t-2" data-home="2" tabindex="-1">Balgowlah</button>
+      </div>
+      <div class="viewer" id="viewer" role="tabpanel" aria-labelledby="t-0">
+        <figure class="stage">
+          <img id="stage-img" src="https://images.squarespace-cdn.com/content/v1/558355b1e4b0f18d168eccb1/1633491858839-1KH6232FPF36F7623MT3/15A_Wharf_Road_Birchgrove_High_Kitchen_2_V2.jpg?format=1500w" alt="White kitchen with a stone island and brushed tapware, Birchgrove" width="1500" height="1000">
+        </figure>
+        <div class="side">
+          <p class="where" id="where">Birchgrove</p>
+          <p class="room" id="room">Kitchen</p>
+          <div class="thumbs" id="thumbs"></div>
+          <p class="note">From the first design conversation to the day you move in, the same build team.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" aria-labelledby="process-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">How we build</p>
+          <h2 id="process-h">With you from first sketch to front door.</h2>
+        </div>
+      </div>
+      <div class="steps-wrap" id="steps"><span class="bar" aria-hidden="true"></span>
+      <ol class="steps">
+        <li><span class="dot">01</span><h3>Design</h3><p>We work with you from the initial design conception, alongside our selected consultants.</p></li>
+        <li><span class="dot">02</span><h3>Build</h3><p>Our long standing build team, skilled tradespeople, suppliers and specialised contractors on your home.</p></li>
+        <li><span class="dot">03</span><h3>Move in</h3><p>We stay with you right through to final occupation.</p></li>
+      </ol></div>
+      <p class="team-line">We put our success and longevity down to one thing: a long standing, trusted build team.</p>
+    </div>
+  </section>
+
+  <section class="about" id="about" aria-labelledby="about-h">
+    <div class="wrap">
+      <figure class="about-photo">
+        <img src="https://images.squarespace-cdn.com/content/v1/558355b1e4b0f18d168eccb1/1633491322777-E2T5UPO8ARQWR86ZI28J/15A_Wharf_Road_Birchgrove_High_Hall_2_V2.jpg?format=500w" alt="Open timber staircase beside a sandstone wall, Birchgrove" width="500" height="750" loading="lazy">
+      </figure>
+      <div>
+        <p class="eyebrow">About us</p>
+        <h2 id="about-h">Traditional elegance, made for modern life.</h2>
+        <p class="quote">We transform traditional, and sometimes sensitive, architecture to suit modern life without compromise of quality and sophistication.</p>
+        <p class="body">Robson Rebuild is a Sydney based residential home building company. Greg Robson founded it after years of residential and commercial construction, and since then Greg and the team have been building new homes and transforming existing ones across Sydney and surrounds.</p>
+        <div class="cred">
+          <div><b>Greg Robson</b><span>Founder &middot; B.Construction, UTS 2010</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="plan" id="start" aria-labelledby="start-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">Start your project</p>
+          <h2 id="start-h">Tell us about your home.</h2>
+        </div>
+        <p>Tap a few answers and your brief writes itself. Send it, and we'll be in touch to discuss your project goals.</p>
+      </div>
+      <form class="plan-grid" id="plan" novalidate>
+        <div class="panel">
+          <fieldset>
+            <legend>What are we building?</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="type" value="A new home"><span>A new home</span></label>
+              <label class="chip"><input type="radio" name="type" value="Transforming an existing home"><span>Transform my home</span></label>
+              <label class="chip"><input type="radio" name="type" value="Transforming a heritage home" checked><span>A heritage home</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Where are you up to?</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="stage" value="Just an idea" data-step="0"><span>Just an idea</span></label>
+              <label class="chip"><input type="radio" name="stage" value="Working on the design" data-step="0" checked><span>Working on the design</span></label>
+              <label class="chip"><input type="radio" name="stage" value="Plans ready, looking for a builder" data-step="1"><span>Plans ready</span></label>
+            </div>
+          </fieldset>
+          <div class="row">
+            <label class="f" for="suburb">Suburb</label>
+            <input class="field" id="suburb" name="suburb" value="Birchgrove" autocomplete="address-level2">
+          </div>
+          <div class="two row">
+            <div><label class="f" for="name">Your name</label><input class="field" id="name" name="name" autocomplete="name"></div>
+            <div><label class="f" for="phone">Phone</label><input class="field" id="phone" name="phone" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="row">
+            <label class="f" for="email">Email</label>
+            <input class="field" id="email" name="email" type="email" autocomplete="email">
+          </div>
+          <div class="row" style="margin-bottom:0">
+            <label class="f" for="goals">Your project goals</label>
+            <textarea class="field" id="goals" name="goals">Open up the back of the house to the garden, keep the original front.</textarea>
+          </div>
+        </div>
+        <aside class="brief" aria-live="polite" aria-label="Your project brief">
+          <p class="eyebrow">Your brief</p>
+          <h3 id="b-title">Transforming a heritage home in Birchgrove</h3>
+          <dl>
+            <dt>Stage</dt><dd id="b-stage">Working on the design</dd>
+            <dt>Goals</dt><dd id="b-goals">Open up the back of the house to the garden, keep the original front.</dd>
+          </dl>
+          <ul class="path" id="b-path">
+            <li class="on"><i></i>Design: we join you here</li>
+            <li><i></i>Build</li>
+            <li><i></i>Move in</li>
+          </ul>
+          <button class="btn send" type="submit">Send my brief</button>
+          <p class="thanks" id="thanks" hidden>Thanks. This is a mockup, so nothing was sent.</p>
+        </aside>
+      </form>
+    </div>
+  </section>
+
+  <section id="questions" aria-labelledby="q-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">Questions</p>
+          <h2 id="q-h">What people ask us first.</h2>
+        </div>
+      </div>
+      <div class="faq-list">
+        <details open><summary>Where do you build?</summary><p>Across Sydney and surrounds. Our homes include Birchgrove, Bondi and Balgowlah.</p></details>
+        <details><summary>Do you build new homes or renovate?</summary><p>Both. We build quality new homes and transform existing homes.</p></details>
+        <details><summary>Do you work on heritage homes?</summary><p>Yes. We work at times with heritage homes, transforming traditional and sometimes sensitive architecture to suit modern life while keeping its elegance.</p></details>
+        <details><summary>When should we get you involved?</summary><p>As early as you like. Our team works with clients from the initial design conception right through build and final occupation.</p></details>
+        <details><summary>How do we start?</summary><p>Call our office on 1300 732 845 or 0437 167 151, email info@robsonrebuild.com.au, or send your brief from this page.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="end" aria-labelledby="end-h">
+    <div class="wrap">
+      <p class="eyebrow">Robson Rebuild</p>
+      <h2 id="end-h">Let's talk about your home.</h2>
+      <p>Tell us your project goals. A new home or a transformation, we'll take it from the first sketch to the day you move in.</p>
+      <div class="actions">
+        <a class="btn btn-solid" href="#start">Start your project</a>
+        <a class="btn btn-line" href="tel:1300732845">Call 1300 REBUILD</a>
+      </div>
+      <div class="contacts">
+        <a href="tel:1300732845">1300 732 845</a>
+        <a href="tel:0437167151">0437 167 151</a>
+        <a href="mailto:info@robsonrebuild.com.au">info@robsonrebuild.com.au</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; Robson Rebuild &middot; Design | Construction &middot; Sydney</p>
+    <p>Mockup made for Robson Rebuild by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick contact">
+  <a class="btn btn-solid" href="tel:1300732845">Call 1300 REBUILD</a>
+  <a class="btn btn-line" href="#start">Start project</a>
+</div>
+
+<script>
+(function(){
+  var B='https://images.squarespace-cdn.com/content/v1/558355b1e4b0f18d168eccb1/';
+  var homes=[
+    {name:'Birchgrove',rooms:[
+      {r:'Kitchen',src:B+'1633491858839-1KH6232FPF36F7623MT3/15A_Wharf_Road_Birchgrove_High_Kitchen_2_V2.jpg?format=1500w',alt:'White kitchen with a stone island and brushed tapware, Birchgrove'},
+      {r:'Dining',src:B+'1633491718334-0BMRO3Z7YMG0WQVDPRZ2/15A_Wharf_Road_Birchgrove_High_Dining_2_V2.jpg?format=1500w',alt:'Round dining table with blue velvet chairs beside a sandstone wall, Birchgrove'},
+      {r:'Backyard',src:B+'1633491265587-7VPFU933H8MBGJN7JNBI/15A_Wharf_Road_Birchgrove_High_Backyard_4_V2.jpg?format=1000w',alt:'Terraced backyard with pool and sandstone walls, Birchgrove'}]},
+    {name:'Bondi',rooms:[
+      {r:'Living',src:B+'1665444104233-QBDUZUOXEI5DZ8F774L9/63_Imperial_Ave_Bondi_High_Living_1.jpg?format=1500w',alt:'Light-filled living room opening to the garden, Bondi'},
+      {r:'Facade',src:B+'1665443484477-EMSNNJEK1YEYKL46IIDX/63_Imperial_Ave_Bondi_High_Facade.jpg?format=1500w',alt:'Two-storey rendered home with arched entry and brick fence, Bondi'}]},
+    {name:'Balgowlah',rooms:[
+      {r:'Pool and garden',src:B+'1564445172515-U2N16SF3RXJRQTDGRAKA/1_Audrey_St_Balgowlah_High_Pool.jpg?format=1000w',alt:'White gabled home with pool and lawn, Balgowlah'}]}
+  ];
+  var img=document.getElementById('stage-img'),where=document.getElementById('where'),room=document.getElementById('room'),thumbs=document.getElementById('thumbs'),viewer=document.getElementById('viewer');
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  function show(h,i){
+    var it=homes[h].rooms[i];
+    if(img.getAttribute('src')!==it.src){img.classList.add('fade');setTimeout(function(){img.src=it.src;img.alt=it.alt;img.onload=function(){img.classList.remove('fade')};},180);}
+    where.textContent=homes[h].name;room.textContent=it.r;
+    [].forEach.call(thumbs.children,function(b,k){b.setAttribute('aria-current',k===i?'true':'false')});
+  }
+  function home(h){
+    tabs.forEach(function(t,k){t.setAttribute('aria-selected',k===h?'true':'false');t.tabIndex=k===h?0:-1});
+    viewer.setAttribute('aria-labelledby','t-'+h);
+    thumbs.innerHTML='';
+    homes[h].rooms.forEach(function(it,k){
+      var b=document.createElement('button');b.type='button';b.className='thumb';b.setAttribute('aria-label','Show '+it.r.toLowerCase());
+      var t=document.createElement('img');t.src=it.src;t.alt='';t.width=96;t.height=96;t.loading='lazy';b.appendChild(t);
+      b.addEventListener('click',function(){show(h,k)});thumbs.appendChild(b);
+    });
+    thumbs.style.display=homes[h].rooms.length>1?'':'none';
+    show(h,0);
+  }
+  tabs.forEach(function(t,k){
+    t.addEventListener('click',function(){home(k)});
+    t.addEventListener('keydown',function(e){var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(d){var n=(k+d+tabs.length)%tabs.length;tabs[n].focus();home(n)}});
+  });
+  home(0);
+
+  // planner
+  var form=document.getElementById('plan');
+  function val(n){var e=form.querySelector('[name="'+n+'"]:checked');return e?e.value:''}
+  function brief(){
+    var type=val('type'),sub=form.suburb.value.trim();
+    document.getElementById('b-title').textContent=type+(sub?' in '+sub:'');
+    document.getElementById('b-stage').textContent=val('stage');
+    var g=form.goals.value.trim();document.getElementById('b-goals').textContent=g||'Tell us in a line or two';
+    var st=form.querySelector('[name="stage"]:checked'),s=st?+st.getAttribute('data-step'):0;
+    var li=document.querySelectorAll('#b-path li');
+    li[0].className=s===0?'on':'';li[1].className=s===1?'on':'';
+    li[0].innerHTML='<i></i>Design'+(s===0?': we join you here':'');
+    li[1].innerHTML='<i></i>Build'+(s===1?': we start here':'');
+  }
+  form.addEventListener('input',brief);form.addEventListener('change',brief);
+  form.addEventListener('submit',function(e){e.preventDefault();var t=document.getElementById('thanks');t.hidden=false;});
+  brief();
+
+  // gentle rise, only for things below the first screen
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce&&'IntersectionObserver' in window){
+    var els=document.querySelectorAll('.sec-head,.viewer,.steps li,.team-line,.about-photo,.about .wrap>div,.panel,.brief,details,.end .wrap');
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    [].forEach.call(els,function(el){if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('rise','will-rise');io.observe(el)}});
+    var bar=document.querySelector('.steps-wrap .bar');
+    if(bar&&bar.getBoundingClientRect().top>window.innerHeight){
+      bar.style.transform='scaleX(0)';bar.style.transition='transform 1.4s ease .2s';
+      var vertical=window.matchMedia('(max-width:640px)').matches;if(vertical)bar.style.transform='scaleY(0)';
+      var io2=new IntersectionObserver(function(es){if(es[0].isIntersecting){bar.style.transform='none';io2.disconnect()}},{threshold:.4});
+      io2.observe(document.getElementById('steps'));
+    }
+  }
+})();
+</script>
+</body>
+</html>
