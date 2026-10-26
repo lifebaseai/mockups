@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup aufierimartinez-us-8bc4f2 1 c0f02c40 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aufieri &amp; Martinez | Argentine Steakhouse in Naples, FL</title>
+<meta name="description" content="Argentine steakhouse in Naples, Florida. Steak crafted over wood and charcoal. We do not cook with gas. We cook with fire.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Questrial&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0b0907; --coal:#14100b; --coal2:#1c1610; --line:#3a2f1c;
+  --bone:#f3ece0; --muted:#bdb19c; --gold:#d7a72c; --gold-deep:#846619;
+  --disp:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Questrial",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--bone);font:17px/1.6 var(--body);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+.skip{position:absolute;left:-9999px;top:0}
+.skip:focus{left:12px;top:56px;background:var(--gold);color:#120d04;padding:10px 14px;z-index:60}
+
+/* Mockup banner */
+.mock{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:#efe6d3;color:#2a1f0c;font:15px/1.3 var(--body);text-align:center;border-bottom:1px solid #c9b88f}
+.mock a{color:#5c430c;text-decoration:underline;text-underline-offset:3px;font-weight:700}
+
+/* Header */
+.top{position:sticky;top:0;z-index:40;background:rgba(11,9,7,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid #221b11}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:78px}
+.brand{display:flex;align-items:center}
+.brand img{width:112px;height:auto}
+.nav{display:flex;gap:28px;align-items:center}
+.nav a{font:600 15px/1 var(--disp);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--muted);padding:14px 0}
+.nav a:hover{color:var(--bone)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:2px;font:700 16px/1 var(--disp);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;cursor:pointer;border:1px solid var(--gold);transition:background .2s,color .2s,transform .2s}
+.btn-gold{background:var(--gold);color:#140e03}
+.btn-gold:hover{background:#e6b843}
+.btn-line{background:transparent;color:var(--bone);border-color:#6b5524}
+.btn-line:hover{border-color:var(--gold);color:var(--gold)}
+.btn svg{width:16px;height:16px}
+.top .btn{min-height:44px;padding:0 18px;font-size:15px}
+
+/* Hero */
+.hero{padding:72px 0 96px;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.08fr 1fr;gap:64px;align-items:center}
+.kicker{font:600 15px/1.2 var(--disp);letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin:0 0 22px;display:flex;align-items:center;gap:14px}
+.kicker::before{content:"";width:34px;height:1px;background:var(--gold)}
+h1{margin:0;font:700 clamp(52px,7.4vw,104px)/.9 var(--disp);text-transform:uppercase;letter-spacing:.005em}
+h1 .name{display:block;font:600 clamp(17px,1.6vw,20px)/1.3 var(--disp);letter-spacing:.24em;color:var(--muted);margin-bottom:22px}
+h1 .fire{color:var(--gold)}
+.lede{font-size:19px;color:#d9cfbd;max-width:30em;margin:28px 0 36px}
+.actions{display:flex;flex-wrap:wrap;gap:14px}
+.fireframe{position:relative;justify-self:end;width:100%;max-width:584px}
+.fireframe figure{margin:0;position:relative;border:1px solid var(--line);padding:12px;background:var(--coal)}
+.fireframe img{width:100%;filter:saturate(1.05) contrast(1.04)}
+.fireframe figcaption{display:flex;justify-content:space-between;gap:12px;padding:14px 4px 2px;font:600 14px/1.3 var(--disp);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.fireframe figcaption b{color:var(--gold);font-weight:600}
+.embers{position:absolute;inset:12px 12px auto 12px;height:calc(100% - 60px);overflow:hidden;pointer-events:none}
+.embers i{position:absolute;bottom:18%;width:3px;height:3px;border-radius:50%;background:#ffb547;box-shadow:0 0 6px 2px rgba(255,140,40,.6);opacity:0}
+.embers.on i{animation:rise 5.5s linear infinite}
+.embers i:nth-child(1){left:52%;animation-delay:0s}
+.embers i:nth-child(2){left:61%;animation-delay:1.3s;width:2px;height:2px}
+.embers i:nth-child(3){left:46%;animation-delay:2.4s}
+.embers i:nth-child(4){left:68%;animation-delay:3.1s;width:2px;height:2px}
+.embers i:nth-child(5){left:57%;animation-delay:4.2s}
+.embers i:nth-child(6){left:40%;animation-delay:.7s;width:2px;height:2px}
+@keyframes rise{0%{transform:translate(0,0);opacity:0}10%{opacity:.95}60%{opacity:.6}100%{transform:translate(18px,-260px);opacity:0}}
+
+/* Section heads */
+section{scroll-margin-top:90px}
+.sec{padding:110px 0}
+.eyebrow{font:600 14px/1.2 var(--disp);letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin:0 0 14px}
+h2{margin:0;font:700 clamp(40px,5vw,64px)/.95 var(--disp);text-transform:uppercase}
+h3{margin:0;font:700 28px/1 var(--disp);text-transform:uppercase;letter-spacing:.01em}
+.head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:56px}
+.head p{margin:0;max-width:30em;color:var(--muted)}
+
+/* Method */
+.method{background:var(--coal);border-block:1px solid #221b11}
+.method .wrap{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.method figure{margin:0;max-width:690px}
+.method figure img{border:1px solid var(--line)}
+.beats{list-style:none;margin:40px 0 0;padding:0;counter-reset:b}
+.beats li{counter-increment:b;display:grid;grid-template-columns:56px 1fr;gap:4px 18px;padding:22px 0;border-top:1px solid var(--line)}
+.beats li::before{content:"0" counter(b);grid-row:span 2;font:700 30px/1 var(--disp);color:var(--gold-deep);color:#a8842a}
+.beats h3{font-size:24px}
+.beats p{margin:0;color:var(--muted)}
+.creed{margin:36px 0 0;font:600 18px/1.3 var(--disp);letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+
+/* Signatures */
+.dish{display:grid;grid-template-columns:7fr 5fr;gap:60px;align-items:center;margin-bottom:90px}
+.dish.flip{grid-template-columns:5fr 7fr}
+.dish.flip figure{order:2}
+.dish figure{margin:0;max-width:690px}
+.dish figure img{width:100%;border:1px solid var(--line)}
+.dish .tag{font:600 14px/1 var(--disp);letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin:0 0 14px}
+.dish h3{font-size:clamp(34px,3.6vw,46px);line-height:.95}
+.dish p{color:#d9cfbd;margin:18px 0 0;max-width:28em}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.pair article{background:var(--coal);border:1px solid #221b11;padding:14px 14px 26px}
+.pair img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.pair h3{margin:22px 8px 0;font-size:30px}
+.pair p{margin:10px 8px 0;color:var(--muted)}
+
+/* Planner */
+.plan{background:var(--coal);border-block:1px solid #221b11}
+.planner{display:grid;grid-template-columns:1.35fr 1fr;gap:40px;align-items:start}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.tab{min-height:44px;padding:0 18px;border:1px solid var(--line);background:transparent;color:var(--muted);font:600 16px/1 var(--disp);letter-spacing:.14em;text-transform:uppercase;cursor:pointer;border-radius:2px}
+.tab[aria-selected="true"]{background:var(--bone);color:#140e03;border-color:var(--bone)}
+.list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.list[hidden]{display:none}
+.item{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:16px 4px;border-bottom:1px solid var(--line)}
+.item b{display:block;font:700 21px/1.1 var(--disp);text-transform:uppercase;letter-spacing:.02em}
+.item span{display:block;color:var(--muted);font-size:15px;line-height:1.45;margin-top:5px}
+.add{width:44px;height:44px;border-radius:50%;border:1px solid #6b5524;background:transparent;color:var(--gold);cursor:pointer;display:grid;place-items:center;transition:background .2s,transform .2s}
+.add svg{width:16px;height:16px}
+.add[aria-pressed="true"]{background:var(--gold);color:#140e03;border-color:var(--gold)}
+.add[aria-pressed="true"] .plus{display:none}
+.add[aria-pressed="false"] .tick{display:none}
+.more{margin:18px 4px 0;color:var(--muted);font-size:15px}
+.more a{color:var(--gold)}
+.ticket{position:sticky;top:100px;background:var(--bone);color:#1d160a;padding:30px 28px 28px;border-radius:3px;box-shadow:0 30px 60px -30px rgba(0,0,0,.8)}
+.ticket::before{content:"";position:absolute;left:0;right:0;top:-1px;height:8px;background:radial-gradient(circle at 8px -2px,var(--coal) 7px,transparent 7.5px) 0 0/16px 8px repeat-x}
+.ticket h3{font-size:30px;color:#140e03}
+.ticket .sum{margin:8px 0 18px;color:#5b4a2c;font-size:15px}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fields .full{grid-column:1/-1}
+label{display:block;font:600 13px/1 var(--disp);letter-spacing:.16em;text-transform:uppercase;color:#5b4a2c}
+input,select{display:block;width:100%;margin-top:6px;min-height:46px;padding:0 12px;border:1px solid #cdbf9f;background:#fbf7ef;color:#1d160a;font:16px var(--body);border-radius:2px}
+.stepper{display:flex;align-items:center;margin-top:6px;border:1px solid #cdbf9f;background:#fbf7ef;border-radius:2px}
+.stepper button{width:46px;height:44px;border:0;background:transparent;font:700 22px/1 var(--disp);color:#5c430c;cursor:pointer}
+.stepper output{flex:1;text-align:center;font:700 20px/1 var(--disp)}
+.picked{margin:20px 0 0;padding:16px 0 0;border-top:1px dashed #b9a77f}
+.picked p{margin:0 0 8px;font:600 13px/1 var(--disp);letter-spacing:.16em;text-transform:uppercase;color:#5b4a2c}
+.picked ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.picked li{font:600 15px/1 var(--disp);letter-spacing:.06em;text-transform:uppercase;background:#e9dfc9;padding:8px 10px;border-radius:2px}
+.picked .none{background:none;padding:8px 0;color:#5b4a2c;text-transform:none;font:15px var(--body);letter-spacing:0}
+.ticket .btn{width:100%;margin-top:22px;background:#140e03;color:var(--bone);border-color:#140e03}
+.ticket .btn:hover{background:#2a1f0c}
+.thanks{margin:14px 0 0;font-size:15px;color:#3d2f16;min-height:1px}
+
+/* Story */
+.story .wrap{display:grid;grid-template-columns:5fr 6fr;gap:72px;align-items:center}
+.story figure{margin:0;max-width:690px}
+.story figure img{border:1px solid var(--line)}
+.story p{color:#d9cfbd;margin:22px 0 0;max-width:32em}
+.story .quote{font:600 clamp(24px,2.4vw,30px)/1.15 var(--disp);text-transform:uppercase;color:var(--gold);letter-spacing:.02em}
+
+/* FAQ */
+.faq{background:var(--coal);border-block:1px solid #221b11}
+.qa{display:grid;grid-template-columns:repeat(2,1fr);gap:0 56px;margin:0}
+.qa div{padding:24px 0;border-top:1px solid var(--line)}
+.qa dt{font:700 23px/1.1 var(--disp);text-transform:uppercase}
+.qa dd{margin:8px 0 0;color:var(--muted)}
+
+/* Visit */
+.visit{text-align:center;padding:120px 0 110px}
+.visit h2{font-size:clamp(46px,6.5vw,88px)}
+.visit .addr{font-size:19px;color:#d9cfbd;margin:22px 0 34px}
+.visit .actions{justify-content:center}
+.contact{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;margin-top:40px;color:var(--muted)}
+.contact a{display:inline-flex;align-items:center;gap:8px;min-height:44px;text-decoration:none;color:var(--muted)}
+.contact a:hover{color:var(--gold)}
+.contact svg{width:18px;height:18px}
+
+footer{border-top:1px solid #221b11;padding:34px 0 40px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:center}
+footer img{width:84px}
+footer a{color:var(--muted)}
+
+.callbar{display:none}
+
+/* Rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:960px){
+  .nav{display:none}
+  .hero{padding:44px 0 72px}
+  .hero .wrap,.method .wrap,.story .wrap,.planner,.dish,.dish.flip{grid-template-columns:1fr;gap:36px}
+  .fireframe{justify-self:start}
+  .dish.flip figure{order:0}
+  .head{display:block}
+  .head p{margin-top:16px}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:64px}
+  .mock{font-size:15px;padding:8px 12px}
+  .top .wrap{height:66px}
+  .brand img{width:92px}
+  .top .btn span{display:none}
+  .top .btn{padding:0 14px}
+  .hero{padding:34px 0 60px}
+  h1{font-size:clamp(50px,15vw,64px)}
+  h1 .name{margin-bottom:16px;font-size:15px}
+  .lede{font-size:17px;margin:20px 0 28px}
+  .actions .btn{flex:1 1 100%}
+  .fireframe figure{padding:8px}
+  .embers{inset:8px 8px auto 8px}
+  .fireframe figcaption{font-size:12px;letter-spacing:.14em}
+  .sec{padding:76px 0}
+  .head{margin-bottom:36px}
+  .dish{margin-bottom:60px;gap:24px}
+  .pair{grid-template-columns:1fr;gap:24px}
+  .qa{grid-template-columns:1fr}
+  .ticket{position:static;padding:26px 20px 22px}
+  .fields{grid-template-columns:1fr 1fr}
+  .tab{padding:0 14px;font-size:15px}
+  .visit{padding:84px 0 80px}
+  footer .wrap{flex-direction:column;align-items:flex-start}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:50;background:#0b0907;border-top:1px solid #2b2216;padding:8px 10px calc(8px + env(safe-area-inset-bottom));gap:8px}
+  .callbar .btn{min-height:46px;font-size:15px;padding:0 10px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .will-rise{opacity:1;transform:none}
+  .embers{display:none}
+}
+</style>
+</head>
+<body>
+<aside class="mock" aria-label="Mockup notice"><p style="margin:0">Here's your free mockup from <a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></p></aside>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Aufieri &amp; Martinez, back to top"><img src="https://www.aufierimartinez.us/web/image/website/2/logo/AUFIERI%20%26%20MARTINEZ?unique=fc37b22" alt="Aufieri &amp; Martinez, Argentinian Steakhouse" width="344" height="196"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#fire">The fire</a>
+      <a href="#signatures">Signatures</a>
+      <a href="#table">Menu &amp; table</a>
+      <a href="#visit">Find us</a>
+    </nav>
+    <a class="btn btn-gold" href="tel:+12395915845" aria-label="Call 239-591-5845"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><span>239-591-5845</span></a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="h1">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Argentine Steakhouse · Naples</p>
+      <h1 id="h1"><span class="name">Aufieri &amp; Martinez</span>We do not cook with gas. <span class="fire">We cook with fire.</span></h1>
+      <p class="lede">Steak crafted over natural wood and charcoal, the way the gauchos did it on the Pampas. A deeper crust, a smoky aroma, and beef that speaks for itself.</p>
+      <div class="actions">
+        <a class="btn btn-gold" href="#table">Plan your table</a>
+        <a class="btn btn-line" href="tel:+12395915845">Call 239-591-5845</a>
+      </div>
+    </div>
+    <div class="fireframe">
+      <figure>
+        <img src="https://www.aufierimartinez.us/web/image/585-4fa98f62/brasa.webp" alt="Wood burning down to glowing embers under the iron grill at Aufieri &amp; Martinez" width="584" height="438">
+        <figcaption><span>La brasa</span><b>Wood · Charcoal · Time</b></figcaption>
+      </figure>
+      <div class="embers" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec method" id="fire" aria-labelledby="h-fire">
+  <div class="wrap">
+    <figure><img src="https://www.aufierimartinez.us/web/image/629-30d3d933/DSC_2463-2.webp" alt="A thick, naturally marbled steak on a wooden board beside provoleta and roasted garlic" width="690" height="462" loading="lazy"></figure>
+    <div>
+      <p class="eyebrow">Fire as craft</p>
+      <h2 id="h-fire">A different philosophy of steak</h2>
+      <ol class="beats">
+        <li><h3>Wood is the flavor</h3><p>In asado tradition, wood is not just fuel. Slow-burning embers give the smokiness and texture that define the steak.</p></li>
+        <li><h3>Fat is not excess</h3><p>Argentine beef is naturally marbled. Over live embers the fat slowly renders, deepening flavor and tenderness.</p></li>
+        <li><h3>Time does the rest</h3><p>Simple seasoning, natural smoke and patience. We honor the cut as it is meant to be prepared.</p></li>
+      </ol>
+      <p class="creed">Uncompromised. Unrushed. Authentic.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="signatures" aria-labelledby="h-sig">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="eyebrow">From our grill</p><h2 id="h-sig">The signatures</h2></div>
+      <p>A distinct culinary identity: a different rhythm, a new flavor profile, and a deeper connection to Argentine tradition.</p>
+    </div>
+
+    <article class="dish">
+      <figure><img src="https://www.aufierimartinez.us/web/image/627-a40f6954/DSC_2555-2.webp" alt="Wood-fired short rib on a wooden board with provoleta in a cast-iron dish and lemon" width="690" height="456" loading="lazy"></figure>
+      <div>
+        <p class="tag">Signature</p>
+        <h3>Wood-fired short ribs</h3>
+        <p>A deeper crust, a tender interior, and a natural smokiness that cannot be replicated.</p>
+      </div>
+    </article>
+
+    <article class="dish flip">
+      <figure><img src="https://www.aufierimartinez.us/web/image/622-d57be48e/DSC_2646.webp" alt="Grilled New York steak with chimichurri, charred lemon and a plate of parmesan fries" width="690" height="509" loading="lazy"></figure>
+      <div>
+        <p class="tag">True to tradition</p>
+        <h3>New York steak</h3>
+        <p>Naturally marbled Argentine beef, cooked over live fire until the fat renders into a rich, balanced taste. Authentic asado.</p>
+      </div>
+    </article>
+
+    <div class="pair">
+      <article>
+        <img src="https://www.aufierimartinez.us/web/image/586-c040efe9/DSC_2595-2.webp" alt="Provoleta bubbling in a cast-iron dish beside sliced short rib and fries" width="690" height="439" loading="lazy">
+        <h3>Provoleta</h3>
+        <p>Aged provolone, fire-melted until golden and infused with subtle smoke. Oregano, paprika, Argentinian chili flakes, grilled red peppers.</p>
+      </article>
+      <article>
+        <img src="https://www.aufierimartinez.us/web/image/616-dc3334a9/DSC_2492-2.webp" alt="Spaghetti alla Bolognese in a wide white bowl with a glass of red wine" width="690" height="517" loading="lazy">
+        <h3>Spaghetti alla Bolognese</h3>
+        <p>Italian tradition and elegance in every bite. Slow-cooked meat sauce over artisanal pasta.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec plan" id="table" aria-labelledby="h-plan">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="eyebrow">Handcrafted. Everything homemade.</p><h2 id="h-plan">Plan your table</h2></div>
+      <p>Browse the menu, tap what you want to try, and send us your table with your dishes on it.</p>
+    </div>
+
+    <div class="planner">
+      <div>
+        <div class="tabs" role="tablist" aria-label="Menu sections">
+          <button class="tab" role="tab" id="t-fire" aria-controls="p-fire" aria-selected="true">From the fire</button>
+          <button class="tab" role="tab" id="t-app" aria-controls="p-app" aria-selected="false" tabindex="-1">Appetizers</button>
+          <button class="tab" role="tab" id="t-side" aria-controls="p-side" aria-selected="false" tabindex="-1">Sides</button>
+          <button class="tab" role="tab" id="t-pasta" aria-controls="p-pasta" aria-selected="false" tabindex="-1">Pasta</button>
+        </div>
+
+        <ul class="list" id="p-fire" role="tabpanel" aria-labelledby="t-fire">
+          <li class="item"><div><b>Wood-fired short ribs</b><span>A deeper crust, a tender interior, natural smokiness</span></div><button class="add" aria-pressed="true" data-dish="Short ribs" aria-label="Add Wood-fired short ribs"></button></li>
+          <li class="item"><div><b>New York steak</b><span>Naturally marbled Argentine beef over live fire</span></div><button class="add" aria-pressed="true" data-dish="New York steak" aria-label="Add New York steak"></button></li>
+          <li class="item"><div><b>Provoleta</b><span>Aged provolone · oregano · paprika · Argentinian chili flakes · grilled red bell peppers</span></div><button class="add" aria-pressed="true" data-dish="Provoleta" aria-label="Add Provoleta"></button></li>
+          <li class="item"><div><b>Chorizo Pampeano</b><span>Pork &amp; beef sausage · grilled red peppers · chimichurri</span></div><button class="add" aria-pressed="false" data-dish="Chorizo Pampeano" aria-label="Add Chorizo Pampeano"></button></li>
+          <li class="item"><div><b>Mollejas Clásicas</b><span>Grilled sweetbreads · burnt lemon · chimichurri</span></div><button class="add" aria-pressed="false" data-dish="Mollejas" aria-label="Add Mollejas Clásicas"></button></li>
+        </ul>
+
+        <ul class="list" id="p-app" role="tabpanel" aria-labelledby="t-app" hidden>
+          <li class="item"><div><b>Angus Carpaccio</b><span>Thinly sliced raw Certified Angus Beef · baby arugula · shaved Parmigiano Reggiano · extra virgin olive oil · citrus dressing</span></div><button class="add" aria-pressed="false" data-dish="Angus Carpaccio" aria-label="Add Angus Carpaccio"></button></li>
+          <li class="item"><div><b>Empanadas Argentinas</b><span>Chopped Certified Angus Beef · brunoise onions · diced red peppers · hard boiled eggs · Argentinian spices</span></div><button class="add" aria-pressed="true" data-dish="Empanadas" aria-label="Add Empanadas Argentinas"></button></li>
+          <li class="item"><div><b>Pulpo a la Parrilla</b><span>Grilled Spanish octopus · olive oil · lemon · garlic · oven-roasted potatoes · smoked paprika alioli</span></div><button class="add" aria-pressed="false" data-dish="Pulpo" aria-label="Add Pulpo a la Parrilla"></button></li>
+          <li class="item"><div><b>Mejillones Capresse</b><span>Sautéed PEI mussels · pomodoro sauce · cracked basil</span></div><button class="add" aria-pressed="false" data-dish="Mejillones" aria-label="Add Mejillones Capresse"></button></li>
+          <li class="item"><div><b>Morcilla Vaqueaña</b><span>Grilled Argentinian blood sausage · blistered shishito peppers</span></div><button class="add" aria-pressed="false" data-dish="Morcilla" aria-label="Add Morcilla Vaqueaña"></button></li>
+          <li class="item"><div><b>A&amp;M Antipasto</b><span>Prosciutto · pistachio mortadella · Genoa salame · Drunken Goat · baby brie · aged Mahón · Marcona almonds · olive tapenade · grapes · crostini</span></div><button class="add" aria-pressed="false" data-dish="A&amp;M Antipasto" aria-label="Add A&amp;M Antipasto"></button></li>
+        </ul>
+
+        <ul class="list" id="p-side" role="tabpanel" aria-labelledby="t-side" hidden>
+          <li class="item"><div><b>Provenzal Parmesan Fries</b><span>Fried in beef tallow · parsley · chopped garlic · grated parmesan</span></div><button class="add" aria-pressed="true" data-dish="Parmesan fries" aria-label="Add Provenzal Parmesan Fries"></button></li>
+          <li class="item"><div><b>French Fries</b><span>Fried in beef tallow</span></div><button class="add" aria-pressed="false" data-dish="French fries" aria-label="Add French Fries"></button></li>
+          <li class="item"><div><b>Sweet Potato Fries</b><span>Fried in beef tallow</span></div><button class="add" aria-pressed="false" data-dish="Sweet potato fries" aria-label="Add Sweet Potato Fries"></button></li>
+          <li class="item"><div><b>Rustic Mashed Potatoes</b></div><button class="add" aria-pressed="false" data-dish="Mashed potatoes" aria-label="Add Rustic Mashed Potatoes"></button></li>
+          <li class="item"><div><b>Charred Jumbo Asparagus</b></div><button class="add" aria-pressed="false" data-dish="Asparagus" aria-label="Add Charred Jumbo Asparagus"></button></li>
+          <li class="item"><div><b>Summer Vegetable Medley</b><span>Asparagus · haricots verts · carrots · red onions · red bell peppers</span></div><button class="add" aria-pressed="false" data-dish="Vegetable medley" aria-label="Add Summer Vegetable Medley"></button></li>
+          <li class="item"><div><b>Mixed Salad</b><span>Mixed greens · julienne onion · grape tomatoes</span></div><button class="add" aria-pressed="false" data-dish="Mixed salad" aria-label="Add Mixed Salad"></button></li>
+        </ul>
+
+        <ul class="list" id="p-pasta" role="tabpanel" aria-labelledby="t-pasta" hidden>
+          <li class="item"><div><b>Spaghetti alla Bolognese</b><span>Slow-cooked meat sauce over artisanal pasta</span></div><button class="add" aria-pressed="false" data-dish="Bolognese" aria-label="Add Spaghetti alla Bolognese"></button></li>
+        </ul>
+
+        <p class="more">The full menu also has salads, chicken, dishes from the ocean and desserts. <a href="https://www.aufierimartinez.us/menu">See the whole menu</a></p>
+      </div>
+
+      <form class="ticket" id="ticket" aria-labelledby="h-ticket">
+        <h3 id="h-ticket">Your table</h3>
+        <p class="sum" id="sum" aria-live="polite">Table for 4 · This Saturday · 7:30 pm</p>
+        <div class="fields">
+          <div><label for="day">Day</label>
+            <select id="day"><option>Tonight</option><option>Tomorrow</option><option>This Friday</option><option selected>This Saturday</option><option>Another day</option></select></div>
+          <div><label for="time">Time</label><input id="time" type="time" value="19:30"></div>
+          <div class="full"><label id="l-guests">Guests</label>
+            <div class="stepper" role="group" aria-labelledby="l-guests"><button type="button" id="minus" aria-label="One guest fewer">−</button><output id="guests" aria-live="polite">4</output><button type="button" id="plus" aria-label="One guest more">+</button></div></div>
+          <div><label for="nm">Name</label><input id="nm" autocomplete="name" placeholder="Your name"></div>
+          <div><label for="ph">Phone</label><input id="ph" type="tel" autocomplete="tel" placeholder="Your number"></div>
+        </div>
+        <div class="picked">
+          <p>Dishes we'll want to try</p>
+          <ul id="picked"><li>Short ribs</li><li>New York steak</li><li>Provoleta</li><li>Empanadas</li><li>Parmesan fries</li></ul>
+        </div>
+        <button class="btn" type="submit">Request this table</button>
+        <p class="thanks" id="thanks" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="sec story" aria-labelledby="h-story">
+  <div class="wrap">
+    <figure><img src="https://www.aufierimartinez.us/web/image/628-f3745797/DSC02899-Edit.webp" alt="Grilled bone-in meat glazed and resting over fries" width="690" height="457" loading="lazy"></figure>
+    <div>
+      <p class="eyebrow">Our history</p>
+      <h2 id="h-story">The ritual of fire</h2>
+      <p>Long before modern steakhouses, the gauchos gathered around wood fires on the Pampas, slowly roasting meat over glowing embers under the open sky. With patience and respect for the flame, they let the meat speak for itself.</p>
+      <p>At Aufieri &amp; Martínez we honor that heritage with the same philosophy: fire, patience, and quality.</p>
+      <p class="quote">This is more than grilling. It is a ritual passed down through generations.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec faq" aria-labelledby="h-faq">
+  <div class="wrap">
+    <div class="head"><div><p class="eyebrow">Good to know</p><h2 id="h-faq">Before you come</h2></div></div>
+    <dl class="qa">
+      <div><dt>Do you ever cook with gas?</dt><dd>No. We cook over natural charcoal and wood. That is the Argentine way.</dd></div>
+      <div><dt>Is it only steak?</dt><dd>No. Grilled Spanish octopus, PEI mussels, empanadas, sweetbreads, pasta, plus salads, chicken, dishes from the ocean and desserts.</dd></div>
+      <div><dt>Is it made in house?</dt><dd>Yes. Handcrafted delights, everything homemade.</dd></div>
+      <div><dt>What are the fries cooked in?</dt><dd>Beef tallow. French, sweet potato, and parmesan with garlic and parsley.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="visit" id="visit" aria-labelledby="h-visit">
+  <div class="wrap">
+    <p class="eyebrow">Naples, Florida</p>
+    <h2 id="h-visit">Your table by the fire</h2>
+    <p class="addr">2355 Vanderbilt Beach Rd, Naples FL 34109</p>
+    <div class="actions">
+      <a class="btn btn-gold" href="#table">Plan your table</a>
+      <a class="btn btn-line" href="tel:+12395915845">Call 239-591-5845</a>
+    </div>
+    <div class="contact">
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=2355%20Vanderbilt%20Beach%20Rd%2C%20Naples%20FL%2034109" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Directions</a>
+      <a href="mailto:info@aufierimartinez.us"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 6 9 7 9-7"/></svg>info@aufierimartinez.us</a>
+      <a href="https://www.instagram.com/aufieri_martinez" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Instagram</a>
+      <a href="https://www.facebook.com/share/14JyJ4BZnv4/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v7h4v-7h3l.5-4h-3.5V8.8c0-.5.3-.8.5-.8z"/></svg>Facebook</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="https://www.aufierimartinez.us/web/image/website/2/logo/AUFIERI%20%26%20MARTINEZ?unique=fc37b22" alt="Aufieri &amp; Martinez" width="344" height="196" loading="lazy">
+    <p style="margin:0">© Aufieri &amp; Martinez · <a href="https://www.aufierimartinez.us/">aufierimartinez.us</a></p>
+    <p style="margin:0">Mockup made for Aufieri &amp; Martinez by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick actions">
+  <a class="btn btn-gold" href="tel:+12395915845">Call</a>
+  <a class="btn btn-line" href="#table">Plan your table</a>
+</nav>
+
+<script>
+(function(){
+  var plus='<svg class="plus" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="1.8" fill="none"/></svg>';
+  var tick='<svg class="tick" viewBox="0 0 16 16" aria-hidden="true"><path d="m2.5 8.5 3.5 3.5 7.5-8" stroke="currentColor" stroke-width="2" fill="none"/></svg>';
+  var adds=[].slice.call(document.querySelectorAll('.add'));
+  var picked=document.getElementById('picked');
+  adds.forEach(function(b){
+    b.innerHTML=plus+tick;
+    b.addEventListener('click',function(){
+      b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')==='true'?'false':'true');
+      renderPicked();
+    });
+  });
+  function renderPicked(){
+    var on=adds.filter(function(b){return b.getAttribute('aria-pressed')==='true'});
+    picked.innerHTML=on.length?on.map(function(b){return '<li>'+b.getAttribute('data-dish').replace(/&/g,'&amp;')+'</li>'}).join(''):'<li class="none">Tap + on any dish to add it here.</li>';
+  }
+  renderPicked();
+
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  function select(t){
+    tabs.forEach(function(x){
+      var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;
+      document.getElementById(x.getAttribute('aria-controls')).hidden=!on;
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){select(t)});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(d){var n=tabs[(i+d+tabs.length)%tabs.length];select(n);n.focus();e.preventDefault();}
+    });
+  });
+
+  var g=4,out=document.getElementById('guests'),day=document.getElementById('day'),time=document.getElementById('time'),sum=document.getElementById('sum');
+  function fmt(v){if(!v)return'';var p=v.split(':'),h=+p[0],m=p[1];return((h%12)||12)+':'+m+(h<12?' am':' pm');}
+  function update(){out.textContent=g;sum.textContent='Table for '+g+' · '+day.value+(time.value?' · '+fmt(time.value):'');}
+  document.getElementById('minus').addEventListener('click',function(){if(g>1){g--;update();}});
+  document.getElementById('plus').addEventListener('click',function(){if(g<20){g++;update();}});
+  day.addEventListener('change',update);time.addEventListener('input',update);
+  update();
+
+  document.getElementById('ticket').addEventListener('submit',function(e){
+    e.preventDefault();
+    document.getElementById('thanks').textContent='Thanks. This is a mockup, so nothing was sent.';
+  });
+
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if('IntersectionObserver' in window){
+    var em=document.querySelector('.embers');
+    if(em&&!reduce){new IntersectionObserver(function(es){es.forEach(function(x){em.classList.toggle('on',x.isIntersecting)})}).observe(em);}
+    if(!reduce){
+      var vh=window.innerHeight;
+      var els=[].slice.call(document.querySelectorAll('.sec .head, .method figure, .beats li, .dish, .pair article, .story figure, .story .wrap > div, .qa div, .visit .wrap'));
+      var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.remove('will-rise');io.unobserve(x.target);}})},{rootMargin:'0px 0px -8% 0px'});
+      els.forEach(function(el){if(el.getBoundingClientRect().top>vh){el.classList.add('rise','will-rise');io.observe(el);}});
+    }
+  }
+})();
+</script>
+</body>
+</html>
