@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup penandinkus-com-c0465d 1 3108c989 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pen &amp; Ink | The art of the written word</title>
+<meta name="description" content="Pen & Ink: the intersection of scribe and fine art. Oil, Parchment and Watercolor collections by artist Chasya Leshinsky and scribe Yitzi Whitman.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Frank+Ruhl+Libre:wght@500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#121110; --ink2:#1b1917; --line:#2e2a26;
+  --ivory:#efe8da; --mute:#b3a998; --gold:#c49a62; --gold-d:#7a5a2e;
+  --parch:#ece3cf; --parch2:#e3d7bd; --brown:#2a211a; --brown-m:#5e5141;
+  --blue:#93acc9;
+  --serif:"Cormorant Garamond",Garamond,"Times New Roman",serif;
+  --sans:Montserrat,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--ivory);font:400 16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+.label{font:500 12px/1.4 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--mute)}
+.skip{position:absolute;left:-9999px;top:0}
+.skip:focus{left:12px;top:56px;background:var(--ivory);color:var(--ink);padding:10px 14px;z-index:50}
+
+/* Banner */
+.ss-banner{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:#e7dfcf;color:#2a211a;font:500 15px/1.3 var(--sans);text-align:center;border-bottom:1px solid #cbbfa6;white-space:nowrap}
+.ss-banner a{color:#5a3f17;text-decoration:underline;text-underline-offset:3px;font-weight:600}
+
+/* Header */
+header.site{position:sticky;top:0;z-index:20;background:rgba(18,17,16,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:72px}
+.mark{font:500 22px/1 var(--serif);letter-spacing:.32em;text-transform:uppercase;text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
+.mark i{font-style:italic;color:var(--gold);letter-spacing:0;margin:0 .32em 0 0;text-transform:none}
+nav.top ul{display:flex;gap:6px;list-style:none;margin:0;padding:0;align-items:center}
+nav.top a{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;text-decoration:none;font:500 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+nav.top a:hover{color:var(--ivory)}
+nav.top a.call{color:var(--ivory);border:1px solid #4a423a;border-radius:999px;margin-left:8px;padding:0 18px}
+nav.top a.call:hover{border-color:var(--gold)}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border-radius:999px;font:600 13px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.btn.primary{background:var(--ivory);color:var(--ink)}
+.btn.primary:hover{background:#fff}
+.btn.ghost{border-color:#4a423a;color:var(--ivory);background:transparent}
+.btn.ghost:hover{border-color:var(--gold)}
+
+/* Hero */
+.hero{padding:88px 0 96px;border-bottom:1px solid var(--line)}
+.hero .wrap{display:grid;grid-template-columns:1.4fr .6fr;gap:64px;align-items:center}
+.credit{display:flex;flex-wrap:wrap;gap:8px 28px;margin:0 0 34px}
+.credit span b{color:var(--ivory);font-weight:500}
+h1{font:400 clamp(46px,5.6vw,80px)/1 var(--serif);letter-spacing:.06em;text-transform:uppercase;margin:0 0 30px}
+h1 .brand{display:block;font:italic 400 .42em/1.2 var(--serif);letter-spacing:.02em;text-transform:none;color:var(--gold);margin-bottom:18px}
+.lede{font:400 23px/1.45 var(--serif);color:#ddd4c3;max-width:30ch;margin:0 0 40px}
+.actions{display:flex;flex-wrap:wrap;gap:14px}
+
+/* The sheet */
+.sheet{position:relative;aspect-ratio:4/5;max-width:420px;justify-self:end;width:100%;
+  background:
+   repeating-linear-gradient(to bottom,transparent 0 33px,rgba(94,81,65,.16) 33px 34px),
+   radial-gradient(120% 90% at 50% 40%,#f1e9d7 0%,#e8dcc3 70%,#dccfb2 100%);
+  border-radius:3px;box-shadow:0 30px 60px -20px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.04);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--brown)}
+.sheet::before{content:"";position:absolute;inset:0 auto 0 14%;width:1px;background:rgba(94,81,65,.22)}
+.sheet::after{content:"";position:absolute;inset:0 14% 0 auto;width:1px;background:rgba(94,81,65,.22)}
+.sheet .aleph{font:500 clamp(170px,19vw,250px)/1 "Frank Ruhl Libre",serif;color:#1c1612;margin-top:-10px}
+.sheet .drop{width:7px;height:7px;border-radius:50%;background:var(--gold-d);margin:6px 0 20px}
+.sheet .tag{font:600 11px/1.5 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--brown-m);text-align:center}
+.sheet .tag em{display:block;font:italic 400 19px/1.3 var(--serif);letter-spacing:.01em;text-transform:none;color:var(--brown);margin-top:6px}
+
+/* Sections */
+section{padding:112px 0}
+h2{font:400 clamp(36px,4.4vw,58px)/1.05 var(--serif);letter-spacing:.04em;margin:14px 0 22px}
+.intro{font:400 21px/1.5 var(--serif);color:#d6cdbc;max-width:44ch;margin:0}
+
+/* Two hands */
+.hands{background:var(--parch);color:var(--brown)}
+.hands .label{color:var(--brown-m)}
+.hands .intro{color:#4a3e31}
+.hands .grid{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:64px;border-top:1px solid rgba(42,33,26,.25)}
+.hand{padding:40px 48px 8px 0}
+.hand + .hand{padding-left:48px;border-left:1px solid rgba(42,33,26,.25)}
+.hand .role{font:600 12px/1 var(--sans);letter-spacing:.26em;text-transform:uppercase;color:var(--gold-d)}
+.hand h3{font:400 40px/1.1 var(--serif);margin:16px 0 14px;letter-spacing:.02em}
+.hand p{margin:0;font-size:16px;color:#4a3e31;max-width:38ch}
+.hand .n{font:400 64px/1 var(--serif);color:var(--brown);display:block;margin-top:26px}
+.hand .n small{font:500 12px/1.4 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--brown-m);display:block;margin-top:8px}
+
+/* Catalogue */
+.cat-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;flex-wrap:wrap}
+.tools{margin:52px 0 0;display:flex;flex-direction:column;gap:18px;padding:18px 0;border-bottom:1px solid var(--line)}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.chip{min-height:44px;padding:0 18px;border-radius:999px;border:1px solid #423b34;background:transparent;color:var(--mute);font:500 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:all .2s}
+.chip:hover{color:var(--ivory);border-color:#6a5f52}
+.chip[aria-pressed="true"]{background:var(--ivory);color:var(--ink);border-color:var(--ivory)}
+.chip .c{font-weight:600;opacity:.75}
+.row .sep{width:1px;height:26px;background:var(--line);margin:0 6px}
+.search{flex:1;min-width:220px;max-width:320px;margin-left:auto;position:relative}
+.search input{width:100%;min-height:44px;background:transparent;border:0;border-bottom:1px solid #4a423a;color:var(--ivory);font:400 20px/1 var(--serif);padding:6px 4px}
+.search input::placeholder{color:#8f8676}
+.search input:focus{outline:none;border-bottom-color:var(--gold)}
+.count{font:400 18px/1.4 var(--serif);color:var(--mute);margin:26px 0 6px}
+.count b{color:var(--ivory);font-weight:500}
+ol.works{list-style:none;margin:0;padding:0}
+.work{display:grid;grid-template-columns:64px 1.4fr 1fr auto;gap:28px;align-items:center;padding:28px 0;border-bottom:1px solid var(--line)}
+.work .no{font:400 20px/1 var(--serif);color:#8f8676}
+.work h3{font:400 30px/1.15 var(--serif);margin:0 0 6px;letter-spacing:.01em}
+.work h3 .flag{font:600 10px/1 var(--sans);letter-spacing:.2em;color:var(--gold);vertical-align:middle;margin-left:10px;border:1px solid var(--gold);padding:5px 8px;border-radius:999px;white-space:nowrap}
+.work .line{font:italic 400 18px/1.4 var(--serif);color:#cfc6b5;margin:0}
+.pill{display:inline-block;font:600 10px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;padding:6px 10px;border-radius:999px;border:1px solid currentColor;margin-bottom:10px}
+.pill.Oil{color:#d0a77a}.pill.Parchment{color:#e0bf86}.pill.Watercolor{color:var(--blue)}
+.work .who{font:500 12px/1.9 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.work .who b{color:var(--ivory);font-weight:500}
+.ask{min-height:44px;padding:0 18px;border-radius:999px;background:transparent;border:1px solid #4a423a;color:var(--ivory);font:600 11px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;cursor:pointer;white-space:nowrap}
+.ask:hover{border-color:var(--gold);color:var(--gold)}
+.more-wrap{display:flex;justify-content:center;padding-top:44px}
+.btn[hidden]{display:none}
+.empty{padding:40px 0;font:italic 400 22px/1.4 var(--serif);color:var(--mute)}
+.empty button{font:inherit;color:var(--gold);background:none;border:0;text-decoration:underline;cursor:pointer;min-height:44px}
+
+/* Commission */
+.commission{background:var(--ink2);border-top:1px solid var(--line)}
+.com-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;margin-top:56px}
+form{display:grid;gap:26px}
+fieldset{border:0;margin:0;padding:0}
+legend,label.f{display:block;font:500 12px/1.4 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--mute);margin-bottom:12px;padding:0}
+.opts{display:flex;flex-wrap:wrap;gap:10px}
+.opts input{position:absolute;opacity:0;pointer-events:none}
+.opts label{min-height:44px;display:inline-flex;align-items:center;padding:0 18px;border-radius:999px;border:1px solid #423b34;color:var(--mute);font:500 12px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;cursor:pointer}
+.opts input:checked + label{background:var(--ivory);color:var(--ink);border-color:var(--ivory)}
+.opts input:focus-visible + label{outline:2px solid var(--gold);outline-offset:3px}
+.field input,.field textarea{width:100%;background:transparent;border:0;border-bottom:1px solid #4a423a;color:var(--ivory);font:400 21px/1.4 var(--serif);padding:8px 2px;min-height:44px;border-radius:0}
+.field textarea{resize:vertical;min-height:84px}
+.field input:focus,.field textarea:focus{outline:none;border-bottom-color:var(--gold)}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.sent{display:none;font:italic 400 22px/1.4 var(--serif);color:var(--gold);margin:0}
+.sent.on{display:block}
+
+.slip{position:sticky;top:110px;background:
+   repeating-linear-gradient(to bottom,transparent 0 31px,rgba(94,81,65,.14) 31px 32px),
+   linear-gradient(#efe7d4,#e6dac0);
+  color:var(--brown);border-radius:3px;padding:44px 44px 40px;box-shadow:0 30px 60px -24px rgba(0,0,0,.7)}
+.slip .top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid rgba(42,33,26,.3);padding-bottom:16px;margin-bottom:22px}
+.slip .top .t{font:500 18px/1 var(--serif);letter-spacing:.3em;text-transform:uppercase}
+.slip .top .t i{color:var(--gold-d);letter-spacing:0;text-transform:none}
+.slip .top .k{font:600 10px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--brown-m)}
+.slip dl{margin:0;display:grid;grid-template-columns:120px 1fr;gap:14px 18px}
+.slip dt{font:600 11px/1.9 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--brown-m)}
+.slip dd{margin:0;font:400 22px/1.3 var(--serif);color:var(--brown);overflow-wrap:anywhere}
+.slip .foot{margin-top:28px;padding-top:16px;border-top:1px solid rgba(42,33,26,.3);font:italic 400 17px/1.4 var(--serif);color:#4a3e31}
+
+/* Close */
+.close{text-align:center;padding:128px 0 120px;border-top:1px solid var(--line)}
+.close h2{margin:18px auto 18px;max-width:16ch;text-transform:uppercase;letter-spacing:.08em}
+.close .intro{margin:0 auto 40px}
+.close .actions{justify-content:center}
+.close .phone{display:block;margin-top:34px;font:400 26px/1 var(--serif);letter-spacing:.08em}
+.close .phone a{text-decoration:none;display:inline-flex;min-height:44px;align-items:center}
+.close .phone small{display:block;font:500 12px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--mute);margin-bottom:10px}
+
+footer{border-top:1px solid var(--line);padding:44px 0 48px;color:var(--mute);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start}
+footer .mark{font-size:18px;color:var(--ivory)}
+footer p{margin:6px 0 0}
+footer a{color:var(--ivory)}
+footer .made{flex-basis:100%;margin-top:22px;padding-top:22px;border-top:1px solid var(--line);font-size:13px}
+
+.callbar{display:none}
+
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;gap:56px}
+  .sheet{justify-self:start;max-width:none;aspect-ratio:auto;height:300px}
+  .sheet .aleph{font-size:150px}
+  .com-grid{grid-template-columns:1fr;gap:48px}
+  .slip{position:static;order:-1}
+  .work{grid-template-columns:44px 1fr auto;gap:18px}
+  .work .meta{grid-column:2/4}
+}
+@media (max-width:640px){
+  .wrap{padding:0 22px}
+  .ss-banner{font-size:14px;padding:8px 10px}
+  .bar{height:62px}
+  .mark{font-size:18px;letter-spacing:.26em}
+  nav.top li:not(.keep){display:none}
+  nav.top a.call{margin-left:0;padding:0 16px}
+  .hero{padding:52px 0 64px}
+  .credit{flex-direction:column;gap:4px;margin-bottom:26px}
+  h1{font-size:44px;letter-spacing:.05em}
+  .lede{font-size:21px;margin-bottom:32px}
+  .actions .btn{flex:1 1 100%}
+  .sheet{height:260px}
+  .sheet .aleph{font-size:130px}
+  section{padding:80px 0}
+  .hands .grid{grid-template-columns:1fr;margin-top:40px}
+  .hand{padding:32px 0 28px}
+  .hand + .hand{padding-left:0;border-left:0;border-top:1px solid rgba(42,33,26,.25)}
+  .hand h3{font-size:34px}
+  .tools{margin-top:36px;gap:12px;padding:14px 0}
+  .row.scroll{flex-wrap:nowrap;overflow-x:auto;margin:0 -22px;padding:0 22px;scrollbar-width:none}
+  .row.scroll::-webkit-scrollbar{display:none}
+  .chip{flex:0 0 auto}
+  .row .sep{display:none}
+  .search{max-width:none;margin-left:0}
+  .work{grid-template-columns:1fr auto;gap:14px;padding:24px 0}
+  .work .no{display:none}
+  .work .meta{grid-column:1/3}
+  .work h3{font-size:26px}
+  .pair{grid-template-columns:1fr}
+  .slip{padding:30px 24px 26px}
+  .slip dl{grid-template-columns:96px 1fr;gap:12px 14px}
+  .slip dd{font-size:20px}
+  .close{padding:88px 0 96px}
+  footer{padding-bottom:110px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(18,17,16,.96);border-top:1px solid var(--line)}
+  .callbar a{flex:1;min-height:48px;display:flex;align-items:center;justify-content:center;border-radius:999px;text-decoration:none;font:600 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase}
+  .callbar .c1{background:var(--ivory);color:var(--ink)}
+  .callbar .c2{border:1px solid #4a423a;color:var(--ivory)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="ss-banner" role="region" aria-label="Mockup notice">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="mark" href="#top" aria-label="Pen &amp; Ink, home">Pen <i>&amp;</i> Ink</a>
+    <nav class="top" aria-label="Main">
+      <ul>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#artists">Who we are</a></li>
+        <li><a href="#commission">Commission</a></li>
+        <li class="keep"><a class="call" href="tel:+17325038720">Call</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <div class="credit label">
+          <span>Artist <b>Chasya Leshinsky</b></span>
+          <span>Scribe <b>Yitzi Whitman</b></span>
+        </div>
+        <h1 id="h1"><span class="brand">Pen &amp; Ink</span>The art of the written word</h1>
+        <p class="lede">The intersection of scribe and fine art, in three collections: Oil, Parchment and Watercolor.</p>
+        <div class="actions">
+          <a class="btn primary" href="#commission">Commission a piece</a>
+          <a class="btn ghost" href="#collection">Browse the collection</a>
+        </div>
+      </div>
+      <div class="sheet" aria-hidden="true">
+        <div class="aleph">א</div>
+        <div class="drop"></div>
+        <div class="tag">Pen &amp; Ink<em>scribe and fine art</em></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hands" id="artists" aria-labelledby="h-hands">
+    <div class="wrap">
+      <p class="label">Who we are</p>
+      <h2 id="h-hands">Two hands on one piece.</h2>
+      <p class="intro">Every work in the collection is art by Chasya Leshinsky. On many of them, the lettering of scribe Yitzi Whitman runs through the art.</p>
+      <div class="grid">
+        <div class="hand">
+          <span class="role">Art</span>
+          <h3>Chasya Leshinsky</h3>
+          <p>Oil, parchment and watercolor: elders in devotion, the hills of Tzfat, Jaffa Gate, the light of Shabbos candles.</p>
+          <span class="n" data-n="all">23<small>works in the collection</small></span>
+        </div>
+        <div class="hand">
+          <span class="role">Lettering</span>
+          <h3>Yitzi Whitman</h3>
+          <p>Eishes Chayil, Nishmas, Psalm 67 in the form of the menorah, letterforms according to Lurianic Kabbalah.</p>
+          <span class="n" data-n="letter">14<small>works carry his lettering</small></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="collection" aria-labelledby="h-cat">
+    <div class="wrap">
+      <div class="cat-head">
+        <div>
+          <p class="label">The collection</p>
+          <h2 id="h-cat">Find your piece.</h2>
+          <p class="intro">Sort by collection or by theme. When one speaks to you, ask about it.</p>
+        </div>
+      </div>
+
+      <div class="tools" role="group" aria-label="Filter the collection">
+        <div class="row scroll" id="mediums"></div>
+        <div class="row">
+          <div class="row scroll" id="themes"></div>
+          <label class="search"><span class="skip">Search by title</span><input id="q" type="search" placeholder="Search a title, e.g. Nishmas" autocomplete="off"></label>
+        </div>
+      </div>
+
+      <p class="count" id="count" aria-live="polite"></p>
+      <ol class="works" id="works"></ol>
+      <div class="more-wrap"><button type="button" class="btn ghost" id="more" hidden>Show all works</button></div>
+    </div>
+  </section>
+
+  <section class="commission" id="commission" aria-labelledby="h-com">
+    <div class="wrap">
+      <p class="label">Commission a piece</p>
+      <h2 id="h-com">Tell us what you have in mind.</h2>
+      <p class="intro">Choose a collection, add the words if you want them, and we'll be in touch.</p>
+      <div class="com-grid">
+        <form id="form" novalidate>
+          <fieldset>
+            <legend>Collection</legend>
+            <div class="opts">
+              <input type="radio" name="col" id="c-p" value="Parchment" checked><label for="c-p">Parchment</label>
+              <input type="radio" name="col" id="c-o" value="Oil"><label for="c-o">Oil</label>
+              <input type="radio" name="col" id="c-w" value="Watercolor"><label for="c-w">Watercolor</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Hands</legend>
+            <div class="opts">
+              <input type="radio" name="hands" id="h-2" value="both" checked><label for="h-2">Art &amp; lettering</label>
+              <input type="radio" name="hands" id="h-1" value="art"><label for="h-1">Art only</label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label class="f" for="text">The words, theme or piece</label>
+            <input id="text" name="text" value="Eishes Chayil" list="ideas">
+            <datalist id="ideas"></datalist>
+          </div>
+          <div class="pair">
+            <div class="field"><label class="f" for="name">Your name</label><input id="name" name="name" autocomplete="name"></div>
+            <div class="field"><label class="f" for="contact">Phone or email</label><input id="contact" name="contact" autocomplete="email"></div>
+          </div>
+          <div class="field"><label class="f" for="msg">Anything else</label><textarea id="msg" name="msg" placeholder="Where it will hang, who it is for"></textarea></div>
+          <div class="actions"><button class="btn primary" type="submit">Send request</button></div>
+          <p class="sent" id="sent" role="status"></p>
+        </form>
+
+        <aside class="slip" aria-label="Your request, as we will read it">
+          <div class="top"><span class="t">Pen <i>&amp;</i> Ink</span><span class="k">Commission</span></div>
+          <dl>
+            <dt>Collection</dt><dd id="s-col">Parchment</dd>
+            <dt>Art</dt><dd>Chasya Leshinsky</dd>
+            <dt>Lettering</dt><dd id="s-let">Yitzi Whitman</dd>
+            <dt>Words</dt><dd id="s-text">Eishes Chayil</dd>
+            <dt>For</dt><dd id="s-name">Your name</dd>
+          </dl>
+          <p class="foot" id="s-foot">A Parchment piece with lettering: Eishes Chayil.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="close" aria-labelledby="h-close">
+    <div class="wrap">
+      <p class="label">Pen &amp; Ink</p>
+      <h2 id="h-close">The art of the written word</h2>
+      <p class="intro">Ask about a piece in the collection, or commission your own.</p>
+      <div class="actions">
+        <a class="btn primary" href="#commission">Commission a piece</a>
+      </div>
+      <p class="phone"><small>Call or WhatsApp Yitzi</small><a href="tel:+17325038720">732.503.8720</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="mark" href="#top">Pen <i>&amp;</i> Ink</a>
+      <p>The intersection of scribe and fine art.</p>
+    </div>
+    <div>
+      <p><a href="tel:+17325038720">732.503.8720</a> · call or WhatsApp</p>
+      <p><a href="https://penandinkus.com/">penandinkus.com</a></p>
+      <p>© 2026 Pen &amp; Ink LLC</p>
+    </div>
+    <p class="made">Mockup made for Pen &amp; Ink by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick contact">
+  <a class="c1" href="tel:+17325038720">Call 732.503.8720</a>
+  <a class="c2" href="#commission">Commission</a>
+</div>
+
+<script>
+(function(){
+  var L='Yitzi Whitman';
+  // Every work as listed on penandinkus.com: title, line, collection, lettering
+  var W=[
+    ['A Yid','An elder in quiet devotion','Oil',0],
+    ['Flamme de Shabbat | Hadlakas Neiros','Bold calligraphy meets blazing brushwork','Parchment',1],
+    ['Mama Rachel','A timeless presence','Oil',0],
+    ['Menorah of Words','Psalm 67 in the form of the menorah','Parchment',1],
+    ['Yearning','640gsm Arches cold press','Watercolor',1],
+    ['Grace | Eishes Chayil','For her','Parchment',1],
+    ['Jaffa Gate','Jerusalem, the eternal city','Oil',0],
+    ['Yerushalmi','A woman carrying the weight of a world gone by','Oil',0],
+    ['Eternity','Boys lost in study','Oil',0],
+    ['Nishmas','Prayer of the soul','Parchment',1],
+    ['One','The prayer of the Jew','Oil',0],
+    ['Eishes Chayil','Handmade on parchment · 1/1 · No prints','Parchment',1],
+    ['Aleph','Ancient filigree in contemporary shape and form','Parchment',0],
+    ['Rising | Ketoret','Letterforms according to Lurianic Kabbalah','Parchment',1],
+    ['By Her Light | Hadlakas Neiros','The blessing of light','Parchment',1],
+    ['Six Days','In production','Parchment',1,'Flagship'],
+    ['Holy Smoke | Ketoret','The incense offering of the Temple','Parchment',1],
+    ['Hills of Tzfat','The mystical hills of the holy city','Oil',0],
+    ['Thought','A man caught in quiet contemplation','Oil',0],
+    ['Vessels of Blessing | Eishes Chayil','From shores afar','Parchment',1],
+    ['Birchas HaEsek','Good for business','Watercolor',1],
+    ['Dusk | Hadlakas Neiros','Geometry of light','Parchment',1],
+    ['Vizakeini','A mother prays','Parchment',1]
+  ];
+  var themes=[['Eishes Chayil','Eishes Chayil'],['Hadlakas Neiros','Hadlakas Neiros'],['Ketoret','Ketoret'],['With lettering','*L']];
+  var state={m:'All',t:null,q:''},LIMIT=8;
+  var $=function(id){return document.getElementById(id)};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+
+  document.querySelector('[data-n="all"]').firstChild.nodeValue=W.length;
+  document.querySelector('[data-n="letter"]').firstChild.nodeValue=W.filter(function(w){return w[3]}).length;
+
+  var mediums=['All','Oil','Parchment','Watercolor'];
+  $('mediums').innerHTML=mediums.map(function(m){
+    var n=m==='All'?W.length:W.filter(function(w){return w[2]===m}).length;
+    return '<button type="button" class="chip" data-m="'+m+'" aria-pressed="'+(m==='All')+'">'+(m==='All'?'All works':m+' collection')+' <span class="c">'+n+'</span></button>';
+  }).join('');
+  $('themes').innerHTML=themes.map(function(t){
+    return '<button type="button" class="chip" data-t="'+t[1]+'" aria-pressed="false">'+t[0]+'</button>';
+  }).join('');
+
+  function match(w){
+    if(state.m!=='All'&&w[2]!==state.m)return false;
+    if(state.t){if(state.t==='*L'){if(!w[3])return false}else if(w[0].indexOf(state.t)<0)return false}
+    if(state.q){var h=(w[0]+' '+w[1]).toLowerCase();if(h.indexOf(state.q)<0)return false}
+    return true;
+  }
+  function render(){
+    var list=W.map(function(w,i){return [w,i]}).filter(function(x){return match(x[0])});
+    var filtered=state.m!=='All'||state.t||state.q;
+    $('count').innerHTML=filtered?'<b>'+list.length+'</b> of '+W.length+' works':'All <b>'+W.length+'</b> works';
+    var cut=!filtered&&!state.all&&list.length>LIMIT;
+    if(cut)list=list.slice(0,LIMIT);
+    $('more').hidden=!cut;
+    if(!list.length){$('works').innerHTML='<li class="empty">Nothing by that name. <button type="button" id="reset">Show all works</button></li>';
+      $('reset').onclick=function(){state={m:'All',t:null,q:''};$('q').value='';sync();render()};return}
+    $('works').innerHTML=list.map(function(x){
+      var w=x[0],no=('0'+(x[1]+1)).slice(-2);
+      return '<li class="work"><span class="no">'+no+'</span>'+
+        '<div><span class="pill '+w[2]+'">'+w[2]+' collection</span><h3>'+esc(w[0])+(w[4]?'<span class="flag">✦ '+w[4]+'</span>':'')+'</h3>'+(w[1]?'<p class="line">'+esc(w[1])+'</p>':'')+'</div>'+
+        '<div class="meta who">Art <b>Chasya Leshinsky</b>'+(w[3]?'<br>Lettering <b>'+L+'</b>':'')+'</div>'+
+        '<button type="button" class="ask" data-i="'+x[1]+'" aria-label="Ask about '+esc(w[0])+'">Ask about it</button></li>';
+    }).join('');
+  }
+  function sync(){
+    [].forEach.call(document.querySelectorAll('[data-m]'),function(b){b.setAttribute('aria-pressed',b.dataset.m===state.m)});
+    [].forEach.call(document.querySelectorAll('[data-t]'),function(b){b.setAttribute('aria-pressed',b.dataset.t===state.t)});
+  }
+  document.addEventListener('click',function(e){
+    var b=e.target.closest('[data-m],[data-t],.ask');if(!b)return;
+    if(b.dataset.m){state.m=b.dataset.m;sync();render()}
+    else if(b.dataset.t){state.t=state.t===b.dataset.t?null:b.dataset.t;sync();render()}
+    else{
+      var w=W[+b.dataset.i];
+      $('text').value=w[0];
+      var r=document.querySelector('input[name=col][value="'+w[2]+'"]');if(r)r.checked=true;
+      document.querySelector('input[name=hands][value="'+(w[3]?'both':'art')+'"]').checked=true;
+      $('msg').value='I would like to ask about "'+w[0]+'" from the '+w[2]+' collection.';
+      slip();
+      $('commission').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+      setTimeout(function(){$('name').focus({preventScroll:true})},500);
+    }
+  });
+  $('more').addEventListener('click',function(){state.all=true;render()});
+  $('more').textContent='Show all '+W.length+' works';
+  $('q').addEventListener('input',function(){state.q=this.value.trim().toLowerCase();render()});
+  render();
+
+  // Commission slip
+  $('ideas').innerHTML=['Eishes Chayil','Hadlakas Neiros','Nishmas','Psalm 67','Birchas HaEsek','Vizakeini','Ketoret'].map(function(s){return '<option value="'+s+'">'}).join('');
+  function val(n){var r=document.querySelector('input[name='+n+']:checked');return r?r.value:''}
+  function slip(){
+    var col=val('col'),both=val('hands')==='both',t=$('text').value.trim(),nm=$('name').value.trim();
+    $('s-col').textContent=col;
+    $('s-let').textContent=both?L:'None, art only';
+    $('s-text').textContent=t||'To talk through';
+    $('s-name').textContent=nm||'Your name';
+    $('s-foot').textContent='A '+col+' piece '+(both?'with lettering':'without lettering')+(t?': '+t+'.':'.');
+  }
+  $('form').addEventListener('input',slip);
+  $('form').addEventListener('change',slip);
+  $('form').addEventListener('submit',function(e){e.preventDefault();var s=$('sent');s.textContent='Thanks. This is a mockup, so nothing was sent.';s.classList.add('on')});
+
+  // Gentle rise for what starts below the first screen
+  if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var els=document.querySelectorAll('section h2, section .intro, .hand, .tools, .slip, .close .actions, .close .phone');
+  var vh=window.innerHeight;
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  [].forEach.call(els,function(el){
+    if(el.getBoundingClientRect().top>vh){el.classList.add('rise','will-rise');io.observe(el)}
+  });
+})();
+</script>
+</body>
+</html>
