@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup disrptpr-com-286455 1 103e9d4e -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Disrpt Agency | BIPOC woman-owned PR agency</title>
+<meta name="description" content="Disrpt is a BIPOC woman-owned PR + branding collective for brands with real missions and disruptive mindsets.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0b0b0b; --paper:#fff; --green:#08fa00; --grey:#565656; --line:#e4e4e4;
+  --wide:"Archivo",system-ui,sans-serif;
+  --pad:clamp(20px,5vw,72px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.55 "Archivo",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px;box-shadow:0 0 0 6px var(--ink)}
+.wrap{max-width:1280px;margin:0 auto;padding:0 var(--pad)}
+.caps{font-family:var(--wide);font-stretch:125%;font-weight:850;text-transform:uppercase;letter-spacing:-.01em;line-height:.98}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.hl{background:var(--green);color:var(--ink);padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+
+/* banner */
+.mock{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:#1d1d1d;color:#f2f2f2;font-size:15px;line-height:1.3;text-align:center;border-bottom:1px solid #333}
+.mock a{color:var(--green);text-decoration:underline;text-underline-offset:3px}
+
+/* header */
+header.top{background:var(--paper);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:88px}
+.logo{display:block;width:92px;height:74px;overflow:hidden;position:relative;flex:none}
+.logo img{position:absolute;width:122.7px;max-width:none;height:auto;left:-18.4px;top:-27.8px}
+nav.main{display:flex;align-items:center;gap:32px}
+nav.main a.link{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:12px 0}
+nav.main a.link:hover{text-decoration:underline;text-decoration-color:var(--green);text-decoration-thickness:3px;text-underline-offset:6px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border:2px solid var(--ink);background:var(--ink);color:#fff;font:700 14px/1 "Archivo",sans-serif;font-stretch:115%;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .2s,color .2s,box-shadow .2s,transform .2s}
+.btn:hover{background:var(--green);color:var(--ink);box-shadow:5px 5px 0 var(--ink);transform:translate(-2px,-2px)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--green)}
+.btn svg{width:16px;height:16px}
+
+/* hero */
+.hero{padding:clamp(40px,7vw,96px) 0 clamp(56px,8vw,112px)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(32px,6vw,96px);align-items:center}
+.hero .eyebrow{display:flex;align-items:center;gap:12px;margin:0 0 28px}
+.hero .eyebrow::before{content:"";width:28px;height:3px;background:var(--green);box-shadow:0 0 0 1px var(--ink)}
+.status{font-size:15px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin:0 0 22px}
+.strike{position:relative;display:inline-block}
+.strike::after{content:"";position:absolute;left:-2px;right:-2px;top:52%;height:2px;background:var(--ink);transform-origin:left;transform:scaleX(1)}
+.js-motion .strike::after{animation:strike .7s .6s cubic-bezier(.6,0,.2,1) both}
+@keyframes strike{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+h1{font-size:clamp(40px,4.7vw,66px);margin:0 0 28px}
+.hero .lede{font-size:clamp(18px,1.6vw,21px);color:var(--grey);max-width:30em;margin:0 0 36px}
+.hero .lede strong{color:var(--ink);font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.figure{position:relative;justify-self:end;width:100%;max-width:480px}
+.figure .photo{aspect-ratio:4/5;overflow:hidden;background:#e1b05f}
+.figure .photo img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.slash{position:absolute;width:46%;height:52px;background:var(--ink);left:-20%;bottom:-6%;transform:rotate(-40deg);transform-origin:center}
+.js-motion .slash{animation:slash .9s .2s cubic-bezier(.2,.8,.2,1) both}
+@keyframes slash{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+.tag{position:absolute;right:-12px;top:22px;background:var(--green);color:var(--ink);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:9px 12px;border:2px solid var(--ink)}
+
+/* about */
+.about{background:var(--ink);color:#fff;padding:clamp(72px,10vw,140px) 0}
+.about .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(36px,6vw,96px);align-items:end}
+.about .eyebrow{color:var(--green);margin:0 0 24px}
+.about h2{font-size:clamp(30px,3.8vw,54px);margin:0 0 32px}
+.about p{color:#c9c9c9;font-size:clamp(17px,1.4vw,19px);max-width:34em;margin:0 0 20px}
+.about .muscle{border-top:1px solid #333;margin-top:40px;padding-top:28px;font-family:var(--wide);font-stretch:125%;font-weight:800;text-transform:uppercase;font-size:clamp(20px,2vw,26px);line-height:1.15;color:#fff}
+.about .muscle span{color:var(--green)}
+.about .shot{aspect-ratio:4/5;overflow:hidden;max-width:440px}
+.about .shot img{width:100%;height:100%;object-fit:cover;object-position:50% 70%;filter:saturate(.9) contrast(1.05)}
+
+/* services */
+.what{padding:clamp(72px,10vw,140px) 0}
+.what-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:clamp(32px,4vw,56px)}
+.what-head h2{font-size:clamp(34px,4.6vw,64px);margin:0}
+.rows{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.rows li{display:grid;grid-template-columns:80px 1fr;gap:24px;align-items:baseline;padding:clamp(20px,2.6vw,32px) 0;border-bottom:1px solid var(--ink);position:relative}
+.rows .n{font-size:14px;font-weight:700;letter-spacing:.1em}
+.rows h3{min-width:0;font-size:clamp(26px,6.2vw,92px);line-height:1;margin:0;transition:transform .3s}
+.rows li::before{content:"";position:absolute;left:0;bottom:-1px;height:4px;width:100%;background:var(--green);transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.rows li:hover::before{transform:scaleX(1)}
+.rows li:hover h3{transform:translateX(8px)}
+
+/* brief */
+.brief{background:#f3f3f1;padding:clamp(72px,10vw,140px) 0;border-top:1px solid var(--line)}
+.brief .wrap{display:grid;grid-template-columns:1fr 1fr;grid-template-areas:"intro card" "form card";column-gap:clamp(36px,5vw,80px);align-items:start}
+.brief .intro{grid-area:intro}
+.brief form{grid-area:form}
+.brief .card-col{grid-area:card;margin-top:8px}
+.brief h2{font-size:clamp(40px,5.4vw,76px);margin:0 0 20px}
+.brief .intro p{color:var(--grey);margin:0 0 32px;max-width:28em;font-size:18px}
+form{display:grid;gap:22px}
+fieldset{border:0;margin:0;padding:0}
+legend,label{display:block;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin:0 0 10px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip span{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px;border:2px solid var(--ink);background:#fff;font-weight:600;font-size:15px;cursor:pointer;transition:background .15s}
+.chip span::before{content:"+";font-weight:800;width:10px}
+.chip input:checked + span{background:var(--ink);color:#fff}
+.chip input:checked + span::before{content:"✓";color:var(--green)}
+.chip input:focus-visible + span{outline:3px solid var(--green);outline-offset:3px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+input[type=text],input[type=email],textarea{width:100%;min-height:50px;padding:12px 14px;border:2px solid var(--ink);background:#fff;border-radius:0;font:inherit;font-size:17px;color:var(--ink)}
+textarea{min-height:96px;resize:vertical}
+input::placeholder,textarea::placeholder{color:#6b6b6b}
+input:focus,textarea:focus{outline:none;box-shadow:5px 5px 0 var(--green)}
+.thanks{display:none;border:2px solid var(--ink);background:var(--green);padding:16px 18px;font-weight:700}
+.thanks.show{display:block}
+
+.card-col{position:sticky;top:24px}
+.card{background:var(--ink);color:#fff;padding:clamp(24px,3vw,40px);position:relative;overflow:hidden;box-shadow:10px 10px 0 var(--green)}
+.card .row1{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #333;padding-bottom:18px;margin-bottom:24px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#bdbdbd}
+.card .row1 b{color:var(--green)}
+.card .k{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#a8a8a8;margin:0 0 6px}
+.card .brand{font-size:clamp(28px,3.2vw,44px);margin:0 0 26px;word-break:break-word}
+.card .mission{font-size:clamp(18px,1.6vw,21px);line-height:1.4;margin:0 0 26px;color:#fff;word-break:break-word}
+.card .needs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px;padding:0;list-style:none}
+.card .needs li{border:1px solid var(--green);color:var(--green);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:6px 10px}
+.card .foot{border-top:1px solid #333;padding-top:18px;display:flex;justify-content:space-between;gap:12px;font-size:14px;color:#c9c9c9}
+.card .foot .sq{text-decoration:line-through;text-decoration-color:var(--green);text-decoration-thickness:2px;color:#fff;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.card .bar{position:absolute;right:-40px;top:-14px;width:150px;height:30px;background:var(--green);transform:rotate(-40deg)}
+.card-note{font-size:14px;color:var(--grey);margin:18px 0 0}
+
+/* social */
+.follow{padding:clamp(56px,7vw,96px) 0;border-top:1px solid var(--line)}
+.follow .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px}
+.follow h2{font-size:clamp(26px,3.4vw,44px);margin:0}
+.follow .links{display:flex;flex-wrap:wrap;gap:12px}
+
+footer{background:var(--ink);color:#c9c9c9;padding:48px 0 40px;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px}
+footer .logo img{filter:invert(1)}
+footer .meta{display:grid;gap:6px;text-align:right}
+footer a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
+
+@media (max-width:900px){
+  .hero .wrap,.about .wrap,.brief .wrap{grid-template-columns:1fr}
+  .figure{justify-self:start;max-width:520px}
+  .about .shot{max-width:none;aspect-ratio:3/2}
+  .about .shot img{object-position:50% 75%}
+  .brief .wrap{grid-template-areas:"intro" "card" "form"}
+  .card-col{position:static}
+  .brief .card-col{margin:0 10px 44px 0}
+  .rows li{grid-template-columns:44px 1fr}
+  .what-head{display:block}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .top .wrap{height:72px}
+  .logo{width:72px;height:58px}
+  .logo img{width:96px;left:-14.4px;top:-21.8px}
+  nav.main .link{display:none}
+  nav.main .btn{min-height:44px;padding:0 16px;font-size:13px}
+  .hero{padding-top:32px}
+  h1{font-size:clamp(34px,10.4vw,48px)}
+  .actions .btn{flex:1 1 100%}
+  .figure{margin-right:12px}
+  .figure .photo{aspect-ratio:1/1}
+  .figure .photo img{object-position:50% 55%}
+  .slash{height:36px;width:40%;left:-6%;bottom:-7%}
+  .tag{right:-12px}
+  .two{grid-template-columns:1fr}
+  .follow .links{width:100%}
+  .follow .links .btn{flex:1}
+  footer .meta{text-align:left}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Disrpt Agency, home"><img src="https://images.squarespace-cdn.com/content/v1/60641563af17ea666ce80ea3/1617210710685-CE3AJU76QEOM0ZN5QDUI/unnamed+%281%29.png?format=1500w" width="1500" height="1500" alt="Disrpt Agency logo"></a>
+    <nav class="main" aria-label="Main">
+      <a class="link" href="#about">About</a>
+      <a class="link" href="#what">What we do</a>
+      <a class="btn" href="#brief">Work with us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">BIPOC woman-owned PR agency</p>
+        <p class="status">We seek to <span class="hl">challenge</span> &amp; <span class="strike">disrpt</span> the status quo.</p>
+        <h1 id="h1" class="caps">Disrpt is the media muscle for brands with real missions.</h1>
+        <p class="lede">A PR + branding collective for <strong>progressive, authentic brands</strong> with disruptive mindsets. Real storytelling. Unique media campaigns.</p>
+        <div class="actions">
+          <a class="btn" href="#brief">Start your brief <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+          <a class="btn ghost" href="#about">What is Disrpt?</a>
+        </div>
+      </div>
+      <div class="figure">
+        <div class="photo"><img src="https://images.unsplash.com/photo-1527203561188-dae1bc1a417f?w=1000&amp;q=80&amp;auto=format&amp;fit=crop" width="1000" height="1400" alt="Profile portrait of a Black woman with a long braided ponytail against a gold backdrop"></div>
+        <div class="slash" aria-hidden="true"></div>
+        <span class="tag">Amplify</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about" aria-labelledby="about-h">
+    <div class="wrap">
+      <div class="shot"><img src="https://images.unsplash.com/photo-1603238886893-10d4cf6c9bff?w=900&amp;q=80&amp;auto=format&amp;fit=crop" width="900" height="1350" alt="A young man crouching on a street at night, lit by a camera flash" loading="lazy"></div>
+      <div>
+        <p class="eyebrow">What is Disrpt?</p>
+        <h2 id="about-h" class="caps">We cement progressive brands at the intersection of culture.</h2>
+        <p>A BIPOC woman-owned PR agency.</p>
+        <p class="muscle">Our clients are true disruptors. <span>We are the media muscle.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="what" id="what" aria-labelledby="what-h">
+    <div class="wrap">
+      <div class="what-head">
+        <h2 id="what-h" class="caps">What we do</h2>
+      </div>
+      <ol class="rows">
+        <li><span class="n">01</span><h3 class="caps">PR</h3></li>
+        <li><span class="n">02</span><h3 class="caps">Branding</h3></li>
+        <li><span class="n">03</span><h3 class="caps">Storytelling</h3></li>
+        <li><span class="n">04</span><h3 class="caps">Media campaigns</h3></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="brief" id="brief" aria-labelledby="brief-h">
+    <div class="wrap">
+      <div class="intro">
+        <h2 id="brief-h" class="caps">Work with us</h2>
+        <p>Tell us what you need and the mission behind it. Your brief builds as you type.</p>
+      </div>
+        <form id="briefForm" novalidate>
+          <fieldset>
+            <legend>What do you need?</legend>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" name="need" value="PR" checked><span>PR</span></label>
+              <label class="chip"><input type="checkbox" name="need" value="Branding"><span>Branding</span></label>
+              <label class="chip"><input type="checkbox" name="need" value="Storytelling" checked><span>Storytelling</span></label>
+              <label class="chip"><input type="checkbox" name="need" value="Media campaign"><span>Media campaign</span></label>
+            </div>
+          </fieldset>
+          <div>
+            <label for="brand">Your brand</label>
+            <input type="text" id="brand" name="brand" placeholder="Brand name" autocomplete="organization">
+          </div>
+          <div>
+            <label for="mission">Your mission, in a line</label>
+            <textarea id="mission" name="mission" placeholder="What are you here to change?"></textarea>
+          </div>
+          <div class="two">
+            <div><label for="first">First name</label><input type="text" id="first" name="first" autocomplete="given-name" required></div>
+            <div><label for="last">Last name</label><input type="text" id="last" name="last" autocomplete="family-name" required></div>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div><button class="btn" type="submit">Send your brief <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></button></div>
+          <p class="thanks" id="thanks" role="status" aria-live="polite"></p>
+        </form>
+      <div class="card-col">
+        <div class="card" aria-live="polite" aria-label="Your brief preview">
+          <div class="bar" aria-hidden="true"></div>
+          <div class="row1"><span>Brief for <b>Disrpt</b></span></div>
+          <p class="k">Brand</p>
+          <p class="brand caps" id="cBrand">Your brand</p>
+          <p class="k">Mission</p>
+          <p class="mission" id="cMission">“The mission you won't water down.”</p>
+          <p class="k">Needs</p>
+          <ul class="needs" id="cNeeds"><li>PR</li><li>Storytelling</li></ul>
+          <div class="foot"><span>Next up</span><span class="sq">The status quo</span></div>
+        </div>
+        <p class="card-note">This is what lands with the Disrpt team.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="follow" aria-labelledby="follow-h">
+    <div class="wrap">
+      <h2 id="follow-h" class="caps">Follow <span class="hl">@disrpt_agency</span></h2>
+      <div class="links">
+        <a class="btn ghost" href="https://www.instagram.com/disrpt_agency" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn ghost" href="https://www.linkedin.com/company/disrpt-agency/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="#brief">Start your brief</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Disrpt Agency, back to top"><img src="https://images.squarespace-cdn.com/content/v1/60641563af17ea666ce80ea3/1617210710685-CE3AJU76QEOM0ZN5QDUI/unnamed+%281%29.png?format=1500w" width="1500" height="1500" alt="Disrpt Agency logo" loading="lazy"></a>
+    <div class="meta">
+      <span>© Disrpt Agency</span>
+      <span>Mockup made for Disrpt Agency by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce) document.documentElement.classList.add('js-motion');
+
+  // brief builder
+  var f = document.getElementById('briefForm');
+  var cBrand = document.getElementById('cBrand'), cMission = document.getElementById('cMission'), cNeeds = document.getElementById('cNeeds');
+  function render(){
+    var b = f.brand.value.trim(), m = f.mission.value.trim();
+    cBrand.textContent = b || 'Your brand';
+    cMission.textContent = '“' + (m || 'The mission you won’t water down.') + '”';
+    var needs = Array.prototype.filter.call(f.querySelectorAll('input[name=need]'), function(i){return i.checked}).map(function(i){return i.value});
+    cNeeds.innerHTML = '';
+    (needs.length ? needs : ['Tell us']).forEach(function(n){ var li = document.createElement('li'); li.textContent = n; cNeeds.appendChild(li); });
+  }
+  f.addEventListener('input', render);
+  f.addEventListener('change', render);
+  f.addEventListener('submit', function(e){
+    e.preventDefault();
+    var t = document.getElementById('thanks');
+    t.textContent = 'Brief received. Thanks.';
+    t.classList.add('show');
+  });
+  render();
+
+  // gentle rise for things below the first screen
+  if(reduce || !('IntersectionObserver' in window)) return;
+  var els = document.querySelectorAll('.about .shot, .about h2, .about p, .what-head, .rows li, .brief .intro, .brief form, .card-col, .follow .wrap');
+  var vh = window.innerHeight;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.remove('will-rise'); io.unobserve(en.target); } });
+  }, {rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(el){
+    if(el.getBoundingClientRect().top > vh){ el.classList.add('rise','will-rise'); io.observe(el); }
+  });
+})();
+</script>
+</body>
+</html>
