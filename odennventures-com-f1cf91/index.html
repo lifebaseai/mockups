@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup odennventures-com-f1cf91 1 6e277bd4 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Odenn — Ventures, Impact &amp; Studio</title>
+<meta name="description" content="Odenn backs founders from ideation to scale, across Australia and the United States, through Odenn Ventures, Odenn Impact and Odenn Studio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#070708;--ink2:#0f0f12;--line:#26262c;--line2:#3a3a42;
+  --paper:#f5f4f0;--mute:#a3a3ad;--mute-dk:#55555e;
+  --blue:#2f45ff;--blue-dk:#1d2fd6;
+  --sans:"Outfit",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:#fff;font:400 16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid #fff;outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.mono{font-family:var(--mono)}
+.eyebrow{font:500 12.5px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.skip{position:absolute;left:-9999px;top:0}
+.skip:focus{left:12px;top:56px;z-index:50;background:#fff;color:var(--ink);padding:10px 14px}
+
+/* Banner */
+.mockbar{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:var(--paper);color:#1b1b1f;font:500 15px/1.3 var(--sans);text-align:center;border-bottom:1px solid #d9d7cf}
+.mockbar a{color:#1d2fd6;text-decoration:underline;text-underline-offset:3px;font-weight:600}
+
+/* Header */
+.site-head{position:sticky;top:0;z-index:20;background:rgba(7,7,8,.88);backdrop-filter:saturate(1.2) blur(10px);-webkit-backdrop-filter:saturate(1.2) blur(10px);border-bottom:1px solid var(--line)}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:44px;height:44px}
+.brand span{font:600 20px/1 var(--sans);letter-spacing:-.01em}
+.nav{display:flex;gap:4px;align-items:center}
+.nav a{font:500 13px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:#d6d6dc;padding:15px 12px;border-radius:999px}
+.nav a:hover{color:#fff}
+.nav a.btn{color:var(--ink);font:600 14.5px/1 var(--sans);letter-spacing:0;text-transform:none;padding:0 18px;margin-left:10px}
+.nav a.btn:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;font:600 15.5px/1 var(--sans);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.btn-main{background:#fff;color:var(--ink)}
+.btn-main:hover{background:#dfe2ff}
+.btn-ghost{border-color:var(--line2);color:#fff;background:transparent}
+.btn-ghost:hover{border-color:#fff}
+.btn-sm{min-height:44px;padding:0 18px;font-size:14.5px}
+.arrow{display:inline-block;transition:transform .2s}
+.btn:hover .arrow{transform:translateX(3px)}
+
+/* Hero */
+.hero{position:relative;padding:76px 0 88px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.hero h1{font:600 clamp(42px,5.6vw,74px)/1.02 var(--sans);letter-spacing:-.035em;margin:22px 0 26px}
+.hero h1 em{font-style:normal;color:#9aa5ff}
+.hero .lede{font-size:19px;line-height:1.55;color:#cfcfd6;max-width:30em;margin:0 0 34px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.where{display:flex;gap:22px;flex-wrap:wrap;margin-top:44px;font:500 13px/1.4 var(--mono);color:var(--mute);letter-spacing:.04em}
+.where span{display:flex;align-items:center;gap:8px}
+.where i{width:7px;height:7px;border-radius:50%;background:var(--blue);display:inline-block}
+.hero-ring{position:absolute;right:-180px;top:-140px;width:620px;height:620px;opacity:.07;pointer-events:none}
+
+/* Route tool */
+.route{background:var(--ink2);border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:0 30px 80px -40px rgba(47,69,255,.45),0 1px 0 rgba(255,255,255,.04) inset}
+.route h2{font:600 22px/1.2 var(--sans);letter-spacing:-.01em;margin:0 0 4px}
+.route .sub{color:var(--mute);font-size:14.5px;margin:0 0 22px}
+.q{border:0;margin:0 0 18px;padding:0}
+.q legend{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin-bottom:10px;padding:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip label{display:inline-flex;align-items:center;min-height:44px;padding:0 15px;border:1px solid var(--line2);border-radius:999px;font:500 14px/1 var(--sans);color:#e4e4ea;cursor:pointer;transition:background .18s,border-color .18s,color .18s;user-select:none}
+.chip label:hover{border-color:#8a8a95}
+.chip input:checked+label{background:var(--blue);border-color:var(--blue);color:#fff}
+.chip input:focus-visible+label{outline:2px solid #fff;outline-offset:2px}
+.track{position:relative;margin:24px 2px 8px;height:40px}
+.track .rail{position:absolute;left:0;right:0;top:9px;height:2px;background:var(--line2);border-radius:2px}
+.track .fill{position:absolute;left:0;top:9px;height:2px;background:var(--blue);border-radius:2px;width:40%;transition:width .5s cubic-bezier(.2,.7,.2,1)}
+.track .stops{position:absolute;inset:0;display:flex;justify-content:space-between}
+.track .stop{width:20px;display:flex;flex-direction:column;align-items:center}
+.track .stop b{width:20px;height:20px;border-radius:50%;background:var(--ink2);border:2px solid var(--line2);transition:all .3s}
+.track .stop.on b{border-color:var(--blue);background:var(--blue)}
+.track .stop.here b{background:#fff;border-color:#fff;box-shadow:0 0 0 6px rgba(47,69,255,.35)}
+.track .ends{display:flex;justify-content:space-between;font:500 11.5px/1 var(--mono);color:var(--mute);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
+.answer{margin-top:18px;border-top:1px solid var(--line);padding-top:20px}
+.answer .div-name{display:flex;align-items:baseline;gap:8px;margin:0 0 8px}
+.answer .div-name small{font:500 15px/1 var(--sans);color:var(--mute)}
+.answer .div-name strong{font:700 26px/1 var(--mono);letter-spacing:.02em}
+.answer p{margin:0 0 18px;color:#d4d4da;font-size:15.5px;line-height:1.55;min-height:4.65em}
+.answer p.div-name{min-height:0}
+.answer .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.answer .row a.more{font:500 13px/1 var(--mono);color:#c9cdff;text-decoration:underline;text-underline-offset:3px;padding:15px 6px}
+
+/* Sections */
+section{position:relative}
+.sec{padding:110px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:52px}
+.sec-head h2{font:600 clamp(32px,3.8vw,50px)/1.06 var(--sans);letter-spacing:-.03em;margin:14px 0 0;max-width:15em}
+.sec-head p{color:var(--mute);max-width:26em;margin:0;font-size:16.5px}
+
+/* Divisions */
+.divs{border-top:1px solid var(--line)}
+.dv{display:grid;grid-template-columns:90px 1.05fr 1.2fr;gap:36px;padding:44px 0;border-bottom:1px solid var(--line);align-items:start;scroll-margin-top:90px}
+.dv .num{font:500 13px/1 var(--mono);color:var(--mute);padding-top:10px}
+.dv .wordmark{margin:0}
+.dv .wordmark small{display:block;font:600 18px/1 var(--sans);color:#d6d6dc;margin-bottom:4px}
+.dv .wordmark strong{display:block;font:700 clamp(30px,3.2vw,40px)/1 var(--mono);letter-spacing:.02em}
+.dv .tag{margin:16px 0 0;font-size:18px;line-height:1.45;color:#e8e8ee;max-width:22em}
+.dv ul{list-style:none;margin:0;padding:0}
+.dv li{display:grid;grid-template-columns:120px 1fr;gap:16px;padding:12px 0;border-top:1px dashed var(--line2);font-size:15.5px;color:#d0d0d7}
+.dv li:first-child{border-top:0;padding-top:6px}
+.dv li span{font:500 12px/1.9 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.dv.impact{background:var(--blue);border-radius:22px;padding:44px 36px;margin:20px -36px;border-bottom:0}
+.dv.impact .num,.dv.impact li span{color:#dfe3ff}
+.dv.impact .wordmark small,.dv.impact .tag,.dv.impact li{color:#fff}
+.dv.impact li{border-top-color:rgba(255,255,255,.35)}
+
+/* Belief */
+.belief{padding:120px 0;background:var(--paper);color:var(--ink);overflow:hidden}
+.belief .wrap{position:relative;display:grid;grid-template-columns:1fr 300px;gap:60px;align-items:center}
+.belief blockquote{margin:0;font:600 clamp(36px,5vw,68px)/1.04 var(--sans);letter-spacing:-.035em}
+.belief blockquote span{color:var(--blue-dk)}
+.belief .src{margin-top:28px;font:500 13px/1.5 var(--mono);color:var(--mute-dk);letter-spacing:.04em;max-width:40em}
+.belief .ringbox{position:relative;width:300px;height:300px;border-radius:50%;background:var(--ink);display:grid;place-items:center}
+.belief .ringbox img{width:280px;height:280px}
+
+/* Founder */
+.founder .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+.founder h2{font:600 clamp(32px,3.8vw,50px)/1.06 var(--sans);letter-spacing:-.03em;margin:14px 0 8px}
+.founder .role{font:500 14px/1.4 var(--mono);color:var(--mute);margin:0 0 28px}
+.founder .card{border:1px solid var(--line);border-radius:22px;padding:30px;background:var(--ink2)}
+.roles{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 6px;padding:0;list-style:none}
+.roles li{border:1px solid var(--line2);border-radius:999px;padding:8px 14px;font:500 13.5px/1.2 var(--sans);color:#e2e2e8}
+.founder .body p{font-size:18px;line-height:1.6;color:#d4d4da;margin:0 0 22px}
+.founder .body p:first-child{font-size:22px;line-height:1.45;color:#fff}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:34px}
+.facts div{background:var(--ink);padding:22px}
+.facts dt{font:500 12px/1.3 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin-bottom:8px}
+.facts dd{margin:0;font:500 17px/1.4 var(--sans)}
+.li-link{display:inline-flex;align-items:center;gap:10px;margin-top:22px;min-height:44px;font:500 14px/1 var(--mono);color:#c9cdff;text-underline-offset:4px}
+
+/* FAQ */
+.faq{border-top:1px solid var(--line)}
+.faq-list{max-width:860px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;font:500 20px/1.35 var(--sans);min-height:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary i{flex:none;width:30px;height:30px;border:1px solid var(--line2);border-radius:50%;position:relative}
+.faq summary i::before,.faq summary i::after{content:"";position:absolute;left:50%;top:50%;width:11px;height:1.5px;background:#fff;transform:translate(-50%,-50%);transition:transform .25s}
+.faq summary i::after{transform:translate(-50%,-50%) rotate(90deg)}
+.faq details[open] summary i::after{transform:translate(-50%,-50%) rotate(0)}
+.faq details p{margin:0 0 26px;color:#cfcfd6;font-size:17px;max-width:44em}
+
+/* Pitch */
+.pitch{background:var(--ink2);border-top:1px solid var(--line)}
+.pitch .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px}
+.pitch h2{font:600 clamp(36px,4.4vw,58px)/1.02 var(--sans);letter-spacing:-.035em;margin:14px 0 20px}
+.pitch .lede{color:#cfcfd6;font-size:18px;margin:0 0 40px;max-width:24em}
+.offices{display:grid;gap:14px}
+.office{display:flex;justify-content:space-between;align-items:center;gap:16px;border:1px solid var(--line);border-radius:16px;padding:18px 20px;text-decoration:none;transition:border-color .2s;min-height:44px}
+.office:hover{border-color:#8a8a95}
+.office b{display:block;font:600 17px/1.3 var(--sans)}
+.office span{display:block;font:400 14px/1.45 var(--mono);color:var(--mute)}
+.office em{font:500 12px/1 var(--mono);font-style:normal;color:#c9cdff;white-space:nowrap;letter-spacing:.06em;text-transform:uppercase}
+form{background:var(--ink);border:1px solid var(--line);border-radius:22px;padding:32px}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field.full{grid-column:1/-1}
+.field label{font:500 12px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#bdbdc6}
+.field input,.field select,.field textarea{width:100%;min-height:50px;background:var(--ink2);border:1px solid var(--line2);border-radius:12px;color:#fff;font:400 16px/1.4 var(--sans);padding:13px 14px;transition:border-color .2s}
+.field textarea{min-height:120px;resize:vertical}
+.field select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23fff' stroke-width='1.6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:40px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(47,69,255,.35)}
+.field input::placeholder,.field textarea::placeholder{color:#8a8a95}
+.form-foot{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:22px;flex-wrap:wrap}
+.form-foot small{color:var(--mute);font:400 13px/1.4 var(--mono)}
+.thanks{display:none;margin-top:18px;padding:16px 18px;border-radius:12px;background:rgba(47,69,255,.18);border:1px solid var(--blue);font-size:16px}
+.thanks.show{display:block}
+
+/* Footer */
+footer{border-top:1px solid var(--line);padding:44px 0 50px}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+footer .brand img{width:40px;height:40px}
+footer p{margin:0;color:var(--mute);font:400 13px/1.6 var(--mono)}
+footer .credit a{color:#d6d6dc}
+footer nav{display:flex;gap:6px;flex-wrap:wrap}
+footer nav a{font:500 13px/1 var(--mono);color:#d6d6dc;text-decoration:none;padding:15px 10px;letter-spacing:.04em}
+footer nav a:hover{color:#fff}
+
+/* Motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+
+/* Responsive */
+@media (max-width:1000px){
+  .nav a.hide-md{display:none}
+  .hero .wrap{grid-template-columns:1fr;gap:48px}
+  .dv{grid-template-columns:60px 1fr;gap:24px}
+  .dv ul{grid-column:2}
+  .dv.impact{margin:16px 0;padding:36px 28px}
+  .founder .wrap,.pitch .wrap{grid-template-columns:1fr;gap:44px}
+  .belief .wrap{grid-template-columns:1fr;gap:44px}
+}
+@media (max-width:640px){
+  .wrap{padding:0 20px}
+  .mockbar{font-size:15px;padding:8px 12px}
+  .site-head .wrap{height:62px}
+  .nav a:not(.btn){display:none}
+  .brand img{width:38px;height:38px}
+  .hero{padding:44px 0 64px}
+  .hero h1{margin:16px 0 18px}
+  .hero .lede{font-size:17.5px;margin-bottom:28px}
+  .actions .btn{flex:1 1 auto}
+  .where{margin-top:30px;gap:14px}
+  .hero-ring{width:420px;height:420px;right:-200px;top:-120px}
+  .route{padding:22px 18px;border-radius:18px}
+  .chip label{padding:0 13px;font-size:14px}
+  .answer p{min-height:0}
+  .sec{padding:76px 0}
+  .sec-head{display:block;margin-bottom:34px}
+  .sec-head p{margin-top:14px}
+  .dv{grid-template-columns:1fr;gap:14px;padding:34px 0}
+  .dv ul{grid-column:1}
+  .dv .num{padding:0}
+  .dv li{grid-template-columns:1fr;gap:2px}
+  .dv.impact{padding:30px 22px;border-radius:18px}
+  .belief{padding:80px 0}
+  .belief .ringbox{width:200px;height:200px}
+  .belief .ringbox img{width:186px;height:186px}
+  .facts{grid-template-columns:1fr}
+  .founder .body p:first-child{font-size:20px}
+  .faq summary{font-size:18px;padding:20px 0}
+  form{padding:22px 18px}
+  .fgrid{grid-template-columns:1fr}
+  .form-foot .btn{width:100%}
+  footer .wrap{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+<div class="mockbar" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Odenn, back to top">
+      <img src="https://www.odennventures.com/logo/odenn-logo.webp" alt="Odenn logo" width="44" height="44">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#ventures">Ventures</a>
+      <a href="#impact">Impact</a>
+      <a href="#studio">Studio</a>
+      <a class="hide-md" href="#founder">Founder</a>
+      <a class="btn btn-main btn-sm" href="#pitch">Pitch Odenn</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <svg class="hero-ring" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="96" fill="none" stroke="#fff" stroke-width="1.2"/><circle cx="100" cy="100" r="89" fill="none" stroke="#fff" stroke-width="1.2"/><circle cx="100" cy="100" r="84" fill="none" stroke="#fff" stroke-width="2.4"/></svg>
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Odenn Ventures · Impact · Studio</p>
+      <h1 id="hero-title">Odenn backs founders from <em>ideation to scale.</em></h1>
+      <p class="lede">Capital, impact and execution under one roof, for founders solving problems that matter. We incubate, invest and build.</p>
+      <div class="actions">
+        <a class="btn btn-main" href="#pitch">Pitch Odenn <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="#route">Find your division</a>
+      </div>
+      <div class="where"><span><i></i>Newport Beach, California</span><span><i></i>Sydney, Australia</span></div>
+    </div>
+
+    <div class="route" id="route" aria-labelledby="route-title">
+      <h2 id="route-title">Where are you on the route?</h2>
+      <p class="sub">Pick your stage and what you need. We'll show you the door.</p>
+      <fieldset class="q">
+        <legend>Your stage</legend>
+        <div class="chips" id="stages">
+          <div class="chip"><input type="radio" name="stage" id="s0" value="0"><label for="s0">Idea</label></div>
+          <div class="chip"><input type="radio" name="stage" id="s1" value="1"><label for="s1">Pre-seed</label></div>
+          <div class="chip"><input type="radio" name="stage" id="s2" value="2" checked><label for="s2">Seed</label></div>
+          <div class="chip"><input type="radio" name="stage" id="s3" value="3"><label for="s3">Series A</label></div>
+          <div class="chip"><input type="radio" name="stage" id="s4" value="4"><label for="s4">Growth business</label></div>
+          <div class="chip"><input type="radio" name="stage" id="s5" value="5"><label for="s5">Enterprise</label></div>
+        </div>
+      </fieldset>
+      <fieldset class="q">
+        <legend>You need</legend>
+        <div class="chips">
+          <div class="chip"><input type="radio" name="need" id="n0" value="capital" checked><label for="n0">Capital</label></div>
+          <div class="chip"><input type="radio" name="need" id="n1" value="impact"><label for="n1">Impact capital</label></div>
+          <div class="chip"><input type="radio" name="need" id="n2" value="build"><label for="n2">A team to build</label></div>
+        </div>
+      </fieldset>
+      <div class="track" aria-hidden="true">
+        <div class="rail"></div><div class="fill" id="fill"></div>
+        <div class="stops" id="stops"><span class="stop on"><b></b></span><span class="stop on"><b></b></span><span class="stop here"><b></b></span><span class="stop"><b></b></span><span class="stop"><b></b></span><span class="stop"><b></b></span></div>
+      </div>
+      <div class="track-ends mono" aria-hidden="true" style="display:flex;justify-content:space-between;font:500 11.5px/1 var(--mono);color:var(--mute);letter-spacing:.08em;text-transform:uppercase;margin:-8px 0 0"><span>Ideation</span><span>Scale</span></div>
+      <div class="answer" aria-live="polite">
+        <p class="div-name"><small>odenn</small><strong id="a-name">VENTURES</strong></p>
+        <p id="a-text">Seed sits inside the range our founder invests in, pre-seed to Series A. Ventures backs technology entrepreneurs building companies that could reshape industries.</p>
+        <div class="row">
+          <a class="btn btn-main btn-sm" id="a-go" href="#pitch" data-div="Odenn Ventures">Pitch Ventures <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="more" id="a-more" href="#ventures">What Ventures backs</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="divs-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Three divisions, one team</p>
+        <h2 id="divs-title">Capital, impact and execution, built to work together.</h2>
+      </div>
+      <p>Operating across Australia and the United States, we support founders at every stage of their journey.</p>
+    </div>
+
+    <div class="divs">
+      <article class="dv" id="ventures" aria-labelledby="v-t">
+        <div class="num">01</div>
+        <div>
+          <h3 class="wordmark" id="v-t"><small>odenn</small><strong>VENTURES</strong></h3>
+          <p class="tag">For technology entrepreneurs who seek to improve the lives of people around them.</p>
+        </div>
+        <ul>
+          <li><span>Focus</span>Enterprise applications, high-tech infrastructure and consumer platforms</li>
+          <li><span>Thesis</span>Technology companies with the potential to fundamentally reshape industries</li>
+        </ul>
+      </article>
+
+      <article class="dv impact" id="impact" aria-labelledby="i-t">
+        <div class="num">02</div>
+        <div>
+          <h3 class="wordmark" id="i-t"><small>odenn</small><strong>IMPACT</strong></h3>
+          <p class="tag">Harnessing the power of capitalism to solve the world's most pressing problems.</p>
+        </div>
+        <ul>
+          <li><span>What it is</span>A venture capital fund within a family office</li>
+          <li><span>Who it backs</span>Founders solving problems that translate into a meaningful social, enduring and positive cause</li>
+          <li><span>Guided by</span>The Sustainable Development Goals</li>
+        </ul>
+      </article>
+
+      <article class="dv" id="studio" aria-labelledby="st-t">
+        <div class="num">03</div>
+        <div>
+          <h3 class="wordmark" id="st-t"><small>odenn</small><strong>STUDIO</strong></h3>
+          <p class="tag">We incubate, invest in and build ventures from ideation stage.</p>
+        </div>
+        <ul>
+          <li><span>Who for</span>VC-backed startup founders, growth businesses and enterprise executives</li>
+          <li><span>The team</span>Embedded, Australian and American based</li>
+          <li><span>The work</span>Design and development with AI-accelerated engineering and custom, production-grade agentic systems</li>
+          <li><span>The way</span>Efficient execution, startup-friendly flexibility</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="belief" aria-labelledby="belief-title">
+  <div class="wrap">
+    <div>
+      <h2 id="belief-title" class="eyebrow" style="color:var(--mute-dk);margin:0 0 22px">What we believe</h2>
+      <blockquote>Profit and purpose <span>aren't mutually exclusive.</span></blockquote>
+      <p class="src">Venture capital and entrepreneurialism are powerful forces. We harness them to create impact with magnitude.</p>
+    </div>
+    <div class="ringbox" aria-hidden="true"><img src="https://www.odennventures.com/logo/odenn-logo.webp" alt="" width="280" height="280" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="sec founder" id="founder" aria-labelledby="founder-title">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">The founder</p>
+      <h2 id="founder-title">Alexander Bechelli</h2>
+      <p class="role">Founder, Odenn Ventures, Impact &amp; Studio</p>
+      <div class="card">
+        <ul class="roles" aria-label="Roles">
+          <li>Investor</li><li>Venture builder</li><li>Venture capitalist</li><li>Celebrity advisor</li><li>Angel investor</li>
+        </ul>
+        <a class="li-link" href="https://www.linkedin.com/in/alexander-bechelli-8183893a" target="_blank" rel="noopener">Alexander on LinkedIn <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <div class="body">
+      <p>An Australian investor, passionate about meeting entrepreneurs who are solving a problem that translates into a meaningful social, enduring and positive cause.</p>
+      <p>Alexander is an active angel investor in early-stage companies, investing from pre-seed to Series A, and has always felt that venture capital and entrepreneurialism can be harnessed to create impact with magnitude.</p>
+      <dl class="facts">
+        <div><dt>Invests</dt><dd>Pre-seed to Series A</dd></div>
+        <div><dt>Mentor &amp; advisor</dt><dd>UCLA Anderson School of Management, Venture Accelerator</dd></div>
+        <div><dt>Based across</dt><dd>Australia and the United States</dd></div>
+        <div><dt>Leads</dt><dd>Odenn Ventures, Impact &amp; Studio</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="sec faq" aria-labelledby="faq-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Founders ask</p>
+        <h2 id="faq-title">Straight answers.</h2>
+      </div>
+    </div>
+    <div class="faq-list">
+      <details open>
+        <summary>What stage do you invest at? <i aria-hidden="true"></i></summary>
+        <p>Our founder, Alexander Bechelli, invests in early-stage companies from pre-seed to Series A. Odenn Studio incubates and builds ventures from ideation stage.</p>
+      </details>
+      <details>
+        <summary>What kind of companies does Odenn Ventures back? <i aria-hidden="true"></i></summary>
+        <p>Technology companies across enterprise applications, high-tech infrastructure and consumer platforms, with the potential to fundamentally reshape industries.</p>
+      </details>
+      <details>
+        <summary>What is Odenn Impact? <i aria-hidden="true"></i></summary>
+        <p>A venture capital fund within a family office. It supports founders solving problems that translate into a meaningful social, enduring and positive cause, guided by the Sustainable Development Goals.</p>
+      </details>
+      <details>
+        <summary>Who does Odenn Studio work with? <i aria-hidden="true"></i></summary>
+        <p>VC-backed startup founders, growth businesses and enterprise executives who believe in the future of their business. We work as an embedded Australian and American team.</p>
+      </details>
+      <details>
+        <summary>Where are you based? <i aria-hidden="true"></i></summary>
+        <p>Newport Beach in Orange County, California, and Sydney, New South Wales.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="sec pitch" id="pitch" aria-labelledby="pitch-title">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Get in touch</p>
+      <h2 id="pitch-title">Building something that matters? Tell us.</h2>
+      <p class="lede">A few lines about what you're solving and where you are on the route is the best place to start.</p>
+      <div class="offices">
+        <a class="office" href="https://www.google.com/maps/search/?api=1&amp;query=Newport%20Beach%2C%20Orange%20County%2C%20California%2C%20United%20States" target="_blank" rel="noopener">
+          <div><b>Newport Beach</b><span>Orange County, California, United States</span></div><em>Map ↗</em>
+        </a>
+        <a class="office" href="https://www.google.com/maps/search/?api=1&amp;query=Sydney%2C%20New%20South%20Wales%2C%20Australia" target="_blank" rel="noopener">
+          <div><b>Sydney</b><span>New South Wales, Australia</span></div><em>Map ↗</em>
+        </a>
+      </div>
+    </div>
+    <form id="pitch-form" novalidate>
+      <div class="fgrid">
+        <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" placeholder="Full name"></div>
+        <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@company.com"></div>
+        <div class="field"><label for="f-co">Company</label><input id="f-co" name="company" autocomplete="organization" placeholder="Company or project"></div>
+        <div class="field"><label for="f-div">Division</label>
+          <select id="f-div" name="division">
+            <option>Odenn Ventures</option>
+            <option>Odenn Impact</option>
+            <option>Odenn Studio</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div class="field full"><label for="f-stage">Stage</label>
+          <select id="f-stage" name="stage">
+            <option>Idea</option><option>Pre-seed</option><option selected>Seed</option><option>Series A</option><option>Growth business</option><option>Enterprise</option>
+          </select>
+        </div>
+        <div class="field full"><label for="f-msg">What are you solving?</label><textarea id="f-msg" name="message" placeholder="The problem, who it's for, and what you need from us."></textarea></div>
+      </div>
+      <div class="form-foot">
+        <small>Odenn · Australia &amp; United States</small>
+        <button class="btn btn-main" type="submit">Send to Odenn <span class="arrow" aria-hidden="true">→</span></button>
+      </div>
+      <p class="thanks" id="thanks" role="status">Thanks. This is a mockup, so nothing was sent.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Odenn, back to top"><img src="https://www.odennventures.com/logo/odenn-logo.webp" alt="Odenn logo" width="40" height="40" loading="lazy"></a>
+    <nav aria-label="Footer">
+      <a href="#ventures">Ventures</a><a href="#impact">Impact</a><a href="#studio">Studio</a><a href="#pitch">Contact</a><a href="https://www.odennventures.com/">odennventures.com</a>
+    </nav>
+    <div>
+      <p>Made in USA &amp; Australia · © 2026 odenn</p>
+      <p class="credit">Mockup made for Odenn by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var STAGES=['Idea','Pre-seed','Seed','Series A','Growth business','Enterprise'];
+  var D={
+    ventures:{name:'VENTURES',full:'Odenn Ventures',go:'Pitch Ventures',more:'What Ventures backs',href:'#ventures'},
+    impact:{name:'IMPACT',full:'Odenn Impact',go:'Pitch Impact',more:'What Impact backs',href:'#impact'},
+    studio:{name:'STUDIO',full:'Odenn Studio',go:'Talk to Studio',more:'How Studio works',href:'#studio'}
+  };
+  function pick(stage,need){
+    var s=STAGES[stage];
+    if(need==='impact') return ['impact','A venture capital fund within a family office, for founders solving problems that translate into a meaningful social, enduring and positive cause. Guided by the Sustainable Development Goals.'];
+    if(need==='build'){
+      if(stage===0) return ['studio','Studio incubates, invests in and builds ventures from ideation stage, with an embedded Australian and American team.'];
+      if(stage>=4) return ['studio','Studio works with growth businesses and enterprise executives: design, development and AI-accelerated engineering, delivered by an embedded team.'];
+      return ['studio','Studio works with VC-backed startup founders: design, development, AI-accelerated engineering and production-grade agentic systems.'];
+    }
+    if(stage===0) return ['studio','At the idea stage, Studio is your door. We incubate, invest in and build ventures from ideation stage.'];
+    if(stage>=4) return ['studio','Our founder invests from pre-seed to Series A. For a '+(stage===4?'growth business':'enterprise team')+', Studio is where we work with you.'];
+    return ['ventures',s+' sits inside the range our founder invests in, pre-seed to Series A. Ventures backs technology entrepreneurs building companies that could reshape industries.'];
+  }
+  var fill=document.getElementById('fill'),stops=document.querySelectorAll('#stops .stop');
+  var aName=document.getElementById('a-name'),aText=document.getElementById('a-text'),aGo=document.getElementById('a-go'),aMore=document.getElementById('a-more');
+  function update(){
+    var st=+document.querySelector('input[name=stage]:checked').value;
+    var nd=document.querySelector('input[name=need]:checked').value;
+    var r=pick(st,nd),d=D[r[0]];
+    fill.style.width=(st/5*100)+'%';
+    stops.forEach(function(el,i){el.className='stop'+(i<st?' on':'')+(i===st?' here':'');});
+    aName.textContent=d.name;aText.textContent=r[1];
+    aGo.innerHTML=d.go+' <span class="arrow" aria-hidden="true">→</span>';
+    aGo.setAttribute('data-div',d.full);
+    aMore.textContent=d.more;aMore.setAttribute('href',d.href);
+  }
+  document.querySelectorAll('.route input').forEach(function(i){i.addEventListener('change',update)});
+  update();
+  aGo.addEventListener('click',function(){
+    document.getElementById('f-div').value=aGo.getAttribute('data-div');
+    var st=+document.querySelector('input[name=stage]:checked').value;
+    document.getElementById('f-stage').value=STAGES[st];
+  });
+
+  document.getElementById('pitch-form').addEventListener('submit',function(e){
+    e.preventDefault();document.getElementById('thanks').classList.add('show');
+  });
+
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce||!('IntersectionObserver' in window)) return;
+  var els=document.querySelectorAll('.sec-head,.dv,.belief blockquote,.belief .ringbox,.founder .wrap>div,.faq details,.pitch .wrap>div,.pitch form');
+  var vh=window.innerHeight;
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target);}});
+  },{rootMargin:'0px 0px -6% 0px'});
+  els.forEach(function(el){
+    if(el.getBoundingClientRect().top>vh){el.classList.add('will-rise','rise');io.observe(el);}
+  });
+})();
+</script>
+</body>
+</html>
