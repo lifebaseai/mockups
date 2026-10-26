@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup 4wtmedia-com-d2b522 1 7129bce3 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4WT Media | Los Angeles Video Production Company</title>
+<meta name="description" content="4WT Media is a Los Angeles based, award-winning video production company. Branded content and original film, TV and stories.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --orange:#ff8400;
+  --orange-ink:#a35200;
+  --ink:#141210;
+  --ink-2:#1d1a17;
+  --ink-3:#2a2622;
+  --paper:#f6f2ec;
+  --paper-2:#ece6dc;
+  --text:#1b1815;
+  --muted:#5d554c;
+  --on-dark:#f3eee7;
+  --on-dark-muted:#b5aca1;
+  --line-dark:rgba(243,238,231,.16);
+  --line:#d9d1c5;
+  --head:"Jost","Futura","Century Gothic",system-ui,sans-serif;
+  --body:"Nunito Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--text);font:17px/1.6 var(--body);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--head);font-weight:700;line-height:1.05;margin:0;letter-spacing:.01em}
+p{margin:0}
+.skip{position:absolute;left:12px;top:-60px;background:var(--orange);color:var(--ink);padding:10px 14px;z-index:99;font-weight:700;text-decoration:none}
+.skip:focus{top:56px}
+
+/* Mockup banner */
+.mock{height:44px;display:flex;align-items:center;justify-content:center;background:#2b2520;color:#efe8de;font:600 15px/1 var(--body);text-align:center;padding:0 12px;border-bottom:1px solid rgba(255,132,0,.35);white-space:nowrap}
+.mock a{color:#ffb466;text-decoration:underline;text-underline-offset:3px;margin-left:.3em}
+.mock a:hover{color:#ffd2a3}
+
+/* Header */
+.top{position:sticky;top:0;z-index:20;background:rgba(20,18,16,.92);backdrop-filter:saturate(1.2) blur(10px);-webkit-backdrop-filter:saturate(1.2) blur(10px);border-bottom:1px solid var(--line-dark)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--on-dark)}
+.brand img{width:48px;height:48px}
+.brand span{font:600 15px/1 var(--head);letter-spacing:.18em;text-transform:uppercase}
+.nav{display:flex;gap:6px;align-items:center}
+.nav a{font:600 13px/1 var(--head);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--on-dark);padding:15px 12px;border-radius:2px}
+.nav a:hover{color:var(--orange)}
+.nav .btn{margin-left:10px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;font:600 14px/1 var(--head);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border-radius:2px;border:1.5px solid transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.btn-o{background:var(--orange);color:var(--ink)}
+.btn-o:hover{background:#ff9a2e}
+.btn-g{border-color:rgba(243,238,231,.45);color:var(--on-dark);background:transparent}
+.btn-g:hover{border-color:var(--orange);color:var(--orange)}
+.nav .btn{min-height:44px;padding:0 18px;font-size:12.5px}
+.nav .btn-o:hover{color:var(--ink)}
+
+/* Hero: the viewfinder */
+.hero{background:var(--ink);color:var(--on-dark);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 45%,#2a241f 0%,rgba(20,18,16,0) 70%);pointer-events:none}
+.vf{position:relative;margin:28px auto 34px;max-width:1240px;min-height:calc(100vh - 44px - 72px - 62px);display:flex;flex-direction:column;justify-content:center;padding:84px 72px 96px}
+.corner{position:absolute;width:34px;height:34px;border:2px solid var(--on-dark-muted)}
+.c1{top:0;left:28px;border-right:0;border-bottom:0}
+.c2{top:0;right:28px;border-left:0;border-bottom:0}
+.c3{bottom:0;left:28px;border-right:0;border-top:0}
+.c4{bottom:0;right:28px;border-left:0;border-top:0}
+.cross{position:absolute;left:50%;top:50%;width:22px;height:22px;transform:translate(-50%,-50%);opacity:.22}
+.cross::before,.cross::after{content:"";position:absolute;background:var(--on-dark)}
+.cross::before{left:50%;top:0;bottom:0;width:1px}
+.cross::after{top:50%;left:0;right:0;height:1px}
+.hud{position:absolute;top:20px;left:72px;right:72px;display:flex;justify-content:space-between;font:500 13px/1 var(--head);letter-spacing:.18em;text-transform:uppercase;color:var(--on-dark-muted)}
+.rec{display:flex;align-items:center;gap:10px;color:var(--on-dark)}
+.rec i{width:10px;height:10px;border-radius:50%;background:var(--orange);box-shadow:0 0 0 4px rgba(255,132,0,.18)}
+.tc{font-variant-numeric:tabular-nums;color:var(--on-dark)}
+.hero-in{position:relative;max-width:980px}
+.kicker{display:block;font:600 15px/1 var(--head);letter-spacing:.3em;text-transform:uppercase;color:var(--orange);margin-bottom:26px}
+.hero h1 .big{display:block;font-size:clamp(44px,7.4vw,104px);text-transform:uppercase;letter-spacing:.005em;line-height:.98}
+.hero h1 .big em{font-style:normal;color:var(--orange)}
+.lede{margin-top:30px;max-width:600px;font-size:20px;line-height:1.55;color:#ddd5cb}
+.cta{margin-top:38px;display:flex;flex-wrap:wrap;gap:14px}
+.lower{position:absolute;left:72px;right:72px;bottom:22px;display:flex;align-items:center;justify-content:space-between;gap:20px;font:500 13px/1 var(--head);letter-spacing:.18em;text-transform:uppercase;color:var(--on-dark-muted)}
+.values{display:flex;gap:18px;flex-wrap:wrap}
+.values span{transition:color .5s}
+.values span.on{color:var(--orange)}
+
+/* Proof strip */
+.proof{background:var(--ink);color:var(--on-dark);border-top:1px solid var(--line-dark)}
+.proof ul{list-style:none;margin:0 auto;padding:0 28px;max-width:var(--wrap);display:grid;grid-template-columns:repeat(4,1fr)}
+.proof li{padding:30px 22px 34px;border-left:1px solid var(--line-dark)}
+.proof li:first-child{border-left:0;padding-left:0}
+.proof b{display:block;font:700 30px/1.1 var(--head);color:var(--on-dark);text-transform:uppercase;letter-spacing:.02em}
+.proof span{display:block;margin-top:8px;font-size:15px;color:var(--on-dark-muted)}
+
+/* Sections */
+section{scroll-margin-top:72px}
+.sec{padding:120px 0}
+.eyebrow{font:600 13px/1 var(--head);letter-spacing:.28em;text-transform:uppercase;color:var(--orange-ink);margin-bottom:20px;display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:28px;height:2px;background:currentColor}
+.dark .eyebrow{color:var(--orange)}
+h2{font-size:clamp(34px,4.6vw,58px);text-transform:uppercase}
+.sec-head{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:end;margin-bottom:64px}
+.sec-head p{color:var(--muted);font-size:18px;max-width:460px}
+.dark{background:var(--ink);color:var(--on-dark)}
+.dark .sec-head p{color:var(--on-dark-muted)}
+
+/* Two lanes */
+.lanes{display:grid;grid-template-columns:1fr 1fr;border-top:2px solid var(--text)}
+.lane{padding:44px 48px 52px 0;position:relative}
+.lane+.lane{padding:44px 0 52px 48px;border-left:1px solid var(--line)}
+.lane .num{font:600 14px/1 var(--head);letter-spacing:.2em;color:var(--orange-ink)}
+.lane h3{font-size:clamp(30px,3.4vw,44px);text-transform:uppercase;margin:18px 0 18px}
+.lane p{font-size:19px;color:var(--text);max-width:440px}
+.lane p+p{margin-top:14px;color:var(--muted);font-size:17px}
+.lane .tag{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.lane .tag span{font:600 12px/1 var(--head);letter-spacing:.14em;text-transform:uppercase;padding:9px 12px;border:1px solid var(--line);border-radius:2px;color:var(--muted)}
+.mission{margin-top:84px;display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start}
+.mission blockquote{margin:0;font:700 clamp(26px,3vw,38px)/1.2 var(--head);color:var(--text)}
+.mission blockquote em{font-style:normal;color:var(--orange-ink)}
+.mission p{color:var(--muted);font-size:18px;padding-top:6px}
+
+/* Services: concept to delivery */
+.track{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.track::before{content:"";position:absolute;left:0;right:0;top:9px;height:2px;background:var(--line-dark)}
+.track .bar{position:absolute;left:0;top:9px;height:2px;width:100%;background:var(--orange);transform-origin:left;transform:scaleX(1);transition:transform 1.6s cubic-bezier(.3,.7,.2,1)}
+.track.will-draw .bar{transform:scaleX(0)}
+.stage{position:relative;padding:44px 40px 0 0}
+.stage::before{content:"";position:absolute;top:0;left:0;width:20px;height:20px;border-radius:50%;background:var(--ink);border:2px solid var(--orange)}
+.stage:first-child::before{background:var(--orange)}
+.stage .step{font:600 13px/1 var(--head);letter-spacing:.22em;text-transform:uppercase;color:var(--on-dark-muted)}
+.stage h3{font-size:34px;text-transform:uppercase;margin:12px 0 14px;color:var(--on-dark)}
+.stage p{color:#d6cec4;font-size:17px;max-width:330px}
+.ends{display:flex;justify-content:space-between;margin-top:56px;padding-top:22px;border-top:1px solid var(--line-dark);font:500 13px/1.4 var(--head);letter-spacing:.2em;text-transform:uppercase;color:var(--on-dark-muted);gap:20px}
+.ends b{color:var(--orange);font-weight:600}
+
+/* Brief builder */
+.brief{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start}
+fieldset{border:0;margin:0 0 34px;padding:0;min-width:0}
+legend{font:600 14px/1.3 var(--head);letter-spacing:.16em;text-transform:uppercase;color:var(--text);margin-bottom:14px;padding:0;display:flex;gap:12px;align-items:baseline}
+legend i{font-style:normal;color:var(--orange-ink)}
+legend small{font:400 14px/1.3 var(--body);letter-spacing:0;text-transform:none;color:var(--muted)}
+.opts{display:flex;flex-wrap:wrap;gap:10px}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.opt label{display:flex;flex-direction:column;justify-content:center;min-height:52px;padding:12px 18px;border:1.5px solid var(--line);border-radius:2px;background:#fff;cursor:pointer;font-weight:700;font-size:16px;line-height:1.25;transition:border-color .15s,background .15s,box-shadow .15s}
+.opt label small{font-weight:400;font-size:14px;color:var(--muted);margin-top:2px}
+.opt label:hover{border-color:#b9ad9e}
+.opt input:checked+label{border-color:var(--ink);background:var(--ink);color:var(--on-dark)}
+.opt input:checked+label small{color:var(--on-dark-muted)}
+.opt input:focus-visible+label{outline:3px solid var(--orange);outline-offset:2px}
+.opts.wide .opt{flex:1 1 220px}
+.opts.wide .opt label{height:100%}
+.dirs .opt label{min-height:46px;padding:10px 14px;font-size:15px}
+
+.slate{position:sticky;top:96px;background:var(--ink);color:var(--on-dark);border-radius:4px;box-shadow:0 30px 60px -30px rgba(20,18,16,.55),0 2px 6px rgba(20,18,16,.12);overflow:hidden}
+.sticks{height:34px;background:repeating-linear-gradient(-45deg,var(--on-dark) 0 22px,var(--ink) 22px 44px);border-bottom:3px solid var(--ink)}
+.slate-in{padding:26px 28px 28px}
+.slate-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+.slate-top img{width:44px;height:44px}
+.slate-top span{font:500 12.5px/1 var(--head);letter-spacing:.2em;text-transform:uppercase;color:var(--on-dark-muted)}
+.cells{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line-dark)}
+.cell{padding:14px 0 16px;border-bottom:1px solid var(--line-dark)}
+.cell:nth-child(odd){padding-right:16px;border-right:1px solid var(--line-dark)}
+.cell:nth-child(even){padding-left:16px}
+.cell.full{grid-column:1/-1;padding-right:0;border-right:0;padding-left:0}
+.cell dt{font:500 11.5px/1 var(--head);letter-spacing:.22em;text-transform:uppercase;color:var(--on-dark-muted);margin-bottom:8px}
+.cell dd{margin:0;font:600 19px/1.25 var(--head);color:var(--on-dark)}
+.cell dd.pop{animation:pop .45s ease}
+@keyframes pop{0%{color:var(--orange)}100%{color:var(--on-dark)}}
+.slate .say{margin-top:18px;font-size:15.5px;line-height:1.55;color:#d6cec4}
+.slate .say b{color:var(--on-dark);font-weight:700}
+
+.form{margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form .full{grid-column:1/-1}
+.form label{display:block;font:500 11.5px/1 var(--head);letter-spacing:.2em;text-transform:uppercase;color:var(--on-dark-muted);margin-bottom:7px}
+.form input,.form textarea{width:100%;font:16px/1.4 var(--body);color:var(--on-dark);background:var(--ink-2);border:1px solid #4a433c;border-radius:2px;padding:12px 13px;min-height:46px}
+.form textarea{min-height:88px;resize:vertical}
+.form input::placeholder,.form textarea::placeholder{color:#9a9086}
+.form input:focus,.form textarea:focus{border-color:var(--orange);outline:none;box-shadow:0 0 0 3px rgba(255,132,0,.25)}
+.form .btn{width:100%}
+.thanks{grid-column:1/-1;font-weight:700;color:var(--ink);background:var(--orange);padding:14px 16px;border-radius:2px}
+.thanks[hidden]{display:none}
+
+/* Creatives: credits */
+.credits{list-style:none;margin:0;padding:0;border-top:1px solid var(--line-dark)}
+.credits li{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:28px;padding:18px 0;border-bottom:1px solid var(--line-dark)}
+.credits .who{font:700 clamp(28px,3.6vw,46px)/1.05 var(--head);color:var(--on-dark);text-transform:uppercase;letter-spacing:.01em}
+.credits .role{font:500 13px/1 var(--head);letter-spacing:.2em;text-transform:uppercase;color:var(--on-dark-muted)}
+.credits button{font:600 12.5px/1 var(--head);letter-spacing:.16em;text-transform:uppercase;color:var(--on-dark);background:transparent;border:1.5px solid rgba(243,238,231,.35);border-radius:2px;min-height:44px;padding:0 16px;cursor:pointer;transition:border-color .2s,color .2s,background .2s}
+.credits button:hover{border-color:var(--orange);color:var(--orange)}
+.credits li.lead .who{color:var(--orange)}
+.credits .nob{width:1px}
+.credits li:hover .who{color:var(--orange)}
+
+/* Story */
+.story{display:grid;grid-template-columns:.95fr 1.05fr;gap:72px;align-items:start}
+.mark{font:700 clamp(54px,7vw,96px)/.95 var(--head);text-transform:uppercase;letter-spacing:-.005em}
+.mark em{font-style:normal;color:var(--orange-ink)}
+.story .body p{font-size:18px;color:var(--text)}
+.story .body p+p{margin-top:18px;color:var(--muted)}
+.vals{margin-top:48px;display:grid;grid-template-columns:1fr 1fr;border-top:2px solid var(--text)}
+.val{padding:24px 24px 26px 0;border-bottom:1px solid var(--line)}
+.val:nth-child(even){padding:24px 0 26px 24px;border-left:1px solid var(--line)}
+.val h3{font-size:22px;text-transform:uppercase;letter-spacing:.06em}
+.val h3::first-letter{color:var(--orange-ink)}
+.val p{margin-top:8px;color:var(--muted);font-size:16px}
+.clients{margin-top:90px;padding:44px 0 0;border-top:1px solid var(--line);display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:baseline}
+.clients p{font:600 clamp(22px,2.4vw,30px)/1.3 var(--head);max-width:780px}
+.clients p em{font-style:normal;color:var(--orange-ink)}
+
+/* FAQ */
+.faq{max-width:860px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-of-type{border-top:2px solid var(--text)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;min-height:44px;font:600 21px/1.3 var(--head)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";flex:none;width:14px;height:14px;border-right:2px solid var(--orange-ink);border-bottom:2px solid var(--orange-ink);transform:rotate(45deg) translate(-3px,-3px);transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(-135deg) translate(-3px,-3px)}
+.faq details p{padding:0 40px 24px 0;color:var(--muted);font-size:17px;max-width:680px}
+
+/* Closing */
+.close{background:var(--ink);color:var(--on-dark);text-align:center;position:relative;overflow:hidden}
+.close .wrap{position:relative;padding-top:130px;padding-bottom:130px}
+.close img{width:84px;height:84px;margin:0 auto 34px}
+.close h2{font-size:clamp(40px,6vw,82px)}
+.close p{margin:24px auto 0;max-width:560px;color:#d6cec4;font-size:19px}
+.close .cta{justify-content:center}
+.close .mail{display:inline-block;margin-top:26px;color:var(--on-dark);font-weight:700;text-decoration:underline;text-decoration-color:var(--orange);text-underline-offset:5px;padding:10px 4px}
+
+footer{background:#0d0c0b;color:var(--on-dark-muted);font-size:15px}
+footer .wrap{padding-top:44px;padding-bottom:44px;display:grid;grid-template-columns:1fr auto;gap:24px 40px;align-items:center}
+footer .f-brand{display:flex;align-items:center;gap:14px;color:var(--on-dark)}
+footer .f-brand img{width:40px;height:40px}
+footer nav{display:flex;flex-wrap:wrap;gap:4px 8px;justify-content:flex-end}
+footer nav a{color:var(--on-dark);text-decoration:none;padding:12px 10px;display:inline-block}
+footer nav a:hover{color:var(--orange)}
+footer .made{grid-column:1/-1;border-top:1px solid var(--line-dark);padding-top:22px;font-size:14px}
+footer .made a{color:#ffb466}
+
+/* Phone action bar */
+.pbar{display:none}
+
+/* Motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:980px){
+  .nav a:not(.btn){display:none}
+  .vf{padding:84px 40px 100px}
+  .hud,.lower{left:40px;right:40px}
+  .sec-head,.mission,.story,.brief{grid-template-columns:1fr;gap:32px}
+  .slate{position:relative;top:0}
+  .proof ul{grid-template-columns:1fr 1fr}
+  .proof li:nth-child(3){border-left:0;padding-left:0}
+  .proof li:nth-child(n+3){border-top:1px solid var(--line-dark)}
+}
+@media (max-width:700px){
+  body{font-size:16px}
+  .wrap{padding:0 20px}
+  .mock{font-size:14px;padding:0 8px}
+  .top .wrap{height:64px}
+  .brand img{width:42px;height:42px}
+  .brand span{display:none}
+  .nav .btn{padding:0 14px;font-size:12px;letter-spacing:.12em}
+  section{scroll-margin-top:64px}
+  .vf{margin:16px 12px 20px;min-height:auto;padding:76px 20px 110px}
+  .corner{width:24px;height:24px}
+  .c1,.c3{left:0}.c2,.c4{right:0}
+  .hud{left:20px;right:20px;top:18px;font-size:11.5px;letter-spacing:.14em}
+  .kicker{font-size:13px;margin-bottom:20px}
+  .hero h1 .big{font-size:clamp(38px,11.4vw,60px)}
+  .lede{font-size:18px;margin-top:22px}
+  .cta{margin-top:30px}
+  .cta .btn{flex:1 1 100%}
+  .lower{left:20px;right:20px;bottom:18px;flex-direction:column;align-items:flex-start;gap:10px;font-size:11.5px;letter-spacing:.14em}
+  .values{gap:12px}
+  .proof li{padding:22px 14px 24px}
+  .proof li:nth-child(odd){padding-left:0;border-left:0}
+  .proof b{font-size:22px}
+  .proof span{font-size:14px}
+  .sec{padding:80px 0}
+  .sec-head{margin-bottom:40px}
+  .lanes{grid-template-columns:1fr}
+  .lane,.lane+.lane{padding:32px 0 36px;border-left:0}
+  .lane+.lane{border-top:1px solid var(--line)}
+  .mission{margin-top:40px}
+  .track{grid-template-columns:1fr;padding-left:36px}
+  .track::before{left:9px;right:auto;top:0;bottom:0;width:2px;height:auto}
+  .track .bar{left:9px;top:0;width:2px;height:100%;transform-origin:top;transform:scaleY(1)}
+  .track.will-draw .bar{transform:scaleY(0)}
+  .stage{padding:0 0 40px}
+  .stage::before{left:-36px}
+  .stage h3{margin-top:10px;font-size:30px}
+  .ends{flex-direction:column;margin-top:8px;gap:8px}
+  .opts.wide .opt{flex:1 1 100%}
+  .dirs .opt{flex:1 1 calc(50% - 5px)}
+  .dirs .opt label{height:100%}
+  .slate-in{padding:22px 18px 22px}
+  .cell dd{font-size:17px}
+  .form{grid-template-columns:1fr}
+  .credits li{grid-template-columns:1fr auto;gap:6px 16px;padding:16px 0}
+  .credits .role{grid-column:1;grid-row:2}
+  .credits button,.credits .nob{grid-column:2;grid-row:1/3}
+  .credits .who{font-size:27px}
+  .vals{grid-template-columns:1fr}
+  .val,.val:nth-child(even){padding:20px 0 22px;border-left:0}
+  .clients{grid-template-columns:1fr;gap:16px;margin-top:60px}
+  .faq summary{font-size:18px;padding:18px 0}
+  .faq details p{padding-right:0}
+  .close .wrap{padding-top:90px;padding-bottom:100px}
+  footer .wrap{grid-template-columns:1fr;padding-bottom:100px}
+  footer nav{justify-content:flex-start;margin-left:-10px}
+  .pbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:rgba(20,18,16,.96);border-top:1px solid var(--line-dark)}
+  .pbar a{flex:1;min-height:48px}
+  .pbar .btn-g{flex:0 0 auto;padding:0 18px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+  .track.will-draw .bar{transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Here's your free mockup from<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="4WT Media, back to top">
+      <img src="https://images.squarespace-cdn.com/content/v1/5e210cb19ae7fc473d410186/1579224339609-P6S9FSGZN52GPC9S1NX9/4WT+LOGO+2017_4wt+orange+logo.png?format=300w" alt="4WT Media" width="48" height="48">
+      <span>4WT Media</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#work">Our work</a>
+      <a href="#services">Services</a>
+      <a href="#creatives">Creatives</a>
+      <a href="#story">About</a>
+      <a class="btn btn-o" href="#brief">Request a director</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="h1">
+    <div class="vf">
+      <span class="corner c1" aria-hidden="true"></span><span class="corner c2" aria-hidden="true"></span>
+      <span class="corner c3" aria-hidden="true"></span><span class="corner c4" aria-hidden="true"></span>
+      <span class="cross" aria-hidden="true"></span>
+      <div class="hud" aria-hidden="true">
+        <span class="rec"><i></i>Rec</span>
+        <span class="tc" id="tc">20:12:00:00</span>
+      </div>
+      <div class="hero-in">
+        <h1 id="h1"><span class="kicker">4WT Media · Los Angeles</span><span class="big">A next generation <em>production</em> company.</span></h1>
+        <p class="lede">Award-winning video for brands, plus film, TV and stories that matter. From the first idea to the audience it was made for.</p>
+        <div class="cta">
+          <a class="btn btn-o" href="#brief">Request a director</a>
+          <a class="btn btn-g" href="#work">See what we make</a>
+        </div>
+      </div>
+      <div class="lower" aria-hidden="true">
+        <span>4word Thought</span>
+        <span class="values" id="vals"><span class="on">Innovation</span><span>Passion</span><span>Authenticity</span><span>Dynamism</span></span>
+      </div>
+    </div>
+  </section>
+
+  <div class="proof" role="region" aria-label="4WT Media at a glance">
+    <ul>
+      <li><b>Since 2012</b><span>Producing out of Los Angeles</span></li>
+      <li><b>Hundreds</b><span>of projects produced</span></li>
+      <li><b>Millions</b><span>of viewers around the world</span></li>
+      <li><b>Award-winning</b><span>High impact content</span></li>
+    </ul>
+  </div>
+
+  <section class="sec" id="work" aria-labelledby="work-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">What we make</p>
+          <h2 id="work-h">Content that connects and affects change.</h2>
+        </div>
+        <p>Whether you're a brand launching a transformative product or you have a story you want to share, we love what we do and find joy in all projects.</p>
+      </div>
+      <div class="lanes">
+        <article class="lane">
+          <span class="num">01</span>
+          <h3>Branded content</h3>
+          <p>We produce world class content for brands.</p>
+          <p>A creative partner for your branded campaign, built to reach millions or to move a select few.</p>
+          <div class="tag"><span>Campaigns</span><span>Product launches</span><span>Brand awareness</span></div>
+        </article>
+        <article class="lane">
+          <span class="num">02</span>
+          <h3>Original content</h3>
+          <p>We produce film, TV and stories that matter.</p>
+          <p>Shows, movies and original content, with brilliant writers and directors at the ready.</p>
+          <div class="tag"><span>Film</span><span>TV</span><span>Shows</span></div>
+        </article>
+      </div>
+      <div class="mission">
+        <blockquote>Our mission is to produce video that <em>makes a difference.</em></blockquote>
+        <p>4WT Media is an award-winning video production company specializing in high impact content that inspires audiences to engage. Since 2012 our work has been seen by millions around the world.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec dark" id="services" aria-labelledby="svc-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">Our services</p>
+          <h2 id="svc-h">Concept to delivery.</h2>
+        </div>
+        <p>All of it, or just the part you need. We're seasoned pros who handle large shoots, and we're happy to work with other partners.</p>
+      </div>
+      <div class="track" id="track">
+        <span class="bar" aria-hidden="true"></span>
+        <div class="stage">
+          <span class="step">Stage one</span>
+          <h3>Creative</h3>
+          <p>Exceptional content starts with excellent creative. Brilliant writers, directors and producers at the ready, so every project has that special touch.</p>
+        </div>
+        <div class="stage">
+          <span class="step">Stage two</span>
+          <h3>Production</h3>
+          <p>From concept to delivery, we execute part or the entire production process, using newer, more efficient methods without giving up quality.</p>
+        </div>
+        <div class="stage">
+          <span class="step">Stage three</span>
+          <h3>Distribution</h3>
+          <p>Getting to the right audience is key. Reach millions to raise brand awareness, or drive conversion for a select few.</p>
+        </div>
+      </div>
+      <div class="ends" aria-hidden="true"><span><b>Concept</b></span><span><b>Delivery</b></span></div>
+    </div>
+  </section>
+
+  <section class="sec" id="brief" aria-labelledby="brief-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">Request a director</p>
+          <h2 id="brief-h">Have a project in mind? Slate it.</h2>
+        </div>
+        <p>Pick what you're making and what you need. Your slate fills in as you go. Add your details and send it to us.</p>
+      </div>
+      <div class="brief">
+        <div class="picks">
+          <fieldset>
+            <legend><i>01</i> What are you making?</legend>
+            <div class="opts wide">
+              <div class="opt"><input type="radio" name="kind" id="k1" value="Branded campaign" checked><label for="k1">Branded content<small>A campaign or launch for your brand</small></label></div>
+              <div class="opt"><input type="radio" name="kind" id="k2" value="Original content"><label for="k2">Original content<small>Film, TV or a story you want to share</small></label></div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend><i>02</i> What do you need from us? <small>Part or all of it</small></legend>
+            <div class="opts">
+              <div class="opt"><input type="checkbox" name="need" id="n1" value="Creative" checked><label for="n1">Creative</label></div>
+              <div class="opt"><input type="checkbox" name="need" id="n2" value="Production" checked><label for="n2">Production</label></div>
+              <div class="opt"><input type="checkbox" name="need" id="n3" value="Distribution"><label for="n3">Distribution</label></div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend><i>03</i> Who should it reach?</legend>
+            <div class="opts wide">
+              <div class="opt"><input type="radio" name="reach" id="r1" value="Millions, for brand awareness" checked><label for="r1">Millions<small>Raise brand awareness</small></label></div>
+              <div class="opt"><input type="radio" name="reach" id="r2" value="A select few, to drive conversion"><label for="r2">A select few<small>Drive conversion</small></label></div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend><i>04</i> Who would you like to direct?</legend>
+            <div class="opts dirs" id="dirs">
+              <div class="opt"><input type="radio" name="dir" id="d0" value="Open: match me" checked><label for="d0">Match me</label></div>
+              <div class="opt"><input type="radio" name="dir" id="d1" value="Ben Bolea"><label for="d1">Ben Bolea</label></div>
+              <div class="opt"><input type="radio" name="dir" id="d2" value="Kate Trefry"><label for="d2">Kate Trefry</label></div>
+              <div class="opt"><input type="radio" name="dir" id="d3" value="Denzel Whitaker"><label for="d3">Denzel Whitaker</label></div>
+              <div class="opt"><input type="radio" name="dir" id="d4" value="RJ Collins"><label for="d4">RJ Collins</label></div>
+              <div class="opt"><input type="radio" name="dir" id="d5" value="Richard Raymond"><label for="d5">Richard Raymond</label></div>
+              <div class="opt"><input type="radio" name="dir" id="d6" value="Kent Lamm"><label for="d6">Kent Lamm</label></div>
+              <div class="opt"><input type="radio" name="dir" id="d7" value="Tony Yacenda"><label for="d7">Tony Yacenda</label></div>
+            </div>
+          </fieldset>
+        </div>
+
+        <aside class="slate" aria-label="Your project slate">
+          <div class="sticks" aria-hidden="true"></div>
+          <div class="slate-in">
+            <div class="slate-top">
+              <img src="https://images.squarespace-cdn.com/content/v1/5e210cb19ae7fc473d410186/1579224339609-P6S9FSGZN52GPC9S1NX9/4WT+LOGO+2017_4wt+orange+logo.png?format=300w" alt="" width="44" height="44">
+              <span>Prod. 4WT Media · Scene 1 · Take 1</span>
+            </div>
+            <dl class="cells" aria-live="polite">
+              <div class="cell"><dt>Project</dt><dd id="s-kind">Branded campaign</dd></div>
+              <div class="cell"><dt>Director</dt><dd id="s-dir">Open: match me</dd></div>
+              <div class="cell full"><dt>We handle</dt><dd id="s-need">Creative + Production</dd></div>
+              <div class="cell full"><dt>Audience</dt><dd id="s-reach">Millions, for brand awareness</dd></div>
+            </dl>
+            <p class="say" id="s-say">A <b>branded campaign</b> with <b>creative and production</b> from us, built to reach <b>millions</b>.</p>
+            <form class="form" id="form" novalidate>
+              <div><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" placeholder="First and last name"></div>
+              <div><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@company.com"></div>
+              <div class="full"><label for="f-note">About the project</label><textarea id="f-note" name="note" placeholder="What it's for, when you need it, anything we should know."></textarea></div>
+              <div class="full"><button class="btn btn-o" type="submit">Send my slate</button></div>
+              <p class="thanks" id="thanks" role="status" hidden>That's a wrap on your slate. Thanks for thinking of us.</p>
+            </form>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec dark" id="creatives" aria-labelledby="cr-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">Creatives</p>
+          <h2 id="cr-h">Great people, at the ready.</h2>
+        </div>
+        <p>We take great pride in working with great people. Pick a director here and they go straight onto your slate.</p>
+      </div>
+      <ul class="credits">
+        <li class="lead"><span class="who">John Trefry</span><span class="role">CEO / Executive producer</span><span class="nob"></span></li>
+        <li><span class="who">Ben Bolea</span><span class="role">Writer / Director</span><button type="button" data-dir="d1" aria-label="Request Ben Bolea">Request</button></li>
+        <li><span class="who">Kate Trefry</span><span class="role">Writer / Director</span><button type="button" data-dir="d2" aria-label="Request Kate Trefry">Request</button></li>
+        <li><span class="who">Denzel Whitaker</span><span class="role">Writer / Director</span><button type="button" data-dir="d3" aria-label="Request Denzel Whitaker">Request</button></li>
+        <li><span class="who">RJ Collins</span><span class="role">Writer / Director</span><button type="button" data-dir="d4" aria-label="Request RJ Collins">Request</button></li>
+        <li><span class="who">Richard Raymond</span><span class="role">Director</span><button type="button" data-dir="d5" aria-label="Request Richard Raymond">Request</button></li>
+        <li><span class="who">Kent Lamm</span><span class="role">Writer / Director</span><button type="button" data-dir="d6" aria-label="Request Kent Lamm">Request</button></li>
+        <li><span class="who">Tony Yacenda</span><span class="role">Writer / Director</span><button type="button" data-dir="d7" aria-label="Request Tony Yacenda">Request</button></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" id="story" aria-labelledby="st-h">
+    <div class="wrap">
+      <div class="story">
+        <div>
+          <p class="eyebrow">Our story</p>
+          <h2 id="st-h" class="mark">4WT is <em>4word</em> Thought.</h2>
+        </div>
+        <div class="body">
+          <p>As we move "forward" and keep making new work, we keep in mind what drives us: the four words that stand for our values. It may sound cliché, but it matters to us that everyone knows what 4WT stands for.</p>
+          <p>John Trefry founded 4WT in 2012 after leaving a venture-backed tech company, where he had built a department focused on video. He saw technology disrupting how film, TV and ads were made. So 4WT was born: high quality production, made with more efficient methods that use new technology.</p>
+          <div class="vals">
+            <div class="val"><h3>Innovation</h3><p>We take risks together to find new ways to be better.</p></div>
+            <div class="val"><h3>Passion</h3><p>We love what we do and aim to be the best.</p></div>
+            <div class="val"><h3>Authenticity</h3><p>We are true to ourselves and stand behind our actions.</p></div>
+            <div class="val"><h3>Dynamism</h3><p>We constantly strive to affect positive change around us.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="clients">
+        <p class="eyebrow">Clients</p>
+        <p>Great work with fantastic clients, whether they're <em>Fortune 500s</em>, <em>startups</em> or anything in between.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="faq" aria-labelledby="faq-h" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">Questions</p>
+          <h2 id="faq-h">Before we roll.</h2>
+        </div>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>Can you handle the whole production?</summary>
+          <p>Yes. From concept to delivery, we execute part or the entire production process. We handle large shoots, and we're happy to work with other partners.</p>
+        </details>
+        <details>
+          <summary>Do you only work with big brands?</summary>
+          <p>No. We work with Fortune 500s, startups and anything in between.</p>
+        </details>
+        <details>
+          <summary>I have an original film or series. Is that for you?</summary>
+          <p>It is. Alongside branded work we produce film, TV and stories that matter, and we'd love to hear about the content you want to share.</p>
+        </details>
+        <details>
+          <summary>Can you help it reach the right people?</summary>
+          <p>Yes. Whether you want to reach millions to raise brand awareness or drive conversion for a select few, distribution is part of what we do.</p>
+        </details>
+        <details>
+          <summary>Can I ask for a specific director?</summary>
+          <p>Yes. Request one of our writers and directors on your slate, or leave it open and we'll take it from there.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="close" aria-labelledby="cl-h">
+    <div class="wrap">
+      <img src="https://images.squarespace-cdn.com/content/v1/5e210cb19ae7fc473d410186/1579224339609-P6S9FSGZN52GPC9S1NX9/4WT+LOGO+2017_4wt+orange+logo.png?format=300w" alt="" width="84" height="84">
+      <h2 id="cl-h">Let's talk about your project.</h2>
+      <p>A creative partner for a branded campaign, or original content you want to share. We'd love to hear from you.</p>
+      <div class="cta">
+        <a class="btn btn-o" href="#brief">Request a director</a>
+      </div>
+      <a class="mail" href="mailto:info@4wtmedia.com">info@4wtmedia.com</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-brand">
+      <img src="https://images.squarespace-cdn.com/content/v1/5e210cb19ae7fc473d410186/1579224339609-P6S9FSGZN52GPC9S1NX9/4WT+LOGO+2017_4wt+orange+logo.png?format=300w" alt="" width="40" height="40">
+      <span>4WT Media · Los Angeles video production</span>
+    </div>
+    <nav aria-label="Contact and social">
+      <a href="mailto:info@4wtmedia.com">Email</a>
+      <a href="https://www.linkedin.com/company/4wt-media" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.facebook.com/4WTmedia" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://twitter.com/4WTMedia" target="_blank" rel="noopener">Twitter</a>
+    </nav>
+    <p class="made">Mockup made for 4WT Media by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<div class="pbar" role="region" aria-label="Quick actions">
+  <a class="btn btn-o" href="#brief">Request a director</a>
+  <a class="btn btn-g" href="mailto:info@4wtmedia.com">Email</a>
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var $ = function(id){return document.getElementById(id)};
+
+  // The slate
+  var form = $('form');
+  function val(name){var el=form.ownerDocument.querySelector('input[name="'+name+'"]:checked');return el?el.value:''}
+  function set(id, text){var el=$(id); if(el.textContent!==text){el.textContent=text; el.classList.remove('pop'); void el.offsetWidth; el.classList.add('pop');}}
+  function update(){
+    var kind=val('kind'), reach=val('reach'), dir=val('dir');
+    var needs=[].map.call(document.querySelectorAll('input[name="need"]:checked'),function(i){return i.value});
+    set('s-kind', kind);
+    set('s-dir', dir);
+    set('s-need', needs.length ? needs.join(' + ') : 'Tell us what you need');
+    set('s-reach', reach);
+    var k = kind==='Branded campaign' ? 'a <b>branded campaign</b>' : '<b>original content</b>';
+    var n = needs.length ? ' with <b>'+needs.join(', ').replace(/, ([^,]*)$/,' and $1').toLowerCase()+'</b> from us' : '';
+    var r = reach.indexOf('Millions')===0 ? ', built to reach <b>millions</b>' : ', made to <b>drive conversion</b> for a select few';
+    var d = dir.indexOf('Open')===0 ? '' : ', directed by <b>'+dir+'</b>';
+    var s = k+n+r+d+'.';
+    $('s-say').innerHTML = s.charAt(0).toUpperCase()+s.slice(1);
+  }
+  document.querySelector('.picks').addEventListener('change', update);
+  [].forEach.call(document.querySelectorAll('.credits button'), function(b){
+    b.addEventListener('click', function(){
+      var r=$(b.getAttribute('data-dir')); r.checked=true; update();
+      $('brief').scrollIntoView({behavior: reduce?'auto':'smooth'});
+      setTimeout(function(){ r.focus({preventScroll:true}); }, reduce?0:600);
+    });
+  });
+  form.addEventListener('submit', function(e){ e.preventDefault(); $('thanks').hidden=false; });
+  update();
+
+  if(!('IntersectionObserver' in window)) return;
+
+  // Timecode and lower third, only while the hero is on screen
+  var tcEl=$('tc'), frames=0, timer=null, vals=document.querySelectorAll('#vals span'), vi=0, tick=0;
+  function pad(n){return (n<10?'0':'')+n}
+  function run(){
+    frames+=1; var f=frames%24, s=Math.floor(frames/24);
+    tcEl.textContent='20:12:'+pad(s%60)+':'+pad(f);
+    if(++tick%60===0){ vals[vi].classList.remove('on'); vi=(vi+1)%vals.length; vals[vi].classList.add('on'); }
+  }
+  if(!reduce){
+    new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(e.isIntersecting && !timer){ timer=setInterval(run, 1000/24); }
+        else if(!e.isIntersecting && timer){ clearInterval(timer); timer=null; }
+      });
+    }).observe(document.querySelector('.hero'));
+  }
+
+  if(reduce) return;
+
+  // Gentle rise for things below the first screen
+  var fold = window.innerHeight;
+  var items = document.querySelectorAll('.sec-head, .lane, .mission, .stage, .picks, .slate, .credits li, .story .body, .story .mark, .clients, .faq, .close .wrap');
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.remove('will-rise'); io.unobserve(e.target); } });
+  }, {rootMargin:'0px 0px -8% 0px'});
+  [].forEach.call(items, function(el){
+    if(el.getBoundingClientRect().top > fold){ el.classList.add('rise','will-rise'); io.observe(el); }
+  });
+  var track=$('track');
+  if(track.getBoundingClientRect().top > fold){
+    track.classList.add('will-draw');
+    var to=new IntersectionObserver(function(es){ if(es[0].isIntersecting){ track.classList.remove('will-draw'); to.disconnect(); } },{threshold:.4});
+    to.observe(track);
+  }
+})();
+</script>
+</body>
+</html>
