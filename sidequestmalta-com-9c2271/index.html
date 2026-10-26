@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup sidequestmalta-com-9c2271 1 65f5a556 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SideQuest Malta · Boat trips, boat hire and excursions in Malta, Gozo and Comino</title>
+<meta name="description" content="Comino and Blue Lagoon cruises, private charters, diving and Gozo adventures from handpicked, licensed local operators. Booked securely online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#faf6f0;--sand:#f2eadf;--line:#e4d9ca;
+  --ink:#16252c;--muted:#4f5d63;
+  --sea:#0f3d4c;--sea-2:#0b2f3b;
+  --coral:#e76f51;--coral-d:#bf4d2d;--coral-dd:#a5401f;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 17px/1.6 var(--sans);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.08;letter-spacing:-.01em;margin:0}
+p{margin:0}
+.wrap{width:min(1160px,100% - 48px);margin-inline:auto}
+:focus-visible{outline:3px solid var(--coral);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:#fff;padding:10px 14px;border-radius:8px;z-index:50}
+.skip:focus{top:56px}
+
+/* banner */
+.mock{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:var(--sea-2);color:#f3ece2;font:500 15px/1.3 var(--sans);text-align:center}
+.mock a{color:#ffd2c4;text-decoration:underline;text-underline-offset:3px}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(250,246,240,.94);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:28px;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:600 21px/1 var(--serif);letter-spacing:-.01em}
+.brand svg{flex:none}
+.nav{display:flex;gap:26px;margin-left:auto}
+.nav a{text-decoration:none;font-size:15px;color:var(--muted);padding:12px 0}
+.nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 24px;border-radius:999px;border:1.5px solid transparent;font:600 16px/1 var(--sans);text-decoration:none;cursor:pointer;transition:background .2s,transform .2s,box-shadow .2s}
+.btn-main{background:var(--coral-d);color:#fff;box-shadow:0 6px 18px -8px rgba(191,77,45,.7)}
+.btn-main:hover{background:var(--coral-dd);transform:translateY(-1px)}
+.btn-ghost{border-color:rgba(255,255,255,.7);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.top .btn{min-height:44px;padding:0 20px;font-size:15px}
+
+/* hero */
+.hero{position:relative;color:#fff;background:var(--sea-2)}
+.hero-img{position:relative;height:min(84vh,780px);min-height:560px;overflow:hidden}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+@media (min-width:641px){.hero-img img{width:120%;max-width:none}}
+.hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,32,42,.86) 0%,rgba(8,32,42,.62) 36%,rgba(8,32,42,0) 64%)}
+.hero .lede{max-width:27em}
+.hero-copy{position:absolute;inset:0;display:flex;align-items:center}
+.hero-copy .wrap{padding-bottom:40px}
+.eyebrow{font:600 13px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase}
+.hero .eyebrow{color:#ffd2c4}
+.hero h1{font-size:clamp(44px,5.6vw,80px);max-width:6.6em;margin:18px 0 22px;font-weight:500}
+.hero h1 em{font-style:italic;font-weight:400;color:#ffd9cc}
+.hero .lede{max-width:30em;font-size:19px;line-height:1.55;color:#eef3f4}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.photo-note{position:absolute;right:24px;bottom:18px;font-size:13px;color:#fff;background:rgba(8,32,42,.55);padding:6px 12px;border-radius:999px}
+
+/* trust strip */
+.trust{background:var(--sand);border-bottom:1px solid var(--line)}
+.trust ul{list-style:none;margin:0 auto;padding:18px 0;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 20px;font-size:14px;color:var(--muted)}
+.trust li{display:flex;align-items:center;gap:9px}
+.trust svg{color:var(--coral-d);flex:none}
+
+section{padding:112px 0}
+.head{max-width:640px;margin-bottom:48px}
+.head .eyebrow{color:var(--coral-d)}
+.head h2{font-size:clamp(34px,4vw,52px);margin:14px 0 14px}
+.head p{color:var(--muted);font-size:18px}
+
+/* planner */
+.planner{display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:start}
+.q{border:0;margin:0 0 30px;padding:0}
+.q legend,.q .lbl{font:600 14px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;padding:0;display:block}
+.kinds{display:grid;gap:10px}
+.kind{position:relative;display:flex;align-items:center;gap:16px;padding:16px 18px;border:1.5px solid var(--line);background:#fff;border-radius:var(--r);cursor:pointer;transition:border-color .2s,box-shadow .2s}
+.kind input{position:absolute;opacity:0;pointer-events:none}
+.kind .ic{flex:none;width:44px;height:44px;border-radius:12px;background:var(--sand);display:grid;place-items:center;color:var(--sea)}
+.kind b{display:block;font:600 17px/1.3 var(--sans)}
+.kind small{display:block;color:var(--muted);font-size:14.5px;line-height:1.4;margin-top:2px}
+.kind .from{margin-left:auto;text-align:right;font:500 15px/1.2 var(--sans);color:var(--muted);white-space:nowrap}
+.kind .from strong{display:block;font:600 20px/1.1 var(--serif);color:var(--ink)}
+.kind:hover{border-color:#cdbca6}
+.kind:has(input:checked){border-color:var(--coral-d);box-shadow:0 0 0 3px rgba(231,111,81,.16)}
+.kind:has(input:checked) .ic{background:var(--coral-d);color:#fff}
+.kind:has(input:focus-visible){outline:3px solid var(--coral);outline-offset:3px}
+.row2{display:flex;gap:28px;flex-wrap:wrap}
+.step{display:inline-flex;align-items:center;border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:3px}
+.step button{width:44px;height:44px;border-radius:50%;border:0;background:var(--sand);color:var(--ink);font:500 22px/1 var(--sans);cursor:pointer}
+.step button:hover{background:#e8dccb}
+.step output{min-width:86px;text-align:center;font:600 17px/1 var(--sans)}
+.seg{display:inline-flex;background:#fff;border:1.5px solid var(--line);border-radius:999px;padding:3px;gap:3px}
+.seg label{position:relative;cursor:pointer}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg span{display:flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;font:500 15px/1 var(--sans);color:var(--muted);transition:background .2s,color .2s}
+.seg input:checked+span{background:var(--sea);color:#fff}
+.seg input:focus-visible+span{outline:3px solid var(--coral);outline-offset:2px}
+
+/* ticket */
+.ticket{position:sticky;top:96px;background:#fff;border-radius:20px;box-shadow:0 30px 60px -30px rgba(15,61,76,.35),0 2px 6px rgba(15,61,76,.06);overflow:hidden}
+.t-top{background:var(--sea);color:#fff;padding:26px 30px 24px;position:relative}
+.t-top .eyebrow{color:#ffd2c4;font-size:12px}
+.t-top h3{font-size:clamp(26px,2.6vw,34px);margin-top:12px;line-height:1.1}
+.t-top p{color:#d5e3e7;margin-top:10px;font-size:15.5px;line-height:1.5}
+.t-cut{position:relative;height:0;border-top:2px dashed var(--line);margin:0 22px}
+.t-cut::before,.t-cut::after{content:"";position:absolute;top:-13px;width:24px;height:24px;border-radius:50%;background:var(--cream)}
+.t-cut::before{left:-34px}.t-cut::after{right:-34px}
+.t-body{padding:24px 30px 28px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:0 0 22px}
+.facts div{min-width:0}
+.facts dt{font:600 12px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.facts dd{margin:8px 0 0;font:600 17px/1.3 var(--sans)}
+.sum{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;padding-top:20px;border-top:1px solid var(--line)}
+.sum .calc{color:var(--muted);font-size:15px;line-height:1.45}
+.sum .total{font:600 44px/1 var(--serif);letter-spacing:-.02em;white-space:nowrap}
+.sum .total small{display:block;font:500 13px/1.2 var(--sans);color:var(--muted);text-align:right;margin-bottom:6px;letter-spacing:.02em}
+.warn{margin-top:16px;padding:12px 14px;border-radius:10px;background:#fdf0eb;color:#7c3017;font-size:15px;line-height:1.45}
+.warn[hidden]{display:none}
+.t-act{display:flex;gap:12px;align-items:center;margin-top:24px;flex-wrap:wrap}
+.t-act .note{font-size:14px;color:var(--muted)}
+.ticket.flip .t-top h3,.ticket.flip .total{animation:pop .45s ease}
+@keyframes pop{from{opacity:.25;transform:translateY(4px)}to{opacity:1;transform:none}}
+
+/* types */
+.types{background:var(--sand)}
+.tlist{list-style:none;margin:0;padding:0;border-top:1px solid #d9cbb8}
+.tlist a{display:grid;grid-template-columns:72px 1.1fr 1.4fr 48px;align-items:center;gap:24px;padding:28px 4px;border-bottom:1px solid #d9cbb8;text-decoration:none;transition:background .25s,padding .25s}
+.tlist .n{font:400 15px/1 var(--serif);color:var(--coral-d)}
+.tlist h3{font-size:clamp(26px,2.6vw,34px)}
+.tlist p{color:var(--muted);font-size:16.5px}
+.tlist .arr{width:44px;height:44px;border-radius:50%;border:1.5px solid #cdbca6;display:grid;place-items:center;transition:background .25s,color .25s,border-color .25s}
+.tlist a:hover{background:rgba(255,255,255,.55);padding-left:16px}
+.tlist a:hover .arr{background:var(--coral-d);border-color:var(--coral-d);color:#fff}
+
+/* how */
+.how{display:grid;grid-template-columns:minmax(0,560px) 1fr;gap:72px;align-items:center}
+.how figure{margin:0;position:relative}
+.how figure img{width:100%;max-width:560px;border-radius:20px;box-shadow:0 30px 60px -32px rgba(15,61,76,.5)}
+.how figcaption{font-size:14px;color:var(--muted);margin-top:12px}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{position:relative;padding:0 0 30px 72px}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:-4px;width:48px;height:48px;border-radius:50%;border:1.5px solid var(--coral-d);color:var(--coral-d);display:grid;place-items:center;font:500 20px/1 var(--serif)}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:23px;top:52px;bottom:6px;width:1.5px;background:var(--line)}
+.steps h3{font-size:25px;margin-bottom:6px}
+.steps p{color:var(--muted)}
+
+/* why */
+.why{background:var(--sea);color:#fff}
+.why .eyebrow{color:#ffd2c4}
+.why-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:72px;align-items:end}
+.why blockquote{margin:18px 0 0;font:400 clamp(32px,3.8vw,50px)/1.15 var(--serif);letter-spacing:-.01em}
+.why blockquote em{color:#ffc3b1}
+.why .intro{color:#d5e3e7;font-size:18px;margin-top:26px;max-width:34em}
+.stats{display:flex;gap:48px}
+.stats b{display:block;font:500 64px/1 var(--serif);letter-spacing:-.02em}
+.stats span{color:#d5e3e7;font-size:15px}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:72px;border-top:1px solid rgba(255,255,255,.2)}
+.values div{padding:28px 32px 0 0}
+.values div+div{padding-left:32px;border-left:1px solid rgba(255,255,255,.2)}
+.values h3{font-size:24px;margin-bottom:10px}
+.values p{color:#d5e3e7;font-size:16px}
+
+/* faq */
+.faq-wrap{display:grid;grid-template-columns:1fr 1.5fr;gap:72px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-child{border-top:1px solid var(--line)}
+.faq summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:64px;padding:16px 0;cursor:pointer;font:600 18px/1.35 var(--sans)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary i{flex:none;width:32px;height:32px;border-radius:50%;background:var(--sand);position:relative}
+.faq summary i::before,.faq summary i::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:1.8px;background:var(--ink);transform:translate(-50%,-50%);transition:transform .25s}
+.faq summary i::after{transform:translate(-50%,-50%) rotate(90deg)}
+.faq details[open] summary i::after{transform:translate(-50%,-50%) rotate(0)}
+.faq details p{padding:0 48px 22px 0;color:var(--muted)}
+
+/* contact */
+.contact{background:var(--sand)}
+.c-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:72px;align-items:start}
+.c-grid h2{font-size:clamp(38px,4.6vw,60px);margin:14px 0 18px}
+.c-grid .eyebrow{color:var(--coral-d)}
+.c-grid .lead{color:var(--muted);font-size:18px;max-width:28em}
+.direct{margin-top:34px;display:grid;gap:4px}
+.direct a{display:inline-flex;align-items:center;gap:12px;min-height:48px;font-weight:600;text-decoration:none}
+.direct a:hover span{text-decoration:underline}
+.direct svg{color:var(--coral-d)}
+form{background:#fff;border-radius:20px;padding:34px;box-shadow:0 30px 60px -36px rgba(15,61,76,.35)}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fld{display:grid;gap:7px;margin-bottom:16px}
+.fld label{font:600 14px/1 var(--sans)}
+.fld input,.fld select,.fld textarea{width:100%;min-height:48px;padding:12px 14px;border:1.5px solid #d6c9b7;border-radius:10px;background:#fff;font:400 16px/1.4 var(--sans);color:var(--ink)}
+.fld textarea{min-height:110px;resize:vertical}
+.fld input:focus,.fld select:focus,.fld textarea:focus{outline:none;border-color:var(--sea);box-shadow:0 0 0 3px rgba(15,61,76,.15)}
+form .btn{width:100%;margin-top:4px}
+.thanks{margin-top:14px;padding:14px 16px;border-radius:10px;background:#e7f1ef;color:#0f3d34;font-weight:500}
+.thanks[hidden]{display:none}
+
+/* footer */
+footer{background:var(--sea-2);color:#d5e3e7;padding:64px 0 32px;font-size:15px}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px}
+footer .brand{color:#fff;margin-bottom:14px}
+footer h2{font:600 13px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#fff;margin-bottom:14px}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+footer ul a{display:inline-flex;align-items:center;min-height:36px;text-decoration:none}
+footer ul a:hover{text-decoration:underline}
+footer address{font-style:normal;line-height:1.7}
+.made{margin-top:52px;padding-top:24px;border-top:1px solid rgba(255,255,255,.15);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:14px;color:#b9cbd1}
+.made a{color:#fff}
+
+/* phone bar */
+.pbar{display:none}
+
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:980px){
+  .nav{display:none}
+  .top .btn{margin-left:auto}
+  .planner,.how,.why-grid,.faq-wrap,.c-grid{grid-template-columns:1fr;gap:44px}
+  .ticket{position:relative;top:0}
+  .tlist a{grid-template-columns:48px 1fr 44px;gap:8px 18px}
+  .tlist p{grid-column:2;grid-row:2}
+  .tlist .arr{grid-column:3;grid-row:1/3}
+  .values{grid-template-columns:1fr}
+  .values div,.values div+div{padding:24px 0;border-left:0;border-bottom:1px solid rgba(255,255,255,.2)}
+  .f-grid{grid-template-columns:1fr 1fr}
+  .f-grid>div:first-child{grid-column:1/-1}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:72px}
+  .wrap{width:calc(100% - 40px)}
+  .mock{font-size:15px;padding:8px 12px}
+  .top .wrap{height:62px}
+  .brand{font-size:19px}
+  .hero-img{height:auto;min-height:0;aspect-ratio:3/2}
+  .hero-img::after{display:none}
+  .hero-copy{position:static;display:block;padding:34px 0 44px}
+  .hero-copy .wrap{padding-bottom:0}
+  .hero h1{font-size:42px;margin:14px 0 16px}
+  .hero .lede{font-size:17px}
+  .hero .ctas{margin-top:26px}
+  .hero .ctas .btn{flex:1 1 100%}
+  .photo-note{right:12px;bottom:10px;font-size:12px}
+  .trust ul{display:grid;grid-template-columns:1fr;gap:10px;padding:20px 0}
+  section{padding:76px 0}
+  .head{margin-bottom:34px}
+  .head h2{font-size:36px}
+  .kind{padding:14px}
+  .kind .from strong{font-size:18px}
+  .t-top{padding:22px 22px 20px}
+  .t-body{padding:22px 22px 24px}
+  .facts{grid-template-columns:1fr 1fr}
+  .sum{flex-direction:column;align-items:flex-start}
+  .sum .total small{text-align:left}
+  .t-act .btn{flex:1 1 100%}
+  .stats b{font-size:52px}
+  .f2{grid-template-columns:1fr;gap:0}
+  form{padding:24px 20px}
+  .faq details p{padding-right:0}
+  .f-grid{grid-template-columns:1fr}
+  .pbar{display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(250,246,240,.97);border-top:1px solid var(--line);box-shadow:0 -8px 20px -12px rgba(15,61,76,.3)}
+  .pbar a{flex:1;min-height:48px;font-size:15px;padding:0 12px}
+  .pbar .btn-out{border-color:var(--sea);color:var(--sea)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="SideQuest Malta, home">
+      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="12.5" fill="none" stroke="#0f3d4c" stroke-width="2"/><path d="M14 5.5l3.2 8.5L14 22.5 10.8 14z" fill="#e76f51"/><circle cx="14" cy="14" r="1.8" fill="#0f3d4c"/></svg>
+      SideQuest Malta
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#plan">Tours</a>
+      <a href="#how">How it works</a>
+      <a href="#why">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-main" href="https://sidequestmalta.com/tours" target="_blank" rel="noopener">Book now</a>
+  </div>
+</header>
+
+<main id="main">
+  <div class="hero" id="top">
+    <div class="hero-img">
+      <img src="https://sidequestmalta.com/images/Boat_Comino/boat-comino-1.jpg" width="2000" height="1333" alt="A yellow tour boat anchored in the turquoise water below the cliffs of Comino" fetchpriority="high">
+      <span class="photo-note">Comino, by boat</span>
+    </div>
+    <div class="hero-copy">
+      <div class="wrap">
+        <p class="eyebrow">Malta · Gozo · Comino</p>
+        <h1>Malta's best boat trips, <em>handpicked.</em></h1>
+        <p class="lede">Comino and Blue Lagoon cruises, private charters, diving and Gozo adventures from licensed local operators we've vetted ourselves. Book securely, get instant confirmation.</p>
+        <div class="ctas">
+          <a class="btn btn-main" href="#plan">Plan your day on the water</a>
+          <a class="btn btn-ghost" href="#how">How it works</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="trust">
+    <ul class="wrap" aria-label="Why book with SideQuest Malta">
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>Every operator licensed and insured</li>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg>Secure payment with Stripe</li>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12a8 8 0 01-11.6 7.1L4 20l1-4.6A8 8 0 1121 12z"/></svg>A real person replies, usually within hours</li>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.5 14l-1.5 7 5-3 5 3-1.5-7"/></svg>MTA Licence AGT-33692</li>
+    </ul>
+  </div>
+
+  <section id="plan" aria-labelledby="plan-h">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Plan your day</p>
+        <h2 id="plan-h">Three questions. Your trip, priced.</h2>
+        <p>Pick the kind of day you want and how many of you are going. We'll show you the trip, the times and what it costs.</p>
+      </div>
+
+      <div class="planner">
+        <div>
+          <fieldset class="q">
+            <legend>What kind of day?</legend>
+            <div class="kinds">
+              <label class="kind">
+                <input type="radio" name="kind" value="cruise" checked>
+                <span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 16l2.5 4h13L21 16z"/><path d="M6 16V10h12v6"/><path d="M12 10V4"/><path d="M12 4l5 4h-5"/></svg></span>
+                <span><b>A shared cruise</b><small>Comino, Gozo and the sea caves</small></span>
+                <span class="from">from<strong>€30</strong>per person</span>
+              </label>
+              <label class="kind">
+                <input type="radio" name="kind" value="charter">
+                <span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 15h15l4-4H8z"/><path d="M3 19c2 1 4 1 6 0s4-1 6 0 4 1 6 0"/><path d="M9 11V8h5"/></svg></span>
+                <span><b>A boat to ourselves</b><small>28ft RHIB, private charter</small></span>
+                <span class="from">from<strong>€600</strong>per boat</span>
+              </label>
+              <label class="kind">
+                <input type="radio" name="kind" value="dive">
+                <span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6c2 1.3 4 1.3 6 0s4-1.3 6 0 4 1.3 6 0"/><circle cx="9" cy="15" r="2"/><circle cx="15.5" cy="18" r="1.2"/><circle cx="14" cy="12" r="1"/></svg></span>
+                <span><b>Under the water</b><small>Guided recreational dive</small></span>
+                <span class="from">from<strong>€80</strong>per person</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="row2">
+            <div class="q">
+              <span class="lbl" id="ppl-l">How many of you?</span>
+              <div class="step" role="group" aria-labelledby="ppl-l">
+                <button type="button" id="minus" aria-label="One fewer person">−</button>
+                <output id="ppl" aria-live="polite">4 people</output>
+                <button type="button" id="plus" aria-label="One more person">+</button>
+              </div>
+            </div>
+            <fieldset class="q" id="optQ">
+              <legend id="optL">Departure</legend>
+              <div class="seg" id="opts"></div>
+            </fieldset>
+          </div>
+        </div>
+
+        <article class="ticket" id="ticket" aria-live="polite">
+          <div class="t-top">
+            <p class="eyebrow" id="tKind">Shared boat tour</p>
+            <h3 id="tName">5-hour Comino Gullet Boat, Gozo and Sea Caves</h3>
+            <p id="tDesc">Comino, Gozo and the sea caves in one day, with two departures to choose from.</p>
+          </div>
+          <div class="t-cut" aria-hidden="true"></div>
+          <div class="t-body">
+            <dl class="facts">
+              <div><dt id="f1t">Duration</dt><dd id="f1">5 hours</dd></div>
+              <div><dt id="f2t">Departs</dt><dd id="f2">10:45</dd></div>
+              <div><dt id="f3t">Returns to</dt><dd id="f3">Marfa Jetty</dd></div>
+            </dl>
+            <div class="sum">
+              <p class="calc" id="calc">From €30 per person × 4 people</p>
+              <p class="total"><small id="tLbl">Total from</small><span id="total">€120</span></p>
+            </div>
+            <p class="warn" id="warn" hidden></p>
+            <div class="t-act">
+              <a class="btn btn-main" href="https://sidequestmalta.com/booking/barbarossa-comino-and-gozo-boat-tour" target="_blank" rel="noopener" id="ask">Book this trip</a>
+              <span class="note">Up to <span id="cap">80</span> on board</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="types" id="types" aria-labelledby="types-h">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Explore by type</p>
+        <h2 id="types-h">A day on your own boat, or a trip to the Blue Lagoon.</h2>
+      </div>
+      <ul class="tlist">
+        <li><a href="https://sidequestmalta.com/private-charters-malta" target="_blank" rel="noopener"><span class="n">01</span><h3>Boat hire &amp; charters</h3><p>Catamarans, sailing yachts and motor boats for your group only.</p><span class="arr" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+        <li><a href="https://sidequestmalta.com/malta-boat-trips" target="_blank" rel="noopener"><span class="n">02</span><h3>Boat tours</h3><p>Shared cruises to Comino, the Blue Lagoon, the sea caves and Gozo.</p><span class="arr" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+        <li><a href="https://sidequestmalta.com/water-sports-malta" target="_blank" rel="noopener"><span class="n">03</span><h3>Water sports</h3><p>Jet skis, wakeboarding, paddleboarding, diving and more.</p><span class="arr" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+        <li><a href="https://sidequestmalta.com/malta-gozo-tours" target="_blank" rel="noopener"><span class="n">04</span><h3>Quad, buggy &amp; Gozo tours</h3><p>Quad, buggy and UTV adventures in Gozo, plus guided day tours.</p><span class="arr" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="how" aria-labelledby="how-h">
+    <div class="wrap how">
+      <figure>
+        <img src="https://sidequestmalta.com/img/640-50?src=%2Fimages%2FBoat_Comino%2Fboat-comino-3.jpg" width="640" height="479" alt="Aerial view of a tour boat with a water slide, swimmers around it in clear turquoise water" loading="lazy">
+        <figcaption>Boat trip to Comino</figcaption>
+      </figure>
+      <div>
+        <div class="head">
+          <p class="eyebrow">How it works</p>
+          <h2 id="how-h">Three steps to the water.</h2>
+        </div>
+        <ol class="steps">
+          <li><h3>Browse and choose</h3><p>Our handpicked selection of Malta's best boat tours and water activities.</p></li>
+          <li><h3>Book securely online</h3><p>Pay safely with Stripe, the same payment system used by Amazon, Google and Booking.com.</p></li>
+          <li><h3>Show up and enjoy</h3><p>Get instant confirmation, meet your operator at the departure point, and enjoy Malta.</p></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="why" aria-labelledby="why-h">
+    <div class="wrap">
+      <div class="why-grid">
+        <div>
+          <p class="eyebrow" id="why-h">Why SideQuest Malta</p>
+          <blockquote>We'd rather offer <em>ten exceptional tours</em> than fifty average ones.</blockquote>
+          <p class="intro">We're not a large, faceless booking platform. We're a small Malta-based team of locals and foreigners, and we only list experiences we'd recommend ourselves.</p>
+        </div>
+        <div class="stats">
+          <p><b>500+</b><span>happy travellers</span></p>
+          <p><b>10+</b><span>curated tours</span></p>
+        </div>
+      </div>
+      <div class="values">
+        <div><h3>Safety first</h3><p>Every operator we work with is fully licensed and insured. We verify credentials before listing any tour.</p></div>
+        <div><h3>Quality over quantity</h3><p>Each experience is personally vetted and reviewed before it goes on our site.</p></div>
+        <div><h3>Real support</h3><p>We're people, not a chatbot. When you message us, a real human replies, usually within a few hours.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" aria-labelledby="faq-h">
+    <div class="wrap faq-wrap">
+      <div class="head">
+        <p class="eyebrow">Questions</p>
+        <h2 id="faq-h">Straight answers before you book.</h2>
+      </div>
+      <div class="faq">
+        <details open><summary>Who operates the tours?<i aria-hidden="true"></i></summary><p>Licensed local professionals. Every operator is fully licensed and insured, and we verify their credentials and vet each experience before listing it.</p></details>
+        <details><summary>Is my payment secure?<i aria-hidden="true"></i></summary><p>Yes. Payments are SSL encrypted and processed by Stripe, the same payment system used by Amazon, Google and Booking.com.</p></details>
+        <details><summary>What happens after I book?<i aria-hidden="true"></i></summary><p>You get instant confirmation. On the day, you meet your operator at the departure point and enjoy Malta.</p></details>
+        <details><summary>Can I cancel or change my booking?<i aria-hidden="true"></i></summary><p>Write to us at booking@sidequestmalta.com and a real person on our team will help, usually within a few hours.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-h">
+    <div class="wrap c-grid">
+      <div>
+        <p class="eyebrow">Ready to explore Malta?</p>
+        <h2 id="contact-h">Ask us before you book.</h2>
+        <p class="lead">Not sure which trip to pick? A real person on our team in Malta will reply, usually within a few hours.</p>
+        <div class="direct">
+          <a href="mailto:booking@sidequestmalta.com"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span>booking@sidequestmalta.com</span></a>
+          <a href="https://www.instagram.com/sidequestmalta/" target="_blank" rel="noopener"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg><span>@sidequestmalta</span></a>
+        </div>
+      </div>
+      <form id="form" novalidate>
+        <div class="f2">
+          <div class="fld"><label for="name">Your name</label><input id="name" name="name" autocomplete="name"></div>
+          <div class="fld"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"></div>
+        </div>
+        <div class="f2">
+          <div class="fld"><label for="interest">Interested in</label>
+            <select id="interest" name="interest">
+              <option>Not sure yet</option>
+              <option>5-hour Comino Gullet Boat, Gozo and Sea Caves</option>
+              <option>28ft Rhib Private Charter</option>
+              <option>Guided Diving in Malta</option>
+              <option>Boat hire &amp; charters</option>
+              <option>Boat tours</option>
+              <option>Water sports</option>
+              <option>Quad, buggy &amp; Gozo tours</option>
+            </select>
+          </div>
+          <div class="fld"><label for="date">Date</label><input id="date" name="date" type="date"></div>
+        </div>
+        <div class="fld"><label for="msg">Message</label><textarea id="msg" name="msg" placeholder="How many of you, and anything we should know"></textarea></div>
+        <button class="btn btn-main" type="submit">Send my question</button>
+        <p class="thanks" id="thanks" role="status" hidden>Thanks, we’ll reply by email, usually within a few hours.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a class="brand" href="#top">
+          <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="12.5" fill="none" stroke="#fff" stroke-width="2"/><path d="M14 5.5l3.2 8.5L14 22.5 10.8 14z" fill="#e76f51"/><circle cx="14" cy="14" r="1.8" fill="#fff"/></svg>
+          SideQuest Malta
+        </a>
+        <p>Handpicked Malta experiences for travellers worldwide. Secure online booking, friendly support.</p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="#plan">Plan your day</a></li>
+          <li><a href="#types">Tours by type</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <address>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=16%2C%20Triq%20Censu%20Busuttil%2C%20Iklin%2C%20IKL%201209%2C%20Malta" target="_blank" rel="noopener">16, Triq Censu Busuttil<br>Iklin, IKL 1209, Malta</a><br>
+          <a href="mailto:booking@sidequestmalta.com">booking@sidequestmalta.com</a><br>
+          MTA Licence AGT-33692 · VAT 30548819
+        </address>
+      </div>
+    </div>
+    <div class="made">
+      <span>© 2026 SideQuest Malta. Payments processed securely by Stripe.</span>
+      <span>Mockup made for SideQuest Malta by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<nav class="pbar" aria-label="Quick actions">
+  <a class="btn btn-main" href="#plan">Plan your day</a>
+  <a class="btn btn-out" href="mailto:booking@sidequestmalta.com">Email us</a>
+</nav>
+
+<script>
+(function(){
+  var T = {
+    cruise:{kind:'Shared boat tour',name:'5-hour Comino Gullet Boat, Gozo and Sea Caves',
+      desc:'Comino, Gozo and the sea caves in one day, with two departures to choose from.',
+      per:'person',price:30,cap:80,optL:'Departure',opts:[['10:45','10:45'],['14:00','14:00']],
+      facts:function(o){return [['Duration','5 hours'],['Departs',o],['Returns to','Marfa Jetty']];},
+      url:'https://sidequestmalta.com/booking/barbarossa-comino-and-gozo-boat-tour'},
+    charter:{kind:'Private charter',name:'28ft Rhib Private Charter',
+      desc:'A 28ft RHIB with only your group on board, for a half day or a full day.',
+      per:'boat',cap:11,optL:'How long?',opts:[['half','Half day'],['full','Full day']],
+      facts:function(o){return [['Duration',o==='full'?'8 hours':'4 hours'],['Rate',o==='full'?'€800':'€600'],['Group','Up to 11']];},
+      url:'https://sidequestmalta.com/booking/28ft-rhib-private-charter'},
+    dive:{kind:'Water sports',name:'Guided Diving in Malta',
+      desc:"Discover Malta's underwater world on a professionally guided recreational dive with us.",
+      per:'person',price:80,cap:20,optL:null,opts:[],
+      facts:function(){return [['Duration','6 hours'],['Type','Guided dive'],['Group','Up to 20']];},
+      url:'https://sidequestmalta.com/booking/guided-diving-in-malta'}
+  };
+  var $=function(id){return document.getElementById(id)};
+  var state={kind:'cruise',n:4,opt:'10:45'};
+  function eur(v){return '€'+v.toLocaleString('en-GB')}
+  function people(n){return n+(n===1?' person':' people')}
+  function buildOpts(){
+    var t=T[state.kind],box=$('opts');box.innerHTML='';
+    $('optQ').style.display=t.optL?'':'none';
+    if(!t.optL)return;
+    $('optL').textContent=t.optL;
+    if(!t.opts.some(function(o){return o[0]===state.opt}))state.opt=t.opts[0][0];
+    t.opts.forEach(function(o){
+      var l=document.createElement('label');
+      l.innerHTML='<input type="radio" name="opt" value="'+o[0]+'"'+(o[0]===state.opt?' checked':'')+'><span>'+o[1]+'</span>';
+      l.querySelector('input').addEventListener('change',function(){state.opt=this.value;render(true)});
+      box.appendChild(l);
+    });
+  }
+  function render(anim){
+    var t=T[state.kind],n=state.n,f=t.facts(state.opt);
+    $('ppl').textContent=people(n);
+    $('tKind').textContent=t.kind;$('tName').textContent=t.name;$('tDesc').textContent=t.desc;
+    for(var i=0;i<3;i++){$('f'+(i+1)+'t').textContent=f[i][0];$('f'+(i+1)).textContent=f[i][1];}
+    $('cap').textContent=t.cap;$('ask').href=t.url;
+    var total,calc,lbl;
+    if(t.per==='boat'){
+      total=state.opt==='full'?800:600;lbl='For the boat';
+      calc=(state.opt==='full'?'Full day, 8 hours':'Half day, 4 hours')+'. Split '+n+' ways, that’s about '+eur(Math.round(total/n))+' each.';
+      if(n===1)calc=(state.opt==='full'?'Full day, 8 hours':'Half day, 4 hours')+', the whole boat for you.';
+    }else{
+      total=t.price*n;lbl='Total from';calc='From '+eur(t.price)+' per person × '+people(n);
+    }
+    $('calc').textContent=calc;$('tLbl').textContent=lbl;$('total').textContent=eur(total);
+    var w=$('warn');
+    if(n>t.cap){w.hidden=false;w.textContent='This one takes up to '+t.cap+'. Ask us and we’ll help you find the right fit for '+people(n)+'.';}
+    else w.hidden=true;
+    if(anim){var tk=$('ticket');tk.classList.remove('flip');void tk.offsetWidth;tk.classList.add('flip');}
+  }
+  document.querySelectorAll('input[name=kind]').forEach(function(r){
+    r.addEventListener('change',function(){state.kind=this.value;buildOpts();render(true)});
+  });
+  $('minus').addEventListener('click',function(){if(state.n>1){state.n--;render(false)}});
+  $('plus').addEventListener('click',function(){if(state.n<40){state.n++;render(false)}});
+  $('form').addEventListener('submit',function(e){e.preventDefault();$('thanks').hidden=false;});
+  buildOpts();render(false);
+
+  /* gentle rise for things below the first screen */
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window){
+    var els=document.querySelectorAll('.head,.kinds,.ticket,.tlist li,.how figure,.steps li,.why blockquote,.stats,.values div,.faq,.c-grid form,.direct');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target);}})},{rootMargin:'0px 0px -8% 0px'});
+    var vh=window.innerHeight;
+    els.forEach(function(el){if(el.getBoundingClientRect().top>vh){el.classList.add('rise','will-rise');io.observe(el);}});
+  }
+})();
+</script>
+</body>
+</html>
