@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup growfunding-be-4786ba 1 aada9e7d -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Growfunding | Find your crowd, start your project</title>
+<meta name="description" content="Growfunding embraces the power of civic crowdfunding to produce shared goods that have value to our communities.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#141414; --ink2:#3b3b3b; --mute:#5a5a5a; --line:#e6e4e1; --paper:#ffffff; --soft:#f6f4f1;
+  --red:#f0273f; --redink:#cf132b;
+  --wrap:1320px; --pad:clamp(20px,4vw,56px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.55 Archivo,system-ui,-apple-system,"Segoe UI",sans-serif;font-stretch:100%}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-weight:850;font-stretch:112%;line-height:1.02;letter-spacing:-.02em;margin:0}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-9999px;top:0}
+.skip:focus{left:12px;top:56px;z-index:50;background:#fff;padding:10px 14px}
+
+/* banner */
+.mock{display:flex;align-items:center;justify-content:center;min-height:44px;padding:0 16px;background:var(--ink);color:#fff;font-size:15px;line-height:1.2;text-align:center;white-space:nowrap}
+.mock a{color:#fff;text-decoration:underline;text-underline-offset:3px;font-weight:600;margin-left:.3em}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:28px;height:72px}
+.logo{font-weight:850;font-stretch:108%;font-size:26px;letter-spacing:-.03em;text-decoration:none;display:flex;align-items:baseline;gap:.18em;min-height:44px;align-items:center}
+.slash{color:var(--red);font-weight:900;display:inline-block;transform:skewX(-8deg)}
+.logo .city{font-weight:600;font-size:17px;color:var(--mute);letter-spacing:0;font-stretch:100%}
+nav.main{display:flex;gap:4px;margin-left:auto}
+nav.main a{display:flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-weight:600;font-size:15px;border-radius:8px}
+nav.main a:hover{background:var(--soft)}
+.langs{display:flex;gap:2px;font-size:13px;font-weight:700}
+.langs a{display:flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;text-decoration:none;color:var(--mute)}
+.langs a[aria-current]{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;font:700 16px/1 Archivo,system-ui,sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s ease,background .2s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn.red{background:var(--redink);color:#fff}
+.btn.red:hover{background:#b60f24}
+.btn.line{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn.line:hover{background:var(--ink);color:#fff}
+.btn.sm{min-height:44px;padding:0 18px;font-size:15px}
+.arrow{display:inline-block;transition:transform .2s ease}
+.btn:hover .arrow{transform:translateX(3px)}
+
+/* hero */
+.hero{padding:clamp(40px,6vw,84px) 0 0}
+.eyebrow{font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--redink);margin-bottom:18px}
+.hero h1{font-size:clamp(46px,7vw,104px);max-width:17ch}
+.hero h1 .slash{margin:0 .06em}
+.hero-row{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;margin-top:28px}
+.hero-row p{max-width:34ch;font-size:clamp(18px,1.6vw,21px);color:var(--ink2)}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.shot{position:relative;margin-top:clamp(32px,4vw,56px);display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:20px}
+.shot img{width:100%;height:auto;aspect-ratio:7/5;object-fit:cover;object-position:0% 55%;border-radius:22px}
+.stats{position:relative;background:#fff;border-radius:22px;box-shadow:0 1px 0 var(--line),0 18px 50px rgba(20,20,20,.10);display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}
+.stat{padding:26px 28px;display:flex;flex-direction:column;justify-content:flex-end}
+.stat+.stat{border-left:1px solid var(--line)}
+.stat:nth-child(3){border-left:0}
+.stat:nth-child(n+3){border-top:1px solid var(--line)}
+.stat b{display:block;font-weight:850;font-stretch:112%;font-size:clamp(28px,3vw,42px);letter-spacing:-.03em;line-height:1}
+.stat span{display:block;margin-top:8px;color:var(--mute);font-size:15px;line-height:1.35}
+
+/* sections */
+section{scroll-margin-top:80px}
+.sec{padding:clamp(72px,9vw,128px) 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:clamp(32px,4vw,56px)}
+.sec-head h2{font-size:clamp(36px,5vw,68px);max-width:16ch}
+.sec-head p{max-width:40ch;color:var(--ink2)}
+.kicker{font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--redink);margin-bottom:14px}
+
+/* crowd tool */
+.tool{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:0;border:1px solid var(--line);border-radius:24px;overflow:hidden;background:#fff}
+.controls{padding:clamp(24px,3vw,44px);background:var(--soft);display:flex;flex-direction:column;gap:30px}
+.field label{display:flex;justify-content:space-between;align-items:baseline;font-weight:700;font-size:15px;margin-bottom:12px}
+.field output{font-weight:850;font-stretch:112%;font-size:30px;letter-spacing:-.02em}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:44px;background:transparent;cursor:pointer;margin:0}
+input[type=range]::-webkit-slider-runnable-track{height:6px;border-radius:6px;background:linear-gradient(var(--red),var(--red)) 0/var(--p,50%) 100% no-repeat,#dcd8d3}
+input[type=range]::-moz-range-track{height:6px;border-radius:6px;background:#dcd8d3}
+input[type=range]::-moz-range-progress{height:6px;border-radius:6px;background:var(--red)}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:28px;height:28px;margin-top:-11px;border-radius:50%;background:#fff;border:3px solid var(--ink);box-shadow:0 2px 6px rgba(0,0,0,.15)}
+input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:#fff;border:3px solid var(--ink)}
+.presets{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.presets button{min-height:44px;padding:0 14px;border-radius:999px;border:1px solid #cfcac4;background:#fff;font:600 14px Archivo,system-ui,sans-serif;color:var(--ink);cursor:pointer}
+.presets button[aria-pressed=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.note{font-size:14px;color:var(--mute);line-height:1.5}
+.result{padding:clamp(24px,3vw,44px);display:flex;flex-direction:column;gap:22px}
+.big{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.big b{font-weight:900;font-stretch:115%;font-size:clamp(64px,8vw,112px);letter-spacing:-.04em;line-height:.9}
+.big span{font-weight:700;font-size:20px}
+.crowd{display:grid;grid-template-columns:repeat(24,1fr);gap:6px 4px;align-content:start}
+.p{position:relative;height:18px;color:#e2ded9;transition:color .35s ease}
+.p::before{content:"";position:absolute;left:50%;top:0;width:7px;height:7px;margin-left:-3.5px;border-radius:50%;background:currentColor}
+.p::after{content:"";position:absolute;left:50%;bottom:0;width:12px;height:9px;margin-left:-6px;border-radius:6px 6px 2px 2px;background:currentColor}
+.p.on{color:var(--red)}
+.p.on.you{color:var(--ink)}
+.legend{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px;color:var(--mute)}
+.compare{border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.compare p{max-width:46ch;font-size:16px}
+.compare strong{font-weight:700}
+
+/* projects */
+.tabs{display:inline-flex;background:var(--soft);border-radius:999px;padding:4px;gap:4px}
+.tabs button{min-height:44px;padding:0 20px;border:0;border-radius:999px;background:transparent;font:700 15px Archivo,system-ui,sans-serif;color:var(--ink2);cursor:pointer}
+.tabs button[aria-selected=true]{background:#fff;color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.plist{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.proj{display:grid;grid-template-columns:120px minmax(0,1fr) 240px;gap:32px;align-items:center;padding:28px 0;border-bottom:1px solid var(--line)}
+.pct{font-weight:900;font-stretch:115%;font-size:52px;letter-spacing:-.04em;line-height:1}
+.pct small{font-size:.5em;font-weight:800}
+.proj h3{font-size:clamp(22px,2.2vw,30px);font-stretch:106%;letter-spacing:-.015em;line-height:1.1}
+.by{margin-top:6px;color:var(--mute);font-size:15px}
+.by .tag{color:var(--redink);font-weight:700;margin-right:6px}
+.bar{height:8px;border-radius:8px;background:#ebe8e4;margin-top:16px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--red);border-radius:8px}
+.nums{font-size:15px;color:var(--ink2);line-height:1.6;text-align:right}
+.nums b{display:block;font-size:22px;font-weight:800;color:var(--ink);font-stretch:108%}
+.days{display:inline-block;margin-top:6px;font-weight:700;color:var(--ink)}
+.days.soon{color:var(--redink)}
+.more{margin-top:36px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.space{margin-top:clamp(48px,6vw,80px);display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;padding:28px 32px;border-radius:20px;background:var(--soft)}
+.space h3{font-size:26px}
+.space p{color:var(--ink2);max-width:60ch}
+.loop{width:64px;height:64px}
+
+/* help */
+.help{background:var(--ink);color:#fff}
+.help .kicker{color:#ff8593}
+.help .sec-head p{color:#d6d6d6}
+.hgrid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(20px,3vw,40px)}
+.call{background:var(--redink);border-radius:24px;padding:clamp(28px,3vw,44px);display:flex;flex-direction:column;gap:18px;position:relative;overflow:hidden}
+.call .label{font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+.call h3{font-size:clamp(34px,3.6vw,52px)}
+.call p{font-size:18px;max-width:34ch}
+.dates{display:flex;gap:28px;font-size:15px;margin-top:auto}
+.dates b{display:block;font-size:20px;font-weight:800}
+.call .btn{background:#fff;color:var(--ink);align-self:flex-start}
+.call svg{position:absolute;right:-30px;top:-30px;width:180px;opacity:.18}
+.acad{background:#1f1f1f;border-radius:24px;padding:clamp(28px,3vw,44px)}
+.acad h3{font-size:28px;margin-bottom:6px}
+.acad > p{color:#cfcfcf}
+.events{list-style:none;margin:24px 0 0;padding:0}
+.ev{display:grid;grid-template-columns:76px 1fr;gap:20px;padding:18px 0;border-top:1px solid #3a3a3a}
+.date{text-align:center;border:1px solid #4a4a4a;border-radius:12px;padding:8px 0;line-height:1.1}
+.date b{display:block;font-size:28px;font-weight:850;font-stretch:110%}
+.date span{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#d6d6d6}
+.ev h4{margin:0;font-size:18px;font-weight:700;line-height:1.3}
+.ev p{color:#cfcfcf;font-size:15px;margin-top:4px}
+.train{display:grid;grid-template-columns:1fr 1fr;gap:16px 32px;margin-top:28px;padding-top:24px;border-top:1px solid #3a3a3a}
+.train h4{margin:0 0 10px;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:#ff8593}
+.train ul{margin:0;padding:0;list-style:none}
+.train li{padding:5px 0 5px 18px;position:relative;color:#e8e8e8;font-size:16px}
+.train li::before{content:"/";position:absolute;left:0;color:var(--red);font-weight:900}
+.help a.txt{color:#fff;text-underline-offset:3px;font-weight:700;display:inline-flex;align-items:center;min-height:44px}
+
+/* cities */
+.cities{text-align:left}
+.cityline{font-weight:900;font-stretch:118%;font-size:clamp(34px,7.2vw,112px);letter-spacing:-.04em;line-height:1.02}
+.cityline>span{white-space:nowrap}
+.cityline .slash{margin:0 .08em}
+.cityline #cname{color:var(--redink)}
+.cbtns{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.cbtns button{min-height:44px;padding:0 18px;border-radius:999px;border:1px solid #cfcac4;background:#fff;font:700 15px Archivo,system-ui,sans-serif;color:var(--ink);cursor:pointer}
+.cbtns button[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:#fff}
+.reports{display:flex;gap:16px;flex-wrap:wrap;margin-top:40px;padding-top:28px;border-top:1px solid var(--line);align-items:center}
+.reports p{color:var(--ink2);margin-right:auto;max-width:50ch}
+
+/* faq */
+.faq{background:var(--soft)}
+.fgrid{display:grid;grid-template-columns:4fr 8fr;gap:clamp(24px,5vw,80px)}
+details{border-bottom:1px solid #dcd8d3}
+details:first-child{border-top:2px solid var(--ink)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:64px;padding:16px 0;font-weight:700;font-size:clamp(18px,1.6vw,21px)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:28px;font-weight:500;color:var(--redink);transition:transform .25s ease;flex:none}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 0 22px;color:var(--ink2);max-width:62ch}
+details ol{margin:0;padding:0 0 22px 22px;color:var(--ink2);max-width:62ch}
+details li{padding:2px 0}
+
+/* pitch */
+.pitch .hgrid2{display:grid;grid-template-columns:5fr 7fr;gap:clamp(28px,5vw,80px);align-items:start}
+.pitch h2{font-size:clamp(40px,5.6vw,80px)}
+.pitch .lead{margin-top:20px;font-size:19px;color:var(--ink2);max-width:34ch}
+.contact{margin-top:28px;display:flex;flex-direction:column;gap:4px;font-size:16px}
+.contact a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;text-underline-offset:3px}
+form.f{display:grid;grid-template-columns:1fr 1fr;gap:18px;background:#fff;border:1px solid var(--line);border-radius:24px;padding:clamp(22px,3vw,40px);box-shadow:0 18px 50px rgba(20,20,20,.06)}
+.f .full{grid-column:1/-1}
+.f label{display:block;font-weight:700;font-size:15px;margin-bottom:8px}
+.f input,.f select,.f textarea{width:100%;min-height:52px;padding:12px 14px;border:1.5px solid #cfcac4;border-radius:12px;font:400 16px Archivo,system-ui,sans-serif;color:var(--ink);background:#fff}
+.f textarea{min-height:130px;resize:vertical}
+.f input:focus,.f select:focus,.f textarea:focus{border-color:var(--ink);outline:none;box-shadow:0 0 0 3px rgba(240,39,63,.25)}
+.f .btn{justify-self:start}
+.thanks{font-weight:700;color:var(--ink);min-height:1.5em}
+
+/* footer */
+footer{background:var(--ink);color:#e6e6e6;padding:72px 0 40px;font-size:15px}
+.fcols{display:grid;grid-template-columns:4fr 3fr 4fr;gap:40px}
+footer .logo{color:#fff;font-size:30px}
+footer h2{font-size:15px;font-stretch:100%;letter-spacing:.06em;text-transform:uppercase;color:#ff8593;margin:0 0 12px}
+footer p{line-height:1.6}
+footer a{color:#fff;text-underline-offset:3px}
+.social{display:flex;gap:8px;margin-top:14px}
+.social a{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid #4a4a4a;border-radius:50%}
+.social svg{width:18px;height:18px;fill:#fff}
+.news{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.news input,.news select{min-height:48px;border-radius:999px;border:1px solid #4a4a4a;background:#222;color:#fff;padding:0 16px;font:400 15px Archivo,system-ui,sans-serif}
+.news input{flex:1;min-width:180px}
+.news .btn{min-height:48px}
+.news-thanks{margin-top:10px;font-weight:700;color:#fff;min-height:1.4em}
+.sub{margin-top:56px;padding-top:24px;border-top:1px solid #333;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#c4c4c4;font-size:14px}
+.sub a{color:#fff}
+
+/* motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .6s ease,transform .6s ease}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+  .will-rise{opacity:1;transform:none}
+}
+
+/* responsive */
+@media (max-width:1100px){
+  nav.main{display:none}
+  .langs{margin-left:auto}
+  .proj{grid-template-columns:96px minmax(0,1fr) 200px;gap:24px}
+}
+@media (max-width:860px){
+  .hero-row{flex-direction:column;align-items:flex-start;gap:24px}
+  .shot{display:block}
+  .shot img{aspect-ratio:auto;height:clamp(280px,52vw,420px);object-position:24% 55%}
+  .stats{margin:-40px 12px 0;border-radius:18px}
+  .tool,.hgrid,.fgrid,.pitch .hgrid2{grid-template-columns:1fr}
+  .sec-head{flex-direction:column;align-items:flex-start;gap:16px}
+  .space{grid-template-columns:1fr;gap:14px}
+  .fcols{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .top .wrap{height:62px;gap:12px}
+  .logo{font-size:23px}
+  .logo .city{display:none}
+  .langs{display:none}
+  .top .btn{margin-left:auto}
+  .hero h1{font-size:clamp(42px,12.4vw,64px)}
+  .ctas{width:100%}
+  .ctas .btn{flex:1 1 100%}
+  .shot img{height:280px;border-radius:16px;object-position:24% 55%}
+  .stat{padding:18px 18px}
+  .crowd{grid-template-columns:repeat(16,1fr);gap:5px 3px}
+  .p:nth-child(n+161){display:none}
+  .proj{grid-template-columns:1fr;gap:6px;padding:24px 0}
+  .pct{font-size:40px}
+  .nums{text-align:left;display:flex;gap:18px;align-items:baseline;flex-wrap:wrap;margin-top:6px}
+  .nums b{display:inline;font-size:19px}
+  .days{margin-top:0}
+  .train{grid-template-columns:1fr}
+  .ev{grid-template-columns:64px 1fr;gap:16px}
+  form.f{grid-template-columns:1fr}
+  .f .btn{width:100%}
+  .cityline{font-size:clamp(30px,9.6vw,46px)}
+  .mock{font-size:15px;padding:0 10px}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="region" aria-label="Mockup notice">Here's your free mockup from<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#main" aria-label="growfunding, back to top">growfunding<span class="slash" aria-hidden="true">/</span><span class="city" id="hcity">your city</span></a>
+    <nav class="main" aria-label="Main">
+      <a href="#projects">Support a project</a>
+      <a href="#crowd">Start your project</a>
+      <a href="#help">Calls &amp; Academy</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="langs" aria-label="Language">
+      <a href="https://growfunding.be/nl" hreflang="nl">NL</a>
+      <a href="https://growfunding.be/en" hreflang="en" aria-current="true">EN</a>
+      <a href="https://growfunding.be/fr" hreflang="fr">FR</a>
+    </div>
+    <a class="btn red sm" href="#pitch">Pitch your idea</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <p class="eyebrow">Civic crowdfunding for your city</p>
+      <h1 id="h1">Find your crowd <span class="slash" aria-hidden="true">/</span> start your project</h1>
+      <div class="hero-row">
+        <p>Whether you have a wild idea or a well-thought-out plan, Growfunding offers custom support for your project.</p>
+        <div class="ctas">
+          <a class="btn red" href="#crowd">Start your project <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn line" href="#projects">Support a project</a>
+        </div>
+      </div>
+      <div class="shot">
+        <img src="https://growfunding.be/img/homepage/banner4.jpg" width="1500" height="686" alt="A busy street on a sunny day, full of people, with a brass band playing">
+        <div class="stats" aria-label="Our impact">
+          <div class="stat"><b>681</b><span>projects, with a 75% success rate</span></div>
+          <div class="stat"><b>€4.924.577</b><span>collected, in exchange for 56.471 rewards</span></div>
+          <div class="stat"><b>62.279</b><span>growfunders</span></div>
+          <div class="stat"><b>135.278</b><span>participants</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="crowd" aria-labelledby="crowd-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="kicker">Turn your idea into reality</p>
+          <h2 id="crowd-h">How big is your crowd?</h2>
+        </div>
+        <p>Set your goal and see how many growfunders it takes, based on what growfunders have given across all Growfunding projects so far.</p>
+      </div>
+
+      <div class="tool">
+        <div class="controls">
+          <div class="field">
+            <label for="goal">Your goal <output id="goalOut" for="goal">€7.500</output></label>
+            <input type="range" id="goal" min="1000" max="30000" step="500" value="7500">
+            <div class="presets" role="group" aria-label="Goals of live projects">
+              <button type="button" data-goal="2700">€2.700</button>
+              <button type="button" data-goal="7500" aria-pressed="true">€7.500</button>
+              <button type="button" data-goal="12000">€12.000</button>
+              <button type="button" data-goal="15000">€15.000</button>
+            </div>
+          </div>
+          <div class="field">
+            <label for="gift">Average gift <output id="giftOut" for="gift">€79</output></label>
+            <input type="range" id="gift" min="20" max="200" step="1" value="79">
+          </div>
+          <p class="note">€79 is the Growfunding average: €4.924.577 collected from 62.279 growfunders. Every crowd is different, so slide it to match yours.</p>
+        </div>
+        <div class="result" aria-live="polite">
+          <div class="big"><b id="people">95</b><span>growfunders to reach <span id="goalTxt">€7.500</span></span></div>
+          <div class="crowd" id="crowdGrid" aria-hidden="true"></div>
+          <div class="legend"><span id="per">Each figure is 1 growfunder</span><span>at <span id="giftTxt">€79</span> each</span></div>
+          <div class="compare">
+            <p id="cmp">For scale: <strong>My first album, thanks to you</strong> by Serge La Blonde has a €7.500 goal and 57 growfunders so far.</p>
+            <a class="btn red" href="#pitch" id="toPitch">Pitch this idea <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="projects" aria-labelledby="proj-h" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="kicker">Support a project</p>
+          <h2 id="proj-h">Running right now</h2>
+        </div>
+        <div>
+          <p style="margin-bottom:18px">Help build a sustainable and resilient society by supporting these initiatives.</p>
+          <div class="tabs" role="tablist" aria-label="Sort projects">
+            <button type="button" role="tab" id="t-pic" aria-selected="true" aria-controls="plist">In the picture</button>
+            <button type="button" role="tab" id="t-last" aria-selected="false" aria-controls="plist">Last chance</button>
+          </div>
+        </div>
+      </div>
+
+      <ol class="plist" id="plist" role="tabpanel" aria-labelledby="t-pic">
+        <li class="proj" data-days="52" data-i="0">
+          <div class="pct">78<small>%</small></div>
+          <div><h3>Grande Maison Amala, birthing differently in Brussels</h3><p class="by"><span class="tag">/ bxl</span>by Amala Espace Naissance</p><div class="bar"><i style="width:78%"></i></div></div>
+          <div class="nums"><b>€11.830</b> of €15.000 · 105 growfunders <span class="days">still 52 days</span></div>
+        </li>
+        <li class="proj" data-days="6" data-i="1">
+          <div class="pct">78<small>%</small></div>
+          <div><h3>A retrospective publication by artist Stefaan Decostere</h3><p class="by">by Dirk De Wit</p><div class="bar"><i style="width:78%"></i></div></div>
+          <div class="nums"><b>€2.110</b> of €2.700 · 36 growfunders <span class="days soon">still 6 days</span></div>
+        </li>
+        <li class="proj" data-days="22" data-i="2">
+          <div class="pct">72<small>%</small></div>
+          <div><h3>My first album, thanks to you</h3><p class="by">by Serge La Blonde</p><div class="bar"><i style="width:72%"></i></div></div>
+          <div class="nums"><b>€5.431</b> of €7.500 · 57 growfunders <span class="days">still 22 days</span></div>
+        </li>
+        <li class="proj" data-days="26" data-i="3">
+          <div class="pct">71<small>%</small></div>
+          <div><h3>Bits and Bobs: Fully Equipped Hobby Room in Schaerbeek</h3><p class="by"><span class="tag">/ bxl</span>by Aude Goovaerts</p><div class="bar"><i style="width:71%"></i></div></div>
+          <div class="nums"><b>€8.555</b> of €12.000 · 97 growfunders <span class="days">still 26 days</span></div>
+        </li>
+      </ol>
+      <div class="more">
+        <a class="btn line" href="https://growfunding.be/en">Discover all projects <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="space">
+        <svg class="loop" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="26" fill="none" stroke="#e2ded9" stroke-width="6"/><path d="M32 6a26 26 0 1 1-24.7 18" fill="none" stroke="#f0273f" stroke-width="6" stroke-linecap="round"/><path d="M3 18l4.5 7.5 8-3.5" fill="none" stroke="#f0273f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div>
+          <h3>Introducing Spacefunding</h3>
+          <p>Monthly and annual options to support your favourite projects: a way to get involved with social projects long-term and help them create a lasting community.</p>
+        </div>
+        <a class="btn line sm" href="https://growfunding.be/en">Read more</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec help" id="help" aria-labelledby="help-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="kicker">Extra support</p>
+          <h2 id="help-h">You don't start alone</h2>
+        </div>
+        <p>Growfunding collaborates with organizations, companies and local governments on thematic calls for projects, and shares its expertise online and through events.</p>
+      </div>
+      <div class="hgrid">
+        <article class="call" aria-labelledby="call-h">
+          <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="40" fill="none" stroke="#fff" stroke-width="12" stroke-dasharray="200 60" stroke-linecap="round"/></svg>
+          <p class="label">Call for projects · open</p>
+          <h3 id="call-h">Realize your circular dream</h3>
+          <p>Do you have a circular or sustainable idea for your neighborhood or city? Join this call with the KBS.</p>
+          <div class="dates"><div>From<b>30/11/2025</b></div><div>Till<b>30/12/2026</b></div></div>
+          <a class="btn" href="https://growfunding.be/en">View the call <span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+        <article class="acad" aria-labelledby="acad-h">
+          <h3 id="acad-h">Growfunding Academy</h3>
+          <p>Coming up at the House of Growfunding, Anspachlaan 178, 1000 Brussel.</p>
+          <ul class="events">
+            <li class="ev"><div class="date"><b>27</b><span>Oct · Tue</span></div><div><h4>Workshop: Civic crowdfunding, how does it work?</h4><p>8:00 AM to 10:00 AM</p></div></li>
+            <li class="ev"><div class="date"><b>18</b><span>Nov · Wed</span></div><div><h4 lang="nl">NL Workshop: Civic Crowdfunding, hoe werkt het?</h4><p>7:00 AM to 9:00 AM</p></div></li>
+            <li class="ev"><div class="date"><b>1</b><span>Dec · Tue</span></div><div><h4 lang="fr">Séance d’infos : Le financement participatif, est-ce fait pour mon projet?</h4><p>10:00 AM to 11:00 AM</p></div></li>
+          </ul>
+          <div class="train">
+            <div>
+              <h4>Workshops, training &amp; consultancy</h4>
+              <ul><li>The basics of civic crowdfunding</li><li>Masterclasses for your area of interest</li><li>Civic crowdfunding and start-ups</li><li>Customised advice for established businesses</li></ul>
+            </div>
+            <div>
+              <h4>Research</h4>
+              <p style="color:#e8e8e8">R&amp;D is one of the cornerstones of Growfunding. We want to keep playing a pioneering role in social impact crowdfunding.</p>
+              <a class="txt" href="https://growfunding.be/en">All workshops &amp; events →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec cities" id="cities" aria-labelledby="city-h">
+    <div class="wrap">
+      <p class="kicker">Our impact</p>
+      <h2 id="city-h" class="cityline"><span>growfunding</span><span class="slash" aria-hidden="true">/</span><wbr><span id="cname">bxl</span></h2>
+      <p style="margin-top:22px;max-width:52ch;color:var(--ink2);font-size:19px">Our goal is to involve as many people as possible in projects that make a difference locally. Visit the homepage of your city.</p>
+      <div class="cbtns" role="group" aria-label="Choose a city">
+        <button type="button" data-c="bxl" aria-pressed="true">Brussels</button>
+        <button type="button" data-c="antwerpen" aria-pressed="false">Antwerpen</button>
+        <button type="button" data-c="leuven" aria-pressed="false">Leuven</button>
+        <button type="button" data-c="gent" aria-pressed="false">Gent</button>
+        <button type="button" data-c="kortrijk" aria-pressed="false">Kortrijk</button>
+        <button type="button" data-c="liège" aria-pressed="false">Liège</button>
+        <button type="button" data-c="your city?" aria-pressed="false">Your city here?</button>
+      </div>
+      <div class="reports">
+        <p>See what a year of civic crowdfunding looks like: every project we accompanied in 2024.</p>
+        <a class="btn red sm" href="https://growfunding.be/uploads/media/60/jaarverslag_growfunding_2024.pdf">Annual report 2024</a>
+        <a class="btn line sm" href="https://growfunding.be/uploads/media/60/2025-03-24-13-54-48-1832.pdf">Accompanied projects 2024</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec faq" id="faq" aria-labelledby="faq-h">
+    <div class="wrap fgrid">
+      <div>
+        <p class="kicker">Stay curious</p>
+        <h2 id="faq-h" style="font-size:clamp(36px,4.4vw,60px)">Everything you always wanted to know</h2>
+      </div>
+      <div>
+        <details open>
+          <summary>What is crowdfunding?</summary>
+          <p>Many people finance a project with small amounts, through an open call on the internet. All these small funders are called the crowd. That's different from a bank loan, where one or a few investors put in a large amount.</p>
+        </details>
+        <details>
+          <summary>How does a campaign work?</summary>
+          <ol><li>You (a person, collective, entrepreneur…) contact Growfunding with your project.</li><li>You launch a call to the general public on Growfunding.</li><li>People finance the project with a contribution on Growfunding.</li></ol>
+        </details>
+        <details>
+          <summary>Do I need a finished plan?</summary>
+          <p>No. Whether you have a wild idea or a well-thought-out plan, Growfunding offers custom support for your project, from the basics of civic crowdfunding to customised advice.</p>
+        </details>
+        <details>
+          <summary>What do growfunders get back?</summary>
+          <p>Depending on the type of crowdfunding, you may or may not receive a symbolic, material or financial reward in exchange for your contribution. On Growfunding, projects have given 56.471 rewards so far.</p>
+        </details>
+        <details>
+          <summary>Can I get extra support for my campaign?</summary>
+          <p>Yes. Growfunding runs thematic calls for projects with organizations, companies and local governments. Check which call matches your project, like "Realize your circular dream" with the KBS, open till 30/12/2026.</p>
+        </details>
+        <details>
+          <summary>Can I support a project long-term?</summary>
+          <p>With Spacefunding: monthly and annual options to support your favourite projects and help them create a lasting community.</p>
+        </details>
+        <details>
+          <summary>Where can I find you?</summary>
+          <p>Brussels: registered office at Olivetenhof 2, 1000 Brussels. Workshops at the House of Growfunding, Anspachlaan 178, 1000 Brussel. Antwerp: only by appointment, at BAAS cowork, Oudaan 14, 2000 Antwerp.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec pitch" id="pitch" aria-labelledby="pitch-h">
+    <div class="wrap hgrid2">
+      <div>
+        <p class="kicker">Start your project</p>
+        <h2 id="pitch-h">Find your crowd <span class="slash" aria-hidden="true">/</span> pitch your idea</h2>
+        <p class="lead">Tell us what you want to make happen. A wild idea is welcome.</p>
+        <div class="contact">
+          <a href="mailto:info@growfunding.be">info@growfunding.be</a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Olivetenhof%202%2C%201000%20Brussels">Olivetenhof 2, 1000 Brussels</a>
+        </div>
+      </div>
+      <form class="f" id="pf" novalidate>
+        <div><label for="fn">Your name</label><input id="fn" name="name" autocomplete="name" required></div>
+        <div><label for="fe">Email</label><input id="fe" name="email" type="email" autocomplete="email" required></div>
+        <div><label for="fc">City</label>
+          <select id="fc" name="city"><option>Brussels</option><option>Antwerpen</option><option>Leuven</option><option>Gent</option><option>Kortrijk</option><option>Liège</option><option>Another city</option></select></div>
+        <div><label for="fg">Your goal (€)</label><input id="fg" name="goal" inputmode="numeric" value="7.500"></div>
+        <div class="full"><label for="fi">Your idea</label><textarea id="fi" name="idea" placeholder="What is it, and who is it for?"></textarea></div>
+        <div class="full"><button class="btn red" type="submit">Send my idea <span class="arrow" aria-hidden="true">→</span></button></div>
+        <p class="thanks full" id="pthanks" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fcols">
+      <div>
+        <p class="logo" style="margin:0 0 16px">growfunding<span class="slash" aria-hidden="true">/</span></p>
+        <p>Growfunding vzw · VAT: BE0657.921.306</p>
+        <p style="margin-top:10px">Brussels, registered office:<br><a href="https://www.google.com/maps/search/?api=1&amp;query=Olivetenhof%202%2C%201000%20Brussels">Olivetenhof 2, 1000 Brussels</a></p>
+        <p style="margin-top:10px">Antwerp, only by appointment:<br>BAAS cowork, Oudaan 14, 2000 Antwerp</p>
+      </div>
+      <div>
+        <h2>Contact us</h2>
+        <p><a href="mailto:info@growfunding.be">info@growfunding.be</a></p>
+        <div class="social">
+          <a href="https://www.facebook.com/growfunding/" aria-label="Growfunding on Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.3-.6.6-.6z"/></svg></a>
+          <a href="https://www.instagram.com/growfunding/" aria-label="Growfunding on Instagram"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM12 2c-2.7 0-3 0-4.1.1C4.3 2.2 2.2 4.3 2.1 7.9 2 9 2 9.3 2 12s0 3 .1 4.1c.1 3.6 2.2 5.7 5.8 5.8 1.1.1 1.4.1 4.1.1s3 0 4.1-.1c3.6-.1 5.7-2.2 5.8-5.8.1-1.1.1-1.4.1-4.1s0-3-.1-4.1c-.1-3.6-2.2-5.7-5.8-5.8C15 2 14.7 2 12 2zm0 1.8c2.7 0 3 0 4 .1 2.6.1 3.9 1.4 4 4 .1 1 .1 1.3.1 4s0 3-.1 4c-.1 2.6-1.4 3.9-4 4-1 .1-1.3.1-4 .1s-3 0-4-.1c-2.6-.1-3.9-1.4-4-4-.1-1-.1-1.3-.1-4s0-3 .1-4c.1-2.6 1.4-3.9 4-4 1-.1 1.3-.1 4-.1z"/></svg></a>
+          <a href="https://twitter.com/growfunding" aria-label="Growfunding on X"><svg viewBox="0 0 24 24"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h2>Growfunding news in your inbox</h2>
+        <p>We'll send you one lovely mail a month.</p>
+        <form class="news" id="nf" novalidate>
+          <label for="ne" class="skip">Your email address</label>
+          <input id="ne" type="email" placeholder="Your email address" autocomplete="email">
+          <label for="nl" class="skip">Language</label>
+          <select id="nl" aria-label="Newsletter language"><option>NL</option><option selected>EN</option><option>FR</option></select>
+          <button class="btn red" type="submit">Sign up</button>
+        </form>
+        <p class="news-thanks" id="nthanks" role="status"></p>
+      </div>
+    </div>
+    <div class="sub">
+      <span>© Growfunding vzw</span>
+      <span>Mockup made for Growfunding by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var fmt=function(n){return '€'+String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g,'.');};
+  var goal=document.getElementById('goal'),gift=document.getElementById('gift');
+  var grid=document.getElementById('crowdGrid'),N=240;
+  var projects=[
+    {t:'Grande Maison Amala, birthing differently in Brussels',by:'Amala Espace Naissance',g:15000,f:105},
+    {t:'A retrospective publication by artist Stefaan Decostere',by:'Dirk De Wit',g:2700,f:36},
+    {t:'My first album, thanks to you',by:'Serge La Blonde',g:7500,f:57},
+    {t:'Bits and Bobs: Fully Equipped Hobby Room in Schaerbeek',by:'Aude Goovaerts',g:12000,f:97}
+  ];
+  var frag=document.createDocumentFragment();
+  for(var i=0;i<N;i++){var s=document.createElement('span');s.className='p';frag.appendChild(s);}
+  grid.appendChild(frag);
+  var dots=grid.children;
+  function paint(el){var p=(el.value-el.min)/(el.max-el.min)*100;el.style.setProperty('--p',p+'%');}
+  function update(){
+    var G=+goal.value,A=+gift.value,people=Math.ceil(G/A);
+    var small=window.matchMedia('(max-width:640px)').matches,cap=small?160:N;
+    var per=Math.max(1,Math.ceil(people/cap)),lit=Math.ceil(people/per);
+    for(var i=0;i<N;i++){dots[i].className='p'+(i<lit?' on':'');}
+    document.getElementById('people').textContent=String(people).replace(/\B(?=(\d{3})+(?!\d))/g,'.');
+    document.getElementById('goalOut').textContent=fmt(G);
+    document.getElementById('goalTxt').textContent=fmt(G);
+    document.getElementById('giftOut').textContent=fmt(A);
+    document.getElementById('giftTxt').textContent=fmt(A);
+    document.getElementById('per').textContent=per===1?'Each figure is 1 growfunder':'Each figure is '+per+' growfunders';
+    var best=projects.slice().sort(function(a,b){return Math.abs(a.g-G)-Math.abs(b.g-G);})[0];
+    document.getElementById('cmp').innerHTML='For scale: <strong>'+best.t+'</strong> by '+best.by+' has a '+fmt(best.g)+' goal and '+best.f+' growfunders so far.';
+    document.querySelectorAll('.presets button').forEach(function(b){b.setAttribute('aria-pressed',String(+b.dataset.goal===G));});
+    paint(goal);paint(gift);
+  }
+  goal.addEventListener('input',update);gift.addEventListener('input',update);
+  document.querySelectorAll('.presets button').forEach(function(b){b.addEventListener('click',function(){goal.value=b.dataset.goal;update();});});
+  window.addEventListener('resize',update);
+  update();
+  document.getElementById('toPitch').addEventListener('click',function(){
+    document.getElementById('fg').value=fmt(+goal.value).slice(1);
+  });
+
+  // project tabs
+  var list=document.getElementById('plist'),items=[].slice.call(list.children);
+  var tabs=[document.getElementById('t-pic'),document.getElementById('t-last')];
+  tabs.forEach(function(t,ti){
+    t.addEventListener('click',function(){
+      tabs.forEach(function(x){x.setAttribute('aria-selected',String(x===t));});
+      list.setAttribute('aria-labelledby',t.id);
+      var sorted=items.slice().sort(ti?function(a,b){return a.dataset.days-b.dataset.days;}:function(a,b){return a.dataset.i-b.dataset.i;});
+      sorted.forEach(function(li){list.appendChild(li);});
+    });
+    t.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='ArrowLeft'){var o=tabs[1-ti];o.focus();o.click();}});
+  });
+
+  // cities
+  var cname=document.getElementById('cname'),hcity=document.getElementById('hcity');
+  document.querySelectorAll('.cbtns button').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.querySelectorAll('.cbtns button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});
+      cname.textContent=b.dataset.c;hcity.textContent=b.dataset.c==='your city?'?'your city':b.dataset.c;
+    });
+  });
+
+  // forms
+  function mock(form,out,msg){form.addEventListener('submit',function(e){e.preventDefault();document.getElementById(out).textContent=msg;});}
+  mock(document.getElementById('pf'),'pthanks','Thanks, we’ve got your idea.');mock(document.getElementById('nf'),'nthanks','Thanks, you’re on the list.');
+
+  // gentle rise
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window){
+    var els=document.querySelectorAll('.sec-head,.tool,.proj,.space,.call,.acad,.cityline,.cbtns,.reports,details,form.f,.fcols');
+    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.remove('will-rise');io.unobserve(x.target);}});},{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('rise','will-rise');io.observe(el);}});
+  }
+})();
+</script>
+</body>
+</html>
