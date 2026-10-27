@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup kptaxi-com-674e17 1 b9264bf3 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KP Taxi: Taxi in Gevgelija, 24/7</title>
+<meta name="description" content="KP Taxi, your local taxi in Gevgelija. 24/7 rides, clean cars and local drivers. Call +389 78 727 636.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0f0f10;--ink2:#1b1b1d;--ink3:#2a2a2d;
+  --yellow:#facc15;--yellow-d:#e3b70a;
+  --paper:#f6f4ee;--white:#fff;
+  --muted:#55555a;--muted-d:#b9b8b2;
+  --line:#e4e1d8;
+  --r:14px;
+  --wide:"Archivo",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--wide);font-size:17px;line-height:1.55;color:var(--ink);background:var(--paper);font-stretch:100%}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-stretch:125%;font-weight:800;line-height:1.05;letter-spacing:-.01em;margin:0}
+p{margin:0}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:3px;border-radius:6px}
+.light :focus-visible,.light:focus-visible{outline-color:var(--ink)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--yellow);color:var(--ink);padding:10px 14px;z-index:100}
+.skip:focus{left:12px;top:12px}
+
+/* Banner */
+.mock{display:flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;background:#2a2a2d;color:#f2f1ec;font-size:15px;line-height:1.3;text-align:center;border-bottom:1px solid #3a3a3e}
+.mock a{color:#fff;text-decoration:underline;text-underline-offset:3px;font-weight:700}
+
+/* Header */
+.top{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:40}
+.top .wrap{display:flex;align-items:center;gap:24px;height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.shield{position:relative;width:37px;height:48px;overflow:hidden;flex:none}
+.shield img{position:absolute;width:53px;max-width:none;height:auto;left:-8.5px;top:-14.2px}
+.brand b{font-stretch:125%;font-weight:800;font-size:20px;letter-spacing:-.01em}
+.brand small{display:block;font-size:13px;color:var(--muted);font-weight:500;line-height:1.1}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{text-decoration:none;font-weight:600;font-size:15px;padding:12px 12px;border-radius:8px}
+.nav a:hover{background:var(--paper)}
+.top .call-sm{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;font-size:15px;padding:0 16px;height:44px;border-radius:10px}
+.top .call-sm svg{color:var(--yellow)}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 22px;border-radius:12px;font:inherit;font-weight:700;font-size:17px;text-decoration:none;cursor:pointer;border:2px solid transparent;transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-y{background:var(--yellow);color:var(--ink)}
+.btn-y:hover{background:#ffd83a}
+.btn-ghost{border-color:#4a4a4f;color:#fff;background:transparent}
+.btn-ghost:hover{border-color:#fff}
+.btn-ink{background:var(--ink);color:#fff}
+
+/* Checker */
+.checker{height:14px;background:
+  conic-gradient(var(--ink) 25%,var(--yellow) 0 50%,var(--ink) 0 75%,var(--yellow) 0) 0 0/14px 14px}
+
+/* Hero */
+.hero{background:var(--ink);color:#fff;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:56px;align-items:center;padding-top:72px;padding-bottom:80px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--yellow)}
+.live{width:9px;height:9px;border-radius:50%;background:#4ade80;box-shadow:0 0 0 0 rgba(74,222,128,.6);animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(74,222,128,.55)}70%{box-shadow:0 0 0 10px rgba(74,222,128,0)}100%{box-shadow:0 0 0 0 rgba(74,222,128,0)}}
+.hero h1{font-size:clamp(40px,5.4vw,68px);margin:18px 0 20px}
+.hero h1 span{color:var(--yellow)}
+.hero .lede{font-size:19px;color:#d6d5cf;max-width:30em}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.hero figure{margin:0 0 0 auto;position:relative;width:100%;max-width:520px}
+.hero .photo{border-radius:18px;overflow:hidden;aspect-ratio:12/5;background:#1b1b1d;box-shadow:0 30px 60px -30px rgba(0,0,0,.8)}
+.hero .photo img{width:100%;height:100%;object-fit:cover;object-position:62% 50%}
+.hero figcaption{position:absolute;left:18px;bottom:-22px;background:var(--yellow);color:var(--ink);border-radius:12px;padding:12px 16px;font-weight:700;font-size:15px;line-height:1.25;box-shadow:0 12px 30px -12px rgba(0,0,0,.6)}
+.hero figcaption b{display:block;font-stretch:125%;font-size:24px;font-weight:800}
+
+/* Facts */
+.facts{background:var(--ink2);color:#fff;border-top:1px solid #29292c}
+.facts ul{list-style:none;margin:0 auto;padding:0 24px;max-width:1180px;display:grid;grid-template-columns:repeat(4,1fr)}
+.facts li{padding:26px 22px;border-left:1px solid #2f2f33}
+.facts li:first-child{border-left:0;padding-left:0}
+.facts b{display:block;font-stretch:125%;font-weight:800;font-size:26px;color:var(--yellow);line-height:1.1}
+.facts span{font-size:15px;color:var(--muted-d)}
+
+/* Section base */
+section{scroll-margin-top:84px}
+.sec{padding:96px 0}
+.kicker{font-size:14px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:10px}
+.kicker:before{content:"";width:22px;height:8px;background:conic-gradient(var(--ink) 25%,var(--yellow) 0 50%,var(--ink) 0 75%,var(--yellow) 0) 0 0/8px 8px}
+.sec h2{font-size:clamp(32px,4vw,48px);margin:14px 0 14px}
+.sec .intro{font-size:18px;color:var(--muted);max-width:36em}
+
+/* Planner */
+.plan{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;margin-top:44px;align-items:start}
+.panel{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:30px}
+fieldset{border:0;margin:0 0 26px;padding:0}
+fieldset:last-of-type{margin-bottom:0}
+legend,.lab{font-weight:700;font-size:15px;margin-bottom:10px;padding:0;display:block}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip span{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;border:1.5px solid var(--line);background:var(--paper);font-size:15px;font-weight:600;cursor:pointer;transition:background .15s,border-color .15s}
+.chip input:checked+span{background:var(--yellow);border-color:var(--yellow);color:var(--ink)}
+.chip input:focus-visible+span{outline:3px solid var(--ink);outline-offset:2px}
+.chip span:hover{border-color:#bdb9ad}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field input,.field select,.field textarea{width:100%;min-height:48px;border:1.5px solid var(--line);border-radius:10px;background:var(--paper);padding:10px 14px;font:inherit;font-size:16px;color:var(--ink)}
+.field textarea{min-height:110px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:3px solid var(--ink);outline-offset:1px;border-color:var(--ink)}
+.field input:disabled{opacity:.55}
+.when{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.when .field{width:156px}
+.stepper{display:inline-flex;align-items:center;border:1.5px solid var(--line);border-radius:12px;background:var(--paper);overflow:hidden}
+.stepper button{width:48px;height:48px;border:0;background:transparent;font:inherit;font-size:22px;font-weight:700;cursor:pointer;color:var(--ink)}
+.stepper button:hover{background:#ece9df}
+.stepper output{min-width:44px;text-align:center;font-weight:800;font-size:19px;font-stretch:125%}
+
+/* Ride slip */
+.slip{position:sticky;top:100px;background:var(--yellow);color:var(--ink);border-radius:20px;overflow:hidden;box-shadow:0 30px 60px -34px rgba(15,15,16,.55)}
+.slip .checker{height:12px;background-size:12px 12px}
+.slip-in{padding:26px 28px 28px}
+.slip h3{font-size:15px;letter-spacing:.1em;text-transform:uppercase;font-stretch:100%;font-weight:800;display:flex;justify-content:space-between;align-items:center}
+.slip h3 small{font-weight:700;letter-spacing:0;text-transform:none;font-size:14px}
+.route{margin:20px 0 18px;display:grid;grid-template-columns:18px 1fr;gap:0 12px}
+.route i{display:block;position:relative}
+.route i:before{content:"";position:absolute;left:4px;top:8px;width:10px;height:10px;border-radius:50%;border:2.5px solid var(--ink);background:var(--yellow)}
+.route i.to:before{background:var(--ink)}
+.route i.line:before{left:8px;top:-6px;width:2px;height:calc(100% + 12px);border:0;border-radius:0;background:var(--ink)}
+.route .p{font-stretch:125%;font-weight:800;font-size:24px;line-height:1.2;word-break:break-word}
+.route .gap{height:14px}
+.slip dl{display:grid;grid-template-columns:auto 1fr;gap:8px 16px;margin:0;padding:16px 0;border-top:2px dashed rgba(15,15,16,.35);border-bottom:2px dashed rgba(15,15,16,.35);font-size:15px}
+.slip dt{font-weight:600;color:#3d3510}
+.slip dd{margin:0;font-weight:800;text-align:right}
+.next{margin:16px 0 20px;font-size:15px;font-weight:600;line-height:1.45}
+.slip .btn{width:100%}
+.slip .btn+.btn{margin-top:10px}
+.slip .btn-out{border-color:var(--ink);color:var(--ink);background:transparent}
+.slip .btn-out:hover{background:rgba(15,15,16,.07)}
+.thanks{margin-top:12px;font-weight:700;font-size:15px;min-height:1px}
+.slip .fine{font-size:13px;margin-top:12px;font-weight:600;color:#3d3510}
+
+/* Services */
+.svc{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.svc-list{list-style:none;padding:0;margin:44px 0 0;display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.svc-list li{border-bottom:1px solid var(--line)}
+.svc-list li:nth-child(odd){border-right:1px solid var(--line)}
+.svc-list button{all:unset;box-sizing:border-box;display:flex;align-items:center;gap:20px;width:100%;padding:26px 24px;cursor:pointer;transition:background .15s}
+.svc-list button:hover{background:var(--paper)}
+.svc-list button:focus-visible{outline:3px solid var(--ink);outline-offset:-3px;border-radius:0}
+.ico{flex:none;width:56px;height:56px;border-radius:14px;background:var(--ink);color:var(--yellow);display:grid;place-items:center}
+.svc-list .nm{font-stretch:125%;font-weight:800;font-size:22px;line-height:1.15}
+.svc-list .go{margin-left:auto;font-size:15px;font-weight:700;color:var(--muted);display:flex;align-items:center;gap:6px;white-space:nowrap}
+.svc-list button:hover .go{color:var(--ink)}
+
+/* Road band */
+.road{padding:96px 0;background:var(--paper)}
+.band{position:relative;max-width:1280px;margin:0 auto;border-radius:24px;overflow:hidden;min-height:430px;background:#141414;color:#fff;display:grid;grid-template-columns:1.1fr .9fr;align-items:center}
+.band>.checker{position:absolute;left:0;right:0;bottom:0;height:12px;background-size:12px 12px}
+.band>.txt,.band>.stops{position:relative;z-index:1}
+.band .txt{padding:56px}
+.band h2{font-size:clamp(30px,3.6vw,44px);margin:14px 0 16px}
+.band .kicker{color:var(--muted-d)}
+.band p{color:#dcdbd5;font-size:18px;max-width:28em}
+.stops{list-style:none;margin:0;padding:40px 56px 40px 0;display:grid;gap:0}
+.stops li{display:grid;grid-template-columns:22px 1fr;gap:16px;padding-bottom:26px;position:relative}
+.stops li:last-child{padding-bottom:0}
+.stops li:before{content:"";position:absolute;left:10px;top:20px;bottom:-4px;width:2px;background:repeating-linear-gradient(var(--yellow) 0 8px,transparent 8px 14px)}
+.stops li:last-child:before{display:none}
+.dot{width:22px;height:22px;border-radius:50%;border:3px solid var(--yellow);background:var(--ink);margin-top:2px}
+.stops .home .dot{background:var(--yellow)}
+.stops b{display:block;font-stretch:125%;font-weight:800;font-size:22px;line-height:1.2}
+.stops span{font-size:15px;color:#d6d5cf}
+
+/* About */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.promise{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:14px}
+.promise li{display:flex;gap:14px;align-items:flex-start;font-size:17px}
+.promise svg{flex:none;margin-top:3px}
+.quote{background:var(--ink);color:#fff;border-radius:22px;padding:44px;position:relative;overflow:hidden}
+.quote .big{font-stretch:125%;font-weight:800;font-size:clamp(76px,9vw,120px);line-height:.9;color:var(--yellow)}
+.quote p{font-size:19px;color:#e2e1db;margin-top:14px;max-width:22em}
+.quote .checker{position:absolute;left:0;right:0;bottom:0;height:10px;background-size:10px 10px}
+
+/* FAQ */
+.faq{background:var(--white);border-top:1px solid var(--line)}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
+details{border-bottom:1px solid var(--line)}
+details:first-child{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font-weight:700;font-size:19px;min-height:44px}
+summary::-webkit-details-marker{display:none}
+summary .pm{flex:none;width:32px;height:32px;border-radius:50%;background:var(--paper);display:grid;place-items:center;transition:transform .2s,background .2s}
+details[open] summary .pm{transform:rotate(45deg);background:var(--yellow)}
+details p{padding:0 48px 24px 0;color:var(--muted);font-size:17px}
+details p a{font-weight:700;color:var(--ink)}
+
+/* Contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:44px;align-items:start}
+.ways{display:grid;gap:12px}
+.way{display:flex;gap:18px;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:20px 22px;text-decoration:none;transition:border-color .15s,transform .15s}
+a.way:hover{border-color:#bdb9ad;transform:translateY(-1px)}
+.way .ico{width:48px;height:48px;border-radius:12px}
+.way small{display:block;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.way b{font-size:19px;font-weight:700;word-break:break-word}
+.way .addr{font-weight:600;font-size:16px;line-height:1.4}
+.way .addr span{display:block;color:var(--muted);font-size:15px;font-weight:500}
+.social{display:flex;gap:10px;margin-top:6px}
+.social a{width:48px;height:48px;border-radius:12px;background:var(--white);border:1px solid var(--line);display:grid;place-items:center;transition:border-color .15s}
+.social a:hover{border-color:var(--ink)}
+.form h3{font-size:26px;margin-bottom:6px}
+.form .sub{color:var(--muted);margin-bottom:22px}
+.form .field{margin-bottom:14px}
+.form label{display:block;font-weight:700;font-size:15px;margin-bottom:6px}
+.form .btn{width:100%}
+
+/* End */
+.end{background:var(--ink);color:#fff;text-align:center;padding:96px 0 88px}
+.end h2{font-size:clamp(34px,5vw,60px)}
+.end h2 span{color:var(--yellow)}
+.end p{color:#cfcec8;font-size:19px;margin:16px auto 30px;max-width:30em}
+.end .phone{display:inline-flex;align-items:center;gap:14px;background:var(--yellow);color:var(--ink);text-decoration:none;font-stretch:125%;font-weight:800;font-size:clamp(24px,3.4vw,36px);padding:18px 30px;border-radius:16px;transition:transform .15s}
+.end .phone:hover{transform:translateY(-2px)}
+footer{background:#08080a;color:#bdbcb6;font-size:15px;padding:36px 0}
+footer .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px;justify-content:space-between}
+footer .fb{display:flex;align-items:center;gap:12px;color:#fff;font-weight:700}
+footer .tile{background:#fff;border-radius:8px;padding:4px 6px}
+footer .tile .shield{width:28px;height:36px}
+footer .tile .shield img{width:40px;left:-6.4px;top:-10.7px}
+footer a{color:#e8e7e1}
+.made{width:100%;border-top:1px solid #222226;padding-top:18px;font-size:14px;color:#a9a8a2}
+
+/* Phone call bar */
+.callbar{display:none}
+
+/* Motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .6s ease,transform .6s ease}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+
+/* Responsive */
+@media (max-width:980px){
+  .nav{display:none}
+  .top .call-sm{margin-left:auto}
+  .hero .wrap{grid-template-columns:1fr;gap:44px;padding-top:44px;padding-bottom:64px}
+  .hero figure{margin:0;max-width:640px}
+  .plan{grid-template-columns:1fr}
+  .slip{position:relative;top:0}
+  .band{grid-template-columns:1fr}
+  .band .txt{padding:44px 32px 8px}
+  .stops{padding:24px 32px 44px}
+  .about,.faq-grid,.contact{grid-template-columns:1fr;gap:36px}
+  .facts ul{grid-template-columns:1fr 1fr}
+  .facts li:nth-child(3){border-left:0;padding-left:0}
+  .facts li:nth-child(n+3){border-top:1px solid #2f2f33}
+  .facts li{padding:20px 0 20px 20px}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:68px}
+  .wrap{padding:0 20px}
+  .mock{font-size:15px;padding:10px 12px}
+  .top .wrap{height:64px;gap:12px}
+  .brand small{display:none}
+  .top .call-sm{padding:0 14px}
+  .top .call-sm .num{display:none}
+  .hero h1{font-size:40px;margin:14px 0 16px}
+  .hero .lede{font-size:17px}
+  .hero .actions .btn{flex:1 1 100%}
+  .hero .photo{aspect-ratio:2/1}
+  .hero figcaption{left:12px;bottom:-18px;padding:10px 14px;font-size:14px}
+  .hero figcaption b{font-size:20px}
+  .facts ul{padding:0 20px}
+  .facts b{font-size:22px}
+  .facts span{font-size:14px}
+  .sec,.road{padding:68px 0}
+  .road{padding-left:12px;padding-right:12px}
+  .panel{padding:22px 18px;border-radius:18px}
+  .row2{grid-template-columns:1fr}
+  .slip-in{padding:22px 20px 24px}
+  .route .p{font-size:21px}
+  .svc-list{grid-template-columns:1fr}
+  .svc-list li:nth-child(odd){border-right:0}
+  .svc-list button{padding:20px 4px;gap:16px}
+  .svc-list .nm{font-size:19px}
+  .svc-list .go span{display:none}
+  .ico{width:48px;height:48px}
+  .band{min-height:0;border-radius:20px}
+  .band .txt{padding:36px 22px 4px}
+  .stops{padding:24px 22px 36px}
+  .quote{padding:32px 26px}
+  details p{padding-right:0}
+  summary{font-size:17px}
+  .end{padding:72px 0 64px}
+  .end .phone{padding:16px 22px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(15,15,16,.96);border-top:1px solid #2a2a2d}
+  .callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:10px;min-height:48px;border-radius:12px;background:var(--yellow);color:var(--ink);text-decoration:none;font-weight:800;font-size:17px}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top light">
+  <div class="wrap">
+    <a class="brand" href="#main" aria-label="KP Taxi, back to top">
+      <span class="shield"><img src="https://www.kptaxi.com/_next/image?url=%2Fkp-logo.png&w=640&q=75" alt="KP Taxi logo" width="408" height="612"></span>
+      <span><b>KP Taxi</b><small>Gevgelija · 24/7</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#book">Book a ride</a>
+      <a href="#services">Services</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="call-sm" href="tel:+38978727636" aria-label="Call KP Taxi on +389 78 727 636">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+      <span>Call</span><span class="num">&nbsp;+389 78 727 636</span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow"><span class="live" aria-hidden="true"></span>Taxi in Gevgelija · open 24/7</span>
+        <h1 id="h1">KP Taxi. At your door in Gevgelija, <span>day or night.</span></h1>
+        <p class="lede">Call, and we send the nearest of our 8 cars. Clean cars, local drivers who know Gevgelija inside out.</p>
+        <div class="actions">
+          <a class="btn btn-y" href="tel:+38978727636">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+            Call +389 78 727 636
+          </a>
+          <a class="btn btn-ghost" href="#book">Plan a ride</a>
+        </div>
+      </div>
+      <figure>
+        <div class="photo"><img src="https://www.kptaxi.com/_next/image?url=%2Fhero-road.jpg&w=1920&q=75" alt="An open road at dusk" width="1280" height="430"></div>
+        <figcaption><b>5–10 min</b>typical pickup in Gevgelija</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="facts" role="region" aria-label="KP Taxi at a glance">
+    <ul>
+      <li><b>24/7</b><span>Day or night, every day</span></li>
+      <li><b>5–10 min</b><span>Typical pickup in town</span></li>
+      <li><b>8 cars</b><span>Maintained daily</span></li>
+      <li><b>Cash</b><span>Cash only, for now</span></li>
+    </ul>
+  </div>
+  <div class="checker" aria-hidden="true"></div>
+
+  <section class="sec" id="book" aria-labelledby="book-h">
+    <div class="wrap">
+      <p class="kicker">Book a ride</p>
+      <h2 id="book-h">Plan your ride. Then call or send it.</h2>
+      <p class="intro">Need a car now, or later? Pre-book any time. We confirm your pickup and assign a driver.</p>
+
+      <form class="plan" id="planner" novalidate>
+        <div class="panel light">
+          <fieldset>
+            <legend>Service</legend>
+            <div class="chips" id="svc">
+              <label class="chip"><input type="radio" name="svc" value="Regular Transport" checked><span>Regular Transport</span></label>
+              <label class="chip"><input type="radio" name="svc" value="City Transport"><span>City Transport</span></label>
+              <label class="chip"><input type="radio" name="svc" value="Airport Transport"><span>Airport Transport</span></label>
+              <label class="chip"><input type="radio" name="svc" value="Business Tour"><span>Business Tour</span></label>
+              <label class="chip"><input type="radio" name="svc" value="Shuttle Service"><span>Shuttle Service</span></label>
+              <label class="chip"><input type="radio" name="svc" value="Holiday Tour"><span>Holiday Tour</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Route</legend>
+            <div class="row2">
+              <div class="field"><label class="lab" for="from">From</label><input id="from" name="from" value="Gevgelija" autocomplete="off"></div>
+              <div class="field"><label class="lab" for="to">To</label><input id="to" name="to" value="Thessaloniki" autocomplete="off"></div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>When</legend>
+            <div class="when">
+              <div class="chips">
+                <label class="chip"><input type="radio" name="when" value="Now"><span>Now</span></label>
+                <label class="chip"><input type="radio" name="when" value="Today"><span>Today</span></label>
+                <label class="chip"><input type="radio" name="when" value="Tomorrow" checked><span>Tomorrow</span></label>
+              </div>
+              <div class="field"><label class="lab" for="time" style="position:absolute;left:-9999px">Pickup time</label><input id="time" name="time" type="time" value="07:30"></div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Passengers</legend>
+            <div class="stepper">
+              <button type="button" id="minus" aria-label="One passenger fewer">−</button>
+              <output id="pax" aria-live="polite">2</output>
+              <button type="button" id="plus" aria-label="One passenger more">+</button>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Your details</legend>
+            <div class="row2">
+              <div class="field"><label class="lab" for="nm">Name</label><input id="nm" name="nm" autocomplete="name" placeholder="Your name"></div>
+              <div class="field"><label class="lab" for="ph">Phone</label><input id="ph" name="ph" type="tel" autocomplete="tel" placeholder="+389 …"></div>
+            </div>
+          </fieldset>
+        </div>
+
+        <aside class="slip" aria-label="Your ride">
+          <div class="checker" aria-hidden="true"></div>
+          <div class="slip-in">
+            <h3>Your ride <small id="s-svc">Regular Transport</small></h3>
+            <div class="route" aria-live="polite">
+              <i></i><div class="p" id="s-from">Gevgelija</div>
+              <i class="line"></i><div class="gap"></div>
+              <i class="to"></i><div class="p" id="s-to">Thessaloniki</div>
+            </div>
+            <dl>
+              <dt>Pickup</dt><dd id="s-when">Tomorrow, 07:30</dd>
+              <dt>Passengers</dt><dd id="s-pax">2</dd>
+              <dt>Payment</dt><dd>Cash</dd>
+            </dl>
+            <p class="next" id="s-next">We confirm your pickup and assign a professional driver.</p>
+            <a class="btn btn-ink" href="tel:+38978727636">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+              Call to book
+            </a>
+            <button class="btn btn-out" type="submit">Send this request</button>
+            <p class="thanks" id="plan-thanks" role="status"></p>
+          </div>
+        </aside>
+      </form>
+    </div>
+  </section>
+
+  <section class="sec svc" id="services" aria-labelledby="svc-h">
+    <div class="wrap">
+      <p class="kicker">Services</p>
+      <h2 id="svc-h">Quick city rides to group shuttles.</h2>
+      <p class="intro">Pick the ride that fits your trip and we handle the rest. Tap one to plan it.</p>
+      <ul class="svc-list">
+        <li><button type="button" data-svc="Regular Transport"><span class="ico" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3v-5l2-5h10l4 5h2v5h-2"/><circle cx="7.5" cy="17" r="2"/><circle cx="16.5" cy="17" r="2"/><path d="M9.5 17h5M5 12h14"/></svg></span><span class="nm">Regular Transport</span><span class="go"><span>Plan</span> →</span></button></li>
+        <li><button type="button" data-svc="City Transport"><span class="ico" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l6-4v17M11 21V9h8v12"/><path d="M14 12h2M14 15h2M14 18h2M7.5 11h1M7.5 14h1M7.5 17h1"/></svg></span><span class="nm">City Transport</span><span class="go"><span>Plan</span> →</span></button></li>
+        <li><button type="button" data-svc="Airport Transport"><span class="ico" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 13.5 3 11l1.5-1.5 8 1L17 6a2.1 2.1 0 0 1 3 3l-4.5 4.5 1 8L15 23l-2.5-7.5L9 19v2.5L7.5 23l-1-3.5L3 18.5 4.5 17H7l3.5-3.5z"/></svg></span><span class="nm">Airport Transport</span><span class="go"><span>Plan</span> →</span></button></li>
+        <li><button type="button" data-svc="Business Tour"><span class="ico" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></span><span class="nm">Business Tour</span><span class="go"><span>Plan</span> →</span></button></li>
+        <li><button type="button" data-svc="Shuttle Service"><span class="ico" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v11"/><path d="M4 11h16M4 17h16"/><circle cx="7.5" cy="19" r="1.6"/><circle cx="16.5" cy="19" r="1.6"/><path d="M9 7.5h6"/></svg></span><span class="nm">Shuttle Service</span><span class="go"><span>Plan</span> →</span></button></li>
+        <li><button type="button" data-svc="Holiday Tour"><span class="ico" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="7" width="14" height="12" rx="2"/><path d="M9 7V4h6v3M9 11v4M15 11v4M8 19v2M16 19v2"/></svg></span><span class="nm">Holiday Tour</span><span class="go"><span>Plan</span> →</span></button></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="road" aria-labelledby="road-h">
+    <div class="band">
+      <div class="txt">
+        <p class="kicker">Longer trips</p>
+        <h2 id="road-h">Across town, or over the border.</h2>
+        <p>We make regular trips to Thessaloniki, and we've travelled as far as Serbia.</p>
+      </div>
+      <ol class="stops" aria-label="Where KP Taxi goes">
+        <li><span class="dot" aria-hidden="true"></span><div><b>Serbia</b><span>We've driven this far</span></div></li>
+        <li class="home"><span class="dot" aria-hidden="true"></span><div><b>Gevgelija</b><span>Home. Rides 24/7</span></div></li>
+        <li><span class="dot" aria-hidden="true"></span><div><b>Thessaloniki</b><span>Regular trips</span></div></li>
+      </ol>
+      <div class="checker" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="about" aria-labelledby="about-h">
+    <div class="wrap about">
+      <div>
+        <p class="kicker">About KP Taxi</p>
+        <h2 id="about-h">Your local taxi in Gevgelija.</h2>
+        <p class="intro">Known for punctual rides, clean vehicles and friendly service. Work, airport or a ride across town: we keep your journey smooth, day or night.</p>
+        <ul class="promise">
+          <li><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#facc15"/><path d="m7 12.5 3.2 3L17 9" fill="none" stroke="#0f0f10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Experienced local drivers who know Gevgelija inside out</li>
+          <li><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#facc15"/><path d="m7 12.5 3.2 3L17 9" fill="none" stroke="#0f0f10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Every car maintained daily</li>
+          <li><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#facc15"/><path d="m7 12.5 3.2 3L17 9" fill="none" stroke="#0f0f10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Professional, courteous drivers</li>
+        </ul>
+      </div>
+      <div class="quote">
+        <div class="big">8</div>
+        <p>cars on the road in Gevgelija. When you call, we send the nearest one that's free.</p>
+        <div class="checker" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec faq" id="faq" aria-labelledby="faq-h">
+    <div class="wrap faq-grid">
+      <div>
+        <p class="kicker">Questions</p>
+        <h2 id="faq-h">Good to know before you ride.</h2>
+        <p class="intro">Still wondering? Call us, we're here 24/7.</p>
+      </div>
+      <div>
+        <details open>
+          <summary>How do I book a taxi?<span class="pm" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M7 1v12M1 7h12" stroke="#0f0f10" stroke-width="2.2" stroke-linecap="round"/></svg></span></summary>
+          <p>Call us on <a href="tel:+38978727636">+389 78 727 636</a> or send a message. We dispatch the closest car.</p>
+        </details>
+        <details>
+          <summary>How fast can a driver arrive?<span class="pm" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M7 1v12M1 7h12" stroke="#0f0f10" stroke-width="2.2" stroke-linecap="round"/></svg></span></summary>
+          <p>Typical pickup in Gevgelija is 5–10 minutes, depending on traffic and time of day. We always send the nearest available car from our fleet of 8.</p>
+        </details>
+        <details>
+          <summary>Are you open 24/7? Can I pre-book?<span class="pm" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M7 1v12M1 7h12" stroke="#0f0f10" stroke-width="2.2" stroke-linecap="round"/></svg></span></summary>
+          <p>Yes, KP Taxi runs 24/7. Pre-book any time: we confirm your pickup and assign a professional driver.</p>
+        </details>
+        <details>
+          <summary>How can I pay?<span class="pm" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M7 1v12M1 7h12" stroke="#0f0f10" stroke-width="2.2" stroke-linecap="round"/></svg></span></summary>
+          <p>For now, cash only.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <p class="kicker">Contact</p>
+      <h2 id="contact-h">Speak with us.</h2>
+      <div class="contact">
+        <div class="ways">
+          <a class="way" href="tel:+38978727636"><span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><span><small>Call any time</small><b>+389 78 727 636</b></span></a>
+          <a class="way" href="mailto:kostadinpetrov28@gmail.com"><span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg></span><span><small>Email</small><b>kostadinpetrov28@gmail.com</b></span></a>
+          <a class="way" href="https://www.google.com/maps/search/?api=1&query=%D0%88%D0%B0%D0%BD%D0%B5%20%D0%A1%D0%B0%D0%BD%D0%B4%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%2060%2C%201480%20%D0%93%D0%B5%D0%B2%D0%B3%D0%B5%D0%BB%D0%B8%D1%98%D0%B0" target="_blank" rel="noopener"><span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span><small>Office · open in Google Maps</small><span class="addr">„Јане Сандански“ бр. 60, 1480 Гевгелија<span>Jane Sandanski 60, 1480 Gevgelija</span></span></span></a>
+          <div class="social" aria-label="KP Taxi on social media">
+            <a href="https://www.facebook.com/share/1AstiahDdi/" target="_blank" rel="noopener" aria-label="KP Taxi on Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="#0f0f10" aria-hidden="true"><path d="M14 8.5V6.8c0-.8.5-1 1-1h2.3V2.1L14.2 2C10.8 2 10 4.5 10 6.2v2.3H7.5v3.8H10V22h4v-9.7h3l.4-3.8z"/></svg></a>
+            <a href="https://www.instagram.com/kptaxi.mk" target="_blank" rel="noopener" aria-label="KP Taxi on Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0f0f10" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="#0f0f10" stroke="none"/></svg></a>
+            <a href="https://www.tiktok.com/@kostadin221" target="_blank" rel="noopener" aria-label="KP Taxi on TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="#0f0f10" aria-hidden="true"><path d="M16.6 2h-3.4v13.4a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .8.1V9.2a6.3 6.3 0 1 0 5.5 6.2V8.6a8 8 0 0 0 4.4 1.3V6.5a4.5 4.5 0 0 1-4.4-4.5z"/></svg></a>
+          </div>
+        </div>
+        <form class="panel form light" id="msg" novalidate>
+          <h3>Send us a message</h3>
+          <p class="sub">We'll reply soon.</p>
+          <div class="field"><label for="c-name">Name</label><input id="c-name" autocomplete="name"></div>
+          <div class="field"><label for="c-mail">Email or phone</label><input id="c-mail" autocomplete="email"></div>
+          <div class="field"><label for="c-msg">Message</label><textarea id="c-msg"></textarea></div>
+          <button class="btn btn-y" type="submit">Send message</button>
+          <p class="thanks" id="msg-thanks" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="end" aria-labelledby="end-h">
+    <div class="wrap">
+      <h2 id="end-h">Need a ride? <span>Call KP Taxi.</span></h2>
+      <p>Any hour, any day. Typical pickup in Gevgelija: 5–10 minutes.</p>
+      <a class="phone" href="tel:+38978727636">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        +389 78 727 636
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fb"><span class="tile"><span class="shield"><img src="https://www.kptaxi.com/_next/image?url=%2Fkp-logo.png&w=640&q=75" alt="" width="408" height="612"></span></span>© KP Taxi, Gevgelija</div>
+    <div><a href="https://www.kptaxi.com/en">kptaxi.com</a> · <a href="tel:+38978727636">+389 78 727 636</a></div>
+    <p class="made">Mockup made for KP Taxi by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<div class="callbar"><a href="tel:+38978727636"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call KP Taxi · 24/7</a></div>
+
+<script>
+(function(){
+  var f=document.getElementById('planner'),pax=2;
+  var $=function(id){return document.getElementById(id)};
+  function val(n){var r=f.querySelector('input[name="'+n+'"]:checked');return r?r.value:''}
+  function render(){
+    var when=val('when'),t=$('time').value||'';
+    $('time').disabled=(when==='Now');
+    $('s-svc').textContent=val('svc');
+    $('s-from').textContent=$('from').value.trim()||'Pickup point';
+    $('s-to').textContent=$('to').value.trim()||'Destination';
+    $('s-when').textContent=when==='Now'?'Now':when+(t?', '+t:'');
+    $('s-pax').textContent=pax;
+    $('pax').textContent=pax;
+    $('s-next').textContent=when==='Now'
+      ?'We send the nearest available car. Typical pickup in Gevgelija: 5–10 minutes.'
+      :'We confirm your pickup and assign a professional driver.';
+    $('plan-thanks').textContent='';
+  }
+  f.addEventListener('input',render);
+  f.addEventListener('change',render);
+  $('minus').addEventListener('click',function(){if(pax>1){pax--;render()}});
+  $('plus').addEventListener('click',function(){if(pax<99){pax++;render()}});
+  f.addEventListener('submit',function(e){e.preventDefault();$('plan-thanks').textContent='Thanks. This is a mockup, so nothing was sent.'});
+  $('msg').addEventListener('submit',function(e){e.preventDefault();$('msg-thanks').textContent='Thanks. This is a mockup, so nothing was sent.'});
+  document.querySelectorAll('[data-svc]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var r=f.querySelector('input[name="svc"][value="'+b.getAttribute('data-svc')+'"]');
+      if(r){r.checked=true;render()}
+      $('book').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+      setTimeout(function(){r&&r.focus({preventScroll:true})},500);
+    });
+  });
+  render();
+
+  if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var els=document.querySelectorAll('.sec .wrap > *, .svc-list li, .band, .end .wrap > *');
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target)}});
+  },{rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){
+    if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('will-rise','rise');io.observe(el)}
+  });
+})();
+</script>
+</body>
+</html>
