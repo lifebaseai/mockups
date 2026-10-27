@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup stewart-associates-com-f3233d 1 f99beab6 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stewart Associates | Architects &amp; Development Consultants, Fairlie, Largs</title>
+<meta name="description" content="Stewart Associates, architects and development consultants in Fairlie, Largs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--red:#c7361f;--red-hi:#e8412f;--ink:#1c1c1a;--grey:#5f5f5c;--line:#e2e0da;--paper:#f4f3ef;--w:1200px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Jost,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:400;color:var(--ink);background:#fff;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 32px}
+.label{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;color:var(--red);margin:0 0 18px}
+h1,h2,h3{font-weight:400;line-height:1.12;margin:0;letter-spacing:-.005em}
+h2{font-size:clamp(30px,3.6vw,44px);max-width:16ch}
+.rule{border:0;border-top:2px solid var(--red-hi);margin:0}
+
+/* banner */
+.mock{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:#1c1c1a;color:#f4f3ef;font-size:15px;line-height:1.3;text-align:center}
+.mock a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+
+/* header */
+.top{border-bottom:1px solid var(--line);background:#fff}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:96px}
+.logo img{width:230px}
+.nav{display:flex;align-items:center;gap:30px;font-size:14px;letter-spacing:.12em;text-transform:uppercase}
+.nav a{text-decoration:none;padding:12px 0;border-bottom:1px solid transparent}
+.nav a:hover{border-color:var(--red)}
+.nav .tel{color:var(--red);font-weight:500;letter-spacing:.06em}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;font:inherit;font-size:15px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border:1px solid var(--red);cursor:pointer;transition:background .2s,color .2s}
+.btn.solid{background:var(--red);color:#fff}
+.btn.solid:hover{background:#a92c18}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+
+/* hero */
+.hero{padding:72px 0 88px}
+.hero .wrap{display:grid;grid-template-columns:6fr 7fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(38px,4.6vw,62px);font-weight:300;margin:0 0 26px}
+.hero h1 b{font-weight:500}
+.hero h1 .name{display:block;font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;color:var(--red);line-height:1.4;margin:0 0 20px}
+.hero p.lede{font-size:19px;color:var(--grey);max-width:34ch;margin:0 0 34px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero figure{margin:0;justify-self:end;max-width:733px;position:relative}
+.hero figure::before{content:"";position:absolute;left:-18px;top:-18px;width:120px;height:120px;border-left:2px solid var(--red-hi);border-top:2px solid var(--red-hi)}
+.creds{display:flex;flex-wrap:wrap;gap:10px 28px;margin:44px 0 0;padding:20px 0 0;border-top:1px solid var(--line);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);list-style:none}
+.creds li::before{content:"";display:inline-block;width:6px;height:6px;background:var(--red-hi);margin:0 10px 2px 0}
+
+/* services */
+.services{background:var(--paper);padding:96px 0}
+.services .head{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:end;margin-bottom:48px}
+.services .head p{color:var(--grey);margin:0;max-width:44ch}
+.svc{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--red-hi)}
+.svc li{padding:26px 28px 30px 0;border-bottom:1px solid #d9d6ce}
+.svc .n{font-size:13px;color:var(--red);letter-spacing:.12em;font-weight:500}
+.svc h3{font-size:24px;margin:8px 0 0}
+.svc li a{text-decoration:none;display:block}
+.svc li a:hover h3{color:var(--red)}
+
+/* work */
+.work{padding:104px 0 40px}
+.work .head{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:56px}
+.work .head p{color:var(--grey);max-width:40ch;margin:0}
+.gal{display:grid;grid-template-columns:repeat(12,1fr);gap:40px 32px;align-items:start}
+.gal figure{margin:0}
+.gal figcaption{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--grey);margin-top:12px}
+.g1{grid-column:1 / span 7}
+.g2{grid-column:9 / span 4;margin-top:96px!important}
+.g3{grid-column:2 / span 5}
+.g4{grid-column:8 / span 5;margin-top:72px!important}
+.g5{grid-column:3 / span 7}
+.gal img{width:100%}
+
+/* index */
+.index{padding:80px 0 104px}
+.index .box{display:grid;grid-template-columns:4fr 8fr;gap:56px}
+.index p.sub{color:var(--grey);margin:18px 0 26px;max-width:32ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:44px;padding:0 16px;border:1px solid #cfccc4;background:#fff;font:inherit;font-size:14px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.chip:hover{border-color:var(--ink)}
+.plist{list-style:none;margin:0;padding:0;border-top:2px solid var(--red-hi)}
+.plist li{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:baseline;padding:15px 0;border-bottom:1px solid var(--line);transition:opacity .25s}
+.plist .no{font-size:13px;color:var(--grey);letter-spacing:.1em}
+.plist .nm{font-size:20px}
+.plist .pl{color:var(--grey)}
+.plist li.off{display:none}
+.count{font-size:14px;color:var(--grey);margin:16px 0 0}
+
+/* practice */
+.practice{background:var(--ink);color:#f4f3ef;padding:104px 0}
+.practice .wrap{display:grid;grid-template-columns:6fr 6fr;gap:64px;align-items:center}
+.practice .label{color:#ff8f7c}
+.practice h2{color:#fff;max-width:18ch}
+.practice p{color:#d6d4ce;max-width:44ch}
+.practice figure{margin:0;max-width:620px}
+.practice figcaption{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#bdbab3;margin-top:12px}
+.facts{list-style:none;padding:0;margin:30px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
+.facts li{padding:14px 0;border-top:1px solid #3d3d3a;font-size:15px}
+.facts span{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#bdbab3}
+
+/* planner */
+.plan{padding:104px 0;background:var(--paper)}
+.plan .head{margin-bottom:44px}
+.plan .head p{color:var(--grey);max-width:46ch;margin:16px 0 0}
+.planner{display:grid;grid-template-columns:7fr 5fr;gap:40px;align-items:start}
+.step{border:0;margin:0 0 30px;padding:0}
+.step legend,.step .lg{display:block;font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;margin-bottom:12px;padding:0}
+.step legend i,.step .lg i{font-style:normal;color:var(--red);margin-right:10px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;width:1px;height:1px}
+.opt span{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border:1px solid #cfccc4;background:#fff;font-size:16px;cursor:pointer;transition:border-color .2s,background .2s}
+.opt input:checked+span{border-color:var(--red);background:#fff;box-shadow:inset 0 0 0 1px var(--red);color:var(--red)}
+.opt input:focus-visible+span{outline:2px solid var(--red);outline-offset:3px}
+.field{display:block;margin-bottom:14px}
+.field span{display:block;font-size:14px;color:var(--grey);margin-bottom:6px}
+.field input,.field textarea{width:100%;min-height:50px;padding:12px 14px;font:inherit;font-size:16px;border:1px solid #cfccc4;background:#fff;color:var(--ink);border-radius:0}
+.field textarea{min-height:96px;resize:vertical}
+.field input:focus,.field textarea:focus{border-color:var(--ink);outline:none;box-shadow:0 0 0 2px rgba(199,54,31,.25)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.note{position:sticky;top:24px;background:#fff;border-top:3px solid var(--red-hi);padding:32px;box-shadow:0 1px 2px rgba(0,0,0,.04),0 18px 40px -24px rgba(0,0,0,.25)}
+.note .label{margin-bottom:14px}
+.note .to{font-size:14px;color:var(--grey);border-bottom:1px solid var(--line);padding-bottom:12px;margin:0 0 16px}
+.note .msg{font-size:19px;line-height:1.55;margin:0 0 22px;min-height:6em}
+.note .msg mark{background:none;color:var(--red);border-bottom:1px solid var(--red-hi)}
+.note .btn{width:100%}
+.note .alt{font-size:15px;color:var(--grey);margin:16px 0 0;text-align:center}
+.note .alt a{color:var(--ink)}
+.thanks{display:none;margin:16px 0 0;padding:14px 16px;background:var(--paper);font-size:16px}
+.thanks.on{display:block}
+
+/* faq */
+.faq{padding:104px 0}
+.faq .wrap{display:grid;grid-template-columns:4fr 8fr;gap:56px}
+.qa{border-top:2px solid var(--red-hi)}
+.qa details{border-bottom:1px solid var(--line)}
+.qa summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:64px;font-size:21px;padding:10px 0}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:"+";font-size:26px;font-weight:300;color:var(--red);transition:transform .2s}
+.qa details[open] summary::after{transform:rotate(45deg)}
+.qa details p{margin:0 0 22px;color:var(--grey);max-width:56ch}
+
+/* end */
+.end{border-top:1px solid var(--line);padding:96px 0}
+.end .wrap{display:grid;grid-template-columns:7fr 5fr;gap:56px;align-items:end}
+.end h2{font-size:clamp(34px,4.4vw,56px);font-weight:300;max-width:14ch}
+.end h2 b{font-weight:500}
+.end .actions{margin-top:30px}
+.addr{font-style:normal;font-size:16px;line-height:1.7}
+.addr a{text-underline-offset:3px}
+.addr .lnk{display:inline-block;padding:10px 0}
+.addr .days{color:var(--grey);margin-top:10px}
+
+footer{background:var(--paper);padding:30px 0 36px;font-size:14px;color:var(--grey)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;align-items:center}
+footer nav{display:flex;gap:20px}
+footer nav a{display:inline-block;padding:12px 0;text-underline-offset:3px;color:var(--ink)}
+
+.callbar{display:none}
+
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:980px){
+  .nav .hide{display:none}
+  .hero .wrap,.services .head,.index .box,.practice .wrap,.planner,.faq .wrap,.end .wrap{grid-template-columns:1fr;gap:36px}
+  .hero figure{justify-self:start}
+  .svc{grid-template-columns:1fr 1fr}
+  .note{position:static}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{padding:0 20px}
+  .mock{font-size:15px;padding:8px 12px}
+  .top .wrap{min-height:76px}
+  .logo img{width:172px}
+  .nav{gap:0}
+  .nav .tel{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border:1px solid var(--red);font-size:13px}
+  .hero{padding:36px 0 56px}
+  .hero .wrap{gap:30px}
+  .hero h1{font-size:38px;margin-bottom:18px}
+  .hero p.lede{font-size:17px;margin-bottom:26px}
+  .actions .btn{flex:1 1 100%}
+  .hero figure::before{left:-8px;top:-8px;width:64px;height:64px}
+  .creds{margin-top:30px;gap:8px 18px;font-size:12px}
+  .services,.work,.practice,.plan,.faq,.end{padding:68px 0}
+  .index{padding:40px 0 68px}
+  .svc{grid-template-columns:1fr}
+  .svc li{padding:18px 0 20px;display:flex;align-items:baseline;gap:16px}
+  .svc h3{font-size:21px;margin:0}
+  .work .head{display:block;margin-bottom:36px}
+  .work .head p{margin-top:16px}
+  .gal{grid-template-columns:1fr;gap:28px}
+  .gal figure{grid-column:1!important;margin-top:0!important}
+  .plist li{grid-template-columns:34px 1fr;gap:4px 10px}
+  .plist .nm{font-size:18px}
+  .facts{grid-template-columns:1fr}
+  .two{grid-template-columns:1fr;gap:0}
+  .note{padding:24px 20px}
+  .note .msg{font-size:17px}
+  .qa summary{font-size:18px}
+  footer{padding-bottom:96px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;gap:1px;background:#fff;border-top:1px solid var(--line);padding:8px 10px calc(8px + env(safe-area-inset-bottom))}
+  .callbar a{flex:1;display:flex;align-items:center;justify-content:center;min-height:48px;text-decoration:none;font-size:14px;letter-spacing:.1em;text-transform:uppercase}
+  .callbar .c{background:var(--red);color:#fff;font-weight:500}
+  .callbar .s{color:var(--ink)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .will-rise{opacity:1;transform:none}
+  .rise,*{transition:none!important}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="region" aria-label="Mockup notice">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Stewart Associates, home"><img src="https://www.stewart-associates.com/wp-content/themes/stewart-associates-leeboyce/images/SA_LOGO.jpg" width="230" height="61" alt="Stewart Associates, Architects &amp; Development Consultants"></a>
+    <nav class="nav" aria-label="Main">
+      <a class="hide" href="#work">Projects</a>
+      <a class="hide" href="#practice">Practice</a>
+      <a class="hide" href="#start">Start a project</a>
+      <a class="tel" href="tel:+441475670033">01475 670033</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <h1 id="h1"><span class="name">Stewart Associates</span>Architects, from Largs to <b>Portavadie.</b></h1>
+        <p class="lede">Houses, extensions, historic buildings and commercial work, with robust design and sound management from a studio in Fairlie.</p>
+        <div class="actions">
+          <a class="btn solid" href="#start">Start your project</a>
+          <a class="btn ghost" href="tel:+441475670033">Call 01475 670033</a>
+        </div>
+        <ul class="creds">
+          <li>Chartered Architect</li>
+          <li>Fairlie, Largs</li>
+        </ul>
+      </div>
+      <figure>
+        <img src="https://www.stewart-associates.com/wp-content/uploads/POOL-11.jpg" width="733" height="489" alt="An indoor pool hall with a full-height glass wall looking out over the water to the hills">
+      </figure>
+    </div>
+  </section>
+
+  <section class="services" id="services" aria-labelledby="h-svc">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="label">What we design</p>
+          <h2 id="h-svc">Six kinds of work, one practice.</h2>
+        </div>
+        <p>Architects and development consultants, with robust design and management skills. Pick one to start your note.</p>
+      </div>
+      <ul class="svc">
+        <li><a href="#start" data-pick="Private house"><span class="n">01</span><h3>Private houses</h3></a></li>
+        <li><a href="#start" data-pick="Conversion or extension"><span class="n">02</span><h3>Conversions &amp; extensions</h3></a></li>
+        <li><a href="#start" data-pick="Historic building"><span class="n">03</span><h3>Historic buildings &amp; conservation</h3></a></li>
+        <li><a href="#start" data-pick="Commercial building"><span class="n">04</span><h3>Commercial</h3></a></li>
+        <li><a href="#start" data-pick="Community building"><span class="n">05</span><h3>Community</h3></a></li>
+        <li><a href="#start" data-pick="Development appraisal"><span class="n">06</span><h3>Development &amp; appraisals</h3></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="work" id="work" aria-labelledby="h-work">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="label">Built work</p>
+          <h2 id="h-work">Buildings that sit well where they are.</h2>
+        </div>
+        <p>New homes, old houses and places to stay, from Largs and Cumbrae to Sandbank and Portavadie.</p>
+      </div>
+      <div class="gal">
+        <figure class="g1"><img loading="lazy" src="https://www.stewart-associates.com/wp-content/uploads/09038B036.jpg" width="733" height="488" alt="A long lounge with stone walls, orange sofas and windows onto a marina at dusk"><figcaption>Lounge on the waterfront</figcaption></figure>
+        <figure class="g2"><img loading="lazy" src="https://www.stewart-associates.com/wp-content/uploads/1523-added-23Nov18-MainPage.jpg" width="782" height="654" alt="A white-harled cottage with slate roof and dormers among trees"><figcaption>White cottage, slate and dormers</figcaption></figure>
+        <figure class="g3"><img loading="lazy" src="https://www.stewart-associates.com/wp-content/uploads/1717-added-23Nov18-MainPage.jpg" width="782" height="521" alt="A house with a stone entrance, solar panels and a greenhouse, hills behind"><figcaption>Stone, glass and a solar roof</figcaption></figure>
+        <figure class="g4"><img loading="lazy" src="https://www.stewart-associates.com/wp-content/uploads/portfoliopic_2264-1-main-page.jpg" width="617" height="413" alt="A white house with gabled bays above a stone wall"><figcaption>White walls above a stone wall</figcaption></figure>
+        <figure class="g5"><img loading="lazy" src="https://www.stewart-associates.com/wp-content/uploads/44.jpg" width="732" height="489" alt="A long low building with orange and white bays and a white rail fence, signed Ingliston"><figcaption>Ingliston</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="index" aria-labelledby="h-index">
+    <div class="wrap box">
+      <div>
+        <p class="label">Project list</p>
+        <h2 id="h-index">Where we've worked.</h2>
+        <p class="sub">Tap a place to see the projects there.</p>
+        <div class="chips" role="group" aria-label="Filter projects by place">
+          <button class="chip" type="button" data-place="all" aria-pressed="true">All</button>
+          <button class="chip" type="button" data-place="Largs" aria-pressed="false">Largs</button>
+          <button class="chip" type="button" data-place="Portavadie" aria-pressed="false">Portavadie</button>
+          <button class="chip" type="button" data-place="Cumbrae" aria-pressed="false">Cumbrae</button>
+          <button class="chip" type="button" data-place="Sandbank" aria-pressed="false">Sandbank</button>
+          <button class="chip" type="button" data-place="West Kilbride" aria-pressed="false">West Kilbride</button>
+        </div>
+      </div>
+      <div>
+        <ul class="plist" id="plist">
+          <li data-place="Largs"><span class="no">01</span><span class="nm">Gallowgate Street<span class="pl">, Largs</span></span></li>
+          <li data-place="Portavadie"><span class="no">02</span><span class="nm">The Hideaway<span class="pl">, Portavadie</span></span></li>
+          <li data-place="Portavadie"><span class="no">03</span><span class="nm">Portavadie Marina</span></li>
+          <li data-place="Cumbrae"><span class="no">04</span><span class="nm">Strahoun<span class="pl">, Millport, Cumbrae</span></span></li>
+          <li data-place="Largs"><span class="no">05</span><span class="nm">Warrenpark Road<span class="pl">, Largs</span></span></li>
+          <li data-place="Sandbank"><span class="no">06</span><span class="nm">Ferrymans<span class="pl">, Sandbank</span></span></li>
+          <li data-place="Portavadie"><span class="no">07</span><span class="nm">Portavadie Apartments</span></li>
+          <li data-place="other"><span class="no">08</span><span class="nm">Ingliston Hotel</span></li>
+          <li data-place="Largs"><span class="no">09</span><span class="nm">Rockland Park<span class="pl">, Largs</span></span></li>
+          <li data-place="West Kilbride"><span class="no">10</span><span class="nm">Corsehill<span class="pl">, West Kilbride</span></span></li>
+          <li data-place="other"><span class="no">11</span><span class="nm">Ingliston House</span></li>
+          <li data-place="Largs"><span class="no">12</span><span class="nm">“Littleraith” concept<span class="pl">, Largs</span></span></li>
+          <li data-place="other"><span class="no">13</span><span class="nm">Bankhouse Avenue conversion</span></li>
+          <li data-place="other"><span class="no">14</span><span class="nm">Knock House, Garden View</span></li>
+        </ul>
+        <p class="count" id="count" aria-live="polite">14 projects</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="practice" id="practice" aria-labelledby="h-prac">
+    <div class="wrap">
+      <figure>
+        <img loading="lazy" src="https://www.stewart-associates.com/wp-content/uploads/Portavadie-.APARTMENTS-4.jpg" width="620" height="413" alt="Portavadie Apartments: glass-gabled stone and white buildings on a rocky shore under a blue sky">
+        <figcaption>Portavadie Apartments</figcaption>
+      </figure>
+      <div>
+        <p class="label">The practice</p>
+        <h2 id="h-prac">An experienced chartered architect. As strong on managing as on designing.</h2>
+        <p>Stewart Associates are architects and development consultants, working from The Studio in the Walled Garden on the Southannan Estate, Fairlie.</p>
+        <ul class="facts">
+          <li><span>Credentials</span>Chartered Architect</li>
+          <li><span>Work pattern</span>Brian works Monday, Tuesday, Thursday &amp; Friday</li>
+          <li><span>Studio</span>Southannan Estate, Fairlie, Largs</li>
+          <li><span>Office</span><a href="tel:+441475670033">01475 670033</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="plan" id="start" aria-labelledby="h-plan">
+    <div class="wrap">
+      <div class="head">
+        <p class="label">Start your project</p>
+        <h2 id="h-plan">Tell us what you're planning.</h2>
+        <p>Three taps and a name. Your note writes itself as you go, and comes straight to the studio.</p>
+      </div>
+      <form class="planner" id="planner" novalidate>
+        <div>
+          <fieldset class="step">
+            <legend><i>1</i>What are you planning?</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="kind" value="Private house"><span>Private house</span></label>
+              <label class="opt"><input type="radio" name="kind" value="Conversion or extension" checked><span>Conversion or extension</span></label>
+              <label class="opt"><input type="radio" name="kind" value="Historic building"><span>Historic building</span></label>
+              <label class="opt"><input type="radio" name="kind" value="Commercial building"><span>Commercial</span></label>
+              <label class="opt"><input type="radio" name="kind" value="Community building"><span>Community</span></label>
+              <label class="opt"><input type="radio" name="kind" value="Development appraisal"><span>Development appraisal</span></label>
+            </div>
+          </fieldset>
+          <div class="step">
+            <label class="field" for="where"><span class="lg"><i>2</i>Where is it?</span>
+              <input id="where" name="where" type="text" value="Largs" autocomplete="address-level2"></label>
+          </div>
+          <fieldset class="step">
+            <legend><i>3</i>Where are you now?</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="stage" value="it's just an idea so far" checked><span>Just an idea</span></label>
+              <label class="opt"><input type="radio" name="stage" value="I have the site or building"><span>I have the site or building</span></label>
+              <label class="opt"><input type="radio" name="stage" value="I already have some drawings"><span>I have some drawings</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><i>4</i>How do we reach you?</legend>
+            <div class="two">
+              <label class="field" for="nm"><span>Your name</span><input id="nm" name="name" type="text" autocomplete="name" placeholder="e.g. Alex Morgan"></label>
+              <label class="field" for="ph"><span>Phone or email</span><input id="ph" name="contact" type="text" autocomplete="email" placeholder="e.g. 07700 900123"></label>
+            </div>
+            <label class="field" for="more"><span>Anything else (optional)</span><textarea id="more" name="more" placeholder="e.g. A single-storey kitchen extension to the back of the house"></textarea></label>
+          </fieldset>
+        </div>
+        <aside class="note" aria-labelledby="h-note">
+          <p class="label" id="h-note">Your note</p>
+          <p class="to">To: Stewart Associates, Fairlie</p>
+          <p class="msg" id="msg" aria-live="polite">Hello, I'm planning a <mark>conversion or extension</mark> in <mark>Largs</mark>, and <mark>it's just an idea so far</mark>. Could we talk it through?</p>
+          <button class="btn solid" type="submit">Send to the studio</button>
+          <p class="thanks" id="thanks" role="status">Thanks, we'll be in touch.</p>
+          <p class="alt">Rather talk? <a href="tel:+441475670033">01475 670033</a></p>
+        </aside>
+      </form>
+    </div>
+  </section>
+
+  <section class="faq" aria-labelledby="h-faq">
+    <div class="wrap">
+      <div>
+        <p class="label">Questions</p>
+        <h2 id="h-faq">Good to know.</h2>
+      </div>
+      <div class="qa">
+        <details open><summary>What kind of projects do you take on?</summary><p>Private houses, conversions and extensions, historic buildings and conservation, commercial and community buildings, and development appraisals.</p></details>
+        <details><summary>Where do you work?</summary><p>Our projects run from Largs, West Kilbride and Millport on Cumbrae to Sandbank and Portavadie.</p></details>
+        <details><summary>Are you chartered?</summary><p>Yes. The practice is led by a chartered architect.</p></details>
+        <details><summary>When can I reach you?</summary><p>Brian works Monday, Tuesday, Thursday and Friday. Call 01475 670033, or send a note from this page.</p></details>
+        <details><summary>Where is the studio?</summary><p>The Studio, 2 The Walled Garden, Southannan Estate, Fairlie, Largs KA29 0EX.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="end" aria-labelledby="h-end">
+    <div class="wrap">
+      <div>
+        <p class="label">Stewart Associates</p>
+        <h2 id="h-end">Have a building in mind? <b>Let's talk.</b></h2>
+        <div class="actions">
+          <a class="btn solid" href="#start">Start your project</a>
+          <a class="btn ghost" href="tel:+441475670033">Call 01475 670033</a>
+        </div>
+      </div>
+      <address class="addr">
+        The Studio, 2 The Walled Garden<br>Southannan Estate, Fairlie<br>Largs KA29 0EX<br>
+        <a class="lnk" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Studio%2C%202%20The%20Walled%20Garden%2C%20Southannan%20Estate%2C%20Fairlie%2C%20Largs%20KA29%200EX">Open in Google Maps</a><br>
+        Office <a href="tel:+441475670033">01475 670033</a> · Mobile <a href="tel:+447850163612">07850 163612</a><br>
+        <a class="lnk" href="mailto:brian@stewart-associates.com">Email the studio</a>
+        <div class="days">Brian works Monday, Tuesday, Thursday &amp; Friday</div>
+      </address>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Stewart Associates · Architects &amp; Development Consultants</span>
+    <nav aria-label="Social">
+      <a href="https://www.facebook.com/pages/Stewart-Associates/149229545238516" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://twitter.com/ArchitectsLargs" target="_blank" rel="noopener">Twitter</a>
+    </nav>
+    <span>Mockup made for Stewart Associates by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></span>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick contact">
+  <a class="c" href="tel:+441475670033">Call 01475 670033</a>
+  <a class="s" href="#start">Start a project</a>
+</div>
+
+<script>
+(function(){
+  var f=document.getElementById('planner'),msg=document.getElementById('msg'),thanks=document.getElementById('thanks');
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function val(n){var e=f.querySelector('input[name="'+n+'"]:checked');return e?e.value:''}
+  function write(){
+    var k=val('kind').toLowerCase(),w=document.getElementById('where').value.trim()||'your area',s=val('stage'),
+        n=document.getElementById('nm').value.trim(),m=document.getElementById('more').value.trim();
+    var art=/^[aeiou]/.test(k)?'an ':'a ';
+    var t='Hello, I\'m planning '+art+'<mark>'+esc(k)+'</mark> in <mark>'+esc(w)+'</mark>, and <mark>'+esc(s)+'</mark>.';
+    if(m)t+=' '+esc(m)+(/[.!?]$/.test(m)?'':'.');
+    t+=' Could we talk it through?';
+    if(n)t+='<br>'+esc(n);
+    msg.innerHTML=t;thanks.classList.remove('on');
+  }
+  f.addEventListener('input',write);f.addEventListener('change',write);
+  f.addEventListener('submit',function(e){e.preventDefault();thanks.classList.add('on')});
+  document.querySelectorAll('[data-pick]').forEach(function(a){
+    a.addEventListener('click',function(){var r=f.querySelector('input[name="kind"][value="'+a.getAttribute('data-pick')+'"]');if(r){r.checked=true;write()}});
+  });
+  var items=document.querySelectorAll('#plist li'),count=document.getElementById('count');
+  document.querySelectorAll('.chip').forEach(function(b){
+    b.addEventListener('click',function(){
+      var p=b.getAttribute('data-place'),n=0;
+      document.querySelectorAll('.chip').forEach(function(c){c.setAttribute('aria-pressed',c===b?'true':'false')});
+      items.forEach(function(li){var on=p==='all'||li.getAttribute('data-place')===p;li.classList.toggle('off',!on);if(on)n++});
+      count.textContent=n+(n===1?' project':' projects')+(p==='all'?'':' in '+p);
+    });
+  });
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target)}})},{rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('main h2, .svc li, .gal figure, .plist, .practice figure, .facts, .planner, .qa, .addr').forEach(function(el){
+    if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('will-rise','rise');io.observe(el)}
+  });
+})();
+</script>
+</body>
+</html>
