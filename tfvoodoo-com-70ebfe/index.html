@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup tfvoodoo-com-70ebfe 1 2c6516ea -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TF VooDoo | Land Nav, Rucking and SFAS Selection Prep</title>
+<meta name="description" content="Fort Bragg, North Carolina based land nav training for U.S. Army Special Forces Assessment & Selection (SFAS), from TF VooDoo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,400;0,500;0,600;0,700;1,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0f110e;
+  --night:#161a14;
+  --pine:#1f261c;
+  --bone:#f3f1ec;
+  --stone:#a5a39d;
+  --stone-d:#5d5b55;
+  --sand:#d4b26a;
+  --line:rgba(243,241,236,.16);
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bone);color:var(--ink);font:400 17px/1.6 "Saira",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sand);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+h1,h2,h3{margin:0;line-height:1.02;letter-spacing:-.01em}
+.display{font-weight:800;font-style:italic;text-transform:none}
+.eyebrow{font-weight:600;font-size:13px;letter-spacing:.18em;text-transform:uppercase}
+
+/* Mockup banner */
+.mock{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:#e9e5da;color:#2a2b26;font-size:15px;line-height:1.3;text-align:center;border-bottom:1px solid #d6d0c1}
+.mock a{color:#2a2b26;text-decoration:underline;text-underline-offset:3px;font-weight:600}
+
+/* Header */
+.top{position:absolute;left:0;right:0;z-index:5;color:var(--bone)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:96px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;font-weight:700;font-size:18px;letter-spacing:.04em}
+.brand img{width:60px;height:60px;border-radius:50%}
+.nav{display:flex;align-items:center;gap:4px}
+.nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-size:15px;font-weight:500;opacity:.92}
+.nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:5px}
+.nav .ig{padding:0 10px}
+.nav .ig svg{width:20px;height:20px}
+
+/* Hero */
+.hero{position:relative;min-height:760px;display:flex;align-items:flex-end;color:var(--bone);background:var(--night);overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,11,.72) 0%,rgba(12,14,11,.5) 28%,rgba(12,14,11,.78) 58%,rgba(12,14,11,.95) 100%)}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-top:150px;padding-bottom:72px}
+.hero .eyebrow{color:var(--sand)}
+.hero h1{margin-top:18px;font-size:clamp(46px,7.4vw,104px);max-width:13ch}
+.hero h1 span{display:block}
+.hero p.lede{margin:24px 0 0;max-width:34em;font-size:19px;line-height:1.55;color:#e4e1d8}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;font:600 16px/1 "Saira",sans-serif;letter-spacing:.02em;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s ease,background .2s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-sand{background:var(--sand);color:var(--ink)}
+.btn-sand:hover{background:#e0c07c}
+.btn-ghost{border-color:rgba(243,241,236,.55);color:var(--bone);background:rgba(15,17,14,.25)}
+.btn-ghost:hover{border-color:var(--bone)}
+.btn-ink{background:var(--ink);color:var(--bone)}
+.hero .place{position:absolute;right:28px;bottom:30px;z-index:2;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#cfcabd}
+
+/* Rules */
+.rules{background:var(--ink);color:var(--bone);padding:92px 0 96px;border-top:1px solid var(--line)}
+.rules .wrap{display:grid;grid-template-columns:260px 1fr;gap:56px;align-items:start}
+.rules h2{font-size:15px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--sand);padding-top:16px}
+.rules h2 small{display:block;margin-top:14px;font-size:15px;letter-spacing:0;text-transform:none;font-weight:400;color:#b9b5aa;line-height:1.5;max-width:16em}
+.rules ol{list-style:none;margin:0;padding:0;counter-reset:r}
+.rules li{counter-increment:r;display:grid;grid-template-columns:72px 1fr;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--line);font-weight:800;font-style:italic;font-size:clamp(32px,4.6vw,62px);line-height:1.05}
+.rules li:first-child{border-top:1px solid var(--line)}
+.rules li::before{content:counter(r,decimal-leading-zero);font-style:normal;font-weight:500;font-size:15px;letter-spacing:.12em;color:#9d998e;transform:translateY(-.6em)}
+.rules li em{color:var(--sand)}
+
+/* Finder */
+.finder{padding:110px 0 120px;background:var(--bone)}
+.sec-head{display:flex;align-items:end;justify-content:space-between;gap:32px;margin-bottom:52px}
+.sec-head h2{font-size:clamp(38px,5vw,64px)}
+.sec-head p{margin:0;max-width:26em;color:#3d3e38}
+.finder-grid{display:grid;grid-template-columns:minmax(300px,440px) 1fr;gap:64px;align-items:center}
+.dial-box{position:relative}
+.dial{width:100%;height:auto;aspect-ratio:1}
+.dial .needle{transform-origin:200px 200px;transition:transform .9s cubic-bezier(.3,1.35,.5,1)}
+.picks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:28px}
+.pick{display:flex;align-items:center;gap:12px;min-height:56px;padding:0 16px;background:transparent;border:1.5px solid #c9c5ba;color:var(--ink);font:600 16px/1.2 "Saira",sans-serif;text-align:left;cursor:pointer;transition:border-color .2s,background .2s}
+.pick b{font-weight:500;font-size:13px;letter-spacing:.1em;color:var(--stone-d)}
+.pick:hover{border-color:var(--ink)}
+.pick[aria-selected="true"]{background:var(--ink);border-color:var(--ink);color:var(--bone)}
+.pick[aria-selected="true"] b{color:var(--sand)}
+.panel{background:#fff;border:1px solid #e1ddd2;box-shadow:0 1px 0 #e1ddd2,0 24px 50px -30px rgba(15,17,14,.35);padding:44px 44px 36px}
+.panel[hidden]{display:none}
+.panel .eyebrow{color:var(--stone-d)}
+.panel h3{margin-top:12px;font-size:clamp(32px,3.6vw,46px);font-weight:800;font-style:italic}
+.panel > p{margin:14px 0 26px;color:#3d3e38;max-width:32em}
+.res{list-style:none;margin:0;padding:0}
+.res li{border-top:1px solid #e7e3d9}
+.res li:last-child{border-bottom:1px solid #e7e3d9}
+.res a{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:58px;padding:10px 4px;text-decoration:none;font-weight:600;font-size:18px;transition:padding .2s ease,color .2s}
+.res a span{font-weight:400;font-size:14px;color:var(--stone-d);white-space:nowrap}
+.res a:hover{padding-left:12px}
+.res a svg{flex:none;width:18px;height:18px}
+
+/* Muster */
+.muster{position:relative;color:var(--bone);background:var(--pine);overflow:hidden}
+.muster .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:0;align-items:stretch;padding:0}
+.muster .d2d{position:relative;min-height:520px;display:flex;flex-direction:column;justify-content:center;padding:72px 56px;background:var(--night);color:var(--sand);overflow:hidden}
+.muster .d2d::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 79px,rgba(212,178,106,.07) 79px 80px),repeating-linear-gradient(0deg,transparent 0 79px,rgba(212,178,106,.07) 79px 80px)}
+.d2d-mark{position:relative;width:64px;height:64px;margin-bottom:28px}
+.muster .d2d-word{position:relative;margin:0;max-width:none;font-weight:800;font-style:italic;line-height:.9;letter-spacing:-.02em;font-size:clamp(76px,9vw,128px);color:var(--bone)}
+.d2d-word span,.d2d-word small{display:block}
+.d2d-word small{font-size:.26em;letter-spacing:.3em;text-transform:uppercase;color:var(--sand);margin:14px 0 10px 6px;font-style:normal;font-weight:600;line-height:1}
+.d2d-word .dawn{color:var(--sand)}
+.muster .d2d-sub{position:relative;margin:26px 0 0;padding-top:18px;border-top:1px solid rgba(212,178,106,.35);max-width:none;font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--sand)}
+.muster .copy{padding:88px 56px}
+.muster .eyebrow{color:var(--sand)}
+.muster h2{margin-top:16px;font-size:clamp(38px,4.6vw,60px)}
+.muster p{color:#d9d6cc;max-width:28em;margin:20px 0 0}
+.muster .tick{margin:30px 0 0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.muster .tick li{padding:14px 0;border-bottom:1px solid var(--line);display:flex;gap:14px;align-items:baseline}
+.muster .tick li b{font-size:13px;letter-spacing:.14em;color:var(--sand);font-weight:600;min-width:84px;text-transform:uppercase}
+
+/* About */
+.about{padding:120px 0;background:var(--bone)}
+.about .wrap{display:grid;grid-template-columns:1fr 300px;gap:80px;align-items:center}
+.about blockquote{margin:0;font-weight:700;font-size:clamp(28px,3.4vw,44px);line-height:1.2;letter-spacing:-.01em}
+.about blockquote strong{font-weight:800;font-style:italic;color:#7d6630}
+.about .who{margin-top:28px;display:flex;align-items:center;gap:16px;color:#3d3e38}
+.about .who img{width:52px;height:52px;border-radius:50%;border:1px solid #d6d0c1}
+.stamp{border-left:2px solid var(--ink);padding:6px 0 6px 28px}
+.stamp .num{font-weight:800;font-style:italic;font-size:110px;line-height:.9}
+.stamp .lab{margin-top:10px;font-weight:600;font-size:15px;letter-spacing:.12em;text-transform:uppercase}
+.stamp a{margin-top:28px}
+
+/* Books */
+.books{padding:0 0 120px;background:var(--bone)}
+.books .inner{border-top:1px solid #d6d0c1;padding-top:64px;display:grid;grid-template-columns:260px 1fr;gap:56px}
+.books h2{font-size:clamp(34px,4vw,48px)}
+.books h2 + p{margin:14px 0 0;color:#3d3e38}
+.shelf{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;column-gap:40px}
+.shelf a{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:60px;border-bottom:1px solid #d6d0c1;text-decoration:none;font-weight:700;font-style:italic;font-size:22px}
+.shelf a:hover{color:#7d6630}
+.shelf a svg{width:18px;height:18px;flex:none}
+
+/* Newsletter */
+.news{background:var(--ink);color:var(--bone);padding:110px 0}
+.news .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.news h2{font-size:clamp(38px,5vw,64px)}
+.news p{color:#cfcabd;margin:18px 0 0;max-width:30em}
+.news form{display:grid;gap:12px}
+.news label{font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#cfcabd}
+.news .row{display:flex;gap:10px}
+.news input{flex:1;min-width:0;min-height:56px;padding:0 18px;border:1.5px solid #4a4c44;background:#1b1e18;color:var(--bone);font:400 17px "Saira",sans-serif}
+.news input::placeholder{color:#8f8b80}
+.news input:focus{border-color:var(--sand);outline:none}
+.news .thanks{min-height:1.6em;margin:4px 0 0;color:var(--sand);font-weight:600}
+.news .alt{margin-top:22px;font-size:15px;color:#b9b5aa}
+.news .alt a{color:var(--bone)}
+
+/* Footer */
+footer{background:var(--night);color:#cfcabd;padding:72px 0 40px;border-top:1px solid var(--line)}
+.foot{display:grid;grid-template-columns:auto 1fr auto;gap:48px;align-items:start}
+.foot img{width:84px;height:84px;border-radius:50%}
+.foot .where b{display:block;color:var(--bone);font-weight:700;font-size:20px;font-style:italic}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,auto);column-gap:28px}
+.foot ul a{display:inline-flex;min-height:44px;align-items:center;text-decoration:none}
+.foot ul a:hover{color:var(--bone);text-decoration:underline}
+.legal{margin-top:48px;padding-top:28px;border-top:1px solid var(--line);font-size:14px;color:#a7a397;display:grid;gap:10px}
+.legal em{color:#cfcabd}
+.made{margin-top:18px;font-size:14px;color:#a7a397}
+.made a{color:#cfcabd}
+
+/* Motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+  .will-rise{opacity:1;transform:none}
+}
+
+/* Responsive */
+@media (max-width:980px){
+  .nav a.hide-md{display:none}
+  .finder-grid{grid-template-columns:1fr;gap:40px}
+  .dial-box{max-width:520px}
+  .muster .wrap{grid-template-columns:1fr}
+  .muster .d2d{min-height:0;padding:64px 28px}
+  .about .wrap{grid-template-columns:1fr;gap:48px}
+  .books .inner{grid-template-columns:1fr;gap:28px}
+  .news .wrap{grid-template-columns:1fr;gap:40px}
+  .rules .wrap{grid-template-columns:1fr;gap:28px}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{padding:0 20px}
+  .mock{font-size:14px;padding:8px 10px}
+  .top .wrap{height:80px}
+  .brand img{width:48px;height:48px}
+  .brand span{display:none}
+  .nav a.hide-sm{display:none}
+  .nav a{padding:0 9px;font-size:14px}
+  .hero{min-height:640px}
+  .hero .wrap{padding-top:120px;padding-bottom:84px}
+  .hero h1{font-size:44px}
+  .hero p.lede{font-size:17px}
+  .actions .btn{flex:1 1 100%}
+  .hero .place{left:20px;right:auto;bottom:28px}
+  .rules{padding:68px 0 72px}
+  .rules li{grid-template-columns:44px 1fr;font-size:31px;padding:18px 0}
+  .finder,.about,.news{padding:80px 0}
+  .sec-head{display:block;margin-bottom:36px}
+  .sec-head p{margin-top:14px}
+  .dial-box{max-width:none}
+  .dial{width:72%;margin:0 auto}
+  .picks{gap:8px}
+  .pick{padding:0 12px;font-size:15px;gap:8px}
+  .panel{padding:30px 22px 24px}
+  .res a{font-size:16px}
+  .res a span{display:none}
+  .muster .d2d{padding:52px 20px 48px}
+  .muster .d2d-word{font-size:76px}
+  .d2d-mark{width:52px;height:52px;margin-bottom:22px}
+  .muster .copy{padding:60px 20px 68px}
+  .muster .tick li{flex-direction:column;gap:2px}
+  .stamp .num{font-size:88px}
+  .books{padding-bottom:80px}
+  .books .inner{padding-top:48px}
+  .shelf{grid-template-columns:1fr}
+  .shelf a{font-size:20px}
+  .news .row{flex-direction:column}
+  .news .btn{width:100%}
+  .foot{grid-template-columns:1fr;gap:28px}
+}
+</style>
+</head>
+<body>
+
+<div class="mock" role="region" aria-label="Mockup notice">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="TF VooDoo, back to top">
+      <img src="https://images.squarespace-cdn.com/content/v1/63c5a92418223105b0592089/34441a9e-842d-4b05-b26b-d5e89fd097ad/TF+VooDoo+Logo+White+Black.png?format=300w" alt="TF VooDoo compass logo" width="60" height="60">
+      <span>TF VOODOO</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#finder">Prep</a>
+      <a href="#muster">Muster Tix</a>
+      <a class="hide-sm" href="#about">About</a>
+      <a class="hide-md hide-sm" href="#books">The Books</a>
+      <a class="ig" href="http://instagram.com/tf_voo_doo" aria-label="TF VooDoo on Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <img class="bg" src="https://images.squarespace-cdn.com/content/v1/63c5a92418223105b0592089/7af8bdf6-d7ba-4d4c-8035-56b5d5607862/Hoffman+-+Sand+Hills+Game+Land+-+SFAS+Special+Forces+Selection+Land+Nav.jpg?format=2500w" alt="Longleaf pines and wiregrass at Sand Hills Game Land near Hoffman, North Carolina" width="2500" height="1817">
+    <div class="wrap">
+      <p class="eyebrow">Selection prep for SFAS and beyond</p>
+      <h1 id="hero-title" class="display"><span>Land Navigation.</span><span>Rucking.</span><span>Never get lost.</span></h1>
+      <p class="lede">Fort Bragg based land nav training from Dr. David Walton, a retired Special Forces officer with 25 years of SF experience. Learn from the best.</p>
+      <div class="actions">
+        <a class="btn btn-sand" href="https://tfvoodoo.com/muster-tickets">Get muster tickets
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="#finder">Find where to start</a>
+      </div>
+    </div>
+    <p class="place">Sand Hills Game Land, NC</p>
+  </section>
+
+  <section class="rules" aria-labelledby="rules-title">
+    <div class="wrap">
+      <h2 id="rules-title">The 3 Rules<small>All the rules matter all the time.</small></h2>
+      <ol>
+        <li><span>Always look cool</span></li>
+        <li><span>Never get lost</span></li>
+        <li><span>If you get lost, <em>look cool</em></span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="finder" id="finder" aria-labelledby="finder-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="finder-title" class="display">Pick a bearing.</h2>
+        <p>What are you working on before selection? Choose one and the compass points you to the TF VooDoo resources for it.</p>
+      </div>
+      <div class="finder-grid">
+        <div class="dial-box">
+          <svg class="dial" viewBox="0 0 400 400" role="img" aria-label="Compass pointing to the chosen topic">
+            <circle cx="200" cy="200" r="186" fill="#fff" stroke="#0f110e" stroke-width="16"/>
+            <g stroke="#0f110e" stroke-width="2" opacity=".35">
+              <line x1="200" y1="34" x2="200" y2="48"/><line x1="200" y1="352" x2="200" y2="366"/>
+              <line x1="34" y1="200" x2="48" y2="200"/><line x1="352" y1="200" x2="366" y2="200"/>
+              <line x1="82.6" y1="82.6" x2="91" y2="91"/><line x1="317.4" y1="82.6" x2="309" y2="91"/>
+              <line x1="82.6" y1="317.4" x2="91" y2="309"/><line x1="317.4" y1="317.4" x2="309" y2="309"/>
+            </g>
+            <g font-family="Saira, sans-serif" font-weight="700" font-size="40" fill="#0f110e" text-anchor="middle">
+              <text x="200" y="98">T</text><text x="318" y="214">F</text><text x="200" y="334">V</text><text x="82" y="214">D</text>
+            </g>
+            <g class="needle" id="needle">
+              <line x1="200" y1="270" x2="200" y2="150" stroke="#0f110e" stroke-width="11" stroke-linecap="round"/>
+              <path d="M200 116 L222 156 L200 147 L178 156 Z" fill="#0f110e"/>
+              <path d="M200 252 l-14 18 l0 16 l14 -13 l14 13 l0 -16 Z" fill="#0f110e"/>
+              <circle cx="200" cy="200" r="9" fill="#d4b26a" stroke="#0f110e" stroke-width="3"/>
+            </g>
+          </svg>
+          <div class="picks" role="tablist" aria-label="Choose a topic">
+            <button class="pick" role="tab" id="t-nav" aria-controls="p-nav" aria-selected="true" data-deg="0"><b>000</b>Land nav</button>
+            <button class="pick" role="tab" id="t-ruck" aria-controls="p-ruck" aria-selected="false" data-deg="90" tabindex="-1"><b>090</b>Rucking</button>
+            <button class="pick" role="tab" id="t-pack" aria-controls="p-pack" aria-selected="false" data-deg="180" tabindex="-1"><b>180</b>Packing</button>
+            <button class="pick" role="tab" id="t-mind" aria-controls="p-mind" aria-selected="false" data-deg="270" tabindex="-1"><b>270</b>Mindset</button>
+          </div>
+        </div>
+
+        <div>
+          <div class="panel" role="tabpanel" id="p-nav" aria-labelledby="t-nav">
+            <p class="eyebrow">Bearing 000 · Land navigation</p>
+            <h3>Rule 2: Never get lost.</h3>
+            <p>Train with us, study on your own, and come to a land nav muster.</p>
+            <ul class="res">
+              <li><a href="https://tfvoodoo.com/land-nav-training">Land Nav Training <span>Training</span></a></li>
+              <li><a href="https://tfvoodoo.com/muster-tickets-1">Land Nav Muster Tix <span>Tickets</span></a></li>
+              <li><a href="https://tfvoodoo.com/fort-bragg-area-j">Fort Bragg, Area J <span>Ground</span></a></li>
+              <li><a href="https://tfvoodoo.com/selfstudy">Land Nav Self Study <span>Self study</span></a></li>
+            </ul>
+          </div>
+          <div class="panel" role="tabpanel" id="p-ruck" aria-labelledby="t-ruck" hidden>
+            <p class="eyebrow">Bearing 090 · Rucking</p>
+            <h3>Shut up and ruck.</h3>
+            <p>The plan, the gear and the resources, all in one place.</p>
+            <ul class="res">
+              <li><a href="https://tfvoodoo.com/s/TFVD-Ruck-Training-Plan.pdf">TFVD GPF Ruck Training Plan <span>PDF</span></a></li>
+              <li><a href="https://tfvoodoo.com/the-5-x-5">The 5 x 5 <span>Training</span></a></li>
+              <li><a href="https://tfvoodoo.com/articles/rucking-gear-manifesto">Rucking Gear Manifesto <span>Gear</span></a></li>
+              <li><a href="https://tfvoodoo.com/rucking-resources">Rucking Resources <span>Resources</span></a></li>
+            </ul>
+          </div>
+          <div class="panel" role="tabpanel" id="p-pack" aria-labelledby="t-pack" hidden>
+            <p class="eyebrow">Bearing 180 · Packing</p>
+            <h3>Show up with the right kit.</h3>
+            <p>The current packing list, gear picks and the training circulars.</p>
+            <ul class="res">
+              <li><a href="https://tfvoodoo.com/articles/sfas-packing-list-manifesto-fy26">Current SFAS Packing List Manifesto (FY26) <span>List</span></a></li>
+              <li><a href="https://tfvoodoo.com/knowledge-4">Gear Recommendations <span>Gear</span></a></li>
+              <li><a href="https://tfvoodoo.com/training-circulars">Training Circulars <span>TCs</span></a></li>
+            </ul>
+          </div>
+          <div class="panel" role="tabpanel" id="p-mind" aria-labelledby="t-mind" hidden>
+            <p class="eyebrow">Bearing 270 · Mindset</p>
+            <h3>Start in the right place.</h3>
+            <p>Straight talk for the decisions that come before selection.</p>
+            <ul class="res">
+              <li><a href="https://tfvoodoo.com/knowledge-2">Where to Start <span>Read</span></a></li>
+              <li><a href="https://tfvoodoo.com/knowledge-3">Is 18X the Best Choice? <span>Read</span></a></li>
+              <li><a href="https://tfvoodoo.com/knowledge-5">Important Decisions Require Good Counsel <span>Read</span></a></li>
+              <li><a href="https://tfvoodoo.com/knowledge-1-1">Team Room Talk <span>Read</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="muster" id="muster" aria-labelledby="muster-title">
+    <div class="wrap">
+      <div class="d2d" aria-hidden="true">
+        <svg class="d2d-mark" viewBox="0 0 120 120"><circle cx="60" cy="60" r="54" fill="none" stroke="currentColor" stroke-width="5"/><g font-family="Saira, sans-serif" font-weight="700" font-size="17" fill="currentColor" text-anchor="middle"><text x="60" y="27">T</text><text x="96" y="66">F</text><text x="60" y="104">V</text><text x="24" y="66">D</text></g><path d="M60 38l7 22-7 22-7-22z" fill="currentColor"/></svg>
+        <p class="d2d-word"><span>Dusk</span><small>To</small><span class="dawn">Dawn</span></p>
+        <p class="d2d-sub">Hybrid Series</p>
+      </div>
+      <div class="copy">
+        <p class="eyebrow">Land nav musters</p>
+        <h2 id="muster-title" class="display">Get on the ground.</h2>
+        <p>Land nav musters from TF VooDoo. Join the newsletter to hear about the next one before anyone else, then grab your ticket.</p>
+        <ul class="tick">
+          <li><b>Series</b><span>Dusk To Dawn Hybrid</span></li>
+          <li><b>Focus</b><span>Land navigation for SFAS</span></li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn-sand" href="https://tfvoodoo.com/muster-tickets-store-bBQgA/p/eehg1oca6a9pb6d4lqj1ymmpulji2a">Get muster tickets
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <div>
+        <h2 id="about-title" class="eyebrow" style="color:#5d5b55;margin-bottom:22px">About TF VooDoo</h2>
+        <blockquote>Dr. David Walton is a retired Special Forces officer, a subject matter expert in SFAS and an accomplished Land Navigation specialist. <strong>Learn from the best.</strong></blockquote>
+        <div class="who">
+          <img src="https://images.squarespace-cdn.com/content/v1/63c5a92418223105b0592089/34441a9e-842d-4b05-b26b-d5e89fd097ad/TF+VooDoo+Logo+White+Black.png?format=300w" alt="" width="52" height="52">
+          <span>Dr. David Walton, aka TF VooDoo</span>
+        </div>
+      </div>
+      <div class="stamp">
+        <div class="num">25</div>
+        <div class="lab">Years of SF experience</div>
+        <a class="btn btn-ink" href="https://tfvoodoo.com/about">About TF VooDoo
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="books" id="books" aria-labelledby="books-title">
+    <div class="wrap">
+      <div class="inner">
+        <div>
+          <h2 id="books-title" class="display">The Books.</h2>
+          <p>Reading for the road to selection.</p>
+        </div>
+        <ul class="shelf">
+          <li><a href="https://tfvoodoo.com/ruck-up-or-shut-up-special-forces-assessment-selection-sfas-book-1-1">Shut Up And Ruck<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a></li>
+          <li><a href="https://tfvoodoo.com/ruck-up-or-shut-up-special-forces-assessment-selection-sfas-book-3">Ruck Up Or Shut Up<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a></li>
+          <li><a href="https://tfvoodoo.com/shut-up-and-rasp">Shut Up And RASP<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a></li>
+          <li><a href="https://tfvoodoo.com/ruck-up-or-shut-up-special-forces-assessment-selection-sfas-book-2-1-1-1">SUAR Field Annex<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a></li>
+          <li><a href="https://tfvoodoo.com/ruck-up-or-shut-up-special-forces-assessment-selection-sfas-book-2-1">Never Get Lost<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a></li>
+          <li><a href="https://tfvoodoo.com/ruck-up-or-shut-up-special-forces-assessment-selection-sfas-book-2-1-1">The Family Business<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a></li>
+          <li><a href="https://tfvoodoo.com/mercer">Mercer<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="news" id="news" aria-labelledby="news-title">
+    <div class="wrap">
+      <div>
+        <h2 id="news-title" class="display">Hear it first.</h2>
+        <p>Get the latest updates on land nav musters, writings, and other comms from TF VooDoo before anyone else.</p>
+      </div>
+      <div>
+        <form id="signup" novalidate>
+          <label for="email">Subscribe to the newsletter</label>
+          <div class="row">
+            <input id="email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+            <button class="btn btn-sand" type="submit">Sign up</button>
+          </div>
+          <p class="thanks" id="thanks" role="status" aria-live="polite"></p>
+        </form>
+        <p class="alt">Ready for the ground? <a href="https://tfvoodoo.com/muster-tickets">Get muster tickets</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <img src="https://images.squarespace-cdn.com/content/v1/63c5a92418223105b0592089/34441a9e-842d-4b05-b26b-d5e89fd097ad/TF+VooDoo+Logo+White+Black.png?format=300w" alt="TF VooDoo" width="84" height="84" loading="lazy">
+      <div class="where"><b>The Center of the Universe</b>Fort Bragg, NC, USA</div>
+      <ul>
+        <li><a href="https://tfvoodoo.com/about">About</a></li>
+        <li><a href="https://tfvoodoo.com/land-nav-training">Land Nav Training</a></li>
+        <li><a href="https://tfvoodoo.com/knowledge">Articles</a></li>
+        <li><a href="https://tfvoodoo.com/muster-tickets">Muster Tix</a></li>
+        <li><a href="https://tfvoodoo.com/store-2">Merch</a></li>
+        <li><a href="https://tfvoodoo.com/contact">Contact</a></li>
+        <li><a href="http://instagram.com/tf_voo_doo">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="legal">
+      <span>TF VooDoo is not endorsed by the Department of Defense, the U.S. Army, or USAJFKSWCS. No affiliation is implied, nor are any confidential tactics, techniques, or procedures disclosed.</span>
+      <em>All the rules matter all the time.</em>
+    </div>
+    <p class="made">Mockup made for TF VooDoo by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // Compass finder
+  var tabs=[].slice.call(document.querySelectorAll('.pick'));
+  var needle=document.getElementById('needle');
+  var turn=0;
+  function select(tab,focus){
+    tabs.forEach(function(t){
+      var on=t===tab;
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex=on?0:-1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden=!on;
+    });
+    var deg=+tab.dataset.deg, cur=((turn%360)+360)%360, diff=deg-cur;
+    if(diff>180)diff-=360; if(diff<-180)diff+=360;
+    turn+=diff;
+    needle.style.transform='rotate('+turn+'deg)';
+    if(focus)tab.focus();
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){select(t)});
+    t.addEventListener('keydown',function(e){
+      var k=e.key, n=null;
+      if(k==='ArrowRight'||k==='ArrowDown')n=tabs[(i+1)%tabs.length];
+      if(k==='ArrowLeft'||k==='ArrowUp')n=tabs[(i+tabs.length-1)%tabs.length];
+      if(n){e.preventDefault();select(n,true)}
+    });
+  });
+
+  // Newsletter
+  var form=document.getElementById('signup');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    document.getElementById('thanks').textContent="Thanks, you're on the list.";
+  });
+
+  // Gentle rise for things below the first screen
+  if(!('IntersectionObserver' in window))return;
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var items=document.querySelectorAll('.rules li,.sec-head,.dial-box,.panel,.muster .copy,.about blockquote,.stamp,.shelf li,.news .wrap > div');
+  var fold=window.innerHeight;
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target)}
+    });
+  },{rootMargin:'0px 0px -8% 0px'});
+  [].forEach.call(items,function(el){
+    if(el.getBoundingClientRect().top>fold){
+      el.classList.add('rise','will-rise');
+      io.observe(el);
+    }
+  });
+})();
+</script>
+</body>
+</html>
