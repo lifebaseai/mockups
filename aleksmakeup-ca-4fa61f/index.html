@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<!-- mockup aleksmakeup-ca-4fa61f 1 569ebadd -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aleks Makeup | Makeup artist and SFX creator, Mississauga, Ontario</title>
+<meta name="description" content="Professional makeup artist and SFX creator from Mississauga, Ontario.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=Inter:wght@400;500;600&family=Kaushan+Script&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#141414; --ink-2:#474747; --paper:#fff; --mist:#f6f7f9; --line:#e6e6e6;
+  --red:#c8102e; --red-dark:#a00c24; --yellow:#ffd21f; --yellow-soft:#fff4c2;
+  --wrap:1160px; --r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:Archivo,Inter,sans-serif;line-height:1.04;letter-spacing:-.02em;margin:0}
+p{margin:0}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:#fff;padding:10px 14px;z-index:30}
+.skip:focus{top:52px}
+
+/* Signal Set banner */
+.ss-banner{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:var(--ink);color:#fff;font-size:15px;line-height:1.3;text-align:center;white-space:nowrap}
+.ss-banner a{color:var(--yellow);text-decoration:underline;text-underline-offset:3px;font-weight:600}
+
+/* Header */
+.site-head{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.mark{display:inline-flex;flex-direction:column;align-items:center;text-decoration:none;line-height:1;position:relative}
+.mark b{font:400 34px/1 "Kaushan Script",cursive;color:var(--ink);position:relative;z-index:1}
+.mark svg{position:absolute;left:-4px;right:-4px;bottom:6px;width:calc(100% + 8px);height:12px}
+.mark small{font:500 9.5px/1 Inter,sans-serif;letter-spacing:.42em;margin:2px 0 0 .42em;color:var(--ink)}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{text-decoration:none;font-weight:500;font-size:15px;padding:12px 14px;border-radius:999px;min-height:44px;display:inline-flex;align-items:center}
+.nav a:hover{background:var(--mist)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 26px;border-radius:999px;font:600 16px/1 Inter,sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s ease,background .2s ease,box-shadow .2s ease}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 8px 20px -10px rgba(200,16,46,.7)}
+.btn-red:hover{background:var(--red-dark);transform:translateY(-1px)}
+.btn-line{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-line:hover{background:var(--ink);color:#fff}
+.nav .btn{min-height:44px;padding:0 20px;font-size:15px;margin-left:8px}
+.nav .btn:hover{background:var(--red-dark)}
+
+/* Hero */
+.hero{padding:72px 0 88px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.eyebrow i{width:10px;height:10px;border-radius:50%;background:var(--yellow);box-shadow:0 0 0 3px var(--ink) inset}
+h1{margin-top:20px}
+h1 .name{display:block;font:400 clamp(40px,4.6vw,56px)/1 "Kaushan Script",cursive;letter-spacing:0;margin-bottom:12px}
+h1 .big{display:block;font-weight:800;font-size:clamp(46px,6.4vw,84px)}
+.hl{background:linear-gradient(transparent 58%,var(--yellow) 58%,var(--yellow) 92%,transparent 92%);padding:0 .06em}
+.lede{margin-top:26px;font-size:19px;color:var(--ink-2);max-width:31em}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.where{margin-top:26px;font-size:14.5px;color:var(--ink-2)}
+.where a{font-weight:500}
+.portrait{position:relative;justify-self:center;width:100%;max-width:400px}
+.portrait::before{content:"";position:absolute;inset:26px -22px -22px 26px;background:var(--yellow);border-radius:22px;z-index:0}
+.portrait img{position:relative;z-index:1;width:100%;border-radius:18px;box-shadow:0 30px 60px -30px rgba(0,0,0,.55)}
+.portrait figcaption{position:absolute;z-index:2;left:-26px;bottom:34px;background:#fff;border-radius:999px;padding:10px 18px 10px 12px;font-size:14px;font-weight:600;display:flex;align-items:center;gap:10px;box-shadow:0 12px 30px -14px rgba(0,0,0,.4)}
+.portrait figcaption span{width:28px;height:28px;border-radius:50%;background:var(--yellow);display:grid;place-items:center;font:400 16px/1 "Kaushan Script",cursive}
+
+/* Two ways */
+.ways{padding:96px 0;background:var(--mist)}
+.kicker{font-size:14px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--red)}
+h2{font-weight:800;font-size:clamp(34px,4.4vw,54px);margin-top:12px}
+.ways-head{display:flex;justify-content:space-between;align-items:end;gap:32px;flex-wrap:wrap}
+.ways-head p{max-width:27em;color:var(--ink-2);font-size:17px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:48px}
+.way{border-radius:22px;padding:40px 40px 36px;position:relative;overflow:hidden;min-height:340px;display:flex;flex-direction:column}
+.way h3{font-size:clamp(30px,3vw,40px);font-weight:800;margin-top:auto}
+.way p{margin-top:14px;font-size:17px;max-width:24em}
+.way .tag{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+.way-soft{background:#f3e5da;color:var(--ink)}
+.way-soft .tag{color:#7a4b33}
+.way-bold{background:var(--ink);color:#fff}
+.way-bold .tag{color:var(--yellow)}
+.way-bold p{color:#e2e2e2}
+.dots{display:flex;gap:10px;margin:26px 0 30px}
+.dots span{width:38px;height:38px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)}
+.way-bold .dots span{box-shadow:none}
+.way a{margin-top:26px;align-self:flex-start;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;min-height:44px;border-bottom:2px solid currentColor;padding-top:6px}
+.way-bold a{color:var(--yellow)}
+
+/* About */
+.about{padding:110px 0}
+.about .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+.about h2 .script{font:400 1.05em/1 "Kaushan Script",cursive;letter-spacing:0}
+.about-body p{font-size:18px;color:var(--ink-2);margin-top:18px}
+.about-body p:first-child{margin-top:0}
+blockquote{margin:40px 0 0;padding:28px 30px;border-left:6px solid var(--yellow);background:var(--yellow-soft);border-radius:0 16px 16px 0;font:600 clamp(21px,2.2vw,26px)/1.35 Archivo,sans-serif;letter-spacing:-.01em;color:var(--ink)}
+.fav{display:inline-flex;align-items:center;gap:12px;margin-top:30px;font-weight:600}
+.fav span{width:44px;height:44px;border-radius:12px;background:var(--yellow);transform:rotate(-6deg)}
+
+/* Booking planner */
+.book{padding:100px 0 110px;background:var(--ink);color:#fff}
+.book .kicker{color:var(--yellow)}
+.book-head p{color:#d6d6d6;font-size:17px;margin-top:16px;max-width:32em}
+.planner{display:grid;grid-template-columns:1.25fr .75fr;gap:28px;margin-top:48px;align-items:start}
+form.plan{background:#fff;color:var(--ink);border-radius:22px;padding:36px}
+fieldset{border:0;margin:0 0 28px;padding:0}
+legend,.lab{font-weight:600;font-size:15px;margin-bottom:12px;display:block;padding:0}
+legend em{font-style:normal;color:var(--red);margin-right:8px}
+.choices{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.choice{position:relative}
+.choice input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.choice label{display:block;border:2px solid var(--line);border-radius:14px;padding:16px 18px;cursor:pointer;transition:border-color .2s,background .2s;min-height:44px}
+.choice label b{display:block;font-size:16px}
+.choice label span{display:block;font-size:14px;color:var(--ink-2);margin-top:2px}
+.choice input:checked+label{border-color:var(--ink);background:var(--yellow-soft);box-shadow:inset 0 0 0 1px var(--ink)}
+.choice input:focus-visible+label{outline:3px solid var(--red);outline-offset:2px}
+.moods{display:flex;flex-wrap:wrap;gap:10px}
+.mood{position:relative}
+.mood input{position:absolute;opacity:0;inset:0;margin:0;width:100%;height:100%;cursor:pointer}
+.mood label{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:6px 16px 6px 8px;border:2px solid var(--line);border-radius:999px;cursor:pointer;font-weight:500;font-size:15px}
+.mood label i{display:flex;width:44px;height:26px;border-radius:999px;overflow:hidden}
+.mood label i s{flex:1}
+.mood input:checked+label{border-color:var(--ink);background:var(--yellow-soft)}
+.mood input:focus-visible+label{outline:3px solid var(--red);outline-offset:2px}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field label{display:block;font-weight:600;font-size:15px;margin-bottom:8px}
+.field.full{grid-column:1/-1}
+input[type=text],input[type=date],input[type=email],textarea{width:100%;font:inherit;font-size:16px;color:var(--ink);border:2px solid var(--line);border-radius:12px;padding:12px 14px;min-height:48px;background:#fff}
+textarea{min-height:96px;resize:vertical}
+input:focus,textarea:focus{border-color:var(--ink);outline:none;box-shadow:0 0 0 3px var(--yellow)}
+.send{margin-top:24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.thanks{font-weight:600;color:var(--ink)}
+.thanks[hidden]{display:none}
+.card{position:sticky;top:96px;background:#fff;color:var(--ink);border-radius:22px;overflow:hidden}
+.card .strip{display:flex;height:84px;transition:all .4s}
+.card .strip s{flex:1;transition:background .45s ease}
+.card .inner{padding:26px 28px 30px}
+.card .label{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.card h3{font-size:28px;font-weight:800;margin-top:6px}
+.card dl{margin:20px 0 0;display:grid;gap:14px}
+.card dt{font-size:13px;color:var(--ink-2)}
+.card dd{margin:2px 0 0;font-weight:600}
+.card .from{margin-top:22px;padding-top:18px;border-top:1px dashed #cfcfcf;font-size:14px;color:var(--ink-2)}
+.card .from b{font:400 22px/1 "Kaushan Script",cursive;color:var(--ink)}
+
+/* Close */
+.close{padding:110px 0;text-align:center}
+.close h2{font-size:clamp(38px,5.4vw,68px)}
+.close p{margin:20px auto 0;max-width:30em;color:var(--ink-2);font-size:18px}
+.close .actions{justify-content:center}
+
+footer{border-top:1px solid var(--line);background:var(--mist);padding:48px 0 calc(40px + env(safe-area-inset-bottom))}
+footer .wrap{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+footer p{font-size:15px;color:var(--ink-2)}
+footer .made{margin-top:14px;font-size:14px}
+
+/* Motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+@keyframes swoosh{from{stroke-dashoffset:120}to{stroke-dashoffset:0}}
+.mark path{stroke-dasharray:120;animation:swoosh .9s .2s ease-out both}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+
+/* Tablet */
+@media (max-width:960px){
+  .hero .wrap,.about .wrap,.planner{grid-template-columns:1fr}
+  .hero .wrap{gap:56px}
+  .about .wrap{gap:32px}
+  .card{position:static}
+}
+/* Phone */
+@media (max-width:640px){
+  .wrap{padding:0 20px}
+  .ss-banner{font-size:14px;padding:8px 10px}
+  .nav a:not(.btn){display:none}
+  .nav .btn{margin-left:0}
+  .site-head .wrap{height:62px}
+  .mark b{font-size:30px}
+  .hero{padding:40px 0 64px}
+  .eyebrow{font-size:12.5px}
+  .lede{font-size:17px;margin-top:20px}
+  .actions .btn{flex:1 1 100%}
+  .portrait{max-width:330px}
+  .portrait::before{inset:18px -14px -14px 18px}
+  .portrait figcaption{left:-10px;bottom:22px}
+  .ways,.about,.book,.close{padding:68px 0}
+  .pair{grid-template-columns:1fr;margin-top:32px;gap:16px}
+  .way{padding:30px 26px 26px;min-height:0}
+  .way h3{margin-top:0}
+  .dots{margin:20px 0 22px}
+  form.plan{padding:24px 20px}
+  .choices,.fields{grid-template-columns:1fr}
+  blockquote{padding:22px 22px}
+  .card{order:-1}
+  .card .strip{height:56px}
+  .card dl{grid-template-columns:1fr 1fr;gap:14px 16px}
+}
+</style>
+</head>
+<body>
+<div class="ss-banner" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Aleks Makeup, home">
+      <b aria-hidden="true">aleks</b>
+      <svg viewBox="0 0 120 12" preserveAspectRatio="none" aria-hidden="true"><path d="M3 8 C 30 2, 70 1, 117 5" fill="none" stroke="#c8102e" stroke-width="5" stroke-linecap="round"/></svg>
+      <small aria-hidden="true">makeup</small>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#looks">Looks</a>
+      <a href="#about">About me</a>
+      <a class="btn btn-red" href="#book">Book now</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow"><i aria-hidden="true"></i>Makeup artist &amp; SFX creator</p>
+        <h1 id="hero-title"><span class="name">Aleks Makeup</span><span class="big">See yourself in a <span class="hl">whole new</span> way.</span></h1>
+        <p class="lede">Your natural features, enhanced. Or a dramatic, full SFX transformation. Bright, bold makeup from Mississauga, Ontario.</p>
+        <div class="actions">
+          <a class="btn btn-red" href="#book">Book now</a>
+          <a class="btn btn-line" href="#looks">See the two looks</a>
+        </div>
+      </div>
+      <figure class="portrait">
+        <img src="https://aleksmakeup.ca/uploads/gallery/598727476b517e41738999db3625d47a.jpeg" width="960" height="1354" alt="Aleks at a lit makeup mirror, with brushes and products on the table">
+        <figcaption><span aria-hidden="true">A</span>Hi, I'm Aleks</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="ways" id="looks" aria-labelledby="ways-title">
+    <div class="wrap">
+      <div class="ways-head">
+        <div>
+          <p class="kicker">What I do</p>
+          <h2 id="ways-title">Subtle or striking.<br>Your call.</h2>
+        </div>
+        <p>Whether it's enhancing your natural features or a dramatic transformation, the goal is the same: that moment you see yourself in a whole new way.</p>
+      </div>
+      <div class="pair">
+        <article class="way way-soft">
+          <p class="tag">Enhance</p>
+          <div class="dots" aria-hidden="true"><span style="background:#f1d2bd"></span><span style="background:#d9a184"></span><span style="background:#b46f55"></span><span style="background:#c8102e"></span></div>
+          <h3>Your natural features, brought forward.</h3>
+          <p>Makeup that looks like you on your best day, and leaves you feeling confident in your own face.</p>
+          <a href="#book" data-look="enhance">Plan an enhance look <span aria-hidden="true">&rarr;</span></a>
+        </article>
+        <article class="way way-bold">
+          <p class="tag">Transform</p>
+          <div class="dots" aria-hidden="true"><span style="background:#ffd21f"></span><span style="background:#ff6b1a"></span><span style="background:#c8102e"></span><span style="background:#2b7bff"></span></div>
+          <h3>Dramatic looks and SFX.</h3>
+          <p>Bright, bold colour and special effects for when you want to take on a whole new face.</p>
+          <a href="#book" data-look="sfx">Plan a transformation <span aria-hidden="true">&rarr;</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <div>
+        <p class="kicker">About me</p>
+        <h2 id="about-title">Hi, I'm <span class="script">Aleks</span>.</h2>
+        <p class="fav"><span aria-hidden="true"></span>Favourite colour: yellow.</p>
+      </div>
+      <div class="about-body">
+        <p>I'm a makeup artist and SFX creator from Mississauga, Ontario. I love working with bright, bold colours that bring energy and creativity to my looks.</p>
+        <p>Makeup has always been my way to express myself and take on new faces. Now, I love helping others feel that same confidence in their own face, and I enjoy seeing people's reactions when they see themselves in a whole new way.</p>
+        <blockquote>Makeup isn't just a skill. It's a form of self&#8209;expression, creativity, and connection.</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="book" id="book" aria-labelledby="book-title">
+    <div class="wrap">
+      <div class="book-head">
+        <p class="kicker">Book now</p>
+        <h2 id="book-title">Plan your look.</h2>
+        <p>Pick a direction and a colour mood, tell me the date and the idea, and your request is ready to send.</p>
+      </div>
+      <div class="planner">
+        <form class="plan" id="plan" novalidate>
+          <fieldset>
+            <legend><em>1</em>Which look?</legend>
+            <div class="choices">
+              <div class="choice"><input type="radio" name="look" id="look-enhance" value="Enhance my natural features"><label for="look-enhance"><b>Enhance</b><span>My natural features, brought forward</span></label></div>
+              <div class="choice"><input type="radio" name="look" id="look-sfx" value="Dramatic or SFX transformation" checked><label for="look-sfx"><b>Transform</b><span>A dramatic or SFX look</span></label></div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend><em>2</em>Colour mood</legend>
+            <div class="moods">
+              <div class="mood"><input type="radio" name="mood" id="m-soft" value="Soft and natural" data-c="#f6e3d6,#e9c2a8,#d39a7c,#a8644c"><label for="m-soft"><i aria-hidden="true"><s style="background:#e9c2a8"></s><s style="background:#a8644c"></s></i>Soft and natural</label></div>
+              <div class="mood"><input type="radio" name="mood" id="m-bold" value="Bright and bold" data-c="#ffd21f,#ff6b1a,#c8102e,#2b7bff" checked><label for="m-bold"><i aria-hidden="true"><s style="background:#ffd21f"></s><s style="background:#c8102e"></s></i>Bright and bold</label></div>
+              <div class="mood"><input type="radio" name="mood" id="m-dark" value="Dark and dramatic" data-c="#141414,#5a0f1f,#c8102e,#8a8a8a"><label for="m-dark"><i aria-hidden="true"><s style="background:#141414"></s><s style="background:#5a0f1f"></s></i>Dark and dramatic</label></div>
+              <div class="mood"><input type="radio" name="mood" id="m-yellow" value="All the yellow" data-c="#fff4c2,#ffe36b,#ffd21f,#e0a800"><label for="m-yellow"><i aria-hidden="true"><s style="background:#ffe36b"></s><s style="background:#e0a800"></s></i>All the yellow</label></div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend><em>3</em>Your details</legend>
+            <div class="fields">
+              <div class="field"><label for="f-name">Your name</label><input type="text" id="f-name" name="name" autocomplete="name"></div>
+              <div class="field"><label for="f-date">Date</label><input type="date" id="f-date" name="date"></div>
+              <div class="field full"><label for="f-reach">Email or phone</label><input type="text" id="f-reach" name="reach" autocomplete="email"></div>
+              <div class="field full"><label for="f-idea">The idea or occasion</label><textarea id="f-idea" name="idea" placeholder="Tell me what you have in mind"></textarea></div>
+            </div>
+          </fieldset>
+          <div class="send">
+            <button class="btn btn-red" type="submit">Send my request</button>
+            <p class="thanks" id="thanks" role="status" hidden>Thanks. This is a mockup, so nothing was sent.</p>
+          </div>
+        </form>
+
+        <aside class="card" aria-label="Your request so far">
+          <div class="strip" id="strip" aria-hidden="true"><s style="background:#ffd21f"></s><s style="background:#ff6b1a"></s><s style="background:#c8102e"></s><s style="background:#2b7bff"></s></div>
+          <div class="inner">
+            <p class="label">Your request</p>
+            <h3 id="c-title">Transform</h3>
+            <dl>
+              <div><dt>Look</dt><dd id="c-look">Dramatic or SFX transformation</dd></div>
+              <div><dt>Colour mood</dt><dd id="c-mood">Bright and bold</dd></div>
+              <div><dt>Date</dt><dd id="c-date">Pick any date</dd></div>
+              <div><dt>For</dt><dd id="c-name">You</dd></div>
+            </dl>
+            <p class="from">A request for <b>aleks makeup</b></p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="close" aria-labelledby="close-title">
+    <div class="wrap">
+      <h2 id="close-title">Ready for a <span class="hl">whole new</span> face?</h2>
+      <p>Natural, dramatic or full SFX. Plan your look and send it over.</p>
+      <div class="actions">
+        <a class="btn btn-red" href="#book">Book now</a>
+        <a class="btn btn-line" href="https://aleksmakeup.ca/">See the portfolio</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Aleks Makeup, back to top">
+      <b aria-hidden="true">aleks</b>
+      <svg viewBox="0 0 120 12" preserveAspectRatio="none" aria-hidden="true"><path d="M3 8 C 30 2, 70 1, 117 5" fill="none" stroke="#c8102e" stroke-width="5" stroke-linecap="round"/></svg>
+      <small aria-hidden="true">makeup</small>
+    </a>
+    <p>Aleks Makeup - Professional Makeup Artist<br>Mississauga, Ontario</p>
+    <p class="made">Mockup made for aleksmakeup.ca by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var form=document.getElementById('plan');
+  var strip=document.getElementById('strip').children;
+  var $=function(id){return document.getElementById(id)};
+  function update(){
+    var look=form.querySelector('input[name=look]:checked');
+    var mood=form.querySelector('input[name=mood]:checked');
+    $('c-title').textContent=look.id==='look-sfx'?'Transform':'Enhance';
+    $('c-look').textContent=look.value;
+    $('c-mood').textContent=mood.value;
+    mood.getAttribute('data-c').split(',').forEach(function(c,i){strip[i].style.background=c});
+    var d=form.date.value;
+    if(d){var p=d.split('-');var dt=new Date(+p[0],p[1]-1,+p[2]);$('c-date').textContent=dt.toLocaleDateString('en-CA',{weekday:'short',month:'long',day:'numeric',year:'numeric'});}
+    else $('c-date').textContent='Pick any date';
+    $('c-name').textContent=form.name.value.trim()||'You';
+    $('thanks').hidden=true;
+  }
+  form.addEventListener('input',update);
+  form.addEventListener('change',update);
+  form.addEventListener('submit',function(e){e.preventDefault();$('thanks').hidden=false;});
+  document.querySelectorAll('[data-look]').forEach(function(a){
+    a.addEventListener('click',function(){
+      $(a.getAttribute('data-look')==='sfx'?'look-sfx':'look-enhance').checked=true;
+      $(a.getAttribute('data-look')==='sfx'?'m-bold':'m-soft').checked=true;
+      update();
+    });
+  });
+
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  var items=document.querySelectorAll('.ways-head,.way,.about .wrap>div,.planner>*,.close .wrap');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target);}})},{rootMargin:'0px 0px -8% 0px'});
+  items.forEach(function(el){
+    if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('rise','will-rise');io.observe(el);}
+  });
+})();
+</script>
+</body>
+</html>
