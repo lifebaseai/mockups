@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup altovineyards-net-74d4c9 1 054f21c4 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alto Vineyards · Southern Illinois’ oldest winery · Alto Pass &amp; Champaign</title>
+<meta name="description" content="Alto Vineyards, Southern Illinois’ oldest winery. Twenty-two wines, sweet to dry, at two tasting rooms in Alto Pass and Champaign.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wine:#5d1123; --claret:#8a1535; --rose:#be1d49;
+  --cream:#fbf6ec; --paper:#fffdf8; --straw:#f0e0ad; --blush:#f5e6e7;
+  --ink:#2b1117; --muted:#5f4a4e; --line:#e8dccb;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 18px/1.6 var(--body);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--claret)}
+:focus-visible{outline:3px solid var(--rose);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1160px,100% - 48px);margin-inline:auto}
+.skip{position:absolute;left:12px;top:-60px;background:var(--wine);color:#fff;padding:10px 14px;border-radius:8px;z-index:50}
+.skip:focus{top:56px}
+
+/* Mockup banner */
+.mock{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:#2a0a12;color:#f6ead9;font:400 15px/1.3 var(--body);text-align:center;width:100%}
+.mock a{color:#ffd9a8;text-decoration:underline;text-underline-offset:3px}
+
+/* Header */
+.top{background:var(--blush);border-bottom:1px solid #ead2d5;position:sticky;top:0;z-index:20}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:78px}
+.logo img{height:58px;width:auto;mix-blend-mode:multiply}
+.nav{display:flex;align-items:center;gap:28px}
+.nav a{color:var(--wine);text-decoration:none;font-size:16px;padding:10px 0}
+.nav a:hover{text-decoration:underline;text-underline-offset:5px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 24px;border-radius:999px;font:600 16px/1.2 var(--body);text-decoration:none;border:1.5px solid var(--wine);cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.btn-main{background:var(--wine);color:#fff}
+.btn-main:hover{background:var(--claret);border-color:var(--claret)}
+.btn-ghost{background:transparent;color:var(--wine)}
+.btn-ghost:hover{background:var(--wine);color:#fff}
+.nav .btn{padding:10px 20px;min-height:44px;color:#fff}
+.nav .btn:hover{text-decoration:none}
+
+/* Hero */
+.hero{padding:64px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.kicker{display:block;font:600 14px/1.2 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--rose);margin-bottom:22px}
+h1,h2,h3{font-family:var(--display);font-weight:600;color:var(--wine);margin:0;letter-spacing:-.01em}
+h1{font-size:clamp(42px,5.4vw,72px);line-height:1.02}
+h1 em,h2 em{font-style:italic;font-weight:400;color:var(--claret)}
+.lede{font-size:21px;line-height:1.55;color:var(--muted);max-width:30em;margin:26px 0 34px}
+.actions{display:flex;flex-wrap:wrap;gap:14px}
+.arch{position:relative;justify-self:end;width:100%;max-width:500px}
+.arch img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 70%;border-radius:50% 50% 14px 14px / 40% 40% 14px 14px;box-shadow:0 30px 60px -30px rgba(93,17,35,.45)}
+.arch .stamp{position:absolute;left:-28px;bottom:36px;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:14px 18px;box-shadow:0 14px 30px -18px rgba(43,17,23,.4);font-size:15px;line-height:1.35;color:var(--muted)}
+.stamp b{display:block;font:600 26px/1.1 var(--display);color:var(--wine)}
+
+/* Proof strip */
+.proof{border-block:1px solid var(--line);background:var(--paper)}
+.proof ul{list-style:none;margin:0 auto;padding:30px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.proof li{padding-left:20px;border-left:2px solid var(--straw)}
+.proof b{display:block;font:600 34px/1.05 var(--display);color:var(--wine)}
+.proof span{font-size:15px;color:var(--muted)}
+
+/* Quote */
+.quote{background:var(--straw);padding:84px 0;text-align:center}
+.quote blockquote{margin:0 auto;max-width:17em;text-wrap:balance;font:italic 400 clamp(30px,3.6vw,46px)/1.2 var(--display);color:var(--wine)}
+.quote p{margin:18px 0 0;font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:#6b2a37}
+
+section{scroll-margin-top:90px}
+.sec{padding:96px 0}
+.head{max-width:40em;margin-bottom:44px}
+h2{font-size:clamp(34px,4vw,52px);line-height:1.06}
+.head p{color:var(--muted);font-size:19px;margin:16px 0 0}
+
+/* Planner */
+.planner{background:var(--paper);border:1px solid var(--line);border-radius:24px;box-shadow:0 30px 60px -40px rgba(43,17,23,.35);overflow:hidden}
+.tabs{display:flex;gap:6px;padding:10px;background:var(--blush);border-bottom:1px solid #ead2d5}
+.tab{flex:1;min-height:56px;border:0;border-radius:16px;background:transparent;font:600 18px/1.2 var(--display);color:var(--wine);cursor:pointer;transition:background .2s,box-shadow .2s}
+.tab small{display:block;font:400 14px/1.3 var(--body);color:var(--muted);margin-top:2px}
+.tab[aria-pressed="true"]{background:var(--paper);box-shadow:0 6px 18px -10px rgba(93,17,35,.5)}
+.pbody{display:grid;grid-template-columns:400px 1fr;gap:44px;padding:36px}
+.place img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:14px}
+.place .addr{margin:18px 0 4px;font:600 22px/1.25 var(--display);color:var(--wine)}
+.place p{margin:0;color:var(--muted);font-size:16px}
+.place .row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.place .btn{min-height:44px;padding:10px 18px;font-size:15px}
+.status{display:flex;align-items:center;gap:12px;font:600 26px/1.2 var(--display);color:var(--wine);margin:0 0 6px;min-height:34px}
+.dot{width:12px;height:12px;border-radius:50%;background:#2f7d4a;box-shadow:0 0 0 5px rgba(47,125,74,.15);flex:none}
+.dot.off{background:#a0646f;box-shadow:0 0 0 5px rgba(160,100,111,.15)}
+.substatus{margin:0 0 22px;color:var(--muted);font-size:16px}
+.axis{display:grid;grid-template-columns:62px 1fr 116px;font-size:13px;color:var(--muted);margin-bottom:6px}
+.axis div{display:flex;justify-content:space-between}
+.week{list-style:none;margin:0;padding:0}
+.day{width:100%;display:grid;grid-template-columns:62px 1fr 116px;align-items:center;min-height:46px;padding:0;border:0;background:none;font:400 16px/1 var(--body);color:var(--ink);cursor:pointer;border-radius:10px;text-align:left}
+.day:hover .track{background:#efe2c4}
+.day .d{font-weight:600;padding-left:10px}
+.track{position:relative;height:14px;border-radius:99px;background:#f5ecd8;transition:background .2s}
+.bar{position:absolute;left:0;top:0;bottom:0;border-radius:99px;background:var(--claret);transition:width .5s cubic-bezier(.2,.7,.2,1)}
+.day .h{text-align:right;padding-right:10px;color:var(--muted);font-size:15px}
+.day[aria-pressed="true"]{background:var(--blush)}
+.day[aria-pressed="true"] .bar{background:var(--rose)}
+.day[aria-pressed="true"] .h{color:var(--wine);font-weight:600}
+.day.closed .h{font-style:italic}
+.today-tag{font:600 11px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--rose);margin-left:6px}
+.pfoot{margin:22px 0 0;padding-top:18px;border-top:1px solid var(--line);font-size:15px;color:var(--muted)}
+
+/* Wine */
+.wine{background:var(--paper);border-top:1px solid var(--line)}
+.glasses{width:100%;height:460px;object-fit:cover;object-position:50% 40%;border-radius:22px}
+.wgrid{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:56px;align-items:start}
+.wgrid h3{font-size:28px;line-height:1.15;margin-bottom:12px}
+.wgrid p{margin:0 0 14px;color:var(--muted)}
+.spectrum{margin:22px 0 26px}
+.spectrum .scale{height:12px;border-radius:99px;background:linear-gradient(90deg,#f3e3a6,#e9b6a5,#be1d49,#5d1123)}
+.spectrum .lbl{display:flex;justify-content:space-between;font-size:14px;color:var(--muted);margin-top:8px}
+.renz{display:grid;grid-template-columns:180px 1fr;gap:22px;align-items:center;padding:22px;border:1px solid var(--line);border-radius:18px;background:var(--cream)}
+.renz img{width:180px;aspect-ratio:3/2;object-fit:cover;border-radius:10px}
+.renz p{margin:6px 0 0;font-size:16px}
+.renz h3{font-size:22px;margin:0}
+
+/* Story */
+.story .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.story .left{position:sticky;top:110px}
+.story .left p{color:var(--muted);margin:18px 0 26px}
+.story figure{margin:0}
+.story figure img{width:100%;border-radius:16px}
+.story figcaption{font-size:14px;color:var(--muted);margin-top:8px}
+.tl{list-style:none;margin:0;padding:0;position:relative}
+.tl:before{content:"";position:absolute;left:15px;top:8px;bottom:8px;width:2px;background:var(--straw)}
+.tl li{position:relative;padding:0 0 34px 56px}
+.tl li:before{content:attr(data-n);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--paper);border:2px solid var(--claret);color:var(--wine);font:600 14px/28px var(--display);text-align:center}
+.tl h3{font-size:23px;line-height:1.2}
+.tl p{margin:6px 0 0;color:var(--muted);font-size:17px}
+
+/* Events */
+.events{background:var(--wine);color:#f6e9e2}
+.events h2{color:#fff}
+.events h2 em{color:#ffd0b5}
+.events .head p{color:#ecd3d3}
+.egrid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.ecard{border:1px solid rgba(255,255,255,.18);border-radius:20px;padding:34px;background:rgba(255,255,255,.04);display:flex;flex-direction:column}
+.ecard h3{color:#fff;font-size:30px;margin-bottom:12px}
+.ecard p{margin:0 0 22px;color:#ecd3d3}
+.ecard .actions{margin-top:auto}
+.events .btn-main{background:#fff;color:var(--wine);border-color:#fff}
+.events .btn-main:hover{background:var(--straw);border-color:var(--straw)}
+.events .btn-ghost{color:#fff;border-color:rgba(255,255,255,.6)}
+.events .btn-ghost:hover{background:#fff;color:var(--wine)}
+
+/* FAQ */
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
+details{border-bottom:1px solid var(--line)}
+details:first-child{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:64px;padding:14px 0;font:600 21px/1.3 var(--display);color:var(--wine)}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font:400 28px/1 var(--display);color:var(--rose);transition:transform .25s}
+details[open] summary:after{transform:rotate(45deg)}
+details p{margin:0 0 22px;color:var(--muted);max-width:36em}
+
+/* Contact */
+.contact{background:var(--straw)}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.contact .left p{color:#4f3a3e}
+.places{display:grid;gap:18px;margin-top:28px}
+.pl{background:var(--paper);border-radius:16px;padding:20px 22px}
+.pl h3{font-size:22px}
+.pl p{margin:4px 0 0;font-size:16px;color:var(--muted)}
+.pl a{display:inline-flex;align-items:center;min-height:44px;font-weight:600}
+form{background:var(--paper);border-radius:22px;padding:34px;box-shadow:0 30px 60px -40px rgba(43,17,23,.45)}
+form h3{font-size:26px;margin-bottom:18px}
+label{display:block;font-size:15px;font-weight:600;color:var(--wine);margin:0 0 6px}
+input,select,textarea{width:100%;font:400 17px/1.4 var(--body);color:var(--ink);background:#fff;border:1.5px solid #dccbb8;border-radius:12px;padding:12px 14px;min-height:48px;margin-bottom:16px}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--rose);box-shadow:0 0 0 3px rgba(190,29,73,.18)}
+textarea{min-height:110px;resize:vertical}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px;border:0;padding:0}
+.chips legend{font-size:15px;font-weight:600;color:var(--wine);margin-bottom:8px;padding:0}
+.chips label{margin:0;font-weight:400;color:var(--ink);display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1.5px solid #dccbb8;border-radius:999px;cursor:pointer;background:#fff}
+.chips input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
+.chips input:checked+span{color:#fff}
+.chips label:has(input:checked){background:var(--wine);border-color:var(--wine);color:#fff}
+.chips label:has(input:focus-visible){outline:3px solid var(--rose);outline-offset:2px}
+.thanks{margin:14px 0 0;font-weight:600;color:var(--wine)}
+
+/* Closing */
+.closing{text-align:center;padding:100px 0}
+.closing h2{max-width:14em;margin:0 auto 18px}
+.closing p{color:var(--muted);margin:0 auto 32px;max-width:32em}
+.closing .actions{justify-content:center}
+
+footer{background:#2a0a12;color:#e9d6d6;padding:56px 0 40px;font-size:15px}
+footer .wrap{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:32px}
+footer h2{font:600 18px/1.2 var(--display);color:#fff;margin-bottom:10px}
+footer p{margin:0 0 6px}
+footer a{color:#ffd9a8;display:inline-flex;align-items:center;min-height:44px}
+.flogo{background:var(--blush);display:inline-block;border-radius:12px;padding:8px 14px}
+.flogo img{height:50px;width:auto;mix-blend-mode:multiply}
+.made{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);padding-top:22px;margin-top:10px;color:#cdb7b9}
+.made a{min-height:0;display:inline}
+
+.callbar{display:none}
+
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:980px){
+  .nav a:not(.btn){display:none}
+  .hero .wrap,.story .wrap,.faq .wrap,.contact .wrap,.wgrid,.egrid{grid-template-columns:1fr;gap:40px}
+  .arch{justify-self:center}
+  .pbody{grid-template-columns:1fr;gap:28px}
+  .place{display:grid;grid-template-columns:240px 1fr;gap:22px;align-items:start}
+  .place .addr{margin-top:0}
+  .story .left{position:static}
+  .proof ul{grid-template-columns:repeat(2,1fr)}
+  footer .wrap{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  body{font-size:17px;padding-bottom:68px}
+  .wrap{width:calc(100% - 40px)}
+  .mock{font-size:15px;padding:8px 12px}
+  .top .wrap{height:66px}
+  .logo img{height:46px}
+  .nav .btn{padding:8px 16px;font-size:15px}
+  .hero{padding:36px 0 48px}
+  .kicker{margin-bottom:14px;font-size:13px}
+  .lede{font-size:18px;margin:18px 0 26px}
+  .actions .btn{flex:1 1 100%}
+  .arch img{aspect-ratio:1/1.08;border-radius:50% 50% 12px 12px / 46% 46% 12px 12px}
+  .arch .stamp{left:14px;bottom:14px;padding:10px 14px}
+  .stamp b{font-size:22px}
+  .proof ul{padding:24px 0;gap:20px 14px}
+  .proof b{font-size:28px}
+  .proof li{padding-left:14px}
+  .quote{padding:60px 0}
+  .sec{padding:68px 0}
+  .head{margin-bottom:30px}
+  .head p{font-size:17px}
+  .tabs{padding:8px}
+  .tab{font-size:17px;min-height:60px}
+  .pbody{padding:22px 18px}
+  .place{grid-template-columns:1fr}
+  .status{font-size:22px}
+  .axis,.day{grid-template-columns:48px 1fr 92px}
+  .day .d{padding-left:8px}
+  .day .h{font-size:14px;padding-right:8px}
+  .today-tag{display:none}
+  .glasses{height:240px;border-radius:16px}
+  .renz{grid-template-columns:1fr}
+  .renz img{width:100%}
+  .tl li{padding-left:50px}
+  .ecard{padding:26px 22px}
+  .ecard .actions .btn{flex:1 1 100%}
+  summary{font-size:19px}
+  form{padding:24px 20px}
+  .two{grid-template-columns:1fr;gap:0}
+  .closing{padding:72px 0}
+  footer .wrap{grid-template-columns:1fr}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:rgba(255,253,248,.97);border-top:1px solid var(--line);box-shadow:0 -8px 24px -16px rgba(43,17,23,.45)}
+  .callbar a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:999px;background:var(--wine);color:#fff;text-decoration:none;font:600 15px/1.2 var(--body)}
+  .callbar a+a{background:var(--paper);color:var(--wine);border:1.5px solid var(--wine)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*:before,*:after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Here’s your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Alto Vineyards, back to top"><img src="https://images.squarespace-cdn.com/content/v1/620be12bce9c207ff8a925eb/1588edaa-101d-4929-b8b7-95ab2d1fb71d/AltoLogo+burgunfi.png?format=1500w" alt="Alto Vineyards" width="1500" height="750"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#visit">Visit</a>
+      <a href="#wine">Wine</a>
+      <a href="#story">Our story</a>
+      <a href="#events">Events</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-main" href="#visit">Plan your visit</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <h1 id="h1"><span class="kicker">Alto Vineyards · Alto Pass &amp; Champaign</span>Southern Illinois’ oldest winery. <em>Still family.</em></h1>
+        <p class="lede">Twenty-two wines, sweet to dry, poured at our two tasting rooms in Alto Pass and Champaign. Come for the wine, stay for everything else.</p>
+        <div class="actions">
+          <a class="btn btn-main" href="#visit">Plan your visit</a>
+          <a class="btn btn-ghost" href="#story">Our story</a>
+        </div>
+      </div>
+      <div class="arch">
+        <img src="https://images.squarespace-cdn.com/content/v1/620be12bce9c207ff8a925eb/1648753929062-D1245D0E87YTXW8202LM/IMG_2810.jpg?format=1500w" alt="Rows of vines under morning mist at sunrise" width="1280" height="960">
+        <div class="stamp"><b>1000+</b>State, National and<br>International awards</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof" aria-label="Alto Vineyards at a glance">
+    <ul class="wrap">
+      <li><b>1988</b><span>our first vintage</span></li>
+      <li><b>22</b><span>premier wines, sweet to dry</span></li>
+      <li><b>2</b><span>tasting rooms, Alto Pass &amp; Champaign</span></li>
+      <li><b>3</b><span>generations of the family</span></li>
+    </ul>
+  </section>
+
+  <section class="quote" aria-label="From our winemaker">
+    <div class="wrap">
+      <blockquote>“Wine is what we do best, and it’s what we are all about.”</blockquote>
+      <p>Paul Renzaglia</p>
+    </div>
+  </section>
+
+  <section class="sec" id="visit" aria-labelledby="visit-h">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="visit-h">Two tasting rooms. <em>Pick yours.</em></h2>
+        <p>See when we’re open, any day of the week, and get there in one tap.</p>
+      </div>
+
+      <div class="planner" id="planner">
+        <div class="tabs" role="group" aria-label="Choose a tasting room">
+          <button class="tab" type="button" data-loc="alto" aria-pressed="true">Alto Pass<small>Shawnee Hills</small></button>
+          <button class="tab" type="button" data-loc="champ" aria-pressed="false">Champaign<small>Central Illinois</small></button>
+        </div>
+        <div class="pbody">
+          <div class="place">
+            <img id="p-img" src="https://images.squarespace-cdn.com/content/v1/620be12bce9c207ff8a925eb/20b7c18c-cb18-4cbc-ab85-2c2c3deb7fb4/239A6607AltoBuilding24.jpg?format=750w" alt="Large tasting room in Alto Pass, with the vineyard behind it" width="583" height="388">
+            <div>
+              <p class="addr" id="p-addr">8515 Highway 127, Alto Pass, IL 62905</p>
+              <p id="p-note">Our big tasting room, with the Vine Deck overlooking the vineyard, the pond and the Shawnee Hills.</p>
+              <div class="row">
+                <a class="btn btn-main" id="p-call" href="tel:+16188934898">Call (618) 893-4898</a>
+                <a class="btn btn-ghost" id="p-map" href="https://www.google.com/maps/search/?api=1&amp;query=8515%20Highway%20127%2C%20Alto%20Pass%2C%20IL%2062905">Directions</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="status" id="p-status" aria-live="polite"><span class="dot"></span><span id="p-status-t">Saturday: open 12pm to 7pm</span></p>
+            <p class="substatus" id="p-sub">Tap any day to check it.</p>
+            <div class="axis" aria-hidden="true"><span></span><div><span>12pm</span><span>4pm</span><span>8pm</span></div><span></span></div>
+            <ul class="week" id="p-week">
+              <li><button class="day" type="button" aria-pressed="false"><span class="d">Mon</span><span class="track"><span class="bar" style="width:75%"></span></span><span class="h">12–6pm</span></button></li>
+              <li><button class="day" type="button" aria-pressed="false"><span class="d">Tue</span><span class="track"><span class="bar" style="width:75%"></span></span><span class="h">12–6pm</span></button></li>
+              <li><button class="day" type="button" aria-pressed="false"><span class="d">Wed</span><span class="track"><span class="bar" style="width:75%"></span></span><span class="h">12–6pm</span></button></li>
+              <li><button class="day" type="button" aria-pressed="false"><span class="d">Thu</span><span class="track"><span class="bar" style="width:75%"></span></span><span class="h">12–6pm</span></button></li>
+              <li><button class="day" type="button" aria-pressed="false"><span class="d">Fri</span><span class="track"><span class="bar" style="width:87.5%"></span></span><span class="h">12–7pm</span></button></li>
+              <li><button class="day" type="button" aria-pressed="true"><span class="d">Sat</span><span class="track"><span class="bar" style="width:87.5%"></span></span><span class="h">12–7pm</span></button></li>
+              <li><button class="day" type="button" aria-pressed="false"><span class="d">Sun</span><span class="track"><span class="bar" style="width:75%"></span></span><span class="h">12–6pm</span></button></li>
+            </ul>
+            <p class="pfoot">Renzaglia Wines from New South Wales, Australia, are poured at both rooms too.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wine" id="wine" aria-labelledby="wine-h">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="wine-h">Something for everybody, <em>sweet to dry.</em></h2>
+      </div>
+      <img class="glasses" src="https://images.squarespace-cdn.com/content/v1/620be12bce9c207ff8a925eb/1648753826947-2CFVRICHW3E00W9INM01/239A1861_WineGlassesAltoE_6720-x-4480-e1587755363236.jpg?format=2500w" alt="Five Alto Vineyards glasses of red, rosé and white wine lined up in front of the vines" width="1596" height="769">
+      <div class="wgrid">
+        <div>
+          <h3>Twenty-two wines on the list</h3>
+          <p>From sweet to dry, from red to white. Over 1000 State, National and International awards, and a Chambourcin recognized as one of the finest wines in the country.</p>
+          <div class="spectrum" aria-hidden="true"><div class="scale"></div><div class="lbl"><span>Sweet</span><span>Dry</span></div></div>
+          <div class="actions"><a class="btn btn-main" href="https://altovineyards.net/">See the wine list &amp; shop</a></div>
+        </div>
+        <div class="renz">
+          <img src="https://images.squarespace-cdn.com/content/v1/620be12bce9c207ff8a925eb/59a05a07-300e-40af-85fe-a57f25c78125/Mark+in+Renzaglia+winery+in+Australia?format=750w" alt="Mark Renzaglia and his family in the Renzaglia winery in Australia" width="583" height="388">
+          <div>
+            <h3>Renzaglia Wines, from Australia</h3>
+            <p>Mark Renzaglia and family make premier wines at their winery and vineyard in New South Wales. Taste them at both of our tasting rooms.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec story" id="story" aria-labelledby="story-h">
+    <div class="wrap">
+      <div class="left">
+        <h2 id="story-h">One man’s dream, <em>an Illinois tradition.</em></h2>
+        <p>Guy Renzaglia came to Southern Illinois and recreated his Italian homeland, starting the first vineyard and winery in the Shawnee Hills. Today we’re a third-generation family business in our fourth decade: Guy’s children and their spouses, his grandchildren and their partners, and many loyal, highly skilled workers.</p>
+        <figure>
+          <img src="https://images.squarespace-cdn.com/content/v1/620be12bce9c207ff8a925eb/1648753887297-KR3W9RUWCEJNHN41H6QT/Family%2B2017.jpg?format=2500w" alt="The Alto Vineyards family, three generations, gathered outdoors" width="1034" height="491">
+          <figcaption>Our family, 2017</figcaption>
+        </figure>
+      </div>
+      <ol class="tl">
+        <li data-n="1"><h3>The first steps</h3><p>Guy Renzaglia, Skip Cosgrove and Ted Wickman bought 50 acres in Alto Pass to rebuild Southern Illinois’ grape and wine industry after Prohibition wiped it out. Ten acres of grapes went in.</p></li>
+        <li data-n="2"><h3>Paul becomes winemaker</h3><p>Guy’s son Paul became the first winemaker, sharing his father’s dream of the region’s first winery.</p></li>
+        <li data-n="3"><h3>Sold out in three days</h3><p>A small 600 sq. ft. winery released its first 1,500 gallons of Illinois wine. It sold out in 3 days. There were only 6 other wineries in Illinois.</p></li>
+        <li data-n="4"><h3>Building an industry</h3><p>Guy and Paul founded the Illinois Grape Growers and Vintners Alliance, with Guy its first President. Paul co-founded the Shawnee Hills Wine Trail.</p></li>
+        <li data-n="5"><h3>Winemaker of the Year, twice</h3><p>Paul was named Illinois Winemaker of the Year two times. The IGGVA’s Industry Achievement Award now carries Guy’s name.</p></li>
+        <li data-n="6"><h3>Champaign opens</h3><p>Our second tasting room opened in Champaign, near the University of Illinois, where Guy’s daughter, son-in-law Jim and family began selling our wine in Central Illinois.</p></li>
+        <li data-n="7"><h3>The third generation</h3><p>Paul’s daughter Elissa became marketing manager, and Guy’s grandson Miguel Womac joined the business.</p></li>
+        <li data-n="8"><h3>A new tasting room</h3><p>Over 5000 square feet, with the Vine Deck overlooking the vineyard, the pond and the beautiful Shawnee Hills.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec events" id="events" aria-labelledby="events-h">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="events-h">There’s always <em>something to do.</em></h2>
+        <p>Music, events and entertainment at both tasting rooms, Alto Pass and Champaign.</p>
+      </div>
+      <div class="egrid">
+        <div class="ecard">
+          <h3>Music, festivals, events</h3>
+          <p>Our outdoor wine festivals have drawn 800 to 1,200 people a day. Our calendars for both rooms show what’s coming up.</p>
+          <div class="actions"><a class="btn btn-main" href="https://altovineyards.net/">See the calendars</a></div>
+        </div>
+        <div class="ecard">
+          <h3>Rentals &amp; weddings</h3>
+          <p>Large gatherings, private parties and special events, in our expansive and exclusive inside and outside spaces.</p>
+          <div class="actions"><a class="btn btn-ghost" href="#contact">Ask about a date</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec faq" id="faq" aria-labelledby="faq-h">
+    <div class="wrap">
+      <div>
+        <h2 id="faq-h">Good to know <em>before you come.</em></h2>
+      </div>
+      <div>
+        <details open><summary>When are you open?</summary><p>Alto Pass: Monday to Thursday 12 to 6pm, Friday and Saturday 12 to 7pm, Sunday 12 to 6pm. Champaign: closed Monday, Tuesday to Thursday 12 to 7pm, Friday 12 to 8pm, Saturday 12 to 7pm, Sunday 12 to 6pm.</p></details>
+        <details><summary>Where are your tasting rooms?</summary><p>8515 Highway 127 in Alto Pass, in the Shawnee Hills, and 4210 N Duncan Road in Champaign.</p></details>
+        <details><summary>I like sweet wine. Will I find one?</summary><p>Yes. We have twenty-two wines, from sweet to dry and from red to white, so there’s something for everybody.</p></details>
+        <details><summary>Can we have a party or wedding with you?</summary><p>Yes. We host large gatherings, private parties, special events and weddings. Send us a note below and tell us your plans.</p></details>
+        <details><summary>Where can I taste Renzaglia Wines?</summary><p>At both of our tasting rooms, Alto Pass and Champaign.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec contact" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <div class="left">
+        <h2 id="contact-h">Talk to <em>us.</em></h2>
+        <p>Questions about a visit, a wine or an event: call the tasting room or send a note.</p>
+        <div class="places">
+          <div class="pl"><h3>Alto Pass</h3><p>8515 Highway 127, Alto Pass, IL 62905</p><a href="tel:+16188934898">(618) 893-4898</a></div>
+          <div class="pl"><h3>Champaign</h3><p>4210 N Duncan Road, Champaign, IL</p><a href="tel:+12173564784">(217) 356-4784</a></div>
+          <div class="pl"><h3>Email</h3><a href="mailto:AltoVineyardsWinery@gmail.com">AltoVineyardsWinery@gmail.com</a></div>
+        </div>
+      </div>
+      <form id="form" novalidate>
+        <h3>Send us a note</h3>
+        <fieldset class="chips">
+          <legend>It’s about</legend>
+          <label><input type="radio" name="topic" value="visit" checked><span>A visit</span></label>
+          <label><input type="radio" name="topic" value="event"><span>A party or wedding</span></label>
+          <label><input type="radio" name="topic" value="wine"><span>Our wine</span></label>
+        </fieldset>
+        <div class="two">
+          <div><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name"></div>
+          <div><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email"></div>
+        </div>
+        <label for="f-room">Tasting room</label>
+        <select id="f-room" name="room"><option>Alto Pass</option><option>Champaign</option><option>Either</option></select>
+        <label for="f-msg">Message</label>
+        <textarea id="f-msg" name="message"></textarea>
+        <button class="btn btn-main" type="submit">Send</button>
+        <p class="thanks" id="thanks" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="closing" aria-labelledby="close-h">
+    <div class="wrap">
+      <h2 id="close-h">Come for the wine, <em>stay for everything else.</em></h2>
+      <p>Two tasting rooms, one family, and a glass waiting in Alto Pass or Champaign.</p>
+      <div class="actions"><a class="btn btn-main" href="#visit">Plan your visit</a><a class="btn btn-ghost" href="tel:+16188934898">Call Alto Pass</a></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <span class="flogo"><img src="https://images.squarespace-cdn.com/content/v1/620be12bce9c207ff8a925eb/1588edaa-101d-4929-b8b7-95ab2d1fb71d/AltoLogo+burgunfi.png?format=1500w" alt="Alto Vineyards" width="1500" height="750"></span>
+      <p style="margin-top:14px">Southern Illinois’ oldest winery, family owned.</p>
+    </div>
+    <div><h2>Alto Pass</h2><p>8515 Highway 127<br>Alto Pass, IL 62905</p><a href="tel:+16188934898">(618) 893-4898</a></div>
+    <div><h2>Champaign</h2><p>4210 N Duncan Road<br>Champaign, IL</p><a href="tel:+12173564784">(217) 356-4784</a></div>
+    <div><h2>Follow us</h2><a href="https://www.instagram.com/altovineyards/">Instagram</a><br><a href="https://www.facebook.com/AltoVineyards/">Facebook</a><br><a href="https://altovineyards.net/">altovineyards.net</a></div>
+    <p class="made">Mockup made for Alto Vineyards by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Call us">
+  <a href="tel:+16188934898">Call Alto Pass</a>
+  <a href="tel:+12173564784">Call Champaign</a>
+</nav>
+
+<script>
+(function(){
+  var IMG = 'https://images.squarespace-cdn.com/content/v1/620be12bce9c207ff8a925eb/';
+  var LOC = {
+    alto: {
+      name:'Alto Pass', addr:'8515 Highway 127, Alto Pass, IL 62905',
+      note:'Our big tasting room, with the Vine Deck overlooking the vineyard, the pond and the Shawnee Hills.',
+      tel:'+16188934898', phone:'(618) 893-4898',
+      img: IMG+'20b7c18c-cb18-4cbc-ab85-2c2c3deb7fb4/239A6607AltoBuilding24.jpg?format=750w',
+      alt:'Large tasting room in Alto Pass, with the vineyard behind it',
+      hours:[[12,18],[12,18],[12,18],[12,18],[12,19],[12,19],[12,18]]
+    },
+    champ: {
+      name:'Champaign', addr:'4210 N Duncan Road, Champaign, IL',
+      note:'Our second tasting room, near the University of Illinois.',
+      tel:'+12173564784', phone:'(217) 356-4784',
+      img: IMG+'1be7bbd9-e17a-41a4-b46e-a00df42536e3/Champaign+outside_1+copy+white.png?format=750w',
+      alt:'Tasting room in Champaign.',
+      hours:[null,[12,19],[12,19],[12,19],[12,20],[12,19],[12,18]]
+    }
+  };
+  var DAYS = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+  var FULL = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+  function t(h){ return (h>12?h-12:h)+'pm'; }
+  function now(){
+    try{
+      var p = new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+      var o={}; p.forEach(function(x){o[x.type]=x.value;});
+      return {d:DAYS.indexOf(o.weekday), h:(+o.hour%24)+(+o.minute)/60};
+    }catch(e){ var d=new Date(); return {d:(d.getDay()+6)%7, h:d.getHours()+d.getMinutes()/60}; }
+  }
+  var N = now(), today = N.d < 0 ? 5 : N.d;
+  var state = {loc:'alto', day:today};
+  var $ = function(id){return document.getElementById(id);};
+
+  function nextOpen(L, from){
+    for(var i=1;i<=7;i++){ var d=(from+i)%7; if(L.hours[d]) return {d:d,i:i}; }
+  }
+  function render(){
+    var L = LOC[state.loc], d = state.day, hrs = L.hours[d];
+    document.querySelectorAll('.tab').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.loc===state.loc); });
+    var img=$('p-img'); if(img.getAttribute('src')!==L.img){ img.src=L.img; img.alt=L.alt; img.width=583; img.height=state.loc==='alto'?388:437; }
+    img.style.filter = state.loc==='champ' ? 'contrast(1.18) saturate(1.15)' : '';
+    $('p-addr').textContent=L.addr; $('p-note').textContent=L.note;
+    $('p-call').href='tel:'+L.tel; $('p-call').textContent='Call '+L.phone;
+    $('p-map').href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(L.addr);
+
+    var ul=$('p-week'); ul.innerHTML='';
+    L.hours.forEach(function(h,i){
+      var li=document.createElement('li'), b=document.createElement('button');
+      b.type='button'; b.className='day'+(h?'':' closed'); b.setAttribute('aria-pressed', i===d);
+      b.setAttribute('aria-label', FULL[i]+': '+(h?'open '+t(h[0])+' to '+t(h[1]):'closed'));
+      b.innerHTML='<span class="d">'+DAYS[i]+(i===today?'<span class="today-tag">today</span>':'')+'</span><span class="track"><span class="bar" style="width:'+(h?((h[1]-12)/8*100):0)+'%"></span></span><span class="h">'+(h?(h[0]-12||12)+'–'+t(h[1]):'Closed')+'</span>';
+      b.addEventListener('click',function(){ state.day=i; render(); });
+      li.appendChild(b); ul.appendChild(li);
+    });
+
+    var main, sub, open=false;
+    if(d===today){
+      if(hrs && N.h>=hrs[0] && N.h<hrs[1]){ open=true; main='Open now in '+L.name; sub='Until '+t(hrs[1])+' today. Come on over.'; }
+      else if(hrs && N.h<hrs[0]){ open=true; main='Open today, '+t(hrs[0])+' to '+t(hrs[1]); sub='In '+L.name+'. Doors open at noon.'; }
+      else { var n=nextOpen(L,d); main='Closed for today'; sub='We open again '+(n.i===1?'tomorrow':FULL[n.d])+' at noon, until '+t(L.hours[n.d][1])+'.'; }
+    } else if(hrs){ open=true; main=FULL[d]+': open '+t(hrs[0])+' to '+t(hrs[1]); sub='In '+L.name+'. Tap any day to check it.'; }
+    else { main='Closed '+FULL[d]+'s in '+L.name; var n2=nextOpen(L,d); sub='Open '+FULL[n2.d]+' from noon, or visit Alto Pass, open every day.'; }
+    $('p-status-t').textContent=main; $('p-sub').textContent=sub;
+    $('p-status').querySelector('.dot').className='dot'+(open?'':' off');
+  }
+  document.querySelectorAll('.tab').forEach(function(b){ b.addEventListener('click',function(){ state.loc=b.dataset.loc; render(); }); });
+  render();
+
+  $('form').addEventListener('submit',function(e){ e.preventDefault(); $('thanks').textContent='Thanks. This is a mockup, so nothing was sent.'; });
+
+  // Gentle rise for things below the first screen
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce && 'IntersectionObserver' in window){
+    var els = document.querySelectorAll('.head, .planner, .glasses, .wgrid > *, .tl li, .story .left, .ecard, .faq details, .places, form, .closing .wrap');
+    var io = new IntersectionObserver(function(es){ es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.remove('will-rise'); io.unobserve(en.target); } }); },{rootMargin:'0px 0px -8% 0px'});
+    var vh = window.innerHeight;
+    els.forEach(function(el){ if(el.getBoundingClientRect().top > vh){ el.classList.add('rise','will-rise'); io.observe(el); } });
+  }
+})();
+</script>
+</body>
+</html>
