@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup ororanchmontana-com-bf59ab 1 16417dad -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ORO RANCH | Condon, Montana</title>
+<meta name="description" content="Oro Ranch: stays and events on a secluded 100-acre piece of paradise in Condon, Montana.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..800;1,100,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --char:#272322; --char-2:#2f2a28; --ink:#1c1918; --paper:#f5f0e6; --paper-2:#ebe3d4;
+  --gold:#c9a15b; --gold-2:#d9b673; --mute:#5c544d; --mute-d:#bdb3a7; --line:rgba(39,35,34,.16); --line-d:rgba(245,240,230,.16);
+  --wide:"Archivo",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--char);color:var(--paper);font-family:var(--wide);font-size:17px;line-height:1.6;font-stretch:100%}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold-2);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1180px,100% - 48px);margin-inline:auto}
+.caps{font-stretch:125%;text-transform:uppercase;letter-spacing:.06em;font-weight:700;line-height:1.08}
+.eyebrow{font-stretch:125%;text-transform:uppercase;letter-spacing:.16em;font-size:12.5px;font-weight:700;color:var(--gold)}
+.on-paper .eyebrow{color:#7a5a22}
+
+/* banner */
+.mockup-banner{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:var(--paper-2);color:var(--ink);font-size:15px;line-height:1.3;text-align:center;white-space:nowrap;position:relative;z-index:30}
+.mockup-banner a{color:var(--ink);text-decoration:underline;text-underline-offset:3px;font-weight:600}
+
+/* header */
+.site-head{border-bottom:1px solid var(--line-d)}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:92px}
+.logo img{width:132px;height:auto}
+nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0;align-items:center}
+nav a{text-decoration:none;font-stretch:125%;text-transform:uppercase;letter-spacing:.08em;font-size:13px;font-weight:700;display:inline-flex;align-items:center;min-height:44px}
+nav a:not(.btn):hover{color:var(--gold-2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:2px;text-decoration:none;font-stretch:125%;text-transform:uppercase;letter-spacing:.09em;font-size:13.5px;font-weight:700;border:1.5px solid transparent;cursor:pointer;font-family:inherit;transition:background .2s,color .2s,border-color .2s}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-gold:hover{background:var(--gold-2)}
+.btn-line{border-color:rgba(245,240,230,.5);color:var(--paper);background:transparent}
+.btn-line:hover{border-color:var(--paper)}
+nav .btn{min-height:44px;padding:0 18px;font-size:12.5px}
+
+/* hero */
+.hero{padding:72px 0 0;text-align:center}
+.hero h1{font-size:clamp(34px,4.1vw,60px);margin:18px auto 0}
+.hero h1 span{display:block}
+.hero .lede{max-width:600px;margin:24px auto 0;color:var(--mute-d);font-size:19px}
+.hero .lede strong{color:var(--paper);font-weight:600}
+.actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+.hero-photo{margin:60px auto 0;max-width:1280px;width:calc(100% - 80px);position:relative}
+.hero-photo img{width:100%;aspect-ratio:1280/620;object-fit:cover;object-position:50% 46%;border-radius:3px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+
+/* facts band */
+.facts{display:grid;grid-template-columns:repeat(4,1fr);margin:0 auto;padding:44px 0 88px}
+.facts div{padding:6px 26px;border-left:1px solid var(--line-d)}
+.facts div:first-child{border-left:0;padding-left:0}
+.facts b{display:block;font-stretch:125%;text-transform:uppercase;letter-spacing:.08em;font-size:clamp(19px,1.7vw,24px);line-height:1.15;color:var(--gold)}
+.facts span{display:block;margin-top:8px;color:var(--mute-d);font-size:15.5px;line-height:1.45}
+
+/* sections on paper */
+.on-paper{background:var(--paper);color:var(--ink)}
+section{scroll-margin-top:20px}
+.sec{padding:110px 0}
+.sec-head{max-width:720px}
+.sec-head h2{font-size:clamp(28px,3.4vw,44px);margin:14px 0 0}
+.sec-head p{color:var(--mute);margin:18px 0 0;font-size:18px}
+
+/* the day dial */
+.day{display:grid;grid-template-columns:1.55fr 1fr;gap:56px;margin-top:56px;align-items:center}
+.scene{position:relative;border-radius:4px;overflow:hidden;background:#9a4f30;color:#f5f0e6;padding:44px 44px 22px;box-shadow:0 24px 50px -28px rgba(39,35,34,.55);transition:background-color .2s linear,color .2s linear}
+.scene .glow{position:absolute;left:0;right:0;bottom:56px;height:46%;background:radial-gradient(55% 90% at var(--gx,20%) 100%,rgba(255,226,170,.34),rgba(255,226,170,0) 70%);pointer-events:none}
+.scene-line{position:relative;margin:0;max-width:21ch;min-height:3.4em;font-stretch:112%;font-weight:600;font-size:clamp(26px,2.6vw,36px);line-height:1.12;text-wrap:balance}
+.scene .path{position:relative;display:block;width:100%;height:150px;margin-top:26px;overflow:visible}
+.scene .sun{position:absolute;width:22px;height:22px;margin:-11px 0 0 -11px;border-radius:50%;background:#fff3d6;box-shadow:0 0 0 8px rgba(255,243,214,.18),0 0 34px 10px rgba(255,236,196,.35);left:12%;top:70%}
+.scene .ends{position:relative;display:flex;justify-content:space-between;gap:12px;margin-top:14px;font-stretch:115%;text-transform:uppercase;letter-spacing:.1em;font-size:12.5px;font-weight:700}
+.moment{min-height:200px}
+.moment .when{font-stretch:125%;text-transform:uppercase;letter-spacing:.14em;font-size:13px;font-weight:700;color:#7a5a22}
+.moment h3{font-size:clamp(24px,2.3vw,32px);margin:10px 0 0}
+.moment p{margin:16px 0 0;font-size:19px;line-height:1.55;color:var(--ink)}
+.moment p.small{font-size:16px;color:var(--mute)}
+.moment .fade{transition:opacity .35s}
+.dial{margin-top:34px}
+.dial-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.dial-steps button{min-height:46px;border:1.5px solid var(--line);background:transparent;color:var(--ink);font-family:inherit;font-stretch:115%;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;font-weight:700;border-radius:2px;cursor:pointer;padding:0 4px}
+.dial-steps button[aria-pressed="true"]{background:var(--char);border-color:var(--char);color:var(--paper)}
+.dial label{display:block;margin-top:18px;font-size:14px;color:var(--mute)}
+input[type=range]{width:100%;margin:8px 0 0;accent-color:var(--char);height:30px}
+
+/* story */
+.story{background:var(--char)}
+.story .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:80px;align-items:start}
+.story h2{font-size:clamp(28px,3.4vw,44px);margin:14px 0 0}
+.quote{margin:0;padding:0}
+.quote p{font-size:clamp(30px,3.6vw,50px);line-height:1.12;font-weight:600;font-stretch:112%;margin:0;color:var(--paper)}
+.quote p em{font-style:normal;color:var(--gold)}
+.quote figcaption{margin-top:20px;color:var(--mute-d);font-size:15.5px}
+.story-text p{margin:0 0 18px;color:#ddd5ca}
+.story-text p:first-of-type{margin-top:26px}
+.sign{margin-top:28px !important;font-stretch:125%;text-transform:uppercase;letter-spacing:.1em;font-size:13px;font-weight:700;color:var(--gold) !important}
+.oro{display:flex;align-items:baseline;gap:16px;margin-top:44px;padding-top:28px;border-top:1px solid var(--line-d)}
+.oro b{font-stretch:125%;font-size:44px;letter-spacing:.08em;color:var(--gold);line-height:1}
+.oro span{color:var(--mute-d);font-size:15.5px}
+
+/* questions */
+.faq{display:grid;grid-template-columns:1fr 1.5fr;gap:80px}
+.qa{border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:64px;padding:14px 0;font-weight:600;font-size:19px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:12px;height:12px;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);transform:rotate(45deg) translate(-3px,-3px);transition:transform .25s}
+details[open] summary::after{transform:rotate(-135deg) translate(-2px,-2px)}
+details p{margin:0 0 22px;color:var(--mute);max-width:60ch}
+details a{color:#6d4f1c;text-underline-offset:3px}
+
+/* plan */
+.plan .grid{display:grid;grid-template-columns:1.25fr 1fr;gap:72px;align-items:start;margin-top:52px}
+.plan h2{font-size:clamp(30px,3.8vw,52px);margin:14px 0 0}
+.plan .sec-head p{color:var(--mute-d)}
+form{display:grid;gap:22px}
+fieldset{border:0;margin:0;padding:0}
+legend,.fl{display:block;font-stretch:125%;text-transform:uppercase;letter-spacing:.1em;font-size:12.5px;font-weight:700;color:var(--mute-d);margin-bottom:10px;padding:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{position:relative}
+.chips input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.chips span{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border:1.5px solid rgba(245,240,230,.32);border-radius:2px;font-size:15.5px;cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.chips input:checked + span{background:var(--gold);border-color:var(--gold);color:var(--ink);font-weight:600}
+.chips input:focus-visible + span{outline:3px solid var(--gold-2);outline-offset:3px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+input[type=text],input[type=email],input[type=tel],textarea{width:100%;min-height:50px;padding:12px 14px;border:1.5px solid rgba(245,240,230,.32);background:var(--char-2);color:var(--paper);font:inherit;font-size:16px;border-radius:2px}
+input::placeholder,textarea::placeholder{color:#a69c90}
+input:focus,textarea:focus{border-color:var(--gold);outline:none}
+.stepper{display:inline-flex;align-items:center;border:1.5px solid rgba(245,240,230,.32);border-radius:2px}
+.stepper button{width:48px;height:48px;border:0;background:transparent;color:var(--paper);font-size:22px;cursor:pointer;font-family:inherit}
+.stepper output{min-width:44px;text-align:center;font-weight:700;font-size:18px}
+.note{background:var(--paper);color:var(--ink);border-radius:3px;padding:32px 32px 28px;position:sticky;top:24px;box-shadow:0 30px 60px -34px rgba(0,0,0,.7)}
+.note .eyebrow{color:#7a5a22}
+.note blockquote{margin:16px 0 0;font-size:18px;line-height:1.6}
+.note blockquote b{font-weight:700;border-bottom:2px solid var(--gold)}
+.note .btn{width:100%;margin-top:26px}
+.thanks{margin:16px 0 0;font-weight:600;color:#3d5a2a;min-height:1.6em}
+.direct{margin-top:30px;padding-top:24px;border-top:1px solid var(--line);display:grid;gap:6px;font-size:15.5px;color:var(--mute)}
+.direct a{color:var(--ink);font-weight:600;text-underline-offset:3px;display:inline-flex;align-items:center;min-height:44px}
+.direct .big{font-stretch:125%;font-size:22px;letter-spacing:.04em;text-decoration:none}
+
+/* footer */
+footer{border-top:1px solid var(--line-d);padding:56px 0 40px;color:var(--mute-d);font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+footer img{width:104px;height:auto;margin-bottom:16px}
+footer a{text-underline-offset:3px}
+footer .wrap.made{display:block;margin-top:36px;padding-top:20px;border-top:1px solid var(--line-d);font-size:14px}
+
+/* call bar */
+.callbar{display:none}
+
+/* motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .will-rise{opacity:1;transform:none}
+  .rise,.moment .fade,*{transition:none !important;animation:none !important}
+}
+
+@media (max-width:980px){
+  nav ul li:not(.keep){display:none}
+  .day,.story .grid,.faq,.plan .grid{grid-template-columns:1fr;gap:44px}
+  .facts{grid-template-columns:1fr 1fr;row-gap:30px}
+  .facts div:nth-child(3){border-left:0;padding-left:0}
+  .note{position:static}
+}
+@media (max-width:640px){
+  body{font-size:16.5px;padding-bottom:68px}
+  .mockup-banner{font-size:14.5px;padding:8px 10px}
+  .wrap{width:calc(100% - 40px)}
+  .site-head .wrap{min-height:76px}
+  .logo img{width:104px}
+  nav{display:none}
+  .hero{padding:44px 0 0}
+  .hero h1{font-size:clamp(28px,8.4vw,38px)}
+  .hero h1 span{display:inline}
+  .hero .lede{font-size:17px;margin-top:18px}
+  .actions{flex-direction:column;align-items:stretch;margin-top:28px}
+  .hero-photo{width:100%;margin-top:44px}
+  .hero-photo img{aspect-ratio:4/3;border-radius:0}
+  .facts{grid-template-columns:1fr;padding:34px 0 64px;row-gap:0}
+  .facts div{border-left:0;padding:16px 0;border-top:1px solid var(--line-d)}
+  .facts div:first-child{border-top:0}
+  .sec{padding:72px 0}
+  .day{margin-top:36px}
+  .moment{min-height:0}
+  .scene{padding:30px 22px 18px}
+  .scene .path{height:110px;margin-top:18px}
+  .scene .glow{bottom:72px}
+  .scene .ends{flex-direction:column;gap:4px;font-size:12px;letter-spacing:.08em}
+  .scene .ends span:last-child{align-self:flex-end}
+  .dial-steps{display:flex;flex-wrap:wrap;gap:8px}
+  .dial-steps button{flex:1 1 28%;font-size:12.5px;letter-spacing:.06em;font-stretch:110%}
+  .row2{grid-template-columns:1fr}
+  .note{padding:26px 22px 22px}
+  .oro b{font-size:34px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:rgba(28,25,24,.97);border-top:1px solid var(--line-d)}
+  .callbar .btn{flex:1;min-height:48px;padding:0 10px;font-size:12px}
+}
+</style>
+</head>
+<body>
+<div class="mockup-banner" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Oro Ranch, back to top"><img src="https://images.squarespace-cdn.com/content/v1/5e8b5d37a84ef24bcb94215b/1586270974611-DXNUKLW2W0ABIZCTR0U4/ORO_Logos-03.png?format=1500w" alt="ORO RANCH" width="1500" height="719"></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#day">A day here</a></li>
+        <li><a href="#story">Our story</a></li>
+        <li><a href="#questions">Questions</a></li>
+        <li class="keep"><a class="btn btn-gold" href="#plan">Plan your visit</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <p class="eyebrow">Oro Ranch &middot; Condon, Montana</p>
+      <h1 id="hero-title" class="caps"><span>East of the Missions.</span> <span>West of the Swans.</span></h1>
+      <p class="lede"><strong>Stays and events</strong> on a secluded 100-acre piece of paradise in Condon, Montana, between the Swan Range and the Mission Mountains.</p>
+      <div class="actions">
+        <a class="btn btn-gold" href="#plan">Plan your visit</a>
+        <a class="btn btn-line" href="tel:+14067542690">Call 406-754-2690</a>
+      </div>
+    </div>
+    <figure class="hero-photo" style="margin-bottom:0">
+      <img src="https://images.squarespace-cdn.com/content/v1/5e8b5d37a84ef24bcb94215b/1586270174255-1BYAENFH903ZKBY33QJ5/49AC7FEC-52A7-4F41-9149-32A2128CCB1B.jpg?format=1500w" alt="Evening light on snow-touched peaks above a pine forest, a meadow and a split-rail fence at Oro Ranch" width="1280" height="960">
+    </figure>
+    <div class="wrap">
+      <div class="facts" role="list">
+        <div role="listitem"><b>Condon</b><span>Seeley Lake just down the road</span></div>
+        <div role="listitem"><b>Stream</b><span>Fly fishing, meadows, forest trails</span></div>
+        <div role="listitem"><b>Neighbors</b><span>Eagles, deer, elk and bears</span></div>
+        <div role="listitem"><b>Roots</b><span>Montana family since the 1800s</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="on-paper sec" id="day" aria-labelledby="day-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">A day at Oro Ranch</p>
+        <h2 id="day-title" class="caps">From one range to the other.</h2>
+        <p>Slide through a day here, from first light on the Swans to the stars over the Missions.</p>
+      </div>
+      <div class="day">
+        <div>
+          <div class="scene" id="scene">
+            <div class="glow" id="glow" aria-hidden="true"></div>
+            <p class="scene-line" id="mLine">Watch the sun set behind the spectacular Mission Mountains.</p>
+            <svg class="path" viewBox="0 0 1000 200" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+              <path d="M30 196 Q500 -60 970 196" fill="none" stroke="currentColor" stroke-opacity=".55" stroke-width="2" stroke-dasharray="2 10" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+              <line x1="0" y1="198" x2="1000" y2="198" stroke="currentColor" stroke-opacity=".6" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+            </svg>
+            <span class="sun" id="sun" aria-hidden="true"></span>
+            <div class="ends"><span>&larr; West &middot; Mission Mountains</span><span>East &middot; Swan Range &rarr;</span></div>
+          </div>
+        </div>
+        <div>
+          <div class="moment" aria-live="polite">
+            <div class="fade" id="mText">
+              <p class="when" id="mWhen">Sunset</p>
+              <h3 class="caps" id="mTitle">Behind the Missions</h3>
+              <p class="small" id="mSmall">Stroll the lush meadows home as the light goes gold.</p>
+            </div>
+          </div>
+          <div class="dial">
+            <div class="dial-steps" role="group" aria-label="Choose a time of day">
+              <button type="button" data-v="0" aria-pressed="false">Sunrise</button>
+              <button type="button" data-v="24" aria-pressed="false">Morning</button>
+              <button type="button" data-v="50" aria-pressed="false">Afternoon</button>
+              <button type="button" data-v="68" aria-pressed="true">Sunset</button>
+              <button type="button" data-v="100" aria-pressed="false">Night</button>
+            </div>
+            <label for="dayRange">Or slide through the day</label>
+            <input type="range" id="dayRange" min="0" max="100" value="68" step="1">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="story sec" id="story" aria-labelledby="story-title">
+    <div class="wrap grid">
+      <div>
+        <p class="eyebrow">Fourth generation Montanan</p>
+        <h2 id="story-title" class="caps" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap">How Oro Ranch got its name</h2>
+        <figure class="quote" style="margin-top:26px">
+          <p>&ldquo;Dad has finally found his <em>motherlode.</em>&rdquo;</p>
+          <figcaption>Our son, Ben, taking his first long look at the snow-capped peaks around our lodge. The name Oro Ranch was born.</figcaption>
+        </figure>
+        <div class="oro"><b>ORO</b><span>Spanish for gold. Andy is a geologist who has spent his whole career exploring for it in Mexico, Peru and Ecuador.</span></div>
+      </div>
+      <div class="story-text">
+        <p>In the late 1800s, my great, great grandfather came west from Missouri and settled near Alberton, drawn by the power and beauty of the Rocky Mountain front.</p>
+        <p>His grandson ran a small sawmill. My dad followed him into the wood products industry, and his work took our family around Montana, including Seeley Lake, just down the road from here.</p>
+        <p>Waking up each day in our &ldquo;Last Best Place&rdquo;, I feel like I've come full circle. We are truly blessed to have a piece of paradise, and we love sharing it with others.</p>
+        <p class="sign">Come see us soon, Deborah and Andy Carstensen</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="on-paper sec" id="questions" aria-labelledby="q-title">
+    <div class="wrap faq">
+      <div class="sec-head">
+        <p class="eyebrow">Before you come</p>
+        <h2 id="q-title" class="caps">Questions, answered.</h2>
+        <p>Anything else? Call us at <a href="tel:+14067542690" style="color:#6d4f1c;font-weight:600;text-underline-offset:3px">406-754-2690</a>.</p>
+      </div>
+      <div class="qa">
+        <details open>
+          <summary>Where is Oro Ranch?</summary>
+          <p>1420 Flint Ridge Road, Condon, Montana 59826, in the northwest corner of the state. <a href="https://www.google.com/maps/search/?api=1&amp;query=1420%20Flint%20Ridge%20Rd%2C%20Condon%2C%20MT%2059826" target="_blank" rel="noopener">Open in Google Maps</a></p>
+        </details>
+        <details>
+          <summary>What is there to do?</summary>
+          <p>Wet a fly in the babbling stream, stroll in lush meadows, or blaze new trails through the forest. Then watch the stars, so bright they seem close enough to touch.</p>
+        </details>
+        <details>
+          <summary>What wildlife might I see?</summary>
+          <p>Keep an eye out for eagles, deer, elk and bears. They're just a few of the wild critters and creatures that call Oro Ranch home.</p>
+        </details>
+        <details>
+          <summary>What is the land like?</summary>
+          <p>Meadow, stream and forest, with groves of cottonwood, pine and tamarack.</p>
+        </details>
+        <details>
+          <summary>How do I plan a stay or an event?</summary>
+          <p>Call us at 406-754-2690, or tell us what you have in mind with the note below.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="plan sec" id="plan" aria-labelledby="plan-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Plan your visit</p>
+        <h2 id="plan-title" class="caps">Make the trip to Montana.</h2>
+        <p>Pick what brings you and when. We'll see your note just as you see it here.</p>
+      </div>
+      <div class="grid">
+        <form id="planForm" novalidate>
+          <fieldset>
+            <legend>What brings you</legend>
+            <div class="chips">
+              <label><input type="radio" name="why" value="a stay" checked><span>A stay</span></label>
+              <label><input type="radio" name="why" value="an event"><span>An event</span></label>
+              <label><input type="radio" name="why" value="a visit"><span>Not sure yet</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Season</legend>
+            <div class="chips">
+              <label><input type="radio" name="season" value="spring"><span>Spring</span></label>
+              <label><input type="radio" name="season" value="summer" checked><span>Summer</span></label>
+              <label><input type="radio" name="season" value="fall"><span>Fall</span></label>
+              <label><input type="radio" name="season" value="winter"><span>Winter</span></label>
+            </div>
+          </fieldset>
+          <div class="row2">
+            <div>
+              <span class="fl" id="guests-l">Guests</span>
+              <div class="stepper" role="group" aria-labelledby="guests-l">
+                <button type="button" id="gMinus" aria-label="One fewer guest">&minus;</button>
+                <output id="guests" aria-live="polite">2</output>
+                <button type="button" id="gPlus" aria-label="One more guest">+</button>
+              </div>
+            </div>
+            <div>
+              <label class="fl" for="dates">Dates</label>
+              <input type="text" id="dates" name="dates" value="a week in August" autocomplete="off">
+            </div>
+          </div>
+          <div class="row2">
+            <div><label class="fl" for="name">Your name</label><input type="text" id="name" name="name" autocomplete="name" placeholder="First and last name"></div>
+            <div><label class="fl" for="reach">Email or phone</label><input type="text" id="reach" name="reach" autocomplete="email" placeholder="So we can reply"></div>
+          </div>
+          <div><label class="fl" for="msg">Anything else</label><textarea id="msg" name="msg" rows="3" placeholder="Fly fishing, quiet, a special occasion..."></textarea></div>
+        </form>
+        <aside class="note" aria-labelledby="note-title">
+          <p class="eyebrow" id="note-title">Your note to Oro Ranch</p>
+          <blockquote id="preview">Hello Oro Ranch, we're <b>2 guests</b> hoping to come for <b>a stay</b> in <b>summer</b>, around <b>a week in August</b>.</blockquote>
+          <button type="submit" form="planForm" class="btn btn-gold">Send to Oro Ranch</button>
+          <p class="thanks" id="thanks" role="status"></p>
+          <div class="direct">
+            <span>Rather talk it through?</span>
+            <a class="big" href="tel:+14067542690">406-754-2690</a>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=1420%20Flint%20Ridge%20Rd%2C%20Condon%2C%20MT%2059826" target="_blank" rel="noopener">1420 Flint Ridge Rd, Condon, MT 59826</a>
+            <span>On Instagram: @oro_ranch_montana and @deb.ororanch</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <img src="https://images.squarespace-cdn.com/content/v1/5e8b5d37a84ef24bcb94215b/1586270974611-DXNUKLW2W0ABIZCTR0U4/ORO_Logos-03.png?format=1500w" alt="ORO RANCH" width="1500" height="719" loading="lazy">
+      <div>ORO Ranch &nbsp;|&nbsp; 1420 Flint Ridge Rd, Condon Montana 59826</div>
+      <div><a href="tel:+14067542690">406-754-2690</a> &nbsp;&middot;&nbsp; <a href="https://www.ororanchmontana.com/">ororanchmontana.com</a></div>
+    </div>
+    <a class="btn btn-gold" href="#plan">Plan your visit</a>
+  </div>
+  <div class="wrap made">Mockup made for ORO RANCH by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></div>
+</footer>
+
+<div class="callbar" aria-label="Quick actions">
+  <a class="btn btn-gold" href="#plan">Plan your visit</a>
+  <a class="btn btn-line" href="tel:+14067542690">Call us</a>
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* gentle rise for things below the first screen */
+  if (!reduce && 'IntersectionObserver' in window) {
+    var els = document.querySelectorAll('.sec-head, .day, .story .grid > *, .qa, .plan .grid, .facts');
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) { e.target.classList.remove('will-rise'); io.unobserve(e.target); } });
+    }, {rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){
+      if (el.getBoundingClientRect().top > innerHeight) { el.classList.add('rise','will-rise'); io.observe(el); }
+    });
+  }
+
+  /* the day dial */
+  var range = document.getElementById('dayRange');
+  var steps = [].slice.call(document.querySelectorAll('.dial-steps button'));
+  var scene = document.getElementById('scene'), path = scene.querySelector('.path'), sun = document.getElementById('sun'), glow = document.getElementById('glow');
+  var moments = [
+    {v:0, when:'Sunrise', title:'Over the Swans', line:'Watch the sun come up over the glorious Swan Range.', small:'First light reaches the meadow from the east.'},
+    {v:24, when:'Morning', title:'On the water', line:'Wet a fly in the babbling stream.', small:'Keep an eye out for eagles, deer, elk and bears along the way.'},
+    {v:50, when:'Afternoon', title:'Into the trees', line:'Blaze new trails through the forest, or stroll in lush meadows.', small:'Listen to the breeze through groves of cottonwood, pine and tamarack.'},
+    {v:68, when:'Sunset', title:'Behind the Missions', line:'Watch the sun set behind the spectacular Mission Mountains.', small:'Stroll the lush meadows home as the light goes gold.'},
+    {v:100, when:'Night', title:'Under the stars', line:'Drink in the vast moonlit sky, with stars so bright they seem close enough to touch.', small:'All is right with the world.'}
+  ];
+  /* the sky colour through the day */
+  var keys = [[0,'#e9b48c'],[24,'#c3dbe8'],[50,'#e6dcbc'],[68,'#9a4f30'],[100,'#151a2e']];
+  function hex(h){return [parseInt(h.substr(1,2),16),parseInt(h.substr(3,2),16),parseInt(h.substr(5,2),16)];}
+  function lum(c){ c = c.map(function(x){ x/=255; return x<=.03928 ? x/12.92 : Math.pow((x+.055)/1.055,2.4); }); return .2126*c[0]+.7152*c[1]+.0722*c[2]; }
+  var current = -1;
+  function render(v){
+    v = +v;
+    var i = 0; while (i < keys.length-2 && v > keys[i+1][0]) i++;
+    var a = hex(keys[i][1]), b = hex(keys[i+1][1]), t = (v-keys[i][0])/(keys[i+1][0]-keys[i][0]);
+    var c = a.map(function(x,k){ return Math.round(x+(b[k]-x)*t); }), L = lum(c);
+    scene.style.backgroundColor = 'rgb('+c.join(',')+')';
+    /* paper or ink, whichever reads better on this sky */
+    scene.style.color = 0.95/(L+.05) > (L+.05)/.06 ? '#f5f0e6' : '#1c1918';
+    /* sun: east (right) at 0, west (left) at 80, along the dashed arc */
+    var p = Math.min(v/80, 1), ax = 970 - 940*p, ay = (1-p)*(1-p)*196 + 2*p*(1-p)*(-60) + p*p*196;
+    var r = path.getBoundingClientRect(), sr = scene.getBoundingClientRect();
+    sun.style.left = (r.left - sr.left + ax/1000*r.width).toFixed(1) + 'px';
+    sun.style.top = (r.top - sr.top + ay/200*r.height).toFixed(1) + 'px';
+    var fade = v > 80 ? Math.max(0, 1-(v-80)/10) : 1;
+    sun.style.opacity = fade; glow.style.opacity = fade;
+    glow.style.setProperty('--gx', (ax/10).toFixed(1)+'%');
+    /* nearest moment */
+    var n = 0, d = 999; moments.forEach(function(m,k){ var dd = Math.abs(m.v - v); if (dd < d){d = dd; n = k;} });
+    if (n !== current) {
+      current = n; var m = moments[n];
+      document.getElementById('mWhen').textContent = m.when;
+      document.getElementById('mTitle').textContent = m.title;
+      document.getElementById('mLine').textContent = m.line;
+      document.getElementById('mSmall').textContent = m.small;
+      steps.forEach(function(s,k){ s.setAttribute('aria-pressed', k===n ? 'true' : 'false'); });
+    }
+  }
+  addEventListener('resize', function(){ render(range.value); });
+  var anim = null, userTouched = false;
+  function animateTo(target, ms){
+    cancelAnimationFrame(anim);
+    var from = +range.value, start = null;
+    if (reduce) { range.value = target; render(target); return; }
+    function step(ts){
+      if (!start) start = ts;
+      var k = Math.min(1,(ts-start)/ms), e = k<.5 ? 2*k*k : 1-Math.pow(-2*k+2,2)/2;
+      var v = from + (target-from)*e; range.value = v; render(v);
+      if (k < 1) anim = requestAnimationFrame(step);
+    }
+    anim = requestAnimationFrame(step);
+  }
+  range.addEventListener('input', function(){ userTouched = true; cancelAnimationFrame(anim); render(range.value); });
+  steps.forEach(function(s){ s.addEventListener('click', function(){ userTouched = true; animateTo(+s.dataset.v, 700); }); });
+  render(range.value);
+
+  /* once, when the scene comes on screen: play the day from sunrise to sunset */
+  if (!reduce && 'IntersectionObserver' in window) {
+    var played = false;
+    var so = new IntersectionObserver(function(en){
+      en.forEach(function(e){
+        if (e.isIntersecting && !played && !userTouched) {
+          played = true; so.disconnect();
+          range.value = 0; render(0);
+          setTimeout(function(){ if (!userTouched) animateTo(68, 5200); }, 400);
+        }
+      });
+    }, {threshold:.6});
+    so.observe(document.querySelector('.scene'));
+  }
+
+  /* plan your visit: the note writes itself */
+  var form = document.getElementById('planForm'), preview = document.getElementById('preview');
+  var guests = 2, gOut = document.getElementById('guests');
+  function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+  function val(n){ var el = form.querySelector('input[name="'+n+'"]:checked'); return el ? el.value : ''; }
+  function update(){
+    gOut.textContent = guests;
+    var dates = form.dates.value.trim(), name = form.name.value.trim(), msg = form.msg.value.trim();
+    var h = 'Hello Oro Ranch, ' + (guests === 1 ? "I'm" : "we're") + ' <b>' + guests + (guests === 1 ? ' guest' : ' guests') + '</b> hoping to come for <b>' + esc(val('why')) + '</b> in <b>' + esc(val('season')) + '</b>';
+    h += dates ? ', around <b>' + esc(dates) + '</b>.' : '.';
+    if (msg) h += ' ' + esc(msg);
+    if (name) h += '<br><br>Thanks, ' + esc(name);
+    preview.innerHTML = h;
+  }
+  document.getElementById('gMinus').addEventListener('click', function(){ guests = Math.max(1, guests-1); update(); });
+  document.getElementById('gPlus').addEventListener('click', function(){ guests = Math.min(99, guests+1); update(); });
+  form.addEventListener('input', update);
+  form.addEventListener('change', update);
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    document.getElementById('thanks').textContent = 'Thank you for your note.';
+  });
+  update();
+})();
+</script>
+</body>
+</html>
