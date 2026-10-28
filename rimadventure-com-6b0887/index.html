@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup rimadventure-com-6b0887 1 864f062b -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RIM Adventures | Guided enduro and snowbike tours in Georgia</title>
+<meta name="description" content="Guided enduro, training and snowbike tours in Georgia: small groups, a Beta fleet, and routes from the Caucasus to the Black Sea coast.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f172a;--navy2:#1e293b;--ink:#0f172a;--muted:#475569;
+  --red:#e10600;--red-hot:#ff0000;--line:#e2e8f0;--paper:#f6f5f2;--white:#fff;
+  --sand:#d9c9a3;
+  --head:"Archivo",system-ui,sans-serif;--body:"Inter",system-ui,-apple-system,sans-serif;
+  --wrap:1180px;--r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:400 17px/1.6 var(--body);color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--head);font-stretch:112%;line-height:1.02;margin:0;letter-spacing:-.01em}
+p{margin:0}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:12px;top:56px;background:#fff;padding:10px 14px;z-index:99}
+
+/* banner */
+.mock{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:#f1ede4;color:#1e293b;font:500 15px/1.3 var(--body);text-align:center;border-bottom:1px solid #e3ddcf;white-space:nowrap}
+.mock a{color:#b00500;text-decoration:underline;text-underline-offset:3px;font-weight:600}
+
+/* header */
+.top{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:28px;height:76px}
+.logo img{width:96px;height:auto}
+.nav{display:flex;gap:26px;margin-left:auto}
+.nav a{text-decoration:none;font:600 13px/1 var(--head);letter-spacing:.12em;text-transform:uppercase;color:var(--navy);padding:14px 0}
+.nav a:hover{color:var(--red)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;font:700 15px/1 var(--head);letter-spacing:.02em;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 8px 22px -10px rgba(225,6,0,.8)}
+.btn-red:hover{background:#c40500;transform:translateY(-1px)}
+.btn-line{border-color:currentColor;color:inherit;background:transparent}
+.btn-line:hover{transform:translateY(-1px)}
+.top .btn{min-height:44px;padding:0 20px;font-size:14px}
+
+/* hero */
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:linear-gradient(90deg,var(--red-hot) 0 32%,transparent 32%)}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center;padding-top:72px;padding-bottom:72px}
+.eyebrow{font:700 12px/1 var(--head);letter-spacing:.2em;text-transform:uppercase;color:#ff6a5e;display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:28px;height:2px;background:currentColor}
+.hero h1{font-size:clamp(40px,4.4vw,60px);font-weight:900;margin:22px 0 22px;text-transform:uppercase}
+.hero h1 em{font-style:normal;color:#ff2d1f}
+.hero .lede{font-size:19px;color:#cbd5e1;max-width:30em}
+.hero .acts{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.hero .btn-line{color:#fff;border-color:rgba(255,255,255,.4)}
+.chips{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:30px;padding:0;list-style:none;font-size:14px;color:#cbd5e1}
+.chips li{display:flex;align-items:center;gap:8px}
+.chips li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--red-hot)}
+.shot{position:relative;margin:0}
+.shot img{width:100%;height:auto;max-width:640px;aspect-ratio:4/3.3;object-fit:cover;object-position:60% 50%;border-radius:18px;box-shadow:0 40px 80px -30px rgba(0,0,0,.7)}
+.shot figcaption{position:absolute;left:-22px;bottom:28px;background:#fff;color:var(--navy);border-radius:12px;padding:14px 18px;box-shadow:0 18px 40px -16px rgba(0,0,0,.5);font-size:14px;line-height:1.35;max-width:250px}
+.shot figcaption b{display:block;font:800 22px/1.1 var(--head);font-stretch:112%;color:var(--red)}
+.stats{border-top:1px solid rgba(255,255,255,.12)}
+.stats ul{list-style:none;margin:0 auto;padding:26px 28px;display:grid;grid-template-columns:repeat(4,1fr);max-width:var(--wrap)}
+.stats li{padding:0 18px;border-left:1px solid rgba(255,255,255,.12)}
+.stats li:first-child{border-left:0;padding-left:0}
+.stats b{display:block;font:800 34px/1 var(--head);font-stretch:112%;color:#fff}
+.stats span{font:600 12px/1.4 var(--head);letter-spacing:.14em;text-transform:uppercase;color:#94a3b8}
+
+/* section scaffolding */
+section{scroll-margin-top:90px}
+.sec{padding:104px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:46px}
+.sec-head h2{font-size:clamp(34px,4vw,54px);font-weight:900;text-transform:uppercase}
+.sec-head p{color:var(--muted);max-width:28em}
+.kicker{font:700 12px/1 var(--head);letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:14px;display:block}
+
+/* tours */
+.tours{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tour{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;background:#fff;transition:transform .25s,box-shadow .25s}
+.tour:hover{transform:translateY(-3px);box-shadow:0 26px 50px -30px rgba(15,23,42,.45)}
+.tour .band{height:150px;position:relative;display:flex;align-items:flex-start;justify-content:space-between;padding:18px 20px;color:#fff}
+.tour .band svg{position:absolute;inset:auto 0 0 0;width:100%;height:100%}
+.tour .tag{position:relative;font:700 11px/1 var(--head);letter-spacing:.16em;text-transform:uppercase;background:rgba(15,23,42,.72);padding:7px 10px;border-radius:999px}
+.t1 .band{background:#c9b48a}
+.t2 .band{background:#2b6f8a}
+.t3 .band{background:#334155}
+.tour .body{padding:24px 22px 22px;display:flex;flex-direction:column;flex:1}
+.tour h3{font-size:24px;font-weight:800;line-height:1.1}
+.tour .facts{list-style:none;padding:0;margin:16px 0 14px;font-size:14px;color:var(--muted)}
+.tour .facts li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px dashed var(--line)}
+.tour .facts b{color:var(--ink);font-weight:600;text-align:right}
+.meter{display:flex;gap:4px;margin-top:4px}
+.meter i{width:22px;height:5px;border-radius:3px;background:#e2e8f0}
+.meter i.on{background:var(--red)}
+.tour .desc{font-size:15px;color:var(--muted);flex:1}
+.tour .foot{display:flex;align-items:end;justify-content:space-between;margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
+.price small{display:block;font:700 11px/1 var(--head);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.price b{font:900 32px/1 var(--head);font-stretch:112%;color:var(--red)}
+.tour .pick{font:700 14px/1 var(--head);color:var(--navy);text-decoration:none;display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 4px}
+.tour .pick:hover{color:var(--red)}
+
+/* snowbike strip */
+.snow{margin-top:22px;display:grid;grid-template-columns:1.1fr 1fr;border-radius:var(--r);overflow:hidden;background:var(--navy);color:#fff}
+.snow .txt{padding:44px 44px}
+.snow h3{font-size:30px;font-weight:900;text-transform:uppercase;margin-bottom:14px}
+.snow p{color:#cbd5e1;font-size:16px}
+.snow p+p{margin-top:12px}
+.snow .spec{padding:44px;background:#16213a;display:grid;gap:18px;align-content:center}
+.snow .spec div{display:flex;gap:16px;align-items:baseline;border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:16px}
+.snow .spec div:last-child{border:0;padding:0}
+.snow .spec span{font:700 11px/1.3 var(--head);letter-spacing:.16em;text-transform:uppercase;color:#94a3b8;min-width:110px}
+.snow .spec b{font:700 17px/1.35 var(--head);font-stretch:108%}
+
+/* planner */
+.plan{background:var(--paper)}
+.planner{display:grid;grid-template-columns:1fr 1fr;gap:0;background:#fff;border-radius:20px;box-shadow:0 40px 80px -50px rgba(15,23,42,.5);overflow:hidden;border:1px solid #e9e4d8}
+.ask{padding:40px}
+.q{border:0;padding:0;margin:0 0 26px}
+.q legend,.q label.lbl{font:700 12px/1 var(--head);letter-spacing:.16em;text-transform:uppercase;color:var(--navy);margin-bottom:12px;display:block;padding:0}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts input{position:absolute;opacity:0;pointer-events:none}
+.opts label{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1.5px solid #cbd5e1;border-radius:999px;font:600 15px/1 var(--body);cursor:pointer;transition:all .18s;background:#fff}
+.opts label:hover{border-color:var(--navy)}
+.opts input:checked+label{background:var(--navy);border-color:var(--navy);color:#fff}
+.opts input:focus-visible+label{outline:3px solid var(--red);outline-offset:2px}
+.step{display:inline-flex;align-items:center;border:1.5px solid #cbd5e1;border-radius:999px;overflow:hidden}
+.step button{width:48px;height:46px;border:0;background:#fff;font:600 22px/1 var(--body);cursor:pointer;color:var(--navy)}
+.step button:hover{background:#f1f5f9}
+.step output{min-width:110px;text-align:center;font:700 16px/1 var(--head)}
+select,input[type=text],input[type=email],textarea{width:100%;min-height:48px;border:1.5px solid #cbd5e1;border-radius:10px;padding:10px 14px;font:400 16px/1.4 var(--body);color:var(--ink);background:#fff}
+select:focus,input:focus,textarea:focus{border-color:var(--navy);outline:none;box-shadow:0 0 0 3px rgba(225,6,0,.25)}
+.answer{background:var(--navy);color:#fff;padding:40px;display:flex;flex-direction:column}
+.answer .kicker{color:#ff6a5e}
+.match{font:900 32px/1.05 var(--head);font-stretch:112%;text-transform:uppercase;margin:6px 0 10px}
+.why{color:#cbd5e1;font-size:16px;min-height:3.2em}
+.mrow{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.12);border-radius:12px;overflow:hidden;margin:22px 0}
+.mrow div{background:#16213a;padding:14px 14px}
+.mrow span{display:block;font:700 10.5px/1.3 var(--head);letter-spacing:.14em;text-transform:uppercase;color:#94a3b8;margin-bottom:6px}
+.mrow b{font:700 16px/1.25 var(--head)}
+.mrow .meter i{background:rgba(255,255,255,.18)}
+.mrow .meter i.on{background:#ff2d1f}
+.sum{font-size:15px;color:#e2e8f0;background:rgba(255,255,255,.06);border-left:3px solid var(--red-hot);padding:14px 16px;border-radius:0 10px 10px 0}
+.sum b{color:#fff}
+.send{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+.send .full{grid-column:1/-1}
+.send label{font:600 13px/1 var(--body);color:#cbd5e1;display:block;margin-bottom:6px}
+.send textarea{min-height:84px;resize:vertical}
+.send .btn{width:100%;margin-top:4px}
+.done{display:none;margin-top:14px;background:#fff;color:var(--navy);border-radius:10px;padding:14px 16px;font-weight:600}
+.done.show{display:block}
+
+/* why us */
+.why-us{display:grid;grid-template-columns:420px 1fr;gap:64px;align-items:center}
+.redbox{background:var(--red);border-radius:20px;position:relative;aspect-ratio:1/1.05;overflow:hidden;display:flex;align-items:flex-end;padding:28px;color:#fff}
+.redbox img{position:absolute;top:0;height:auto;left:50%;transform:translateX(-50%);width:400px;max-width:96%;mix-blend-mode:multiply}
+.redbox blockquote{position:relative;margin:0;font:800 22px/1.2 var(--head);font-stretch:108%}
+.pillars{display:grid;gap:0}
+.pillar{display:grid;grid-template-columns:64px 1fr;gap:20px;padding:26px 0;border-top:1px solid var(--line)}
+.pillar:last-child{border-bottom:1px solid var(--line)}
+.pillar .n{font:900 15px/1 var(--head);color:var(--red);letter-spacing:.1em;padding-top:6px}
+.pillar h3{font-size:22px;font-weight:800;text-transform:uppercase;margin-bottom:10px}
+.pillar ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px 22px;color:var(--muted);font-size:15.5px}
+.pillar li::before{content:"✓";color:var(--red);font-weight:700;margin-right:8px}
+
+/* georgia */
+.geo{background:var(--navy);color:#fff}
+.geo .sec-head p{color:#cbd5e1}
+.geo-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.15)}
+.geo-grid div{padding:30px 24px 6px 0;margin-right:24px}
+.geo-grid b{display:block;font:900 56px/1 var(--head);font-stretch:115%;color:#fff}
+.geo-grid b small{font-size:22px;color:#ff6a5e;margin-left:4px}
+.geo-grid p{color:#cbd5e1;font-size:15px;margin-top:10px}
+.flights{margin-top:56px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 10px;font:600 14px/1 var(--head);letter-spacing:.06em}
+.flights span{padding:10px 14px;border:1px solid rgba(255,255,255,.22);border-radius:999px}
+.flights .to{background:#fff;color:var(--navy);border-color:#fff}
+.flights .arrow{border:0;padding:0 6px;color:#ff6a5e;font-size:18px}
+
+/* team */
+.team{display:grid;grid-template-columns:1fr 1.4fr;gap:64px;align-items:start}
+.team blockquote{margin:0;font:800 30px/1.2 var(--head);font-stretch:108%}
+.team blockquote span{color:var(--red)}
+.team .about{color:var(--muted);margin-top:20px}
+.people{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.people li{display:flex;align-items:center;gap:18px;padding:16px 20px;border:1px solid var(--line);border-radius:var(--r)}
+.mono{width:54px;height:54px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font:900 22px/1 var(--head);flex:none}
+.people li:first-child .mono{background:var(--red)}
+.people b{font:800 20px/1.1 var(--head);display:block}
+.people span{color:var(--muted);font-size:15px}
+
+/* faq */
+.faq{background:var(--paper)}
+.faq-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:64px}
+.badges{display:flex;flex-direction:column;gap:10px;margin-top:26px}
+.badges span{display:inline-flex;align-self:flex-start;align-items:center;gap:10px;font:700 14px/1 var(--head);background:#fff;border:1px solid #e3ddcf;border-radius:999px;padding:12px 16px}
+.badges span::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--red)}
+details{background:#fff;border-radius:12px;margin-bottom:10px;border:1px solid #e9e4d8}
+summary{list-style:none;cursor:pointer;padding:20px 22px;display:flex;justify-content:space-between;align-items:center;gap:16px;font:700 18px/1.3 var(--head);min-height:44px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:400 26px/1 var(--body);color:var(--red);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 22px 20px;color:var(--muted)}
+
+/* end */
+.end{position:relative;color:#fff;background:var(--navy);overflow:hidden}
+.end .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:60px;align-items:center;padding-top:100px;padding-bottom:100px}
+.end h2{font-size:clamp(34px,4.2vw,58px);font-weight:900;text-transform:uppercase}
+.end h2 em{font-style:normal;color:#ff2d1f}
+.end p{color:#cbd5e1;margin-top:18px;max-width:30em}
+.end .acts{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.end .btn-line{color:#fff;border-color:rgba(255,255,255,.4)}
+.contact{background:#16213a;border-radius:18px;padding:30px;display:grid;gap:4px}
+.contact a,.contact div{display:flex;gap:16px;align-items:center;padding:14px 0;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.1);min-height:44px}
+.contact a:last-child{border:0}
+.contact span{font:700 11px/1.3 var(--head);letter-spacing:.16em;text-transform:uppercase;color:#94a3b8;min-width:84px}
+.contact b{font-weight:600;font-size:16px}
+.contact a:hover b{color:#ff6a5e}
+
+footer{background:#0a1020;color:#94a3b8;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;justify-content:space-between;padding-top:30px;padding-bottom:30px}
+footer a{color:#cbd5e1}
+footer .soc{display:flex;gap:6px}
+footer .soc a{display:inline-flex;align-items:center;min-height:44px;padding:0 10px}
+
+/* phone call bar */
+.callbar{display:none}
+
+/* motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+
+@media (max-width:1020px){
+  .nav{display:none}
+  .top .wrap{justify-content:space-between}
+  .hero .wrap{grid-template-columns:1fr;gap:40px}
+  .shot img{max-width:none}
+  .tours{grid-template-columns:1fr}
+  .tour .band{height:110px}
+  .snow,.planner,.why-us,.team,.faq-grid,.end .wrap{grid-template-columns:1fr}
+  .why-us{gap:40px}
+  .redbox{max-width:440px}
+  .geo-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .mock{font-size:14.5px;padding:8px 10px}
+  .wrap{padding:0 20px}
+  .top .wrap{height:66px}
+  .logo img{width:78px}
+  .hero .wrap{padding-top:44px;padding-bottom:48px}
+  .hero h1{font-size:36px;margin:18px 0;font-stretch:104%}
+  .hero .lede{font-size:17px}
+  .hero .acts .btn{flex:1 1 100%}
+  .shot figcaption{left:12px;bottom:12px;padding:10px 14px;font-size:13px}
+  .shot figcaption b{font-size:18px}
+  .shot img{aspect-ratio:4/3.4}
+  .stats ul{grid-template-columns:1fr 1fr;gap:22px 0;padding:26px 20px}
+  .stats li:nth-child(3){border-left:0;padding-left:0}
+  .stats b{font-size:30px}
+  .sec{padding:72px 0}
+  .sec-head{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:32px}
+  .snow .txt,.snow .spec{padding:28px 22px}
+  .snow .spec span{min-width:92px}
+  .ask,.answer{padding:28px 20px}
+  .match{font-size:27px}
+  .mrow{grid-template-columns:1fr 1fr}
+  .mrow div:first-child{grid-column:1/-1}
+  .send{grid-template-columns:1fr}
+  .redbox blockquote{font-size:19px}
+  .pillar{grid-template-columns:44px 1fr;gap:12px}
+  .geo-grid{grid-template-columns:1fr 1fr}
+  .geo-grid div{margin-right:12px;padding-right:0}
+  .geo-grid b{font-size:32px;font-stretch:104%}
+  .geo-grid b small{font-size:16px}
+  .sec-head h2,.why-us h2,.faq h2{font-size:32px!important}
+  .end h2{font-size:32px}
+  .flights{margin-top:40px}
+  .team blockquote{font-size:24px}
+  .end .wrap{padding-top:72px;padding-bottom:72px;gap:36px}
+  .end .acts .btn{flex:1 1 100%}
+  footer .wrap{padding-bottom:96px}
+  .callbar{display:grid;grid-template-columns:1fr 1.25fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:50;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:rgba(15,23,42,.97);border-top:1px solid rgba(255,255,255,.1)}
+  .callbar a{min-height:48px;font-size:15px}
+  .callbar .btn-line{color:#fff;border-color:rgba(255,255,255,.35)}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="RIM Adventures Georgia, home"><img src="https://www.rimadventure.com/_next/image?url=%2Fimages%2Frim-logo.png&w=384&q=75" width="348" height="221" alt="RIM Adventures Georgia"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#tours">Tours</a>
+      <a href="#snowbike">Snowbike</a>
+      <a href="#why">Why us</a>
+      <a href="#georgia">Why Georgia</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-red" href="#plan">Book Now</a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="h1">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Motorcycle tours in Georgia</span>
+      <h1 id="h1">Ride Georgia with <em>RIM Adventures</em></h1>
+      <p class="lede">Guided enduro, training and snowbike tours in small groups, on a Beta fleet, on routes from the Caucasus to the Black Sea coast. Built around your level.</p>
+      <div class="acts">
+        <a class="btn btn-red" href="#plan">Find your tour <span aria-hidden="true">→</span></a>
+        <a class="btn btn-line" href="tel:+995595425525">Call +995 595 42 55 25</a>
+      </div>
+      <ul class="chips">
+        <li>Beginner-friendly groups</li>
+        <li>English-guided</li>
+        <li>No hidden fees</li>
+      </ul>
+    </div>
+    <figure class="shot">
+      <img src="https://www.rimadventure.com/_next/image?url=%2Fimages%2Fbackgroundaboutus.jpg&w=1280&q=75" width="1280" height="960" alt="A RIM Adventures group riding enduro bikes along a dry ridge in Georgia, seen from the handlebars">
+      <figcaption><b>6 to 8 riders</b>Usual group size, split with a second guide when needed</figcaption>
+    </figure>
+  </div>
+  <div class="stats">
+    <ul>
+      <li><b>12+</b><span>Years riding Georgia</span></li>
+      <li><b>200+</b><span>Tours delivered</span></li>
+      <li><b>1000+</b><span>Riders served</span></li>
+      <li><b>91+</b><span>Verified reviews</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="tours" aria-labelledby="tours-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="kicker">Main products</span><h2 id="tours-h">Pick your ride</h2></div>
+      <p>Three tours, from your first enduro days to riding through snow. Each one shows how hard it is before you book.</p>
+    </div>
+    <div class="tours">
+      <article class="tour t1">
+        <div class="band">
+          <svg viewBox="0 0 400 150" preserveAspectRatio="none" aria-hidden="true"><path d="M0 110 L60 86 L120 98 L190 62 L250 80 L320 50 L400 72 L400 150 L0 150Z" fill="#b39c6e"/><path d="M0 130 L80 112 L160 124 L240 100 L320 116 L400 104 L400 150 L0 150Z" fill="#9c8558"/></svg>
+          <span class="tag">For beginners</span>
+        </div>
+        <div class="body">
+          <h3>5 Days of Training Tour</h3>
+          <ul class="facts">
+            <li>Distance <b>100–120 km</b></li>
+            <li>Difficulty <b>For beginners<span class="meter" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span></b></li>
+          </ul>
+          <p class="desc">Learn the basics of enduro with structured daily coaching.</p>
+          <div class="foot">
+            <div class="price"><small>From</small><b>€990</b></div>
+            <a class="pick" href="#plan" data-tour="train">Plan this <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="tour t2">
+        <div class="band">
+          <svg viewBox="0 0 400 150" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L50 40 L95 66 L150 30 L210 74 L260 96 L400 110 L400 150 L0 150Z" fill="#245e74"/><path d="M0 122 C120 112 240 128 400 118 L400 150 L0 150Z" fill="#1d4e61"/><path d="M14 92 C90 70 160 108 230 92 S350 112 390 108" fill="none" stroke="#ff2d1f" stroke-width="3" stroke-dasharray="2 7" stroke-linecap="round"/></svg>
+          <span class="tag">7 days · All in one</span>
+        </div>
+        <div class="body">
+          <h3>7 days from central Georgia to the Black Sea</h3>
+          <ul class="facts">
+            <li>Distance <b>650–700 km</b></li>
+            <li>Difficulty <b>1–3 of 5<span class="meter" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></b></li>
+          </ul>
+          <p class="desc">One continuous journey from inland terrain to the coast, with a balanced challenge.</p>
+          <div class="foot">
+            <div class="price"><small>All in one</small><b>€1,650</b></div>
+            <a class="pick" href="#plan" data-tour="sea">Plan this <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="tour t3">
+        <div class="band">
+          <svg viewBox="0 0 400 150" preserveAspectRatio="none" aria-hidden="true"><path d="M0 100 L70 44 L120 80 L190 20 L260 76 L310 50 L400 96 L400 150 L0 150Z" fill="#475569"/><path d="M170 37 L190 20 L212 39 L198 34 L190 42 L182 34Z M58 54 L70 44 L84 56 L72 52Z M300 58 L310 50 L322 62 L310 57Z" fill="#e2e8f0"/><path d="M0 128 C100 116 260 132 400 120 L400 150 L0 150Z" fill="#f1f5f9"/></svg>
+          <span class="tag">Winter</span>
+        </div>
+        <div class="body">
+          <h3>Snowbike Tour</h3>
+          <ul class="facts">
+            <li>Getting there <b>3–4 hours drive</b></li>
+            <li>Difficulty <b>Medium to hard<span class="meter" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></b></li>
+          </ul>
+          <p class="desc">Keep your gear in use through winter: Beta RR 430 snowbikes around Goderdzi, with hotel stays.</p>
+          <div class="foot">
+            <div class="price"><small>From</small><b>€1,550</b></div>
+            <a class="pick" href="#plan" data-tour="snow">Plan this <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="snow" id="snowbike">
+      <div class="txt">
+        <span class="kicker" style="color:#ff6a5e">Winter magic</span>
+        <h3>Don't put your riding kit away for winter</h3>
+        <p>We run snowbike trips in Georgian ski country, so you can keep riding when the peaks are under snow. A completely different kind of two-wheel adventure.</p>
+        <p>Open snowfields and snow-laced pine forests around Goderdzi in Adjara, near the Black Sea coast.</p>
+      </div>
+      <div class="spec">
+        <div><span>The bikes</span><b>Our Beta RR 430 enduro bikes, converted with ZF track drive</b></div>
+        <div><span>Where</span><b>Goderdzi, Adjara</b></div>
+        <div><span>Stay</span><b>From a spa luxury hotel to a comfortable three-star base</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec plan" id="plan" aria-labelledby="plan-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="kicker">Start planning</span><h2 id="plan-h">Find the tour for your level</h2></div>
+      <p>Share your season, skill level and preferred style. We come back with a proposal and practical prep guidance.</p>
+    </div>
+    <div class="planner">
+      <div class="ask">
+        <fieldset class="q">
+          <legend>When do you want to ride?</legend>
+          <div class="opts">
+            <input type="radio" name="season" id="s-sum" value="summer" checked><label for="s-sum">On dirt</label>
+            <input type="radio" name="season" id="s-win" value="winter"><label for="s-win">On snow, in winter</label>
+          </div>
+        </fieldset>
+        <fieldset class="q">
+          <legend>Your enduro level</legend>
+          <div class="opts">
+            <input type="radio" name="level" id="l-1" value="new" checked><label for="l-1">Beginner</label>
+            <input type="radio" name="level" id="l-2" value="some"><label for="l-2">Some off-road</label>
+            <input type="radio" name="level" id="l-3" value="pro"><label for="l-3">Experienced</label>
+          </div>
+        </fieldset>
+        <fieldset class="q">
+          <legend>What you came for</legend>
+          <div class="opts">
+            <input type="radio" name="style" id="y-1" value="Technical enduro riding"><label for="y-1">Technical riding</label>
+            <input type="radio" name="style" id="y-2" value="Enduro, landscape and a bit of culture" checked><label for="y-2">Riding, landscape &amp; culture</label>
+          </div>
+        </fieldset>
+        <div class="q" style="display:flex;flex-wrap:wrap;gap:22px">
+          <div>
+            <span class="lbl" style="font:700 12px/1 var(--head);letter-spacing:.16em;text-transform:uppercase;display:block;margin-bottom:12px" id="riders-l">Riders</span>
+            <div class="step" role="group" aria-labelledby="riders-l">
+              <button type="button" id="minus" aria-label="One rider fewer">−</button>
+              <output id="riders" aria-live="polite">2 riders</output>
+              <button type="button" id="plus" aria-label="One rider more">+</button>
+            </div>
+          </div>
+          <div style="flex:1;min-width:170px">
+            <label class="lbl" for="month" style="font:700 12px/1 var(--head);letter-spacing:.16em;text-transform:uppercase;display:block;margin-bottom:12px">Month</label>
+            <select id="month">
+              <option>January</option><option>February</option><option>March</option><option>April</option><option>May</option><option selected>June</option><option>July</option><option>August</option><option>September</option><option>October</option><option>November</option><option>December</option><option>Not sure yet</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="answer" aria-live="polite">
+        <span class="kicker">Your match</span>
+        <p class="match" id="m-name">5 Days of Training Tour</p>
+        <p class="why" id="m-why">Structured daily coaching to learn the basics of enduro.</p>
+        <div class="mrow">
+          <div><span>Price</span><b id="m-price">From €990</b></div>
+          <div><span id="m-dist-l">Distance</span><b id="m-dist">100–120 km</b></div>
+          <div><span>Difficulty</span><b id="m-diff">For beginners</b><div class="meter" id="m-meter" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></div></div>
+        </div>
+        <p class="sum" id="m-sum"><b>Your inquiry:</b> 2 riders, beginner, June, enduro, landscape and a bit of culture.</p>
+        <form class="send" id="form">
+          <div><label for="f-name">Name</label><input type="text" id="f-name" name="name" autocomplete="name" required></div>
+          <div><label for="f-mail">Email</label><input type="email" id="f-mail" name="email" autocomplete="email" required></div>
+          <div class="full"><label for="f-msg">Dates or questions (optional)</label><textarea id="f-msg" name="message"></textarea></div>
+          <div class="full"><button class="btn btn-red" type="submit">Send inquiry</button></div>
+        </form>
+        <p class="done" id="done" role="status">Thank you. Your inquiry is with us.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="why" aria-labelledby="why-h">
+  <div class="wrap why-us">
+    <div class="redbox">
+      <img src="https://www.rimadventure.com/_next/image?url=%2Fimages%2Fhero-biker-atmo.png&w=640&q=75" width="484" height="484" alt="An enduro rider in mud-covered kit cornering hard" loading="lazy">
+      <blockquote>“We always manage to surprise enduro riders who have already traveled around the world.”</blockquote>
+    </div>
+    <div>
+      <span class="kicker">Why ride with us</span>
+      <h2 id="why-h" style="font-size:clamp(34px,4vw,54px);font-weight:900;text-transform:uppercase;margin-bottom:30px">Every kilometer thought out</h2>
+      <div class="pillars">
+        <div class="pillar"><span class="n">01</span><div><h3>Experienced riding team</h3><ul><li>Professional certified guides</li><li>Safety-first on all routes</li><li>On-trail support throughout</li></ul></div></div>
+        <div class="pillar"><span class="n">02</span><div><h3>Safe riding equipment</h3><ul><li>Late-model Beta fleet, maintained daily</li><li>Full protective gear included</li></ul></div></div>
+        <div class="pillar"><span class="n">03</span><div><h3>Precision route planning</h3><ul><li>GPS-mapped, terrain-matched routes</li><li>3 climate zones covered</li><li>Backup vehicle on every tour</li></ul></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec geo" id="georgia" aria-labelledby="geo-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="kicker" style="color:#ff6a5e">Why Georgia?</span><h2 id="geo-h">Semi-desert to snow peaks</h2></div>
+      <p>Ancient ruins, castles, churches, waterfalls, glaciers and beaches, across 3 climate zones.</p>
+    </div>
+    <div class="geo-grid">
+      <div><b>3</b><p>Climate zones, for terrain variety at every level</p></div>
+      <div><b>70,000<small>km²</small></b><p>Where we are allowed to ride legally</p></div>
+      <div><b>5000<small>m+</small></b><p>Three peaks, a few hours' drive from semi-desert and subtropical rainforest</p></div>
+      <div><b>3000<small>m</small></b><p>High passes you can ride over</p></div>
+    </div>
+    <div class="flights" aria-label="Direct flights of around three and a half hours">
+      <span>Munich</span><span>Memmingen</span><span>Berlin</span><span>Frankfurt</span><span>Riga</span><span>Warsaw</span><span>Vienna</span>
+      <span class="arrow" aria-hidden="true">→ ~3½ h →</span>
+      <span class="to">Kutaisi</span><span class="to">Tbilisi</span>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="team" aria-labelledby="team-h">
+  <div class="wrap team">
+    <div>
+      <h2 id="team-h" class="kicker" style="font:700 12px/1 var(--head);letter-spacing:.2em">Our team</h2>
+      <blockquote>Why do we do this? Because this is <span>the best job in the whole world.</span></blockquote>
+      <p class="about">Some guests come for technical enduro riding. Some want enduro, beautiful landscape and a bit of culture. We keep a hand on the pulse during the tour, so every viewpoint is approached from the right hill.</p>
+    </div>
+    <ul class="people">
+      <li><span class="mono" aria-hidden="true">Z</span><div><b>Zurab</b><span>Managing Director, Tour Guide</span></div></li>
+      <li><span class="mono" aria-hidden="true">L</span><div><b>Luka</b><span>Assistant, Tour Guide</span></div></li>
+      <li><span class="mono" aria-hidden="true">A</span><div><b>Alex</b><span>Mechanic</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec faq" id="faq" aria-labelledby="faq-h">
+  <div class="wrap faq-grid">
+    <div>
+      <span class="kicker">FAQ</span>
+      <h2 id="faq-h" style="font-size:clamp(34px,4vw,54px);font-weight:900;text-transform:uppercase">Before you book</h2>
+      <div class="badges"><span>No hidden fees</span><span>Beginner-friendly groups</span><span>English-guided tours</span></div>
+    </div>
+    <div>
+      <details open><summary>How big are the groups usually?</summary><p>Usually 6 to 8 riders. We split into smaller groups with a second guide when needed.</p></details>
+      <details><summary>Can I join as an enduro beginner?</summary><p>Yes. Beginner groups and mixed-group splits are supported in our guiding format.</p></details>
+      <details><summary>Are tours conducted in English?</summary><p>Yes, tours are guided in English.</p></details>
+      <details><summary>Do I need a visa to come to Georgia?</summary><p>Many travelers can enter Georgia visa-free for short stays; others use the official e-visa or consulate process. It depends on your nationality and trip purpose, so check current Georgian government guidance before you book flights.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="end" id="contact" aria-labelledby="end-h">
+  <div class="wrap">
+    <div>
+      <h2 id="end-h">Ready to ride Georgia on a route <em>built around your level?</em></h2>
+      <p>Still unsure which tour fits? Talk to us and get a custom recommendation.</p>
+      <div class="acts">
+        <a class="btn btn-red" href="#plan">Find your tour <span aria-hidden="true">→</span></a>
+        <a class="btn btn-line" href="tel:+995595425525">Call us</a>
+      </div>
+    </div>
+    <address class="contact" style="font-style:normal">
+      <a href="tel:+995595425525"><span>Phone</span><b>+995 595 42 55 25</b></a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Rustavi%20International%20Motorpark%2C%203700%20Rustavi%2C%20Georgia" target="_blank" rel="noopener"><span>Base</span><b>Rustavi International Motorpark, 3700 Rustavi</b></a>
+      <a href="https://www.instagram.com/rimadventures" target="_blank" rel="noopener"><span>Instagram</span><b>@rimadventures</b></a>
+      <a href="https://www.facebook.com/enduroingeorgia/" target="_blank" rel="noopener"><span>Facebook</span><b>enduroingeorgia</b></a>
+    </address>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 RIM Adventures Georgia</span>
+    <span>Mockup made for Rim Adventures by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></span>
+    <span class="soc"><a href="https://www.rimadventure.com/">rimadventure.com</a></span>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-line" href="tel:+995595425525">Call</a>
+  <a class="btn btn-red" href="#plan">Find your tour</a>
+</div>
+
+<script>
+(function(){
+  var T={
+    train:{name:"5 Days of Training Tour",price:"From €990",dist:"100–120 km",dl:"Distance",diff:"For beginners",n:1,why:"Structured daily coaching to learn the basics of enduro."},
+    sea:{name:"7 days from central Georgia to the Black Sea",price:"All in one €1,650",dist:"650–700 km",dl:"Distance",diff:"1–3 of 5",n:3,why:"One continuous journey from inland terrain to the coast, with a balanced challenge."},
+    snow:{name:"Snowbike Tour",price:"From €1,550",dist:"3–4 hours drive",dl:"Getting there",diff:"Medium to hard",n:4,why:"Beta RR 430 snowbikes on open snowfields and pine forests around Goderdzi."}
+  };
+  var LV={new:"beginner",some:"some off-road experience",pro:"experienced"};
+  var riders=2,$=function(id){return document.getElementById(id)};
+  function val(n){var e=document.querySelector('input[name="'+n+'"]:checked');return e?e.value:""}
+  function pickKey(){
+    if(val("season")==="winter")return "snow";
+    return val("level")==="new"?"train":"sea";
+  }
+  function render(){
+    var k=pickKey(),t=T[k],lv=val("level");
+    $("m-name").textContent=t.name;
+    var why=t.why;
+    if(k==="snow"&&lv==="new")why+=" Rated medium to hard, so tell us your experience and we will advise.";
+    if(k==="sea"&&lv==="pro")why+=" Or ask us for a route proposal built around your style.";
+    $("m-why").textContent=why;
+    $("m-price").textContent=t.price;$("m-dist").textContent=t.dist;$("m-dist-l").textContent=t.dl;$("m-diff").textContent=t.diff;
+    var is=$("m-meter").children;for(var i=0;i<is.length;i++)is[i].className=i<t.n?"on":"";
+    $("riders").textContent=riders+(riders===1?" rider":" riders");
+    $("m-sum").innerHTML="<b>Your inquiry:</b> "+riders+(riders===1?" rider":" riders")+", "+LV[lv]+", "+$("month").value+", "+val("style").toLowerCase()+".";
+  }
+  document.querySelectorAll(".planner input[type=radio]").forEach(function(r){r.addEventListener("change",render)});
+  $("month").addEventListener("change",render);
+  $("minus").addEventListener("click",function(){if(riders>1){riders--;render()}});
+  $("plus").addEventListener("click",function(){if(riders<20){riders++;render()}});
+  document.querySelectorAll("[data-tour]").forEach(function(a){a.addEventListener("click",function(){
+    var k=a.getAttribute("data-tour");
+    if(k==="snow"){$("s-win").checked=true}else{$("s-sum").checked=true;$(k==="train"?"l-1":"l-2").checked=true}
+    render();
+  })});
+  $("form").addEventListener("submit",function(e){e.preventDefault();$("done").classList.add("show");});
+  render();
+
+  var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(reduce||!("IntersectionObserver" in window))return;
+  var els=document.querySelectorAll(".sec-head,.tour,.snow,.planner,.redbox,.pillar,.geo-grid,.flights,.team>*,.faq-grid>*,.end .wrap>*");
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove("will-rise");io.unobserve(en.target)}})},{rootMargin:"0px 0px -8% 0px"});
+  var h=window.innerHeight;
+  els.forEach(function(el){if(el.getBoundingClientRect().top>h){el.classList.add("rise","will-rise");io.observe(el)}});
+})();
+</script>
+</body>
+</html>
