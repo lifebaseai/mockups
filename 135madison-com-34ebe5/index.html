@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup 135madison-com-34ebe5 1 11cef29f -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>135 Madison | Pitch decks and investor materials, Pre-seed to Series D</title>
+<meta name="description" content="135 Madison crafts investor material that helps founders make a memorable first impression, tell their story and get funded. Startups we've helped have raised $2B+.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,300..800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#111110; --ink2:#2a2a28; --mute:#57554f; --paper:#fff; --stone:#f4f3ef; --line:#dcdad3;
+  --volt:#dcf23f; --volt-deep:#c6dd22;
+  --wide:125%; --r:18px;
+  --max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px;border-radius:6px}
+.dark :focus-visible,.banner :focus-visible{outline-color:var(--volt)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+.wide{font-stretch:var(--wide);text-transform:uppercase;letter-spacing:.01em}
+.eyebrow{font-stretch:var(--wide);text-transform:uppercase;letter-spacing:.22em;font-size:12px;font-weight:600;color:var(--mute);margin:0 0 18px;display:flex;align-items:center;gap:12px}
+.eyebrow .no{display:inline-grid;place-items:center;min-width:34px;height:22px;border:1px solid currentColor;border-radius:99px;font-size:11px;letter-spacing:.08em;padding:0 8px}
+h1,h2,h3{margin:0;font-weight:700;line-height:1.08}
+h2{font-stretch:var(--wide);text-transform:uppercase;font-size:clamp(28px,3.6vw,44px);letter-spacing:.005em}
+p{margin:0}
+
+/* banner */
+.banner{background:var(--ink);color:#f4f3ef;min-height:44px;display:flex;align-items:center;justify-content:center;padding:10px 16px;font-size:15px;line-height:1.3;text-align:center;border-bottom:1px solid #2c2c2a}
+.banner a{color:var(--volt);text-decoration:underline;text-underline-offset:3px;font-weight:600}
+
+/* header */
+.site-head{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
+.site-head.scrolled{border-bottom-color:var(--line)}
+.head-in{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{display:flex;align-items:center;min-height:44px}
+.logo img{height:50px;width:auto}
+.nav{display:flex;align-items:center;gap:30px}
+.nav a{font-stretch:var(--wide);text-transform:uppercase;font-size:12px;letter-spacing:.16em;font-weight:600;text-decoration:none;padding:12px 0}
+.nav a:not(.btn):hover{text-decoration:underline;text-underline-offset:5px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:52px;padding:0 26px;border-radius:99px;font-stretch:var(--wide);text-transform:uppercase;letter-spacing:.12em;font-size:13px;font-weight:700;text-decoration:none;border:1.5px solid var(--ink);cursor:pointer;font-family:inherit;transition:transform .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn-volt{background:var(--volt);border-color:var(--volt);color:var(--ink)}
+.btn-volt:hover{background:var(--volt-deep);border-color:var(--volt-deep)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.nav .btn{min-height:44px;padding:0 20px;font-size:12px}
+.arrow{width:30px;height:30px;border-radius:50%;background:var(--ink);display:inline-grid;place-items:center;margin-right:-14px}
+.arrow svg{width:13px;height:13px}
+.btn-ink .arrow{background:var(--volt)}
+
+/* hero */
+.hero{padding:64px 0 84px}
+.hero-grid{display:grid;grid-template-columns:1.02fr 1fr;gap:56px;align-items:center}
+.hero h1{font-stretch:var(--wide);text-transform:uppercase;font-size:clamp(34px,4.4vw,58px);letter-spacing:-.005em;line-height:1.04}
+.hero h1 .hl{background:linear-gradient(transparent 58%,var(--volt) 58%,var(--volt) 92%,transparent 92%);padding:0 .06em;margin:0 -.06em}
+.hero .lede{margin-top:24px;font-size:19px;max-width:30em;color:var(--ink2)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.stagebar{margin-top:40px;display:flex;align-items:center;gap:14px;font-size:13px;color:var(--mute)}
+.stagebar .track{flex:1;max-width:330px;height:2px;background:linear-gradient(90deg,var(--ink),var(--line));position:relative}
+.stagebar b{font-stretch:var(--wide);text-transform:uppercase;letter-spacing:.14em;font-size:11px;color:var(--ink)}
+
+/* the slide */
+.slide-wrap{position:relative}
+.slide-wrap::before{content:"";position:absolute;width:150px;height:150px;border-radius:50%;background:var(--volt);right:-26px;top:-34px}
+.slide-wrap::after{content:"";position:absolute;width:74px;height:74px;border-radius:50%;border:1.5px solid var(--ink);left:-24px;bottom:-26px}
+.js .hero .slide{aspect-ratio:16/10}
+.slide{position:relative;z-index:1;background:var(--ink);color:#fff;border-radius:var(--r);padding:clamp(22px,3vw,38px);display:flex;flex-direction:column;box-shadow:0 30px 60px -28px rgba(17,17,16,.55),0 2px 0 rgba(255,255,255,.04) inset;overflow:hidden}
+.slide-top{display:flex;justify-content:space-between;align-items:center;font-stretch:var(--wide);text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:#c9c8c2}
+.slide-top .live{display:flex;align-items:center;gap:8px}
+.slide-top .live i{width:8px;height:8px;border-radius:50%;background:var(--volt)}
+.frames{position:relative;flex:1;display:grid}
+.frame{display:flex;flex-direction:column;justify-content:flex-end;transition:opacity .6s,transform .6s;padding:14px 0}
+.js .frame{grid-area:1/1;padding:0}
+.js .frame.off{opacity:0;transform:translateY(10px);pointer-events:none}
+.big{font-stretch:var(--wide);font-weight:800;font-size:clamp(64px,9vw,128px);line-height:.92;letter-spacing:-.02em;color:var(--volt)}
+.big small{font-size:.38em;letter-spacing:0;margin-left:.1em}
+.frame p{margin-top:14px;font-size:clamp(16px,1.6vw,20px);max-width:22em;color:#e8e7e2}
+.slide-foot{display:flex;justify-content:space-between;align-items:center;margin-top:22px;padding-top:16px;border-top:1px solid #34342f;font-size:12px;color:#c9c8c2;letter-spacing:.06em}
+.dots{display:flex;gap:4px}
+.dots button{width:44px;height:44px;border:0;background:none;padding:0;cursor:pointer;display:grid;place-items:center;margin:-14px 0}
+.dots button span{width:24px;height:3px;border-radius:3px;background:#4a4a45;transition:background .3s,width .3s}
+.dots button[aria-current="true"] span{background:var(--volt);width:36px}
+
+/* ticker */
+.ticker{background:var(--volt);overflow:hidden;border-block:1.5px solid var(--ink)}
+.ticker-row{display:flex;width:max-content;animation:tick 38s linear infinite}
+.ticker.paused .ticker-row{animation-play-state:paused}
+.ticker span{font-stretch:var(--wide);text-transform:uppercase;font-weight:700;font-size:20px;letter-spacing:.04em;padding:16px 0;white-space:nowrap}
+.ticker span::after{content:"";display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--ink);margin:0 28px;vertical-align:middle;position:relative;top:-2px}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* sections */
+section{scroll-margin-top:84px}
+.sec{padding:110px 0}
+.stone{background:var(--stone)}
+.dark{background:var(--ink);color:#f4f3ef}
+.dark .eyebrow{color:#bdbcb5}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:end;margin-bottom:56px}
+.sec-head p{color:var(--mute);font-size:18px;max-width:30em}
+
+/* kit builder */
+.kit{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:start}
+.fieldset{border:0;margin:0 0 30px;padding:0}
+.legend{font-stretch:var(--wide);text-transform:uppercase;font-size:12px;letter-spacing:.18em;font-weight:700;margin-bottom:14px;padding:0}
+.stages{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.chip span{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:99px;border:1.5px solid var(--line);background:#fff;font-weight:600;font-size:15px;transition:all .2s}
+.chip input:checked+span{background:var(--ink);border-color:var(--ink);color:#fff}
+.chip input:focus-visible+span{outline:3px solid var(--ink);outline-offset:3px}
+.svc{list-style:none;margin:0;padding:0;border-top:1.5px solid var(--ink)}
+.svc li{border-bottom:1px solid var(--line)}
+.svc label{display:grid;grid-template-columns:28px 1fr auto;gap:16px;align-items:start;padding:18px 4px;cursor:pointer;transition:background .2s}
+.svc label:hover{background:rgba(255,255,255,.6)}
+.svc .n{font-size:12px;font-weight:600;color:var(--mute);padding-top:4px;letter-spacing:.06em}
+.svc .t{display:block;font-weight:700;font-stretch:var(--wide);text-transform:uppercase;font-size:16px;letter-spacing:.04em;line-height:1.25}
+.svc .d{display:block;font-size:15px;color:var(--mute);margin-top:6px;max-width:34em}
+.svc input{position:absolute;opacity:0;width:1px;height:1px}
+.tick{width:30px;height:30px;border-radius:50%;border:1.5px solid var(--ink);display:grid;place-items:center;transition:background .2s;margin-top:-2px}
+.tick svg{width:14px;height:14px;opacity:0;transition:opacity .2s}
+.svc input:checked~.tick{background:var(--volt);border-color:var(--ink)}
+.svc input:checked~.tick svg{opacity:1}
+.svc input:focus-visible~.tick{outline:3px solid var(--ink);outline-offset:3px}
+.brief{position:sticky;top:104px}
+.brief .slide{aspect-ratio:auto;min-height:420px}
+.brief h3{font-stretch:var(--wide);text-transform:uppercase;font-size:clamp(24px,2.4vw,32px);margin-top:26px;line-height:1.1}
+.brief h3 em{font-style:normal;color:var(--volt)}
+.brief ol{list-style:none;padding:0;margin:22px 0 0;counter-reset:b}
+.brief li{counter-increment:b;display:grid;grid-template-columns:30px 1fr;gap:10px;padding:12px 0;border-top:1px solid #34342f}
+.brief li::before{content:counter(b,decimal-leading-zero);font-size:12px;color:var(--volt);padding-top:3px;letter-spacing:.06em}
+.brief li b{display:block;font-size:15px;font-weight:700}
+.brief li span{display:block;font-size:14px;color:#c9c8c2;margin-top:2px}
+.brief .empty{margin-top:22px;color:#c9c8c2;font-size:15px;border-top:1px solid #34342f;padding-top:14px}
+@keyframes pop{from{transform:translateX(-6px)}}
+.js .brief li{animation:pop .35s ease}
+.brief .btn{margin-top:24px;width:100%}
+
+/* proof */
+.proof-grid{display:grid;grid-template-columns:minmax(0,560px) 1fr;gap:64px;align-items:center}
+.arch{border-radius:280px 280px 0 0;overflow:hidden;aspect-ratio:712/613;max-width:560px;background:#ddd;position:relative}
+.arch img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05)}
+.arch-wrap{position:relative}
+.arch-wrap::after{content:"";position:absolute;width:96px;height:96px;border-radius:50%;background:var(--volt);right:-18px;bottom:28px;mix-blend-mode:multiply}
+.proof h2{margin-bottom:22px}
+.proof p.lead{font-size:19px;color:var(--ink2);max-width:28em}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:40px;border-top:1.5px solid var(--ink)}
+.stats div{padding:20px 16px 0 0}
+.stats b{display:block;font-stretch:var(--wide);font-size:clamp(26px,2.8vw,36px);font-weight:800;line-height:1}
+.stats span{display:block;font-size:14px;color:var(--mute);margin-top:8px;line-height:1.35}
+.tags{margin-top:38px}
+.tags p{font-stretch:var(--wide);text-transform:uppercase;font-size:11px;letter-spacing:.2em;font-weight:700;margin-bottom:12px}
+.tags ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.tags li{font-size:14px;padding:6px 13px;border:1px solid var(--line);border-radius:99px;background:#fff}
+
+/* testimonials */
+.quote-big{max-width:1000px}
+.quote-big blockquote{margin:0}
+.quote-big .qh{color:#fff;font-size:clamp(28px,4vw,54px);line-height:1.06;max-width:16em}
+.quote-big p{margin-top:24px;font-size:19px;color:#dad9d3;max-width:44em}
+.who{margin-top:18px;font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-stretch:var(--wide);color:var(--volt)}
+.qrow{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(300px,1fr);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:70px;padding-bottom:18px;scrollbar-width:thin;scrollbar-color:#55554f transparent}
+.qrow figure{margin:0;scroll-snap-align:start;border:1px solid #34342f;border-radius:var(--r);padding:26px;display:flex;flex-direction:column;background:#1a1a19}
+.qrow h3{font-stretch:var(--wide);text-transform:uppercase;font-size:14px;letter-spacing:.06em;line-height:1.35;color:#fff}
+.qrow blockquote{margin:14px 0 0;font-size:15px;color:#cfcec8;flex:1}
+.qrow figcaption{margin-top:18px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--volt)}
+.qnav{display:flex;justify-content:space-between;align-items:center;margin-top:18px;color:#bdbcb5;font-size:14px}
+.qnav div{display:flex;gap:10px}
+.qnav button{width:48px;height:48px;border-radius:50%;border:1.5px solid #55554f;background:transparent;color:#fff;cursor:pointer;display:grid;place-items:center;transition:background .2s,color .2s}
+.qnav button:hover{background:var(--volt);color:var(--ink);border-color:var(--volt)}
+.qnav svg{width:16px;height:16px}
+
+/* process */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);position:relative}
+.steps::before{content:"";position:absolute;left:0;right:0;top:27px;height:1.5px;background:var(--ink)}
+.steps li{position:relative;padding-right:28px}
+.steps .dot{width:56px;height:56px;border-radius:50%;background:#fff;border:1.5px solid var(--ink);display:grid;place-items:center;font-weight:700;font-stretch:var(--wide);font-size:15px;position:relative}
+.steps li:last-child .dot{background:var(--volt)}
+.steps h3{margin-top:26px;font-stretch:var(--wide);text-transform:uppercase;font-size:clamp(20px,2.1vw,28px);line-height:1.1}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
+.faq details{border-top:1.5px solid var(--ink)}
+.faq details:last-child{border-bottom:1.5px solid var(--ink)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;min-height:44px;font-weight:700;font-size:18px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary i{flex:none;width:32px;height:32px;border-radius:50%;border:1.5px solid var(--ink);position:relative;transition:background .2s,transform .3s}
+.faq summary i::before,.faq summary i::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:1.5px;background:var(--ink);transform:translate(-50%,-50%)}
+.faq summary i::after{transform:translate(-50%,-50%) rotate(90deg);transition:transform .3s}
+.faq details[open] summary i{background:var(--volt)}
+.faq details[open] summary i::after{transform:translate(-50%,-50%) rotate(0)}
+.faq details p{padding:0 50px 24px 0;color:var(--ink2);font-size:17px}
+
+/* contact */
+.start{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.start h2{font-size:clamp(34px,4.4vw,58px)}
+.start .lead{margin-top:22px;font-size:19px;color:var(--ink2);max-width:26em}
+.mini-q{margin-top:40px;padding:24px 0 0;border-top:1.5px solid var(--ink);max-width:28em}
+.mini-q blockquote{margin:0;font-size:17px;font-style:italic}
+.mini-q figcaption{margin-top:10px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+#contact{background:#fff;border:1.5px solid var(--ink);border-radius:var(--r);padding:34px;box-shadow:10px 10px 0 var(--volt)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{margin-bottom:18px}
+.field label{display:block;font-size:13px;font-weight:700;margin-bottom:7px;letter-spacing:.02em}
+.field input,.field select,.field textarea{width:100%;font:inherit;font-size:16px;color:var(--ink);background:var(--stone);border:1.5px solid transparent;border-radius:12px;padding:12px 14px;min-height:50px;transition:border-color .2s,background .2s}
+.field textarea{min-height:150px;resize:vertical;line-height:1.5}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--ink);background:#fff}
+#contact .btn{width:100%;margin-top:4px}
+.sent{display:none;margin-top:16px;padding:14px 16px;border-radius:12px;background:var(--volt);font-weight:600}
+.sent.show{display:block}
+
+/* footer */
+footer{background:var(--ink);color:#d6d5cf;padding:64px 0 40px}
+.foot{display:flex;justify-content:space-between;align-items:flex-start;gap:40px;flex-wrap:wrap}
+.foot-logo{background:#fff;border-radius:12px;padding:10px 14px;display:inline-block}
+.foot-logo img{height:46px;width:auto}
+.foot p.tag{margin-top:18px;font-stretch:var(--wide);text-transform:uppercase;letter-spacing:.16em;font-size:12px}
+.foot nav{display:flex;gap:6px 26px;flex-wrap:wrap}
+.foot nav a{font-size:15px;text-decoration:none;padding:12px 0;display:inline-block}
+.foot nav a:hover{text-decoration:underline}
+.made{margin-top:46px;padding-top:24px;border-top:1px solid #34342f;font-size:14px;color:#bdbcb5}
+.made a{color:#f4f3ef;text-underline-offset:3px}
+
+/* reveal */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:980px){
+  .hero-grid,.kit,.proof-grid,.faq-grid,.start,.sec-head{grid-template-columns:1fr}
+  .sec-head{gap:18px}
+  .brief{position:static}
+  .hero-grid{gap:64px}
+  .proof-grid{gap:48px}
+  .nav .hide-s{display:none}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{padding:0 20px}
+  .head-in{height:64px}
+  .logo img{height:42px}
+  .nav{gap:0}
+  .nav .btn{padding:0 16px;font-size:11px}
+  .hero{padding:36px 0 64px}
+  .hero .lede{font-size:17px;margin-top:18px}
+  .ctas .btn{flex:1 1 100%}
+  .stagebar{margin-top:30px}
+  .slide-wrap::before{width:96px;height:96px;right:-10px;top:-24px}
+  .slide-wrap::after{display:none}
+  .js .hero .slide{aspect-ratio:4/3.3}
+  .sec{padding:76px 0}
+  .sec-head{margin-bottom:36px}
+  .sec-head p{font-size:16px}
+  .svc label{grid-template-columns:22px 1fr auto;gap:12px}
+  .svc .t{font-size:14px}
+  .brief .slide{min-height:0}
+  .ticker span{font-size:16px;padding:13px 0}
+  .stats b{font-size:24px}
+  .stats span{font-size:13px}
+  .arch-wrap::after{width:64px;height:64px;right:-6px}
+  .qrow{grid-auto-columns:84%;margin-top:48px}
+  .quote-big p{font-size:17px}
+  .steps{grid-template-columns:1fr;gap:28px}
+  .steps::before{left:27px;right:auto;top:0;bottom:0;width:1.5px;height:auto}
+  .steps li{display:grid;grid-template-columns:56px 1fr;gap:20px;align-items:center;padding:0}
+  .steps h3{margin:0;font-size:19px}
+  .faq summary{font-size:16px}
+  .faq details p{padding-right:0}
+  .row2{grid-template-columns:1fr;gap:0}
+  .eyebrow{letter-spacing:.16em}
+  #contact{padding:24px 20px;box-shadow:6px 6px 0 var(--volt)}
+  .start h2{font-size:32px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="banner" role="region" aria-label="Mockup notice">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+
+<header class="site-head" id="top">
+  <div class="wrap head-in">
+    <a class="logo" href="#top" aria-label="135 Madison, back to top"><img src="https://images.squarespace-cdn.com/content/v1/62cc1f7dc16e002204ac6f27/e097e79f-f9a2-4127-8825-209b2c208865/135-madison-web-logo.png?format=300w" alt="135 Madison" width="68" height="50"></a>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-s" href="#kit">Services</a>
+      <a class="hide-s" href="#clients">Clients</a>
+      <a class="hide-s" href="#process">Process</a>
+      <a class="hide-s" href="#faq">FAQ</a>
+      <a class="btn btn-ink" href="#start">Let's do this</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">135 Madison · Investor materials</p>
+      <h1 id="h1">Pitch decks that get <span class="hl">meetings</span> and raise capital.</h1>
+      <p class="lede">We craft investor material that helps founders make a memorable first impression, tell their story clearly and get funded.</p>
+      <div class="ctas">
+        <a class="btn btn-volt" href="#start">Let's do this <span class="arrow" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="#dcf23f" stroke-width="2"><path d="M3 11L11 3M5 3h6v6"/></svg></span></a>
+        <a class="btn btn-ghost" href="#kit">Build your raise kit</a>
+      </div>
+      <div class="stagebar" aria-label="Stages we work with"><b>Pre-seed</b><span class="track" aria-hidden="true"></span><b>Series D</b></div>
+    </div>
+
+    <div class="slide-wrap">
+      <div class="slide" role="group" aria-roledescription="slideshow" aria-label="135 Madison in three numbers">
+        <div class="slide-top"><span class="live"><i aria-hidden="true"></i>135 Madison</span><span id="sn">01 / 03</span></div>
+        <div class="frames" aria-live="polite">
+          <div class="frame"><div class="big">$2B<small>+</small></div><p>Raised by the startups we've helped, with pitch decks that get meetings.</p></div>
+          <div class="frame"><div class="big">500<small>+</small></div><p>Global clients, from Pre-seed to Series D.</p></div>
+          <div class="frame"><div class="big">25<small>+ yrs</small></div><p>Our team's startup experience. For entrepreneurs, by entrepreneurs.</p></div>
+        </div>
+        <div class="slide-foot"><span>Investor materials</span>
+          <div class="dots">
+            <button type="button" aria-label="Show slide 1" aria-current="true"><span></span></button>
+            <button type="button" aria-label="Show slide 2" aria-current="false"><span></span></button>
+            <button type="button" aria-label="Show slide 3" aria-current="false"><span></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-label="For entrepreneurs, by entrepreneurs">
+  <div class="ticker-row" aria-hidden="true">
+    <span>For entrepreneurs</span><span>By entrepreneurs</span><span>For entrepreneurs</span><span>By entrepreneurs</span><span>For entrepreneurs</span><span>By entrepreneurs</span>
+    <span>For entrepreneurs</span><span>By entrepreneurs</span><span>For entrepreneurs</span><span>By entrepreneurs</span><span>For entrepreneurs</span><span>By entrepreneurs</span>
+  </div>
+</div>
+
+<section class="sec stone" id="kit" aria-labelledby="kit-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow"><span class="no">02</span>What we do</p><h2 id="kit-h">Build your raise kit</h2></div>
+      <p>Pick your round and tick what you need. Your brief builds on the right, ready to send to us.</p>
+    </div>
+
+    <div class="kit">
+      <form id="kitform" onsubmit="return false" aria-label="Raise kit builder">
+        <div class="fieldset" role="radiogroup" aria-labelledby="stage-l">
+          <p class="legend" id="stage-l">Your round</p>
+          <div class="stages">
+            <label class="chip"><input type="radio" name="stage" value="Pre-seed"><span>Pre-seed</span></label>
+            <label class="chip"><input type="radio" name="stage" value="Seed" checked><span>Seed</span></label>
+            <label class="chip"><input type="radio" name="stage" value="Series A"><span>Series A</span></label>
+            <label class="chip"><input type="radio" name="stage" value="Series B"><span>Series B</span></label>
+            <label class="chip"><input type="radio" name="stage" value="Series C"><span>Series C</span></label>
+            <label class="chip"><input type="radio" name="stage" value="Series D"><span>Series D</span></label>
+          </div>
+        </div>
+        <p class="legend" id="svc-l">What you need</p>
+        <ul class="svc" aria-labelledby="svc-l">
+          <li><label><span class="n">01</span><span><span class="t">Captivating pitch decks</span><span class="d">Impactful copy with beautiful design, to position your startup to secure funding from top investors.</span></span><input type="checkbox" name="svc" value="Pitch deck" data-d="Copy and design that position you to secure funding" checked><span class="tick" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="#111" stroke-width="2.2"><path d="M2.5 7.5l3 3 6-7"/></svg></span></label></li>
+          <li><label><span class="n">02</span><span><span class="t">Custom financial models</span><span class="d">5-year projections, balance sheet and cash flow statement, with editable assumptions.</span></span><input type="checkbox" name="svc" value="Financial model" data-d="5-year projections, balance sheet, cash flow, editable assumptions" checked><span class="tick" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="#111" stroke-width="2.2"><path d="M2.5 7.5l3 3 6-7"/></svg></span></label></li>
+          <li><label><span class="n">03</span><span><span class="t">Market sizing</span><span class="d">We dive deep into your industry and size your market from the top down or the bottom up.</span></span><input type="checkbox" name="svc" value="Market sizing" data-d="Your market sized top down or bottom up" checked><span class="tick" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="#111" stroke-width="2.2"><path d="M2.5 7.5l3 3 6-7"/></svg></span></label></li>
+          <li><label><span class="n">04</span><span><span class="t">1-pagers</span><span class="d">Concise, easy-to-read 1-pagers that pique interest and start investor conversations.</span></span><input type="checkbox" name="svc" value="1-pager" data-d="A concise page to start investor conversations"><span class="tick" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="#111" stroke-width="2.2"><path d="M2.5 7.5l3 3 6-7"/></svg></span></label></li>
+          <li><label><span class="n">05</span><span><span class="t">Winning business plans</span><span class="d">We take your ambitious vision, put pen to paper, and take you through our proven process to raise capital.</span></span><input type="checkbox" name="svc" value="Business plan" data-d="Your vision on paper, through our process to raise capital"><span class="tick" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="#111" stroke-width="2.2"><path d="M2.5 7.5l3 3 6-7"/></svg></span></label></li>
+          <li><label><span class="n">06</span><span><span class="t">Fundraising &amp; fractional CFO</span><span class="d">We manage your capital raise strategy from start to funded, plus monthly bookkeeping and reconciliation.</span></span><input type="checkbox" name="svc" value="Fundraising & fractional CFO" data-d="Raise strategy from start to funded, monthly bookkeeping"><span class="tick" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="#111" stroke-width="2.2"><path d="M2.5 7.5l3 3 6-7"/></svg></span></label></li>
+          <li><label><span class="n">07</span><span><span class="t">Copywriting &amp; messaging</span><span class="d">Less is more. Messaging that grabs attention and gets your target customer to act quickly.</span></span><input type="checkbox" name="svc" value="Copywriting & messaging" data-d="Messaging that grabs attention and gets customers to act"><span class="tick" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="#111" stroke-width="2.2"><path d="M2.5 7.5l3 3 6-7"/></svg></span></label></li>
+          <li><label><span class="n">08</span><span><span class="t">Sales &amp; corporate presentations</span><span class="d">What your company does, in a punchy presentation to win more clients and close more deals.</span></span><input type="checkbox" name="svc" value="Sales presentation" data-d="A punchy presentation to win clients and close deals"><span class="tick" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="#111" stroke-width="2.2"><path d="M2.5 7.5l3 3 6-7"/></svg></span></label></li>
+          <li><label><span class="n">09</span><span><span class="t">Brand guidelines</span><span class="d">Decades of experience in brand strategy. We design your brand identity to stand out.</span></span><input type="checkbox" name="svc" value="Brand guidelines" data-d="A brand identity designed to stand out"><span class="tick" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="#111" stroke-width="2.2"><path d="M2.5 7.5l3 3 6-7"/></svg></span></label></li>
+        </ul>
+      </form>
+
+      <aside class="brief" aria-label="Your brief">
+        <div class="slide">
+          <div class="slide-top"><span class="live"><i aria-hidden="true"></i>Your brief</span><span id="bcount">3 pieces</span></div>
+          <h3><em id="bstage">Seed</em> round raise kit</h3>
+          <ol id="blist" aria-live="polite">
+            <li><span><b>Pitch deck</b><span>Copy and design that position you to secure funding</span></span></li>
+            <li><span><b>Financial model</b><span>5-year projections, balance sheet, cash flow, editable assumptions</span></span></li>
+            <li><span><b>Market sizing</b><span>Your market sized top down or bottom up</span></span></li>
+          </ol>
+          <a class="btn btn-volt" href="#start" id="sendbrief">Send this brief</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="sec proof" aria-labelledby="proof-h">
+  <div class="wrap proof-grid">
+    <div class="arch-wrap">
+      <div class="arch"><img src="https://images.squarespace-cdn.com/content/v1/62cc1f7dc16e002204ac6f27/d4afc9e4-17ed-49c6-b028-b12794f0153c/florian-schmid-wVUeIivpmoM-unsplash.jpg?format=1500w" alt="Office towers seen from street level against a cloudy sky" width="712" height="613" loading="lazy"></div>
+    </div>
+    <div>
+      <p class="eyebrow"><span class="no">03</span>How we serve our clients</p>
+      <h2 id="proof-h">$2B+ raised. Bold aspirations welcome.</h2>
+      <p class="lead">We work with startups from Pre-seed to Series D, with winning pitch decks that get meetings and raise capital.</p>
+      <div class="stats">
+        <div><b>$2B+</b><span>Investment funding secured</span></div>
+        <div><b>500+</b><span>Global clients</span></div>
+        <div><b>25+</b><span>Years of team startup experience</span></div>
+      </div>
+      <div class="tags">
+        <p>Decks we've built for</p>
+        <ul>
+          <li>Consumer tech</li><li>Fintech</li><li>Healthcare tech</li><li>Crypto &amp; Web3</li><li>CPG</li><li>Marketplaces</li><li>Ad tech</li><li>Ed tech</li><li>Real estate tech</li><li>Fashion tech</li><li>Fitness tech</li><li>Hospitality</li><li>Mobile tech</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="clients" aria-labelledby="q-h">
+  <div class="wrap">
+    <p class="eyebrow"><span class="no">04</span>What our clients have to say</p>
+    <figure class="quote-big" style="margin:0">
+      <h2 id="q-h" class="qh">“Simply the best at what they do.”</h2>
+      <blockquote>
+        <p>“Not only did they deliver everything they scoped to do but they made our team better with their process. If you are looking for business planning and investor materials, do yourself a favor and hire Peter and his team.”</p>
+      </blockquote>
+      <figcaption class="who">CEO, Tech Marketplace Startup</figcaption>
+    </figure>
+
+    <div class="qrow" id="qrow" tabindex="0" aria-label="More client quotes, scroll sideways">
+      <figure><h3>We felt in good hands</h3><blockquote>“Highly effective and quick in their construction of a full financial model and deck, as per the initial brief . . . highly professional with excellent communication and efficiency throughout.”</blockquote><figcaption>COO, Manufacturing Company</figcaption></figure>
+      <figure><h3>The deck in two weeks</h3><blockquote>“They grasped all the concepts quickly and applied their methodology rigorously to arrive at the deck in two weeks. The content, flow and ideas were eloquently presented.”</blockquote><figcaption>CEO, CPG Startup</figcaption></figure>
+      <figure><h3>Remarkable patience and expertise</h3><blockquote>“Peter exhibited remarkable patience and expertise, offering valuable guidance every step of the way . . . Peter's assistance has solidified my belief in the strength of my business story.”</blockquote><figcaption>CEO, Fashion Tech Startup</figcaption></figure>
+      <figure><h3>95% ready in the first draft</h3><blockquote>“They quickly understood our business which allowed them to respond with a model that was 95% ready to go in its initial draft, then they worked closely with us to quickly make the minor changes to finalize.”</blockquote><figcaption>CEO, Crypto Startup</figcaption></figure>
+      <figure><h3>Exceeded our expectations by 1000x</h3><blockquote>“All of us were worried that they hadn’t worked in our exact business, but they quickly made us confident they could change hats . . . The team is patient, organized, efficient, and kind.”</blockquote><figcaption>CEO, B2B SaaS Startup</figcaption></figure>
+      <figure><h3>Very responsive to my feedback</h3><blockquote>“They were prepared to answer questions/make updates per my and investors' requests and ensured I was comfortable navigating the model . . . I will re-engage Peter to help in my effort to close my Series A funding.”</blockquote><figcaption>CEO, Energy Sector</figcaption></figure>
+      <figure><h3>Great to work with</h3><blockquote>“I have used Peter and his team twice now. They are great to work with. Super quality, great responsiveness, and provided exactly what I needed in a timely manner.”</blockquote><figcaption>CEO, Defense Contracting Startup</figcaption></figure>
+    </div>
+    <div class="qnav"><span>From founders and CEOs we've worked with</span><div>
+      <button type="button" id="qprev" aria-label="Previous quotes"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 3L5 8l5 5"/></svg></button>
+      <button type="button" id="qnext" aria-label="Next quotes"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3l5 5-5 5"/></svg></button>
+    </div></div>
+  </div>
+</section>
+
+<section class="sec stone" id="process" aria-labelledby="p-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow"><span class="no">05</span>Process</p><h2 id="p-h">How your deck comes together</h2></div>
+      <p>Our process can vary depending on the startup and scope. Here's what's included to prepare your pitch deck.</p>
+    </div>
+    <ol class="steps">
+      <li><span class="dot">01</span><h3>Develop a clear strategy</h3></li>
+      <li><span class="dot">02</span><h3>Compelling storytelling</h3></li>
+      <li><span class="dot">03</span><h3>Craft stunning visuals</h3></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="faq" aria-labelledby="f-h">
+  <div class="wrap faq-grid">
+    <div><p class="eyebrow"><span class="no">06</span>Questions</p><h2 id="f-h">What founders ask us</h2></div>
+    <div class="faq">
+      <details open><summary>What stage do you work with?<i aria-hidden="true"></i></summary><p>Startups from Pre-seed to Series D, with bold aspirations.</p></details>
+      <details><summary>Is it only pitch decks?<i aria-hidden="true"></i></summary><p>No. We also build financial models, business plans, market sizing, 1-pagers, brand guidelines, sales and corporate presentations and messaging, and offer fundraising and fractional CFO services.</p></details>
+      <details><summary>What's in a financial model?<i aria-hidden="true"></i></summary><p>5-year projections, a balance sheet and a cash flow statement, with assumptions you can edit.</p></details>
+      <details><summary>I'm new to finance. Is that a problem?<i aria-hidden="true"></i></summary><p>One CPG founder put it this way: “I could not recommend Peter and his team enough, especially if you are a new founder and have no experience in finance.”</p></details>
+      <details><summary>You haven't worked in our industry. Can you still help?<i aria-hidden="true"></i></summary><p>A B2B SaaS CEO had the same worry: “they quickly made us confident they could change hats and help us create the business pitch deck we had envisioned.”</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec stone" id="start" aria-labelledby="s-h">
+  <div class="wrap start">
+    <div>
+      <p class="eyebrow"><span class="no">07</span>Let's do this</p>
+      <h2 id="s-h">Get your deck in front of investors.</h2>
+      <p class="lead">Tell us about your startup and your round. We'll help you make a memorable first impression and get funded.</p>
+      <figure class="mini-q"><blockquote>“Quick, detailed, and well done.”</blockquote><figcaption>C-Suite Executive, Medical Device Startup</figcaption></figure>
+    </div>
+    <form id="contact" novalidate>
+      <div class="row2">
+        <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+      </div>
+      <div class="row2">
+        <div class="field"><label for="f-co">Startup</label><input id="f-co" name="company" autocomplete="organization"></div>
+        <div class="field"><label for="f-stage">Round</label>
+          <select id="f-stage" name="stage"><option>Pre-seed</option><option selected>Seed</option><option>Series A</option><option>Series B</option><option>Series C</option><option>Series D</option></select></div>
+      </div>
+      <div class="field"><label for="f-msg">What you need</label><textarea id="f-msg" name="message">Seed round raise kit: Pitch deck, Financial model, Market sizing.</textarea></div>
+      <button class="btn btn-ink" type="submit">Let's do this <span class="arrow" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="#111" stroke-width="2"><path d="M3 11L11 3M5 3h6v6"/></svg></span></button>
+      <p class="sent" id="sent" role="status">Thanks. This is a mockup, so nothing was sent.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="foot-logo" href="#top" aria-label="135 Madison, back to top"><img src="https://images.squarespace-cdn.com/content/v1/62cc1f7dc16e002204ac6f27/e097e79f-f9a2-4127-8825-209b2c208865/135-madison-web-logo.png?format=300w" alt="135 Madison" width="63" height="46" loading="lazy"></a>
+        <p class="tag">For entrepreneurs, by entrepreneurs</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="#kit">Services</a><a href="#clients">Clients</a><a href="#process">Process</a><a href="#faq">FAQ</a><a href="#start">Let's do this</a><a href="https://www.135madison.com/">135madison.com</a>
+      </nav>
+    </div>
+    <p class="made">Mockup made for 135 Madison by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.documentElement.classList.add('js');
+
+  // header edge on scroll
+  var head = document.querySelector('.site-head');
+  addEventListener('scroll', function(){ head.classList.toggle('scrolled', scrollY > 8); }, {passive:true});
+
+  // hero slide: cycles only while on screen
+  var frames = [].slice.call(document.querySelectorAll('.frame'));
+  var dots = [].slice.call(document.querySelectorAll('.dots button'));
+  var sn = document.getElementById('sn'), cur = 0, timer = null, slideVisible = true;
+  function show(i){
+    cur = i;
+    frames.forEach(function(f, k){ f.classList.toggle('off', k !== i); f.setAttribute('aria-hidden', k !== i); });
+    dots.forEach(function(d, k){ d.setAttribute('aria-current', k === i); });
+    sn.textContent = '0' + (i + 1) + ' / 03';
+  }
+  function start(){ if (reduce || timer) return; timer = setInterval(function(){ show((cur + 1) % frames.length); }, 3600); }
+  function stop(){ clearInterval(timer); timer = null; }
+  show(0);
+  dots.forEach(function(d, k){ d.addEventListener('click', function(){ stop(); show(k); if (slideVisible) start(); }); });
+
+  // ticker pauses off screen
+  var ticker = document.querySelector('.ticker');
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function(es){ es.forEach(function(e){ ticker.classList.toggle('paused', !e.isIntersecting); }); }).observe(ticker);
+    new IntersectionObserver(function(es){ es.forEach(function(e){ slideVisible = e.isIntersecting; slideVisible ? start() : stop(); }); }).observe(document.querySelector('.hero .slide'));
+  } else start();
+
+  // raise kit builder
+  var kit = document.getElementById('kitform');
+  var list = document.getElementById('blist'), bstage = document.getElementById('bstage'), bcount = document.getElementById('bcount');
+  var msg = document.getElementById('f-msg'), fstage = document.getElementById('f-stage');
+  function esc(s){ return s.replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function render(){
+    var stage = kit.querySelector('input[name=stage]:checked').value;
+    var picked = [].slice.call(kit.querySelectorAll('input[name=svc]:checked'));
+    bstage.textContent = stage;
+    bcount.textContent = picked.length + (picked.length === 1 ? ' piece' : ' pieces');
+    list.innerHTML = picked.length ? picked.map(function(i){ return '<li><span><b>' + esc(i.value) + '</b><span>' + esc(i.dataset.d) + '</span></span></li>'; }).join('')
+      : '<p class="empty">Tick what you need and it lands here.</p>';
+    return { stage: stage, items: picked.map(function(i){ return i.value; }) };
+  }
+  kit.addEventListener('change', render);
+  document.getElementById('sendbrief').addEventListener('click', function(){
+    var b = render();
+    fstage.value = b.stage;
+    msg.value = b.stage + ' round raise kit: ' + (b.items.length ? b.items.join(', ') : 'not sure yet') + '.';
+    setTimeout(function(){ document.getElementById('f-name').focus({preventScroll:true}); }, reduce ? 0 : 600);
+  });
+
+  // quotes row arrows
+  var row = document.getElementById('qrow');
+  function step(dir){ var c = row.querySelector('figure'); row.scrollBy({left: dir * (c.offsetWidth + 18), behavior: reduce ? 'auto' : 'smooth'}); }
+  document.getElementById('qprev').addEventListener('click', function(){ step(-1); });
+  document.getElementById('qnext').addEventListener('click', function(){ step(1); });
+
+  // contact form: mockup only
+  document.getElementById('contact').addEventListener('submit', function(e){
+    e.preventDefault();
+    document.getElementById('sent').classList.add('show');
+  });
+
+  // gentle rise for things below the first screen
+  if (!reduce && 'IntersectionObserver' in window) {
+    var targets = document.querySelectorAll('.sec-head, .kit, .proof-grid > *, .quote-big, .qrow, .steps li, .faq details, .start > *');
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.remove('will-rise'); io.unobserve(e.target); }
+    }); }, {rootMargin:'0px 0px -8% 0px'});
+    [].forEach.call(targets, function(el){
+      if (el.getBoundingClientRect().top > innerHeight) { el.classList.add('rise', 'will-rise'); io.observe(el); }
+    });
+  }
+})();
+</script>
+</body>
+</html>
