@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup otterschicken-com-99a064 1 725afab3 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Otter’s Chicken | Chicken Tenders, Wings &amp; Breakfast in West Cobb, Marietta GA</title>
+<meta name="description" content="Fresh chicken tenders, wings and breakfast at The Avenue West Cobb, Marietta. Order online, see the menu, plan catering.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#d71920; --red-dk:#b3121a; --navy:#1b2d63; --ink:#16203f; --body:#3d4459;
+  --cream:#faf6ef; --line:#e7e0d4; --white:#fff;
+  --display:"Oswald","Arial Narrow",Impact,sans-serif;
+  --sans:"Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1160px; --r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font:16px/1.6 var(--sans);color:var(--body);background:var(--white);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);color:var(--ink);text-transform:uppercase;letter-spacing:.01em;line-height:1.05;margin:0}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+:focus-visible{outline:3px solid var(--navy);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:12px;top:56px;background:#fff;padding:10px 14px;z-index:50}
+
+/* mockup banner */
+.mock{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:#101a3c;color:#fff;font:500 15px/1.3 var(--sans);text-align:center}
+.mock a{color:#fff;text-decoration:underline;text-underline-offset:3px;font-weight:700}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:28px;height:84px}
+.logo img{width:118px;height:auto}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{font:600 14px/1 var(--sans);text-decoration:none;color:var(--ink);padding:15px 12px;border-radius:8px}
+.nav a:hover{background:var(--cream)}
+.top .tel{font:600 18px/1 var(--display);color:var(--navy);text-decoration:none;letter-spacing:.02em;padding:13px 4px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 24px;border-radius:999px;font:700 15px/1 var(--sans);letter-spacing:.04em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s ease,background .15s ease,box-shadow .15s ease}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 6px 16px -6px rgba(215,25,32,.55)}
+.btn-red:hover{background:var(--red-dk);transform:translateY(-1px)}
+.btn-line{border-color:var(--navy);color:var(--navy);background:#fff}
+.btn-line:hover{background:var(--navy);color:#fff}
+.top .btn{min-height:44px;padding:0 20px;font-size:14px}
+
+/* hero */
+.hero{background:var(--white);position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:40px;padding-top:56px;padding-bottom:64px}
+.kicker{display:inline-flex;align-items:center;gap:10px;font:600 13px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.kicker::before{content:"";width:28px;height:3px;background:var(--red);border-radius:2px}
+.hero h1{font-size:clamp(44px,4.6vw,64px);margin:18px 0 22px;color:var(--navy)}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero .lede{font-size:18px;max-width:30em;color:var(--body)}
+.hero .lede b{color:var(--ink)}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.status{display:inline-flex;align-items:center;gap:10px;margin-top:26px;padding:10px 16px 10px 14px;border-radius:999px;background:var(--cream);border:1px solid var(--line);font:600 14px/1.3 var(--sans);color:var(--ink);text-decoration:none}
+.status i{width:10px;height:10px;border-radius:50%;background:#9aa0ad;flex:none}
+.status.open i{background:#1e8e3e;box-shadow:0 0 0 4px rgba(30,142,62,.16)}
+.plate{position:relative;justify-self:center;max-width:680px;width:100%}
+.plate img{width:100%;max-width:780px;margin:0 auto}
+.plate::after{content:"";position:absolute;left:12%;right:12%;bottom:4%;height:18px;border-radius:50%;background:radial-gradient(closest-side,rgba(22,32,63,.16),transparent);z-index:-1}
+
+/* proof strip */
+.strip{background:var(--navy);color:#fff}
+.strip ul{list-style:none;margin:0;padding:22px 24px;display:flex;justify-content:center;flex-wrap:wrap;gap:12px 44px;max-width:var(--wrap);margin:0 auto}
+.strip li{font:600 17px/1.2 var(--display);letter-spacing:.06em;text-transform:uppercase;display:flex;align-items:center;gap:12px}
+.strip li::before{content:"";width:7px;height:7px;background:var(--red);transform:rotate(45deg);flex:none}
+
+/* sections */
+section{scroll-margin-top:90px}
+.sec{padding:96px 0}
+.sec-cream{background:var(--cream)}
+.head{max-width:640px;margin-bottom:44px}
+.head h2{font-size:clamp(36px,4.2vw,54px);margin-top:14px}
+.head p{margin-top:14px;font-size:17px}
+
+/* menu */
+.menu-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:start}
+.boxes{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.boxes li{display:grid;grid-template-columns:56px 1fr;gap:4px 14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.boxes .no{grid-row:span 2;font:700 26px/1 var(--display);color:var(--red);padding-top:2px}
+.boxes h3{font-size:22px}
+.boxes p{font-size:14.5px;line-height:1.5}
+.side{display:grid;gap:22px}
+.photo{border-radius:var(--r);overflow:hidden;box-shadow:0 18px 40px -22px rgba(22,32,63,.45);background:#fff}
+.photo img{width:100%}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.card h3{font-size:24px}
+.card .sub{font-size:14px;margin-top:4px}
+.counts{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:16px}
+.counts div{text-align:center;padding:12px 4px;border-radius:10px;background:var(--cream)}
+.counts b{display:block;font:700 30px/1 var(--display);color:var(--navy)}
+.counts span{display:block;font-size:12px;line-height:1.35;margin-top:6px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;padding:0;list-style:none}
+.chips li{font:600 13px/1 var(--sans);padding:9px 12px;border-radius:999px;border:1.5px solid var(--line);color:var(--ink)}
+.chips li.hot{border-color:var(--red);color:var(--red)}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:56px}
+.pre{display:grid;grid-template-columns:1fr;background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.pre .photo{border-radius:0;box-shadow:none;border-bottom:1px solid var(--line)}
+.pre .photo img{max-width:560px;margin:0 auto}
+.pre .in{padding:24px}
+.list{list-style:none;padding:0;margin:14px 0 0}
+.list li{padding:9px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;font-size:15px}
+.list li b{color:var(--ink);font-weight:600}
+.list li span{font-size:13.5px;text-align:right}
+.bfast{background:var(--navy);color:#dfe4f2;border-radius:var(--r);padding:32px;display:flex;flex-direction:column}
+.bfast h3{color:#fff;font-size:34px}
+.bfast .when{font:600 14px/1.3 var(--sans);color:#fff;margin-top:8px;display:inline-block;background:var(--red);padding:7px 12px;border-radius:6px;align-self:flex-start}
+.bfast dl{margin:22px 0 0}
+.bfast dt{font:600 19px/1.2 var(--display);color:#fff;text-transform:uppercase;letter-spacing:.02em;margin-top:16px}
+.bfast dd{margin:4px 0 0;font-size:14.5px;line-height:1.5}
+.bfast .also{margin-top:auto;padding-top:22px;font-size:14px;color:#c9d0e4}
+.menu-more{margin-top:40px;display:flex;justify-content:center}
+
+/* catering planner */
+.cat-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:start}
+.cat-copy .photo{margin-top:28px;max-width:570px}
+.planner{background:#fff;border-radius:20px;border:1px solid var(--line);box-shadow:0 30px 60px -36px rgba(22,32,63,.5);overflow:hidden}
+.p-top{padding:26px 28px 22px;border-bottom:1px solid var(--line)}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);background:var(--cream);border-radius:12px;padding:4px;gap:4px}
+.seg button{min-height:44px;border:0;border-radius:9px;background:transparent;font:600 14px/1.2 var(--sans);color:var(--ink);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--navy);color:#fff;box-shadow:0 4px 10px -4px rgba(27,45,99,.6)}
+.count-row{display:flex;align-items:center;gap:16px;margin-top:22px}
+.count-row label{font:600 14px/1.3 var(--sans);color:var(--ink)}
+.count{display:flex;align-items:center;gap:6px;margin-left:auto}
+.count button{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--line);background:#fff;font:600 22px/1 var(--sans);color:var(--navy);cursor:pointer}
+.count button:hover{border-color:var(--navy)}
+.count output{min-width:88px;text-align:center;font:700 44px/1 var(--display);color:var(--navy)}
+.range{width:100%;margin:16px 0 0;accent-color:var(--red);height:28px}
+.p-out{padding:22px 28px 26px}
+.p-out h3{font-size:15px;font-family:var(--sans);font-weight:700;letter-spacing:.12em;color:var(--red)}
+.trays{list-style:none;margin:12px 0 0;padding:0}
+.trays li{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px;padding:14px 0;border-bottom:1px dashed var(--line)}
+.trays .qty{font:700 28px/1 var(--display);color:var(--red);min-width:40px}
+.trays b{display:block;color:var(--ink);font-weight:700;font-size:15.5px}
+.trays small{display:block;font-size:13.5px;line-height:1.4}
+.trays .sv{font:600 13px/1.2 var(--sans);color:var(--navy);background:var(--cream);padding:7px 10px;border-radius:8px;white-space:nowrap}
+.addons{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.addons[hidden]{display:none}
+.addons label{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 14px;border:1.5px solid var(--line);border-radius:999px;font:600 13.5px/1.2 var(--sans);color:var(--ink);cursor:pointer}
+.addons input{width:18px;height:18px;accent-color:var(--navy)}
+.total{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-top:18px;padding:16px 18px;border-radius:12px;background:var(--navy);color:#fff}
+.total span{font-size:14px;color:#dbe0ef}
+.total b{font:700 26px/1 var(--display);letter-spacing:.02em}
+.p-note{margin-top:12px;font-size:13.5px}
+.send{border-top:1px solid var(--line);padding:22px 28px 28px;background:#fdfbf7}
+.send h3{font-size:22px}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.fields label{display:grid;gap:6px;font:600 13px/1.2 var(--sans);color:var(--ink)}
+.fields .full{grid-column:1/-1}
+input[type=text],input[type=tel],input[type=date],input[type=email],textarea{width:100%;min-height:46px;padding:11px 13px;border:1.5px solid #cfc6b6;border-radius:10px;font:500 15px/1.4 var(--sans);color:var(--ink);background:#fff}
+textarea{min-height:84px;resize:vertical}
+input:focus,textarea:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(27,45,99,.18)}
+.send .btn{margin-top:16px;width:100%}
+.thanks{display:none;margin-top:14px;padding:14px 16px;border-radius:10px;background:#e9f5ec;color:#145c29;font-weight:600}
+.thanks.on{display:block}
+
+/* community */
+.com-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.stack{position:relative;padding-bottom:70px;padding-right:56px}
+.stack .photo:first-child{max-width:570px}
+.stack .photo:last-child{position:absolute;right:0;bottom:0;width:62%;max-width:400px;border:6px solid #fff}
+.com-copy p+p{margin-top:16px}
+.com-copy .actions{margin-top:28px}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:80px}
+.quote{margin:0;padding:26px 24px;border-radius:var(--r);background:#fff;border:1px solid var(--line);display:flex;flex-direction:column}
+.quote .stars{color:var(--red);letter-spacing:3px;font-size:15px}
+.quote blockquote{margin:12px 0 18px;font:500 16.5px/1.55 var(--sans);color:var(--ink)}
+.quote figcaption{margin-top:auto;font:600 14px/1 var(--sans);color:var(--body)}
+.quotes-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-top:88px}
+.quotes-head h2{font-size:clamp(30px,3.4vw,42px)}
+.quotes + .more-q{margin-top:0}
+.quotes-head + .quotes{margin-top:28px}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-child{border-top:2px solid var(--ink)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:60px;padding:14px 0;font:600 20px/1.25 var(--display);text-transform:uppercase;color:var(--ink);letter-spacing:.01em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:500 28px/1 var(--sans);color:var(--red);transition:transform .2s ease}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 20px;max-width:38em}
+
+/* visit */
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.store{position:relative}
+.store .photo{max-width:570px}
+.addr{margin-top:24px;font-size:17px;color:var(--ink)}
+.addr b{display:block;font:600 26px/1.15 var(--display);text-transform:uppercase;color:var(--navy)}
+.visit-grid .actions{margin-top:22px}
+.hours{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.hours h3{font-size:28px}
+.hours h4{margin:24px 0 8px;font:700 13px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.hours table{width:100%;border-collapse:collapse;font-size:15.5px}
+.hours td{padding:11px 10px;border-top:1px solid var(--line)}
+.hours td:last-child{text-align:right;font-weight:600;color:var(--ink);white-space:nowrap}
+.hours tr.today td{background:var(--cream);font-weight:700;color:var(--ink)}
+.hours tr.today td:first-child{border-left:3px solid var(--red)}
+.hours .today-tag{font:700 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-left:8px}
+
+/* end */
+.end{background:var(--red);color:#fff;text-align:center;padding:88px 0}
+.end h2{color:#fff;font-size:clamp(40px,4.4vw,60px)}
+.end .nb{display:inline-block}
+.end p{margin:16px auto 0;font-size:18px;max-width:34em;color:#fff}
+.end .actions{justify-content:center}
+.end .btn-red{background:#fff;color:var(--red);box-shadow:none}
+.end .btn-red:hover{background:var(--cream)}
+.end .btn-line{background:transparent;border-color:#fff;color:#fff}
+.end .btn-line:hover{background:#fff;color:var(--red)}
+
+footer{background:#101a3c;color:#c9d0e4;padding:48px 0 40px;font-size:14px}
+footer .wrap{display:grid;grid-template-columns:auto 1fr auto;gap:32px;align-items:center}
+footer .flogo{background:#fff;border-radius:12px;padding:8px 10px;display:inline-block}
+footer .flogo img{width:96px}
+.social{display:flex;flex-wrap:wrap;gap:4px;justify-content:flex-end}
+.social a{color:#fff;text-decoration:none;font-weight:600;padding:12px 12px;border-radius:8px}
+.social a:hover{background:rgba(255,255,255,.08)}
+.made{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.made a{color:#fff}
+
+/* phone call bar */
+.callbar{display:none}
+
+/* motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .6s ease,transform .6s ease}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+
+@media (max-width:980px){
+  .nav{display:none}
+  .top .tel{margin-left:auto}
+  .hero .wrap{grid-template-columns:1fr;gap:28px;padding-top:36px;padding-bottom:48px}
+  .menu-grid,.cat-grid,.com-grid,.faq-grid,.visit-grid{grid-template-columns:1fr;gap:36px}
+  .pair{grid-template-columns:1fr}
+  .quotes{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  body{padding-bottom:72px}
+  .wrap{padding:0 18px}
+  .mock{font-size:15px;padding:8px 12px}
+  .top .wrap{height:68px;gap:12px}
+  .logo img{width:92px}
+  .top .tel{display:none}
+  .top .btn{margin-left:auto;padding:0 16px;font-size:13px}
+  .hero .wrap{padding-top:28px;gap:20px}
+  .hero h1{font-size:44px;margin:14px 0 16px}
+  .hero .lede{font-size:16.5px}
+  .actions .btn{flex:1 1 auto}
+  .status{margin-top:20px}
+  .strip ul{justify-content:flex-start;padding:18px;gap:10px 22px}
+  .strip li{font-size:15px}
+  .sec{padding:64px 0}
+  .head{margin-bottom:30px}
+  .boxes li{grid-template-columns:44px 1fr}
+  .boxes .no{font-size:22px}
+  .boxes h3{font-size:20px}
+  .counts b{font-size:26px}
+  .bfast{padding:26px 22px}
+  .p-top,.p-out,.send{padding-left:18px;padding-right:18px}
+  .count output{font-size:38px;min-width:64px}
+  .seg button{font-size:13px}
+  .trays li{grid-template-columns:auto 1fr;gap:4px 12px}
+  .trays .qty{grid-row:span 2}
+  .trays .sv{justify-self:start}
+  .fields{grid-template-columns:1fr}
+  .stack{padding-right:0;padding-bottom:54px}
+  .stack .photo:last-child{width:70%;right:-6px}
+  .quotes-head{margin-top:64px;flex-direction:column;align-items:flex-start}
+  .faq summary{font-size:18px}
+  .hours{padding:22px 18px}
+  .hours td{padding:11px 6px}
+  .end{padding:64px 0}
+  footer .wrap{grid-template-columns:1fr;gap:20px}
+  .social{justify-content:flex-start}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid var(--line);box-shadow:0 -8px 24px -16px rgba(22,32,63,.5)}
+  .callbar a{min-height:48px;font-size:14px;padding:0 10px}
+}
+</style>
+</head>
+<body>
+
+<div class="mock">Here’s your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Otter’s Chicken, back to top"><img src="https://www.otterschicken.com/wp-content/uploads/2026/10/mobile-comparison-20261020/logo-180.webp" alt="Otter’s Chicken" width="163" height="85"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#menu">Menu</a>
+      <a href="#catering">Catering</a>
+      <a href="#community">Community</a>
+      <a href="#visit">Hours &amp; Directions</a>
+    </nav>
+    <a class="tel" href="tel:+17704288333">(770) 428-8333</a>
+    <a class="btn btn-red" href="https://www.otterschicken.com/">Order Online</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <span class="kicker">West Cobb · Marietta, GA</span>
+        <h1 id="h1">If the Colonel had our chicken, <em>he’d be a General by now.</em></h1>
+        <p class="lede"><b>Otter’s Chicken:</b> fresh chicken tenders, wings, and breakfast worth getting up for. Pull up a chair, catch the game, and dig in.</p>
+        <div class="actions">
+          <a class="btn btn-red" href="https://www.otterschicken.com/">Order Online</a>
+          <a class="btn btn-line" href="#menu">See the Menu</a>
+        </div>
+        <a class="status" id="status" href="#visit"><i aria-hidden="true"></i><span id="statusText">Breakfast Wed–Sun from 7 AM · Lunch &amp; dinner daily from 11 AM</span></a>
+      </div>
+      <div class="plate">
+        <img src="https://www.otterschicken.com/wp-content/uploads/2026/10/mobile-comparison-20261020/hero-800.avif" alt="Otter’s chicken wings, tenders and wrap baskets with fries, Texas toast and sauce" width="780" height="468" fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <div class="strip" role="presentation">
+    <ul>
+      <li>Fried, grilled or tossed</li>
+      <li>100% all-natural chicken</li>
+      <li>Fresh, never frozen</li>
+      <li>Famous Otter’s Sauce, made here</li>
+    </ul>
+  </div>
+
+  <section class="sec" id="menu" aria-labelledby="menu-h">
+    <div class="wrap">
+      <div class="head" data-rise>
+        <span class="kicker">The menu</span>
+        <h2 id="menu-h">Georgia’s best tenders.</h2>
+        <p>100% all-natural chicken, cooked in soybean oil and prepared fresh. We make everything ourselves because we want it made right.</p>
+      </div>
+
+      <div class="menu-grid">
+        <ol class="boxes" data-rise aria-label="Boxes">
+          <li><span class="no">#1</span><h3>Lil’ O Box</h3><p>3 tenders, fries, Texas toast, 1 sauce</p></li>
+          <li><span class="no">#2</span><h3>Otter Box</h3><p>5 tenders, fries, Texas toast, slaw, 1 sauce</p></li>
+          <li><span class="no">#3</span><h3>O’Boy Box</h3><p>7 tenders, fries, Texas toast, slaw, 2 sauces</p></li>
+          <li><span class="no">#4</span><h3>Sandwich Box</h3><p>Chicken tender sandwich on Texas toast with pickle, fries and your choice of sauce</p></li>
+          <li><span class="no">#5</span><h3>Wrap Box</h3><p>With fries and a choice of sauce</p></li>
+          <li><span class="no">#6</span><h3>Chicken Salad Box</h3><p>On toasted wheat or a wrap, with fries, chips or slaw</p></li>
+          <li><span class="no">#7</span><h3>Wing Box</h3><p>5 wings or 10 wings</p></li>
+          <li><span class="no">#8</span><h3>Kid’s Tenders</h3><p>2 tenders, fries, Texas toast, 1 sauce, drink</p></li>
+          <li><span class="no">#9</span><h3>Kid’s Grilled Cheese</h3><p>Sandwich, fries, drink</p></li>
+        </ol>
+
+        <div class="side">
+          <div class="photo" data-rise><img src="https://www.otterschicken.com/wp-content/uploads/2026/10/speed-otters-food-triptych-v3-800x500-optimized.webp" alt="Buffalo tenders, golden fried chicken tenders with Otter’s Sauce, and buffalo wings with celery" width="570" height="356" loading="lazy"></div>
+          <div class="card" data-rise>
+            <h3>Tenders by the piece</h3>
+            <p class="sub">Every order comes with sauce and Texas toast.</p>
+            <div class="counts">
+              <div><b>4</b><span>1 sauce<br>1 toast</span></div>
+              <div><b>7</b><span>2 sauces<br>1 toast</span></div>
+              <div><b>10</b><span>3 sauces<br>2 toast</span></div>
+              <div><b>20</b><span>5 sauces<br>4 toast</span></div>
+            </div>
+          </div>
+          <div class="card" data-rise>
+            <h3>Wings, your way</h3>
+            <p class="sub">5, 10, 15 or 20 pieces, in any of eight flavors.</p>
+            <ul class="chips" aria-label="Wing flavors">
+              <li>Lemon Pepper</li><li>Teriyaki</li><li>Sweet Heat</li><li>Mild</li><li>Spicy BBQ</li><li>Liquid Gold</li><li>Buffalo</li><li class="hot">Crazy Hot!!!</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="pair">
+        <div class="pre" data-rise>
+          <div class="photo"><img src="https://www.otterschicken.com/wp-content/uploads/2026/10/performance-test-20261019/appetizers.webp" alt="Chips with buffalo chicken dip, fried pickles and fried mushrooms with dipping sauce" width="1100" height="733" loading="lazy"></div>
+          <div class="in">
+            <h3 style="font-size:30px">Pre-game</h3>
+            <ul class="list">
+              <li><b>Crazy Fries</b></li>
+              <li><b>Fried Pickles</b><span>Half or full</span></li>
+              <li><b>Fried Mushrooms</b><span>Half or full</span></li>
+              <li><b>Buffalo Chicken Dip</b><span>Individual or family</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bfast" data-rise>
+          <h3>Breakfast</h3>
+          <span class="when">Wednesday–Sunday · 7 AM–11 AM</span>
+          <dl>
+            <dt>Chicken Biscuit &amp; Hashbrowns</dt><dd>For big fans of the classics.</dd>
+            <dt>Breakfast Bowl</dt><dd>Hashbrowns topped with shredded cheese, scrambled eggs, fried chicken and your choice of sauce.</dd>
+            <dt>Breakfast Wrap</dt><dd>Chicken, scrambled eggs, hashbrowns and shredded cheese in your choice of tortilla.</dd>
+            <dt>Chicken &amp; Waffles</dt><dd>Belgian waffles served with 2 chicken tenders.</dd>
+          </dl>
+          <p class="also">Coffee with free refills, orange juice, mimosas, and the Manmosa: light beer, champagne and OJ in a 16 oz glass.</p>
+        </div>
+      </div>
+
+      <div class="menu-more" data-rise>
+        <a class="btn btn-line" href="https://www.otterschicken.com/menu2/">See the full menu</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec-cream" id="catering" aria-labelledby="cat-h">
+    <div class="wrap cat-grid">
+      <div class="cat-copy" data-rise>
+        <span class="kicker">Catering</span>
+        <h2 id="cat-h" style="font-size:clamp(36px,4.2vw,54px);margin-top:14px">Feeding the team? Here’s how much.</h2>
+        <p style="margin-top:16px;font-size:17px">Make your next gathering a success with Otter’s Chicken. Pick breakfast or lunch &amp; dinner, slide to your headcount, and see the trays you’ll need. Then send it to our catering team to plan your order.</p>
+        <div class="photo"><img src="https://www.otterschicken.com/wp-content/uploads/2026/10/speed-20-Tenders-4db5bb-800x500.webp" alt="Otter’s Chicken catering tray of chicken tenders and dipping sauce" width="570" height="356" loading="lazy"></div>
+      </div>
+
+      <div class="planner" data-rise>
+        <div class="p-top">
+          <div class="seg" role="group" aria-label="What to serve">
+            <button type="button" data-mode="tenders" aria-pressed="true">Tenders</button>
+            <button type="button" data-mode="nuggets" aria-pressed="false">Nuggets</button>
+            <button type="button" data-mode="breakfast" aria-pressed="false">Breakfast</button>
+          </div>
+          <div class="count-row">
+            <label for="people">How many are you feeding?</label>
+            <div class="count">
+              <button type="button" id="minus" aria-label="Fewer people">−</button>
+              <output id="peopleOut" for="people" aria-live="polite">40</output>
+              <button type="button" id="plus" aria-label="More people">+</button>
+            </div>
+          </div>
+          <input class="range" type="range" id="people" min="7" max="150" step="1" value="40" aria-label="Number of people">
+        </div>
+
+        <div class="p-out">
+          <h3 id="planTitle">Your tenders order</h3>
+          <ul class="trays" id="trays">
+            <li><span class="qty">1×</span><span><b>Extra Large tenders tray</b><small>100 tenders, 12 oz dipping sauce</small></span><span class="sv">Serves 26+</span></li>
+            <li><span class="qty">2×</span><span><b>Small tenders tray</b><small>25 tenders, 12 oz dipping sauce</small></span><span class="sv">Serves 7+</span></li>
+          </ul>
+          <div class="addons" id="addons" hidden>
+            <label><input type="checkbox" id="addHash" checked> Hashbrown tray</label>
+            <label><input type="checkbox" id="addCoffee" checked> Early Bird Brew Box</label>
+            <label><input type="checkbox" id="addParfait"> Parfait bar</label>
+          </div>
+          <div class="total"><span id="totalLabel">150 tenders for</span><b id="totalServes">Serves 40+</b></div>
+          <p class="p-note" id="planNote">Add gallon drinks: tea, lemonade or Otter Palmer.</p>
+        </div>
+
+        <form class="send" id="sendForm">
+          <h3>Send this to our catering team</h3>
+          <div class="fields">
+            <label>Your name<input type="text" name="name" autocomplete="name" required></label>
+            <label>Phone<input type="tel" name="phone" autocomplete="tel" required></label>
+            <label>Event date<input type="date" name="date"></label>
+            <label>Email<input type="email" name="email" autocomplete="email"></label>
+            <label class="full">Anything else?<textarea name="notes" id="notes">Catering for 40: 1× Extra Large tenders tray, 2× Small tenders tray.</textarea></label>
+          </div>
+          <button class="btn btn-red" type="submit">Send my catering order</button>
+          <p class="thanks" id="thanks" role="status">Thanks! Our catering team will be in touch to plan your order.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="community" aria-labelledby="com-h">
+    <div class="wrap">
+      <div class="com-grid">
+        <div class="stack" data-rise>
+          <div class="photo"><img src="https://www.otterschicken.com/wp-content/uploads/2026/10/speed-DC8A2294_GirlsEating_Square_800x500.webp" alt="Three friends laughing over baskets of chicken, chips and drinks at Otter’s" width="570" height="356" loading="lazy"></div>
+          <div class="photo"><img src="https://www.otterschicken.com/wp-content/uploads/2026/10/speed-will2-800x400.webp" alt="The Otter’s team in branded shirts" width="570" height="285" loading="lazy"></div>
+        </div>
+        <div class="com-copy" data-rise>
+          <span class="kicker">Good company. Great chicken.</span>
+          <h2 id="com-h" style="font-size:clamp(36px,4.2vw,54px);margin:14px 0 20px">Built for food and sports.</h2>
+          <p>In the South, we love food and we love sports, but not necessarily in that order. Otter’s was built for both.</p>
+          <p>Our local schools and sports teams are at the heart of our business. We love to serve them and their fans, whether in-store or catering their events off-site.</p>
+          <div class="actions">
+            <a class="btn btn-red" href="#ask">Ask about fundraising</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="quotes-head" data-rise>
+        <h2>Real people. Real reviews.</h2>
+      </div>
+      <div class="quotes">
+        <figure class="quote" data-rise>
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+          <blockquote>“The chicken is better than Zaxby’s. The sauces will make your mouth water just thinking about it the next day. The service is elite.”</blockquote>
+          <figcaption>Warren Hirons</figcaption>
+        </figure>
+        <figure class="quote" data-rise>
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+          <blockquote>“Thank you for a great meal tonight for our baseball team’s fundraiser! Service and food were great!”</blockquote>
+          <figcaption>Brittney Pate</figcaption>
+        </figure>
+        <figure class="quote" data-rise>
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+          <blockquote>“My family and I love Otters! The food is always so good! The staff is super nice and the restaurant is always very clean!”</blockquote>
+          <figcaption>Ellie Milton</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec-cream" id="ask" aria-labelledby="faq-h">
+    <div class="wrap faq-grid">
+      <div class="head" data-rise>
+        <span class="kicker">Good to know</span>
+        <h2 id="faq-h">Your questions, answered.</h2>
+        <p>Anything else? Call us at <a href="tel:+17704288333" style="color:var(--red);font-weight:700">(770) 428-8333</a>.</p>
+      </div>
+      <div class="faq" data-rise>
+        <details open>
+          <summary>Is the chicken really fresh?</summary>
+          <p>Yes. 100% all-natural chicken, prepared fresh and never frozen, cooked in soybean oil. Fried, grilled or tossed in sauce. We make everything ourselves, even the famous Otter’s Sauce.</p>
+        </details>
+        <details>
+          <summary>When is breakfast?</summary>
+          <p>Wednesday through Sunday, 7 AM to 11 AM. Lunch and dinner start at 11 AM every day.</p>
+        </details>
+        <details>
+          <summary>Can you cater our event?</summary>
+          <p>Yes. We have breakfast catering and lunch &amp; dinner catering, from chicken biscuits and waffle trays to tender and nugget trays. Use the planner above, or call us to plan your order.</p>
+        </details>
+        <details>
+          <summary>Do you help with fundraisers?</summary>
+          <p>Our local schools and sports teams are at the heart of our business. Call us if you’re interested in partnership or fundraising opportunities.</p>
+        </details>
+        <details>
+          <summary>Where are you?</summary>
+          <p>We’re at The Avenue West Cobb: 3625 Dallas Hwy SW, Suite 690, Marietta, GA 30064.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="visit" aria-labelledby="visit-h">
+    <div class="wrap visit-grid">
+      <div class="store" data-rise>
+        <span class="kicker">Find us</span>
+        <h2 id="visit-h" style="font-size:clamp(36px,4.2vw,54px);margin:14px 0 26px">Come hungry. Bring your crew.</h2>
+        <div class="photo"><img src="https://www.otterschicken.com/wp-content/uploads/2026/10/speed-otters-westcobb-700x410.webp" alt="The Otter’s Chicken storefront with its red awning at The Avenue West Cobb" width="570" height="333" loading="lazy"></div>
+        <p class="addr"><b>The Avenue West Cobb</b>3625 Dallas Hwy SW, Suite 690<br>Marietta, GA 30064</p>
+        <div class="actions">
+          <a class="btn btn-red" href="https://www.google.com/maps/search/?api=1&amp;query=Otter%E2%80%99s%20Chicken%2C%203625%20Dallas%20Hwy%20SW%2C%20Suite%20690%2C%20Marietta%2C%20GA%2030064">Get Directions</a>
+          <a class="btn btn-line" href="tel:+17704288333">Call (770) 428-8333</a>
+        </div>
+      </div>
+      <div class="hours" data-rise>
+        <h3>Hours</h3>
+        <h4>Lunch &amp; Dinner</h4>
+        <table aria-label="Lunch and dinner hours">
+          <tbody>
+            <tr data-days="1,2,3,4"><td>Monday–Thursday</td><td>11 AM–9:30 PM</td></tr>
+            <tr data-days="5,6"><td>Friday–Saturday</td><td>11 AM–10 PM</td></tr>
+            <tr data-days="0"><td>Sunday</td><td>11 AM–9 PM</td></tr>
+          </tbody>
+        </table>
+        <h4>Breakfast</h4>
+        <table aria-label="Breakfast hours">
+          <tbody>
+            <tr data-days="3,4,5,6,0"><td>Wednesday–Sunday</td><td>7 AM–11 AM</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="end" aria-labelledby="end-h">
+    <div class="wrap" data-rise>
+      <h2 id="end-h"><span class="nb">Great food.</span> <span class="nb">Great prices.</span> <span class="nb">Great service.</span></h2>
+      <p>Fresh tenders, wings and breakfast at The Avenue West Cobb. Order ahead, or pull up a chair.</p>
+      <div class="actions">
+        <a class="btn btn-red" href="https://www.otterschicken.com/">Order Online</a>
+        <a class="btn btn-line" href="tel:+17704288333">Call (770) 428-8333</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="flogo"><img src="https://www.otterschicken.com/wp-content/uploads/2026/10/mobile-comparison-20261020/logo-180.webp" alt="Otter’s Chicken" width="163" height="85" loading="lazy"></span>
+    <p>3625 Dallas Hwy SW, Suite 690, Marietta, GA 30064 · <a href="tel:+17704288333" style="color:#fff">(770) 428-8333</a></p>
+    <nav class="social" aria-label="Social">
+      <a href="https://www.instagram.com/otterschicken/">Instagram</a>
+      <a href="https://www.facebook.com/otterswestcobb/">Facebook</a>
+      <a href="https://www.tiktok.com/@otterschicken">TikTok</a>
+      <a href="https://mobile.twitter.com/otterschicken/">X</a>
+    </nav>
+    <div class="made">
+      <span>©2026 Otter’s Chicken, Marietta, GA</span>
+      <span>Mockup made for Otter’s Chicken by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-line" href="tel:+17704288333">Call us</a>
+  <a class="btn btn-red" href="https://www.otterschicken.com/">Order Online</a>
+</div>
+
+<script>
+(function(){
+  /* ---- open now (Marietta time) ---- */
+  try{
+    var parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+    var get=function(t){for(var i=0;i<parts.length;i++)if(parts[i].type===t)return parts[i].value;};
+    var day=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(get('weekday'));
+    var mins=(parseInt(get('hour'),10)%24)*60+parseInt(get('minute'),10);
+    var close=[21*60,21.5*60,21.5*60,21.5*60,21.5*60,22*60,22*60];
+    var closeTxt=['9 PM','9:30 PM','9:30 PM','9:30 PM','9:30 PM','10 PM','10 PM'];
+    var bfast=function(d){return d===0||d>=3;};
+    var el=document.getElementById('status'),txt=document.getElementById('statusText'),msg;
+    if(bfast(day)&&mins>=420&&mins<660){msg='Open now · Breakfast until 11 AM';el.classList.add('open');}
+    else if(mins>=660&&mins<close[day]){msg='Open now · Until '+closeTxt[day]+' tonight';el.classList.add('open');}
+    else if(mins<660){msg=bfast(day)?'Opens today at 7 AM for breakfast':'Opens today at 11 AM';}
+    else{var n=(day+1)%7;msg=bfast(n)?'Closed now · Opens tomorrow at 7 AM':'Closed now · Opens tomorrow at 11 AM';}
+    txt.textContent=msg;
+    document.querySelectorAll('.hours tr[data-days]').forEach(function(tr){
+      if(tr.getAttribute('data-days').split(',').indexOf(String(day))>-1){
+        tr.classList.add('today');
+        var s=document.createElement('span');s.className='today-tag';s.textContent='Today';tr.cells[0].appendChild(s);
+      }
+    });
+  }catch(e){}
+
+  /* ---- catering planner: tray sizes and "serves" from the Otter's catering menu ---- */
+  var TRAYS={
+    tenders:[{n:'Extra Large',c:'100 tenders',s:26},{n:'Large',c:'75 tenders',s:19},{n:'Medium',c:'50 tenders',s:13},{n:'Small',c:'25 tenders',s:7}],
+    nuggets:[{n:'Large',c:'150 nuggets',s:19},{n:'Medium',c:'100 nuggets',s:13},{n:'Small',c:'50 nuggets',s:7}],
+    breakfast:[{n:'Large',c:'Belgian waffles, tenders, butter and syrup',s:18},{n:'Small',c:'Belgian waffles, tenders, butter and syrup',s:8}]
+  };
+  var mode='tenders',people=40;
+  var $=function(id){return document.getElementById(id);};
+  var range=$('people'),out=$('peopleOut'),list=$('trays');
+
+  function best(sizes,n){
+    var bestCombo=null,bestCost=1e9;
+    (function rec(i,combo,serves,count){
+      if(serves>=n){var cost=serves+count*4;if(cost<bestCost){bestCost=cost;bestCombo=combo.slice();}return;}
+      if(i>=sizes.length)return;
+      var max=Math.ceil((n-serves)/sizes[i].s);
+      for(var k=max;k>=0;k--){combo[i]=k;rec(i+1,combo,serves+k*sizes[i].s,count+k);}
+      combo[i]=0;
+    })(0,[],0,0);
+    return bestCombo;
+  }
+  function row(q,name,detail,serves){
+    return '<li><span class="qty">'+q+'×</span><span><b>'+name+'</b><small>'+detail+'</small></span><span class="sv">Serves '+serves+'</span></li>';
+  }
+  function render(){
+    out.textContent=people;range.value=people;
+    var sizes=TRAYS[mode],combo=best(sizes,people),html='',serves=0,summary=[],units=0;
+    var label=mode==='breakfast'?'Chicken & Waffles tray':mode==='tenders'?'tenders tray':'nuggets tray';
+    sizes.forEach(function(t,i){
+      var q=combo[i]||0;if(!q)return;serves+=q*t.s;
+      units+=q*(parseInt(t.c,10)||0);
+      var name=mode==='breakfast'?t.n+' '+label:t.n+' '+label;
+      var detail=mode==='breakfast'?t.c:t.c+', 12 oz dipping sauce';
+      html+=row(q,name,detail,t.s+'+');summary.push(q+'× '+name);
+    });
+    $('addons').hidden=mode!=='breakfast';
+    if(mode==='breakfast'){
+      if($('addHash').checked){
+        var full=Math.floor(people/25),rest=people-full*25,half=0;
+        if(rest>15){full++;}else if(rest>0){half=1;}
+        if(full){html+=row(full,'Full hashbrown tray','12 oz sauce','25+');summary.push(full+'× Full hashbrown tray');}
+        if(half){html+=row(half,'Half hashbrown tray','8 oz sauce','15+');summary.push(half+'× Half hashbrown tray');}
+      }
+      if($('addCoffee').checked){
+        var b=Math.ceil(people/10);html+=row(b,'Early Bird Brew Box','96 oz breakfast blend or decaf, with coffee bar essentials','10–12');summary.push(b+'× Early Bird Brew Box');
+      }
+      if($('addParfait').checked){
+        var p=Math.ceil(people/12);html+=row(p,'Parfait bar','64 oz vanilla yogurt, fresh fruit, granola, Oreo crumbles','12+');summary.push(p+'× Parfait bar');
+      }
+      $('planTitle').textContent='Your breakfast order';
+      $('totalLabel').textContent='Chicken & Waffles for';
+      $('planNote').textContent='Chicken biscuits, breakfast wraps and fruit trays are on the catering menu too.';
+    }else{
+      $('planTitle').textContent='Your '+mode+' order';
+      $('totalLabel').textContent=units+' '+mode+' for';
+      $('planNote').textContent='Add gallon drinks: tea, lemonade or Otter Palmer.';
+    }
+    $('totalServes').textContent='Serves '+serves+'+';
+    list.innerHTML=html;
+    $('notes').value='Catering for '+people+': '+summary.join(', ')+'.';
+  }
+  document.querySelectorAll('.seg button').forEach(function(b){
+    b.addEventListener('click',function(){
+      mode=b.getAttribute('data-mode');
+      document.querySelectorAll('.seg button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});
+      render();
+    });
+  });
+  range.addEventListener('input',function(){people=parseInt(range.value,10);render();});
+  $('minus').addEventListener('click',function(){people=Math.max(7,people-1);render();});
+  $('plus').addEventListener('click',function(){people=Math.min(150,people+1);render();});
+  ['addHash','addCoffee','addParfait'].forEach(function(id){$(id).addEventListener('change',render);});
+  $('sendForm').addEventListener('submit',function(e){e.preventDefault();$('thanks').classList.add('on');});
+  render();
+
+  /* ---- gentle rise for what starts below the first screen ---- */
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target);}});},{rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('[data-rise]').forEach(function(el){
+      if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('rise','will-rise');io.observe(el);}
+    });
+  }
+})();
+</script>
+</body>
+</html>
