@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup thebreathwave-com-6b7721 1 3894ad7d -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Breath Wave · Ademcoaching in Den Haag</title>
+<meta name="description" content="The Breath Wave: ademcoaching, workshop Adem en ijs en sessies voor teams in Den Haag. Van altijd aan naar rust die blijft.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0b2236;
+  --ink-2:#12324d;
+  --blue:#0071bc;
+  --blue-d:#005b98;
+  --sky:#d9e9f5;
+  --sand:#f5f1ea;
+  --sand-2:#ece6dc;
+  --line:#e0d9cc;
+  --text:#1b2833;
+  --muted:#4f5d69;
+  --on-ink:#ffffff;
+  --on-ink-muted:#bccbd8;
+  --r:18px;
+  --wrap:1180px;
+  --head:"Space Grotesk",system-ui,sans-serif;
+  --body:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--body);font-size:17px;line-height:1.6;color:var(--text);background:#fff;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:var(--blue)}
+h1,h2,h3{font-family:var(--head);font-weight:500;line-height:1.12;letter-spacing:-.015em;margin:0}
+p{margin:0}
+:focus-visible{outline:3px solid #f2b84b;outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:12px;top:-60px;background:#fff;color:var(--ink);padding:10px 14px;border-radius:8px;z-index:50}
+.skip:focus{top:56px}
+
+/* Signal Set banner */
+.ss-banner{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:var(--sand);color:var(--ink);font:500 15px/1.3 var(--body);text-align:center;border-bottom:1px solid var(--line);white-space:nowrap}
+.ss-banner a{color:var(--blue-d);text-decoration:underline;text-underline-offset:3px;margin-left:.3em}
+
+/* header */
+.site-head{background:var(--ink);color:#fff}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:84px}
+.brand{display:flex;align-items:center}
+.brand img{height:62px;width:auto}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{color:#fff;text-decoration:none;font-size:15px;padding:12px 12px;border-radius:10px;opacity:.9}
+.nav a:hover{opacity:1;background:rgba(255,255,255,.08)}
+.nav .btn{margin-left:10px;opacity:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:999px;font:600 16px/1.2 var(--body);text-decoration:none;border:0;cursor:pointer;transition:background .2s,transform .2s,box-shadow .2s}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:var(--blue-d);transform:translateY(-1px);box-shadow:0 8px 20px -10px rgba(0,113,188,.7)}
+.btn-ghost{background:rgba(255,255,255,.1);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.45)}
+.btn-ghost:hover{background:rgba(255,255,255,.18)}
+.btn-line{background:#fff;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
+.btn-line:hover{box-shadow:inset 0 0 0 1px var(--ink)}
+.nav .btn{min-height:44px;padding:10px 18px;font-size:15px;background:#fff;color:var(--ink)}
+.nav .btn:hover{background:var(--sky)}
+.head-call{display:none}
+
+/* hero */
+.hero{background:var(--ink);padding:0 24px 0}
+.hero-panel{position:relative;max-width:1280px;margin:0 auto;border-radius:24px 24px 0 0;overflow:hidden;min-height:620px;display:flex;align-items:flex-end;isolation:isolate}
+.hero-panel>img.sea{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 62%;z-index:-2}
+.hero-panel::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(8,26,42,.86) 0%,rgba(8,26,42,.62) 42%,rgba(8,26,42,.08) 75%),linear-gradient(0deg,rgba(8,26,42,.75) 0%,rgba(8,26,42,0) 40%)}
+.hero-inner{width:100%;padding:72px 64px 120px;display:grid;grid-template-columns:minmax(0,640px) 1fr;align-items:end;gap:40px;color:#fff}
+.eyebrow{font:500 14px/1.3 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--on-ink-muted);margin-bottom:18px}
+.hero h1{font-size:clamp(40px,5.4vw,70px);color:#fff;letter-spacing:-.025em}
+.hero .lead{font-size:19px;line-height:1.55;color:#e6eef5;margin-top:22px;max-width:520px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.coach{justify-self:end;display:flex;align-items:center;gap:16px;background:rgba(8,26,42,.55);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:10px 22px 10px 10px;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.18)}
+.coach img{width:76px;height:76px;border-radius:50%;object-fit:cover;object-position:50% 30%}
+.coach b{display:block;font:500 17px/1.2 var(--head)}
+.coach span{font-size:14px;color:var(--on-ink-muted)}
+.breath{position:absolute;left:0;right:0;bottom:0;height:110px;pointer-events:none}
+.breath svg{width:100%;height:100%;display:block}
+
+/* proof strip */
+.proof{background:var(--ink);color:#fff;padding:0 24px}
+.proof-in{max-width:1280px;margin:0 auto;background:var(--ink-2);border-radius:0 0 24px 24px;display:grid;grid-template-columns:repeat(3,1fr)}
+.proof-item{padding:30px 40px;display:flex;align-items:center;gap:18px}
+.proof-item+.proof-item{border-left:1px solid rgba(255,255,255,.1)}
+.proof-item strong{font:500 40px/1 var(--head);letter-spacing:-.02em}
+.proof-item span{font-size:15px;line-height:1.4;color:var(--on-ink-muted)}
+.stars{display:flex;gap:3px;margin-bottom:6px}
+.stars svg{width:16px;height:16px;fill:#f2b84b}
+.proof-tail{background:var(--ink);height:72px}
+
+/* journey */
+.section{padding:104px 0}
+.kicker{font:600 13px/1.3 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--blue-d);margin-bottom:14px}
+.h2{font-size:clamp(32px,3.6vw,46px)}
+.section-head{max-width:720px;margin-bottom:56px}
+.section-head p{margin-top:16px;color:var(--muted);font-size:18px}
+.journey{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-bottom:72px}
+.journey svg.line{position:absolute;left:0;right:0;top:4px;width:100%;height:60px;z-index:0}
+.stage{position:relative;z-index:1;padding-right:24px}
+.dot{display:block;width:20px;height:20px;border-radius:50%;background:#fff;border:3px solid var(--blue);margin:24px 0 22px}
+.stage:first-child .dot{border-color:#9aa6b1}
+.stage:last-child .dot{background:var(--blue)}
+.stage small{display:block;font:600 13px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.stage h3{font-size:28px}
+.promises{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.promise{border-top:1px solid var(--line);padding-top:24px}
+.promise h3{font-size:21px;margin-bottom:10px}
+.promise p{color:var(--muted);font-size:16px}
+
+/* planner */
+.planner-sec{background:var(--sand)}
+.planner{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:40px;align-items:start}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{font:500 20px/1.3 var(--head);margin-bottom:16px;padding:0;display:flex;align-items:center;gap:12px}
+legend .n{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--ink);color:#fff;font:600 14px/1 var(--body)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{position:relative}
+.chip input,.path input{position:absolute;opacity:0;width:1px;height:1px}
+.chip label{display:inline-flex;align-items:center;min-height:46px;padding:10px 18px;border-radius:999px;background:#fff;box-shadow:inset 0 0 0 1px var(--line);cursor:pointer;font-weight:500;font-size:16px;transition:background .2s,box-shadow .2s,color .2s}
+.chip label:hover{box-shadow:inset 0 0 0 1px var(--ink)}
+.chip input:checked+label{background:var(--ink);color:#fff;box-shadow:none}
+.chip input:focus-visible+label,.path input:focus-visible+label{outline:3px solid #f2b84b;outline-offset:3px}
+.answer{margin:22px 0 48px;background:#fff;border-radius:var(--r);padding:28px 30px;box-shadow:0 1px 0 var(--line),0 20px 40px -32px rgba(11,34,54,.35);border-left:4px solid var(--blue)}
+.answer .q{font:500 22px/1.35 var(--head);color:var(--ink)}
+.answer .a{margin-top:10px;color:var(--muted)}
+.paths{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.path{position:relative}
+.path label{display:block;height:100%;padding:16px 18px;border-radius:14px;background:#fff;box-shadow:inset 0 0 0 1px var(--line);cursor:pointer;transition:box-shadow .2s,background .2s}
+.path label:hover{box-shadow:inset 0 0 0 1px var(--ink)}
+.path b{display:block;font:500 17px/1.25 var(--head);color:var(--ink)}
+.path span{display:block;font-size:14px;color:var(--muted);margin-top:4px;line-height:1.4}
+.path input:checked+label{box-shadow:inset 0 0 0 2px var(--blue);background:#f4f9fd}
+.detail{margin-top:18px;background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:0 1px 0 var(--line),0 20px 40px -32px rgba(11,34,54,.35);display:grid;grid-template-columns:1fr}
+.detail.has-photo{grid-template-columns:1fr 1fr}
+.detail-body{padding:28px 30px}
+.detail-body h3{font-size:24px}
+.detail-body .for{margin-top:6px;color:var(--blue-d);font-weight:600;font-size:15px}
+.detail-body p.desc{margin-top:12px;color:var(--muted);font-size:16px}
+.ticks{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:10px}
+.ticks li{display:flex;gap:10px;font-size:16px;line-height:1.45}
+.ticks svg{flex:none;width:20px;height:20px;margin-top:2px;stroke:var(--blue);fill:none;stroke-width:2.2}
+.detail figure{margin:0;min-height:260px;position:relative}
+.detail figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 40%}
+.detail figure.gone{display:none}
+
+.card{position:sticky;top:24px;background:var(--ink);color:#fff;border-radius:22px;padding:32px;box-shadow:0 30px 60px -30px rgba(11,34,54,.6)}
+.card h3{font-size:26px}
+.summary{list-style:none;margin:20px 0 24px;padding:0;border-top:1px solid rgba(255,255,255,.14)}
+.summary li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:15px}
+.summary li span{color:var(--on-ink-muted)}
+.summary li b{font-weight:500;text-align:right}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:14px;color:var(--on-ink-muted);margin-bottom:6px}
+.field input{width:100%;min-height:48px;border-radius:12px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.06);color:#fff;font:400 16px var(--body);padding:10px 14px}
+.field input::placeholder{color:#9fb2c3}
+.field input:focus{outline:none;border-color:#fff;background:rgba(255,255,255,.1)}
+.card .btn{width:100%;margin-top:6px}
+.card .alt{margin-top:16px;font-size:15px;color:var(--on-ink-muted);text-align:center}
+.card .alt a{color:#fff}
+.thanks{display:none;margin-top:14px;padding:12px 14px;border-radius:12px;background:rgba(255,255,255,.1);font-size:15px}
+.thanks.show{display:block}
+
+/* reviews */
+.reviews{display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:start}
+.feature blockquote{margin:0;font:400 clamp(26px,2.8vw,36px)/1.28 var(--head);letter-spacing:-.015em;color:var(--ink)}
+.feature cite,.quote cite{display:block;font-style:normal;margin-top:18px;font-weight:600;font-size:15px}
+.feature .stars svg{width:20px;height:20px}
+.feature .stars{margin-bottom:20px}
+.quotes{display:grid;gap:0}
+.quote{padding:24px 0;border-top:1px solid var(--line)}
+.quote:last-child{border-bottom:1px solid var(--line)}
+.quote p{font-size:16px;color:var(--text)}
+.quote cite{margin-top:10px;color:var(--muted);font-weight:500}
+.rev-note{margin-top:28px;color:var(--muted);font-size:15px}
+
+/* about */
+.about-sec{background:var(--sand)}
+.about{display:grid;grid-template-columns:minmax(0,480px) 1fr;gap:72px;align-items:center}
+.about-img{border-radius:24px;overflow:hidden;aspect-ratio:1/1;box-shadow:0 30px 60px -36px rgba(11,34,54,.5)}
+.about-img img{width:100%;height:100%;object-fit:cover}
+.about h2{margin-bottom:22px}
+.about .big{font:400 24px/1.4 var(--head);color:var(--ink);margin-bottom:18px}
+.about p+p{margin-top:14px}
+.about .muted{color:var(--muted)}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.facts span{background:#fff;border-radius:999px;padding:8px 16px;font-size:15px;box-shadow:inset 0 0 0 1px var(--line)}
+
+/* faq */
+.faq{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:64px}
+details{border-top:1px solid var(--line)}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:64px;padding:16px 0;font:500 19px/1.35 var(--head);color:var(--ink)}
+summary::-webkit-details-marker{display:none}
+summary .pm{flex:none;width:30px;height:30px;border-radius:50%;box-shadow:inset 0 0 0 1px var(--line);display:grid;place-items:center;transition:transform .25s}
+summary .pm svg{width:14px;height:14px;stroke:var(--ink);stroke-width:2;fill:none}
+details[open] summary .pm{transform:rotate(45deg);background:var(--ink)}
+details[open] summary .pm svg{stroke:#fff}
+details p{padding:0 48px 22px 0;color:var(--muted)}
+
+/* closing */
+.closing{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.closing .wrap{position:relative;z-index:1}
+.closing-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+.closing h2{color:#fff;font-size:clamp(34px,4vw,52px)}
+.closing .lead{margin-top:18px;font-size:19px;color:#dfe8f0;max-width:540px}
+.closing .waves{position:absolute;left:0;right:0;bottom:0;height:140px;opacity:.9}
+.closing .waves svg{width:100%;height:100%}
+.news{background:var(--ink-2);border-radius:20px;padding:28px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.1)}
+.news h3{font-size:22px}
+.news p{color:var(--on-ink-muted);font-size:15px;margin-top:8px}
+.news form{display:flex;gap:8px;margin-top:18px}
+.news .field{flex:1;margin:0}
+.news .btn{flex:none}
+.news small{display:block;margin-top:12px;color:var(--on-ink-muted);font-size:13px}
+
+/* footer */
+.foot{background:#071827;color:#d3dde6;padding:56px 0 32px;font-size:15px}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px}
+.foot img{height:70px;width:auto}
+.foot .sign{font:400 22px/1.3 var(--head);color:#fff;margin-top:18px}
+.foot h2{font:600 13px/1.3 var(--body);letter-spacing:.14em;text-transform:uppercase;color:#8fa4b6;margin-bottom:14px}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.foot a{color:#fff;text-decoration:none;display:inline-flex;align-items:center;min-height:36px}
+.foot a:hover{text-decoration:underline}
+.foot .legal{margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,255,255,.1);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;color:#8fa4b6;font-size:14px}
+.foot .legal a{color:#d3dde6;text-decoration:underline;min-height:0;display:inline}
+
+/* phone call bar */
+.callbar{display:none}
+
+/* motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .will-rise{opacity:1;transform:none}
+  .rise,.btn,summary .pm{transition:none}
+}
+
+/* tablet */
+@media (max-width:1000px){
+  .nav a:not(.btn){display:none}
+  .hero-inner{grid-template-columns:1fr;padding:56px 40px 120px}
+  .coach{justify-self:start}
+  .planner{grid-template-columns:1fr}
+  .card{position:static}
+  .reviews,.about,.faq,.closing-grid{grid-template-columns:1fr;gap:44px}
+  .about-img{max-width:480px}
+}
+/* phone */
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:72px}
+  .ss-banner{font-size:14px;padding:8px 10px}
+  .wrap{padding:0 20px}
+  .site-head .wrap{min-height:70px}
+  .brand img{height:50px}
+  .nav .btn{padding:10px 16px}
+  .hero{padding:0}
+  .hero-panel{border-radius:0;min-height:600px}
+  .hero-panel>img.sea{object-position:58% 60%}
+  .hero-panel::before{background:linear-gradient(0deg,rgba(8,26,42,.92) 0%,rgba(8,26,42,.7) 55%,rgba(8,26,42,.35) 100%)}
+  .hero-inner{padding:40px 20px 100px;gap:28px}
+  .eyebrow{font-size:12px;margin-bottom:14px}
+  .hero h1{font-size:40px}
+  .hero .lead{font-size:17px;margin-top:16px}
+  .cta-row{margin-top:26px}
+  .cta-row .btn{flex:1 1 100%}
+  .coach{padding-right:18px}
+  .coach img{width:60px;height:60px}
+  .breath{height:80px}
+  .proof{padding:0}
+  .proof-in{grid-template-columns:1fr;border-radius:0}
+  .proof-item{padding:20px 20px}
+  .proof-item+.proof-item{border-left:0;border-top:1px solid rgba(255,255,255,.1)}
+  .proof-item strong{font-size:32px;min-width:96px}
+  .proof-tail{display:none}
+  .section{padding:72px 0}
+  .section-head{margin-bottom:40px}
+  .journey{grid-template-columns:1fr;gap:0;margin-bottom:48px;padding-left:34px}
+  .journey svg.line{display:none}
+  .journey::before{content:"";position:absolute;left:9px;top:34px;bottom:34px;width:2px;background:linear-gradient(#9aa6b1,var(--blue))}
+  .stage{display:flex;flex-direction:column;padding:0 0 22px}
+  .dot{position:absolute;left:-34px;top:2px;margin:0;background:#fff}
+  .stage h3{font-size:24px}
+  .promises{grid-template-columns:1fr;gap:28px}
+  .answer{padding:22px 22px;margin-bottom:40px}
+  .answer .q{font-size:19px}
+  .paths{grid-template-columns:1fr}
+  .detail.has-photo{grid-template-columns:1fr}
+  .detail figure{min-height:0;aspect-ratio:4/3}
+  .detail-body{padding:22px}
+  .card{padding:26px 22px;border-radius:20px}
+  .about{gap:32px}
+  .about .big{font-size:21px}
+  .faq{gap:24px}
+  details p{padding-right:0}
+  .news form{flex-direction:column}
+  .foot-grid{grid-template-columns:1fr;gap:28px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(11,34,54,.96);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 -8px 24px -12px rgba(0,0,0,.4)}
+  .callbar .btn{flex:1;min-height:48px;font-size:15px;padding:10px 12px}
+}
+@media (max-width:380px){
+  .ss-banner{font-size:13px}
+  .hero h1{font-size:36px}
+}
+</style>
+</head>
+<body>
+<div class="ss-banner" role="note">Here's your free mockup from<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+
+<a class="skip" href="#main" lang="nl">Naar de inhoud</a>
+
+<header class="site-head" lang="nl">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="The Breath Wave, naar boven"><img src="https://images.squarespace-cdn.com/content/v1/62bf3aac815ea3190b0ebd68/71eae4b5-91b6-41bb-98cc-e29ce3fb25f9/logo+met+tekst.png?format=1500w" width="403" height="287" alt="The Breath Wave"></a>
+    <nav class="nav" aria-label="Hoofdmenu">
+      <a href="#aanpak">Aanpak</a>
+      <a href="#plan">Kies jouw weg</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#over">Over Tjeerd</a>
+      <a href="#vragen">Vragen</a>
+      <a class="btn" href="#plan">Gratis kennismaking</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" lang="nl">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero-panel">
+      <img class="sea" src="https://images.squarespace-cdn.com/content/v1/62bf3aac815ea3190b0ebd68/4a54fc18-8347-4d8b-8aeb-bbc7b9ade247/pexels-bella-white-201200-635279.jpg?format=1500w" width="1280" height="850" alt="" fetchpriority="high">
+      <div class="hero-inner">
+        <div>
+          <p class="eyebrow">The Breath Wave · Ademcoaching in Den Haag</p>
+          <h1 id="hero-title">Van altijd aan naar rust die blijft.</h1>
+          <p class="lead">Minder stress, vermoeidheid en mentale chaos. Nuchter, praktisch en wetenschappelijk onderbouwd. Je voelt het verschil al na de eerste sessie.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#plan">Boek gratis kennismaking</a>
+            <a class="btn btn-ghost" href="tel:+31683154484">Bel +31 6 83 15 44 84</a>
+          </div>
+        </div>
+        <div class="coach">
+          <img src="https://images.squarespace-cdn.com/content/v1/62bf3aac815ea3190b0ebd68/4c1a2d78-632e-48ec-93e1-2601520ca9c0/Tjeerd_profiel_foto_ademwerk_logo.jpeg?format=1500w" width="1280" height="1282" alt="Tjeerd Buis, glimlachend buiten tussen het groen">
+          <div><b>Tjeerd Buis</b><span>Ademcoach en oud-topsporter</span></div>
+        </div>
+      </div>
+      <div class="breath" aria-hidden="true">
+        <svg viewBox="0 0 1200 110" preserveAspectRatio="none">
+          <path id="w1" d="M0 64 C150 40 300 40 450 64 S750 88 900 64 S1100 40 1200 56" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="2"/>
+          <path id="w2" d="M0 78 C150 60 300 60 450 78 S750 96 900 78 S1100 60 1200 70" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="1.5"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof" aria-label="In cijfers">
+    <div class="proof-in">
+      <div class="proof-item"><strong>2000+</strong><span>mensen gecoacht in<br>workshops en trajecten</span></div>
+      <div class="proof-item"><strong>200+</strong><div><div class="stars" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg></div><span>vijfsterrenreviews</span></div></div>
+      <div class="proof-item"><strong>2021</strong><span>sinds dan begeleid<br>vanuit Den Haag</span></div>
+    </div>
+  </section>
+  <div class="proof-tail" aria-hidden="true"></div>
+
+  <section class="section" id="aanpak" aria-labelledby="aanpak-title">
+    <div class="wrap">
+      <div class="section-head" data-rise>
+        <p class="kicker">De weg die je aflegt</p>
+        <h2 class="h2" id="aanpak-title">Geen weken praten. Je werkt direct met je adem.</h2>
+      </div>
+      <div class="journey" data-rise>
+        <svg class="line" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M10 34 C200 34 260 34 400 34 S620 14 800 34 S1000 54 1190 34" fill="none" stroke="#c9d6e1" stroke-width="2"/></svg>
+        <div class="stage"><span class="dot"></span><small>Nu</small><h3>Altijd aan</h3></div>
+        <div class="stage"><span class="dot"></span><small>Dan</small><h3>Rust in je hoofd en lijf</h3></div>
+        <div class="stage"><span class="dot"></span><small>Blijvend</small><h3>Veerkracht</h3></div>
+      </div>
+      <div class="promises">
+        <div class="promise" data-rise>
+          <h3>Voel het verschil na één sessie</h3>
+          <p>De meeste mensen voelen na één sessie al meer rust in hun hoofd en ontspanning in hun lijf.</p>
+        </div>
+        <div class="promise" data-rise>
+          <h3>Persoonlijk begeleid, in jouw tempo</h3>
+          <p>Elke sessie zorgvuldig opgebouwd, afgestemd op wat jouw lijf aankan. Zonder prestatiedruk.</p>
+        </div>
+        <div class="promise" data-rise>
+          <h3>Nuchter en onderbouwd. Niks zweverigs</h3>
+          <p>Ademwerk is geen geloof, het is fysiologie. Je snapt wat er in je lijf gebeurt, en waarom het werkt.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section planner-sec" id="plan" aria-labelledby="plan-title">
+    <div class="wrap">
+      <div class="section-head" data-rise>
+        <p class="kicker">Kies jouw weg</p>
+        <h2 class="h2" id="plan-title">Wat speelt er bij jou?</h2>
+        <p>Tik aan wat je herkent en kies hoe je wilt werken. Je aanvraag staat meteen klaar.</p>
+      </div>
+      <div class="planner">
+        <div>
+          <fieldset>
+            <legend><span class="n" aria-hidden="true">1</span>Wat herken je?</legend>
+            <div class="chips" id="themes">
+              <div class="chip"><input type="radio" name="theme" id="t-stress" value="stress" checked><label for="t-stress">Stress verminderen</label></div>
+              <div class="chip"><input type="radio" name="theme" id="t-burnout" value="burnout"><label for="t-burnout">Burn-out herstel</label></div>
+              <div class="chip"><input type="radio" name="theme" id="t-angst" value="angst"><label for="t-angst">Angst &amp; onrust</label></div>
+              <div class="chip"><input type="radio" name="theme" id="t-focus" value="focus"><label for="t-focus">Focus &amp; energie</label></div>
+              <div class="chip"><input type="radio" name="theme" id="t-slaap" value="slaap"><label for="t-slaap">Slaap verbeteren</label></div>
+            </div>
+          </fieldset>
+          <div class="answer" aria-live="polite">
+            <p class="q" id="ans-q">Sta je de hele dag “aan” en krijg je je hoofd niet leeg?</p>
+            <p class="a" id="ans-a">Ademcoaching helpt je stress verminderen door je lijf te leren zakken, zodat rust terugkomt zonder dat je ervoor hoeft te vechten.</p>
+          </div>
+
+          <fieldset>
+            <legend><span class="n" aria-hidden="true">2</span>Hoe wil je werken?</legend>
+            <div class="paths">
+              <div class="path"><input type="radio" name="path" id="p-1op1" value="1op1" checked><label for="p-1op1"><b>1-op-1 Ademcoaching</b><span>Persoonlijk, diep en duurzaam</span></label></div>
+              <div class="path"><input type="radio" name="path" id="p-ijs" value="ijs"><label for="p-ijs"><b>Workshop Adem en ijs</b><span>Eén dag, geen ervaring nodig</span></label></div>
+              <div class="path"><input type="radio" name="path" id="p-team" value="team"><label for="p-team"><b>Zakelijk &amp; teams</b><span>Preventief, niet pas na uitval</span></label></div>
+            </div>
+          </fieldset>
+          <div class="detail" id="detail" aria-live="polite">
+            <div class="detail-body">
+              <h3 id="d-title">1-op-1 Ademcoaching</h3>
+              <p class="for" id="d-for">Voor wie persoonlijk, diep en duurzaam wil veranderen</p>
+              <p class="desc" id="d-desc">We werken gericht aan het reguleren van je zenuwstelsel, zodat rust, helderheid en energie terugkomen. Stap voor stap en afgestemd op jouw belastbaarheid.</p>
+              <ul class="ticks" id="d-list">
+                <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Persoonlijke begeleiding, geen standaard protocol</li>
+                <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Snelle verlichting van stress en spanning</li>
+                <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Veilig werken bij burn-out, overprikkeling of vastlopen</li>
+              </ul>
+            </div>
+            <figure class="gone" id="d-fig"><img src="https://images.squarespace-cdn.com/content/v1/62bf3aac815ea3190b0ebd68/ec4b5ca0-e24c-48bd-969b-b5923bb528f4/thebreathwave-ijsbad-ademtraining.webp?format=750w" width="734" height="551" alt="Een deelnemer in een ijsbad buiten, met mensen op de achtergrond" loading="lazy"></figure>
+          </div>
+        </div>
+
+        <aside class="card" aria-labelledby="card-title">
+          <h3 id="card-title">Jouw gratis kennismaking</h3>
+          <ul class="summary">
+            <li><span>Wat speelt er</span><b id="s-theme">Stress verminderen</b></li>
+            <li><span>Jouw weg</span><b id="s-path">1-op-1 Ademcoaching</b></li>
+            <li><span id="s-k3">Eerste stap</span><b id="s-step">Gratis kennismaking, 15 minuten</b></li>
+          </ul>
+          <form id="book" novalidate>
+            <div class="field"><label for="f-name">Naam</label><input id="f-name" name="naam" autocomplete="name" placeholder="Je naam"></div>
+            <div class="field"><label for="f-mail">E-mail</label><input id="f-mail" name="email" type="email" autocomplete="email" placeholder="jij@voorbeeld.nl"></div>
+            <div class="field"><label for="f-tel">Telefoon (mag ook leeg)</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" placeholder="06 …"></div>
+            <button class="btn btn-primary" type="submit" id="book-btn">Boek gratis kennismaking</button>
+            <p class="thanks" id="book-thanks" role="status" lang="en">Thanks. This is a mockup, so nothing was sent.</p>
+          </form>
+          <p class="alt">Liever bellen? <a href="tel:+31683154484">+31 6 83 15 44 84</a></p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reviews" aria-labelledby="rev-title">
+    <div class="wrap">
+      <div class="section-head" data-rise>
+        <p class="kicker">Wat deelnemers zeggen</p>
+        <h2 class="h2" id="rev-title">200+ vijfsterrenreviews. Een paar ervan.</h2>
+      </div>
+      <div class="reviews">
+        <figure class="feature" data-rise style="margin:0">
+          <div class="stars" role="img" aria-label="Vijf sterren"><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg></div>
+          <blockquote>“Voor mij is het een echte levensveranderende leerweg geweest. Ik ben meer ontspannen, ik slaap beter en mijn hartslag is vele slagen gedaald.”</blockquote>
+          <figcaption><cite>Joop Tobeas</cite></figcaption>
+        </figure>
+        <div class="quotes">
+          <figure class="quote" data-rise style="margin:0">
+            <p>“Precies een jaar geleden m'n eerste breathwork sessie gedaan, terwijl ik midden in een burn-out zat. Het opnieuw leren ademen, en het omgaan met de kou heeft me er echt doorheen gesleept.”</p>
+            <figcaption><cite>Yanthe</cite></figcaption>
+          </figure>
+          <figure class="quote" data-rise style="margin:0">
+            <p>“Blij verrast met het resultaat na 7 leerzame sessies over ademhaling gerelateerd aan stress. Het heeft een grote impact op mijn wel- en bewustzijn.”</p>
+            <figcaption><cite>Nico van Velsen</cite></figcaption>
+          </figure>
+          <figure class="quote" data-rise style="margin:0">
+            <p>“Praktische oefeningen voor thuis, liefdevolle ontvangst, het gevoel dat ik werd gehoord en gezien, en me erna direct ontspannen voelen.”</p>
+            <figcaption><cite>Marloes Rijnberg</cite></figcaption>
+          </figure>
+          <p class="rev-note">Ruim 185 van die reviews staan op Google.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about-sec" id="over" aria-labelledby="over-title">
+    <div class="wrap about">
+      <div class="about-img" data-rise><img src="https://images.squarespace-cdn.com/content/v1/62bf3aac815ea3190b0ebd68/4c1a2d78-632e-48ec-93e1-2601520ca9c0/Tjeerd_profiel_foto_ademwerk_logo.jpeg?format=1500w" width="1280" height="1282" alt="Portret van Tjeerd Buis, ademcoach bij The Breath Wave" loading="lazy"></div>
+      <div data-rise>
+        <p class="kicker">Over Tjeerd Buis</p>
+        <h2 class="h2" id="over-title">Ademcoach in Den Haag en oud-topsporter.</h2>
+        <p class="big">“Ik weet hoe het is om altijd te moeten presteren, en wat het je kost als je maar blijft doorgaan.”</p>
+        <p class="muted">Sinds 2021 begeleidde ik meer dan 2.000 mensen met een druk hoofd en een volle agenda naar meer rust en ontspanning. Mijn aanpak is nuchter en praktisch: ik leg uit hoe je lichaam werkt en geef je tools die je direct kunt toepassen.</p>
+        <div class="facts"><span>1-op-1 trajecten</span><span>Workshop Adem en ijs</span><span>Teams en organisaties</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="vragen" aria-labelledby="faq-title">
+    <div class="wrap faq">
+      <div data-rise>
+        <p class="kicker">Vragen</p>
+        <h2 class="h2" id="faq-title">Wat mensen vooraf willen weten.</h2>
+      </div>
+      <div data-rise>
+        <details open>
+          <summary>Hoe snel merk ik verschil?<span class="pm" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M7 1v12M1 7h12"/></svg></span></summary>
+          <p>Meestal na één sessie. Je werkt direct met je ademhaling, en de meeste mensen voelen na één sessie al meer rust in hun hoofd en ontspanning in hun lijf.</p>
+        </details>
+        <details>
+          <summary>Is het niet zweverig?<span class="pm" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M7 1v12M1 7h12"/></svg></span></summary>
+          <p>Nee. Ademwerk is geen geloof, het is fysiologie. Er wordt gewerkt met bewezen methodes, en je krijgt helder uitgelegd wat er in je lijf gebeurt.</p>
+        </details>
+        <details>
+          <summary>Kan het als ik in een burn-out zit?<span class="pm" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M7 1v12M1 7h12"/></svg></span></summary>
+          <p>Ja. Elke sessie wordt afgestemd op wat jouw lijf aankan, stap voor stap en zonder prestatiedruk. Veilig werken bij burn-out, overprikkeling of vastlopen is deel van de 1-op-1 aanpak.</p>
+        </details>
+        <details>
+          <summary>Heb ik ervaring nodig voor de workshop Adem en ijs?<span class="pm" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M7 1v12M1 7h12"/></svg></span></summary>
+          <p>Nee. Je hoeft niets te kunnen, maar wel bereid te zijn om te ervaren. Het is een eendaagse workshop, praktisch en veilig begeleid.</p>
+        </details>
+        <details>
+          <summary>Wat is de gratis kennismaking?<span class="pm" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M7 1v12M1 7h12"/></svg></span></summary>
+          <p>Een gesprek van 15 minuten om te ontdekken of dit bij jou past. Gratis.</p>
+        </details>
+        <details>
+          <summary>Werken jullie ook met teams?<span class="pm" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M7 1v12M1 7h12"/></svg></span></summary>
+          <p>Ja, voor organisaties die preventief willen werken, niet pas na uitval. Op maat: workshops, trainingen of trajecten.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section closing" aria-labelledby="close-title">
+    <div class="wrap closing-grid">
+      <div data-rise>
+        <h2 id="close-title">Klaar om uit de overleefstand te stappen?</h2>
+        <p class="lead">Je hoeft niet nog een boek te lezen of nog een podcast te luisteren. Rust is een vaardigheid, en die leer je door te doen.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#plan">Boek gratis kennismaking</a>
+          <a class="btn btn-ghost" href="tel:+31683154484">Bel +31 6 83 15 44 84</a>
+        </div>
+      </div>
+      <div class="news" data-rise>
+        <h3>3 gratis ademoefeningen op video</h3>
+        <p>Meld je aan voor tips en inzichten voor minder stress en meer energie, en je krijgt de oefeningen direct.</p>
+        <form id="news" novalidate>
+          <div class="field"><label for="n-mail">E-mail</label><input id="n-mail" type="email" autocomplete="email" placeholder="jij@voorbeeld.nl"></div>
+          <button class="btn btn-primary" type="submit" style="align-self:flex-end">Aanmelden</button>
+        </form>
+        <p class="thanks" id="news-thanks" role="status" lang="en">Thanks. This is a mockup, so nothing was sent.</p>
+        <small>Je kunt je altijd eenvoudig weer afmelden onderaan de mails.</small>
+      </div>
+    </div>
+    <div class="waves" aria-hidden="true">
+      <svg viewBox="0 0 1200 140" preserveAspectRatio="none"><path d="M0 90 C200 60 400 60 600 90 S1000 120 1200 90" fill="none" stroke="rgba(255,255,255,.14)" stroke-width="2"/><path d="M0 110 C200 86 400 86 600 110 S1000 134 1200 110" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="2"/></svg>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap" lang="nl">
+    <div class="foot-grid">
+      <div>
+        <img src="https://images.squarespace-cdn.com/content/v1/62bf3aac815ea3190b0ebd68/71eae4b5-91b6-41bb-98cc-e29ce3fb25f9/logo+met+tekst.png?format=1500w" width="403" height="287" alt="The Breath Wave" loading="lazy">
+        <p class="sign" lang="en">Keep breathing.</p>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="tel:+31683154484">+31 6 83 15 44 84</a></li>
+          <li><a href="mailto:info@thebreathwave.com">info@thebreathwave.com</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Den%20Haag%2C%20Nederland" target="_blank" rel="noopener">Den Haag, Nederland</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Volg</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/tjeerd.breathwork" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@Tjeerd.Breathwork" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.linkedin.com/in/thebreathwave" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.facebook.com/tjeerdbuis" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>The Breath Wave · KvK-nummer 85214353 · Btw-nummer 219556921B01</span>
+      <span lang="en">Mockup made for The Breath Wave by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar" lang="nl" aria-label="Snel contact">
+  <a class="btn btn-ghost" href="tel:+31683154484">Bel direct</a>
+  <a class="btn btn-primary" href="#plan">Gratis kennismaking</a>
+</div>
+
+<script>
+(function(){
+  var THEMES={
+    stress:['Stress verminderen','Sta je de hele dag “aan” en krijg je je hoofd niet leeg?','Ademcoaching helpt je stress verminderen door je lijf te leren zakken, zodat rust terugkomt zonder dat je ervoor hoeft te vechten.'],
+    burnout:['Burn-out herstel','Je functioneert nog, maar echt leven voelt ver weg.','Burn-out herstel begint niet bij harder rusten, maar bij een lijf dat weer leert uitschakelen.'],
+    angst:['Angst & onrust','Je weet dat je veilig bent, maar zo voelt het niet.','Ademwerk kalmeert de onrust in je lijf, zodat de spanning vanzelf kan zakken.'],
+    focus:['Focus & energie','Nergens energie voor, terwijl er niks “mis” lijkt te zijn.','Meer focus en energie begint niet bij harder pushen, maar bij een ontspannen lichaam.'],
+    slaap:['Slaap verbeteren','Doodmoe, maar zodra je hoofd het kussen raakt begint het malen.','Ademcoaching helpt je lichaam ontspannen, zodat je beter slaapt zonder het af te dwingen.']
+  };
+  var PATHS={
+    '1op1':{t:'1-op-1 Ademcoaching',f:'Voor wie persoonlijk, diep en duurzaam wil veranderen',d:'We werken gericht aan het reguleren van je zenuwstelsel, zodat rust, helderheid en energie terugkomen. Stap voor stap en afgestemd op jouw belastbaarheid.',l:['Persoonlijke begeleiding, geen standaard protocol','Snelle verlichting van stress en spanning','Veilig werken bij burn-out, overprikkeling of vastlopen'],card:'Jouw gratis kennismaking',k3:'Eerste stap',step:'Gratis kennismaking, 15 minuten',btn:'Boek gratis kennismaking',photo:false},
+    'ijs':{t:'Workshop Adem en ijs',f:'Je hoeft niets te kunnen, maar wel bereid te zijn om te ervaren',d:'In deze eendaagse workshop ervaar je direct wat ademhaling en koude training doen met je focus, stressniveau en energie. Praktisch, veilig begeleid en geen eerdere ervaring nodig.',l:['Direct voelbaar verschil na één dag','Bewezen adem- en koudetechnieken','Motiverende groepssetting met persoonlijke aandacht'],card:'Jouw plek in de workshop',k3:'Duur',step:'Eén dag',btn:'Reserveer je plek',photo:true},
+    'team':{t:'Zakelijk & teams',f:'Voor organisaties die preventief willen werken, niet pas na uitval',d:'Chronische stress kost focus, energie en productiviteit. Deze sessies helpen medewerkers hun systeem te reguleren, waardoor veerkracht, samenwerking en prestaties verbeteren.',l:['Minder stress- en burn-outklachten','Meer focus, rust en teamenergie','Op maat: workshops, trainingen of trajecten'],card:'Jouw aanvraag voor je team',k3:'Vorm',step:'Op maat',btn:'Neem contact op',photo:false}
+  };
+  var $=function(id){return document.getElementById(id)};
+  var tick='<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>';
+  function setTheme(v){var t=THEMES[v];$('ans-q').textContent=t[1];$('ans-a').textContent=t[2];$('s-theme').textContent=t[0];}
+  function setPath(v){var p=PATHS[v];$('d-title').textContent=p.t;$('d-for').textContent=p.f;$('d-desc').textContent=p.d;
+    $('d-list').innerHTML=p.l.map(function(x){return '<li>'+tick+x.replace(/&/g,'&amp;')+'</li>'}).join('');
+    $('d-fig').classList.toggle('gone',!p.photo);$('detail').classList.toggle('has-photo',p.photo);
+    $('card-title').textContent=p.card;$('s-path').textContent=p.t;$('s-k3').textContent=p.k3;$('s-step').textContent=p.step;$('book-btn').textContent=p.btn;$('book-thanks').classList.remove('show');}
+  document.querySelectorAll('input[name=theme]').forEach(function(i){i.addEventListener('change',function(){setTheme(i.value)})});
+  document.querySelectorAll('input[name=path]').forEach(function(i){i.addEventListener('change',function(){setPath(i.value)})});
+  $('book').addEventListener('submit',function(e){e.preventDefault();$('book-thanks').classList.add('show')});
+  $('news').addEventListener('submit',function(e){e.preventDefault();$('news-thanks').classList.add('show')});
+
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* gentle rise for things below the first screen */
+  if(!reduce&&'IntersectionObserver' in window){
+    var vh=window.innerHeight;
+    var items=[].slice.call(document.querySelectorAll('[data-rise]')).filter(function(el){return el.getBoundingClientRect().top>vh});
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    items.forEach(function(el){el.classList.add('rise','will-rise');io.observe(el)});
+  }
+
+  /* the breath wave: rises and falls slowly, only while on screen */
+  if(!reduce&&'IntersectionObserver' in window){
+    var w1=$('w1'),w2=$('w2'),run=false,raf=0,t0=performance.now();
+    function path(base,amp,ph){var d='M0 '+(base+Math.sin(ph)*amp).toFixed(1);for(var x=20;x<=1200;x+=20){d+=' L'+x+' '+(base+Math.sin(x/190+ph)*amp).toFixed(1)}return d}
+    function frame(now){var s=(now-t0)/1000,b=Math.sin(s*2*Math.PI/10);var amp=12+9*b;
+      w1.setAttribute('d',path(62-b*6,amp,s*.35));w2.setAttribute('d',path(80-b*4,amp*.7,s*.35+1.2));
+      if(run)raf=requestAnimationFrame(frame)}
+    new IntersectionObserver(function(es){run=es[0].isIntersecting;cancelAnimationFrame(raf);if(run)raf=requestAnimationFrame(frame)}).observe(document.querySelector('.breath'));
+  }
+})();
+</script>
+</body>
+</html>
