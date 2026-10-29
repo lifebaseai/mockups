@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup aroviarcm-com-4944a9 1 c34c7d5b -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arovia RCM | AR follow-up and denial management for independent US practices</title>
+<meta name="description" content="Arovia RCM helps small and independent US practices with claims follow-up, denial management and transparent reporting from a dedicated remote team.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0b1b3a;--navy2:#10264f;--blue:#035fe2;--blue-d:#0250c0;--sky:#b4c9ee;--mist:#eef3fc;
+  --ink:#0b1b3a;--text:#33415c;--muted:#56637a;--line:#dbe4f3;--white:#fff;--green:#0f7a4f;
+  --wrap:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:400 17px/1.6 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--text);background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--blue)}
+h1,h2,h3{font-family:Sora,system-ui,sans-serif;color:var(--ink);margin:0;letter-spacing:-.02em;line-height:1.12}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.mono{font:500 12.5px/1.4 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase}
+:focus-visible{outline:3px solid #6ea3ff;outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:12px;top:-60px;background:#fff;color:var(--navy);padding:10px 14px;border-radius:8px;z-index:100}
+.skip:focus{top:56px}
+
+/* mockup banner */
+.mockbar{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:#e4ecfa;color:var(--navy);font-size:15px;line-height:1.3;text-align:center;border-bottom:1px solid #c9d7f0;white-space:nowrap}
+.mockbar a{color:var(--blue-d);text-decoration:underline;text-underline-offset:3px;font-weight:600;margin-left:.3em}
+
+/* header */
+.site-head{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy)}
+.brand img{width:46px;height:auto}
+.brand b{font:700 17px/1 Sora,sans-serif;letter-spacing:.2em}
+.brand small{display:block;font:600 10px/1 Sora,sans-serif;letter-spacing:.42em;color:var(--blue);margin-top:5px}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{color:var(--ink);text-decoration:none;font-size:15px;font-weight:500;padding:12px 12px;border-radius:8px}
+.nav a:hover{background:var(--mist)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;font:600 16px/1 "IBM Plex Sans",sans-serif;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background .2s,border-color .2s,transform .2s}
+.btn-blue{background:var(--blue);color:#fff;box-shadow:0 8px 24px -10px rgba(3,95,226,.8)}
+.btn-blue:hover{background:var(--blue-d);transform:translateY(-1px)}
+.btn-ghost{color:#fff;border-color:rgba(180,201,238,.45)}
+.btn-ghost:hover{border-color:#fff}
+.nav .btn{min-height:44px;padding:0 18px;font-size:15px;color:#fff;margin-left:8px}
+.nav .btn:hover{background:var(--blue-d)}
+
+/* hero */
+.hero{background:var(--navy);color:#d5e1f6;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  linear-gradient(rgba(180,201,238,.06) 1px,transparent 1px) 0 0/48px 48px,
+  linear-gradient(90deg,rgba(180,201,238,.06) 1px,transparent 1px) 0 0/48px 48px;
+  -webkit-mask-image:linear-gradient(180deg,#000,transparent 90%);mask-image:linear-gradient(180deg,#000,transparent 90%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center;padding-top:84px;padding-bottom:96px}
+.eyebrow{color:var(--sky);display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--blue)}
+.hero h1{color:#fff;font-size:clamp(40px,5.2vw,64px);font-weight:700;margin:22px 0 22px}
+.hero h1 em{font-style:normal;color:#6ea3ff}
+.hero .lede{font-size:19px;max-width:33em;color:#c6d4ee}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.hero .assure{display:flex;flex-wrap:wrap;gap:8px 22px;margin:34px 0 0;padding:0;list-style:none;font-size:14.5px;color:#b9c9e6}
+.hero .assure li{display:flex;align-items:center;gap:8px}
+.tick{width:16px;height:16px;flex:none}
+
+/* calculator */
+.calc{background:#fff;color:var(--text);border-radius:20px;padding:28px;box-shadow:0 30px 80px -30px rgba(0,0,0,.6),0 0 0 1px rgba(180,201,238,.25)}
+.calc-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:20px}
+.calc-head h2{font-size:20px}
+.calc-head .mono{color:var(--blue);font-size:11px}
+.field{margin-bottom:18px}
+.field label{display:flex;justify-content:space-between;align-items:baseline;font-size:15px;font-weight:500;color:var(--ink);margin-bottom:6px}
+.field output{font:600 17px/1 Sora,sans-serif;color:var(--blue)}
+.field small{display:block;font-size:13px;color:var(--muted);margin-top:4px;line-height:1.45}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:44px;background:transparent;margin:0;cursor:pointer}
+input[type=range]::-webkit-slider-runnable-track{height:6px;border-radius:6px;background:linear-gradient(90deg,var(--blue) var(--p,50%),#dde6f5 var(--p,50%))}
+input[type=range]::-moz-range-track{height:6px;border-radius:6px;background:#dde6f5}
+input[type=range]::-moz-range-progress{height:6px;border-radius:6px;background:var(--blue)}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:24px;height:24px;border-radius:50%;background:#fff;border:2px solid var(--blue);margin-top:-9px;box-shadow:0 2px 8px rgba(11,27,58,.25)}
+input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:#fff;border:2px solid var(--blue)}
+.result{background:var(--mist);border-radius:14px;padding:18px 18px 16px;margin-top:6px}
+.result .top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.result .top span{font-size:14px;color:var(--muted)}
+.result .big{font:700 34px/1 Sora,sans-serif;color:var(--ink);letter-spacing:-.02em}
+.split{display:flex;height:12px;border-radius:6px;overflow:hidden;margin:16px 0 14px;background:#cfdaee}
+.split i{display:block;height:100%;transition:width .5s cubic-bezier(.2,.7,.2,1)}
+.split .k{background:var(--blue)}.split .f{background:var(--navy)}.split .n{background:#cfdaee}
+.legend{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-size:13px;color:var(--muted)}
+.legend b{display:block;font:600 17px/1.3 Sora,sans-serif;color:var(--ink)}
+.legend span::before{content:"";display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:6px;vertical-align:1px}
+.legend .lk::before{background:var(--blue)}.legend .lf::before{background:var(--navy)}.legend .ln::before{background:#b8c6df}
+.calc .fine{font-size:13px;color:var(--muted);margin-top:14px;line-height:1.5}
+.calc .fine strong{color:var(--ink)}
+
+/* trust strip */
+.strip{border-bottom:1px solid var(--line);background:#fff}
+.strip ul{list-style:none;margin:0 auto;padding:22px 28px;max-width:var(--wrap);display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.strip li{display:flex;gap:12px;align-items:flex-start;font-size:15px;line-height:1.4;color:var(--ink);font-weight:500}
+.strip svg{flex:none;margin-top:2px}
+
+section{scroll-margin-top:80px}
+.sec{padding:112px 0}
+.sec-head{max-width:720px;margin-bottom:56px}
+.sec-head .mono{color:var(--blue);margin-bottom:16px;display:block}
+.sec-head h2{font-size:clamp(32px,3.8vw,46px)}
+.sec-head p{font-size:18px;margin-top:18px;color:var(--text)}
+
+/* who */
+.who .wrap{display:grid;grid-template-columns:440px 1fr;gap:80px;align-items:center}
+.who figure{margin:0;position:relative}
+.who figure img{border-radius:20px;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;background:#dfe5ee}
+.who figure figcaption{position:absolute;left:18px;bottom:18px;right:18px;background:rgba(11,27,58,.9);color:#fff;border-radius:12px;padding:14px 16px;font-size:14.5px;line-height:1.45}
+.who figure figcaption b{font-family:Sora,sans-serif;display:block;font-size:15px;margin-bottom:2px}
+.checks{list-style:none;margin:30px 0 0;padding:0;display:grid;gap:2px}
+.checks li{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--line);font-size:17px;color:var(--ink)}
+.checks li:last-child{border-bottom:0}
+.checks svg{flex:none;margin-top:4px}
+.also{margin-top:26px;font-size:16px;color:var(--muted)}
+
+/* services */
+.services{background:var(--mist)}
+.cycle{display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:#fff;border-radius:20px;box-shadow:0 1px 0 var(--line),0 20px 50px -30px rgba(11,27,58,.35);overflow:hidden}
+.stage{padding:30px 26px 32px;border-right:1px solid var(--line);position:relative}
+.stage:last-child{border-right:0}
+.stage.focus{background:var(--navy);color:#c6d4ee}
+.stage .num{font:500 12px/1 "IBM Plex Mono",monospace;letter-spacing:.14em;color:var(--blue)}
+.stage.focus .num{color:#8fb6ff}
+.stage h3{font-size:20px;margin:12px 0 4px}
+.stage.focus h3{color:#fff}
+.stage .q{font-size:14.5px;color:var(--muted);margin-bottom:20px}
+.stage.focus .q{color:#a9bcdf}
+.stage ul{list-style:none;margin:0;padding:0}
+.stage li{padding:12px 0;border-top:1px solid var(--line)}
+.stage.focus li{border-color:rgba(180,201,238,.18)}
+.stage li b{display:block;font-weight:600;color:var(--ink);font-size:16px}
+.stage.focus li b{color:#fff}
+.stage li span{display:block;font-size:14.5px;line-height:1.5;margin-top:2px}
+.stage .tag{position:absolute;top:30px;right:22px;font:500 10.5px/1 "IBM Plex Mono",monospace;letter-spacing:.12em;background:var(--blue);color:#fff;padding:6px 8px;border-radius:5px}
+.svc-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px 40px;margin-top:28px;font-size:15.5px;color:var(--muted)}
+.svc-foot strong{color:var(--ink)}
+
+/* report */
+.report .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+.metrics{list-style:none;margin:0;padding:0}
+.metrics li{padding:20px 0;border-top:1px solid var(--line)}
+.metrics li:last-child{border-bottom:1px solid var(--line)}
+.metrics h3{font-size:19px;display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.metrics h3 small{font:500 12px/1 "IBM Plex Mono",monospace;letter-spacing:.08em;color:var(--blue);text-transform:uppercase;white-space:nowrap}
+.metrics code{display:block;font:500 13.5px/1.5 "IBM Plex Mono",monospace;color:var(--muted);margin:6px 0 4px}
+.metrics p{font-size:15.5px}
+.sheet{background:#fff;border-radius:20px;border:1px solid var(--line);box-shadow:0 30px 70px -40px rgba(11,27,58,.45);padding:28px;position:sticky;top:96px}
+.sheet-top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.sheet-top b{font:600 16px/1.2 Sora,sans-serif;color:var(--ink)}
+.sheet-top .mono{font-size:10.5px;color:#8a4b00;background:#fff3df;padding:6px 8px;border-radius:5px;letter-spacing:.1em}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0 24px}
+.kpi{background:var(--mist);border-radius:12px;padding:14px}
+.kpi .mono{font-size:10.5px;color:var(--muted);letter-spacing:.1em}
+.kpi b{display:block;font:700 26px/1.1 Sora,sans-serif;color:var(--ink);margin:8px 0 4px;letter-spacing:-.02em}
+.kpi span{display:block;font-size:12.5px;line-height:1.35;color:var(--green);font-weight:500}
+.chart-t{font:600 15px/1.3 Sora,sans-serif;color:var(--ink)}
+.chart-s{font-size:13.5px;color:var(--muted);margin:2px 0 10px}
+.chart svg{width:100%;height:auto;display:block}
+.chart .line{fill:none;stroke:var(--blue);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.chart.draw .line{stroke-dasharray:600;stroke-dashoffset:600;animation:draw 1.6s .2s cubic-bezier(.3,.6,.2,1) forwards}
+.chart.draw .area{opacity:0;animation:fade .8s 1.2s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fade{to{opacity:1}}
+
+/* rules */
+.rules{background:var(--navy);color:#c6d4ee}
+.rules .sec-head h2{color:#fff}
+.rules .sec-head .mono{color:#8fb6ff}
+.rules .sec-head p{color:#c6d4ee}
+.rule-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid rgba(180,201,238,.2)}
+.rule{padding:30px 28px 8px 0}
+.rule+.rule{padding-left:28px;border-left:1px solid rgba(180,201,238,.2)}
+.rule .mono{color:#8fb6ff;font-size:12px}
+.rule h3{color:#fff;font-size:21px;margin:14px 0 12px}
+.rule p{font-size:15.5px}
+.rule ul{list-style:none;padding:0;margin:16px 0 0;font-size:14.5px;color:#e3ebf9}
+.rule li{padding:7px 0 7px 20px;position:relative}
+.rule li::before{content:"";position:absolute;left:0;top:15px;width:8px;height:2px;background:#6ea3ff}
+.pilot{margin-top:64px;display:grid;grid-template-columns:auto 1fr auto;gap:36px;align-items:center;background:var(--navy2);border:1px solid rgba(180,201,238,.2);border-radius:20px;padding:30px 34px}
+.pilot .d{font:700 56px/1 Sora,sans-serif;color:#fff;letter-spacing:-.03em}
+.pilot .d small{display:block;font:500 12px/1 "IBM Plex Mono",monospace;letter-spacing:.14em;color:#8fb6ff;margin-top:8px}
+.pilot h3{color:#fff;font-size:22px;margin-bottom:6px}
+.pilot p{font-size:16px}
+
+/* faq */
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px}
+.qa{border-top:1px solid var(--line)}
+.qa details{border-bottom:1px solid var(--line)}
+.qa summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;font:600 18px/1.35 Sora,sans-serif;color:var(--ink);min-height:44px}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:"";flex:none;width:12px;height:12px;border-right:2px solid var(--blue);border-bottom:2px solid var(--blue);transform:rotate(45deg) translate(-3px,-3px);transition:transform .25s}
+.qa details[open] summary::after{transform:rotate(225deg) translate(-3px,-3px)}
+.qa details p{padding:0 40px 24px 0;font-size:16.5px}
+
+/* contact */
+.contact{background:var(--navy);color:#c6d4ee;position:relative;overflow:hidden}
+.contact .wrap{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.contact h2{color:#fff;font-size:clamp(34px,4vw,50px)}
+.contact .mono{color:#8fb6ff;display:block;margin-bottom:16px}
+.contact .lede{font-size:18px;margin-top:20px;max-width:28em}
+.steps{list-style:none;padding:0;margin:34px 0 0;counter-reset:s}
+.steps li{counter-increment:s;display:flex;gap:16px;padding:12px 0;font-size:16px;color:#e3ebf9}
+.steps li::before{content:counter(s);flex:none;width:30px;height:30px;border-radius:50%;border:1.5px solid #6ea3ff;color:#fff;font:600 14px/27px Sora,sans-serif;text-align:center}
+.mail{display:inline-flex;align-items:center;gap:10px;margin-top:26px;color:#fff;font-weight:500;text-decoration:none;min-height:44px;border-bottom:1px solid rgba(180,201,238,.5)}
+.mail:hover{border-color:#fff}
+form{background:#fff;border-radius:20px;padding:32px;color:var(--text);box-shadow:0 30px 80px -30px rgba(0,0,0,.6)}
+form h3{font-size:22px;margin-bottom:6px}
+form .sub{font-size:15px;color:var(--muted);margin-bottom:22px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.f{display:block;margin-bottom:14px}
+.f span{display:block;font-size:14px;font-weight:600;color:var(--ink);margin-bottom:6px}
+.f input,.f select,.f textarea{width:100%;font:inherit;font-size:16px;color:var(--ink);background:#f7f9fd;border:1.5px solid #cfdaee;border-radius:10px;padding:12px 14px;min-height:48px}
+.f textarea{min-height:96px;resize:vertical}
+.f input:focus,.f select:focus,.f textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(3,95,226,.18)}
+form .btn{width:100%;margin-top:6px}
+.thanks{margin-top:14px;font-weight:600;color:var(--green);min-height:1.6em}
+
+footer{background:#081430;color:#b9c9e6;font-size:14.5px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px;padding-top:44px;padding-bottom:44px}
+footer img{width:120px;height:auto}
+.social{display:flex;gap:6px}
+.social a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;border:1px solid rgba(180,201,238,.3);color:#fff}
+.social a:hover{background:rgba(255,255,255,.08)}
+.made{border-top:1px solid rgba(180,201,238,.15);text-align:center;padding:18px 20px 22px;font-size:13.5px;color:#a9bcdf}
+.made a{color:#d5e1f6}
+
+.callbar{display:none}
+
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+
+@media (max-width:1020px){
+  .hero .wrap{grid-template-columns:1fr;gap:48px;padding-top:60px;padding-bottom:72px}
+  .who .wrap,.report .wrap,.faq .wrap,.contact .wrap{grid-template-columns:1fr;gap:48px}
+  .who figure{max-width:440px}
+  .cycle{grid-template-columns:1fr 1fr}
+  .stage:nth-child(2){border-right:0}
+  .stage:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .rule-grid{grid-template-columns:1fr 1fr}
+  .rule:nth-child(3){padding-left:0;border-left:0}
+  .strip ul{grid-template-columns:1fr 1fr}
+  .sheet{position:static}
+  .nav a:not(.btn){display:none}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{padding:0 20px}
+  .mockbar{font-size:14px;padding:8px 10px}
+  .site-head .wrap{height:62px}
+  .brand img{width:40px}
+  .brand b{font-size:15px}
+  .nav .btn{padding:0 16px;font-size:14.5px;margin-left:0}
+  .hero .wrap{padding-top:44px;padding-bottom:56px;gap:40px}
+  .hero h1{font-size:38px;margin:18px 0}
+  .hero .lede{font-size:17px}
+  .hero .ctas .btn{flex:1 1 100%}
+  .hero .assure{flex-direction:column;gap:10px;margin-top:28px}
+  .calc{padding:22px 18px;border-radius:16px}
+  .result .big{font-size:30px}
+  .legend b{font-size:15px}
+  .strip ul{grid-template-columns:1fr;padding:20px;gap:14px}
+  .sec{padding:76px 0}
+  .sec-head{margin-bottom:36px}
+  .sec-head h2{font-size:31px}
+  .sec-head p{font-size:16.5px}
+  .who figure img{aspect-ratio:1/1}
+  .cycle{grid-template-columns:1fr}
+  .stage{border-right:0;border-bottom:1px solid var(--line);padding:26px 22px}
+  .stage:last-child{border-bottom:0}
+  .kpis{grid-template-columns:1fr 1fr}
+  .sheet{padding:20px 16px}
+  .rule-grid{grid-template-columns:1fr}
+  .rule,.rule+.rule{padding:26px 0 18px;border-left:0;border-bottom:1px solid rgba(180,201,238,.2)}
+  .pilot{grid-template-columns:1fr;gap:16px;padding:26px 22px}
+  .pilot .btn{width:100%}
+  .row{grid-template-columns:1fr;gap:0}
+  form{padding:24px 18px}
+  .qa summary{font-size:16.5px}
+  .qa details p{padding-right:0}
+  footer .wrap{flex-direction:column;align-items:flex-start}
+  .made{padding-bottom:84px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(11,27,58,.97);border-top:1px solid rgba(180,201,238,.2)}
+  .callbar a{flex:1;min-height:46px;font-size:15px}
+  .callbar .btn-ghost{flex:0 0 auto;padding:0 18px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .will-rise{opacity:1;transform:none}
+  .chart.draw .line{stroke-dashoffset:0}
+  .chart.draw .area{opacity:1}
+}
+</style>
+</head>
+<body>
+<div class="mockbar" role="note">Here's your free mockup from <a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Arovia RCM, back to top">
+      <img src="https://www.aroviarcm.com/assets/logo-mark.png" alt="Arovia RCM logo" width="186" height="140">
+      <span><b>AROVIA</b><small>RCM</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#who">Who we help</a>
+      <a href="#report">Weekly report</a>
+      <a href="#security">Security</a>
+      <a class="btn btn-blue" href="#contact">Contact us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="hero-h">
+  <div class="wrap">
+    <div>
+      <p class="mono eyebrow">Arovia RCM &middot; AR follow-up &amp; denials</p>
+      <h1 id="hero-h">Start with the money that is <em>already owed.</em></h1>
+      <p class="lede">Arovia RCM chases your unpaid claims, fixes and appeals denials, and sends you one page every week on four numbers. Built for independent practices of 1 to 10 doctors across the United States.</p>
+      <div class="ctas">
+        <a class="btn btn-blue" href="#contact">Request a consultation
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn btn-ghost" href="#services">See our services</a>
+      </div>
+      <ul class="assure">
+        <li><svg class="tick" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#6ea3ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>30-day pilot paid on collections</li>
+        <li><svg class="tick" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#6ea3ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>BAA before any patient data</li>
+      </ul>
+    </div>
+
+    <div class="calc" id="calc" aria-labelledby="calc-h">
+      <div class="calc-head">
+        <h2 id="calc-h">Recovery calculator</h2>
+        <span class="mono">Try your numbers</span>
+      </div>
+      <div class="field">
+        <label for="bal">Unpaid claims older than 60 days <output id="balOut" for="bal">$120,000</output></label>
+        <input type="range" id="bal" min="10000" max="500000" step="5000" value="120000">
+      </div>
+      <div class="field">
+        <label for="rec">Share of that balance recovered <output id="recOut" for="rec">25%</output></label>
+        <input type="range" id="rec" min="5" max="60" step="1" value="25">
+        <small>An assumption you control. Real recovery depends on payer, claim age and documentation.</small>
+      </div>
+      <div class="field">
+        <label for="fee">Fee on collections <output id="feeOut" for="fee">6.0%</output></label>
+        <input type="range" id="fee" min="3" max="12" step="0.5" value="6">
+        <small>Fee models are discussed on the first call. A monthly rate per team member is the other option.</small>
+      </div>
+      <div class="result" aria-live="polite">
+        <div class="top"><span>Collected in the pilot (example)</span><span class="big" id="col">$30,000</span></div>
+        <div class="split" aria-hidden="true"><i class="k" id="bk" style="width:23.5%"></i><i class="f" id="bf" style="width:1.5%"></i><i class="n" id="bn" style="width:75%"></i></div>
+        <div class="legend">
+          <div><span class="lk">Practice keeps</span><b id="keep">$28,200</b></div>
+          <div><span class="lf">Arovia fee</span><b id="fe">$1,800</b></div>
+          <div><span class="ln">Not recovered</span><b id="nr">$90,000</b></div>
+        </div>
+      </div>
+      <p class="fine">Illustration only. <strong>If nothing is collected in the pilot, the fee is $0.</strong> Your real figures come from the baseline audit.</p>
+    </div>
+  </div>
+</section>
+
+<div class="strip" aria-label="How we work">
+  <ul>
+    <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8" fill="none" stroke="#035fe2" stroke-width="1.8"/><path d="M10 5.5V10l3 2" fill="none" stroke="#035fe2" stroke-width="1.8" stroke-linecap="round"/></svg>We reply to every client in hours, not days</li>
+    <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><rect x="3.5" y="2.5" width="13" height="15" rx="2" fill="none" stroke="#035fe2" stroke-width="1.8"/><path d="M7 7h6M7 10.5h6M7 14h3" stroke="#035fe2" stroke-width="1.8" stroke-linecap="round"/></svg>One report every week on four numbers</li>
+    <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2l6.5 2.5v5c0 4-2.8 7-6.5 8.5C6.3 16.5 3.5 13.5 3.5 9.5v-5z" fill="none" stroke="#035fe2" stroke-width="1.8" stroke-linejoin="round"/><path d="M7 10l2 2 4-4" fill="none" stroke="#035fe2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Screened, HIPAA-trained team</li>
+    <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12M10 4v12" stroke="#035fe2" stroke-width="1.8" stroke-linecap="round" transform="rotate(45 10 10)"/><circle cx="10" cy="10" r="8" fill="none" stroke="#035fe2" stroke-width="1.8"/></svg>Month-to-month after the pilot</li>
+  </ul>
+</div>
+
+<section class="sec who" id="who" aria-labelledby="who-h">
+  <div class="wrap">
+    <figure>
+      <img src="https://www.aroviarcm.com/assets/photos/doctor-1.jpg" alt="Smiling clinician in blue scrubs with a stethoscope, arms crossed" width="440" height="550" loading="lazy">
+      <figcaption><b>For practices of 1 to 10 doctors</b>More time with patients. We take the insurance follow-up off your desk.</figcaption>
+    </figure>
+    <div>
+      <div class="sec-head" style="margin-bottom:0">
+        <span class="mono">Who we help</span>
+        <h2 id="who-h">You treat patients. We chase the insurers.</h2>
+        <p>Start with a pilot on the unpaid claims you already have. We measure your starting point, set targets with you, and report against them every week.</p>
+      </div>
+      <ul class="checks">
+        <li><svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#035fe2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Unpaid claims followed up by phone and payer portal</li>
+        <li><svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#035fe2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Denials analyzed, corrected and appealed</li>
+        <li><svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#035fe2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Old balances reviewed, oldest and largest first</li>
+        <li><svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#035fe2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>One weekly report with four numbers</li>
+        <li><svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#035fe2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>30-day pilot paid on what we collect</li>
+      </ul>
+      <p class="also">Run a small billing company? We work with you too, starting with a clear scope and measuring the result against your baseline.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec services" id="services" aria-labelledby="svc-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="mono">Services</span>
+      <h2 id="svc-h">From the first unpaid claim to the final payment.</h2>
+      <p>One team looks after your revenue cycle. Find where your money gets stuck, and start there.</p>
+    </div>
+    <div class="cycle">
+      <div class="stage focus">
+        <span class="tag">START HERE</span>
+        <span class="num">01</span>
+        <h3>Money owed</h3>
+        <p class="q">Claims sitting unpaid or denied</p>
+        <ul>
+          <li><b>AR follow-up</b><span>We call insurers and check payer portals on every unpaid claim, and push it toward payment.</span></li>
+          <li><b>Denial management and appeals</b><span>Find why it was denied, correct it, and file appeals with the right documents.</span></li>
+          <li><b>Old balance recovery</b><span>Past balances get a second look, largest and oldest first.</span></li>
+          <li><b>AR and revenue-leak audit</b><span>Unpaid claims sorted by age, payer and denial reason, to show where money leaks.</span></li>
+        </ul>
+      </div>
+      <div class="stage">
+        <span class="num">02</span>
+        <h3>Before the visit</h3>
+        <p class="q">Stop the denial before it happens</p>
+        <ul>
+          <li><b>Eligibility verification</b><span>Coverage checked before the visit, so claims do not fail on inactive insurance.</span></li>
+          <li><b>Prior authorization</b><span>Approvals requested before costly procedures.</span></li>
+          <li><b>Credentialing and enrollment</b><span>Payer enrollment, Medicare and Medicaid applications and CAQH upkeep.</span></li>
+        </ul>
+      </div>
+      <div class="stage">
+        <span class="num">03</span>
+        <h3>Claims out</h3>
+        <p class="q">Clean claims, first time</p>
+        <ul>
+          <li><b>Charge entry and claim submission</b><span>Visit details turned into clean claims and sent through your clearinghouse.</span></li>
+          <li><b>Medical coding</b><span>ICD-10, CPT and HCPCS coding by certified coders, with audits.</span></li>
+          <li><b>Rejection clean-up</b><span>Clearinghouse rejections fixed and resubmitted before they age.</span></li>
+        </ul>
+      </div>
+      <div class="stage">
+        <span class="num">04</span>
+        <h3>Money in</h3>
+        <p class="q">Every dollar on the right claim</p>
+        <ul>
+          <li><b>Payment posting</b><span>Payments and adjustments posted, with credits and refunds flagged.</span></li>
+          <li><b>Underpayment review</b><span>Payments compared against contracted rates to catch short payments.</span></li>
+          <li><b>Patient billing</b><span>Statements, patient calls and payment plans for the patient share.</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="svc-foot">
+      <p><strong>Every week:</strong> a one-page performance report on days in AR, clean claim rate, denial rate and collection rate.</p>
+      <p>Hospital billing is planned for the future.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec report" id="report" aria-labelledby="rep-h">
+  <div class="wrap">
+    <div>
+      <div class="sec-head" style="margin-bottom:32px">
+        <span class="mono">The weekly report</span>
+        <h2 id="rep-h">Four numbers. Every week. On one page.</h2>
+        <p>Every plan we make is built on them. You always know what moved, and why.</p>
+      </div>
+      <ul class="metrics">
+        <li><h3>Days in AR <small>Lower is better</small></h3><code>total unpaid claims &divide; average daily charges</code><p>How long it takes, on average, to turn a visit into payment.</p></li>
+        <li><h3>Clean claim rate <small>Higher is better</small></h3><code>claims accepted first time &divide; claims submitted</code><p>How many claims leave your office correct.</p></li>
+        <li><h3>Denial rate <small>Grouped by reason</small></h3><code>denied claims &divide; claims submitted</code><p>How often payers say no. We group denials by reason to find the cause.</p></li>
+        <li><h3>Collection rate <small>Higher is better</small></h3><code>payments &divide; (charges &minus; contractual adjustments)</code><p>How much of what you are owed actually arrives.</p></li>
+      </ul>
+    </div>
+    <div class="sheet" aria-label="Example weekly report">
+      <div class="sheet-top"><b>Weekly report &middot; Week 8</b><span class="mono">Example data, not a client result</span></div>
+      <div class="kpis">
+        <div class="kpi"><span class="mono">Days in AR</span><b>38</b><span>14 days lower than the baseline</span></div>
+        <div class="kpi"><span class="mono">Clean claims</span><b>94.2%</b><span>2.6 points above the baseline</span></div>
+        <div class="kpi"><span class="mono">Denial rate</span><b>8.1%</b><span>2.4 points below the baseline</span></div>
+        <div class="kpi"><span class="mono">Collection</span><b>91.5%</b><span>3.0 points above the baseline</span></div>
+      </div>
+      <div class="chart" id="chart">
+        <p class="chart-t">Days in AR, week by week</p>
+        <p class="chart-s">Example: starts at 52 days and falls to 38 over eight weeks.</p>
+        <svg viewBox="0 0 520 210" role="img" aria-label="Line chart: days in AR falls from 52 in week 1 to 38 in week 8">
+          <defs><linearGradient id="ga" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#035fe2" stop-opacity=".16"/><stop offset="1" stop-color="#035fe2" stop-opacity="0"/></linearGradient></defs>
+          <g font-family="IBM Plex Mono,monospace" font-size="11" fill="#56637a">
+            <g stroke="#e3e9f4"><line x1="36" y1="20" x2="510" y2="20"/><line x1="36" y1="64" x2="510" y2="64"/><line x1="36" y1="108" x2="510" y2="108"/><line x1="36" y1="152" x2="510" y2="152"/></g>
+            <text x="0" y="24">55</text><text x="0" y="68">50</text><text x="0" y="112">45</text><text x="0" y="156">40</text>
+            <text x="40" y="198">W1</text><text x="107" y="198">W2</text><text x="174" y="198">W3</text><text x="241" y="198">W4</text><text x="308" y="198">W5</text><text x="375" y="198">W6</text><text x="442" y="198">W7</text><text x="490" y="198">W8</text>
+          </g>
+          <path class="area" d="M48 46 C150 60 220 100 300 125 S440 162 498 169 L498 180 L48 180Z" fill="url(#ga)"/>
+          <path class="line" d="M48 46 C150 60 220 100 300 125 S440 162 498 169"/>
+          <circle cx="48" cy="46" r="5" fill="#fff" stroke="#035fe2" stroke-width="2.5"/>
+          <circle cx="498" cy="169" r="5" fill="#035fe2"/>
+          <text x="58" y="40" font-family="Sora,sans-serif" font-size="14" font-weight="700" fill="#0b1b3a">52</text>
+          <text x="470" y="160" font-family="Sora,sans-serif" font-size="14" font-weight="700" fill="#0b1b3a">38</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec rules" id="security" aria-labelledby="rules-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="mono">The Arovia way</span>
+      <h2 id="rules-h">Skilled. Experienced. Responsive. Secure.</h2>
+      <p>Four rules we build the company on. We are new, so we keep them specific and we keep them honest.</p>
+    </div>
+    <div class="rule-grid">
+      <div class="rule"><span class="mono">Skilled</span><h3>A specialised team for each service</h3><p>Every service is handled by people trained for that exact work.</p></div>
+      <div class="rule"><span class="mono">Experienced</span><h3>Led by someone who knows the full cycle</h3><p>Our RCM expert trains the team and owns quality, from eligibility to the last appeal.</p><ul><li>Written SOPs before anyone is hired</li><li>A second person checks early work</li></ul></div>
+      <div class="rule"><span class="mono">Responsive</span><h3>Fast replies, early warnings</h3><p>We answer every client in hours and flag problems when they appear.</p><ul><li>Early warning system flags risks</li></ul></div>
+      <div class="rule"><span class="mono">Secure</span><h3>Security from day one</h3><p>A Business Associate Agreement comes before any patient data. We work on company systems only.</p><ul><li>Screened, HIPAA-trained team</li></ul></div>
+    </div>
+    <div class="pilot">
+      <div class="d">30<small>Day pilot</small></div>
+      <div><h3>Paid on what we collect.</h3><p>A written baseline to compare against, and a review on day 30. If nothing is collected in the pilot, the fee is $0.</p></div>
+      <a class="btn btn-blue" href="#contact">Start with a pilot</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec faq" id="faq" aria-labelledby="faq-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="mono">Straight answers</span>
+      <h2 id="faq-h">What practices ask us first.</h2>
+      <p>Anything else, ask us. We reply in hours.</p>
+    </div>
+    <div class="qa">
+      <details open><summary>Do you guarantee collections?</summary><p>No. We never promise guaranteed collections. We promise the work, the tracking and a clear report.</p></details>
+      <details><summary>What does the pilot cost?</summary><p>The 30-day pilot is paid on collections, so if nothing is collected, the fee is $0. Fee models are discussed on the first call; a monthly rate per team member is the other option.</p></details>
+      <details><summary>Who do you work with?</summary><p>Independent practices of one to ten doctors across the United States, and small billing companies.</p></details>
+      <details><summary>How do you handle patient data?</summary><p>A Business Associate Agreement comes before any patient data. We work on company systems only, with a screened, HIPAA-trained team.</p></details>
+      <details><summary>Am I locked in after the pilot?</summary><p>No. It is month-to-month after the pilot.</p></details>
+      <details><summary>Do you do hospital billing?</summary><p>Not yet. Full revenue cycle support for hospitals is planned for the future as we grow.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec contact" id="contact" aria-labelledby="ct-h">
+  <div class="wrap">
+    <div>
+      <span class="mono">Request a consultation</span>
+      <h2 id="ct-h">Start with the claims you already have.</h2>
+      <p class="lede">Tell us about your practice. We reply in hours, not days.</p>
+      <ol class="steps">
+        <li>A first call to agree the scope and fee model</li>
+        <li>A baseline audit of your unpaid claims</li>
+        <li>A 30-day pilot, reported every week</li>
+        <li>A review on day 30 against the baseline</li>
+      </ol>
+      <a class="mail" href="mailto:aroviarcm@gmail.com"><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><rect x="2.5" y="4.5" width="15" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 5.5l7 5.5 7-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>aroviarcm@gmail.com</a>
+    </div>
+    <form id="form" novalidate>
+      <h3>Request a consultation</h3>
+      <p class="sub">No patient data here, please. That comes after the BAA.</p>
+      <div class="row">
+        <label class="f"><span>Your name</span><input name="name" autocomplete="name" required></label>
+        <label class="f"><span>Practice name</span><input name="practice" autocomplete="organization"></label>
+      </div>
+      <div class="row">
+        <label class="f"><span>Email</span><input type="email" name="email" autocomplete="email" required></label>
+        <label class="f"><span>You are</span>
+          <select name="size"><option>A practice, 1 doctor</option><option>A practice, 2 to 5 doctors</option><option>A practice, 6 to 10 doctors</option><option>A billing company</option></select></label>
+      </div>
+      <label class="f"><span>Where is money stuck?</span><textarea name="msg" placeholder="Old unpaid claims, a pile of denials, rejections..."></textarea></label>
+      <button class="btn btn-blue" type="submit">Request a consultation</button>
+      <p class="thanks" id="thanks" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="https://www.aroviarcm.com/assets/logo-full-white.png" alt="Arovia RCM" width="640" height="458" loading="lazy">
+    <p>AR follow-up, denial management and billing support for independent US practices.<br><a href="mailto:aroviarcm@gmail.com" style="color:#fff">aroviarcm@gmail.com</a></p>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/arovia-rcm-revenuecyclemanagement-44b839445/" aria-label="Arovia RCM on LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 110 5 2.5 2.5 0 010-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.95 1.32-1.95 2.7V21h-4z"/></svg></a>
+      <a href="https://www.facebook.com/profile.php" aria-label="Arovia RCM on Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.86.25-1.45 1.5-1.45H16.6V4.5c-.27-.04-1.2-.12-2.3-.12-2.27 0-3.8 1.38-3.8 3.92v2.2H8v3h2.5V21z"/></svg></a>
+      <a href="https://www.instagram.com/aroviarcm" aria-label="Arovia RCM on Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".8" fill="currentColor"/></svg></a>
+    </div>
+  </div>
+  <p class="made">Mockup made for Arovia RCM by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+</footer>
+
+<div class="callbar" aria-label="Quick contact">
+  <a class="btn btn-blue" href="#contact">Request a consultation</a>
+  <a class="btn btn-ghost" href="mailto:aroviarcm@gmail.com" aria-label="Email Arovia RCM">Email</a>
+</div>
+
+<script>
+(function(){
+  var $=function(id){return document.getElementById(id)};
+  var bal=$('bal'),rec=$('rec'),fee=$('fee');
+  var money=function(n){return '$'+Math.round(n).toLocaleString('en-US')};
+  function fill(el){el.style.setProperty('--p',((el.value-el.min)/(el.max-el.min)*100)+'%')}
+  function calc(){
+    var b=+bal.value,r=+rec.value/100,f=+fee.value/100;
+    var c=b*r,fe=c*f,k=c-fe,n=b-c;
+    $('balOut').textContent=money(b);$('recOut').textContent=rec.value+'%';$('feeOut').textContent=(+fee.value).toFixed(1)+'%';
+    $('col').textContent=money(c);$('keep').textContent=money(k);$('fe').textContent=money(fe);$('nr').textContent=money(n);
+    $('bk').style.width=(k/b*100)+'%';$('bf').style.width=Math.max(fe/b*100,.8)+'%';$('bn').style.width=(n/b*100)+'%';
+    [bal,rec,fee].forEach(fill);
+  }
+  [bal,rec,fee].forEach(function(el){el.addEventListener('input',calc)});
+  calc();
+
+  $('form').addEventListener('submit',function(e){e.preventDefault();$('thanks').textContent='Thanks. This is a mockup, so nothing was sent.'});
+
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!('IntersectionObserver' in window)||reduce)return;
+  var chart=$('chart');
+  var co=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){chart.classList.add('draw');co.disconnect()}})},{threshold:.4});
+  if(chart.getBoundingClientRect().top>window.innerHeight)co.observe(chart);
+  var els=document.querySelectorAll('.sec-head,.who figure,.checks,.cycle,.metrics,.sheet,.rule-grid,.pilot,.qa,.contact form,.steps');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(el){if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('rise','will-rise');io.observe(el)}});
+})();
+</script>
+</body>
+</html>
