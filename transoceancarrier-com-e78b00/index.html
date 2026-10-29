@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup transoceancarrier-com-e78b00 1 9af083d8 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TransOcean Carrier Inc. | Precision Drayage at the Ports of Long Beach &amp; Los Angeles</title>
+<meta name="description" content="Drayage trucking serving the Ports of Los Angeles & Long Beach. Container pickup, delivery and dispatch with zero demurrage and zero detention.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#053166; --royal:#001787; --ink:#0b1a2e; --muted:#4a5568; --line:#dfe3ea;
+  --bg:#f4f5f7; --white:#fff; --red:#c41e2d; --deep:#031d3d;
+  --head:"Inter Tight",system-ui,sans-serif; --body:"Inter",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+  --r:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:400 17px/1.6 var(--body);color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--royal)}
+h1,h2,h3{font-family:var(--head);letter-spacing:-.02em;line-height:1.08;margin:0;color:var(--ink)}
+p{margin:0}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+:focus-visible{outline:3px solid #f2b705;outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--royal);color:#fff;padding:10px 14px;border-radius:8px;z-index:100}
+.skip:focus{top:52px}
+
+/* mockup banner */
+.mock{background:#e9edf4;color:var(--navy);min-height:44px;display:flex;align-items:center;justify-content:center;font:500 15px/1.3 var(--body);text-align:center;padding:6px 16px;border-bottom:1px solid #d3dae6}
+.mock a{color:var(--royal);text-decoration:underline;text-underline-offset:3px;font-weight:600}
+
+/* header */
+.top{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:24px;height:76px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.brand img{width:52px;height:52px}
+.brand b{font:700 18px/1.1 var(--head);letter-spacing:-.01em;color:var(--navy)}
+.brand small{display:block;font:500 12px/1.3 var(--body);color:var(--muted);letter-spacing:.02em}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{color:var(--ink);text-decoration:none;font-weight:500;font-size:15px;padding:12px 12px;border-radius:8px}
+.nav a:hover{background:var(--bg)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;font:600 16px/1 var(--body);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s}
+.btn-main{background:var(--royal);color:#fff;box-shadow:0 6px 18px -8px rgba(0,23,135,.6)}
+.btn-main:hover{background:#00126a;transform:translateY(-1px)}
+.btn-ghost{border-color:var(--navy);color:var(--navy);background:transparent}
+.btn-ghost:hover{background:var(--navy);color:#fff}
+.btn svg{width:18px;height:18px;flex:none}
+.top .btn{min-height:44px;padding:0 18px;font-size:15px}
+
+/* hero */
+.hero{background:var(--bg);padding:64px 0 0;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.08fr;gap:56px;align-items:center}
+.eyebrow{font:600 13px/1.4 var(--mono);color:var(--royal);letter-spacing:.06em;text-transform:uppercase}
+.eyebrow::before{content:"// ";color:var(--red)}
+.hero h1{font-size:clamp(44px,4.9vw,66px);font-weight:700;margin:18px 0 22px;color:var(--navy)}
+.hero h1 span{display:block;color:var(--royal)}
+.lead{font-size:19px;color:var(--muted);max-width:520px}
+.lead strong{color:var(--ink);font-weight:600}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.hours{margin-top:22px;font-size:14px;color:var(--muted);display:flex;align-items:center;gap:8px}
+.dot{width:8px;height:8px;border-radius:50%;background:#1f9d55;box-shadow:0 0 0 4px rgba(31,157,85,.18)}
+.hero-photo{position:relative;max-width:620px;justify-self:end;width:100%}
+.hero-photo img{border-radius:var(--r);aspect-ratio:1280/853;object-fit:cover;width:100%;box-shadow:0 30px 60px -30px rgba(5,49,102,.55)}
+.award{position:absolute;left:-28px;bottom:-26px;background:#fff;border-radius:14px;padding:14px 18px 14px 14px;display:flex;gap:12px;align-items:center;box-shadow:0 18px 40px -18px rgba(5,49,102,.45);max-width:300px}
+.award .medal{width:44px;height:44px;border-radius:50%;background:var(--navy);display:grid;place-items:center;flex:none}
+.award .medal svg{width:22px;height:22px}
+.award b{display:block;font:700 15px/1.2 var(--head);color:var(--navy)}
+.award span{font-size:13px;color:var(--muted)}
+
+.proof{margin-top:72px;background:var(--navy);color:#fff}
+.proof ul{list-style:none;margin:0 auto;padding:30px 24px;max-width:1160px;display:grid;grid-template-columns:repeat(4,1fr)}
+.proof li{padding:4px 24px;border-left:1px solid rgba(255,255,255,.18)}
+.proof li:first-child{border-left:0;padding-left:0}
+.proof b{display:block;font:700 40px/1 var(--head);letter-spacing:-.02em}
+.proof b em{font-style:normal;color:#9fb6ff}
+.proof span{display:block;margin-top:8px;font-size:14px;color:#c9d4ea}
+
+/* sections */
+section{scroll-margin-top:84px}
+.sec{padding:104px 0}
+.sec-head{max-width:640px;margin-bottom:48px}
+.sec-head h2,.h2{font-size:clamp(34px,4.2vw,52px);font-weight:700;margin-top:14px;color:var(--navy)}
+.sec-head p{margin-top:16px;color:var(--muted);font-size:18px}
+
+/* port mile */
+.mile .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.mile-photo img{border-radius:var(--r);max-width:540px;width:100%;aspect-ratio:596/396;object-fit:cover}
+.steps{list-style:none;margin:32px 0 0;padding:0;counter-reset:s}
+.steps li{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:18px 0;border-top:1px solid var(--line);counter-increment:s}
+.steps li:last-child{border-bottom:1px solid var(--line)}
+.steps li::before{content:"0" counter(s);font:600 14px/1 var(--mono);color:var(--royal);width:44px;height:44px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center}
+.steps p{align-self:center;font-size:17px}
+
+/* planner */
+.plan{background:var(--deep);color:#fff;position:relative}
+.plan::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:48px 48px;pointer-events:none}
+.plan .wrap{position:relative}
+.plan .eyebrow{color:#9fb6ff}
+.plan .sec-head h2{color:#fff}
+.plan .sec-head p{color:#c9d4ea}
+.planner{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:start}
+.controls{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--r);padding:28px;display:grid;gap:22px;margin:0}
+.controls legend,.controls .lab{font:600 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#c9d4ea;margin-bottom:10px;padding:0;display:block}
+.controls fieldset{border:0;margin:0;padding:0;min-width:0}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg label{position:relative}
+.seg input{position:absolute;opacity:0;width:1px;height:1px}
+.seg span{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:10px;border:1.5px solid rgba(255,255,255,.22);font-weight:500;font-size:15px;cursor:pointer;transition:background .15s,border-color .15s}
+.seg input:checked+span{background:#fff;color:var(--navy);border-color:#fff;font-weight:600}
+.seg input:focus-visible+span{outline:3px solid #f2b705;outline-offset:2px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.stepper{display:flex;align-items:center;border:1.5px solid rgba(255,255,255,.22);border-radius:10px;width:max-content}
+.stepper button{width:44px;height:44px;background:none;border:0;color:#fff;font:600 22px/1 var(--body);cursor:pointer;border-radius:8px}
+.stepper button:hover{background:rgba(255,255,255,.1)}
+.stepper output{min-width:44px;text-align:center;font:600 18px/1 var(--mono)}
+.date{min-height:44px;width:100%;background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.22);border-radius:10px;padding:0 12px;font:500 16px var(--mono);color-scheme:dark}
+
+.ticket{background:#fff;color:var(--ink);border-radius:var(--r);overflow:hidden;box-shadow:0 40px 80px -40px rgba(0,0,0,.7)}
+.t-head{display:flex;justify-content:space-between;align-items:center;padding:18px 24px;border-bottom:1.5px dashed var(--line)}
+.t-head .who{display:flex;align-items:center;gap:10px;font:700 15px/1.2 var(--head);color:var(--navy)}
+.t-head img{width:36px;height:36px}
+.t-head code{font:600 12px/1 var(--mono);color:var(--muted);letter-spacing:.06em}
+.t-body{padding:24px}
+.count{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.count b{font:700 76px/0.9 var(--head);letter-spacing:-.04em;color:var(--navy)}
+.count span{font:600 20px/1.2 var(--head);color:var(--navy)}
+.status{margin-top:12px;font-size:15px;color:var(--muted);min-height:24px}
+.status strong{color:var(--ink)}
+.ticket.tight .count b,.ticket.tight .count span{color:var(--red)}
+.strip{display:flex;gap:6px;margin:22px 0 6px;overflow:hidden}
+.day{flex:1 1 0;min-width:0;border-radius:8px;background:#eef2f8;padding:8px 4px;text-align:center;font:500 12px/1.2 var(--mono);color:var(--muted)}
+.day b{display:block;font:600 16px/1.3 var(--mono);color:var(--ink)}
+.day.today{background:var(--navy);color:#d6e0f5}
+.day.today b{color:#fff}
+.day.sun{background:repeating-linear-gradient(135deg,#f4f5f7 0 6px,#e8ebf0 6px 12px)}
+.day.lfd{background:var(--red);color:#fde8ea}
+.day.lfd b{color:#fff}
+.day.gap{flex:0 0 auto;background:none;align-self:center;padding:0 2px}
+.legend{display:flex;justify-content:space-between;font:500 12px/1.4 var(--mono);color:var(--muted)}
+.t-rows{margin:22px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line)}
+.t-rows div{padding:12px 0;border-bottom:1px solid var(--line)}
+.t-rows div:nth-child(odd){padding-right:12px}
+.t-rows dt{font:600 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.t-rows dd{margin:6px 0 0;font:600 16px/1.3 var(--body)}
+.t-foot{display:flex;flex-wrap:wrap;gap:12px;align-items:center;padding:0 24px 24px}
+.t-foot a.call{font-weight:600;color:var(--navy);min-height:44px;display:inline-flex;align-items:center}
+
+/* services */
+.svc{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.svc li{display:grid;grid-template-columns:72px 1.1fr 1fr 280px;gap:32px;align-items:center;padding:28px 0;border-bottom:1px solid var(--line)}
+.svc .n{font:600 14px/1 var(--mono);color:var(--royal)}
+.svc h3{font-size:30px;font-weight:600;color:var(--navy)}
+.svc p{color:var(--muted)}
+.svc img{width:280px;height:170px;object-fit:cover;border-radius:12px;transition:transform .4s}
+.svc li:hover img{transform:scale(1.02)}
+
+/* why */
+.why{background:var(--bg)}
+.reasons{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line)}
+.reasons div{padding:36px 40px 36px 0;border-bottom:1px solid var(--line)}
+.reasons div:nth-child(even){padding:36px 0 36px 40px;border-left:1px solid var(--line)}
+.reasons h3{font-size:24px;font-weight:600;color:var(--navy)}
+.reasons h3 small{display:block;font:600 12px/1 var(--mono);letter-spacing:.08em;color:var(--royal);margin-bottom:12px}
+.reasons p{margin-top:10px;color:var(--muted)}
+.prize{margin-top:56px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;background:var(--navy);color:#fff;border-radius:var(--r);padding:36px 40px}
+.prize .medal{width:76px;height:76px;border-radius:50%;border:2px solid rgba(255,255,255,.35);display:grid;place-items:center}
+.prize .medal svg{width:34px;height:34px}
+.prize h3{color:#fff;font-size:28px}
+.prize p{margin-top:8px;color:#c9d4ea;max-width:720px}
+
+/* testimonials */
+.quotes{display:grid;grid-template-columns:1.25fr 1fr;gap:24px}
+.q{margin:0;border:1px solid var(--line);border-radius:var(--r);padding:32px;display:flex;flex-direction:column;justify-content:space-between;gap:28px}
+.q.big{background:var(--bg);grid-row:span 2;padding:44px}
+.q blockquote{margin:0;font:500 20px/1.45 var(--head);color:var(--ink);letter-spacing:-.01em}
+.q.big blockquote{font-size:clamp(26px,2.7vw,34px);line-height:1.25;color:var(--navy)}
+.stars{display:flex;gap:3px;margin-bottom:16px}
+.stars svg{width:18px;height:18px;fill:#e2a400}
+.q figcaption b{display:block;font-weight:600}
+.q figcaption span{font-size:15px;color:var(--muted)}
+
+/* faq */
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-child{border-top:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;align-items:center;padding:22px 0;font:600 19px/1.35 var(--head);color:var(--navy);min-height:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";width:12px;height:12px;flex:none;border-right:2px solid var(--royal);border-bottom:2px solid var(--royal);transform:rotate(45deg) translateY(-3px);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(-135deg) translateY(-3px)}
+.faq details p{padding:0 40px 24px 0;color:var(--muted)}
+
+/* contact */
+.contact{background:var(--navy);color:#fff}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.contact .eyebrow{color:#9fb6ff}
+.contact h2{color:#fff;font-size:clamp(38px,4.6vw,60px);font-weight:700;margin-top:14px}
+.contact .sub{margin-top:18px;color:#c9d4ea;font-size:18px;max-width:460px}
+.bigcall{display:inline-flex;align-items:center;gap:14px;margin-top:32px;font:700 clamp(26px,3vw,36px)/1 var(--head);color:#fff;text-decoration:none;letter-spacing:-.01em;min-height:48px}
+.bigcall svg{width:28px;height:28px}
+.bigcall:hover{text-decoration:underline;text-underline-offset:6px}
+.facts{margin-top:36px;display:grid;gap:0;border-top:1px solid rgba(255,255,255,.18)}
+.facts div{display:grid;grid-template-columns:96px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+.facts dt{font:600 12px/1.9 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#9fb6ff}
+.facts dd{margin:0}
+.facts a{color:#fff}
+.cf{background:#fff;color:var(--ink);border-radius:var(--r);padding:32px;display:grid;gap:16px;box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
+.cf h3{font-size:24px;color:var(--navy)}
+.cf .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cf label{display:grid;gap:6px;font-size:14px;font-weight:600;color:var(--ink)}
+.cf input,.cf textarea{font:400 16px/1.4 var(--body);color:var(--ink);border:1.5px solid #c9d0db;border-radius:10px;padding:12px 14px;min-height:48px;background:#fff;width:100%}
+.cf textarea{min-height:120px;resize:vertical;font-family:var(--mono);font-size:14px}
+.cf input:focus,.cf textarea:focus{border-color:var(--royal);outline:none;box-shadow:0 0 0 3px rgba(0,23,135,.18)}
+.cf .btn{width:100%}
+.seg span{color:#fff}
+.thanks{display:none;background:#e9f6ef;color:#14532d;border-radius:10px;padding:14px 16px;font-weight:600}
+.thanks.on{display:block}
+
+/* footer */
+footer{background:var(--deep);color:#c9d4ea;padding:56px 0 32px;font-size:15px}
+footer .wrap{display:grid;gap:32px}
+.f-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px;align-items:flex-start}
+.f-brand{display:flex;gap:14px;align-items:center}
+.f-brand img{width:60px;height:60px;border-radius:50%;background:#fff}
+.f-brand b{display:block;color:#fff;font:700 18px/1.2 var(--head)}
+footer nav,footer .social{display:flex;flex-wrap:wrap;gap:4px 8px}
+footer a{color:#fff;text-decoration:none;min-height:44px;display:inline-flex;align-items:center;padding:0 8px}
+footer a:hover{text-decoration:underline}
+.f-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:14px}
+.f-bot a{display:inline;padding:0;min-height:0;text-decoration:underline;color:#c9d4ea}
+
+/* phone call bar */
+.callbar{display:none}
+
+/* rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:960px){
+  .nav{display:none}
+  .hero .wrap,.mile .wrap,.planner,.faq .wrap,.contact .wrap{grid-template-columns:1fr}
+  .hero-photo{justify-self:start}
+  .svc li{grid-template-columns:48px 1fr 200px;gap:20px}
+  .svc li p{grid-column:2}
+  .svc li img{grid-row:1 / span 2;grid-column:3;width:200px;height:140px}
+  .proof ul{grid-template-columns:1fr 1fr;gap:24px 0}
+  .proof li:nth-child(3){border-left:0;padding-left:0}
+  .quotes{grid-template-columns:1fr}
+  .q.big{grid-row:auto}
+  .faq .wrap{gap:24px}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:68px}
+  .wrap{padding:0 18px}
+  .mock{font-size:14px}
+  .top .wrap{height:66px;gap:12px}
+  .brand img{width:44px;height:44px}
+  .brand b{font-size:16px}
+  .brand small{display:none}
+  .top .btn{display:none}
+  .hero{padding-top:40px}
+  .hero h1{font-size:46px;margin:14px 0 18px}
+  .lead{font-size:17px}
+  .actions .btn{flex:1 1 100%}
+  .hero .wrap{gap:40px}
+  .award{left:12px;bottom:-22px;right:12px;max-width:none}
+  .proof{margin-top:56px}
+  .proof ul{padding:28px 18px}
+  .proof li{padding:0 0 0 16px}
+  .proof b{font-size:32px}
+  .sec{padding:72px 0}
+  .sec-head{margin-bottom:32px}
+  .mile .wrap{gap:36px}
+  .controls{padding:20px}
+  .row2{grid-template-columns:1fr 1fr;gap:14px}
+  .t-head,.t-body{padding-left:18px;padding-right:18px}
+  .t-foot{padding:0 18px 20px}
+  .t-foot .btn{flex:1 1 100%}
+  .count b{font-size:64px}
+  .day{font-size:10px;padding:7px 2px}
+  .day b{font-size:14px}
+  .svc li{grid-template-columns:1fr;gap:12px;padding:24px 0}
+  .svc li p,.svc li img{grid-column:auto;grid-row:auto}
+  .svc li img{width:100%;height:auto;aspect-ratio:16/9;order:-1}
+  .svc .n{display:none}
+  .svc h3{font-size:26px}
+  .reasons{grid-template-columns:1fr}
+  .reasons div,.reasons div:nth-child(even){padding:28px 0;border-left:0}
+  .prize{grid-template-columns:1fr;padding:28px;gap:18px}
+  .q,.q.big{padding:26px}
+  .cf{padding:22px}
+  .cf .two{grid-template-columns:1fr}
+  .facts div{grid-template-columns:80px 1fr}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(255,255,255,.97);border-top:1px solid var(--line);padding:8px 12px calc(8px + env(safe-area-inset-bottom));box-shadow:0 -8px 24px -12px rgba(5,49,102,.3)}
+  .callbar .btn{min-height:48px;font-size:15px;padding:0 12px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#main" aria-label="TransOcean Carrier, home">
+      <img src="https://framerusercontent.com/images/L2Frid6QmBte03U3uaoronnPz8.png?scale-down-to=512&amp;width=1024&amp;height=1024" alt="TransOcean Carrier logo" width="52" height="52">
+      <span><b>TransOcean Carrier</b><small>Precision Drayage · Long Beach, CA</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#plan">Plan a pickup</a>
+      <a href="#services">Services</a>
+      <a href="#why">Why TOC</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-main" href="tel:+16507995587">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+      Talk to a real human
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">TransOcean Carrier · Ports of LB &amp; LA</p>
+        <h1 id="hero-title">Precision Drayage. <span>Every Time.</span></h1>
+        <p class="lead">Container pickup, delivery and dispatch from the Ports of Long Beach and Los Angeles. <strong>35+ years, over a million containers, zero demurrage and zero detention.</strong></p>
+        <div class="actions">
+          <a class="btn btn-main" href="#plan">Plan a pickup
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-ghost" href="tel:+16507995587">Call +1 (650) 799-5587</a>
+        </div>
+        <p class="hours"><span class="dot" aria-hidden="true"></span>Mon–Sat, 6x24 · 1650 Harbor Ave, Long Beach</p>
+      </div>
+      <div class="hero-photo">
+        <img src="https://framerusercontent.com/images/lh2Q6T2QbpnDazIteB721JrMsM.jpg?scale-down-to=2048&amp;width=3991&amp;height=2661" alt="Aerial view of a container port with cranes and stacked containers" width="1280" height="853" fetchpriority="high">
+        <div class="award">
+          <div class="medal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"/></svg></div>
+          <div><b>Carrier of the Year</b><span>Two years running</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="proof">
+      <ul aria-label="Our record">
+        <li><b>0</b><span>Demurrage penalties. Ever.</span></li>
+        <li><b>99<em>%</em></b><span>On time or before LFD</span></li>
+        <li><b>1M<em>+</em></b><span>Container moves</span></li>
+        <li><b>35<em>+</em></b><span>Years at LA &amp; Long Beach</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec mile" aria-labelledby="mile-title">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">The first mile</p>
+        <h2 class="h2" id="mile-title">The Port Mile is the hardest mile.</h2>
+        <p class="lead" style="margin-top:16px">We've turned the industry's most unpredictable mile into its most predictable one.</p>
+        <ol class="steps">
+          <li><p>Congestion, chassis shortages, customs holds: handled before they're your problem.</p></li>
+          <li><p>Miss the first-mile window, and delays ripple through everything. We stop the dominoes before they fall.</p></li>
+          <li><p>35 years of relationships with carriers and terminals, earned not bought.</p></li>
+        </ol>
+      </div>
+      <div class="mile-photo">
+        <img src="https://framerusercontent.com/images/Rz6eqZvoGZ9frr0tZu4jniMdjQ.jpg?scale-down-to=1024&amp;width=5464&amp;height=3640" alt="Container terminal with gantry cranes under a blue sky" width="596" height="396" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="sec plan" id="plan" aria-labelledby="plan-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Pickup planner</p>
+        <h2 id="plan-title">Beat your Last Free Day.</h2>
+        <p>Tell us what's waiting at the terminal. See how much free time you have left, then send us the move in one tap.</p>
+      </div>
+      <div class="planner">
+        <form class="controls" id="planner" aria-label="Pickup details" onsubmit="return false">
+          <fieldset>
+            <legend>Port</legend>
+            <div class="seg">
+              <label><input type="radio" name="port" value="Port of Long Beach" checked><span>Long Beach</span></label>
+              <label><input type="radio" name="port" value="Port of Los Angeles"><span>Los Angeles</span></label>
+            </div>
+          </fieldset>
+          <div class="row2">
+            <div>
+              <span class="lab" id="qty-lab">Containers</span>
+              <div class="stepper" role="group" aria-labelledby="qty-lab">
+                <button type="button" id="minus" aria-label="One fewer container">−</button>
+                <output id="qty" aria-live="polite">3</output>
+                <button type="button" id="plus" aria-label="One more container">+</button>
+              </div>
+            </div>
+            <div>
+              <label class="lab" for="lfd">Last Free Day</label>
+              <input class="date" type="date" id="lfd" value="2026-11-02">
+            </div>
+          </div>
+          <fieldset>
+            <legend>Deliver to</legend>
+            <div class="seg">
+              <label><input type="radio" name="dest" value="Door" checked><span>Door</span></label>
+              <label><input type="radio" name="dest" value="Rail"><span>Rail</span></label>
+            </div>
+          </fieldset>
+        </form>
+
+        <article class="ticket" id="ticket" aria-live="polite" aria-label="Your pickup request">
+          <div class="t-head">
+            <div class="who"><img src="https://framerusercontent.com/images/L2Frid6QmBte03U3uaoronnPz8.png?scale-down-to=512&amp;width=1024&amp;height=1024" alt="" width="36" height="36">Pickup request</div>
+            <code id="tref">TOC · LB-3</code>
+          </div>
+          <div class="t-body">
+            <div class="count"><b id="days">4</b><span id="dayword">days of free time left</span></div>
+            <p class="status" id="status"><strong>Room to plan.</strong> Send it now and keep it that way.</p>
+            <div class="strip" id="strip" aria-hidden="true">
+              <div class="day today">Thu<b>29</b></div>
+              <div class="day">Fri<b>30</b></div>
+              <div class="day">Sat<b>31</b></div>
+              <div class="day sun">Sun<b>1</b></div>
+              <div class="day lfd">Mon<b>2</b></div>
+            </div>
+            <div class="legend"><span>Today</span><span>Last Free Day</span></div>
+            <dl class="t-rows">
+              <div><dt>From</dt><dd id="r-port">Port of Long Beach</dd></div>
+              <div><dt>Load</dt><dd id="r-load">3 containers</dd></div>
+              <div><dt>Deliver to</dt><dd id="r-dest">Door</dd></div>
+              <div><dt>LFD</dt><dd id="r-lfd">Mon, Nov 2</dd></div>
+            </dl>
+          </div>
+          <div class="t-foot">
+            <a class="btn btn-main" href="#contact" id="send">Send this request
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="call" href="tel:+16507995587">or call +1 (650) 799-5587</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="services" aria-labelledby="svc-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">What we do</p>
+        <h2 id="svc-title">Everything the Port Mile demands.</h2>
+      </div>
+      <ul class="svc">
+        <li><span class="n">01</span><h3>Precision Drayage™</h3><p>Port to door or rail, with zero demurrage and zero detention.</p>
+          <img src="https://framerusercontent.com/images/XrIWNaFO50H02GUoEmhGSDYHwo.jpg?scale-down-to=1024&amp;width=4025&amp;height=2684" alt="Cranes over stacked containers at the port" width="576" height="384" loading="lazy"></li>
+        <li><span class="n">02</span><h3>Priority Freight</h3><p>Decades deep with steamship lines. When priority opens up, we're first in line.</p>
+          <img src="https://framerusercontent.com/images/5lofpcTnYByRUwrTr5ccv2KQh3o.jpg?scale-down-to=1024&amp;width=5130&amp;height=3413" alt="Red semi truck hauling a trailer on the highway" width="576" height="383" loading="lazy"></li>
+        <li><span class="n">03</span><h3>Cargo Integrity</h3><p>Our drivers know these ports. The gates, the guards, the timing: nothing gets missed.</p>
+          <img src="https://framerusercontent.com/images/FAwsuFbluWtvcYE8TikwqB8rtWQ.jpg?scale-down-to=1024&amp;width=6016&amp;height=4016" alt="Two workers in hard hats and safety vests among containers" width="576" height="384" loading="lazy"></li>
+        <li><span class="n">04</span><h3>Predictive Visibility™</h3><p>Eyes on every load. If something changes at the port, we know before you do.</p>
+          <img src="https://framerusercontent.com/images/Vs4g3S99hvJqLQWalUKxxJC0cM.jpg?scale-down-to=1024&amp;width=3888&amp;height=5184" alt="Truck crossing an overpass at golden hour" width="576" height="768" loading="lazy" style="object-position:50% 52%"></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec why" id="why" aria-labelledby="why-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Why choose us</p>
+        <h2 id="why-title">Why shippers choose TransOcean Carrier.</h2>
+      </div>
+      <div class="reasons">
+        <div><h3><small>01</small>Precision Drayage™</h3><p>Millions of moves. Millions of dollars protected. Disciplined planning and execution keep your cargo moving safely and on time.</p></div>
+        <div><h3><small>02</small>Accumulated Intelligence (AI)</h3><p>35 years of experience, sharpened by AI. Every delay, shortage and disruption we've learned from makes the next move smarter.</p></div>
+        <div><h3><small>03</small>Relationships that matter</h3><p>Decades of trust with steamship lines, terminals, railroads and port partners, so we see challenges before they slow you down.</p></div>
+        <div><h3><small>04</small>Forged by disruption</h3><p>Pandemics, port congestion, tariffs, labor actions. We've navigated all of it. While others react, we keep moving.</p></div>
+      </div>
+      <div class="prize">
+        <div class="medal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"/></svg></div>
+        <div>
+          <h3>Carrier of the Year, two years running.</h3>
+          <p>Recognized by Logistics and Drayage Management for operational consistency and port performance: zero demurrage and detention penalties across 1M+ container moves.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="q-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Testimonials</p>
+        <h2 id="q-title">What our partners say.</h2>
+      </div>
+      <div class="quotes">
+        <figure class="q big">
+          <div>
+            <div class="stars" role="img" aria-label="5 out of 5"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"/></svg></div>
+            <blockquote>“We never have to think about TOC. Everything just works. It's the closest thing to a plug-and-play port partner we've found.”</blockquote>
+          </div>
+          <figcaption><b>Bob C.</b><span>Logistics Director</span></figcaption>
+        </figure>
+        <figure class="q">
+          <blockquote>“Their real-time tracking, quick response times, and reliable pricing is unmatched.”</blockquote>
+          <figcaption><b>Kris R.</b><span>VP of Supply Chain</span></figcaption>
+        </figure>
+        <figure class="q">
+          <blockquote>“We have depended on them for over a decade. Feels like family!”</blockquote>
+          <figcaption><b>Susan T.</b><span>International Transportation Manager</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec faq why" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">FAQ</p>
+        <h2 class="h2" id="faq-title">Straight answers.</h2>
+        <p class="lead" style="margin-top:16px">To the questions shippers actually ask. No jargon, no runaround.</p>
+      </div>
+      <div>
+        <details open><summary>What is Precision Drayage?</summary><p>Our operating philosophy, refined over 35+ years at the Ports of Long Beach and Los Angeles: trusted relationships with steamship lines, terminals and equipment partners, paired with disciplined planning and execution. The result is containers moved safely and efficiently, port to door or rail, with zero demurrage and zero detention.</p></details>
+        <details><summary>How do you handle port and terminal congestion?</summary><p>We're on-site at every terminal we touch. When gates open, slots clear, or chassis run short, we're already moving. Congestion, chassis shortages and customs holds get handled before they're your problem.</p></details>
+        <details><summary>Why is drayage from LA and Long Beach different?</summary><p>The Port Mile is the hardest mile. Miss the first-mile window, and delays ripple through everything. We stop the dominoes before they fall.</p></details>
+        <details><summary>Why do shippers choose TOC?</summary><p>35 years of relationships with steamship lines, terminals, railroads and port partners, earned not bought. And a record of zero demurrage and zero detention across more than a million container moves.</p></details>
+        <details><summary>How do we start working together?</summary><p>Talk to a real human. We'll tell you straight if we're the right fit, usually in one call: <a href="tel:+16507995587">+1 (650) 799-5587</a>.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec contact" id="contact" aria-labelledby="c-title">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Get in touch</p>
+        <h2 id="c-title">Don't freight. Talk to a real human.</h2>
+        <p class="sub">We'll tell you straight if we're the right fit, usually in one call.</p>
+        <a class="bigcall" href="tel:+16507995587"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>+1 (650) 799-5587</a>
+        <dl class="facts">
+          <div><dt>Email</dt><dd><a href="mailto:sbermudes@toc-lb.com">sbermudes@toc-lb.com</a></dd></div>
+          <div><dt>Address</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=1650%20Harbor%20Ave%20Suite%20B%2C%20Long%20Beach%2C%20CA%2090813">1650 Harbor Ave Suite B, Long Beach, CA 90813</a></dd></div>
+          <div><dt>Hours</dt><dd>Mon–Sat, 6x24</dd></div>
+        </dl>
+      </div>
+      <form class="cf" id="contact-form" novalidate>
+        <h3>Send us the move</h3>
+        <div class="two">
+          <label>Name<input name="name" autocomplete="name" placeholder="Your full name"></label>
+          <label>Company<input name="company" autocomplete="organization" placeholder="Company"></label>
+        </div>
+        <div class="two">
+          <label>Email<input type="email" name="email" autocomplete="email" placeholder="you@company.com"></label>
+          <label>Phone<input type="tel" name="phone" autocomplete="tel" placeholder="+1"></label>
+        </div>
+        <label>Your move<textarea name="msg" id="msg">Pickup request: 3 containers, Port of Long Beach, to door. Last Free Day Mon, Nov 2.</textarea></label>
+        <button class="btn btn-main" type="submit">Send to TransOcean Carrier</button>
+        <p class="thanks" id="thanks" role="status">Thanks. We’ll be in touch, usually in one call.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div class="f-brand">
+        <img src="https://framerusercontent.com/images/L2Frid6QmBte03U3uaoronnPz8.png?scale-down-to=512&amp;width=1024&amp;height=1024" alt="TransOcean Carrier logo" width="60" height="60" loading="lazy">
+        <div><b>TransOcean Carrier Inc.</b>1650 Harbor Ave Suite B, Long Beach, CA 90813</div>
+      </div>
+      <nav aria-label="Footer">
+        <a href="#plan">Plan a pickup</a><a href="#services">Services</a><a href="#why">Why TOC</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="social">
+        <a href="https://www.linkedin.com/company/transocean-carrier-inc/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.facebook.com/people/TransOcean-Carrier/61590938631057/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span>© 2026 TransOcean Carrier. All Rights Reserved.</span>
+      <span>Mockup made for TransOcean Carrier Inc. by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick contact">
+  <a class="btn btn-ghost" href="#plan">Plan a pickup</a>
+  <a class="btn btn-main" href="tel:+16507995587">Call us</a>
+</div>
+
+<script>
+(function(){
+  var $=function(s){return document.querySelector(s)};
+  var form=$('#planner'),qty=3,lfd=$('#lfd');
+  var DAY=864e5,W=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],M=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  function today(){var d=new Date();return new Date(d.getFullYear(),d.getMonth(),d.getDate())}
+  function add(d,n){return new Date(d.getFullYear(),d.getMonth(),d.getDate()+n)}
+  function iso(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
+  function parse(v){var p=(v||'').split('-');return p.length===3?new Date(+p[0],p[1]-1,+p[2]):null}
+  function nice(d){return W[d.getDay()]+', '+M[d.getMonth()]+' '+d.getDate()}
+  function val(n){var el=form.querySelector('input[name='+n+']:checked');return el?el.value:''}
+  var first=add(today(),4);
+  if(first.getDay()===0)first=add(first,1);
+  lfd.value=iso(first);
+  function render(){
+    var t=today(),d=parse(lfd.value)||add(t,4);
+    var n=Math.round((d-t)/DAY),port=val('port'),dest=val('dest');
+    var ticket=$('#ticket'),st=$('#status');
+    ticket.classList.toggle('tight',n<=1);
+    if(n>0){$('#days').textContent=n;$('#dayword').textContent=(n===1?'day':'days')+' of free time left'}
+    else if(n===0){$('#days').textContent='Today';$('#dayword').textContent='is your Last Free Day'}
+    else{$('#days').textContent=-n;$('#dayword').textContent=(n===-1?'day':'days')+' past your Last Free Day'}
+    st.innerHTML=n>=3?'<strong>Room to plan.</strong> Send it now and keep it that way.'
+      :n>=1?'<strong>Getting tight.</strong> Send it now, or call us.'
+      :n===0?'<strong>The clock runs out today.</strong> Call us now.'
+      :'<strong>The clock is already running.</strong> Call us now.';
+    var html='',start=n>=0?t:d,total=Math.abs(n);
+    var show=[];
+    if(total<=9){for(var i=0;i<=total;i++)show.push(i)}else{show=[0,1,2,3,'gap',total-2,total-1,total]}
+    show.forEach(function(i){
+      if(i==='gap'){html+='<div class="day gap">···</div>';return}
+      var x=add(start,i),c='day';
+      if(x.getDay()===0)c+=' sun';
+      if(+x===+t)c+=' today';
+      if(+x===+d)c+=' lfd';
+      html+='<div class="'+c+'">'+W[x.getDay()]+'<b>'+x.getDate()+'</b></div>';
+    });
+    $('#strip').innerHTML=html;
+    var lg=document.querySelector('.legend').children;
+    lg[0].textContent=n>=0?'Today':'Last Free Day';lg[1].textContent=n>=0?(n===0?'Today is LFD':'Last Free Day'):'Today';
+    var load=qty+' container'+(qty===1?'':'s');
+    $('#r-port').textContent=port;$('#r-load').textContent=load;$('#r-dest').textContent=dest;$('#r-lfd').textContent=nice(d);
+    $('#tref').textContent='TOC · '+(port.indexOf('Beach')>-1?'LB':'LA')+'-'+qty;
+    $('#qty').textContent=qty;
+    msg='Pickup request: '+load+', '+port+', to '+dest.toLowerCase()+'. Last Free Day '+nice(d)+'.';
+  }
+  var msg='';
+  form.addEventListener('change',render);
+  lfd.addEventListener('input',render);
+  $('#minus').addEventListener('click',function(){if(qty>1){qty--;render()}});
+  $('#plus').addEventListener('click',function(){if(qty<50){qty++;render()}});
+  $('#send').addEventListener('click',function(){$('#msg').value=msg});
+  render();
+
+  $('#contact-form').addEventListener('submit',function(e){e.preventDefault();$('#thanks').classList.add('on')});
+
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window){
+    var els=document.querySelectorAll('.sec-head,.steps li,.mile-photo,.planner,.svc li,.reasons div,.prize,.q,.faq details,.contact .wrap > *');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('rise','will-rise');io.observe(el)}});
+  }
+})();
+</script>
+</body>
+</html>
