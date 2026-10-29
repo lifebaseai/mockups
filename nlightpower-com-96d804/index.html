@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup nlightpower-com-96d804 1 ea61fc32 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>nLightPower | Solar power you can trust, day and night</title>
+<meta name="description" content="Solar panels and battery packages for homes and businesses in Curaçao. Find your nLightPower package and request a free quotation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#154a8b; --navy-d:#0d2f59; --ink:#13233a; --muted:#4a5a70;
+  --orange:#ffa500; --bronze:#8a5900; --cream:#fff8ec; --line:#dfe5ee; --bg:#f5f7fa;
+  --r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.55;font-size:16px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--navy)}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+h1,h2,h3{line-height:1.12;margin:0;letter-spacing:-.02em;font-weight:800}
+h2{font-size:clamp(30px,4.2vw,46px)}
+.dot{color:var(--orange)}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--bronze);margin:0 0 14px}
+.lead{font-size:18px;color:var(--muted);max-width:560px}
+
+/* banner */
+.mock{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:#0b1d33;color:#e9eef6;font-size:15px;text-align:center;line-height:1.3}
+.mock a{color:#ffc24d;text-decoration:underline;text-underline-offset:3px;font-weight:600}
+
+/* header */
+header.top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+.logo img{height:56px;width:auto}
+nav.main{display:flex;gap:28px;align-items:center}
+nav.main a{text-decoration:none;color:var(--ink);font-weight:600;font-size:15px;padding:12px 0}
+nav.main a:hover{color:var(--navy)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 24px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;border:0;cursor:pointer;font-family:inherit;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn-sun{background:var(--orange);color:#1a1200;box-shadow:0 6px 18px rgba(255,165,0,.3)}
+.btn-sun:hover{background:#ffb424}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-ghost{background:rgba(255,255,255,.12);color:#fff;border:1.5px solid rgba(255,255,255,.55)}
+.btn-ghost:hover{background:rgba(255,255,255,.2)}
+.top .btn{min-height:44px;font-size:15px;padding:0 18px}
+
+/* hero */
+.hero{position:relative;color:#fff;overflow:hidden;background:var(--navy-d)}
+.hero picture,.hero .bg{position:absolute;inset:0}
+.hero .bg img{width:100%;height:100%;object-fit:cover;object-position:center 60%}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,28,54,.92) 0%,rgba(9,28,54,.72) 45%,rgba(9,28,54,.2) 100%),linear-gradient(0deg,rgba(9,28,54,.6),rgba(9,28,54,0) 40%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.3fr .8fr;gap:40px;align-items:end;padding-top:110px;padding-bottom:96px;min-height:640px}
+.hero h1{font-size:clamp(42px,6.4vw,78px);letter-spacing:-.035em}
+.hero h1 span{display:block;color:var(--orange)}
+.hero p.sub{font-size:19px;max-width:540px;margin:24px 0 32px;color:#e3ebf6}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px}
+.perks{display:flex;flex-wrap:wrap;gap:10px 26px;margin:36px 0 0;padding:0;list-style:none;font-size:14px;font-weight:600;color:#dbe5f2}
+.perks li{display:flex;align-items:center;gap:8px}
+.perks svg{flex:none}
+.peek{align-self:end;background:rgba(255,255,255,.96);color:var(--ink);border-radius:18px;padding:22px 22px 20px;box-shadow:0 20px 50px rgba(0,0,0,.3);max-width:320px;justify-self:end;text-decoration:none;display:block;transition:transform .25s}
+.peek:hover{transform:translateY(-3px)}
+.peek small{display:block;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--bronze)}
+.peek b{display:block;font-size:22px;margin:6px 0 2px}
+.peek .k{font-size:14px;color:var(--muted)}
+.peek .save{display:flex;align-items:baseline;gap:6px;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+.peek .save strong{font-size:30px;color:var(--navy);letter-spacing:-.02em;white-space:nowrap}
+.peek .save .k{line-height:1.3}
+.hero h1{text-wrap:balance}
+.peek .go{display:block;margin-top:10px;font-weight:700;font-size:14px;color:var(--navy)}
+
+/* planner */
+section{padding:104px 0}
+.planner{background:var(--bg)}
+.ph{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:44px;flex-wrap:wrap}
+.tool{display:grid;grid-template-columns:.95fr 1.05fr;gap:0;background:#fff;border-radius:22px;box-shadow:0 1px 2px rgba(19,35,58,.06),0 18px 50px rgba(19,35,58,.08);overflow:hidden}
+.ask{padding:40px;border-right:1px solid var(--line)}
+.ask h3{font-size:20px;margin-bottom:6px}
+.ask .hint{font-size:14px;color:var(--muted);margin:0 0 22px}
+.usage{display:flex;align-items:baseline;gap:8px;margin-bottom:8px}
+.usage output{font-size:52px;font-weight:800;color:var(--navy);letter-spacing:-.03em;line-height:1}
+.usage span{font-weight:600;color:var(--muted)}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:44px;background:transparent;cursor:pointer;margin:0}
+input[type=range]::-webkit-slider-runnable-track{height:8px;border-radius:8px;background:linear-gradient(90deg,var(--orange) var(--p,50%),#e3e8ef var(--p,50%))}
+input[type=range]::-moz-range-track{height:8px;border-radius:8px;background:#e3e8ef}
+input[type=range]::-moz-range-progress{height:8px;border-radius:8px;background:var(--orange)}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:28px;height:28px;border-radius:50%;background:#fff;border:3px solid var(--navy);margin-top:-10px;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;background:#fff;border:3px solid var(--navy)}
+.scale{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);font-weight:600;margin-top:2px}
+.or{margin:30px 0 14px;font-size:14px;font-weight:700;color:var(--ink)}
+.chips{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.chip{min-height:64px;border:1.5px solid var(--line);background:#fff;border-radius:12px;padding:10px 12px;font-family:inherit;font-size:14px;font-weight:600;color:var(--ink);cursor:pointer;text-align:left;line-height:1.3;transition:border-color .2s,background .2s}
+.chip:hover{border-color:var(--navy)}
+.chip[aria-pressed=true]{border-color:var(--navy);background:#eef3fa;color:var(--navy)}
+.chip small{display:block;font-weight:500;color:var(--muted);font-size:12px;margin-top:2px}
+.result{padding:40px;position:relative}
+.pk-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:28px}
+.pk{border-radius:10px;padding:10px 12px;background:var(--bg);font-size:13px;font-weight:700;color:var(--muted);transition:background .3s,color .3s;line-height:1.3}
+.pk i{font-style:normal;display:block;font-weight:500;font-size:12px}
+.pk.on{background:var(--navy);color:#fff}
+.pk.on i{color:#cfdcef}
+.res-name{font-size:34px;letter-spacing:-.025em}
+.res-name em{font-style:normal;color:var(--navy)}
+.res-fit{color:var(--muted);margin:8px 0 22px;min-height:50px}
+.kit{list-style:none;margin:0 0 26px;padding:0;display:grid;gap:10px}
+.kit li{display:flex;gap:12px;align-items:center;font-size:15px;font-weight:500}
+.kit b{min-width:34px;height:34px;border-radius:9px;background:var(--cream);color:var(--bronze);display:inline-flex;align-items:center;justify-content:center;font-size:15px}
+.savebox{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;background:var(--cream);border-radius:14px;padding:18px 20px}
+.savebox small{display:block;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--bronze)}
+.savebox strong{font-size:32px;letter-spacing:-.02em;color:var(--ink);white-space:nowrap}
+.savebox strong span{font-size:16px;font-weight:600;color:var(--muted)}
+.fine{font-size:13px;color:var(--muted);margin:16px 0 0}
+.result.flash .res-name,.result.flash .savebox strong{animation:pop .45s ease}
+@keyframes pop{0%{opacity:.3;transform:translateY(4px)}100%{opacity:1;transform:none}}
+
+/* steps */
+.steps{list-style:none;margin:56px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:20px;position:relative;counter-reset:s}
+.steps:before{content:"";position:absolute;left:24px;right:24px;top:24px;height:2px;background:repeating-linear-gradient(90deg,var(--orange) 0 8px,transparent 8px 14px)}
+.steps li{position:relative}
+.steps .n{width:50px;height:50px;border-radius:50%;background:#fff;border:2px solid var(--orange);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--navy);font-size:18px;position:relative}
+.steps li:last-child .n{background:var(--orange);color:#1a1200}
+.steps h3{font-size:18px;margin-top:20px;line-height:1.3}
+.steps p{font-size:14px;color:var(--muted);margin:6px 0 0}
+
+/* story */
+.story{background:var(--navy-d);color:#fff;padding:0}
+.story .grid{display:grid;grid-template-columns:1fr 1fr;min-height:560px}
+.story .pic{position:relative;min-height:380px}
+.story .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.story .txt{padding:90px 64px;display:flex;flex-direction:column;justify-content:center}
+blockquote{margin:0}
+blockquote p{font-size:clamp(22px,2.4vw,29px);font-weight:600;line-height:1.35;letter-spacing:-.01em;margin:0}
+blockquote footer{margin-top:22px;font-size:15px;color:#c3d1e6}
+blockquote footer b{color:#fff}
+.mark{font-size:84px;line-height:.6;color:var(--orange);font-weight:800;margin-bottom:12px;display:block}
+
+/* finance & why */
+.money .grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.zero{font-size:clamp(64px,9vw,120px);font-weight:800;letter-spacing:-.05em;line-height:.9;color:var(--navy);margin:0}
+.zero small{display:block;font-size:20px;letter-spacing:-.01em;color:var(--ink);margin-top:14px;line-height:1.3}
+.money .lead{margin-top:22px}
+.whys{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.whys li{display:grid;grid-template-columns:46px 1fr;gap:16px;padding:22px 0;border-bottom:1px solid var(--line)}
+.whys svg{width:30px;height:30px;color:var(--navy);margin-top:2px}
+.whys h3{font-size:18px}
+.whys p{margin:4px 0 0;color:var(--muted);font-size:15px}
+
+/* services */
+.serv{background:var(--bg)}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:48px;border-top:2px solid var(--ink)}
+.svc div{padding:28px 28px 0 0}
+.svc div+div{padding-left:28px;border-left:1px solid var(--line)}
+.svc h3{font-size:21px}
+.svc p{color:var(--muted);margin:10px 0 0;font-size:15px}
+.svc a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:15px;margin-top:6px}
+
+/* faq */
+.faq .grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:22px 40px 22px 0;font-weight:700;font-size:18px;position:relative;min-height:44px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"";position:absolute;right:6px;top:50%;width:12px;height:12px;border-right:2.5px solid var(--navy);border-bottom:2.5px solid var(--navy);transform:translateY(-70%) rotate(45deg);transition:transform .25s}
+details[open] summary:after{transform:translateY(-30%) rotate(-135deg)}
+details p{margin:-6px 0 22px;color:var(--muted);max-width:620px}
+
+/* contact */
+.contact{background:var(--navy);color:#fff}
+.contact .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.contact .lead{color:#d6e1f0}
+.ways{list-style:none;padding:0;margin:34px 0 0;display:grid;gap:4px}
+.ways a{display:flex;gap:14px;align-items:center;color:#fff;text-decoration:none;font-weight:600;min-height:52px}
+.ways a:hover span{text-decoration:underline}
+.ways svg{width:22px;height:22px;flex:none;color:var(--orange)}
+form{background:#fff;color:var(--ink);border-radius:20px;padding:34px;box-shadow:0 24px 60px rgba(0,0,0,.25)}
+form h3{font-size:22px;margin-bottom:20px}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:block;font-size:14px;font-weight:600;margin-bottom:14px}
+input[type=text],input[type=tel],input[type=email],select,textarea{display:block;width:100%;margin-top:6px;font:inherit;font-size:16px;padding:12px 14px;min-height:48px;border:1.5px solid #c9d3e0;border-radius:10px;background:#fff;color:var(--ink)}
+textarea{min-height:96px;resize:vertical}
+input:focus,select:focus,textarea:focus{border-color:var(--navy);outline:none;box-shadow:0 0 0 3px rgba(21,74,139,.18)}
+form .btn{width:100%;margin-top:6px}
+.thanks{margin:14px 0 0;padding:14px 16px;border-radius:10px;background:#e9f6ee;color:#14532d;font-weight:600}
+
+footer.site{background:#0b1d33;color:#c9d5e6;padding:44px 0 40px;font-size:14px}
+footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px 30px;align-items:center}
+footer.site a{color:#fff}
+footer.site .made{width:100%;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);color:#aebcd1}
+
+.callbar{display:none}
+
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:960px){
+  nav.main{display:none}
+  .hero .shade{background:linear-gradient(180deg,rgba(9,28,54,.88) 0%,rgba(9,28,54,.78) 60%,rgba(9,28,54,.6) 100%)}
+  .hero .wrap{grid-template-columns:1fr;min-height:0;padding-top:72px;padding-bottom:64px;gap:32px}
+  .peek{justify-self:start}
+  .tool{grid-template-columns:1fr}
+  .ask{border-right:0;border-bottom:1px solid var(--line)}
+  .steps{grid-template-columns:1fr;gap:0}
+  .steps:before{left:24px;right:auto;top:24px;bottom:24px;width:2px;height:auto;background:repeating-linear-gradient(180deg,var(--orange) 0 8px,transparent 8px 14px)}
+  .steps li{display:grid;grid-template-columns:50px 1fr;gap:18px;padding-bottom:26px;align-items:center}
+  .steps h3{margin-top:0}
+  .story .grid,.money .grid,.faq .grid,.contact .grid{grid-template-columns:1fr;gap:40px}
+  .story .txt{padding:56px 24px}
+  .svc{grid-template-columns:1fr}
+  .svc div,.svc div+div{padding:24px 0;border-left:0;border-bottom:1px solid var(--line)}
+}
+@media (max-width:640px){
+  body{padding-bottom:68px}
+  section{padding:72px 0}
+  .wrap{padding:0 20px}
+  .top .wrap{height:66px}
+  .logo img{height:46px}
+  .hero .wrap{padding-top:56px;padding-bottom:48px}
+  .hero p.sub{font-size:17px;margin:18px 0 26px}
+  .cta-row .btn{flex:1 1 100%}
+  .perks{gap:10px 18px;margin-top:28px;font-size:13px}
+  .peek{max-width:none;width:100%}
+  .ask,.result{padding:26px 20px}
+  .chips{grid-template-columns:1fr}
+  .chip{min-height:52px}
+  .pk{padding:8px;font-size:12px}
+  .res-name{font-size:28px}
+  .f2{grid-template-columns:1fr;gap:0}
+  form{padding:24px 20px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid var(--line);box-shadow:0 -6px 20px rgba(0,0,0,.08)}
+  .callbar .btn{flex:1;min-height:46px;font-size:15px;padding:0 12px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*:before,*:after{animation:none!important;transition:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="nLightPower home"><img src="https://www.nlightpower.com/web/image/website/1/logo/nLightPower?unique=f482833" alt="nLightPower" width="172" height="119"></a>
+    <nav class="main" aria-label="Main">
+      <a href="#packages">Packages</a>
+      <a href="#how">How it works</a>
+      <a href="#financing">Financing</a>
+      <a href="#faq">Questions</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-navy" href="tel:+59995654448">Call us</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="hero-h" style="padding:0">
+  <div class="bg"><img src="https://www.nlightpower.com/web/image/11768-20a0fee0/AdobeStock_175556195.webp" alt="Rows of solar panels under a sunrise sky" width="1920" height="1280" fetchpriority="high"></div>
+  <div class="shade"></div>
+  <div class="wrap">
+    <div>
+      <h1 id="hero-h">Power you can trust.<span>Day and night.</span></h1>
+      <p class="sub">Solar panels and battery packages for homes and businesses, from a locally owned Dutch Caribbean company with 24/7 support. Start with a free quotation.</p>
+      <div class="cta-row">
+        <a class="btn btn-sun" href="#packages">Find your package</a>
+        <a class="btn btn-ghost" href="tel:+59995654448">Call +599 9 565 4448</a>
+      </div>
+      <ul class="perks">
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffa500" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Low price guarantee</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffa500" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Financing available</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffa500" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Fast &amp; easy payment</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffa500" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>24/7 client support</li>
+      </ul>
+    </div>
+    <a class="peek" href="#packages">
+      <small>For two midsize ACs</small>
+      <b>nSolarBOOST</b>
+      <span class="k">14 panels · 12kW inverter · 2 batteries</span>
+      <span class="save"><strong>Cg 650</strong><span class="k">potential savings a month</span></span>
+      <span class="go">See which package fits you &rarr;</span>
+    </a>
+  </div>
+</section>
+
+<section class="planner" id="packages" aria-labelledby="pk-h">
+  <div class="wrap">
+    <div class="ph">
+      <div>
+        <p class="eyebrow">Package finder</p>
+        <h2 id="pk-h">Which package fits your home<span class="dot">?</span></h2>
+      </div>
+      <p class="lead">Three basic packages, each complete with installation. Need something bigger or different? We also build tailor-made systems around your energy use.</p>
+    </div>
+
+    <div class="tool">
+      <div class="ask">
+        <h3>Your monthly use</h3>
+        <p class="hint">Find the kWh on your electricity bill and slide to it.</p>
+        <div class="usage"><output id="kwhOut" for="kwh">1,240</output><span>kWh / month</span></div>
+        <input type="range" id="kwh" min="200" max="2400" step="10" value="1240" aria-label="Monthly electricity use in kWh">
+        <div class="scale"><span>200</span><span>1,200</span><span>2,400 kWh</span></div>
+        <p class="or">Or tap how you cool your home</p>
+        <div class="chips" role="group" aria-label="Air conditioning at home">
+          <button type="button" class="chip" data-kwh="550" aria-pressed="false">One small AC<small>minimal energy needs</small></button>
+          <button type="button" class="chip" data-kwh="1240" aria-pressed="true">Two midsize ACs<small>cut costs a lot</small></button>
+          <button type="button" class="chip" data-kwh="1650" aria-pressed="false">Two to three midsize<small>high energy use</small></button>
+        </div>
+      </div>
+      <div class="result" id="result" aria-live="polite">
+        <div class="pk-row" aria-hidden="true">
+          <div class="pk" data-p="0">nSolarLITE<i>550 kWh</i></div>
+          <div class="pk on" data-p="1">nSolarBOOST<i>1,240 kWh</i></div>
+          <div class="pk" data-p="2">nSolarMAX<i>1,650 kWh</i></div>
+        </div>
+        <h3 class="res-name" id="resName"><em>nSolarBOOST</em></h3>
+        <p class="res-fit" id="resFit">Perfect for those running two midsize air conditioners who want to significantly reduce their energy costs.</p>
+        <ul class="kit" id="resKit">
+          <li><b>14</b>JASolar panels (585W)</li>
+          <li><b>1</b>DEYE 3-phase inverter (12kW)</li>
+          <li><b>2</b>Y1 PowerPal batteries (10kWh)</li>
+          <li><b>+</b>Installation and installation materials</li>
+        </ul>
+        <div class="savebox">
+          <div><small>Potential savings</small><strong id="resSave">Cg 650 <span>/ month</span></strong></div>
+          <a class="btn btn-navy" id="resBtn" href="#contact" data-pkg="nSolarBOOST">Request proposal</a>
+        </div>
+        <p class="fine" id="resNote">Rated for 1,240 kWh a month.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <p class="eyebrow">How it works</p>
+    <h2 id="how-h">From your roof to your savings<span class="dot">.</span></h2>
+    <ol class="steps">
+      <li><span class="n">1</span><div><h3>Property evaluation</h3></div></li>
+      <li><span class="n">2</span><div><h3>Certified quotation</h3></div></li>
+      <li><span class="n">3</span><div><h3>Installation</h3></div></li>
+      <li><span class="n">4</span><div><h3>Delivery &amp; training</h3></div></li>
+      <li><span class="n">5</span><div><h3>Enjoy the savings</h3></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="story" aria-label="What a customer says">
+  <div class="grid">
+    <div class="pic"><img src="https://www.nlightpower.com/web/image/11774-de5dfef0/IMG_7732.webp" alt="Sunset over rooftops and palm trees in Curaçao" width="1920" height="1175" loading="lazy"></div>
+    <div class="txt">
+      <blockquote>
+        <span class="mark" aria-hidden="true">&ldquo;</span>
+        <p>I never imagined I could keep my house cool and still save on my energy bill. Thanks to nLightPower, I have both, and the financing of MCB Bank made it easier.</p>
+        <footer><b>Rovettlyn T.</b>, Jongbloed</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="money" id="financing" aria-labelledby="fin-h">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow">Financing</p>
+      <h2 id="fin-h" class="zero">Cg 0<small>upfront cost<span class="dot">.</span></small></h2>
+      <p class="lead">Zero out-of-pocket financing through our exclusive partnership program. For qualifying property owners, your payments are lower than your current average electric bill.</p>
+      <div class="cta-row" style="margin-top:30px"><a class="btn btn-sun" href="#contact">Ask about financing</a></div>
+    </div>
+    <div>
+      <h2 style="font-size:28px;margin-bottom:24px">Own your power<span class="dot">.</span></h2>
+      <ul class="whys">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 01-1 1h-5v-6h-6v6H4a1 1 0 01-1-1z"/></svg><div><h3>Increase your property value</h3><p>Long-term cost savings and eco-friendly appeal, on a system that is truly yours.</p></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><h3>24/7 client support</h3><p>Our team is available around the clock, prompt and reliable whenever you need it.</p></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg><div><h3>Low price guarantee</h3><p>Top-tier products at the most competitive prices we can offer.</p></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><div><h3>Locally owned</h3><p>A Dutch Caribbean company, based at Industry Park Brievengat in Willemstad.</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="serv" aria-labelledby="sv-h">
+  <div class="wrap">
+    <p class="eyebrow">Our services</p>
+    <h2 id="sv-h">For homes, businesses and industry<span class="dot">.</span></h2>
+    <div class="svc">
+      <div><h3>Residential</h3><p>Power your life with solar: the nSolar packages above, or a system tailored to your home.</p><a href="#packages">See packages &rarr;</a></div>
+      <div><h3>Commercial &amp; Industry</h3><p>Solar energy for commercial spaces, with efficient, durable panels.</p><a href="#contact">Request a quotation &rarr;</a></div>
+      <div><h3>Installation</h3><p>Already have equipment? Our skilled installation team sets it up, for homes or commercial and industrial sites.</p><a href="#contact">Request installation &rarr;</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq" aria-labelledby="faq-h">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow">Questions</p>
+      <h2 id="faq-h">Good to know<span class="dot">.</span></h2>
+      <p class="lead" style="margin-top:18px">Anything else? <a href="tel:+59995654448">Call us</a> or <a href="mailto:info@nlightpower.com">email</a>, we're here day and night.</p>
+    </div>
+    <div>
+      <details open><summary>Do I have to pay upfront?</summary><p>No. Through our partnership program, qualifying property owners can go solar with zero out-of-pocket cost, with payments lower than their current average electric bill.</p></details>
+      <details><summary>Which package do I need?</summary><p>It depends on your monthly use. nSolarLITE covers 550 kWh a month, nSolarBOOST 1,240 kWh and nSolarMAX 1,650 kWh. Try the package finder above, or ask for a free quotation.</p></details>
+      <details><summary>Can you build a system just for my needs?</summary><p>Yes. Besides our basic packages, we deliver tailor-made packages based on your energy consumption.</p></details>
+      <details><summary>What if I need help after installation?</summary><p>Our team is available 24/7 to assist you.</p></details>
+      <details><summary>Do you work with businesses?</summary><p>Yes, we offer commercial and industrial solar as well as residential.</p></details>
+      <details><summary>Can I buy parts?</summary><p>Yes, from our <a href="https://www.nlightpower.com/">online store</a>, with warehouse pickup.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact" aria-labelledby="ct-h">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow" style="color:#ffc24d">Free quotation</p>
+      <h2 id="ct-h">Let's talk about your savings<span class="dot">.</span></h2>
+      <p class="lead" style="margin-top:18px">Tell us a little about your home or business and we'll get back to you with a quotation that suits your needs.</p>
+      <ul class="ways">
+        <li><a href="tel:+59995654448"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg><span>+599 9 565 4448</span></a></li>
+        <li><a href="mailto:info@nlightpower.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span>info@nlightpower.com</span></a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Industry%20Park%20Brievengat%20Unit%20BIV-10%2C%20Willemstad%2C%20Cura%C3%A7ao" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Industry Park Brievengat, Unit BIV-10, Willemstad</span></a></li>
+      </ul>
+    </div>
+    <form id="quote" novalidate>
+      <h3>Request a free quotation</h3>
+      <div class="f2">
+        <label>Name<input type="text" name="name" autocomplete="name" required></label>
+        <label>Phone<input type="tel" name="phone" autocomplete="tel"></label>
+      </div>
+      <label>Email<input type="email" name="email" autocomplete="email"></label>
+      <label>Package
+        <select name="package" id="pkgSel">
+          <option>nSolarLITE (550 kWh / month)</option>
+          <option selected>nSolarBOOST (1,240 kWh / month)</option>
+          <option>nSolarMAX (1,650 kWh / month)</option>
+          <option>Tailor-made for my use</option>
+          <option>Commercial &amp; Industry</option>
+          <option>Installation only</option>
+          <option>Not sure yet</option>
+        </select>
+      </label>
+      <label>Anything we should know?<textarea name="msg" placeholder="e.g. my average bill, number of AC units"></textarea></label>
+      <button class="btn btn-sun" type="submit">Send request</button>
+      <p class="thanks" id="thanks" role="status" hidden>Thanks, we&rsquo;ll be in touch about your quotation.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>&copy; nLight Power BV · Power you can trust, day and night</span>
+    <span><a href="https://www.nlightpower.com/">nlightpower.com</a> · <a href="mailto:info@nlightpower.com">info@nlightpower.com</a></span>
+    <p class="made" style="margin:0">Mockup made for nLightPower by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick contact">
+  <a class="btn btn-navy" href="tel:+59995654448">Call us</a>
+  <a class="btn btn-sun" href="#contact">Free quotation</a>
+</div>
+
+<script>
+(function(){
+  var P=[
+    {name:'nSolarLITE',kwh:550,fit:"Ideal as a starter kit. Perfect for homes with minimal energy needs, including one small air conditioning unit.",kit:[['8','JASolar panels (585W)'],['1','DEYE 3-phase inverter (12kW)'],['1','Y1 PowerPal battery (10kWh)']],save:'400'},
+    {name:'nSolarBOOST',kwh:1240,fit:"Perfect for those running two midsize air conditioners who want to significantly reduce their energy costs.",kit:[['14','JASolar panels (585W)'],['1','DEYE 3-phase inverter (12kW)'],['2','Y1 PowerPal batteries (10kWh)']],save:'650'},
+    {name:'nSolarMAX',kwh:1650,fit:"Ideal for high-energy consumers. Perfect for homes running two to three midsize air conditioners, for significant cost savings.",kit:[['24','JASolar panels (585W)'],['1','DEYE 3-phase inverter (12kW)'],['3','Y1 PowerPal batteries (10kWh)']],save:'1,140'}
+  ];
+  var r=document.getElementById('kwh'),out=document.getElementById('kwhOut'),res=document.getElementById('result'),
+      nm=document.getElementById('resName'),fit=document.getElementById('resFit'),kit=document.getElementById('resKit'),
+      sv=document.getElementById('resSave'),note=document.getElementById('resNote'),btn=document.getElementById('resBtn'),
+      sel=document.getElementById('pkgSel'),pks=document.querySelectorAll('.pk'),chips=document.querySelectorAll('.chip'),last=-2;
+  function fmt(n){return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,',')}
+  function render(){
+    var v=+r.value,i=v<=550?0:v<=1240?1:v<=1650?2:-1,p=i<0?P[2]:P[i];
+    out.textContent=fmt(v);
+    r.style.setProperty('--p',((v-r.min)/(r.max-r.min)*100)+'%');
+    chips.forEach(function(c){c.setAttribute('aria-pressed',String(+c.dataset.kwh===v))});
+    if(i===last)return; last=i;
+    pks.forEach(function(el,k){el.classList.toggle('on',k===(i<0?2:i))});
+    if(i<0){
+      nm.innerHTML='<em>Tailor-made</em>';
+      fit.textContent='Above 1,650 kWh a month, we design a package around your own energy consumption.';
+      kit.innerHTML='<li><b>+</b>Sized to your energy consumption</li><li><b>+</b>Residential or commercial</li><li><b>+</b>Installation and installation materials</li>';
+      sv.innerHTML='Free <span>quotation</span>';
+      note.textContent='Our basic packages go up to 1,650 kWh a month.';
+      btn.dataset.pkg='Tailor-made';
+    }else{
+      nm.innerHTML='<em>'+p.name+'</em>';
+      fit.textContent=p.fit;
+      kit.innerHTML=p.kit.map(function(k){return '<li><b>'+k[0]+'</b>'+k[1]+'</li>'}).join('')+'<li><b>+</b>Installation and installation materials</li>';
+      sv.innerHTML='Cg '+p.save+' <span>/ month</span>';
+      note.textContent='Rated for '+fmt(p.kwh)+' kWh a month.';
+      btn.dataset.pkg=p.name;
+    }
+    res.classList.remove('flash');void res.offsetWidth;res.classList.add('flash');
+  }
+  r.addEventListener('input',render);
+  chips.forEach(function(c){c.addEventListener('click',function(){r.value=c.dataset.kwh;render()})});
+  btn.addEventListener('click',function(){
+    for(var k=0;k<sel.options.length;k++){if(sel.options[k].text.indexOf(btn.dataset.pkg)===0){sel.selectedIndex=k;break}}
+  });
+  render();
+
+  var f=document.getElementById('quote');
+  f.addEventListener('submit',function(e){e.preventDefault();document.getElementById('thanks').hidden=false;});
+
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window){
+    var els=document.querySelectorAll('main section > .wrap > *, .story .txt, .tool, .steps li, .whys li, .svc div, details');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target)}})},{rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){
+      if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('rise','will-rise');io.observe(el)}
+    });
+  }
+})();
+</script>
+</body>
+</html>
