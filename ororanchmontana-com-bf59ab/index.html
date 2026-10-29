@@ -3,11 +3,11 @@
 <head>
 <meta name="robots" content="noindex, nofollow">
 <meta name="referrer" content="no-referrer">
-<!-- mockup ororanchmontana-com-bf59ab 1 16417dad -->
+<!-- mockup ororanchmontana-com-bf59ab 1 081966be -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ORO RANCH | Condon, Montana</title>
-<meta name="description" content="Oro Ranch: stays and events on a secluded 100-acre piece of paradise in Condon, Montana.">
+<meta name="description" content="Oro Ranch: rent the whole ranch for your wedding or event, on a secluded 100-acre piece of paradise in Condon, Montana.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..800;1,100,400&display=swap" rel="stylesheet">
@@ -70,6 +70,25 @@ section{scroll-margin-top:20px}
 .sec-head{max-width:720px}
 .sec-head h2{font-size:clamp(28px,3.4vw,44px);margin:14px 0 0}
 .sec-head p{color:var(--mute);margin:18px 0 0;font-size:18px}
+
+/* weddings and events */
+.events{border-top:1px solid var(--line-d)}
+.events .sec-head p{color:var(--mute-d)}
+.kinds{display:grid;grid-template-columns:repeat(3,1fr);margin-top:56px;border-top:1px solid var(--line-d)}
+.kinds article{padding:34px 30px 6px;border-left:1px solid var(--line-d)}
+.kinds article:first-child{border-left:0;padding-left:0}
+.kinds h3{font-size:clamp(20px,1.9vw,26px);margin:12px 0 0;color:var(--paper)}
+.kinds p:not(.eyebrow){margin:14px 0 0;color:var(--mute-d);font-size:16px;line-height:1.55}
+.events-top{display:grid;grid-template-columns:1.15fr 1fr;gap:72px;align-items:center}
+.wed-photo{margin:0}
+.wed-photo img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 62%;border-radius:3px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.lodge{margin-top:44px;padding-top:30px;border-top:1px solid var(--line-d)}
+.lodge-line{margin:12px 0 0;font-stretch:112%;font-weight:600;font-size:clamp(22px,2.2vw,30px);line-height:1.2;color:var(--paper)}
+.lodge p:last-child{margin:16px 0 0;color:var(--mute-d)}
+.kind-words{margin:60px 0 0;padding:40px 0 0;border-top:1px solid var(--line-d)}
+.kind-words blockquote{margin:0}
+.kind-words blockquote p{margin:0;max-width:34ch;font-size:clamp(24px,2.6vw,36px);line-height:1.2;font-weight:600;font-stretch:112%;color:var(--paper)}
+.kind-words figcaption{margin-top:18px;color:var(--gold);font-stretch:125%;text-transform:uppercase;letter-spacing:.1em;font-size:13px;font-weight:700}
 
 /* the day dial */
 .day{display:grid;grid-template-columns:1.55fr 1fr;gap:56px;margin-top:56px;align-items:center}
@@ -170,6 +189,10 @@ footer .wrap.made{display:block;margin-top:36px;padding-top:20px;border-top:1px 
 @media (max-width:980px){
   nav ul li:not(.keep){display:none}
   .day,.story .grid,.faq,.plan .grid{grid-template-columns:1fr;gap:44px}
+  .kinds{grid-template-columns:1fr;border-top:0}
+  .kinds article{border-left:0;padding:26px 0 8px;border-top:1px solid var(--line-d)}
+  .events-top{grid-template-columns:1fr;gap:44px}
+  .wed-photo img{aspect-ratio:4/4.4}
   .facts{grid-template-columns:1fr 1fr;row-gap:30px}
   .facts div:nth-child(3){border-left:0;padding-left:0}
   .note{position:static}
@@ -205,7 +228,7 @@ footer .wrap.made{display:block;margin-top:36px;padding-top:20px;border-top:1px 
   .note{padding:26px 22px 22px}
   .oro b{font-size:34px}
   .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:rgba(28,25,24,.97);border-top:1px solid var(--line-d)}
-  .callbar .btn{flex:1;min-height:48px;padding:0 10px;font-size:12px}
+  .callbar .btn{flex:1;min-height:48px;padding:0 10px;font-size:12px;white-space:nowrap;letter-spacing:.05em}
 }
 </style>
 </head>
@@ -217,10 +240,11 @@ footer .wrap.made{display:block;margin-top:36px;padding-top:20px;border-top:1px 
     <a class="logo" href="#top" aria-label="Oro Ranch, back to top"><img src="https://images.squarespace-cdn.com/content/v1/5e8b5d37a84ef24bcb94215b/1586270974611-DXNUKLW2W0ABIZCTR0U4/ORO_Logos-03.png?format=1500w" alt="ORO RANCH" width="1500" height="719"></a>
     <nav aria-label="Main">
       <ul>
-        <li><a href="#day">A day here</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#day">Your day</a></li>
         <li><a href="#story">Our story</a></li>
         <li><a href="#questions">Questions</a></li>
-        <li class="keep"><a class="btn btn-gold" href="#plan">Plan your visit</a></li>
+        <li class="keep"><a class="btn btn-gold" href="#plan">Plan your event</a></li>
       </ul>
     </nav>
   </div>
@@ -231,9 +255,9 @@ footer .wrap.made{display:block;margin-top:36px;padding-top:20px;border-top:1px 
     <div class="wrap">
       <p class="eyebrow">Oro Ranch &middot; Condon, Montana</p>
       <h1 id="hero-title" class="caps"><span>East of the Missions.</span> <span>West of the Swans.</span></h1>
-      <p class="lede"><strong>Stays and events</strong> on a secluded 100-acre piece of paradise in Condon, Montana, between the Swan Range and the Mission Mountains.</p>
+      <p class="lede"><strong>The whole ranch, just for your wedding or event.</strong> A secluded 100-acre piece of paradise in Condon, Montana, between the Swan Range and the Mission Mountains.</p>
       <div class="actions">
-        <a class="btn btn-gold" href="#plan">Plan your visit</a>
+        <a class="btn btn-gold" href="#plan">Plan your event</a>
         <a class="btn btn-line" href="tel:+14067542690">Call 406-754-2690</a>
       </div>
     </div>
@@ -242,20 +266,63 @@ footer .wrap.made{display:block;margin-top:36px;padding-top:20px;border-top:1px 
     </figure>
     <div class="wrap">
       <div class="facts" role="list">
-        <div role="listitem"><b>Condon</b><span>Seeley Lake just down the road</span></div>
-        <div role="listitem"><b>Stream</b><span>Fly fishing, meadows, forest trails</span></div>
-        <div role="listitem"><b>Neighbors</b><span>Eagles, deer, elk and bears</span></div>
+        <div role="listitem"><b>100 acres</b><span>The whole ranch, yours alone for your event</span></div>
+        <div role="listitem"><b>Weddings</b><span>Intimate, up to 50 guests</span></div>
+        <div role="listitem"><b>The lodge</b><span>Room for up to 31 guests to stay over</span></div>
         <div role="listitem"><b>Roots</b><span>Montana family since the 1800s</span></div>
       </div>
+    </div>
+  </section>
+
+  <section class="events sec" id="events" aria-labelledby="events-title">
+    <div class="wrap">
+      <div class="events-top">
+        <div>
+          <div class="sec-head">
+            <p class="eyebrow">The whole ranch, just for you</p>
+            <h2 id="events-title" class="caps">Weddings, retreats and film.</h2>
+            <p>Rent all of Oro Ranch for your wedding or event: meadow, mountains and forest, and a lodge for your guests.</p>
+          </div>
+          <div class="lodge">
+            <p class="eyebrow">Flint Ridge Lodge</p>
+            <p class="lodge-line">Room for up to 31 of your guests to stay over.</p>
+            <p>7,000 square feet built from old-growth tamaracks harvested on the property, with a chef's kitchen, a grand dining area, a massive rock fireplace, a camp-style screen porch and the Bear Grass Saloon.</p>
+          </div>
+        </div>
+        <figure class="wed-photo">
+          <img src="https://images.squarespace-cdn.com/content/v1/5e8b5d37a84ef24bcb94215b/784c9c54-04d9-4a4b-9736-76de3b5ad869/Bride+and+Groom.jpg?format=1500w" alt="A bride and groom in the meadow at Oro Ranch, with the mountains behind them" width="1400" height="2099" loading="lazy">
+        </figure>
+      </div>
+      <div class="kinds">
+        <article>
+          <p class="eyebrow">Weddings</p>
+          <h3 class="caps">Up to 50 guests</h3>
+          <p>Start the best conversation of your life with an intimate wedding or elopement. Meadowland, mountains and forest make a storybook backdrop for saying &ldquo;I do,&rdquo; with plenty of space for the party after.</p>
+        </article>
+        <article>
+          <p class="eyebrow">Film &amp; photography</p>
+          <h3 class="caps">Your backdrop</h3>
+          <p>The entire property and nearly all of its contents are available to help bring your vision to life, from vast panoramic landscapes to intimate indoor and outdoor spaces.</p>
+        </article>
+        <article>
+          <p class="eyebrow">Retreats</p>
+          <h3 class="caps">A haven</h3>
+          <p>Recharge and reboot, find inner harmony, stir creative juices, or form deeper connections with coworkers. You're sure to feel your blood pressure drop.</p>
+        </article>
+      </div>
+      <figure class="kind-words">
+        <blockquote><p>&ldquo;You have something close to heaven and we were lucky to share it with our family and friends for three of the best days of our lives.&rdquo;</p></blockquote>
+        <figcaption>Chris and Linda Frank, after their daughter's wedding at Oro Ranch</figcaption>
+      </figure>
     </div>
   </section>
 
   <section class="on-paper sec" id="day" aria-labelledby="day-title">
     <div class="wrap">
       <div class="sec-head">
-        <p class="eyebrow">A day at Oro Ranch</p>
+        <p class="eyebrow">Your day at Oro Ranch</p>
         <h2 id="day-title" class="caps">From one range to the other.</h2>
-        <p>Slide through a day here, from first light on the Swans to the stars over the Missions.</p>
+        <p>Slide through your day here, from coffee at first light to the stars over the Missions.</p>
       </div>
       <div class="day">
         <div>
@@ -275,7 +342,7 @@ footer .wrap.made{display:block;margin-top:36px;padding-top:20px;border-top:1px 
             <div class="fade" id="mText">
               <p class="when" id="mWhen">Sunset</p>
               <h3 class="caps" id="mTitle">Behind the Missions</h3>
-              <p class="small" id="mSmall">Stroll the lush meadows home as the light goes gold.</p>
+              <p class="small" id="mSmall">Then gather everyone in the grand dining area as the light goes gold.</p>
             </div>
           </div>
           <div class="dial">
@@ -327,20 +394,24 @@ footer .wrap.made{display:block;margin-top:36px;padding-top:20px;border-top:1px 
           <p>1420 Flint Ridge Road, Condon, Montana 59826, in the northwest corner of the state. <a href="https://www.google.com/maps/search/?api=1&amp;query=1420%20Flint%20Ridge%20Rd%2C%20Condon%2C%20MT%2059826" target="_blank" rel="noopener">Open in Google Maps</a></p>
         </details>
         <details>
-          <summary>What is there to do?</summary>
-          <p>Wet a fly in the babbling stream, stroll in lush meadows, or blaze new trails through the forest. Then watch the stars, so bright they seem close enough to touch.</p>
+          <summary>Do you rent the whole ranch?</summary>
+          <p>Yes. We rent the whole ranch for weddings and events, rather than one-night stays, so it's yours alone. Your guests can stay over in the lodge, with room for up to 31.</p>
         </details>
         <details>
-          <summary>What wildlife might I see?</summary>
-          <p>Keep an eye out for eagles, deer, elk and bears. They're just a few of the wild critters and creatures that call Oro Ranch home.</p>
+          <summary>How many guests can you host?</summary>
+          <p>Intimate weddings and elopements of up to 50 guests, with room for up to 31 of them to stay over.</p>
         </details>
         <details>
-          <summary>What is the land like?</summary>
-          <p>Meadow, stream and forest, with groves of cottonwood, pine and tamarack.</p>
+          <summary>Can we film or photograph here?</summary>
+          <p>Yes. The entire property and nearly all of its contents are available, from vast panoramic landscapes to intimate indoor and outdoor spaces.</p>
         </details>
         <details>
-          <summary>How do I plan a stay or an event?</summary>
-          <p>Call us at 406-754-2690, or tell us what you have in mind with the note below.</p>
+          <summary>What can our guests do?</summary>
+          <p>Wet a fly in the babbling stream, stroll in lush meadows, or blaze new trails through the forest, and keep an eye out for eagles, deer, elk and bears.</p>
+        </details>
+        <details>
+          <summary>How do I plan my event?</summary>
+          <p>Call us at 406-754-2690, or tell us about your event with the note below.</p>
         </details>
       </div>
     </div>
@@ -349,18 +420,20 @@ footer .wrap.made{display:block;margin-top:36px;padding-top:20px;border-top:1px 
   <section class="plan sec" id="plan" aria-labelledby="plan-title">
     <div class="wrap">
       <div class="sec-head">
-        <p class="eyebrow">Plan your visit</p>
+        <p class="eyebrow">Plan your event</p>
         <h2 id="plan-title" class="caps">Make the trip to Montana.</h2>
-        <p>Pick what brings you and when. We'll see your note just as you see it here.</p>
+        <p>Tell us what you're planning and when. We'll see your note just as you see it here.</p>
       </div>
       <div class="grid">
         <form id="planForm" novalidate>
           <fieldset>
-            <legend>What brings you</legend>
+            <legend>What you're planning</legend>
             <div class="chips">
-              <label><input type="radio" name="why" value="a stay" checked><span>A stay</span></label>
-              <label><input type="radio" name="why" value="an event"><span>An event</span></label>
-              <label><input type="radio" name="why" value="a visit"><span>Not sure yet</span></label>
+              <label><input type="radio" name="why" value="a wedding" checked><span>A wedding</span></label>
+              <label><input type="radio" name="why" value="an elopement"><span>An elopement</span></label>
+              <label><input type="radio" name="why" value="a retreat"><span>A retreat</span></label>
+              <label><input type="radio" name="why" value="a film or photo shoot"><span>A film or photo shoot</span></label>
+              <label><input type="radio" name="why" value="an event"><span>Something else</span></label>
             </div>
           </fieldset>
           <fieldset>
@@ -377,24 +450,24 @@ footer .wrap.made{display:block;margin-top:36px;padding-top:20px;border-top:1px 
               <span class="fl" id="guests-l">Guests</span>
               <div class="stepper" role="group" aria-labelledby="guests-l">
                 <button type="button" id="gMinus" aria-label="One fewer guest">&minus;</button>
-                <output id="guests" aria-live="polite">2</output>
+                <output id="guests" aria-live="polite">30</output>
                 <button type="button" id="gPlus" aria-label="One more guest">+</button>
               </div>
             </div>
             <div>
               <label class="fl" for="dates">Dates</label>
-              <input type="text" id="dates" name="dates" value="a week in August" autocomplete="off">
+              <input type="text" id="dates" name="dates" value="a weekend in August" autocomplete="off">
             </div>
           </div>
           <div class="row2">
             <div><label class="fl" for="name">Your name</label><input type="text" id="name" name="name" autocomplete="name" placeholder="First and last name"></div>
             <div><label class="fl" for="reach">Email or phone</label><input type="text" id="reach" name="reach" autocomplete="email" placeholder="So we can reply"></div>
           </div>
-          <div><label class="fl" for="msg">Anything else</label><textarea id="msg" name="msg" rows="3" placeholder="Fly fishing, quiet, a special occasion..."></textarea></div>
+          <div><label class="fl" for="msg">Anything else</label><textarea id="msg" name="msg" rows="3" placeholder="The ceremony you picture, how many will stay over..."></textarea></div>
         </form>
         <aside class="note" aria-labelledby="note-title">
           <p class="eyebrow" id="note-title">Your note to Oro Ranch</p>
-          <blockquote id="preview">Hello Oro Ranch, we're <b>2 guests</b> hoping to come for <b>a stay</b> in <b>summer</b>, around <b>a week in August</b>.</blockquote>
+          <blockquote id="preview">Hello Oro Ranch, we'd love to rent the ranch for <b>a wedding</b> in <b>summer</b>, around <b>a weekend in August</b>, with about <b>30 guests</b>.</blockquote>
           <button type="submit" form="planForm" class="btn btn-gold">Send to Oro Ranch</button>
           <p class="thanks" id="thanks" role="status"></p>
           <div class="direct">
@@ -416,13 +489,13 @@ footer .wrap.made{display:block;margin-top:36px;padding-top:20px;border-top:1px 
       <div>ORO Ranch &nbsp;|&nbsp; 1420 Flint Ridge Rd, Condon Montana 59826</div>
       <div><a href="tel:+14067542690">406-754-2690</a> &nbsp;&middot;&nbsp; <a href="https://www.ororanchmontana.com/">ororanchmontana.com</a></div>
     </div>
-    <a class="btn btn-gold" href="#plan">Plan your visit</a>
+    <a class="btn btn-gold" href="#plan">Plan your event</a>
   </div>
   <div class="wrap made">Mockup made for ORO RANCH by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></div>
 </footer>
 
 <div class="callbar" aria-label="Quick actions">
-  <a class="btn btn-gold" href="#plan">Plan your visit</a>
+  <a class="btn btn-gold" href="#plan">Plan your event</a>
   <a class="btn btn-line" href="tel:+14067542690">Call us</a>
 </div>
 
@@ -446,11 +519,11 @@ footer .wrap.made{display:block;margin-top:36px;padding-top:20px;border-top:1px 
   var steps = [].slice.call(document.querySelectorAll('.dial-steps button'));
   var scene = document.getElementById('scene'), path = scene.querySelector('.path'), sun = document.getElementById('sun'), glow = document.getElementById('glow');
   var moments = [
-    {v:0, when:'Sunrise', title:'Over the Swans', line:'Watch the sun come up over the glorious Swan Range.', small:'First light reaches the meadow from the east.'},
-    {v:24, when:'Morning', title:'On the water', line:'Wet a fly in the babbling stream.', small:'Keep an eye out for eagles, deer, elk and bears along the way.'},
-    {v:50, when:'Afternoon', title:'Into the trees', line:'Blaze new trails through the forest, or stroll in lush meadows.', small:'Listen to the breeze through groves of cottonwood, pine and tamarack.'},
-    {v:68, when:'Sunset', title:'Behind the Missions', line:'Watch the sun set behind the spectacular Mission Mountains.', small:'Stroll the lush meadows home as the light goes gold.'},
-    {v:100, when:'Night', title:'Under the stars', line:'Drink in the vast moonlit sky, with stars so bright they seem close enough to touch.', small:'All is right with the world.'}
+    {v:0, when:'Sunrise', title:'Over the Swans', line:'Watch the sun come up over the glorious Swan Range.', small:'Take your coffee to the screen porch and listen to the meadowlarks.'},
+    {v:24, when:'Morning', title:'Getting ready', line:'Get ready by the fireplace in the master suite.', small:'Your guests wake up in ensuite rooms, each with its own personality.'},
+    {v:50, when:'Afternoon', title:'In the meadow', line:'Say “I do” in the meadow, with the mountains as your backdrop.', small:'Meadowland, mountains and forest, with plenty of space for the party after.'},
+    {v:68, when:'Sunset', title:'Behind the Missions', line:'Watch the sun set behind the spectacular Mission Mountains.', small:'Then gather everyone in the grand dining area as the light goes gold.'},
+    {v:100, when:'Night', title:'Under the stars', line:'Crank up the tunes. There are no neighbors for miles.', small:'Fill the Bear Grass Saloon, then step out under stars so bright they seem close enough to touch.'}
   ];
   /* the sky colour through the day */
   var keys = [[0,'#e9b48c'],[24,'#c3dbe8'],[50,'#e6dcbc'],[68,'#9a4f30'],[100,'#151a2e']];
@@ -519,20 +592,21 @@ footer .wrap.made{display:block;margin-top:36px;padding-top:20px;border-top:1px 
 
   /* plan your visit: the note writes itself */
   var form = document.getElementById('planForm'), preview = document.getElementById('preview');
-  var guests = 2, gOut = document.getElementById('guests');
+  var guests = 30, gOut = document.getElementById('guests');
   function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
   function val(n){ var el = form.querySelector('input[name="'+n+'"]:checked'); return el ? el.value : ''; }
   function update(){
     gOut.textContent = guests;
     var dates = form.dates.value.trim(), name = form.name.value.trim(), msg = form.msg.value.trim();
-    var h = 'Hello Oro Ranch, ' + (guests === 1 ? "I'm" : "we're") + ' <b>' + guests + (guests === 1 ? ' guest' : ' guests') + '</b> hoping to come for <b>' + esc(val('why')) + '</b> in <b>' + esc(val('season')) + '</b>';
-    h += dates ? ', around <b>' + esc(dates) + '</b>.' : '.';
+    var h = 'Hello Oro Ranch, we\'d love to rent the ranch for <b>' + esc(val('why')) + '</b> in <b>' + esc(val('season')) + '</b>';
+    if (dates) h += ', around <b>' + esc(dates) + '</b>';
+    h += ', with about <b>' + guests + (guests === 1 ? ' guest' : ' guests') + '</b>.';
     if (msg) h += ' ' + esc(msg);
     if (name) h += '<br><br>Thanks, ' + esc(name);
     preview.innerHTML = h;
   }
   document.getElementById('gMinus').addEventListener('click', function(){ guests = Math.max(1, guests-1); update(); });
-  document.getElementById('gPlus').addEventListener('click', function(){ guests = Math.min(99, guests+1); update(); });
+  document.getElementById('gPlus').addEventListener('click', function(){ guests = Math.min(50, guests+1); update(); });
   form.addEventListener('input', update);
   form.addEventListener('change', update);
   form.addEventListener('submit', function(e){
