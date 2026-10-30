@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup myyogawill-com-0b56c8 1 4cf166e0 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My YogaWill | Inclusive Yoga for Every Body</title>
+<meta name="description" content="Accessible yoga for stroke survivors, trauma and neurodivergent communities. Initial consultations and sample classes are always free.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#194027; --green-2:#24563a; --mauve:#7a6560; --mauve-ink:#6b5853;
+  --sage:#e4ebe2; --sage-2:#d3dfd0; --cream:#f7f4ee; --sand:#ece4da;
+  --ink:#1d2620; --ink-2:#3d4740; --line:#d9d2c7; --white:#fff;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1160px; --r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 18px/1.65 var(--sans);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:600;color:var(--green);line-height:1.12;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(34px,4.4vw,52px)}
+h3{font-size:28px}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.label{font:600 13px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--mauve-ink)}
+:focus-visible{outline:3px solid #c58a2b;outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--white);padding:10px 16px;border-radius:8px;z-index:50}
+.skip:focus{top:56px}
+
+/* banner */
+.mock{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:var(--green);color:#f3f6f1;font:400 15px/1.35 var(--sans);text-align:center}
+.mock a{color:#fff;text-decoration:underline;text-underline-offset:3px;font-weight:500}
+
+/* header */
+.top{background:var(--white);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;gap:24px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.logo{width:118px;height:64px;overflow:hidden;position:relative;flex:none}
+.logo img{position:absolute;width:143px;max-width:none;left:-22px;top:-32px}
+.brand b{font:600 22px/1 var(--serif);color:var(--green)}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{text-decoration:none;font-size:16px;color:var(--ink-2);padding:12px 14px;border-radius:999px}
+.nav a:hover{color:var(--green);background:var(--sage)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 26px;border-radius:999px;font:500 17px/1.2 var(--sans);text-decoration:none;border:2px solid var(--green);cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.btn-main{background:var(--green);color:#fff}
+.btn-main:hover{background:var(--green-2);border-color:var(--green-2)}
+.btn-ghost{background:transparent;color:var(--green)}
+.btn-ghost:hover{background:var(--sage)}
+.nav .btn{min-height:46px;padding:10px 20px;font-size:16px;margin-left:8px;color:#fff}
+.nav .btn:hover{background:var(--green-2);color:#fff}
+
+/* hero */
+.hero{padding:64px 0 80px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.hero h1{font-size:clamp(46px,5.6vw,74px);line-height:1.04}
+.hero h1 .name{display:block;font:600 15px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--mauve-ink);margin-bottom:22px}
+.hero .lede{font-size:20px;color:var(--ink-2);margin:26px 0 34px;max-width:33em}
+.hero .lede strong{color:var(--green);font-weight:600}
+.actions{display:flex;flex-wrap:wrap;gap:14px}
+.proof{display:flex;align-items:center;gap:14px;margin-top:38px;padding-top:26px;border-top:1px solid var(--line);font-size:16px;color:var(--ink-2)}
+.proof img{width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:50% 20%}
+.proof b{color:var(--ink);font-weight:600}
+.photo{position:relative;border-radius:22px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(25,64,39,.45)}
+.photo img{width:100%;height:640px;object-fit:cover;object-position:50% 58%}
+.photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:70px 28px 24px;background:linear-gradient(to top,rgba(10,20,14,.82),rgba(10,20,14,0));color:#fff;font:italic 500 30px/1.15 var(--serif)}
+
+/* crew strip */
+.crew{background:var(--green);color:#eef3ec;padding:30px 0}
+.crew .wrap{display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.crew .label{color:#c9d8c6}
+.crew ul{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin:0;padding:0;flex:1}
+.crew li{border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:6px 16px;font-size:16px}
+.crew strong{font:italic 500 24px/1 var(--serif);color:#fff}
+
+/* sections */
+section{scroll-margin-top:20px}
+.sec{padding:110px 0}
+.head{max-width:680px;margin-bottom:48px}
+.head p{margin-top:16px;font-size:19px;color:var(--ink-2)}
+
+/* finder */
+.finder{background:var(--cream);border-top:1px solid var(--line)}
+.picker{display:grid;grid-template-columns:minmax(0,1fr) 500px;gap:72px;align-items:start}
+.picker .head{margin-bottom:36px}
+.choices{display:flex;flex-direction:column;gap:10px;max-width:460px}
+.choice{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:62px;padding:14px 20px;text-align:left;background:var(--white);border:2px solid var(--line);border-radius:var(--r);font:500 17px/1.3 var(--sans);color:var(--ink);cursor:pointer;transition:background .2s,border-color .2s}
+.choice:hover{border-color:var(--sage-2)}
+.choice .ar{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;flex:none;color:var(--green);transition:transform .25s}
+.choice[aria-pressed="true"]{background:var(--sage);border-color:var(--green);color:var(--green)}
+.choice[aria-pressed="true"] .ar{background:var(--green);color:#fff;transform:translateX(4px)}
+.answer{display:flex;flex-direction:column;width:100%;max-width:500px;background:var(--white);border-radius:22px;overflow:hidden;min-height:700px;box-shadow:0 1px 0 rgba(25,64,39,.06),0 24px 48px -34px rgba(25,64,39,.5)}
+.answer .pic{background:var(--sage);display:flex;align-items:center;justify-content:center;aspect-ratio:3/2;flex:none}
+.answer .pic img{width:100%;height:auto}
+.answer .body{flex:1}
+.answer .pic.mark{background:#fff}
+.answer .pic.mark img{width:min(260px,70%);height:auto;object-fit:contain}
+.answer .pic.type{background:var(--green);color:#fff;flex-direction:column;gap:6px;text-align:center}
+.answer .pic.type b{font:600 96px/1 var(--serif)}
+.answer .pic.type span{font:500 15px/1.4 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#cfdccb}
+.answer .body{padding:40px 40px 36px;display:flex;flex-direction:column}
+.answer h3{font-size:34px;margin:8px 0 14px}
+.answer .body > p{color:var(--ink-2)}
+.facts{list-style:none;padding:0;margin:22px 0 28px;display:grid;gap:10px}
+.facts li{display:flex;gap:12px;align-items:flex-start;font-size:16.5px;line-height:1.45}
+.facts li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--green);margin-top:8px;flex:none}
+.answer .btn{margin-top:auto;align-self:flex-start}
+.answer.swap .body,.answer.swap .pic img{animation:fade .45s ease}
+@keyframes fade{from{opacity:.25;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* classes */
+.classes{background:var(--sage)}
+.cls{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.card{background:var(--white);border-radius:22px;padding:40px;display:flex;flex-direction:column;box-shadow:0 1px 0 rgba(25,64,39,.06),0 20px 40px -32px rgba(25,64,39,.5)}
+.card .where{display:inline-flex;align-self:flex-start;gap:8px;align-items:center;background:var(--cream);border-radius:999px;padding:6px 14px;font:600 13px/1.3 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--mauve-ink)}
+.card h3{margin:20px 0 6px}
+.card .when{font:italic 500 22px/1.3 var(--serif);color:var(--ink);margin-bottom:14px}
+.card p{color:var(--ink-2)}
+.card .btn{margin-top:28px;align-self:flex-start}
+.free{margin-top:36px;text-align:center;font:italic 500 24px/1.35 var(--serif);color:var(--green)}
+
+/* rachel */
+.rachel .wrap:not(.road){display:grid;grid-template-columns:420px 1fr;gap:72px;align-items:start}
+.portrait{border-radius:22px;overflow:hidden;max-width:420px}
+.portrait img{width:100%}
+.rachel h2{margin:14px 0 22px}
+.story{font:400 italic 25px/1.45 var(--serif);color:var(--ink);border-left:3px solid var(--green);padding-left:24px;margin:0 0 22px}
+.rachel .wrap > div > p{color:var(--ink-2)}
+.creds{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 0;padding:0;list-style:none}
+.creds li{background:var(--white);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:15px;font-weight:500;color:var(--green)}
+.road{margin-top:72px;position:relative}
+.road ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(8,1fr);gap:16px;position:relative}
+.road ol::before{content:"";position:absolute;left:0;right:0;top:9px;height:2px;background:var(--sage-2)}
+.road li{position:relative;padding-top:34px;font-size:15px;line-height:1.45;color:var(--ink-2)}
+.road li::before{content:"";position:absolute;top:2px;left:0;width:16px;height:16px;border-radius:50%;background:var(--cream);border:3px solid var(--green)}
+.road li:last-child::before{background:var(--green)}
+.road b{display:block;font:600 22px/1.2 var(--serif);color:var(--green);margin-bottom:4px}
+
+/* quote */
+.quote{background:var(--green);color:#fff;padding:110px 0;text-align:center}
+.quote blockquote{margin:0 auto;max-width:880px}
+.quote p{font:italic 500 clamp(32px,4vw,50px)/1.18 var(--serif)}
+.quote cite{display:block;margin-top:22px;font:400 15px/1 var(--sans);font-style:normal;letter-spacing:.12em;text-transform:uppercase;color:#c9d8c6}
+.quote .give{margin-top:56px;padding-top:40px;border-top:1px solid rgba(255,255,255,.18);display:flex;flex-wrap:wrap;gap:18px 28px;align-items:center;justify-content:center;font-size:17px;color:#dfe8dc}
+.quote .btn-ghost{border-color:#fff;color:#fff}
+.quote .btn-ghost:hover{background:rgba(255,255,255,.12)}
+
+/* faq */
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-child{border-top:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;align-items:center;min-height:72px;padding:16px 0;font:600 22px/1.3 var(--serif);color:var(--ink)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:400 30px/1 var(--sans);color:var(--green);transition:transform .25s;flex:none}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 24px;color:var(--ink-2);max-width:40em}
+
+/* contact */
+.contact{background:var(--sand)}
+.contact .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.contact .head{margin:0}
+.reach{margin-top:34px;display:grid;gap:12px}
+.reach a{display:flex;align-items:center;gap:14px;text-decoration:none;font-size:18px;font-weight:500;color:var(--green);min-height:48px}
+.reach svg{flex:none}
+form{background:var(--white);border-radius:22px;padding:40px;display:grid;gap:20px;box-shadow:0 30px 60px -40px rgba(25,64,39,.5)}
+label{display:block;font-size:15px;font-weight:600;color:var(--ink);margin-bottom:8px}
+label small{font-weight:400;color:var(--ink-2)}
+input,select,textarea{width:100%;min-height:54px;padding:12px 16px;border:1.5px solid #b9b1a6;border-radius:12px;background:var(--white);font:400 17px/1.4 var(--sans);color:var(--ink)}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:3px solid #c58a2b;outline-offset:1px;border-color:var(--green)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+form .btn{width:100%;min-height:58px;font-size:18px}
+.note{font-size:14px;color:var(--ink-2);text-align:center}
+.thanks{display:none;background:var(--sage);border-radius:12px;padding:16px 20px;font-weight:500;color:var(--green)}
+.thanks.on{display:block}
+
+/* footer */
+footer{background:var(--ink);color:#c8cfc9;padding:64px 0 40px;font-size:16px}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+footer h2{font:600 26px/1.2 var(--serif);color:#fff;margin-bottom:12px}
+footer a{color:#fff;text-decoration:none}
+footer a:hover{text-decoration:underline}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+footer ul a{display:inline-block;padding:6px 0}
+footer .small{grid-column:1/-1;border-top:1px solid #39443c;padding-top:28px;font-size:14px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer .made a{text-decoration:underline}
+
+/* phone call bar */
+.callbar{display:none}
+
+/* motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+  .will-rise{opacity:1;transform:none}
+}
+
+@media (max-width:1020px){
+  .nav a:not(.btn){display:none}
+  .hero .wrap,.rachel .wrap:not(.road),.faq .wrap,.contact .wrap{grid-template-columns:1fr;gap:44px}
+  .picker{grid-template-columns:1fr}
+  .road ol{grid-template-columns:repeat(4,1fr);row-gap:30px}
+  .road ol::before{display:none}
+}
+@media (max-width:720px){
+  body{font-size:17px;padding-bottom:76px}
+  .wrap{padding:0 20px}
+  .top .wrap{height:72px}
+  .logo{width:96px;height:52px}
+  .logo img{width:116px;left:-18px;top:-26px}
+  .brand b{font-size:20px}
+  .nav .btn{min-height:44px;padding:8px 16px;font-size:15px}
+  .hero{padding:36px 0 48px}
+  .hero h1{font-size:44px}
+  .hero h1 .name{margin-bottom:16px;font-size:14px}
+  .hero .lede{font-size:18px;margin:18px 0 26px}
+  .actions .btn{width:100%}
+  .photo img{height:400px}
+  .photo figcaption{font-size:24px;padding:60px 20px 18px}
+  .proof{margin-top:28px;padding-top:20px;font-size:15px}
+  .crew{padding:26px 0}
+  .crew .wrap{gap:14px}
+  .crew li{font-size:15px;padding:5px 13px}
+  .sec{padding:72px 0}
+  .head{margin-bottom:32px}
+  .head p{font-size:17.5px}
+  .choice{min-height:56px;font-size:16.5px;padding:12px 16px}
+  .answer{grid-template-columns:1fr;min-height:0}
+  .answer .pic{min-height:0;aspect-ratio:3/2}
+  .answer .pic.mark,.answer .pic.type{aspect-ratio:auto;padding:30px 0}
+  .answer .pic.mark img{width:170px}
+  .answer .pic.type b{font-size:72px}
+  .answer .body{padding:28px 22px 26px}
+  .answer h3{font-size:30px}
+  .answer .btn{width:100%}
+  .cls{grid-template-columns:1fr;gap:18px}
+  .card{padding:28px 22px}
+  .card .btn{width:100%}
+  .free{font-size:21px;margin-top:28px}
+  .portrait{max-width:100%}
+  .story{font-size:22px;padding-left:18px}
+  .road{margin-top:52px}
+  .road ol{grid-template-columns:1fr;gap:0;padding-left:4px}
+  .road ol::before{display:block;left:11px;right:auto;top:8px;bottom:8px;width:2px;height:auto}
+  .road li{padding:0 0 22px 40px}
+  .road li::before{top:4px;left:4px}
+  .road b{display:inline;margin-right:8px;font-size:20px}
+  .quote{padding:76px 0}
+  .faq summary{font-size:20px}
+  form{padding:26px 20px}
+  .row{grid-template-columns:1fr}
+  footer .wrap{grid-template-columns:1fr;gap:32px}
+  .callbar{display:grid;grid-template-columns:1fr 1.25fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid var(--line);box-shadow:0 -10px 24px -18px rgba(0,0,0,.35)}
+  .callbar .btn{min-height:50px;padding:10px 12px;font-size:16px}
+}
+</style>
+</head>
+<body>
+<div class="mock">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="My YogaWill, back to top">
+      <span class="logo"><img src="https://images.squarespace-cdn.com/content/v1/610ad5faa4daf608a4bd5da1/0350722d-bf65-4840-b48d-e9bd797643ad/1500x1500.png?format=1500w" alt="My YogaWill logo" width="1500" height="1500"></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#find">Find your class</a>
+      <a href="#classes">Classes</a>
+      <a href="#rachel">About Rachel</a>
+      <a href="#questions">Questions</a>
+      <a class="btn btn-main" href="tel:+17572958476">Call 757-295-8476</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div>
+      <h1 id="hero-title"><span class="name">My YogaWill</span>Yoga with room for every&nbsp;body.</h1>
+      <p class="lede">Accessible yoga for stroke survivors, trauma and neurodivergent communities, with classes and trainings that don't break the bank. <strong>Your first consultation or sample class is always free.</strong></p>
+      <div class="actions">
+        <a class="btn btn-main" href="#start">Book a free first session</a>
+        <a class="btn btn-ghost" href="#find">Find your class</a>
+      </div>
+      <div class="proof">
+        <img src="https://images.squarespace-cdn.com/content/v1/610ad5faa4daf608a4bd5da1/23e4c16c-f8a0-4c85-9c23-816cf9c5b46e/imageye___-_imgi_1_IMG_9355.jpg?format=500w" alt="" width="500" height="623">
+        <p>Taught by <b>Rachel</b>, a 15-year stroke survivor and Yoga Alliance E-RYT&nbsp;500 teacher.</p>
+      </div>
+    </div>
+    <figure class="photo" style="margin:0">
+      <img src="https://images.squarespace-cdn.com/content/v1/610ad5faa4daf608a4bd5da1/ba8351b2-6d0d-47e7-85e9-497d59772f0a/Rachel_Main_Page_Hero_Section.png?format=1500w" alt="A My YogaWill class at the studio wall, one student supported by a chair and two others" width="1280" height="1706">
+      <figcaption>“My YogaWill set me free.”</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="crew" role="region" aria-label="Who is welcome">
+  <div class="wrap">
+    <strong>Bring your crew.</strong>
+    <ul>
+      <li>Cane</li><li>Shoes</li><li>AFO</li><li>Walker</li><li>Chair</li><li>Caregiver</li><li>Emotional support friend</li>
+    </ul>
+    <span class="label">All welcome</span>
+  </div>
+</div>
+
+<section class="sec finder" id="find" aria-labelledby="find-title">
+  <div class="wrap">
+    <div class="picker" data-rise>
+      <div class="side">
+      <div class="head">
+        <p class="label">Your yoga, your way</p>
+        <h2 id="find-title" style="margin-top:12px">What brings you here?</h2>
+        <p>Pick the one that sounds most like you. Every offering is built for every body.</p>
+      </div>
+      <div class="choices" role="group" aria-label="Choose what brings you here">
+        <button class="choice" type="button" data-k="stroke" aria-pressed="true">I've had a stroke<span class="ar" aria-hidden="true">→</span></button>
+        <button class="choice" type="button" data-k="private" aria-pressed="false">I'd like one-on-one time<span class="ar" aria-hidden="true">→</span></button>
+        <button class="choice" type="button" data-k="group" aria-pressed="false">I have a small group<span class="ar" aria-hidden="true">→</span></button>
+        <button class="choice" type="button" data-k="sound" aria-pressed="false">I want to relax and reset<span class="ar" aria-hidden="true">→</span></button>
+        <button class="choice" type="button" data-k="ytt" aria-pressed="false">I want to teach yoga<span class="ar" aria-hidden="true">→</span></button>
+      </div>
+      </div>
+      <article class="answer" id="answer" aria-live="polite">
+        <div class="pic mark" id="a-pic"><img id="a-img" src="https://images.squarespace-cdn.com/content/v1/610ad5faa4daf608a4bd5da1/d1207e29-c2e6-4ec7-b976-bbd2ce50b3d3/imageye___-_imgi_2_Rachel%2Bjarmusz-01.png?format=500w" alt="The Stroke Yoga mark" width="500" height="500"></div>
+        <div class="body">
+          <p class="label" id="a-for">For stroke survivors</p>
+          <h3 id="a-title">Stroke Yoga™</h3>
+          <p id="a-text">Accessible yoga for stroke survivors. Building strength, balance, and resilience at your own pace.</p>
+          <ul class="facts" id="a-facts">
+            <li>In person in Boulder, CO, or online on Zoom</li>
+            <li>A Zoom circle for women stroke survivors, Wednesdays at 2:00 PM EST</li>
+            <li>Taught by a 15-year stroke survivor</li>
+          </ul>
+          <a class="btn btn-main" id="a-go" href="#start" data-pick="Stroke Yoga™">Ask about Stroke Yoga™</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec classes" id="classes" aria-labelledby="classes-title">
+  <div class="wrap">
+    <div class="head" data-rise>
+      <p class="label">Stroke Yoga™ classes</p>
+      <h2 id="classes-title" style="margin-top:12px">Join us in the room, or from home.</h2>
+    </div>
+    <div class="cls">
+      <article class="card" data-rise>
+        <span class="where">In person · Boulder, CO</span>
+        <h3>Stroke Yoga™ Live Class</h3>
+        <p class="when">Date to be announced</p>
+        <p>Bring your crew: cane, shoes, AFO, walker, chair, caregiver, emotional support friend. All welcome.</p>
+        <a class="btn btn-main" href="#start" data-pick="Stroke Yoga™ Live Class (Boulder)">Hear when it's on</a>
+      </article>
+      <article class="card" data-rise>
+        <span class="where">Online · Zoom</span>
+        <h3>Stroke Yoga™ Circle</h3>
+        <p class="when">Wednesdays · 2:00 PM EST · Spring Session</p>
+        <p>Join our online community from wherever you are. A circle built for women stroke survivors.</p>
+        <a class="btn btn-main" href="#start" data-pick="Stroke Yoga™ Circle (Zoom)">Save me a place</a>
+      </article>
+    </div>
+    <p class="free" data-rise>Initial consultations and sample classes are always free.</p>
+  </div>
+</section>
+
+<section class="sec rachel" id="rachel" aria-labelledby="rachel-title">
+  <div class="wrap">
+    <div class="portrait" data-rise>
+      <img src="https://images.squarespace-cdn.com/content/v1/610ad5faa4daf608a4bd5da1/23e4c16c-f8a0-4c85-9c23-816cf9c5b46e/imageye___-_imgi_1_IMG_9355.jpg?format=500w" alt="Rachel, founder and director of My YogaWill" width="500" height="623" loading="lazy">
+    </div>
+    <div data-rise>
+      <p class="label">Meet Rachel, founder &amp; director</p>
+      <h2 id="rachel-title">Stroke survivor. Teacher. Advocate.</h2>
+      <p class="story">“At 25, I had a massive ischemic stroke that paralyzed my left side. I was told there were many things my body would never do again. Yoga met me where I was.”</p>
+      <p>Today Rachel teaches the practice she needed back then, so no one has to walk into a studio wondering if there's room for their body. There is.</p>
+      <ul class="creds" aria-label="Credentials">
+        <li>E-RYT 500</li><li>Yoga Alliance School</li><li>300hr Training, India</li><li>IAYT Training</li><li>200hr YTT Lead Trainer</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap road" data-rise>
+    <h3 class="label" style="font-family:var(--sans);margin-bottom:26px">The road so far</h3>
+    <ol>
+      <li><b>2009</b>Massive ischemic stroke at 25. Left side paralyzed.</li>
+      <li><b>2010</b>Discovered yoga during rehabilitation.</li>
+      <li><b>2014</b>Completed 200hr teacher training.</li>
+      <li><b>2017</b>E-RYT 200 through Yoga Alliance.</li>
+      <li><b>2019</b>India for 300hr advanced training.</li>
+      <li><b>2021</b>Achieved E-RYT 500.</li>
+      <li><b>2023</b>Founded My YogaWill as a non-profit initiative.</li>
+      <li><b>2025</b>501(c)(3) pending. Growing online and in person.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="quote" aria-label="Our belief">
+  <div class="wrap">
+    <blockquote data-rise>
+      <p>“Anybody can breathe. Therefore, anyone can practice yoga.”</p>
+      <cite>T.K.V. Desikachar</cite>
+    </blockquote>
+    <div class="give" data-rise>
+      <span>My YogaWill is a non-profit initiative, 501(c)(3) status pending.</span>
+      <a class="btn btn-ghost" href="https://www.myyogawill.com/">Donate</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec faq" id="questions" aria-labelledby="faq-title">
+  <div class="wrap">
+    <div class="head" data-rise>
+      <p class="label">Before you come</p>
+      <h2 id="faq-title" style="margin-top:12px">Good questions.</h2>
+    </div>
+    <div data-rise>
+      <details open>
+        <summary>Is yoga really for me?</summary>
+        <p>Yes. Our classes are made for people who feel unsure if yoga is for them, including stroke survivors, trauma and neurodivergent communities. You go at your own pace.</p>
+      </details>
+      <details>
+        <summary>What does it cost?</summary>
+        <p>Initial consultations and sample classes are always free, and so is your first private session. Our classes and trainings are built not to break the bank, and teacher training has scholarships.</p>
+      </details>
+      <details>
+        <summary>Can I bring my walker, or someone with me?</summary>
+        <p>Please do. Cane, shoes, AFO, walker, chair, caregiver, emotional support friend. All welcome.</p>
+      </details>
+      <details>
+        <summary>Can I join from home?</summary>
+        <p>Yes. The Stroke Yoga™ Circle meets on Zoom, Wednesdays at 2:00 PM EST, for women stroke survivors. An on-demand video library is coming soon.</p>
+      </details>
+      <details>
+        <summary>Should I check with my doctor first?</summary>
+        <p>Yes. Yoga is not a substitute for medical care. Please consult your doctor before starting classes.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="sec contact" id="start" aria-labelledby="start-title">
+  <div class="wrap">
+    <div class="head" data-rise>
+      <p class="label">Ready to connect?</p>
+      <h2 id="start-title" style="margin-top:12px">Your first session is on us.</h2>
+      <p>Tell us a little about you and what you're looking for, and ask for your free consultation or sample class.</p>
+      <div class="reach">
+        <a href="tel:+17572958476"><svg width="44" height="44" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="22" fill="#194027"/><path d="M17.6 13.5c.5 0 .9.3 1.1.7l1.4 3.3c.2.5.1 1-.3 1.4l-1.5 1.4a12 12 0 0 0 5.4 5.4l1.4-1.5c.4-.4.9-.5 1.4-.3l3.3 1.4c.4.2.7.6.7 1.1v2.8c0 .7-.6 1.3-1.3 1.3A17 17 0 0 1 13.5 14.8c0-.7.6-1.3 1.3-1.3z" fill="#fff"/></svg>757-295-8476</a>
+        <a href="https://www.instagram.com/strokeyoga" target="_blank" rel="noopener"><svg width="44" height="44" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="22" fill="#7a6560"/><rect x="14" y="14" width="16" height="16" rx="4.5" fill="none" stroke="#fff" stroke-width="2"/><circle cx="22" cy="22" r="3.8" fill="none" stroke="#fff" stroke-width="2"/><circle cx="26.6" cy="17.4" r="1.1" fill="#fff"/></svg>@strokeyoga on Instagram</a>
+      </div>
+    </div>
+    <form id="form" novalidate data-rise>
+      <div class="row">
+        <div><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name"></div>
+        <div><label for="f-contact">Phone or email</label><input id="f-contact" name="contact" autocomplete="email"></div>
+      </div>
+      <div>
+        <label for="f-what">I'm interested in</label>
+        <select id="f-what" name="what">
+          <option>Stroke Yoga™</option>
+          <option>Stroke Yoga™ Live Class (Boulder)</option>
+          <option>Stroke Yoga™ Circle (Zoom)</option>
+          <option>Private Yoga</option>
+          <option>Small Group Yoga</option>
+          <option>Sound Healing</option>
+          <option>Yoga Teacher Training</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+      <div>
+        <label for="f-note">Anything we should know? <small>(optional)</small></label>
+        <textarea id="f-note" name="note" placeholder="For example, if you use a cane or walker, or will bring someone with you"></textarea>
+      </div>
+      <button class="btn btn-main" type="submit">Ask for my free session</button>
+      <p class="thanks" id="thanks" role="status">Thanks, your message is ready to send.</p>
+      <p class="note">Or call us on <a href="tel:+17572958476">757-295-8476</a>.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h2>My YogaWill</h2>
+      <p>Inclusive yoga for every body. 501(c)(3) status pending.</p>
+      <p style="margin-top:12px">Yoga is not a substitute for medical care. Please consult your doctor before starting classes.</p>
+    </div>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="#find">Find your class</a></li>
+        <li><a href="#classes">Classes</a></li>
+        <li><a href="#rachel">About Rachel</a></li>
+        <li><a href="#questions">Questions</a></li>
+      </ul>
+    </nav>
+    <ul>
+      <li><a href="tel:+17572958476">757-295-8476</a></li>
+      <li><a href="https://www.instagram.com/strokeyoga" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.myyogawill.com/">myyogawill.com</a></li>
+    </ul>
+    <div class="small">
+      <span>© 2025 My YogaWill. All Rights Reserved.</span>
+      <span class="made">Mockup made for My YogaWill by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar" role="region" aria-label="Quick contact">
+  <a class="btn btn-ghost" href="tel:+17572958476">Call us</a>
+  <a class="btn btn-main" href="#start">Free first session</a>
+</div>
+
+<script>
+(function(){
+  var S='https://images.squarespace-cdn.com/content/v1/610ad5faa4daf608a4bd5da1/';
+  var data={
+    stroke:{f:'For stroke survivors',t:'Stroke Yoga™',p:'Accessible yoga for stroke survivors. Building strength, balance, and resilience at your own pace.',
+      l:['In person in Boulder, CO, or online on Zoom','A Zoom circle for women stroke survivors, Wednesdays at 2:00 PM EST','Taught by a 15-year stroke survivor'],
+      img:S+'d1207e29-c2e6-4ec7-b976-bbd2ce50b3d3/imageye___-_imgi_2_Rachel%2Bjarmusz-01.png?format=500w',alt:'The Stroke Yoga mark',cls:'mark',pick:'Stroke Yoga™'},
+    private:{f:'Just you and your teacher',t:'Private Yoga',p:'Personalized 1-on-1 sessions, built around you.',
+      l:['30 or 60 minutes','Your first session is always free'],
+      img:S+'eca8e476-aa87-463b-b726-be9d02384743/imageye___-_imgi_5_Rachel%2BJ-11+%281%29.jpg?format=500w',alt:'A chair-supported forward fold with yoga blocks',cls:'',pick:'Private Yoga'},
+    group:{f:'For groups of 2 to 8',t:'Small Group Yoga',p:'Tailored sessions for your group. Gentle, moderate, or energizing: your group sets the tone.',
+      l:['Groups of 2 to 8','Gentle, moderate or energizing','A free sample class to start'],
+      img:S+'08dc1c77-bf9f-4d84-93c3-6f49f9487d5e/Rachel_Small_Yoga_Image.jpeg?format=500w',alt:'A small group holding a standing pose with arms outstretched',cls:'',pick:'Small Group Yoga'},
+    sound:{f:'No experience needed',t:'Sound Healing',p:'Tibetan bowl sound sessions for relaxation, alignment, and inner peace.',
+      l:['Tibetan singing bowls','No yoga experience needed'],
+      img:S+'402347df-1c67-4ad8-9527-86d705995a37/imageye___-_imgi_6_Rachel%2BJ-14+%281%29.jpg?format=500w',alt:'A Tibetan singing bowl held with its mallet',cls:'',pick:'Sound Healing'},
+    ytt:{f:'Become a teacher',t:'Yoga Teacher Training',p:'200hr Yoga Alliance certified training, designed to be accessible for all.',
+      l:['200 hours, Yoga Alliance certified','Scholarships available','Led by an E-RYT 500 lead trainer'],
+      img:'',alt:'',cls:'type',pick:'Yoga Teacher Training'}
+  };
+  var $=function(id){return document.getElementById(id)};
+  var ans=$('answer'),pic=$('a-pic'),go=$('a-go');
+  function show(k){
+    var d=data[k];
+    document.querySelectorAll('.choice').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.k===k?'true':'false')});
+    pic.className='pic '+d.cls;
+    if(d.img){pic.innerHTML='<img id="a-img" src="'+d.img+'" alt="'+d.alt+'" width="500" height="'+(d.cls==='mark'?500:333)+'">';}
+    else{pic.innerHTML='<b>200</b><span>hour training</span>';}
+    $('a-for').textContent=d.f;$('a-title').textContent=d.t;$('a-text').textContent=d.p;
+    $('a-facts').innerHTML=d.l.map(function(x){return '<li>'+x+'</li>'}).join('');
+    go.textContent='Ask about '+d.t;go.dataset.pick=d.pick;
+    ans.classList.remove('swap');void ans.offsetWidth;ans.classList.add('swap');
+  }
+  document.querySelectorAll('.choice').forEach(function(b){b.addEventListener('click',function(){show(b.dataset.k)})});
+
+  var sel=$('f-what');
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('[data-pick]');if(!a)return;
+    var v=a.dataset.pick;
+    for(var i=0;i<sel.options.length;i++){if(sel.options[i].text===v){sel.selectedIndex=i;break;}}
+  });
+  $('form').addEventListener('submit',function(e){e.preventDefault();$('thanks').classList.add('on');$('thanks').focus&&$('thanks').setAttribute('tabindex','-1');$('thanks').focus();});
+
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce&&'IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target);}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('[data-rise]').forEach(function(el){
+      if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('rise','will-rise');io.observe(el);}
+    });
+  }
+})();
+</script>
+</body>
+</html>
