@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup asperahartmann-com-29851a 1 9dfc3d87 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aspera Hartmann Spirit &amp; Strategy</title>
+<meta name="description" content="Aspera Hartmann specializes in Strategic Design and Business Intelligence: conceptual systems for individuals, companies, cities and countries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0c0c0b; --ink2:#161614; --bone:#f2eee6; --paper:#faf8f4;
+  --mute-d:#a9a49a; --mute-l:#5b564e; --line-d:rgba(242,238,230,.16); --line-l:rgba(12,12,11,.14);
+  --gold:#c9a86a; --focus:#b8862c;
+  --sans:"Jost","Futura","Century Gothic",system-ui,sans-serif;
+  --serif:"Cormorant Garamond","Garamond","Times New Roman",serif;
+  --wrap:1200px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--bone);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 40px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--bone);color:var(--ink);padding:10px 14px;z-index:50}
+.skip:focus{top:52px}
+
+/* banner */
+.mockup-banner{display:flex;align-items:center;justify-content:center;min-height:44px;padding:0 16px;background:var(--bone);color:var(--ink);font:400 15px/1.2 var(--sans);text-align:center;white-space:nowrap;border-bottom:1px solid var(--line-l)}
+.mockup-banner a{color:var(--ink);text-decoration:underline;text-underline-offset:3px;font-weight:500}
+
+/* header */
+.site-head{position:sticky;top:0;z-index:20;background:rgba(12,12,11,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line-d)}
+.site-head .wrap{display:flex;align-items:center;gap:28px;height:72px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;min-height:44px}
+.mono{display:inline-grid;place-items:center;width:38px;height:38px;border:1px solid currentColor;font:400 17px/1 var(--sans);letter-spacing:.04em}
+.brand-words{display:flex;flex-direction:column;line-height:1.15}
+.brand-words b{font-weight:400;letter-spacing:.16em;font-size:14px;text-transform:uppercase}
+.brand-words span{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute-d)}
+.nav{display:flex;gap:6px;margin-left:auto}
+.nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute-d);transition:color .2s}
+.nav a:hover{color:var(--bone)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border:1px solid var(--bone);background:var(--bone);color:var(--ink);font:500 13px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.btn:hover{background:transparent;color:var(--bone)}
+.btn.ghost{background:transparent;color:var(--bone);border-color:var(--line-d)}
+.btn.ghost:hover{border-color:var(--bone)}
+.btn.dark{background:var(--ink);color:var(--bone);border-color:var(--ink)}
+.btn.dark:hover{background:transparent;color:var(--ink)}
+.btn .arr{font-family:var(--sans);font-weight:300;letter-spacing:0}
+.head-cta{min-height:44px;padding:0 18px}
+
+/* type */
+.eyebrow{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--mute-d);margin:0 0 22px}
+.light .eyebrow,.paper .eyebrow{color:var(--mute-l)}
+h1,h2,h3{font-weight:300;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(34px,4.4vw,58px);line-height:1.04}
+em.art,.art{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:0}
+.lead{font-size:19px;color:var(--mute-d);max-width:34em}
+.light .lead,.paper .lead{color:var(--mute-l)}
+section{padding:120px 0}
+.light{background:var(--bone);color:var(--ink)}
+.paper{background:var(--paper);color:var(--ink)}
+
+/* hero */
+.hero{padding:0;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px;min-height:calc(100vh - 116px);min-height:calc(100svh - 116px);padding-top:56px;padding-bottom:64px}
+.hero h1{font-size:clamp(44px,6.2vw,92px);line-height:.98;font-weight:300}
+.hero h1 .art{font-size:1.08em;color:var(--gold)}
+.hero .lead{margin:30px 0 40px;font-size:20px}
+.hero .lead strong{color:var(--bone);font-weight:400}
+.actions{display:flex;flex-wrap:wrap;gap:14px}
+.system{width:100%;max-width:540px;justify-self:end}
+.system svg{width:100%;height:auto;display:block;overflow:visible}
+.system figcaption{margin-top:6px;text-align:center;font-family:var(--serif);font-style:italic;font-size:19px;color:var(--mute-d)}
+.sys-nums,.sys-list{display:none}
+.sys-list{list-style:none;margin:18px 0 0;padding:16px 0 0;border-top:1px solid var(--line-d);grid-template-columns:1fr 1fr;gap:10px 18px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--bone)}
+.sys-list li{display:flex;gap:10px;align-items:baseline}
+.sys-list span{color:var(--gold);letter-spacing:.06em}
+.orbit-run{transform-origin:280px 280px;animation:spin 36s linear infinite;animation-play-state:paused}
+.system.on .orbit-run{animation-play-state:running}
+.node-ring{transform-box:fill-box;transform-origin:center;animation:breathe 6s ease-in-out infinite;animation-play-state:paused}
+.system.on .node-ring{animation-play-state:running}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes breathe{50%{opacity:.25;transform:scale(1.25)}}
+
+/* origin */
+.origin .intro{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:80px}
+.origin .intro p:not(.eyebrow){margin:0;font-family:var(--serif);font-size:26px;line-height:1.35;color:var(--ink)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line-l)}
+.steps li{position:relative;padding:34px 28px 0 0}
+.steps li::before{content:"";position:absolute;top:-5px;left:0;width:9px;height:9px;border-radius:50%;background:var(--ink)}
+.steps .when{display:block;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--mute-l);margin-bottom:14px}
+.steps h3{font-size:28px;line-height:1.1;margin-bottom:12px}
+.steps p{margin:0;color:var(--mute-l);font-size:16px}
+
+/* disciplines */
+.disc-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:64px}
+.disc-head .lead{margin:0;max-width:28em}
+.tabs{display:grid;grid-template-columns:330px 1fr;gap:72px;align-items:start}
+.tablist{display:flex;flex-direction:column;border-top:1px solid var(--line-d)}
+.tab{display:flex;align-items:baseline;gap:18px;width:100%;min-height:64px;padding:18px 0;background:none;border:0;border-bottom:1px solid var(--line-d);color:var(--mute-d);font:300 21px/1.2 var(--sans);text-align:left;cursor:pointer;transition:color .2s,padding .3s}
+.tab span{font-size:12px;letter-spacing:.2em;color:var(--mute-d);min-width:24px}
+.tab:hover{color:var(--bone)}
+.tab[aria-selected="true"]{color:var(--bone);padding-left:10px}
+.tab[aria-selected="true"] span{color:var(--gold)}
+.panel{padding-top:6px}
+.panel+.panel{margin-top:56px}
+.js .panel+.panel{margin-top:0}
+.panel blockquote{margin:0 0 28px;font-family:var(--serif);font-style:italic;font-size:clamp(34px,3.6vw,52px);line-height:1.1;color:var(--bone)}
+.panel blockquote::before{content:"“";color:var(--gold)}
+.panel blockquote::after{content:"”";color:var(--gold)}
+.panel p{margin:0 0 16px;max-width:36em;font-size:18px;color:var(--mute-d)}
+.panel .kicker{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.js .panel.enter{animation:fade .5s ease both}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}}
+.lists{display:grid;grid-template-columns:1fr 1fr;gap:72px;margin-top:110px;padding-top:56px;border-top:1px solid var(--line-d)}
+.lists h3{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--mute-d);font-weight:400;margin-bottom:22px}
+.lists ul{list-style:none;margin:0;padding:0;columns:2;column-gap:32px}
+.lists li{padding:9px 0;border-bottom:1px solid var(--line-d);font-size:17px;break-inside:avoid}
+
+/* composer */
+.composer-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:start;margin-top:56px}
+fieldset{border:0;margin:0 0 36px;padding:0}
+legend{padding:0;margin-bottom:14px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--mute-l)}
+legend b{color:var(--ink);font-weight:500;margin-right:8px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip span{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px;border:1px solid var(--line-l);background:#fff;color:var(--ink);font-size:15px;cursor:pointer;transition:background .2s,color .2s,border-color .2s;user-select:none}
+.chip span::before{content:"";width:7px;height:7px;border:1px solid currentColor;border-radius:50%;opacity:.5}
+.chip input:checked+span{background:var(--ink);color:var(--bone);border-color:var(--ink)}
+.chip input:checked+span::before{background:var(--gold);border-color:var(--gold);opacity:1}
+.chip input:focus-visible+span{outline:2px solid var(--focus);outline-offset:3px}
+.chip span:hover{border-color:var(--ink)}
+.sheet{position:sticky;top:96px;background:var(--ink);color:var(--bone);padding:40px 40px 36px;box-shadow:0 30px 60px -30px rgba(12,12,11,.45)}
+.sheet-top{display:flex;justify-content:space-between;align-items:center;padding-bottom:18px;border-bottom:1px solid var(--line-d);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--mute-d)}
+.sheet-top .mono{width:30px;height:30px;font-size:13px;color:var(--bone)}
+.sheet h3{margin:28px 0 6px;font-family:var(--serif);font-style:italic;font-weight:400;font-size:40px;line-height:1.05}
+.sheet .sub{margin:0 0 24px;color:var(--mute-d);font-size:15px}
+.sheet ol{list-style:none;margin:0 0 22px;padding:0;counter-reset:d}
+.sheet ol li{counter-increment:d;display:grid;grid-template-columns:30px 1fr;padding:12px 0;border-top:1px solid var(--line-d)}
+.sheet ol li::before{content:"0" counter(d);font-size:12px;letter-spacing:.1em;color:var(--gold);padding-top:4px}
+.sheet ol b{display:block;font-weight:400;font-size:16px;letter-spacing:.04em}
+.sheet ol i{font-family:var(--serif);font-size:18px;color:var(--mute-d)}
+.sheet .make{margin:0 0 28px;padding-top:14px;border-top:1px solid var(--line-d);font-size:15px;color:var(--mute-d)}
+.sheet .make b{display:block;font-size:12px;letter-spacing:.22em;text-transform:uppercase;font-weight:400;margin-bottom:6px;color:var(--mute-d)}
+.sheet .make span{color:var(--bone)}
+.sheet .empty{color:var(--mute-d);font-family:var(--serif);font-style:italic;font-size:18px;padding:12px 0;border-top:1px solid var(--line-d)}
+.sheet .btn{width:100%}
+.sheet.pulse{animation:pulse .45s ease}
+@keyframes pulse{40%{transform:translateY(-3px)}}
+
+/* studio */
+.studio-head{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:72px}
+.studio-head .lead{margin:0}
+.people{display:grid;grid-template-columns:repeat(3,1fr);gap:48px}
+.person img{width:100%;max-width:240px;aspect-ratio:1;object-fit:cover;filter:grayscale(1) contrast(1.02);margin-bottom:26px}
+.person h3{font-size:24px;line-height:1.15;margin-bottom:6px}
+.person .role{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute-l);margin:0 0 16px}
+.person p{margin:0;color:var(--mute-l);font-size:16px;max-width:30em}
+.person .said{margin-top:14px;font-family:var(--serif);font-style:italic;font-size:20px;line-height:1.3;color:var(--ink)}
+.network{margin-top:88px;padding-top:40px;border-top:1px solid var(--line-l);display:grid;grid-template-columns:200px 1fr;gap:40px}
+.network p:not(.eyebrow){margin:0;font-family:var(--serif);font-size:28px;line-height:1.3}
+
+/* questions */
+.qa{display:grid;grid-template-columns:1fr 1.5fr;gap:72px}
+.qa details{border-top:1px solid var(--line-l)}
+.qa details:last-child{border-bottom:1px solid var(--line-l)}
+.qa summary{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:68px;padding:14px 0;cursor:pointer;list-style:none;font-size:21px;font-weight:300}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:"+";font-size:26px;font-weight:300;transition:transform .3s}
+.qa details[open] summary::after{transform:rotate(45deg)}
+.qa details p{margin:0 0 24px;color:var(--mute-l);max-width:36em}
+.qa details a{text-underline-offset:3px}
+
+/* contact */
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.contact h2 .art{color:var(--gold)}
+.contact .lead{margin:26px 0 40px}
+.direct{list-style:none;margin:0;padding:0;border-top:1px solid var(--line-d)}
+.direct li{border-bottom:1px solid var(--line-d)}
+.direct a{display:flex;justify-content:space-between;align-items:center;min-height:60px;text-decoration:none;font-size:18px}
+.direct a small{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute-d)}
+.direct a:hover span{text-decoration:underline;text-underline-offset:4px}
+form{display:grid;gap:20px}
+label.f{display:grid;gap:8px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute-d)}
+input.t,textarea{width:100%;padding:14px 16px;min-height:52px;border:1px solid var(--line-d);background:var(--ink2);color:var(--bone);font:400 17px/1.5 var(--sans);letter-spacing:0;text-transform:none;border-radius:0}
+textarea{min-height:170px;resize:vertical}
+input.t:focus,textarea:focus{outline:2px solid var(--focus);outline-offset:1px;border-color:transparent}
+.thanks{margin:0;padding:16px 18px;border-left:2px solid var(--gold);background:var(--ink2);font-size:16px}
+
+/* footer */
+footer{border-top:1px solid var(--line-d);padding:56px 0 48px;font-size:14px;color:var(--mute-d)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px}
+footer .brand{color:var(--bone)}
+footer nav{display:flex;gap:4px;flex-wrap:wrap}
+footer nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 10px;text-decoration:none}
+footer nav a:hover{color:var(--bone)}
+.made{flex-basis:100%;margin:12px 0 0;padding-top:24px;border-top:1px solid var(--line-d);font-size:13px}
+.made a{text-underline-offset:3px}
+
+/* phone bar */
+.bar{display:none}
+
+/* rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+[data-rise]{transition:opacity .8s ease,transform .8s ease}
+
+@media (max-width:1000px){
+  .wrap{padding:0 28px}
+  .hero .wrap{grid-template-columns:1fr;min-height:0;padding-top:56px}
+  .system{justify-self:center;max-width:460px}
+  .tabs{grid-template-columns:1fr;gap:40px}
+  .composer-grid{grid-template-columns:1fr}
+  .sheet{position:relative;top:0}
+  .steps{grid-template-columns:1fr 1fr;row-gap:44px}
+  .nav{display:none}
+  .head-cta{margin-left:auto}
+}
+@media (max-width:760px){
+  body{font-size:16px;padding-bottom:68px}
+  .wrap{padding:0 22px}
+  section{padding:84px 0}
+  .mockup-banner{font-size:15px;padding:0 10px}
+  .site-head .wrap{height:62px;gap:12px}
+  .brand-words b{font-size:12px;letter-spacing:.14em}
+  .mono{width:34px;height:34px;font-size:15px}
+  .head-cta{display:none}
+  .hero .wrap{padding-top:44px;padding-bottom:56px;gap:48px}
+  .hero h1{font-size:clamp(42px,12vw,54px)}
+  .hero .lead{font-size:18px;margin:22px 0 30px}
+  .actions .btn{flex:1 1 100%}
+  .system figcaption{font-size:17px;margin-top:18px;text-align:left}
+  .sys-labels{display:none}
+  .sys-nums{display:inline}
+  .sys-list{display:grid}
+  .sys-list li:last-child{grid-column:1/-1}
+  .origin .intro,.studio-head,.qa,.contact .wrap{grid-template-columns:1fr;gap:28px}
+  .origin .intro{margin-bottom:52px}
+  .origin .intro p:not(.eyebrow){font-size:22px}
+  .steps{grid-template-columns:1fr;border-top:0;border-left:1px solid var(--line-l);row-gap:36px;margin-left:4px}
+  .steps li{padding:0 0 0 26px}
+  .steps li::before{top:6px;left:-5px}
+  .steps h3{font-size:24px}
+  .disc-head{flex-direction:column;align-items:start;gap:20px;margin-bottom:40px}
+  .tablist{flex-direction:row;flex-wrap:wrap;border-top:0;gap:8px}
+  .tab{width:auto;flex:0 0 auto;gap:8px;border:1px solid var(--line-d);font-size:15px;min-height:44px;padding:0 14px;align-items:center;white-space:nowrap}
+  .tab span{font-size:11px;letter-spacing:.06em;min-width:0}
+  .tab[aria-selected="true"]{padding-left:14px;border-color:var(--bone);background:var(--bone);color:var(--ink)}
+  .tab[aria-selected="true"] span{color:#7a5f2c}
+  .panel blockquote{font-size:34px}
+  .panel p{font-size:17px}
+  .lists{grid-template-columns:1fr;gap:32px;margin-top:64px;padding-top:36px}
+  .lists h3{margin-bottom:12px}
+  .lists ul{columns:auto;display:flex;flex-wrap:wrap}
+  .lists li{padding:0;border:0;font-size:17px;line-height:1.7}
+  .lists li:not(:last-child)::after{content:"·";color:var(--gold);margin:0 9px}
+  .composer-grid{margin-top:36px;gap:20px}
+  fieldset{margin-bottom:28px}
+  .chip span{font-size:14px;padding:0 14px}
+  .sheet{padding:30px 22px 26px;margin:0 -22px}
+  .sheet h3{font-size:34px}
+  .people{grid-template-columns:1fr;gap:40px}
+  .person{display:grid;grid-template-columns:104px 1fr;column-gap:20px;align-items:start}
+  .person img{grid-row:span 3;max-width:104px;margin:4px 0 0}
+  .person h3{font-size:21px}
+  .person .role{margin-bottom:10px;font-size:11px}
+  .person p,.person .said{grid-column:1/-1}
+  .person p{margin-top:16px}
+  .network{grid-template-columns:1fr;gap:14px;margin-top:60px}
+  .network p:not(.eyebrow){font-size:23px}
+  .qa summary{font-size:19px}
+  footer .wrap{flex-direction:column;align-items:flex-start}
+  .bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:rgba(12,12,11,.96);border-top:1px solid var(--line-d)}
+  .bar a{flex:1;min-height:48px}
+}
+@media (max-width:380px){
+  .mockup-banner{font-size:14px}
+  .brand-words b{letter-spacing:.08em}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mockup-banner" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Aspera Hartmann Spirit &amp; Strategy, back to top">
+      <span class="mono" aria-hidden="true">AH</span>
+      <span class="brand-words"><b>Aspera Hartmann</b><span>Spirit &amp; Strategy</span></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#story">Story</a>
+      <a href="#disciplines">Disciplines</a>
+      <a href="#studio">Studio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn head-cta" href="#brief">Start a project</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Strategic Design &amp; Business Intelligence</p>
+        <h1 id="h1">Design, as an <span class="art">Art</span> and as a&nbsp;Strategy.</h1>
+        <p class="lead">We create <strong>conceptual systems</strong> for individuals, companies, cities and countries. Culture is our raw material.</p>
+        <div class="actions">
+          <a class="btn" href="#brief">Compose your brief <span class="arr" aria-hidden="true">→</span></a>
+          <a class="btn ghost" href="#disciplines">What we do</a>
+        </div>
+      </div>
+      <figure class="system" id="system">
+        <svg viewBox="0 0 560 560" role="img" aria-labelledby="sys-t">
+          <title id="sys-t">The five Aspera Hartmann disciplines around one conceptual system: Strategic Design, Promotion, Public Relations, Information and Communications Technology, Business Intelligence.</title>
+          <g fill="none" stroke="#f2eee6">
+            <circle cx="280" cy="280" r="200" stroke-opacity=".22"/>
+            <circle cx="280" cy="280" r="132" stroke-opacity=".12" stroke-dasharray="2 6"/>
+            <polygon points="280,80 470.2,218.2 397.6,441.8 162.4,441.8 89.8,218.2" stroke-opacity=".14"/>
+            <g stroke-opacity=".34">
+              <line x1="280" y1="232" x2="280" y2="80"/>
+              <line x1="328" y1="264" x2="470.2" y2="218.2"/>
+              <line x1="310" y1="328" x2="397.6" y2="441.8"/>
+              <line x1="250" y1="328" x2="162.4" y2="441.8"/>
+              <line x1="232" y1="264" x2="89.8" y2="218.2"/>
+            </g>
+            <rect x="232" y="232" width="96" height="96" stroke-opacity=".9"/>
+          </g>
+          <text x="280" y="294" text-anchor="middle" fill="#f2eee6" font-family="Jost, Futura, sans-serif" font-size="38" font-weight="300" letter-spacing="2">AH</text>
+          <g fill="#f2eee6">
+            <circle cx="280" cy="80" r="6"/><circle cx="470.2" cy="218.2" r="6"/><circle cx="397.6" cy="441.8" r="6"/><circle cx="162.4" cy="441.8" r="6"/><circle cx="89.8" cy="218.2" r="6"/>
+          </g>
+          <g fill="none" stroke="#c9a86a" stroke-opacity=".7">
+            <circle class="node-ring" cx="280" cy="80" r="14"/>
+            <circle class="node-ring" cx="470.2" cy="218.2" r="14" style="animation-delay:-1.2s"/>
+            <circle class="node-ring" cx="397.6" cy="441.8" r="14" style="animation-delay:-2.4s"/>
+            <circle class="node-ring" cx="162.4" cy="441.8" r="14" style="animation-delay:-3.6s"/>
+            <circle class="node-ring" cx="89.8" cy="218.2" r="14" style="animation-delay:-4.8s"/>
+          </g>
+          <g class="orbit-run"><circle cx="280" cy="80" r="4.5" fill="#c9a86a" transform="rotate(36 280 280)"/></g>
+          <g class="sys-labels" fill="#d8d3c9" font-family="Jost, Futura, sans-serif" font-size="14" letter-spacing="2.6" text-anchor="middle">
+            <text x="280" y="50">STRATEGIC DESIGN</text>
+            <text x="476" y="190">PROMOTION</text>
+            <text x="404" y="482">PUBLIC RELATIONS</text>
+            <text x="156" y="482">ICT</text>
+            <text x="92" y="172">BUSINESS</text>
+            <text x="92" y="191">INTELLIGENCE</text>
+          </g>
+          <g class="sys-nums" fill="#f2eee6" font-family="Jost, Futura, sans-serif" font-size="26" letter-spacing="1" text-anchor="middle">
+            <text x="280" y="46">01</text>
+            <text x="500" y="200">02</text>
+            <text x="420" y="494">03</text>
+            <text x="140" y="494">04</text>
+            <text x="60" y="200">05</text>
+          </g>
+        </svg>
+        <ol class="sys-list">
+          <li><span>01</span>Strategic Design</li><li><span>02</span>Promotion</li><li><span>03</span>Public Relations</li><li><span>04</span>ICT</li><li><span>05</span>Business Intelligence</li>
+        </ol>
+        <figcaption>Five disciplines, one conceptual system.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="light origin" id="story" aria-labelledby="story-h">
+    <div class="wrap">
+      <div class="intro" data-rise>
+        <div>
+          <p class="eyebrow">Since 2009</p>
+          <h2 id="story-h">Seven days<br>in <span class="art">Lisbon.</span></h2>
+        </div>
+        <p>Three creators of Hartmann Associados met at the top of a building in Lisbon, with the aim of introducing Philosophy into the world market.</p>
+      </div>
+      <ol class="steps" data-rise>
+        <li><span class="when">September 2009</span><h3>The meeting</h3><p>Three creators, the top of a building in Lisbon, one aim: Philosophy for the world market.</p></li>
+        <li><span class="when">Seven days later</span><h3>A new service</h3><p>The creation of Conceptual Systems for individuals, companies, cities and countries.</p></li>
+        <li><span class="when">For two years</span><h3>Select clients</h3><p>Concepts and innovative products for a small group of select clients.</p></li>
+        <li><span class="when">March 2012</span><h3>Strategic Design</h3><p>Creativity, Strategy and Applied Mathematics in one methodology, presented to the international market.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="disciplines" aria-labelledby="disc-h">
+    <div class="wrap">
+      <div class="disc-head" data-rise>
+        <div>
+          <p class="eyebrow">Core business</p>
+          <h2 id="disc-h">We treat each design<br>project as a <span class="art">Work of Art.</span></h2>
+        </div>
+        <p class="lead">We enhance Identities through the creation of conceptual systems and we develop Corporate Cultures using worldview perspectives.</p>
+      </div>
+      <div class="tabs" data-rise>
+        <div class="tablist" role="tablist" aria-label="Disciplines">
+          <button class="tab" role="tab" id="t1" aria-controls="p1" aria-selected="true"><span>01</span>Strategic Design</button>
+          <button class="tab" role="tab" id="t2" aria-controls="p2" aria-selected="false"><span>02</span>Promotion</button>
+          <button class="tab" role="tab" id="t3" aria-controls="p3" aria-selected="false"><span>03</span>Public Relations</button>
+          <button class="tab" role="tab" id="t4" aria-controls="p4" aria-selected="false"><span>04</span>ICT</button>
+          <button class="tab" role="tab" id="t5" aria-controls="p5" aria-selected="false"><span>05</span>Business Intelligence</button>
+        </div>
+        <div>
+          <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1">
+            <p class="kicker">Strategic Design</p>
+            <blockquote>Culture is our raw material.</blockquote>
+            <p>We create Identities with the intricacy of cultural systems because Man is the epitome of the Universe.</p>
+            <p>Pleasure is our goal. We create objects that stimulate the five senses because the world reveals itself through sensory Experience.</p>
+          </div>
+          <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2">
+            <p class="kicker">Promotion</p>
+            <blockquote>Have you listened for the things I have left out?</blockquote>
+            <p>In order to capture the attention of an intelligent target audience, we engage in a seductive approach, incorporating the compelling nature of Mystery, the love of Beauty, the suggestion of a Story.</p>
+            <p>Poetry is our source of inspiration.</p>
+          </div>
+          <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3">
+            <p class="kicker">Public Relations</p>
+            <blockquote>At the heart of a great project lies a simple idea.</blockquote>
+            <p>In the complex web of worldly relations, we analyse all the communication points of the Business. We devise a strategy and determine the most effective methods of involving all the stakeholders in their corporate mission.</p>
+          </div>
+          <div class="panel" role="tabpanel" id="p4" aria-labelledby="t4">
+            <p class="kicker">Information &amp; Communications Technology</p>
+            <blockquote>And we add that which, up until now, was not possible: Interaction.</blockquote>
+            <p>The perfect ICT design, in terms of audiovisual content, already exists in the form of cinematographic language. Through the mutual effort of creators and technicians, we transform emotions and information into Films and Music.</p>
+          </div>
+          <div class="panel" role="tabpanel" id="p5" aria-labelledby="t5">
+            <p class="kicker">Business Intelligence</p>
+            <blockquote>We combine Emotional Intelligence with the mathematical precision of Business Analytics.</blockquote>
+            <p>When it comes to decision-making, we enhance the objective business Diagnostic by thinking out-of-the-box, in order to introduce Innovation and to increase the Growth of your Business.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lists" data-rise>
+        <div>
+          <h3>Design &amp; Communication</h3>
+          <ul>
+            <li>Branding and Corporate Design</li><li>Editorial Design</li><li>Web &amp; Interactive Design</li><li>Short Movies</li><li>Music &amp; Audio Design</li><li>Packaging &amp; Labeling</li><li>Environmental Graphics &amp; Signage</li><li>Infographics</li><li>Photography</li><li>Illustration</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Specialties</h3>
+          <ul>
+            <li>Cultural Innovation</li><li>Strategy Consulting</li><li>Project Management</li><li>Funding</li><li>Brand Strategy</li><li>Design</li><li>Communication</li><li>Creative Direction</li><li>Art Direction</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="paper" id="brief" aria-labelledby="brief-h">
+    <div class="wrap">
+      <div data-rise>
+        <p class="eyebrow">Start a project</p>
+        <h2 id="brief-h">Compose your <span class="art">brief.</span></h2>
+        <p class="lead" style="margin-top:22px">Choose who it is for, where to begin and what to make. The brief writes itself, ready to send.</p>
+      </div>
+      <div class="composer-grid">
+        <form id="composer" aria-label="Brief composer" data-rise>
+          <fieldset>
+            <legend><b>1</b>Who is it for</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="who" value="individual"><span>An individual</span></label>
+              <label class="chip"><input type="radio" name="who" value="company" checked><span>A company</span></label>
+              <label class="chip"><input type="radio" name="who" value="city"><span>A city</span></label>
+              <label class="chip"><input type="radio" name="who" value="country"><span>A country</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend><b>2</b>Where we begin</legend>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" name="disc" value="0" checked><span>Strategic Design</span></label>
+              <label class="chip"><input type="checkbox" name="disc" value="1" checked><span>Promotion</span></label>
+              <label class="chip"><input type="checkbox" name="disc" value="2"><span>Public Relations</span></label>
+              <label class="chip"><input type="checkbox" name="disc" value="3"><span>ICT</span></label>
+              <label class="chip"><input type="checkbox" name="disc" value="4"><span>Business Intelligence</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend><b>3</b>What we make</legend>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" name="make" value="Branding and Corporate Design" checked><span>Branding and Corporate Design</span></label>
+              <label class="chip"><input type="checkbox" name="make" value="Editorial Design"><span>Editorial Design</span></label>
+              <label class="chip"><input type="checkbox" name="make" value="Web &amp; Interactive Design" checked><span>Web &amp; Interactive Design</span></label>
+              <label class="chip"><input type="checkbox" name="make" value="Short Movies" checked><span>Short Movies</span></label>
+              <label class="chip"><input type="checkbox" name="make" value="Music &amp; Audio Design"><span>Music &amp; Audio Design</span></label>
+              <label class="chip"><input type="checkbox" name="make" value="Packaging &amp; Labeling"><span>Packaging &amp; Labeling</span></label>
+              <label class="chip"><input type="checkbox" name="make" value="Environmental Graphics &amp; Signage"><span>Environmental Graphics &amp; Signage</span></label>
+              <label class="chip"><input type="checkbox" name="make" value="Infographics"><span>Infographics</span></label>
+              <label class="chip"><input type="checkbox" name="make" value="Photography"><span>Photography</span></label>
+              <label class="chip"><input type="checkbox" name="make" value="Illustration"><span>Illustration</span></label>
+            </div>
+          </fieldset>
+        </form>
+        <aside class="sheet" id="sheet" aria-live="polite" aria-label="Your brief">
+          <div class="sheet-top"><span>Brief</span><span class="mono" aria-hidden="true">AH</span></div>
+          <h3 id="s-who">For a company</h3>
+          <p class="sub" id="s-sub">Your project in three choices, in our words.</p>
+          <ol id="s-disc">
+            <li><span><b>Strategic Design</b><i>Culture is our raw material.</i></span></li>
+            <li><span><b>Promotion</b><i>Poetry is our source of inspiration.</i></span></li>
+          </ol>
+          <p class="make" id="s-make"><b>What we make</b><span>Branding and Corporate Design, Web &amp; Interactive Design, Short Movies</span></p>
+          <a class="btn" href="#contact" id="send-brief">Send this brief <span class="arr" aria-hidden="true">→</span></a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="light" id="studio" aria-labelledby="studio-h">
+    <div class="wrap">
+      <div class="studio-head" data-rise>
+        <div>
+          <p class="eyebrow">The studio</p>
+          <h2 id="studio-h">Creative Direction<br>and <span class="art">Strategic Planning.</span></h2>
+        </div>
+        <p class="lead">Three directors, three very different paths: chess and Classical Studies, Sciences and Design, choirs and Music.</p>
+      </div>
+      <div class="people" data-rise>
+        <article class="person">
+          <img src="https://cdn.myportfolio.com/7e102e25-c350-45b6-a70d-2b5312fc89bb/e4b37b5b-4855-4487-9f76-8d255b2b9562_rw_600.jpg?h=012c4b6d9169ba0eaf574933b471f807" width="544" height="544" alt="Álvaro Áspera, eyes closed, chin resting on his hand">
+          <h3>Álvaro Áspera</h3>
+          <p class="role">Creative Director · Strategy Director</p>
+          <p>Chess at five, then Theoretic Physics, then Classical Studies. Ten years of Project Management in business, ten more in the state sector.</p>
+          <p class="said">Easier to meet the president, his friends say. Or find him on a terrace, reading in the open air.</p>
+        </article>
+        <article class="person">
+          <img src="https://cdn.myportfolio.com/7e102e25-c350-45b6-a70d-2b5312fc89bb/2bb03886-1f32-4229-982e-be4c9aa0da7f_rw_600.jpg?h=daf597f1070b5ce25c456516e9eab4ab" width="544" height="544" alt="Joana Hartmann, smiling">
+          <h3>Joana Hartmann</h3>
+          <p class="role">Design Director</p>
+          <p>Redesigning the house from the cradle. Sciences first, then Design, for the love of Beauty. Multinationals, then the smaller studios that bring the craft to perfection.</p>
+          <p class="said">There is nothing sexier than a free spirit.</p>
+        </article>
+        <article class="person">
+          <img src="https://cdn.myportfolio.com/7e102e25-c350-45b6-a70d-2b5312fc89bb/155ded00-9395-4e83-b7c8-350eb0de14f9_rw_600.jpg?h=e36e54af3bcfafa2d23d5af6c3f159a2" width="544" height="544" alt="Rui Paulo Teixeira, smiling, chin on his hand">
+          <h3>Rui Paulo Teixeira</h3>
+          <p class="role">Music Director · Project Manager</p>
+          <p>Choir Direction, pop hits arranged into the classical repertoire, and new impetus for church music in Portugal.</p>
+          <p class="said">You can always find him exactly where he needs to be.</p>
+        </article>
+      </div>
+      <div class="network" data-rise>
+        <p class="eyebrow" style="margin:6px 0 0">Network</p>
+        <p>We call on creative professionals from all over the world, in order to bring in original ideas and attain a high level of <span class="art">exclusivity.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="paper" id="questions" aria-labelledby="qa-h">
+    <div class="wrap qa">
+      <div data-rise>
+        <p class="eyebrow">Questions</p>
+        <h2 id="qa-h">Before we <span class="art">begin.</span></h2>
+      </div>
+      <div data-rise>
+        <details open>
+          <summary>Who do you work with?</summary>
+          <p>We create conceptual systems for individuals, companies, cities and countries.</p>
+        </details>
+        <details>
+          <summary>What can you make?</summary>
+          <p>Branding and corporate design, editorial design, web and interactive design, short movies, music and audio design, packaging and labeling, environmental graphics and signage, infographics, photography and illustration.</p>
+        </details>
+        <details>
+          <summary>How do you work?</summary>
+          <p>Creativity, Strategy and Applied Mathematics, together in one methodology: Strategic Design. Our team is specialized in Creative Direction and Strategic Planning, and we call on creative professionals from all over the world.</p>
+        </details>
+        <details>
+          <summary>How do we start?</summary>
+          <p><a href="#brief">Compose a brief</a> on this page and send it, or write to <a href="mailto:welcome@asperahartmann.com">welcome@asperahartmann.com</a>.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <div data-rise>
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-h">Begin with a <span class="art">simple idea.</span></h2>
+        <p class="lead">At the heart of a great project lies a simple idea. Tell us yours, or send the brief you composed.</p>
+        <ul class="direct">
+          <li><a href="mailto:welcome@asperahartmann.com"><span>welcome@asperahartmann.com</span><small>Email</small></a></li>
+          <li><a href="http://linkedin.com/company/aspera-hartmann" target="_blank" rel="noopener"><span>Aspera Hartmann</span><small>LinkedIn</small></a></li>
+        </ul>
+      </div>
+      <form id="contact-form" data-rise novalidate>
+        <label class="f">Name<input class="t" type="text" name="name" autocomplete="name" required></label>
+        <label class="f">Email address<input class="t" type="email" name="email" autocomplete="email" required></label>
+        <label class="f">Message<textarea name="message" id="message" placeholder="A few lines about the project, or the brief you composed above."></textarea></label>
+        <button class="btn" type="submit">Send <span class="arr" aria-hidden="true">→</span></button>
+        <p class="thanks" id="thanks" role="status" hidden>Thank you for writing to Aspera Hartmann.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Back to top">
+      <span class="mono" aria-hidden="true">AH</span>
+      <span class="brand-words"><b>Aspera Hartmann</b><span>Spirit &amp; Strategy</span></span>
+    </a>
+    <nav aria-label="Footer">
+      <a href="#disciplines">Disciplines</a>
+      <a href="#brief">Start a project</a>
+      <a href="mailto:welcome@asperahartmann.com">Email</a>
+      <a href="http://linkedin.com/company/aspera-hartmann" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+    <p class="made">Mockup made for Aspera Hartmann Spirit &amp; Strategy by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<div class="bar" aria-label="Quick actions">
+  <a class="btn" href="#brief">Compose a brief</a>
+  <a class="btn ghost" href="mailto:welcome@asperahartmann.com">Email us</a>
+</div>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* tabs */
+  var tabs = [].slice.call(document.querySelectorAll('.tab'));
+  function select(i, focus){
+    tabs.forEach(function(t, j){
+      var on = j === i, p = document.getElementById(t.getAttribute('aria-controls'));
+      t.setAttribute('aria-selected', on);
+      t.tabIndex = on ? 0 : -1;
+      p.hidden = !on;
+      if (on) { p.classList.remove('enter'); void p.offsetWidth; p.classList.add('enter'); }
+    });
+    if (focus) tabs[i].focus();
+  }
+  tabs.forEach(function(t, i){
+    t.addEventListener('click', function(){ select(i); t.scrollIntoView({block:'nearest', inline:'nearest'}); });
+    t.addEventListener('keydown', function(e){
+      var k = e.key, n = tabs.length;
+      if (k === 'ArrowRight' || k === 'ArrowDown') { e.preventDefault(); select((i + 1) % n, true); }
+      if (k === 'ArrowLeft' || k === 'ArrowUp') { e.preventDefault(); select((i - 1 + n) % n, true); }
+    });
+  });
+  select(0);
+  document.querySelectorAll('.panel').forEach(function(p){ p.classList.remove('enter'); });
+
+  /* brief composer */
+  var DISC = [
+    ['Strategic Design', 'Culture is our raw material.'],
+    ['Promotion', 'Poetry is our source of inspiration.'],
+    ['Public Relations', 'At the heart of a great project lies a simple idea.'],
+    ['ICT', 'And we add that which, up until now, was not possible: Interaction.'],
+    ['Business Intelligence', 'Emotional Intelligence with the mathematical precision of Business Analytics.']
+  ];
+  var WHO = {
+    individual: ['For an individual', 'I am an individual'],
+    company: ['For a company', 'We are a company'],
+    city: ['For a city', 'We represent a city'],
+    country: ['For a country', 'We represent a country']
+  };
+  var composer = document.getElementById('composer'), sheet = document.getElementById('sheet');
+  function esc(s){ return s.replace(/[&<>]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]; }); }
+  function list(a){ return a.length < 2 ? a.join('') : a.slice(0, -1).join(', ') + ' and ' + a[a.length - 1]; }
+  function state(){
+    var who = composer.querySelector('[name=who]:checked').value;
+    var disc = [].map.call(composer.querySelectorAll('[name=disc]:checked'), function(i){ return DISC[+i.value]; });
+    var make = [].map.call(composer.querySelectorAll('[name=make]:checked'), function(i){ return i.value; });
+    return {who: who, disc: disc, make: make};
+  }
+  function render(animate){
+    var s = state();
+    document.getElementById('s-who').textContent = WHO[s.who][0];
+    var ol = document.getElementById('s-disc');
+    ol.innerHTML = s.disc.length
+      ? s.disc.map(function(d){ return '<li><span><b>' + esc(d[0]) + '</b><i>' + esc(d[1]) + '</i></span></li>'; }).join('')
+      : '<li class="empty" style="display:block">Choose where we begin, and it appears here.</li>';
+    document.getElementById('s-make').innerHTML = '<b>What we make</b><span>' +
+      (s.make.length ? esc(s.make.join(', ')) : 'Choose what we make, and it appears here.') + '</span>';
+    if (animate && !reduce) { sheet.classList.remove('pulse'); void sheet.offsetWidth; sheet.classList.add('pulse'); }
+  }
+  composer.addEventListener('change', function(){ render(true); });
+  composer.addEventListener('submit', function(e){ e.preventDefault(); });
+  render(false);
+
+  document.getElementById('send-brief').addEventListener('click', function(){
+    var s = state(), parts = [WHO[s.who][1] + '.'];
+    if (s.disc.length) parts.push('We would like to begin with ' + list(s.disc.map(function(d){ return d[0]; })) + '.');
+    if (s.make.length) parts.push('We are thinking of ' + list(s.make) + '.');
+    var m = document.getElementById('message');
+    m.value = 'Hello Aspera Hartmann,\n\n' + parts.join(' ') + '\n\n';
+    setTimeout(function(){ document.querySelector('#contact-form input').focus({preventScroll:true}); }, reduce ? 0 : 600);
+  });
+
+  /* contact form */
+  document.getElementById('contact-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    var t = document.getElementById('thanks');
+    t.hidden = false;
+    t.focus && t.setAttribute('tabindex', '-1');
+    t.focus();
+  });
+
+  /* diagram plays only while on screen */
+  var sys = document.getElementById('system');
+  if ('IntersectionObserver' in window && !reduce) {
+    new IntersectionObserver(function(es){ es.forEach(function(e){ sys.classList.toggle('on', e.isIntersecting); }); }).observe(sys);
+  }
+
+  /* gentle rise for what starts below the first screen */
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.remove('will-rise'); io.unobserve(e.target); } });
+    }, {rootMargin: '0px 0px -6% 0px'});
+    document.querySelectorAll('[data-rise]').forEach(function(el){
+      if (el.getBoundingClientRect().top > window.innerHeight) { el.classList.add('will-rise'); io.observe(el); }
+    });
+  }
+})();
+</script>
+</body>
+</html>
