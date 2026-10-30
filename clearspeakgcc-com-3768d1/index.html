@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup clearspeakgcc-com-3768d1 1 c478ff4c -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clear Speak GCC | Communication training for teams and professionals</title>
+<meta name="description" content="Clear Speak GCC: presentation, email, business etiquette and executive presence training for teams and professionals across the UAE and GCC.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#be3144; --red-dk:#9e2536; --ink:#262626; --char:#333; --muted:#575757;
+  --line:#e2dedb; --paper:#f5f3f1; --white:#fff; --pink:#f6dfe2;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:"Open Sans",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  --wrap:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font:400 17px/1.65 var(--sans);color:var(--ink);background:var(--white)}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;line-height:1.12;margin:0}
+h2{font-size:clamp(32px,4vw,46px)}
+h3{font-size:24px}
+p{margin:0}
+.eyebrow{font:700 13px/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--red-dk);margin:0 0 18px;display:flex;align-items:center;gap:10px}
+.sun{width:22px;height:22px;flex:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 26px;border-radius:999px;font:600 16px/1 var(--sans);text-decoration:none;border:2px solid var(--red);cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-dk);border-color:var(--red-dk)}
+.btn-line{background:transparent;color:var(--red-dk)}
+.btn-line:hover{background:var(--pink)}
+.btn svg{width:18px;height:18px}
+.skip{position:absolute;left:-9999px;top:0}
+.skip:focus{left:12px;top:56px;background:#fff;padding:10px 14px;z-index:100}
+
+/* banner */
+.mock{background:#2a2a2a;color:#f1f1f1;min-height:44px;display:flex;align-items:center;justify-content:center;text-align:center;font:400 15px/1.3 var(--sans);padding:8px 16px;white-space:nowrap}
+.mock a{color:#ffd0d6;text-decoration:underline;text-underline-offset:3px;font-weight:600}
+
+/* header */
+.top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+.logo img{height:46px;width:auto}
+.nav{display:flex;align-items:center;gap:30px;font-size:15px;font-weight:600}
+.nav a{text-decoration:none;color:var(--char);padding:12px 0}
+.nav a:hover{color:var(--red-dk)}
+.nav .btn{min-height:44px;padding:0 20px;font-size:15px;color:#fff}
+
+/* hero */
+.hero{background:var(--paper);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;padding-top:72px;padding-bottom:80px}
+.hero h1{font-size:clamp(46px,6.4vw,84px);line-height:1.02;letter-spacing:-.02em}
+.hero h1 span{display:block}
+.hero h1 span:nth-child(3){color:var(--red)}
+.lede{font-size:19px;color:var(--muted);max-width:30em;margin:26px 0 34px}
+.lede strong{color:var(--ink);font-weight:600}
+.ctas{display:flex;flex-wrap:wrap;gap:14px}
+.portrait{position:relative;justify-self:end;width:min(100%,460px)}
+.portrait::before{content:"";position:absolute;inset:28px -28px -28px 28px;background:var(--red);border-radius:6px}
+.portrait img{position:relative;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 30%;border-radius:6px;box-shadow:0 24px 50px -24px rgba(0,0,0,.45)}
+.tag{position:absolute;left:-36px;bottom:40px;background:#fff;border-radius:6px;padding:14px 18px;box-shadow:0 14px 34px -14px rgba(0,0,0,.35);font-size:14px;line-height:1.4}
+.tag b{display:block;font-family:var(--serif);font-weight:600;font-size:19px}
+.tag span{color:var(--muted)}
+
+/* numbers */
+.numbers{border-bottom:1px solid var(--line)}
+.numbers .wrap{display:grid;grid-template-columns:repeat(4,1fr);padding-top:44px;padding-bottom:44px}
+.num{padding:4px 26px;border-left:1px solid var(--line)}
+.num:first-child{border-left:0;padding-left:0}
+.num b{display:block;font:400 48px/1 var(--serif);color:var(--red);letter-spacing:-.02em}
+.num span{display:block;margin-top:10px;font-size:15px;color:var(--muted);line-height:1.4}
+
+section{scroll-margin-top:80px}
+.sec{padding:104px 0}
+.head{max-width:640px;margin-bottom:48px}
+.head p{color:var(--muted);margin-top:16px;font-size:18px}
+
+/* finder */
+.finder{background:#fff}
+.tool{display:grid;grid-template-columns:1.15fr .85fr;gap:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:0 30px 60px -40px rgba(0,0,0,.35)}
+.qs{padding:40px 40px 36px}
+fieldset{border:0;margin:0 0 30px;padding:0}
+fieldset:last-child{margin-bottom:0}
+legend{font:600 15px/1.3 var(--sans);margin-bottom:14px;display:flex;gap:10px;align-items:baseline;padding:0}
+legend i{font-style:normal;font:600 13px/1 var(--serif);color:var(--red-dk);border:1.5px solid var(--red);border-radius:50%;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;flex:none}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips input{position:absolute;opacity:0;width:1px;height:1px}
+.chips label{min-height:44px;display:inline-flex;align-items:center;padding:0 18px;border:1.5px solid #cfc9c5;border-radius:999px;font-size:15px;cursor:pointer;transition:all .18s;background:#fff;user-select:none}
+.chips label:hover{border-color:var(--red)}
+.chips input:checked+label{background:var(--red);border-color:var(--red);color:#fff}
+.chips input:focus-visible+label{outline:3px solid var(--red);outline-offset:3px}
+.result{background:var(--char);color:#fff;padding:40px;display:flex;flex-direction:column}
+.result .k{font:700 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:#ffc4cc}
+.result h3{font-size:34px;margin:14px 0 6px}
+.result .fmt{color:#e6e6e6;font-size:15px}
+.result ul{list-style:none;margin:24px 0 0;padding:24px 0 0;border-top:1px solid rgba(255,255,255,.18)}
+.result li{position:relative;padding-left:26px;margin-bottom:12px;color:#f0f0f0;font-size:16px;line-height:1.5}
+.result li::before{content:"";position:absolute;left:2px;top:9px;width:9px;height:9px;border-radius:50%;background:var(--red);box-shadow:0 0 0 3px rgba(190,49,68,.3)}
+.result .note{font-size:14px;color:#d9d9d9;margin-top:6px}
+.result .btn{margin-top:auto;align-self:flex-start;border-color:#fff;background:#fff;color:var(--ink)}
+.result .btn:hover{background:var(--pink);border-color:var(--pink)}
+.result .gap{flex:1;min-height:26px}
+.swap{animation:swap .35s ease}
+@keyframes swap{from{opacity:.25;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* services */
+.services{background:var(--paper)}
+.svc{display:grid;grid-template-columns:repeat(12,1fr);gap:28px}
+.svc-main{grid-column:span 7;background:#fff;border-radius:10px;overflow:hidden;display:grid;grid-template-rows:auto 1fr}
+.svc-main img{width:100%;height:340px;object-fit:cover;object-position:50% 40%}
+.svc-side{grid-column:span 5;display:grid;gap:28px}
+.card{background:#fff;border-radius:10px;padding:34px 34px 30px}
+.card .n{font:400 15px/1 var(--serif);color:var(--red-dk);letter-spacing:.06em}
+.card h3{margin:10px 0 12px}
+.card p{color:var(--muted);font-size:16px}
+.card .topics{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;padding:0;list-style:none}
+.card .topics li{font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px;background:var(--paper);color:var(--char)}
+.card a.more{display:inline-flex;align-items:center;min-height:44px;margin-top:10px;color:var(--red-dk);font-weight:600;font-size:15px;text-decoration:none;gap:8px}
+.card a.more:hover{text-decoration:underline}
+
+/* story */
+.story .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:start}
+.story figure{margin:0;position:sticky;top:110px}
+.story figure{max-width:400px}
+.story .crop{overflow:hidden;aspect-ratio:4/5;border-radius:10px;background:#efe9e2}
+.story .crop img{display:block;width:250%;max-width:none;height:auto;margin:-30% 0 0 -100%}
+.story figcaption{margin-top:14px;font-size:14px;color:var(--muted)}
+.story figcaption a{color:var(--red-dk);font-weight:600;display:inline-flex;min-height:44px;align-items:center}
+.story .intro{font-size:19px;color:var(--muted);margin:20px 0 40px}
+.steps{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
+.steps li{position:relative;padding:0 0 34px 34px}
+.steps li:last-child{padding-bottom:0}
+.steps li::before{content:"";position:absolute;left:-8px;top:6px;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--red)}
+.steps .where{font:700 12px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--red-dk)}
+.steps h3{font-size:22px;margin:10px 0 8px}
+.steps p{color:var(--muted);font-size:16px}
+blockquote{margin:44px 0 0;padding:30px 34px;background:var(--paper);border-radius:10px;font:400 24px/1.35 var(--serif)}
+blockquote p+p{margin-top:8px}
+blockquote footer{font:400 14px/1.4 var(--sans);color:var(--muted);margin-top:14px}
+
+/* blog */
+.blog{background:var(--char);color:#fff}
+.blog .head p{color:#d6d6d6}
+.blog .eyebrow{color:#ffc4cc}
+.posts{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:1px;background:rgba(255,255,255,.16);border-top:1px solid rgba(255,255,255,.16);border-bottom:1px solid rgba(255,255,255,.16)}
+.post{background:var(--char);padding:30px 30px 30px 0;text-decoration:none;display:block}
+.post+.post{padding-left:30px}
+.post .d{font-size:13px;color:#cfcfcf;letter-spacing:.04em}
+.post h3{font-size:24px;margin:12px 0 12px;transition:color .2s}
+.post:first-child h3{font-size:30px}
+.post p{color:#d6d6d6;font-size:15px}
+.post:hover h3{color:#ffc4cc}
+.blog .all{display:inline-flex;align-items:center;min-height:44px;margin-top:22px;color:#fff;font-weight:600}
+
+/* faq */
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px}
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:44px;padding:22px 0;font:600 18px/1.4 var(--sans)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:12px;height:12px;border-right:2px solid var(--red);border-bottom:2px solid var(--red);transform:rotate(45deg) translateY(-4px);transition:transform .2s}
+details[open] summary::after{transform:rotate(-135deg) translateX(-2px)}
+details p{padding:0 0 24px;color:var(--muted);max-width:36em}
+
+/* contact */
+.contact{background:var(--paper)}
+.contact .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+.contact h2{font-size:clamp(36px,4.6vw,56px)}
+.contact .lead{font-size:19px;color:var(--muted);margin:18px 0 32px}
+.ways{list-style:none;margin:0;padding:0}
+.ways li{border-top:1px solid var(--line)}
+.ways li:last-child{border-bottom:1px solid var(--line)}
+.ways a{display:flex;align-items:center;gap:16px;min-height:64px;text-decoration:none;font-weight:600}
+.ways a:hover{color:var(--red-dk)}
+.ways small{display:block;font-weight:400;color:var(--muted);font-size:13px}
+.ico{width:40px;height:40px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;flex:none;color:var(--red)}
+.ico svg{width:18px;height:18px}
+form{background:#fff;border-radius:10px;padding:36px;box-shadow:0 30px 60px -44px rgba(0,0,0,.4)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.f{margin-bottom:18px}
+.f label{display:block;font-size:14px;font-weight:600;margin-bottom:6px}
+.f input,.f textarea{width:100%;font:400 16px/1.5 var(--sans);color:var(--ink);padding:12px 14px;border:1.5px solid #cfc9c5;border-radius:8px;background:#fff;min-height:48px}
+.f textarea{min-height:130px;resize:vertical}
+.f input:focus,.f textarea:focus{outline:none;border-color:var(--red);box-shadow:0 0 0 3px rgba(190,49,68,.18)}
+form .btn{width:100%}
+.thanks{margin-top:14px;font-weight:600;color:var(--red-dk);min-height:1px}
+
+/* footer */
+footer.site{background:#fff;border-top:1px solid var(--line);padding:48px 0 110px}
+footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px}
+footer.site img{height:42px;width:auto}
+footer.site nav{display:flex;flex-wrap:wrap;gap:6px 24px;font-size:15px}
+footer.site nav a{text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+footer.site nav a:hover{color:var(--red-dk)}
+.fine{width:100%;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:20px}
+.fine a{color:var(--muted)}
+
+/* phone bar */
+.callbar{display:none}
+
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:960px){
+  .nav a:not(.btn){display:none}
+  .hero .wrap{grid-template-columns:1fr;gap:44px;padding-top:44px;padding-bottom:64px}
+  .portrait{justify-self:start;width:min(100% - 28px,440px)}
+  .numbers .wrap{grid-template-columns:1fr 1fr;gap:28px 0}
+  .num:nth-child(3){border-left:0;padding-left:0}
+  .tool{grid-template-columns:1fr}
+  .svc-main,.svc-side{grid-column:span 12}
+  .story .wrap,.faq .wrap,.contact .wrap{grid-template-columns:1fr;gap:44px}
+  .story figure{position:static;max-width:400px}
+  .posts{grid-template-columns:1fr}
+  .post,.post+.post{padding:26px 0}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  .wrap{padding:0 20px}
+  .mock{font-size:14.5px;padding:8px 10px}
+  .top .wrap{height:64px}
+  .logo img{height:38px}
+  .nav .btn{min-height:44px;padding:0 16px;font-size:14px}
+  .hero .wrap{padding-top:34px}
+  .hero h1{font-size:50px}
+  .lede{font-size:17px;margin:20px 0 26px}
+  .ctas .btn{flex:1 1 100%}
+  .portrait::before{inset:18px -18px -18px 18px}
+  .tag{left:-8px;bottom:24px}
+  .numbers .wrap{padding-top:34px;padding-bottom:34px}
+  .num{padding:0 0 0 18px}
+  .num b{font-size:40px}
+  .sec{padding:72px 0}
+  .head{margin-bottom:34px}
+  .qs,.result{padding:26px 22px}
+  .result h3{font-size:30px}
+  .svc-main img{height:260px}
+  .card{padding:28px 24px 24px}
+  blockquote{padding:24px;font-size:21px}
+  form{padding:24px 20px}
+  .row{grid-template-columns:1fr;gap:0}
+  footer.site{padding-bottom:100px}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(255,255,255,.97);border-top:1px solid var(--line);padding:10px 14px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -8px 24px -16px rgba(0,0,0,.3)}
+  .callbar .btn{min-height:48px;font-size:15px;padding:0 12px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#main" aria-label="Clear Speak GCC, back to top"><img src="https://www.clearspeakgcc.com/web/image/website/1/logo/Clear%20Speak%20GCC?unique=a968934" alt="Clear Speak GCC: Clear communication, clear results" width="143" height="46"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#training">Training</a>
+      <a href="#about">About</a>
+      <a href="#blog">Blog</a>
+      <a href="#faq">Questions</a>
+      <a class="btn btn-red" href="#contact">Contact us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow"><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5.2" fill="#be3144"/><g fill="#be3144"><circle cx="12" cy="2" r="1.6"/><circle cx="12" cy="22" r="1.6"/><circle cx="2" cy="12" r="1.6"/><circle cx="22" cy="12" r="1.6"/><circle cx="4.9" cy="4.9" r="1.6"/><circle cx="19.1" cy="19.1" r="1.6"/><circle cx="19.1" cy="4.9" r="1.6"/><circle cx="4.9" cy="19.1" r="1.6"/></g></svg>Clear Speak GCC</p>
+        <h1 id="hero-title"><span>Speak it.</span><span>Lead it.</span><span>Achieve it.</span></h1>
+        <p class="lede">Presentations, emails, business etiquette and executive presence. <strong>Practical training for teams and professionals across the UAE and GCC</strong>, built to be used right away.</p>
+        <div class="ctas">
+          <a class="btn btn-red" href="#finder">Find your training <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="btn btn-line" href="#contact">Contact us</a>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="https://www.clearspeakgcc.com/web/image/899-21948053/IMG_4653.jpg" alt="Robyn, Owner and Lead Trainer of Clear Speak GCC, smiling in a red blazer" width="460" height="613">
+        <p class="tag"><b>Robyn</b><span>Owner &amp; Lead Trainer<br>25+ years in business communication</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="numbers" aria-label="Workshops delivered">
+    <div class="wrap">
+      <p class="num"><b>700+</b><span>presentation skills workshops delivered</span></p>
+      <p class="num"><b>670+</b><span>email skills workshops delivered</span></p>
+      <p class="num"><b>640+</b><span>business etiquette workshops delivered</span></p>
+      <p class="num"><b>25+</b><span>years in business communication</span></p>
+    </div>
+  </section>
+
+  <section class="finder sec" id="finder" aria-labelledby="finder-title">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Find your training</p>
+        <h2 id="finder-title">Three taps to the right program.</h2>
+        <p>Your communication challenges, solved with flexible, customized training options. Pick what fits and send it straight to us.</p>
+      </div>
+      <div class="tool">
+        <div class="qs">
+          <fieldset>
+            <legend><i>1</i>Who is the training for?</legend>
+            <div class="chips">
+              <input type="radio" name="who" id="w-team" value="team" checked><label for="w-team">My team or organization</label>
+              <input type="radio" name="who" id="w-me" value="me"><label for="w-me">Just me</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend><i>2</i>What do you want to get better at?</legend>
+            <div class="chips">
+              <input type="radio" name="topic" id="t-present" value="present" checked><label for="t-present">Presenting</label>
+              <input type="radio" name="topic" id="t-email" value="email"><label for="t-email">Writing emails</label>
+              <input type="radio" name="topic" id="t-etiq" value="etiquette"><label for="t-etiq">Business etiquette</label>
+              <input type="radio" name="topic" id="t-pres" value="presence"><label for="t-pres">Executive presence</label>
+              <input type="radio" name="topic" id="t-tough" value="tough"><label for="t-tough">Tough conversations</label>
+              <input type="radio" name="topic" id="t-int" value="interview"><label for="t-int">A high-stakes interview</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend><i>3</i>How would you like to learn?</legend>
+            <div class="chips">
+              <input type="radio" name="how" id="h-room" value="inperson" checked><label for="h-room">In person</label>
+              <input type="radio" name="how" id="h-online" value="online"><label for="h-online">Online</label>
+              <input type="radio" name="how" id="h-course" value="course"><label for="h-course">With an online course</label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="result" aria-live="polite">
+          <div id="res">
+            <p class="k">We'd suggest</p>
+            <h3 id="r-title">Corporate training</h3>
+            <p class="fmt" id="r-fmt">Webinars and workshops, delivered in person</p>
+            <ul id="r-list">
+              <li>Captivate audiences with confidence-boosting training in presentations.</li>
+              <li>A program built to meet your team's needs, from our flexible webinars and workshops.</li>
+              <li>700+ presentation skills workshops delivered.</li>
+            </ul>
+            <p class="note" id="r-note"></p>
+          </div>
+          <div class="gap"></div>
+          <a class="btn" href="#contact" id="r-send">Send this to us <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services sec" id="training" aria-labelledby="training-title">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Here's how we can help</p>
+        <h2 id="training-title">Training for a whole team, or just for you.</h2>
+      </div>
+      <div class="svc">
+        <article class="svc-main">
+          <img src="https://www.clearspeakgcc.com/web/image/1010-e80c340f/b6ed874-744-e3ab-610-d7cd234ca18f_RA_Square_Images_1_.webp" alt="Robyn with four workshop participants holding their certificates" width="660" height="340" loading="lazy">
+          <div class="card">
+            <p class="n">01 &middot; Corporate</p>
+            <h3>Webinars and workshops for your organization</h3>
+            <p>Choose from our flexible webinars and workshops to create a program that meets your needs. We can deliver it online or in person.</p>
+            <ul class="topics" aria-label="Workshop topics">
+              <li>Presentation skills</li><li>Email skills</li><li>Business etiquette</li><li>Intercultural communication</li>
+            </ul>
+            <a class="more" href="#contact" data-pick="team">Plan a program for your team &rarr;</a>
+          </div>
+        </article>
+        <div class="svc-side">
+          <article class="card">
+            <p class="n">02 &middot; Individual</p>
+            <h3>One-on-one coaching</h3>
+            <p>Become a confident and engaging speaker with personalized coaching, whether you're presenting to a board, handling a tough conversation or preparing for a high-stakes interview.</p>
+            <a class="more" href="#contact" data-pick="me">Ask about coaching &rarr;</a>
+          </article>
+          <article class="card">
+            <p class="n">03 &middot; Online courses</p>
+            <h3>Learn the techniques online</h3>
+            <p>Practical tips and techniques for mastering the essentials of business communication.</p>
+            <ul class="topics" aria-label="Course topics">
+              <li>Presentation skills</li><li>Email writing</li><li>Business etiquette</li>
+            </ul>
+            <a class="more" href="#contact" data-pick="course">Ask about courses &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="story sec" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <figure>
+        <div class="crop"><img src="https://www.clearspeakgcc.com/web/image/1018-1fc2d23c/af8aef-515c-aeec-627-4c565fd62760_RA_Square_Images.webp" alt="Robyn, arms folded, smiling in a red blazer" width="1080" height="1080" loading="lazy"></div>
+        <figcaption>Robyn, Owner &amp; Lead Trainer. <a href="https://www.linkedin.com/in/robynalbers/" target="_blank" rel="noopener">Connect on LinkedIn</a></figcaption>
+      </figure>
+      <div>
+        <p class="eyebrow">Welcome</p>
+        <h2 id="about-title">It all started in South&nbsp;Korea.</h2>
+        <p class="intro">Your success is the driving force behind every training solution. Whether you're aiming to present with confidence, build executive presence or write effective emails, you receive training tailored to your unique needs.</p>
+        <ol class="steps">
+          <li>
+            <p class="where">South Korea</p>
+            <h3>Communication is more than a language</h3>
+            <p>Five years teaching English, straight out of university, showed that it takes empathy, and choosing and organizing your words to fit the person you're talking to.</p>
+          </li>
+          <li>
+            <p class="where">Master's in Education &middot; Fellow of the HEA</p>
+            <h3>A love of helping people speak clearly</h3>
+            <p>Training people to write better emails and present their ideas more professionally, and learning first-hand how culture shapes communication.</p>
+          </li>
+          <li>
+            <p class="where">South Korea &middot; Taiwan &middot; Canada &middot; UAE</p>
+            <h3>1900+ workshops on professionalism</h3>
+            <p>Email skills, presentation skills, business etiquette and intercultural communication, delivered for universities. All of it practical, and ready to apply immediately.</p>
+          </li>
+          <li>
+            <p class="where">Clear Speak GCC</p>
+            <h3>The corporate world asked for it</h3>
+            <p>Workshops outside the university brought one request again and again: come to our department too. That is how Clear Speak GCC was born.</p>
+          </li>
+        </ol>
+        <blockquote>
+          <p>&ldquo;Why didn't I know this before?&rdquo;</p>
+          <p>&ldquo;Can you come to my department and deliver the same training? We need you!&rdquo;</p>
+          <footer>What clients asked after a workshop</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog sec" id="blog" aria-labelledby="blog-title">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Clear Speak With Robyn</p>
+        <h2 id="blog-title">Lessons you can use right away.</h2>
+        <p>Practical insights on leadership, strategic communication, and the kind of confidence that makes people listen.</p>
+      </div>
+      <div class="posts">
+        <a class="post" href="https://www.clearspeakgcc.com/about">
+          <p class="d">October 2026</p>
+          <h3>How to Reintroduce Yourself</h3>
+          <p>With ADIPEC and several other major conferences coming up in Abu Dhabi, many of us will be attending networking events, meeting new people, and reconnecting.</p>
+        </a>
+        <a class="post" href="https://www.clearspeakgcc.com/about">
+          <p class="d">From the blog</p>
+          <h3>Six Lessons Surgery Taught Me About Business</h3>
+          <p>A pause in routine, and what it shifted.</p>
+        </a>
+        <a class="post" href="https://www.clearspeakgcc.com/about">
+          <p class="d">From the blog</p>
+          <h3>Language Differences Between the East and West</h3>
+          <p>The importance of cultural intelligence, through a true story.</p>
+        </a>
+      </div>
+      <a class="all" href="https://www.clearspeakgcc.com/about">Read the blog &rarr;</a>
+    </div>
+  </section>
+
+  <section class="faq sec" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Questions</p>
+        <h2 id="faq-title">Good to know.</h2>
+      </div>
+      <div>
+        <details open>
+          <summary>Can you train our team online?</summary>
+          <p>Yes. Corporate webinars and workshops can be delivered online or in person, built into a program that meets your needs.</p>
+        </details>
+        <details>
+          <summary>Do you coach individuals?</summary>
+          <p>Yes, with personalized one-on-one coaching: presenting to a board, handling tough conversations, preparing for a high-stakes interview, or showing up with executive presence.</p>
+        </details>
+        <details>
+          <summary>What do the online courses cover?</summary>
+          <p>Practical tips and techniques for mastering presentation skills, email writing and business etiquette.</p>
+        </details>
+        <details>
+          <summary>Where do you work?</summary>
+          <p>With professionals across the UAE and the GCC.</p>
+        </details>
+        <details>
+          <summary>Who leads the training?</summary>
+          <p>Robyn, our Owner and Lead Trainer: over 25 years in business communication, a Master's Degree in Education, and a certified fellow of the Higher Education Academy (HEA).</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact sec" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Let's get started</p>
+        <h2 id="contact-title">How can we help?</h2>
+        <p class="lead">Tell us what you'd like to work on. Contact us anytime.</p>
+        <ul class="ways">
+          <li><a href="tel:+971507211413"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg></span><span><small>Call us</small>+971 50 721 1413</span></a></li>
+          <li><a href="mailto:robyn@clearspeakgcc.com"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m3 7 9 6 9-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span><span><small>Send us a message</small>robyn@clearspeakgcc.com</span></a></li>
+          <li><a href="https://www.linkedin.com/in/robynalbers/" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21h-4z" fill="currentColor"/></svg></span><span><small>Connect on LinkedIn</small>@RobynAlbers</span></a></li>
+        </ul>
+      </div>
+      <form id="form" novalidate>
+        <div class="row">
+          <div class="f"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required></div>
+          <div class="f"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+        </div>
+        <div class="f"><label for="f-org">Organization <span style="font-weight:400;color:var(--muted)">(optional)</span></label><input id="f-org" name="org" autocomplete="organization"></div>
+        <div class="f"><label for="f-msg">What would you like to work on?</label><textarea id="f-msg" name="message">Hi, I'm interested in corporate training for my team, focused on presenting, delivered in person.</textarea></div>
+        <button class="btn btn-red" type="submit">Send message</button>
+        <p class="thanks" id="thanks" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <img src="https://www.clearspeakgcc.com/web/image/website/1/logo/Clear%20Speak%20GCC?unique=a968934" alt="Clear Speak GCC" width="131" height="42" loading="lazy">
+    <nav aria-label="Footer">
+      <a href="#training">Training</a><a href="#about">About</a><a href="#blog">Blog</a><a href="#faq">Questions</a><a href="#contact">Contact us</a>
+    </nav>
+    <div class="fine">
+      <span>&copy; Clear Speak GCC Consulting</span>
+      <span>Mockup made for Clear Speak GCC by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick contact">
+  <a class="btn btn-red" href="tel:+971507211413">Call us</a>
+  <a class="btn btn-line" href="mailto:robyn@clearspeakgcc.com">Email us</a>
+</div>
+
+<script>
+(function(){
+  var T={
+    present:{label:'presenting',line:'Captivate audiences with confidence-boosting training in presentations.',count:'700+ presentation skills workshops delivered.',course:true},
+    email:{label:'writing emails',line:'Transform your emails with clear and effective training.',count:'670+ email skills workshops delivered.',course:true},
+    etiquette:{label:'business etiquette',line:'Develop your professionalism and avoid cultural miscommunications.',count:'640+ business etiquette workshops delivered.',course:true},
+    presence:{label:'executive presence',line:'Show up with the executive presence that makes people listen.',count:null,course:false},
+    tough:{label:'tough conversations',line:'Handle tough conversations clearly and confidently.',count:null,course:false},
+    interview:{label:'a high-stakes interview',line:'Prepare to speak clearly and confidently in a high-stakes interview.',count:null,course:false}
+  };
+  var HOW={inperson:'in person',online:'online',course:'with an online course'};
+  var form=document.querySelector('.qs'), res=document.getElementById('res'), msg=document.getElementById('f-msg');
+  function val(n){var e=form.querySelector('input[name="'+n+'"]:checked');return e?e.value:''}
+  function li(t){var l=document.createElement('li');l.textContent=t;return l}
+  var current='';
+  function update(anim){
+    var who=val('who'),topic=val('topic'),how=val('how'),t=T[topic],title,fmt,items=[],note='',kind;
+    if(how==='course'&&t.course){
+      kind='online courses';title='Online courses';fmt='Practical tips and techniques, online';
+      items=[t.line,'Courses cover presentation skills, email writing and business etiquette.'];
+      if(t.count)items.push(t.count);
+    }else{
+      if(how==='course')note='Our online courses cover presentation skills, email writing and business etiquette, so for '+t.label+' we\'d suggest this instead.';
+      if(who==='team'){
+        kind='corporate training';title='Corporate training';
+        fmt=how==='course'?'Webinars and workshops, online or in person':'Webinars and workshops, delivered '+HOW[how];
+        items=[t.line,'A program built to meet your team\'s needs, from our flexible webinars and workshops.'];
+      }else{
+        kind='one-on-one coaching';title='One-on-one coaching';
+        fmt='Personalized coaching, tailored to you';
+        items=[t.line,'Training tailored to your unique needs, designed around the outcomes you\'re looking for.'];
+      }
+      if(t.count)items.push(t.count);else items.push('Practical training you can apply immediately.');
+    }
+    document.getElementById('r-title').textContent=title;
+    document.getElementById('r-fmt').textContent=fmt;
+    var ul=document.getElementById('r-list');ul.innerHTML='';items.forEach(function(i){ul.appendChild(li(i))});
+    document.getElementById('r-note').textContent=note;
+    var pref=(kind==='online courses')?'':(how==='course'?'':' I\'d prefer '+HOW[how]+'.');
+    var text='Hi, I\'m interested in '+kind+(who==='team'?' for my team':' for myself')+', focused on '+t.label+'.'+pref;
+    if(!msg.dataset.edited||msg.value===current)msg.value=text;
+    current=text;
+    if(anim){res.classList.remove('swap');void res.offsetWidth;res.classList.add('swap')}
+  }
+  form.addEventListener('change',function(){update(true)});
+  msg.addEventListener('input',function(){msg.dataset.edited='1'});
+  document.getElementById('r-send').addEventListener('click',function(){msg.value=current;msg.dataset.edited=''});
+  document.querySelectorAll('[data-pick]').forEach(function(a){
+    a.addEventListener('click',function(){
+      var p=a.getAttribute('data-pick');
+      if(p==='team')document.getElementById('w-team').checked=true;
+      if(p==='me')document.getElementById('w-me').checked=true;
+      if(p==='course')document.getElementById('h-course').checked=true;
+      update(false);msg.value=current;msg.dataset.edited='';
+    });
+  });
+  update(false);
+
+  document.getElementById('form').addEventListener('submit',function(e){
+    e.preventDefault();
+    document.getElementById('thanks').textContent='Thanks. This is a mockup, so nothing was sent.';
+  });
+
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce&&'IntersectionObserver' in window){
+    var sel='.head,.tool,.svc-main,.svc-side .card,.story figure,.steps li,blockquote,.post,details,.contact .wrap>div,form';
+    var vh=window.innerHeight;
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll(sel).forEach(function(el){
+      if(el.getBoundingClientRect().top>vh){el.classList.add('rise','will-rise');io.observe(el)}
+    });
+  }
+})();
+</script>
+</body>
+</html>
