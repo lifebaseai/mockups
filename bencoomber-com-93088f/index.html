@@ -3,7 +3,7 @@
 <head>
 <meta name="robots" content="noindex, nofollow">
 <meta name="referrer" content="no-referrer">
-<!-- mockup bencoomber-com-93088f 1 3ffe1ddc -->
+<!-- mockup bencoomber-com-93088f 1 6e1b1c09 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ben Coomber: Human Performance Speaker, Host, Author</title>
@@ -27,10 +27,6 @@ a{color:inherit}
 .cond{font-stretch:68%;font-weight:850;text-transform:uppercase;letter-spacing:.005em;line-height:.92}
 .skip{position:absolute;left:12px;top:-60px;background:var(--yellow);color:var(--ink);padding:10px 14px;z-index:99;font-weight:700}
 .skip:focus{top:12px}
-
-/* mockup banner */
-.mock{background:#ece8dd;color:#2b2b2b;font-size:13.5px;text-align:center;padding:7px 16px;letter-spacing:.02em;border-bottom:1px solid #d9d3c3}
-.mock b{font-weight:700}
 
 /* header */
 header.top{background:var(--ink);color:#fff;position:sticky;top:0;z-index:40;border-bottom:1px solid #222}
@@ -151,10 +147,11 @@ h2.cond{font-size:clamp(46px,5.6vw,78px);margin:0 0 22px}
 .stage-photo{border-radius:var(--r);overflow:hidden;max-width:560px;justify-self:end}
 .stage .tag{font-size:21px;color:var(--yellow);margin:0 0 18px;font-weight:600}
 .stage .say{color:#d0d0d0;font-size:17px;margin:0 0 28px;max-width:30em}
-.facts{list-style:none;padding:0;margin:0 0 30px;display:grid;gap:14px}
-.facts li{display:grid;grid-template-columns:88px 1fr;gap:16px;align-items:baseline;border-top:1px solid #2a2a2a;padding-top:14px}
-.facts b{font-stretch:68%;font-weight:850;font-size:34px;line-height:1;color:#fff}
-.facts span{color:#d0d0d0;font-size:16px}
+.talks-h{font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--muted-d);margin:0 0 10px}
+.talks{list-style:none;padding:0;margin:0 0 32px;border-top:1px solid #2a2a2a}
+.talks li{padding:14px 0;border-bottom:1px solid #2a2a2a}
+.talks b{display:block;font-stretch:72%;font-weight:850;text-transform:uppercase;font-size:25px;line-height:1.05;color:#fff;margin-bottom:4px}
+.talks span{color:#d0d0d0;font-size:15.5px}
 blockquote{margin:0}
 .pull{border-left:3px solid var(--yellow);padding:4px 0 4px 20px;margin:0 0 34px}
 .pull p{font-size:20px;margin:0 0 6px;font-style:italic}
@@ -166,6 +163,14 @@ blockquote{margin:0}
 .rows li{display:grid;grid-template-columns:150px 1fr;gap:18px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--line)}
 .rows b{font-stretch:72%;font-weight:850;text-transform:uppercase;font-size:22px;line-height:1.05}
 .rows span{color:var(--muted);font-size:16px}
+.screen-photo{margin:34px 0 0;border-radius:var(--r);overflow:hidden}
+.screen-photo figcaption{font-size:14px;color:var(--muted);padding:10px 2px 0}
+.screen-photo img{border-radius:var(--r)}
+.people{margin:64px 0 0;padding:26px 0 0;border-top:2px solid var(--ink)}
+.people p{margin:0 0 12px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.people ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 26px}
+.people li{font-stretch:68%;font-weight:850;text-transform:uppercase;font-size:clamp(32px,3.8vw,50px);line-height:1}
+.people li::after{content:".";color:var(--yellow)}
 
 /* listen + read */
 .media{background:var(--cream)}
@@ -232,7 +237,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
 .social a{display:inline-flex;align-items:center;min-height:44px;padding:0 10px;text-decoration:none;color:#e5e5e5}
 .social a:hover{color:var(--yellow)}
 footer p{margin:0}
-footer .made a{color:#fff}
 
 .callbar{display:none}
 
@@ -296,8 +300,7 @@ footer .made a{color:#fff}
   .jobs b{font-size:24px}
   .award b{font-size:24px}
   .award span{font-size:14px}
-  .facts li{grid-template-columns:72px 1fr}
-  .facts b{font-size:30px}
+  .talks b{font-size:22px}
   .rows li{grid-template-columns:1fr;gap:4px}
   .card{grid-template-columns:1fr;padding:22px}
   .card img{width:100%;height:auto;max-width:360px}
@@ -325,7 +328,6 @@ footer .made a{color:#fff}
 </style>
 </head>
 <body>
-<div class="mock" role="note"><b>Website preview for Ben Coomber</b> &middot; a working first draft of the new homepage</div>
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="top">
@@ -459,8 +461,8 @@ footer .made a{color:#fff}
               <ul class="freelist">
                 <li><a href="#listen"><span>The Dose Is Everything<small>The podcast, over 40m downloads</small></span><span aria-hidden="true">&rarr;</span></a></li>
                 <li><a href="#listen"><span>How to Live an Awesome Life<small>The 11 step formula, #1 bestseller</small></span><span aria-hidden="true">&rarr;</span></a></li>
-                <li><a href="https://www.bencoomber.com/blog"><span>The blog<small>Deep dives on optimal human performance</small></span><span aria-hidden="true">&rarr;</span></a></li>
-                <li><a href="https://www.instagram.com/bencoomber"><span>DM Ben on Instagram<small>Got a burning question?</small></span><span aria-hidden="true">&rarr;</span></a></li>
+                <li><a href="https://www.bencoomber.com/blog" target="_blank" rel="noopener"><span>The blog<small>Deep dives on optimal human performance</small></span><span aria-hidden="true">&rarr;</span></a></li>
+                <li><a href="https://www.instagram.com/bencoomber" target="_blank" rel="noopener"><span>DM Ben on Instagram<small>Got a burning question?</small></span><span aria-hidden="true">&rarr;</span></a></li>
               </ul>
             </div>
           </div>
@@ -491,7 +493,7 @@ footer .made a{color:#fff}
           <p class="kicker">Track record</p>
           <h2 id="record-h" class="cond">Rooms Ben has moved.</h2>
           <p class="voice">&ldquo;I am in my element on stage teaching, inspiring, and moving an audience. I speak on Optimal Human Performance, for all walks of life.&rdquo;</p>
-          <p class="also">Also worked with <b>Spencer Matthews</b> and <b>James Haskell</b>, and with <b>England Rugby, Vivobarefoot, Puma, Hyrox</b> and more on PR activities and brand activations.</p>
+          <p class="also">Also worked with <b>England Rugby, Vivobarefoot, Puma, Hyrox</b> and more on PR activities and brand activations.</p>
         </div>
       </div>
       <ul class="jobs">
@@ -524,10 +526,12 @@ footer .made a{color:#fff}
         <h2 id="stage-h" class="cond">Speaker.<br>Host.<br>Guest.<br>Panellist.</h2>
         <p class="tag">Inspiring. Captivating. Energising.</p>
         <p class="say">&ldquo;Being on stage is about the energy you bring, the conversations you can hold, and words you can deliver to move the room. I promise to do just that.&rdquo;</p>
-        <ul class="facts">
-          <li><b>100+</b><span>stages around the world</span></li>
-          <li><b>1000+</b><span>podcasts as a guest: inspiring, educational and thought provoking</span></li>
-          <li><b>24+</b><span>transformational retreats across Europe &amp; Africa</span></li>
+        <h3 class="talks-h">Talks Ben has given</h3>
+        <ul class="talks">
+          <li><b>How to be AWESOME</b><span>At Sky's London HQ, and to Global Media's senior media team.</span></li>
+          <li><b>Optimal human performance</b><span>M&amp;S's annual leadership meeting, a series of 4 for all HSBC staff, and private masterminds.</span></li>
+          <li><b>How to be successful in all areas of life</b><span>Keynote at Perform X, 2024.</span></li>
+          <li><b>Men's mental fitness</b><span>Hosted the expert panel at Perform X, 2025.</span></li>
         </ul>
         <blockquote class="pull">
           <p>&ldquo;He blew away our audience.&rdquo;</p>
@@ -548,6 +552,10 @@ footer .made a{color:#fff}
         <h2 id="screen-h" class="cond">On screen.</h2>
         <p class="voice">&ldquo;With over 10 years acting training before I became a coach, I combine many skills to teach &amp; inspire on screen.&rdquo;</p>
         <a class="btn btn-k" href="#start" data-path="media">Work with Ben on screen <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        <figure class="screen-photo">
+          <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2157063676/settings_images/ad53f7-653b-56fe-b611-ac5620cafdc0_tempImage5VhkWt.jpeg" alt="Ben Coomber and Spencer Matthews at the Original Source launch" width="1500" height="929" loading="lazy">
+          <figcaption>With Spencer Matthews at the Original Source launch.</figcaption>
+        </figure>
       </div>
       <ul class="rows">
         <li><b>Sky TV</b><span>Several interviews as a performance coach.</span></li>
@@ -556,6 +564,18 @@ footer .made a{color:#fff}
         <li><b>Magazines</b><span>A cover model on several magazines, and 100 articles written for major magazines and newspapers.</span></li>
         <li><b>Brand work</b><span>PR activities and brand activations with England Rugby, O2, Puma, Original Source and more.</span></li>
       </ul>
+    </div>
+    <div class="wrap">
+      <div class="people">
+        <p>People Ben has worked with</p>
+        <ul>
+          <li>Spencer Matthews</li>
+          <li>James Haskell</li>
+          <li>Daniel Priestley</li>
+          <li>Shaa Wasmund</li>
+          <li>Nick Evans</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -571,7 +591,10 @@ footer .made a{color:#fff}
             <span class="big">40m+</span>
             <h3>The Dose Is Everything</h3>
             <p>Launched in 2012. Sat at #1 for over 3 years. Downloaded by over 40 million people.</p>
-            <a class="btn btn-k btn-sm" href="https://www.youtube.com/channel/UCRrT_wYzZG_65KgTmMPbPqw">Ben on YouTube <span class="arrow" aria-hidden="true">&rarr;</span></a>
+            <div class="ctas">
+              <a class="btn btn-k btn-sm" href="https://open.spotify.com/show/7hsFVkitpyOFxGzq0dCoY2?si=eefd1692861b45cc" target="_blank" rel="noopener">Listen on Spotify <span class="arrow" aria-hidden="true">&rarr;</span></a>
+              <a class="btn btn-sm" style="border-color:var(--ink)" href="https://www.youtube.com/channel/UCRrT_wYzZG_65KgTmMPbPqw" target="_blank" rel="noopener">YouTube</a>
+            </div>
           </div>
         </article>
         <article class="card">
@@ -580,7 +603,7 @@ footer .made a{color:#fff}
             <span class="big">#1</span>
             <h3>How to Live an Awesome Life</h3>
             <p>The 11 step formula to fulfilment and success, in ALL areas of life. A #1 bestseller.</p>
-            <a class="btn btn-k btn-sm" href="https://www.amazon.co.uk/How-Live-Awesome-Life-Success/dp/1399800051?crid=153OQY0R1BZW4&amp;keywords=ben+coomber&amp;qid=1669284429&amp;sprefix=ben+coomber,aps,64&amp;sr=8-2&amp;linkCode=sl1&amp;tag=becolt-21&amp;linkId=ab0e2fe9176914a0879e605ef0659855&amp;language=en_GB&amp;ref_=as_li_ss_tl">Grab a copy <span class="arrow" aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn-k btn-sm" href="https://www.amazon.co.uk/How-Live-Awesome-Life-Success/dp/1399800051?crid=153OQY0R1BZW4&amp;keywords=ben+coomber&amp;qid=1669284429&amp;sprefix=ben+coomber,aps,64&amp;sr=8-2&amp;linkCode=sl1&amp;tag=becolt-21&amp;linkId=ab0e2fe9176914a0879e605ef0659855&amp;language=en_GB&amp;ref_=as_li_ss_tl" target="_blank" rel="noopener">Grab a copy <span class="arrow" aria-hidden="true">&rarr;</span></a>
           </div>
         </article>
       </div>
@@ -600,7 +623,7 @@ footer .made a{color:#fff}
           <li>Omega 3</li>
           <li>Recovery</li>
         </ul>
-        <a class="btn btn-y" href="https://www.awesomesupplements.co.uk/">Visit Awesome Supplements <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        <a class="btn btn-y" href="https://www.awesomesupplements.co.uk/" target="_blank" rel="noopener">Visit Awesome Supplements <span class="arrow" aria-hidden="true">&rarr;</span></a>
       </div>
       <div class="awesome-photo">
         <img src="https://cdn.shopify.com/s/files/1/1174/5052/files/BIg3bundleMAINCarouselimage_2.png?v=1791882718" alt="Awesome Protein, Awesome Defence multi-vitamin and Awesome Hydrate electrolytes" width="1254" height="1254" loading="lazy">
@@ -652,7 +675,7 @@ footer .made a{color:#fff}
       <div>
         <p class="kicker">Questions</p>
         <h2 id="faq-h" class="cond">Quick answers.</h2>
-        <p class="intro">Still stuck? <a href="https://www.instagram.com/bencoomber">DM Ben on Instagram</a>.</p>
+        <p class="intro">Still stuck? <a href="https://www.instagram.com/bencoomber" target="_blank" rel="noopener">DM Ben on Instagram</a>.</p>
       </div>
       <div>
         <details open><summary>Can Ben speak at our event?</summary><p>Ben speaks, hosts and sits on panels. He has spoken on over 100 stages, and consulted and spoken for M&amp;S, Sky, O2, Twinings, Global Media and HSBC. <a href="#start" data-path="speak">Tell Ben about your event</a>.</p></details>
@@ -660,7 +683,7 @@ footer .made a{color:#fff}
         <details><summary>Can Ben come on our podcast?</summary><p>Yes. Ben has done over 1000 podcasts as a guest. His goal as a guest is to be inspiring, educational and thought provoking. <a href="#start" data-path="pod">Invite Ben on your podcast</a>.</p></details>
         <details><summary>Does Ben do TV and media work?</summary><p>Yes. Ben had over 10 years of acting training before he became a coach, and has given several interviews on Sky TV. <a href="#start" data-path="media">Tell Ben about your project</a>.</p></details>
         <details><summary>What are Ben's qualifications?</summary><p>Human Performance Coach (BSc), Nutritionist (CISSN), Intuitive Psychology coach (IPA), Strength &amp; Conditioning Coach (L4), and Meditation &amp; Breath Work Coach.</p></details>
-        <details><summary>I just have one question. Where do I ask?</summary><p>DM Ben on <a href="https://www.instagram.com/bencoomber">Instagram</a>.</p></details>
+        <details><summary>I just have one question. Where do I ask?</summary><p>DM Ben on <a href="https://www.instagram.com/bencoomber" target="_blank" rel="noopener">Instagram</a>.</p></details>
       </div>
     </div>
   </section>
@@ -681,14 +704,13 @@ footer .made a{color:#fff}
   <div class="wrap">
     <p>&copy; 2026 Ben Coomber Ltd.</p>
     <ul class="social" aria-label="Ben on social media">
-      <li><a href="https://www.instagram.com/bencoomber">Instagram</a></li>
-      <li><a href="https://www.youtube.com/channel/UCRrT_wYzZG_65KgTmMPbPqw">YouTube</a></li>
-      <li><a href="https://www.linkedin.com/in/bencoomber/">LinkedIn</a></li>
-      <li><a href="https://www.tiktok.com/@bencoomber">TikTok</a></li>
-      <li><a href="https://www.facebook.com/theofficialbencoomberpage">Facebook</a></li>
-      <li><a href="https://www.twitter.com/bencoomber">X</a></li>
+      <li><a href="https://www.instagram.com/bencoomber" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.youtube.com/channel/UCRrT_wYzZG_65KgTmMPbPqw" target="_blank" rel="noopener">YouTube</a></li>
+      <li><a href="https://www.linkedin.com/in/bencoomber/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://www.tiktok.com/@bencoomber" target="_blank" rel="noopener">TikTok</a></li>
+      <li><a href="https://www.facebook.com/theofficialbencoomberpage" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://www.twitter.com/bencoomber" target="_blank" rel="noopener">X</a></li>
     </ul>
-    <p class="made">Website preview made for Ben Coomber by Sunny Gupta, <a href="https://lifebaselabs.com">lifebaselabs.com</a></p>
   </div>
 </footer>
 
