@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup vigiliqglobal-com-800151 1 92fee47b -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VigilIQ | Background Verification Services | vigiliqglobal.com</title>
+<meta name="description" content="Employee background verification from VigilIQ: identity, employment, education, criminal records and global sanctions on one platform.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#000441;--ink:#000229;--violet:#8d7fe3;--violet-d:#5546c2;--violet-l:#efedfc;
+  --line:#e4e3f0;--muted:#4d5070;--bg:#f7f7fb;--ok:#1f9d6f;--ok-l:#5ee0b0;
+  --r:14px;--max:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:"Outfit",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.55;font-size:17px}
+a{color:inherit}
+img{max-width:100%}
+:focus-visible{outline:3px solid var(--violet);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+h1,h2,h3{line-height:1.12;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(30px,4vw,44px);font-weight:700}
+.eyebrow{font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--violet-d);margin:0 0 14px}
+.lead{font-size:19px;color:var(--muted);max-width:600px;margin:16px 0 0}
+
+/* banner */
+.mock-banner{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:#ecebfa;color:var(--ink);font-size:15px;text-align:center;border-bottom:1px solid #d9d6f3;white-space:nowrap}
+.mock-banner a{color:var(--violet-d);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+
+/* header */
+header.site{background:var(--navy);color:#fff;position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:24px}
+.mark{font-size:27px;font-weight:700;text-decoration:none;letter-spacing:-.02em;display:inline-flex;align-items:center;min-height:44px}
+.mark b{color:var(--violet);font-weight:700}
+.nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:16px}
+.nav ul a{text-decoration:none;color:#d6d6ee;padding:12px 0}
+.nav ul a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 24px;border-radius:999px;font:600 16px/1 "Outfit",sans-serif;text-decoration:none;border:0;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s}
+.btn-main{background:var(--violet);color:var(--ink)}
+.btn-main:hover{background:#a397ec;transform:translateY(-1px);box-shadow:0 8px 24px -10px rgba(141,127,227,.8)}
+.btn-ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.35)}
+.btn-ghost:hover{box-shadow:inset 0 0 0 1.5px #fff}
+.btn-dark{background:var(--navy);color:#fff}
+.btn-dark:hover{background:#151a6b}
+.nav .btn{min-height:44px;padding:0 20px;font-size:15px}
+
+/* hero */
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(180deg,#000,transparent 85%);-webkit-mask-image:linear-gradient(180deg,#000,transparent 85%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding-top:72px;padding-bottom:88px}
+.hero .eyebrow{color:var(--violet)}
+.hero h1{font-size:clamp(40px,5.6vw,66px);font-weight:700;letter-spacing:-.025em}
+.hero h1 span{color:var(--violet)}
+.hero p.sub{font-size:19px;color:#d4d4ec;max-width:520px;margin:22px 0 32px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:34px;font-size:15px;color:#c9c9e6}
+.hero-meta span{display:inline-flex;align-items:center;gap:8px}
+.hero-meta svg{flex:none}
+
+/* case card */
+.case{background:#fff;color:var(--ink);border-radius:20px;padding:24px;box-shadow:0 40px 80px -30px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.08)}
+.case-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.case-top small{display:block;font-size:13px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;font-weight:600}
+.case-top strong{font-size:20px;font-weight:600}
+.pill{font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px;white-space:nowrap;background:#e3f6ee;color:#11704e;transition:background .3s,color .3s}
+.pill.run{background:var(--violet-l);color:var(--violet-d)}
+.case ol{list-style:none;margin:6px 0 0;padding:0}
+.case li{display:grid;grid-template-columns:28px 1fr auto;gap:12px;align-items:center;padding:13px 0;border-bottom:1px solid #f0eff7}
+.case li:last-child{border-bottom:0}
+.case li b{display:block;font-weight:600;font-size:16px}
+.case li em{font-style:normal;font-size:14px;color:var(--muted)}
+.dot{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--ok);transition:background .3s}
+.dot svg{opacity:1;transition:opacity .3s}
+.st{font-size:14px;font-weight:600;color:#11704e;transition:color .3s}
+li.pending .dot{background:#e7e6f2}
+li.pending .dot svg{opacity:0}
+li.pending .st{color:#6a6d8a}
+li.active .dot{background:var(--violet);animation:pulse 1s ease-in-out infinite}
+li.active .dot svg{opacity:0}
+li.active .st{color:var(--violet-d)}
+@keyframes pulse{50%{box-shadow:0 0 0 7px rgba(141,127,227,.18)}}
+.case-foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:14px;padding:12px 14px;border-radius:10px;background:var(--bg);font-size:14px;color:var(--muted)}
+.case-foot b{color:var(--ink);font-weight:600}
+.case-note{margin:12px 2px 0;font-size:13px;color:#b9b9da;text-align:right}
+
+/* trust row */
+.trust{border-bottom:1px solid var(--line)}
+.trust ul{list-style:none;margin:0 auto;padding-top:22px;padding-bottom:22px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px 28px;font-weight:600;font-size:16px}
+.trust li{display:flex;align-items:center;gap:10px}
+.trust li svg{color:var(--violet-d);flex:none}
+
+/* numbers */
+.numbers{padding:80px 0 24px}
+.num-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-top:1px solid var(--line)}
+.num{padding:26px 20px 6px 0}
+.num strong{display:block;font-size:clamp(34px,4vw,48px);font-weight:700;letter-spacing:-.03em;color:var(--navy);font-variant-numeric:tabular-nums}
+.num span{font-size:15px;color:var(--muted)}
+
+/* builder */
+.builder{padding:80px 0 96px}
+.b-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;margin-bottom:34px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px;padding:0;border:0}
+.chips legend{font-size:15px;font-weight:600;margin-bottom:12px;padding:0}
+.chip{min-height:44px;padding:0 18px;border-radius:999px;border:1.5px solid var(--line);background:#fff;font:500 15px "Outfit",sans-serif;color:var(--ink);cursor:pointer;transition:all .2s}
+.chip:hover{border-color:var(--violet)}
+.chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.b-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:28px;align-items:start}
+.why-ind{margin:0 0 18px;padding:16px 18px;border-left:3px solid var(--violet);background:var(--violet-l);border-radius:0 10px 10px 0;font-size:16px;color:#2a2d55}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ck{position:relative;display:flex;gap:12px;align-items:flex-start;padding:16px;border:1.5px solid var(--line);border-radius:12px;cursor:pointer;background:#fff;transition:border-color .2s,background .2s;min-height:44px}
+.ck:hover{border-color:#c5bff1}
+.ck input{position:absolute;opacity:0;width:1px;height:1px}
+.box{flex:none;width:22px;height:22px;border-radius:6px;border:1.5px solid #b8b6cf;display:grid;place-items:center;margin-top:1px;transition:all .2s}
+.box svg{opacity:0}
+.ck input:checked ~ .box{background:var(--violet-d);border-color:var(--violet-d)}
+.ck input:checked ~ .box svg{opacity:1}
+.ck:has(input:checked){border-color:var(--violet);background:#fbfaff}
+.ck input:focus-visible ~ .box{outline:3px solid var(--violet);outline-offset:2px}
+.ck b{display:block;font-weight:600}
+.ck span.c{font-size:14.5px;color:var(--muted);line-height:1.4}
+.summary{position:sticky;top:96px;background:var(--navy);color:#fff;border-radius:18px;padding:26px}
+.summary h3{font-size:22px;font-weight:600}
+.summary .count{color:var(--violet);font-size:15px;margin:4px 0 16px}
+.summary ul{list-style:none;margin:0 0 18px;padding:0;font-size:15.5px}
+.summary li{display:flex;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.summary li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ok-l);flex:none}
+.summary .empty{color:#c9c9e6;font-size:15px;margin:0 0 18px}
+.speed{display:grid;gap:8px;margin:0 0 22px;font-size:14.5px;color:#d4d4ec}
+.speed div{display:flex;justify-content:space-between;gap:10px;padding:10px 12px;background:rgba(255,255,255,.06);border-radius:8px}
+.speed b{color:#fff;font-weight:600;white-space:nowrap}
+.summary .btn{width:100%}
+
+/* flow */
+.flow{background:var(--bg);padding:88px 0}
+.steps{list-style:none;margin:44px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0;counter-reset:s}
+.steps li{position:relative;padding:0 32px 0 0}
+.steps li::before{counter-increment:s;content:"0" counter(s);display:block;font-size:15px;font-weight:600;color:var(--violet-d);margin-bottom:14px}
+.steps li::after{content:"";position:absolute;left:34px;right:20px;top:11px;height:1.5px;background:linear-gradient(90deg,var(--violet),rgba(141,127,227,.15))}
+.steps li:last-child::after{display:none}
+.steps h3{font-size:23px;font-weight:600;margin-bottom:8px}
+.steps p{margin:0;color:var(--muted);max-width:330px}
+
+/* security */
+.secure{background:var(--ink);color:#fff;padding:96px 0}
+.secure .eyebrow{color:var(--violet)}
+.sec-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.secure p.lead{color:#c9c9e6}
+.badges{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.badge{padding:22px;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03)}
+.badge b{display:block;font-size:19px;font-weight:600;margin-bottom:4px}
+.badge span{font-size:14.5px;color:#c4c4e2}
+.badge.wide{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px}
+.reg{display:flex;gap:8px;flex-wrap:wrap}
+.reg i{font-style:normal;font-weight:600;font-size:14px;padding:6px 12px;border-radius:999px;background:rgba(141,127,227,.18);color:#d9d4fb}
+
+/* faq */
+.faq{padding:96px 0}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start}
+details{border-bottom:1px solid var(--line)}
+details:first-child{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font-size:19px;font-weight:600;min-height:44px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:12px;height:12px;border-right:2px solid var(--violet-d);border-bottom:2px solid var(--violet-d);transform:rotate(45deg) translate(-3px,-3px);transition:transform .25s}
+details[open] summary::after{transform:rotate(225deg) translate(-3px,-3px)}
+details p{margin:0 0 22px;color:var(--muted);max-width:620px}
+
+/* contact */
+.contact{background:var(--navy);color:#fff;padding:96px 0}
+.c-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.contact .eyebrow{color:var(--violet)}
+.contact p.lead{color:#d4d4ec}
+.call{display:inline-flex;align-items:center;gap:12px;margin-top:30px;font-size:22px;font-weight:600;text-decoration:none;min-height:44px}
+.call svg{color:var(--violet)}
+.c-links{margin-top:18px;display:flex;gap:22px;flex-wrap:wrap;font-size:16px}
+.c-links a{color:#d4d4ec;text-underline-offset:3px;padding:10px 0}
+form{background:#fff;color:var(--ink);border-radius:20px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+form .full{grid-column:1/-1}
+label.f{display:block;font-size:14.5px;font-weight:600;margin-bottom:6px}
+input.t,textarea{width:100%;font:400 16px "Outfit",sans-serif;padding:12px 14px;min-height:48px;border:1.5px solid #cfcde0;border-radius:10px;color:var(--ink);background:#fff}
+input.t:focus,textarea:focus{outline:none;border-color:var(--violet-d);box-shadow:0 0 0 3px rgba(141,127,227,.25)}
+textarea{min-height:96px;resize:vertical}
+form .btn{width:100%}
+.thanks{grid-column:1/-1;margin:0;padding:14px 16px;border-radius:10px;background:#e3f6ee;color:#0d5c40;font-weight:600}
+
+footer{background:var(--ink);color:#c4c4e2;padding:40px 0 48px;font-size:15px}
+.f-row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+footer .mark{color:#fff;font-size:24px}
+footer nav{display:flex;gap:22px;flex-wrap:wrap}
+footer nav a{text-underline-offset:3px;padding:10px 0;display:inline-block}
+.made{margin:22px 0 0;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);font-size:14px;color:#a9a9cc}
+
+.callbar{display:none}
+
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:980px){
+  .nav ul{display:none}
+  .hero .wrap{grid-template-columns:1fr;gap:44px;padding-top:52px;padding-bottom:64px}
+  .num-grid{grid-template-columns:repeat(3,1fr)}
+  .b-grid,.sec-grid,.faq-grid,.c-grid{grid-template-columns:1fr;gap:36px}
+  .summary{position:static}
+}
+@media (max-width:640px){
+  body{font-size:16.5px;padding-bottom:68px}
+  .wrap{padding:0 20px}
+  .mock-banner{font-size:14.5px;padding:8px 10px}
+  .nav{height:60px}
+  .nav .btn{padding:0 16px}
+  .hero .wrap{padding-top:40px}
+  .hero h1{font-size:42px}
+  .hero p.sub{font-size:17.5px;margin:18px 0 26px}
+  .actions .btn{flex:1 1 100%}
+  .case{padding:18px}
+  .case li{grid-template-columns:26px 1fr auto;gap:10px}
+  .case li em{font-size:13.5px}
+  .trust ul{display:grid;grid-template-columns:1fr 1fr;font-size:15px}
+  .numbers{padding-top:60px}
+  .num-grid{grid-template-columns:1fr 1fr}
+  .num:last-child{grid-column:1/-1}
+  .builder,.faq{padding:64px 0}
+  .checks{grid-template-columns:1fr}
+  .flow,.secure,.contact{padding:68px 0}
+  .steps{grid-template-columns:1fr;gap:30px}
+  .steps li::after{display:none}
+  .badges{grid-template-columns:1fr}
+  form{grid-template-columns:1fr;padding:22px}
+  summary{font-size:17.5px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;gap:8px;padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:var(--ink);border-top:1px solid rgba(255,255,255,.12)}
+  .callbar a{flex:1;min-height:46px;font-size:15px;padding:0 12px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock-banner" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+
+<header class="site">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="mark" href="#top" aria-label="VigilIQ, home">Vigil<b>IQ</b></a>
+    <ul>
+      <li><a href="#checks">Checks</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a class="btn btn-main" href="#trial">Free trial</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Background verification · India &amp; 170+ countries</p>
+        <h1 id="h1">The verified facts behind <span>every CV.</span></h1>
+        <p class="sub">Every hire carries a risk you cannot see. VigilIQ checks identity, employment, education, criminal records and global sanctions on one platform, with digital checks back in real time.</p>
+        <div class="actions">
+          <a class="btn btn-main" href="#trial">Start your free trial</a>
+          <a class="btn btn-ghost" href="#checks">Build your check package</a>
+        </div>
+        <div class="hero-meta">
+          <span><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#8d7fe3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>99.9% AI-driven accuracy</span>
+          <span><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#8d7fe3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Most checks in 24–72 hours</span>
+          <span><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#8d7fe3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Trusted by 500+ businesses</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="case" id="case" aria-label="Example of a candidate verification case">
+          <div class="case-top">
+            <div><small>Example case</small><strong>Pre-employment screening</strong></div>
+            <span class="pill" id="casePill">Report ready</span>
+          </div>
+          <ol id="caseList">
+            <li><span class="dot"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Identity</b><em>PAN, Aadhaar, Passport</em></div><span class="st">Verified</span></li>
+            <li><span class="dot"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Employment</b><em>UAN, EPFO, past employers</em></div><span class="st">Verified</span></li>
+            <li><span class="dot"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Education</b><em>Degree, university records</em></div><span class="st">Verified</span></li>
+            <li><span class="dot"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Criminal record</b><em>Court records, police verification</em></div><span class="st">Verified</span></li>
+            <li><span class="dot"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Global sanctions</b><em>AML &amp; PEP screening</em></div><span class="st">Verified</span></li>
+          </ol>
+          <div class="case-foot"><span><b>Audit-ready report</b> · securely archived</span><span>RBI · IRDAI · SEBI · NASSCOM</span></div>
+        </div>
+        <p class="case-note">An example of how a case moves on the VigilIQ dashboard</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust" aria-label="Certifications">
+    <ul class="wrap">
+      <li><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5l8-3z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 12l2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>ISO/IEC 27001:2022 Certified</li>
+      <li><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5l8-3z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 12l2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>SOC 2 Type II Certified</li>
+      <li><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 14l-1.5 8 5-3 5 3-1.5-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>PBSA Member</li>
+      <li><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>NASSCOM guidelines</li>
+    </ul>
+  </section>
+
+  <section class="numbers" aria-labelledby="nums-h">
+    <div class="wrap">
+      <h2 id="nums-h" class="eyebrow" style="font-size:14px;letter-spacing:.08em">Why businesses trust VigilIQ</h2>
+      <div class="num-grid">
+        <div class="num"><strong>10,000+</strong><span>cases verified every month</span></div>
+        <div class="num"><strong>500+</strong><span>businesses screen with us</span></div>
+        <div class="num"><strong>170+</strong><span>countries covered</span></div>
+        <div class="num"><strong>99.9%</strong><span>AI-driven accuracy in reports</span></div>
+        <div class="num"><strong>20+</strong><span>years of industry expertise</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="builder" id="checks" aria-labelledby="b-h">
+    <div class="wrap">
+      <div class="b-head">
+        <div>
+          <p class="eyebrow">Build your check package</p>
+          <h2 id="b-h">Pick your industry. We'll show what to check.</h2>
+          <p class="lead">Different industries face different hiring risks. Start from the checks we recommend for your sector, then add or remove any of them.</p>
+        </div>
+      </div>
+
+      <fieldset class="chips" id="chips">
+        <legend>Your industry</legend>
+        <button type="button" class="chip" data-ind="it" aria-pressed="true">IT &amp; Technology</button>
+        <button type="button" class="chip" data-ind="bfsi" aria-pressed="false">BFSI</button>
+        <button type="button" class="chip" data-ind="ecom" aria-pressed="false">E-commerce &amp; Retail</button>
+        <button type="button" class="chip" data-ind="fmcg" aria-pressed="false">FMCG &amp; FMCD</button>
+        <button type="button" class="chip" data-ind="health" aria-pressed="false">Healthcare &amp; Pharma</button>
+        <button type="button" class="chip" data-ind="staff" aria-pressed="false">Staffing &amp; Recruitment</button>
+        <button type="button" class="chip" data-ind="mfg" aria-pressed="false">Manufacturing</button>
+      </fieldset>
+
+      <div class="b-grid">
+        <div>
+          <p class="why-ind" id="whyInd" aria-live="polite">Developers and project managers routinely access sensitive client data and IP. These checks run fast enough to keep onboarding on schedule, and our API connects to your ATS or HRMS.</p>
+          <div class="checks" id="checkList">
+            <label class="ck"><input type="checkbox" value="identity" checked><span class="box"><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Identity verification</b><span class="c">PAN, Aadhaar, Passport, Voter ID, Driving License</span></span></label>
+            <label class="ck"><input type="checkbox" value="employment" checked><span class="box"><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Employment verification</b><span class="c">UAN, EPFO records, previous employers, designation &amp; tenure</span></span></label>
+            <label class="ck"><input type="checkbox" value="education" checked><span class="box"><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Education verification</b><span class="c">Degrees, diplomas, university records, certifications</span></span></label>
+            <label class="ck"><input type="checkbox" value="criminal" checked><span class="box"><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Criminal record verification</b><span class="c">Court records, police verification, criminal screening</span></span></label>
+            <label class="ck"><input type="checkbox" value="address"><span class="box"><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Address verification</b><span class="c">Digital and field agent checks across 28 states</span></span></label>
+            <label class="ck"><input type="checkbox" value="sanctions"><span class="box"><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Global sanctions check</b><span class="c">AML &amp; PEP screening across 170+ countries</span></span></label>
+            <label class="ck"><input type="checkbox" value="credit"><span class="box"><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Credit check</b><span class="c">Credit score and financial risk profile</span></span></label>
+            <label class="ck"><input type="checkbox" value="reference"><span class="box"><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Reference check</b><span class="c">Professional reference validation</span></span></label>
+          </div>
+        </div>
+
+        <aside class="summary" aria-labelledby="sum-h">
+          <h3 id="sum-h">Your package</h3>
+          <p class="count" id="sumCount" aria-live="polite">4 checks · one report</p>
+          <ul id="sumList">
+            <li>Identity verification</li><li>Employment verification</li><li>Education verification</li><li>Criminal record verification</li>
+          </ul>
+          <div class="speed" id="speed">
+            <div id="spRT"><span>PAN, Aadhaar &amp; UAN</span><b>Real time</b></div>
+            <div><span>Most standard checks</span><b>24–72 hours</b></div>
+          </div>
+          <a class="btn btn-main" href="#trial" id="usePkg">Start a free trial with this</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="flow" id="how" aria-labelledby="how-h">
+    <div class="wrap">
+      <p class="eyebrow">How it works</p>
+      <h2 id="how-h">One platform, from offer to onboarding.</h2>
+      <ol class="steps">
+        <li><h3>Trigger</h3><p>Start checks automatically from your existing recruitment workflow. We connect with 20+ ATS and HRMS platforms, or use our API suite.</p></li>
+        <li><h3>Track</h3><p>See exactly where each check stands on a real-time dashboard, which parts are pending, and get an alert the moment a case is complete.</p></li>
+        <li><h3>Decide</h3><p>Get a report that is audit-ready and securely archived: defensible, organised records that hold up under scrutiny.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="secure" id="security" aria-labelledby="sec-h">
+    <div class="wrap sec-grid">
+      <div>
+        <p class="eyebrow">Security &amp; compliance</p>
+        <h2 id="sec-h">Your candidates' data, handled to standard.</h2>
+        <p class="lead">Auditors now expect documented evidence of pre-employment screening. Every VigilIQ report is structured to meet the standards your regulator holds you to.</p>
+      </div>
+      <div class="badges">
+        <div class="badge"><b>ISO/IEC 27001:2022</b><span>Certified information security</span></div>
+        <div class="badge"><b>SOC 2 Type II</b><span>Certified security, compliant with NASSCOM guidelines</span></div>
+        <div class="badge"><b>PBSA Member</b><span>Professional Background Screening Association</span></div>
+        <div class="badge"><b>Locked down</b><span>End-to-end encryption and role-based access controls</span></div>
+        <div class="badge wide"><span>Reports structured for</span><span class="reg"><i>RBI</i><i>IRDAI</i><i>SEBI</i><i>NASSCOM</i></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq" aria-labelledby="faq-h">
+    <div class="wrap faq-grid">
+      <div>
+        <p class="eyebrow">Questions</p>
+        <h2 id="faq-h">What HR teams ask us first.</h2>
+      </div>
+      <div>
+        <details open><summary>How fast are results?</summary><p>Digital checks such as PAN, Aadhaar and UAN come back in real time. Most standard background checks are complete within 24 to 72 hours.</p></details>
+        <details><summary>What can you verify?</summary><p>Identity, employment history, education, criminal records, address, credit, professional references and global sanctions (AML &amp; PEP), all in one place.</p></details>
+        <details><summary>Does it work with our ATS or HRMS?</summary><p>Yes. VigilIQ connects with 20+ ATS and HRMS platforms, so checks start inside the recruitment workflow you already use, with no manual follow-up.</p></details>
+        <details><summary>Can you check candidates who worked abroad?</summary><p>Yes. We cover 170+ countries, including international employment checks, overseas criminal record searches and sanctions screening.</p></details>
+        <details><summary>Will our reports hold up in an audit?</summary><p>Every report is audit-ready, securely archived and structured to meet RBI, IRDAI, SEBI and NASSCOM compliance standards.</p></details>
+        <details><summary>We hire in bulk. Can you keep up?</summary><p>We verify 10,000+ cases every month. Bulk processing, custom workflows and the live dashboard are built for high-volume teams like staffing agencies.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="trial" aria-labelledby="c-h">
+    <div class="wrap c-grid">
+      <div>
+        <p class="eyebrow">Start your free trial</p>
+        <h2 id="c-h">Hire on verified facts.</h2>
+        <p class="lead">Tell us what you need to verify. Our team supports you from implementation through day-to-day operations.</p>
+        <a class="call" href="tel:+18136861202"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z" fill="currentColor"/></svg>(+1) 813-686-1202</a>
+        <div class="c-links">
+          <a href="https://vigiliqglobal.com/">vigiliqglobal.com</a>
+          <a href="https://in.linkedin.com/company/vigiliq" target="_blank" rel="noopener">VigilIQ on LinkedIn</a>
+        </div>
+      </div>
+      <form id="form" novalidate>
+        <div><label class="f" for="fn">Your name</label><input class="t" id="fn" name="name" autocomplete="name" required></div>
+        <div><label class="f" for="fc">Company</label><input class="t" id="fc" name="company" autocomplete="organization"></div>
+        <div><label class="f" for="fe">Work email</label><input class="t" id="fe" name="email" type="email" autocomplete="email" required></div>
+        <div><label class="f" for="fp">Phone</label><input class="t" id="fp" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="full"><label class="f" for="fm">What do you need to verify?</label><textarea id="fm" name="message">Identity verification, Employment verification, Education verification, Criminal record verification</textarea></div>
+        <div class="full"><button class="btn btn-dark" type="submit">Start my free trial</button></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-row">
+      <a class="mark" href="#top" aria-label="VigilIQ, back to top">Vigil<b>IQ</b></a>
+      <nav aria-label="Footer">
+        <a href="#checks">Checks</a>
+        <a href="#security">Security</a>
+        <a href="tel:+18136861202">Call us</a>
+        <a href="https://in.linkedin.com/company/vigiliq" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </div>
+    <p class="made">Mockup made for VigilIQ by Sunny Gupta, signalsetbase.com</p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick actions">
+  <a class="btn btn-ghost" href="tel:+18136861202">Call us</a>
+  <a class="btn btn-main" href="#trial">Free trial</a>
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Package builder
+  var IND = {
+    it:{c:['identity','employment','education','criminal'],t:'Developers and project managers routinely access sensitive client data and IP. These checks run fast enough to keep onboarding on schedule, and our API connects to your ATS or HRMS.'},
+    bfsi:{c:['identity','employment','criminal','credit','sanctions'],t:'RBI, IRDAI and SEBI expect rigorous screening for anyone handling money, credit decisions or customer accounts. Credit and sanctions checks sit alongside the standard checks.'},
+    ecom:{c:['identity','address','criminal','employment'],t:'Delivery agents, warehouse and store staff, screened fast enough for festive-season hiring spikes and multi-city rollouts.'},
+    fmcg:{c:['identity','criminal','employment'],t:'Hundreds of frontline hires a month across cities and distribution hubs. We also screen third-party distributors and franchise partners.'},
+    health:{c:['identity','education','criminal'],t:'In healthcare, credential fraud is a patient safety issue. Education is verified against medical council records.'},
+    staff:{c:null,t:'Bulk processing, custom workflows and a live dashboard for every case in your pipeline. Tick the checks each client expects.'},
+    mfg:{c:['identity','address','criminal'],t:'Identity, address and criminal checks for shopfloor and supervisory roles. Add employment and education for management and finance.'}
+  };
+  var boxes = [].slice.call(document.querySelectorAll('#checkList input'));
+  var names = {}; boxes.forEach(function(b){ names[b.value] = b.parentNode.querySelector('b').textContent; });
+  function render(){
+    var on = boxes.filter(function(b){return b.checked;}).map(function(b){return b.value;});
+    var list = document.getElementById('sumList');
+    list.innerHTML = '';
+    on.forEach(function(v){ var li=document.createElement('li'); li.textContent=names[v]; list.appendChild(li); });
+    document.getElementById('sumCount').textContent = on.length ? on.length + (on.length===1?' check':' checks') + ' · one report' : 'Tick at least one check';
+    document.getElementById('spRT').style.display = (on.indexOf('identity')>-1 || on.indexOf('employment')>-1) ? '' : 'none';
+    var msg = document.getElementById('fm');
+    if (!msg.dataset.edited) msg.value = on.map(function(v){return names[v];}).join(', ');
+  }
+  document.querySelectorAll('.chip').forEach(function(ch){
+    ch.addEventListener('click', function(){
+      document.querySelectorAll('.chip').forEach(function(c){c.setAttribute('aria-pressed','false');});
+      ch.setAttribute('aria-pressed','true');
+      var d = IND[ch.dataset.ind];
+      if (d.c) boxes.forEach(function(b){ b.checked = d.c.indexOf(b.value) > -1; });
+      document.getElementById('whyInd').textContent = d.t;
+      render();
+    });
+  });
+  boxes.forEach(function(b){ b.addEventListener('change', render); });
+  document.getElementById('fm').addEventListener('input', function(){ this.dataset.edited = '1'; });
+
+  // Form
+  var form = document.getElementById('form');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var old = form.querySelector('.thanks'); if (old) old.remove();
+    var p = document.createElement('p'); p.className='thanks'; p.setAttribute('role','status');
+    p.textContent = 'Thanks. This is a mockup, so nothing was sent.';
+    form.appendChild(p);
+  });
+
+  // Case card: finished state is drawn first; replays only while on screen
+  var items = [].slice.call(document.querySelectorAll('#caseList li'));
+  var pill = document.getElementById('casePill');
+  var visible = false, timer = null, step = -1;
+  function setAll(state){ items.forEach(function(li){ li.className = state; li.querySelector('.st').textContent = state==='pending'?'Pending':'Verified'; }); }
+  function tick(){
+    if (!visible) { timer = null; return; }
+    if (step === -1) { setAll('pending'); pill.textContent='In progress'; pill.className='pill run'; step = 0; }
+    else if (step < items.length) {
+      if (step > 0) { items[step-1].className=''; items[step-1].querySelector('.st').textContent='Verified'; }
+      items[step].className='active'; items[step].querySelector('.st').textContent='Checking';
+      step++;
+    } else {
+      items[step-1].className=''; items[step-1].querySelector('.st').textContent='Verified';
+      pill.textContent='Report ready'; pill.className='pill'; step = -1;
+      timer = setTimeout(tick, 4200); return;
+    }
+    timer = setTimeout(tick, 900);
+  }
+  if (!reduce && 'IntersectionObserver' in window) {
+    new IntersectionObserver(function(es){
+      visible = es[0].isIntersecting;
+      if (visible && !timer) timer = setTimeout(tick, 2600);
+    },{threshold:.4}).observe(document.getElementById('case'));
+  }
+
+  // Gentle rise for sections below the first screen
+  if (!reduce && 'IntersectionObserver' in window) {
+    var els = document.querySelectorAll('.num, .b-head, .chips, .b-grid, .steps li, .badge, .faq-grid > div, .c-grid > *');
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.remove('will-rise'); io.unobserve(e.target); } });
+    },{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){
+      if (el.getBoundingClientRect().top > window.innerHeight) { el.classList.add('rise','will-rise'); io.observe(el); }
+    });
+  }
+})();
+</script>
+</body>
+</html>
