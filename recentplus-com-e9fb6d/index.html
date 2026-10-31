@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup recentplus-com-e9fb6d 1 06c0258a -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recentplus Website Shop: a passion for creating spaces</title>
+<meta name="description" content="Recentplus Website Shop: renovation and restoration, consulting, project management and architectural solutions for homeowners and commercial developers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f9f9f9; --white:#fff; --ink:#111; --soft:#4a4a4a; --line:#dcdcdc;
+  --accent:#1a66d2; --tint:#eef3fb;
+  --serif:"Cardo",Georgia,"Times New Roman",serif;
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --wrap:1200px; --pad:clamp(20px,5vw,48px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:#fff;padding:10px 14px;border-radius:6px;z-index:50}
+.skip:focus{top:56px}
+
+/* Signal Set banner */
+.mock{background:#1d1d1d;color:#f2f2f2;min-height:44px;display:flex;align-items:center;justify-content:center;padding:10px 16px;font:500 15px/1.35 var(--sans);text-align:center;width:100%}
+.mock a{color:#fff;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.mock a:hover{text-decoration-thickness:2px}
+
+/* Header */
+header.site{position:sticky;top:0;z-index:20;background:rgba(249,249,249,.94);backdrop-filter:saturate(1.2) blur(8px);-webkit-backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid transparent;transition:border-color .3s}
+header.site.scrolled{border-bottom-color:var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;min-height:68px;gap:16px}
+.brand{font:600 16px/1.2 var(--sans);text-decoration:none;letter-spacing:-.01em;display:flex;align-items:center;gap:10px;min-height:44px}
+.brand svg{flex:none}
+nav.top ul{list-style:none;margin:0;padding:0;display:flex;gap:6px;align-items:center}
+nav.top a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;font-size:15px;text-decoration:none;color:var(--soft);border-radius:999px}
+nav.top a:hover{color:var(--ink)}
+nav.top a.pill{background:var(--ink);color:#fff;padding:0 18px;margin-left:6px}
+nav.top a.pill:hover{background:#333}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;font:500 16px/1 var(--sans);text-decoration:none;border:1px solid var(--ink);cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.btn.solid{background:var(--ink);color:#fff}
+.btn.solid:hover{background:#333}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+.btn .arr{transition:transform .2s}
+.btn:hover .arr{transform:translateX(3px)}
+
+/* Hero */
+.hero{padding:clamp(48px,9vw,104px) 0 clamp(28px,4vw,48px);text-align:center}
+.hero h1{margin:0 auto;max-width:15ch;font:400 clamp(44px,7.4vw,92px)/1.02 var(--serif);letter-spacing:-.02em}
+.hero h1 .kick{display:block;font:500 13px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--soft);margin-bottom:26px}
+.hero p.lead{max-width:40rem;margin:26px auto 0;font-size:clamp(17px,1.6vw,20px);color:var(--ink)}
+.hero p.why{display:flex;align-items:center;justify-content:center;gap:12px;margin:14px auto 0;font:italic 400 clamp(18px,1.7vw,21px)/1.35 var(--serif);color:var(--soft)}
+.hero p.why span{width:28px;height:1px;background:currentColor;flex:none}
+.actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:34px}
+.heroimg{margin-top:clamp(40px,6vw,72px)}
+.heroimg figure{margin:0;border-radius:18px;overflow:hidden;background:#cfd9e6;box-shadow:0 1px 0 rgba(0,0,0,.04),0 30px 60px -40px rgba(20,40,70,.45)}
+.heroimg img{width:100%;aspect-ratio:1500/640;object-fit:cover;object-position:50% 58%}
+.who{display:flex;justify-content:center;gap:clamp(16px,4vw,48px);flex-wrap:wrap;margin:28px 0 0;padding:0;list-style:none;font-size:15px;color:var(--soft)}
+.who li{display:flex;align-items:center;gap:10px}
+.who li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ink)}
+
+/* Statement */
+.statement{padding:clamp(72px,11vw,140px) 0}
+.statement .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(24px,6vw,96px);align-items:end;border-top:1px solid var(--ink);padding-top:clamp(28px,4vw,44px)}
+.eyebrow{font:500 13px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--soft);margin:0 0 18px;display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+h2{font:400 clamp(34px,4.6vw,58px)/1.08 var(--serif);letter-spacing:-.015em;margin:0}
+.statement p.big{margin:0;font:400 clamp(21px,2.1vw,26px)/1.45 var(--serif);color:var(--soft);max-width:32rem}
+
+/* Services index */
+.services{background:var(--white);padding:clamp(72px,10vw,128px) 0;border-top:1px solid #eee;border-bottom:1px solid #eee}
+.shead{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(32px,5vw,56px)}
+.shead p{margin:0;color:var(--soft);max-width:26rem}
+ol.index{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+ol.index li{display:grid;grid-template-columns:72px minmax(0,1fr) auto;align-items:center;gap:16px;padding:clamp(18px,2.4vw,28px) 0;border-bottom:1px solid var(--line);transition:background .35s,padding .35s}
+ol.index .n{font:500 14px/1 var(--sans);color:var(--soft);font-variant-numeric:tabular-nums}
+ol.index .t{font:400 clamp(26px,3.6vw,46px)/1.1 var(--serif);letter-spacing:-.01em}
+ol.index .tag{justify-self:end;margin-right:12px;font:500 13px/1 var(--sans);color:var(--accent);background:var(--tint);border-radius:999px;padding:8px 12px;white-space:nowrap;animation:fade .4s ease}
+ol.index li.on{background:linear-gradient(90deg,var(--tint),rgba(238,243,251,0) 70%);box-shadow:inset 3px 0 0 var(--accent)}
+ol.index li .n{padding-left:16px}
+ol.index li.on .n{color:var(--accent)}
+
+/* Planner */
+.plan{padding:clamp(72px,10vw,128px) 0}
+.plan .grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,72px);align-items:start;margin-top:clamp(32px,5vw,52px)}
+.plan .intro{max-width:34rem;color:var(--soft);margin:18px 0 0;font-size:18px}
+fieldset{border:0;margin:0 0 30px;padding:0}
+legend{font:600 15px/1.3 var(--sans);margin-bottom:14px;padding:0}
+legend span{color:var(--soft);font-weight:500;margin-right:8px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip label{display:inline-flex;align-items:center;min-height:48px;padding:0 20px;border:1px solid #bdbdbd;border-radius:999px;background:var(--white);cursor:pointer;font-size:16px;transition:border-color .2s,background .2s,color .2s}
+.chip label:hover{border-color:var(--ink)}
+.chip input:checked+label{background:var(--ink);border-color:var(--ink);color:#fff}
+.chip input:focus-visible+label{outline:3px solid var(--accent);outline-offset:3px}
+.result{background:var(--white);border:1px solid #e6e6e6;border-radius:18px;padding:clamp(24px,3.4vw,40px);box-shadow:0 24px 48px -36px rgba(0,0,0,.35);position:sticky;top:100px}
+.result .k{font:500 13px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin:0}
+.result h3{font:400 clamp(26px,2.8vw,34px)/1.15 var(--serif);margin:14px 0 22px}
+.result ol{list-style:none;margin:0 0 24px;padding:0;counter-reset:s}
+.result li{display:flex;gap:14px;align-items:baseline;padding:14px 0;border-top:1px solid var(--line);font-size:17px}
+.result li:last-child{border-bottom:1px solid var(--line)}
+.result li b{font:500 13px/1 var(--sans);color:var(--accent);min-width:22px;font-variant-numeric:tabular-nums}
+.draft{background:var(--paper);border-radius:12px;padding:16px 18px;font-size:15px;color:var(--soft);margin:0 0 24px;border-left:3px solid var(--ink)}
+.draft strong{display:block;color:var(--ink);font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
+.fade{animation:fade .45s ease}
+@keyframes fade{from{opacity:.25;transform:translateY(4px)}to{opacity:1;transform:none}}
+
+/* Contact */
+.contact{background:var(--ink);color:#f3f3f3;padding:clamp(72px,10vw,128px) 0;border-radius:28px 28px 0 0}
+.contact .grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(32px,6vw,88px);align-items:start}
+.contact .eyebrow{color:#bdbdbd}
+.contact h2{color:#fff}
+.contact p.sub{color:#c9c9c9;font-size:18px;max-width:28rem;margin:22px 0 0}
+.contact p.inc{margin:40px 0 12px;font:500 13px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#bdbdbd}
+.contact ol.for{list-style:none;margin:0;padding:0;max-width:28rem;border-top:1px solid #3a3a3a}
+.contact ol.for li{display:flex;align-items:baseline;gap:16px;padding:14px 0;border-bottom:1px solid #3a3a3a;font:400 20px/1.3 var(--serif);color:#fff}
+.contact ol.for b{font:500 13px/1 var(--sans);color:#a9c6f2;min-width:22px;font-variant-numeric:tabular-nums}
+form{display:grid;gap:18px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+label.f{display:grid;gap:8px;font-size:14px;font-weight:500;color:#e2e2e2}
+input.in,select.in,textarea.in{width:100%;font:400 16px/1.4 var(--sans);color:#fff;background:#1d1d1d;border:1px solid #4a4a4a;border-radius:12px;padding:13px 14px;min-height:50px}
+textarea.in{min-height:150px;resize:vertical}
+select.in{appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,#ddd 50%),linear-gradient(135deg,#ddd 50%,transparent 50%);background-position:calc(100% - 20px) 22px,calc(100% - 15px) 22px;background-size:5px 5px;background-repeat:no-repeat;padding-right:40px}
+.in:focus{outline:none;border-color:#fff;box-shadow:0 0 0 3px rgba(122,170,240,.55)}
+.contact .btn.solid{background:#fff;color:var(--ink);border-color:#fff;justify-self:start}
+.contact .btn.solid:hover{background:#e8e8e8}
+.thanks{display:none;background:#1f2a1f;border:1px solid #3f6b3f;color:#e8f3e8;border-radius:12px;padding:14px 16px;font-size:15px}
+.thanks.show{display:block}
+
+/* Footer */
+footer{background:var(--ink);color:#bdbdbd;font-size:14px;padding:0 0 40px}
+footer .bar{border-top:1px solid #333;padding-top:28px;flex-wrap:wrap;align-items:flex-start}
+footer .brand{color:#fff}
+footer ul{list-style:none;margin:0;padding:0;display:flex;gap:6px;flex-wrap:wrap}
+footer ul a{display:inline-flex;align-items:center;min-height:44px;padding:0 10px;color:#d6d6d6;text-decoration:none}
+footer ul a:hover{color:#fff;text-decoration:underline}
+footer .credit{margin:18px 0 0;color:#a8a8a8}
+footer .credit a{color:#d6d6d6}
+
+/* Rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:900px){
+  .statement .grid,.plan .grid,.contact .grid{grid-template-columns:1fr}
+  .result{position:static}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  nav.top li.hide{display:none}
+  nav.top a.pill{padding:0 16px;margin-left:0}
+  ol.index li{grid-template-columns:52px minmax(0,1fr)}
+  .hero{text-align:left}
+  .hero h1{margin:0;font-size:46px}
+  .hero h1 .kick{margin-bottom:18px}
+  .hero p.lead{margin-left:0}
+  .hero p.why{justify-content:flex-start;align-items:flex-start}
+  .hero p.why span{margin-top:12px}
+  .actions{justify-content:flex-start}
+  .actions .btn{flex:1 1 100%}
+  .heroimg figure{border-radius:14px}
+  .heroimg img{aspect-ratio:4/3;object-position:45% 50%}
+  .who{justify-content:flex-start}
+  ol.index li{row-gap:8px}
+  ol.index .tag{grid-column:2;justify-self:start;margin-right:0}
+  .row2{grid-template-columns:1fr}
+  .contact{border-radius:20px 20px 0 0}
+  .contact .btn.solid{justify-self:stretch}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .will-rise{opacity:1!important;transform:none!important}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Recentplus Website Shop, back to top">
+      <span>Recentplus<span class="long"> Website Shop</span></span>
+    </a>
+    <nav class="top" aria-label="Main">
+      <ul>
+        <li class="hide"><a href="#services">Services</a></li>
+        <li class="hide"><a href="#plan">Where to start</a></li>
+        <li><a class="pill" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <h1 id="h1"><span class="kick">Recentplus Website Shop</span>A passion for creating spaces.</h1>
+      <p class="lead">Renovation and restoration, architectural solutions, consulting and project management for homeowners and commercial developers.</p>
+      <p class="why"><span aria-hidden="true"></span>Built on a commitment to innovation and sustainability.</p>
+      <div class="actions">
+        <a class="btn solid" href="#plan">Find where to start <span class="arr" aria-hidden="true">→</span></a>
+        <a class="btn ghost" href="#services">See our services</a>
+      </div>
+      <div class="heroimg">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1503387837-b154d5074bd2?w=1800&amp;q=70&amp;auto=format&amp;fit=crop" width="1800" height="1013" alt="A scale ruler and a roll of paper on a wooden table" fetchpriority="high">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement" aria-labelledby="h-commit">
+    <div class="wrap"><div class="grid">
+      <div>
+        <p class="eyebrow">What drives us</p>
+        <h2 id="h-commit">A commitment to innovation and sustainability.</h2>
+      </div>
+      <p class="big">Creativity and functionality, merged. We bring imagination and expertise to every space, so it looks right and works right.</p>
+    </div></div>
+  </section>
+
+  <section class="services" id="services" aria-labelledby="h-services">
+    <div class="wrap">
+      <div class="shead">
+        <div>
+          <p class="eyebrow">Services</p>
+          <h2 id="h-services">Six ways we help.</h2>
+        </div>
+        <p>For a diverse clientele, from homeowners to commercial developers.</p>
+      </div>
+      <ol class="index" id="index">
+        <li data-s="reno"><span class="n">01</span><span class="t">Renovation and restoration</span></li>
+        <li data-s="arch"><span class="n">02</span><span class="t">Architectural solutions</span></li>
+        <li data-s="cons"><span class="n">03</span><span class="t">Consulting</span></li>
+        <li data-s="pm"><span class="n">04</span><span class="t">Project management</span></li>
+        <li data-s="supp"><span class="n">05</span><span class="t">Continuous support</span></li>
+        <li data-s="app"><span class="n">06</span><span class="t">App access</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="plan" id="plan" aria-labelledby="h-plan">
+    <div class="wrap">
+      <p class="eyebrow">Where to start</p>
+      <h2 id="h-plan">Tell us what you're planning.</h2>
+      <p class="intro">Two quick taps. We'll point you to the right service and write the start of your message for you.</p>
+      <div class="grid">
+        <form id="planner" onsubmit="return false" aria-describedby="plan-note">
+          <fieldset>
+            <legend><span>1</span>I am</legend>
+            <div class="chips">
+              <div class="chip"><input type="radio" name="who" id="w1" value="a homeowner" checked><label for="w1">A homeowner</label></div>
+              <div class="chip"><input type="radio" name="who" id="w2" value="a commercial developer"><label for="w2">A commercial developer</label></div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend><span>2</span>I want to</legend>
+            <div class="chips">
+              <div class="chip"><input type="radio" name="need" id="n1" value="restore" checked><label for="n1">Restore what's there</label></div>
+              <div class="chip"><input type="radio" name="need" id="n2" value="new"><label for="n2">Plan something new</label></div>
+              <div class="chip"><input type="radio" name="need" id="n3" value="manage"><label for="n3">Keep a project on track</label></div>
+              <div class="chip"><input type="radio" name="need" id="n4" value="advice"><label for="n4">Get expert advice</label></div>
+            </div>
+          </fieldset>
+          <p id="plan-note" class="intro" style="font-size:15px;margin:0">Your picks also light up the matching services above.</p>
+        </form>
+
+        <div class="result" aria-live="polite">
+          <p class="k">Your starting point</p>
+          <h3 id="r-title">Restoring a home you already have.</h3>
+          <ol id="r-list">
+            <li><b>01</b><span>Renovation and restoration</span></li>
+            <li><b>03</b><span>Consulting</span></li>
+          </ol>
+          <p class="draft"><strong>Your message, started</strong><span id="r-msg">Hello, I’m a homeowner and I’d like to restore an existing property. I’m interested in renovation and restoration, and consulting.</span></p>
+          <a class="btn solid" href="#contact" id="r-go">Send this to us <span class="arr" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="h-contact">
+    <div class="wrap grid">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2 id="h-contact">Let's create your space.</h2>
+        <p class="sub">Tell us a little about your project and we'll take it from there.</p>
+        <p class="inc" id="inc">Helpful to include</p>
+        <ol class="for" aria-labelledby="inc">
+          <li><b>01</b>The kind of property</li>
+          <li><b>02</b>What you’d like to change</li>
+          <li><b>03</b>Where it is</li>
+          <li><b>04</b>When you’d like to start</li>
+        </ol>
+      </div>
+      <form id="enquiry" novalidate>
+        <div class="row2">
+          <label class="f">Your name<input class="in" name="name" autocomplete="name" required></label>
+          <label class="f">Email<input class="in" type="email" name="email" autocomplete="email" required></label>
+        </div>
+        <label class="f">Service
+          <select class="in" name="service" id="f-service">
+            <option>Renovation and restoration</option>
+            <option>Architectural solutions</option>
+            <option>Consulting</option>
+            <option>Project management</option>
+            <option>Continuous support</option>
+            <option>App access</option>
+            <option>Not sure yet</option>
+          </select>
+        </label>
+        <label class="f">Your project<textarea class="in" name="msg" id="f-msg">Hello, I’m a homeowner and I’d like to restore an existing property. I’m interested in renovation and restoration, and consulting.</textarea></label>
+        <button class="btn solid" type="submit">Send enquiry <span class="arr" aria-hidden="true">→</span></button>
+        <p class="thanks" id="thanks" role="status">Thanks. This is a mockup, so nothing was sent.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="bar">
+      <a class="brand" href="#top">Recentplus Website Shop</a>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#plan">Where to start</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://recentplus.com/">recentplus.com</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="credit">Mockup made for Recentplus Website Shop by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var S={reno:['01','Renovation and restoration'],arch:['02','Architectural solutions'],cons:['03','Consulting'],pm:['04','Project management'],supp:['05','Continuous support'],app:['06','App access']};
+  var PLAN={
+    restore:{keys:['reno','cons'],title:{h:'Restoring a home you already have.',d:'Restoring a property you already own.'},verb:'restore an existing property'},
+    'new':{keys:['arch','cons'],title:{h:'Planning a new space for your home.',d:'Planning a new commercial space.'},verb:'plan something new'},
+    manage:{keys:['pm','supp'],title:{h:'Keeping your home project on track.',d:'Keeping your development on track.'},verb:'keep a project on track'},
+    advice:{keys:['cons','arch'],title:{h:'Expert advice for your home.',d:'Expert advice for your development.'},verb:'get expert advice'}
+  };
+  var $=function(s){return document.querySelector(s)};
+  var list=$('#r-list'),title=$('#r-title'),msg=$('#r-msg'),fmsg=$('#f-msg'),fsel=$('#f-service'),card=$('.result');
+  var edited=false,touched=false;
+  fmsg.addEventListener('input',function(){edited=true});
+  function update(animate){
+    var who=document.querySelector('input[name=who]:checked').value;
+    var p=PLAN[document.querySelector('input[name=need]:checked').value];
+    var home=who==='a homeowner';
+    title.textContent=home?p.title.h:p.title.d;
+    list.innerHTML='';
+    p.keys.forEach(function(k,i){
+      var li=document.createElement('li');
+      li.innerHTML='<b>'+S[k][0]+'</b><span>'+S[k][1]+'</span>';
+      list.appendChild(li);
+    });
+    var names=p.keys.map(function(k){return S[k][1]});
+    var text='Hello, I’m '+who+' and I’d like to '+p.verb+'. I’m interested in '+names.map(function(n){return n.toLowerCase()}).join(', and ')+'.';
+    msg.textContent=text;
+    if(!edited) fmsg.value=text;
+    fsel.value=names[0];
+    document.querySelectorAll('#index li').forEach(function(li){
+      var on=touched&&p.keys.indexOf(li.getAttribute('data-s'))>-1,tag=li.querySelector('.tag');
+      li.classList.toggle('on',on);
+      if(on&&!tag){tag=document.createElement('span');tag.className='tag';tag.textContent='Your pick';li.appendChild(tag)}
+      if(!on&&tag) li.removeChild(tag);
+    });
+    if(animate){card.classList.remove('fade');void card.offsetWidth;card.classList.add('fade')}
+  }
+  document.querySelectorAll('#planner input').forEach(function(i){i.addEventListener('change',function(){touched=true;update(true)})});
+  $('#r-go').addEventListener('click',function(){edited=false;update(false)});
+  update(false);
+
+  $('#enquiry').addEventListener('submit',function(e){e.preventDefault();$('#thanks').classList.add('show')});
+
+  var head=$('header.site');
+  window.addEventListener('scroll',function(){head.classList.toggle('scrolled',window.scrollY>60)},{passive:true});
+
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce && 'IntersectionObserver' in window){
+    var els=document.querySelectorAll('.statement .grid, .shead, #index li, .plan h2, .plan .grid>*, .contact .grid>*');
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){
+      if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('will-rise','rise');io.observe(el)}
+    });
+  }
+})();
+</script>
+</body>
+</html>
