@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup espressoroomnorthcote-com-au-ad60d3 1 eefbe372 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Espresso Room Northcote | Coffee and Food, 7 Days</title>
+<meta name="description" content="Espresso Room Northcote: excellent coffee and fresh local food, open 7 days for breakfast, lunch and everything in between.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#d11824;--red-dk:#a8121c;--ink:#161212;--ink-2:#3d3535;--mute:#6b6262;
+  --paper:#faf6f1;--card:#fff;--line:#e8e0d8;
+  --head:'Oswald',Impact,'Arial Narrow',sans-serif;
+  --body:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid #f2b705;outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--head);font-weight:600;text-transform:uppercase;letter-spacing:.01em;line-height:1.05;margin:0}
+p{margin:0}
+
+/* banner */
+.ss-banner{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:#f3ebe2;color:var(--ink);font:500 15px/1.3 var(--body);text-align:center;border-bottom:1px solid #e2d6c9}
+.ss-banner a{color:var(--red-dk);text-decoration:underline;text-underline-offset:3px;font-weight:700}
+
+/* header */
+.top{background:var(--red);color:#fff;position:sticky;top:0;z-index:20;box-shadow:0 1px 0 rgba(0,0,0,.08)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+.logo img{height:60px;width:auto}
+.nav{display:flex;align-items:center;gap:6px;list-style:none;margin:0;padding:0}
+.nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;font:500 15px/1 var(--head);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:#fff}
+.nav a:hover{text-decoration:underline;text-underline-offset:6px}
+.nav .pill{background:#fff;color:var(--red-dk);border-radius:999px;padding:0 20px;margin-left:8px}
+.nav .pill:hover{text-decoration:none;background:var(--ink);color:#fff}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:600 16px/1 var(--head);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-dk)}
+.btn-line{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-line:hover{background:var(--ink);color:#fff}
+.btn-white{background:#fff;color:var(--red-dk)}
+.btn-white:hover{background:var(--ink);color:#fff}
+.arrow{font-family:var(--body);font-weight:700}
+
+/* hero */
+.hero{padding:56px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
+.status{display:inline-flex;align-items:center;gap:10px;padding:8px 16px 8px 12px;border-radius:999px;background:#fff;border:1px solid var(--line);font:500 15px/1.2 var(--body);color:var(--ink-2);box-shadow:0 1px 2px rgba(22,18,18,.05)}
+.dot{width:10px;height:10px;border-radius:50%;background:#1f8a4c;box-shadow:0 0 0 4px rgba(31,138,76,.15);flex:none}
+.status.closed .dot{background:var(--red);box-shadow:0 0 0 4px rgba(209,24,36,.15)}
+.hero h1{margin:26px 0 22px;font-size:clamp(46px,6.2vw,86px);line-height:.98}
+.hero h1 .name{display:block;font-size:.3em;letter-spacing:.18em;color:var(--red-dk);margin-bottom:16px}
+.hero h1 .red{color:var(--red)}
+.lede{font-size:19px;color:var(--ink-2);max-width:31em}
+.actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.hero-pic{position:relative}
+.hero-pic img{width:100%;aspect-ratio:4/4.3;object-fit:cover;border-radius:22px;box-shadow:0 30px 60px -30px rgba(22,18,18,.45)}
+.hero-tag{position:absolute;left:-26px;bottom:34px;background:var(--ink);color:#fff;padding:16px 20px;border-radius:14px;font:500 14px/1.35 var(--body);max-width:230px;box-shadow:0 16px 30px -16px rgba(0,0,0,.5)}
+.hero-tag b{display:block;font:600 22px/1.1 var(--head);text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px}
+
+/* hours band */
+.band{background:var(--red);color:#fff}
+.band .wrap{display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:center;padding-top:34px;padding-bottom:34px}
+.band h2{font-size:34px}
+.hours{display:grid;grid-template-columns:repeat(3,1fr);gap:0;list-style:none;margin:0;padding:0}
+.hours li{padding:4px 28px;border-left:1px solid rgba(255,255,255,.35)}
+.hours span{display:block;font:500 13px/1.4 var(--body);letter-spacing:.14em;text-transform:uppercase;opacity:.92}
+.hours b{font:600 26px/1.2 var(--head);letter-spacing:.02em}
+.hours li.today span::after{content:" · today";}
+
+/* details */
+.details{padding:96px 0 40px}
+.eyebrow{font:600 14px/1 var(--head);letter-spacing:.2em;text-transform:uppercase;color:var(--red-dk);margin-bottom:16px}
+.details h2{font-size:clamp(34px,4vw,52px);max-width:15em}
+.points{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:48px;list-style:none;padding:0}
+.points li{border-top:2px solid var(--ink);padding-top:20px}
+.points h3{font-size:22px;margin-bottom:10px}
+.points p{color:var(--ink-2)}
+
+/* ways */
+.ways{padding:64px 0 40px}
+.way{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-bottom:88px}
+.way:nth-child(even) .way-pic{order:2}
+.way-pic img{width:100%;max-width:800px;aspect-ratio:5/4;object-fit:cover;border-radius:18px}
+.way .num{font:600 15px/1 var(--head);color:var(--red-dk);letter-spacing:.16em}
+.way h3{font-size:clamp(34px,3.6vw,48px);margin:14px 0 18px}
+.way p{color:var(--ink-2);max-width:30em}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 28px;padding:0;list-style:none}
+.tags li{padding:7px 14px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:15px}
+
+/* reviews */
+.voices{background:var(--ink);color:#fff;padding:96px 0}
+.voices .eyebrow{color:#ff8a90}
+.voices .grid{display:grid;grid-template-columns:1.25fr 1fr;gap:72px;align-items:start}
+.big-q{font:600 clamp(32px,3.8vw,50px)/1.12 var(--head);text-transform:uppercase;margin:0}
+.big-q::before{content:"\201C";display:block;color:var(--red);font-size:1.8em;line-height:.6;margin-bottom:10px}
+.who{margin-top:24px;font-size:16px;color:#d9d1cb}
+.who b{color:#fff}
+.small-q{margin:0;padding:28px;border:1px solid rgba(255,255,255,.18);border-radius:18px;font-size:18px;line-height:1.6;color:#efe9e4}
+
+/* booking */
+.book{padding:104px 0}
+.book-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:40px}
+.book-head h2{font-size:clamp(36px,4.4vw,58px);max-width:12em}
+.book-head p{max-width:24em;color:var(--ink-2)}
+.desk{display:grid;grid-template-columns:1.35fr 1fr;background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:0 30px 60px -40px rgba(22,18,18,.35);overflow:hidden}
+.desk-main{padding:36px 40px 40px}
+.tabs{display:inline-flex;padding:5px;background:var(--paper);border:1px solid var(--line);border-radius:999px;margin-bottom:30px}
+.tab{min-height:44px;padding:0 22px;border:0;border-radius:999px;background:transparent;font:600 15px/1 var(--head);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--red);color:#fff}
+.field{margin-bottom:26px;border:0;padding:0}
+.label,.field legend{display:block;font:600 14px/1 var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin-bottom:12px;padding:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:44px;min-width:44px;padding:0 14px;border:1px solid var(--line);border-radius:12px;background:#fff;font:500 15px/1.15 var(--body);color:var(--ink);cursor:pointer;transition:border-color .15s,background .15s}
+.chip:hover{border-color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.chip:disabled{opacity:.45;cursor:not-allowed;text-decoration:line-through}
+.day{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:64px;padding:8px 10px}
+.day small{font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.8}
+.day b{font:600 18px/1.1 var(--head)}
+.times{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.times .chip{padding:0 6px}
+.stepper{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.stepper button{width:48px;height:48px;border:0;background:#fff;font:600 22px/1 var(--body);cursor:pointer;color:var(--ink)}
+.stepper button:hover{background:var(--paper)}
+.stepper output{min-width:64px;text-align:center;font:600 22px/1 var(--head)}
+input[type=date],input[type=text],input[type=email],textarea{width:100%;min-height:48px;padding:12px 14px;border:1px solid #cfc5bb;border-radius:12px;background:#fff;font:16px/1.4 var(--body);color:var(--ink)}
+textarea{min-height:96px;resize:vertical}
+.pane[hidden]{display:none}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.desk-side{background:var(--red);color:#fff;padding:36px 36px 40px;display:flex;flex-direction:column}
+.ticket{background:#fff;color:var(--ink);border-radius:18px;padding:26px;position:relative;box-shadow:0 18px 30px -20px rgba(0,0,0,.5)}
+.ticket::after{content:"";position:absolute;left:18px;right:18px;bottom:76px;border-top:2px dashed var(--line)}
+.ticket .kind{font:600 13px/1 var(--head);letter-spacing:.2em;text-transform:uppercase;color:var(--red-dk)}
+.ticket h3{font-size:32px;margin:10px 0 16px;line-height:1.05}
+.ticket dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 16px;font-size:16px}
+.ticket dt{color:var(--mute)}
+.ticket dd{margin:0;font-weight:500}
+.ticket .foot{margin-top:40px;font-size:14px;color:var(--ink-2);display:flex;align-items:center;gap:10px}
+.ticket .foot img{height:34px;width:auto;background:var(--red);border-radius:6px;padding:3px 6px}
+.side-form{margin-top:26px;display:grid;gap:12px}
+.side-form label{font:600 13px/1 var(--head);letter-spacing:.14em;text-transform:uppercase}
+.side-form input{border-color:transparent}
+.side-form .btn{margin-top:6px;width:100%}
+.thanks{margin-top:14px;padding:14px 16px;border-radius:12px;background:var(--ink);color:#fff;font-size:15px}
+.thanks[hidden]{display:none}
+
+/* visit */
+.visit{padding:24px 0 104px}
+.visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.visit-pic img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:22px}
+.visit h2{font-size:clamp(36px,4.2vw,54px);margin-bottom:18px}
+.visit p{color:var(--ink-2)}
+.week{list-style:none;margin:28px 0 30px;padding:0;border-top:1px solid var(--line)}
+.week li{display:flex;justify-content:space-between;padding:12px 4px;border-bottom:1px solid var(--line);font-size:16px}
+.week li.today{font-weight:700;color:var(--red-dk)}
+.week li.today span:first-child::after{content:"  Today";font:600 11px/1 var(--head);letter-spacing:.14em;margin-left:10px;padding:4px 8px;border-radius:999px;background:var(--red);color:#fff;vertical-align:2px}
+.links{display:flex;flex-wrap:wrap;gap:12px}
+
+/* end */
+.end{background:var(--red);color:#fff;text-align:center;padding:96px 0}
+.end img{height:80px;width:auto;margin:0 auto 26px}
+.end h2{font-size:clamp(40px,5.4vw,72px);margin-bottom:16px}
+.end p{font-size:19px;max-width:30em;margin:0 auto 34px}
+.end .actions{justify-content:center;margin-top:0}
+.end .btn-line{border-color:#fff;color:#fff}
+.end .btn-line:hover{background:#fff;color:var(--red-dk)}
+
+footer{background:var(--ink);color:#d9d1cb;padding:48px 0 110px;font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:center}
+footer a{color:#fff}
+.made{flex-basis:100%;padding-top:24px;border-top:1px solid rgba(255,255,255,.14);color:#bfb5ae}
+
+/* phone bar */
+.callbar{display:none}
+
+/* motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+
+@media (max-width:960px){
+  .nav li:not(:last-child){display:none}
+  .hero .wrap,.way,.voices .grid,.visit .wrap,.desk{grid-template-columns:minmax(0,1fr)}
+  .desk-main,.desk-side{min-width:0}
+  .way:nth-child(even) .way-pic{order:0}
+  .hero-tag{left:16px}
+  .band .wrap{grid-template-columns:1fr;gap:18px}
+  .book-head{flex-direction:column;align-items:start}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{padding:0 20px}
+  .top .wrap{height:64px}
+  .logo img{height:48px}
+  .nav .pill{padding:0 16px;font-size:14px}
+  .hero{padding:28px 0 52px}
+  .hero .wrap{gap:34px}
+  .hero h1{font-size:46px;margin:20px 0 16px}
+  .lede{font-size:17px}
+  .actions .btn{flex:1 1 100%}
+  .hero-pic img{aspect-ratio:1/1}
+  .hero-tag{bottom:16px;left:12px;padding:12px 14px;max-width:200px}
+  .hero-tag b{font-size:18px}
+  .hours{grid-template-columns:1fr}
+  .hours li{border-left:0;border-top:1px solid rgba(255,255,255,.3);padding:12px 0;display:flex;justify-content:space-between;align-items:baseline}
+  .hours b{font-size:22px}
+  .details{padding:72px 0 16px}
+  .points{grid-template-columns:1fr;gap:28px;margin-top:34px}
+  .way{gap:26px;margin-bottom:64px}
+  .voices{padding:72px 0}
+  .voices .grid{gap:40px}
+  .book{padding:76px 0}
+  .desk-main{padding:24px 18px 28px}
+  .desk-side{padding:24px 18px 28px}
+  .tabs{display:flex;width:100%}
+  .tab{flex:1;padding:0 8px;font-size:14px}
+  .times{grid-template-columns:repeat(4,1fr)}
+  .days{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;margin-right:-18px;padding-right:18px}
+  .day{flex:none}
+  .two{grid-template-columns:1fr}
+  .visit{padding:8px 0 76px}
+  .visit .wrap{gap:34px}
+  .end{padding:72px 0}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:var(--ink);color:#fff;box-shadow:0 -8px 24px -12px rgba(0,0,0,.5)}
+  .callbar .status{background:transparent;border:0;color:#fff;padding:0;box-shadow:none;font-size:14px}
+  .callbar .btn{min-height:44px;padding:0 18px;font-size:15px}
+}
+</style>
+</head>
+<body>
+<div class="ss-banner">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Espresso Room home"><img src="https://espressoroomnorthcote.com.au/wp-content/uploads/2023/02/logo2.png" alt="Espresso Room" width="150" height="60"></a>
+    <nav aria-label="Main">
+      <ul class="nav">
+        <li><a href="#ways">Dine in</a></li>
+        <li><a href="#functions">Functions</a></li>
+        <li><a href="#catering">Catering</a></li>
+        <li><a href="#visit">Find us</a></li>
+        <li><a class="pill" href="#book">Book a table</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <p class="status js-status" role="status"><span class="dot" aria-hidden="true"></span><span class="js-status-text">Open 7 days for breakfast and lunch</span></p>
+        <h1 id="hero-title"><span class="name">Espresso Room Northcote</span>The best coffee. <span class="red">Fresh local food.</span> Seven days.</h1>
+        <p class="lede">Breakfast, lunch and everything in between, a stone's throw north of Melbourne, with options for every dietary requirement.</p>
+        <div class="actions">
+          <a class="btn btn-red" href="#book">Book a table <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn-line" href="#functions">Functions &amp; catering</a>
+        </div>
+      </div>
+      <div class="hero-pic">
+        <img src="https://espressoroomnorthcote.com.au/wp-content/uploads/2023/02/unknown_172715308_163843945614236_1096099150533030612_n.jpg" alt="Milk being poured into a flat white in a blue cup, forming latte art" width="1058" height="1058">
+        <p class="hero-tag"><b>Serious about coffee</b>We live and breathe excellence in food and coffee.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="hours-title">
+    <div class="wrap">
+      <h2 id="hours-title">Open 7 days</h2>
+      <ul class="hours">
+        <li data-days="1,2,3,4,5"><span>Mon to Fri</span> <b>6:00am – 3:00pm</b></li>
+        <li data-days="6"><span>Saturday</span> <b>7:00am – 3:00pm</b></li>
+        <li data-days="0"><span>Sunday</span> <b>7:30am – 3:00pm</b></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="details" aria-labelledby="details-title">
+    <div class="wrap">
+      <p class="eyebrow">The finer details</p>
+      <h2 id="details-title">More than a meal. It's about feeding the soul.</h2>
+      <ul class="points">
+        <li><h3>Quality local produce</h3><p>We always source the very best fresh food available, paired with coffee we're proud of.</p></li>
+        <li><h3>Service that matters</h3><p>Excellent customer service is a pinnacle part of the Espresso Room experience.</p></li>
+        <li><h3>Healthy and affordable</h3><p>Free yourself of the worry of what to cook. Options for all dietary requirements.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="ways" id="ways" aria-labelledby="ways-title">
+    <div class="wrap">
+      <h2 id="ways-title" class="eyebrow">Three ways to enjoy us</h2>
+      <article class="way">
+        <div class="way-pic"><img src="https://espressoroomnorthcote.com.au/wp-content/uploads/2023/02/espressoroomnorthcote_326554844_725312862587969_8686322265483953900_n-1024x1024.jpg" alt="A bacon and egg bagel at Espresso Room" width="800" height="800" loading="lazy"></div>
+        <div>
+          <p class="num">01</p>
+          <h3>Dine in</h3>
+          <p>Pull up a chair for breakfast, lunch and everything in between, seven days a week. Share a coffee or a meal with family and friends, and let us take care of you.</p>
+          <ul class="tags"><li>Breakfast</li><li>Lunch</li><li>Coffee</li><li>All dietary needs</li></ul>
+          <a class="btn btn-red" href="#book" data-mode="table">Book a table</a>
+        </div>
+      </article>
+      <article class="way" id="functions">
+        <div class="way-pic"><img src="https://espressoroomnorthcote.com.au/wp-content/uploads/2023/02/unknown_133887998_3541886672576724_5757596334779927398_n.jpg" alt="Inside Espresso Room: timber tables, the counter and shelves of coffee" width="1080" height="1080" loading="lazy"></div>
+        <div>
+          <p class="num">02</p>
+          <h3>Functions &amp; events</h3>
+          <p>A unique and vibrant space with a warm, inviting atmosphere for your next gathering.</p>
+          <ul class="tags"><li>Corporate meetings</li><li>Birthday celebrations</li><li>Get-togethers with friends</li></ul>
+          <a class="btn btn-red" href="#book" data-mode="function">Plan a function</a>
+        </div>
+      </article>
+      <article class="way" id="catering">
+        <div class="way-pic"><img src="https://espressoroomnorthcote.com.au/wp-content/uploads/2023/02/Espresso-Room-63.jpg" alt="Hands holding a loaded chicken roll with slaw and herbs" width="1860" height="1242" loading="lazy"></div>
+        <div>
+          <p class="num">03</p>
+          <h3>Catering</h3>
+          <p>A wide range of menu options, made with only the freshest and highest quality ingredients. Your guests will be impressed with the food and drinks on offer.</p>
+          <ul class="tags"><li>Corporate events</li><li>Weddings</li><li>Parties</li></ul>
+          <a class="btn btn-red" href="#book" data-mode="catering">Ask about catering</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="voices" aria-labelledby="voices-title">
+    <div class="wrap">
+      <h2 id="voices-title" class="eyebrow">What our customers say</h2>
+      <div class="grid">
+        <figure style="margin:0">
+          <blockquote class="big-q">If you're serious about your coffee, give Espresso Room a try.</blockquote>
+          <figcaption class="who"><b>George</b>, coming here for over 15 years</figcaption>
+        </figure>
+        <figure style="margin:0">
+          <blockquote class="small-q">“The staff were so welcoming and friendly, the food is delicious, and the coffee superb. I loved the nice touch of fresh bread being delivered to the table with oil and balsamic. I have visited many cafes in the lead-up to the Melbourne International Coffee Expo and this has been my favourite.”</blockquote>
+          <figcaption class="who"><b>David</b>, visiting from WA</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="book" id="book" aria-labelledby="book-title">
+    <div class="wrap">
+      <div class="book-head">
+        <h2 id="book-title">Book a table, plan a function, order catering.</h2>
+        <p>Pick a day and time and we'll take care of the rest.</p>
+      </div>
+      <div class="desk">
+        <div class="desk-main">
+          <div class="tabs" role="tablist" aria-label="What would you like?">
+            <button class="tab" role="tab" id="tab-table" aria-controls="pane-table" aria-selected="true" data-mode="table">Table</button>
+            <button class="tab" role="tab" id="tab-function" aria-controls="pane-function" aria-selected="false" data-mode="function" tabindex="-1">Function</button>
+            <button class="tab" role="tab" id="tab-catering" aria-controls="pane-catering" aria-selected="false" data-mode="catering" tabindex="-1">Catering</button>
+          </div>
+
+          <div class="pane" id="pane-table" role="tabpanel" aria-labelledby="tab-table">
+            <fieldset class="field"><legend>Day</legend>
+              <div class="chips days" id="days">
+                <button type="button" class="chip day" data-dow="1" aria-pressed="false"><small>Mon</small><b>Mon</b></button>
+                <button type="button" class="chip day" data-dow="2" aria-pressed="false"><small>Tue</small><b>Tue</b></button>
+                <button type="button" class="chip day" data-dow="3" aria-pressed="false"><small>Wed</small><b>Wed</b></button>
+                <button type="button" class="chip day" data-dow="4" aria-pressed="false"><small>Thu</small><b>Thu</b></button>
+                <button type="button" class="chip day" data-dow="5" aria-pressed="false"><small>Fri</small><b>Fri</b></button>
+                <button type="button" class="chip day" data-dow="6" aria-pressed="true"><small>Sat</small><b>Sat</b></button>
+                <button type="button" class="chip day" data-dow="0" aria-pressed="false"><small>Sun</small><b>Sun</b></button>
+              </div>
+            </fieldset>
+            <fieldset class="field"><legend>Time</legend>
+              <div class="times" id="times">
+                <button type="button" class="chip" aria-pressed="false">7:00am</button><button type="button" class="chip" aria-pressed="false">7:30am</button><button type="button" class="chip" aria-pressed="false">8:00am</button><button type="button" class="chip" aria-pressed="false">8:30am</button><button type="button" class="chip" aria-pressed="true">9:00am</button><button type="button" class="chip" aria-pressed="false">9:30am</button><button type="button" class="chip" aria-pressed="false">10:00am</button><button type="button" class="chip" aria-pressed="false">10:30am</button><button type="button" class="chip" aria-pressed="false">11:00am</button><button type="button" class="chip" aria-pressed="false">11:30am</button><button type="button" class="chip" aria-pressed="false">12:00pm</button><button type="button" class="chip" aria-pressed="false">12:30pm</button><button type="button" class="chip" aria-pressed="false">1:00pm</button><button type="button" class="chip" aria-pressed="false">1:30pm</button><button type="button" class="chip" aria-pressed="false">2:00pm</button><button type="button" class="chip" aria-pressed="false">2:30pm</button>
+              </div>
+            </fieldset>
+            <div class="field"><span class="label" id="lbl-guests-t">People</span>
+              <div class="stepper" data-for="guests" role="group" aria-labelledby="lbl-guests-t"><button type="button" data-step="-1" aria-label="One fewer person">−</button><output aria-live="polite">2</output><button type="button" data-step="1" aria-label="One more person">+</button></div>
+            </div>
+          </div>
+
+          <div class="pane" id="pane-function" role="tabpanel" aria-labelledby="tab-function" hidden>
+            <fieldset class="field"><legend>Occasion</legend>
+              <div class="chips" data-group="fn">
+                <button type="button" class="chip" aria-pressed="true">Corporate meeting</button>
+                <button type="button" class="chip" aria-pressed="false">Birthday celebration</button>
+                <button type="button" class="chip" aria-pressed="false">Get-together with friends</button>
+              </div>
+            </fieldset>
+            <div class="two">
+              <div class="field"><label class="label" for="fn-date">Date</label><input type="date" id="fn-date"></div>
+              <div class="field"><label class="label" for="fn-guests">Guests</label><input type="text" id="fn-guests" inputmode="numeric" placeholder="How many guests?"></div>
+            </div>
+          </div>
+
+          <div class="pane" id="pane-catering" role="tabpanel" aria-labelledby="tab-catering" hidden>
+            <fieldset class="field"><legend>Occasion</legend>
+              <div class="chips" data-group="cat">
+                <button type="button" class="chip" aria-pressed="true">Corporate event</button>
+                <button type="button" class="chip" aria-pressed="false">Wedding</button>
+                <button type="button" class="chip" aria-pressed="false">Party</button>
+              </div>
+            </fieldset>
+            <div class="two">
+              <div class="field"><label class="label" for="cat-date">Date</label><input type="date" id="cat-date"></div>
+              <div class="field"><label class="label" for="cat-guests">Guests</label><input type="text" id="cat-guests" inputmode="numeric" placeholder="How many guests?"></div>
+            </div>
+          </div>
+
+          <div class="field" style="margin-bottom:0"><label class="label" for="note">Anything we should know?</label><textarea id="note" placeholder="Dietary requirements, a high chair, a birthday…"></textarea></div>
+        </div>
+
+        <div class="desk-side">
+          <div class="ticket" aria-live="polite">
+            <p class="kind" id="t-kind">Table request</p>
+            <h3 id="t-title">Table for 2</h3>
+            <dl>
+              <dt id="t-l1">Day</dt><dd id="t-v1">Saturday</dd>
+              <dt id="t-l2">Time</dt><dd id="t-v2">9:00am</dd>
+              <dt id="t-l3">Open</dt><dd id="t-v3">7:00am – 3:00pm</dd>
+            </dl>
+            <p class="foot"><img src="https://espressoroomnorthcote.com.au/wp-content/uploads/2023/02/logo2.png" alt="" width="85" height="34">Espresso Room Northcote</p>
+          </div>
+          <form class="side-form" id="req">
+            <label for="nm">Your name</label>
+            <input type="text" id="nm" name="name" autocomplete="name" required>
+            <label for="ct">Email or mobile</label>
+            <input type="text" id="ct" name="contact" autocomplete="email" required>
+            <button class="btn btn-white" type="submit" id="send">Send request</button>
+            <p class="thanks" id="thanks" role="status" hidden>Thanks. This is a mockup, so nothing was sent.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit" aria-labelledby="visit-title">
+    <div class="wrap">
+      <div class="visit-pic"><img src="https://espressoroomnorthcote.com.au/wp-content/uploads/2023/02/unknown_101643934_1176236462725604_7587018044487161073_n.jpg" alt="The Espresso Room shopfront with its red sign" width="1080" height="1080" loading="lazy"></div>
+      <div>
+        <p class="eyebrow">Find us</p>
+        <h2 id="visit-title">Look for the red sign.</h2>
+        <p>A stone's throw north of Melbourne, open seven days a week.</p>
+        <ul class="week" id="week">
+          <li data-dow="1"><span>Monday</span><span>6:00am – 3:00pm</span></li>
+          <li data-dow="2"><span>Tuesday</span><span>6:00am – 3:00pm</span></li>
+          <li data-dow="3"><span>Wednesday</span><span>6:00am – 3:00pm</span></li>
+          <li data-dow="4"><span>Thursday</span><span>6:00am – 3:00pm</span></li>
+          <li data-dow="5"><span>Friday</span><span>6:00am – 3:00pm</span></li>
+          <li data-dow="6"><span>Saturday</span><span>7:00am – 3:00pm</span></li>
+          <li data-dow="0"><span>Sunday</span><span>7:30am – 3:00pm</span></li>
+        </ul>
+        <div class="links">
+          <a class="btn btn-red" href="https://www.google.com/maps/search/?api=1&amp;query=Espresso%20Room%20Northcote" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn-line" href="https://instagram.com/espressoroom.3070/" target="_blank" rel="noopener">Instagram</a>
+          <a class="btn btn-line" href="https://www.facebook.com/profile.php" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="end" aria-labelledby="end-title">
+    <div class="wrap">
+      <img src="https://espressoroomnorthcote.com.au/wp-content/uploads/2023/02/logo2.png" alt="" width="200" height="80" loading="lazy">
+      <h2 id="end-title">Your coffee's waiting.</h2>
+      <p>Open 7 days for breakfast, lunch and everything in between.</p>
+      <div class="actions">
+        <a class="btn btn-white" href="#book" data-mode="table">Book a table <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-line" href="#functions">Functions &amp; catering</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Espresso Room Northcote · Mon–Fri 6:00am–3:00pm · Sat 7:00am–3:00pm · Sun 7:30am–3:00pm</span>
+    <span><a href="https://espressoroomnorthcote.com.au/">espressoroomnorthcote.com.au</a></span>
+    <p class="made">Mockup made for Espresso Room Northcote by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick actions">
+  <p class="status js-status"><span class="dot" aria-hidden="true"></span><span class="js-status-text">Open 7 days</span></p>
+  <a class="btn btn-red" href="#book" data-mode="table">Book a table</a>
+</div>
+
+<script>
+(function(){
+  // Hours, minutes from midnight. 0 = Sunday.
+  var HOURS={0:[450,900],1:[360,900],2:[360,900],3:[360,900],4:[360,900],5:[360,900],6:[420,900]};
+  var DAYN=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  var MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  function fmt(m){var h=Math.floor(m/60),mm=m%60,ap=h>=12?'pm':'am';h=h%12||12;return h+':'+(mm<10?'0':'')+mm+ap}
+  function range(d){return fmt(HOURS[d][0])+' – '+fmt(HOURS[d][1])}
+
+  // Melbourne local time
+  function mel(){
+    var p={};
+    try{new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Melbourne',year:'numeric',month:'numeric',day:'numeric',hour:'numeric',minute:'numeric',hourCycle:'h23'}).formatToParts(new Date()).forEach(function(x){p[x.type]=x.value})}catch(e){var n=new Date();p={year:n.getFullYear(),month:n.getMonth()+1,day:n.getDate(),hour:n.getHours(),minute:n.getMinutes()}}
+    var d=new Date(Date.UTC(+p.year,+p.month-1,+p.day));
+    return {date:d,dow:d.getUTCDay(),mins:(+p.hour%24)*60+(+p.minute)};
+  }
+  var now=mel();
+
+  // Open status
+  var st=now.dow,h=HOURS[st],txt,open=false;
+  if(now.mins>=h[0]&&now.mins<h[1]){open=true;txt='Open now · until '+fmt(h[1])}
+  else if(now.mins<h[0]){txt='Closed now · opens '+fmt(h[0])+' today'}
+  else{var nd=(st+1)%7;txt='Closed now · opens '+fmt(HOURS[nd][0])+' tomorrow'}
+  document.querySelectorAll('.js-status').forEach(function(el){el.classList.toggle('closed',!open)});
+  document.querySelectorAll('.js-status-text').forEach(function(el){el.textContent=txt});
+  document.querySelectorAll('.hours li').forEach(function(li){if(li.dataset.days.split(',').indexOf(String(st))>-1)li.classList.add('today')});
+  document.querySelectorAll('#week li').forEach(function(li){if(+li.dataset.dow===st)li.classList.add('today')});
+
+  // Booking desk
+  var mode='table',state={day:null,time:540,guests:2,fn:'Corporate meeting',cat:'Corporate event'};
+  var daysEl=document.getElementById('days'),timesEl=document.getElementById('times');
+  var dayList=[];
+  for(var i=0;i<7;i++){var d=new Date(now.date.getTime()+i*864e5);dayList.push({date:d,dow:d.getUTCDay(),i:i})}
+  function lastSlot(dw){return HOURS[dw][1]-30}
+  function dayLabel(x){return x.i===0?'Today':x.i===1?'Tomorrow':DAYN[x.dow]}
+  function longDay(x){return DAYN[x.dow]+' '+x.date.getUTCDate()+' '+MON[x.date.getUTCMonth()]}
+  daysEl.innerHTML='';
+  dayList.forEach(function(x){
+    var b=document.createElement('button');b.type='button';b.className='chip day';
+    b.innerHTML='<small>'+(x.i===0?'Today':DAYN[x.dow].slice(0,3))+'</small><b>'+x.date.getUTCDate()+' '+MON[x.date.getUTCMonth()]+'</b>';
+    b.setAttribute('aria-label',longDay(x));
+    if(x.i===0&&now.mins>=lastSlot(x.dow)){b.disabled=true}
+    b.addEventListener('click',function(){state.day=x;drawDays();drawTimes();draw()});
+    x.btn=b;daysEl.appendChild(b);
+  });
+  state.day=dayList[1];
+  function drawDays(){dayList.forEach(function(x){x.btn.setAttribute('aria-pressed',x===state.day?'true':'false')})}
+  function drawTimes(){
+    var dw=state.day.dow,o=HOURS[dw][0],l=lastSlot(dw);
+    if(state.time<o)state.time=o;if(state.time>l)state.time=l;
+    timesEl.innerHTML='';
+    for(var m=o;m<=l;m+=30){(function(m){
+      var b=document.createElement('button');b.type='button';b.className='chip';b.textContent=fmt(m);
+      if(state.day.i===0&&m<=now.mins)b.disabled=true;
+      b.setAttribute('aria-pressed',m===state.time?'true':'false');
+      b.addEventListener('click',function(){state.time=m;drawTimes();draw()});
+      timesEl.appendChild(b);
+    })(m)}
+    if(state.day.i===0){var first=timesEl.querySelector('button:not(:disabled)');if(first&&timesEl.querySelector('[aria-pressed=true]:disabled')){first.click()}}
+  }
+  // Occasion chips
+  document.querySelectorAll('[data-group]').forEach(function(g){
+    g.querySelectorAll('.chip').forEach(function(b){b.addEventListener('click',function(){
+      g.querySelectorAll('.chip').forEach(function(c){c.setAttribute('aria-pressed',c===b?'true':'false')});
+      state[g.dataset.group]=b.textContent;draw();
+    })});
+  });
+  // Steppers
+  var LIM={guests:[1,20]};
+  document.querySelectorAll('.stepper').forEach(function(s){
+    var k=s.dataset.for,out=s.querySelector('output');
+    s.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){
+      state[k]=Math.max(LIM[k][0],Math.min(LIM[k][1],state[k]+(+b.dataset.step)));out.textContent=state[k];draw();
+    })});
+  });
+  // Dates for function / catering default to two weeks out
+  function iso(d){return d.toISOString().slice(0,10)}
+  var fd=document.getElementById('fn-date'),cd=document.getElementById('cat-date');
+  fd.min=cd.min=iso(now.date);
+  fd.value=iso(new Date(now.date.getTime()+14*864e5));cd.value=iso(new Date(now.date.getTime()+21*864e5));
+  fd.addEventListener('change',draw);cd.addEventListener('change',draw);
+  var fg=document.getElementById('fn-guests'),cg=document.getElementById('cat-guests');
+  fg.addEventListener('input',draw);cg.addEventListener('input',draw);
+  function guestsTxt(el){var v=el.value.trim();return v||'Tell us how many'}
+  function niceDate(v){if(!v)return 'Choose a date';var d=new Date(v+'T00:00:00Z');return DAYN[d.getUTCDay()]+' '+d.getUTCDate()+' '+MON[d.getUTCMonth()]}
+
+  var $=function(id){return document.getElementById(id)};
+  function set(k,t,l1,v1,l2,v2,l3,v3){$('t-kind').textContent=k;$('t-title').textContent=t;$('t-l1').textContent=l1;$('t-v1').textContent=v1;$('t-l2').textContent=l2;$('t-v2').textContent=v2;$('t-l3').textContent=l3;$('t-v3').textContent=v3}
+  function draw(){
+    if(mode==='table'){set('Table request','Table for '+state.guests,'Day',dayLabel(state.day)+', '+state.day.date.getUTCDate()+' '+MON[state.day.date.getUTCMonth()],'Time',fmt(state.time),'Open',range(state.day.dow))}
+    else if(mode==='function'){set('Function enquiry',state.fn,'Date',niceDate(fd.value),'Guests',guestsTxt(fg),'Where','Espresso Room')}
+    else{set('Catering enquiry',state.cat,'Date',niceDate(cd.value),'Guests',guestsTxt(cg),'Menu','A wide range of options')}
+    $('send').textContent=mode==='table'?'Send table request':'Send enquiry';
+    $('thanks').hidden=true;
+  }
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  function setMode(m){
+    mode=m;
+    tabs.forEach(function(t){var on=t.dataset.mode===m;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;$(t.getAttribute('aria-controls')).hidden=!on});
+    draw();
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){setMode(t.dataset.mode)});
+    t.addEventListener('keydown',function(e){var j=e.key==='ArrowRight'?i+1:e.key==='ArrowLeft'?i-1:null;if(j===null)return;var n=tabs[(j+tabs.length)%tabs.length];n.focus();setMode(n.dataset.mode)});
+  });
+  document.querySelectorAll('a[data-mode]').forEach(function(a){a.addEventListener('click',function(){setMode(a.dataset.mode)})});
+  $('req').addEventListener('submit',function(e){e.preventDefault();$('thanks').hidden=false});
+
+  drawDays();drawTimes();draw();
+
+  // Gentle rise for things below the first screen
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window){
+    var els=document.querySelectorAll('.points li,.way,.voices figure,.desk,.visit-pic,.visit .wrap>div:last-child,.end .wrap');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('will-rise','rise');io.observe(el)}});
+  }
+})();
+</script>
+</body>
+</html>
