@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup greekexclusiveproperties-com-cd4892 1 316722d9 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Greek Exclusive Properties | Luxury Real Estate in Greece</title>
+<meta name="description" content="Luxury villas, seafront homes and island houses for sale across Greece. Buy direct, with no brokerage fees for buyers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0b2a5b; --navy-d:#071d40; --blue:#26619b; --gold:#e2be55; --gold-ink:#7f5d0e;
+  --ink:#16243a; --mute:#4a5568; --line:#e3dccd; --paper:#faf7f1; --white:#fff;
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --sans:"Mulish",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font:400 17px/1.6 var(--sans);color:var(--ink);background:var(--paper)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;margin:0;letter-spacing:.005em}
+h2{font-size:clamp(34px,4.2vw,52px)}
+.eyebrow{font:700 12.5px/1.3 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold-ink);margin:0 0 16px}
+.on-navy .eyebrow{color:var(--gold)}
+.lede{font-size:19px;color:var(--mute);max-width:600px;margin:18px 0 0}
+section{scroll-margin-top:24px}
+
+/* Signal Set banner */
+.ss-banner{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:#f1ece1;color:#2b2b2b;font:600 15px/1.3 var(--sans);text-align:center;border-bottom:1px solid #ddd3bf;white-space:nowrap}
+.ss-banner a{color:#0b2a5b;text-decoration:underline;text-underline-offset:3px;margin-left:.3em}
+
+/* Header */
+.top{background:var(--navy-d);color:#fff}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:78px}
+.logo img{height:40px;width:auto}
+.nav{display:flex;align-items:center;gap:30px;font:600 14px var(--sans);letter-spacing:.08em;text-transform:uppercase}
+.nav a{text-decoration:none;color:#dfe6f2;padding:12px 0}
+.nav a:hover{color:var(--gold)}
+.nav .tel{color:var(--gold);letter-spacing:.04em;border:1px solid rgba(226,190,85,.55);padding:11px 16px;border-radius:2px}
+
+/* Hero */
+.hero{position:relative;color:#fff;background:var(--navy) url("https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=2000") 60% 12%/cover no-repeat;min-height:680px;display:flex;align-items:flex-end}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,29,64,.94) 0%,rgba(7,29,64,.82) 38%,rgba(7,29,64,.25) 72%,rgba(7,29,64,.1) 100%),linear-gradient(0deg,rgba(7,29,64,.85) 0%,rgba(7,29,64,0) 38%)}
+.hero .wrap{position:relative;width:100%;padding-top:96px;padding-bottom:44px}
+.hero h1{font-size:clamp(46px,6.4vw,84px);max-width:680px;font-weight:500}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero p.sub{font-size:20px;line-height:1.55;max-width:540px;margin:22px 0 0;color:#e9eef6}
+.hero p.sub strong{color:#fff}
+.actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;font:700 15px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-radius:2px;border:1px solid transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn-gold{background:var(--gold);color:var(--navy-d)}
+.btn-gold:hover{background:#efd17a}
+.btn-line{border-color:rgba(255,255,255,.6);color:#fff;background:rgba(7,29,64,.3)}
+.btn-line:hover{border-color:var(--gold);color:var(--gold)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--blue)}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);margin-top:72px;border-top:1px solid rgba(226,190,85,.4)}
+.facts div{padding:20px 22px 0 0;font-size:14.5px;line-height:1.4;color:#d5deeb}
+.facts b{display:block;font:600 30px/1.1 var(--serif);color:var(--gold);margin-bottom:4px}
+
+/* Finder */
+.finder{padding:104px 0 96px}
+.finder-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap}
+.filters{margin-top:40px;display:grid;gap:18px;padding:24px 26px;background:#fff;border:1px solid var(--line);border-radius:3px}
+.frow{display:flex;align-items:center;gap:10px 18px;flex-wrap:wrap}
+.flabel{font:700 12px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--mute);min-width:110px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:44px;padding:0 16px;border:1px solid #cfc6b3;background:#fff;color:var(--ink);font:600 14.5px var(--sans);border-radius:999px;cursor:pointer;transition:all .18s}
+.chip:hover{border-color:var(--navy)}
+.chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.results{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;margin-top:36px;align-items:start}
+.count{font:600 14px var(--sans);color:var(--mute);margin:0 0 10px;letter-spacing:.02em}
+.list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.list li{border-bottom:1px solid var(--line)}
+.row{display:grid;grid-template-columns:80px 1fr auto;gap:1px 16px;align-items:center;width:100%;text-align:left;background:none;border:0;padding:10px 14px 10px 10px;cursor:pointer;color:var(--ink);font:inherit;border-left:3px solid transparent;transition:background .18s,border-color .18s}
+.row:hover{background:#fff}
+.row[aria-current="true"]{background:#fff;border-left-color:var(--gold)}
+.row .thumb{grid-column:1;grid-row:1 / span 3;width:80px;height:60px;object-fit:cover;border-radius:2px;background:#e9e3d6;transition:opacity .18s}
+.row:not([aria-current="true"]) .thumb{opacity:.88}
+.row:hover .thumb{opacity:1}
+.row .place{grid-column:2;font:700 12px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold-ink)}
+.row .name{grid-column:2;font:600 20px/1.2 var(--serif)}
+.row .spec{grid-column:2;font-size:14px;color:var(--mute)}
+.row .price{grid-column:3;grid-row:1 / span 3;align-self:center;text-align:right;font:600 21px/1.2 var(--serif);white-space:nowrap}
+.row .price s{display:block;font:400 13.5px var(--sans);color:var(--mute)}
+.empty{padding:28px 18px;color:var(--mute);border-bottom:1px solid var(--line)}
+.detail{position:sticky;top:20px;background:#fff;border:1px solid var(--line);border-radius:3px;overflow:hidden;box-shadow:0 24px 50px -30px rgba(11,42,91,.35)}
+.pic{position:relative;aspect-ratio:4/3;max-width:680px;background:var(--navy);color:#fff;overflow:hidden}
+.pic img{width:100%;height:100%;object-fit:cover}
+.tag{position:absolute;top:16px;left:16px;background:var(--gold);color:var(--navy-d);font:700 11.5px var(--sans);letter-spacing:.14em;text-transform:uppercase;padding:7px 10px;border-radius:2px}
+.dbody{padding:26px 28px 28px}
+.dbody h3{font-size:30px}
+.dprice{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-top:10px;font:600 28px var(--serif);color:var(--navy)}
+.dprice s{font:400 15px var(--sans);color:var(--mute)}
+.specs{display:flex;flex-wrap:wrap;gap:8px 26px;margin:16px 0 0;padding:0;list-style:none;font-size:15px;color:var(--mute)}
+.specs b{color:var(--ink);font-weight:700}
+.tax{margin-top:22px;padding:16px 18px;background:#f5f1e7;border-radius:3px;font-size:14.5px;line-height:1.5}
+.tax p{margin:0 0 10px;color:var(--mute)}
+.tax .cmp{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tax .cmp div{font-size:13px;color:var(--mute)}
+.tax .cmp b{display:block;font:600 24px/1.15 var(--serif);color:var(--ink)}
+.tax .cmp .up b{color:#9b2c1f}
+.dbody .btn{margin-top:22px;width:100%}
+
+/* Tax band */
+.notice{background:var(--navy);color:#fff;padding:88px 0}
+.notice .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center}
+.notice h2{color:#fff}
+.notice h2 em{color:var(--gold);font-style:italic}
+.notice p{color:#d5deeb;font-size:18px;max-width:520px}
+.calc{background:rgba(255,255,255,.06);border:1px solid rgba(226,190,85,.35);border-radius:3px;padding:30px}
+.calc label{display:block;font:700 12px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.calc output.val{display:block;font:600 40px/1.2 var(--serif);margin:6px 0 14px}
+.calc input[type=range]{width:100%;accent-color:var(--gold);height:44px;margin:0}
+.calc .cmp{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px;padding-top:20px;border-top:1px solid rgba(255,255,255,.15)}
+.calc .cmp div{font-size:14px;color:#c9d3e3}
+.calc .cmp b{display:block;font:600 32px/1.15 var(--serif);color:#fff}
+.calc .cmp .up b{color:var(--gold)}
+.calc .diff{margin:18px 0 0;font-size:15px;color:#e9eef6}
+
+/* Why */
+.why{padding:104px 0}
+.why .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+.points{list-style:none;margin:0;padding:0;counter-reset:p}
+.points li{counter-increment:p;display:grid;grid-template-columns:56px 1fr;gap:4px 10px;padding:26px 0;border-top:1px solid var(--line)}
+.points li:last-child{border-bottom:1px solid var(--line)}
+.points li::before{content:"0" counter(p);font:600 22px var(--serif);color:var(--gold-ink);grid-row:span 2}
+.points h3{font-size:27px}
+.points p{margin:4px 0 0;color:var(--mute)}
+blockquote.big{margin:34px 0 0;padding:0 0 0 22px;border-left:2px solid var(--gold);font:500 italic 24px/1.4 var(--serif);color:var(--navy)}
+blockquote.big cite{display:block;margin-top:12px;font:700 12.5px var(--sans);font-style:normal;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+
+/* Award + about */
+.award{background:#fff;padding:104px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.award .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:72px;align-items:center}
+.award figure{margin:0}
+.award figure img{width:100%;max-width:760px;aspect-ratio:16/11;object-fit:cover;border-radius:3px}
+.award figcaption{margin-top:12px;font:700 12px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.award p{color:var(--mute)}
+.countries{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0;padding:0;list-style:none}
+.countries li{padding:8px 14px;border:1px solid var(--line);border-radius:999px;font:600 14px var(--sans);color:var(--navy)}
+.press{margin-top:26px;padding-top:22px;border-top:1px solid var(--line);font-size:16px;color:var(--ink)}
+.press span{display:block;font:700 12px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold-ink);margin-bottom:6px}
+
+/* Destinations */
+.dest{padding:96px 0 40px}
+.places{display:flex;flex-wrap:wrap;gap:10px 34px;margin-top:30px;padding:0;list-style:none}
+.places a{display:inline-block;padding:6px 0;font:500 clamp(28px,3.4vw,42px)/1.2 var(--serif);color:var(--navy);text-decoration:none;border-bottom:1px solid transparent}
+.places a:hover{border-bottom-color:var(--gold)}
+.places .more a{color:var(--mute)}
+
+/* Reviews */
+.reviews{padding:64px 0 104px}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:40px}
+.rv figure{margin:0;padding-top:24px;border-top:2px solid var(--navy)}
+.rv blockquote{margin:0;font:500 21px/1.45 var(--serif);color:var(--ink)}
+.rv figcaption{margin-top:16px;font:700 13px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.stars{display:inline-flex;align-items:center;gap:10px;margin-top:18px;font-weight:700;color:var(--navy)}
+.stars svg{width:96px;height:18px}
+
+/* FAQ */
+.faq{background:#fff;padding:100px 0;border-top:1px solid var(--line)}
+.faq .grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px}
+details{border-top:1px solid var(--line)}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:64px;padding:16px 0;font:600 23px/1.25 var(--serif);color:var(--navy)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:400 28px var(--sans);color:var(--gold-ink);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin:0 0 22px;color:var(--mute);max-width:640px}
+
+/* Contact */
+.contact{background:var(--navy-d);color:#fff;padding:104px 0}
+.contact .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+.contact h2{color:#fff}
+.contact p{color:#d5deeb}
+.direct{list-style:none;margin:30px 0 0;padding:0}
+.direct li{border-top:1px solid rgba(255,255,255,.14)}
+.direct a{display:flex;flex-direction:column;padding:16px 0;text-decoration:none;color:#fff;font:600 22px var(--serif)}
+.direct a span{font:700 12px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:2px}
+.direct a:hover{color:var(--gold)}
+form{background:#fff;color:var(--ink);padding:34px;border-radius:3px}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.f{display:flex;flex-direction:column;gap:6px}
+.f.full{grid-column:1/-1}
+.f label{font:700 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.f input,.f select,.f textarea{font:400 16px var(--sans);color:var(--ink);padding:12px 14px;min-height:48px;border:1px solid #cfc6b3;border-radius:2px;background:#fff;width:100%}
+.f textarea{min-height:110px;resize:vertical}
+.f input:focus,.f select:focus,.f textarea:focus{outline:2px solid var(--blue);outline-offset:0;border-color:var(--blue)}
+form .btn{margin-top:22px;width:100%}
+.sent{margin:16px 0 0;padding:14px 16px;background:#eef4ea;color:#234a17;border-radius:2px;font-weight:600}
+.sent:empty{display:none}
+[hidden]{display:none!important}
+
+/* Footer */
+footer{background:#051631;color:#c3cddd;padding:56px 0 40px;font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px;align-items:center}
+footer img{height:34px;width:auto}
+.social{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0;padding:0}
+.social a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;color:#dfe6f2;text-decoration:none;font-weight:600}
+.social a:hover{color:var(--gold)}
+.credit{flex-basis:100%;margin:12px 0 0;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);font-size:14px;color:#aab6c9}
+.credit a{color:#dfe6f2}
+
+/* Phone call bar */
+.callbar{display:none}
+
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:960px){
+  .nav a:not(.tel){display:none}
+  .results,.notice .wrap,.why .grid,.award .grid,.faq .grid,.contact .grid{grid-template-columns:1fr;gap:40px}
+  .detail{position:static;order:-1}
+  .facts{grid-template-columns:1fr 1fr;gap:0 18px}
+}
+@media (max-width:640px){
+  body{font-size:16.5px;padding-bottom:64px}
+  .wrap{padding:0 20px}
+  .ss-banner{font-size:14.5px;padding:8px 10px}
+  .top .wrap{min-height:66px}
+  .logo img{height:30px}
+  .nav .tel{padding:10px 12px;font-size:13px}
+  .hero{min-height:0;background-position:70% 30%}
+  .hero::before{background:linear-gradient(0deg,rgba(7,29,64,.97) 0%,rgba(7,29,64,.86) 55%,rgba(7,29,64,.45) 100%)}
+  .hero .wrap{padding-top:180px;padding-bottom:36px}
+  .hero p.sub{font-size:18px}
+  .actions .btn{flex:1 1 100%}
+  .facts{margin-top:48px}
+  .facts div{padding:16px 0 4px}
+  .facts b{font-size:26px}
+  .finder,.why,.award,.faq,.contact{padding:72px 0}
+  .notice{padding:72px 0}
+  .filters{padding:18px}
+  .flabel{min-width:0;flex-basis:100%}
+  .chip{padding:0 14px;font-size:14px}
+  .row{grid-template-columns:76px 1fr;gap:2px 14px;padding:12px 6px 12px 10px;align-items:start}
+  .row .thumb{grid-row:1 / span 4;width:76px;height:76px}
+  .row .place{font-size:11.5px;letter-spacing:.14em}
+  .row .name{font-size:19px}
+  .row .spec{font-size:14px}
+  .row .price{grid-column:2;grid-row:auto;text-align:left;font-size:18px;margin-top:2px}
+  .row .price s{display:inline;margin-right:8px}
+  .dbody{padding:22px 20px 24px}
+  .dbody h3{font-size:26px}
+  .calc{padding:22px}
+  .calc .cmp b{font-size:26px}
+  .rv{grid-template-columns:1fr;gap:30px}
+  .fgrid{grid-template-columns:1fr}
+  form{padding:22px}
+  summary{font-size:21px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;gap:1px;background:rgba(226,190,85,.4);box-shadow:0 -6px 20px rgba(0,0,0,.18)}
+  .callbar a{flex:1;display:flex;align-items:center;justify-content:center;min-height:56px;background:var(--navy-d);color:#fff;text-decoration:none;font:700 14.5px var(--sans);letter-spacing:.06em;text-transform:uppercase}
+  .callbar a.call{background:var(--gold);color:var(--navy-d)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="ss-banner">Here's your free mockup from <a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Greek Exclusive Properties, home"><img src="https://www.greekexclusiveproperties.com/wp-content/uploads/2026/05/grex_logo_transparent_1.webp" alt="Greek Exclusive Properties" width="171" height="40"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#finder">Properties</a>
+      <a href="#tax">2027 tax</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="tel" href="tel:+306975629519">+30 6975 629 519</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero on-navy" aria-labelledby="h1">
+    <div class="wrap">
+      <p class="eyebrow">Boutique luxury real estate brokerage · Greece</p>
+      <h1 id="h1">Where luxury meets <em>integrity.</em></h1>
+      <p class="sub">Villas, seafront homes and island houses across Greece, from Greek Exclusive Properties. <strong>Buy direct: no brokerage fees for buyers, full transparency.</strong></p>
+      <div class="actions">
+        <a class="btn btn-gold" href="#finder">Find your property</a>
+        <a class="btn btn-line" href="tel:+306975629519">Call +30 6975 629 519</a>
+      </div>
+      <div class="facts">
+        <div><b>Awarded</b>Best Luxury Brokerage in Greece</div>
+        <div><b>20+ years</b>of expertise in Greek real estate</div>
+        <div><b>4.7 / 5</b>rated by our clients</div>
+        <div><b>200,000+</b>monthly visits to our website</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="finder" id="finder" aria-labelledby="finder-h">
+    <div class="wrap">
+      <div class="finder-head">
+        <div>
+          <p class="eyebrow">Find your property in Greece</p>
+          <h2 id="finder-h">The finest villas and homes for sale</h2>
+        </div>
+        <p class="lede" style="margin:0;max-width:420px">Pick an island and a budget. Tap a property to see its details and what the 2027 tax change means for it.</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filter properties">
+        <div class="frow">
+          <span class="flabel" id="lab-place">Where</span>
+          <div class="chips" data-filter="place" aria-labelledby="lab-place">
+            <button class="chip" type="button" data-v="all" aria-pressed="true">All Greece</button>
+            <button class="chip" type="button" data-v="Athens" aria-pressed="false">Athens</button>
+            <button class="chip" type="button" data-v="Corfu" aria-pressed="false">Corfu</button>
+            <button class="chip" type="button" data-v="Mykonos" aria-pressed="false">Mykonos</button>
+            <button class="chip" type="button" data-v="Santorini" aria-pressed="false">Santorini</button>
+            <button class="chip" type="button" data-v="Lefkada" aria-pressed="false">Lefkada</button>
+            <button class="chip" type="button" data-v="Porto Heli" aria-pressed="false">Porto Heli</button>
+            <button class="chip" type="button" data-v="Spetses" aria-pressed="false">Spetses</button>
+          </div>
+        </div>
+        <div class="frow">
+          <span class="flabel" id="lab-budget">Budget</span>
+          <div class="chips" data-filter="budget" aria-labelledby="lab-budget">
+            <button class="chip" type="button" data-v="0" aria-pressed="true">Any</button>
+            <button class="chip" type="button" data-v="1500000" aria-pressed="false">Up to €1.5M</button>
+            <button class="chip" type="button" data-v="2500000" aria-pressed="false">Up to €2.5M</button>
+            <button class="chip" type="button" data-v="10000000" aria-pressed="false">Up to €10M</button>
+            <button class="chip" type="button" data-v="-10000000" aria-pressed="false">€10M and above</button>
+          </div>
+        </div>
+        <div class="frow">
+          <span class="flabel" id="lab-beds">Bedrooms</span>
+          <div class="chips" data-filter="beds" aria-labelledby="lab-beds">
+            <button class="chip" type="button" data-v="0" aria-pressed="true">Any</button>
+            <button class="chip" type="button" data-v="4" aria-pressed="false">4+</button>
+            <button class="chip" type="button" data-v="5" aria-pressed="false">5+</button>
+            <button class="chip" type="button" data-v="7" aria-pressed="false">7+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="results">
+        <div>
+          <p class="count" id="count" aria-live="polite">9 properties</p>
+          <ul class="list" id="list">
+            <li><button class="row" type="button" data-id="0" aria-current="true"><img class="thumb" src="https://www.greekexclusiveproperties.com/wp-content/uploads/2025/06/Beautiful-property-Athens.-Villa-for-Sale-Attica-680x510-1.jpg.webp" alt="" width="96" height="72"><span class="place">Athens · Keratea</span><span class="name">Sea view villa near the airport</span><span class="spec">180 m² · 5 bedrooms · 3 bathrooms</span><span class="price">€1,500,000</span></button></li>
+            <li><button class="row" type="button" data-id="1"><img class="thumb" src="https://www.greekexclusiveproperties.com/wp-content/uploads/2026/06/paleokastritsa-property-with-three-indep_01-680x510.webp" alt="" width="96" height="72"><span class="place">Corfu · Paleokastritsa</span><span class="name">Three houses with sea view</span><span class="spec">100 m² · 4 bedrooms · 4 bathrooms</span><span class="price">€480,000</span></button></li>
+            <li><button class="row" type="button" data-id="2"><img class="thumb" src="https://www.greekexclusiveproperties.com/wp-content/uploads/2026/02/Seafront-Villa-for-Sale-in-Corfu-6-1-680x510.jpeg" alt="" width="96" height="72"><span class="place">Corfu · Astrakeri</span><span class="name">Unique seafront villa</span><span class="spec">250 m² · 5 bedrooms · 3 bathrooms</span><span class="price">€1,200,000</span></button></li>
+            <li><button class="row" type="button" data-id="3"><img class="thumb" src="https://www.greekexclusiveproperties.com/wp-content/uploads/2025/12/Elegant-Villa-for-sale-Mykonos-22-680x510.webp" alt="" width="96" height="72"><span class="place">Mykonos</span><span class="name">Cycladic retreat, sunset views</span><span class="spec">300 m² · 5 bedrooms · 5 bathrooms</span><span class="price"><s>€1,900,000</s>€1,500,000</span></button></li>
+            <li><button class="row" type="button" data-id="4"><img class="thumb" src="https://www.greekexclusiveproperties.com/wp-content/uploads/2026/07/Waterfront-Villa-for-sale-Lefkada-6-680x510.webp" alt="" width="96" height="72"><span class="place">Lefkada · Nydri</span><span class="name">Waterfront villa, private pontoon</span><span class="spec">200 m² · 4 bedrooms · 4 bathrooms</span><span class="price">€2,200,000</span></button></li>
+            <li><button class="row" type="button" data-id="5"><img class="thumb" src="https://www.greekexclusiveproperties.com/wp-content/uploads/2026/05/Villas-with-Sea-View-for-Sale-Porto-Heli1-680x510.webp" alt="" width="96" height="72"><span class="place">Porto Heli · Ververonta</span><span class="name">Two villas with sea view</span><span class="spec">400 m² · 8 bedrooms · 8 bathrooms</span><span class="price">€2,250,000</span></button></li>
+            <li><button class="row" type="button" data-id="6"><img class="thumb" src="https://www.greekexclusiveproperties.com/wp-content/uploads/2025/11/Luxury-5-Bedroom-Villa-for-Sale-in-Imerovigli-Santorini-28-1170x648.webp" alt="" width="96" height="72"><span class="place">Santorini · Imerovigli</span><span class="name">Luxury five-bedroom villa</span><span class="spec">5 bedrooms</span><span class="price">€6,000,000</span></button></li>
+            <li><button class="row" type="button" data-id="7"><img class="thumb" src="https://www.greekexclusiveproperties.com/wp-content/uploads/2026/09/invest-in-a-sea-view-villa-in-athens-15691793_01-680x510.webp" alt="" width="96" height="72"><span class="place">Athens · Voula</span><span class="name">Panorama property in Voula</span><span class="spec">1,165 m² · 5 bedrooms</span><span class="price">€10,600,000</span></button></li>
+            <li><button class="row" type="button" data-id="8"><img class="thumb" src="https://www.greekexclusiveproperties.com/wp-content/uploads/2022/09/Seafront-Private-Property-for-Sale-at-Spetses-26-680x510.jpg" alt="" width="96" height="72"><span class="place">Spetses</span><span class="name">Seafront private property</span><span class="spec">844 m² · 7 bedrooms · 7 bathrooms</span><span class="price">€22,000,000</span></button></li>
+          </ul>
+        </div>
+
+        <article class="detail" id="detail" aria-live="polite" aria-labelledby="d-name">
+          <div class="pic" id="d-pic">
+            <img id="d-img" src="https://www.greekexclusiveproperties.com/wp-content/uploads/2025/06/Beautiful-property-Athens.-Villa-for-Sale-Attica-680x510-1.jpg.webp" alt="Sea view villa in Keratea, Athens, with an infinity pool facing the sea" width="680" height="510">
+            <span class="tag" id="d-tag">Exclusive</span>
+          </div>
+          <div class="dbody">
+            <p class="eyebrow" id="d-place" style="margin-bottom:8px">Athens · Keratea</p>
+            <h3 id="d-name">Sea view villa near the airport</h3>
+            <div class="dprice" id="d-price">€1,500,000</div>
+            <ul class="specs" id="d-specs"><li><b>180</b> m²</li><li><b>5</b> bedrooms</li><li><b>3</b> bathrooms</li></ul>
+            <div class="tax">
+              <p>Transfer tax for non-EU buyers on this price</p>
+              <div class="cmp">
+                <div>Today, 3%<b id="d-t3">€45,000</b></div>
+                <div class="up">From 1 Jan 2027, 15%<b id="d-t15">€225,000</b></div>
+              </div>
+            </div>
+            <a class="btn btn-navy" id="d-ask" href="#contact">Ask about this property</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="notice on-navy" id="tax" aria-labelledby="tax-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Official announcement</p>
+        <h2 id="tax-h">Property tax for foreign buyers is about to rise <em>5x.</em></h2>
+        <p>Non-EU buyers (Turkey, USA, Israel, Canada, UK and others): transfer tax rises from 3% to 15% on 1 January 2027. If you plan to buy a property in Greece, buy before then.</p>
+        <a class="btn btn-gold" href="#contact" style="margin-top:14px">Talk to us before 2027</a>
+      </div>
+      <div class="calc">
+        <label for="amt">Property value</label>
+        <output class="val" id="amt-out" for="amt">€1,000,000</output>
+        <input type="range" id="amt" min="200000" max="10000000" step="50000" value="1000000" aria-describedby="calc-res">
+        <div class="cmp" id="calc-res">
+          <div>Today, 3%<b id="c3">€30,000</b></div>
+          <div class="up">From 2027, 15%<b id="c15">€150,000</b></div>
+        </div>
+        <p class="diff">Buying in 2026 keeps <strong id="cdiff">€120,000</strong> in your pocket.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" aria-labelledby="why-h">
+    <div class="wrap grid">
+      <div>
+        <p class="eyebrow">Why Greek Exclusive Properties</p>
+        <h2 id="why-h">Buy direct. We bring buyers and sellers together.</h2>
+        <blockquote class="big">“They immediately put us in direct contact with the owner, allowing for open discussion and even direct negotiation. They don’t charge the buyer any brokerage fees.”<cite>Anna Kosma, buyer</cite></blockquote>
+      </div>
+      <ol class="points">
+        <li><h3>Curated portfolio</h3><p>Luxury villas, houses, seafront homes and investment properties across Greece’s most desirable locations.</p></li>
+        <li><h3>Buyer representation</h3><p>Structured shortlists, private viewings, negotiation guidance and support throughout the buying process.</p></li>
+        <li><h3>National reach</h3><p>From Santorini and Mykonos to Corfu, Crete, Lefkada, Athens and beyond, we cover prime Greek destinations.</p></li>
+        <li><h3>No fees for buyers</h3><p>No brokerage fees, full transparency, and the owner is never hidden from you.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="award" id="about" aria-labelledby="about-h">
+    <div class="wrap grid">
+      <figure>
+        <img src="https://www.greekexclusiveproperties.com/wp-content/uploads/2026/03/Best-Brokerage-Office-in-Greece-Greek-Exclusive-Properties--scaled.jpg.webp" alt="The Luxury Lifestyle Awards trophy for Greek Exclusive Properties" width="760" height="522" loading="lazy">
+        <figcaption>Luxury Lifestyle Awards · Best Brokerage in Greece</figcaption>
+      </figure>
+      <div>
+        <p class="eyebrow">Awarded Best Luxury Brokerage in Greece</p>
+        <h2 id="about-h">Led by Kostas Taralas, 20+ years in Greek luxury real estate</h2>
+        <p>Premium homes, island properties and international buyer representation. From finding the right micro-location to arranging viewings and supporting negotiations, the goal is simple: connect serious buyers with outstanding property in Greece, with accuracy, discretion and speed.</p>
+        <p style="margin-bottom:0"><strong style="color:var(--ink)">Countries of presence</strong></p>
+        <ul class="countries" aria-label="Countries of presence">
+          <li>USA</li><li>Lebanon</li><li>Serbia</li><li>Switzerland</li><li>Italy</li>
+        </ul>
+        <p class="press"><span>As featured in</span>Greek Exclusive Properties interviewed by The New York Times on Greek luxury real estate.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="dest" aria-labelledby="dest-h">
+    <div class="wrap">
+      <p class="eyebrow">All the villas in Greece in one place</p>
+      <h2 id="dest-h">Where would you like to live?</h2>
+      <ul class="places">
+        <li><a href="#finder" data-go="Santorini">Santorini</a></li>
+        <li><a href="#finder" data-go="Mykonos">Mykonos</a></li>
+        <li><a href="#finder" data-go="Athens">Athens</a></li>
+        <li><a href="#finder" data-go="Corfu">Corfu</a></li>
+        <li><a href="#finder" data-go="Lefkada">Lefkada</a></li>
+        <li><a href="#finder" data-go="Porto Heli">Porto Heli</a></li>
+        <li><a href="#finder" data-go="Spetses">Spetses</a></li>
+        <li class="more"><a href="#contact">Crete, Halkidiki, Paros, Naxos, Zakynthos, Rhodes and more</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="reviews" aria-labelledby="rv-h">
+    <div class="wrap">
+      <p class="eyebrow">Client testimonials</p>
+      <h2 id="rv-h">What our buyers say</h2>
+      <div class="stars" aria-label="Rated 4.7 out of 5">
+        <svg viewBox="0 0 100 18" aria-hidden="true"><defs><clipPath id="sc"><rect width="94" height="18"/></clipPath></defs><g fill="#e3dccd"><path id="st" d="M9 1l2.4 5.3 5.6.6-4.2 3.8 1.2 5.6L9 13.4 4 16.3l1.2-5.6L1 6.9l5.6-.6z"/><use href="#st" x="20"/><use href="#st" x="40"/><use href="#st" x="60"/><use href="#st" x="80"/></g><g fill="#b8901f" clip-path="url(#sc)"><use href="#st"/><use href="#st" x="20"/><use href="#st" x="40"/><use href="#st" x="60"/><use href="#st" x="80"/></g></svg>
+        Our office is rated 4.7 / 5
+      </div>
+      <div class="rv">
+        <figure><blockquote>“Truly a breath of fresh air in the Greek real estate market. Unlike other agencies, they are fully transparent and don’t hide the property owner.”</blockquote><figcaption>Anna Kosma · Buyer</figcaption></figure>
+        <figure><blockquote>“We managed to achieve in six hours on Friday with the tax office, telephone, bank and notary what would normally take two days. This must be a new record for the island of Santorini!”</blockquote><figcaption>Ian Kuah · Customer</figcaption></figure>
+        <figure><blockquote>“We just arrived back in South Africa after spending a week at our new villa in Crete. The villa is really beautiful, and we are very pleased with our purchase.”</blockquote><figcaption>Louise Loubser · Customer</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" aria-labelledby="faq-h">
+    <div class="wrap grid">
+      <div>
+        <p class="eyebrow">Questions buyers ask</p>
+        <h2 id="faq-h">Plain answers</h2>
+      </div>
+      <div>
+        <details open><summary>Do I pay a brokerage fee as a buyer?</summary><p>No. We charge buyers no brokerage fees, and we put you in direct contact with the property owner.</p></details>
+        <details><summary>Does the 2027 tax change affect me?</summary><p>If you are a non-EU buyer, yes: transfer tax rises from 3% to 15% on 1 January 2027. On a €1,000,000 property that is €150,000 instead of €30,000.</p></details>
+        <details><summary>Where in Greece do you have properties?</summary><p>Santorini, Mykonos, Athens, Crete, Halkidiki, Corfu, Lefkada, Zakynthos, Paros, Naxos, Rhodes, Porto Heli and other Greek islands.</p></details>
+        <details><summary>Do you have properties for the Golden Visa?</summary><p>Yes. We list apartments and properties for the Golden Visa in Greece, including apartments in Athens.</p></details>
+        <details><summary>Can you help with the legal side?</summary><p>Yes. Legal coverage is part of how we support a purchase, with senior attorney Maria Papadaki.</p></details>
+        <details><summary>Can I rent instead of buy?</summary><p>For rent, we list luxury apartments in Athens only.</p></details>
+        <details><summary>Which languages do you speak?</summary><p>English and Greek. You can call us or text us on WhatsApp at +30 6975 629 519.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact on-navy" id="contact" aria-labelledby="contact-h">
+    <div class="wrap grid">
+      <div>
+        <p class="eyebrow">Find your property in Greece</p>
+        <h2 id="contact-h">Tell us what you are looking for.</h2>
+        <p>A private, direct conversation, with no brokerage fees for buyers.</p>
+        <ul class="direct">
+          <li><a href="tel:+306975629519"><span>Call or WhatsApp</span>+30 6975 629 519</a></li>
+          <li><a href="mailto:info@greekexclusiveproperties.com"><span>Email</span>info@greekexclusiveproperties.com</a></li>
+        </ul>
+      </div>
+      <form id="form" novalidate>
+        <div class="fgrid">
+          <div class="f"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name"></div>
+          <div class="f"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email"></div>
+          <div class="f"><label for="f-tel">Phone or WhatsApp</label><input id="f-tel" name="tel" type="tel" autocomplete="tel"></div>
+          <div class="f"><label for="f-budget">Budget</label>
+            <select id="f-budget" name="budget"><option>Up to €500,000</option><option>€500,000 to €1.5M</option><option selected>€1.5M to €2.5M</option><option>€2.5M to €10M</option><option>€10M and above</option></select></div>
+          <div class="f full"><label for="f-msg">Message</label><textarea id="f-msg" name="msg">I am interested in the sea view villa near the airport in Keratea, Athens (€1,500,000). Please send me more details.</textarea></div>
+        </div>
+        <button class="btn btn-gold" type="submit">Send my enquiry</button>
+        <p class="sent" id="sent" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="https://www.greekexclusiveproperties.com/wp-content/uploads/2026/05/grex_logo_transparent_1.webp" alt="Greek Exclusive Properties" width="146" height="34" loading="lazy">
+    <ul class="social" aria-label="Social pages">
+      <li><a href="https://www.facebook.com/greekexclusiveproperties/" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://www.instagram.com/greek.exclusive.properties" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.youtube.com/c/Greekexclusiveproperties" target="_blank" rel="noopener">YouTube</a></li>
+      <li><a href="https://www.linkedin.com/in/kostas-taralas/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://x.com/GREEKEXCLUSIVE" target="_blank" rel="noopener">X</a></li>
+      <li><a href="https://gr.pinterest.com/greekexclusiveproperties" target="_blank" rel="noopener">Pinterest</a></li>
+    </ul>
+    <p class="credit">Mockup made for Greek Exclusive Properties by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick contact">
+  <a class="call" href="tel:+306975629519">Call us</a>
+  <a href="#finder">Properties</a>
+</nav>
+
+<script>
+(function(){
+  var P=[
+    {place:'Athens',area:'Athens · Keratea',name:'Sea view villa near the airport',price:1500000,beds:5,m2:180,baths:3,tag:'Exclusive',img:'https://www.greekexclusiveproperties.com/wp-content/uploads/2025/06/Beautiful-property-Athens.-Villa-for-Sale-Attica-680x510-1.jpg.webp',alt:'Sea view villa in Keratea, Athens, with an infinity pool facing the sea',short:'the sea view villa near the airport in Keratea, Athens'},
+    {place:'Corfu',area:'Corfu · Paleokastritsa',name:'Three houses with sea view',price:480000,beds:4,m2:100,baths:4,tag:'Great opportunity',img:'https://www.greekexclusiveproperties.com/wp-content/uploads/2026/06/paleokastritsa-property-with-three-indep_01-680x510.webp',alt:'Aerial view of the three houses for sale in Paleokastritsa, Corfu, among olive trees',short:'the three houses with sea view in Paleokastritsa, Corfu'},
+    {place:'Corfu',area:'Corfu · Astrakeri',name:'Unique seafront villa',price:1200000,beds:5,m2:250,baths:3,alt:'The seafront villa for sale in Astrakeri, Corfu',short:'the seafront villa in Astrakeri, Corfu'},
+    {place:'Mykonos',area:'Mykonos',name:'Cycladic retreat with panoramic sunset views',price:1500000,was:1900000,beds:5,m2:300,baths:5,tag:'Big discount',alt:'The Cycladic villa for sale in Mykonos',short:'the Cycladic retreat in Mykonos'},
+    {place:'Lefkada',area:'Lefkada · Nydri',name:'Waterfront villa with private pontoon',price:2200000,beds:4,m2:200,baths:4,alt:'The waterfront villa for sale in Nydri, Lefkada',short:'the waterfront villa with private pontoon in Nydri, Lefkada'},
+    {place:'Porto Heli',area:'Porto Heli · Ververonta',name:'Two villas with sea view',price:2250000,beds:8,m2:400,baths:8,alt:'The two sea view villas for sale in Ververonta, Porto Heli',short:'the two villas with sea view in Ververonta, Porto Heli'},
+    {place:'Santorini',area:'Santorini · Imerovigli',name:'Luxury five-bedroom villa',price:6000000,beds:5,alt:'The five-bedroom villa for sale in Imerovigli, Santorini',short:'the five-bedroom villa in Imerovigli, Santorini'},
+    {place:'Athens',area:'Athens · Voula',name:'Panorama property in Voula',price:10600000,beds:5,m2:1165,tag:'Super premium',alt:'The Panorama property for sale in Voula, Athens',short:'the panorama property in Voula, Athens'},
+    {place:'Spetses',area:'Spetses',name:'Seafront private property near Athens',price:22000000,beds:7,m2:844,baths:7,tag:'Super premium',alt:'The seafront private property for sale on Spetses',short:'the seafront private property on Spetses'}
+  ];
+  var eur=function(n){return '€'+Math.round(n).toLocaleString('en-US')};
+  var $=function(id){return document.getElementById(id)};
+  var state={place:'all',budget:0,beds:0},current=0;
+  var rows=[].slice.call(document.querySelectorAll('.row'));
+
+  function show(i,scroll){
+    var p=P[i];current=i;
+    rows.forEach(function(r){r.setAttribute('aria-current',r.dataset.id==i?'true':'false')});
+    var img=$('d-img');img.src=rows[i].querySelector('.thumb').src;img.alt=p.alt;
+    var tag=$('d-tag');tag.hidden=!p.tag;tag.textContent=p.tag||'';
+    $('d-place').textContent=p.area;$('d-name').textContent=p.name;
+    $('d-price').innerHTML=(p.was?'<s>'+eur(p.was)+'</s>':'')+eur(p.price);
+    var s=[];if(p.m2)s.push('<li><b>'+p.m2.toLocaleString('en-US')+'</b> m²</li>');s.push('<li><b>'+p.beds+'</b> bedrooms</li>');if(p.baths)s.push('<li><b>'+p.baths+'</b> bathrooms</li>');
+    $('d-specs').innerHTML=s.join('');
+    $('d-t3').textContent=eur(p.price*.03);$('d-t15').textContent=eur(p.price*.15);
+    if(scroll&&window.innerWidth<=960)$('detail').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+  }
+  function filter(){
+    var n=0,first=-1;
+    rows.forEach(function(r){
+      var p=P[r.dataset.id],b=state.budget;
+      var ok=(state.place==='all'||p.place===state.place)&&(b===0||(b>0?p.price<=b:p.price>=-b))&&p.beds>=state.beds;
+      r.parentNode.hidden=!ok;if(ok){n++;if(first<0)first=+r.dataset.id}
+    });
+    $('count').textContent=n===1?'1 property':n+' properties';
+    var em=$('empty');
+    if(!em){em=document.createElement('p');em.className='empty';em.id='empty';em.textContent='Nothing on this page matches yet. Send us your brief below and tell us what you are looking for.';$('list').after(em)}
+    em.hidden=n>0;
+    if(n&&rows[current].parentNode.hidden)show(first);
+  }
+  function setChip(group,v){
+    var box=document.querySelector('[data-filter="'+group+'"]');
+    [].forEach.call(box.querySelectorAll('.chip'),function(c){c.setAttribute('aria-pressed',c.dataset.v===String(v)?'true':'false')});
+    state[group]=group==='place'?v:+v;filter();
+  }
+  [].forEach.call(document.querySelectorAll('[data-filter]'),function(box){
+    box.addEventListener('click',function(e){var c=e.target.closest('.chip');if(c)setChip(box.dataset.filter,c.dataset.v)});
+  });
+  rows.forEach(function(r){r.addEventListener('click',function(){show(+r.dataset.id,true)})});
+  [].forEach.call(document.querySelectorAll('[data-go]'),function(a){
+    a.addEventListener('click',function(){setChip('budget','0');setChip('beds','0');setChip('place',a.dataset.go)});
+  });
+  $('d-ask').addEventListener('click',function(){
+    var p=P[current];
+    $('f-msg').value='I am interested in '+p.short+' ('+eur(p.price)+'). Please send me more details.';
+    var b=$('f-budget');b.selectedIndex=p.price<=500000?0:p.price<=1500000?1:p.price<=2500000?2:p.price<10000000?3:4;
+  });
+
+  var amt=$('amt');
+  function calc(){var v=+amt.value;$('amt-out').textContent=eur(v);$('c3').textContent=eur(v*.03);$('c15').textContent=eur(v*.15);$('cdiff').textContent=eur(v*.12)}
+  amt.addEventListener('input',calc);calc();
+
+  $('form').addEventListener('submit',function(e){e.preventDefault();$('sent').textContent='Thank you. We will be in touch.'});
+
+  if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var els=document.querySelectorAll('.finder-head,.filters,.results,.notice .wrap>*,.why .grid>*,.award .grid>*,.dest .wrap,.rv figure,.faq .grid>*,.contact .grid>*');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    [].forEach.call(els,function(el){
+      if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('will-rise','rise');io.observe(el)}
+    });
+  }
+})();
+</script>
+</body>
+</html>
