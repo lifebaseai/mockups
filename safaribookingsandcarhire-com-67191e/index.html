@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup safaribookingsandcarhire-com-67191e 1 c2dca8e0 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SBACH · Safari Bookings And Car Hire in Africa</title>
+<meta name="description" content="Safari bookings, 4x4 safari vehicle rental, self-drive cars and carpool rides across 17 African countries, on SBACH.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#a50a08; --red-dk:#7f0705; --coral:#e36b62; --sand:#faf6f1; --sand-2:#f2ebe2;
+  --ink:#231c1a; --muted:#5e534e; --line:#e4dad0; --white:#fff;
+  --r:18px; --shadow:0 1px 2px rgba(35,28,26,.06),0 12px 32px -12px rgba(35,28,26,.18);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Poppins,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--sand);line-height:1.6;font-size:16px}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{line-height:1.12;margin:0;letter-spacing:-.02em}
+p{margin:0}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:#fff;padding:10px 14px;border-radius:8px;z-index:20}
+.skip:focus{top:56px}
+
+/* Signal Set banner */
+.ss{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:#2b2321;color:#f4ece4;font-size:15px;line-height:1.3;text-align:center;width:100%}
+.ss a{color:#fff;text-decoration:underline;text-underline-offset:3px;font-weight:600}
+
+/* Header */
+.top{background:var(--sand);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:84px}
+.brand{display:flex;align-items:center;text-decoration:none}
+.brand img{width:92px;height:auto}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{text-decoration:none;font-size:14.5px;font-weight:500;padding:12px 12px;border-radius:10px;color:var(--ink)}
+.nav a:hover{color:var(--red)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 24px;border-radius:999px;font:600 15px/1 Poppins,system-ui,sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .2s,transform .2s,box-shadow .2s}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 8px 20px -10px rgba(165,10,8,.7)}
+.btn-red:hover{background:var(--red-dk);transform:translateY(-1px)}
+.btn-line{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-line:hover{background:var(--ink);color:#fff}
+.nav .btn{margin-left:8px;padding:0 20px;min-height:44px;color:#fff}
+.nav .btn:hover{color:#fff}
+
+/* Hero */
+.hero{position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:32px;padding-top:64px;padding-bottom:72px}
+.eyebrow{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin-bottom:18px}
+.hero h1{font-size:clamp(38px,5.2vw,62px);font-weight:700}
+.hero h1 span{color:var(--red)}
+.lede{margin-top:22px;font-size:18px;color:var(--muted);max-width:33em}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.facts{display:flex;flex-wrap:wrap;gap:28px;margin-top:40px;padding-top:26px;border-top:1px solid var(--line);max-width:520px}
+.facts b{display:block;font-size:26px;font-weight:700;line-height:1.1}
+.facts span{font-size:13.5px;color:var(--muted)}
+.stage{position:relative;aspect-ratio:1/1;max-width:560px;justify-self:end;width:100%}
+.stage .disc{position:absolute;inset:0 -8% 4% 6%;border-radius:50%;background:var(--coral)}
+.stage .ring{position:absolute;width:34%;aspect-ratio:1;border-radius:50%;border:2px solid rgba(165,10,8,.25);left:-4%;bottom:2%}
+.stage img{position:absolute;left:-2%;bottom:6%;width:100%;max-width:560px;filter:drop-shadow(0 26px 22px rgba(35,28,26,.28))}
+.stage .tag{position:absolute;right:0;top:10%;background:#fff;border-radius:14px;padding:12px 16px;box-shadow:var(--shadow);font-size:13.5px;line-height:1.35;max-width:210px}
+.stage .tag b{display:block;font-size:14.5px}
+
+/* Section basics */
+section{scroll-margin-top:20px}
+.sec{padding:96px 0}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin-bottom:12px}
+.sec h2{font-size:clamp(30px,3.6vw,44px);font-weight:700}
+.sub{margin-top:14px;color:var(--muted);font-size:17px;max-width:36em}
+
+/* Planner */
+.plan{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.plan-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;margin-top:44px;align-items:start}
+fieldset{border:0;margin:0 0 28px;padding:0;min-width:0}
+legend,.flabel{font-weight:600;font-size:15px;margin-bottom:12px;padding:0;display:block}
+legend small{font-weight:400;color:var(--muted);font-size:14px;margin-left:6px}
+select,input[type=date],input[type=text],input[type=email],textarea{width:100%;font:inherit;font-size:16px;color:var(--ink);background:var(--sand);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;min-height:50px}
+select:focus,input:focus,textarea:focus{border-color:var(--red);outline:none;box-shadow:0 0 0 3px rgba(165,10,8,.15)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.opt{position:relative;display:block;cursor:pointer}
+.opt input{position:absolute;opacity:0;width:1px;height:1px}
+.opt .card{display:flex;gap:12px;align-items:flex-start;height:100%;border:1.5px solid var(--line);border-radius:14px;padding:14px 16px;background:#fff;transition:border-color .2s,background .2s,box-shadow .2s}
+.opt .card svg{flex:none;width:26px;height:26px;margin-top:2px;color:var(--muted)}
+.opt .card b{display:block;font-size:15px;font-weight:600;line-height:1.3}
+.opt .card small{display:block;font-size:13.5px;color:var(--muted);line-height:1.4;margin-top:3px}
+.opt:hover .card{border-color:#cdbfb2}
+.opt input:checked+.card{border-color:var(--red);background:#fff6f5;box-shadow:0 0 0 1px var(--red) inset}
+.opt input:checked+.card svg{color:var(--red)}
+.opt input:focus-visible+.card{outline:3px solid var(--red);outline-offset:3px}
+.pills{display:flex;flex-wrap:wrap;gap:10px}
+.pill{position:relative;cursor:pointer}
+.pill input{position:absolute;opacity:0;width:1px;height:1px}
+.pill span{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;border:1.5px solid var(--line);background:#fff;font-size:14.5px;font-weight:500;transition:all .2s}
+.pill input:checked+span{background:var(--ink);border-color:var(--ink);color:#fff}
+.pill input:focus-visible+span{outline:3px solid var(--red);outline-offset:3px}
+.hide{display:none!important}
+
+.ticket{position:sticky;top:20px;background:var(--sand);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);overflow:hidden}
+.t-head{background:var(--red);color:#fff;padding:22px 26px;position:relative}
+.t-head small{display:block;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;opacity:.9}
+.t-head .where{font-size:30px;font-weight:700;line-height:1.15;margin-top:4px}
+.t-head::after{content:"";position:absolute;right:-30px;top:-30px;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.12)}
+.t-body{padding:22px 26px 26px}
+.rows{margin:0;display:grid;gap:0}
+.rows div{display:grid;grid-template-columns:96px 1fr;gap:12px;padding:11px 0;border-bottom:1px dashed var(--line)}
+.rows dt{font-size:13px;color:var(--muted);padding-top:2px}
+.rows dd{margin:0;font-weight:600;font-size:15px;line-height:1.4}
+.parks{display:flex;flex-wrap:wrap;gap:8px;margin-top:2px}
+.park{min-height:36px;padding:0 12px;border-radius:999px;border:1.5px solid var(--line);background:#fff;font:500 13.5px Poppins,system-ui,sans-serif;color:var(--ink);cursor:pointer}
+.park[aria-pressed=true]{background:var(--red);border-color:var(--red);color:#fff}
+.parks-note{font-weight:500;font-size:14px;color:var(--muted)}
+.steps{list-style:none;margin:18px 0 0;padding:0;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding:0 0 12px 38px;font-size:14.5px;line-height:1.5}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:26px;height:26px;border-radius:50%;background:var(--ink);color:#fff;font-size:13px;font-weight:600;display:grid;place-items:center}
+.req{margin-top:16px;padding-top:18px;border-top:1px solid var(--line)}
+.req .two{gap:10px}
+.req input{background:#fff;min-height:48px;font-size:15px}
+.req label{display:block;font-size:13px;font-weight:500;margin-bottom:6px}
+.req .btn{width:100%;margin-top:12px}
+.thanks{margin-top:12px;padding:12px 14px;border-radius:12px;background:#fff;border:1.5px solid var(--red);font-weight:600;font-size:14.5px}
+.loan{margin-top:12px;font-size:13.5px;color:var(--muted);text-align:center}
+
+/* Ways to travel */
+.ways-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
+.ways-grid .intro{position:sticky;top:24px}
+.way{display:grid;grid-template-columns:52px 1fr auto;gap:18px;align-items:start;padding:26px 0;border-top:1px solid var(--line)}
+.way:last-child{border-bottom:1px solid var(--line)}
+.way .n{font-size:14px;font-weight:600;color:var(--red);padding-top:4px}
+.way h3{font-size:21px;font-weight:600}
+.way p{margin-top:6px;color:var(--muted);font-size:15.5px;max-width:34em}
+.way .go{align-self:center;white-space:nowrap;font-size:14.5px;font-weight:600;color:var(--red);text-decoration:none;min-height:44px;display:inline-flex;align-items:center;gap:6px;padding:0 4px;background:none;border:0;cursor:pointer;font-family:inherit}
+.way .go:hover{text-decoration:underline;text-underline-offset:4px}
+
+/* Destinations */
+.dest{position:relative;color:#fff;background:#2b2321;overflow:hidden}
+.dest{background:#1f1714}
+.dest .bg{position:absolute;top:0;right:0;width:68%;height:100%;object-fit:cover;object-position:50% 62%}
+.dest::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#1f1714 0%,#1f1714 34%,rgba(31,23,20,.55) 56%,rgba(31,23,20,.1) 100%);z-index:1}
+.dest-cols{max-width:640px!important;gap:28px!important}
+.dest h2,.dest .sub{max-width:600px}
+.dest .wrap{position:relative;z-index:2;padding-top:110px;padding-bottom:110px}
+.dest .kicker{color:#ffc9b8}
+.dest h2{max-width:14em}
+.dest .sub{color:#efe5dc}
+.dest-cols{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px;margin-top:48px;max-width:980px}
+.dest h3{font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:#ffc9b8;margin-bottom:14px}
+.clist{list-style:none;margin:0;padding:0;columns:2;column-gap:24px;font-size:15.5px;line-height:2}
+.plist{list-style:none;margin:0;padding:0;font-size:15.5px;line-height:2}
+
+/* Trust */
+.trust{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;margin-top:48px;border-top:2px solid var(--ink)}
+.trust div{padding:28px 28px 0 0}
+.trust div+div{padding-left:28px;border-left:1px solid var(--line)}
+.trust b{display:block;font-size:19px;font-weight:600;margin-bottom:8px}
+.trust p{color:var(--muted);font-size:15.5px}
+.big-quote{margin-top:72px;font-size:clamp(22px,2.6vw,30px);font-weight:500;line-height:1.35;max-width:30em;letter-spacing:-.01em}
+.big-quote span{color:var(--red)}
+
+/* Hosts */
+.hosts{background:var(--ink);color:#fff}
+.hosts .kicker{color:#ffb4a6}
+.hosts-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.van{background:#fff;border-radius:24px;padding:28px 20px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.van img{width:100%;max-width:560px;margin:0 auto}
+.hosts .sub{color:#d9cec6}
+.hl{list-style:none;margin:28px 0 0;padding:0}
+.hl li{padding:16px 0;border-top:1px solid rgba(255,255,255,.14)}
+.hl b{display:block;font-size:17px;font-weight:600}
+.hl span{display:block;color:#d9cec6;font-size:15px;margin-top:2px}
+.hosts .btn-line{border-color:#fff;color:#fff}
+.hosts .btn-line:hover{background:#fff;color:var(--ink)}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
+details{border-top:1px solid var(--line)}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font-weight:600;font-size:17px;min-height:44px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:12px;height:12px;border-right:2px solid var(--red);border-bottom:2px solid var(--red);transform:rotate(45deg) translate(-3px,-3px);transition:transform .25s}
+details[open] summary::after{transform:rotate(-135deg) translate(-3px,-3px)}
+details p{padding:0 0 22px;color:var(--muted);font-size:15.5px;max-width:40em}
+
+/* End */
+.end{text-align:center;padding:100px 0 110px;background:#fff;border-top:1px solid var(--line);position:relative;overflow:hidden}
+.end .disc{position:absolute;width:520px;height:520px;border-radius:50%;background:var(--coral);opacity:.12;right:-160px;top:-220px}
+.end h2{font-size:clamp(32px,4.4vw,52px);font-weight:700;position:relative}
+.end .sub{margin:16px auto 0;position:relative}
+.end .actions{justify-content:center;position:relative}
+
+footer{background:#1c1614;color:#d9cec6;font-size:14.5px}
+footer .wrap{padding-top:56px;padding-bottom:36px}
+.f-top{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.12)}
+.f-logo{background:#fff;border-radius:14px;padding:8px 12px;display:inline-block}
+.f-logo img{width:86px}
+footer h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#fff;font-weight:600;margin-bottom:12px}
+footer ul{list-style:none;margin:0;padding:0}
+footer li a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
+footer li a:hover{color:#fff;text-decoration:underline}
+.f-bot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;font-size:13.5px}
+.f-bot a{color:#fff}
+
+/* Rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise-ready{transition:opacity .7s ease,transform .7s ease}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+
+/* Tablet & phone */
+@media (max-width:960px){
+  .nav a:not(.btn){display:none}
+  .hero .wrap{grid-template-columns:1fr;padding-top:40px;padding-bottom:56px;gap:8px}
+  .stage{justify-self:center;max-width:460px;margin-top:8px}
+  .plan-grid,.ways-grid,.hosts-grid,.faq-grid{grid-template-columns:1fr;gap:36px}
+  .ticket,.ways-grid .intro{position:static}
+  .dest-cols{grid-template-columns:1fr 1fr}
+  .dest-cols>div:first-child{grid-column:1/-1}
+  .dest .bg{width:100%;height:46%;top:auto;bottom:0;object-position:50% 60%}
+  .dest::before{background:linear-gradient(180deg,#1f1714 0%,#1f1714 50%,rgba(31,23,20,.75) 70%,rgba(31,23,20,.35) 100%)}
+  .trust{grid-template-columns:1fr}
+  .trust div,.trust div+div{padding:24px 0;border-left:0;border-bottom:1px solid var(--line)}
+  .f-top{grid-template-columns:1fr 1fr}
+  .f-top>div:first-child{grid-column:1/-1}
+}
+@media (max-width:560px){
+  body{font-size:15.5px}
+  .wrap{padding:0 20px}
+  .top .wrap{min-height:72px}
+  .brand img{width:74px}
+  .nav .btn{padding:0 16px;font-size:14px}
+  .hero h1{font-size:38px}
+  .lede{font-size:16.5px}
+  .actions .btn{flex:1 1 100%}
+  .facts{gap:20px}
+  .facts b{font-size:22px}
+  .stage .tag{display:none}
+  .sec{padding:72px 0}
+  .modes{grid-template-columns:1fr}
+  .two{grid-template-columns:1fr}
+  .t-head,.t-body{padding-left:20px;padding-right:20px}
+  .rows div{grid-template-columns:84px 1fr}
+  .way{grid-template-columns:36px 1fr;gap:12px}
+  .way .go{grid-column:2;justify-self:start;padding:0}
+  .dest .wrap{padding-top:80px;padding-bottom:80px}
+  .dest-cols{grid-template-columns:1fr;gap:32px}
+  .van{padding:18px 12px}
+  .end{padding:80px 0 90px}
+  .f-top{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="ss" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#main" aria-label="SBACH, home"><img src="https://safaribookingsandcarhire.com/assets/logo-B8ky53u3.png" alt="SBACH logo: a crowned lion above the word SBACH" width="160" height="125"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#ways">Ways to travel</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#hosts">For hosts</a>
+      <a href="#faq">Questions</a>
+      <a class="btn btn-red" href="#plan">Plan my trip</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">SBACH · Safari Bookings And Car Hire</span>
+        <h1 id="h1">Your African safari, <span>on your own terms.</span></h1>
+        <p class="lede">Hire a 4x4 with a professional safari guide, drive yourself, share a ride to the parks or book a safari, on the largest marketplace in Africa for safari bookings and car hire.</p>
+        <div class="actions">
+          <a class="btn btn-red" href="#plan">Plan my trip</a>
+          <a class="btn btn-line" href="#ways">See ways to travel</a>
+        </div>
+        <div class="facts">
+          <div><b>17</b><span>African countries</span></div>
+          <div><b>6</b><span>ways to travel and trade</span></div>
+          <div><b>Verified</b><span>hosts and travellers</span></div>
+        </div>
+      </div>
+      <div class="stage">
+        <div class="disc" aria-hidden="true"></div>
+        <div class="ring" aria-hidden="true"></div>
+        <img src="https://safaribookingsandcarhire.com/assets/banner-img-DtVe1I6K.png" alt="A cream 4x4 safari jeep with an open roof top and raised seats for game drives" width="700" height="576">
+        <div class="tag"><b>Open roof top</b>The 4x4 safari jeep for game drives</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec plan" id="plan" aria-labelledby="plan-h">
+    <div class="wrap">
+      <p class="kicker">Plan your trip</p>
+      <h2 id="plan-h">Tell us the trip. See it come together.</h2>
+      <p class="sub">Choose a country and how you want to travel. Your plan updates as you go, then send it to hosts in one tap.</p>
+
+      <div class="plan-grid">
+        <form id="planner" aria-label="Trip planner" novalidate>
+          <div class="two" style="margin-bottom:28px">
+            <div>
+              <label class="flabel" for="country">Country</label>
+              <select id="country" name="country">
+                <option>Botswana</option><option>Burundi</option><option>Egypt</option><option>Ethiopia</option><option>Kenya</option><option>Madagascar</option><option>Malawi</option><option>Mauritius</option><option>Mozambique</option><option>Namibia</option><option>Rwanda</option><option>Seychelles</option><option>South Africa</option><option selected>Tanzania</option><option>Uganda</option><option>Zambia</option><option>Zimbabwe</option>
+              </select>
+            </div>
+            <div>
+              <label class="flabel" for="date" id="date-l">Pickup date</label>
+              <input type="date" id="date" name="date" value="2027-02-15">
+            </div>
+          </div>
+
+          <fieldset>
+            <legend>How do you want to travel?</legend>
+            <div class="modes">
+              <label class="opt"><input type="radio" name="mode" value="guide" checked><span class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="3.2"/><path d="M5 20c.6-3.6 3.4-6 7-6s6.4 2.4 7 6"/></svg><span><b>With a safari guide</b><small>Get driven by an experienced guide</small></span></span></label>
+              <label class="opt"><input type="radio" name="mode" value="self"><span class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="2"/><path d="M3.8 10.5h6.4M13.8 10.5h6.4M12 14v6.4"/></svg><span><b>Self-drive</b><small>Plan and drive your own adventure</small></span></span></label>
+              <label class="opt"><input type="radio" name="mode" value="carpool"><span class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="2.6"/><circle cx="16.5" cy="8" r="2.6"/><path d="M3 19c.4-3 2.4-5 5-5s4.6 2 5 5M12 15.2c.9-.8 2.4-1.2 4.5-1.2 2.6 0 4.6 2 5 5"/></svg><span><b>Carpool ride</b><small>Share a ride with empty seats</small></span></span></label>
+              <label class="opt"><input type="radio" name="mode" value="safari"><span class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18M5 20l7-14 7 14M12 6v14M9 20l3-5 3 5"/></svg><span><b>Book a safari</b><small>Luxury or camping, from operators</small></span></span></label>
+            </div>
+          </fieldset>
+
+          <fieldset id="q-purpose">
+            <legend>What's the trip for?</legend>
+            <div class="pills">
+              <label class="pill"><input type="radio" name="purpose" value="game" checked><span>Game drives</span></label>
+              <label class="pill"><input type="radio" name="purpose" value="offroad"><span>Off-road destinations</span></label>
+              <label class="pill"><input type="radio" name="purpose" value="group"><span>Group travel</span></label>
+              <label class="pill"><input type="radio" name="purpose" value="occasion"><span>Wedding or business</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset id="q-ride" class="hide">
+            <legend>Which kind of ride?</legend>
+            <div class="pills">
+              <label class="pill"><input type="radio" name="ride" value="round" checked><span>Round trip</span></label>
+              <label class="pill"><input type="radio" name="ride" value="oneway"><span>One way</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset id="q-style" class="hide">
+            <legend>What kind of safari?</legend>
+            <div class="pills">
+              <label class="pill"><input type="radio" name="style" value="Luxury" checked><span>Luxury</span></label>
+              <label class="pill"><input type="radio" name="style" value="Camping"><span>Camping</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset id="q-group" class="hide">
+            <legend>Private or join a group?</legend>
+            <div class="pills">
+              <label class="pill"><input type="radio" name="group" value="private" checked><span>Custom / private</span></label>
+              <label class="pill"><input type="radio" name="group" value="join"><span>Group joining, guaranteed departure</span></label>
+            </div>
+          </fieldset>
+        </form>
+
+        <aside class="ticket" aria-labelledby="t-where" aria-live="polite">
+          <div class="t-head">
+            <small>Your trip</small>
+            <div class="where" id="t-where">Tanzania</div>
+          </div>
+          <div class="t-body">
+            <dl class="rows">
+              <div><dt>Travel</dt><dd id="t-travel">Driven by a professional safari guide</dd></div>
+              <div><dt id="t-what-l">Vehicle</dt><dd id="t-what">4x4 safari jeep with open roof top</dd></div>
+              <div><dt id="t-date-l">Pickup</dt><dd id="t-date">Mon 15 Feb 2027</dd></div>
+              <div><dt>Parks</dt><dd><div class="parks" id="t-parks">
+                <button type="button" class="park" aria-pressed="true">Serengeti</button>
+                <button type="button" class="park" aria-pressed="true">Ngorongoro Crater</button>
+                <button type="button" class="park" aria-pressed="false">Tarangire</button>
+                <button type="button" class="park" aria-pressed="false">Lake Manyara</button>
+                <button type="button" class="park" aria-pressed="false">Mount Kilimanjaro</button>
+              </div></dd></div>
+            </dl>
+            <ol class="steps" id="t-steps">
+              <li>Contact the host with your destination and dates.</li>
+              <li>The host accepts. Reserve and pay online to SBACH.</li>
+              <li>Meet the host on pickup day and set off.</li>
+            </ol>
+            <form class="req" id="req">
+              <div class="two">
+                <div><label for="nm">Your name</label><input id="nm" name="name" type="text" autocomplete="name" required></div>
+                <div><label for="em">Email</label><input id="em" name="email" type="email" autocomplete="email" required></div>
+              </div>
+              <button class="btn btn-red" type="submit">Send my trip to hosts</button>
+              <p class="thanks hide" id="thanks" role="status">Thanks. This is a mockup, so nothing was sent.</p>
+              <p class="loan">Spread the cost with flexible SBACH Vacation Loans.</p>
+            </form>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="ways" aria-labelledby="ways-h">
+    <div class="wrap ways-grid">
+      <div class="intro" data-rise>
+        <p class="kicker">Ways to travel</p>
+        <h2 id="ways-h">One marketplace. Every way to get there.</h2>
+        <p class="sub">Book a safari, rent the vehicle, share the ride, or find the operator. All in Africa's top rated safari destinations.</p>
+      </div>
+      <div>
+        <article class="way" data-rise>
+          <span class="n">01</span>
+          <div><h3>Safari vehicle rental</h3><p>Get driven around by experienced, professional safari guides. The best way to discover hidden destinations and learn as you go.</p></div>
+          <button class="go" type="button" data-mode="guide">Plan this <span aria-hidden="true">→</span></button>
+        </article>
+        <article class="way" data-rise>
+          <span class="n">02</span>
+          <div><h3>Self-drive cars for hire</h3><p>Explore the countryside or the national parks behind the wheel, and organise your own safari adventure.</p></div>
+          <button class="go" type="button" data-mode="self">Plan this <span aria-hidden="true">→</span></button>
+        </article>
+        <article class="way" data-rise>
+          <span class="n">03</span>
+          <div><h3>Carpool rides</h3><p>Travelling solo? Join a one-way or round trip to the national parks, pay only the transport, and book your own lodge.</p></div>
+          <button class="go" type="button" data-mode="carpool">Plan this <span aria-hidden="true">→</span></button>
+        </article>
+        <article class="way" data-rise>
+          <span class="n">04</span>
+          <div><h3>Safari bookings</h3><p>Luxury or camping safaris and tours. Go custom and private, or join a group on a guaranteed departure.</p></div>
+          <button class="go" type="button" data-mode="safari">Plan this <span aria-hidden="true">→</span></button>
+        </article>
+        <article class="way" data-rise>
+          <span class="n">05</span>
+          <div><h3>Safari &amp; tour operators</h3><p>A directory of travel agencies, safari and tour operators across Africa, with current contact details, phone numbers and email addresses.</p></div>
+          <a class="go" href="https://safaribookingsandcarhire.com/">Browse <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="way" data-rise>
+          <span class="n">06</span>
+          <div><h3>Cars for sale</h3><p>Safari vehicles and private cars from local sellers, open to local and international buyers.</p></div>
+          <a class="go" href="https://safaribookingsandcarhire.com/">Browse <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="dest" id="destinations" aria-labelledby="dest-h">
+    <img class="bg" src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=2000&q=70&auto=format&fit=crop" alt="" loading="lazy">
+    <div class="wrap">
+      <p class="kicker">Destinations</p>
+      <h2 id="dest-h">17 countries. The parks you came to Africa for.</h2>
+      <p class="sub">From the Masai Mara to the Serengeti, find a vehicle, a ride or a safari where you're headed.</p>
+      <div class="dest-cols" data-rise>
+        <div>
+          <h3>Countries</h3>
+          <ul class="clist">
+            <li>Botswana</li><li>Burundi</li><li>Egypt</li><li>Ethiopia</li><li>Kenya</li><li>Madagascar</li><li>Malawi</li><li>Mauritius</li><li>Mozambique</li><li>Namibia</li><li>Rwanda</li><li>Seychelles</li><li>South Africa</li><li>Tanzania</li><li>Uganda</li><li>Zambia</li><li>Zimbabwe</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Kenya's parks</h3>
+          <ul class="plist"><li>Masai Mara</li><li>Amboseli</li><li>Tsavo</li><li>Samburu National Park</li><li>Lake Nakuru</li><li>Nairobi National Park</li></ul>
+        </div>
+        <div>
+          <h3>Tanzania's parks</h3>
+          <ul class="plist"><li>Serengeti</li><li>Ngorongoro Crater</li><li>Tarangire</li><li>Lake Manyara</li><li>Mount Kilimanjaro</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="trust-h">
+    <div class="wrap">
+      <p class="kicker">Why book on SBACH</p>
+      <h2 id="trust-h">Checked on both sides.</h2>
+      <div class="trust" data-rise>
+        <div><b>Hosts are verified</b><p>We check every host's documents when they register.</p></div>
+        <div><b>Travellers are verified</b><p>Anyone who books a car is verified at sign-up, so hosts are protected too.</p></div>
+        <div><b>Reviews you can trust</b><p>Customers can write reviews and report any listing on the platform.</p></div>
+      </div>
+      <p class="big-quote" data-rise>Contact safari guide drivers directly and arrange a private, tailor-made safari, <span>without following someone else's programmed itinerary.</span></p>
+    </div>
+  </section>
+
+  <section class="sec hosts" id="hosts" aria-labelledby="hosts-h">
+    <div class="wrap hosts-grid">
+      <div class="van" data-rise>
+        <img src="https://safaribookingsandcarhire.com/assets/sell-your-car-img-BMgeyJ8J.png" alt="A white Toyota HiAce minibus" width="964" height="535" loading="lazy">
+      </div>
+      <div data-rise>
+        <p class="kicker">For hosts</p>
+        <h2 id="hosts-h">Have a safari vehicle? Put it to work.</h2>
+        <ul class="hl">
+          <li><b>Rent it out</b><span>List your car and earn from it, for safaris or any occasion.</span></li>
+          <li><b>Drive for safari companies</b><span>Freelance guide drivers connect with tour companies who need transport, even when their office is in another country.</span></li>
+          <li><b>Sell it</b><span>Converted safari jeeps are rarely found in showrooms. Reach ready buyers, local and international.</span></li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn-red" href="https://safaribookingsandcarhire.com/">Become a host</a>
+          <a class="btn btn-line" href="https://safaribookingsandcarhire.com/">Sell your car</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="faq" aria-labelledby="faq-h">
+    <div class="wrap faq-grid">
+      <div data-rise>
+        <p class="kicker">Questions</p>
+        <h2 id="faq-h">Good to know before you go.</h2>
+      </div>
+      <div data-rise>
+        <details open><summary>How does renting a car work?</summary><p>Choose the vehicle that suits your trip and contact the host with your destination and rental period. Once the host accepts, reserve and pay online to SBACH. On pickup day, meet the host, sign the rental agreement and drive.</p></details>
+        <details><summary>Will I pay anything at pickup?</summary><p>Possibly local extra fees or a refundable security deposit, if applicable. Return the vehicle at the end of your rental period.</p></details>
+        <details><summary>I'm travelling solo. Isn't a safari expensive?</summary><p>It costs more alone, which is why there are carpool rides. Join a one-way or round trip to the national parks, pay only the transport, and book your own hotel or lodge.</p></details>
+        <details><summary>Which vehicle should I choose?</summary><p>A 4x4 for off-road destinations, a 4x4 safari jeep with an open roof top for game drives, a comfortable bus for groups, and a luxury car for a wedding or business occasion.</p></details>
+        <details><summary>Can I pay for my safari over time?</summary><p>Yes. You can finance your safari through flexible SBACH Vacation Loans.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="end" aria-labelledby="end-h">
+    <div class="disc" aria-hidden="true"></div>
+    <div class="wrap">
+      <h2 id="end-h" data-rise>Your safari, on your own terms.</h2>
+      <p class="sub" data-rise>Pick a country and a way to travel. We'll show you the rest.</p>
+      <div class="actions" data-rise><a class="btn btn-red" href="#plan">Plan my trip</a></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div>
+        <span class="f-logo"><img src="https://safaribookingsandcarhire.com/assets/logo-B8ky53u3.png" alt="SBACH" width="160" height="125" loading="lazy"></span>
+        <p style="margin-top:14px;max-width:22em">The largest marketplace in Africa for safari bookings and car hire.</p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <ul><li><a href="#plan">Plan my trip</a></li><li><a href="#ways">Ways to travel</a></li><li><a href="#destinations">Destinations</a></li><li><a href="#hosts">For hosts</a></li></ul>
+      </div>
+      <div>
+        <h2>Follow</h2>
+        <ul>
+          <li><a href="https://www.facebook.com/safaribookingsandcarhire.sbach" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com/safaribookingsandcarhire" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@Safaribookingsandcarhire" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://x.com/SB_ACH" target="_blank" rel="noopener">X</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span>© SAFARI BOOKINGS AND CAR HIRE - SBACH</span>
+      <span>Mockup made for SBACH by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var PARKS={
+    Kenya:['Masai Mara','Amboseli','Tsavo','Samburu National Park','Lake Nakuru','Nairobi National Park'],
+    Tanzania:['Serengeti','Ngorongoro Crater','Tarangire','Lake Manyara','Mount Kilimanjaro']
+  };
+  var VEH={game:'4x4 safari jeep with open roof top',offroad:'4x4 vehicle for off-road destinations',group:'Comfortable bus for group travel',occasion:'Luxury car for the occasion'};
+  var f=document.getElementById('planner'),$=function(id){return document.getElementById(id)};
+  var chosen={Tanzania:['Serengeti','Ngorongoro Crater'],Kenya:['Masai Mara']};
+  function val(n){var e=f.querySelector('input[name='+n+']:checked');return e?e.value:''}
+  function fmt(v){
+    if(!v)return 'Choose a date';
+    var p=v.split('-'),d=new Date(+p[0],+p[1]-1,+p[2]);
+    return d.toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short',year:'numeric'});
+  }
+  function parks(c){
+    var box=$('t-parks'),list=PARKS[c];box.innerHTML='';
+    if(!list){var s=document.createElement('span');s.className='parks-note';s.textContent='Tell your host where in '+c+' you want to go.';box.appendChild(s);return}
+    var sel=chosen[c]||(chosen[c]=[]);
+    list.forEach(function(p){
+      var b=document.createElement('button');b.type='button';b.className='park';b.textContent=p;
+      b.setAttribute('aria-pressed',sel.indexOf(p)>-1?'true':'false');
+      b.onclick=function(){var i=sel.indexOf(p);if(i>-1)sel.splice(i,1);else sel.push(p);b.setAttribute('aria-pressed',i>-1?'false':'true')};
+      box.appendChild(b);
+    });
+  }
+  function steps(a){$('t-steps').innerHTML=a.map(function(s){return '<li>'+s+'</li>'}).join('')}
+  function render(){
+    var c=$('country').value,m=val('mode');
+    $('t-where').textContent=c;
+    $('q-purpose').classList.toggle('hide',!(m==='guide'||m==='self'));
+    $('q-ride').classList.toggle('hide',m!=='carpool');
+    $('q-style').classList.toggle('hide',m!=='safari');
+    $('q-group').classList.toggle('hide',m!=='safari');
+    var vehicle=m==='guide'||m==='self';
+    $('date-l').textContent=vehicle?'Pickup date':'Travel date';
+    $('t-date-l').textContent=vehicle?'Pickup':'Date';
+    $('t-date').textContent=fmt($('date').value);
+    if(m==='guide'){
+      $('t-travel').textContent='Driven by a professional safari guide';
+      $('t-what-l').textContent='Vehicle';$('t-what').textContent=VEH[val('purpose')];
+      steps(['Contact the host with your destination and dates.','The host accepts. Reserve and pay online to SBACH.','Meet the host on pickup day and set off.']);
+    }else if(m==='self'){
+      $('t-travel').textContent='Self-drive';
+      $('t-what-l').textContent='Vehicle';$('t-what').textContent=VEH[val('purpose')];
+      steps(['Contact the host with your destination and rental period.','The host accepts. Reserve and pay online to SBACH.','On pickup day, sign the rental agreement, pay any local fees or refundable deposit if applicable, and drive.']);
+    }else if(m==='carpool'){
+      $('t-travel').textContent='Carpool ride';
+      $('t-what-l').textContent='Ride';$('t-what').textContent=val('ride')==='round'?'Round trip to the national parks':'One way';
+      steps(['Pick a ride from the destinations on offer.','Ride with a driver who has empty seats.','Pay only the transport, and book your own hotel or lodge.']);
+    }else{
+      $('t-travel').textContent='Safari booking';
+      $('t-what-l').textContent='Safari';
+      $('t-what').textContent=val('style')+' safari, '+(val('group')==='private'?'custom and private':'group joining, guaranteed departure');
+      steps(['Compare '+val('style').toLowerCase()+' safaris from operators in '+c+'.','Choose a custom private safari or a group departure.','Contact the operator with your dates.']);
+    }
+    parks(c);
+  }
+  f.addEventListener('change',render);
+  f.addEventListener('submit',function(e){e.preventDefault()});
+  $('req').addEventListener('submit',function(e){e.preventDefault();$('thanks').classList.remove('hide')});
+  document.querySelectorAll('.go[data-mode]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var r=f.querySelector('input[name=mode][value='+b.dataset.mode+']');r.checked=true;render();
+      $('plan').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+    });
+  });
+  render();
+
+  // Gentle rise for things below the first screen
+  if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var vh=window.innerHeight,els=[].slice.call(document.querySelectorAll('[data-rise]')).filter(function(el){return el.getBoundingClientRect().top>vh});
+  els.forEach(function(el){el.classList.add('will-rise')});
+  requestAnimationFrame(function(){els.forEach(function(el){el.classList.add('rise-ready')})});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>
