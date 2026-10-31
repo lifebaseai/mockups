@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup myluxuryrides-com-7d876b 1 bb9d127d -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Luxury Rides | Orlando Chauffeur &amp; Luxury Transportation</title>
+<meta name="description" content="Chauffeured Sprinters and SUVs, luxury rentals and custom Sprinter conversions across Orlando and Central Florida.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gold:#b99b5e; --gold-ink:#7a6230; --ink:#15130f; --night:#0f0e0c; --night-2:#1a1814;
+  --cream:#f7f4ee; --sand:#efe9dd; --line:#e2dacb; --muted:#5e584e; --muted-d:#b9b2a5;
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --sans:Inter,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:12px;top:56px;background:#fff;padding:10px 14px;z-index:50}
+
+/* banner */
+.mock{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:var(--sand);color:var(--ink);font-size:15px;line-height:1.3;text-align:center;border-bottom:1px solid var(--line)}
+.mock a{color:var(--gold-ink);text-decoration:underline;text-underline-offset:3px;font-weight:600}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(15,14,12,.97);color:#f3efe6;border-bottom:1px solid rgba(185,155,94,.25)}
+.top .wrap{display:flex;align-items:center;gap:28px;height:72px;max-width:1376px}
+.mark{text-decoration:none;display:flex;flex-direction:column;line-height:1}
+.mark b{font:600 23px/1 var(--serif);letter-spacing:.06em}
+.mark small{font-size:9.5px;letter-spacing:.22em;color:var(--gold);margin-top:6px}
+.nav{display:flex;gap:26px;margin-left:auto}
+.nav a{text-decoration:none;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#d9d3c7;padding:12px 0}
+.nav a:hover{color:#fff}
+.tel{text-decoration:none;font-weight:500;font-size:15px;white-space:nowrap;padding:12px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:2px;font:600 13px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:background .2s,color .2s,border-color .2s}
+.btn-gold{background:var(--gold);color:var(--night)}
+.btn-gold:hover{background:#cdb27a}
+.btn-line{border-color:rgba(243,239,230,.45);color:#f3efe6;background:transparent}
+.btn-line:hover{border-color:var(--gold);color:#fff}
+.btn-dark{background:var(--night);color:#f3efe6}
+.btn-dark:hover{background:#2a2620}
+.top .btn{min-height:44px;padding:0 18px}
+
+/* hero */
+.hero{background:var(--night);color:#f3efe6}
+.hero-in{display:grid;grid-template-columns:minmax(0,520px) minmax(0,920px);max-width:1440px;margin:0 auto;min-height:640px}
+.hero-copy{padding:72px 48px 56px 56px;display:flex;flex-direction:column;justify-content:center}
+.kicker{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin:0 0 22px;display:flex;align-items:center;gap:14px}
+.kicker:before{content:"";width:28px;height:1px;background:var(--gold)}
+.hero h1{font:500 clamp(46px,5.4vw,74px)/1.02 var(--serif);margin:0 0 22px;letter-spacing:-.005em}
+.hero h1 em{font-style:italic;color:#e3cf9f}
+.lede{font-size:18px;line-height:1.6;color:#d4cec2;margin:0 0 32px;max-width:430px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.proof{display:grid;grid-template-columns:repeat(3,auto);gap:22px;margin-top:44px;padding-top:26px;border-top:1px solid rgba(185,155,94,.28);justify-content:start}
+.proof div{font-size:12.5px;line-height:1.4;color:var(--muted-d);letter-spacing:.02em}
+.proof strong{display:block;font:500 30px/1 var(--serif);color:#f3efe6;margin-bottom:6px}
+.hero-pic{position:relative;overflow:hidden;max-height:800px}
+.hero-pic img{width:100%;height:100%;object-fit:cover;object-position:62% 60%}
+.hero-pic:after{content:"";position:absolute;inset:0 auto 0 0;width:120px;background:linear-gradient(90deg,var(--night),rgba(15,14,12,0))}
+.hero-pic figcaption{position:absolute;right:20px;bottom:18px;z-index:1;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:#fff;background:rgba(15,14,12,.72);padding:8px 12px}
+
+/* sections */
+section{scroll-margin-top:80px}
+.sec{padding:110px 0}
+.eyebrow{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-ink);margin:0 0 16px;display:flex;align-items:center;gap:14px}
+.eyebrow:before{content:"";width:28px;height:1px;background:var(--gold)}
+h2{font:500 clamp(38px,4.2vw,56px)/1.05 var(--serif);margin:0 0 18px}
+.intro{font-size:18px;color:var(--muted);max-width:560px;margin:0}
+.dark{background:var(--night);color:#f3efe6}
+.dark .eyebrow{color:var(--gold)}
+.dark .intro{color:var(--muted-d)}
+
+/* three ways */
+.ways{display:grid;grid-template-columns:repeat(3,1fr);margin-top:56px;border-top:1px solid var(--line)}
+.way{padding:34px 34px 8px 0;margin-right:34px;border-right:1px solid var(--line)}
+.way:last-child{border-right:0;margin-right:0}
+.way .n{font:500 15px/1 var(--serif);color:var(--gold-ink);letter-spacing:.1em}
+.way h3{font:500 30px/1.15 var(--serif);margin:14px 0 4px}
+.way .tag{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+.way p{margin:0 0 18px;color:var(--muted)}
+.more{display:inline-flex;align-items:center;min-height:44px;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--ink);border-bottom:1px solid var(--gold)}
+.more:hover{color:var(--gold-ink)}
+
+/* planner */
+#planner{background:var(--sand)}
+.planner{display:grid;grid-template-columns:1.25fr .9fr;margin-top:52px;background:#fff;border:1px solid var(--line);box-shadow:0 30px 60px -40px rgba(21,19,15,.35)}
+.p-left{padding:36px 40px 40px}
+.step{margin:0 0 28px}
+.step:last-child{margin:0}
+.step-h{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin:0 0 12px;font-weight:600}
+.seg{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--ink);border-radius:2px;overflow:hidden}
+.seg button{min-height:52px;border:0;background:#fff;font:600 14px/1.2 var(--sans);letter-spacing:.06em;cursor:pointer;color:var(--ink)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:#f3efe6}
+.cars{display:grid;gap:10px}
+.car{display:grid;grid-template-columns:22px 1fr auto;align-items:center;gap:14px;width:100%;text-align:left;min-height:68px;padding:12px 18px;border:1px solid var(--line);background:#fff;border-radius:2px;cursor:pointer;font:inherit;color:inherit;transition:border-color .2s,background .2s}
+.car:hover{border-color:#cbbd9f}
+.car .dot{width:18px;height:18px;border-radius:50%;border:1.5px solid #9b927f;position:relative}
+.car[aria-checked="true"]{border-color:var(--ink);background:#fbf9f4}
+.car[aria-checked="true"] .dot{border-color:var(--ink)}
+.car[aria-checked="true"] .dot:after{content:"";position:absolute;inset:3px;border-radius:50%;background:var(--ink)}
+.car .nm{font-weight:600;font-size:15.5px;line-height:1.3}
+.car .sp{display:block;font-size:13.5px;color:var(--muted);font-weight:400}
+.car .rt{font:600 22px/1 var(--serif);white-space:nowrap}
+.car .rt small{font:500 12.5px var(--sans);color:var(--muted)}
+.qty{display:flex;align-items:center;gap:0;border:1px solid var(--line);width:max-content}
+.qty button{width:52px;height:52px;border:0;background:#fff;font-size:22px;cursor:pointer;color:var(--ink)}
+.qty button:hover{background:var(--cream)}
+.qty output{min-width:120px;text-align:center;font-weight:600;font-size:16px;border-left:1px solid var(--line);border-right:1px solid var(--line);line-height:52px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:44px;padding:0 16px;border:1px solid var(--line);background:#fff;border-radius:22px;font:500 14px var(--sans);cursor:pointer;color:var(--ink)}
+.chip[aria-pressed="true"]{border-color:var(--ink);background:var(--ink);color:#f3efe6}
+.p-right{background:var(--night);color:#f3efe6;padding:38px 40px;display:flex;flex-direction:column}
+.p-right .step-h{color:var(--gold)}
+.sum-car{font:500 28px/1.15 var(--serif);margin:0 0 6px}
+.sum-line{color:var(--muted-d);margin:0;font-size:15px}
+.total{margin:30px 0 6px;padding-top:24px;border-top:1px solid rgba(185,155,94,.3)}
+.total span{display:block;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted-d)}
+.total strong{display:block;font:500 64px/1.05 var(--serif);color:#f3efe6;margin-top:6px}
+.calc{color:var(--muted-d);font-size:14.5px;margin:0 0 22px}
+.incl{list-style:none;margin:0 0 28px;padding:0;font-size:14.5px;color:#ded8cc}
+.incl li{padding:7px 0 7px 22px;position:relative}
+.incl li:before{content:"";position:absolute;left:0;top:16px;width:10px;height:1px;background:var(--gold)}
+.p-right .btn{margin-top:auto;width:100%}
+.fine{font-size:12.5px;color:var(--muted-d);margin:14px 0 0;line-height:1.5}
+
+/* fleet photo */
+.fleet{padding:0 0 110px;background:var(--sand)}
+.fleet figure{margin:0 auto;max-width:1120px}
+.fleet img{width:100%;height:auto;aspect-ratio:1280/800;object-fit:cover}
+.fleet figcaption{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;padding-top:18px;font-size:14px;color:var(--muted)}
+.fleet figcaption b{color:var(--ink);font-weight:600}
+
+/* conversions */
+.conv{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.specs{list-style:none;margin:0;padding:0;border-top:1px solid rgba(185,155,94,.35)}
+.specs li{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:20px 0;border-bottom:1px solid rgba(185,155,94,.2);font:500 26px/1.2 var(--serif)}
+.specs li span{font:500 12px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.conv p.big{font:500 26px/1.35 var(--serif);color:#f3efe6;margin:28px 0 30px;max-width:460px}
+.conv p.big em{color:#e3cf9f}
+
+/* record */
+.record{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:56px 0 0}
+.record div{padding:34px 24px 30px 0}
+.record div+div{padding-left:28px;border-left:1px solid var(--line)}
+.record strong{display:block;font:500 58px/1 var(--serif);margin-bottom:10px}
+.record span{font-size:14.5px;color:var(--muted)}
+.std{display:grid;grid-template-columns:1fr 1fr;gap:34px 64px;margin-top:56px}
+.std h3{font:600 15px/1.3 var(--sans);letter-spacing:.04em;margin:0 0 6px}
+.std p{margin:0;color:var(--muted)}
+
+/* reviews */
+#reviews{background:#fff}
+.rev-head{display:flex;justify-content:space-between;align-items:end;gap:32px;flex-wrap:wrap}
+.stars{display:flex;align-items:center;gap:14px;font-size:15px;color:var(--muted)}
+.stars b{font:500 44px/1 var(--serif);color:var(--ink)}
+.quotes{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:56px;margin-top:56px}
+blockquote{margin:0;padding-top:26px;border-top:2px solid var(--gold)}
+blockquote p{font:500 23px/1.4 var(--serif);margin:0 0 20px}
+.quotes blockquote:first-child p{font-size:30px;line-height:1.3}
+blockquote footer{font-size:14px;color:var(--muted)}
+blockquote footer b{color:var(--ink);font-weight:600}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}
+details{border-bottom:1px solid var(--line)}
+details:first-child{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:68px;padding:14px 0;font:500 23px/1.25 var(--serif)}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font:300 26px/1 var(--sans);color:var(--gold-ink);transition:transform .2s}
+details[open] summary:after{transform:rotate(45deg)}
+details p{margin:0 0 22px;color:var(--muted);max-width:600px}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1.05fr;gap:80px;align-items:start}
+.reach{list-style:none;padding:0;margin:34px 0 0}
+.reach li{border-top:1px solid rgba(185,155,94,.25)}
+.reach li:last-child{border-bottom:1px solid rgba(185,155,94,.25)}
+.reach a{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:64px;text-decoration:none;font-size:17px}
+.reach a span{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.reach a:hover{color:#fff}
+form{background:#f7f4ee;color:var(--ink);padding:38px 40px}
+form h3{font:500 30px/1.1 var(--serif);margin:0 0 6px}
+form .sub{margin:0 0 24px;color:var(--muted);font-size:15px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 16px}
+input,textarea{display:block;width:100%;margin-top:7px;font:16px/1.4 var(--sans);color:var(--ink);background:#fff;border:1px solid #d8cfbd;border-radius:2px;padding:13px 14px;min-height:48px}
+textarea{min-height:120px;resize:vertical}
+input:focus,textarea:focus{outline:2px solid var(--gold);outline-offset:0;border-color:var(--gold)}
+form .btn{width:100%;margin-top:6px}
+.thanks{margin:16px 0 0;font-weight:600;color:var(--ink)}
+
+/* footer */
+.foot{background:#0a0908;color:var(--muted-d);padding:56px 0 40px;font-size:14px}
+.foot-in{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap}
+.foot .mark b{color:#f3efe6}
+.foot p{margin:14px 0 0;max-width:340px}
+.foot nav{display:flex;gap:6px 22px;flex-wrap:wrap;align-items:center}
+.foot nav a{text-decoration:none;color:#e4dfd4;min-height:44px;display:inline-flex;align-items:center}
+.foot nav a:hover{color:var(--gold)}
+.credit{margin-top:40px;padding-top:22px;border-top:1px solid #24211c;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px}
+.credit a{color:#e4dfd4}
+
+.callbar{display:none}
+
+/* motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rise{transition:none}
+  .will-rise{opacity:1;transform:none}
+}
+
+/* tablet */
+@media (max-width:1100px){
+  .nav{display:none}
+  .hero-in{grid-template-columns:1fr 1fr}
+  .hero-copy{padding:56px 32px}
+  .proof{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:860px){
+  .wrap{padding:0 22px}
+  .top .wrap{height:64px;gap:14px}
+  .top .tel{display:none}
+  .top .btn{margin-left:auto}
+  .mark b{font-size:20px}
+  .hero-in{display:flex;flex-direction:column-reverse;min-height:0}
+  .hero-pic{aspect-ratio:16/10}
+  .hero-pic:after{inset:auto 0 0 0;width:auto;height:70px;background:linear-gradient(0deg,var(--night),rgba(15,14,12,0))}
+  .hero-pic figcaption{display:none}
+  .hero-copy{padding:8px 22px 48px}
+  .hero h1{font-size:46px}
+  .lede{font-size:17px;margin-bottom:26px}
+  .ctas .btn{flex:1 1 100%}
+  .proof{gap:14px;margin-top:34px}
+  .proof strong{font-size:26px}
+  .proof div{font-size:12px}
+  .sec{padding:76px 0}
+  h2{font-size:40px}
+  .intro{font-size:17px}
+  .ways{grid-template-columns:1fr;margin-top:34px}
+  .way{border-right:0;margin-right:0;padding:26px 0 10px;border-bottom:1px solid var(--line)}
+  .way:last-child{border-bottom:0}
+  .planner{grid-template-columns:1fr;margin-top:34px}
+  .p-left,.p-right{padding:26px 20px}
+  .car{grid-template-columns:20px 1fr;padding:14px}
+  .car .rt{grid-column:2;font-size:20px}
+  .total strong{font-size:54px}
+  .fleet{padding-bottom:76px}
+  .fleet .wrap{padding:0}
+  .fleet figcaption{padding:16px 22px 0}
+  .conv{grid-template-columns:1fr;gap:20px}
+  .specs li{font-size:22px}
+  .record{grid-template-columns:1fr 1fr;margin-top:36px}
+  .record div,.record div+div{padding:24px 14px 22px 0;border-left:0}
+  .record div:nth-child(even){padding-left:18px;border-left:1px solid var(--line)}
+  .record div:nth-child(n+3){border-top:1px solid var(--line)}
+  .record strong{font-size:44px}
+  .std{grid-template-columns:1fr;gap:24px;margin-top:36px}
+  .quotes{grid-template-columns:1fr;gap:34px;margin-top:36px}
+  .quotes blockquote:first-child p{font-size:25px}
+  .faq-grid,.contact{grid-template-columns:1fr;gap:30px}
+  summary{font-size:21px}
+  form{padding:26px 20px;margin:0 -2px}
+  .row{grid-template-columns:1fr;gap:0}
+  body{padding-bottom:64px}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--night);border-top:1px solid rgba(185,155,94,.4);padding:8px 10px calc(8px + env(safe-area-inset-bottom));gap:8px}
+  .callbar a{min-height:46px;padding:0 10px;letter-spacing:.08em}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="My Luxury Rides, home"><b>MY LUXURY RIDES</b><small>LUXURY TRANSPORTATION · CENTRAL FLORIDA</small></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#ways">Services</a>
+      <a href="#planner">Rates</a>
+      <a href="#conversions">Conversions</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#book">Contact</a>
+    </nav>
+    <a class="tel" href="tel:+18335152043">(833) 515-2043</a>
+    <a class="btn btn-gold" href="#planner">Book now</a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="h1">
+  <div class="hero-in">
+    <div class="hero-copy">
+      <p class="kicker">Orlando · Central Florida</p>
+      <h1 id="h1">Luxury, <em>however</em> you travel.</h1>
+      <p class="lede">Be driven in a Sprinter, Escalade or Maybach by a chauffeur from our own team, or take the keys yourself. Our rates are published, so you can price your ride right here.</p>
+      <div class="ctas">
+        <a class="btn btn-gold" href="#planner">Price your ride</a>
+        <a class="btn btn-line" href="tel:+18335152043">Call (833) 515-2043</a>
+      </div>
+      <div class="proof">
+        <div><strong>5.0</strong>from 955 guest reviews</div>
+        <div><strong>1,122+</strong>trips, zero cancellations</div>
+        <div><strong>1 hr</strong>to a personal reply</div>
+      </div>
+    </div>
+    <figure class="hero-pic" style="margin:0">
+      <img src="https://myluxuryrides.com/_next/image?url=%2Fimages%2Fhero%2F02-maybach-sprinter-scenic-img-2160-desktop.jpg&amp;w=1920&amp;q=75" width="1280" height="800" alt="The gold and black Maybach-style Mercedes-Benz Sprinter parked on a palm-lined driveway" fetchpriority="high">
+      <figcaption>2025 Mercedes-Benz Sprinter</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="sec" id="ways" aria-labelledby="ways-h">
+  <div class="wrap">
+    <p class="eyebrow">What we do</p>
+    <h2 id="ways-h">Three ways to ride</h2>
+    <p class="intro">Be driven, drive yourself, or have one built. Three services, one standard of care.</p>
+    <div class="ways">
+      <article class="way">
+        <span class="n">01</span>
+        <h3>Chauffeured</h3>
+        <p class="tag">Be driven · by the hour</p>
+        <p>A professional chauffeur and a blacked-out fleet for weddings, corporate events, airport transfers, private aviation terminals and nights out.</p>
+        <a class="more" href="#planner">See hourly rates</a>
+      </article>
+      <article class="way">
+        <span class="n">02</span>
+        <h3>Our rentals</h3>
+        <p class="tag">Drive yourself · by the day</p>
+        <p>Five luxury vehicles, from Sprinters and Escalades to a Corvette. Insurance included, with delivery to MCO and Orlando resorts.</p>
+        <a class="more" href="#planner" data-mode="day">See daily rates</a>
+      </article>
+      <article class="way">
+        <span class="n">03</span>
+        <h3>Custom Sprinters</h3>
+        <p class="tag">Build your own · to order</p>
+        <p>The Maybach-style Sprinter our clients ride in is our own conversion work, and we build the same executive interiors for you.</p>
+        <a class="more" href="#conversions">Explore custom builds</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="planner" aria-labelledby="plan-h">
+  <div class="wrap">
+    <p class="eyebrow">Rates, published openly</p>
+    <h2 id="plan-h">Price your ride</h2>
+    <p class="intro">Choose how you ride, the vehicle and how long. Your total updates as you go, and we reply personally within the hour.</p>
+
+    <div class="planner">
+      <div class="p-left">
+        <div class="step">
+          <p class="step-h" id="mode-h">1 · How you ride</p>
+          <div class="seg" role="group" aria-labelledby="mode-h">
+            <button type="button" data-mode="hour" aria-pressed="true">Be driven</button>
+            <button type="button" data-mode="day" aria-pressed="false">Drive yourself</button>
+          </div>
+        </div>
+        <div class="step">
+          <p class="step-h" id="car-h">2 · Vehicle</p>
+          <div class="cars" role="radiogroup" aria-labelledby="car-h">
+            <button type="button" class="car" role="radio" aria-checked="true" data-car="sprinter"><span class="dot" aria-hidden="true"></span><span class="nm">2025 Mercedes-Benz Sprinter<span class="sp" data-spec>8 passengers + chauffeur</span></span><span class="rt" data-rate>$350<small>/hr</small></span></button>
+            <button type="button" class="car" role="radio" aria-checked="false" data-car="maybach"><span class="dot" aria-hidden="true"></span><span class="nm">2023 Mercedes-Benz S-Class Maybach<span class="sp" data-spec>Sedan</span></span><span class="rt" data-rate>$300<small>/hr</small></span></button>
+            <button type="button" class="car" role="radio" aria-checked="false" data-car="escalade"><span class="dot" aria-hidden="true"></span><span class="nm">2023 Cadillac Escalade ESV<span class="sp" data-spec>Premium Luxury · 7 seats</span></span><span class="rt" data-rate>$260<small>/hr</small></span></button>
+          </div>
+        </div>
+        <div class="step">
+          <p class="step-h" id="qty-h">3 · <span data-unit-h>Hours</span></p>
+          <div class="qty" role="group" aria-labelledby="qty-h">
+            <button type="button" data-step="-1" aria-label="Fewer">−</button>
+            <output id="qty" aria-live="polite">4 hours</output>
+            <button type="button" data-step="1" aria-label="More">+</button>
+          </div>
+        </div>
+        <div class="step" data-occ>
+          <p class="step-h" id="occ-h">4 · Occasion <span style="text-transform:none;letter-spacing:0;font-weight:400">(optional)</span></p>
+          <div class="chips" role="group" aria-labelledby="occ-h">
+            <button type="button" class="chip" aria-pressed="false">Airport transfer</button>
+            <button type="button" class="chip" aria-pressed="true">Wedding</button>
+            <button type="button" class="chip" aria-pressed="false">Corporate &amp; events</button>
+            <button type="button" class="chip" aria-pressed="false">Night out</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-right" aria-live="polite">
+        <p class="step-h">Your ride</p>
+        <p class="sum-car" id="s-car">2025 Mercedes-Benz Sprinter</p>
+        <p class="sum-line" id="s-line">Chauffeured · Wedding</p>
+        <div class="total"><span>Estimated total</span><strong id="s-total">$1,400</strong></div>
+        <p class="calc" id="s-calc">4 hours × $350 per hour</p>
+        <ul class="incl" id="s-incl">
+          <li>A professional chauffeur from our own team, never a subcontractor</li>
+          <li>Fully licensed, with commercial insurance</li>
+          <li>Orlando and across Central Florida</li>
+        </ul>
+        <a class="btn btn-gold" href="#book" id="s-go">Request this ride</a>
+        <p class="fine" id="s-fine">At our published rates. Minimums vary by vehicle, and every reservation is confirmed personally, within the hour.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fleet" aria-label="The fleet">
+  <div class="wrap">
+    <figure>
+      <img src="https://myluxuryrides.com/_next/image?url=%2Fimages%2Fhero%2F01-fleet-scenic-2-desktop.jpg&amp;w=1920&amp;q=75" width="1280" height="800" loading="lazy" alt="The My Luxury Rides fleet: the gold Maybach-style Sprinter, a navy Mercedes-Benz sedan and a black Sprinter">
+      <figcaption><span><b>The fleet.</b> Professionally detailed and inspected before every single rental.</span><span>Rental extras: child seats, strollers, beach gear, coolers, paddle boards, canoes, watersport toys.</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="sec dark" id="conversions" aria-labelledby="conv-h">
+  <div class="wrap conv">
+    <div>
+      <p class="eyebrow">Custom Sprinter conversions</p>
+      <h2 id="conv-h">Crafted around you.</h2>
+      <p class="intro">Custom Sprinter interiors, tailored to your vision.</p>
+      <p class="big">Our conversion work is parked in our own fleet, <em>so you can ride in it before you order one.</em></p>
+      <a class="btn btn-gold" href="#book" data-msg="I'd like a free consultation about a custom Sprinter conversion.">Book a free consultation</a>
+    </div>
+    <ul class="specs" aria-label="What we build">
+      <li>Starlight ceilings <span>Interior</span></li>
+      <li>Massaging seats <span>Comfort</span></li>
+      <li>Ambient lighting <span>Interior</span></li>
+      <li>Premium audio <span>Sound</span></li>
+      <li>Partitions <span>Privacy</span></li>
+      <li>Flooring <span>Finish</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="standard" aria-labelledby="std-h">
+  <div class="wrap">
+    <p class="eyebrow">Why My Luxury Rides</p>
+    <h2 id="std-h">The standard we set</h2>
+    <p class="intro">Not a single cancellation on record. It's a standard we re-earn on every trip, whether you're driving or being driven.</p>
+    <div class="record">
+      <div><strong>1,122+</strong><span>trips completed</span></div>
+      <div><strong>0</strong><span>cancellations</span></div>
+      <div><strong>5.0</strong><span>average from 955 guest reviews</span></div>
+      <div><strong>2021</strong><span>founded in Orlando</span></div>
+    </div>
+    <div class="std">
+      <div><h3>Fully licensed &amp; insured</h3><p>Proper licensing and commercial insurance on chauffeured trips, and comprehensive insurance on every self-drive rental.</p></div>
+      <div><h3>Our own chauffeurs</h3><p>Every trip is driven by a professional chauffeur from our own team, never a subcontractor.</p></div>
+      <div><h3>Respect for your time</h3><p>We respond within an hour, always. The vehicle is ready and the chauffeur is early.</p></div>
+      <div><h3>Immaculate fleet</h3><p>Each vehicle is personally selected, meticulously maintained and professionally detailed before every rental.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="reviews" aria-labelledby="rev-h">
+  <div class="wrap">
+    <div class="rev-head">
+      <div>
+        <p class="eyebrow">Guest reviews</p>
+        <h2 id="rev-h">What our guests say</h2>
+      </div>
+      <p class="stars"><b>5.0</b> average across 955 guest reviews</p>
+    </div>
+    <div class="quotes">
+      <blockquote>
+        <p>“By far the best host I’ve ever dealt with on this app. Communication is amazing and accommodations are out of this world.”</p>
+        <footer><b>Jamaal</b> · 2025 Mercedes-Benz Sprinter · January 2026</footer>
+      </blockquote>
+      <blockquote>
+        <p>“Decked out with all the cool features and makes for a great ride for a group of friends or big family!”</p>
+        <footer><b>Toni</b> · 2025 Mercedes-Benz Sprinter · July 2026</footer>
+      </blockquote>
+      <blockquote>
+        <p>“Van was very clean and was great for what I need it for. Process was smooth and host was great.”</p>
+        <footer><b>Tricia</b> · 2025 Mercedes-Benz Sprinter · February 2026</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq" aria-labelledby="faq-h" style="padding-top:0;background:#fff">
+  <div class="wrap faq-grid">
+    <div>
+      <p class="eyebrow">Good to know</p>
+      <h2 id="faq-h">Before you book</h2>
+    </div>
+    <div>
+      <details open><summary>How fast will I hear back?</summary><p>Within the hour. Every reservation is confirmed personally.</p></details>
+      <details><summary>Do you do airport transfers?</summary><p>Yes. Private transfers to and from MCO, and to private aviation terminals across Central Florida. Rentals can be delivered to MCO and Orlando resorts.</p></details>
+      <details><summary>Who drives?</summary><p>A professional chauffeur from our own team, never a subcontractor. Or you drive yourself with one of our rentals.</p></details>
+      <details><summary>Is insurance included on rentals?</summary><p>Yes. Every self-drive rental includes comprehensive insurance. Self-rental for the Sprinter is booked through Turo.</p></details>
+      <details><summary>Can you add extras to a rental?</summary><p>Child seats, strollers, beach gear, coolers, paddle boards, canoes and watersport toys are available.</p></details>
+      <details><summary>Is the conversion consultation free?</summary><p>Yes. And you can ride in our own Maybach-style Sprinter before you order one.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="book" aria-labelledby="book-h">
+  <div class="wrap contact">
+    <div>
+      <p class="eyebrow">Book direct</p>
+      <h2 id="book-h">Ready to ride?</h2>
+      <p class="intro">Send your trip and we confirm it personally, within the hour. Every reservation is booked directly with My Luxury Rides.</p>
+      <ul class="reach">
+        <li><a href="tel:+18335152043">(833) 515-2043 <span>Call</span></a></li>
+        <li><a href="mailto:info@myluxuryrides.com">info@myluxuryrides.com <span>Email</span></a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=6070%20Laurel%20Valley%20Dr.%2C%20Orlando%2C%20FL%2032822" target="_blank" rel="noopener">6070 Laurel Valley Dr., Orlando, FL 32822 <span>Map</span></a></li>
+      </ul>
+    </div>
+    <form id="form" novalidate>
+      <h3>Request your ride</h3>
+      <p class="sub">Your trip from the planner is filled in below.</p>
+      <div class="row">
+        <label>Name<input name="name" autocomplete="name" required></label>
+        <label>Phone<input name="phone" type="tel" autocomplete="tel"></label>
+      </div>
+      <div class="row">
+        <label>Email<input name="email" type="email" autocomplete="email"></label>
+        <label>Date<input name="date" type="date"></label>
+      </div>
+      <label>Your trip<textarea name="msg" id="msg">Chauffeured: 2025 Mercedes-Benz Sprinter, 4 hours (Wedding). Estimate $1,400.</textarea></label>
+      <button class="btn btn-dark" type="submit">Send request</button>
+      <p class="thanks" id="thanks" role="status" hidden></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-in">
+      <div>
+        <a class="mark" href="#top"><b>MY LUXURY RIDES</b><small>LUXURY TRANSPORTATION · CENTRAL FLORIDA</small></a>
+        <p>Chauffeured luxury transportation, vehicle rentals and custom Sprinter conversions across Central Florida.</p>
+      </div>
+      <nav aria-label="Social">
+        <a href="https://www.instagram.com/myluxuryrides/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@myluxuryridesfl" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.facebook.com/share/19ibbQ8P2w/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://myluxuryrides.com/">myluxuryrides.com</a>
+      </nav>
+    </div>
+    <div class="credit">
+      <span>© 2026 My Luxury Rides LLC</span>
+      <span>Mockup made for My Luxury Rides LLC by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick actions">
+  <a class="btn btn-line" href="tel:+18335152043">Call</a>
+  <a class="btn btn-gold" href="#planner">Price your ride</a>
+</div>
+
+<script>
+(function(){
+  var CARS={
+    sprinter:{name:'2025 Mercedes-Benz Sprinter',hour:350,day:860,specH:'8 passengers + chauffeur',specD:'9 occupants, including your driver',noteD:'Self-rental for this vehicle is booked through Turo.'},
+    maybach:{name:'2023 Mercedes-Benz S-Class Maybach',hour:300,day:780,specH:'Sedan',specD:'Sedan'},
+    escalade:{name:'2023 Cadillac Escalade ESV',hour:260,day:300,specH:'Premium Luxury · 7 seats',specD:'Premium Luxury · 7 seats'}
+  };
+  var st={mode:'hour',car:'sprinter',hour:4,day:2,occ:'Wedding'};
+  var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+  var money=function(n){return '$'+n.toLocaleString('en-US')};
+  var dirty=false, msg=$('#msg');
+
+  function render(){
+    var c=CARS[st.car], h=st.mode==='hour', q=st[st.mode];
+    $$('.seg button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.mode===st.mode)});
+    $$('.car').forEach(function(b){
+      var k=CARS[b.dataset.car];
+      b.setAttribute('aria-checked',b.dataset.car===st.car);
+      $('[data-spec]',b).textContent=h?k.specH:k.specD;
+      $('[data-rate]',b).innerHTML=money(h?k.hour:k.day)+'<small>'+(h?'/hr':'/day')+'</small>';
+    });
+    var unit=h?(q===1?'hour':'hours'):(q===1?'day':'days');
+    $('[data-unit-h]').textContent=h?'Hours':'Days';
+    $('#qty').textContent=q+' '+unit;
+    $('[data-occ]').hidden=!h;
+    var total=q*(h?c.hour:c.day);
+    $('#s-car').textContent=c.name;
+    $('#s-line').textContent=(h?'Chauffeured':'Drive yourself')+(h&&st.occ?' · '+st.occ:'');
+    $('#s-total').textContent=money(total);
+    $('#s-calc').textContent=q+' '+unit+' × '+money(h?c.hour:c.day)+' per '+(h?'hour':'day');
+    var items=h?['A professional chauffeur from our own team, never a subcontractor','Fully licensed, with commercial insurance','Orlando and across Central Florida']
+               :['Comprehensive insurance included','Delivery to MCO and Orlando resorts','Rental extras available, from child seats to paddle boards'];
+    if(!h&&c.noteD)items.push(c.noteD);
+    $('#s-incl').innerHTML=items.map(function(t){return '<li>'+t+'</li>'}).join('');
+    $('#s-fine').textContent=h?'At our published rates. Minimums vary by vehicle, and every reservation is confirmed personally, within the hour.':'At our published rates. Every reservation is confirmed personally, within the hour.';
+    if(!dirty)msg.value=(h?'Chauffeured: ':'Drive yourself: ')+c.name+', '+q+' '+unit+(h&&st.occ?' ('+st.occ+')':'')+'. Estimate '+money(total)+'.';
+  }
+
+  $$('[data-mode]').forEach(function(b){b.addEventListener('click',function(){st.mode=b.dataset.mode;render()})});
+  $$('.car').forEach(function(b){b.addEventListener('click',function(){st.car=b.dataset.car;render()})});
+  $$('.car').forEach(function(b,i,all){b.addEventListener('keydown',function(e){
+    var d=e.key==='ArrowDown'||e.key==='ArrowRight'?1:e.key==='ArrowUp'||e.key==='ArrowLeft'?-1:0;
+    if(!d)return;e.preventDefault();var n=all[(i+d+all.length)%all.length];st.car=n.dataset.car;render();n.focus();
+  })});
+  $$('[data-step]').forEach(function(b){b.addEventListener('click',function(){
+    var max=st.mode==='hour'?12:14;st[st.mode]=Math.min(max,Math.max(1,st[st.mode]+Number(b.dataset.step)));render();
+  })});
+  $$('.chip').forEach(function(b){b.addEventListener('click',function(){
+    st.occ=st.occ===b.textContent?'':b.textContent;
+    $$('.chip').forEach(function(x){x.setAttribute('aria-pressed',x.textContent===st.occ)});render();
+  })});
+  msg.addEventListener('input',function(){dirty=true});
+  $$('[data-msg]').forEach(function(a){a.addEventListener('click',function(){msg.value=a.dataset.msg;dirty=true})});
+  $('#s-go').addEventListener('click',function(){dirty=false;render()});
+
+  $('#form').addEventListener('submit',function(e){
+    e.preventDefault();var t=$('#thanks');t.hidden=false;t.textContent='Thanks. This is a mockup, so nothing was sent.';
+  });
+
+  render();
+
+  // gentle rise for what starts below the first screen
+  if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var els=$$('.sec h2, .intro, .ways, .planner, .fleet figure, .conv .specs, .record, .std, .quotes, .faq-grid > div:last-child, .contact form');
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){
+      if(el.getBoundingClientRect().top>innerHeight){el.classList.add('rise','will-rise');io.observe(el)}
+    });
+  }
+})();
+</script>
+</body>
+</html>
