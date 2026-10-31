@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup senipreps-com-dbf6e7 1 27380fed -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SENI Preps | Stopping nitrogen emissions at the source</title>
+<meta name="description" content="SENI Preps develops a feed additive that blocks the enzyme urease, so ammonia never forms. Nothing in the barn has to change.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#2d3445; --slate:#4a5568; --muted:#5b6475;
+  --green:#0b7a3e; --green-d:#08602f; --leaf:#16b05c; --mint:#eef7f1; --mint-2:#dcefe3;
+  --line:#e3e7ec; --paper:#ffffff; --fog:#f6f8f7;
+  --r:14px; --wrap:1122px;
+  --head:"Inter Tight",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font:400 17px/1.6 var(--body);color:var(--ink);background:var(--paper);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--green)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--leaf);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:var(--head);color:var(--ink);letter-spacing:-.02em;line-height:1.1;margin:0}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.eyebrow{font:600 12.5px/1.3 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--green)}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:10px 14px;z-index:99}
+.skip:focus{left:12px;top:56px}
+
+/* banner */
+.mock-banner{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:var(--ink);color:#fff;font:500 15px/1.3 var(--body);text-align:center}
+.mock-banner a{color:#9fe3bb;text-decoration:underline;text-underline-offset:3px}
+
+/* header */
+.site-head{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.head-in{display:flex;align-items:center;gap:24px;height:72px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font:700 20px/1 var(--head);letter-spacing:-.02em}
+.brand img{width:52px;height:38px;object-fit:contain}
+.nav{display:flex;gap:4px;margin-left:auto;align-items:center}
+.nav a{color:var(--slate);text-decoration:none;font:500 15px/1 var(--body);padding:14px 12px;border-radius:8px}
+.nav a:hover{color:var(--ink);background:var(--fog)}
+.nav .lang{font-weight:600;color:var(--ink);letter-spacing:.04em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:10px;font:600 16px/1 var(--body);text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background .2s,border-color .2s,transform .2s}
+.btn-primary{background:var(--green);color:#fff}
+.btn-primary:hover{background:var(--green-d)}
+.btn-ghost{background:#fff;color:var(--ink);border-color:#cfd6dd}
+.btn-ghost:hover{border-color:var(--ink)}
+.btn-sm{min-height:44px;padding:0 18px;font-size:15px}
+.nav .btn{color:#fff;margin-left:8px;padding:0 18px}
+.nav .btn:hover{background:var(--green-d);color:#fff}
+
+/* hero */
+.hero{padding:64px 0 56px;background:linear-gradient(180deg,#fff 0%,var(--fog) 100%)}
+.hero-grid{display:grid;grid-template-columns:1fr 1.08fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(40px,5.2vw,64px);font-weight:700;margin:18px 0 22px}
+.hero h1 span{color:var(--green)}
+.lead{font-size:19px;line-height:1.55;color:var(--slate);max-width:30em}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.proof{display:flex;flex-wrap:wrap;gap:10px 26px;margin:36px 0 0;padding:22px 0 0;border-top:1px solid var(--line);list-style:none}
+.proof li{display:flex;align-items:center;gap:9px;font-size:14.5px;color:var(--slate)}
+.proof li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--leaf);flex:none}
+
+/* simulator */
+.sim{background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:0 1px 2px rgba(45,52,69,.05),0 18px 40px -18px rgba(45,52,69,.22);padding:22px 22px 18px}
+.sim-top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.sim-title{font:600 13px/1.3 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.switch{display:inline-flex;background:var(--fog);border:1px solid var(--line);border-radius:999px;padding:4px}
+.switch button{min-height:40px;padding:0 16px;border:0;border-radius:999px;background:transparent;font:600 14px/1 var(--body);color:var(--slate);cursor:pointer;transition:background .25s,color .25s,box-shadow .25s}
+.switch button[aria-pressed="true"]{background:#fff;color:var(--ink);box-shadow:0 1px 3px rgba(45,52,69,.18)}
+.sim[data-mode="with"] .switch button[aria-pressed="true"]{background:var(--green);color:#fff}
+.sim svg{display:block;width:100%;height:auto;margin:10px 0 4px}
+.sim svg text{font-family:var(--body)}
+.sim svg.d-tall{display:none;max-width:340px;margin:14px auto 6px}
+.sim[data-mode="with"] .only-without,.sim[data-mode="without"] .only-with{display:none}
+.sim.playing .s-fade{animation:fadein .5s ease both}
+.sim.playing .peptide{transform-box:fill-box;animation:dock .6s cubic-bezier(.3,1.4,.5,1) both}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+@keyframes dock{from{opacity:0;transform:translateY(-22px)}to{opacity:1;transform:none}}
+.enzyme rect{transition:stroke .4s,fill .4s}
+.sim[data-mode="with"] .enzyme rect{stroke:#9aa3ae;fill:#f3f5f7}
+.sim[data-mode="with"] .blades{stroke:#9aa3ae}
+.gas{transform-box:fill-box;transform-origin:center}
+.sim[data-mode="without"].playing .gas{animation:drift 3.6s ease-in infinite}
+.sim[data-mode="without"].playing .gas.g2{animation-delay:.6s}
+.sim[data-mode="without"].playing .gas.g3{animation-delay:1.2s}
+@keyframes drift{0%,15%{opacity:1;transform:translate(0,0)}70%{opacity:0;transform:translate(16px,-34px)}71%{opacity:0;transform:translate(0,8px)}100%{opacity:1;transform:translate(0,0)}}
+.readout{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:6px}
+.readout div{background:var(--fog);border-radius:12px;padding:12px 14px}
+.readout dt{font-size:12.5px;color:var(--muted);margin-bottom:4px}
+.readout dd{margin:0;font:700 19px/1.2 var(--head);color:var(--ink);transition:color .3s}
+.sim[data-mode="with"] .readout dd{color:var(--green)}
+.sim-cap{font-size:14px;color:var(--muted);margin-top:14px;line-height:1.5;min-height:3em}
+
+/* field band */
+.band{padding:0 0 8px;background:var(--fog)}
+.band figure{position:relative;margin:0 auto;max-width:1066px;border-radius:20px;overflow:hidden}
+.band img{width:100%;aspect-ratio:1066/460;object-fit:cover}
+.band figcaption{position:absolute;left:28px;bottom:28px;background:#fff;border-radius:14px;padding:20px 24px;max-width:380px;box-shadow:0 10px 30px -12px rgba(45,52,69,.35)}
+.band figcaption strong{display:block;font:700 22px/1.2 var(--head);letter-spacing:-.01em;margin-bottom:6px}
+.band figcaption span{font-size:15px;color:var(--slate)}
+
+/* sections */
+section{scroll-margin-top:80px}
+.sec{padding:104px 0}
+.sec-head{display:grid;grid-template-columns:1.25fr 1fr;gap:48px;align-items:end;margin-bottom:48px}
+.sec-head h2{font-size:clamp(32px,3.6vw,46px);font-weight:700;margin-top:14px}
+.sec-head p{color:var(--slate);font-size:18px}
+
+/* chooser */
+.chooser{display:grid;grid-template-columns:320px 1fr;gap:28px;align-items:start}
+.tabs{display:flex;flex-direction:column;gap:8px}
+.tabs button{display:flex;justify-content:space-between;align-items:center;gap:12px;text-align:left;min-height:56px;padding:14px 18px;background:#fff;border:1.5px solid var(--line);border-radius:12px;font:600 16px/1.3 var(--body);color:var(--ink);cursor:pointer;transition:border-color .2s,background .2s}
+.tabs button::after{content:"→";color:var(--green);transition:transform .2s}
+.tabs button:hover{border-color:#b9c3cc}
+.tabs button[aria-selected="true"]{border-color:var(--green);background:var(--mint)}
+.tabs button[aria-selected="true"]::after{transform:translateX(3px)}
+.panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:36px 38px;min-height:100%}
+.panel[hidden]{display:none}
+.panel h3{font-size:28px;font-weight:700;margin:10px 0 16px}
+.panel p{color:var(--slate);max-width:38em}
+.panel p+p{margin-top:12px}
+.panel .note{margin-top:18px;padding:14px 16px;border-left:3px solid var(--leaf);background:var(--mint);border-radius:0 10px 10px 0;color:var(--ink);font-size:15.5px}
+.panel .more{display:inline-flex;align-items:center;gap:6px;margin-top:22px;font-weight:600;text-decoration:none;min-height:44px}
+.panel .more:hover{text-decoration:underline}
+
+/* nitrogen vs ammonia */
+.air{background:var(--ink);color:#e9edf2}
+.air .wrap{display:grid;grid-template-columns:auto 1fr;gap:64px;align-items:center}
+.air .big{font:700 clamp(84px,11vw,148px)/.9 var(--head);letter-spacing:-.04em;color:#fff}
+.air .big small{font-size:.42em;letter-spacing:-.02em;color:#9fe3bb}
+.air h2{color:#fff;font-size:clamp(28px,3vw,38px);margin-bottom:16px}
+.air p{color:#cdd4dd;max-width:36em}
+.air .eyebrow{color:#9fe3bb}
+
+/* source comparison */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.cmp{border-radius:18px;padding:34px 34px 30px;border:1px solid var(--line);background:#fff}
+.cmp.ours{background:var(--mint);border-color:var(--mint-2)}
+.cmp .tag{font:600 12.5px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.cmp.ours .tag{color:var(--green)}
+.cmp h3{font-size:26px;margin:12px 0 18px}
+.cmp ul{list-style:none;margin:0;padding:0}
+.cmp li{position:relative;padding:12px 0 12px 32px;border-top:1px solid rgba(45,52,69,.09);color:var(--slate)}
+.cmp li::before{content:"";position:absolute;left:4px;top:20px;width:12px;height:2px;background:#9aa3ae}
+.cmp.ours li{color:var(--ink)}
+.cmp.ours li::before{width:12px;height:7px;top:17px;background:none;border:solid var(--green);border-width:0 0 2.5px 2.5px;transform:rotate(-45deg)}
+
+/* applications */
+.apps{display:grid;gap:28px}
+.app{display:grid;grid-template-columns:minmax(0,480px) 1fr;gap:56px;align-items:center}
+.app:nth-child(2){grid-template-columns:1fr minmax(0,480px)}
+.app:nth-child(2) .app-img{order:2}
+.app-img{border-radius:16px;overflow:hidden;max-width:519px}
+.app-img img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.app h3{font-size:32px;margin:10px 0 14px}
+.app p{color:var(--slate);max-width:32em}
+
+/* progress */
+.progress{background:var(--fog)}
+.tally{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:34px;font-size:15px;color:var(--slate)}
+.tally span{display:inline-flex;align-items:center;gap:8px}
+.dot{width:14px;height:14px;border-radius:50%;flex:none;display:inline-block}
+.dot.done{background:var(--green)}
+.dot.run{background:#fff;border:3.5px solid var(--green)}
+.dot.prep{background:#fff;border:2px dashed #8b95a1}
+.track{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative}
+.track li{position:relative;padding:44px 22px 0 0}
+.track li::before{content:"";position:absolute;top:13px;left:0;right:0;height:3px;background:#d5dbe1}
+.track li.done::before,.track li.run::before{background:var(--green)}
+.track li.run::before{background:linear-gradient(90deg,var(--green) 50%,#d5dbe1 50%)}
+.track .dot{position:absolute;top:4px;left:0;width:22px;height:22px;z-index:1}
+.track .dot.run{border-width:5px}
+.track .num{font:600 13px/1 var(--head);color:var(--muted)}
+.track .state{display:inline-block;margin-left:8px;font:600 11.5px/1 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--green)}
+.track li.prep .state{color:var(--muted)}
+.track h3{font-size:19px;margin:12px 0 8px;line-height:1.25}
+.track p{font-size:15px;color:var(--slate);line-height:1.55}
+
+/* funds */
+.funds{display:grid;grid-template-columns:1fr 1fr;gap:0 56px;list-style:none;margin:0;padding:0;counter-reset:f}
+.funds li{display:grid;grid-template-columns:52px 1fr;gap:0 8px;padding:24px 0;border-top:1px solid var(--line)}
+.funds li::before{counter-increment:f;content:"0" counter(f);font:600 15px/1.6 var(--head);color:var(--green)}
+.funds h3{font-size:20px;margin-bottom:6px;line-height:1.3}
+.funds p{color:var(--slate);font-size:15.5px}
+.funds .first{grid-column:1/-1;background:var(--mint);border:0;border-radius:16px;padding:28px 28px;margin-bottom:12px}
+.funds .first h3{font-size:24px}
+.funds .flag{display:inline-block;margin-bottom:8px;font:600 11.5px/1.45 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--green)}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start}
+.story p{color:var(--slate);font-size:17.5px}
+.story p+p{margin-top:14px}
+.story .name{margin-top:26px;padding:20px 22px;border:1px dashed #c7d0d8;border-radius:14px;font-size:16px;color:var(--ink)}
+.story .name b{font-family:var(--head);font-size:22px;letter-spacing:.06em;color:var(--green)}
+.founders{display:grid;gap:14px}
+.founder{border:1px solid var(--line);border-radius:16px;padding:24px 26px;background:#fff}
+.founder .role{font:600 12px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--green)}
+.founder h3{font-size:22px;margin:10px 0 8px}
+.founder p{color:var(--slate);font-size:15.5px}
+.money{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+.money div{background:var(--ink);color:#cdd4dd;border-radius:16px;padding:22px 24px;font-size:14.5px;line-height:1.45}
+.money strong{display:block;font:700 30px/1.1 var(--head);color:#fff;letter-spacing:-.02em;margin-bottom:8px}
+.partner{margin-top:14px;display:flex;gap:16px;align-items:flex-start;border:1px solid var(--mint-2);background:var(--mint);border-radius:16px;padding:20px 24px;font-size:15.5px;color:var(--ink)}
+.partner b{font-family:var(--head)}
+
+/* faq */
+.faq{max-width:860px}
+.faq details{border-top:1px solid var(--line)}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;min-height:56px;font:600 19px/1.35 var(--head);color:var(--ink)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:400 28px/1 var(--body);color:var(--green);transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 40px 24px 0;color:var(--slate)}
+
+/* contact */
+.contact{background:var(--ink);color:#e9edf2}
+.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:start}
+.contact h2{color:#fff;font-size:clamp(34px,4vw,52px);margin:14px 0 18px}
+.contact .eyebrow{color:#9fe3bb}
+.contact p{color:#cdd4dd;font-size:18px;max-width:28em}
+.mail{display:inline-flex;align-items:center;gap:10px;margin-top:28px;color:#fff;font:600 20px/1.2 var(--head);text-decoration:underline;text-decoration-color:#9fe3bb;text-underline-offset:6px;min-height:44px}
+form{background:#fff;color:var(--ink);border-radius:20px;padding:30px;display:grid;gap:16px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:block;font:600 14px/1.3 var(--body);margin-bottom:7px;color:var(--ink)}
+input,select,textarea{width:100%;min-height:48px;padding:12px 14px;border:1.5px solid #cfd6dd;border-radius:10px;font:400 16px/1.4 var(--body);color:var(--ink);background:#fff}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{border-color:var(--green)}
+form .btn{width:100%}
+.thanks{display:none;background:var(--mint);border-radius:10px;padding:14px 16px;font-weight:600;color:var(--green-d)}
+form.sent .thanks{display:block}
+.risk{font-size:13.5px !important;color:#aab4c0 !important;margin-top:22px}
+
+/* footer */
+.foot{background:#232937;color:#aab4c0;padding:40px 0 34px;font-size:14.5px}
+.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px 32px;align-items:center}
+.foot .brand{color:#fff;font-size:18px}
+.foot .brand img{background:#fff;border-radius:8px;padding:3px;width:46px;height:36px}
+.foot a{color:#d8dee6}
+.foot nav{display:flex;flex-wrap:wrap;gap:4px 18px}
+.foot nav a{text-decoration:none;padding:10px 0;display:inline-block}
+.foot nav a:hover{text-decoration:underline}
+.mockline{width:100%;border-top:1px solid #39404f;padding-top:18px;margin-top:6px;font-size:13.5px}
+
+/* rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:1020px){
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .nav a:not(.btn):not(.lang){display:none}
+  .chooser{grid-template-columns:1fr}
+  .tabs{display:grid;grid-template-columns:1fr 1fr}
+  .track{grid-template-columns:1fr;gap:0}
+  .track li{padding:0 0 30px 46px}
+  .track li::before{top:0;bottom:0;left:10px;right:auto;width:3px;height:auto}
+  .track li.run::before{background:linear-gradient(180deg,var(--green) 50%,#d5dbe1 50%)}
+  .track li:last-child::before{display:none}
+  .track .dot{top:0;left:0}
+  .track h3{margin-top:8px}
+  .about-grid,.contact-grid{grid-template-columns:1fr;gap:40px}
+  .sec-head{grid-template-columns:1fr;gap:16px}
+  .app,.app:nth-child(2){grid-template-columns:1fr;gap:24px}
+  .app:nth-child(2) .app-img{order:0}
+}
+@media (max-width:700px){
+  body{font-size:16.5px}
+  .wrap{padding:0 20px}
+  .head-in{height:64px;gap:12px}
+  .brand{font-size:18px}
+  .brand img{width:46px;height:34px}
+  .hero{padding:36px 0 40px}
+  .hero h1{font-size:40px;margin:14px 0 16px}
+  .lead{font-size:17.5px}
+  .hero-cta .btn{flex:1 1 100%}
+  .proof{gap:10px;margin-top:28px}
+  .sim{padding:16px 14px 14px;border-radius:16px}
+  .sim-top{flex-direction:column;align-items:stretch}
+  .switch{display:grid;grid-template-columns:1fr 1fr}
+  .switch button{min-height:44px;padding:0 10px}
+  .sim svg.d-wide{display:none}
+  .sim svg.d-tall{display:block}
+  .readout{grid-template-columns:1fr;gap:6px}
+  .readout div{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:12px 16px}
+  .readout dt{font-size:14.5px;margin:0}
+  .readout dd{font-size:17px;text-align:right}
+  .band{padding:0 20px 8px}
+  .band figure{border-radius:16px}
+  .band img{aspect-ratio:4/3}
+  .band figcaption{position:static;max-width:none;border-radius:0;box-shadow:none;padding:18px 20px}
+  .sec{padding:72px 0}
+  .sec-head{margin-bottom:32px}
+  .tabs{grid-template-columns:1fr}
+  .panel{padding:26px 22px}
+  .panel h3{font-size:24px}
+  .air .wrap{grid-template-columns:1fr;gap:20px}
+  .compare{grid-template-columns:1fr}
+  .cmp{padding:26px 22px}
+  .app h3{font-size:26px}
+  .funds{grid-template-columns:1fr}
+  .funds .first{padding:22px}
+  .money{grid-template-columns:1fr}
+  .row2{grid-template-columns:1fr}
+  form{padding:22px}
+  .faq summary{font-size:17.5px}
+  .faq details p{padding-right:0}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  .will-rise{opacity:1 !important;transform:none !important}
+}
+</style>
+</head>
+<body>
+<div class="mock-banner" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="#top" aria-label="SENI Preps, back to top"><img src="https://senipreps.com/_next/image?url=%2Fbeeld%2Flogo-seni.png&amp;w=384&amp;q=75" alt="SENI Preps logo" width="320" height="234">SENI Preps</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#how">How it works</a>
+      <a href="#progress">Progress</a>
+      <a href="#funds">Funding</a>
+      <a href="#about">About us</a>
+      <a class="lang" href="https://senipreps.com/nl" lang="nl" aria-label="Nederlands, on our current site">NL</a>
+      <a class="btn btn-primary btn-sm" href="#contact">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="h1">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">A biological solution to the nitrogen problem</p>
+      <h1 id="h1">We stop nitrogen emissions. <span>At the source.</span></h1>
+      <p class="lead">SENI Preps is developing a feed additive that blocks the enzyme urease, so ammonia never forms. Nothing in the barn has to change.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#contact">Get in touch</a>
+        <a class="btn btn-ghost" href="#progress">See where we stand</a>
+      </div>
+      <ul class="proof" aria-label="Key facts">
+        <li>Two patent applications filed</li>
+        <li>Research with Wageningen Bioveterinary Research</li>
+        <li>Early funding from the Dutch government and Rabobank</li>
+      </ul>
+    </div>
+
+    <div class="sim" id="how" data-mode="with" aria-labelledby="sim-title">
+      <div class="sim-top">
+        <h2 class="sim-title" id="sim-title">See it work</h2>
+        <div class="switch" role="group" aria-label="Show the reaction">
+          <button type="button" data-set="without" aria-pressed="false">Without inhibitor</button>
+          <button type="button" data-set="with" aria-pressed="true">With our peptide</button>
+        </div>
+      </div>
+      <svg class="d-wide" viewBox="0 36 520 214" role="img" aria-labelledby="svg-t">
+        <title id="svg-t">Urea meets the enzyme urease. Without inhibitor it is cut into two ammonia molecules and one carbon dioxide molecule. With our peptide bound to urease, nothing is cut and no ammonia forms.</title>
+        <defs>
+          <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8b95a1"/></marker>
+        </defs>
+        <!-- urea -->
+        <rect x="10" y="124" width="108" height="48" rx="24" fill="#fff" stroke="#2d3445" stroke-width="2"/>
+        <text x="64" y="155" text-anchor="middle" font-size="20" font-weight="600" fill="#2d3445">urea</text>
+        <text x="64" y="197" text-anchor="middle" font-size="14" fill="#5b6475">from urine</text>
+        <line x1="124" y1="148" x2="192" y2="148" stroke="#8b95a1" stroke-width="2" marker-end="url(#ar)"/>
+        <!-- enzyme -->
+        <g class="enzyme">
+          <rect x="200" y="104" width="92" height="88" rx="22" fill="#eef7f1" stroke="#0b7a3e" stroke-width="2.5"/>
+          <g class="blades" stroke="#0b7a3e" stroke-width="2.5" fill="none" stroke-linecap="round">
+            <circle cx="232" cy="168" r="7"/><circle cx="260" cy="168" r="7"/>
+            <line x1="236" y1="162" x2="262" y2="124"/><line x1="256" y1="162" x2="230" y2="124"/>
+          </g>
+          <text x="246" y="217" text-anchor="middle" font-size="16" font-weight="600" fill="#2d3445">urease</text>
+          <text x="246" y="237" text-anchor="middle" font-size="14" fill="#5b6475">from gut bacteria</text>
+        </g>
+        <!-- peptide -->
+        <g class="peptide only-with s-fade">
+          <rect x="206" y="74" width="80" height="34" rx="17" fill="#0b7a3e"/>
+          <text x="246" y="96" text-anchor="middle" font-size="15" font-weight="600" fill="#fff">peptide</text>
+        </g>
+        <!-- without: products -->
+        <g class="only-without s-fade">
+          <line x1="298" y1="132" x2="364" y2="88" stroke="#8b95a1" stroke-width="2" marker-end="url(#ar)"/>
+          <line x1="298" y1="148" x2="390" y2="148" stroke="#8b95a1" stroke-width="2" marker-end="url(#ar)"/>
+          <line x1="298" y1="164" x2="364" y2="208" stroke="#8b95a1" stroke-width="2" marker-end="url(#ar)"/>
+          <g class="gas g1"><circle cx="398" cy="72" r="29" fill="#fff" stroke="#2d3445" stroke-width="2"/><text x="398" y="79" text-anchor="middle" font-size="18" font-weight="700" fill="#2d3445">NH₃</text></g>
+          <g class="gas g2"><circle cx="430" cy="148" r="29" fill="#fff" stroke="#2d3445" stroke-width="2"/><text x="430" y="155" text-anchor="middle" font-size="18" font-weight="700" fill="#2d3445">NH₃</text></g>
+          <g class="gas g3"><circle cx="398" cy="224" r="29" fill="#fff" stroke="#8b95a1" stroke-width="2"/><text x="398" y="231" text-anchor="middle" font-size="18" font-weight="700" fill="#5b6475">CO₂</text></g>
+          <text x="440" y="58" font-size="14" fill="#5b6475">into</text>
+          <text x="440" y="75" font-size="14" fill="#5b6475">the air</text>
+        </g>
+        <!-- with: nothing formed -->
+        <g class="only-with s-fade">
+          <line x1="298" y1="148" x2="338" y2="148" stroke="#c4cbd3" stroke-width="2" stroke-dasharray="4 5"/>
+          <g stroke="#0b7a3e" stroke-width="4" stroke-linecap="round"><line x1="350" y1="134" x2="378" y2="162"/><line x1="378" y1="134" x2="350" y2="162"/></g>
+          <text x="392" y="146" font-size="19" font-weight="700" fill="#0b7a3e">No ammonia</text>
+          <text x="392" y="168" font-size="15" fill="#5b6475">no CO₂ either</text>
+          <rect x="318" y="200" width="194" height="42" rx="21" fill="#eef7f1"/>
+          <text x="415" y="226" text-anchor="middle" font-size="15.5" font-weight="600" fill="#08602f">N stays in the manure</text>
+        </g>
+      </svg>
+      <svg class="d-tall" viewBox="0 0 320 362" role="img" aria-labelledby="svg-t2">
+        <title id="svg-t2">Urea meets the enzyme urease. Without inhibitor it is cut into two ammonia molecules and one carbon dioxide molecule. With our peptide bound to urease, nothing is cut and no ammonia forms.</title>
+        <defs>
+          <marker id="ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8b95a1"/></marker>
+        </defs>
+        <!-- urea -->
+        <rect x="96" y="8" width="108" height="46" rx="23" fill="#fff" stroke="#2d3445" stroke-width="2"/>
+        <text x="150" y="38" text-anchor="middle" font-size="20" font-weight="600" fill="#2d3445">urea</text>
+        <text x="216" y="37" font-size="15" fill="#5b6475">from urine</text>
+        <line x1="150" y1="60" x2="150" y2="96" stroke="#8b95a1" stroke-width="2" marker-end="url(#ar2)"/>
+        <!-- enzyme -->
+        <g class="enzyme">
+          <rect x="106" y="104" width="88" height="84" rx="22" fill="#eef7f1" stroke="#0b7a3e" stroke-width="2.5"/>
+          <g class="blades" stroke="#0b7a3e" stroke-width="2.5" fill="none" stroke-linecap="round">
+            <circle cx="136" cy="166" r="7"/><circle cx="164" cy="166" r="7"/>
+            <line x1="140" y1="160" x2="166" y2="122"/><line x1="160" y1="160" x2="134" y2="122"/>
+          </g>
+          <text x="206" y="140" font-size="17" font-weight="600" fill="#2d3445">urease</text>
+          <text x="206" y="161" font-size="15" fill="#5b6475">from gut</text>
+          <text x="206" y="179" font-size="15" fill="#5b6475">bacteria</text>
+        </g>
+        <!-- peptide -->
+        <g class="peptide only-with s-fade">
+          <rect x="10" y="129" width="90" height="34" rx="17" fill="#0b7a3e"/>
+          <text x="55" y="151" text-anchor="middle" font-size="15" font-weight="600" fill="#fff">peptide</text>
+        </g>
+        <!-- without: products -->
+        <g class="only-without s-fade">
+          <line x1="132" y1="194" x2="92" y2="226" stroke="#8b95a1" stroke-width="2" marker-end="url(#ar2)"/>
+          <line x1="150" y1="194" x2="150" y2="222" stroke="#8b95a1" stroke-width="2" marker-end="url(#ar2)"/>
+          <line x1="168" y1="194" x2="208" y2="226" stroke="#8b95a1" stroke-width="2" marker-end="url(#ar2)"/>
+          <g class="gas g1"><circle cx="72" cy="260" r="29" fill="#fff" stroke="#2d3445" stroke-width="2"/><text x="72" y="267" text-anchor="middle" font-size="18" font-weight="700" fill="#2d3445">NH₃</text></g>
+          <g class="gas g2"><circle cx="150" cy="260" r="29" fill="#fff" stroke="#2d3445" stroke-width="2"/><text x="150" y="267" text-anchor="middle" font-size="18" font-weight="700" fill="#2d3445">NH₃</text></g>
+          <g class="gas g3"><circle cx="228" cy="260" r="29" fill="#fff" stroke="#8b95a1" stroke-width="2"/><text x="228" y="267" text-anchor="middle" font-size="18" font-weight="700" fill="#5b6475">CO₂</text></g>
+          <text x="150" y="326" text-anchor="middle" font-size="16" fill="#5b6475">into the air</text>
+        </g>
+        <!-- with: nothing formed -->
+        <g class="only-with s-fade">
+          <line x1="150" y1="194" x2="150" y2="216" stroke="#c4cbd3" stroke-width="2" stroke-dasharray="4 5"/>
+          <g stroke="#0b7a3e" stroke-width="4" stroke-linecap="round"><line x1="137" y1="224" x2="163" y2="250"/><line x1="163" y1="224" x2="137" y2="250"/></g>
+          <text x="150" y="282" text-anchor="middle" font-size="20" font-weight="700" fill="#0b7a3e">No ammonia</text>
+          <text x="150" y="303" text-anchor="middle" font-size="15" fill="#5b6475">no CO₂ either</text>
+          <rect x="48" y="316" width="204" height="42" rx="21" fill="#eef7f1"/>
+          <text x="150" y="342" text-anchor="middle" font-size="16" font-weight="600" fill="#08602f">N stays in the manure</text>
+        </g>
+      </svg>
+      <dl class="readout" aria-live="polite">
+        <div><dt>Ammonia (NH₃)</dt><dd data-with="None" data-without="2 per urea">None</dd></div>
+        <div><dt>CO₂</dt><dd data-with="None" data-without="1 per urea">None</dd></div>
+        <div><dt>Nitrogen</dt><dd data-with="In the manure" data-without="Into the air">In the manure</dd></div>
+      </dl>
+      <p class="sim-cap" data-with="Our peptide binds to urease and makes it inactive. The enzyme stops cutting, so ammonia never forms and the nitrogen stays in the manure." data-without="Once manure and urine meet, urease cuts each urea molecule into two ammonia molecules and one CO₂. The ammonia is volatile and escapes into the air.">Our peptide binds to urease and makes it inactive. The enzyme stops cutting, so ammonia never forms and the nitrogen stays in the manure.</p>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <figure>
+    <img src="https://senipreps.com/_next/image?url=%2Fbeeld%2Fhero-landbouwgrond.jpg&amp;w=1920&amp;q=75" alt="Aerial view of Dutch farmland in long green strips" width="1066" height="533" loading="lazy">
+    <figcaption><strong>It goes in the feed.</strong><span>For a single farm, it's one of the few ways to cut emissions without rebuilding the barn.</span></figcaption>
+  </figure>
+</div>
+
+<section class="sec" id="for-you" aria-labelledby="for-you-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">What are you looking for?</p><h2 id="for-you-h">What it means for you</h2></div>
+      <p>Pick the one that sounds like you.</p>
+    </div>
+    <div class="chooser">
+      <div class="tabs" role="tablist" aria-label="Who you are">
+        <button role="tab" id="t1" aria-controls="p1" aria-selected="true" tabindex="0">I have a poultry farm</button>
+        <button role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1">I'm a feed company or distributor</button>
+        <button role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1">I'm an investor</button>
+        <button role="tab" id="t4" aria-controls="p4" aria-selected="false" tabindex="-1">I want to take part</button>
+      </div>
+      <div>
+        <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1">
+          <p class="eyebrow">Poultry</p>
+          <h3>Good for your birds, too</h3>
+          <p>Stopping ammonia doesn't only help the air. It helps your chickens' health as well.</p>
+          <p class="note">Poultry trials are being prepared in South Africa.</p>
+          <a class="more" href="#apps">Why it helps poultry →</a>
+        </div>
+        <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
+          <p class="eyebrow">Feed and distribution</p>
+          <h3>On the way to approval</h3>
+          <p>A feed additive may only enter the European market after approval by the European Food Safety Authority. The United States requires GRAS approval.</p>
+          <p class="note">Those dossiers are being built.</p>
+          <a class="more" href="#contact">Talk to us →</a>
+        </div>
+        <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
+          <p class="eyebrow">Investors</p>
+          <h3>Early funding in place, trials under way</h3>
+          <p>Our first funding was €275,000 from the Vroege Fase Financiering, a loan programme of the Ministry of Economic Affairs. After its own review, Rabobank added a €150,000 Innovation Loan.</p>
+          <p class="note">Soon you'll be able to invest through the Eyevestor platform. The campaign page is still in preparation and the terms will be announced there. Investing in a young company carries risk.</p>
+          <a class="more" href="#funds">Where the money goes →</a>
+        </div>
+        <div class="panel" role="tabpanel" id="p4" aria-labelledby="t4" hidden>
+          <p class="eyebrow">Take part</p>
+          <h3>Invest in the solution itself</h3>
+          <p>For farmers and individuals who want to do something about the nitrogen problem, this is a concrete route: you invest in the solution itself, at the source.</p>
+          <p class="note">This runs through the same Eyevestor campaign, with terms and sign-up published there.</p>
+          <a class="more" href="#contact">Get in touch →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec air" aria-labelledby="air-h">
+  <div class="wrap">
+    <p class="big" aria-hidden="true">78<small>%</small></p>
+    <div>
+      <p class="eyebrow">Nitrogen or ammonia?</p>
+      <h2 id="air-h">Nitrogen in the air does nothing. 78 percent of what we breathe is nitrogen.</h2>
+      <p>The problem is the compounds nitrogen forms, and ammonia is one of them. It forms when manure and urine mix, it's volatile, and it settles again further away. Too much ammonia is toxic and bad for the environment. That's what "nitrogen" in farming is really about.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="source" aria-labelledby="source-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">Why at the source</p><h2 id="source-h">We act one step earlier</h2></div>
+      <p>Today's solutions act after the problem has formed. We make sure it never forms.</p>
+    </div>
+    <div class="compare">
+      <div class="cmp">
+        <p class="tag">Barn solutions today</p>
+        <h3>After the fact</h3>
+        <ul>
+          <li>Keep manure and urine apart</li>
+          <li>Extract ammonia from storage</li>
+        </ul>
+      </div>
+      <div class="cmp ours">
+        <p class="tag">SENI Preps</p>
+        <h3>At the source</h3>
+        <ul>
+          <li>The enzyme is blocked, so ammonia never forms</li>
+          <li>Nitrogen stays in the manure, which is valuable as fertiliser</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="apps" style="padding-top:0" aria-labelledby="apps-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">Platform technology</p><h2 id="apps-h">One technology, two applications</h2></div>
+      <p>We chose two key applications from a broader range of possibilities.</p>
+    </div>
+    <div class="apps">
+      <article class="app">
+        <div class="app-img"><img src="https://senipreps.com/_next/image?url=%2Fbeeld%2Fpluimvee.jpg&amp;w=640&amp;q=75" alt="Two hens in a poultry house" width="519" height="346" loading="lazy"></div>
+        <div>
+          <p class="eyebrow">Poultry</p>
+          <h3>Healthier animals</h3>
+          <p>Chickens that eat a lot of feed get ammonia in their blood. Their liver has to clear it, and that costs energy that doesn't go into growth. Because we stop ammonia from forming, the birds stay healthier.</p>
+        </div>
+      </article>
+      <article class="app">
+        <div class="app-img"><img src="https://senipreps.com/_next/image?url=%2Fbeeld%2Fweiland-koeien.jpg&amp;w=640&amp;q=75" alt="Cows in a meadow by a Dutch farm" width="519" height="346" loading="lazy"></div>
+        <div>
+          <p class="eyebrow">Ammonia reduction</p>
+          <h3>Lower emissions</h3>
+          <p>Where too much nitrogen settles, grass, brambles and nettles take over and heathland disappears. We tackle the forming of ammonia, instead of the far less effective approach of capturing emissions afterwards.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec progress" id="progress" aria-labelledby="progress-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">Where we stand</p><h2 id="progress-h">Two steps done, two running</h2></div>
+      <p>Development is under way. Here's the state of play, step by step.</p>
+    </div>
+    <p class="tally"><span><i class="dot done"></i>2 completed</span><span><i class="dot run"></i>2 running</span><span><i class="dot prep"></i>1 in preparation</span></p>
+    <ol class="track">
+      <li class="done"><i class="dot done"></i><span class="num">01</span><span class="state">Completed</span>
+        <h3>The right inhibitor found</h3>
+        <p>We vaccinated llamas, which then made antibodies. From millions of antibodies in their blood, we selected the most effective. Two patent applications were filed for the discovery.</p></li>
+      <li class="done"><i class="dot done"></i><span class="num">02</span><span class="state">Completed</span>
+        <h3>Trials with faeces</h3>
+        <p>In trials with faeces, our peptides stopped the enzyme from working, and so prevented nitrogen emissions.</p></li>
+      <li class="run"><i class="dot run"></i><span class="num">03</span><span class="state">Running</span>
+        <h3>First animal trials</h3>
+        <p>Our peptides were fed to pigs with no negative effects. The trials also showed they need better protection through the stomach.</p></li>
+      <li class="run"><i class="dot run"></i><span class="num">04</span><span class="state">Running</span>
+        <h3>All the way through the gut</h3>
+        <p>With Wageningen Research, we're working to make the peptide travel the whole digestive tract and stay protected and active on the way.</p></li>
+      <li class="prep"><i class="dot prep"></i><span class="num">05</span><span class="state">In preparation</span>
+        <h3>Poultry trials</h3>
+        <p>Pilot production of our peptide is running in South Africa. Trials with chickens are being prepared there, small-scale first and then at a large poultry company.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="funds" aria-labelledby="funds-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">Where the money goes</p><h2 id="funds-h">Five things it pays for</h2></div>
+      <p>Development isn't finished yet, and that costs money. This is what it's spent on.</p>
+    </div>
+    <ol class="funds">
+      <li class="first"><div><span class="flag">The most important work right now</span><h3>Protecting the peptide</h3><p>It has to travel the whole digestive tract and stay protected. It can be wrapped in a protective coating, or adapted so it's less prone to breaking down.</p></div></li>
+      <li><div><h3>Working with Wageningen Research</h3><p>Wageningen Research carries out the research into the stability and effectiveness of our peptides.</p></div></li>
+      <li><div><h3>Poultry trials in South Africa</h3><p>Trials with chickens, small-scale first, then at a large poultry company.</p></div></li>
+      <li><div><h3>Scaling up pilot production</h3><p>Pilot production in South Africa has to grow to meet the demand for peptides for the trials.</p></div></li>
+      <li><div><h3>The approval dossier</h3><p>Building the EFSA and GRAS dossiers.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec progress" id="about" aria-labelledby="about-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">About SENI Preps</p><h2 id="about-h">A Dutch biotech company</h2></div>
+      <p>A biologist's idea and an economist's company.</p>
+    </div>
+    <div class="about-grid">
+      <div class="story">
+        <p>SENI Preps was founded five years ago. Medical biologist Dr. Gerrit Keizer came up with this biological solution to the nitrogen problem by combining technologies he had worked with over a career of almost forty years.</p>
+        <p>A professor put him in touch with Ir. Marco Pieterse from Wageningen, who looks after the business and operational side. With that, the company was born.</p>
+        <p>A committee of specialists saw that this was a different solution from all the barn solutions that already existed.</p>
+        <p class="name">Our name: <b>S</b>tik <b>E</b>r <b>N</b>iet <b>I</b>n. It's a nod to the nitrogen problem (in Dutch, nitrogen is "stikstof").</p>
+      </div>
+      <div>
+        <div class="founders">
+          <div class="founder"><p class="role">Founder &amp; CEO</p><h3>Ir. Marco Pieterse</h3><p>Wageningen economist. Background in agrifood finance, investment, international agribusiness, and building companies on a scientific basis.</p></div>
+          <div class="founder"><p class="role">Founder &amp; Scientific Advisor</p><h3>Dr. Gerrit Keizer</h3><p>Background in biotechnology, immunology and agribusiness innovation, with experience in scientific leadership and building biotech companies.</p></div>
+        </div>
+        <p class="partner"><span>We work with <b>WBVR, Wageningen Bioveterinary Research</b>. WBVR's research into our peptides is funded by the Ministry of Agriculture, Fisheries, Food Security and Nature.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec contact" id="contact" aria-labelledby="contact-h">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="eyebrow">Questions or interest?</p>
+      <h2 id="contact-h">Let's talk about stopping ammonia at the source.</h2>
+      <p>We're easy to reach. Send us a message and we'll reply as soon as we can.</p>
+      <a class="mail" href="mailto:invest@senipreps.com">invest@senipreps.com</a>
+      <p class="risk">Investing in a young company carries risk. Terms and risks will be published on Eyevestor.</p>
+    </div>
+    <form id="form" novalidate>
+      <div class="row2">
+        <div><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name"></div>
+        <div><label for="f-mail">Email</label><input id="f-mail" name="email" type="email" autocomplete="email"></div>
+      </div>
+      <div><label for="f-who">I am</label>
+        <select id="f-who" name="who">
+          <option>A poultry farmer</option>
+          <option>A feed company or distributor</option>
+          <option>An investor</option>
+          <option>Someone who wants to take part</option>
+          <option>Something else</option>
+        </select></div>
+      <div><label for="f-msg">Message</label><textarea id="f-msg" name="message"></textarea></div>
+      <button class="btn btn-primary" type="submit">Get in touch</button>
+      <p class="thanks" role="status">Thanks. This is a mockup, so nothing was sent.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <a class="brand" href="#top"><img src="https://senipreps.com/_next/image?url=%2Fbeeld%2Flogo-seni.png&amp;w=384&amp;q=75" alt="" width="320" height="234">SENI Preps</a>
+    <p>We stop nitrogen emissions, at the source.</p>
+    <nav aria-label="Footer">
+      <a href="#how">How it works</a><a href="#progress">Progress</a><a href="#about">About us</a><a href="mailto:invest@senipreps.com">invest@senipreps.com</a>
+    </nav>
+    <p class="mockline">SENI Preps B.V. · Mockup made for SENI Preps by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* simulator */
+  var sim = document.querySelector('.sim');
+  var btns = sim.querySelectorAll('.switch button');
+  var auto = !reduce, timer = null;
+  function setMode(m){
+    sim.setAttribute('data-mode', m);
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-set') === m ? 'true' : 'false'); });
+    sim.querySelectorAll('[data-' + m + ']').forEach(function(el){ el.textContent = el.getAttribute('data-' + m); });
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ auto = false; clearInterval(timer); setMode(b.getAttribute('data-set')); }); });
+  function startAuto(){ if (!auto || timer) return; timer = setInterval(function(){ setMode(sim.getAttribute('data-mode') === 'with' ? 'without' : 'with'); }, 4200); }
+  function stopAuto(){ clearInterval(timer); timer = null; }
+  if ('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if (e.isIntersecting){ if (!reduce) sim.classList.add('playing'); startAuto(); }
+        else { sim.classList.remove('playing'); stopAuto(); }
+      });
+    }, {threshold:.35}).observe(sim);
+  }
+
+  /* chooser tabs */
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+  function select(t){
+    tabs.forEach(function(x){
+      var on = x === t;
+      x.setAttribute('aria-selected', on ? 'true' : 'false');
+      x.tabIndex = on ? 0 : -1;
+      document.getElementById(x.getAttribute('aria-controls')).hidden = !on;
+    });
+  }
+  tabs.forEach(function(t, i){
+    t.addEventListener('click', function(){ select(t); });
+    t.addEventListener('keydown', function(e){
+      var n = e.key === 'ArrowDown' || e.key === 'ArrowRight' ? 1 : e.key === 'ArrowUp' || e.key === 'ArrowLeft' ? -1 : 0;
+      if (!n) return; e.preventDefault();
+      var nt = tabs[(i + n + tabs.length) % tabs.length]; select(nt); nt.focus();
+    });
+  });
+
+  /* form */
+  var form = document.getElementById('form');
+  form.addEventListener('submit', function(e){ e.preventDefault(); form.classList.add('sent'); });
+
+  /* gentle rise for things below the first screen */
+  if (!reduce && 'IntersectionObserver' in window){
+    var fold = window.innerHeight;
+    var items = document.querySelectorAll('.sec-head, .chooser, .compare, .app, .track li, .funds li, .founder, .money, .partner, .story, .faq, .contact-grid > *, .band figure, .air .wrap > *');
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.remove('will-rise'); io.unobserve(e.target); } });
+    }, {rootMargin:'0px 0px -8% 0px'});
+    items.forEach(function(el){
+      if (el.getBoundingClientRect().top > fold){ el.classList.add('rise', 'will-rise'); io.observe(el); }
+    });
+  }
+})();
+</script>
+</body>
+</html>
