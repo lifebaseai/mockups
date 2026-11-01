@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup strategicfp-co-nz-2aff6f 1 3ff2f93d -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Strategic Financial Planning | Independent investment advice, Christchurch</title>
+<meta name="description" content="Independent, 100% fee-based investment advice from Christchurch since 1989. See your investment potential and check if you fit our client profile.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16181c; --ink2:#22252b; --text:#2b2d31; --muted:#5d5f64;
+  --sand:#c7a585; --sand-d:#7a5b3e; --sand-l:#f4eee7; --line:#e4ddd4; --paper:#fbfaf8;
+  --serif:"Gloock",Georgia,"Times New Roman",serif;
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --wrap:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--sans);color:var(--text);background:var(--paper);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sand);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.12;margin:0;color:var(--ink);letter-spacing:-.005em}
+h2{font-size:clamp(32px,4.2vw,50px)}
+h3{font-size:24px}
+p{margin:0}
+.eyebrow{display:block;font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--sand-d)}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:10px 14px;z-index:99}
+.skip:focus{left:10px;top:10px}
+
+/* banner */
+.mock{height:44px;display:flex;align-items:center;justify-content:center;background:var(--sand-l);color:var(--ink);font-size:15px;border-bottom:1px solid var(--line);padding:0 12px;white-space:nowrap;text-align:center}
+.mock a{color:var(--sand-d);text-decoration:underline;text-underline-offset:3px;font-weight:600}
+
+/* header */
+.top{position:absolute;left:0;right:0;top:44px;z-index:5}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:84px}
+.mark{font-family:var(--serif);font-size:30px;color:#fff;text-decoration:none;letter-spacing:.01em;display:inline-flex;align-items:center;min-height:44px}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{color:#e9e4dd;text-decoration:none;font-size:15px;padding:12px 12px;min-height:44px;display:inline-flex;align-items:center}
+.nav a:hover{color:#fff}
+.nav .pill{border:1px solid rgba(199,165,133,.7);border-radius:999px;padding:10px 18px;margin-left:8px;color:#fff}
+.nav .pill:hover{background:rgba(199,165,133,.18)}
+
+/* hero */
+.hero{position:relative;min-height:min(780px,100vh);display:flex;align-items:flex-end;color:#fff;background:#14171c;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,16,20,.78) 0%,rgba(14,16,20,.35) 50%,rgba(14,16,20,0) 100%),linear-gradient(0deg,rgba(14,16,20,.7) 0%,rgba(14,16,20,0) 40%)}
+.hero .sky{position:absolute;inset:0;background:url("https://www.strategicfp.co.nz/images/CTA_1.avif") center 40%/cover no-repeat;filter:brightness(1.45) saturate(1.05);z-index:0}
+.hero::before{z-index:1}
+.hero .wrap{z-index:2}
+.hero .wrap{position:relative;width:100%;padding-top:170px;padding-bottom:56px}
+.hero h1{color:#fff;font-size:clamp(40px,5.6vw,70px);max-width:13.5em;max-width:780px}
+.hero h1 .eyebrow{color:var(--sand);margin-bottom:22px}
+.hero .lead{max-width:560px;margin-top:24px;font-size:19px;color:#e2ddd6}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 26px;border-radius:999px;font:600 16px/1.2 var(--sans);text-decoration:none;cursor:pointer;border:1px solid transparent;transition:background .2s,transform .2s,border-color .2s}
+.btn-main{background:var(--sand);color:var(--ink)}
+.btn-main:hover{background:#d6b899;transform:translateY(-1px)}
+.btn-ghost{color:#fff;border-color:rgba(255,255,255,.45)}
+.btn-ghost:hover{border-color:#fff}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:#000}
+.trust{list-style:none;margin:56px 0 0;padding:22px 0 0;border-top:1px solid rgba(255,255,255,.18);display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.trust li{font-size:14px;color:#cfc9c1;line-height:1.45}
+.trust b{display:block;font-family:var(--serif);font-weight:400;font-size:24px;color:#fff;margin-bottom:2px}
+
+/* approach */
+.sec{padding:120px 0}
+.approach .wrap{display:grid;grid-template-columns:5fr 7fr;gap:72px;align-items:start}
+.approach .intro{position:sticky;top:40px}
+.approach .intro p{margin-top:22px;color:var(--muted);font-size:18px;max-width:420px}
+.points{list-style:none;margin:0;padding:0}
+.points li{display:grid;grid-template-columns:64px 1fr;gap:26px;padding:34px 0;border-top:1px solid var(--line)}
+.points li:last-child{border-bottom:1px solid var(--line)}
+.points p{color:var(--muted);margin-top:10px}
+.glyph{width:56px;height:56px}
+
+/* calculator */
+.calc{background:var(--ink);color:#e7e2db}
+.calc h2{color:#fff}
+.calc .head{display:flex;justify-content:space-between;align-items:end;gap:40px;flex-wrap:wrap}
+.calc .head p{max-width:440px;color:#bdb7af}
+.calc .eyebrow{color:var(--sand);margin-bottom:16px}
+.panel{margin-top:52px;display:grid;grid-template-columns:360px 1fr;gap:48px;background:var(--ink2);border:1px solid #31343b;border-radius:18px;padding:40px}
+.amount label{font-size:14px;color:#bdb7af;display:block}
+.amount output{display:block;font-family:var(--serif);font-size:52px;color:#fff;line-height:1.1;margin:4px 0 18px}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:44px;background:transparent;cursor:pointer;margin:0}
+input[type=range]::-webkit-slider-runnable-track{height:4px;border-radius:4px;background:linear-gradient(90deg,var(--sand) var(--p,18%),#454850 var(--p,18%))}
+input[type=range]::-moz-range-track{height:4px;border-radius:4px;background:#454850}
+input[type=range]::-moz-range-progress{height:4px;background:var(--sand)}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:24px;height:24px;border-radius:50%;background:#fff;border:5px solid var(--sand);margin-top:-10px;box-shadow:0 2px 8px rgba(0,0,0,.4)}
+input[type=range]::-moz-range-thumb{width:16px;height:16px;border-radius:50%;background:#fff;border:5px solid var(--sand)}
+.range-ends{display:flex;justify-content:space-between;font-size:13px;color:#9d978f}
+.tiles{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:2px}
+.tiles li{display:grid;grid-template-columns:12px 1fr auto;align-items:center;gap:12px;padding:13px 0;border-top:1px solid #34373e}
+.tiles .dot{width:10px;height:10px;border-radius:50%}
+.tiles .nm{font-size:15px;color:#d5d0c9}
+.tiles .v{font-family:var(--serif);font-size:22px;color:#fff;text-align:right;line-height:1.1}
+.tiles .v small{display:block;font-family:var(--sans);font-size:12px;color:#b8d29a}
+.tiles li:first-child .v small{color:#9d978f}
+.chart{position:relative;min-height:300px}
+.chart svg{display:block;max-width:100%;height:auto;overflow:visible}
+.chart .ax{font:12px var(--sans);fill:#9d978f}
+.chart .grid{stroke:#363940;stroke-width:1}
+.chart .ln{fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.chart.draw .ln{stroke-dasharray:1200;stroke-dashoffset:1200;animation:draw 1.6s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.fine{margin-top:22px;font-size:13px;color:#9d978f}
+
+/* team */
+.team .head{max-width:640px}
+.team .head p{margin-top:18px;color:var(--muted);font-size:18px}
+.people{margin-top:56px;display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.person{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.photo{position:relative;aspect-ratio:1/1;background:#f1f1f1;overflow:hidden}
+.photo .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.photo .me{position:absolute;left:50%;bottom:0;width:150%;max-width:none;transform:translateX(-50%)}
+.person .body{padding:26px 26px 28px;display:flex;flex-direction:column;flex:1}
+.person .role{font-size:14px;color:var(--sand-d);font-weight:600;margin-top:4px}
+.person p.bio{margin-top:14px;color:var(--muted);font-size:16px}
+.creds{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:13.5px;color:var(--muted);line-height:1.55}
+.li{margin-top:auto;padding-top:16px;font-size:15px;font-weight:600;color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;gap:8px;min-height:44px}
+.li:hover{color:var(--sand-d)}
+
+/* voices */
+.voices{background:var(--sand-l)}
+.voices .wrap{display:grid;grid-template-columns:5fr 7fr;gap:72px;align-items:start}
+.voices .who{margin-top:22px;color:var(--muted);font-size:18px;max-width:420px}
+.quotes{display:grid;gap:28px}
+blockquote{margin:0;padding:36px 40px;background:#fff;border-radius:18px;border:1px solid var(--line);position:relative}
+blockquote p{font-family:var(--serif);font-size:24px;line-height:1.35;color:var(--ink)}
+blockquote footer{margin-top:20px;font-size:15px;color:var(--muted)}
+blockquote footer b{color:var(--ink);font-weight:600}
+blockquote::before{content:"\201C";position:absolute;top:6px;right:28px;font-family:var(--serif);font-size:90px;line-height:1;color:var(--sand)}
+
+/* steps */
+.steps .head{max-width:640px}
+.steps .head p{margin-top:18px;color:var(--muted);font-size:18px}
+.path{list-style:none;margin:60px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0;counter-reset:s}
+.path li{position:relative;padding:34px 34px 0 0}
+.path li::before{counter-increment:s;content:counter(s,decimal-leading-zero);font-family:var(--serif);font-size:20px;color:var(--sand-d);display:block;margin-bottom:14px}
+.path li::after{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--line)}
+.path li:first-child::after{background:var(--sand)}
+.path h3{font-size:24px}
+.path p{margin-top:10px;color:var(--muted)}
+
+/* fit + faq */
+.fit{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.fit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.check{margin-top:30px;display:grid;gap:12px}
+.q{display:grid;grid-template-columns:1fr auto;align-items:center;gap:18px;width:100%;text-align:left;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 18px 18px 22px;font:16px/1.45 var(--sans);color:var(--text);cursor:pointer;min-height:64px;transition:border-color .2s,background .2s}
+.q:hover{border-color:var(--sand)}
+.q .tick{width:32px;height:32px;border-radius:50%;border:2px solid #c9c0b5;display:grid;place-items:center;transition:all .2s}
+.q .tick svg{width:16px;height:16px;opacity:0;transition:opacity .2s}
+.q[aria-pressed=true]{background:var(--sand-l);border-color:var(--sand)}
+.q[aria-pressed=true] .tick{background:var(--ink);border-color:var(--ink)}
+.q[aria-pressed=true] .tick svg{opacity:1}
+.verdict{margin-top:20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:20px 22px;border-radius:14px;background:var(--ink);color:#fff}
+.verdict .meter{display:flex;gap:6px}
+.verdict .meter i{width:26px;height:6px;border-radius:3px;background:#454850;transition:background .3s}
+.verdict .meter i.on{background:var(--sand)}
+.verdict p{font-size:16px;flex:1;min-width:200px}
+.verdict a{color:var(--sand);font-weight:600}
+.faq h2{font-size:clamp(28px,3.2vw,38px)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-of-type{border-top:1px solid var(--line);margin-top:28px}
+.faq summary{list-style:none;cursor:pointer;padding:20px 40px 20px 0;font-weight:600;color:var(--ink);position:relative;min-height:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:6px;top:50%;width:10px;height:10px;border-right:2px solid var(--sand-d);border-bottom:2px solid var(--sand-d);transform:translateY(-70%) rotate(45deg);transition:transform .2s}
+.faq details[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+.faq details p{padding:0 0 22px;color:var(--muted)}
+
+/* contact */
+.contact .wrap{display:grid;grid-template-columns:5fr 6fr;gap:72px;align-items:start}
+.contact .lead{margin-top:20px;font-size:18px;color:var(--muted)}
+.bigmail{display:inline-block;margin-top:26px;font-family:var(--serif);font-size:clamp(26px,3vw,36px);color:var(--ink);text-decoration:underline;text-decoration-color:var(--sand);text-underline-offset:6px;text-decoration-thickness:2px;word-break:break-word}
+.bigmail:hover{color:var(--sand-d)}
+.facts{margin-top:36px;display:grid;gap:22px}
+.facts div{font-size:16px}
+.facts .k{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--sand-d);margin-bottom:4px}
+.facts a{text-decoration:none;border-bottom:1px solid var(--sand)}
+.facts a:hover{color:var(--sand-d)}
+.facts address{font-style:normal}
+form{background:#fff;border:1px solid var(--line);border-radius:18px;padding:36px;box-shadow:0 20px 50px -30px rgba(22,24,28,.25)}
+form h3{font-size:26px}
+form .sub{margin-top:8px;color:var(--muted);font-size:15px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{margin-top:18px;display:flex;flex-direction:column}
+.field label{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:6px}
+.field input,.field select,.field textarea{font:16px var(--sans);color:var(--text);border:1px solid #cfc7bd;border-radius:10px;padding:12px 14px;min-height:48px;background:var(--paper);width:100%}
+.field textarea{min-height:110px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--sand-d);box-shadow:0 0 0 3px rgba(199,165,133,.35)}
+form .btn{margin-top:24px;width:100%}
+.thanks{margin-top:16px;padding:14px 16px;border-radius:10px;background:var(--sand-l);color:var(--ink);font-weight:600}
+
+/* footer */
+.foot{background:var(--ink);color:#bdb7af;padding:64px 0 40px;font-size:15px}
+.foot .wrap{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}
+.foot .mark{font-size:34px}
+.foot p{margin-top:10px}
+.foot h2{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--sand);margin-bottom:10px}
+.foot ul{list-style:none;margin:0;padding:0}
+.foot li a{display:inline-flex;min-height:36px;align-items:center;text-decoration:none;color:#e2ddd6}
+.foot li a:hover{color:#fff}
+.foot .made{grid-column:1/-1;border-top:1px solid #33363d;padding-top:24px;margin-top:16px;font-size:14px;color:#a7a19a}
+.foot .made a{color:#e2ddd6}
+
+.callbar{display:none}
+
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:980px){
+  .approach .wrap,.voices .wrap,.fit .wrap,.contact .wrap{grid-template-columns:1fr;gap:44px}
+  .approach .intro{position:static}
+  .panel{grid-template-columns:1fr;gap:28px}
+  .people{grid-template-columns:1fr 1fr}
+  .trust{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:700px){
+  body{font-size:16px;padding-bottom:68px}
+  .wrap{padding:0 20px}
+  .mock{font-size:14px}
+  .nav a:not(.pill){display:none}
+  .top .wrap{height:72px}
+  .mark{font-size:26px}
+  .hero{min-height:0}
+  .hero .sky{background-position:66% 30%}
+  .hero::before{background:linear-gradient(0deg,rgba(14,16,20,.92) 0%,rgba(14,16,20,.72) 55%,rgba(14,16,20,.45) 100%)}
+  .hero .wrap{padding-top:130px;padding-bottom:36px}
+  .hero h1{font-size:40px}
+  .hero h1 .eyebrow{font-size:12px;margin-bottom:16px}
+  .hero .lead{font-size:17px;margin-top:18px}
+  .btns{margin-top:26px}
+  .btns .btn{width:100%}
+  .trust{margin-top:36px;gap:18px 16px}
+  .trust b{font-size:21px}
+  .trust li{font-size:13px}
+  .sec{padding:76px 0}
+  .points li{grid-template-columns:44px 1fr;gap:18px;padding:26px 0}
+  .glyph{width:42px;height:42px}
+  h3{font-size:22px}
+  .panel{padding:24px 20px;margin-top:36px;border-radius:14px}
+  .amount output{font-size:42px}
+  .chart{min-height:240px}
+  .people{grid-template-columns:1fr;gap:22px}
+  blockquote{padding:28px 24px}
+  blockquote p{font-size:21px}
+  .path{grid-template-columns:1fr;margin-top:36px}
+  .path li{padding:26px 0 28px}
+  .row{grid-template-columns:1fr;gap:0}
+  form{padding:26px 20px}
+  .foot .wrap{grid-template-columns:1fr;gap:28px}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:20;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:rgba(22,24,28,.96);border-top:1px solid #33363d}
+  .callbar a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:999px;text-decoration:none;font-weight:600;font-size:15px}
+  .callbar .c1{background:var(--sand);color:var(--ink)}
+  .callbar .c2{color:#fff;border:1px solid #5a5d64}
+}
+@media (max-width:380px){.mock{font-size:13px}}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#main" aria-label="Strategic Financial Planning, home">Strategic</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#approach">How we work</a>
+      <a href="#potential">Your potential</a>
+      <a href="#team">Team</a>
+      <a href="#fit">Client profile</a>
+      <a class="pill" href="#contact">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" aria-labelledby="h1">
+  <div class="sky" role="img" aria-label="Snow-capped mountains at dusk"></div>
+  <div class="wrap">
+    <h1 id="h1"><span class="eyebrow">Strategic Financial Planning · Christchurch</span>Independent investment advice that stays ahead of rising costs.</h1>
+    <p class="lead">Smart, diversified investments around the world, chosen for your life and watched closely. We're 100% fee-based, with no conflicts of interest.</p>
+    <div class="btns">
+      <a class="btn btn-main" href="#contact">Request a first meeting</a>
+      <a class="btn btn-ghost" href="#potential">See your investment potential</a>
+    </div>
+    <ul class="trust">
+      <li><b>Since 1989</b>financial adviser Michael Taylor</li>
+      <li><b>100% fee-based</b>no income from any third party</li>
+      <li><b>No fee</b>or obligation for your first meeting</li>
+      <li><b>FSP 26383</b>Registered Financial Service Provider</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec approach" id="approach" aria-labelledby="h-app">
+  <div class="wrap">
+    <div class="intro">
+      <span class="eyebrow">How we work</span>
+      <h2 id="h-app" style="margin-top:16px">Is inflation quietly eroding your wealth?</h2>
+      <p>We help you find investments that stay ahead of rising costs, and our boutique approach means we stay with you for the long haul.</p>
+    </div>
+    <ol class="points">
+      <li>
+        <svg class="glyph" viewBox="0 0 56 56" aria-hidden="true"><rect width="28" height="28" fill="#16181c"/><path d="M28 0a28 28 0 0 1 28 28H28z" fill="#c7a585"/><path d="M0 56a28 28 0 0 1 28-28v28z" fill="#c7a585"/><rect x="28" y="28" width="28" height="28" fill="#16181c"/></svg>
+        <div><h3>Getting to know you comes first</h3>
+        <p>Building for the future, needing income now, or after a big change like selling a business or an inheritance: we listen first, then design the strategy.</p></div>
+      </li>
+      <li>
+        <svg class="glyph" viewBox="0 0 56 56" aria-hidden="true"><path d="M0 0h28v56H0z" fill="#c7a585"/><path d="M28 0a28 28 0 0 1 0 56z" fill="#16181c"/><rect x="6" y="34" width="6" height="22" fill="#fbfaf8"/><rect x="16" y="34" width="6" height="22" fill="#fbfaf8"/></svg>
+        <div><h3>Research-backed, and quick to act</h3>
+        <p>Our approach follows real market changes, not calendar dates. From traditional funds to ETFs, we use whatever truly adds value to your wealth.</p></div>
+      </li>
+      <li>
+        <svg class="glyph" viewBox="0 0 56 56" aria-hidden="true"><rect width="28" height="28" fill="#c7a585"/><rect x="28" width="28" height="28" fill="#16181c"/><path d="M0 28h28L0 56z" fill="#16181c"/><circle cx="42" cy="42" r="14" fill="#c7a585"/></svg>
+        <div><h3>Watching over your portfolio</h3>
+        <p>Personal attention and smart technology keep a close eye on your investments around the clock, and we adjust when conditions shift.</p></div>
+      </li>
+      <li>
+        <svg class="glyph" viewBox="0 0 56 56" aria-hidden="true"><rect width="56" height="8" fill="#16181c"/><rect y="14" width="56" height="8" fill="#16181c"/><path d="M28 28h0a28 28 0 0 1 0 28H0V28z" fill="#c7a585"/><path d="M28 28a14 14 0 0 1 28 0v28H28z" fill="#16181c"/></svg>
+        <div><h3>Calm when others panic</h3>
+        <p>We'll never follow the crowd just because everyone else is. Sometimes the best move is staying steady, and we make those decisions with you.</p></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec calc" id="potential" aria-labelledby="h-calc">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow">See your investment potential</span>
+      <h2 id="h-calc">What could your money do in 10 years?</h2></div>
+      <p>Move the slider to see how an amount could grow over 10 years in a term deposit, and in our Balanced, Growth and High Growth portfolios.</p>
+    </div>
+    <div class="panel">
+      <div class="amount">
+        <label for="amt">Investment amount</label>
+        <output id="amtOut" for="amt">$100,000</output>
+        <input id="amt" type="range" min="10000" max="500000" step="5000" value="100000" aria-describedby="amtEnds">
+        <div class="range-ends" id="amtEnds"><span>$10k</span><span>$500k</span></div>
+        <ul class="tiles" id="tiles">
+          <li><span class="dot" style="background:#a49a8e"></span><span class="nm">Term deposit</span><span class="v" data-k="0">$125,263<small>for comparison</small></span></li>
+          <li><span class="dot" style="background:#7fa3c4"></span><span class="nm">Balanced</span><span class="v" data-k="1">$170,814<small>+$45,552</small></span></li>
+          <li><span class="dot" style="background:#9cbf78"></span><span class="nm">Growth</span><span class="v" data-k="2">$187,714<small>+$62,451</small></span></li>
+          <li><span class="dot" style="background:#d9b48c"></span><span class="nm">High Growth</span><span class="v" data-k="3">$206,103<small>+$80,840</small></span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="chart" id="chart" role="img" aria-label="Line chart of potential growth over 10 years for each option"></div>
+        <p class="fine">An illustration of potential returns over 10 years, not a forecast or a promise. Markets go up and down. We'll talk through what fits you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec team" id="team" aria-labelledby="h-team">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">The team behind Strategic</span>
+      <h2 id="h-team" style="margin-top:16px">The people looking after your money</h2>
+      <p>Our team of financial and investment advisers. A boutique approach means we stick with you for the long haul.</p>
+    </div>
+    <div class="people">
+      <article class="person">
+        <div class="photo"><img class="bg" src="https://www.strategicfp.co.nz/images/team-member-bg-3.avif" alt="" width="840" height="840" loading="lazy"><img class="me" src="https://www.strategicfp.co.nz/images/Michael-CutOut.avif" alt="Michael Taylor" width="2000" height="1333" loading="lazy"></div>
+        <div class="body">
+          <h3>Michael Taylor</h3>
+          <div class="role">Principal Advisor &amp; founder</div>
+          <p class="bio">A financial adviser since 1989, and among the first in New Zealand to receive an AFA licence, in 2010. Licensed by the Financial Markets Authority.</p>
+          <p class="creds">BD (Hon) London University · Cert Ed (Bristol University) · Dip Bus Studies (Personal Financial Planning), Massey University · Honorary B Ed (Gloucestershire University) · FSP2481</p>
+          <a class="li" href="https://www.linkedin.com/in/michaelt2/" target="_blank" rel="noopener">Michael on LinkedIn <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+      <article class="person">
+        <div class="photo"><img class="bg" src="https://www.strategicfp.co.nz/images/team-member-bg-1.avif" alt="" width="840" height="840" loading="lazy"><img class="me" src="https://www.strategicfp.co.nz/images/Simon-CutOut.avif" alt="Simon Walmisley" width="2000" height="1333" loading="lazy"></div>
+        <div class="body">
+          <h3>Simon Walmisley</h3>
+          <div class="role">Advisor</div>
+          <p class="bio">Simon's background is in business management and ownership, and he has been a long-term investor. He helps clients manage their money more effectively.</p>
+          <a class="li" href="https://www.linkedin.com/in/simon-walmisley-a5b48730b/" target="_blank" rel="noopener">Simon on LinkedIn <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+      <article class="person">
+        <div class="photo"><img class="bg" src="https://www.strategicfp.co.nz/images/team-member-bg-6.avif" alt="" width="840" height="840" loading="lazy"><img class="me" src="https://www.strategicfp.co.nz/images/Ewan-CutOut.avif" alt="Ewen Cameron" width="2000" height="1333" loading="lazy"></div>
+        <div class="body">
+          <h3>Ewen Cameron</h3>
+          <div class="role">Client Services Manager</div>
+          <p class="bio">Usually the first person you'll speak to. Ewen joined Strategic in 2000, has advised clients since 2005, and is a licensed adviser.</p>
+          <p class="creds">Bachelor of Commerce &amp; Management, Lincoln University · Grad Dip Business Studies (Personal Financial Planning), Massey University · FSP23143</p>
+          <a class="li" href="https://www.linkedin.com/in/ewen-cameron-64798291/" target="_blank" rel="noopener">Ewen on LinkedIn <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec voices" aria-labelledby="h-voices">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">What clients say</span>
+      <h2 id="h-voices" style="margin-top:16px">Our business thrives on referrals.</h2>
+      <p class="who">Judges, business owners, doctors, engineers and many others who value honest, straightforward advice. They trust us because we put their interests first, every single time.</p>
+    </div>
+    <div class="quotes">
+      <blockquote>
+        <p>We have benefitted both financially and with long-term planning goals from Strategic Financial Planning for 13 years, and we have seen our investment portfolio grow well, providing us with a confident future income.</p>
+        <footer><b>Anne &amp; Robert</b> · Canterbury</footer>
+      </blockquote>
+      <blockquote>
+        <p>We always appreciate your care of our investments and your recommendations to make them work for us in a manner we could not possibly do ourselves.</p>
+        <footer><b>Brian &amp; Jan</b> · North Island</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="sec steps" aria-labelledby="h-steps">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">What to expect</span>
+      <h2 id="h-steps" style="margin-top:16px">From first map to clear skies</h2>
+      <p>Once you're "airborne", with the paperwork and compliance done, there's very little administration turbulence.</p>
+    </div>
+    <ol class="path">
+      <li><h3>Your Personal Financial Map</h3><p>Fill in the online map so we understand your goals before we meet.</p></li>
+      <li><h3>A first meeting, no fee</h3><p>Initial meetings are without fee or obligation. We listen, then recommend a portfolio that fits.</p></li>
+      <li><h3>100% digital from there</h3><p>Your secure login shows your whole portfolio, every transaction and the research behind it. Message us any time.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec fit" id="fit" aria-labelledby="h-fit">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Ready to invest?</span>
+      <h2 id="h-fit" style="margin-top:16px">Do you fit our client profile?</h2>
+      <p style="margin-top:16px;color:var(--muted)">To recommend a portfolio, we need to be on the same page. Tap each one that's true for you.</p>
+      <div class="check" id="check">
+        <button type="button" class="q" aria-pressed="false"><span>I can accept a degree of volatility for better returns over time.</span><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        <button type="button" class="q" aria-pressed="false"><span>I have between $200,000 and $4m+ to invest.</span><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        <button type="button" class="q" aria-pressed="false"><span>I live between "fear and greed" and take a holistic approach to investing.</span><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        <button type="button" class="q" aria-pressed="false"><span>I'm a New Zealand citizen or permanent resident.</span><span class="tick"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+      </div>
+      <div class="verdict" aria-live="polite">
+        <div class="meter" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <p id="verdictText">0 of 4 so far. Balanced, Growth and High Growth clients are our focus.</p>
+      </div>
+    </div>
+    <div class="faq">
+      <span class="eyebrow">Questions</span>
+      <h2 style="margin-top:16px">What people ask us first</h2>
+      <details open><summary>How are you paid?</summary><p>We're 100% fee-based and receive no income from any third party, so we have no conflicts of interest.</p></details>
+      <details><summary>What does a first meeting cost?</summary><p>Nothing. Initial meetings are without fee or obligation, once you've completed our online Personal Financial Map.</p></details>
+      <details><summary>What do you invest in?</summary><p>Smart, diversified investments around the world, from traditional funds to ETFs, always focused on what truly adds value to your wealth.</p></details>
+      <details><summary>Are you licensed?</summary><p>Yes. Michael is licensed by the Financial Markets Authority (FSP2481) and Ewen is a licensed adviser (FSP23143). Strategic Financial Planning Ltd is a registered Financial Service Provider, FSP 26383.</p></details>
+      <details><summary>Can I see what's happening with my money?</summary><p>Any time. Your secure personal login shows your overall performance, individual transactions and the research behind every decision. Local or global, you'll always know where you stand and why.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec contact" id="contact" aria-labelledby="h-contact">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Get in touch</span>
+      <h2 id="h-contact" style="margin-top:16px">Ready to grow your wealth?</h2>
+      <p class="lead">Email is the most effective way to reach us. Tell us a little about you and we'll take it from there.</p>
+      <a class="bigmail" href="mailto:info@strategicfp.co.nz">info@strategicfp.co.nz</a>
+      <div class="facts">
+        <div><div class="k">Main office</div><a href="tel:+6433778046">+64 3 377 8046</a></div>
+        <div><div class="k">Administration enquiries</div><a href="mailto:ewen@strategicfp.co.nz">ewen@strategicfp.co.nz</a></div>
+        <div><div class="k">Offices</div>
+          <address><a href="https://www.google.com/maps/search/?api=1&amp;query=Level%201%2C%2069%20Corsair%20Drive%2C%20Wigram%2C%20Christchurch%208042" target="_blank" rel="noopener">Level 1, 69 Corsair Drive, Wigram, Christchurch 8042</a><br><br>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=29%20Kiteroa%20Place%2C%20Cashmere%2C%20Christchurch%208022" target="_blank" rel="noopener">29 Kiteroa Place, Cashmere, Christchurch 8022</a></address>
+        </div>
+      </div>
+    </div>
+    <form id="form" novalidate>
+      <h3>Request a first meeting</h3>
+      <p class="sub">No fee or obligation. We'll reply by email.</p>
+      <div class="row">
+        <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+      </div>
+      <div class="row">
+        <div class="field"><label for="f-phone">Phone (optional)</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="field"><label for="f-amt">Amount to invest</label>
+          <select id="f-amt" name="amount"><option>$200,000 – $500,000</option><option>$500,000 – $1m</option><option>$1m – $4m+</option><option>Not sure yet</option></select></div>
+      </div>
+      <div class="field"><label for="f-msg">What would you like your money to do?</label><textarea id="f-msg" name="message" placeholder="For example: income in retirement, or investing the proceeds of a business sale."></textarea></div>
+      <button class="btn btn-dark" type="submit">Send to Strategic</button>
+      <p class="thanks" id="thanks" hidden>Thanks. This is a mockup, so nothing was sent.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <a class="mark" href="#main">Strategic</a>
+      <p>Strategic Financial Planning Ltd. Independent investment advice from Christchurch, New Zealand.</p>
+      <p><a href="https://www.strategicfp.co.nz/" style="color:#e2ddd6">strategicfp.co.nz</a></p>
+    </div>
+    <div>
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="tel:+6433778046">+64 3 377 8046</a></li>
+        <li><a href="mailto:info@strategicfp.co.nz">info@strategicfp.co.nz</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>On this page</h2>
+      <ul>
+        <li><a href="#approach">How we work</a></li>
+        <li><a href="#potential">Your potential</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#fit">Client profile</a></li>
+      </ul>
+    </div>
+    <p class="made">Mockup made for Strategic Financial Planning by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick contact">
+  <a class="c1" href="tel:+6433778046">Call us</a>
+  <a class="c2" href="mailto:info@strategicfp.co.nz">Email us</a>
+</nav>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* calculator: rates match the figures on their own calculator */
+  var rates=[Math.pow(1.25263,0.1)-1,.055,.065,.075];
+  var cols=['#a49a8e','#7fa3c4','#9cbf78','#d9b48c'];
+  var amt=document.getElementById('amt'),out=document.getElementById('amtOut'),chart=document.getElementById('chart');
+  var money=function(n){return '$'+Math.round(n).toLocaleString('en-NZ')};
+  var short=function(n){return n>=1e6?'$'+(n/1e6).toFixed(n>=1e7?0:1)+'m':'$'+Math.round(n/1000)+'k'};
+  function nice(x){var p=Math.pow(10,Math.floor(Math.log10(x))),f=x/p;return (f<=1?1:f<=2?2:f<=2.5?2.5:f<=5?5:10)*p}
+  function draw(){
+    var a=+amt.value;out.textContent=money(a);
+    amt.style.setProperty('--p',((a-10000)/490000*100)+'%');
+    var ends=rates.map(function(r){return a*Math.pow(1+r,10)});
+    document.querySelectorAll('#tiles .v').forEach(function(el){
+      var k=+el.dataset.k,v=ends[k];
+      el.innerHTML=money(v)+'<small>'+(k===0?'for comparison':'+'+money(v-ends[0]))+'</small>';
+    });
+    /* drawn at the box's real pixel width, so labels stay 12px on phones */
+    var W=Math.max(280,Math.round(chart.clientWidth)||640),nar=W<560,H=nar?240:300,L=nar?46:52,R=8,T=10,B=28;
+    var step=nice((ends[3]-a*.95)/4),lo=Math.floor(a*.95/step)*step,hi=Math.ceil(ends[3]/step)*step;
+    var x=function(y){return L+(W-L-R)*y/10},y=function(v){return T+(H-T-B)*(1-(v-lo)/(hi-lo))};
+    var s='<svg viewBox="0 0 '+W+' '+H+'" width="'+W+'" height="'+H+'" aria-hidden="true">';
+    for(var g=lo;g<=hi+1;g+=step){s+='<line class="grid" x1="'+L+'" x2="'+(W-R)+'" y1="'+y(g)+'" y2="'+y(g)+'"/><text class="ax" x="'+(L-10)+'" y="'+(y(g)+4)+'" text-anchor="end">'+short(g)+'</text>'}
+    for(var t=0;t<=10;t+=2){s+='<text class="ax" x="'+x(t)+'" y="'+(H-6)+'" text-anchor="middle">'+(t===0?'Now':'Yr '+t)+'</text>'}
+    rates.forEach(function(r,i){var d='';for(var t=0;t<=10;t++){d+=(t?'L':'M')+x(t).toFixed(1)+' '+y(a*Math.pow(1+r,t)).toFixed(1)}
+      s+='<path class="ln" d="'+d+'" stroke="'+cols[i]+'"/>';
+      s+='<circle cx="'+x(10)+'" cy="'+y(ends[i])+'" r="4" fill="'+cols[i]+'"/>'});
+    chart.innerHTML=s+'</svg>';
+  }
+  amt.addEventListener('input',function(){chart.classList.remove('draw');draw()});
+  draw();
+  var cw=chart.clientWidth;
+  addEventListener('resize',function(){if(chart.clientWidth!==cw){cw=chart.clientWidth;draw()}});
+
+  /* draw the chart lines once, when it comes on screen */
+  if('IntersectionObserver' in window && !reduce){
+    var r=chart.getBoundingClientRect();
+    if(r.top>innerHeight){
+      var co=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){chart.classList.add('draw');co.disconnect()}})},{threshold:.4});
+      co.observe(chart);
+    }
+  }
+
+  /* client profile check */
+  var qs=[].slice.call(document.querySelectorAll('#check .q')),bars=document.querySelectorAll('.verdict .meter i'),vt=document.getElementById('verdictText');
+  function verdict(){
+    var n=qs.filter(function(q){return q.getAttribute('aria-pressed')==='true'}).length;
+    bars.forEach(function(b,i){b.classList.toggle('on',i<n)});
+    vt.innerHTML=n===4?'You fit our profile. It’s time to talk to us. <a href="#contact">Get in touch</a>':
+      n+' of 4 so far. Balanced, Growth and High Growth clients are our focus.';
+  }
+  qs.forEach(function(q){q.addEventListener('click',function(){q.setAttribute('aria-pressed',q.getAttribute('aria-pressed')==='true'?'false':'true');verdict()})});
+
+  /* form */
+  var form=document.getElementById('form');
+  form.addEventListener('submit',function(e){e.preventDefault();document.getElementById('thanks').hidden=false});
+
+  /* gentle rise for things below the first screen */
+  if('IntersectionObserver' in window && !reduce){
+    var els=document.querySelectorAll('.points li,.calc .panel,.person,blockquote,.path li,.check,.faq,form,.contact .facts');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target)}})},{rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){if(el.getBoundingClientRect().top>innerHeight){el.classList.add('rise','will-rise');io.observe(el)}});
+  }
+})();
+</script>
+</body>
+</html>
