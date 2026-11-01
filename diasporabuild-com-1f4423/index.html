@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup diasporabuild-com-1f4423 1 f4095ef2 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DiasporaBuild · Build in Africa, stay in control from anywhere</title>
+<meta name="description" content="Construction project management for the African diaspora: verified professionals, daily progress proof and milestone payments released on your approval.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#101828;--slate:#4b5563;--teal:#12a89f;--teal-d:#0a7a73;--teal-dd:#075e58;
+  --cream:#f8f5ee;--paper:#fffdf8;--line:#e7e1d4;--mint:#e3f3f0;--amber:#e8962e;--amber-d:#9a4a06;
+  --display:"Outfit",ui-sans-serif,system-ui,sans-serif;--body:"Inter",ui-sans-serif,system-ui,-apple-system,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --r:18px;--shadow:0 1px 2px rgba(16,24,40,.06),0 18px 40px -18px rgba(16,24,40,.22);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.6 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--teal-d);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1180px,100% - 48px);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:-.02em;line-height:1.08;margin:0}
+p{margin:0}
+.eyebrow{font:500 12px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--teal-d);display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--teal)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:12px;font:600 15px/1 var(--body);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s}
+.btn-main{background:var(--teal-d);color:#fff;box-shadow:0 8px 20px -10px rgba(10,122,115,.8)}
+.btn-main:hover{background:var(--teal-dd);transform:translateY(-1px)}
+.btn-ghost{background:var(--paper);color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--teal)}
+.btn svg{width:16px;height:16px}
+
+/* banner */
+.mock-banner{min-height:44px;display:flex;align-items:center;justify-content:center;padding:10px 16px;background:var(--ink);color:#e9eef5;font:400 15px/1.4 var(--body);text-align:center}
+.mock-banner a{color:#7ee0d6;text-decoration:underline;text-underline-offset:3px;font-weight:600}
+
+/* header */
+.site-head{position:sticky;top:0;z-index:20;background:rgba(248,245,238,.88);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.head-in{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:600 19px/1 var(--display);letter-spacing:-.01em}
+.brand-mark{width:34px;height:34px;border-radius:9px;background:var(--teal-d);display:grid;place-items:center}
+.brand-mark svg{width:20px;height:20px}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a.link{padding:12px 12px;font-size:15px;color:var(--slate);text-decoration:none;border-radius:8px}
+.nav a.link:hover{color:var(--ink)}
+.nav .btn{min-height:44px;padding:0 18px;margin-left:8px}
+
+/* hero */
+.hero{padding:64px 0 72px;position:relative}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;opacity:.45;-webkit-mask-image:linear-gradient(to bottom,#000,transparent 85%);mask-image:linear-gradient(to bottom,#000,transparent 85%);pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:56px;align-items:center}
+.hero h1{font-size:clamp(40px,4.6vw,60px);font-weight:300;margin:20px 0 22px;text-wrap:balance}
+.hero h1 em{font-style:normal;color:var(--teal-d);font-weight:400}
+.hero .lede{font-size:18px;color:var(--slate);max-width:30em}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero-note{margin-top:22px;font-size:14px;color:var(--slate);display:flex;align-items:center;gap:8px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 4px rgba(18,168,159,.18)}
+
+/* tracker */
+.tracker{background:var(--paper);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);overflow:hidden}
+.tr-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.tr-title{display:flex;flex-direction:column}
+.tr-title b{font:500 18px/1.2 var(--display)}
+.tr-title span{font-size:13px;color:var(--slate)}
+.tag{font:500 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;padding:7px 9px;border-radius:999px;background:var(--mint);color:var(--teal-dd);white-space:nowrap}
+.tag.live{display:inline-flex;align-items:center;gap:6px}
+.tag.live::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--teal);animation:pulse 1.8s infinite}
+@keyframes pulse{50%{opacity:.25}}
+.tr-prog{padding:14px 20px 4px}
+.tr-prog-row{display:flex;justify-content:space-between;font-size:13px;color:var(--slate);margin-bottom:8px}
+.tr-prog-row b{color:var(--ink);font-weight:600}
+.bar{height:8px;border-radius:99px;background:#efe9dc;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--teal-d),var(--teal));border-radius:99px;transition:width .9s cubic-bezier(.2,.7,.2,1)}
+.ms{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:14px 20px}
+.ms button{all:unset;box-sizing:border-box;cursor:pointer;min-height:58px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:#fff;display:flex;flex-direction:column;gap:4px;transition:border-color .2s,background .2s}
+.ms button:hover{border-color:var(--teal)}
+.ms button:focus-visible{outline:3px solid var(--teal-d);outline-offset:2px}
+.ms button[aria-pressed="true"]{border-color:var(--teal-d);background:var(--mint)}
+.ms .n{font:500 14px/1.2 var(--body);color:var(--ink)}
+.ms .s{font:500 10.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--slate)}
+.ms .s.done{color:var(--teal-dd)}
+.ms .s.prog{color:var(--amber-d)}
+.tr-body{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line)}
+.tr-photo{position:relative;background:#e9e3d6;min-height:250px}
+.tr-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .4s}
+.tr-photo .cap{position:absolute;left:12px;bottom:12px;right:12px;background:rgba(16,24,40,.78);color:#fff;font-size:12.5px;padding:8px 10px;border-radius:10px;display:flex;justify-content:space-between;gap:8px}
+.tr-photo .empty{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:24px;color:var(--slate);font-size:14px;background:repeating-linear-gradient(135deg,#efe9dc 0 10px,#f4efe4 10px 20px)}
+.tr-steps{padding:18px 20px 20px;display:flex;flex-direction:column}
+.tr-steps h3{font:500 12px/1.2 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--slate);margin-bottom:12px}
+.step{display:flex;gap:12px;align-items:flex-start;padding:9px 0;border-bottom:1px dashed var(--line);font-size:14.5px;line-height:1.35}
+.step:last-of-type{border-bottom:0}
+.step .ic{flex:none;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;border:1.5px solid #cfc7b6;background:#fff;transition:all .3s}
+.step .ic svg{width:13px;height:13px;opacity:0}
+.step.ok .ic{background:var(--teal-d);border-color:var(--teal-d)}
+.step.ok .ic svg{opacity:1}
+.step.wait .ic{border-color:var(--amber);border-style:dashed}
+.step small{display:block;color:var(--slate);font-size:12.5px;margin-top:2px}
+.tr-act{margin-top:auto;padding-top:12px}
+.tr-act .btn{width:100%;min-height:46px}
+.tr-act .btn[disabled]{opacity:1;background:#e9e3d6;color:var(--slate);box-shadow:none;cursor:default;transform:none}
+.tr-feed{display:flex;align-items:center;gap:10px;padding:12px 20px;border-top:1px solid var(--line);font:500 12.5px/1.3 var(--mono);color:var(--slate);background:#fbf8f1}
+.tr-feed b{color:var(--teal-dd);font-weight:500}
+.reset{all:unset;cursor:pointer;margin-left:auto;font:500 12.5px/1 var(--body);color:var(--teal-dd);text-decoration:underline;text-underline-offset:3px;padding:12px 0}
+
+/* stats */
+.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper)}
+.stats-in{display:grid;grid-template-columns:repeat(3,1fr)}
+.stat{padding:30px 28px;border-left:1px solid var(--line)}
+.stat:first-child{border-left:0;padding-left:0}
+.stat b{display:block;font:300 44px/1 var(--display);letter-spacing:-.03em;color:var(--ink)}
+.stat b span{color:var(--amber-d)}
+.stat p{margin-top:8px;color:var(--slate);font-size:15px}
+
+/* route */
+.route{padding:84px 0 0}
+.route-in{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;max-width:900px;margin:0 auto}
+.cities{font:300 clamp(22px,2.6vw,32px)/1.35 var(--display);letter-spacing:-.01em;text-wrap:balance}
+.cities.from{color:var(--slate)}
+.cities.to{color:var(--ink)}
+.route svg{width:40px;height:72px;margin:8px 0}
+.route-cap{text-align:center;margin-top:26px;color:var(--slate);font-size:15px}
+
+/* sections */
+section.block{padding:110px 0}
+.head-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:end;margin-bottom:56px}
+.head-row h2{font-size:clamp(34px,4vw,52px);margin-top:16px}
+.head-row p{color:var(--slate);font-size:17px;max-width:30em}
+
+/* steps */
+.steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--ink)}
+.s3{padding:28px 32px 0 0}
+.s3+.s3{padding-left:32px;border-left:1px solid var(--line)}
+.s3 .num{font:300 64px/1 var(--display);color:var(--teal);letter-spacing:-.04em}
+.s3 h3{font-size:24px;font-weight:500;margin:18px 0 10px}
+.s3 p{color:var(--slate)}
+
+/* trust */
+.trust{background:var(--ink);color:#e9eef5}
+.trust .eyebrow{color:#7ee0d6}
+.trust .eyebrow::before{background:#7ee0d6}
+.trust .head-row p{color:#b8c2d1}
+.trust-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:stretch}
+.trust-photo{border-radius:var(--r);overflow:hidden;position:relative;min-height:420px}
+.trust-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% 50%}
+.trust-photo .cap{position:absolute;left:16px;bottom:16px;background:rgba(255,253,248,.95);color:var(--ink);border-radius:12px;padding:10px 14px;font-size:14px;display:flex;gap:10px;align-items:center}
+.trust-photo .cap .dot{flex:none}
+.tlist{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;column-gap:40px}
+.tlist li{padding:22px 0;border-top:1px solid rgba(255,255,255,.14)}
+.tlist .k{font:500 11.5px/1 var(--mono);letter-spacing:.12em;color:#7ee0d6}
+.tlist h3{font-size:22px;font-weight:500;margin:10px 0 6px;color:#fff}
+.tlist p{color:#b8c2d1;font-size:15px}
+
+/* roles */
+.roles-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.roles-tabs button{all:unset;box-sizing:border-box;cursor:pointer;min-height:46px;padding:0 18px;border-radius:999px;border:1px solid var(--line);background:var(--paper);font:500 15px/46px var(--body);color:var(--slate);transition:all .2s}
+.roles-tabs button:hover{color:var(--ink);border-color:var(--teal)}
+.roles-tabs button:focus-visible{outline:3px solid var(--teal-d);outline-offset:2px}
+.roles-tabs button[aria-selected="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.role{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);background:var(--paper);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:var(--shadow)}
+.role-img{position:relative;aspect-ratio:1000/671;max-width:1000px;background:#e9e3d6}
+.role-img img{width:100%;height:100%;object-fit:cover}
+.role-txt{padding:40px 44px;display:flex;flex-direction:column;gap:14px}
+.role-txt .k{font:500 12px/1 var(--mono);letter-spacing:.12em;color:var(--slate)}
+.role-txt h3{font-size:34px}
+.role-txt .tl{color:var(--teal-dd);font-weight:600}
+.role-txt p.d{color:var(--slate)}
+.offer{display:flex;gap:10px;align-items:flex-start;background:var(--mint);border-radius:12px;padding:12px 14px;font-size:14.5px;color:var(--teal-dd)}
+.offer svg{flex:none;width:18px;height:18px;margin-top:2px}
+.role-txt .btn{align-self:flex-start;margin-top:auto}
+
+/* community */
+.community{padding-top:0}
+.comm-head{max-width:640px;margin-bottom:40px}
+.comm-photo{margin:0}
+.comm-photo img{display:block;width:100%;height:auto;aspect-ratio:2/1;object-fit:cover;object-position:55% 20%;border-radius:16px;background:#e9e3d6}
+.comm-photo figcaption{margin-top:12px;font:500 11.5px/1.3 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--slate)}
+.posts-h{margin-top:64px;font:500 12px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--teal-d)}
+.posts{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.posts li{padding:22px 24px;background:var(--paper);border:1px solid var(--line);border-radius:14px}
+.posts q{font:400 19px/1.35 var(--display);quotes:"“" "”"}
+.posts span{display:block;margin-top:6px;font:500 11.5px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--slate)}
+
+/* faq */
+.faq{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.faq-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:56px}
+.faq-grid h2{font-size:clamp(34px,4vw,52px);margin-top:16px}
+details{border-top:1px solid var(--line)}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;align-items:center;padding:22px 0;min-height:44px;font:500 19px/1.35 var(--display)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:12px;height:12px;border-right:2px solid var(--teal-d);border-bottom:2px solid var(--teal-d);transform:rotate(45deg) translateY(-4px);transition:transform .25s}
+details[open] summary::after{transform:rotate(225deg) translateY(-2px)}
+details p{padding:0 40px 22px 0;color:var(--slate)}
+
+/* cta */
+.cta-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:56px;align-items:start}
+.cta h2{font-size:clamp(38px,4.6vw,60px);font-weight:300;margin:16px 0 18px}
+.cta h2 em{font-style:normal;color:var(--teal-d);font-weight:400}
+.cta .lede{color:var(--slate);font-size:17px}
+.contact-lines{margin-top:30px;display:flex;flex-direction:column;gap:2px}
+.contact-lines a{display:flex;align-items:center;gap:12px;min-height:48px;text-decoration:none;font-size:17px}
+.contact-lines a:hover span{text-decoration:underline}
+.contact-lines svg{width:20px;height:20px;color:var(--teal-d)}
+form{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:32px;box-shadow:var(--shadow)}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fld{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+label,.legend{font:600 13.5px/1.2 var(--body);color:var(--ink)}
+input,select,textarea{font:inherit;font-size:16px;color:var(--ink);background:#fff;border:1px solid #d8d0bf;border-radius:10px;padding:12px 14px;min-height:48px;width:100%}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:3px solid rgba(10,122,115,.35);border-color:var(--teal-d)}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:6px 0 14px}
+.seg label{display:flex;align-items:center;gap:10px;min-height:48px;padding:0 14px;border:1px solid #d8d0bf;border-radius:10px;background:#fff;cursor:pointer;font-weight:500}
+.seg input{width:18px;height:18px;min-height:0;accent-color:var(--teal-d)}
+.seg label:has(input:checked){border-color:var(--teal-d);background:var(--mint)}
+form .btn{width:100%}
+.thanks{margin-top:14px;padding:12px 14px;border-radius:10px;background:var(--mint);color:var(--teal-dd);font-weight:600}
+.thanks[hidden]{display:none}
+
+/* footer */
+footer{background:var(--ink);color:#b8c2d1;padding:56px 0 40px;font-size:14.5px}
+.foot-top{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;align-items:flex-start}
+footer .brand{color:#fff}
+footer .brand-mark{background:var(--teal)}
+.foot-top p{margin-top:12px;max-width:34em}
+.socials{display:flex;gap:6px;flex-wrap:wrap}
+.socials a{display:grid;place-items:center;width:44px;height:44px;border-radius:10px;border:1px solid rgba(255,255,255,.16);color:#e9eef5}
+.socials a:hover{border-color:#7ee0d6;color:#7ee0d6}
+.socials svg{width:18px;height:18px}
+.foot-bot{margin-top:40px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.foot-bot a{color:#e9eef5}
+
+/* call bar */
+.callbar{display:none}
+
+/* motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+
+/* tablet */
+@media (max-width:1020px){
+  .hero-grid,.trust-grid,.comm-grid,.faq-grid,.cta-grid,.head-row{grid-template-columns:1fr;gap:36px}
+  .role{grid-template-columns:1fr}
+  .role-img{max-width:none}
+  .nav a.link{display:none}
+}
+/* phone */
+@media (max-width:640px){
+  .wrap{width:calc(100% - 40px)}
+  .head-in{height:60px}
+  .nav .btn{min-height:44px;padding:0 14px;font-size:14px}
+  .hero{padding:36px 0 48px}
+  .hero h1{font-size:40px;margin:16px 0 16px}
+  .hero .lede{font-size:16.5px}
+  .hero-actions .btn{flex:1 1 100%}
+  .hero-note{font-size:13.5px}
+  .tr-top{padding:14px 16px}
+  .tr-prog{padding:12px 16px 2px}
+  .ms{grid-template-columns:1fr 1fr;padding:12px 16px}
+  .tr-body{grid-template-columns:1fr}
+  .tr-photo{min-height:210px}
+  .tr-steps{padding:16px}
+  .tr-feed{padding:10px 16px;flex-wrap:wrap}
+  .stats-in{grid-template-columns:1fr}
+  .stat{border-left:0;border-top:1px solid var(--line);padding:20px 0;display:flex;align-items:baseline;gap:16px}
+  .stat:first-child{border-top:0}
+  .stat b{font-size:34px;min-width:104px}
+  .stat p{margin:0;font-size:14.5px}
+  .route{padding-top:60px}
+  section.block{padding:72px 0}
+  .head-row{margin-bottom:36px}
+  .steps3{grid-template-columns:1fr}
+  .s3,.s3+.s3{padding:24px 0;border-left:0;border-top:1px solid var(--line);display:grid;grid-template-columns:56px 1fr;column-gap:12px}
+  .s3:first-child{border-top:0}
+  .s3 .num{font-size:44px;grid-row:span 2}
+  .s3 h3{margin:4px 0 6px;font-size:21px}
+  .trust-photo{min-height:300px}
+  .tlist{grid-template-columns:1fr}
+  .tlist li{padding:18px 0}
+  .roles-tabs{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px 20px;padding:0 20px 4px;scrollbar-width:none}
+  .roles-tabs::-webkit-scrollbar{display:none}
+  .roles-tabs button{flex:none}
+  .role-txt{padding:26px 22px}
+  .role-txt h3{font-size:28px}
+  .role-txt .btn{align-self:stretch}
+  .comm-photo img{aspect-ratio:16/9;object-position:55% 0}
+  .posts-h{margin-top:44px}
+  .posts{grid-template-columns:1fr;gap:12px}
+  summary{font-size:17.5px;padding:18px 0}
+  details p{padding-right:0}
+  form{padding:22px}
+  .f2{grid-template-columns:1fr;gap:0}
+  footer{padding-bottom:110px}
+  .callbar{display:grid;grid-template-columns:1fr 1.4fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,253,248,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+  .callbar .btn{min-height:48px}
+}
+</style>
+</head>
+<body>
+<div class="mock-banner" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="#top" aria-label="DiasporaBuild, back to top">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"><path d="M4 21V8l6-3v16M10 21V3l10 4v14M3 21h18M13 9h4M13 12.5h4M13 16h4M6.5 11h1M6.5 14.5h1"/></svg></span>
+      DiasporaBuild
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a class="link" href="#how">How it works</a>
+      <a class="link" href="#trust">Why it's safe</a>
+      <a class="link" href="#roles">Who it's for</a>
+      <a class="link" href="#faq">Questions</a>
+      <a class="btn btn-main" href="#start">Get started</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="hero-h">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Project management · Africa &amp; diaspora</p>
+      <h1 id="hero-h">Build in Africa.<br><em>Stay in control,</em> every step of&nbsp;the&nbsp;way.</h1>
+      <p class="lede">Verified contractors, daily photo proof from your site, and payments released only when you approve each milestone.</p>
+      <div class="hero-actions">
+        <a class="btn btn-main" href="#start">Start your project
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        <a class="btn btn-ghost" href="#how">See how it works</a>
+      </div>
+      <p class="hero-note"><span class="dot" aria-hidden="true"></span>Launch offer: 0% marketplace commission on your project.</p>
+    </div>
+
+    <div class="tracker" id="tracker" aria-label="Example project, illustrative">
+      <div class="tr-top">
+        <div class="tr-title"><b>Villa Douala</b><span>Douala, Cameroon · Structural work</span></div>
+        <span class="tag live">Live · Illustrative</span>
+      </div>
+      <div class="tr-prog">
+        <div class="tr-prog-row"><span>Milestones paid</span><b id="paidTxt">1 of 4</b></div>
+        <div class="bar" role="progressbar" aria-label="Milestones paid" aria-valuemin="0" aria-valuemax="4" aria-valuenow="1" id="bar"><i style="width:25%"></i></div>
+      </div>
+      <div class="ms" id="ms" role="group" aria-label="Milestones">
+        <button type="button" data-i="0" aria-pressed="false"><span class="n">Foundations</span><span class="s done">Done</span></button>
+        <button type="button" data-i="1" aria-pressed="true"><span class="n">Walls</span><span class="s prog">In progress</span></button>
+        <button type="button" data-i="2" aria-pressed="false"><span class="n">Roofing</span><span class="s">Next</span></button>
+        <button type="button" data-i="3" aria-pressed="false"><span class="n">Finishing</span><span class="s">Next</span></button>
+      </div>
+      <div class="tr-body">
+        <div class="tr-photo" id="trPhoto">
+          <img id="trImg" src="https://diasporabuild.com/api/files/file_3bddfdf4d7c7" alt="Block walls standing at full height on a two-storey house" width="1000" height="750" style="object-position:50% 40%">
+          <div class="cap"><span id="capL">Daily report · Walls</span><span id="capR">Photo proof</span></div>
+        </div>
+        <div class="tr-steps" aria-live="polite">
+          <h3 id="stepsH">Walls · this milestone</h3>
+          <div class="step ok" id="st0"><span class="ic"><svg viewBox="0 0 14 14" fill="none" stroke="#fff" stroke-width="2.4"><path d="M3 7.5l2.5 2.5L11 4.5"/></svg></span><div>Daily report signed by contractor<small id="st0s">Photos and notes uploaded from site</small></div></div>
+          <div class="step wait" id="st1"><span class="ic"><svg viewBox="0 0 14 14" fill="none" stroke="#fff" stroke-width="2.4"><path d="M3 7.5l2.5 2.5L11 4.5"/></svg></span><div>Independent inspection<small id="st1s">Waiting for the inspector's report</small></div></div>
+          <div class="step" id="st2"><span class="ic"><svg viewBox="0 0 14 14" fill="none" stroke="#fff" stroke-width="2.4"><path d="M3 7.5l2.5 2.5L11 4.5"/></svg></span><div>Payment to contractor<small id="st2s">Funds held until you approve</small></div></div>
+          <div class="tr-act"><button class="btn btn-main" type="button" id="act">Request inspection</button></div>
+        </div>
+      </div>
+      <div class="tr-feed"><span class="dot" aria-hidden="true"></span><span id="feed"><b>Live feed</b> · Contractor uploaded 4 photos</span><button class="reset" type="button" id="reset">Start over</button></div>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="wrap stats-in">
+    <div class="stat"><b>$100B<span>+</span></b><p>Annual diaspora remittances to Africa</p></div>
+    <div class="stat"><b>70<span>%</span></b><p>Of projects face delays or budget overruns</p></div>
+    <div class="stat"><b>24/7</b><p>Digital monitoring, now possible</p></div>
+  </div>
+</div>
+
+<section class="route rise-host" aria-label="Where our clients build from and to">
+  <div class="wrap">
+    <div class="route-in rise">
+      <p class="cities from">Berlin · London · Paris · Dubaï</p>
+      <svg viewBox="0 0 40 72" fill="none" aria-hidden="true"><path d="M20 4v56" stroke="#12a89f" stroke-width="1.5" stroke-dasharray="4 5"/><path d="M13 57l7 9 7-9" stroke="#0a7a73" stroke-width="2"/><circle cx="20" cy="4" r="3.5" fill="#0a7a73"/></svg>
+      <p class="cities to">Casablanca · Dakar · Abidjan · Accra · Lagos · Douala · Kinshasa · Addis Ababa · Nairobi · Cape Town · Johannesburg</p>
+    </div>
+    <p class="route-cap rise">You live abroad. Your build doesn't have to feel far away.</p>
+  </div>
+</section>
+
+<section class="block" id="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <div class="head-row rise">
+      <div><p class="eyebrow">How it works</p><h2 id="how-h">Build remotely in 3 simple steps</h2></div>
+      <p>Bring your own contractor or choose a verified one. Either way, every stage is tracked and every payment waits for proof.</p>
+    </div>
+    <div class="steps3">
+      <div class="s3 rise"><span class="num">01</span><div><h3>Create your project</h3><p>Define scope, budget and milestones with our guided wizard.</p></div></div>
+      <div class="s3 rise"><span class="num">02</span><div><h3>Find or invite experts</h3><p>Browse our verified marketplace, or invite your own contractor to manage the project on DiasporaBuild.</p></div></div>
+      <div class="s3 rise"><span class="num">03</span><div><h3>Track progress live</h3><p>Follow every stage with photos, videos and inspection reports.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block trust" id="trust" aria-labelledby="trust-h">
+  <div class="wrap">
+    <div class="head-row rise">
+      <div><p class="eyebrow">Trust layer</p><h2 id="trust-h">Nothing is paid on trust alone</h2></div>
+      <p>Six safeguards sit between your money and the site, so you always know what was built before anything is released.</p>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-photo rise">
+        <img src="https://diasporabuild.com/personas/inspector.webp" alt="An inspector with a clipboard checking a block wall on site" width="1000" height="671" loading="lazy">
+        <div class="cap"><span class="dot" aria-hidden="true"></span>Third-party inspectors validate quality before payment</div>
+      </div>
+      <ul class="tlist">
+        <li class="rise"><span class="k">01</span><h3>Verified experts</h3><p>Professionals verified by DiasporaBuild have passed a document check, shown on their profile.</p></li>
+        <li class="rise"><span class="k">02</span><h3>Real-time monitoring</h3><p>Daily photo and video updates at every construction stage.</p></li>
+        <li class="rise"><span class="k">03</span><h3>Independent inspections</h3><p>Third-party inspectors validate quality before payment.</p></li>
+        <li class="rise"><span class="k">04</span><h3>Milestone payments</h3><p>Funds held securely and released on your approval.</p></li>
+        <li class="rise"><span class="k">05</span><h3>Documented proof</h3><p>A timestamped audit trail: every action is recorded and reviewable.</p></li>
+        <li class="rise"><span class="k">06</span><h3>Dispute resolution</h3><p>A fair mediation process that protects all parties.</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="roles" aria-labelledby="roles-h">
+  <div class="wrap">
+    <div class="head-row rise">
+      <div><p class="eyebrow">Who it's for</p><h2 id="roles-h">One platform, five ways to build</h2></div>
+      <p>Clients, contractors, interior designers, inspectors and suppliers each get their own journey, tools and space.</p>
+    </div>
+    <div class="roles-tabs rise" role="tablist" aria-label="Choose your role" id="tabs">
+      <button type="button" role="tab" id="t0" aria-selected="true" aria-controls="rolePanel" data-i="0">Project owner</button>
+      <button type="button" role="tab" id="t1" aria-selected="false" aria-controls="rolePanel" data-i="1" tabindex="-1">Contractor</button>
+      <button type="button" role="tab" id="t2" aria-selected="false" aria-controls="rolePanel" data-i="2" tabindex="-1">Interior designer</button>
+      <button type="button" role="tab" id="t3" aria-selected="false" aria-controls="rolePanel" data-i="3" tabindex="-1">Inspector</button>
+      <button type="button" role="tab" id="t4" aria-selected="false" aria-controls="rolePanel" data-i="4" tabindex="-1">Supplier</button>
+    </div>
+    <div class="role rise" role="tabpanel" id="rolePanel" aria-labelledby="t0">
+      <div class="role-img"><img id="rImg" src="https://diasporabuild.com/personas/customer.webp" alt="A couple planning their home over floor plans and a laptop" width="1000" height="671" loading="lazy"></div>
+      <div class="role-txt">
+        <span class="k" id="rK">01 / 05</span>
+        <h3 id="rH">Project owner</h3>
+        <p class="tl" id="rT">Diaspora or local: build with total control</p>
+        <p class="d" id="rD">On site or from abroad, keep full control from the first idea to the handover of the keys: verified experts, live tracking and secured payments.</p>
+        <p class="offer"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="9" r="7.2"/><path d="M5.8 9.2l2.2 2.2 4.2-4.6"/></svg><span id="rO">Launch offer: 0% marketplace commission on your project. Advanced options remain available on subscription.</span></p>
+        <a class="btn btn-main" href="https://diasporabuild.com/" id="rA">Get started free</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block community" aria-labelledby="com-h">
+  <div class="wrap">
+    <div class="comm-head rise">
+      <p class="eyebrow">Visual proof</p>
+      <h2 id="com-h" style="font-size:clamp(32px,3.6vw,46px);margin-top:16px">Real building sites, shared by the community</h2>
+    </div>
+    <figure class="comm-photo rise">
+      <img src="https://diasporabuild.com/api/files/file_5aed1b5dd0cb" alt="Formwork for concrete columns rising from new foundations" width="1280" height="1005" loading="lazy">
+      <figcaption>A site shared by the community</figcaption>
+    </figure>
+    <div class="rise">
+      <h3 class="posts-h">From the community</h3>
+      <ul class="posts">
+        <li><q lang="fr">La maison terminée, la veille de la remise des clés à ma mère</q><span>Ngoma (Douala), Cameroun</span></li>
+        <li><q lang="fr">Les fondations reprises avec semelles renforcées, après l'étude de sol</q><span>Dakar, Sénégal</span></li>
+        <li><q lang="fr">La charpente et les bacs alu en cours de pose, semaine 2</q><span>Abidjan, Côte d'Ivoire</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="block faq" id="faq" aria-labelledby="faq-h">
+  <div class="wrap faq-grid">
+    <div class="rise"><p class="eyebrow">Questions</p><h2 id="faq-h">What the diaspora asks us first</h2></div>
+    <div class="rise">
+      <details open><summary>How do I avoid construction scams in Africa?</summary><p>Work with professionals who passed our document check, see daily photo and video proof, and let independent inspectors validate each stage. Your funds are held and only released when you approve.</p></details>
+      <details><summary>Can I use my own contractor?</summary><p>Yes. Invite your own contractor to manage the project on DiasporaBuild, or browse our verified marketplace.</p></details>
+      <details><summary>How are payments secured?</summary><p>By milestone. Funds are held securely and released on your approval, so the contractor is paid stage by stage, once the work is validated.</p></details>
+      <details><summary>Is DiasporaBuild free to use?</summary><p>You can get started free. During our launch offer there is 0% marketplace commission on your project, and advanced options remain available on subscription.</p></details>
+      <details><summary>Which countries are supported?</summary><p>Cameroon, Senegal, Ivory Coast, Nigeria, Ghana, Kenya and across Africa.</p></details>
+      <details><summary>What happens if there is a dispute with my contractor?</summary><p>A fair mediation process protects all parties, backed by a timestamped record of every action on the project.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="block cta" id="start" aria-labelledby="cta-h">
+  <div class="wrap cta-grid">
+    <div class="rise">
+      <p class="eyebrow">Get started</p>
+      <h2 id="cta-h">Ready to build <em>with confidence?</em></h2>
+      <p class="lede">Join the diaspora community building their dreams safely. Tell us about your project, or start right away on DiasporaBuild.</p>
+      <div class="contact-lines">
+        <a href="tel:+4917623917333"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v4a2 2 0 01-2 2A16 16 0 013 5a2 2 0 012-2z"/></svg><span>+49 176 23917333</span></a>
+        <a href="mailto:info@diasporabuild.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span>info@diasporabuild.com</span></a>
+        <a href="https://diasporabuild.com/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg><span>Create your account</span></a>
+      </div>
+    </div>
+    <form class="rise" id="form" novalidate>
+      <span class="legend" id="wantL">I want to</span>
+      <div class="seg" role="radiogroup" aria-labelledby="wantL">
+        <label><input type="radio" name="want" value="build" checked> Build</label>
+        <label><input type="radio" name="want" value="work"> Work as a pro</label>
+      </div>
+      <div class="f2">
+        <div class="fld"><label for="fn">Your name</label><input id="fn" name="name" autocomplete="name"></div>
+        <div class="fld"><label for="fe">Email</label><input id="fe" name="email" type="email" autocomplete="email"></div>
+      </div>
+      <div class="fld"><label for="fc">Where is the project?</label>
+        <select id="fc" name="country">
+          <option>Cameroon</option><option>Senegal</option><option>Ivory Coast</option><option>Nigeria</option><option>Ghana</option><option>Kenya</option><option>Another country in Africa</option>
+        </select></div>
+      <div class="fld"><label for="fm">Tell us about it</label><textarea id="fm" name="message" placeholder="A family house, a renovation, a plot you've just bought…"></textarea></div>
+      <button class="btn btn-main" type="submit">Send</button>
+      <p class="thanks" id="thanks" role="status" hidden>Thanks. This is a mockup, so nothing was sent.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"><path d="M4 21V8l6-3v16M10 21V3l10 4v14M3 21h18M13 9h4M13 12.5h4M13 16h4M6.5 11h1M6.5 14.5h1"/></svg></span>DiasporaBuild</a>
+        <p>Construction project management for the African diaspora: verified professionals, real-time progress proof and milestone payments.</p>
+      </div>
+      <nav class="socials" aria-label="DiasporaBuild on social media">
+        <a href="https://linkedin.com/company/diasporabuild" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 8.5h3v11h-3zM6 3.8a1.8 1.8 0 110 3.6 1.8 1.8 0 010-3.6zM10 8.5h2.9V10c.4-.8 1.5-1.7 3.1-1.7 3.2 0 3.8 2.1 3.8 4.9v6.3h-3v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H10z"/></svg></a>
+        <a href="https://facebook.com/diasporabuild" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5H16l.4-3h-2.9V8.6c0-.9.3-1.5 1.5-1.5h1.5V4.4c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2.4H8v3h2.6V21z"/></svg></a>
+        <a href="https://x.com/diasporabuild" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.8 3.5h3l-6.6 7.5 7.8 9.5h-6.1l-4.8-6.2-5.5 6.2h-3l7-8L2.2 3.5h6.2l4.3 5.7zm-1 15.3h1.7L7.3 5.1H5.5z"/></svg></a>
+        <a href="https://www.youtube.com/channel/UCBxqtptL10uWxRTI0INO4AQ" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2a2.5 2.5 0 00-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 002.4 7.2 26 26 0 002 12a26 26 0 00.4 4.8 2.5 2.5 0 001.8 1.8c1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4a2.5 2.5 0 001.8-1.8A26 26 0 0022 12a26 26 0 00-.4-4.8zM10 15V9l5.2 3z"/></svg></a>
+        <a href="https://tiktok.com/@diasporabuild" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 3c.3 2.2 1.6 3.6 3.9 3.8v2.9a7 7 0 01-3.9-1.2v6.4c0 3.6-2.6 6.1-6 6.1a5.8 5.8 0 01-5.9-5.9c0-3.6 3-6.2 6.7-5.8v3a2.9 2.9 0 00-3.7 2.8 2.9 2.9 0 003 3c1.7 0 2.9-1.2 2.9-3.2V3z"/></svg></a>
+        <a href="https://instagram.com/diasporabuild" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg></a>
+      </nav>
+    </div>
+    <div class="foot-bot">
+      <span>© DiasporaBuild</span>
+      <span>Mockup made for DiasporaBuild by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick contact">
+  <a class="btn btn-ghost" href="tel:+4917623917333">Call us</a>
+  <a class="btn btn-main" href="#start">Start your project</a>
+</div>
+
+<script>
+(function(){
+  /* ---------- milestone tracker ---------- */
+  var P7='https://diasporabuild.com/api/files/file_3bddfdf4d7c7', P8='https://diasporabuild.com/api/files/file_5aed1b5dd0cb';
+  var base=[
+    {n:'Foundations',img:P8,pos:'55% 30%',alt:'Formwork for concrete columns on new foundations',st:3,note:'Foundations poured'},
+    {n:'Walls',img:P7,pos:'50% 40%',alt:'Block walls standing at full height on a two-storey house',st:1,note:'Walls going up'},
+    {n:'Roofing',img:null,st:0},
+    {n:'Finishing',img:null,st:0}
+  ];
+  var ms, sel;
+  var $=function(id){return document.getElementById(id)};
+  var btns=[].slice.call(document.querySelectorAll('#ms button'));
+  function reset(){ms=base.map(function(m){return Object.assign({},m)});sel=1;render();feed('<b>Live feed</b> · Contractor uploaded 4 photos')}
+  function feed(h){$('feed').innerHTML=h}
+  function render(){
+    var paid=ms.filter(function(m){return m.st===3}).length;
+    $('paidTxt').textContent=paid+' of 4';
+    $('bar').setAttribute('aria-valuenow',paid);
+    $('bar').firstElementChild.style.width=(paid/4*100)+'%';
+    var active=ms.findIndex(function(m){return m.st<3});
+    btns.forEach(function(b,i){
+      var m=ms[i],s=b.querySelector('.s');
+      b.setAttribute('aria-pressed',i===sel?'true':'false');
+      if(m.st===3){s.textContent='Done';s.className='s done'}
+      else if(i===active){s.textContent='In progress';s.className='s prog';if(!m.st){m.st=1;}}
+      else{s.textContent='Next';s.className='s'}
+    });
+    var m=ms[sel];
+    $('stepsH').textContent=m.n+' · this milestone';
+    var ph=$('trPhoto'), img=$('trImg'), empty=ph.querySelector('.empty');
+    if(m.img){
+      if(empty)empty.remove();
+      img.style.display='';img.src=m.img;img.alt=m.alt;img.style.objectPosition=m.pos;
+      ph.querySelector('.cap').style.display='';
+      $('capL').textContent='Daily report · '+m.n;$('capR').textContent=m.st===3?'Validated':'Photo proof';
+    }else{
+      img.style.display='none';ph.querySelector('.cap').style.display='none';
+      if(!empty){empty=document.createElement('div');empty.className='empty';ph.appendChild(empty)}
+      empty.textContent=m.st?'Your contractor\'s first photos of this stage appear here.':'Not started yet. Funds for this stage stay held.';
+    }
+    var s0=$('st0'),s1=$('st1'),s2=$('st2');
+    s0.className='step'+(m.st>=1?' ok':'');
+    s1.className='step'+(m.st>=2?' ok':(m.st===1?' wait':''));
+    s2.className='step'+(m.st>=3?' ok':'');
+    $('st0s').textContent=m.st>=1?'Photos and notes uploaded from site':'Opens when work starts';
+    $('st1s').textContent=m.st>=2?'Quality validated before payment':(m.st===1?'Waiting for the inspector\'s report':'After the contractor\'s report');
+    $('st2s').textContent=m.st>=3?'Released on your approval':'Funds held until you approve';
+    var a=$('act');
+    a.disabled=false;
+    if(m.st===1){a.textContent='Request inspection'}
+    else if(m.st===2){a.textContent='Approve and release payment'}
+    else if(m.st===3){a.textContent='Paid · proof kept on record';a.disabled=true}
+    else{a.textContent='Waiting for earlier stages';a.disabled=true}
+  }
+  btns.forEach(function(b,i){b.addEventListener('click',function(){sel=i;render()})});
+  $('act').addEventListener('click',function(){
+    var m=ms[sel],a=this;
+    if(m.st===1){
+      a.disabled=true;a.textContent='Inspector on site…';
+      setTimeout(function(){m.st=2;render();feed('<b>Inspector</b> · '+m.n+' report validated ✓')},900);
+    }else if(m.st===2){
+      m.st=3;
+      var next=ms.findIndex(function(x){return x.st<3});
+      render();
+      feed('<b>Payment</b> · '+m.n+' released on your approval');
+      if(next>-1){setTimeout(function(){sel=next;render()},1400)}
+    }
+  });
+  $('reset').addEventListener('click',reset);
+  reset();
+
+  /* ---------- roles ---------- */
+  var roles=[
+    {h:'Project owner',t:'Diaspora or local: build with total control',d:'On site or from abroad, keep full control from the first idea to the handover of the keys: verified experts, live tracking and secured payments.',o:'Launch offer: 0% marketplace commission on your project. Advanced options remain available on subscription.',a:'Get started free',img:'customer',alt:'A couple planning their home over floor plans and a laptop'},
+    {h:'Contractor',t:'Your all-in-one site management OS',d:'Gantt planning, an offline field app, job costing, forms and payments, for diaspora clients and your own local clients.',o:'Marketplace: commission only at payout, 0% during launch. Espace Pro: 0% commission on your own clients, from €9 per seat a month, with a 14-day free trial.',a:'Discover the contractor space',img:'contractor',alt:'A site manager in a hard hat holding plans on a building site'},
+    {h:'Interior designer',t:'AI studio: from floor plan to client-ready proposal',d:'Upload a floor plan and generate photorealistic 3D concepts, 360° tours, priced FF&E quotes and a shareable PDF proposal, in minutes.',o:'3 free AI generations, unlimited with Espace Pro.',a:'Explore the Design Studio',img:'designer',alt:'An interior designer arranging material samples on a plan'},
+    {h:'Inspector',t:'Independent missions, paid on report validation',d:'Get independent inspection missions near you, deliver structured reports with photos, and get paid reliably once the report is validated.',o:'Fixed fee per mission: transparent, no subscription required.',a:'Become a verified inspector',img:'inspector',alt:'An inspector checking a block wall with a clipboard'},
+    {h:'Supplier',t:'Sell materials to active construction sites',d:'Publish your materials catalogue, answer quote requests from real projects, and track orders through delivery.',o:'No commission on your sales. Premium visibility options available.',a:'Open your supplier space',img:'supplier',alt:'A building materials supplier in his shop with bags of cement'}
+  ];
+  var tabs=[].slice.call(document.querySelectorAll('#tabs [role=tab]'));
+  function pick(i,focus){
+    var r=roles[i];
+    tabs.forEach(function(t,j){t.setAttribute('aria-selected',j===i?'true':'false');t.tabIndex=j===i?0:-1});
+    if(focus)tabs[i].focus();
+    $('rolePanel').setAttribute('aria-labelledby','t'+i);
+    $('rK').textContent='0'+(i+1)+' / 05';$('rH').textContent=r.h;$('rT').textContent=r.t;$('rD').textContent=r.d;$('rO').textContent=r.o;$('rA').textContent=r.a;
+    var im=$('rImg');im.src='https://diasporabuild.com/personas/'+r.img+'.webp';im.alt=r.alt;
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){pick(i)});
+    t.addEventListener('keydown',function(e){
+      if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();pick((i+(e.key==='ArrowRight'?1:4))%5,true)}
+    });
+  });
+
+  /* ---------- form ---------- */
+  $('form').addEventListener('submit',function(e){e.preventDefault();$('thanks').hidden=false});
+
+  /* ---------- gentle rise ---------- */
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce&&'IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.rise').forEach(function(el){
+      if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('will-rise');io.observe(el)}
+    });
+  }
+})();
+</script>
+</body>
+</html>
