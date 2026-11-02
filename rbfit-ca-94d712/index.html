@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup rbfit-ca-94d712 1 f6c6b52b -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Richard Burr Fitness | Personal Training & Sport Performance, Winnipeg</title>
+<meta name="description" content="Personal training, athletic therapy and nutrition coaching in Winnipeg. Book a free consult.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#15171b; --panel:#1e2127; --line:#2e323a; --text:#eceae6; --muted:#a9adb5;
+  --gold:#b8832f; --gold-hi:#d6a24f; --banner:#efe7d8;
+  --r:14px; --wrap:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--text);font:400 17px/1.6 Lato,system-ui,-apple-system,Segoe UI,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:Poppins,system-ui,sans-serif;line-height:1.12;margin:0;letter-spacing:-.01em}
+:focus-visible{outline:3px solid var(--gold-hi);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:12px;top:56px;background:var(--gold);color:var(--ink);padding:10px 14px;z-index:30}
+
+/* Signal Set banner */
+.ss-banner{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:var(--banner);color:#2a2318;font:400 15px/1.3 Lato,system-ui,sans-serif;text-align:center}
+.ss-banner a{color:#7a4f10;text-decoration:underline;text-underline-offset:3px;font-weight:700}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(21,23,27,.94);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.logo img{width:140px;height:56px;object-fit:contain}
+.nav{display:flex;align-items:center;gap:28px;font-size:15px}
+.nav a{text-decoration:none;color:var(--muted);padding:10px 0}
+.nav a:hover{color:var(--text)}
+.nav .tel{color:var(--text);font-weight:700}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:10px;font:700 16px/1 Lato,system-ui,sans-serif;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .15s ease,background .15s ease}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-gold:hover{background:var(--gold-hi);transform:translateY(-1px)}
+.btn-ghost{border-color:#4a4f58;color:var(--text);background:transparent}
+.btn-ghost:hover{border-color:var(--gold-hi)}
+.nav .btn{min-height:44px;padding:0 18px;font-size:15px;color:var(--ink)}
+
+/* hero */
+.hero{padding:64px 0 72px;position:relative}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:56px;align-items:center}
+.rating{display:inline-flex;align-items:center;gap:10px;font-size:15px;color:var(--muted);margin-bottom:22px}
+.stars{color:var(--gold-hi);letter-spacing:2px;font-size:16px}
+.rating b{color:var(--text)}
+.hero h1{font-size:clamp(36px,3.6vw,50px);font-weight:800}
+.hero h1 span{color:var(--gold-hi);display:block;font-size:.44em;font-weight:700;letter-spacing:.01em;margin-bottom:14px}
+.lede{font-size:19px;color:#cfd1d5;max-width:31em;margin:22px 0 32px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-photo{position:relative;margin:0}
+.hero-photo img{width:100%;max-width:640px;aspect-ratio:3/2;object-fit:cover;border-radius:var(--r);box-shadow:0 30px 60px -30px rgba(0,0,0,.8),0 0 0 1px rgba(255,255,255,.05)}
+.open{position:absolute;left:-28px;bottom:28px;background:#f6f3ee;color:#1b1d21;border-radius:12px;padding:14px 18px 14px 16px;display:flex;gap:12px;align-items:center;box-shadow:0 16px 40px -12px rgba(0,0,0,.6);font-size:15px;line-height:1.35}
+.open .dot{width:10px;height:10px;border-radius:50%;background:#2f8a4a;box-shadow:0 0 0 4px rgba(47,138,74,.18);flex:none}
+.open.closed .dot{background:#9b6a1e;box-shadow:0 0 0 4px rgba(155,106,30,.18)}
+.open b{display:block;font-family:Poppins,sans-serif;font-size:15px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:40px;padding-top:24px;border-top:1px solid var(--line);font-size:15px;color:var(--muted);list-style:none;padding-left:0}
+.facts li{display:flex;align-items:center;gap:8px}
+.facts li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold)}
+
+/* sections */
+section{scroll-margin-top:80px}
+.sec{padding:96px 0}
+.eyebrow{font:700 13px/1 Lato,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-hi);margin:0 0 14px}
+.sec h2{font-size:clamp(30px,3.4vw,44px);font-weight:700;max-width:18em}
+.sec .intro{color:var(--muted);max-width:36em;margin:14px 0 0}
+
+/* finder */
+.finder{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.finder-grid{display:grid;grid-template-columns:minmax(0,400px) minmax(0,1fr);gap:48px;margin-top:44px;align-items:start}
+.goals{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+.goal{width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:54px;padding:12px 18px;border-radius:10px;border:1px solid var(--line);background:var(--ink);color:var(--text);font:700 16px/1.3 Lato,sans-serif;text-align:left;cursor:pointer;transition:border-color .15s,background .15s}
+.goal small{font-weight:400;color:var(--muted);font-size:14px}
+.goal:hover{border-color:#4a4f58}
+.goal[aria-pressed="true"]{border-color:var(--gold);background:#272219}
+.goal[aria-pressed="true"]::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold-hi);flex:none}
+.goal[aria-pressed="true"] small{display:none}
+.result{background:var(--ink);border:1px solid var(--line);border-radius:var(--r);padding:20px;max-width:620px;box-shadow:0 30px 60px -40px rgba(0,0,0,.9)}
+.result .pic{position:relative;border-radius:10px;overflow:hidden;max-width:568px;aspect-ratio:16/9;background:#24272e}
+.result .pic img{width:100%;height:100%;object-fit:cover;transition:opacity .25s ease}
+.result .type{position:absolute;inset:0;display:none;flex-direction:column;justify-content:space-between;padding:clamp(16px,3vw,26px);background:var(--gold);color:var(--ink)}
+.result .type small{font:700 12px/1 Lato,sans-serif;letter-spacing:.16em;text-transform:uppercase}
+.result .type span{font:800 clamp(52px,9vw,104px)/.9 Poppins,sans-serif;letter-spacing:-.03em;margin-top:auto}
+.result .type i{display:block;height:3px;width:56px;background:var(--ink);margin:16px 0 12px}
+.result.no-photo .type{display:flex}
+.result.no-photo img{display:none}
+.result .body{padding:22px 6px 4px}
+.result .tag{font-size:14px;color:var(--gold-hi);font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.result h3{font-size:28px;margin:8px 0 10px}
+.result p{margin:0 0 22px;color:#cfd1d5;max-width:34em}
+
+/* who we train */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:56px;padding-top:40px;border-top:1px solid var(--line)}
+.who{display:grid;grid-template-columns:200px minmax(0,1fr);gap:22px;align-items:center}
+.who img{width:200px;aspect-ratio:4/3;object-fit:cover;border-radius:10px;box-shadow:0 0 0 1px rgba(255,255,255,.06)}
+.who .thumb{display:block;width:200px;overflow:hidden;border-radius:10px;box-shadow:0 0 0 1px rgba(255,255,255,.06)}
+.who .thumb img{display:block;box-shadow:none;border-radius:0}
+.who img.trap{object-position:100% 0;transform:scale(1.14);transform-origin:100% 0}
+.who h3{font-size:22px;margin:0 0 8px}
+.who p{margin:0;color:var(--muted);font-size:16px}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:56px;align-items:start}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-child{border-top:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:22px 0;font:600 18px/1.35 Poppins,sans-serif;min-height:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:400 26px/1 Lato,sans-serif;color:var(--gold-hi);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin:-6px 0 22px;color:#cfd1d5;max-width:36em}
+
+/* book */
+.book{background:var(--panel);border-top:1px solid var(--line)}
+.book-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,560px);gap:64px;align-items:start}
+.contact{list-style:none;padding:0;margin:36px 0 0;display:grid;gap:18px}
+.contact li{display:grid;grid-template-columns:96px 1fr;gap:12px;font-size:16px}
+.contact .k{color:var(--muted);font-size:14px;text-transform:uppercase;letter-spacing:.1em;padding-top:2px}
+.contact a{text-decoration:underline;text-decoration-color:#5a5f68;text-underline-offset:4px}
+.contact a:hover{text-decoration-color:var(--gold-hi)}
+form{background:var(--ink);border:1px solid var(--line);border-radius:var(--r);padding:28px;box-shadow:0 30px 60px -40px rgba(0,0,0,.9)}
+.summary{display:flex;gap:12px;align-items:center;background:#272219;border:1px solid #4a3c22;border-radius:10px;padding:14px 16px;margin-bottom:22px;font-size:15px}
+.summary b{font-family:Poppins,sans-serif;font-size:16px;display:block}
+.summary .ic{width:36px;height:36px;border-radius:8px;background:var(--gold);flex:none;display:grid;place-items:center}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:block;font-size:14px;font-weight:700;margin:0 0 6px;color:#d9dbde}
+.f{margin-bottom:16px}
+input,select,textarea{width:100%;min-height:48px;padding:12px 14px;border-radius:9px;border:1px solid #3a3e47;background:#1b1e23;color:var(--text);font:400 16px/1.3 Lato,sans-serif}
+select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,#d6a24f 50%),linear-gradient(135deg,#d6a24f 50%,transparent 50%);background-position:calc(100% - 20px) 50%,calc(100% - 15px) 50%;background-size:5px 5px;background-repeat:no-repeat;padding-right:36px}
+input::placeholder,textarea::placeholder{color:#8d929b}
+input:focus,select:focus,textarea:focus{border-color:var(--gold-hi);outline:none;box-shadow:0 0 0 3px rgba(214,162,79,.25)}
+textarea{min-height:88px;resize:vertical}
+form .btn{width:100%;margin-top:6px}
+.sent{margin:14px 0 0;padding:12px 14px;border-radius:9px;background:#1f3326;color:#d8f0df;font-size:15px}
+.sent[hidden]{display:none}
+
+footer{padding:40px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;align-items:center}
+footer img{width:110px;height:44px;object-fit:contain}
+footer a{color:#cfd1d5}
+
+.callbar{display:none}
+
+/* gentle rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .6s ease,transform .6s ease}
+
+@media (max-width:960px){
+  .hero .wrap,.finder-grid,.faq-grid,.book-grid{grid-template-columns:1fr}
+  .hero .wrap{gap:40px}
+  .hero-photo{max-width:640px}
+  .open{left:16px;bottom:16px}
+  .result{max-width:none}
+  .split{grid-template-columns:1fr}
+  .nav a:not(.btn):not(.tel){display:none}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:72px}
+  .wrap{padding:0 20px}
+  .top .wrap{height:64px}
+  .logo img{width:115px;height:46px}
+  .nav .tel{display:none}
+  .hero{padding:36px 0 56px}
+  .hero h1{font-size:36px}
+  .lede{font-size:17px;margin:18px 0 26px}
+  .actions .btn{flex:1 1 100%}
+  .facts{margin-top:30px;gap:10px 20px}
+  .open{position:relative;left:auto;bottom:auto;margin:-28px 14px 0;}
+  .sec{padding:68px 0}
+  .finder-grid{margin-top:30px;gap:22px}
+  .goals{grid-template-columns:1fr 1fr;gap:8px}
+  .goal{min-height:52px;padding:10px 12px;font-size:15px}
+  .goal small{display:none}
+  .result{padding:12px}
+  .result .body{padding:18px 6px 6px}
+  .result h3{font-size:24px}
+  .result .btn{width:100%}
+  .split{margin-top:40px;padding-top:28px;gap:24px}
+  .who{grid-template-columns:112px minmax(0,1fr);gap:16px;align-items:start}
+  .who img,.who .thumb{width:112px}
+  .who h3{font-size:19px;margin-bottom:4px}
+  .who p{font-size:15px}
+  .faq-grid{gap:28px}
+  .faq summary{font-size:17px;padding:18px 0}
+  .book-grid{gap:36px}
+  .contact li{grid-template-columns:80px 1fr}
+  form{padding:20px}
+  .row{grid-template-columns:1fr;gap:0}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:25;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(21,23,27,.97);border-top:1px solid var(--line)}
+  .callbar .btn{flex:1;min-height:48px;font-size:15px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="ss-banner" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Richard Burr Fitness, home"><img src="https://rbfit.ca/wp-content/uploads/2026/02/Richard-Burr-Fitness-Logo.webp" alt="Richard Burr Fitness logo" width="1000" height="400"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#programs">Services</a>
+      <a href="#faq">FAQ</a>
+      <a href="#book">Contact</a>
+      <a class="tel" href="tel:+12047823639">(204) 782-3639</a>
+      <a class="btn btn-gold" href="#book">Book a free consult</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="h-hero">
+    <div class="wrap">
+      <div>
+        <p class="rating"><span class="stars" aria-hidden="true">★★★★★</span><span><b>5.0 out of 5.0</b> on Google</span></p>
+        <h1 id="h-hero"><span>Richard Burr Fitness</span>Winnipeg’s top personal training &amp; sport performance facility.</h1>
+        <p class="lede">Personal training, athletic therapy and nutrition coaching, trusted by competitive athletes and driven adults across Winnipeg.</p>
+        <div class="actions">
+          <a class="btn btn-gold" href="#book">Book a free consult</a>
+          <a class="btn btn-ghost" href="#programs">Find your program</a>
+        </div>
+        <ul class="facts">
+          <li>1133 Empress St, Winnipeg</li>
+          <li>Athletes and everyday clients</li>
+        </ul>
+      </div>
+      <figure class="hero-photo">
+        <img src="https://rbfit.ca/wp-content/uploads/2026/03/richard-burr-fitness-personal-trainer-gym-winnipeg-strength-conditioning-coach-a1f51917-686e-4ce5-872e-9389327811f1.webp" alt="The strength room at Richard Burr Fitness, with racks, plates and hockey jerseys framed on the wall" width="1080" height="720" fetchpriority="high">
+        <div class="open" id="open" aria-live="polite"><span class="dot" aria-hidden="true"></span><span><b id="open-t">Open every day</b><span id="open-s">Monday – Sunday, 6:00 AM – 7:00 PM</span></span></div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec finder" id="programs" aria-labelledby="h-prog">
+    <div class="wrap">
+      <p class="eyebrow">Our services</p>
+      <h2 id="h-prog">What are you training for?</h2>
+      <p class="intro">Eight ways to train with us. Pick yours.</p>
+      <div class="finder-grid">
+        <ul class="goals" role="list" aria-label="Goals">
+          <li><button class="goal" type="button" data-k="pt" aria-pressed="true">Get stronger <small>Personal Training</small></button></li>
+          <li><button class="goal" type="button" data-k="hockey" aria-pressed="false">Play better hockey <small>Hockey Training</small></button></li>
+          <li><button class="goal" type="button" data-k="sport" aria-pressed="false">Perform in my sport <small>Sport-Specific</small></button></li>
+          <li><button class="goal" type="button" data-k="therapy" aria-pressed="false">Recover from injury <small>Athletic Therapy</small></button></li>
+          <li><button class="goal" type="button" data-k="boxing" aria-pressed="false">Fight fitter <small>Boxing Training</small></button></li>
+          <li><button class="goal" type="button" data-k="youth" aria-pressed="false">Train my young athlete <small>Youth Athlete</small></button></li>
+          <li><button class="goal" type="button" data-k="group" aria-pressed="false">Train with a group <small>Group Training</small></button></li>
+          <li><button class="goal" type="button" data-k="nutrition" aria-pressed="false">Eat for performance <small>Nutrition Coaching</small></button></li>
+        </ul>
+        <article class="result" id="result" aria-live="polite">
+          <div class="pic">
+            <img id="r-img" src="https://rbfit.ca/wp-content/uploads/2026/02/richard-burr-fitness-personal-trainer-strength-conditioning-coach-winnipeg-3ae4aa1b-40f4-467a-b203-e5c6c47b65c7.jpg" alt="A coach spotting a client on the bench press at Richard Burr Fitness" width="1136" height="639" loading="lazy">
+            <div class="type" aria-hidden="true"><small>Richard Burr Fitness</small><span id="r-word">Train</span><i></i><small id="r-sub">Winnipeg</small></div>
+          </div>
+          <div class="body">
+            <p class="tag" id="r-tag">Your program</p>
+            <h3 id="r-name">Personal Training</h3>
+            <p id="r-desc">Customized personal training designed to help you reach your fullest potential.</p>
+            <a class="btn btn-gold" id="r-cta" href="#book">Book a free consult for this</a>
+          </div>
+        </article>
+      </div>
+      <div class="split">
+        <div class="who">
+          <span class="thumb"><img class="trap" src="https://rbfit.ca/wp-content/uploads/2026/03/richard-burr-fitness-winnipeg-personal-trainer-strength-conditioning-coach-training-59e79ee2-ef03-4e78-ae7f-76332254275f1-768x432.jpg" alt="A coach guiding an athlete through a trap-bar lift at Richard Burr Fitness" width="568" height="319" loading="lazy"></span>
+          <div><h3>Competitive athletes</h3><p>Hockey and boxing specialists, training tailored to your sport and position, and a dedicated Youth Athlete program.</p></div>
+        </div>
+        <div class="who">
+          <img src="https://rbfit.ca/wp-content/uploads/2026/03/richard-burr-fitness-winnipeg-personal-trainer-group-workout-athletic-performance-training-56d8b28d-d3c9-4404-9216-31f16fd58529-768x513.jpg" alt="A coached group session at Richard Burr Fitness" width="568" height="379" loading="lazy">
+          <div><h3>Everyday clients</h3><p>Personal training, high-energy group sessions, athletic therapy and nutrition coaching for driven adults.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec faq" id="faq" aria-labelledby="h-faq">
+    <div class="wrap faq-grid">
+      <div>
+        <p class="eyebrow">Questions</p>
+        <h2 id="h-faq">Frequently asked questions</h2>
+        <p class="intro">Something else on your mind? Call <a href="tel:+12047823639">(204) 782-3639</a>.</p>
+      </div>
+      <div>
+        <details open>
+          <summary>What services do you offer?</summary>
+          <p>Personal training, athletic therapy, nutrition coaching, youth athlete training, group training and sport-specific training, including hockey and boxing.</p>
+        </details>
+        <details>
+          <summary>How do I get started?</summary>
+          <p>Book a free consult. Use the form below, call <a href="tel:+12047823639">(204) 782-3639</a> or email <a href="mailto:richardburrfitness@gmail.com">richardburrfitness@gmail.com</a>.</p>
+        </details>
+        <details>
+          <summary>Which sports do you specialize in?</summary>
+          <p>We offer dedicated hockey training and boxing strength and conditioning, plus sport-specific training tailored to your sport and position.</p>
+        </details>
+        <details>
+          <summary>Do you offer group training?</summary>
+          <p>Yes. Our group training sessions are high-energy and expertly coached.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec book" id="book" aria-labelledby="h-book">
+    <div class="wrap book-grid">
+      <div>
+        <p class="eyebrow">Get started</p>
+        <h2 id="h-book">Book your free consult.</h2>
+        <p class="intro">Don't wait to upgrade your training or recovery. Take the first step toward your performance goals.</p>
+        <ul class="contact">
+          <li><span class="k">Call</span><a href="tel:+12047823639">(204) 782-3639</a></li>
+          <li><span class="k">Email</span><a href="mailto:richardburrfitness@gmail.com">richardburrfitness@gmail.com</a></li>
+          <li><span class="k">Visit</span><a href="https://www.google.com/maps/search/?api=1&amp;query=1133%20Empress%20St%2C%20Winnipeg%2C%20MB%20R3E%203P8" target="_blank" rel="noopener">1133 Empress St, Winnipeg, MB R3E 3P8</a></li>
+          <li><span class="k">Hours</span><span>Monday – Sunday, 6:00 AM – 7:00 PM</span></li>
+        </ul>
+      </div>
+      <form id="form" novalidate>
+        <div class="summary" aria-live="polite"><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#15171b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><span><b id="sum-t">Free consult: Personal Training</b><span id="sum-s">Tuesday, 7:00 AM</span></span></div>
+        <div class="f">
+          <label for="f-prog">Program</label>
+          <select id="f-prog" name="program">
+            <option value="pt" selected>Personal Training</option>
+            <option value="hockey">Hockey Training</option>
+            <option value="sport">Sport-Specific Training</option>
+            <option value="therapy">Athletic Therapy</option>
+            <option value="boxing">Boxing Training</option>
+            <option value="youth">Youth Athlete Training</option>
+            <option value="group">Group Training</option>
+            <option value="nutrition">Nutrition Coaching</option>
+            <option value="unsure">Not sure yet</option>
+          </select>
+        </div>
+        <div class="row">
+          <div class="f">
+            <label for="f-day">Preferred day</label>
+            <select id="f-day" name="day">
+              <option>Monday</option><option selected>Tuesday</option><option>Wednesday</option><option>Thursday</option><option>Friday</option><option>Saturday</option><option>Sunday</option>
+            </select>
+          </div>
+          <div class="f">
+            <label for="f-time">Preferred time</label>
+            <select id="f-time" name="time">
+              <option>6:00 AM</option><option selected>7:00 AM</option><option>8:00 AM</option><option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option><option>6:00 PM</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="f">
+            <label for="f-name">Your name</label>
+            <input id="f-name" name="name" autocomplete="name" placeholder="First and last name">
+          </div>
+          <div class="f">
+            <label for="f-phone">Phone or email</label>
+            <input id="f-phone" name="contact" autocomplete="tel" placeholder="So we can confirm">
+          </div>
+        </div>
+        <div class="f">
+          <label for="f-msg">Your goals (optional)</label>
+          <textarea id="f-msg" name="message" placeholder="Sport, position, injury, anything we should know"></textarea>
+        </div>
+        <button class="btn btn-gold" type="submit">Request my free consult</button>
+        <p class="sent" id="sent" role="status" hidden>Thanks. This is a mockup, so nothing was sent.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="https://rbfit.ca/wp-content/uploads/2026/02/Richard-Burr-Fitness-Logo.webp" alt="Richard Burr Fitness" width="1000" height="400" loading="lazy">
+    <span>© 2026 Richard Burr Fitness · 1133 Empress St, Winnipeg</span>
+    <span>Mockup made for Richard Burr Fitness by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></span>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick actions">
+  <a class="btn btn-ghost" href="tel:+12047823639" aria-label="Call (204) 782-3639">Call us</a>
+  <a class="btn btn-gold" href="#book">Book free consult</a>
+</div>
+
+<script>
+(function(){
+  var U='https://rbfit.ca/wp-content/uploads/';
+  var P={
+    pt:{n:'Personal Training',w:'Train',d:'Customized personal training designed to help you reach your fullest potential.',i:U+'2026/02/richard-burr-fitness-personal-trainer-strength-conditioning-coach-winnipeg-3ae4aa1b-40f4-467a-b203-e5c6c47b65c7.jpg',a:'A coach spotting a client on the bench press at Richard Burr Fitness'},
+    hockey:{n:'Hockey Training',w:'Hockey',d:'Unlock your full hockey potential with Winnipeg’s leading hockey training experts.',i:U+'2026/03/richard-burr-fitness-personal-trainer-gym-winnipeg-strength-conditioning-coach-a1f51917-686e-4ce5-872e-9389327811f1.webp',a:'The strength room at Richard Burr Fitness, with hockey jerseys framed on the wall'},
+    sport:{n:'Sport-Specific Training',w:'Sport',d:'Expert sport-specific training tailored to your sport and position, to elevate your athletic performance.',i:U+'2026/02/richard-burr-fitness-personal-trainer-winnipeg-gym-discussion-workout-plans-athletic-performance-training-b8058aa0-e3bc-42d2-87c1-ef9894faa013.jpg',a:'Coaches talking through a training plan with an athlete at Richard Burr Fitness'},
+    therapy:{n:'Athletic Therapy',w:'Recover',d:'Accelerate your recovery, reduce your risk of reinjury and move with confidence.',i:U+'2026/02/richard-burr-personal-trainer-fitness-training-winnipeg-gym-705ad7ea-abbe-42dc-9665-0a63a98b47a41.jpg',a:'A coach stretching a client on the floor at Richard Burr Fitness'},
+    boxing:{n:'Boxing Training',w:'Boxing',d:'Unlock your full fighting potential with Winnipeg’s leading boxing strength and conditioning specialists.'},
+    youth:{n:'Youth Athlete Training',w:'Youth',d:'Set your young athlete up for lasting success with our dedicated Youth Athlete Training program.'},
+    group:{n:'Group Training',w:'Group',d:'Ignite your motivation and achieve more with our high-energy, expertly coached group training sessions.'},
+    nutrition:{n:'Nutrition Coaching',w:'Fuel',d:'Unlock your full potential with personalized nutrition coaching from Richard Burr Fitness.'},
+    unsure:{n:'Not sure yet'}
+  };
+  var $=function(id){return document.getElementById(id)};
+  var res=$('result'),img=$('r-img'),prog=$('f-prog'),day=$('f-day'),time=$('f-time');
+  function show(k){
+    var p=P[k]; if(!p||!p.d) return;
+    document.querySelectorAll('.goal').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.k===k?'true':'false')});
+    $('r-name').textContent=p.n; $('r-desc').textContent=p.d; $('r-word').textContent=p.w+'.'; $('r-sub').textContent=p.n+' · Winnipeg';
+    if(p.i){res.classList.remove('no-photo');img.src=p.i;img.alt=p.a;}else{res.classList.add('no-photo');img.alt='';}
+    $('r-cta').textContent='Book a free consult for '+p.n;
+    prog.value=k; sum();
+  }
+  function sum(){
+    var p=P[prog.value];
+    $('sum-t').textContent=prog.value==='unsure'?'Free consult':'Free consult: '+p.n;
+    $('sum-s').textContent=day.value+', '+time.value;
+  }
+  document.querySelectorAll('.goal').forEach(function(b){b.addEventListener('click',function(){show(b.dataset.k)})});
+  prog.addEventListener('change',function(){ if(P[prog.value].d) show(prog.value); else sum(); });
+  day.addEventListener('change',sum); time.addEventListener('change',sum);
+  $('form').addEventListener('submit',function(e){e.preventDefault();$('sent').hidden=false;});
+
+  // Open now, Winnipeg time (6 AM to 7 PM, every day)
+  try{
+    var h=+new Intl.DateTimeFormat('en-CA',{hour:'numeric',hourCycle:'h23',timeZone:'America/Winnipeg'}).format(new Date());
+    var o=$('open');
+    if(h>=6&&h<19){$('open-t').textContent='Open now';$('open-s').textContent='Until 7:00 PM today';}
+    else{o.classList.add('closed');$('open-t').textContent='Closed now';$('open-s').textContent='Opens at 6:00 AM, every day';}
+  }catch(e){}
+
+  // Gentle rise for things below the first screen
+  if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var els=[].slice.call(document.querySelectorAll('.sec h2,.sec .intro,.goals,.result,.split,.faq details,.contact,form'));
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.remove('will-rise');io.unobserve(x.target);}})},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(el){ if(el.getBoundingClientRect().top>innerHeight){el.classList.add('rise','will-rise');io.observe(el);} });
+})();
+</script>
+</body>
+</html>
