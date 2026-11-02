@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup cornhuskercapital-com-3817b4 1 bdc4b252 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cornhusker Capital | M&amp;A and Corporate Finance Advisory, Omaha</title>
+<meta name="description" content="Cornhusker Capital provides mergers and acquisitions, valuation, strategic advisory, and exit planning services for lower middle-market companies.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#a71d2a; --red-dk:#8c1722; --red-lt:#ec7680;
+  --ink:#171514; --ink-2:#221f1d; --ink-3:#2e2a27;
+  --paper:#fbf9f6; --sand:#f2ede6; --line:#e2dbd2;
+  --text:#2a2523; --muted:#5f5751; --on-dark:#f5f1ec; --on-dark-2:#bdb4aa;
+  --gold:#d6a43a;
+  --sans:"Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--sans);color:var(--text);background:var(--paper);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{margin:0;line-height:1.12;letter-spacing:-.01em}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:2px}
+.skip{position:absolute;left:12px;top:-60px;background:#fff;color:var(--ink);padding:10px 14px;z-index:50;font-weight:600}
+.skip:focus{top:56px}
+
+/* Signal Set banner */
+.ss-banner{display:flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;background:var(--sand);color:var(--ink);font:500 15px/1.3 var(--sans);text-align:center;border-bottom:1px solid var(--line)}
+.ss-banner a{color:var(--red-dk);text-decoration:underline;text-underline-offset:3px;font-weight:700}
+
+/* Header */
+.site-head{background:var(--ink);color:var(--on-dark);border-bottom:1px solid rgba(255,255,255,.08)}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;min-height:76px;gap:24px}
+.brand{display:flex;align-items:center;min-height:44px}
+.brand img{width:196px;height:auto}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--on-dark-2)}
+.nav a:hover{color:#fff}
+.nav .nav-cta{margin-left:10px;border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:2px}
+.nav .nav-cta:hover{border-color:#fff}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:2px;font:700 14px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-dk)}
+.btn-ghost{color:#fff;border-color:rgba(255,255,255,.45)}
+.btn-ghost:hover{border-color:#fff}
+.btn-line{color:var(--ink);border-color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:#fff}
+.arrow{display:inline-block;transition:transform .2s}
+.btn:hover .arrow{transform:translateX(3px)}
+
+/* Hero */
+.hero{position:relative;background:var(--ink);color:#fff;overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 58%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(23,21,20,.92) 0%,rgba(23,21,20,.78) 42%,rgba(23,21,20,.25) 100%),linear-gradient(0deg,rgba(23,21,20,.85) 0%,rgba(23,21,20,0) 40%)}
+.hero .wrap{position:relative;z-index:1;padding-top:104px;padding-bottom:96px}
+.eyebrow{display:flex;align-items:center;gap:12px;font-size:12.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--red)}
+.eyebrow::before{content:"";width:28px;height:2px;background:currentColor}
+.hero .eyebrow{color:var(--red-lt)}
+.hero h1{max-width:860px;margin-top:22px;font-size:clamp(38px,5.4vw,66px);font-weight:800;line-height:1.04;letter-spacing:-.02em}
+.hero h1 .name{display:block;font:italic 400 clamp(22px,2.2vw,28px)/1.2 var(--serif);letter-spacing:0;color:var(--on-dark-2);margin-bottom:14px}
+.hero .lede{max-width:560px;margin-top:24px;font-size:18px;line-height:1.6;color:#e7e1da}
+.hero .actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
+
+/* Ledger strip */
+.ledger{background:var(--ink);color:#fff;border-top:1px solid rgba(255,255,255,.08)}
+.ledger ul{list-style:none;margin:0 auto;padding:0 28px;max-width:var(--wrap);display:grid;grid-template-columns:repeat(4,1fr)}
+.ledger li{padding:30px 0 32px 26px;border-left:1px solid rgba(255,255,255,.12)}
+.ledger li:first-child{border-left:0;padding-left:0}
+.ledger b{display:block;font-size:clamp(30px,3.2vw,40px);font-weight:700;letter-spacing:-.02em;line-height:1}
+.ledger span{display:block;margin-top:10px;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--on-dark-2)}
+
+/* Sections */
+section{scroll-margin-top:12px}
+.sec{padding:112px 0}
+.sec-head{max-width:720px}
+.sec-head h2{margin-top:18px;font-size:clamp(32px,3.8vw,48px);font-weight:700;color:var(--ink)}
+.sec-head h2 em{font-family:var(--serif);font-weight:400;color:var(--red)}
+.sec-head p{margin-top:18px;font-size:18px;color:var(--muted);max-width:600px}
+
+/* Path finder */
+#start{background:var(--paper)}
+.choices{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:52px;border:1px solid var(--line);background:#fff}
+.choice{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:6px;min-height:96px;padding:22px 26px;border:0;border-left:1px solid var(--line);background:transparent;text-align:left;font:inherit;color:var(--text);cursor:pointer;transition:background .2s}
+.choice:first-child{border-left:0}
+.choice small{font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.choice span{font-size:18px;font-weight:700;color:var(--ink);line-height:1.3}
+.choice::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.choice:hover{background:var(--sand)}
+.choice[aria-pressed="true"]{background:var(--ink)}
+.choice[aria-pressed="true"] span{color:#fff}
+.choice[aria-pressed="true"] small{color:var(--red-lt)}
+.choice[aria-pressed="true"]::after{transform:scaleX(1)}
+
+.plan{display:grid;grid-template-columns:1.25fr 1fr;gap:0;border:1px solid var(--line);border-top:0;background:#fff}
+.plan-main{padding:44px 44px 40px}
+.plan-main h3{font-size:26px;font-weight:700;color:var(--ink)}
+.plan-main .sub{margin-top:10px;color:var(--muted);font-size:16.5px;max-width:520px}
+.steps{list-style:none;margin:34px 0 0;padding:0;counter-reset:s}
+.steps li{position:relative;display:grid;grid-template-columns:132px 1fr;gap:18px;padding:18px 0;border-top:1px solid var(--line)}
+.steps li:last-child{border-bottom:1px solid var(--line)}
+.steps b{font-size:12.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--red);padding-top:3px}
+.steps p{font-size:16px;color:var(--text)}
+.fit{margin-top:28px;display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.fit-label{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-right:4px}
+.tag{display:inline-flex;align-items:center;min-height:34px;padding:0 14px;border:1px solid var(--line);border-radius:999px;font-size:13.5px;font-weight:600;color:var(--ink);background:var(--paper)}
+.proof{margin-top:30px;padding:22px 24px;background:var(--sand);border-left:3px solid var(--red)}
+.proof q{display:block;font:italic 400 19px/1.5 var(--serif);color:var(--ink);quotes:"\201C" "\201D"}
+.proof cite{display:block;margin-top:10px;font-style:normal;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.plan-main .swap{transition:opacity .25s}
+.plan-main.fading .swap{opacity:.15}
+
+.note{background:var(--ink);color:var(--on-dark);padding:44px 40px 40px}
+.note h3{font-size:22px;font-weight:700;color:#fff}
+.note .sub{margin-top:8px;color:var(--on-dark-2);font-size:15px}
+.field{margin-top:18px}
+.field label{display:block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--on-dark-2);margin-bottom:8px}
+.field input,.field textarea{width:100%;min-height:48px;padding:12px 14px;border:1px solid #4a433e;border-radius:2px;background:var(--ink-2);color:#fff;font:400 16px/1.5 var(--sans)}
+.field textarea{min-height:138px;resize:vertical}
+.field input::placeholder{color:#9a9088}
+.field input:focus,.field textarea:focus{border-color:var(--gold);outline:none;box-shadow:0 0 0 3px rgba(214,164,58,.35)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.note .btn{width:100%;margin-top:22px}
+.note .fine{margin-top:14px;font-size:13px;color:var(--on-dark-2)}
+.thanks{margin-top:18px;padding:16px 18px;border:1px solid var(--gold);color:#fff;font-weight:600}
+.thanks[hidden]{display:none}
+
+/* Firm + services */
+#services{background:#fff;border-top:1px solid var(--line)}
+.firm{display:grid;grid-template-columns:1fr 1.2fr;gap:80px;align-items:start}
+.firm .traits{margin-top:36px;border-top:1px solid var(--line)}
+.firm .traits span{display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:1px solid var(--line);font:400 24px/1.3 var(--serif);color:var(--ink)}
+.firm .traits span::before{content:"";width:8px;height:8px;background:var(--red);transform:rotate(45deg)}
+.svc{list-style:none;margin:0;padding:0}
+.svc li{display:grid;grid-template-columns:56px 1fr;gap:10px;padding:28px 0;border-top:1px solid var(--line)}
+.svc li:last-child{border-bottom:1px solid var(--line)}
+.svc .n{font-size:13px;font-weight:700;color:var(--red);padding-top:6px;letter-spacing:.06em}
+.svc h3{font-size:19px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--ink)}
+.svc p{margin-top:6px;color:var(--muted)}
+.svc .extra{margin-top:24px;font-size:15px;color:var(--muted)}
+.svc .extra strong{color:var(--ink)}
+
+/* Transactions */
+#transactions{background:var(--paper)}
+.deals{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+.deal{position:relative;background:#fff;border:1px solid var(--line);padding:36px 30px 32px;text-align:center;box-shadow:0 1px 0 rgba(23,21,20,.04),0 18px 40px -28px rgba(23,21,20,.35)}
+.deal::before{content:"";position:absolute;inset:8px;border:1px solid var(--line);pointer-events:none}
+.deal .role{font-size:11.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--red)}
+.deal h3{margin-top:18px;font:600 30px/1.15 var(--serif);color:var(--ink);letter-spacing:0}
+.deal .rule{width:44px;height:1px;background:var(--ink);margin:18px auto}
+.deal p{font-family:var(--serif);font-size:17.5px;line-height:1.5;color:var(--text)}
+.deal p i{display:block;margin:6px 0;color:var(--muted)}
+
+/* Voices */
+.voices{background:var(--ink);color:var(--on-dark)}
+.voices .sec-head h2{color:#fff}
+.voices .eyebrow{color:var(--red-lt)}
+.quotes{display:grid;grid-template-columns:1.25fr 1fr;gap:64px;margin-top:56px}
+.quotes figure{margin:0}
+.quotes blockquote{margin:0;font:400 clamp(21px,2vw,26px)/1.5 var(--serif);color:#fff}
+.quotes blockquote mark{background:none;color:#fff;box-shadow:inset 0 -.32em 0 rgba(167,29,42,.75)}
+.quotes figcaption{margin-top:22px;font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--on-dark-2)}
+.quotes figcaption b{color:#fff;display:block;margin-bottom:4px}
+.quotes figure+figure{padding-left:64px;border-left:1px solid rgba(255,255,255,.14)}
+.awards{margin-top:88px;padding-top:44px;border-top:1px solid rgba(255,255,255,.14);display:grid;grid-template-columns:1fr 2.2fr;gap:48px;align-items:center}
+.awards h3{font-size:22px;font-weight:700;color:#fff}
+.awards p{margin-top:10px;color:var(--on-dark-2);font-size:15px}
+.badges{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.badges li{text-align:center}
+.badges img{width:100%;max-width:84px;height:auto;margin:0 auto;aspect-ratio:2/3;object-fit:contain}
+.badges span{display:block;margin-top:10px;font-size:11.5px;font-weight:600;letter-spacing:.06em;color:var(--on-dark-2);line-height:1.4}
+
+/* Team */
+#team{background:#fff}
+.people{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:56px;border-top:1px solid var(--ink)}
+.person{padding:30px 26px 10px 0}
+.person+.person{padding-left:26px;border-left:1px solid var(--line)}
+.mono{display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;border:1px solid var(--red);font:600 20px/1 var(--serif);color:var(--red)}
+.person h3{margin-top:22px;font-size:19px;font-weight:700;color:var(--ink)}
+.person .title{margin-top:6px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.person p{margin-top:14px;font-size:15px;color:var(--muted)}
+
+/* Close */
+.close{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.close .wrap{position:relative;z-index:1;padding-top:120px;padding-bottom:112px;text-align:center}
+.close .eyebrow{justify-content:center;color:var(--red-lt)}
+.close .eyebrow::after{content:"";width:28px;height:2px;background:currentColor}
+.close h2{margin:22px auto 0;max-width:780px;font-size:clamp(36px,5vw,60px);font-weight:800;letter-spacing:-.02em}
+.close p{margin:22px auto 0;max-width:520px;font-size:18px;color:#e7e1da}
+.close .actions{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:38px}
+.close .addr{margin-top:48px;font-size:15px;color:var(--on-dark-2)}
+.close .addr a{color:#fff;text-underline-offset:3px}
+.close .ring{position:absolute;left:50%;top:50%;width:900px;height:900px;margin:-450px 0 0 -450px;border:1px solid rgba(255,255,255,.06);border-radius:50%}
+.close .ring+.ring{width:620px;height:620px;margin:-310px 0 0 -310px}
+
+/* Footer */
+.foot{background:#0f0e0d;color:var(--on-dark-2);font-size:14px}
+.foot .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px;padding-top:64px;padding-bottom:48px}
+.foot img{width:170px;height:auto}
+.foot p{margin-top:16px;max-width:300px}
+.foot h2{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#fff;margin-bottom:12px}
+.foot ul{list-style:none;margin:0;padding:0}
+.foot li a{display:inline-flex;align-items:center;min-height:36px;text-decoration:none}
+.foot li a:hover{color:#fff;text-decoration:underline}
+.foot .base{border-top:1px solid rgba(255,255,255,.08)}
+.foot .base .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:22px;padding-bottom:26px;grid-template-columns:none}
+.foot .base a{color:var(--on-dark-2)}
+
+/* Phone action bar */
+.mbar{display:none}
+
+/* Rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:1020px){
+  .firm{grid-template-columns:1fr;gap:48px}
+  .plan{grid-template-columns:1fr}
+  .quotes{grid-template-columns:1fr;gap:48px}
+  .quotes figure+figure{padding-left:0;border-left:0;padding-top:48px;border-top:1px solid rgba(255,255,255,.14)}
+  .awards{grid-template-columns:1fr}
+  .people{grid-template-columns:1fr 1fr}
+  .person:nth-child(3){padding-left:0;border-left:0}
+  .person:nth-child(n+3){border-top:1px solid var(--line);margin-top:20px}
+  .foot .wrap{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+  .nav a:not(.nav-cta){display:none}
+  .deals{grid-template-columns:1fr;max-width:520px}
+}
+@media (max-width:640px){
+  .wrap{padding:0 20px}
+  .ss-banner{font-size:14.5px;padding:10px 12px}
+  .site-head .wrap{min-height:66px}
+  .brand img{width:164px}
+  .nav .nav-cta{margin-left:0;padding:0 12px;font-size:12px}
+  .hero .wrap{padding-top:64px;padding-bottom:56px}
+  .hero::after{background:linear-gradient(0deg,rgba(23,21,20,.94) 0%,rgba(23,21,20,.72) 55%,rgba(23,21,20,.5) 100%)}
+  .hero h1{font-size:38px}
+  .hero .lede{font-size:17px}
+  .hero .actions .btn{flex:1 1 100%}
+  .ledger ul{grid-template-columns:1fr 1fr;padding:0 20px}
+  .ledger li{padding:24px 0 24px 18px}
+  .ledger li:nth-child(3){border-left:0;padding-left:0}
+  .ledger li:nth-child(n+3){border-top:1px solid rgba(255,255,255,.12)}
+  .sec{padding:76px 0}
+  .sec-head p{font-size:17px}
+  .choices{grid-template-columns:1fr;margin-top:36px}
+  .choice{border-left:0;border-top:1px solid var(--line);min-height:76px;padding:16px 20px}
+  .choice:first-child{border-top:0}
+  .choice span{font-size:17px}
+  .plan-main{padding:30px 20px 28px}
+  .plan-main h3{font-size:22px}
+  .steps li{grid-template-columns:1fr;gap:4px}
+  .note{padding:32px 20px 30px}
+  .row2{grid-template-columns:1fr;gap:0}
+  .firm .traits span{font-size:21px}
+  .badges{grid-template-columns:repeat(3,1fr);gap:24px 12px}
+  .people{grid-template-columns:1fr}
+  .person,.person+.person,.person:nth-child(3){padding:26px 0 6px;border-left:0}
+  .person+.person{border-top:1px solid var(--line);margin-top:20px}
+  .close .wrap{padding-top:84px;padding-bottom:84px}
+  .close .actions .btn{flex:1 1 100%}
+  .foot .wrap{grid-template-columns:1fr;gap:28px}
+  body{padding-bottom:64px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--ink);border-top:1px solid rgba(255,255,255,.12)}
+  .mbar a{display:flex;align-items:center;justify-content:center;min-height:56px;padding:0 20px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:#fff}
+  .mbar a:first-child{background:var(--red)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="ss-banner" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Cornhusker Capital, back to top"><img src="https://cornhuskercapital.com/assets/images/logo-white.png" alt="Cornhusker Capital" width="600" height="116"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#transactions">Transactions</a>
+      <a href="#team">Team</a>
+      <a class="nav-cta" href="#start">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <img class="hero-img" src="https://images.unsplash.com/photo-1704692225223-afc06ae5d764?w=2000&amp;q=70&amp;auto=format&amp;fit=crop" alt="" width="2000" height="3000" fetchpriority="high">
+    <div class="wrap">
+      <p class="eyebrow">Middle-market advisory · Omaha · Since 2010</p>
+      <h1 id="hero-title"><span class="name">Cornhusker Capital</span>Trusted advisors for selling, buying or growing your company.</h1>
+      <p class="lede">Independent M&amp;A, valuation and exit planning for lower middle-market owners, with senior attention at every stage.</p>
+      <div class="actions">
+        <a class="btn btn-red" href="#start">Start a conversation <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="#transactions">See our transactions</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="ledger" role="region" aria-label="Cornhusker Capital at a glance">
+    <ul>
+      <li><b>50+</b><span>Years of experience</span></li>
+      <li><b>$2B+</b><span>In transaction value</span></li>
+      <li><b>150+</b><span>Total transactions</span></li>
+      <li><b>2010</b><span>Founded</span></li>
+    </ul>
+  </div>
+
+  <section class="sec" id="start" aria-labelledby="start-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Start here</p>
+        <h2 id="start-title">Every transaction begins with a <em>different question.</em></h2>
+        <p>Pick yours. See how we would take it on, then send a note to our senior advisors.</p>
+      </div>
+
+      <div class="choices" role="group" aria-label="Your situation">
+        <button class="choice" type="button" data-path="sale" aria-pressed="true"><small>Owners</small><span>I'm considering a sale</span></button>
+        <button class="choice" type="button" data-path="growth" aria-pressed="false"><small>Growth</small><span>I'm evaluating growth or an acquisition</span></button>
+        <button class="choice" type="button" data-path="unsure" aria-pressed="false"><small>Early days</small><span>Not sure where to start</span></button>
+      </div>
+
+      <div class="plan">
+        <div class="plan-main" aria-live="polite">
+          <div class="swap">
+            <h3 id="p-title">Selling your company, done properly.</h3>
+            <p class="sub" id="p-sub">Preparation for ownership transition, an independent view of value, and a process run by people who have advised on more than 150 transactions.</p>
+            <ol class="steps">
+              <li><b>We prepare</b><p id="p-1">Exit strategy planning and a free valuation analysis, so you know where you stand.</p></li>
+              <li><b>We advise</b><p id="p-2">Sell-side advisory from seasoned corporate finance executives with significant Fortune 500 experience.</p></li>
+              <li><b>We execute</b><p id="p-3">We carry the transaction through with you, and do the heavy lifting to unleash maximum value.</p></li>
+            </ol>
+            <div class="fit"><span class="fit-label">Fits</span><span id="p-tags"><span class="tag">Exit Strategy Planning</span> <span class="tag">Valuation Services</span> <span class="tag">Mergers &amp; Acquisitions</span></span></div>
+            <div class="proof" id="p-proof"><q>Their industry knowledge and financing connections brought us eight competing offers.</q><cite>Robert Gricius, Founder, NAVEOS</cite></div>
+          </div>
+        </div>
+
+        <form class="note" id="note" novalidate>
+          <h3>Your note to our advisors</h3>
+          <p class="sub">Goes to our senior advisors. We've started it for you.</p>
+          <div class="row2">
+            <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" placeholder="Your name"></div>
+            <div class="field"><label for="f-co">Company</label><input id="f-co" name="company" autocomplete="organization" placeholder="Your company"></div>
+          </div>
+          <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@company.com"></div>
+          <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message">I'm considering a sale of my company and would like a conversation about value, timing and how to prepare.</textarea></div>
+          <button class="btn btn-red" type="submit">Send note <span class="arrow" aria-hidden="true">→</span></button>
+          <p class="thanks" id="thanks" role="status" hidden>Thank you for reaching out to Cornhusker Capital.</p>
+          <p class="fine">Prefer email? <a href="mailto:reginald@cornhuskercapital.com">reginald@cornhuskercapital.com</a></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="services" aria-labelledby="svc-title">
+    <div class="wrap firm">
+      <div class="sec-head">
+        <p class="eyebrow">The firm</p>
+        <h2 id="svc-title">Trusted advisors for <em>consequential decisions.</em></h2>
+        <p>We are seasoned corporate finance executives with significant Fortune 500 experience. Our professionals have represented boards, special committees, public companies and private business owners.</p>
+        <div class="traits"><span>Independent</span><span>Experienced</span><span>Owner-focused</span></div>
+      </div>
+      <div>
+        <ul class="svc">
+          <li><span class="n">01</span><div><h3>Mergers &amp; Acquisitions</h3><p>Buy-side and sell-side advisory.</p></div></li>
+          <li><span class="n">02</span><div><h3>Valuation Services</h3><p>Independent analysis and transaction insight.</p></div></li>
+          <li><span class="n">03</span><div><h3>Strategic Advisory</h3><p>Financial strategy and corporate development.</p></div></li>
+          <li><span class="n">04</span><div><h3>Exit Strategy Planning</h3><p>Preparation for ownership transition.</p></div></li>
+        </ul>
+        <p class="svc extra">Also: <strong>free valuation analysis</strong> and <strong>corporate financial re-engineering</strong> for lower middle-market companies.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="transactions" aria-labelledby="tx-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Select transactions</p>
+        <h2 id="tx-title">Experience built <em>over time.</em></h2>
+        <p>A selection of engagements representing the firm's transaction experience.</p>
+      </div>
+      <div class="deals">
+        <article class="deal">
+          <p class="role">Select transaction</p>
+          <h3>AccuAir</h3>
+          <div class="rule"></div>
+          <p>Received an equity investment<i>from</i>a private family office based in California</p>
+        </article>
+        <article class="deal">
+          <p class="role">Select transaction</p>
+          <h3>NAVEOS</h3>
+          <div class="rule"></div>
+          <p>Majority recapitalization and growth capital<i>from</i>Tamroc Partners</p>
+        </article>
+        <article class="deal">
+          <p class="role">Select transaction</p>
+          <h3>ARES Security</h3>
+          <div class="rule"></div>
+          <p>A transaction<i>with</i>Corbel Capital Partners</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec voices" aria-labelledby="voices-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Client perspectives</p>
+        <h2 id="voices-title">What owners say after the deal.</h2>
+      </div>
+      <div class="quotes">
+        <figure>
+          <blockquote>“Cornhusker Capital was our third investment banker and produced <mark>superior results in half the time</mark> we spent with the prior two firms at a lower transaction cost. Their industry knowledge and financing connections brought us eight competing offers and allowed us to choose the best match for our needs.”</blockquote>
+          <figcaption><b>Robert Gricius</b>Founder, NAVEOS</figcaption>
+        </figure>
+        <figure>
+          <blockquote>“Cornhusker Capital <mark>delivers on what they say</mark> and says it like it is. Everyone on the team is accountable and trained to produce exceptional results.”</blockquote>
+          <figcaption><b>Bruce Tucker</b>Co-founder, Interior Mark</figcaption>
+        </figure>
+      </div>
+      <div class="awards">
+        <div>
+          <h3>Recognized for excellence.</h3>
+          <p>Six Axial Top 50 honors across healthcare, investment banking and technology, 2024 to 2026.</p>
+        </div>
+        <ul class="badges">
+          <li><img src="https://cornhuskercapital.com/assets/images/achievements/axial-top-50-healthcare-2024-final.png" alt="Axial Healthcare Top 50 2024" width="1024" height="1536" loading="lazy"><span>Healthcare 2024</span></li>
+          <li><img src="https://cornhuskercapital.com/assets/images/achievements/axial-top-50-investment-bank-2024-final.png" alt="Axial Investment Bank Top 50 2024" width="1024" height="1536" loading="lazy"><span>Investment Bank 2024</span></li>
+          <li><img src="https://cornhuskercapital.com/assets/images/achievements/axial-top-50-healthcare-2025-final.png" alt="Axial Healthcare Top 50 2025" width="1024" height="1536" loading="lazy"><span>Healthcare 2025</span></li>
+          <li><img src="https://cornhuskercapital.com/assets/images/achievements/axial-top-50-investment-bank-2025-final.png" alt="Axial Investment Bank Top 50 2025" width="1024" height="1536" loading="lazy"><span>Investment Bank 2025</span></li>
+          <li><img src="https://cornhuskercapital.com/assets/images/achievements/axial-top-50-technology-2025-final.png" alt="Axial Technology Top 50 2025" width="1024" height="1536" loading="lazy"><span>Technology 2025</span></li>
+          <li><img src="https://cornhuskercapital.com/assets/images/achievements/axial-top-50-technology-2026-final.png" alt="Axial Technology Top 50 2026" width="1024" height="1536" loading="lazy"><span>Technology 2026</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="team" aria-labelledby="team-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Management team</p>
+        <h2 id="team-title">Senior attention <em>at every stage.</em></h2>
+        <p>The experienced team guiding Cornhusker Capital and its clients through consequential business decisions.</p>
+      </div>
+      <div class="people">
+        <article class="person"><div class="mono" aria-hidden="true">RM</div><h3>Reginald E. McGaugh</h3><p class="title">Founder &amp; CEO</p><p>More than 30 years of M&amp;A and capital-raising experience across healthcare, energy, telecommunications and transportation.</p></article>
+        <article class="person"><div class="mono" aria-hidden="true">DW</div><h3>Devin Williams</h3><p class="title">Senior Managing Director</p><p>An engineer and executive with nearly 30 years of leadership in project delivery, manufacturing, technology transfer and commercialization.</p></article>
+        <article class="person"><div class="mono" aria-hidden="true">MY</div><h3>Matthew Youngman</h3><p class="title">Senior Managing Director</p><p>More than 30 years in public accounting and commercial finance, including senior roles at Amazon, Petco and Charlotte Russe.</p></article>
+        <article class="person"><div class="mono" aria-hidden="true">GM</div><h3>Grant McGaugh</h3><p class="title">Senior Managing Director</p><p>More than 20 years as a technology sales executive and business leader, at organizations including Zones, CenturyLink and Avaya.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="close" aria-labelledby="close-title">
+    <span class="ring" aria-hidden="true"></span><span class="ring" aria-hidden="true"></span>
+    <div class="wrap">
+      <p class="eyebrow">Considering a transaction?</p>
+      <h2 id="close-title">Let's define what comes next.</h2>
+      <p>Speak with senior advisors at Cornhusker Capital.</p>
+      <div class="actions">
+        <a class="btn btn-red" href="#start">Start a conversation <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="mailto:reginald@cornhuskercapital.com">Email us</a>
+      </div>
+      <p class="addr"><a href="https://www.google.com/maps/search/?api=1&amp;query=1299%20Farnam%20Street%2C%20Suite%20300%2C%20Omaha%2C%20Nebraska" target="_blank" rel="noopener">1299 Farnam Street, Suite 300, Omaha, Nebraska</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <img src="https://cornhuskercapital.com/assets/images/logo-white.png" alt="Cornhusker Capital" width="600" height="116" loading="lazy">
+      <p>Trusted advice for what comes next. Cornhusker Capital partners with middle-market companies to unlock value and create enduring outcomes.</p>
+    </div>
+    <nav aria-label="Footer">
+      <h2>Navigation</h2>
+      <ul><li><a href="#services">About</a></li><li><a href="#transactions">Transactions</a></li><li><a href="#team">Team</a></li><li><a href="#start">Contact</a></li></ul>
+    </nav>
+    <div>
+      <h2>Services</h2>
+      <ul><li><a href="#services">Mergers &amp; Acquisitions</a></li><li><a href="#services">Valuation Services</a></li><li><a href="#services">Strategic Advisory</a></li><li><a href="#services">Exit Strategy Planning</a></li></ul>
+    </div>
+    <div>
+      <h2>Contact</h2>
+      <ul><li><a href="https://www.google.com/maps/search/?api=1&amp;query=1299%20Farnam%20Street%2C%20Suite%20300%2C%20Omaha%2C%20Nebraska" target="_blank" rel="noopener">1299 Farnam Street, Suite 300<br>Omaha, Nebraska</a></li><li><a href="mailto:reginald@cornhuskercapital.com">reginald@cornhuskercapital.com</a></li></ul>
+    </div>
+  </div>
+  <div class="base"><div class="wrap"><span>© 2026 Cornhusker Capital</span><span>Mockup made for Cornhusker Capital by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></span></div></div>
+</footer>
+
+<nav class="mbar" aria-label="Quick actions">
+  <a href="#start">Get in touch</a>
+  <a href="mailto:reginald@cornhuskercapital.com">Email us</a>
+</nav>
+
+<script>
+(function(){
+  var paths={
+    sale:{
+      title:"Selling your company, done properly.",
+      sub:"Preparation for ownership transition, an independent view of value, and a process run by people who have advised on more than 150 transactions.",
+      s1:"Exit strategy planning and a free valuation analysis, so you know where you stand.",
+      s2:"Sell-side advisory from seasoned corporate finance executives with significant Fortune 500 experience.",
+      s3:"We carry the transaction through with you, and do the heavy lifting to unleash maximum value.",
+      tags:["Exit Strategy Planning","Valuation Services","Mergers & Acquisitions"],
+      quote:"Their industry knowledge and financing connections brought us eight competing offers…",
+      cite:"Robert Gricius, Founder, NAVEOS",
+      msg:"I'm considering a sale of my company and would like a conversation about value, timing and how to prepare."
+    },
+    growth:{
+      title:"Growing, buying or raising capital.",
+      sub:"Financial strategy and corporate development for owners pursuing growth and shareholder value, on the buy side or the capital side.",
+      s1:"Independent valuation analysis and transaction insight before you commit.",
+      s2:"Strategic advisory on financial strategy and corporate development, and buy-side advisory when an acquisition is the move.",
+      s3:"We carry the transaction through, from an acquisition to growth equity or a recapitalization.",
+      tags:["Strategic Advisory","Valuation Services","Mergers & Acquisitions"],
+      quote:"…produced superior results in half the time we spent with the prior two firms at a lower transaction cost.",
+      cite:"Robert Gricius, Founder, NAVEOS",
+      msg:"We're evaluating growth, an acquisition or new capital, and I'd like a conversation about our options."
+    },
+    unsure:{
+      title:"Start with a conversation.",
+      sub:"Not every decision begins with a deal. Speak with senior advisors first, and decide what comes next with a clear view of your company.",
+      s1:"A free valuation analysis, so the conversation starts from facts about your company.",
+      s2:"Plain, independent advice from a team that says it like it is.",
+      s3:"Strategic advisory or corporate financial re-engineering, or a transaction when the time is right.",
+      tags:["Valuation Services","Strategic Advisory","Exit Strategy Planning"],
+      quote:"Cornhusker Capital delivers on what they say and says it like it is.",
+      cite:"Bruce Tucker, Co-founder, Interior Mark",
+      msg:"I'm not sure where to start yet. I'd like a conversation with a senior advisor about where my company stands."
+    }
+  };
+  var $=function(id){return document.getElementById(id)};
+  var main=document.querySelector('.plan-main');
+  var btns=document.querySelectorAll('.choice');
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+  function fill(p){
+    $('p-title').textContent=p.title;$('p-sub').textContent=p.sub;
+    $('p-1').textContent=p.s1;$('p-2').textContent=p.s2;$('p-3').textContent=p.s3;
+    $('p-tags').innerHTML=p.tags.map(function(t){return '<span class="tag">'+esc(t)+'</span>'}).join(' ');
+    $('p-proof').innerHTML='<q>'+esc(p.quote)+'</q><cite>'+esc(p.cite)+'</cite>';
+    $('f-msg').value=p.msg;$('thanks').hidden=true;
+  }
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){
+      btns.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+      var p=paths[b.getAttribute('data-path')];
+      if(reduce){fill(p);return}
+      main.classList.add('fading');
+      setTimeout(function(){fill(p);main.classList.remove('fading')},220);
+    });
+  });
+  $('note').addEventListener('submit',function(e){e.preventDefault();$('thanks').hidden=false;});
+
+  if(!reduce&&'IntersectionObserver' in window){
+    var els=document.querySelectorAll('.sec-head,.choices,.plan,.svc,.deal,.quotes figure,.awards,.person,.close .wrap,.ledger li');
+    var vh=window.innerHeight;
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target)}});
+    },{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){
+      if(el.getBoundingClientRect().top>vh){el.classList.add('rise','will-rise');io.observe(el)}
+    });
+  }
+})();
+</script>
+</body>
+</html>
