@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup swiftsnacks-co-65c331 1 5b7c8114 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SwiftSnacks · Smart Stores for your workplace</title>
+<meta name="description" content="Modern refreshment amenities for your workplace. Tap to unlock, grab what you want, close and go.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0f172a;--ink2:#1e293b;--slate:#475569;--mute:#64748b;--line:#e2e8f0;--paper:#f8fafc;--white:#fff;
+  --blue:#2563eb;--blue-d:#1d4ed8;--sky:#60a5fa;--sky-l:#dbeafe;
+  --r:14px;--wrap:1160px;
+  --f:"Manrope",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--f);color:var(--ink);background:var(--white);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{margin:0;line-height:1.1;letter-spacing:-.025em;font-weight:800}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-9999px;top:0}
+.skip:focus{left:12px;top:56px;z-index:50;background:var(--white);padding:10px 14px}
+
+/* Signal Set banner */
+.ss-banner{display:flex;align-items:center;justify-content:center;min-height:44px;padding:0 16px;background:#e9eef6;color:var(--ink2);font-size:15px;line-height:1.2;white-space:nowrap;border-bottom:1px solid #d5dde9}
+.ss-banner a{color:var(--blue-d);text-decoration:underline;text-underline-offset:3px;font-weight:700;margin-left:.3em}
+
+/* header */
+.site-head{background:var(--white);border-bottom:1px solid var(--line)}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.mark{font-weight:800;font-size:24px;letter-spacing:-.035em;text-decoration:none;color:var(--ink);display:inline-flex;align-items:center;min-height:44px}
+.mark span{color:var(--blue)}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{text-decoration:none;font-weight:600;font-size:15px;color:var(--slate);padding:10px 14px;border-radius:10px;min-height:44px;display:inline-flex;align-items:center}
+.nav a:hover{color:var(--ink);background:var(--paper)}
+.nav .call{color:var(--ink);border:1px solid var(--line);margin-left:8px}
+.nav .call svg{width:16px;height:16px;margin-right:8px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:12px;font:700 16px/1 var(--f);text-decoration:none;border:0;cursor:pointer;transition:background .2s,transform .2s,box-shadow .2s}
+.btn-main{background:var(--blue);color:#fff;box-shadow:0 1px 0 rgba(255,255,255,.2) inset,0 8px 24px -10px rgba(37,99,235,.7)}
+.btn-main:hover{background:var(--blue-d);transform:translateY(-1px)}
+.btn-ghost{color:#fff;border:1.5px solid rgba(255,255,255,.35)}
+.btn-ghost:hover{border-color:#fff}
+.btn svg{width:18px;height:18px}
+
+/* hero */
+.hero{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:56px 56px;mask-image:linear-gradient(180deg,#000,transparent 85%);-webkit-mask-image:linear-gradient(180deg,#000,transparent 85%);pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding-top:88px;padding-bottom:96px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#cbd5e1}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--sky)}
+.hero h1{font-size:clamp(44px,6.2vw,80px);margin:22px 0 24px;letter-spacing:-.04em}
+.hero h1 em{font-style:normal;color:var(--sky)}
+.lede{font-size:20px;line-height:1.55;color:#cbd5e1;max-width:30em}
+.lede b{color:#fff;font-weight:700}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.pay-line{display:flex;align-items:center;gap:10px;margin-top:28px;font-size:15px;color:#94a3b8}
+.pay-line svg{width:20px;height:20px;color:var(--sky);flex:none}
+
+/* how it works, set in type */
+.demo{position:relative;max-width:480px;margin-left:auto;width:100%}
+.demo-top{display:flex;align-items:center;justify-content:space-between;font-size:13px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#94a3b8;padding:0 4px 14px}
+.demo-top .dot{width:8px;height:8px;border-radius:50%;background:#34d399;box-shadow:0 0 0 4px rgba(52,211,153,.15)}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.steps button{width:100%;display:grid;grid-template-columns:52px 1fr;gap:4px 16px;align-items:start;text-align:left;padding:20px 22px;border-radius:16px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03);color:#cbd5e1;font:500 15px/1.5 var(--f);cursor:pointer;transition:background .35s,border-color .35s,color .35s}
+.steps .num{grid-row:span 2;font-size:40px;font-weight:800;line-height:1;letter-spacing:-.04em;color:#94a3b8;transition:color .35s}
+.steps b{display:block;font-size:20px;font-weight:800;letter-spacing:-.015em;color:#fff;line-height:1.25;transition:color .35s}
+.steps button[aria-pressed="true"]{background:#fff;color:var(--slate);border-color:#fff}
+.steps button[aria-pressed="true"] .num{color:var(--blue)}
+.steps button[aria-pressed="true"] b{color:var(--ink)}
+.receipt{display:flex;align-items:center;gap:12px;margin-top:14px;padding:14px 18px;border-radius:14px;border:1px dashed rgba(255,255,255,.24);color:#cbd5e1;font-size:15px;transition:border-color .35s,background .35s,color .35s}
+.receipt .ic{width:34px;height:34px;border-radius:10px;background:rgba(96,165,250,.15);color:var(--sky);display:grid;place-items:center;flex:none}
+.receipt .ic svg{width:18px;height:18px}
+.demo[data-step="3"] .receipt{border-style:solid;border-color:rgba(52,211,153,.5);background:rgba(52,211,153,.08);color:#fff}
+
+/* sections */
+section{scroll-margin-top:16px}
+.sec{padding:112px 0}
+.kicker{font-size:14px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
+.h2{font-size:clamp(34px,4.2vw,52px);margin-top:14px}
+.sub{font-size:19px;color:var(--slate);margin-top:18px;max-width:34em}
+
+/* why */
+.why .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+.why-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.why-list li{display:grid;grid-template-columns:56px 1fr;gap:20px;padding:28px 0;border-bottom:1px solid var(--line)}
+.why-list .ic{width:56px;height:56px;border-radius:14px;background:var(--paper);border:1px solid var(--line);display:grid;place-items:center;color:var(--blue)}
+.why-list .ic svg{width:24px;height:24px}
+.why-list h3{font-size:21px;letter-spacing:-.015em}
+.why-list p{color:var(--slate);margin-top:6px}
+
+/* spaces, inside the why column */
+.spaces{margin-top:40px;padding-top:28px;border-top:1px solid var(--line)}
+.spaces p{font-size:16px;color:var(--slate)}
+.spaces p strong{color:var(--ink)}
+.spaces ul{display:flex;gap:8px;list-style:none;margin:14px 0 0;padding:0;flex-wrap:wrap}
+.spaces li a{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:99px;background:var(--paper);border:1px solid var(--line);text-decoration:none;font-weight:700;font-size:15px;transition:border-color .2s,transform .2s}
+.spaces li a:hover{border-color:var(--blue);transform:translateY(-1px)}
+.spaces li svg{width:18px;height:18px;color:var(--blue)}
+
+/* planner */
+.plan{background:var(--white)}
+.plan-head{max-width:640px}
+.planner{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:56px;align-items:start}
+.choices{display:grid;gap:32px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{padding:0;font-weight:800;font-size:15px;letter-spacing:.02em;margin-bottom:14px;display:flex;gap:10px;align-items:center}
+legend .n{width:26px;height:26px;border-radius:50%;background:var(--ink);color:#fff;display:inline-grid;place-items:center;font-size:13px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.chip span{display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 18px;border-radius:12px;border:1.5px solid var(--line);background:#fff;font-weight:600;font-size:16px;color:var(--ink2);transition:border-color .2s,background .2s,color .2s}
+.chip span::before{content:"";width:16px;height:16px;border-radius:50%;border:1.5px solid #94a3b8;flex:none;transition:all .2s}
+.chip input[type=checkbox]+span::before{border-radius:5px}
+.chip input:checked+span{border-color:var(--blue);background:#eff6ff;color:var(--ink)}
+.chip input:checked+span::before{background:var(--blue) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.5l2.5 2.5L12 5.5' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/12px no-repeat;border-color:var(--blue)}
+.chip input:focus-visible+span{outline:3px solid var(--sky);outline-offset:2px}
+.hint{font-size:14px;color:var(--mute);margin-top:10px}
+
+.ticket{background:var(--ink);color:#fff;border-radius:20px;padding:28px;box-shadow:0 30px 60px -30px rgba(15,23,42,.55)}
+.ticket-top{display:flex;justify-content:space-between;align-items:center;font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#94a3b8}
+.ticket h3{font-size:26px;margin-top:14px;letter-spacing:-.02em}
+.ticket .sum{color:#cbd5e1;margin-top:8px;font-size:16px}
+.units{list-style:none;margin:22px 0 4px;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.units li{display:flex;flex-direction:column;justify-content:space-between;min-height:84px;padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.05);font-weight:800;font-size:17px;letter-spacing:-.01em;color:#fff;animation:pop .35s ease}
+.units li small{font-size:12px;font-weight:800;letter-spacing:.12em;color:var(--sky)}
+.units li.off{border-style:dashed;background:none;color:#94a3b8;font-weight:600}
+.units li.off small{color:#94a3b8}
+@keyframes pop{from{transform:translateY(4px);opacity:.5}to{transform:none;opacity:1}}
+.perks{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:10px;font-size:15px;color:#cbd5e1}
+.perks li{display:flex;gap:10px;align-items:center}
+.perks svg{width:18px;height:18px;color:#34d399;flex:none}
+
+.req{margin-top:24px;padding-top:24px;border-top:1px dashed rgba(255,255,255,.18);display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.req label{display:block;font-size:13px;font-weight:700;color:#cbd5e1;margin-bottom:6px}
+.req .full{grid-column:1/-1}
+.req input{width:100%;min-height:48px;padding:0 14px;border-radius:10px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:#fff;font:500 16px var(--f)}
+.req input::placeholder{color:#94a3b8}
+.req input:focus{outline:none;border-color:var(--sky);background:rgba(255,255,255,.1)}
+.req .btn{width:100%}
+.thanks{grid-column:1/-1;font-weight:700;color:#bbf7d0;font-size:15px;min-height:0}
+
+/* story */
+.story{background:var(--paper);border-top:1px solid var(--line)}
+.story .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px 72px;align-items:start}
+.q{font-size:clamp(30px,3.6vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.12}
+.q span{color:var(--blue)}
+.story-body p{color:var(--slate);font-size:18px}
+.story-body p+p{margin-top:16px}
+.values{display:grid;grid-template-columns:1fr 1fr;gap:28px 32px;margin-top:0;grid-column:1/-1;padding-top:32px;border-top:1px solid var(--line)}
+.values h3{font-size:18px;display:flex;align-items:center;gap:10px}
+.values h3::before{content:"";width:10px;height:10px;border-radius:3px;background:var(--blue)}
+.values p{color:var(--slate);font-size:16px;margin-top:6px}
+
+/* faq */
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px}
+.faq dl{margin:0;border-top:1px solid var(--line)}
+.faq dt{font-weight:800;font-size:19px;letter-spacing:-.01em;padding-top:24px}
+.faq dd{margin:6px 0 0;padding-bottom:24px;border-bottom:1px solid var(--line);color:var(--slate)}
+
+/* final */
+.final{background:var(--ink);color:#fff;text-align:center;padding:112px 0}
+.final h2{font-size:clamp(36px,4.6vw,58px);letter-spacing:-.035em}
+.final h2 em{font-style:normal;color:var(--sky)}
+.final p{color:#cbd5e1;font-size:19px;margin:18px auto 0;max-width:30em}
+.final .hero-actions{justify-content:center}
+.contact-row{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin-top:40px;font-size:16px}
+.contact-row a{color:#e2e8f0;text-decoration:none;display:inline-flex;align-items:center;gap:10px;min-height:44px}
+.contact-row a:hover{color:#fff;text-decoration:underline}
+.contact-row svg{width:18px;height:18px;color:var(--sky)}
+
+footer{background:#0b1222;color:#94a3b8;font-size:14px;padding:44px 0 40px}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start}
+footer .mark{color:#fff;font-size:20px}
+footer .mark span{color:var(--sky)}
+footer p{margin-top:4px}
+footer .made{width:100%;padding-top:24px;margin-top:8px;border-top:1px solid #1e293b;color:#94a3b8}
+footer .made a{color:#cbd5e1}
+
+/* phone call bar */
+.callbar{display:none}
+
+/* rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+[data-rise]{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:980px){
+  .hero .wrap{grid-template-columns:1fr;gap:48px;padding-top:56px;padding-bottom:72px}
+  .demo{margin-left:0;max-width:none}
+  .why .wrap,.story .wrap,.faq .wrap{grid-template-columns:1fr;gap:40px}
+  .planner{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  body{font-size:16px;padding-bottom:68px}
+  .wrap{padding:0 20px}
+  .nav a:not(.call){display:none}
+  .nav .call{margin-left:0;padding:10px 12px}
+  .nav .call .t{display:none}
+  .nav .call svg{margin-right:0}
+  .nav .call::after{content:"Call";}
+  .site-head .wrap{height:64px}
+  .mark{font-size:22px}
+  .hero h1{font-size:46px;margin:18px 0 18px}
+  .lede{font-size:18px}
+  .hero-actions .btn{flex:1 1 100%}
+  .steps button{grid-template-columns:36px 1fr;gap:2px 14px;padding:16px 18px}
+  .steps .num{font-size:32px}
+  .steps b{font-size:18px}
+  .sec{padding:76px 0}
+  .sub{font-size:17px}
+  .why-list li{grid-template-columns:48px 1fr;gap:16px;padding:22px 0}
+  .why-list .ic{width:48px;height:48px}
+  .planner{margin-top:36px}
+  .ticket{padding:22px;border-radius:18px;margin:0 -4px}
+  .req{grid-template-columns:1fr}
+  .units li{min-height:72px;font-size:16px;padding:10px 12px}
+  .values{grid-template-columns:1fr}
+  .final{padding:80px 0}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;gap:8px;padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line);box-shadow:0 -8px 24px -12px rgba(15,23,42,.3)}
+  .callbar a{flex:1;min-height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:800;font-size:15px;text-decoration:none}
+  .callbar .c1{background:var(--ink);color:#fff}
+  .callbar .c2{background:var(--blue);color:#fff}
+  .callbar svg{width:18px;height:18px}
+}
+@media (max-width:380px){.ss-banner{font-size:14px}.hero h1{font-size:40px}}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="ss-banner" role="note">Here's your free mockup from <a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="SwiftSnacks home"><span>Swift</span>Snacks</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#how">How it works</a>
+      <a href="#plan">Your space</a>
+      <a href="#story">About</a>
+      <a href="#faq">Questions</a>
+      <a class="call" href="tel:+17182185727"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span class="t">(718) 218-5727</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="h-hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Smart Stores for your workplace</p>
+      <h1 id="h-hero">Snack Smart, Snack <em>Swift</em>.</h1>
+      <p class="lede">Modern refreshment amenities your team will actually appreciate. <b>Tap to unlock, grab what you want, close and go.</b> We handle the restocking.</p>
+      <div class="hero-actions">
+        <a class="btn btn-main" href="#plan">Plan a Smart Store for your space <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="#how">See how it works</a>
+      </div>
+      <p class="pay-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8.5 7.5a6 6 0 0 1 0 9M12 5a9.5 9.5 0 0 1 0 14M5 10a2.5 2.5 0 0 1 0 4"/></svg>Touchless: card, phone or watch. Receipt by SMS.</p>
+    </div>
+
+    <div class="demo" id="how" data-step="3" aria-labelledby="h-how">
+      <h2 id="h-how" class="demo-top"><span>How it works</span><span class="dot" aria-hidden="true"></span></h2>
+      <ol class="steps">
+        <li><button type="button" aria-pressed="false" data-go="1"><span class="num">1</span><b>Tap to Unlock</b>Use your card, phone or watch to unlock the Smart Store door.</button></li>
+        <li><button type="button" aria-pressed="false" data-go="2"><span class="num">2</span><b>Grab What You Want</b>Take whatever catches your eye. Our AI tracks it all.</button></li>
+        <li><button type="button" aria-pressed="true" data-go="3"><span class="num">3</span><b>Close &amp; Go</b>Just close the door and walk away.</button></li>
+      </ol>
+      <p class="receipt"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>Your receipt arrives via SMS.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec why" aria-labelledby="h-why">
+  <div class="wrap">
+    <div data-rise>
+      <p class="kicker">Why SwiftSnacks</p>
+      <h2 class="h2" id="h-why">More than just snacks.</h2>
+      <p class="sub">A modern amenity for your workplace. No buttons, no waiting: just tap and take.</p>
+      <div class="spaces" role="region" aria-label="Spaces we fit">
+        <p><strong>Perfect for any space.</strong> From corporate offices to residential buildings.</p>
+        <ul>
+          <li><a href="#plan" data-space="Offices"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 7h2M14 7h2M8 11h2M14 11h2M10 21v-4h4v4"/></svg>Offices</a></li>
+          <li><a href="#plan" data-space="Gyms"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 7v10M18 7v10M3 10v4M21 10v4M6 12h12"/></svg>Gyms</a></li>
+          <li><a href="#plan" data-space="Lounges"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 18v-6a2 2 0 0 1 4 0v2h8v-2a2 2 0 0 1 4 0v6zM6 10V8a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v2M6 18v2M18 18v2"/></svg>Lounges</a></li>
+          <li><a href="#plan" data-space="Residential"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 4l9 7M5 10v10h14V10M10 20v-5h4v5"/></svg>Residential</a></li>
+        </ul>
+      </div>
+    </div>
+    <ul class="why-list">
+      <li data-rise><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></span><div><h3>Instant refreshments</h3><p>Your selection in seconds. Grab what you need and get back to what matters.</p></div></li>
+      <li data-rise><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg></span><div><h3>Thoughtfully curated</h3><p>Energizing options, better-for-you choices and satisfying favorites from trusted brands.</p></div></li>
+      <li data-rise><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></span><div><h3>Seamless payments</h3><p>Tap with your card, phone or watch. Touchless, and it fits right into the day.</p></div></li>
+      <li data-rise><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8M21 3v5h-5M21 12a9 9 0 0 1-15.5 6.2L3 16M3 21v-5h5"/></svg></span><div><h3>Always fresh</h3><p>Intelligent inventory keeps favorites in stock. We handle the restocking, so you never miss a beat.</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec plan" id="plan" aria-labelledby="h-plan">
+  <div class="wrap">
+    <div class="plan-head" data-rise>
+      <p class="kicker">Your Smart Store</p>
+      <h2 class="h2" id="h-plan">Plan one for your space.</h2>
+      <p class="sub">Tap through three choices and send it to us. We listen, adapt, and tailor it to your workplace.</p>
+    </div>
+    <form class="planner" id="planner" novalidate>
+      <div class="choices">
+        <fieldset>
+          <legend><span class="n">1</span>Where will it go?</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="space" value="Offices" checked><span>Office</span></label>
+            <label class="chip"><input type="radio" name="space" value="Gyms"><span>Gym</span></label>
+            <label class="chip"><input type="radio" name="space" value="Lounges"><span>Lounge</span></label>
+            <label class="chip"><input type="radio" name="space" value="Residential"><span>Residential building</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><span class="n">2</span>Which units?</legend>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="unit" value="Ambient" checked><span>Ambient</span></label>
+            <label class="chip"><input type="checkbox" name="unit" value="Fridge" checked><span>Fridge</span></label>
+            <label class="chip"><input type="checkbox" name="unit" value="Freezer"><span>Freezer</span></label>
+          </div>
+          <p class="hint">Side by side, as one Smart Store.</p>
+        </fieldset>
+        <fieldset>
+          <legend><span class="n">3</span>What should it carry?</legend>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="mix" value="energizing options" checked><span>Energizing options</span></label>
+            <label class="chip"><input type="checkbox" name="mix" value="better-for-you choices" checked><span>Better-for-you choices</span></label>
+            <label class="chip"><input type="checkbox" name="mix" value="satisfying favorites"><span>Satisfying favorites</span></label>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="ticket" aria-live="polite">
+        <div class="ticket-top"><span>Your request</span><span id="t-count">2 units</span></div>
+        <h3 id="t-title">A Smart Store for your office</h3>
+        <p class="sum" id="t-sum">Ambient and Fridge, stocked with energizing options and better-for-you choices.</p>
+        <ul class="units" id="units" aria-label="Units in your Smart Store">
+          <li><small>01</small>Ambient</li>
+          <li><small>02</small>Fridge</li>
+          <li class="off"><small>+</small>No freezer</li>
+        </ul>
+        <ul class="perks">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Touchless: card, phone or watch</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>We handle the restocking</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Receipts by SMS, no buttons, no waiting</li>
+        </ul>
+        <div class="req">
+          <div><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" placeholder="Full name"></div>
+          <div><label for="f-email">Work email</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@company.com"></div>
+          <div class="full"><label for="f-place">Company or building</label><input id="f-place" name="place" autocomplete="organization" placeholder="Where the Smart Store would go"></div>
+          <div class="full"><button class="btn btn-main" type="submit">Send my request</button></div>
+          <p class="thanks" id="thanks" role="status"></p>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="sec story" id="story" aria-labelledby="h-story">
+  <div class="wrap">
+    <div data-rise>
+      <p class="kicker">Our story</p>
+      <h2 class="q" id="h-story">Why do workplace refreshments feel so <span>outdated?</span></h2>
+    </div>
+    <div class="story-body" data-rise>
+      <p>That simple question started SwiftSnacks. Clunky interfaces, limited choices and forgettable experiences were the norm, and we knew there had to be a better way.</p>
+      <p>Today we partner with businesses of all sizes who want to offer their teams something better. Our refreshment stations are designed to feel like a natural part of your space: sleek, intuitive and always ready.</p>
+    </div>
+    <div class="values" data-rise>
+      <div><h3>Quality first</h3><p>We partner with trusted brands, and every product meets our standards for taste and nutrition.</p></div>
+      <div><h3>Reliability</h3><p>Equipment built to perform, and a service team that keeps everything fresh, stocked and ready.</p></div>
+      <div><h3>Innovation</h3><p>From touchless payments to smart inventory, technology that makes the experience better.</p></div>
+      <div><h3>Customer focus</h3><p>We listen, adapt, and deliver amenities tailored to your workplace.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec faq" id="faq" aria-labelledby="h-faq">
+  <div class="wrap">
+    <div data-rise>
+      <p class="kicker">Questions</p>
+      <h2 class="h2" id="h-faq">Good to know.</h2>
+    </div>
+    <dl data-rise>
+      <dt>How does buying a snack work?</dt>
+      <dd>Tap to unlock the door, take whatever catches your eye, then close the door and walk away. Our AI tracks it all, and the receipt arrives by SMS.</dd>
+      <dt>How do people pay?</dt>
+      <dd>With a card, phone or watch. It's touchless.</dd>
+      <dt>Who keeps it stocked?</dt>
+      <dd>We do. Intelligent inventory management keeps favorites in stock, and our service team keeps everything fresh and ready.</dd>
+      <dt>Where can a Smart Store go?</dt>
+      <dd>Offices, gyms, lounges and residential buildings. It's designed to fit right into your space.</dd>
+      <dt>What's inside?</dt>
+      <dd>A curated mix of energizing options, better-for-you choices and satisfying favorites, from trusted brands.</dd>
+    </dl>
+  </div>
+</section>
+
+<section class="final" aria-labelledby="h-final">
+  <div class="wrap" data-rise>
+    <h2 id="h-final">Ready to elevate your <em>workplace</em>?</h2>
+    <p>Discover how SwiftSnacks can enhance your team's daily experience.</p>
+    <div class="hero-actions">
+      <a class="btn btn-main" href="#plan">Plan a Smart Store for your space</a>
+      <a class="btn btn-ghost" href="tel:+17182185727">Call (718) 218-5727</a>
+    </div>
+    <div class="contact-row">
+      <a href="mailto:team@swiftsnacks.co"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>team@swiftsnacks.co</a>
+      <a href="tel:+17182185727"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>(718) 218-5727</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="mark" href="#top"><span>Swift</span>Snacks</a>
+      <p>Snack Smart, Snack Swift! Modern refreshment amenities for your workplace.</p>
+    </div>
+    <div>
+      <p>© 2026 SwiftSnacks LLC. All rights reserved.</p>
+      <p>SwiftSnacks LLC is a subsidiary of SwiftCorp Holdings.</p>
+    </div>
+    <p class="made">Mockup made for SwiftSnacks by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick actions">
+  <a class="c1" href="tel:+17182185727"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call us</a>
+  <a class="c2" href="#plan">Plan a Smart Store</a>
+</nav>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* gentle rise for things below the first screen */
+  if (!reduce && 'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.remove('will-rise'); io.unobserve(e.target); } });
+    }, {rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('[data-rise]').forEach(function(el){
+      if (el.getBoundingClientRect().top > window.innerHeight) { el.classList.add('will-rise'); io.observe(el); }
+    });
+  }
+
+  /* the Smart Store demo: finished picture first, plays only while on screen */
+  var demo = document.querySelector('.demo');
+  var btns = demo.querySelectorAll('[data-go]');
+  function show(n){
+    demo.setAttribute('data-step', n);
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-go') == n ? 'true' : 'false'); });
+  }
+  var step = 3, timer = null, manual = false;
+  function tick(){ step = step % 3 + 1; show(step); }
+  function play(){ if (!timer && !manual && !reduce) timer = setInterval(tick, 2600); }
+  function stop(){ clearInterval(timer); timer = null; }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ manual = true; stop(); step = +b.getAttribute('data-go'); show(step); }); });
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function(es){ es.forEach(function(e){ e.isIntersecting ? setTimeout(play, 1400) : stop(); }); }, {threshold:.35}).observe(demo);
+  }
+
+  /* the planner */
+  var form = document.getElementById('planner');
+  var place = {Offices:'your office', Gyms:'your gym', Lounges:'your lounge', Residential:'your building'};
+  function list(a){ return a.length < 2 ? a.join('') : a.slice(0,-1).join(', ') + ' and ' + a[a.length-1]; }
+  function vals(n){ return Array.prototype.map.call(form.querySelectorAll('input[name="'+n+'"]:checked'), function(i){ return i.value; }); }
+  function render(){
+    var space = form.querySelector('input[name="space"]:checked').value;
+    var units = vals('unit'), mix = vals('mix');
+    document.getElementById('t-title').textContent = 'A Smart Store for ' + place[space];
+    document.getElementById('t-count').textContent = units.length + (units.length === 1 ? ' unit' : ' units');
+    document.getElementById('t-sum').textContent = list(units) + (mix.length ? ', stocked with ' + list(mix) + '.' : '. Tell us what to stock.');
+    var k = 0;
+    document.getElementById('units').innerHTML = ['Ambient','Fridge','Freezer'].map(function(u){
+      var on = units.indexOf(u) > -1;
+      return on ? '<li><small>0' + (++k) + '</small>' + u + '</li>' : '<li class="off"><small>+</small>No ' + u.toLowerCase() + '</li>';
+    }).join('');
+  }
+  form.addEventListener('change', function(e){
+    if (e.target.name === 'unit' && !vals('unit').length) e.target.checked = true;
+    render();
+  });
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    document.getElementById('thanks').textContent = 'Thanks. This is a mockup, so nothing was sent.';
+  });
+  document.querySelectorAll('[data-space]').forEach(function(a){
+    a.addEventListener('click', function(){
+      var r = form.querySelector('input[name="space"][value="'+a.getAttribute('data-space')+'"]');
+      if (r) { r.checked = true; render(); }
+    });
+  });
+})();
+</script>
+</body>
+</html>
