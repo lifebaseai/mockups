@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup healingspacetherapy-ca-e9fb66 1 605eaff8 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Healing Space Therapy · Trauma-focused therapy in Toronto, Port Hope and online</title>
+<meta name="description" content="Trauma-focused therapy in Toronto, Port Hope and online across Ontario. Free 15-minute consultation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0a2a4b; --navy:#0e3c6d; --sky:#bfdcee; --sky-soft:#e6f1f8;
+  --cream:#fbfaf6; --paper:#ffffff; --line:#dfe3e6; --muted:#4a5a6a;
+  --gold:#c8962f; --ok:#1d6b4a; --warn:#7a4f0e;
+  --r:14px; --shadow:0 1px 2px rgba(10,42,75,.06),0 10px 30px -12px rgba(10,42,75,.18);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 17px/1.6 "Jost",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:var(--navy)}
+h1,h2,h3{font-weight:300;letter-spacing:-.01em;line-height:1.15;margin:0}
+h2{font-size:clamp(30px,3.6vw,44px)}
+h3{font-weight:400;font-size:21px;line-height:1.3}
+p{margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.eyebrow{font-size:13px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--navy)}
+.lede{color:var(--muted);font-size:18px;max-width:34em}
+:focus-visible{outline:3px solid var(--navy);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:#fff;padding:10px 14px;border-radius:8px;z-index:50}
+.skip:focus{top:52px}
+
+/* Signal Set banner */
+.ss-banner{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:#e9eef2;color:#0a2a4b;font-size:15px;line-height:1.3;text-align:center;border-bottom:1px solid #d3dbe2;white-space:nowrap}
+.ss-banner a{color:#0a2a4b;text-decoration:underline;text-underline-offset:3px;font-weight:500}
+
+/* Header */
+.site-head{position:sticky;top:0;z-index:20;background:rgba(251,250,246,.94);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid transparent;transition:border-color .2s}
+.site-head.scrolled{border-bottom-color:var(--line)}
+.head-row{display:flex;align-items:center;justify-content:space-between;gap:20px;height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);min-height:44px}
+.mark{width:42px;height:42px;border-radius:50%;overflow:hidden;position:relative;background:#fff;box-shadow:inset 0 0 0 1px #efe6d3;flex:none}
+.mark img{position:absolute;width:150px;max-width:none;height:150px;left:-56px;top:-50px}
+.brand span{font-size:19px;font-weight:400;letter-spacing:.005em}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{color:var(--ink);text-decoration:none;font-size:15px;padding:12px 12px;border-radius:8px}
+.nav a:hover{background:var(--sky-soft)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:999px;font:500 16px/1.2 "Jost",system-ui,sans-serif;text-decoration:none;border:1.5px solid var(--ink);cursor:pointer;transition:background .2s,color .2s,transform .2s,box-shadow .2s}
+.btn-main{background:var(--ink);color:#fff}
+.btn-main:hover{background:var(--navy);box-shadow:0 8px 20px -10px rgba(10,42,75,.6);transform:translateY(-1px)}
+.btn-line{background:transparent;color:var(--ink)}
+.btn-line:hover{background:var(--sky-soft)}
+.nav .btn{padding:10px 18px;min-height:44px;color:#fff;margin-left:8px}
+.nav .btn:hover{background:var(--navy)}
+.head-call{display:none}
+
+/* Hero */
+.hero{padding:64px 0 40px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+.hero h1{font-size:clamp(42px,4.8vw,64px);margin:18px 0 22px;letter-spacing:-.02em}
+.hero h1 em{font-style:italic;color:var(--navy)}
+.hero .lede{font-size:19px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.hero-photo{position:relative;justify-self:end;width:100%;max-width:460px}
+.hero-photo .frame{border-radius:22px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:576/540;background:#eae4da}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.quote{position:relative;margin:-46px 22px 0 -34px;background:var(--paper);border-radius:var(--r);padding:20px 22px 18px;box-shadow:var(--shadow);border-left:3px solid var(--gold)}
+.quote p{font-size:18px;line-height:1.4;font-weight:300}
+.quote cite{display:block;margin-top:8px;font-style:normal;font-size:14px;color:var(--muted)}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);margin-top:64px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.facts div{padding:22px 20px 22px 0}
+.facts div+div{padding-left:22px;border-left:1px solid var(--line)}
+.facts b{display:block;font-weight:500;font-size:17px}
+.facts span{font-size:15px;color:var(--muted)}
+
+section{scroll-margin-top:80px}
+.sec{padding:96px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:40px}
+.sec-head .lede{margin-top:14px}
+
+/* Finder */
+.finder{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.finder-grid{display:grid;grid-template-columns:300px 1fr;gap:48px;align-items:start}
+.filters{position:sticky;top:96px;display:grid;gap:26px}
+.filters fieldset{border:0;margin:0;padding:0}
+.filters legend{font-size:13px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;padding:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chips.two{display:grid;grid-template-columns:1fr 1fr;max-width:300px}
+.chips.two span{display:flex;justify-content:center}
+.chip input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.chip span{display:inline-flex;align-items:center;min-height:44px;padding:8px 16px;border-radius:999px;border:1px solid #c9d3dc;font-size:15px;background:#fff;color:var(--ink);transition:background .15s,border-color .15s,color .15s}
+.chip input:checked+span{background:var(--ink);border-color:var(--ink);color:#fff}
+.chip input:focus-visible+span{outline:3px solid var(--navy);outline-offset:2px}
+.chip:hover span{border-color:var(--ink)}
+.switch{display:flex;align-items:center;gap:12px;min-height:44px;cursor:pointer;font-size:16px}
+.switch input{width:22px;height:22px;accent-color:var(--ink);margin:0}
+.count{font-size:15px;color:var(--muted);margin-bottom:14px}
+.count b{color:var(--ink);font-weight:500}
+.list{display:grid;gap:12px}
+.person{display:grid;grid-template-columns:72px 1fr auto;gap:22px;align-items:center;padding:18px 20px;border:1px solid var(--line);border-radius:var(--r);background:var(--cream);transition:box-shadow .2s,border-color .2s,transform .2s}
+.person:hover{border-color:#c9d3dc;box-shadow:var(--shadow)}
+.person.pick{border-color:var(--ink);box-shadow:0 0 0 1px var(--ink)}
+.face{width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:50% 22%;background:var(--sky-soft);box-shadow:0 0 0 3px #fff,0 0 0 4px var(--line)}
+.person h3{font-size:20px}
+.role{font-size:15px;color:var(--muted);line-height:1.4}
+.meta{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:8px;font-size:15px}
+.meta .price{font-weight:500}
+.status{display:inline-flex;align-items:center;gap:6px}
+.status::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+.status.open{color:var(--ok)}
+.status.limited{color:var(--warn)}
+.person .btn{min-height:44px;padding:10px 18px;font-size:15px;white-space:nowrap}
+.empty{padding:28px;border:1px dashed #c9d3dc;border-radius:var(--r);background:var(--cream)}
+.empty p{color:var(--muted)}
+.empty a{font-weight:500}
+.finder-note{margin-top:18px;font-size:15px;color:var(--muted)}
+
+/* Approach */
+.approach-grid{display:grid;grid-template-columns:300px 1fr;gap:72px;align-items:start}
+.room{width:100%;max-width:300px;aspect-ratio:300/480;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);background:#e5ddd0}
+.room img{width:100%;height:100%;object-fit:cover;object-position:100% 50%}
+.room-cap{margin-top:12px;font-size:14px;color:var(--muted)}
+.points{list-style:none;padding:0;margin:40px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.points li{padding:24px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:40px 1fr}
+.points .n{color:var(--gold);font-weight:500;font-size:15px;padding-top:3px}
+.points p{color:var(--muted);margin-top:6px;font-size:16px}
+.tools{margin-top:48px;padding-top:28px;border-top:1px solid var(--line)}
+.tools h3{font-size:18px;margin-bottom:14px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.tags li{font-size:15px;padding:6px 14px;border-radius:999px;background:var(--sky-soft);color:var(--ink)}
+
+/* Services */
+.offer{background:var(--ink);color:#fff}
+.offer .eyebrow{color:var(--sky)}
+.offer h2{color:#fff}
+.offer .lede{color:#cfe0ec}
+.svc{list-style:none;margin:48px 0 0;padding:0}
+.svc li{display:grid;grid-template-columns:64px 1fr 260px;gap:24px;padding:30px 0;border-top:1px solid rgba(191,220,238,.25);align-items:baseline}
+.svc li:last-child{border-bottom:1px solid rgba(191,220,238,.25)}
+.svc .n{color:var(--sky);font-size:15px}
+.svc h3{font-size:26px;font-weight:300;color:#fff}
+.svc p{color:#cfe0ec;margin-top:8px;max-width:34em}
+.svc .how{color:var(--sky);font-size:15px;text-align:right}
+
+/* Locations */
+.locs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.loc{padding:24px;border-radius:var(--r);background:var(--paper);border:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
+.loc.online{background:var(--sky-soft);border-color:#cfe2ef}
+.loc p.where{flex:none;margin-top:-4px;font-size:14px;color:var(--muted);letter-spacing:.04em}
+.loc p{color:var(--muted);font-size:16px;flex:1}
+.loc-actions{display:flex;flex-wrap:wrap;gap:4px 18px;margin-top:6px}
+.loc-actions a,.loc-actions button{font:500 15px/1.2 "Jost",system-ui,sans-serif;color:var(--navy);background:none;border:0;padding:12px 0;min-height:44px;cursor:pointer;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#9fb6cb}
+.loc-actions a:hover,.loc-actions button:hover{text-decoration-color:var(--navy)}
+
+/* Steps */
+.steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0;counter-reset:s}
+.steps li{padding:28px 32px 28px 0;position:relative}
+.steps li+li{padding-left:32px;border-left:1px solid var(--line)}
+.steps .n{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;border:1.5px solid var(--gold);color:var(--ink);font-weight:500;margin-bottom:18px}
+.steps p{color:var(--muted);margin-top:8px}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px}
+details{border-top:1px solid var(--line)}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;font-size:19px;min-height:44px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:12px;height:12px;border-right:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink);transform:rotate(45deg) translateY(-4px);transition:transform .2s}
+details[open] summary::after{transform:rotate(-135deg) translateY(-2px)}
+details p{padding:0 40px 24px 0;color:var(--muted)}
+
+/* Contact */
+.start{background:var(--paper);border-top:1px solid var(--line)}
+.start-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:start}
+.reach{margin-top:32px;display:grid;gap:4px}
+.reach a{display:flex;align-items:center;gap:12px;min-height:48px;color:var(--ink);text-decoration:none;font-size:18px}
+.reach a:hover{color:var(--navy);text-decoration:underline}
+.reach svg{flex:none}
+.crisis{margin-top:28px;padding:16px 18px;border-radius:12px;background:var(--sky-soft);font-size:15px;color:var(--ink)}
+form{background:var(--cream);border:1px solid var(--line);border-radius:20px;padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.f{display:grid;gap:6px}
+.f.full{grid-column:1/-1}
+label{font-size:15px;font-weight:500}
+label small{font-weight:400;color:var(--muted)}
+input[type=text],input[type=email],input[type=tel],select,textarea{width:100%;font:400 16px/1.4 "Jost",system-ui,sans-serif;color:var(--ink);background:#fff;border:1px solid #bcc8d3;border-radius:10px;padding:12px 14px;min-height:48px}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:3px solid var(--sky);border-color:var(--navy)}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+form .btn{justify-self:start}
+.form-foot{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px}
+.form-foot p{font-size:14px;color:var(--muted)}
+.form-title{font-size:22px;font-weight:300}
+.thanks{grid-column:1/-1;padding:14px 16px;border-radius:10px;background:#e3f1ea;color:#174d36;font-weight:500}
+
+/* Closing */
+.close{padding:110px 0;text-align:center}
+.close .logo{width:120px;height:120px;margin:0 auto 28px;border-radius:50%;overflow:hidden;background:#fff;box-shadow:var(--shadow)}
+.close h2{max-width:16em;margin:0 auto}
+.close .lede{margin:18px auto 0}
+.close .hero-actions{justify-content:center}
+
+footer{background:var(--ink);color:#d6e5f0;padding:56px 0 36px;font-size:15px}
+footer a{color:#fff}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+.foot-grid h2{font-size:14px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--sky);margin-bottom:12px}
+.foot-grid ul{list-style:none;padding:0;margin:0;display:grid;gap:2px}
+.foot-grid li a{display:inline-flex;align-items:center;min-height:36px}
+.foot-name{font-size:22px;font-weight:300;color:#fff;margin-bottom:10px}
+.foot-base{margin-top:44px;padding-top:22px;border-top:1px solid rgba(191,220,238,.2);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;color:#b9cfe0}
+.foot-base a{color:#fff}
+
+.callbar{display:none}
+
+/* Rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise-ready{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:980px){
+  .nav a:not(.btn){display:none}
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .hero-photo{justify-self:start}
+  .facts{grid-template-columns:1fr 1fr}
+  .facts div:nth-child(3){padding-left:0;border-left:0}
+  .facts div:nth-child(n+3){border-top:1px solid var(--line)}
+  .finder-grid{grid-template-columns:1fr;gap:28px}
+  .filters{position:static}
+  .approach-grid,.faq-grid,.start-grid{grid-template-columns:1fr;gap:40px}
+  .locs{grid-template-columns:1fr 1fr}
+  .svc li{grid-template-columns:48px 1fr}
+  .svc .how{grid-column:2;text-align:left}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:72px}
+  .wrap{padding:0 20px}
+  .ss-banner{font-size:14.5px;padding:8px 10px}
+  .head-row{height:64px}
+  .brand span{font-size:17px}
+  .mark{width:38px;height:38px}
+  .mark img{width:136px;height:136px;left:-51px;top:-45px}
+  .nav .btn{display:none}
+  .hero{padding:36px 0 24px}
+  .hero h1{font-size:44px;margin:14px 0 16px}
+  .hero .lede{font-size:17px}
+  .hero-actions{flex-direction:column;align-items:stretch;margin-top:26px}
+  .hero-photo{max-width:none}
+  .quote{margin:-40px 12px 0 12px}
+  .facts{margin-top:40px}
+  .facts div{padding:16px 12px 16px 0}
+  .facts div+div{padding-left:14px}
+  .facts div:nth-child(3){padding-left:0}
+  .sec{padding:68px 0}
+  .sec-head{display:block;margin-bottom:28px}
+  .person{grid-template-columns:60px 1fr;gap:14px;padding:16px;align-items:start}
+  .face{width:60px;height:60px}
+  .person .btn{grid-column:1/-1;width:100%}
+  .room{max-width:260px}
+  .points{grid-template-columns:1fr}
+  .svc h3{font-size:23px}
+  .svc li{grid-template-columns:36px 1fr;gap:14px;padding:24px 0}
+  .locs{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .steps li,.steps li+li{padding:22px 0;border-left:0;border-top:1px solid var(--line)}
+  form{grid-template-columns:1fr;padding:22px}
+  .close{padding:76px 0}
+  .close .hero-actions{align-items:stretch}
+  .foot-grid{grid-template-columns:1fr;gap:28px}
+  .callbar{display:grid;grid-template-columns:1fr 1.4fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(251,250,246,.97);border-top:1px solid var(--line);box-shadow:0 -6px 20px -12px rgba(10,42,75,.35)}
+  .callbar .btn{min-height:48px;padding:10px 12px;font-size:15px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="ss-banner" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head" id="top">
+  <div class="wrap head-row">
+    <a class="brand" href="#top" aria-label="Healing Space Therapy, back to top">
+      <span class="mark"><img src="https://cdn.sanity.io/images/0sjg9k56/production/511ec87fd2d7b55a25c16ff48adb20cb16c6f983-1441x1441.jpg?w=1200&auto=format" alt="" width="150" height="150"></span>
+      <span>Healing Space Therapy</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#therapists">Therapists</a>
+      <a href="#approach">Approach</a>
+      <a href="#locations">Locations</a>
+      <a href="#questions">Questions</a>
+      <a class="btn btn-main" href="#start">Free consultation</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Trauma-focused therapy in Toronto, Port Hope and online across Ontario</p>
+          <h1 id="hero-title">A space to be heard, <em>grow</em>, and heal.</h1>
+          <p class="lede">Work with therapists who specialize in trauma, listen first and never rush you. In person or online, find your footing and feel more like yourself again.</p>
+          <div class="hero-actions">
+            <a class="btn btn-main" href="#start">Book a free 15-minute consultation</a>
+            <a class="btn btn-line" href="#therapists">Find your therapist</a>
+          </div>
+        </div>
+        <figure class="hero-photo" style="margin:0">
+          <div class="frame"><img src="https://www.healingspacetherapy.ca/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F0sjg9k56%2Fproduction%2Feb0d2c3e06287511baa8d4f2dd73357a5f86dfd6-1024x704.jpg%3Frect%3D158%2C0%2C750%2C704%26w%3D900%26auto%3Dformat&w=640&q=75&dpl=dpl_BhNbfqjkLnBybsfxcMUh6ZakaZDb" alt="Ashley Miller and Emma Stafford-Coyte, co-founders of Healing Space Therapy, smiling side by side" width="576" height="540"></div>
+          <figcaption class="quote">
+            <p>“Trauma-focused care, rooted in connection and healing.”</p>
+            <cite>Ashley &amp; Emma, Co-founders and clinical supervisors</cite>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="facts">
+        <div><b>Free consultation</b><span>15 minutes to find your fit</span></div>
+        <div><b>Five locations</b><span>Toronto and Port Hope</span></div>
+        <div><b>Online</b><span>Anywhere in Ontario</span></div>
+        <div><b>$160 to $200</b><span>Per 60-minute session</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec finder" id="therapists" aria-labelledby="find-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">Our team</p>
+          <h2 id="find-title" style="margin-top:12px">Find the therapist who fits.</h2>
+          <p class="lede">Warm, skilled clinicians in your corner. Choose where you'd like to meet and what works for you, and see who's available.</p>
+        </div>
+      </div>
+      <div class="finder-grid">
+        <div class="filters" role="group" aria-label="Filter therapists">
+          <fieldset>
+            <legend>Where</legend>
+            <div class="chips" id="f-where">
+              <label class="chip"><input type="radio" name="where" value="any" checked><span>Anywhere</span></label>
+              <label class="chip"><input type="radio" name="where" value="Online"><span>Online</span></label>
+              <label class="chip"><input type="radio" name="where" value="Eglinton"><span>Eglinton</span></label>
+              <label class="chip"><input type="radio" name="where" value="St. Clair"><span>St. Clair</span></label>
+              <label class="chip"><input type="radio" name="where" value="Downtown"><span>Downtown</span></label>
+              <label class="chip"><input type="radio" name="where" value="Roncesvalles"><span>Roncesvalles</span></label>
+              <label class="chip"><input type="radio" name="where" value="Port Hope"><span>Port Hope</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Session fee</legend>
+            <div class="chips two" id="f-fee">
+              <label class="chip"><input type="radio" name="fee" value="999" checked><span>Any</span></label>
+              <label class="chip"><input type="radio" name="fee" value="170"><span>Up to $170</span></label>
+              <label class="chip"><input type="radio" name="fee" value="180"><span>Up to $180</span></label>
+              <label class="chip"><input type="radio" name="fee" value="190"><span>Up to $190</span></label>
+            </div>
+          </fieldset>
+          <label class="switch"><input type="checkbox" id="f-open"> Accepting new clients only</label>
+        </div>
+        <div>
+          <p class="count" id="count" aria-live="polite"><b>7 therapists</b> match. Everyone also sees clients online.</p>
+          <div class="list" id="list">
+            <!-- Filled at first load from the same data the script uses -->
+            <article class="person"><img class="face" src="https://cdn.sanity.io/images/0sjg9k56/production/088746de62eea77f2d7f6c93376738d33e342068-2243x2346.jpg?w=200&amp;auto=format" alt="Magdhi Shah" width="72" height="72"><div><h3>Magdhi Shah</h3><p class="role">Registered Psychotherapist</p><p class="meta"><span>In person in Downtown · Virtual</span><span class="price">$170 · 60 min</span><span class="status open">Accepting new clients</span></p></div><a class="btn btn-line" href="#start" data-pick="Magdhi Shah">Request a consult</a></article>
+            <article class="person"><img class="face" src="https://cdn.sanity.io/images/0sjg9k56/production/ec924f053693ee503fe97d68188261398c54fa3a-1024x1280.jpg?w=200&amp;auto=format" alt="Angelica Rao" width="72" height="72"><div><h3>Angelica Rao</h3><p class="role">Registered Social Worker &amp; Psychotherapist</p><p class="meta"><span>In person in St. Clair · Virtual</span><span class="price">$190 · 60 min</span><span class="status open">Accepting new clients</span></p></div><a class="btn btn-line" href="#start" data-pick="Angelica Rao">Request a consult</a></article>
+            <article class="person"><img class="face" src="https://cdn.sanity.io/images/0sjg9k56/production/784c8e7ddf397051bc382be7e2d2fcad57abe2a4-2400x3000.jpg?rect=0,0,2400,2600&amp;w=200&amp;auto=format" alt="Freshte Javid" width="72" height="72"><div><h3>Freshte Javid</h3><p class="role">Registered Psychotherapist</p><p class="meta"><span>In person in Roncesvalles · Virtual</span><span class="price">$180 · 60 min</span><span class="status open">Accepting new clients</span></p></div><a class="btn btn-line" href="#start" data-pick="Freshte Javid">Request a consult</a></article>
+            <article class="person"><img class="face" src="https://cdn.sanity.io/images/0sjg9k56/production/789bd43a6c882c72c6527b5ecfe5bc2e54cac06b-1024x1281.jpg?w=200&amp;auto=format" alt="Megan Kuo" width="72" height="72"><div><h3>Megan Kuo</h3><p class="role">Registered Psychotherapist (Qualifying)</p><p class="meta"><span>In person in St. Clair · Virtual</span><span class="price">$160 · 60 min</span><span class="status open">Accepting new clients</span></p></div><a class="btn btn-line" href="#start" data-pick="Megan Kuo">Request a consult</a></article>
+            <article class="person"><img class="face" src="https://cdn.sanity.io/images/0sjg9k56/production/33f8263655d0fc6294d42dcd1a81cf6c6a7aa2c6-2109x2322.png?w=200&amp;auto=format" alt="Lesley Nightingale" width="72" height="72"><div><h3>Lesley Nightingale</h3><p class="role">Registered Psychotherapist</p><p class="meta"><span>In person in Eglinton · Virtual</span><span class="price">$180 · 60 min</span><span class="status limited">Limited spaces</span></p></div><a class="btn btn-line" href="#start" data-pick="Lesley Nightingale">Request a consult</a></article>
+            <article class="person"><img class="face" src="https://cdn.sanity.io/images/0sjg9k56/production/f725cb4d5c546da35a1b858b6a45e47088e6ce52-2934x3589.jpg?w=200&amp;auto=format" alt="Ashley Miller" width="72" height="72"><div><h3>Ashley Miller</h3><p class="role">Co-Founder · Registered Psychotherapist &amp; Clinical Supervisor</p><p class="meta"><span>In person in St. Clair · Virtual</span><span class="price">$200 · 60 min</span><span class="status limited">Limited spaces</span></p></div><a class="btn btn-line" href="#start" data-pick="Ashley Miller">Request a consult</a></article>
+            <article class="person"><img class="face" src="https://cdn.sanity.io/images/0sjg9k56/production/c99c619a662bc048577cebd10e7d013c7f33fd44-1024x1090.jpg?w=200&amp;auto=format" alt="Emma Stafford-Coyte" width="72" height="72"><div><h3>Emma Stafford-Coyte</h3><p class="role">Co-Founder · Registered Social Worker &amp; Clinical Supervisor</p><p class="meta"><span>In person in Port Hope · Virtual</span><span class="price">$200 · 60 min</span><span class="status limited">Limited spaces</span></p></div><a class="btn btn-line" href="#start" data-pick="Emma Stafford-Coyte">Request a consult</a></article>
+          </div>
+          <p class="finder-note">Not sure who to choose? <a href="#start">Book the free consultation</a> and we'll help you find the right therapist and a time that works.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="approach" aria-labelledby="approach-title">
+    <div class="wrap approach-grid">
+      <figure style="margin:0">
+        <div class="room"><img src="https://www.healingspacetherapy.ca/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F0sjg9k56%2Fproduction%2F43d407ce91a1a223ed20b064096ed3f3e0f0d40a-1849x2048.jpg%3Fw%3D900%26auto%3Dformat&w=640&q=75&dpl=dpl_BhNbfqjkLnBybsfxcMUh6ZakaZDb" alt="A Healing Space therapy room: a soft grey sofa, an armchair, a warm red rug, plants and a full bookshelf" width="512" height="567" loading="lazy"></div>
+        <figcaption class="room-cap">Inside one of our therapy rooms.</figcaption>
+      </figure>
+      <div>
+        <p class="eyebrow">Our approach</p>
+        <h2 id="approach-title" style="margin-top:12px">Holistic, evidence-based, and trauma-informed.</h2>
+        <p class="lede" style="margin-top:16px">Every therapist here is trauma-informed, with additional training in trauma. We prioritize your safety, build trust, and meet you exactly where you are.</p>
+        <ol class="points">
+          <li><span class="n">01</span><div><h3>Grounded in research</h3><p>EMDR, IFS, EFT, ACT, CBT and more, all evidence-based treatments.</p></div></li>
+          <li><span class="n">02</span><div><h3>The relationship comes first</h3><p>Healing happens in safe, trusting relationships, so that's where we begin.</p></div></li>
+          <li><span class="n">03</span><div><h3>You set the pace</h3><p>Progress and goals are shaped collaboratively throughout our work.</p></div></li>
+          <li><span class="n">04</span><div><h3>Healing at the root</h3><p>We move beyond managing symptoms to heal the deeper patterns, experiences and wounds beneath them.</p></div></li>
+        </ol>
+        <div class="tools">
+          <h3>A wide toolkit, woven to fit your story.</h3>
+          <ul class="tags">
+            <li>EMDR</li><li>Internal Family Systems (IFS)</li><li>Emotion-Focused (EFT)</li><li>Acceptance &amp; Commitment (ACT)</li><li>Cognitive Behavioural (CBT)</li><li>Dialectical Behavioural (DBT)</li><li>Solution-Focused</li><li>Relational</li><li>Psychodynamic</li><li>Mindfulness-Based</li><li>Body-Oriented &amp; Somatic</li><li>AEDP</li><li>Brainspotting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec offer" id="services" aria-labelledby="offer-title">
+    <div class="wrap">
+      <p class="eyebrow">What we offer</p>
+      <h2 id="offer-title" style="margin-top:12px">Care shaped around you and where you are.</h2>
+      <ul class="svc">
+        <li><span class="n">01</span><div><h3>Individual Therapy</h3><p>One-on-one trauma-informed therapy to help you move through life's challenges and grow.</p></div><span class="how">In person or virtual</span></li>
+        <li><span class="n">02</span><div><h3>Group Therapy</h3><p>Supportive co-facilitated groups that offer a safe space for connection, skill-building, and shared healing.</p></div><span class="how">Small groups, in person or virtual</span></li>
+        <li><span class="n">03</span><div><h3>Clinical Supervision</h3><p>Individual, dyadic, or group supervision to deepen your practice and safeguard client wellbeing.</p></div><span class="how">Individual · Dyadic · Group</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" id="locations" aria-labelledby="loc-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">Where to find us</p>
+          <h2 id="loc-title" style="margin-top:12px">Five locations across Ontario, and virtual anywhere.</h2>
+        </div>
+      </div>
+      <div class="locs">
+        <article class="loc online"><h3>Online, across Ontario</h3><p class="where">From home</p><p>Prefer to meet from home? Secure virtual sessions are available anywhere in Ontario.</p><div class="loc-actions"><button type="button" data-where="Online">See who's available</button></div></article>
+        <article class="loc"><h3>Eglinton</h3><p class="where">Toronto · M6C</p><p>A calm setting, walking distance from Cedarvale station on the new Eglinton LRT line.</p><div class="loc-actions"><button type="button" data-where="Eglinton">See who's here</button><a href="https://www.google.com/maps/search/?api=1&amp;query=Healing%20Space%20Therapy%20Eglinton%20Toronto%20M6C">Map</a></div></article>
+        <article class="loc"><h3>St. Clair</h3><p class="where">Toronto · M6G</p><p>Our midtown home, in the heart of St. Clair West.</p><div class="loc-actions"><button type="button" data-where="St. Clair">See who's here</button><a href="https://www.google.com/maps/search/?api=1&amp;query=Healing%20Space%20Therapy%20St.%20Clair%20Toronto%20M6G">Map</a></div></article>
+        <article class="loc"><h3>Downtown</h3><p class="where">Toronto · M5T</p><p>Central and easy to reach for downtown clients.</p><div class="loc-actions"><button type="button" data-where="Downtown">See who's here</button><a href="https://www.google.com/maps/search/?api=1&amp;query=Healing%20Space%20Therapy%20Downtown%20Toronto%20M5T">Map</a></div></article>
+        <article class="loc"><h3>Roncesvalles</h3><p class="where">Toronto · M6R</p><p>A neighbourhood space in Toronto's west end.</p><div class="loc-actions"><button type="button" data-where="Roncesvalles">See who's here</button><a href="https://www.google.com/maps/search/?api=1&amp;query=Healing%20Space%20Therapy%20Roncesvalles%20Toronto%20M6R">Map</a></div></article>
+        <article class="loc"><h3>Port Hope</h3><p class="where">Northumberland · L1A</p><p>Serving clients beyond the city, closer to home.</p><div class="loc-actions"><button type="button" data-where="Port Hope">See who's here</button><a href="https://www.google.com/maps/search/?api=1&amp;query=Healing%20Space%20Therapy%20Port%20Hope%20L1A">Map</a></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:0" aria-labelledby="steps-title">
+    <div class="wrap">
+      <p class="eyebrow">Getting started</p>
+      <h2 id="steps-title" style="margin:12px 0 32px">The hardest part is reaching out. We'll take it from there.</h2>
+      <ol class="steps">
+        <li><span class="n">1</span><h3>Reach out</h3><p>Book a free 15-minute consultation, or send us a short note.</p></li>
+        <li><span class="n">2</span><h3>Find your fit</h3><p>We help you find the right therapist and a time that works.</p></li>
+        <li><span class="n">3</span><h3>Begin at your pace</h3><p>In person at one of five locations, or online from anywhere in Ontario.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec" id="questions" style="padding-top:0" aria-labelledby="faq-title">
+    <div class="wrap faq-grid">
+      <div>
+        <p class="eyebrow">Good to know</p>
+        <h2 id="faq-title" style="margin-top:12px">Questions, answered gently.</h2>
+        <p class="lede" style="margin-top:16px">The things people often ask before starting. Still wondering something? Reach out any time.</p>
+      </div>
+      <div>
+        <details open><summary>How do I get started?</summary><p>Ask for a free 15-minute consultation using the short form below. We'll help you find the right therapist and a time that works.</p></details>
+        <details><summary>How long are sessions, and what do they cost?</summary><p>Sessions are 60 minutes. Fees range from $160 to $200 depending on the therapist; you can see each one's fee above.</p></details>
+        <details><summary>Can I see someone online?</summary><p>Yes. Every therapist on our team also offers secure virtual sessions, available anywhere in Ontario.</p></details>
+        <details><summary>Who will I be working with?</summary><p>Registered psychotherapists and social workers. Every therapist here is trauma-informed, with additional training in trauma.</p></details>
+        <details><summary>Is this for emergencies?</summary><p>No. If you're in crisis, call or text 988 (Suicide Crisis Helpline) or 9-1-1.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec start" id="start" aria-labelledby="start-title">
+    <div class="wrap start-grid">
+      <div>
+        <p class="eyebrow">Get in touch</p>
+        <h2 id="start-title" style="margin-top:12px">Reach out. We'll take it from here.</h2>
+        <p class="lede" style="margin-top:16px">Ask for your free 15-minute consultation right here, and we'll help you find the right therapist and a time that works.</p>
+        <div class="reach">
+          <a href="tel:+16473721026"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>(647) 372-1026</a>
+          <a href="mailto:info@healingspacetherapy.ca"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>info@healingspacetherapy.ca</a>
+        </div>
+        <p class="crisis">This form isn't for emergencies. If you're in crisis, call or text <a href="tel:988">988</a> or 9-1-1.</p>
+      </div>
+      <form id="form" novalidate aria-labelledby="note-title">
+        <h3 class="f full form-title" id="note-title">Request your free consultation</h3>
+        <div class="f"><label for="name">Name</label><input type="text" id="name" name="name" autocomplete="name" required></div>
+        <div class="f"><label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" required></div>
+        <div class="f"><label for="who">Therapist <small>(optional)</small></label>
+          <select id="who" name="who">
+            <option>No preference</option>
+            <option>Magdhi Shah</option><option>Angelica Rao</option><option>Freshte Javid</option><option>Megan Kuo</option><option>Lesley Nightingale</option><option>Ashley Miller</option><option>Emma Stafford-Coyte</option>
+          </select></div>
+        <div class="f"><label for="where">Where you'd like to meet</label>
+          <select id="where" name="where">
+            <option>Either is fine</option><option>Online</option><option>Eglinton</option><option>St. Clair</option><option>Downtown</option><option>Roncesvalles</option><option>Port Hope</option>
+          </select></div>
+        <div class="f full"><label for="msg">Message <small>(optional)</small></label><textarea id="msg" name="msg" placeholder="Anything you'd like us to know. A few words is plenty."></textarea></div>
+        <div class="form-foot">
+          <button class="btn btn-main" type="submit">Request my consultation</button>
+          <p>We'll only use your details to reply.</p>
+        </div>
+        <p class="thanks" id="thanks" role="status" hidden>Thanks. This is a mockup, so nothing was sent.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="close" aria-labelledby="close-title">
+    <div class="wrap">
+      <div class="logo"><img src="https://cdn.sanity.io/images/0sjg9k56/production/511ec87fd2d7b55a25c16ff48adb20cb16c6f983-1441x1441.jpg?w=1200&auto=format" alt="Healing Space Therapy logo" width="120" height="120" loading="lazy"></div>
+      <h2 id="close-title">Take the first step.</h2>
+      <p class="lede">A free 15-minute consultation to find the therapist who is right for you. In person across five locations, or online from anywhere in Ontario.</p>
+      <div class="hero-actions">
+        <a class="btn btn-main" href="#start">Book a free 15-minute consultation</a>
+        <a class="btn btn-line" href="tel:+16473721026">Call (647) 372-1026</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p class="foot-name">Healing Space Therapy</p>
+        <p>Cultivating transformative change. Trauma-focused, holistic therapy across Toronto and Port Hope, in person and online.</p>
+        <p style="margin-top:14px;color:#b9cfe0">Registered &amp; accredited with CRPO, OCSWSSW, EMDR International Association, IFS Institute and OAMHP.</p>
+      </div>
+      <div>
+        <h2>Reach us</h2>
+        <ul>
+          <li><a href="tel:+16473721026">(647) 372-1026</a></li>
+          <li><a href="mailto:info@healingspacetherapy.ca">info@healingspacetherapy.ca</a></li>
+          <li style="color:#b9cfe0;padding-top:6px">Eglinton · St. Clair · Downtown · Roncesvalles · Port Hope</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Follow</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/healing.space.therapy/">Instagram</a></li>
+          <li><a href="https://www.facebook.com/healingspacetherapytoronto/">Facebook</a></li>
+          <li><a href="https://www.linkedin.com/company/healingspacetherapycanada/">LinkedIn</a></li>
+          <li><a href="https://www.healingspacetherapy.ca/">healingspacetherapy.ca</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <p>If you are in crisis, call or text 988 (Suicide Crisis Helpline) or 9-1-1.</p>
+      <p>Mockup made for Healing Space Therapy by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick contact">
+  <a class="btn btn-line" href="tel:+16473721026">Call</a>
+  <a class="btn btn-main" href="#start">Book free consult</a>
+</div>
+
+<script>
+(function(){
+  var img="https://cdn.sanity.io/images/0sjg9k56/production/";
+  var team=[
+    {n:"Magdhi Shah",i:"088746de62eea77f2d7f6c93376738d33e342068-2243x2346.jpg?",r:"Registered Psychotherapist",w:"Downtown",p:170,o:true},
+    {n:"Angelica Rao",i:"ec924f053693ee503fe97d68188261398c54fa3a-1024x1280.jpg?",r:"Registered Social Worker & Psychotherapist",w:"St. Clair",p:190,o:true},
+    {n:"Freshte Javid",i:"784c8e7ddf397051bc382be7e2d2fcad57abe2a4-2400x3000.jpg?rect=0,0,2400,2600&",r:"Registered Psychotherapist",w:"Roncesvalles",p:180,o:true},
+    {n:"Megan Kuo",i:"789bd43a6c882c72c6527b5ecfe5bc2e54cac06b-1024x1281.jpg?",r:"Registered Psychotherapist (Qualifying)",w:"St. Clair",p:160,o:true},
+    {n:"Lesley Nightingale",i:"33f8263655d0fc6294d42dcd1a81cf6c6a7aa2c6-2109x2322.png?",r:"Registered Psychotherapist",w:"Eglinton",p:180,o:false},
+    {n:"Ashley Miller",i:"f725cb4d5c546da35a1b858b6a45e47088e6ce52-2934x3589.jpg?",r:"Co-Founder · Registered Psychotherapist & Clinical Supervisor",w:"St. Clair",p:200,o:false},
+    {n:"Emma Stafford-Coyte",i:"c99c619a662bc048577cebd10e7d013c7f33fd44-1024x1090.jpg?",r:"Co-Founder · Registered Social Worker & Clinical Supervisor",w:"Port Hope",p:200,o:false}
+  ];
+  var list=document.getElementById('list'),count=document.getElementById('count');
+  var open=document.getElementById('f-open'),who=document.getElementById('who'),whereSel=document.getElementById('where');
+  function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+  function val(name){var c=document.querySelector('input[name="'+name+'"]:checked');return c?c.value:''}
+  function render(){
+    var w=val('where'),fee=+val('fee'),only=open.checked;
+    var hits=team.filter(function(t){return (w==='any'||w==='Online'||t.w===w)&&t.p<=fee&&(!only||t.o)});
+    var place=w==='any'?'':(w==='Online'?' online':' at '+w);
+    if(!hits.length){
+      count.innerHTML='<b>No one</b> matches all of that.';
+      list.innerHTML='<div class="empty"><p>Try another location or fee, or <a href="#start">book a free consultation</a> and we\'ll help you find the right fit.</p></div>';
+      return;
+    }
+    count.innerHTML='<b>'+hits.length+' therapist'+(hits.length>1?'s':'')+'</b> '+(hits.length>1?'match':'matches')+place+'.'+(w==='Online'||w==='any'?' Everyone also sees clients online.':'');
+    list.innerHTML=hits.map(function(t){
+      return '<article class="person'+(who.value===t.n?' pick':'')+'"><img class="face" src="'+esc(img+t.i+'w=200&auto=format')+'" alt="'+esc(t.n)+'" width="72" height="72"><div><h3>'+esc(t.n)+'</h3><p class="role">'+esc(t.r)+'</p><p class="meta"><span>In person in '+t.w+' · Virtual</span><span class="price">$'+t.p+' · 60 min</span><span class="status '+(t.o?'open">Accepting new clients':'limited">Limited spaces')+'</span></p></div><a class="btn btn-line" href="#start" data-pick="'+esc(t.n)+'">Request a consult</a></article>';
+    }).join('');
+  }
+  document.querySelectorAll('.filters input').forEach(function(i){i.addEventListener('change',render)});
+  list.addEventListener('click',function(e){
+    var a=e.target.closest('[data-pick]');if(!a)return;
+    who.value=a.getAttribute('data-pick');
+    var w=val('where');if(w!=='any'){whereSel.value=w}
+    render();
+  });
+  document.querySelectorAll('[data-where]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var r=document.querySelector('input[name="where"][value="'+b.getAttribute('data-where')+'"]');
+      if(r){r.checked=true;render()}
+      document.getElementById('therapists').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+    });
+  });
+  document.getElementById('form').addEventListener('submit',function(e){
+    e.preventDefault();
+    var t=document.getElementById('thanks');t.hidden=false;
+  });
+  var head=document.querySelector('.site-head');
+  addEventListener('scroll',function(){head.classList.toggle('scrolled',scrollY>8)},{passive:true});
+
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window){
+    var els=document.querySelectorAll('.sec-head,.person,.points li,.svc li,.loc,.steps li,details,.room,.tools,form,.close .wrap');
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('will-rise');io.unobserve(en.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){
+      if(el.getBoundingClientRect().top>innerHeight){el.classList.add('will-rise');requestAnimationFrame(function(){el.classList.add('rise-ready')});io.observe(el)}
+    });
+  }
+})();
+</script>
+</body>
+</html>
