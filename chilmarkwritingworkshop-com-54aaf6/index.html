@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup chilmarkwritingworkshop-com-54aaf6 1 129960ce -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chilmark Writing Workshop · Writing from the heart with Nancy Slonim Aronie</title>
+<meta name="description" content="Writing from the heart, finding your own voice with Nancy Aronie.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#d61f1f; --red-deep:#b51616; --ink:#2a2522; --soft:#5b524c;
+  --paper:#fbf8f3; --line:#e7e0d6; --white:#fff;
+  --serif:"EB Garamond",Garamond,"Times New Roman",serif;
+  --hand:"Amatic SC","Arial Narrow",sans-serif;
+  --sans:Montserrat,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--white);color:var(--ink);font:400 20px/1.55 var(--serif);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:2px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:#fff;padding:10px 14px;z-index:50;font:600 14px var(--sans)}
+.skip:focus{top:60px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 32px}
+
+/* Mockup banner */
+.mock{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:#3a302b;color:#f6efe6;font:500 15px/1.3 var(--sans);text-align:center;white-space:nowrap}
+.mock a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+
+/* Header */
+.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:saturate(1.2) blur(6px)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:72px}
+.mark{font:700 34px/0.9 var(--hand);letter-spacing:.02em;text-decoration:none;color:var(--ink)}
+.mark span{color:var(--red)}
+.nav{display:flex;align-items:center;gap:30px;font:600 12px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase}
+.nav a{text-decoration:none;color:var(--soft);padding:14px 0}
+.nav a:hover{color:var(--red)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border-radius:2px;font:600 13px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border:2px solid var(--red);background:var(--red);color:#fff;cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.btn:hover{background:var(--red-deep);border-color:var(--red-deep)}
+.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn.ghost:hover{background:#fff;color:var(--ink)}
+.nav .btn{min-height:44px;padding:0 18px;color:#fff}
+.nav .btn:hover{color:#fff}
+
+/* Hero */
+.hero{position:relative;min-height:min(78vh,720px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#6b6a4e}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 30%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(32,24,20,.78) 0%,rgba(32,24,20,.55) 34%,rgba(32,24,20,0) 62%),linear-gradient(0deg,rgba(32,24,20,.35),rgba(32,24,20,0) 40%)}
+.hero .wrap{position:relative;z-index:1;width:100%;padding-top:96px;padding-bottom:88px}
+.kicker{font:600 12px/1.4 var(--sans);letter-spacing:.2em;text-transform:uppercase;margin:0 0 18px}
+.hero .kicker{color:#fff}
+h1{margin:0;font:400 70px/1.04 var(--serif);letter-spacing:-.01em}
+h1 em{font-style:italic}
+.lede{max-width:30ch;margin:22px 0 34px;font-size:23px;line-height:1.45;color:#fbf6ef}
+.actions{display:flex;flex-wrap:wrap;gap:14px}
+.credit{position:absolute;right:20px;bottom:14px;z-index:1;font:500 11px var(--sans);letter-spacing:.06em;color:rgba(255,255,255,.92);text-shadow:0 1px 3px rgba(0,0,0,.5)}
+
+/* Sections */
+section{padding:112px 0}
+h2{font:400 52px/1.08 var(--serif);margin:0 0 24px;letter-spacing:-.01em}
+h3{font:600 12px/1.4 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin:0 0 14px}
+.label{font:600 12px/1.4 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin:0 0 16px}
+p{margin:0 0 18px}
+
+/* Workshop */
+.workshop .grid{display:grid;grid-template-columns:1.05fr 1fr;gap:80px;align-items:start}
+.workshop .intro{font-size:23px;line-height:1.5}
+.owns{list-style:none;margin:36px 0 0;padding:0;border-top:1px solid var(--line)}
+.owns li{display:grid;grid-template-columns:160px 1fr;gap:18px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--line)}
+.owns b{font:700 30px/1 var(--hand);color:var(--red);letter-spacing:.03em}
+.critic{background:var(--paper);padding:48px 44px;border-left:3px solid var(--red)}
+.critic p.big{font-size:34px;line-height:1.25;margin:0 0 20px}
+.strike{position:relative;white-space:nowrap;margin-right:.12em}
+.strike svg{position:absolute;left:-4%;top:42%;width:108%;height:.5em;overflow:visible;pointer-events:none}
+.strike path{fill:none;stroke:var(--red);stroke-width:4;stroke-linecap:round;stroke-dasharray:240;stroke-dashoffset:0;transition:stroke-dashoffset 1s ease .3s}
+.strike.pending path{stroke-dashoffset:240}
+.critic .who{font:500 13px var(--sans);letter-spacing:.06em;color:var(--soft);margin:0}
+.critic blockquote{margin:0 0 24px;font-style:italic;color:var(--soft);font-size:20px}
+
+/* Quote band */
+.band{background:var(--red);color:#fff;padding:96px 0;text-align:center}
+.band blockquote{margin:0 auto;max-width:900px}
+.band p{font:400 48px/1.18 var(--serif);margin:0 0 22px}
+.band p em{font-style:italic}
+.band cite{font:600 12px var(--sans);letter-spacing:.18em;text-transform:uppercase;font-style:normal}
+
+/* For you: the working piece */
+.foryou{background:var(--paper)}
+.foryou .head{max-width:720px;margin-bottom:44px}
+.foryou .head p{color:var(--soft);font-size:21px}
+.picker{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 36px;padding:0;border:0}
+.picker legend{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip span{display:inline-flex;align-items:center;min-height:52px;padding:0 24px;border:1.5px solid #cfc5b8;border-radius:40px;background:#fff;font:500 19px var(--serif);cursor:pointer;transition:border-color .2s,background .2s,color .2s}
+.chip span:hover{border-color:var(--red)}
+.chip input:checked+span{background:var(--ink);border-color:var(--ink);color:#fff}
+.chip input:focus-visible+span{outline:3px solid var(--red);outline-offset:3px}
+.answer{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}
+.says{background:#fff;padding:40px;border:1px solid var(--line)}
+.says .fit{font:400 32px/1.2 var(--serif);margin:0 0 24px}
+.says blockquote{margin:0;padding:20px 0 0;border-top:1px solid var(--line);font-style:italic;color:var(--soft)}
+.says blockquote footer{font:500 13px var(--sans);font-style:normal;letter-spacing:.06em;margin-top:8px;color:var(--soft)}
+.note{position:relative;background:#fff;padding:40px 40px 32px;border:1px solid var(--line);box-shadow:0 18px 40px -24px rgba(58,48,43,.35);display:flex;flex-direction:column}
+.note .btn{margin-top:auto}
+.note .to{font:700 30px/1 var(--hand);color:var(--red);margin:0 0 22px;letter-spacing:.03em}
+.note .body{font-size:21px;line-height:36px;min-height:144px;margin:0 0 20px}
+.note .btn{width:100%}
+.fade{transition:opacity .25s ease}
+.fade.swap{opacity:.15}
+
+/* Nancy */
+.nancy .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:start}
+.pull{font:400 36px/1.25 var(--serif);margin:0 0 18px}
+.pull-cite{font:500 13px var(--sans);letter-spacing:.06em;color:var(--soft)}
+.creds{list-style:none;margin:0;padding:0}
+.creds li{padding:20px 0;border-bottom:1px solid var(--line);font-size:21px;line-height:1.4}
+.creds li:first-child{border-top:1px solid var(--line)}
+.creds small{display:block;font:600 11px/1.6 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-bottom:4px}
+.places{margin:44px 0 0}
+.places p{font-size:21px;line-height:1.6;margin:0}
+.places .dot{color:var(--red);padding:0 .35em}
+.places .v{white-space:nowrap}
+
+/* Questions */
+.faq .grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:44px;padding:22px 0;font:500 23px/1.3 var(--serif)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:400 30px/1 var(--sans);color:var(--red);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin:0 0 24px;color:var(--soft);max-width:60ch}
+
+/* Ask */
+.ask{background:var(--ink);color:#f6efe6}
+.ask .grid{display:grid;grid-template-columns:1fr 1.1fr;gap:80px;align-items:start}
+.ask h2{color:#fff}
+.ask .label{color:#ffb4a8}
+.ask .side p{color:#e3d9cd}
+.ask .mail{display:inline-block;margin-top:8px;font-size:22px;color:#fff;text-underline-offset:4px;padding:8px 0}
+form{display:grid;gap:18px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+label.f{display:grid;gap:8px;font:600 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#e9dfd3}
+input[type=text],input[type=email],select,textarea{width:100%;min-height:52px;padding:12px 14px;border:1px solid #6d625a;border-radius:2px;background:#342d29;color:#fff;font:400 19px/1.4 var(--serif)}
+textarea{min-height:130px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:3px solid #ff8a7a;outline-offset:1px;border-color:#ff8a7a}
+.check{display:flex;gap:12px;align-items:center;font-size:18px;color:#e9dfd3;min-height:44px;cursor:pointer}
+.check input{width:22px;height:22px;accent-color:var(--red)}
+.thanks{margin:0;padding:16px 18px;border-left:3px solid #ff8a7a;background:#342d29;color:#fff}
+.thanks[hidden]{display:none}
+
+footer.foot{padding:56px 0 64px;background:#221d1a;color:#cfc4b8;font:500 14px/1.7 var(--sans)}
+footer.foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end}
+footer.foot .mark{color:#fff;font-size:38px}
+footer.foot .mark span{color:#ff8a7a}
+footer.foot a{color:#fff;text-underline-offset:3px}
+footer.foot p{margin:0}
+.made{width:100%;padding-top:24px;border-top:1px solid #3d3530;color:#b8ab9e}
+
+/* Rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:900px){
+  .nav a:not(.btn){display:none}
+  h1{font-size:60px}
+  .workshop .grid,.nancy .grid,.faq .grid,.ask .grid,.answer{grid-template-columns:1fr;gap:44px}
+}
+@media (max-width:640px){
+  body{font-size:19px}
+  .wrap{padding:0 22px}
+  .mock{font-size:14px;padding:8px 10px}
+  .top .wrap{height:64px}
+  .mark{font-size:28px}
+  .nav .btn{padding:0 14px;font-size:11px;letter-spacing:.1em}
+  .hero{display:block;min-height:0;color:var(--ink);background:var(--white)}
+  .hero img{position:relative;height:300px;object-position:70% 28%}
+  .hero::after{display:none}
+  .hero .wrap{padding-top:34px;padding-bottom:56px}
+  .hero .kicker{color:var(--red)}
+  h1{font-size:44px;line-height:1.04}
+  h1 br{display:none}
+  .lede{color:var(--soft);font-size:20px;margin:16px 0 26px}
+  .actions .btn{flex:1 1 100%}
+  .btn.ghost{color:var(--ink);border-color:var(--ink)}
+  .credit{top:270px;bottom:auto;right:12px}
+  section{padding:72px 0}
+  h2{font-size:38px}
+  .workshop .intro{font-size:21px}
+  .owns li{grid-template-columns:96px 1fr;gap:12px}
+  .owns b{font-size:26px}
+  .critic{padding:32px 24px}
+  .critic p.big{font-size:28px}
+  .band{padding:68px 0}
+  .band p{font-size:32px}
+  .chip span{font-size:18px;padding:0 18px}
+  .says,.note{padding:28px 24px}
+  .says .fit{font-size:27px}
+  .pull{font-size:29px}
+  summary{font-size:21px}
+  .row{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+  .strike.pending path{stroke-dashoffset:0}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Chilmark Writing Workshop, back to top">Chilmark <span>Writing</span> Workshop</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#workshop">The workshop</a>
+      <a href="#nancy">Nancy</a>
+      <a href="#questions">Questions</a>
+      <a class="btn" href="#ask">Ask about dates</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" style="padding:0" aria-labelledby="h1">
+    <img src="https://images.squarespace-cdn.com/content/v1/54ca6aa3e4b0740706b6c93d/1422557841536-344OVKY1RKTKNEOOMHEX/eli.dag_aronie_2012_%2800001+of+00002%29.JPG?format=1500w" width="1500" height="844" alt="Nancy Slonim Aronie laughing in the sunshine">
+    <span class="credit">Photo by Eli Dagostino</span>
+    <div class="wrap">
+      <p class="kicker">Chilmark Writing Workshop</p>
+      <h1 id="h1">Write from the heart.<br> Find <em>your own</em> voice.</h1>
+      <p class="lede">A safe place to write your own story, with Nancy Slonim Aronie.</p>
+      <div class="actions">
+        <a class="btn" href="#ask">Ask about the next workshop</a>
+        <a class="btn ghost" href="#foryou">Is it for me?</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="workshop" id="workshop" aria-labelledby="ws-h">
+    <div class="wrap grid">
+      <div>
+        <p class="label">The workshop</p>
+        <h2 id="ws-h">Writing From The Heart: Finding Your Own Voice</h2>
+        <p class="intro">Nurturing for the beginning writer. A jump-start for the burnt-out professional. You will take home your powerful, one-of-a-kind golden voice, filled with self-esteem, honor and joy.</p>
+        <ul class="owns">
+          <li><b>Your rhythms</b><span>Write in your own rhythms, not someone else's.</span></li>
+          <li><b>Your language</b><span>Use your own language, the way you really talk.</span></li>
+          <li><b>Your story</b><span>Tell your own story, and honor your own voice.</span></li>
+        </ul>
+      </div>
+      <aside class="critic" aria-label="From Nancy">
+        <p class="big">Here is where we stop <span class="strike">the inner critic<svg viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M2 12 C 40 4, 80 16, 120 8 S 180 6, 198 10"/></svg></span> in his tracks.</p>
+        <blockquote>“You mine for gold and you find gold. I know it’s possible because I have seen it happen for fifteen years over and over again.”</blockquote>
+        <p class="who">Nancy Slonim Aronie</p>
+      </aside>
+    </div>
+  </section>
+
+  <div class="band" role="region" aria-label="A word from Nancy">
+    <div class="wrap">
+      <blockquote>
+        <p>“If you feel safe, <em>you can do anything.</em>”</p>
+        <cite>Nancy Slonim Aronie</cite>
+      </blockquote>
+    </div>
+  </div>
+
+  <section class="foryou" id="foryou" aria-labelledby="fy-h">
+    <div class="wrap">
+      <div class="head">
+        <p class="label">Is it for you?</p>
+        <h2 id="fy-h">Where are you as a writer?</h2>
+        <p>Pick the one that sounds like you. We’ll show you what the workshop holds for you, and draft your note to ask about the next one.</p>
+      </div>
+      <fieldset class="picker">
+        <legend>Where are you as a writer?</legend>
+        <label class="chip"><input type="radio" name="where" value="begin" checked><span>Just beginning</span></label>
+        <label class="chip"><input type="radio" name="where" value="burnt"><span>A burnt-out professional</span></label>
+        <label class="chip"><input type="radio" name="where" value="critic"><span>Stopped by my inner critic</span></label>
+        <label class="chip"><input type="radio" name="where" value="story"><span>Carrying a story to tell</span></label>
+      </fieldset>
+      <div class="answer" aria-live="polite">
+        <div class="says fade" id="says">
+          <p class="fit" id="fit">This workshop is nurturing for the beginning writer.</p>
+          <blockquote><span id="q">“I don’t think anyone can really teach writing. What I know I can do is create a safe place for writers to write.”</span><footer>Nancy Slonim Aronie</footer></blockquote>
+        </div>
+        <div class="note">
+          <p class="to">Dear Chilmark Writing Workshop,</p>
+          <p class="body fade" id="draft">I’m just beginning as a writer, and I’d love a safe place to start. When is the next workshop?</p>
+          <a class="btn" href="#ask" id="usenote">Send this note</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nancy" id="nancy" aria-labelledby="n-h">
+    <div class="wrap grid">
+      <div>
+        <p class="label">Your teacher</p>
+        <h2 id="n-h">Nancy Slonim Aronie</h2>
+        <p class="pull">“You will access your innocence, your truth and your vulnerability.”</p>
+        <p class="pull-cite">Nancy, on what happens when you feel safe</p>
+      </div>
+      <div>
+        <ul class="creds">
+          <li><small>National Public Radio</small>Commentator for <i>All Things Considered</i></li>
+          <li><small>Harvard University</small>Teacher of the year award, all three years she taught there for Robert Coles</li>
+          <li><small>McCall’s magazine</small>Wrote a monthly column</li>
+          <li><small>Trinity College, Hartford</small>Visiting Writer</li>
+          <li><small>Isabella Stewart Gardner Museum</small>Eye of The Beholder Artist in Residence award</li>
+        </ul>
+        <div class="places">
+          <h3>She also gives workshops and lectures at</h3>
+          <p><span class="v">Kripalu Center for Yoga and Health<span class="dot">·</span></span> <span class="v">Omega Institute<span class="dot">·</span></span> <span class="v">Rowe Conference Center<span class="dot">·</span></span> <span class="v">Esalen<span class="dot">·</span></span> <span class="v">Wain-Wright House<span class="dot">·</span></span> <span class="v">The Open Center, New York City</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="questions" aria-labelledby="q-h" style="padding-top:0">
+    <div class="wrap grid">
+      <div>
+        <p class="label">Questions</p>
+        <h2 id="q-h">Before you write to us</h2>
+      </div>
+      <div>
+        <details open>
+          <summary>Do I have to be a writer already?</summary>
+          <p>No. The workshop is nurturing for the beginning writer, and a jump-start for the burnt-out professional.</p>
+        </details>
+        <details>
+          <summary>What is the workshop about?</summary>
+          <p>Honoring your own voice: writing in your own rhythms, using your own language and telling your own stories. Here is where we stop the inner critic in his tracks.</p>
+        </details>
+        <details>
+          <summary>What will I take home?</summary>
+          <p>Your powerful one-of-a-kind golden voice, filled with self-esteem, honor and joy.</p>
+        </details>
+        <details>
+          <summary>Who teaches it?</summary>
+          <p>Nancy Slonim Aronie, a commentator for NPR’s <i>All Things Considered</i>, who won teacher of the year all three years she taught at Harvard for Robert Coles.</p>
+        </details>
+        <details>
+          <summary>When is the next one, and where do I stay?</summary>
+          <p>Write to us below and ask about dates, accommodations and the private residence. Or join the newsletter to hear about workshops.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="ask" id="ask" aria-labelledby="a-h">
+    <div class="wrap grid">
+      <div class="side">
+        <p class="label">Write to us</p>
+        <h2 id="a-h">Ask about the next workshop.</h2>
+        <p>Dates, accommodations, whether it’s right for you. Send a note here, or email us directly.</p>
+        <a class="mail" href="mailto:Nancyjill73@gmail.com">Nancyjill73@gmail.com</a>
+      </div>
+      <form id="form" novalidate>
+        <div class="row">
+          <label class="f">Your name<input type="text" name="name" autocomplete="name" required></label>
+          <label class="f">Your email<input type="email" name="email" autocomplete="email" required></label>
+        </div>
+        <label class="f">Where you are as a writer
+          <select name="where" id="where">
+            <option value="begin">Just beginning</option>
+            <option value="burnt">A burnt-out professional</option>
+            <option value="critic">Stopped by my inner critic</option>
+            <option value="story">Carrying a story to tell</option>
+          </select>
+        </label>
+        <label class="f">Your note<textarea name="note" id="notefield">I’m just beginning as a writer, and I’d love a safe place to start. When is the next workshop?</textarea></label>
+        <label class="check"><input type="checkbox" name="news" checked> Sign me up for the newsletter too</label>
+        <button class="btn" type="submit">Send my note</button>
+        <p class="thanks" id="thanks" role="status" hidden>Thanks. This is a mockup, so nothing was sent.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <a class="mark" href="#top">Chilmark <span>Writing</span> Workshop</a>
+      <p>Writing from the heart, finding your own voice, with Nancy Slonim Aronie.</p>
+    </div>
+    <div style="text-align:right">
+      <p><a href="mailto:Nancyjill73@gmail.com">Nancyjill73@gmail.com</a></p>
+      <p>Photo by Eli Dagostino</p>
+    </div>
+    <p class="made">Mockup made for Chilmark Writing Workshop by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var data={
+    begin:{fit:"This workshop is nurturing for the beginning writer.",
+      q:"“I don’t think anyone can really teach writing. What I know I can do is create a safe place for writers to write.”",
+      d:"I’m just beginning as a writer, and I’d love a safe place to start. When is the next workshop?"},
+    burnt:{fit:"It’s a jump-start for the burnt-out professional.",
+      q:"“You mine for gold and you find gold.”",
+      d:"I write for a living and I’ve burnt out. I’d love a jump-start. When is the next workshop?"},
+    critic:{fit:"Here is where we stop the inner critic in his tracks.",
+      q:"“If you feel safe, you can do anything.”",
+      d:"My inner critic keeps stopping me before I start. I’d love to write somewhere safe. When is the next workshop?"},
+    story:{fit:"It’s about writing in your own rhythms, using your own language, and telling your own story.",
+      q:"“You can take the risk of saying this is who I am, this is what terrifies me, this is what moves me, this is what makes me laugh.”",
+      d:"I have a story I’ve wanted to tell for a long time. I’d love to find my own voice for it. When is the next workshop?"}
+  };
+  var fit=document.getElementById('fit'),q=document.getElementById('q'),draft=document.getElementById('draft'),
+      says=document.getElementById('says'),where=document.getElementById('where'),notefield=document.getElementById('notefield');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var current='begin', edited=false;
+  notefield.addEventListener('input',function(){edited=true});
+  function show(k){
+    current=k; var d=data[k];
+    function apply(){fit.textContent=d.fit;q.textContent=d.q;draft.textContent=d.d;says.classList.remove('swap');draft.classList.remove('swap')}
+    if(reduce){apply()}else{says.classList.add('swap');draft.classList.add('swap');setTimeout(apply,180)}
+  }
+  document.querySelectorAll('input[name=where]').forEach(function(r){r.addEventListener('change',function(){show(r.value)})});
+  document.getElementById('usenote').addEventListener('click',function(){
+    where.value=current; notefield.value=data[current].d; edited=false;
+  });
+  where.addEventListener('change',function(){if(!edited)notefield.value=data[where.value].d});
+  document.getElementById('form').addEventListener('submit',function(e){
+    e.preventDefault(); document.getElementById('thanks').hidden=false;
+  });
+
+  if(reduce||!('IntersectionObserver' in window))return;
+  var vh=window.innerHeight;
+  var els=document.querySelectorAll('section .wrap > div, section .wrap > aside, .band blockquote, .answer > div, .creds li, details');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');e.target.classList.remove('pending');io.unobserve(e.target)}})},{threshold:.15});
+  els.forEach(function(el){if(el.getBoundingClientRect().top>vh){el.classList.add('rise','will-rise');io.observe(el)}});
+  var s=document.querySelector('.strike');
+  if(s.getBoundingClientRect().top>vh){s.classList.add('pending');io.observe(s)}
+})();
+</script>
+</body>
+</html>
