@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup thekobblerking-com-947ff3 1 2d52846b -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Kobbler King | We cater &amp; deliver</title>
+<meta name="description" content="World famous kobblers, pies and banana pudding from The Kobbler King. We cater &amp; deliver.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --orange:#f1a638;
+  --orange-soft:#f8d49a;
+  --red:#8f1d14;
+  --red-deep:#6e140d;
+  --gold:#b9770e;
+  --ink:#2b1a10;
+  --ink-soft:#5a4334;
+  --cream:#fff8ec;
+  --paper:#fffdf8;
+  --line:#ecdcc3;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r:18px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 17px/1.6 var(--body);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.02;letter-spacing:-.015em;margin:0}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:#fff;padding:10px 14px;border-radius:8px;z-index:100}
+.skip:focus{top:52px}
+
+/* Signal Set banner */
+.mock-banner{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:var(--ink);color:#fbeedb;font:500 15px/1.3 var(--body);text-align:center;white-space:nowrap}
+.mock-banner a{color:#f8c46e;text-decoration:underline;text-underline-offset:3px;font-weight:700}
+
+/* Header */
+.site-head{background:var(--orange);position:sticky;top:0;z-index:20;box-shadow:0 1px 0 rgba(43,26,16,.12)}
+.head-in{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:84px}
+.logo-badge{display:block;background:#fff;border-radius:14px;padding:6px 12px;box-shadow:0 2px 0 rgba(110,20,13,.18),0 8px 20px -10px rgba(43,26,16,.45)}
+.logo-badge img{width:120px;height:auto}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{font-weight:500;text-decoration:none;padding:10px 12px;border-radius:999px;min-height:44px;display:inline-flex;align-items:center}
+.nav a:hover{background:rgba(255,255,255,.35)}
+.nav .nav-cta{background:var(--red);color:#fff;font-weight:700;padding:10px 18px;margin-left:6px}
+.nav .nav-cta:hover{background:var(--red-deep)}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 26px;border-radius:999px;font:700 16px/1 var(--body);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s ease,background .15s ease,box-shadow .15s ease}
+.btn-main{background:var(--red);color:#fff;box-shadow:0 10px 24px -12px rgba(110,20,13,.8)}
+.btn-main:hover{background:var(--red-deep);transform:translateY(-1px)}
+.btn-line{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-line:hover{background:var(--ink);color:#fff}
+.btn svg{width:18px;height:18px}
+
+/* Hero */
+.hero{padding:64px 0 88px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:700 13px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+.eyebrow svg{width:26px;height:18px}
+.hero h1{font-size:clamp(54px,8.2vw,112px);margin:18px 0 22px;color:var(--ink)}
+.hero h1 .amp{color:var(--red);font-style:italic;font-weight:600}
+.hero .lede{font-size:20px;line-height:1.55;color:var(--ink-soft);max-width:30ch;margin:0 0 32px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-pic{position:relative;justify-self:end;width:min(100%,470px)}
+.hero-pic .main{border-radius:28px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 60px -30px rgba(43,26,16,.55)}
+.hero-pic .main img{width:100%;height:100%;object-fit:cover}
+.hero-pic .tag{position:absolute;right:-14px;top:28px;background:var(--orange);color:var(--ink);font:800 15px/1.1 var(--display);padding:12px 16px;border-radius:14px;transform:rotate(4deg);box-shadow:0 10px 22px -12px rgba(43,26,16,.6)}
+
+/* Truck line strip */
+.strip{background:var(--red);color:#fff;overflow:hidden}
+.strip-in{display:flex;gap:40px;align-items:center;justify-content:center;flex-wrap:wrap;padding:18px 20px;font:700 15px/1.3 var(--body);letter-spacing:.12em;text-transform:uppercase}
+.strip-in span{display:inline-flex;align-items:center;gap:12px}
+.strip-in span::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--orange)}
+
+/* Sections */
+section{scroll-margin-top:96px}
+.sec{padding:104px 0}
+.sec-head{max-width:640px;margin-bottom:48px}
+.sec-head h2{font-size:clamp(38px,5vw,62px)}
+.sec-head p{font-size:19px;color:var(--ink-soft);margin:16px 0 0}
+.kicker{display:block;font:700 13px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-bottom:14px}
+
+/* Menu */
+.menu-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
+.menu-list{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.menu-list li{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font:600 clamp(22px,2.4vw,28px)/1.15 var(--display)}
+.menu-list li small{font:500 13px/1 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
+.menu-list .more{color:var(--ink-soft);font-style:italic}
+.menu-note{margin:24px 0 0;color:var(--ink-soft)}
+.menu-note a{font-weight:700;color:var(--red)}
+.pics{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pic{margin:0;position:relative;border-radius:var(--r);overflow:hidden;background:#e9d9c0}
+.pic img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.pic:hover img{transform:scale(1.03)}
+.pic figcaption{position:absolute;left:12px;bottom:12px;background:rgba(255,253,248,.95);color:var(--ink);font:700 14px/1 var(--body);padding:9px 12px;border-radius:999px}
+.pic.tall{grid-row:span 2;aspect-ratio:auto}
+.pic.sq{aspect-ratio:1}
+
+.waffles{margin-top:96px;display:grid;grid-template-columns:.8fr 2.2fr;gap:40px;align-items:center}
+.waffles h3{font-size:clamp(32px,3.6vw,44px)}
+.waffles p{color:var(--ink-soft);margin:14px 0 0}
+.waffle-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.waffle-row .pic{aspect-ratio:3/4}
+
+/* Planner */
+.plan{background:var(--orange);position:relative}
+.plan .sec-head h2{color:var(--ink)}
+.plan .sec-head p{color:#3d2616}
+.plan .kicker{color:var(--red-deep)}
+.planner{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:start}
+.panel{background:var(--paper);border-radius:24px;padding:32px;box-shadow:0 24px 50px -30px rgba(43,26,16,.55)}
+.step{border:0;margin:0 0 28px;padding:0}
+.step:last-of-type{margin-bottom:0}
+.step legend,.lbl{display:flex;align-items:center;gap:10px;font:700 15px/1.2 var(--body);margin-bottom:14px;padding:0}
+.num{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--ink);color:#fff;font:700 13px/1 var(--body)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{min-height:44px;padding:10px 16px;border-radius:999px;border:1.5px solid var(--line);background:#fff;color:var(--ink);font:500 15px/1.2 var(--body);cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:background .15s,border-color .15s,color .15s}
+.chip:hover{border-color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.chip .tick{width:16px;height:16px;border-radius:50%;border:1.5px solid currentColor;display:inline-grid;place-items:center;flex:none}
+.chip[aria-pressed="true"] .tick{background:var(--orange);border-color:var(--orange)}
+.chip[aria-pressed="true"] .tick::after{content:"";width:7px;height:4px;border:2px solid var(--ink);border-top:0;border-right:0;transform:rotate(-45deg) translate(1px,-1px)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field span{font:500 14px/1.2 var(--body);color:var(--ink-soft)}
+input,textarea{font:500 16px/1.3 var(--body);color:var(--ink);background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;min-height:48px;width:100%}
+input:focus,textarea:focus{border-color:var(--ink);outline:none;box-shadow:0 0 0 3px rgba(143,29,20,.25)}
+textarea{min-height:84px;resize:vertical}
+.stepper{display:flex;align-items:center;border:1.5px solid var(--line);border-radius:12px;background:#fff;overflow:hidden}
+.stepper button{width:48px;height:48px;border:0;background:transparent;font:700 22px/1 var(--body);color:var(--ink);cursor:pointer}
+.stepper button:hover{background:var(--cream)}
+.stepper input{border:0;text-align:center;min-height:46px;border-radius:0;padding:0;-moz-appearance:textfield}
+.stepper input::-webkit-inner-spin-button{-webkit-appearance:none}
+
+/* Ticket */
+.ticket{position:sticky;top:108px;background:var(--paper);border-radius:24px;overflow:hidden;box-shadow:0 24px 50px -30px rgba(43,26,16,.55)}
+.ticket-top{background:var(--ink);color:#fbeedb;padding:22px 26px;display:flex;align-items:center;gap:14px}
+.ticket-top svg{width:34px;height:24px;flex:none}
+.ticket-top b{display:block;font:800 21px/1.1 var(--display);color:#fff}
+.ticket-top small{font:500 13px/1.3 var(--body);color:#e9d4b6}
+.ticket-body{padding:22px 26px 8px}
+.t-row{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px dashed var(--line);font-size:15px}
+.t-row dt{color:var(--ink-soft);margin:0}
+.t-row dd{margin:0;font-weight:700;text-align:right}
+.t-items{padding:14px 0 4px}
+.t-items h3{font:700 13px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.t-items ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.t-items li{background:var(--cream);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font:600 14px/1.2 var(--body)}
+.t-items li.empty{background:transparent;border-style:dashed;color:var(--ink-soft);font-weight:500}
+.t-msg{margin:12px 0 0;padding:14px 16px;background:var(--cream);border-radius:12px;font-size:15px;color:var(--ink);line-height:1.5}
+.ticket-foot{padding:18px 26px 26px;display:flex;flex-direction:column;gap:10px}
+.ticket-foot .btn{width:100%}
+.sent{display:none;margin:0;padding:14px 16px;border-radius:12px;background:#e8f1e3;color:#1f3d17;font-weight:700;font-size:15px}
+.sent.show{display:block}
+
+/* Close */
+.close{background:var(--ink);color:#fbeedb;text-align:center;padding:112px 0;position:relative;overflow:hidden}
+.close .crown{width:64px;height:44px;margin:0 auto 22px}
+.close h2{font-size:clamp(42px,6.4vw,84px);color:#fff;max-width:14ch;margin:0 auto}
+.close h2 em{color:var(--orange);font-weight:600}
+.close p{font-size:19px;color:#e9d4b6;margin:20px auto 34px;max-width:40ch}
+.close .actions{justify-content:center}
+.close .btn-main{background:var(--orange);color:var(--ink)}
+.close .btn-main:hover{background:#f6b95c}
+.close .btn-line{border-color:#fbeedb;color:#fbeedb}
+.close .btn-line:hover{background:#fbeedb;color:var(--ink)}
+
+/* Subscribe + footer */
+.sub{background:var(--paper);border-bottom:1px solid var(--line)}
+.sub-in{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:center;padding:56px 0}
+.sub h2{font-size:clamp(28px,3vw,36px)}
+.sub p{margin:10px 0 0;color:var(--ink-soft)}
+.sub form{display:flex;gap:10px;flex-wrap:wrap}
+.sub input{flex:none}
+.sub .btn{min-height:48px;padding:12px 22px}
+.sub .sent{flex-basis:100%}
+footer{padding:48px 0 40px;background:var(--cream)}
+.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px}
+.foot-in .logo-badge img{width:110px}
+.social{display:flex;gap:8px;list-style:none;margin:0;padding:0}
+.social a{display:inline-grid;place-items:center;width:46px;height:46px;border-radius:50%;background:#fff;border:1px solid var(--line);color:var(--ink)}
+.social a:hover{background:var(--orange);border-color:var(--orange)}
+.social svg{width:20px;height:20px}
+.foot-mail{font-weight:700;color:var(--red);text-decoration:none;display:inline-flex;min-height:44px;align-items:center}
+.foot-mail:hover{text-decoration:underline}
+.credit{margin:32px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-soft)}
+.credit a{color:var(--ink-soft)}
+
+/* Motion */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+
+/* Responsive */
+@media (max-width:980px){
+  .nav a:not(.nav-cta){display:none}
+  .hero-grid,.menu-grid,.planner,.sub-in{grid-template-columns:1fr}
+  .hero-pic{justify-self:center}
+  .ticket{position:static}
+  .waffles{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .mock-banner{font-size:14px;padding:8px 10px}
+  .head-in{min-height:72px}
+  .logo-badge{padding:5px 9px;border-radius:12px}
+  .logo-badge img{width:96px}
+  .nav .nav-cta{padding:10px 16px;font-size:15px}
+  .hero{padding:40px 0 72px}
+  .hero h1{font-size:clamp(50px,15vw,70px);margin:14px 0 16px}
+  .hero .lede{font-size:18px;margin-bottom:26px}
+  .actions .btn{flex:1 1 100%}
+  .hero-pic{width:calc(100% - 20px);margin-top:12px;justify-self:end}
+  .hero-pic .tag{right:-6px;top:18px;font-size:14px}
+  .strip-in{gap:10px 22px;font-size:13px;letter-spacing:.08em;padding:16px 12px}
+  .sec{padding:76px 0}
+  .sec-head{margin-bottom:32px}
+  .sec-head p{font-size:17px}
+  .pics{gap:10px}
+  .pic figcaption{font-size:13px;left:8px;bottom:8px;padding:8px 10px}
+  .waffles{margin-top:64px;gap:24px}
+  .waffle-row{gap:10px}
+  .waffle-row .pic figcaption{display:none}
+  .panel{padding:22px 18px;border-radius:20px}
+  .row2{grid-template-columns:1fr}
+  .chip{font-size:14px;padding:10px 13px}
+  .ticket-body,.ticket-top,.ticket-foot{padding-left:20px;padding-right:20px}
+  .close{padding:84px 0}
+  .close p{font-size:17px}
+  .foot-in{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+<div class="mock-banner" role="region" aria-label="Mockup notice">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="logo-badge" href="#top" aria-label="The Kobbler King, back to top">
+      <img src="https://images.squarespace-cdn.com/content/v1/5eeea0769a70252dc6442048/1592711739482-1C6PF3PF5CXZCFIHSWG6/kobblerking-logo.png?format=1500w" alt="The Kobbler King, World Famous" width="787" height="430">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#menu">Menu</a>
+      <a href="#updates">Updates</a>
+      <a class="nav-cta" href="#plan">Plan catering</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">
+          <svg viewBox="0 0 26 18" aria-hidden="true"><path d="M1 16h24L23 4l-5 5-5-8-5 8-5-5z" fill="#b9770e"/></svg>
+          The Kobbler King &middot; World famous
+        </span>
+        <h1 id="hero-title">We cater <span class="amp">&amp;</span> deliver.</h1>
+        <p class="lede">Peach kobbler, pecan pies, banana pudding and more, brought to your party or special event by The Kobbler King.</p>
+        <div class="actions">
+          <a class="btn btn-main" href="#plan">Plan your dessert table
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg>
+          </a>
+          <a class="btn btn-line" href="#menu">See the menu</a>
+        </div>
+      </div>
+      <div class="hero-pic">
+        <div class="main"><img src="https://images.squarespace-cdn.com/content/v1/5eeea0769a70252dc6442048/1593971464928-O7I77W0J9ENG8UQWHLPQ/part0-17.jpg?format=1500w" alt="Racks of fresh pecan pies from The Kobbler King" width="1280" height="1706" fetchpriority="high"></div>
+        <div class="tag">The best dessert<br>in the world!</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip" aria-label="What we do">
+    <div class="strip-in">
+      <span>We cater</span><span>We deliver</span><span>Special events &amp; parties</span>
+    </div>
+  </div>
+
+  <section class="sec" id="menu" aria-labelledby="menu-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">The Kobbler King menu</span>
+        <h2 id="menu-title">Kobblers, pies and puddings.</h2>
+      </div>
+      <div class="menu-grid">
+        <div>
+          <ul class="menu-list">
+            <li>Fruit kobblers</li>
+            <li>Peach kobbler</li>
+            <li>Sweet potato pies</li>
+            <li>Pecan pies</li>
+            <li>Banana pudding</li>
+            <li>Lemon bars</li>
+            <li>Lemon icebox pies</li>
+            <li>Bread pudding</li>
+            <li class="more">And more</li>
+          </ul>
+          <p class="menu-note">Want something for your event? <a href="#plan">Build your request</a> and we'll take it from there.</p>
+        </div>
+        <div class="pics">
+          <figure class="pic tall"><img src="https://images.squarespace-cdn.com/content/v1/5eeea0769a70252dc6442048/1593969780585-5GWGZV6RZORCE0HP8D1Q/part0-9+9.17.48+AM.jpg?format=1500w" alt="Trays of berry kobbler with a sugared crust" width="1280" height="1280" loading="lazy"><figcaption>Fruit kobblers</figcaption></figure>
+          <figure class="pic sq"><img src="https://images.squarespace-cdn.com/content/v1/5eeea0769a70252dc6442048/1593969266792-9FLFSTZ1NSIVULNDCXDP/part0-3+9.21.01+AM.jpg?format=1500w" alt="Peach kobbler with vanilla ice cream" width="619" height="619" loading="lazy"><figcaption>Peach kobbler</figcaption></figure>
+          <figure class="pic sq"><img src="https://images.squarespace-cdn.com/content/v1/5eeea0769a70252dc6442048/1593971464462-YJTF9FL3QLCCEZRZG6PL/part0-13.jpg?format=1500w" alt="Bread pudding with icing and whipped cream" width="1280" height="1159" loading="lazy"><figcaption>Bread pudding</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="waffles">
+        <div>
+          <h3>And the waffles.</h3>
+          <p>Stacked high, piled with pecans, cereal and fruit, or bright blue.</p>
+        </div>
+        <div class="waffle-row">
+          <figure class="pic"><img src="https://images.squarespace-cdn.com/content/v1/5eeea0769a70252dc6442048/1594002424258-76U5J4ZDBPA5IJVJCWT0/part0-1-9.jpg?format=1500w" alt="Stack of waffles with pecans, butter and syrup" width="1280" height="1706" loading="lazy"><figcaption>Pecan</figcaption></figure>
+          <figure class="pic"><img src="https://images.squarespace-cdn.com/content/v1/5eeea0769a70252dc6442048/1594002424432-EY7XXSSFY7QYWAUSR4WE/part0.jpg?format=1500w" alt="Waffles topped with fruity cereal, strawberries and blueberries" width="1280" height="1706" loading="lazy"><figcaption>Cereal &amp; fruit</figcaption></figure>
+          <figure class="pic"><img src="https://images.squarespace-cdn.com/content/v1/5eeea0769a70252dc6442048/1594002424757-SBDKZ94VO03EWZQPZ9CT/part0-2-2.jpg?format=1500w" alt="Bright blue waffles with butter and syrup" width="1280" height="1706" loading="lazy"><figcaption>Blue</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec plan" id="plan" aria-labelledby="plan-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">Catering</span>
+        <h2 id="plan-title">Plan your dessert table.</h2>
+        <p>Tap the desserts you want, tell us about the day, and send it. Your request writes itself as you go.</p>
+      </div>
+      <form class="planner" id="planner" novalidate>
+        <div class="panel">
+          <fieldset class="step">
+            <legend><span class="num">1</span> Pick your desserts</legend>
+            <div class="chips" id="chips">
+              <button type="button" class="chip" aria-pressed="true"><span class="tick" aria-hidden="true"></span>Peach kobbler</button>
+              <button type="button" class="chip" aria-pressed="false"><span class="tick" aria-hidden="true"></span>Fruit kobblers</button>
+              <button type="button" class="chip" aria-pressed="true"><span class="tick" aria-hidden="true"></span>Pecan pies</button>
+              <button type="button" class="chip" aria-pressed="false"><span class="tick" aria-hidden="true"></span>Sweet potato pies</button>
+              <button type="button" class="chip" aria-pressed="true"><span class="tick" aria-hidden="true"></span>Banana pudding</button>
+              <button type="button" class="chip" aria-pressed="false"><span class="tick" aria-hidden="true"></span>Lemon bars</button>
+              <button type="button" class="chip" aria-pressed="false"><span class="tick" aria-hidden="true"></span>Lemon icebox pies</button>
+              <button type="button" class="chip" aria-pressed="false"><span class="tick" aria-hidden="true"></span>Bread pudding</button>
+            </div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><span class="num">2</span> Tell us about the day</legend>
+            <div class="row2">
+              <label class="field"><span>What's the occasion?</span><input id="occasion" type="text" value="Birthday party" autocomplete="off"></label>
+              <label class="field"><span>Date</span><input id="date" type="date"></label>
+            </div>
+            <div class="row2" style="margin-top:16px">
+              <div class="field"><span id="guests-l">How many guests?</span>
+                <div class="stepper">
+                  <button type="button" id="minus" aria-label="Fewer guests">&minus;</button>
+                  <input id="guests" type="number" min="1" max="2000" value="50" inputmode="numeric" aria-labelledby="guests-l">
+                  <button type="button" id="plus" aria-label="More guests">+</button>
+                </div>
+              </div>
+              <label class="field"><span>Where should we deliver?</span><input id="where" type="text" autocomplete="street-address" placeholder="Street and city"></label>
+            </div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><span class="num">3</span> Where do we reach you?</legend>
+            <div class="row2">
+              <label class="field"><span>Your name</span><input id="name" type="text" autocomplete="name" placeholder="First and last name"></label>
+              <label class="field"><span>Email</span><input id="email" type="email" autocomplete="email" placeholder="you@example.com"></label>
+            </div>
+            <label class="field" style="margin-top:16px"><span>Anything else?</span><textarea id="extra" placeholder="Timing, setup, anything we should know"></textarea></label>
+          </fieldset>
+        </div>
+
+        <aside class="ticket" aria-label="Your catering request">
+          <div class="ticket-top">
+            <svg viewBox="0 0 34 24" aria-hidden="true"><path d="M2 21h30L29 5l-6 7-6-10-6 10-6-7z" fill="#f1a638"/><circle cx="17" cy="2.5" r="2" fill="#f1a638"/></svg>
+            <div><b>Your catering request</b><small>To The Kobbler King</small></div>
+          </div>
+          <div class="ticket-body" aria-live="polite">
+            <dl style="margin:0">
+              <div class="t-row"><dt>Occasion</dt><dd id="t-occ">Birthday party</dd></div>
+              <div class="t-row"><dt>Date</dt><dd id="t-date">Your date</dd></div>
+              <div class="t-row"><dt>Guests</dt><dd id="t-guests">50</dd></div>
+              <div class="t-row"><dt>Deliver to</dt><dd id="t-how">Your address</dd></div>
+            </dl>
+            <div class="t-items">
+              <h3>Desserts <span id="t-count">(3)</span></h3>
+              <ul id="t-list"><li>Peach kobbler</li><li>Pecan pies</li><li>Banana pudding</li></ul>
+            </div>
+            <p class="t-msg" id="t-msg">Hi Kobbler King, we're planning a birthday party for about 50 guests and would love peach kobbler, pecan pies and banana pudding, delivered. What do you need from us?</p>
+          </div>
+          <div class="ticket-foot">
+            <button class="btn btn-main" type="submit">Send my request</button>
+            <a class="btn btn-line" id="mailto" href="mailto:kobblerking1@yahoo.com?subject=Catering%20request">Or email it to us</a>
+            <p class="sent" id="sent" role="status">Thanks. This is a mockup, so nothing was sent.</p>
+          </div>
+        </aside>
+      </form>
+    </div>
+  </section>
+
+  <section class="close" aria-labelledby="close-title">
+    <div class="wrap">
+      <svg class="crown" viewBox="0 0 34 24" aria-hidden="true"><path d="M2 21h30L29 5l-6 7-6-10-6 10-6-7z" fill="#f1a638"/><circle cx="17" cy="2.5" r="2" fill="#f1a638"/></svg>
+      <h2 id="close-title">Bring the King <em>to your party.</em></h2>
+      <p>We cater &amp; deliver. Tell us the day and the desserts, and we'll take it from there.</p>
+      <div class="actions">
+        <a class="btn btn-main" href="#plan">Plan your dessert table</a>
+        <a class="btn btn-line" href="mailto:kobblerking1@yahoo.com">Email us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sub" id="updates" aria-labelledby="sub-title">
+    <div class="wrap sub-in">
+      <div>
+        <h2 id="sub-title">Subscribe for the tastiest updates.</h2>
+        <p>Learn about Kobbler specials, events, and more.</p>
+      </div>
+      <form id="subscribe" novalidate>
+        <label class="field" style="flex:1 1 220px"><span>Email address</span><input type="email" autocomplete="email" placeholder="you@example.com"></label>
+        <button class="btn btn-main" type="submit" style="align-self:flex-end">Sign up</button>
+        <p class="sent" role="status">Thanks. This is a mockup, so nothing was sent.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-in">
+      <a class="logo-badge" href="#top" aria-label="The Kobbler King, back to top"><img src="https://images.squarespace-cdn.com/content/v1/5eeea0769a70252dc6442048/1592711739482-1C6PF3PF5CXZCFIHSWG6/kobblerking-logo.png?format=1500w" alt="The Kobbler King" width="787" height="430" loading="lazy"></a>
+      <a class="foot-mail" href="mailto:kobblerking1@yahoo.com">kobblerking1@yahoo.com</a>
+      <ul class="social" aria-label="Social pages">
+        <li><a href="https://www.instagram.com/thekobblerking/" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a></li>
+        <li><a href="https://www.facebook.com/bestpeachkobblerinla/" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H8v3h2.5V21z"/></svg></a></li>
+        <li><a href="https://twitter.com/kobblerking" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z"/></svg></a></li>
+      </ul>
+    </div>
+    <p class="credit">Mockup made for The Kobbler King by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var $ = function(id){return document.getElementById(id)};
+  var chips = [].slice.call(document.querySelectorAll('#chips .chip'));
+  var guests = $('guests'), dateEl = $('date');
+
+  // A finished example at first load: a date about three weeks out
+  var d = new Date(); d.setDate(d.getDate() + 21);
+  while (d.getDay() !== 6) d.setDate(d.getDate() + 1);
+  dateEl.value = d.toISOString().slice(0,10);
+
+  function niceDate(v){
+    if(!v) return 'Your date';
+    var p = v.split('-'), dt = new Date(+p[0], +p[1]-1, +p[2]);
+    return dt.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'});
+  }
+  function joinList(a){
+    if(a.length < 2) return a.join('');
+    return a.slice(0,-1).join(', ') + ' and ' + a[a.length-1];
+  }
+  function update(){
+    var picked = chips.filter(function(c){return c.getAttribute('aria-pressed')==='true'}).map(function(c){return c.textContent.trim()});
+    var occ = $('occasion').value.trim() || 'Event';
+    var g = Math.max(1, parseInt(guests.value,10) || 1);
+    var where = $('where').value.trim();
+    var dl = dateEl.value ? niceDate(dateEl.value) : '';
+    $('t-occ').textContent = occ;
+    $('t-date').textContent = dl || 'Your date';
+    $('t-guests').textContent = g;
+    $('t-how').textContent = where || 'Your address';
+    $('t-count').textContent = '(' + picked.length + ')';
+    var ul = $('t-list'); ul.innerHTML = '';
+    if(!picked.length){ var e=document.createElement('li'); e.className='empty'; e.textContent='Tap a dessert to add it'; ul.appendChild(e); }
+    picked.forEach(function(p){ var li=document.createElement('li'); li.textContent=p; ul.appendChild(li); });
+    var lower = picked.map(function(p){return p.toLowerCase()});
+    var msg = 'Hi Kobbler King, we\'re planning ' + (/^[aeiou]/i.test(occ)?'an ':'a ') + occ.toLowerCase() + (dl ? ' on ' + dl : '') + ' for about ' + g + ' guests' +
+      (lower.length ? ' and would love ' + joinList(lower) : '') + ', delivered' + (where ? ' to ' + where : '') + '. What do you need from us?';
+    var extra = $('extra').value.trim(); if(extra) msg += ' ' + extra;
+    var name = $('name').value.trim(); if(name) msg += ' Thanks, ' + name + '.';
+    $('t-msg').textContent = msg;
+    $('mailto').href = 'mailto:kobblerking1@yahoo.com?subject=' + encodeURIComponent('Catering request: ' + occ) + '&body=' + encodeURIComponent(msg);
+  }
+  chips.forEach(function(c){ c.addEventListener('click', function(){ c.setAttribute('aria-pressed', c.getAttribute('aria-pressed')==='true'?'false':'true'); update(); }); });
+  $('minus').addEventListener('click', function(){ guests.value = Math.max(1,(parseInt(guests.value,10)||1) - 10); update(); });
+  $('plus').addEventListener('click', function(){ guests.value = Math.min(2000,(parseInt(guests.value,10)||0) + 10); update(); });
+  ['occasion','date','guests','where','name','email','extra'].forEach(function(id){ $(id).addEventListener('input', update); });
+  update();
+
+  [].forEach.call(document.querySelectorAll('form'), function(f){
+    f.addEventListener('submit', function(ev){ ev.preventDefault(); var s=f.querySelector('.sent'); if(s){ s.classList.add('show'); } });
+  });
+
+  // Gentle rise for things below the first screen
+  if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var els = document.querySelectorAll('.sec-head, .menu-list, .pics, .waffles, .panel, .ticket, .close .wrap, .sub-in');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.remove('will-rise'); io.unobserve(en.target); } });
+  }, {rootMargin:'0px 0px -8% 0px'});
+  [].forEach.call(els, function(el){
+    if (el.getBoundingClientRect().top > window.innerHeight) { el.classList.add('rise','will-rise'); io.observe(el); }
+  });
+})();
+</script>
+</body>
+</html>
