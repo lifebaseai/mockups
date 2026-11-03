@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup thenextleveltennis-com-f2fd0b 1 b7c59070 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NXT LVL | Next Level Tennis, Drexel Hill, PA</title>
+<meta name="description" content="Next Level Tennis: youth programs, private training, summer camp and racquet stringing in Drexel Hill, PA, for juniors and adults.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0d120e;
+  --muted:#4a524c;
+  --line:#e2e6e0;
+  --paper:#ffffff;
+  --mist:#f3f5f1;
+  --green:#4ba64b;      /* their logo green */
+  --green-ink:#2c7330;  /* the same green, dark enough for text */
+  --court:#3a6fb0;      /* their blue hard courts */
+  --surround:#3d7d55;
+  --ball:#dcef4c;
+  --display:"Anton","Impact","Arial Narrow",sans-serif;
+  --body:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--body);overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--court);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:.005em;line-height:.98;margin:0;text-transform:uppercase}
+p{margin:0}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:#fff;padding:10px 14px;z-index:50;border-radius:6px}
+.skip:focus{top:52px}
+
+/* Signal Set banner */
+.mockup-banner{display:block;min-height:44px;padding:12px 10px;background:#e9eee6;color:var(--ink);font:500 15px/1.3 var(--body);text-align:center;border-bottom:1px solid #d5dccf;white-space:nowrap}
+.mockup-banner a{color:var(--green-ink);text-decoration:underline;text-underline-offset:3px;font-weight:600}
+
+/* Header */
+.site-head{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line)}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand img{width:60px;height:60px;object-fit:contain}
+.nav{display:flex;align-items:center;gap:28px;font-size:15px;font-weight:500}
+.nav a{text-decoration:none;padding:12px 0;color:var(--ink)}
+.nav a:hover{color:var(--green-ink)}
+.nav .call{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;background:var(--ink);color:#fff;min-height:44px}
+.nav .call:hover{color:#fff;background:#23302a}
+.ig{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%}
+.ig:hover{background:var(--mist)}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 26px;border-radius:999px;font:600 16px/1 var(--body);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s ease,background .2s ease,box-shadow .2s ease}
+.btn-main{background:var(--green);color:var(--ink);box-shadow:0 6px 18px -8px rgba(44,115,48,.7)}
+.btn-main:hover{transform:translateY(-1px);background:#57b457}
+.btn-ghost{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+
+/* Hero */
+.hero{position:relative;padding:64px 0 72px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--green-ink)}
+.eyebrow::before{content:"";width:28px;height:3px;background:var(--green);border-radius:2px}
+.hero h1{margin:18px 0 0;font-size:clamp(64px,9.2vw,132px)}
+.hero h1 .tag{display:block;margin-top:10px;font-size:.44em;color:var(--green-ink);letter-spacing:.01em}
+.hero .lead{margin:26px 0 0;max-width:33ch;font-size:20px;line-height:1.5;color:#2b322d}
+.hero .lead strong{color:var(--ink);font-weight:600}
+.actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.where{display:flex;align-items:center;gap:8px;margin-top:26px;font-size:15px;color:var(--muted)}
+.where a{color:var(--muted);text-underline-offset:3px}
+
+.court-stage{position:relative;perspective:1400px}
+.court{width:100%;max-width:420px;margin:0 auto;transform:rotateX(16deg) rotateZ(-4deg);transform-origin:50% 60%;filter:drop-shadow(0 30px 40px rgba(20,40,30,.22));border-radius:14px}
+.court .stop rect{fill:var(--ink)}
+.court .stop text{font-family:var(--display);font-size:30px;fill:#fff;letter-spacing:.04em}
+.court .stop circle{fill:#fff;stroke:var(--ink);stroke-width:4}
+.court-cap{margin:22px auto 0;max-width:420px;text-align:center;font-size:14px;color:var(--muted)}
+
+/* Word strip */
+.strip{background:var(--ink);color:#fff;overflow:hidden;padding:20px 0;border-top:4px solid var(--green)}
+.strip-track{display:flex;width:max-content;gap:0;animation:slide 38s linear infinite;animation-play-state:paused}
+.strip.on .strip-track{animation-play-state:running}
+.strip span{font-family:var(--display);font-size:clamp(34px,4.6vw,54px);line-height:1;text-transform:uppercase;padding:0 30px;display:flex;align-items:center;gap:60px;white-space:nowrap}
+.strip span::after{content:"";width:16px;height:16px;border-radius:50%;background:var(--ball);flex:none}
+.strip span:nth-child(even){color:transparent;-webkit-text-stroke:1.5px #fff}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* Mission */
+.mission{padding:110px 0 100px}
+.mission .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.mission h2{font-size:clamp(46px,6vw,84px)}
+.mission h2 em{font-style:normal;color:var(--green-ink)}
+.mission .copy p{font-size:19px;line-height:1.65;color:#2b322d;max-width:52ch}
+.mission .copy p + p{margin-top:18px}
+.pillars{display:grid;grid-template-columns:repeat(2,1fr);gap:0;margin-top:36px;border-top:1px solid var(--line)}
+.pillars div{padding:20px 20px 4px 0}
+.pillars div + div{padding-left:22px;border-left:1px solid var(--line)}
+.pillars b{display:block;font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:26px;line-height:1.05}
+.pillars small{display:block;margin-top:6px;font-size:15px;color:var(--muted)}
+
+/* Programs */
+.programs{padding:20px 0 110px}
+.sec-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:36px}
+.sec-head h2{font-size:clamp(46px,6vw,84px)}
+.sec-head p{max-width:40ch;color:var(--muted);font-size:17px}
+.prog-list{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.prog{display:grid;grid-template-columns:80px 1fr 1.1fr auto;gap:28px;align-items:center;padding:30px 0;border-bottom:1px solid var(--line);position:relative}
+.prog .num{font-family:var(--display);font-size:22px;color:var(--green-ink)}
+.prog h3{font-size:clamp(34px,3.6vw,50px);transition:transform .3s ease}
+.prog p{color:#2b322d;font-size:17px;max-width:42ch}
+.prog .go{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 18px;border:1.5px solid var(--ink);border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;white-space:nowrap;background:#fff;cursor:pointer;color:var(--ink);font-family:var(--body)}
+.prog .go:hover{background:var(--ink);color:#fff}
+.prog:hover h3{transform:translateX(6px)}
+.prog::before{content:"";position:absolute;left:0;top:-1px;height:3px;width:0;background:var(--green);transition:width .4s ease}
+.prog:hover::before{width:100%}
+.request-line{margin-top:26px;font-size:16px;color:var(--muted)}
+.request-line button{font:inherit;color:var(--green-ink);font-weight:600;background:none;border:0;padding:10px 0;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+
+/* Planner */
+.planner{background:var(--mist);padding:110px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.planner .sec-head{margin-bottom:44px}
+.plan-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.panel{background:#fff;border:1px solid var(--line);border-radius:20px;padding:32px;box-shadow:0 1px 0 rgba(0,0,0,.02),0 20px 40px -30px rgba(20,40,30,.35)}
+fieldset{border:0;margin:0;padding:0}
+fieldset + fieldset{margin-top:28px}
+legend{display:flex;align-items:center;gap:12px;padding:0;margin-bottom:14px;font-weight:600;font-size:16px}
+legend .step{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:var(--ink);color:#fff;font-size:13px;font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip label{display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:11px 18px;border:1.5px solid #cfd6cc;border-radius:999px;font-size:15px;font-weight:500;cursor:pointer;background:#fff;transition:all .2s ease;user-select:none}
+.chip label:hover{border-color:var(--ink)}
+.chip input:checked + label{background:var(--ink);border-color:var(--ink);color:#fff}
+.chip input:checked + label::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--ball)}
+.chip input:focus-visible + label{outline:3px solid var(--court);outline-offset:3px}
+.chip input:disabled + label{opacity:.45;cursor:not-allowed;text-decoration:line-through}
+.hint{margin-top:10px;font-size:14px;color:var(--muted);min-height:22px}
+
+.note{position:relative;background:var(--ink);color:#fff;border-radius:20px;padding:30px 30px 26px;overflow:hidden}
+.note::after{content:"";position:absolute;right:-50px;top:-50px;width:150px;height:150px;border-radius:50%;border:2px solid rgba(255,255,255,.12)}
+.note-top{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#c9d2cb}
+.note-top b{color:var(--ball);font-weight:600}
+.note h3{margin-top:14px;font-size:38px;color:#fff}
+.note p.msg{margin-top:12px;font-size:17px;line-height:1.55;color:#e7ece8;min-height:80px}
+.note p.msg mark{background:none;color:var(--ball);font-weight:600}
+form.send{margin-top:20px;display:grid;gap:14px}
+.field{display:grid;gap:6px}
+.field label{font-size:14px;font-weight:600}
+.field input,.field textarea{width:100%;min-height:48px;padding:12px 14px;border:1.5px solid #cfd6cc;border-radius:12px;font:400 16px/1.4 var(--body);color:var(--ink);background:#fff}
+.field textarea{min-height:92px;resize:vertical}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--court);box-shadow:0 0 0 3px rgba(58,111,176,.2)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+form.send .btn{width:100%;margin-top:4px}
+.thanks{display:none;margin-top:4px;padding:14px 16px;border-radius:12px;background:#e6f3e6;color:#1f5523;font-weight:600}
+.thanks.show{display:block}
+
+/* FAQ */
+.faq{padding:110px 0}
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
+.faq h2{font-size:clamp(46px,6vw,84px)}
+.faq-list{border-top:2px solid var(--ink)}
+details{border-bottom:1px solid var(--line)}
+summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:16px 0;font-weight:600;font-size:18px;cursor:pointer}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:400 30px/1 var(--display);color:var(--green-ink);transition:transform .25s ease}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 0 22px;color:#2b322d;max-width:58ch}
+
+/* Visit + final */
+.visit{background:var(--court);color:#fff;padding:100px 0;position:relative;overflow:hidden}
+.visit svg.lines{position:absolute;inset:0;width:100%;height:100%;opacity:.14;pointer-events:none}
+.visit .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.visit h2{font-size:clamp(52px,7.2vw,104px)}
+.visit .sub{margin-top:18px;font-size:20px;max-width:34ch;color:#fff}
+.visit .actions .btn-ghost{border-color:#fff;color:#fff}
+.visit .actions .btn-ghost:hover{background:#fff;color:var(--ink)}
+.contact-card{background:#fff;color:var(--ink);border-radius:20px;padding:10px 28px;box-shadow:0 30px 60px -30px rgba(0,0,0,.45)}
+.contact-card a{display:flex;align-items:center;gap:16px;min-height:64px;padding:14px 0;text-decoration:none;border-bottom:1px solid var(--line)}
+.contact-card a:last-child{border-bottom:0}
+.contact-card .k{display:block;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.contact-card .v{display:block;font-weight:600;font-size:17px;word-break:break-word}
+.contact-card svg{flex:none;width:22px;height:22px;color:var(--green-ink)}
+.contact-card a:hover .v{color:var(--green-ink)}
+
+footer{padding:44px 0 48px;font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px}
+footer .fl{display:flex;align-items:center;gap:14px}
+footer img{width:52px;height:52px}
+footer a{color:var(--muted);text-underline-offset:3px}
+.made{width:100%;padding-top:18px;border-top:1px solid var(--line);margin-top:6px}
+
+/* Phone call bar */
+.callbar{display:none}
+
+/* Rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:980px){
+  .hero .wrap,.mission .wrap,.faq .wrap,.visit .wrap,.plan-grid{grid-template-columns:1fr}
+  .hero .wrap{gap:40px}
+  .mission .wrap,.faq .wrap{gap:32px}
+  .prog{grid-template-columns:56px 1fr auto;gap:8px 18px}
+  .prog p{grid-column:2 / 3}
+  .prog .go{grid-row:1 / 3;grid-column:3}
+  .sec-head{flex-direction:column;align-items:start}
+}
+@media (max-width:760px){
+  body{font-size:16px;padding-bottom:76px}
+  .wrap{padding:0 20px}
+  .mockup-banner{font-size:15px;padding:8px 10px}
+  .nav a:not(.call):not(.ig){display:none}
+  .nav{gap:6px}
+  .nav .call{padding:10px 16px;font-size:14px}
+  .nav .call .full{display:none}
+  .site-head .wrap{height:68px}
+  .brand img{width:52px;height:52px}
+  .hero{padding:36px 0 52px}
+  .eyebrow{font-size:12px;letter-spacing:.05em;gap:8px}
+  .eyebrow::before{width:18px}
+  .hero h1{font-size:clamp(62px,18vw,84px)}
+  .hero .lead{font-size:18px}
+  .actions .btn{flex:1 1 100%}
+  .court{max-width:300px}
+  .mission,.faq,.planner{padding:72px 0}
+  .programs{padding:0 0 72px}
+  .pillars{grid-template-columns:1fr}
+  .pillars div + div{padding-left:0;border-left:0;border-top:1px solid var(--line)}
+  .prog{grid-template-columns:40px 1fr;padding:24px 0}
+  .prog .num{grid-row:1;align-self:start;padding-top:6px}
+  .prog p{grid-column:2}
+  .prog .go{grid-row:auto;grid-column:2;justify-self:start;margin-top:8px}
+  .panel{padding:24px 20px}
+  .note{padding:26px 22px 22px}
+  .two{grid-template-columns:1fr}
+  .visit{padding:72px 0}
+  .contact-card{padding:6px 20px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid var(--line);box-shadow:0 -10px 24px -16px rgba(0,0,0,.3)}
+  .callbar a{flex:1;min-height:48px;display:flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none}
+  .callbar .c1{background:var(--ink);color:#fff}
+  .callbar .c2{background:var(--green);color:var(--ink)}
+}
+@media (max-width:380px){
+  .mockup-banner{font-size:14px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mockup-banner" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Next Level Tennis, home">
+      <img src="https://images.squarespace-cdn.com/content/v1/6394da92b8ec9270dc81b4bf/5bce0ede-9dbe-40b1-b4b0-63ebb7f7526a/wht+full+logo.jpg?format=1500w" alt="NXT LVL, Next Level Tennis" width="766" height="766">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#programs">Programs</a>
+      <a href="#plan">Find your program</a>
+      <a href="#faq">Questions</a>
+      <a href="#visit">Contact</a>
+      <a class="ig" href="https://www.instagram.com/nxt_level_tennis/" aria-label="Next Level Tennis on Instagram">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a class="call" href="tel:+14843543689"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span>Call<span class="full"> (484) 354-3689</span></span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Drexel Hill, PA · Juniors and adults</span>
+        <h1 id="hero-title">Next Level Tennis<span class="tag">Confidence, built on court.</span></h1>
+        <p class="lead">Youth programs, private training, summer camp and racquet stringing. <strong>We train the strokes and the mindset</strong>, and keep it fun.</p>
+        <div class="actions">
+          <a class="btn btn-main" href="#plan">Find your program
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-ghost" href="tel:+14843543689">Call (484) 354-3689</a>
+        </div>
+        <p class="where"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=5313%20Township%20Line%20Road%2C%20Drexel%20Hill%2C%20PA%2019026">5313 Township Line Road, Drexel Hill</a></p>
+      </div>
+
+      <div class="court-stage">
+        <svg class="court" id="court" viewBox="0 0 480 900" role="img" aria-labelledby="court-t">
+          <title id="court-t">A tennis court with a rally traced across it, stopping at run, swing, footwork, crush, laugh and ace.</title>
+          <rect width="480" height="900" rx="18" fill="#3d7d55"/>
+          <rect x="60" y="60" width="360" height="780" fill="#3a6fb0"/>
+          <g fill="none" stroke="#fff" stroke-width="5">
+            <rect x="60" y="60" width="360" height="780"/>
+            <path d="M105 60V840M375 60V840M105 240H375M105 660H375M240 240V660M240 60v14M240 840v-14"/>
+          </g>
+          <path d="M40 450H440" stroke="#0d120e" stroke-width="7"/>
+          <path d="M40 450H440" stroke="#fff" stroke-width="2" stroke-dasharray="3 6" opacity=".7"/>
+          <path id="rally" d="M330 790 C 300 600, 170 330, 150 175 C 140 330, 120 560, 140 700 C 210 560, 320 380, 345 265 C 330 420, 280 560, 255 610 C 240 470, 215 260, 205 120" fill="none" stroke="#dcef4c" stroke-width="3.5" stroke-dasharray="1 11" opacity=".9" stroke-linecap="round"/>
+          <g class="stop"><circle cx="330" cy="790" r="9"/><rect x="250" y="728" width="96" height="44" rx="22"/><text x="298" y="762" text-anchor="middle">RUN</text></g>
+          <g class="stop"><circle cx="150" cy="175" r="9"/><rect x="156" y="190" width="120" height="44" rx="22"/><text x="216" y="224" text-anchor="middle">SWING</text></g>
+          <g class="stop"><circle cx="140" cy="700" r="9"/><rect x="72" y="720" width="162" height="44" rx="22"/><text x="153" y="754" text-anchor="middle">FOOTWORK</text></g>
+          <g class="stop"><circle cx="345" cy="265" r="9"/><rect x="262" y="282" width="128" height="44" rx="22"/><text x="326" y="316" text-anchor="middle">CRUSH</text></g>
+          <g class="stop"><circle cx="255" cy="610" r="9"/><rect x="270" y="560" width="116" height="44" rx="22"/><text x="328" y="594" text-anchor="middle">LAUGH</text></g>
+          <g class="stop"><circle cx="205" cy="120" r="9"/><rect x="222" y="82" width="86" height="44" rx="22"/><text x="265" y="116" text-anchor="middle">ACE</text></g>
+          <circle id="ball" cx="205" cy="120" r="14" fill="#dcef4c" stroke="#0d120e" stroke-width="3"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip" id="strip" aria-hidden="true">
+    <div class="strip-track">
+      <span>Run</span><span>Crush</span><span>Swing</span><span>Laugh</span><span>Ace</span><span>Footwork</span>
+      <span>Run</span><span>Crush</span><span>Swing</span><span>Laugh</span><span>Ace</span><span>Footwork</span>
+    </div>
+  </div>
+
+  <section class="mission" aria-labelledby="mission-title">
+    <div class="wrap">
+      <h2 id="mission-title" data-rise>Dedication,<br><em>with joy.</em></h2>
+      <div class="copy" data-rise>
+        <p>Next Level Tennis is about more than strokes. We give every player the technical and the mental tools to reach their full potential: a resilient mindset, unwavering confidence, and a game they love playing.</p>
+        <p>Juniors or adults, the journey should be enjoyable. That's how we build our programs.</p>
+        <div class="pillars">
+          <div><b>Technical</b><small>The game itself, built right.</small></div>
+          <div><b>Mental</b><small>Resilience and confidence that carry off court.</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="programs" id="programs" aria-labelledby="programs-title">
+    <div class="wrap">
+      <div class="sec-head" data-rise>
+        <h2 id="programs-title">What we offer</h2>
+        <p>Four ways onto our courts. Pick one and we'll help you plan the rest.</p>
+      </div>
+      <ol class="prog-list">
+        <li class="prog" data-rise><span class="num">01</span><h3>Youth Programs</h3><p>Tennis for juniors, with the technical and mental work that builds confident players.</p><button class="go" type="button" data-pick="Youth Programs">Plan this</button></li>
+        <li class="prog" data-rise><span class="num">02</span><h3>Private Training</h3><p>Private sessions, focused on your game and the next step in it.</p><button class="go" type="button" data-pick="Private Training">Plan this</button></li>
+        <li class="prog" data-rise><span class="num">03</span><h3>Summer Camp</h3><p>Summer days on court: run, swing, footwork, and plenty of laughs.</p><button class="go" type="button" data-pick="Summer Camp">Plan this</button></li>
+        <li class="prog" data-rise><span class="num">04</span><h3>Racquet Stringing</h3><p>Bring us your racquet and we'll string it, so your gear keeps up with your game.</p><button class="go" type="button" data-pick="Racquet Stringing">Plan this</button></li>
+      </ol>
+      <p class="request-line" data-rise>We're always expanding to meet the needs of our community. Something you'd like to see added? <button type="button" data-pick="Something new">Tell us here.</button></p>
+    </div>
+  </section>
+
+  <section class="planner" id="plan" aria-labelledby="plan-title">
+    <div class="wrap">
+      <div class="sec-head" data-rise>
+        <h2 id="plan-title">Find your program</h2>
+        <p>Three taps and your note to us is written. Add your details and send.</p>
+      </div>
+      <div class="plan-grid">
+        <div class="panel" data-rise>
+          <fieldset>
+            <legend><span class="step">1</span>Who's playing?</legend>
+            <div class="chips">
+              <div class="chip"><input type="radio" name="who" id="w1" value="junior" checked><label for="w1">A junior</label></div>
+              <div class="chip"><input type="radio" name="who" id="w2" value="adult"><label for="w2">An adult</label></div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend><span class="step">2</span>What are you looking for?</legend>
+            <div class="chips">
+              <div class="chip"><input type="radio" name="what" id="s1" value="Youth Programs" checked><label for="s1">Youth Programs</label></div>
+              <div class="chip"><input type="radio" name="what" id="s2" value="Private Training"><label for="s2">Private Training</label></div>
+              <div class="chip"><input type="radio" name="what" id="s3" value="Summer Camp"><label for="s3">Summer Camp</label></div>
+              <div class="chip"><input type="radio" name="what" id="s4" value="Racquet Stringing"><label for="s4">Racquet Stringing</label></div>
+              <div class="chip"><input type="radio" name="what" id="s5" value="Something new"><label for="s5">Something new</label></div>
+            </div>
+            <p class="hint" id="hint" aria-live="polite"></p>
+          </fieldset>
+          <fieldset>
+            <legend><span class="step">3</span>Where's their game today?</legend>
+            <div class="chips">
+              <div class="chip"><input type="radio" name="lvl" id="l1" value="new to tennis" checked><label for="l1">New to tennis</label></div>
+              <div class="chip"><input type="radio" name="lvl" id="l2" value="plays a bit"><label for="l2">Plays a bit</label></div>
+              <div class="chip"><input type="radio" name="lvl" id="l3" value="plays matches"><label for="l3">Plays matches</label></div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div data-rise>
+          <div class="note" aria-live="polite">
+            <div class="note-top"><span>Your note to us</span><b id="note-tag">Junior</b></div>
+            <h3 id="note-title">Youth Programs</h3>
+            <p class="msg" id="note-msg">Hi Next Level Tennis, I'd like to hear about <mark>Youth Programs</mark> for a junior player who is new to tennis.</p>
+          </div>
+          <form class="send panel" id="send" novalidate>
+            <div class="two">
+              <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" placeholder="First and last name"></div>
+              <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="So we can call you back"></div>
+            </div>
+            <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@example.com"></div>
+            <div class="field"><label for="f-more" id="more-label">Anything else we should know?</label><textarea id="f-more" name="more" placeholder="Days that suit you, goals, questions"></textarea></div>
+            <button class="btn btn-main" type="submit" id="send-btn">Send my note</button>
+            <p class="thanks" id="thanks" role="status">Thanks. This is a mockup, so nothing was sent.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <h2 id="faq-title" data-rise>Good questions</h2>
+      <div class="faq-list" data-rise>
+        <details open><summary>Is it just for kids?</summary><p>No. We coach juniors and adults. What we offer: youth programs, private training, summer camp and racquet stringing.</p></details>
+        <details><summary>Do you only work on technique?</summary><p>We work on both sides of the game: the technical and the mental. The goal is a resilient mindset and real confidence, on court and off it.</p></details>
+        <details><summary>Where are you?</summary><p>5313 Township Line Road, Drexel Hill, PA 19026. <a href="https://www.google.com/maps/search/?api=1&amp;query=5313%20Township%20Line%20Road%2C%20Drexel%20Hill%2C%20PA%2019026">Open it in Google Maps</a>.</p></details>
+        <details><summary>Can I ask for something you don't offer yet?</summary><p>Yes, please. We're always expanding to meet the needs of our community. Choose "Something new" in the planner and tell us what you'd like to see.</p></details>
+        <details><summary>How do I get started?</summary><p>Send us a note from the planner above, call (484) 354-3689, or email info@thenextleveltennis.com.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit" aria-labelledby="visit-title">
+    <svg class="lines" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g fill="none" stroke="#fff" stroke-width="4"><rect x="-40" y="60" width="1280" height="480"/><path d="M-40 120H1240M-40 480H1240M300 120V480M900 120V480M300 300H900M600 40V560"/></g></svg>
+    <div class="wrap">
+      <div data-rise>
+        <h2 id="visit-title">Ready for the next level?</h2>
+        <p class="sub">Tell us who's playing and what you're after. We'll take it from there.</p>
+        <div class="actions">
+          <a class="btn btn-main" href="#plan">Find your program</a>
+          <a class="btn btn-ghost" href="tel:+14843543689">Call (484) 354-3689</a>
+        </div>
+      </div>
+      <div class="contact-card" data-rise>
+        <a href="tel:+14843543689"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span><span class="k">Call</span><span class="v">(484) 354-3689</span></span></a>
+        <a href="mailto:info@thenextleveltennis.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span><span class="k">Email</span><span class="v">info@thenextleveltennis.com</span></span></a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=5313%20Township%20Line%20Road%2C%20Drexel%20Hill%2C%20PA%2019026"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span><span class="k">Find us</span><span class="v">5313 Township Line Road, Drexel Hill, PA 19026</span></span></a>
+        <a href="https://www.instagram.com/nxt_level_tennis/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg><span><span class="k">Follow</span><span class="v">@nxt_level_tennis</span></span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fl">
+      <img src="https://images.squarespace-cdn.com/content/v1/6394da92b8ec9270dc81b4bf/5bce0ede-9dbe-40b1-b4b0-63ebb7f7526a/wht+full+logo.jpg?format=1500w" alt="NXT LVL" width="766" height="766" loading="lazy">
+      <span>© 2026, Precision Athletics LLC. All rights reserved.</span>
+    </div>
+    <a href="#top">Back to top</a>
+    <p class="made">Mockup made for NXT LVL by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="c1" href="tel:+14843543689"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call us</a>
+  <a class="c2" href="#plan">Find your program</a>
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hasIO = 'IntersectionObserver' in window;
+
+  /* Planner */
+  var $ = function(s){return document.querySelector(s)};
+  var youth = $('#s1'), hint = $('#hint');
+  var lines = {
+    'Youth Programs': function(who,lvl){return "I'd like to hear about <mark>Youth Programs</mark> for a junior player who "+lvlText(lvl)+"."},
+    'Private Training': function(who,lvl){return "I'd like to hear about <mark>Private Training</mark> for "+(who==='adult'?'myself, an adult player who ':'a junior player who ')+lvlText(lvl)+"."},
+    'Summer Camp': function(who,lvl){return "I'd like to hear about <mark>Summer Camp</mark> for "+(who==='adult'?'an adult player who ':'a junior player who ')+lvlText(lvl)+"."},
+    'Racquet Stringing': function(){return "I have a racquet that needs <mark>stringing</mark>. When can I bring it in?"},
+    'Something new': function(){return "Here's <mark>something I'd love to see added</mark> at Next Level Tennis:"}
+  };
+  function lvlText(l){return l==='new to tennis'?'is new to tennis':l}
+  function val(n){var e=document.querySelector('input[name="'+n+'"]:checked');return e?e.value:''}
+  function render(){
+    var who=val('who'), what=val('what'), lvl=val('lvl');
+    youth.disabled = who==='adult';
+    if(who==='adult' && what==='Youth Programs'){ $('#s2').checked=true; what='Private Training'; hint.textContent='Youth Programs are for juniors, so we switched you to Private Training.'; }
+    else hint.textContent='';
+    var noLevel = what==='Racquet Stringing' || what==='Something new';
+    document.querySelectorAll('input[name="lvl"]').forEach(function(i){i.disabled=noLevel});
+    $('#note-tag').textContent = noLevel ? (what==='Racquet Stringing'?'Gear':'Idea') : (who==='adult'?'Adult':'Junior');
+    $('#note-title').textContent = what;
+    var name = ($('#f-name').value||'').trim();
+    $('#note-msg').innerHTML = 'Hi Next Level Tennis, '+lines[what](who,lvl)+(name?' Thanks, '+escapeHtml(name)+'.':'');
+    $('#more-label').textContent = what==='Something new' ? 'What would you like us to add?' : 'Anything else we should know?';
+  }
+  function escapeHtml(s){return s.replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+  document.querySelectorAll('.panel input[type=radio]').forEach(function(i){i.addEventListener('change',render)});
+  $('#f-name').addEventListener('input',render);
+  document.querySelectorAll('[data-pick]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var pick=b.getAttribute('data-pick');
+      if(pick==='Youth Programs') $('#w1').checked=true;
+      document.querySelectorAll('input[name="what"]').forEach(function(i){ if(i.value===pick && !i.disabled) i.checked=true; });
+      render();
+      $('#plan').scrollIntoView({behavior:reduce?'auto':'smooth'});
+    });
+  });
+  $('#send').addEventListener('submit',function(e){e.preventDefault();$('#thanks').classList.add('show');$('#send-btn').textContent='Note ready';});
+  render();
+
+  /* Gentle rise for things below the first screen */
+  if(!reduce && hasIO){
+    var vh = window.innerHeight;
+    var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('will-rise');io.unobserve(e.target);}})},{rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('[data-rise]').forEach(function(el){
+      if(el.getBoundingClientRect().top > vh){ el.classList.add('rise','will-rise'); io.observe(el); }
+    });
+  }
+
+  /* Word strip only moves while on screen */
+  var strip = $('#strip');
+  if(!reduce && hasIO){
+    new IntersectionObserver(function(es){es.forEach(function(e){strip.classList.toggle('on',e.isIntersecting)})}).observe(strip);
+  }
+
+  /* The ball rallies along the drawn path while the court is on screen */
+  var court=$('#court'), path=$('#rally'), ball=$('#ball');
+  if(!reduce && hasIO && path.getTotalLength){
+    var len=path.getTotalLength(), t0=null, running=false, raf=0, dur=7000, pause=1600;
+    function frame(ts){
+      if(!running) return;
+      if(t0===null) t0=ts;
+      var p=((ts-t0)%(dur+pause))/dur; if(p>1)p=1;
+      var e=p<.5?2*p*p:1-Math.pow(-2*p+2,2)/2;
+      var pt=path.getPointAtLength(e*len);
+      ball.setAttribute('cx',pt.x); ball.setAttribute('cy',pt.y);
+      raf=requestAnimationFrame(frame);
+    }
+    new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting && !running){running=true;t0=null;raf=requestAnimationFrame(frame);}
+      else if(!e.isIntersecting){running=false;cancelAnimationFrame(raf);}
+    })}).observe(court);
+  }
+})();
+</script>
+</body>
+</html>
