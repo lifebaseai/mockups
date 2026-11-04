@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup thesleephealth-org-5ea972 1 c9e62261 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Sleep Health Organization | Pediatric sleep education for parents and clinicians</title>
+<meta name="description" content="Physician-led pediatric sleep education. Free guides for parents by your child's age, plus SHIP® training and CME for professionals.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#003ab6; --blue-d:#002b88; --navy:#0b1d4a; --ink:#16233f; --muted:#4a5672;
+  --sage:#b0d4d4; --sage-l:#e3efef; --amber:#efc57b; --paper:#f7f5f0; --white:#fff;
+  --r:18px; --shadow:0 1px 2px rgba(11,29,74,.06),0 12px 32px -12px rgba(11,29,74,.18);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;font-variation-settings:"wdth" 100;color:var(--ink);background:var(--white);font-size:17px;line-height:1.6;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1160px,100% - 48px);margin-inline:auto}
+h1,h2,h3{font-stretch:82%;font-variation-settings:"wdth" 82;letter-spacing:-.01em;line-height:1.08;margin:0;color:var(--blue)}
+h2{font-size:clamp(30px,4vw,46px);font-weight:750}
+h3{font-size:22px;font-weight:700}
+p{margin:0}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:650;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.eyebrow::before{content:"";width:28px;height:3px;border-radius:2px;background:var(--amber)}
+.skip{position:absolute;left:12px;top:-60px;background:var(--white);padding:10px 14px;z-index:50;border-radius:8px}
+.skip:focus{top:56px}
+
+/* banner */
+.mock{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:var(--navy);color:#e8ecf6;font-size:15px;line-height:1.3;text-align:center}
+.mock a{color:#fff;text-decoration:underline;text-underline-offset:3px;font-weight:600}
+
+/* header */
+.top{background:var(--blue);color:#fff;position:relative;z-index:5}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:76px}
+.logo img{width:118px;height:auto}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{color:#fff;text-decoration:none;font-size:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:12px 12px;border-radius:999px;min-height:44px;display:inline-flex;align-items:center}
+.nav a:hover{background:rgba(255,255,255,.12)}
+.nav .call{border:1.5px solid rgba(255,255,255,.7);margin-left:8px;letter-spacing:.02em;text-transform:none;font-size:15px}
+.nav .call:hover{background:#fff;color:var(--blue)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 26px;border-radius:999px;font:inherit;font-weight:650;font-size:16px;text-decoration:none;cursor:pointer;border:2px solid var(--blue);transition:background .2s,color .2s,transform .2s}
+.btn-main{background:var(--blue);color:#fff}
+.btn-main:hover{background:var(--blue-d);border-color:var(--blue-d)}
+.btn-line{background:transparent;color:var(--blue)}
+.btn-line:hover{background:var(--blue);color:#fff}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* hero */
+.hero{background:linear-gradient(180deg,#fff 0,#fff 60%,var(--paper) 100%);padding:64px 0 80px}
+.hero .wrap{display:grid;grid-template-columns:1.02fr 1fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(46px,6.4vw,84px);font-weight:800;margin:18px 0 0;line-height:.98}
+.hero h1 span{display:block;color:var(--navy);font-size:.52em;font-weight:700;line-height:1.1;margin-top:14px}
+.hero .lede{font-size:19px;color:var(--muted);margin:22px 0 0;max-width:34em}
+.hero .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero .by{display:flex;align-items:center;gap:14px;margin-top:32px;font-size:15px;color:var(--muted)}
+.hero .by img{width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:50% 18%;border:2px solid #fff;box-shadow:var(--shadow)}
+.hero .by b{color:var(--ink);font-weight:650}
+
+/* finder */
+.finder{background:var(--sage);border-radius:28px;padding:10px;box-shadow:var(--shadow)}
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:4px}
+.tab{min-height:48px;border:0;border-radius:999px;background:transparent;font:inherit;font-weight:650;font-size:16px;color:var(--navy);cursor:pointer}
+.tab[aria-selected="true"]{background:#fff;color:var(--blue);box-shadow:0 1px 3px rgba(11,29,74,.12)}
+.panel{background:#fff;border-radius:22px;padding:28px 28px 26px;margin-top:8px}
+.panel[hidden]{display:none}
+.q{font-size:15px;font-weight:650;color:var(--muted);display:flex;justify-content:space-between;align-items:baseline}
+.age{font-stretch:82%;font-variation-settings:"wdth" 82;font-size:40px;font-weight:800;color:var(--blue);line-height:1}
+.age small{font-size:18px;font-weight:650;color:var(--muted);margin-left:4px}
+.range{position:relative;margin:18px 0 6px}
+.bands{display:grid;grid-template-columns:1fr 5fr 7fr 6fr;gap:3px;height:8px;border-radius:99px;overflow:hidden}
+.bands i{background:var(--sage-l);transition:background .3s}
+.bands i.on{background:var(--blue)}
+input[type=range]{-webkit-appearance:none;appearance:none;position:absolute;inset:-18px 0 auto;width:100%;height:44px;background:transparent;margin:0;cursor:pointer}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:30px;height:30px;border-radius:50%;background:#fff;border:3px solid var(--blue);box-shadow:0 2px 8px rgba(11,29,74,.25)}
+input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;background:#fff;border:3px solid var(--blue)}
+input[type=range]:focus-visible{outline:none}
+input[type=range]:focus-visible::-webkit-slider-thumb{box-shadow:0 0 0 4px var(--amber)}
+.stages{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:16px}
+.stage{min-height:44px;border:1.5px solid #d6e4e4;background:#fff;border-radius:12px;font:inherit;font-size:13px;font-weight:650;color:var(--navy);cursor:pointer;padding:6px 4px;line-height:1.2}
+.stage[aria-pressed="true"]{border-color:var(--blue);background:var(--blue);color:#fff}
+.result{margin-top:22px;padding-top:22px;border-top:1px solid #e6ecf2}
+.result .tag{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.result h3{font-size:26px;color:var(--navy);margin-top:6px}
+.topics{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0;padding:0;list-style:none}
+.topics li{background:var(--sage-l);color:var(--navy);font-size:15px;font-weight:550;padding:7px 14px;border-radius:999px}
+.result .go{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin-top:20px}
+.result .go .btn{min-height:48px;padding:12px 22px;font-size:15px}
+.textlink{font-weight:650;font-size:15px;text-decoration:underline;text-underline-offset:3px;min-height:44px;display:inline-flex;align-items:center}
+.roles{display:grid;gap:8px;margin-top:14px}
+.role{display:flex;align-items:center;justify-content:space-between;min-height:52px;padding:12px 18px;border:1.5px solid #d6e4e4;border-radius:14px;background:#fff;font:inherit;font-size:16px;font-weight:600;color:var(--navy);cursor:pointer;text-align:left}
+.role::after{content:"";width:14px;height:14px;border-radius:50%;border:2px solid #b7c6d6;flex:none;margin-left:12px}
+.role[aria-pressed="true"]{border-color:var(--blue);background:#f2f6ff}
+.role[aria-pressed="true"]::after{border:4px solid var(--blue);background:#fff}
+.result blockquote{margin:14px 0 0;font-size:15px;color:var(--muted);border-left:3px solid var(--amber);padding-left:14px}
+.result blockquote cite{display:block;font-style:normal;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:650;color:var(--blue);margin-top:6px}
+.free{display:flex;gap:10px;align-items:center;margin-top:16px;font-size:15px;color:var(--navy);background:#fdf3e1;border-radius:12px;padding:10px 14px}
+.free b{font-weight:700}
+.fade{animation:fade .35s ease}
+@keyframes fade{from{opacity:.25;transform:translateY(4px)}to{opacity:1;transform:none}}
+
+/* press */
+.press{background:var(--paper);padding:0 0 8px}
+.press .wrap{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:center;gap:10px 28px;padding:22px 0;border-top:1px solid #e4e0d6;border-bottom:1px solid #e4e0d6}
+.press .lbl{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:650}
+.press .outlet{font-stretch:80%;font-variation-settings:"wdth" 80;font-weight:750;font-size:20px;color:#3a4766;letter-spacing:-.01em}
+
+/* gap */
+.gap{background:var(--paper);padding:96px 0 104px}
+.gap .head{max-width:740px}
+.gap .head p{font-size:19px;color:var(--muted);margin-top:16px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-top:64px}
+.row.flip .pic{order:2}
+.pic{position:relative;max-width:560px}
+.pic img{border-radius:var(--r);width:100%;aspect-ratio:3/2;object-fit:cover;box-shadow:var(--shadow)}
+.stat{position:absolute;right:-18px;bottom:-26px;background:#fff;border-radius:16px;padding:16px 20px;box-shadow:var(--shadow);max-width:250px}
+.row.flip .stat{right:auto;left:-18px}
+.stat b{display:block;font-stretch:78%;font-variation-settings:"wdth" 78;font-size:48px;line-height:1;font-weight:800;color:var(--blue)}
+.stat span{display:block;font-size:14px;line-height:1.4;color:var(--muted);margin-top:6px}
+.copy h3{font-size:clamp(26px,3vw,34px);font-weight:750}
+.copy p{margin-top:14px;color:var(--muted)}
+.copy .kicker{margin-bottom:14px}
+.ticks{list-style:none;padding:0;margin:20px 0 26px;display:grid;gap:10px}
+.ticks li{display:flex;gap:12px;align-items:flex-start;font-weight:600;color:var(--navy)}
+.ticks li::before{content:"";flex:none;width:20px;height:20px;margin-top:3px;border-radius:50%;background:var(--sage) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M6 10.5l2.6 2.5L14 7.5' fill='none' stroke='%23003ab6' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/20px no-repeat}
+.second{font-size:15px;color:var(--muted);margin-top:4px}
+.second b{color:var(--blue);font-size:17px}
+
+/* founder */
+.founder{background:var(--blue);color:#fff;padding:96px 0;overflow:hidden}
+.founder .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.founder .portrait{position:relative;max-width:480px}
+.founder .portrait img{border-radius:24px;width:100%;aspect-ratio:1/1;object-fit:cover}
+.founder .portrait::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:2px solid var(--amber);border-radius:24px;z-index:-1}
+.founder .portrait{z-index:0}
+.founder .eyebrow{color:#fff}
+.founder h2{color:#fff;margin-top:16px}
+.founder .role-line{font-size:19px;color:var(--sage);font-weight:600;margin-top:10px}
+.founder p.bio{margin-top:20px;color:#dfe6fb;max-width:36em}
+.creds{list-style:none;padding:0;margin:26px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.creds li{border-top:1px solid rgba(255,255,255,.28);padding-top:12px;font-size:15px;color:#eef2fd;line-height:1.45}
+.creds li b{display:block;color:#fff;font-weight:700;font-size:16px}
+.founder .acts{margin-top:32px;display:flex;flex-wrap:wrap;gap:12px}
+.founder .btn-main{background:#fff;color:var(--blue);border-color:#fff}
+.founder .btn-main:hover{background:var(--sage);border-color:var(--sage)}
+.founder .btn-line{color:#fff;border-color:rgba(255,255,255,.8)}
+.founder .btn-line:hover{background:#fff;color:var(--blue)}
+
+/* words */
+.words{padding:100px 0;background:#fff}
+.words .wrap{max-width:900px;text-align:center}
+.words .eyebrow{justify-content:center}
+.quote{margin:40px auto 0;min-height:220px;display:flex;flex-direction:column;justify-content:center}
+.quote p{font-stretch:88%;font-variation-settings:"wdth" 88;font-size:clamp(22px,2.6vw,30px);line-height:1.35;color:var(--navy);font-weight:500}
+.quote p::before{content:"\201C";display:block;font-size:72px;line-height:.6;color:var(--amber);font-weight:800;margin-bottom:18px}
+.quote cite{display:block;margin-top:22px;font-style:normal;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:650;color:var(--blue)}
+.qnav{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:30px}
+.qbtn{width:48px;height:48px;border-radius:50%;border:1.5px solid var(--blue);background:#fff;color:var(--blue);cursor:pointer;display:grid;place-items:center}
+.qbtn:hover{background:var(--blue);color:#fff}
+.qbtn svg{width:18px;height:18px}
+.dots{display:flex;gap:4px}
+.dot{width:28px;height:44px;border:0;background:transparent;cursor:pointer;display:grid;place-items:center;padding:0}
+.dot::before{content:"";width:8px;height:8px;border-radius:99px;background:#c9d3e6;transition:width .25s,background .25s}
+.dot[aria-current="true"]::before{width:24px;background:var(--blue)}
+
+/* faq */
+.faq{background:var(--paper);padding:96px 0}
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
+.faq .side p{color:var(--muted);margin-top:16px}
+.faq .side a{font-weight:650}
+details{border-bottom:1px solid #e1ddd2}
+details:first-child{border-top:1px solid #e1ddd2}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font-weight:650;font-size:18px;color:var(--navy);min-height:44px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:28px;height:28px;border-radius:50%;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 5v10M5 10h10' stroke='%23003ab6' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") center/16px no-repeat;transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 44px 22px 0;color:var(--muted)}
+
+/* signup */
+.signup{background:var(--sage);padding:96px 0}
+.signup .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.signup .big{font-stretch:80%;font-variation-settings:"wdth" 80;font-size:clamp(44px,6vw,76px);font-weight:800;color:var(--blue);line-height:.98}
+.signup h2{font-size:clamp(24px,2.6vw,30px);color:var(--navy);margin-top:18px}
+.signup .lead{margin-top:14px;color:#2b3a5a;max-width:30em}
+.phone{display:inline-flex;align-items:center;gap:14px;margin-top:30px;text-decoration:none;color:var(--navy)}
+.phone .ico{width:52px;height:52px;border-radius:50%;background:#fff;display:grid;place-items:center;color:var(--blue)}
+.phone .ico svg{width:22px;height:22px}
+.phone small{display:block;font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:650;color:#2b3a5a}
+.phone b{font-size:22px;font-weight:750;color:var(--blue)}
+form{background:#fff;border-radius:24px;padding:32px;box-shadow:var(--shadow)}
+form h3{font-size:22px;color:var(--navy)}
+form .sub{font-size:15px;color:var(--muted);margin-top:6px}
+.field{margin-top:18px}
+label{display:block;font-size:14px;font-weight:650;color:var(--navy);margin-bottom:6px}
+input[type=text],input[type=email],select{width:100%;min-height:50px;border:1.5px solid #c9d3e0;border-radius:12px;padding:12px 14px;font:inherit;font-size:16px;color:var(--ink);background:#fff}
+input:focus,select:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,58,182,.18)}
+form .btn{width:100%;margin-top:22px}
+.small{font-size:13px;color:var(--muted);margin-top:12px;text-align:center}
+.thanks{margin-top:16px;background:var(--sage-l);color:var(--navy);border-radius:12px;padding:12px 14px;font-weight:600;text-align:center}
+.thanks[hidden]{display:none}
+
+/* footer */
+footer{background:var(--navy);color:#cfd7ea;padding:64px 0 28px;font-size:15px}
+footer .grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+footer img{width:120px}
+footer .tag{margin-top:16px;max-width:24em}
+footer h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#fff;font-weight:700;font-stretch:100%;font-variation-settings:"wdth" 100}
+footer ul{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:4px}
+footer a{color:#e8edf8;text-decoration:none;min-height:36px;display:inline-flex;align-items:center}
+footer a:hover{text-decoration:underline}
+.legal{margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,255,255,.14);font-size:13px;color:#b7c2dc;display:grid;gap:10px}
+.legal a{display:inline;min-height:0;text-decoration:underline}
+
+/* phone call bar */
+.callbar{display:none}
+
+/* gentle rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .7s ease,transform .7s ease}
+
+@media (max-width:960px){
+  .hero .wrap,.row,.founder .wrap,.faq .wrap,.signup .wrap{grid-template-columns:1fr;gap:40px}
+  .row.flip .pic{order:0}
+  .nav a:not(.call){display:none}
+  .founder .portrait{max-width:420px}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:68px}
+  .wrap{width:min(1160px,100% - 40px)}
+  .mock{font-size:14.5px;padding:8px 12px}
+  .top .wrap{min-height:64px}
+  .logo img{width:98px}
+  .nav .call{display:none}
+  .hero{padding:36px 0 56px}
+  .hero h1{font-size:52px}
+  .hero .lede{font-size:17px}
+  .hero .acts .btn{flex:1 1 100%}
+  .hero .by{margin-top:24px}
+  .finder{border-radius:24px;padding:8px}
+  .panel{padding:22px 18px 20px}
+  .stage{font-size:12px}
+  .result h3{font-size:22px}
+  .press .wrap{gap:6px 18px}
+  .press .lbl{flex-basis:100%;text-align:center}
+  .press .outlet{font-size:17px}
+  .gap,.founder,.words,.faq,.signup{padding:68px 0}
+  .row{margin-top:48px;gap:44px}
+  .stat{right:12px;bottom:-24px;padding:12px 16px;max-width:210px}
+  .row.flip .stat{left:12px}
+  .stat b{font-size:38px}
+  .creds{grid-template-columns:1fr}
+  .founder .acts .btn,.copy .btn{flex:1 1 100%}
+  .founder .portrait::before{inset:12px -10px -12px 12px}
+  .quote{min-height:300px}
+  form{padding:24px 20px}
+  footer .grid{grid-template-columns:1fr 1fr}
+  footer .brand{grid-column:1/-1}
+  .callbar{display:grid;grid-template-columns:1.2fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(255,255,255,.96);padding:8px 10px calc(8px + env(safe-area-inset-bottom));box-shadow:0 -6px 20px rgba(11,29,74,.12)}
+  .callbar a{min-height:48px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:650;font-size:15px;text-decoration:none}
+  .callbar .c1{background:var(--blue);color:#fff}
+  .callbar .c2{border:1.5px solid var(--blue);color:var(--blue)}
+  .callbar svg{width:17px;height:17px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock" role="note">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#main" aria-label="The Sleep Health Organization, home"><img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2147661372/images/081e711e8191b542651e51b08f08b78e.png" alt="The Sleep Health Organization" width="1000" height="407"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#parents">For parents</a>
+      <a href="#professionals">For professionals</a>
+      <a href="#founder">About</a>
+      <a href="#questions">Questions</a>
+      <a class="call" href="tel:+18668085785">Toll free (866) 808-5785</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Evidence-based pediatric sleep education</span>
+        <h1 id="h1">Sleep is simple.<span>The pediatric sleep gap ends here.</span></h1>
+        <p class="lede">Training and CME for the clinicians who were never taught pediatric sleep. Plain-language guides for the families living it.</p>
+        <div class="acts">
+          <a class="btn btn-main" href="#signup">Get the free melatonin guide</a>
+          <a class="btn btn-line" href="tel:+18668085785"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Call toll free</a>
+        </div>
+        <p class="by"><img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2147661372/images/a5a4c2f8a1d735b8a00eb88722c91af1.jpg" alt="" width="52" height="52"><span>Founded by <b>Dr. Anya McLaren-Barnett</b>, pediatric respirologist (pulmonologist) and sleep medicine physician.</span></p>
+      </div>
+
+      <div class="finder" id="finder">
+        <div class="tabs" role="tablist" aria-label="Who is this for?">
+          <button class="tab" role="tab" id="t-par" aria-controls="p-par" aria-selected="true">For parents</button>
+          <button class="tab" role="tab" id="t-pro" aria-controls="p-pro" aria-selected="false" tabindex="-1">For professionals</button>
+        </div>
+
+        <div class="panel" id="p-par" role="tabpanel" aria-labelledby="t-par">
+          <div class="q"><label for="age" style="margin:0;color:inherit;font-size:inherit">How old is your child?</label><output class="age" id="ageOut" for="age">3<small>years</small></output></div>
+          <div class="range">
+            <div class="bands" aria-hidden="true"><i></i><i class="on"></i><i></i><i></i></div>
+            <input type="range" id="age" min="0" max="18" step="1" value="3" aria-describedby="ageOut">
+          </div>
+          <div class="stages" role="group" aria-label="Or pick an age group">
+            <button class="stage" data-age="0" aria-pressed="false">0 to 12 mo</button>
+            <button class="stage" data-age="3" aria-pressed="true">1 to 5 yrs</button>
+            <button class="stage" data-age="9" aria-pressed="false">6 to 12 yrs</button>
+            <button class="stage" data-age="15" aria-pressed="false">13 to 18 yrs</button>
+          </div>
+          <div class="result" id="ageResult" aria-live="polite">
+            <p class="tag" id="rTag">Toddlers · aged 1 to 5 years</p>
+            <h3 id="rHead">Your toddler guide covers</h3>
+            <ul class="topics" id="rTopics"><li>Bedtime resistance</li><li>Naps</li><li>Settling routines that hold</li></ul>
+            <div class="go">
+              <a class="btn btn-main" href="https://www.thesleephealth.org/" id="rLink">Read the toddler guide</a>
+              <a class="textlink" href="#signup">Free melatonin guide</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" id="p-pro" role="tabpanel" aria-labelledby="t-pro" hidden>
+          <p class="q">What is your role?</p>
+          <div class="roles" role="group" aria-label="Your role">
+            <button class="role" data-role="ped" aria-pressed="true">Pediatrician or physician</button>
+            <button class="role" data-role="con" aria-pressed="false">Sleep consultant</button>
+            <button class="role" data-role="ot" aria-pressed="false">Occupational therapist or allied health</button>
+          </div>
+          <div class="result" id="roleResult" aria-live="polite">
+            <p class="tag">Your track</p>
+            <h3 id="pHead">SHIP® for Pediatricians</h3>
+            <blockquote id="pQuote"><span id="pQuoteText">“Profoundly broadened my knowledge of pediatric sleep issues, enhancing my professional practice.”</span><cite id="pQuoteBy">Pediatrician, SHIP® for Pediatricians</cite></blockquote>
+            <p class="free"><b>Free:</b> the ADHD and Sleep CME recording</p>
+            <div class="go">
+              <a class="btn btn-main" href="https://www.thesleephealth.org/">See SHIP® training</a>
+              <a class="textlink" href="#professionals">Why it matters</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="press" aria-label="As featured in">
+    <div class="wrap">
+      <span class="lbl">As featured in</span>
+      <span class="outlet">National Post</span><span class="outlet">Global News</span><span class="outlet">CBC News</span><span class="outlet">CNN</span><span class="outlet">Citytv</span><span class="outlet">FOX News</span><span class="outlet">Owl Kids</span>
+    </div>
+  </div>
+
+  <section class="gap" aria-labelledby="gap-h">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">The pediatric sleep gap</span>
+        <h2 id="gap-h" style="margin-top:16px">Clinicians were never taught it. Families are living it.</h2>
+      </div>
+
+      <div class="row" id="professionals">
+        <div class="pic">
+          <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2147661372/images/da331b7-5323-2e8b-45e8-ad6c5631145_Sleep_journal.png" alt="A pediatrician with a tablet talking with a mother and her young daughter in a clinic room" width="1000" height="670" loading="lazy">
+          <p class="stat"><b>1 in 5</b><span>pediatricians receive training in sleep</span></p>
+        </div>
+        <div class="copy">
+          <p class="eyebrow kicker">Train with us</p>
+          <h3>Get the sleep training your program never gave you.</h3>
+          <p>SHIP® training, CME sessions and screening tools built for real appointment lengths. For sleep consultants, physicians, occupational therapists and allied health practitioners.</p>
+          <p class="second"><b>23%</b> of medical programs offer no sleep training at all.</p>
+          <ul class="ticks">
+            <li>SHIP® for Pediatricians</li>
+            <li>SHIP® for Sleep Consultants</li>
+            <li>Free ADHD and Sleep CME recording</li>
+          </ul>
+          <a class="btn btn-main" href="#finder" data-open="pro">Find your track</a>
+        </div>
+      </div>
+
+      <div class="row flip" id="parents">
+        <div class="pic">
+          <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2147661372/images/6e8fdf5-2d1f-e2a5-336b-286d60e51_black_family.png" alt="Parents sitting on a bed with their two babies at home" width="1005" height="667" loading="lazy">
+          <p class="stat"><b>1 in 3</b><span>parents of babies report a child's sleep problem</span></p>
+        </div>
+        <div class="copy">
+          <p class="eyebrow kicker">Learn at home</p>
+          <h3>Straight answers about your child's sleep, with no blame.</h3>
+          <p>Free guides written by clinicians, sorted by your child's age, from babies to teens.</p>
+          <p class="second"><b>56%</b> of those sleep problems persist into adolescence.</p>
+          <ul class="ticks">
+            <li>Guides by age, from babies to teens</li>
+            <li>The free pediatric melatonin guide</li>
+            <li>When to ask your clinician for a referral</li>
+          </ul>
+          <a class="btn btn-main" href="#finder" data-open="par">Start with your child's age</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="founder" id="founder" aria-labelledby="f-h">
+    <div class="wrap">
+      <div class="portrait">
+        <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2147661372/images/a5a4c2f8a1d735b8a00eb88722c91af1.jpg" alt="Dr. Anya McLaren-Barnett, pediatric respirologist and sleep medicine physician, in a white coat and stethoscope" width="1440" height="1440" loading="lazy">
+      </div>
+      <div>
+        <span class="eyebrow">Meet our founder</span>
+        <h2 id="f-h">Dr. Anya McLaren-Barnett</h2>
+        <p class="role-line">Pediatric Respirologist (Pulmonologist) and sleep medicine physician</p>
+        <p class="bio">A Jamaican-born pediatric sleep physician, passionate about global health, youth mentorship, and making evidence-based health education accessible to all.</p>
+        <ul class="creds">
+          <li><b>University of Toronto</b>Where she trained</li>
+          <li><b>McMaster University</b>Part-time academic appointment</li>
+          <li><b>Pediatric behavioural sleep medicine</b>Additional training</li>
+          <li><b>SHIP®</b>The Sleep Health Intelligence Program, under her guidance</li>
+        </ul>
+        <div class="acts">
+          <a class="btn btn-main" href="#words">Hear from graduates</a>
+          <a class="btn btn-line" href="tel:+18668085785">Book Dr. Anya to speak</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="words" id="words" aria-labelledby="w-h">
+    <div class="wrap">
+      <span class="eyebrow">What clinicians say</span>
+      <h2 id="w-h" style="margin-top:16px">In their own words</h2>
+      <figure class="quote" aria-live="polite">
+        <p id="qText">Since completing the program, my understanding of sleep science has deepened significantly, equipping me with the tools to better assist my clients.</p>
+        <cite id="qBy">SHIP® graduate</cite>
+      </figure>
+      <div class="qnav">
+        <button class="qbtn" id="qPrev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <div class="dots" id="qDots"></div>
+        <button class="qbtn" id="qNext" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="questions" aria-labelledby="q-h">
+    <div class="wrap">
+      <div class="side">
+        <span class="eyebrow">How can we help?</span>
+        <h2 id="q-h" style="margin-top:16px">Still have a question?</h2>
+        <p>Short answers here. Or call us toll free at <a href="tel:+18668085785">(866) 808-5785</a>.</p>
+      </div>
+      <div>
+        <details open>
+          <summary>Are the parent guides free?</summary>
+          <p>Yes. Free guides written by clinicians, sorted by your child's age, plus a free pediatric melatonin guide.</p>
+        </details>
+        <details>
+          <summary>What ages do you cover?</summary>
+          <p>Ages 0 to 18: infants (0 to 12 months), toddlers (1 to 5 years), school age (6 to 12 years) and teens (13 to 18 years).</p>
+        </details>
+        <details>
+          <summary>How do I know when to see a doctor?</summary>
+          <p>Our guides cover signs worth asking your doctor about, and when to ask your clinician for a referral.</p>
+        </details>
+        <details>
+          <summary>Who is SHIP® for?</summary>
+          <p>Sleep consultants, physicians, occupational therapists and allied health practitioners. There are tracks for pediatricians and for sleep consultants.</p>
+        </details>
+        <details>
+          <summary>Is there free CME?</summary>
+          <p>Yes. The ADHD and Sleep CME recording is free.</p>
+        </details>
+        <details>
+          <summary>Is this medical advice?</summary>
+          <p>No. This is educational content only, not medical advice or a clinical diagnosis. Consult your child's physician before changing care. In an emergency, contact your local emergency services.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="signup" id="signup" aria-labelledby="s-h">
+    <div class="wrap">
+      <div>
+        <p class="big">Sleep is simple.</p>
+        <h2 id="s-h">Get the free pediatric melatonin guide.</h2>
+        <p class="lead">Written for the parents asking questions and the clinicians answering them. Join a community of parents and clinicians getting evidence-based pediatric sleep tips you can act on. Unsubscribe anytime.</p>
+        <a class="phone" href="tel:+18668085785"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><span><small>Prefer to talk? Toll free</small><b>(866) 808-5785</b></span></a>
+      </div>
+      <form id="form" novalidate>
+        <h3>Send me the guide</h3>
+        <p class="sub">Plus evidence-based sleep tips, delivered straight to your inbox.</p>
+        <div class="field"><label for="fn">First name</label><input type="text" id="fn" name="fn" autocomplete="given-name" value="" placeholder="Your first name"></div>
+        <div class="field"><label for="em">Email</label><input type="email" id="em" name="em" autocomplete="email" placeholder="you@example.com"></div>
+        <div class="field"><label for="as">I'm subscribing as a</label>
+          <select id="as" name="as">
+            <option>Parent</option>
+            <option>Pediatrician / Physician</option>
+            <option>Occupational Therapist</option>
+            <option>Sleep and Child Health Practitioner</option>
+          </select></div>
+        <button class="btn btn-main" type="submit">Subscribe and get the free guide</button>
+        <p class="thanks" id="thanks" role="status" hidden>Thanks. Your free melatonin guide is on its way to your inbox.</p>
+        <p class="small">Unsubscribe anytime.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="grid">
+      <div class="brand">
+        <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2147661372/images/081e711e8191b542651e51b08f08b78e.png" alt="The Sleep Health Organization" width="1000" height="407" loading="lazy">
+        <p class="tag">Sleep is simple. Physician-led pediatric sleep education for parents and clinicians.</p>
+        <p style="margin-top:14px"><a href="https://www.google.com/maps/search/?api=1&amp;query=5063%20North%20Service%20Road%2C%20Suite%20100%2C%20Burlington%2C%20ON%20L7L%205H6%2C%20Canada">5063 North Service Road, Suite 100, Burlington, ON L7L 5H6</a><br><a href="tel:+18668085785">Toll free (866) 808-5785</a></p>
+      </div>
+      <div>
+        <h2>On this page</h2>
+        <ul>
+          <li><a href="#parents">For parents</a></li>
+          <li><a href="#professionals">For professionals</a></li>
+          <li><a href="#founder">Our founder</a></li>
+          <li><a href="#questions">Questions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Follow us</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/thesleepgap/">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@TheSleepHealthOrganization">YouTube</a></li>
+          <li><a href="https://www.linkedin.com/in/the-sleep-health-organization/">LinkedIn</a></li>
+          <li><a href="https://x.com/TheSleepHealthO">X</a></li>
+          <li><a href="https://www.facebook.com/anya.mclaren">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p>Educational content only. Nothing here is medical advice or a clinical diagnosis, and no physician-patient relationship is created by using this site. Consult your child's physician before changing care. In an emergency, contact your local emergency services.</p>
+      <p>© The Sleep Health Organization, Inc. All rights reserved.</p>
+      <p>Mockup made for The Sleep Health Organization by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+    </div>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick actions">
+  <a class="c1" href="tel:+18668085785"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Call toll free</a>
+  <a class="c2" href="#signup">Free guide</a>
+</nav>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function anim(el){ if(reduce) return; el.classList.remove('fade'); void el.offsetWidth; el.classList.add('fade'); }
+
+  /* tabs */
+  var tabs = [].slice.call(document.querySelectorAll('.tab'));
+  function openTab(id){
+    tabs.forEach(function(t){
+      var on = t.getAttribute('aria-controls') === id;
+      t.setAttribute('aria-selected', on); t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+    });
+  }
+  tabs.forEach(function(t, i){
+    t.addEventListener('click', function(){ openTab(t.getAttribute('aria-controls')); });
+    t.addEventListener('keydown', function(e){
+      if(e.key === 'ArrowRight' || e.key === 'ArrowLeft'){ var n = tabs[(i + 1) % 2]; n.focus(); n.click(); }
+    });
+  });
+  document.querySelectorAll('[data-open]').forEach(function(a){
+    a.addEventListener('click', function(){ openTab(a.getAttribute('data-open') === 'pro' ? 'p-pro' : 'p-par'); });
+  });
+
+  /* age finder */
+  var S = [
+    {tag:'Infants · aged 0 to 12 months', head:'Your infant guide covers', link:'Read the infant guide', t:['Night wakings','Safe sleep','What is normal in the first year']},
+    {tag:'Toddlers · aged 1 to 5 years', head:'Your toddler guide covers', link:'Read the toddler guide', t:['Bedtime resistance','Naps','Settling routines that hold']},
+    {tag:'School age · aged 6 to 12 years', head:'Your school-age guide covers', link:'Read the school-age guide', t:['Snoring','Restless sleep','Sleep that affects school days']},
+    {tag:'Teens · aged 13 to 18 years', head:'Your teen guide covers', link:'Read the teen guide', t:['Late body clocks','Screens','Early school starts']}
+  ];
+  var age = document.getElementById('age'), out = document.getElementById('ageOut');
+  var bands = document.querySelectorAll('.bands i'), stages = document.querySelectorAll('.stage');
+  var cur = 1;
+  function stageOf(a){ return a < 1 ? 0 : a <= 5 ? 1 : a <= 12 ? 2 : 3; }
+  function setAge(a){
+    a = +a;
+    out.innerHTML = a === 0 ? 'Under 1' : a + '<small>' + (a === 1 ? 'year' : 'years') + '</small>';
+    age.setAttribute('aria-valuetext', a === 0 ? 'under 1 year' : a + (a === 1 ? ' year' : ' years'));
+    var s = stageOf(a);
+    bands.forEach(function(b, i){ b.classList.toggle('on', i === s); });
+    stages.forEach(function(b, i){ b.setAttribute('aria-pressed', i === s); });
+    if(s !== cur){
+      cur = s; var d = S[s];
+      document.getElementById('rTag').textContent = d.tag;
+      document.getElementById('rHead').textContent = d.head;
+      document.getElementById('rLink').textContent = d.link;
+      document.getElementById('rTopics').innerHTML = d.t.map(function(x){ return '<li>' + x + '</li>'; }).join('');
+      anim(document.getElementById('ageResult'));
+    }
+  }
+  age.addEventListener('input', function(){ setAge(age.value); });
+  stages.forEach(function(b){ b.addEventListener('click', function(){ age.value = b.getAttribute('data-age'); setAge(age.value); }); });
+  setAge(age.value);
+
+  /* role finder */
+  var R = {
+    ped:{h:'SHIP® for Pediatricians', q:'“Profoundly broadened my knowledge of pediatric sleep issues, enhancing my professional practice.”', by:'Pediatrician, SHIP® for Pediatricians'},
+    con:{h:'SHIP® for Sleep Consultants', q:'“It’s been a game changer for my career as a sleep consultant. It’s packed with practical tools and insights.”', by:'SHIP® graduate'},
+    ot:{h:'SHIP® training and CME', q:'“I continue to look forward to incorporating the knowledge I have gained from her program into my practice.”', by:'SHIP® graduate'}
+  };
+  var roles = document.querySelectorAll('.role');
+  roles.forEach(function(b){
+    b.addEventListener('click', function(){
+      roles.forEach(function(x){ x.setAttribute('aria-pressed', x === b); });
+      var d = R[b.getAttribute('data-role')];
+      document.getElementById('pHead').textContent = d.h;
+      document.getElementById('pQuoteText').textContent = d.q;
+      document.getElementById('pQuoteBy').textContent = d.by;
+      anim(document.getElementById('roleResult'));
+    });
+  });
+
+  /* testimonials */
+  var Q = [
+    {q:'Since completing the program, my understanding of sleep science has deepened significantly, equipping me with the tools to better assist my clients.', by:'SHIP® graduate'},
+    {q:'Dr. Anya has a wealth of evidence-based knowledge to share regarding sleep health.', by:'SHIP® graduate'},
+    {q:'The course is organized and thorough and Dr Anya makes herself available for any questions or consultation along the way.', by:'SHIP® graduate, sleep consultant and behaviour therapist'},
+    {q:'Being able to dig deep into case studies and learn more about how diverse populations experience sleep has really changed the way I approach clients in my practice for the better!', by:'SHIP® graduate'},
+    {q:'The group sessions with Dr. Anya have really boosted my confidence and skills in handling various sleep issues.', by:'SHIP® graduate, sleep consultant'}
+  ];
+  var qi = 0, qT = document.getElementById('qText'), qB = document.getElementById('qBy'), dots = document.getElementById('qDots');
+  Q.forEach(function(_, i){
+    var d = document.createElement('button'); d.className = 'dot'; d.setAttribute('aria-label', 'Quote ' + (i + 1) + ' of ' + Q.length);
+    d.addEventListener('click', function(){ showQ(i); }); dots.appendChild(d);
+  });
+  function showQ(i){
+    qi = (i + Q.length) % Q.length; qT.textContent = Q[qi].q; qB.textContent = Q[qi].by;
+    [].forEach.call(dots.children, function(d, j){ d.setAttribute('aria-current', j === qi); });
+    anim(qT.parentNode);
+  }
+  document.getElementById('qPrev').addEventListener('click', function(){ showQ(qi - 1); });
+  document.getElementById('qNext').addEventListener('click', function(){ showQ(qi + 1); });
+  [].forEach.call(dots.children, function(d, j){ d.setAttribute('aria-current', j === 0); });
+
+  /* form */
+  document.getElementById('form').addEventListener('submit', function(e){
+    e.preventDefault(); document.getElementById('thanks').hidden = false;
+  });
+
+  /* gentle rise for things below the first screen */
+  if(!reduce && 'IntersectionObserver' in window){
+    var els = document.querySelectorAll('.press .wrap, .gap .head, .row .pic, .row .copy, .founder .portrait, .founder .wrap > div:last-child, .words .wrap > *, .faq .side, details, .signup .wrap > *, footer .grid');
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.remove('will-rise'); io.unobserve(en.target); } });
+    }, {rootMargin:'0px 0px -8% 0px'});
+    var fold = window.innerHeight;
+    els.forEach(function(el){
+      if(el.getBoundingClientRect().top > fold){ el.classList.add('rise', 'will-rise'); io.observe(el); }
+    });
+  }
+})();
+</script>
+</body>
+</html>
