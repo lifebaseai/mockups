@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup potsreplacements-net-3a1dde 1 4a692b68 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>POTS Replacements | POTS Line Replacement for Fire Alarms &amp; Elevators, South Florida</title>
+<meta name="description" content="Replace aging POTS lines for fire alarms, elevators and life-safety systems. Free analog line risk check for South Florida properties.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0e1626; --navy2:#162135; --navy3:#22304a;
+  --orange:#e85d35; --btn:#c4461f; --btnh:#a93a18;
+  --grey:#9aa4b2; --ink:#1b2230; --muted:#4a5466; --line:#e3e6eb; --paper:#f6f7f9;
+  --ok:#5fd0a0;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Lato,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff;font-size:17px;line-height:1.6}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+h1,h2,h3{line-height:1.12;margin:0}
+h2{font-weight:900;text-transform:uppercase;letter-spacing:.01em;font-size:clamp(28px,3.6vw,42px)}
+h3{font-weight:900;font-size:19px}
+p{margin:0}
+.tag{font-family:var(--mono);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--btn)}
+.lead{font-size:19px;color:var(--muted);max-width:640px;margin-top:16px}
+section{padding:104px 0}
+
+/* banner */
+.mock{height:44px;display:flex;align-items:center;justify-content:center;background:#efe9e2;color:#2a2f3a;font-size:15px;padding:0 16px;text-align:center;white-space:nowrap;border-bottom:1px solid #e0d8ce}
+.mock a{color:#9b3613;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:28px;height:76px}
+.top .logo img{width:175px;height:auto}
+.top nav{margin-left:auto;display:flex;gap:26px;align-items:center}
+.top nav a{text-decoration:none;font-weight:700;font-size:15px;color:var(--ink)}
+.top nav a:hover{color:var(--btn)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:8px;font-weight:900;font-size:16px;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit;transition:background .2s,transform .2s}
+.btn-main{background:var(--btn);color:#fff}
+.btn-main:hover{background:var(--btnh)}
+.btn-ghost{border-color:rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{border-color:#fff}
+.top .btn{min-height:44px;padding:0 18px;font-size:15px}
+.top .call{font-family:var(--mono);font-weight:600;font-size:15px;text-decoration:none;color:var(--ink);white-space:nowrap}
+
+/* hero */
+.hero{background:var(--navy);color:#fff;padding:84px 0 96px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:44px 44px;pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.alert{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#ffb59c;border:1px solid rgba(232,93,53,.45);background:rgba(232,93,53,.1);padding:7px 12px;border-radius:6px}
+.alert i{width:8px;height:8px;border-radius:50%;background:var(--orange);box-shadow:0 0 0 0 rgba(232,93,53,.6);animation:ping 2s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(232,93,53,.6)}70%{box-shadow:0 0 0 9px rgba(232,93,53,0)}100%{box-shadow:0 0 0 0 rgba(232,93,53,0)}}
+.hero h1{font-weight:900;text-transform:uppercase;font-size:clamp(34px,4.6vw,56px);letter-spacing:.005em;margin:22px 0 0}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.hero .sub{font-size:19px;color:#c9d0da;margin-top:22px;max-width:560px}
+.hero .acts{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+.ticks{display:flex;gap:22px;flex-wrap:wrap;margin:26px 0 0;padding:0;list-style:none;color:#c9d0da;font-size:15px}
+.ticks li{display:flex;align-items:center;gap:8px}
+.ticks svg{flex:none}
+
+/* status board */
+.board{background:var(--navy2);border:1px solid var(--navy3);border-radius:14px;box-shadow:0 30px 60px -30px rgba(0,0,0,.7);overflow:hidden}
+.board-h{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid var(--navy3);font-family:var(--mono);font-size:13px;color:var(--grey);letter-spacing:.05em;text-transform:uppercase}
+.board-h b{color:#fff;font-weight:600}
+.live{display:flex;align-items:center;gap:8px;color:var(--ok)}
+.live i{width:7px;height:7px;border-radius:50%;background:var(--ok)}
+.row{padding:16px 20px;border-bottom:1px solid var(--navy3)}
+.row:last-child{border-bottom:0}
+.row-t{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.row-t span{font-weight:700;font-size:16px}
+.row-t small{font-family:var(--mono);font-size:12px;color:var(--grey);letter-spacing:.04em}
+.wires{display:grid;grid-template-columns:auto 1fr auto;gap:8px 12px;align-items:center;margin-top:10px;font-family:var(--mono);font-size:12.5px}
+.wires .old{color:#aab3c0;text-decoration:line-through;text-decoration-color:var(--orange)}
+.wires .new{color:var(--ok)}
+.track{height:2px;border-radius:2px;position:relative;overflow:hidden}
+.track.dead{background:repeating-linear-gradient(90deg,#55607a 0 6px,transparent 6px 11px)}
+.track.on{background:rgba(95,208,160,.35)}
+.track.on::after{content:"";position:absolute;top:-1px;left:-30%;width:30%;height:4px;border-radius:4px;background:linear-gradient(90deg,transparent,var(--ok));animation:run 2.4s linear infinite;animation-play-state:var(--play,running)}
+.row:nth-child(3) .track.on::after{animation-delay:.6s}
+.row:nth-child(4) .track.on::after{animation-delay:1.2s}
+.row:nth-child(5) .track.on::after{animation-delay:1.8s}
+@keyframes run{to{left:100%}}
+.chip{font-family:var(--mono);font-size:11.5px;font-weight:600;padding:3px 8px;border-radius:4px;letter-spacing:.04em;white-space:nowrap}
+.chip.bad{background:rgba(232,93,53,.15);color:#ffb59c}
+.chip.good{background:rgba(95,208,160,.14);color:var(--ok)}
+.board-f{padding:14px 20px;background:rgba(0,0,0,.18);font-size:14px;color:#c9d0da;border-top:1px solid var(--navy3)}
+
+/* systems */
+.systems{background:#fff}
+.sys-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end}
+.sys-head .lead{margin:0}
+.table{margin-top:52px;border-top:2px solid var(--ink)}
+.trow{display:grid;grid-template-columns:56px 1.1fr 1.4fr 1.3fr;gap:24px;padding:26px 0;border-bottom:1px solid var(--line);align-items:start}
+.trow.hd{padding:14px 0;font-family:var(--mono);font-size:12.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.ico{width:44px;height:44px;border-radius:10px;background:#fdeee8;display:grid;place-items:center;color:var(--btn)}
+.trow h3{font-size:19px;padding-top:9px}
+.trow p{color:var(--muted);padding-top:8px}
+.trow .fail{color:var(--ink);font-weight:700;display:flex;gap:10px;padding-top:8px}
+.trow .fail::before{content:"";flex:none;width:10px;height:10px;border-radius:2px;background:var(--orange);margin-top:8px}
+.code{margin-top:40px;background:var(--paper);border-left:4px solid var(--orange);padding:22px 26px;border-radius:0 10px 10px 0;font-size:17px}
+.code b{font-weight:900}
+
+/* timeline */
+.time{background:var(--paper)}
+.tl{list-style:none;padding:0;margin:56px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+.tl::before{content:"";position:absolute;top:11px;left:0;right:0;height:2px;background:repeating-linear-gradient(90deg,#b7bec9 0 8px,transparent 8px 14px)}
+.tl li{position:relative;padding:40px 26px 0 0}
+.tl li::before{content:"";position:absolute;top:4px;left:0;width:16px;height:16px;border-radius:50%;background:#fff;border:3px solid #7a8496}
+.tl li.now::before{background:var(--orange);border-color:var(--orange);box-shadow:0 0 0 6px rgba(232,93,53,.2)}
+.tl .yr{font-family:var(--mono);font-weight:600;font-size:15px;color:var(--muted)}
+.tl li.now .yr{color:var(--btn)}
+.tl h3{margin-top:8px;font-size:18px}
+.tl p{margin-top:8px;color:var(--muted);font-size:16px}
+.cost{margin-top:56px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px 32px}
+.cost .big{font-family:var(--mono);font-weight:600;font-size:clamp(30px,4vw,44px);color:var(--ink);white-space:nowrap}
+.cost .big small{font-size:16px;color:var(--muted)}
+.cost p{color:var(--muted)}
+
+/* responsible */
+.who .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px}
+.who-list{display:grid;gap:0;border-top:1px solid var(--line)}
+.who-item{padding:24px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:150px 1fr;gap:20px}
+.who-item .who-k{font-family:var(--mono);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);padding-top:4px}
+.who-item.you .who-k{color:var(--btn)}
+.who-item h3{font-size:18px}
+.who-item p{color:var(--muted);margin-top:6px}
+.bottom{margin-top:28px;font-weight:900;font-size:20px;line-height:1.35}
+.bottom span{color:var(--btn)}
+
+/* help */
+.help{background:var(--navy);color:#fff}
+.help .wrap{display:grid;grid-template-columns:420px 1fr;gap:72px;align-items:center}
+.help .tag{color:#ffb59c}
+.help .lead{color:#c9d0da}
+.shot{position:relative;max-width:420px}
+.shot img{width:100%;height:auto;border-radius:14px;aspect-ratio:626/938;object-fit:cover}
+.steps{list-style:none;padding:0;margin:40px 0 0;counter-reset:s}
+.steps li{display:grid;grid-template-columns:48px 1fr;gap:18px;padding:20px 0;border-top:1px solid var(--navy3)}
+.steps li::before{counter-increment:s;content:"0" counter(s);font-family:var(--mono);font-weight:600;font-size:15px;color:var(--orange);padding-top:2px}
+.steps h3{font-size:18px}
+.steps p{color:#c9d0da;margin-top:4px;font-size:16px}
+.alts{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.alts span{font-family:var(--mono);font-size:13px;font-weight:600;border:1px solid var(--navy3);background:var(--navy2);padding:8px 12px;border-radius:6px;color:#dfe4ea}
+
+/* line check */
+.check{background:var(--paper)}
+.check-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px;align-items:start}
+.panel{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px;box-shadow:0 20px 40px -32px rgba(14,22,38,.35)}
+.panel h3{font-size:18px}
+.q{font-family:var(--mono);font-size:12.5px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin:0 0 12px}
+fieldset{border:0;padding:0;margin:0 0 28px}
+legend{padding:0}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;width:1px;height:1px}
+.opt label{display:flex;align-items:center;gap:10px;min-height:52px;padding:10px 14px;border:1.5px solid var(--line);border-radius:10px;cursor:pointer;font-weight:700;font-size:15px;line-height:1.25;transition:border-color .15s,background .15s}
+.opt label::before{content:"";flex:none;width:18px;height:18px;border-radius:4px;border:2px solid #9aa4b2;background:#fff center/12px no-repeat}
+.opt input:checked+label{border-color:var(--btn);background:#fdf1ec}
+.opt input:checked+label::before{background-color:var(--btn);border-color:var(--btn);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2 6.5l2.5 2.5L10 3' fill='none' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E")}
+.opt input:focus-visible+label{outline:3px solid var(--orange);outline-offset:2px}
+.stepper{display:flex;align-items:center;gap:0;border:1.5px solid var(--line);border-radius:10px;width:max-content}
+.stepper button{width:52px;height:52px;border:0;background:none;font-size:24px;font-weight:700;color:var(--ink);cursor:pointer;border-radius:8px}
+.stepper button:hover{background:var(--paper)}
+.stepper output{min-width:64px;text-align:center;font-family:var(--mono);font-weight:600;font-size:22px}
+.hint{font-size:14px;color:var(--muted);margin-top:10px}
+.result{background:var(--navy);color:#fff;border:0}
+.result .q{color:var(--grey)}
+.res-n{font-weight:900;font-size:34px;line-height:1.1;text-transform:uppercase}
+.res-n span{color:var(--orange)}
+.res-list{list-style:none;padding:0;margin:20px 0 0;border-top:1px solid var(--navy3)}
+.res-list li{padding:12px 0;border-bottom:1px solid var(--navy3);display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:15px;color:#c9d0da}
+.res-list li b{color:#fff;font-size:16px}
+.res-list li .chip{grid-row:span 2;align-self:start;margin-top:2px}
+.res-cost{margin-top:20px;padding:18px;border-radius:10px;background:var(--navy2);border:1px solid var(--navy3)}
+.res-cost .big{font-family:var(--mono);font-weight:600;font-size:28px;color:#fff}
+.res-cost p{font-size:14px;color:#aab3c0;margin-top:4px}
+.form{margin-top:28px}
+.form h3{font-size:22px;font-weight:900;text-transform:uppercase}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
+.fields .full{grid-column:1/-1}
+.fields label{display:block;font-size:14px;font-weight:700;margin-bottom:6px}
+.fields input,.fields textarea{width:100%;font:inherit;font-size:16px;min-height:48px;padding:10px 12px;border:1.5px solid #c9ced6;border-radius:8px;background:#fff;color:var(--ink)}
+.fields textarea{min-height:88px;resize:vertical}
+.fields input:focus,.fields textarea:focus{border-color:var(--btn);outline:none;box-shadow:0 0 0 3px rgba(196,70,31,.18)}
+.picked{font-family:var(--mono);font-size:14px;background:var(--paper);border:1.5px dashed #c9ced6;border-radius:8px;padding:12px;color:var(--ink)}
+.consent{font-size:13px;color:var(--muted);margin-top:14px;line-height:1.5}
+.form .btn{margin-top:18px;width:100%}
+.thanks{margin-top:14px;font-weight:700;color:#14684a;min-height:1px}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0 48px;margin-top:44px}
+.faq-item{padding:26px 0;border-top:1px solid var(--line)}
+.faq-item h3{font-size:18px}
+.faq-item p{color:var(--muted);margin-top:8px}
+
+/* final */
+.final{background:var(--navy);color:#fff;text-align:center;padding:110px 0;position:relative;overflow:hidden}
+.final::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:44px 44px}
+.final .wrap{position:relative}
+.final h2{font-size:clamp(30px,4.4vw,52px)}
+.final p{color:#c9d0da;font-size:19px;max-width:620px;margin:18px auto 0}
+.final .acts{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+.final .ticks{justify-content:center}
+
+footer{background:#0a101c;color:#aab3c0;padding:56px 0 110px;font-size:15px}
+footer .wrap{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
+footer h2{font-size:14px;color:#fff;letter-spacing:.08em}
+footer p,footer li{margin-top:10px}
+footer ul{list-style:none;padding:0;margin:0}
+footer a{color:#dfe4ea;text-decoration:none}
+footer a:hover{text-decoration:underline}
+.legal{grid-column:1/-1;border-top:1px solid #1d2840;padding-top:22px;margin-top:10px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px}
+.legal a{text-decoration:underline}
+
+.callbar{display:none}
+
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .6s ease,transform .6s ease}
+
+@media (max-width:980px){
+  .hero .wrap,.help .wrap,.who .wrap,.check-grid,.sys-head{grid-template-columns:1fr}
+  .help .wrap{gap:48px}
+  .shot{max-width:420px}
+  .tl{grid-template-columns:1fr 1fr;row-gap:36px}
+  .tl::before{display:none}
+  .top nav a.nl{display:none}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{padding:0 20px}
+  section{padding:72px 0}
+  .mock{font-size:14px;padding:0 10px}
+  .top .wrap{height:64px;gap:12px}
+  .top .logo img{width:150px}
+  .top .btn{display:none}
+  .top .call{font-size:14px;display:inline-flex;align-items:center;min-height:44px;padding:0 12px;border:1.5px solid var(--line);border-radius:8px}
+  .hero{padding:48px 0 64px}
+  .hero .wrap{gap:40px}
+  .hero h1{font-size:33px}
+  .hero .sub{font-size:17px}
+  .hero .acts .btn{width:100%}
+  .ticks{gap:10px 18px;font-size:14px}
+  .row{padding:14px 16px}
+  .board-h{padding:14px 16px;font-size:12px}
+  .lead{font-size:17px}
+  .table{margin-top:36px}
+  .trow.hd{display:none}
+  .trow{grid-template-columns:44px 1fr;gap:4px 16px;padding:22px 0}
+  .trow h3{padding-top:10px}
+  .trow p,.trow .fail{grid-column:2;padding-top:4px}
+  .tl{grid-template-columns:1fr;row-gap:0;margin-top:40px;padding-left:4px}
+  .tl::before{display:block;top:0;bottom:0;left:11px;right:auto;width:2px;height:auto;background:repeating-linear-gradient(180deg,#b7bec9 0 8px,transparent 8px 14px)}
+  .tl li{padding:0 0 32px 40px}
+  .tl li::before{top:2px;left:4px}
+  .cost{grid-template-columns:1fr;gap:10px;padding:22px}
+  .who-item{grid-template-columns:1fr;gap:6px}
+  .panel{padding:22px 18px}
+  .opts{grid-template-columns:1fr}
+  .fields{grid-template-columns:1fr}
+  .faq-grid{grid-template-columns:1fr}
+  .final{padding:80px 0}
+  .final .acts .btn{width:100%}
+  footer .wrap{grid-template-columns:1fr;gap:28px}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid var(--line);box-shadow:0 -8px 24px -12px rgba(14,22,38,.3)}
+  .callbar a{min-height:48px;font-size:15px;padding:0 10px}
+  .callbar .btn-line{border:2px solid var(--ink);color:var(--ink)}
+}
+@media (max-width:380px){.mock{font-size:13px}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="mock">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="POTS Replacements, home"><img src="https://potsreplacements.net/wp-content/uploads/2026/02/pots-replacements-logo-350x86-1.png" alt="POTS Replacements, life safety analog line modernization" width="350" height="86"></a>
+    <nav aria-label="Main">
+      <a class="nl" href="#systems">Systems</a>
+      <a class="nl" href="#timeline">Timeline</a>
+      <a class="nl" href="#how">How we help</a>
+      <a class="nl" href="#faq">Questions</a>
+      <a class="call" href="tel:+15616001321">(561) 600-1321</a>
+      <a class="btn btn-main" href="#check">Free risk check</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap">
+    <div>
+      <span class="alert"><i aria-hidden="true"></i>Copper line retirement is happening now</span>
+      <h1 id="h1">Is your building’s life safety still on <em>copper phone lines?</em></h1>
+      <p class="sub">Carriers are shutting off analog lines, sometimes with as little as 30 to 60 days’ notice. POTS Replacements finds the fire alarm, elevator and security lines still on copper in your South Florida property, and replaces them before they go silent.</p>
+      <div class="acts">
+        <a class="btn btn-main" href="#check">Get your free risk check</a>
+        <a class="btn btn-ghost" href="tel:+15616001321">Call (561) 600-1321</a>
+      </div>
+      <ul class="ticks">
+        <li><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3L13 4.5" fill="none" stroke="#e85d35" stroke-width="2.2"/></svg>Free assessment</li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3L13 4.5" fill="none" stroke="#e85d35" stroke-width="2.2"/></svg>No obligation</li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3L13 4.5" fill="none" stroke="#e85d35" stroke-width="2.2"/></svg>Fast response</li>
+      </ul>
+    </div>
+
+    <div class="board" id="board" role="img" aria-label="A building's life-safety line status: fire alarm panel, elevator emergency phone, gate intercom and pool emergency phone, each moved from a retiring copper line to a new tested line.">
+      <div class="board-h"><b>Line status</b><span class="live"><i></i>After replacement</span></div>
+      <div class="row">
+        <div class="row-t"><span>Fire alarm panel</span><small>to monitoring station</small></div>
+        <div class="wires"><span class="old">Copper</span><span class="track dead"></span><span class="chip bad">Retiring</span><span class="new">New line</span><span class="track on"></span><span class="chip good">Tested</span></div>
+      </div>
+      <div class="row">
+        <div class="row-t"><span>Elevator emergency phone</span><small>to responders</small></div>
+        <div class="wires"><span class="old">Copper</span><span class="track dead"></span><span class="chip bad">Retiring</span><span class="new">New line</span><span class="track on"></span><span class="chip good">Tested</span></div>
+      </div>
+      <div class="row">
+        <div class="row-t"><span>Gate intercom &amp; access</span><small>to dispatch</small></div>
+        <div class="wires"><span class="old">Copper</span><span class="track dead"></span><span class="chip bad">Retiring</span><span class="new">New line</span><span class="track on"></span><span class="chip good">Tested</span></div>
+      </div>
+      <div class="row">
+        <div class="row-t"><span>Pool emergency phone</span><small>poolside</small></div>
+        <div class="wires"><span class="old">Copper</span><span class="track dead"></span><span class="chip bad">Retiring</span><span class="new">New line</span><span class="track on"></span><span class="chip good">Tested</span></div>
+      </div>
+      <div class="board-f">Cellular, VoIP or fiber, designed to meet code, with documentation for your inspector.</div>
+    </div>
+  </div>
+</section>
+
+<section class="systems" id="systems" aria-labelledby="h-sys">
+  <div class="wrap">
+    <div class="sys-head">
+      <div>
+        <p class="tag">Where copper still hides</p>
+        <h2 id="h-sys" style="margin-top:12px">Four systems that stop working when the line goes</h2>
+      </div>
+      <p class="lead">These life-safety systems were designed decades ago to run on copper telephone lines, often called “POTS” (Plain Old Telephone Service).</p>
+    </div>
+
+    <div class="table" role="list">
+      <div class="trow hd" aria-hidden="true"><span></span><span>System</span><span>What it does today</span><span>When copper is cut</span></div>
+      <div class="trow" role="listitem">
+        <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c1 3 5 5 5 10a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5 0 2 1 3 2 3 0-3-1-5 1-8.5z"/></svg></span>
+        <h3>Fire alarm systems</h3>
+        <p>Commercial fire panels report alarms to the monitoring station over an analog line.</p>
+        <p class="fail">The panel can’t dial out. Fire emergencies won’t be reported.</p>
+      </div>
+      <div class="trow" role="listitem">
+        <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M12 3v18M9 9l-1.5 2h3zM15 13l1.5-2h-3z"/></svg></span>
+        <h3>Elevator emergency phones</h3>
+        <p>Required life-safety phones inside elevator cabs that connect to emergency responders.</p>
+        <p class="fail">Passengers trapped inside can’t call for help.</p>
+      </div>
+      <div class="trow" role="listitem">
+        <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6z"/></svg></span>
+        <h3>Building security systems</h3>
+        <p>Gate intercoms, access control dialers and security alarm panels still using copper lines.</p>
+        <p class="fail">Security systems lose their connection to dispatch centers.</p>
+      </div>
+      <div class="trow" role="listitem">
+        <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17c2 0 2-1.5 4.5-1.5S9.5 17 12 17s2.5-1.5 4.5-1.5S19 17 21 17M3 21c2 0 2-1.5 4.5-1.5S9.5 21 12 21s2.5-1.5 4.5-1.5S19 21 21 21M8 14V5a2 2 0 0 1 4 0M14 14V5a2 2 0 0 1 4 0M8 9h6"/></svg></span>
+        <h3>Pool emergency phones</h3>
+        <p>Required poolside emergency phones in condos, hotels and multi-family properties.</p>
+        <p class="fail">A required phone that no longer works is a code violation.</p>
+      </div>
+    </div>
+
+    <p class="code"><b>Non-functional life-safety systems</b> trigger red tags, fines and occupancy restrictions from fire marshals and building inspectors, plus insurance issues and liability for owners and managers.</p>
+  </div>
+</section>
+
+<section class="time" id="timeline" aria-labelledby="h-time">
+  <div class="wrap">
+    <p class="tag">The copper line retirement timeline</p>
+    <h2 id="h-time" style="margin-top:12px">South Florida is in the active retirement zone</h2>
+    <ol class="tl">
+      <li><span class="yr">2015</span><h3>AT&amp;T begins POTS retirement</h3><p>Copper landline service starts retiring in select markets, beginning where fiber is available.</p></li>
+      <li><span class="yr">2018</span><h3>FCC approves copper retirement</h3><p>Carriers are no longer required to maintain analog infrastructure.</p></li>
+      <li><span class="yr">2020–2023</span><h3>Widespread disconnections</h3><p>Owners report sudden outages for fire alarms and elevator phones, with minimal notice.</p></li>
+      <li class="now"><span class="yr">Now</span><h3>Critical action window</h3><p>Service is being discontinued with as little as 30 to 60 days’ notice, and sometimes none at all.</p></li>
+    </ol>
+    <div class="cost">
+      <p class="big">$150–300 <small>/ line / month</small></p>
+      <p>What some properties now pay to keep a single copper POTS line. Modern cellular and VoIP replacements are more reliable, cost less per month, and meet code requirements.</p>
+    </div>
+  </div>
+</section>
+
+<section class="who" aria-labelledby="h-who">
+  <div class="wrap">
+    <div>
+      <p class="tag">Who’s responsible?</p>
+      <h2 id="h-who" style="margin-top:12px">Don’t assume someone else is handling this</h2>
+      <p class="lead">Ownership of analog line replacement is often unclear, and that’s dangerous.</p>
+      <p class="bottom">If you own or manage the building, <span>you need to take action now.</span></p>
+    </div>
+    <div class="who-list">
+      <div class="who-item you"><p class="who-k">You</p><div><h3>Property owners &amp; managers</h3><p>You’re responsible for code-compliant life-safety systems. If the line fails, you’re liable, even if the telecom provider discontinued service.</p></div></div>
+      <div class="who-item"><p class="who-k">Your vendors</p><div><h3>Fire alarm &amp; elevator companies</h3><p>They maintain the equipment, but telecom line changes often fall outside their scope until you report a service failure.</p></div></div>
+      <div class="who-item"><p class="who-k">The carrier</p><div><h3>AT&amp;T, Lumen and others</h3><p>They’re retiring copper with minimal notice, and they’re not required to make sure your life-safety systems have a replacement.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="help" id="how" aria-labelledby="h-how">
+  <div class="wrap">
+    <figure class="shot" style="margin:0">
+      <img src="https://potsreplacements.net/wp-content/uploads/2026/02/South-Florida-Buildings.jpg" alt="A South Florida high-rise against a blue sky" width="626" height="938" loading="lazy">
+    </figure>
+    <div>
+      <p class="tag">How we help</p>
+      <h2 id="h-how" style="margin-top:12px">We replace your lines before they become a violation</h2>
+      <p class="lead">We specialize in POTS line replacement for life-safety systems across Miami-Dade, Broward and Palm Beach.</p>
+      <ol class="steps">
+        <li><div><h3>Free line assessment</h3><p>We audit your property, find which systems still run on copper analog lines, and assess how urgent each replacement is.</p></div></li>
+        <li><div><h3>Customized replacement plan</h3><p>We design a modern solution using cellular, VoIP or fiber-based alternatives that meet all code requirements.</p></div></li>
+        <li><div><h3>Seamless installation &amp; testing</h3><p>Our certified technicians install and test the new lines with minimal disruption to your building.</p></div></li>
+        <li><div><h3>Ongoing monitoring &amp; support</h3><p>We provide documentation for inspectors and ongoing support so your systems stay compliant.</p></div></li>
+      </ol>
+      <div class="alts" aria-label="Replacement options"><span>LTE / 5G cellular</span><span>VoIP</span><span>Fiber</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="check" id="check" aria-labelledby="h-check">
+  <div class="wrap">
+    <p class="tag">Line check</p>
+    <h2 id="h-check" style="margin-top:12px">See what’s at risk in your building</h2>
+    <p class="lead">Tick the systems your property has and count its analog lines. Then send it to us for your free risk check.</p>
+
+    <div class="check-grid">
+      <div class="panel">
+        <fieldset>
+          <legend class="q">1 · Which systems does your property have?</legend>
+          <div class="opts" id="opts">
+            <div class="opt"><input type="checkbox" id="s-fire" value="fire" checked><label for="s-fire">Fire alarm system</label></div>
+            <div class="opt"><input type="checkbox" id="s-elev" value="elev" checked><label for="s-elev">Elevator emergency phones</label></div>
+            <div class="opt"><input type="checkbox" id="s-sec" value="sec"><label for="s-sec">Building security system</label></div>
+            <div class="opt"><input type="checkbox" id="s-pool" value="pool" checked><label for="s-pool">Pool emergency phone</label></div>
+            <div class="opt"><input type="checkbox" id="s-gate" value="gate"><label for="s-gate">Gate intercom / access control</label></div>
+            <div class="opt"><input type="checkbox" id="s-ns" value="ns"><label for="s-ns">Not sure / need help identifying</label></div>
+          </div>
+        </fieldset>
+        <fieldset style="margin:0">
+          <legend class="q">2 · About how many analog lines?</legend>
+          <div class="stepper">
+            <button type="button" id="minus" aria-label="Fewer lines">−</button>
+            <output id="lines" aria-live="polite">4</output>
+            <button type="button" id="plus" aria-label="More lines">+</button>
+          </div>
+          <p class="hint">Not sure? Leave a best guess. We’ll count every line on the assessment.</p>
+        </fieldset>
+      </div>
+
+      <div class="panel result" aria-live="polite">
+        <p class="q">Your line check</p>
+        <p class="res-n" id="resN"><span>3 systems</span> to check</p>
+        <ul class="res-list" id="resList">
+          <li><span class="chip bad">At risk</span><b>Fire alarm system</b><span>Can’t dial the monitoring station. Fires won’t be reported.</span></li>
+          <li><span class="chip bad">At risk</span><b>Elevator emergency phones</b><span>Trapped passengers can’t call for help.</span></li>
+          <li><span class="chip bad">At risk</span><b>Pool emergency phone</b><span>A required phone that stops working is a code violation.</span></li>
+        </ul>
+        <div class="res-cost">
+          <p class="big" id="resCost">$600–$1,200 / mo</p>
+          <p id="resCostNote">What 4 copper lines can cost at the $150–300 per line some properties now pay.</p>
+        </div>
+      </div>
+    </div>
+
+    <form class="panel form" id="form" novalidate>
+      <h3>Get your free risk check</h3>
+      <p class="hint" style="margin-top:6px">We’ll tell you exactly which systems need replacement and what your timeline looks like.</p>
+      <div class="fields">
+        <div><label for="f-name">Full name</label><input id="f-name" name="name" autocomplete="name" required></div>
+        <div><label for="f-co">Company / property name</label><input id="f-co" name="company" autocomplete="organization" required></div>
+        <div><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+        <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+        <div class="full"><p class="q" style="margin:0 0 6px">Systems for assessment (from your line check)</p><p class="picked" id="picked">Fire alarm system, Elevator emergency phones, Pool emergency phone · about 4 lines</p></div>
+        <div class="full"><label for="f-notes">Additional information (optional)</label><textarea id="f-notes" name="notes"></textarea></div>
+      </div>
+      <p class="consent">By submitting this form, you agree to receive calls, emails and SMS messages from POTS Replacements and Sequentex, Inc. Message frequency may vary. Reply STOP to opt out.</p>
+      <button class="btn btn-main" type="submit">Send my free risk check request</button>
+      <p class="thanks" id="thanks" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<section id="faq" aria-labelledby="h-faq">
+  <div class="wrap">
+    <p class="tag">Questions</p>
+    <h2 id="h-faq" style="margin-top:12px">Common questions</h2>
+    <div class="faq-grid">
+      <div class="faq-item"><h3>What is a POTS line?</h3><p>Plain Old Telephone Service: the analog copper phone line that fire alarms, elevator phones and security systems were built to use.</p></div>
+      <div class="faq-item"><h3>What replaces the copper line?</h3><p>LTE/5G cellular communicators, VoIP or fiber-based lines, designed to meet all code requirements.</p></div>
+      <div class="faq-item"><h3>What does the risk check cost?</h3><p>Nothing. The line assessment is free, with no obligation.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="final" aria-labelledby="h-final">
+  <div class="wrap">
+    <h2 id="h-final">Don’t wait for a code violation</h2>
+    <p>Get a free analog line risk check today. We’ll tell you exactly which systems need replacement and what your timeline looks like.</p>
+    <div class="acts">
+      <a class="btn btn-main" href="#check">Get your free risk check</a>
+      <a class="btn btn-ghost" href="tel:+15616001321">Call (561) 600-1321</a>
+    </div>
+    <ul class="ticks">
+      <li><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3L13 4.5" fill="none" stroke="#e85d35" stroke-width="2.2"/></svg>Free assessment</li>
+      <li><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3L13 4.5" fill="none" stroke="#e85d35" stroke-width="2.2"/></svg>No obligation</li>
+      <li><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3L13 4.5" fill="none" stroke="#e85d35" stroke-width="2.2"/></svg>Fast response</li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h2>POTS Replacements</h2>
+      <p>Helping South Florida commercial property owners modernize life-safety communication systems.</p>
+      <p>Serving Miami-Dade, Broward and Palm Beach.</p>
+    </div>
+    <div>
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="tel:+15616001321">(561) 600-1321</a></li>
+        <li><a href="mailto:info@potsreplacements.net">info@potsreplacements.net</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>On this page</h2>
+      <ul>
+        <li><a href="#systems">Systems at risk</a></li>
+        <li><a href="#timeline">Retirement timeline</a></li>
+        <li><a href="#how">How we help</a></li>
+        <li><a href="#check">Free risk check</a></li>
+      </ul>
+    </div>
+    <div class="legal">
+      <span>© 2026 POTS Replacements, powered by Sequentex, Inc.</span>
+      <span>Mockup made for POTS Replacements by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick contact">
+  <a class="btn btn-line" href="tel:+15616001321">Call now</a>
+  <a class="btn btn-main" href="#check">Free risk check</a>
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // gentle rise for things below the first screen
+  if (!reduce && 'IntersectionObserver' in window) {
+    var els = document.querySelectorAll('section h2, .trow, .tl li, .cost, .who-item, .steps li, .shot, .panel, .faq-item');
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.remove('will-rise'); io.unobserve(e.target); } });
+    }, {rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){
+      if (el.getBoundingClientRect().top > innerHeight) { el.classList.add('rise','will-rise'); io.observe(el); }
+    });
+    // signal pulses only play while the board is on screen
+    var board = document.getElementById('board');
+    new IntersectionObserver(function(es){
+      board.style.setProperty('--play', es[0].isIntersecting ? 'running' : 'paused');
+    }).observe(board);
+  }
+
+  // line check
+  var info = {
+    fire:{n:'Fire alarm system', t:'Can’t dial the monitoring station. Fires won’t be reported.'},
+    elev:{n:'Elevator emergency phones', t:'Trapped passengers can’t call for help.'},
+    sec:{n:'Building security system', t:'Loses its connection to the dispatch center.'},
+    pool:{n:'Pool emergency phone', t:'A required phone that stops working is a code violation.'},
+    gate:{n:'Gate intercom / access control', t:'Gate and access dialers on copper lose their connection to dispatch.'},
+    ns:{n:'Not sure / need help identifying', t:'We audit your property and find every system still on copper.'}
+  };
+  var boxes = document.querySelectorAll('#opts input');
+  var lines = 4, out = document.getElementById('lines');
+  function money(n){ return '$' + n.toLocaleString('en-US'); }
+  function render(){
+    var picked = [];
+    boxes.forEach(function(b){ if (b.checked) picked.push(b.value); });
+    var risky = picked.filter(function(v){ return v !== 'ns'; }).length;
+    var resN = document.getElementById('resN');
+    resN.innerHTML = picked.length
+      ? (risky ? '<span>' + risky + ' system' + (risky>1?'s':'') + '</span> to check' : '<span>We’ll find</span> your lines')
+      : '<span>Tick</span> your systems';
+    document.getElementById('resList').innerHTML = picked.map(function(v){
+      var i = info[v];
+      return '<li><span class="chip ' + (v==='ns'?'good':'bad') + '">' + (v==='ns'?'Free audit':'At risk') + '</span><b>' + i.n + '</b><span>' + i.t + '</span></li>';
+    }).join('') || '<li><span class="chip good">Start</span><b>Choose at least one system</b><span>Or pick “Not sure” and we’ll identify them for you.</span></li>';
+    out.textContent = lines;
+    document.getElementById('resCost').textContent = money(lines*150) + '–' + money(lines*300) + ' / mo';
+    document.getElementById('resCostNote').textContent = 'What ' + lines + ' copper line' + (lines>1?'s':'') + ' can cost at the $150–300 per line some properties now pay.';
+    document.getElementById('picked').textContent = (picked.length ? picked.map(function(v){ return info[v].n; }).join(', ') : 'No systems ticked yet') + ' · about ' + lines + ' line' + (lines>1?'s':'');
+  }
+  boxes.forEach(function(b){ b.addEventListener('change', render); });
+  document.getElementById('minus').addEventListener('click', function(){ if (lines>1) { lines--; render(); } });
+  document.getElementById('plus').addEventListener('click', function(){ if (lines<99) { lines++; render(); } });
+  render();
+
+  document.getElementById('form').addEventListener('submit', function(e){
+    e.preventDefault();
+    document.getElementById('thanks').textContent = 'Thanks, we’ll be in touch about your free risk check.';
+  });
+})();
+</script>
+</body>
+</html>
