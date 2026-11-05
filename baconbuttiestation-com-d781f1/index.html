@@ -1,0 +1,798 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup baconbuttiestation-com-d781f1 1 4370d428 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bacon Buttie Station | Our own bacon, sizzling hot in Dunedin</title>
+<meta name="description" content="Finest quality bacon, sizzling hot between two slices of bread. A family business at 12 Ward St, Dunedin. We butcher all our own meat.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Luckiest+Guy&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#df1125;--red-d:#b70c1d;--ink:#1f1716;--mut:#5b4e4b;--cream:#fbf3e8;--paper:#fffdf9;
+  --line:#ecdccf;--pink:#fbe1de;--wrap:1160px;
+  --display:"Luckiest Guy","Arial Black",Impact,sans-serif;
+  --body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--ink);font:400 18px/1.55 var(--body);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3,h4{margin:0;font-weight:400}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* mockup banner */
+.mockbar{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;background:var(--ink);color:#fbefe3;font:500 15px/1.3 var(--body);text-align:center;white-space:nowrap}
+.mockbar a{color:#fff;text-decoration:underline;text-underline-offset:3px;font-weight:700}
+
+/* header */
+.top{background:#fff;border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:84px}
+.brand img{width:170px;height:auto}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{font:15px/1 var(--display);letter-spacing:.04em;color:var(--red);text-decoration:none;padding:15px 12px;border-radius:8px}
+.nav a:hover{background:var(--pink)}
+.nav .callbtn{margin-left:10px;color:#fff;background:var(--red);padding:14px 18px;display:inline-flex;gap:8px;align-items:center}
+.nav .callbtn:hover{background:var(--red-d)}
+.callbtn svg{width:16px;height:16px;fill:currentColor}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:700 17px/1 var(--body);letter-spacing:.01em;text-decoration:none;border:2px solid var(--red);background:var(--red);color:#fff;cursor:pointer;transition:background .2s,transform .2s}
+.btn:hover{background:var(--red-d);border-color:var(--red-d)}
+.btn:active{transform:translateY(1px)}
+.btn.ghost{background:transparent;color:var(--red)}
+.btn.ghost:hover{background:var(--pink)}
+.btn svg{width:18px;height:18px;fill:currentColor}
+
+/* hero */
+.hero{padding:64px 0 0}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.kicker{font:700 14px/1.2 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.hero h1{margin:18px 0 22px;font:clamp(40px,5.2vw,66px)/.98 var(--display);color:var(--red);letter-spacing:.005em}
+.hero h1 span{color:var(--ink)}
+.lede{font-size:20px;color:var(--mut);max-width:34ch}
+.lede strong{color:var(--ink);font-weight:600}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+
+/* today's ticket */
+.ticket{position:relative;background:var(--paper);border-radius:18px;box-shadow:0 1px 0 var(--line),0 24px 48px -24px rgba(80,20,20,.35),0 2px 6px rgba(80,20,20,.08);transform:rotate(1.2deg);max-width:440px;margin-left:auto;overflow:hidden}
+.t-band{display:flex;justify-content:space-between;align-items:center;background:var(--red);color:#fff;padding:14px 24px;font:700 14px/1 var(--body);letter-spacing:.14em;text-transform:uppercase}
+.t-band .dot{width:10px;height:10px;border-radius:50%;background:#fff;box-shadow:0 0 0 4px rgba(255,255,255,.3)}
+.t-body{padding:26px 26px 22px;border-bottom:2px dashed var(--line);transition:opacity .25s}
+.t-body.swap{opacity:0}
+.t-big{font:clamp(54px,6vw,76px)/.9 var(--display);color:var(--red)}
+.t-big.words{font-size:clamp(40px,4.4vw,54px)}
+.t-name{margin-top:8px;font:28px/1.05 var(--display);color:var(--ink)}
+.t-desc{margin-top:10px;color:var(--mut);font-size:17px;min-height:2.9em}
+.t-act{margin-top:18px;width:100%}
+.week{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;padding:16px 18px 20px}
+.week button{min-height:48px;border:1.5px solid var(--line);background:#fff;border-radius:10px;font:700 14px/1 var(--body);letter-spacing:.06em;text-transform:uppercase;color:var(--mut);cursor:pointer;position:relative}
+.week button:hover{border-color:var(--red);color:var(--red)}
+.week button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.week button.today::after{content:"";position:absolute;top:6px;right:6px;width:6px;height:6px;border-radius:50%;background:var(--red)}
+.week button[aria-pressed="true"].today::after{background:#fff}
+.t-cap{padding:0 18px 18px;font-size:14px;color:var(--mut);text-align:center}
+
+.proof{display:grid;grid-template-columns:repeat(3,1fr);margin-top:64px;border-top:1px solid var(--line)}
+.proof li{padding:26px 28px 30px 0}
+.proof li+li{padding-left:28px;border-left:1px solid var(--line)}
+.proof b{display:block;font:34px/1 var(--display);color:var(--red)}
+.proof span{display:block;margin-top:8px;color:var(--mut);font-size:16.5px;line-height:1.4}
+
+/* section heads */
+.sec{padding:96px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:36px}
+.sec h2{margin-top:12px;font:clamp(36px,4.2vw,52px)/1 var(--display);color:var(--ink)}
+.sec-head p{max-width:40ch;color:var(--mut)}
+
+/* menu */
+.menu{background:var(--cream)}
+.cats{position:sticky;top:0;z-index:20;background:rgba(251,243,232,.96);backdrop-filter:saturate(1.2) blur(6px);border-bottom:1px solid var(--line);margin-bottom:8px}
+.cats .wrap{display:flex;align-items:center;gap:12px}
+.cats nav{flex:1;min-width:0;overflow-x:auto;scrollbar-width:none}
+.cats nav::-webkit-scrollbar{display:none}
+.cats ul{display:flex;gap:4px;padding:10px 0}
+.cats a{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border-radius:999px;text-decoration:none;font:600 16px/1 var(--body);color:var(--ink);white-space:nowrap}
+.cats a:hover{background:#fff}
+.cats .tally{flex:none;display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 18px;border-radius:999px;background:var(--ink);color:#fff;text-decoration:none;font:600 15px/1 var(--body)}
+.cats .tally:hover{background:#000}
+.tally b{font:18px/1 var(--display);letter-spacing:.02em;color:#fff}
+.tally .t-short{display:none}
+.tally.bump{animation:bump .4s}
+@keyframes bump{40%{transform:scale(1.08)}}
+
+.menu-grid{display:grid;grid-template-columns:1fr 360px;gap:48px;align-items:start;padding-top:28px}
+.cat{padding:28px 0 12px;scroll-margin-top:80px}
+.cat-h{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;padding-bottom:12px;border-bottom:3px solid var(--ink)}
+.cat-h h3{font:30px/1 var(--display);color:var(--red)}
+.cat-h p{color:var(--mut);font-size:16px}
+.items{display:grid;grid-template-columns:1fr 1fr;column-gap:36px}
+.it{display:flex;gap:16px;justify-content:space-between;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--line)}
+.it h4{font:700 18px/1.2 var(--body);text-transform:uppercase;letter-spacing:.03em}
+.it-desc{margin-top:4px;font-size:16px;line-height:1.4;color:var(--mut)}
+.it-buy{display:flex;align-items:center;gap:10px;flex:none}
+.it-price{font:19px/1 var(--display);color:var(--ink);letter-spacing:.02em;white-space:nowrap}
+.it-price small{display:block;margin-top:4px;font:600 13px/1.1 var(--body);color:var(--mut);text-align:right;letter-spacing:0}
+.tag{display:inline-block;margin-top:8px;padding:4px 10px;border-radius:999px;background:var(--red);color:#fff;font:700 13px/1.2 var(--body);letter-spacing:.04em}
+.add{position:relative;flex:none;width:44px;height:44px;border-radius:50%;border:2px solid var(--red);background:#fff;color:var(--red);cursor:pointer;display:grid;place-items:center;transition:background .15s,color .15s}
+.add svg{width:18px;height:18px;stroke:currentColor;stroke-width:2.6;fill:none}
+.add:hover{background:var(--red);color:#fff}
+.add.pill{width:auto;border-radius:999px;padding:0 14px;font:700 15px/1 var(--body)}
+.add[data-qty]::after{content:attr(data-qty);position:absolute;top:-7px;right:-7px;min-width:22px;height:22px;padding:0 6px;border-radius:11px;background:var(--ink);color:#fff;font:700 12px/22px var(--body);text-align:center}
+.extras{display:flex;flex-wrap:wrap;gap:10px;padding:18px 0 6px}
+.extras .lbl{width:100%;font:700 14px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+
+/* docket */
+.docket{position:sticky;top:84px;background:var(--paper);border-radius:16px;box-shadow:0 24px 48px -28px rgba(80,20,20,.4),0 1px 3px rgba(80,20,20,.1);padding:24px 24px 22px;scroll-margin-top:84px}
+.dk-head{display:flex;justify-content:space-between;align-items:center;padding-bottom:14px;border-bottom:2px dashed var(--line)}
+.dk-head h3{font:26px/1 var(--display);color:var(--ink)}
+.dk-clear{min-height:44px;padding:0 10px;border:0;background:none;color:var(--mut);font:600 15px/1 var(--body);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.dk-lines li{display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.dl-name{font-weight:600;font-size:16.5px;line-height:1.25}
+.dl-note{display:block;font-weight:500;font-size:13.5px;color:var(--red)}
+.dl-qty{display:flex;align-items:center;gap:2px}
+.dl-qty button{width:44px;height:44px;border:0;background:none;border-radius:50%;font:600 22px/1 var(--body);color:var(--ink);cursor:pointer}
+.dl-qty button:hover{background:var(--cream)}
+.dl-qty span{min-width:18px;text-align:center;font-weight:700}
+.dl-price{min-width:58px;text-align:right;font-weight:700}
+.dk-empty{padding:22px 0;color:var(--mut)}
+.dk-save{margin-top:12px;color:var(--red);font-weight:600;font-size:15.5px}
+.dk-total{display:flex;justify-content:space-between;align-items:baseline;margin-top:10px}
+.dk-total span{font:700 15px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+.dk-total strong{font:40px/1 var(--display);color:var(--red);font-weight:400}
+.dk-foot{margin-top:14px;font-size:15px;color:var(--mut);line-height:1.45}
+.docket .btn{width:100%;margin-top:16px}
+
+/* toolbox */
+.toolbox .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.tb-copy .intro{margin-top:16px;color:var(--mut);max-width:44ch}
+.perks{display:grid;grid-template-columns:1fr 1fr;gap:12px 28px;margin-top:28px}
+.perks li{display:flex;gap:10px;align-items:flex-start;font-weight:600;line-height:1.35}
+.perks svg{flex:none;width:22px;height:22px;margin-top:1px}
+.crew{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:36px;max-width:520px}
+.crew img{width:100%;max-width:500px;border-radius:12px;aspect-ratio:500/281;object-fit:cover}
+.crew figcaption{grid-column:1/-1;font-size:14.5px;color:var(--mut)}
+.tue{margin-top:28px;display:flex;gap:16px;align-items:center;padding:16px 20px;border-radius:14px;background:var(--cream)}
+.tue b{font:32px/1 var(--display);color:var(--red)}
+.tue span{font-size:16.5px;line-height:1.35}
+
+.form{background:var(--cream);border-radius:18px;padding:34px 32px}
+.form h3{font:30px/1.05 var(--display);color:var(--ink)}
+.form>p{margin-top:8px;color:var(--mut);font-size:16.5px}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}
+.f{display:flex;flex-direction:column;gap:6px}
+.f.full{grid-column:1/-1}
+.f label,.f legend{font:600 15px/1.2 var(--body)}
+.f input,.f textarea{width:100%;min-height:50px;padding:12px 14px;border:1.5px solid #d9c6b6;border-radius:10px;background:#fff;font:400 17px/1.3 var(--body);color:var(--ink)}
+.f textarea{min-height:96px;resize:vertical}
+.f input:focus,.f textarea:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 3px rgba(31,23,22,.15)}
+.checks{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:10px 22px;border:0;padding:0;margin:0}
+.checks label{display:flex;gap:10px;align-items:center;min-height:44px;font-weight:500;cursor:pointer}
+.checks input{width:22px;height:22px;accent-color:var(--red)}
+.form .btn{margin-top:22px;width:100%}
+.sent{margin-top:16px;padding:14px 16px;border-radius:10px;background:#fff;border-left:4px solid var(--red);font-weight:600}
+.alt{margin-top:14px;font-size:15.5px;color:var(--mut)}
+.alt a{color:var(--red);font-weight:600}
+
+/* story */
+.story{background:var(--ink);color:#f6ebe0}
+.story .kicker{color:#ff8a93}
+.story h2{color:#fff}
+.story .sec-head p{color:#d8c8bc}
+.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:12px;border-top:2px solid #4a3a37}
+.tl li{position:relative;padding:28px 28px 0 0}
+.tl li::before{content:"";position:absolute;top:-8px;left:0;width:14px;height:14px;border-radius:50%;background:var(--red);box-shadow:0 0 0 4px var(--ink)}
+.tl b{display:block;font:34px/1 var(--display);color:#fff}
+.tl p{margin-top:10px;color:#d8c8bc;font-size:16.5px;line-height:1.5}
+.family{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:80px}
+.family h3{font:32px/1 var(--display);color:#fff}
+.family .role{display:block;margin-top:8px;font:700 13px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:#ff8a93}
+.family p{margin-top:14px;color:#d8c8bc;font-size:16.5px;line-height:1.55}
+.family li{padding-top:22px;border-top:1px solid #4a3a37}
+.quote{margin-top:72px;font:clamp(28px,3.4vw,44px)/1.05 var(--display);color:#fff;max-width:30ch}
+.quote span{color:#ff8a93}
+
+/* community */
+.community{background:var(--red);color:#fff}
+.community .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.community .kicker{color:#fff;opacity:1}
+.community h2{color:#fff}
+.community p.body{margin-top:18px;font-size:19px;max-width:46ch}
+.ways{display:flex;flex-direction:column;gap:12px}
+.ways li{display:flex;gap:14px;align-items:center;padding:16px 20px;border-radius:14px;background:rgba(0,0,0,.14);font-weight:600;font-size:18px}
+.ways b{font:24px/1 var(--display);min-width:28px}
+.community .actions .btn{background:#fff;color:var(--red);border-color:#fff}
+.community .actions .btn:hover{background:var(--pink)}
+.community .actions .btn.ghost{background:transparent;color:#fff}
+.community .actions .btn.ghost:hover{background:rgba(0,0,0,.14)}
+
+/* faq */
+.qa{display:grid;grid-template-columns:1fr 1fr;gap:0 56px}
+.qa div{padding:22px 0;border-top:1px solid var(--line)}
+.qa dt{font:700 19px/1.3 var(--body)}
+.qa dd{margin:6px 0 0;color:var(--mut)}
+.qa a{color:var(--red);font-weight:600}
+
+/* visit */
+.visit{background:var(--cream);text-align:center;padding:104px 0}
+.visit h2{font:clamp(40px,5.6vw,72px)/.98 var(--display);color:var(--red)}
+.visit p{margin:18px auto 0;max-width:40ch;color:var(--mut);font-size:20px}
+.visit .actions{justify-content:center}
+.visit .small{margin-top:28px;font-size:16px}
+.visit .small a{color:var(--ink);font-weight:600}
+
+footer{background:#fff;border-top:1px solid var(--line);padding:40px 0 36px}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px}
+.foot img{width:140px}
+.foot nav{display:flex;flex-wrap:wrap;gap:4px 8px}
+.foot nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 8px;color:var(--mut);text-decoration:none;font-weight:600}
+.foot nav a:hover{color:var(--red)}
+.credit{margin-top:24px;padding-top:20px;border-top:1px solid var(--line);font-size:14.5px;color:var(--mut)}
+.credit a{color:var(--mut)}
+
+.callbar{display:none}
+
+/* rise */
+.will-rise{opacity:0;transform:translateY(12px)}
+.rise{transition:opacity .6s ease,transform .6s ease}
+
+@media (max-width:1020px){
+  .nav a:not(.callbtn):not(.menu-link){display:none}
+  .menu-grid{grid-template-columns:1fr}
+  .docket{position:static}
+  .items{grid-template-columns:1fr}
+  .toolbox .wrap,.community .wrap{grid-template-columns:1fr;gap:44px}
+}
+@media (max-width:760px){
+  body{font-size:17px;padding-bottom:72px}
+  .wrap{padding:0 20px}
+  .top .wrap{height:68px}
+  .brand img{width:132px}
+  .nav .callbtn{display:none}
+  .nav a.menu-link{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:2px solid var(--red);border-radius:999px}
+  .hero{padding:32px 0 0}
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .hero h1{margin:14px 0 16px}
+  .lede{font-size:18px}
+  .actions{margin-top:24px}
+  .actions .btn{flex:1 1 100%}
+  .ticket{transform:none;max-width:none;margin:0}
+  .t-body{padding:22px 20px 20px}
+  .proof{grid-template-columns:1fr;margin-top:40px}
+  .proof li,.proof li+li{padding:20px 0;border-left:0;border-bottom:1px solid var(--line);display:flex;gap:16px;align-items:baseline}
+  .proof li:last-child{border-bottom:0}
+  .proof b{font-size:28px;min-width:92px}
+  .proof span{margin:0}
+  .sec{padding:68px 0}
+  .sec-head{display:block;margin-bottom:24px}
+  .sec-head p{margin-top:14px}
+  .cats .wrap{padding-right:12px}
+  .tally{padding:0 12px}
+  .tally .t-long{display:none}
+  .tally .t-short{display:inline}
+  .cat-h h3{font-size:26px}
+  .it h4{font-size:17px}
+  .it{padding:14px 0}
+  .perks{grid-template-columns:1fr}
+  .crew{grid-template-columns:1fr}
+  .form{padding:26px 20px;margin:0 -4px}
+  .fields{grid-template-columns:1fr}
+  .tl{grid-template-columns:1fr;border-top:0;border-left:2px solid #4a3a37;margin-left:6px}
+  .tl li{padding:0 0 30px 26px}
+  .tl li::before{top:4px;left:-8px}
+  .family{grid-template-columns:1fr;gap:28px;margin-top:52px}
+  .quote{margin-top:52px}
+  .qa{grid-template-columns:1fr}
+  .visit{padding:76px 0}
+  .foot{flex-direction:column;align-items:flex-start}
+  .callbar{display:grid;grid-template-columns:1.4fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--ink);padding:8px 10px calc(8px + env(safe-area-inset-bottom));gap:8px;box-shadow:0 -6px 20px rgba(0,0,0,.18)}
+  .callbar a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:12px;text-decoration:none;font:700 16px/1 var(--body);color:#fff}
+  .callbar a:first-child{background:var(--red)}
+  .callbar a:last-child{border:1.5px solid #5a4a47}
+  .callbar svg{width:17px;height:17px;fill:currentColor}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .will-rise{opacity:1;transform:none}
+}
+</style></head>
+<body>
+<div class="mockbar">Here's your free mockup from&nbsp;<a href="https://signalsetbase.com/" target="_blank" rel="noopener">Signal Set</a></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Bacon Buttie Station, home"><img src="https://cdn.prod.website-files.com/61edf5376108814586632707/61ee0370dbd0073033a74eba_bacon-buttie-logo-p-1080.png" alt="Bacon Buttie Station" width="879" height="261"></a>
+    <nav class="nav" aria-label="Main">
+      <a class="menu-link" href="#menu">Menu</a>
+      <a href="#toolbox">Toolbox</a>
+      <a href="#story">About us</a>
+      <a href="#sponsorship">Sponsorship</a>
+      <a class="callbtn" href="tel:034749133"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>03 474 9133</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="hero-h">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="kicker">Bacon Buttie Station &middot; 12 Ward St, Dunedin</p>
+        <h1 id="hero-h">Our own bacon, sizzling hot <span>between two slices of bread.</span></h1>
+        <p class="lede">A family business since 2002. <strong>We butcher our own meat</strong>, and serve bacon butties, breakfasts and bacon-based burgers 7 days a week.</p>
+        <div class="actions">
+          <a class="btn" href="#menu">See the menu</a>
+          <a class="btn ghost" href="tel:034749133"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>Call 03 474 9133</a>
+        </div>
+      </div>
+
+      <div class="ticket" aria-labelledby="t-label">
+        <div class="t-band"><span id="t-label">Wednesday special</span><span class="dot" aria-hidden="true"></span></div>
+        <div class="t-body" aria-live="polite">
+          <p class="t-big" id="t-big">$7.50</p>
+          <p class="t-name" id="t-name">Loaded Fries</p>
+          <p class="t-desc" id="t-desc">Chips, melted cheese, bacon &amp; gravy. Usually $10.50.</p>
+          <a class="btn t-act" id="t-act" href="#sides">Add to my tally</a>
+        </div>
+        <div class="week" role="group" aria-label="Specials by day">
+          <button type="button" data-day="1" aria-pressed="false">Mon</button>
+          <button type="button" data-day="2" aria-pressed="false">Tue</button>
+          <button type="button" data-day="3" aria-pressed="true">Wed</button>
+          <button type="button" data-day="4" aria-pressed="false">Thu</button>
+          <button type="button" data-day="5" aria-pressed="false">Fri</button>
+        </div>
+        <p class="t-cap">A different special every weekday.</p>
+      </div>
+    </div>
+
+    <ul class="proof">
+      <li><b>2002</b><span>Our first buttie, at Dunedin's farmers market</span></li>
+      <li><b>100%</b><span>Real meat. Even the sausages would walk if they could.</span></li>
+      <li><b>7 days</b><span>Put your feet up, or take it on the road</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="menu sec" id="menu" aria-labelledby="menu-h" style="padding-top:0">
+  <div class="cats">
+    <div class="wrap">
+      <nav aria-label="Menu sections">
+        <ul>
+          <li><a href="#butties">Butties</a></li>
+          <li><a href="#burgers">Burgers</a></li>
+          <li><a href="#flyingpig">Flying Pig</a></li>
+          <li><a href="#dogs">Dogs</a></li>
+          <li><a href="#sides">Chips &amp; ribs</a></li>
+          <li><a href="#coffee">Coffee</a></li>
+          <li><a href="#shakes">Shakes</a></li>
+        </ul>
+      </nav>
+      <a class="tally" id="tally" href="#docket"><span class="t-lbl t-long">Your tally</span><span class="t-lbl t-short">Tally</span><b id="tally-total">$22.50</b></a>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="sec-head" style="margin:56px 0 0">
+      <div>
+        <p class="kicker">The menu</p>
+        <h2 id="menu-h">Real food, real prices.</h2>
+      </div>
+      <p>Tap <strong>+</strong> on anything and we'll add it up for you, two-for deals and today's special included.</p>
+    </div>
+
+    <div class="menu-grid">
+      <div class="menu-list">
+
+        <div class="cat" id="butties">
+          <div class="cat-h"><h3>Bacon butties &amp; bread</h3><p>The one that started it all.</p></div>
+          <ul class="items">
+            <li class="it"><div><h4>Bacon Buttie</h4><p class="it-desc">Bacon, onions, relish, mustard &amp; t.sauce</p></div><div class="it-buy"><span class="it-price">$9<small>2 for $16.50</small></span><button class="add" type="button" data-id="buttie" data-name="Bacon Buttie" data-price="9" data-pair="16.5" aria-label="Add Bacon Buttie, $9"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+            <li class="it"><div><h4>Big Boy</h4><p class="it-desc">Chips, bacon, egg, cheese, onion &amp; gravy in bread</p></div><div class="it-buy"><span class="it-price">$11</span><button class="add" type="button" data-id="bigboy" data-name="Big Boy" data-price="11" aria-label="Add Big Boy, $11"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+            <li class="it"><div><h4>Roast Pork Sandwich</h4><p class="it-desc">Roast pork, homemade gravy &amp; onions in bread</p></div><div class="it-buy"><span class="it-price">$8.50</span><button class="add" type="button" data-id="roastsand" data-name="Roast Pork Sandwich" data-price="8.5" aria-label="Add Roast Pork Sandwich, $8.50"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+            <li class="it"><div><h4>Wrapped Piggy</h4><p class="it-desc">Crumbed pork, bacon, egg, cheese &amp; bbq sauce rolled in a mayo'd wrap</p></div><div class="it-buy"><span class="it-price">$12.50</span><button class="add" type="button" data-id="wrapped" data-name="Wrapped Piggy" data-price="12.5" aria-label="Add Wrapped Piggy, $12.50"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+            <li class="it"><div><h4>Chip Buttie</h4><p class="it-desc">Hot chips &amp; onions in a roll or sandwich, with your choice of gravy or sauce</p></div><div class="it-buy"><span class="it-price">$6.50</span><button class="add" type="button" data-id="chipbuttie" data-name="Chip Buttie" data-price="6.5" aria-label="Add Chip Buttie, $6.50"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+          </ul>
+          <div class="extras">
+            <span class="lbl">Add to your buttie</span>
+            <button class="add pill" type="button" data-id="x-egg" data-name="Add egg or cheese" data-price="1.5">Egg or cheese +$1.50</button>
+            <button class="add pill" type="button" data-id="x-mush" data-name="Add mushrooms or bacon" data-price="2.5">Mushrooms or bacon +$2.50</button>
+            <button class="add pill" type="button" data-id="x-brown" data-name="Brown bread" data-price="1">Brown bread $1</button>
+            <button class="add pill" type="button" data-id="x-gf" data-name="Gluten-free bread" data-price="2">GF bread +$2</button>
+          </div>
+        </div>
+
+        <div class="cat" id="burgers">
+          <div class="cat-h"><h3>Burgers</h3><p>All in a toasted bun.</p></div>
+          <ul class="items">
+            <li class="it"><div><h4>Kiwi Burger</h4><p class="it-desc">Pork pattie, beetroot, onion rings, cheese, egg, lettuce &amp; aioli</p></div><div class="it-buy"><span class="it-price">$13.50</span><button class="add" type="button" data-id="kiwi" data-name="Kiwi Burger" data-price="13.5" aria-label="Add Kiwi Burger, $13.50"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+            <li class="it"><div><h4>Rise &amp; Swine</h4><p class="it-desc">Bacon, egg, hash brown, cheese &amp; hollandaise</p></div><div class="it-buy"><span class="it-price">$13</span><button class="add" type="button" data-id="rise" data-name="Rise &amp; Swine" data-price="13" aria-label="Add Rise and Swine, $13"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+            <li class="it"><div><h4>South Pork</h4><p class="it-desc">Southern-fried pork, pickles, bacon, cheese, lettuce &amp; aioli</p></div><div class="it-buy"><span class="it-price">$13</span><button class="add" type="button" data-id="southpork" data-name="South Pork" data-price="13" aria-label="Add South Pork, $13"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+            <li class="it"><div><h4>Sunday Roast</h4><p class="it-desc">Roast pork, crackle, cheese, hash brown, gravy &amp; apple sauce</p></div><div class="it-buy"><span class="it-price">$11.50</span><button class="add" type="button" data-id="sundayroast" data-name="Sunday Roast" data-price="11.5" aria-label="Add Sunday Roast, $11.50"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+            <li class="it"><div><h4>Paullie</h4><p class="it-desc">Southern smoked pulled pork with a creamy &lsquo;slaw</p></div><div class="it-buy"><span class="it-price">$10</span><button class="add" type="button" data-id="paullie" data-name="Paullie" data-price="10" aria-label="Add Paullie, $10"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+          </ul>
+        </div>
+
+        <div class="cat" id="flyingpig">
+          <div class="cat-h"><h3>Flying Pig burger range</h3></div>
+          <ul class="items">
+            <li class="it"><div><h4>The Hog</h4><p class="it-desc">Bacon, egg, cheese, mushrooms, lettuce, tomato relish &amp; onion</p></div><div class="it-buy"><span class="it-price">$12.50</span><button class="add" type="button" data-id="hog" data-name="The Hog" data-price="12.5" aria-label="Add The Hog, $12.50"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+            <li class="it"><div><h4>Kunekune</h4><p class="it-desc">Crumbed pork, bacon, cheese, lettuce, tomato relish &amp; onion</p></div><div class="it-buy"><span class="it-price">$12</span><button class="add" type="button" data-id="kunekune" data-name="Kunekune" data-price="12" aria-label="Add Kunekune, $12"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+            <li class="it"><div><h4>Pig-less <small style="font-weight:600;color:var(--red)">(no meat)</small></h4><p class="it-desc">Egg, cheese, mushrooms, lettuce, tomato relish &amp; onion</p></div><div class="it-buy"><span class="it-price">$11</span><button class="add" type="button" data-id="pigless" data-name="Pig-less" data-price="11" aria-label="Add Pig-less, $11"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+            <li class="it"><div><h4>Porkabello</h4><p class="it-desc">Mushrooms, bacon, lettuce, tomato relish &amp; onion</p></div><div class="it-buy"><span class="it-price">$10</span><button class="add" type="button" data-id="porkabello" data-name="Porkabello" data-price="10" aria-label="Add Porkabello, $10"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+            <li class="it"><div><h4>Porkeeze</h4><p class="it-desc">Cheese, bacon, lettuce, tomato relish &amp; onion</p></div><div class="it-buy"><span class="it-price">$10</span><button class="add" type="button" data-id="porkeeze" data-name="Porkeeze" data-price="10" aria-label="Add Porkeeze, $10"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+            <li class="it"><div><h4>Miss Peggy</h4><p class="it-desc">Egg, bacon, lettuce, tomato relish &amp; onion</p></div><div class="it-buy"><span class="it-price">$9.50</span><button class="add" type="button" data-id="peggy" data-name="Miss Peggy" data-price="9.5" aria-label="Add Miss Peggy, $9.50"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+            <li class="it"><div><h4>Piglet</h4><p class="it-desc">Bacon, onion, lettuce &amp; tomato relish</p></div><div class="it-buy"><span class="it-price">$9</span><button class="add" type="button" data-id="piglet" data-name="Piglet" data-price="9" aria-label="Add Piglet, $9"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+          </ul>
+          <div class="extras">
+            <span class="lbl">Flying Pig extras</span>
+            <button class="add pill" type="button" data-id="fp-bacon" data-name="Extra bacon or mushrooms" data-price="2.5">Bacon or mushrooms $2.50</button>
+            <button class="add pill" type="button" data-id="fp-hash" data-name="Extra hash brown or sausage" data-price="2.5">Hash brown or sausage $2.50</button>
+            <button class="add pill" type="button" data-id="fp-egg" data-name="Extra egg or cheese" data-price="2">Egg or cheese $2</button>
+          </div>
+        </div>
+
+        <div class="cat" id="dogs">
+          <div class="cat-h"><h3>Dogs</h3><p>Free chips with any dog on Mondays.</p></div>
+          <ul class="items">
+            <li class="it"><div><h4>Big Dog</h4><p class="it-desc">Eurodog with cheese &amp; bacon</p></div><div class="it-buy"><span class="it-price">$11</span><button class="add" type="button" data-id="bigdog" data-name="Big Dog" data-price="11" aria-label="Add Big Dog, $11"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+            <li class="it"><div><h4>Swiss Dog</h4><p class="it-desc">Eurodog with melted cheese</p></div><div class="it-buy"><span class="it-price">$10</span><button class="add" type="button" data-id="swissdog" data-name="Swiss Dog" data-price="10" aria-label="Add Swiss Dog, $10"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+            <li class="it"><div><h4>Delux Dog</h4><p class="it-desc">Eurodog with bacon</p></div><div class="it-buy"><span class="it-price">$10</span><button class="add" type="button" data-id="deluxdog" data-name="Delux Dog" data-price="10" aria-label="Add Delux Dog, $10"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+            <li class="it"><div><h4>Eurodog</h4><p class="it-desc">Frankfurter &amp; onions in a roll with t.sauce &amp; mustard</p></div><div class="it-buy"><span class="it-price">$9</span><button class="add" type="button" data-id="eurodog" data-name="Eurodog" data-price="9" aria-label="Add Eurodog, $9"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+          </ul>
+        </div>
+
+        <div class="cat" id="sides">
+          <div class="cat-h"><h3>Chips, fries &amp; ribs</h3></div>
+          <ul class="items">
+            <li class="it"><div><h4>Loaded Fries</h4><p class="it-desc">Chips, melted cheese, bacon &amp; gravy</p></div><div class="it-buy"><span class="it-price">$10.50<small>Wed $7.50</small></span><button class="add" type="button" data-id="loaded" data-name="Loaded Fries" data-price="10.5" data-sday="3" data-sprice="7.5" aria-label="Add Loaded Fries, $10.50"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+            <li class="it"><div><h4>Sausage Box</h4><p class="it-desc">3 sausages &amp; chips</p></div><div class="it-buy"><span class="it-price">$9.50<small>Fri $7.50</small></span><button class="add" type="button" data-id="sausagebox" data-name="Sausage Box" data-price="9.5" data-sday="5" data-sprice="7.5" aria-label="Add Sausage Box, $9.50"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+            <li class="it"><div><h4>Ribs &amp; Chips</h4><p class="it-desc">Marinated pork ribs &amp; hot chips</p></div><div class="it-buy"><span class="it-price">$12.50</span><button class="add" type="button" data-id="ribschips" data-name="Ribs &amp; Chips" data-price="12.5" aria-label="Add Ribs and Chips, $12.50"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+            <li class="it"><div><h4>Rack of Ribs</h4></div><div class="it-buy"><span class="it-price">$9</span><button class="add" type="button" data-id="rack" data-name="Rack of Ribs" data-price="9" aria-label="Add Rack of Ribs, $9"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+            <li class="it"><div><h4>Hot Chips</h4><p class="it-desc">Regular or large</p></div><div class="it-buy"><button class="add pill" type="button" data-id="chips-r" data-name="Hot chips, regular" data-price="5">Reg $5</button><button class="add pill" type="button" data-id="chips-l" data-name="Hot chips, large" data-price="6">Large $6</button></div></li>
+          </ul>
+        </div>
+
+        <div class="cat" id="coffee">
+          <div class="cat-h"><h3>Coffee</h3><p>Halo coffee and drinks.</p></div>
+          <ul class="items">
+            <li class="it"><div><h4>Flat white, latte, cappuccino</h4></div><div class="it-buy"><button class="add pill" type="button" data-id="fw-r" data-name="Flat white, regular" data-price="6">Reg $6</button><button class="add pill" type="button" data-id="fw-l" data-name="Flat white, large" data-price="7">Large $7</button></div></li>
+            <li class="it"><div><h4>Mocha, hot chocolate</h4></div><div class="it-buy"><button class="add pill" type="button" data-id="mo-r" data-name="Mocha, regular" data-price="6">Reg $6</button><button class="add pill" type="button" data-id="mo-l" data-name="Mocha, large" data-price="7">Large $7</button></div></li>
+            <li class="it"><div><h4>Americano, long or short black</h4></div><div class="it-buy"><span class="it-price">$4.50</span><button class="add" type="button" data-id="black" data-name="Americano or black" data-price="4.5" aria-label="Add Americano, long or short black, $4.50"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+          </ul>
+          <div class="extras">
+            <span class="lbl">Make it yours</span>
+            <button class="add pill" type="button" data-id="milk" data-name="Coconut, oat or soy milk" data-price="1">Coconut, oat or soy milk +$1</button>
+            <button class="add pill" type="button" data-id="syrup" data-name="Caramel, vanilla or chai syrup" data-price="1">Caramel, vanilla or chai syrup +$1</button>
+          </div>
+        </div>
+
+        <div class="cat" id="shakes">
+          <div class="cat-h"><h3>Milkshakes</h3><p>Made with ice cream.</p></div>
+          <ul class="items">
+            <li class="it"><div><h4>Wakey Shakey</h4><p class="it-desc">Chocolate milkshake with a double shot of coffee</p></div><div class="it-buy"><span class="it-price">$10.50</span><button class="add" type="button" data-id="wakey" data-name="Wakey Shakey" data-price="10.5" aria-label="Add Wakey Shakey, $10.50"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+            <li class="it"><div><h4>Milkshake</h4><p class="it-desc">Chocolate, lime, strawberry, caramel, banana or protein cream</p></div><div class="it-buy"><span class="it-price">$9.50</span><button class="add" type="button" data-id="shake" data-name="Milkshake" data-price="9.5" aria-label="Add Milkshake, $9.50"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <aside class="docket" id="docket" aria-labelledby="docket-h">
+        <div class="dk-head"><h3 id="docket-h">Your tally</h3><button class="dk-clear" id="dk-clear" type="button">Clear</button></div>
+        <ul class="dk-lines" id="dk-lines" aria-live="polite">
+          <li><div class="dl-name">Bacon Buttie<span class="dl-note">2 for $16.50</span></div><div class="dl-qty"><button type="button" data-dec="buttie" aria-label="One less Bacon Buttie">&minus;</button><span>2</span><button type="button" data-inc="buttie" aria-label="One more Bacon Buttie">+</button></div><div class="dl-price">$16.50</div></li>
+          <li><div class="dl-name">Flat white, regular</div><div class="dl-qty"><button type="button" data-dec="fw-r" aria-label="One less Flat white, regular">&minus;</button><span>1</span><button type="button" data-inc="fw-r" aria-label="One more Flat white, regular">+</button></div><div class="dl-price">$6.00</div></li>
+        </ul>
+        <p class="dk-save" id="dk-save">You save $1.50 on deals</p>
+        <div class="dk-total"><span>Total</span><strong id="dk-total">$22.50</strong></div>
+        <p class="dk-foot">Prices from our menu. Order in store at 12&nbsp;Ward&nbsp;St.</p>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=12%20Ward%20St%2C%20Dunedin%209016">Directions to 12 Ward St</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="toolbox sec" id="toolbox" aria-labelledby="tb-h">
+  <div class="wrap">
+    <div class="tb-copy">
+      <p class="kicker">Toolbox breakfast</p>
+      <h2 id="tb-h">Bring the whole crew.</h2>
+      <p class="intro">Have your toolbox, health &amp; safety or team meeting with us, and let us look after your team.</p>
+      <ul class="perks">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#df1125"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Available from 6:30am</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#df1125"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>A private room for the team</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#df1125"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Pre-order, so no waiting</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#df1125"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Coffee and food deals</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#df1125"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Invoice to your company</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#df1125"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Collect points, get rewards</li>
+      </ul>
+      <div class="tue"><b>$25</b><span><strong>Tradie Tuesday:</strong> Big Brekkie &amp; coffee, every Tuesday.</span></div>
+      <figure class="crew" style="margin:36px 0 0">
+        <img src="https://cdn.prod.website-files.com/61edf537610881bf0063271a/61fb38c12ac4fa47cad92526_bb-img9.jpg" alt="A full room of workers in hi-vis sharing breakfast at the Bacon Buttie Station" width="500" height="281" loading="lazy">
+        <img src="https://cdn.prod.website-files.com/61edf537610881bf0063271a/61fb38a5c20b1c321b3d34e5_bb-img7.jpg" alt="A crew tucking into breakfast around a table at the Station" width="500" height="281" loading="lazy">
+        <figcaption>Crews at the Station.</figcaption>
+      </figure>
+    </div>
+
+    <form class="form" id="tb-form" novalidate>
+      <h3>Book your toolbox meeting</h3>
+      <p>Tell us when and how many, and we'll get back to you.</p>
+      <div class="fields">
+        <div class="f"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required></div>
+        <div class="f"><label for="f-co">Company</label><input id="f-co" name="company" autocomplete="organization"></div>
+        <div class="f full"><label for="f-contact">Phone or email</label><input id="f-contact" name="contact" autocomplete="email" required></div>
+        <div class="f"><label for="f-date">Date</label><input id="f-date" name="date" type="date"></div>
+        <div class="f"><label for="f-crew">How many in the crew?</label><input id="f-crew" name="crew" type="number" min="1" inputmode="numeric" placeholder="e.g. 8"></div>
+        <fieldset class="checks">
+          <legend class="sr">Options</legend>
+          <label><input type="checkbox" name="preorder"> Pre-order the food</label>
+          <label><input type="checkbox" name="invoice"> Invoice the company</label>
+        </fieldset>
+        <div class="f full"><label for="f-notes">Anything else?</label><textarea id="f-notes" name="notes" placeholder="Start time, what the crew's having, anything we should know"></textarea></div>
+      </div>
+      <button class="btn" type="submit">Send booking request</button>
+      <p class="sent" id="tb-sent" role="status" style="display:none"></p>
+      <p class="alt">Or email <a href="mailto:t-winikerei@hotmail.com">t-winikerei@hotmail.com</a> or call <a href="tel:034749133">03 474 9133</a>.</p>
+    </form>
+  </div>
+</section>
+
+<section class="story sec" id="story" aria-labelledby="story-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="kicker">The Bacon Buttie family</p>
+        <h2 id="story-h">From a gazebo to Ward&nbsp;St.</h2>
+      </div>
+      <p>We're a family business, and we butcher our own meat. 100% real meat.</p>
+    </div>
+    <ol class="tl">
+      <li><b>2002</b><p>Mike, the butcher, heard about a new farmers market in Dunedin. Gas hobs, a frying pan and a flimsy gazebo went in the back of the ute, and the bacon buttie made its debut.</p></li>
+      <li><b>Then</b><p>Word spread. People lined up by the droves for their Saturday buttie, so the gazebo was traded in for a customised food truck.</p></li>
+      <li><b>2012</b><p>Our dream of a fully-fledged Bacon Buttie Station came true.</p></li>
+      <li><b>Today</b><p>The food truck has retired. You can always find us in our store at 12 Ward St.</p></li>
+    </ol>
+    <ul class="family">
+      <li><h3>Mike</h3><span class="role">The Bacon Buttie man</span><p>Began carving meat under his father's guidance at 17. Inspired by his Dutch heritage, he cures bacon the traditional way at his butcher shop in Halfway Bush. He bones, cures, smokes, slices and packs. His guarantee: 100% quality and 100% meat.</p></li>
+      <li><h3>Glenda</h3><span class="role">Behind the scenes</span><p>Mike's wife and Tia's mum. You'll find her at the butcher shop cleaning, preparing and organising. She prefers the background, but her role is vital to keeping the business running, and the recipes secret.</p></li>
+      <li><h3>Tia</h3><span class="role">In the driver's seat</span><p>Mike and Glenda's daughter. After years in hospitality and overseas, she's back running the Station. Tia and her team take Mike's meat and turn it into something delicious and hearty.</p></li>
+    </ul>
+    <p class="quote">At the Bacon Buttie Station, <span>what you see is what you eat.</span></p>
+  </div>
+</section>
+
+<section class="community sec" id="sponsorship" aria-labelledby="sp-h">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Sponsorship</p>
+      <h2 id="sp-h">Running a team, an event or a fundraiser?</h2>
+      <p class="body">We're super proud of our community. It's tough to ask for help, so we're making the first move: get in touch with Tia about your sports team, cultural group or event.</p>
+      <div class="actions">
+        <a class="btn" href="mailto:t-winikerei@hotmail.com?subject=Sponsorship">Email us about it</a>
+        <a class="btn ghost" href="tel:034749133">Call 03 474 9133</a>
+      </div>
+    </div>
+    <ul class="ways" aria-label="Ways we can help">
+      <li><b>1</b>Thank-you vouchers for volunteers and parent helpers</li>
+      <li><b>2</b>Raffle prizes for fundraising</li>
+      <li><b>3</b>Player of the day vouchers</li>
+    </ul>
+  </div>
+</section>
+
+<section class="faq sec" aria-labelledby="faq-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="kicker">Good to know</p>
+        <h2 id="faq-h">Quick answers.</h2>
+      </div>
+    </div>
+    <dl class="qa">
+      <div><dt>Where are you?</dt><dd>12 Ward St, Dunedin 9016. <a href="https://www.google.com/maps/search/?api=1&amp;query=12%20Ward%20St%2C%20Dunedin%209016">Get directions</a></dd></div>
+      <div><dt>Which days are you open?</dt><dd>7 days a week, for bacon butties, breakfasts and bacon-based burgers.</dd></div>
+      <div><dt>Can we eat in?</dt><dd>Yes. Put your feet up in a relaxed atmosphere, or take it on the road. The choice is yours.</dd></div>
+      <div><dt>Is the meat really yours?</dt><dd>Yes. We butcher our own meat. Mike bones, cures, smokes, slices and packs it at his butcher shop in Halfway Bush.</dd></div>
+      <div><dt>Do you have gluten-free bread?</dt><dd>Yes, GF bread is +$2 on your buttie. Brown bread is $1.</dd></div>
+      <div><dt>Anything without meat?</dt><dd>The Pig-less: egg, cheese, mushrooms, lettuce, tomato relish &amp; onion, $11.</dd></div>
+      <div><dt>Plant milk for my coffee?</dt><dd>Coconut, oat or soy, +$1.</dd></div>
+      <div><dt>Can I book for my work crew?</dt><dd>Yes, from 6:30am, with a private room. <a href="#toolbox">Book a toolbox meeting</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="visit" aria-labelledby="visit-h">
+  <div class="wrap">
+    <h2 id="visit-h">Sizzling hot at 12 Ward St.</h2>
+    <p>Bacon butties, breakfasts and bacon-based burgers, 7 days a week.</p>
+    <div class="actions">
+      <a class="btn" href="#menu">See the menu</a>
+      <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=12%20Ward%20St%2C%20Dunedin%209016">Get directions</a>
+    </div>
+    <p class="small"><a href="tel:034749133">03 474 9133</a> &middot; <a href="mailto:t-winikerei@hotmail.com">t-winikerei@hotmail.com</a></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <img src="https://cdn.prod.website-files.com/61edf5376108814586632707/61ee0370dbd0073033a74eba_bacon-buttie-logo-p-1080.png" alt="Bacon Buttie Station" width="879" height="261" loading="lazy">
+      <nav aria-label="Footer">
+        <a href="#menu">Menu</a>
+        <a href="#toolbox">Toolbox</a>
+        <a href="#story">About us</a>
+        <a href="#sponsorship">Sponsorship</a>
+        <a href="https://www.instagram.com/baconbuttiestation/">Instagram</a>
+        <a href="https://www.facebook.com/Baconbuttiestation/">Facebook</a>
+      </nav>
+    </div>
+    <p class="credit">Mockup made for Bacon Buttie Station by Sunny Gupta, <a href="https://signalsetbase.com/" target="_blank" rel="noopener">signalsetbase.com</a></p>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a href="tel:034749133"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>Call 03 474 9133</a>
+  <a href="https://www.google.com/maps/search/?api=1&amp;query=12%20Ward%20St%2C%20Dunedin%209016">Directions</a>
+</div>
+
+<script>
+(function(){
+  var today = new Date().getDay();
+  var DAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  var money = function(n){ return '$' + n.toFixed(2); };
+  var short = function(n){ return '$' + (n % 1 ? n.toFixed(2) : n); };
+
+  /* ---------- the tally docket ---------- */
+  var items = {};
+  document.querySelectorAll('button.add').forEach(function(b){
+    items[b.dataset.id] = {
+      name: b.dataset.name, price: +b.dataset.price,
+      pair: b.dataset.pair ? +b.dataset.pair : 0,
+      sday: b.dataset.sday ? +b.dataset.sday : -1,
+      sprice: b.dataset.sprice ? +b.dataset.sprice : 0
+    };
+    b.addEventListener('click', function(){ add(b.dataset.id, 1); });
+  });
+
+  var order = [['buttie', 2], ['fw-r', 1]];
+  var lines = document.getElementById('dk-lines');
+  var saveEl = document.getElementById('dk-save');
+  var totalEl = document.getElementById('dk-total');
+  var tally = document.getElementById('tally');
+  var tallyTotal = document.getElementById('tally-total');
+
+  function find(id){ for (var i = 0; i < order.length; i++) if (order[i][0] === id) return i; return -1; }
+  function add(id, n){
+    var i = find(id);
+    if (i < 0) { if (n > 0) order.push([id, n]); }
+    else { order[i][1] += n; if (order[i][1] <= 0) order.splice(i, 1); }
+    render();
+    tally.classList.remove('bump'); void tally.offsetWidth; tally.classList.add('bump');
+  }
+  function linePrice(it, q){
+    if (it.sday === today) return { total: it.sprice * q, note: DAYS[today] + ' special' };
+    if (it.pair) return { total: Math.floor(q / 2) * it.pair + (q % 2) * it.price, note: q > 1 ? '2 for ' + short(it.pair) : '' };
+    return { total: it.price * q, note: '' };
+  }
+  function esc(s){ return s.replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function render(){
+    var sum = 0, full = 0, html = '';
+    order.forEach(function(o){
+      var it = items[o[0]], q = o[1], lp = linePrice(it, q);
+      sum += lp.total; full += it.price * q;
+      html += '<li><div class="dl-name">' + esc(it.name) + (lp.note ? '<span class="dl-note">' + lp.note + '</span>' : '') + '</div>'
+        + '<div class="dl-qty"><button type="button" data-dec="' + o[0] + '" aria-label="One less ' + esc(it.name) + '">&minus;</button><span>' + q + '</span>'
+        + '<button type="button" data-inc="' + o[0] + '" aria-label="One more ' + esc(it.name) + '">+</button></div>'
+        + '<div class="dl-price">' + money(lp.total) + '</div></li>';
+    });
+    lines.innerHTML = html || '<li class="dk-empty" style="display:block;border:0">Tap + on anything on the menu and we’ll add it up here.</li>';
+    var saved = full - sum;
+    saveEl.textContent = saved > 0.001 ? 'You save ' + money(saved) + ' on deals' : '';
+    saveEl.style.display = saved > 0.001 ? '' : 'none';
+    totalEl.textContent = money(sum);
+    tallyTotal.textContent = money(sum);
+    document.querySelectorAll('button.add').forEach(function(b){
+      var i = find(b.dataset.id);
+      if (i >= 0) b.setAttribute('data-qty', order[i][1]); else b.removeAttribute('data-qty');
+    });
+  }
+  lines.addEventListener('click', function(e){
+    var b = e.target.closest('button'); if (!b) return;
+    if (b.dataset.inc) add(b.dataset.inc, 1);
+    if (b.dataset.dec) add(b.dataset.dec, -1);
+  });
+  document.getElementById('dk-clear').addEventListener('click', function(){ order = []; render(); });
+
+  /* specials marked on the menu for today */
+  document.querySelectorAll('button.add[data-sday]').forEach(function(b){
+    if (+b.dataset.sday !== today) return;
+    var tag = document.createElement('span');
+    tag.className = 'tag'; tag.textContent = 'Today ' + short(+b.dataset.sprice);
+    b.closest('.it').querySelector('.it-desc').after(tag);
+  });
+
+  /* ---------- today's special ticket ---------- */
+  var SPECIALS = {
+    1: { big: 'Free chips', name: 'With any dog', desc: 'Pick any dog off the menu and the chips are free.', act: 'Pick your dog', href: '#dogs' },
+    2: { big: '$25', name: 'Tradie Tuesday', desc: 'Big Brekkie & coffee.', act: 'Bring the crew', href: '#toolbox' },
+    3: { big: '$7.50', name: 'Loaded Fries', desc: 'Chips, melted cheese, bacon & gravy. Usually $10.50.', act: 'Add to my tally', add: 'loaded' },
+    4: { big: 'Free chips', name: 'With any burger', desc: 'Pick any burger off the menu and the chips are free.', act: 'Pick your burger', href: '#burgers' },
+    5: { big: '$7.50', name: 'Sausage Boxes', desc: '3 sausages & chips. Usually $9.50.', act: 'Add to my tally', add: 'sausagebox' }
+  };
+  var WEEKEND = { big: '$9', name: 'Bacon Buttie', desc: 'Or two for $16.50. Our specials run Monday to Friday.', act: 'Add to my tally', add: 'buttie' };
+  var tBody = document.querySelector('.t-body');
+  var tLabel = document.getElementById('t-label'), tBig = document.getElementById('t-big'),
+      tName = document.getElementById('t-name'), tDesc = document.getElementById('t-desc'), tAct = document.getElementById('t-act');
+  var weekBtns = document.querySelectorAll('.week button');
+  var current = null;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function show(day, animate){
+    var s = SPECIALS[day] || WEEKEND;
+    current = s;
+    var paint = function(){
+      tLabel.textContent = (day === today ? 'Today, ' : '') + DAYS[day] + (SPECIALS[day] ? ' special' : '');
+      tBig.textContent = s.big;
+      tBig.classList.toggle('words', /[a-z]/i.test(s.big));
+      tName.textContent = s.name;
+      tDesc.textContent = s.desc;
+      tAct.textContent = s.act;
+      tAct.setAttribute('href', s.href || '#docket');
+      weekBtns.forEach(function(b){ b.setAttribute('aria-pressed', String(+b.dataset.day === day)); });
+      tBody.classList.remove('swap');
+    };
+    if (animate && !reduce) { tBody.classList.add('swap'); setTimeout(paint, 180); } else paint();
+  }
+  weekBtns.forEach(function(b){
+    if (+b.dataset.day === today) b.classList.add('today');
+    b.addEventListener('click', function(){ show(+b.dataset.day, true); });
+  });
+  tAct.addEventListener('click', function(e){
+    if (current && current.add) {
+      e.preventDefault();
+      add(current.add, 1);
+      tAct.textContent = 'Added. See your tally';
+      tAct.setAttribute('href', '#docket');
+      current = { href: '#docket' };
+    }
+  });
+  show(today, false);
+  render();
+
+  /* ---------- toolbox form ---------- */
+  var form = document.getElementById('tb-form');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var s = document.getElementById('tb-sent');
+    s.textContent = 'Thanks, we\'ll get back to you.';
+    s.style.display = 'block';
+  });
+
+  /* ---------- gentle rise ---------- */
+  if (!reduce && 'IntersectionObserver' in window) {
+    var targets = document.querySelectorAll('.sec-head, .cat, .docket, .perks, .tue, .crew, .form, .tl, .family li, .quote, .ways, .qa, .visit .wrap');
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting) { en.target.classList.remove('will-rise'); io.unobserve(en.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    targets.forEach(function(el){
+      if (el.getBoundingClientRect().top > window.innerHeight) {
+        el.classList.add('rise', 'will-rise');
+        io.observe(el);
+      }
+    });
+  }
+})();
+</script>
+</body>
+</html>
