@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- mockup phone/aimsweep-com-68090a 1 5bb35521 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sofie · AIM Chimney Sweep &amp; Stove Shop</title>
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --accent: #b24b2c;
+  --glow: color-mix(in oklab, var(--accent) 55%, #ffffff);
+  --ink: #f4f5f7; --soft: rgba(244, 245, 247, .56); --faint: rgba(244, 245, 247, .32);
+  --line: rgba(255, 255, 255, .1); --glass: rgba(255, 255, 255, .045);
+  --urgent: #ff5a4f; --soon: #ffb547;
+  --sans: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; min-height: 100vh; min-height: 100dvh; background: #000; color: var(--ink); font: 400 16px/1.5 var(--sans); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+button { font: inherit; color: inherit; }
+.backdrop { position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  background: radial-gradient(60vmax 45vmax at 50% 30%, color-mix(in oklab, var(--accent) 16%, transparent), transparent 70%), radial-gradient(40vmax 30vmax at 50% 110%, rgba(255,255,255,.05), transparent 70%); }
+.backdrop::after { content: ""; position: absolute; inset: 0; opacity: .07; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+.page { position: relative; z-index: 1; min-height: 100vh; min-height: 100dvh; display: grid; grid-template-rows: auto 1fr auto; }
+.bar { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px clamp(16px, 4vw, 40px); font: 500 11px/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--soft); }
+.bar b { color: var(--ink); font-weight: 500; }
+.stage { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 12px 16px 28px; gap: 28px; }
+
+/* The two of them on the line. */
+.orbs { position: relative; display: flex; align-items: center; justify-content: center; gap: clamp(28px, 8vw, 120px); min-height: 248px; }
+.orb { --size: 220px; --level: 0; position: relative; width: var(--size); height: var(--size); display: grid; place-items: center; transition: width .7s cubic-bezier(.2, .8, .2, 1), height .7s cubic-bezier(.2, .8, .2, 1), opacity .5s; }
+/* A soft, turning light rather than a ball: two blurred colour fields turning
+   against each other, a bright heart, and a halo that swells with the voice. */
+.orb::before { content: ""; position: absolute; inset: -30%; border-radius: 50%; background: radial-gradient(closest-side, color-mix(in oklab, var(--glow) 55%, transparent), transparent 70%); opacity: calc(.6 + var(--level) * .9); transform: scale(calc(1 + var(--level) * .35)); transition: transform 90ms linear, opacity 90ms linear; }
+.orb .core { position: absolute; inset: 0; border-radius: 50%; overflow: hidden; transform: scale(calc(1 + var(--level) * .16)); transition: transform 90ms linear;
+  background: radial-gradient(circle at 50% 50%, color-mix(in oklab, var(--accent) 70%, #000), #000 78%);
+  -webkit-mask-image: radial-gradient(circle at 50% 50%, #000 58%, rgba(0,0,0,.7) 66%, transparent 71%); mask-image: radial-gradient(circle at 50% 50%, #000 58%, rgba(0,0,0,.7) 66%, transparent 71%); }
+.orb .core::before, .orb .core::after { content: ""; position: absolute; inset: -25%; border-radius: 50%; filter: blur(18px); mix-blend-mode: screen; }
+.orb .core::before { background: conic-gradient(from 0deg, var(--accent), var(--glow), transparent 38%, var(--accent) 55%, #ffffff 68%, transparent 80%, var(--accent)); animation: spin 11s linear infinite; opacity: .9; }
+.orb .core::after { background: radial-gradient(circle at 38% 34%, rgba(255,255,255,.95), transparent 30%), conic-gradient(from 180deg, transparent, var(--glow) 25%, transparent 50%, color-mix(in oklab, var(--accent) 60%, #fff) 75%, transparent); animation: spin 7s linear infinite reverse; opacity: calc(.55 + var(--level) * .45); }
+.orb .name { position: absolute; top: calc(100% + 16px); left: 50%; transform: translateX(-50%); white-space: nowrap; font: 500 11px/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--soft); opacity: 0; transition: opacity .4s; }
+body:not([data-state="idle"]):not([data-state="used"]) .orb .name { opacity: 1; }
+.orb .name::before { content: ""; display: inline-block; width: 6px; height: 6px; margin-right: 8px; border-radius: 50%; background: var(--glow); vertical-align: 1px; opacity: .4; transition: opacity .2s; }
+.orb.talking .name { color: var(--ink); }
+.orb.talking .name::before { opacity: 1; box-shadow: 0 0 10px var(--glow); }
+.orb.caller { --accent: #8b929c; --glow: #e8edf4; --size: 0px; opacity: 0; }
+.orb.caller .core::before { animation-duration: 14s; }
+.line { position: absolute; left: 50%; top: 50%; width: 0; height: 1px; transform: translate(-50%, -50%); background: linear-gradient(90deg, transparent, rgba(255,255,255,.35), transparent); background-size: 200% 100%; animation: flow 1.6s linear infinite; opacity: 0; transition: opacity .5s, width .7s; }
+body:not([data-state="idle"]):not([data-state="used"]) .orb.caller, body:not([data-state="idle"]):not([data-state="used"]) .orb.sofie { --size: 150px; opacity: 1; }
+body[data-state="live"] .line { opacity: 1; width: min(46vw, 420px); }
+body[data-state="ended"] .orb { opacity: .5; }
+
+/* Before a call: two buttons. */
+.intro { display: grid; justify-items: center; gap: 22px; max-width: 760px; }
+h1 { margin: 0; font-weight: 600; font-size: clamp(76px, 15vw, 176px); line-height: .86; letter-spacing: -.055em; background: linear-gradient(180deg, #fff 30%, rgba(255,255,255,.55)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.lede { margin: 0; max-width: 560px; font-size: clamp(17px, 2.1vw, 21px); line-height: 1.45; color: var(--soft); letter-spacing: -.01em; }
+.lede b { color: var(--ink); font-weight: 500; }
+.actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 10px; }
+.btn { appearance: none; border: 0; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; height: 56px; padding: 0 28px; border-radius: 999px; font-size: 16px; font-weight: 500; letter-spacing: -.01em; transition: transform .2s, background .2s, box-shadow .2s, border-color .2s; }
+.btn:active { transform: scale(.98); }
+.btn.solid { background: #fff; color: #000; box-shadow: 0 0 0 1px #fff, 0 10px 40px -10px color-mix(in oklab, var(--glow) 70%, transparent); }
+.btn.solid:hover { box-shadow: 0 0 0 1px #fff, 0 14px 60px -8px color-mix(in oklab, var(--glow) 90%, transparent); transform: translateY(-1px); }
+.btn.clear { background: var(--glass); border: 1px solid rgba(255,255,255,.18); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.btn.clear:hover { border-color: rgba(255,255,255,.4); background: rgba(255,255,255,.08); }
+.btn svg { width: 16px; height: 16px; flex: none; }
+.btn:disabled { opacity: .45; cursor: default; transform: none; }
+.fine { margin: 0; font: 400 12px/1.5 var(--mono); letter-spacing: .02em; color: var(--faint); }
+.note { min-height: 1.5em; margin: 0; font-size: 14px; color: var(--soon); }
+/* One call per demo: the two buttons wait while the page asks whether this
+   demo is still fresh; a used demo says so in their place. */
+body[data-check="pending"] .actions { visibility: hidden; }
+.spent { display: none; }
+body[data-state="used"] .actions, body[data-state="used"] .intro > .fine, body[data-state="used"] .note { display: none; }
+body[data-state="used"] .spent { display: grid; gap: 10px; justify-items: center; }
+body[data-state="used"] .orb.sofie { opacity: .45; }
+
+/* During a call. */
+.call { display: none; width: min(860px, 100%); gap: 26px; justify-items: center; }
+body:not([data-state="idle"]):not([data-state="used"]) .intro { display: none; }
+body:not([data-state="idle"]):not([data-state="used"]) .call { display: grid; }
+.status { display: flex; align-items: center; gap: 14px; font: 500 11px/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--soft); }
+.status .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--faint); }
+body[data-state="live"] .status .dot { background: var(--urgent); box-shadow: 0 0 12px var(--urgent); animation: pulse 1.4s ease-in-out infinite; }
+body[data-state="live"] .status { color: var(--ink); }
+.status .end { appearance: none; cursor: pointer; border: 1px solid rgba(255,255,255,.2); background: transparent; border-radius: 999px; padding: 7px 12px; font: inherit; letter-spacing: inherit; color: var(--soft); }
+.status .end:hover { color: var(--ink); border-color: rgba(255,255,255,.45); }
+body[data-state="ended"] .status .end { display: none; }
+.words { min-height: 168px; width: 100%; display: grid; align-content: end; gap: 14px; }
+.words .before { margin: 0; font-size: clamp(15px, 1.8vw, 18px); line-height: 1.45; color: var(--faint); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.words .now { margin: 0; font-size: clamp(22px, 3.3vw, 34px); line-height: 1.28; letter-spacing: -.02em; font-weight: 450; text-wrap: balance; }
+.words .who { display: block; margin-bottom: 8px; font: 500 11px/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--soft); }
+.steer { display: grid; gap: 12px; justify-items: center; min-height: 92px; }
+.steer .label { font: 500 11px/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--faint); }
+.chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.chip { appearance: none; cursor: pointer; height: 42px; padding: 0 18px; border-radius: 999px; border: 1px solid rgba(255,255,255,.18); background: var(--glass); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); font-size: 14.5px; color: var(--ink); animation: rise .5s cubic-bezier(.2, .8, .2, 1) both; transition: background .2s, color .2s, border-color .2s, opacity .3s; }
+.chip:hover { background: #fff; color: #000; border-color: #fff; }
+.chip.sent, .chip.sent:hover { background: transparent; color: var(--glow); border-color: color-mix(in oklab, var(--glow) 50%, transparent); cursor: default; }
+body[data-mode="you"] .steer, body[data-state="ended"] .steer, body[data-state="connecting"] .steer { display: none; }
+
+/* The lead, the moment she saves it. */
+.lead { display: none; width: min(560px, 100%); margin-top: 4px; text-align: left; position: relative; border-radius: 22px; padding: 1px; background: linear-gradient(140deg, color-mix(in oklab, var(--glow) 70%, transparent), rgba(255,255,255,.08) 40%, rgba(255,255,255,.04) 60%, color-mix(in oklab, var(--glow) 40%, transparent)); }
+.lead.show { display: block; animation: deploy .9s cubic-bezier(.16, 1, .3, 1) both; }
+.lead .card { border-radius: 21px; padding: 24px 24px 22px; background: linear-gradient(180deg, rgba(18,19,22,.92), rgba(8,9,11,.96)); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+.lead .top { display: flex; justify-content: space-between; align-items: center; gap: 12px; font: 500 11px/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--soft); }
+.lead .ok { display: inline-flex; align-items: center; gap: 8px; color: var(--glow); }
+.lead .ok svg { width: 14px; height: 14px; }
+.lead h2 { margin: 16px 0 2px; font-size: 30px; font-weight: 600; letter-spacing: -.03em; }
+.lead .phone { margin: 0; font: 400 15px/1.4 var(--mono); color: var(--soft); }
+.lead dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 20px 0 0; padding: 18px 0 0; border-top: 1px solid var(--line); }
+.lead dt { font: 500 10.5px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--faint); margin-bottom: 7px; }
+.lead dd { margin: 0; font-size: 15px; line-height: 1.35; }
+.lead .level { display: inline-block; padding: 3px 9px; border-radius: 999px; font-size: 13px; border: 1px solid var(--line); }
+.lead .level.hot { color: var(--urgent); border-color: color-mix(in oklab, var(--urgent) 45%, transparent); }
+.lead .level.soon { color: var(--soon); border-color: color-mix(in oklab, var(--soon) 45%, transparent); }
+.lead .summary { margin: 18px 0 0; font-size: 15px; line-height: 1.5; color: var(--soft); }
+.lead .tag { margin: 16px 0 0; font: 400 11.5px/1.4 var(--mono); color: var(--faint); }
+.after { display: none; margin: 0; font: 500 11px/1.5 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--soft); }
+body[data-state="ended"] .after { display: block; }
+footer { padding: 18px clamp(16px, 4vw, 40px) 26px; text-align: center; font: 400 11px/1.5 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--faint); }
+
+@keyframes breathe { 0%, 100% { filter: saturate(1) brightness(1); } 50% { filter: saturate(1.15) brightness(1.08); } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes flow { to { background-position: -200% 0; } }
+@keyframes pulse { 50% { opacity: .35; } }
+@keyframes rise { from { opacity: 0; transform: translateY(8px); } }
+@keyframes deploy { from { opacity: 0; transform: translateY(28px) scale(.97); filter: blur(6px); } }
+@media (max-width: 640px) {
+  .bar span { display: none; }
+  .orbs { min-height: 190px; }
+  .orb { --size: 168px; }
+  body:not([data-state="idle"]):not([data-state="used"]) .orb.caller, body:not([data-state="idle"]):not([data-state="used"]) .orb.sofie { --size: 104px; }
+  .actions { flex-direction: column; width: 100%; }
+  .btn { width: 100%; justify-content: center; }
+  .words { min-height: 150px; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+</style>
+</head>
+<body data-state="idle" data-check="pending">
+<div class="backdrop" aria-hidden="true"></div>
+<div class="page">
+  <header class="bar"><b>AIM Chimney Sweep &amp; Stove Shop</b><span>AI receptionist</span></header>
+  <main class="stage">
+    <div class="orbs" aria-hidden="true">
+      <span class="line"></span>
+      <div class="orb caller" id="orb-caller"><span class="core"></span><span class="name" id="caller-name">AI customer</span></div>
+      <div class="orb sofie" id="orb-sofie"><span class="core"></span><span class="name">Sofie</span></div>
+    </div>
+    <div class="intro">
+      <h1>Sofie</h1>
+      <p class="lede">Answers <b>AIM Chimney Sweep &amp; Stove Shop</b>'s phone when your team can't, and hands every caller to your team as a lead.</p>
+      <div class="actions">
+        <button class="btn solid" id="start-ai" type="button"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M4 2.5v11l9-5.5z"/></svg>Let an AI customer call her</button>
+        <button class="btn clear" id="start-you" type="button"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 10a2.5 2.5 0 0 0 2.5-2.5v-4a2.5 2.5 0 0 0-5 0v4A2.5 2.5 0 0 0 8 10Zm4-2.5h1A5 5 0 0 1 8.5 12.5V15h-1v-2.5A5 5 0 0 1 3 7.5h1a4 4 0 0 0 8 0Z"/></svg>Call her yourself</button>
+      </div>
+      <p class="fine" id="fine">One call per demo, so pick the one you want. The AI customer is made up; a call takes about two minutes.</p>
+      <p class="note" id="note" role="status"></p>
+      <div class="spent"><p class="lede">This demo has had its one call.</p><p class="fine">Questions? Reply to the email this link came in.</p></div>
+    </div>
+    <div class="call">
+      <div class="status"><span class="dot"></span><span id="status">Connecting</span><span id="clock">0:00</span><button class="end" id="end" type="button">End</button></div>
+      <div class="words" aria-live="polite"><p class="before" id="before"></p><p class="now"><span class="who" id="who"></span><span id="now"></span></p></div>
+      <div class="steer"><span class="label">Steer the caller</span><div class="chips" id="chips"></div></div>
+      <section class="lead" id="lead" aria-live="polite"></section>
+      <p class="after" id="after">That was this demo's one call</p>
+    </div>
+  </main>
+  <footer>Demo · not connected to your phone line · aimsweep.com</footer>
+</div>
+<script type="module">
+const CFG = {"endpoint":"https://kzxkxiicdblexurioywf.supabase.co/functions/v1/phone-mockup-v1-2","demo":"WqiieAABN-b5BvZfntaqaVix","agent":"Sofie","first":"Hi, you've reached AIM Chimney Sweep & Stove Shop. This is Sofie, their AI assistant, and this call may be recorded. How can I help you today?","sdk":"https://esm.sh/@vapi-ai/web@3.0.1","steers":[{"label":"Ask about Muskoka dates","when":"question"},{"label":"Ask about inspection price","when":"question"},{"label":"Ask about gas fireplace","when":"question"},{"label":"Ask about relining","when":"question"},{"label":"Ask for exact date","when":"question"},{"label":"Add bird screen","when":"details"},{"label":"Change callback time","when":"details"},{"label":"Mention island fee","when":"details"},{"label":"Ask about payment","when":"end"}]};
+const $ = id => document.getElementById(id);
+const body = document.body;
+const URGENCY = { emergency: ['Emergency', 'hot'], urgent: ['Urgent', 'hot'], soon: ['Soon', 'soon'], flexible: ['Flexible', ''] };
+const ORDER = { question: 0, details: 1, end: 2 };
+let mode = null, sockets = [], vapi = null, ctx = null, mic = null, started = 0, ticking = null, phase = 'question', used = new Set(), lead = null, waitTimer = null, stopped = false, starting = false;
+let line = { who: null, done: '', partial: '' }, before = '', greeted = false, callsLeft = 0;
+let exact = { sofie: false, caller: false }, spokeAt = { sofie: 0, caller: 0 }, playAt = { sofie: 0, caller: 0 };
+const levels = { caller: 0, sofie: 0 }, targets = { caller: 0, sofie: 0 };
+
+const setState = s => { body.dataset.state = s; };
+const note = text => { $('note').textContent = text || ''; };
+const status = text => { $('status').textContent = text; };
+
+async function ask(action, extra = {}) {
+  const res = await fetch(CFG.endpoint, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ action, demo: CFG.demo, ...extra }), signal: AbortSignal.timeout(30000) });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw Object.assign(new Error(data.error || 'Something went wrong. Try again in a moment.'), { used: res.status === 410 });
+  return data;
+}
+
+// One call per demo. The browser remembers once its call has started, and
+// every visit asks the server, which decides; the two buttons wait for its
+// answer (at most 4 seconds).
+const KEPT = 'phone-demo-used:' + CFG.demo;
+const remembered = () => { try { return localStorage.getItem(KEPT) === '1'; } catch { return false; } };
+const remember = () => { try { localStorage.setItem(KEPT, '1'); } catch {} };
+function spent() { remember(); clearTimeout(waitTimer); setState('used'); note(''); }
+const checked = () => { delete body.dataset.check; };
+if (remembered()) { spent(); checked(); }
+else {
+  setTimeout(checked, 4000);
+  ask('state').then(r => {
+    if (r.used && body.dataset.state === 'idle') spent();
+    else if (r.left > 1) $('fine').textContent = r.left + ' calls left on this demo. The AI customer is made up; a call takes about two minutes.';
+  }, () => {}).finally(checked);
+}
+
+// The orbs follow each voice.
+function frame() {
+  for (const who of ['caller', 'sofie']) {
+    levels[who] += (targets[who] - levels[who]) * .35;
+    targets[who] *= .86;
+    $('orb-' + who).style.setProperty('--level', Math.min(1, levels[who]).toFixed(3));
+  }
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+const talking = (who, on) => $('orb-' + who).classList.toggle('talking', on);
+
+// Words as they are said. Her greeting is known word for word; the rest is
+// what Vapi's transcriber hears.
+const words = s => String(s).toLowerCase().replace(/[^a-z0-9']+/g, ' ').trim().split(' ').filter(Boolean);
+function close(a, b) { const x = words(a), y = new Set(words(b)); return x.length ? x.filter(w => y.has(w)).length / Math.max(x.length, y.size) : 0; }
+function tidy(who, text) {
+  if (who !== 'sofie') return text;
+  if (!greeted && close(text, CFG.first) > .5) { greeted = true; return CFG.first; }
+  return text.replace(/\bSophie\b/g, CFG.agent);
+}
+const nameOf = who => (who === 'sofie' ? CFG.agent : mode === 'you' ? 'You' : 'AI customer');
+function show() {
+  $('who').textContent = line.who ? nameOf(line.who) : '';
+  $('now').textContent = [line.done, line.partial].filter(Boolean).join(' ');
+  $('before').textContent = before;
+}
+function turnTo(who) {
+  if (line.who === who) return;
+  const said = [line.done, line.partial].filter(Boolean).join(' ');
+  if (said) before = nameOf(line.who) + ': ' + said;
+  line = { who, done: '', partial: '' };
+}
+// What the transcriber heard: used for a side until its exact words arrive.
+function heard(who, text, final) {
+  text = String(text || '').trim();
+  if (!text || exact[who]) return;
+  if (line.who === who && line.done && !line.partial && Date.now() - spokeAt[who] > 3500) turnTo(null);
+  turnTo(who);
+  if (final) spokeAt[who] = Date.now();
+  if (final) { line.done = [line.done, tidy(who, text)].filter(Boolean).join(' '); line.partial = ''; if (who === 'sofie') movePhase(text); }
+  else line.partial = text;
+  show();
+}
+// The exact words each voice was given, as it is about to say them.
+function spoken(who, text) {
+  text = String(text || '').trim();
+  if (!text) return;
+  const fresh = !exact[who] || Date.now() - spokeAt[who] > 3500;
+  exact[who] = true; spokeAt[who] = Date.now();
+  if (line.who !== who) turnTo(who);
+  else if (fresh) { turnTo(null); turnTo(who); }
+  line.done = [line.done, text].filter(Boolean).join(' '); line.partial = '';
+  if (who === 'sofie') movePhase(text);
+  show();
+}
+
+// Steering buttons for where the call is: before her questions, during them, after.
+function movePhase(text) {
+  const next = /passed (your|the) details|anything else/i.test(text) ? 'end' : /\b(name|number)\b/i.test(text) ? 'details' : null;
+  if (next && ORDER[next] > ORDER[phase]) { phase = next; chips(); }
+}
+function chips() {
+  const box = $('chips');
+  const open = CFG.steers.map((s, i) => ({ ...s, i })).filter(s => s.when === phase && !used.has(s.i)).slice(0, 3);
+  box.replaceChildren(...open.map(s => {
+    const b = document.createElement('button');
+    b.className = 'chip'; b.type = 'button'; b.textContent = s.label;
+    b.addEventListener('click', () => {
+      if (used.has(s.i)) return;
+      used.add(s.i); b.classList.add('sent'); b.textContent = 'Sent · the caller says it next';
+      ask('steer', { choice: s.i }).catch(() => { b.textContent = 'Could not send'; });
+      setTimeout(chips, 2600);
+    });
+    return b;
+  }));
+}
+
+// The lead, the moment she saves it.
+const args = a => { try { return typeof a === 'string' ? JSON.parse(a) : a; } catch { return null; } };
+function phoneText(s) { const d = String(s || '').replace(/\D/g, ''); const t = d.length === 11 && d[0] === '1' ? d.slice(1) : d; return t.length === 10 ? t.slice(0, 3) + '-' + t.slice(3, 6) + '-' + t.slice(6) : String(s || ''); }
+function deploy(found) {
+  if (!found || !found.caller_name) return;
+  lead = found;
+  const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text !== undefined) n.textContent = text; return n; };
+  const [level, tone] = URGENCY[lead.urgency] || [lead.urgency || '—', ''];
+  const card = el('div', 'card');
+  const top = el('div', 'top');
+  const ok = el('span', 'ok');
+  ok.innerHTML = '<svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M6.4 11.6 2.8 8l-1 1 4.6 4.6 8-8-1-1z"/></svg>';
+  ok.append('Lead deployed');
+  top.append(ok, el('span', '', new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })));
+  const dl = el('dl');
+  for (const [k, v, cls] of [['Needs', lead.service_needed], ['Urgency', level, 'level ' + tone], ['Best time', lead.preferred_callback_time], ['Where', lead.service_address_or_area]]) {
+    if (!v) continue;
+    const box = el('div'); box.append(el('dt', '', k));
+    const dd = el('dd'); dd.append(cls ? el('span', cls, v) : v); box.append(dd); dl.append(box);
+  }
+  card.append(top, el('h2', '', lead.caller_name), el('p', 'phone', phoneText(lead.callback_number)), dl);
+  if (lead.issue_summary) card.append(el('p', 'summary', lead.issue_summary));
+  card.append(el('p', 'tag', mode === 'you' ? 'From your call. In use, every lead goes straight to your team.' : 'From the AI customer, a made-up caller. In use, every lead goes straight to your team.'));
+  const box = $('lead');
+  box.replaceChildren(card);
+  box.classList.remove('show'); void box.offsetWidth; box.classList.add('show');
+  setTimeout(() => box.scrollIntoView({ behavior: 'smooth', block: 'center' }), 250);
+}
+function leadIn(messages) {
+  for (const m of messages || []) for (const c of m.tool_calls || m.toolCalls || []) if (c.function && c.function.name === 'save_lead') deploy(args(c.function.arguments));
+}
+
+// Each voice as it comes: 16-bit sound, played in order, the orb following it.
+function play(who, data, rate) {
+  const s = new Int16Array(data), n = s.length;
+  if (!n) return;
+  const out = ctx.createBuffer(1, n, rate), d = out.getChannelData(0);
+  let sum = 0;
+  for (let i = 0; i < n; i++) { d[i] = s[i] / 32768; sum += d[i] * d[i]; }
+  const src = ctx.createBufferSource(); src.buffer = out; src.connect(ctx.destination);
+  const now = ctx.currentTime;
+  if (playAt[who] < now + .04) playAt[who] = now + .12;
+  const level = Math.sqrt(sum / n) * 7;
+  setTimeout(() => { targets[who] = Math.max(targets[who], level); }, (playAt[who] - now) * 1000);
+  src.start(playAt[who]); playAt[who] += out.duration;
+}
+
+function reset() {
+  clearInterval(ticking); clearTimeout(waitTimer);
+  sockets = []; phase = 'question'; used = new Set(); lead = null; greeted = false; started = 0; stopped = false;
+  exact = { sofie: false, caller: false }; spokeAt = { sofie: 0, caller: 0 }; playAt = { sofie: 0, caller: 0 };
+  line = { who: null, done: '', partial: '' }; before = '';
+  show(); $('chips').replaceChildren(); $('lead').replaceChildren(); $('lead').classList.remove('show');
+  $('clock').textContent = '0:00';
+}
+function live() {
+  if (body.dataset.state !== 'connecting') return;
+  setState('live'); status('Live');
+  started = Date.now(); clearTimeout(waitTimer);
+  ticking = setInterval(() => { const s = Math.floor((Date.now() - started) / 1000); $('clock').textContent = Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); }, 500);
+  if (mode === 'ai') chips();
+}
+function ended(text) {
+  if (body.dataset.state !== 'live' && body.dataset.state !== 'connecting') return;
+  if (!callsLeft) remember();
+  $('after').textContent = callsLeft ? 'Reload this page for another call (' + callsLeft + ' left)' : "That was this demo's one call";
+  clearInterval(ticking); clearTimeout(waitTimer); setState('ended'); status(text || 'Call ended');
+  talking('caller', false); talking('sofie', false);
+  hangUp();
+  try { vapi && vapi.stop(); } catch {}
+  try { mic && mic.getTracks().forEach(t => t.stop()); } catch {}
+}
+// Both halves of a live call end together.
+function hangUp() {
+  for (const s of sockets) { try { if (s.readyState === 1) s.send(JSON.stringify({ type: 'end-call' })); s.close(); } catch {} }
+  sockets = [];
+}
+// Before the server has started a call: back to the two buttons, nothing used.
+function failed(text) {
+  clearInterval(ticking); clearTimeout(waitTimer);
+  hangUp();
+  try { vapi && vapi.stop(); } catch {}
+  try { mic && mic.getTracks().forEach(t => t.stop()); } catch {}
+  mic = null; starting = false;
+  setState('idle'); note(text);
+}
+// Once the server has started it, the demo's one call is spent, whatever
+// happens next: no second try, no "again" (v1 made a dud call again once).
+const COULD_NOT = 'The call could not connect';
+
+async function startAI() {
+  if (starting || body.dataset.state !== 'idle') return;
+  starting = true;
+  reset(); mode = 'ai'; body.dataset.mode = 'ai'; note('');
+  $('caller-name').textContent = 'AI customer';
+  ctx = ctx || new (window.AudioContext || window.webkitAudioContext)();
+  ctx.resume();
+  setState('connecting'); status('Calling ' + CFG.agent);
+  let found;
+  try { found = await ask('live'); } catch (e) { return e.used ? (starting = false, spent()) : failed(e.message); }
+  starting = false; callsLeft = Number(found.left) || 0; if (!callsLeft) remember();
+  waitTimer = setTimeout(() => ended(COULD_NOT), 45000);
+  const rate = found.sampleRate || 24000;
+  const open = url => new Promise((resolve, reject) => {
+    const s = new WebSocket(url); s.binaryType = 'arraybuffer';
+    s.onopen = () => resolve(s); s.onerror = () => reject(new Error(COULD_NOT));
+  });
+  let caller, agent;
+  try { caller = await open(found.caller.url); sockets.push(caller); agent = await open(found.agent.url); sockets.push(agent); }
+  catch { return ended(COULD_NOT); }
+  // Each voice into the other's ear, and both to the speakers.
+  agent.onmessage = m => {
+    if (typeof m.data !== 'string') { live(); if (caller.readyState === 1) caller.send(m.data); return play('sofie', m.data, rate); }
+    let e; try { e = JSON.parse(m.data); } catch { return; }
+    if (e.type === 'voice-input') spoken('sofie', e.input);
+    if (e.type === 'transcript') heard(e.role === 'assistant' ? 'sofie' : 'caller', e.transcript, e.transcriptType === 'final');
+    if (e.type === 'speech-update') talking(e.role === 'assistant' ? 'sofie' : 'caller', e.status === 'started');
+    if (e.type === 'tool-calls') for (const c of e.toolCallList || []) if (c.function && c.function.name === 'save_lead') deploy(args(c.function.arguments));
+    if (e.type === 'conversation-update') leadIn(e.messages || e.conversation);
+  };
+  caller.onmessage = m => {
+    if (typeof m.data !== 'string') { if (agent.readyState === 1) agent.send(m.data); return play('caller', m.data, rate); }
+    let e; try { e = JSON.parse(m.data); } catch { return; }
+    if (e.type === 'voice-input') spoken('caller', e.input);
+  };
+  const closed = () => ended();
+  agent.onclose = closed; caller.onclose = closed;
+}
+
+async function startYou() {
+  if (starting || body.dataset.state !== 'idle') return;
+  starting = true;
+  reset(); mode = 'you'; body.dataset.mode = 'you'; note('');
+  $('caller-name').textContent = 'You';
+  // The microphone first, and Vapi's browser library: a refused microphone or
+  // a library that will not load never uses up the demo.
+  try { mic = await navigator.mediaDevices.getUserMedia({ audio: true }); }
+  catch { return failed('Allow this page to use your microphone, then try again.'); }
+  setState('connecting'); status('Calling ' + CFG.agent);
+  let Vapi, found;
+  try { ({ default: Vapi } = await import(CFG.sdk)); } catch { return failed('The call did not start. Try again in a moment.'); }
+  try { found = await ask('talk'); } catch (e) { return e.used ? (starting = false, spent()) : failed(e.message); }
+  starting = false; callsLeft = Number(found.left) || 0; if (!callsLeft) remember();
+  waitTimer = setTimeout(() => ended(COULD_NOT), 45000);
+  try {
+    // No key: the server started this call, and the page only joins it.
+    vapi = new Vapi('');
+    vapi.on('call-start', () => {
+      live();
+      try {
+        ctx = ctx || new (window.AudioContext || window.webkitAudioContext)();
+        const meter = ctx.createAnalyser(); meter.fftSize = 512; ctx.createMediaStreamSource(mic).connect(meter);
+        const buf = new Float32Array(meter.fftSize);
+        (function loop() { if (body.dataset.state !== 'live') return; meter.getFloatTimeDomainData(buf); let s = 0; for (const v of buf) s += v * v; targets.caller = Math.max(targets.caller, Math.sqrt(s / buf.length) * 6); requestAnimationFrame(loop); })();
+      } catch {}
+    });
+    vapi.on('call-end', () => ended());
+    vapi.on('error', () => ended(body.dataset.state === 'live' ? undefined : COULD_NOT));
+    vapi.on('volume-level', v => { targets.sofie = Math.max(targets.sofie, v * 1.4); });
+    vapi.on('speech-start', () => talking('sofie', true));
+    vapi.on('speech-end', () => talking('sofie', false));
+    vapi.on('message', m => {
+      if (m.type === 'voice-input') spoken('sofie', m.input);
+      if (m.type === 'transcript') heard(m.role === 'assistant' ? 'sofie' : 'caller', m.transcript, m.transcriptType === 'final');
+      if (m.type === 'tool-calls') for (const c of m.toolCallList || []) if (c.function && c.function.name === 'save_lead') deploy(args(c.function.arguments));
+    });
+    await vapi.reconnect(found.call);
+  } catch { ended(COULD_NOT); }
+}
+
+function endNow() {
+  stopped = true;
+  try { if (mode === 'you' && vapi) vapi.end(); } catch {}
+  ended();
+}
+
+$('start-ai').addEventListener('click', startAI);
+$('start-you').addEventListener('click', startYou);
+$('end').addEventListener('click', endNow);
+</script>
+</body>
+</html>
