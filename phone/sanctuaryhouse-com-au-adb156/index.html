@@ -3,7 +3,7 @@
 <head>
 <meta name="robots" content="noindex, nofollow">
 <meta name="referrer" content="no-referrer">
-<!-- mockup phone/sanctuaryhouse-com-au-adb156 1 c75dc917 -->
+<!-- phone mockup sanctuaryhouse-com-au-adb156 b03196f2 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sofie · Sanctuary House Resort Motel</title>
@@ -328,11 +328,14 @@ function leadIn(messages) {
 function play(who, data, rate) {
   const s = new Int16Array(data), n = s.length;
   if (!n) return;
+  const now = ctx.currentTime;
+  // What plays is never more than half a second behind the call (since
+  // 2026-11-11): after a stall the newer sound plays and the rest is skipped.
+  if (playAt[who] > now + MAX_AHEAD) return;
   const out = ctx.createBuffer(1, n, rate), d = out.getChannelData(0);
   let sum = 0;
   for (let i = 0; i < n; i++) { d[i] = s[i] / 32768; sum += d[i] * d[i]; }
   const src = ctx.createBufferSource(); src.buffer = out; src.connect(ctx.destination);
-  const now = ctx.currentTime;
   if (playAt[who] < now + .04) playAt[who] = now + .12;
   const level = Math.sqrt(sum / n) * 7;
   setTimeout(() => { targets[who] = Math.max(targets[who], level); }, (playAt[who] - now) * 1000);
@@ -391,10 +394,13 @@ async function startAI() {
   ctx.resume();
   setState('connecting'); status('Calling ' + CFG.agent);
   let found;
-  try { found = await ask('live'); } catch (e) { return e.used ? (starting = false, spent()) : failed(e.message); }
+  try { found = await ask('live', { relay: 1 }); } catch (e) { return e.used ? (starting = false, spent()) : failed(e.message); }
   starting = false; callsLeft = Number(found.left) || 0; if (!callsLeft) remember();
   waitTimer = setTimeout(() => ended(COULD_NOT), 45000);
   const rate = found.sampleRate || 24000;
+  if (found.listen) return listen(found.listen, rate);
+  // Our relay could not be reached: this page passes the two voices itself,
+  // as every page did before 2026-11-11.
   const open = url => new Promise((resolve, reject) => {
     const s = new WebSocket(url); s.binaryType = 'arraybuffer';
     s.onopen = () => resolve(s); s.onerror = () => reject(new Error(COULD_NOT));
@@ -406,11 +412,7 @@ async function startAI() {
   agent.onmessage = m => {
     if (typeof m.data !== 'string') { live(); if (caller.readyState === 1) caller.send(m.data); return play('sofie', m.data, rate); }
     let e; try { e = JSON.parse(m.data); } catch { return; }
-    if (e.type === 'voice-input') spoken('sofie', e.input);
-    if (e.type === 'transcript') heard(e.role === 'assistant' ? 'sofie' : 'caller', e.transcript, e.transcriptType === 'final');
-    if (e.type === 'speech-update') talking(e.role === 'assistant' ? 'sofie' : 'caller', e.status === 'started');
-    if (e.type === 'tool-calls') for (const c of e.toolCallList || []) if (c.function && c.function.name === 'save_lead') deploy(args(c.function.arguments));
-    if (e.type === 'conversation-update') leadIn(e.messages || e.conversation);
+    fromAgent(e);
   };
   caller.onmessage = m => {
     if (typeof m.data !== 'string') { if (agent.readyState === 1) agent.send(m.data); return play('caller', m.data, rate); }
@@ -420,6 +422,56 @@ async function startAI() {
   const closed = () => ended();
   agent.onclose = closed; caller.onclose = closed;
 }
+
+// The receptionist's call as it goes: her words, the caller's as she hears
+// them, and the lead she saves.
+function fromAgent(e) {
+  if (e.type === 'voice-input') spoken('sofie', e.input);
+  if (e.type === 'transcript') heard(e.role === 'assistant' ? 'sofie' : 'caller', e.transcript, e.transcriptType === 'final');
+  if (e.type === 'speech-update') talking(e.role === 'assistant' ? 'sofie' : 'caller', e.status === 'started');
+  if (e.type === 'tool-calls') for (const c of e.toolCallList || []) if (c.function && c.function.name === 'save_lead') deploy(args(c.function.arguments));
+  if (e.type === 'conversation-update') leadIn(e.messages || e.conversation);
+}
+
+// Since 2026-11-11 the two voices pass between the calls on our relay
+// (demo-relay/), server to server, and this page only listens: a busy
+// computer or a locked phone can no longer slow the call itself (on
+// 2026-11-10 a busy Mac's browser passed them in bursts, 7 to 8 seconds
+// behind, and the receptionist never heard the caller's number). Sound that
+// reaches this page late, after a stall, is skipped so what plays is live; a
+// dropped line joins again and gets the words it missed.
+const LATE_MS = 800, MAX_AHEAD = 0.5;
+function listen(url, rate) {
+  let seq = 0, tries = 0, over = false, base = Infinity;
+  const join = () => {
+    const s = new WebSocket(url + '&after=' + seq); s.binaryType = 'arraybuffer';
+    sockets = [s];
+    s.onopen = () => { tries = 0; };
+    s.onmessage = m => {
+      if (typeof m.data !== 'string') {
+        const v = new DataView(m.data), who = v.getUint8(0) ? 'caller' : 'sofie';
+        const lag = performance.now() - v.getUint32(1);
+        base = Math.min(base, lag);
+        if (lag - base > LATE_MS) return;
+        if (who === 'sofie') live();
+        return play(who, m.data.slice(5), rate);
+      }
+      let x; try { x = JSON.parse(m.data); } catch { return; }
+      if (x.seq) seq = Math.max(seq, x.seq);
+      if (x.type === 'ended') { over = true; return ended(); }
+      if (x.side === 'agent') fromAgent(x.e || {});
+      else if (x.e && x.e.type === 'voice-input') spoken('caller', x.e.input);
+    };
+    s.onclose = () => {
+      if (over || (body.dataset.state !== 'live' && body.dataset.state !== 'connecting')) return;
+      if (++tries > 15) return ended(COULD_NOT);
+      setTimeout(join, Math.min(400 * tries, 3000));
+    };
+  };
+  join();
+}
+// A phone back from another app: its sound may have been paused.
+document.addEventListener('visibilitychange', () => { if (!document.hidden && ctx) ctx.resume().catch(() => {}); });
 
 async function startYou() {
   if (starting || body.dataset.state !== 'idle') return;
