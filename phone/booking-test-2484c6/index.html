@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- phone mockup booking-test-2484c6 3d507c5c -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sofie · Chores Away</title>
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --accent: #18327d;
+  --glow: color-mix(in oklab, var(--accent) 55%, #ffffff);
+  --ink: #f4f5f7; --soft: rgba(244, 245, 247, .56); --faint: rgba(244, 245, 247, .32);
+  --line: rgba(255, 255, 255, .1); --glass: rgba(255, 255, 255, .045);
+  --urgent: #ff5a4f; --soon: #ffb547;
+  --sans: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; min-height: 100vh; min-height: 100dvh; background: #000; color: var(--ink); font: 400 16px/1.5 var(--sans); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+button { font: inherit; color: inherit; }
+.backdrop { position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  background: radial-gradient(60vmax 45vmax at 50% 30%, color-mix(in oklab, var(--accent) 16%, transparent), transparent 70%), radial-gradient(40vmax 30vmax at 50% 110%, rgba(255,255,255,.05), transparent 70%); }
+.backdrop::after { content: ""; position: absolute; inset: 0; opacity: .07; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+.page { position: relative; z-index: 1; min-height: 100vh; min-height: 100dvh; display: grid; grid-template-rows: auto 1fr auto; }
+.bar { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px clamp(16px, 4vw, 40px); font: 500 11px/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--soft); }
+.bar b { color: var(--ink); font-weight: 500; }
+.stage { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 12px 16px 28px; gap: 28px; }
+
+/* The two of them on the line. */
+.orbs { position: relative; display: flex; align-items: center; justify-content: center; gap: clamp(28px, 8vw, 120px); min-height: 248px; }
+.orb { --size: 220px; --level: 0; position: relative; width: var(--size); height: var(--size); display: grid; place-items: center; transition: width .7s cubic-bezier(.2, .8, .2, 1), height .7s cubic-bezier(.2, .8, .2, 1), opacity .5s; }
+/* A soft, turning light rather than a ball: two blurred colour fields turning
+   against each other, a bright heart, and a halo that swells with the voice. */
+.orb::before { content: ""; position: absolute; inset: -30%; border-radius: 50%; background: radial-gradient(closest-side, color-mix(in oklab, var(--glow) 55%, transparent), transparent 70%); opacity: calc(.6 + var(--level) * .9); transform: scale(calc(1 + var(--level) * .35)); transition: transform 90ms linear, opacity 90ms linear; }
+.orb .core { position: absolute; inset: 0; border-radius: 50%; overflow: hidden; transform: scale(calc(1 + var(--level) * .16)); transition: transform 90ms linear;
+  background: radial-gradient(circle at 50% 50%, color-mix(in oklab, var(--accent) 70%, #000), #000 78%);
+  -webkit-mask-image: radial-gradient(circle at 50% 50%, #000 58%, rgba(0,0,0,.7) 66%, transparent 71%); mask-image: radial-gradient(circle at 50% 50%, #000 58%, rgba(0,0,0,.7) 66%, transparent 71%); }
+.orb .core::before, .orb .core::after { content: ""; position: absolute; inset: -25%; border-radius: 50%; filter: blur(18px); mix-blend-mode: screen; }
+.orb .core::before { background: conic-gradient(from 0deg, var(--accent), var(--glow), transparent 38%, var(--accent) 55%, #ffffff 68%, transparent 80%, var(--accent)); animation: spin 11s linear infinite; opacity: .9; }
+.orb .core::after { background: radial-gradient(circle at 38% 34%, rgba(255,255,255,.95), transparent 30%), conic-gradient(from 180deg, transparent, var(--glow) 25%, transparent 50%, color-mix(in oklab, var(--accent) 60%, #fff) 75%, transparent); animation: spin 7s linear infinite reverse; opacity: calc(.55 + var(--level) * .45); }
+.orb .name { position: absolute; top: calc(100% + 16px); left: 50%; transform: translateX(-50%); white-space: nowrap; font: 500 11px/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--soft); opacity: 0; transition: opacity .4s; }
+body:not([data-state="idle"]):not([data-state="used"]) .orb .name { opacity: 1; }
+.orb .name::before { content: ""; display: inline-block; width: 6px; height: 6px; margin-right: 8px; border-radius: 50%; background: var(--glow); vertical-align: 1px; opacity: .4; transition: opacity .2s; }
+.orb.talking .name { color: var(--ink); }
+.orb.talking .name::before { opacity: 1; box-shadow: 0 0 10px var(--glow); }
+.orb.caller { --accent: #8b929c; --glow: #e8edf4; --size: 0px; opacity: 0; }
+.orb.caller .core::before { animation-duration: 14s; }
+.line { position: absolute; left: 50%; top: 50%; width: 0; height: 1px; transform: translate(-50%, -50%); background: linear-gradient(90deg, transparent, rgba(255,255,255,.35), transparent); background-size: 200% 100%; animation: flow 1.6s linear infinite; opacity: 0; transition: opacity .5s, width .7s; }
+body:not([data-state="idle"]):not([data-state="used"]) .orb.caller, body:not([data-state="idle"]):not([data-state="used"]) .orb.sofie { --size: 150px; opacity: 1; }
+body[data-state="live"] .line { opacity: 1; width: min(46vw, 420px); }
+body[data-state="ended"] .orb { opacity: .5; }
+
+/* Before a call: two buttons. */
+.intro { display: grid; justify-items: center; gap: 22px; max-width: 760px; }
+h1 { margin: 0; font-weight: 600; font-size: clamp(76px, 15vw, 176px); line-height: .86; letter-spacing: -.055em; background: linear-gradient(180deg, #fff 30%, rgba(255,255,255,.55)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.lede { margin: 0; max-width: 560px; font-size: clamp(17px, 2.1vw, 21px); line-height: 1.45; color: var(--soft); letter-spacing: -.01em; }
+.lede b { color: var(--ink); font-weight: 500; }
+.actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 10px; }
+.btn { appearance: none; border: 0; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; height: 56px; padding: 0 28px; border-radius: 999px; font-size: 16px; font-weight: 500; letter-spacing: -.01em; transition: transform .2s, background .2s, box-shadow .2s, border-color .2s; }
+.btn:active { transform: scale(.98); }
+.btn.solid { background: #fff; color: #000; box-shadow: 0 0 0 1px #fff, 0 10px 40px -10px color-mix(in oklab, var(--glow) 70%, transparent); }
+.btn.solid:hover { box-shadow: 0 0 0 1px #fff, 0 14px 60px -8px color-mix(in oklab, var(--glow) 90%, transparent); transform: translateY(-1px); }
+.btn.clear { background: var(--glass); border: 1px solid rgba(255,255,255,.18); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.btn.clear:hover { border-color: rgba(255,255,255,.4); background: rgba(255,255,255,.08); }
+.btn svg { width: 16px; height: 16px; flex: none; }
+.btn:disabled { opacity: .45; cursor: default; transform: none; }
+.fine { margin: 0; font: 400 12px/1.5 var(--mono); letter-spacing: .02em; color: var(--faint); }
+.note { min-height: 1.5em; margin: 0; font-size: 14px; color: var(--soon); }
+/* One call per demo: the two buttons wait while the page asks whether this
+   demo is still fresh; a used demo says so in their place. */
+body[data-check="pending"] .actions { visibility: hidden; }
+.spent { display: none; }
+body[data-state="used"] .actions, body[data-state="used"] .intro > .fine, body[data-state="used"] .note { display: none; }
+body[data-state="used"] .spent { display: grid; gap: 10px; justify-items: center; }
+body[data-state="used"] .orb.sofie { opacity: .45; }
+
+/* During a call. */
+.call { display: none; width: min(860px, 100%); gap: 26px; justify-items: center; }
+body:not([data-state="idle"]):not([data-state="used"]) .intro { display: none; }
+body:not([data-state="idle"]):not([data-state="used"]) .call { display: grid; }
+.status { display: flex; align-items: center; gap: 14px; font: 500 11px/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--soft); }
+.status .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--faint); }
+body[data-state="live"] .status .dot { background: var(--urgent); box-shadow: 0 0 12px var(--urgent); animation: pulse 1.4s ease-in-out infinite; }
+body[data-state="live"] .status { color: var(--ink); }
+.status .end { appearance: none; cursor: pointer; border: 1px solid rgba(255,255,255,.2); background: transparent; border-radius: 999px; padding: 7px 12px; font: inherit; letter-spacing: inherit; color: var(--soft); }
+.status .end:hover { color: var(--ink); border-color: rgba(255,255,255,.45); }
+body[data-state="ended"] .status .end { display: none; }
+.words { min-height: 168px; width: 100%; display: grid; align-content: end; gap: 14px; }
+.words .before { margin: 0; font-size: clamp(15px, 1.8vw, 18px); line-height: 1.45; color: var(--faint); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.words .now { margin: 0; font-size: clamp(22px, 3.3vw, 34px); line-height: 1.28; letter-spacing: -.02em; font-weight: 450; text-wrap: balance; }
+.words .who { display: block; margin-bottom: 8px; font: 500 11px/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--soft); }
+.steer { display: grid; gap: 12px; justify-items: center; min-height: 92px; }
+.steer .label { font: 500 11px/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--faint); }
+.chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.chip { appearance: none; cursor: pointer; height: 42px; padding: 0 18px; border-radius: 999px; border: 1px solid rgba(255,255,255,.18); background: var(--glass); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); font-size: 14.5px; color: var(--ink); animation: rise .5s cubic-bezier(.2, .8, .2, 1) both; transition: background .2s, color .2s, border-color .2s, opacity .3s; }
+.chip:hover { background: #fff; color: #000; border-color: #fff; }
+.chip.sent, .chip.sent:hover { background: transparent; color: var(--glow); border-color: color-mix(in oklab, var(--glow) 50%, transparent); cursor: default; }
+body[data-mode="you"] .steer, body[data-state="ended"] .steer, body[data-state="connecting"] .steer { display: none; }
+
+/* The lead, the moment she saves it. */
+.lead { display: none; width: min(560px, 100%); margin-top: 4px; text-align: left; position: relative; border-radius: 22px; padding: 1px; background: linear-gradient(140deg, color-mix(in oklab, var(--glow) 70%, transparent), rgba(255,255,255,.08) 40%, rgba(255,255,255,.04) 60%, color-mix(in oklab, var(--glow) 40%, transparent)); }
+.lead.show { display: block; animation: deploy .9s cubic-bezier(.16, 1, .3, 1) both; }
+.lead .card { border-radius: 21px; padding: 24px 24px 22px; background: linear-gradient(180deg, rgba(18,19,22,.92), rgba(8,9,11,.96)); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+.lead .top { display: flex; justify-content: space-between; align-items: center; gap: 12px; font: 500 11px/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--soft); }
+.lead .ok { display: inline-flex; align-items: center; gap: 8px; color: var(--glow); }
+.lead .ok svg { width: 14px; height: 14px; }
+.lead h2 { margin: 16px 0 2px; font-size: 30px; font-weight: 600; letter-spacing: -.03em; }
+.lead .phone { margin: 0; font: 400 15px/1.4 var(--mono); color: var(--soft); }
+.lead dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 20px 0 0; padding: 18px 0 0; border-top: 1px solid var(--line); }
+.lead dt { font: 500 10.5px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--faint); margin-bottom: 7px; }
+.lead dd { margin: 0; font-size: 15px; line-height: 1.35; }
+.lead .level { display: inline-block; padding: 3px 9px; border-radius: 999px; font-size: 13px; border: 1px solid var(--line); }
+.lead .level.hot { color: var(--urgent); border-color: color-mix(in oklab, var(--urgent) 45%, transparent); }
+.lead .level.soon { color: var(--soon); border-color: color-mix(in oklab, var(--soon) 45%, transparent); }
+.lead .summary { margin: 18px 0 0; font-size: 15px; line-height: 1.5; color: var(--soft); }
+.lead .tag { margin: 16px 0 0; font: 400 11.5px/1.4 var(--mono); color: var(--faint); }
+.after { display: none; margin: 0; font: 500 11px/1.5 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--soft); }
+body[data-state="ended"] .after { display: block; }
+footer { padding: 18px clamp(16px, 4vw, 40px) 26px; text-align: center; font: 400 11px/1.5 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--faint); }
+
+/* The booking system's side of the call. */
+.system { display: none; width: min(720px, 100%); margin-top: 6px; text-align: left; border: 1px solid var(--line); border-radius: 20px; background: linear-gradient(180deg, rgba(18,19,22,.82), rgba(8,9,11,.9)); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); overflow: hidden; }
+.system.show { display: block; animation: rise .5s cubic-bezier(.2, .8, .2, 1) both; }
+.system .head { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 18px; border-bottom: 1px solid var(--line); font: 500 10.5px/1.3 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--soft); }
+.system .head b { color: var(--ink); font-weight: 500; }
+.system ol { list-style: none; margin: 0; padding: 4px 0; }
+.system li { padding: 10px 18px; border-top: 1px solid rgba(255,255,255,.05); animation: rise .4s cubic-bezier(.2, .8, .2, 1) both; }
+.system li:first-child { border-top: 0; }
+.system .row { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 4px 10px; align-items: baseline; }
+.system .n { font: 400 11px/1.4 var(--mono); color: var(--faint); }
+.system .fn { font: 500 13.5px/1.4 var(--mono); color: var(--glow); }
+.system .sent, .system .got { grid-column: 2; font-size: 13.5px; line-height: 1.4; overflow-wrap: anywhere; }
+.system .sent { color: var(--soft); }
+.system .got::before { content: "→ "; color: var(--faint); }
+.system li.wait .got { color: var(--faint); }
+.system li.no .got { color: var(--soon); }
+.system details { grid-column: 2; margin-top: 4px; }
+.system summary { cursor: pointer; font: 400 11px/1.6 var(--mono); color: var(--faint); letter-spacing: .04em; }
+.system summary:hover { color: var(--soft); }
+.system pre { margin: 6px 0 2px; padding: 10px 12px; max-height: 260px; overflow: auto; border-radius: 10px; background: rgba(255,255,255,.04); font: 400 11.5px/1.5 var(--mono); color: var(--soft); white-space: pre-wrap; overflow-wrap: anywhere; }
+.system .key { padding: 10px 18px 14px; border-top: 1px solid var(--line); font: 400 11px/1.6 var(--mono); color: var(--faint); }
+/* The booking, the moment it is confirmed. */
+.booking { display: none; width: min(560px, 100%); margin-top: 4px; text-align: left; position: relative; border-radius: 22px; padding: 1px; background: linear-gradient(140deg, color-mix(in oklab, var(--glow) 70%, transparent), rgba(255,255,255,.08) 40%, rgba(255,255,255,.04) 60%, color-mix(in oklab, var(--glow) 40%, transparent)); }
+.booking.show { display: block; animation: deploy .9s cubic-bezier(.16, 1, .3, 1) both; }
+.booking .card { border-radius: 21px; padding: 24px 24px 22px; background: linear-gradient(180deg, rgba(18,19,22,.94), rgba(8,9,11,.97)); }
+.booking .top { display: flex; justify-content: space-between; align-items: center; gap: 12px; font: 500 11px/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--soft); }
+.booking .ok { display: inline-flex; align-items: center; gap: 8px; color: var(--glow); }
+.booking .ok svg { width: 14px; height: 14px; }
+.booking h2 { margin: 16px 0 2px; font-size: 28px; font-weight: 600; letter-spacing: -.03em; }
+.booking .when { margin: 0; font-size: 15.5px; color: var(--soft); }
+.booking dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 20px 0 0; padding: 18px 0 0; border-top: 1px solid var(--line); }
+.booking dl .wide { grid-column: 1 / -1; }
+.booking dt { font: 500 10.5px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--faint); margin-bottom: 7px; }
+.booking dd { margin: 0; font-size: 15px; line-height: 1.4; }
+.booking table { width: 100%; margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); border-collapse: collapse; font-size: 14px; }
+.booking td { padding: 4px 0; vertical-align: top; }
+.booking td:last-child { text-align: right; white-space: nowrap; padding-left: 12px; font-family: var(--mono); font-size: 13px; }
+.booking .src { display: inline-block; margin-left: 6px; font: 400 10px/1.4 var(--mono); color: var(--faint); letter-spacing: .04em; }
+.booking .total td { padding-top: 10px; border-top: 1px solid var(--line); font-weight: 600; font-size: 15px; }
+.booking .tag { margin: 16px 0 0; font: 400 11.5px/1.5 var(--mono); color: var(--faint); }
+/* For their developers: the calls she makes, under the page. */
+.dev { width: min(720px, calc(100% - 32px)); margin: 0 auto 8px; text-align: left; }
+.dev details { border: 1px solid var(--line); border-radius: 16px; background: rgba(255,255,255,.025); }
+.dev summary { cursor: pointer; padding: 14px 18px; font: 500 11px/1.5 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--soft); }
+.dev summary:hover { color: var(--ink); }
+.dev .in { padding: 0 18px 16px; }
+.dev p { margin: 0 0 12px; font-size: 14px; line-height: 1.55; color: var(--soft); }
+.dev .tool { padding: 10px 0; border-top: 1px solid rgba(255,255,255,.06); }
+.dev code { font: 500 13px/1.4 var(--mono); color: var(--glow); }
+.dev .tool p { margin: 4px 0 0; font-size: 13.5px; }
+.dev .params { font: 400 11.5px/1.5 var(--mono); color: var(--faint); overflow-wrap: anywhere; }
+body[data-state="used"] .dev { display: none; }
+
+@keyframes breathe { 0%, 100% { filter: saturate(1) brightness(1); } 50% { filter: saturate(1.15) brightness(1.08); } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes flow { to { background-position: -200% 0; } }
+@keyframes pulse { 50% { opacity: .35; } }
+@keyframes rise { from { opacity: 0; transform: translateY(8px); } }
+@keyframes deploy { from { opacity: 0; transform: translateY(28px) scale(.97); filter: blur(6px); } }
+@media (max-width: 640px) {
+  .bar span { display: none; }
+  .orbs { min-height: 190px; }
+  .orb { --size: 168px; }
+  body:not([data-state="idle"]):not([data-state="used"]) .orb.caller, body:not([data-state="idle"]):not([data-state="used"]) .orb.sofie { --size: 104px; }
+  .actions { flex-direction: column; width: 100%; }
+  .btn { width: 100%; justify-content: center; }
+  .words { min-height: 150px; }
+  .booking dl { grid-template-columns: minmax(0, 1fr); }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+</style>
+</head>
+<body data-state="idle" data-check="pending">
+<div class="backdrop" aria-hidden="true"></div>
+<div class="page">
+  <header class="bar"><b>Chores Away</b><span>AI receptionist</span></header>
+  <main class="stage">
+    <div class="orbs" aria-hidden="true">
+      <span class="line"></span>
+      <div class="orb caller" id="orb-caller"><span class="core"></span><span class="name" id="caller-name">AI customer</span></div>
+      <div class="orb sofie" id="orb-sofie"><span class="core"></span><span class="name">Sofie</span></div>
+    </div>
+    <div class="intro">
+      <h1>Sofie</h1>
+      <p class="lede">Books a <b>Chores Away</b> clean on the phone, start to finish: the rooms, extras and instructions, the price, a time and a cleaner, then a confirmed booking.</p>
+      <div class="actions">
+        <button class="btn solid" id="start-ai" type="button"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M4 2.5v11l9-5.5z"/></svg>Let an AI customer book</button>
+        <button class="btn clear" id="start-you" type="button"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 10a2.5 2.5 0 0 0 2.5-2.5v-4a2.5 2.5 0 0 0-5 0v4A2.5 2.5 0 0 0 8 10Zm4-2.5h1A5 5 0 0 1 8.5 12.5V15h-1v-2.5A5 5 0 0 1 3 7.5h1a4 4 0 0 0 8 0Z"/></svg>Book one yourself</button>
+      </div>
+      <p class="fine" id="fine">One call per demo, so pick the one you want. It books into a test copy of your booking system, so nothing real is booked. A call takes about three minutes.</p>
+      <p class="note" id="note" role="status"></p>
+      <div class="spent"><p class="lede">This demo has had its one call.</p><p class="fine">Questions? Reply to the email this link came in.</p></div>
+    </div>
+    <div class="call">
+      <div class="status"><span class="dot"></span><span id="status">Connecting</span><span id="clock">0:00</span><button class="end" id="end" type="button">End</button></div>
+      <div class="words" aria-live="polite"><p class="before" id="before"></p><p class="now"><span class="who" id="who"></span><span id="now"></span></p></div>
+      <div class="steer"><span class="label">Steer the caller</span><div class="chips" id="chips"></div></div>
+      <section class="system" id="system" aria-live="polite"><div class="head"><b>Booking system</b><span>test copy · each call she makes</span></div><ol id="calls"></ol><div class="key">Prices: from choresaway.co.nz where your site shows them; extras, cleaners and open times are test values. Nothing reaches Chores Away.</div></section>
+      <section class="booking" id="booking" aria-live="polite"></section>
+      <section class="lead" id="lead" aria-live="polite"></section>
+      <p class="after" id="after">That was this demo's one call</p>
+    </div>
+  </main>
+  <section class="dev"><details><summary>Under the hood: the five calls she makes</summary><div class="in">
+    <p>Each step of the booking is a function call with typed parameters, answered by a stand-in for your booking API built from choresaway.co.nz: the same services, rooms, extras and layout prices. Connected for real, the same calls go to your booking API, or to your own agent.</p>
+    <div class="tool"><code>get_price</code><p>Price a clean. Use once you know the service, how often, and the rooms (or hours), and again whenever any of those, the extras, pets or parking change. Returns each line, the plan discount, the total including GST and the rough hours.</p><p class="params">service, frequency, rooms[type, count, deep, add_ons, note], hours, parking, storeys, pets[cats, dogs, other]</p></div>
+    <div class="tool"><code>find_times</code><p>Open arrival times and the cleaners free at each, for a date at the caller&#39;s suburb, nearest the time asked for. Times are Auckland time.</p><p class="params">suburb, date, preferred_time, hours, service</p></div>
+    <div class="tool"><code>create_booking</code><p>Create the booking with everything the caller chose, once you have the price, an open time, the cleaner, the caller&#39;s name, mobile and street address. It holds the time for 15 minutes and returns the booking to read back; it is not confirmed until confirm_booking.</p><p class="params">service, frequency, rooms[type, count, deep, add_ons, note], hours, parking, storeys, pets[cats, dogs, other], date, time, cleaner_id, customer[name, mobile, email], address[street, suburb], access, instructions, parking_instructions</p></div>
+    <div class="tool"><code>update_booking</code><p>Change a held booking before it is confirmed. Give the booking_id and only what changed; for any change to rooms or extras, give the full rooms list again. It prices and checks the time again.</p><p class="params">booking_id, service, frequency, rooms[type, count, deep, add_ons, note], hours, parking, storeys, pets[cats, dogs, other], date, time, cleaner_id, customer[name, mobile, email], address[street, suburb], access, instructions, parking_instructions</p></div>
+    <div class="tool"><code>confirm_booking</code><p>Confirm a held booking, only after the caller has said the read-back is correct. Returns the booking reference.</p><p class="params">booking_id</p></div>
+  </div></details></section>
+  <footer>Demo · test booking system · not connected to your phone line or your systems · choresaway.co.nz</footer>
+</div>
+<script type="module">
+const CFG = {"endpoint":"https://kzxkxiicdblexurioywf.supabase.co/functions/v1/phone-mockup-v1-2","demo":"g0UqOPT8tzAcEBG5zvtvmKF7","agent":"Sofie","first":"Hi, you've reached Chores Away. This is Sofie, their AI assistant, and this call may be recorded. How can I help you today?","sdk":"https://esm.sh/@vapi-ai/web@3.0.1","steers":[{"label":"Ask about ironing","when":"question"},{"label":"Ask what's included","when":"question"},{"label":"Ask about payment","when":"question"},{"label":"Change the day","when":"details"},{"label":"Make it weekly","when":"details"},{"label":"Add the windows","when":"details"},{"label":"Outside windows","when":"details"},{"label":"Ask to cancel","when":"end"},{"label":"Ask about the cleaner","when":"end"}]};
+const $ = id => document.getElementById(id);
+const body = document.body;
+const URGENCY = { emergency: ['Emergency', 'hot'], urgent: ['Urgent', 'hot'], soon: ['Soon', 'soon'], flexible: ['Flexible', ''] };
+const ORDER = { question: 0, details: 1, end: 2 };
+let mode = null, sockets = [], vapi = null, ctx = null, mic = null, started = 0, ticking = null, phase = 'question', used = new Set(), lead = null, waitTimer = null, stopped = false, starting = false;
+let line = { who: null, done: '', partial: '' }, before = '', greeted = false, callsLeft = 0;
+let exact = { sofie: false, caller: false }, spokeAt = { sofie: 0, caller: 0 }, playAt = { sofie: 0, caller: 0 };
+const levels = { caller: 0, sofie: 0 }, targets = { caller: 0, sofie: 0 };
+
+const setState = s => { body.dataset.state = s; };
+const note = text => { $('note').textContent = text || ''; };
+const status = text => { $('status').textContent = text; };
+
+async function ask(action, extra = {}) {
+  const res = await fetch(CFG.endpoint, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ action, demo: CFG.demo, ...extra }), signal: AbortSignal.timeout(30000) });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw Object.assign(new Error(data.error || 'Something went wrong. Try again in a moment.'), { used: res.status === 410 });
+  return data;
+}
+
+// One call per demo. The browser remembers once its call has started, and
+// every visit asks the server, which decides; the two buttons wait for its
+// answer (at most 4 seconds).
+const KEPT = 'phone-demo-used:' + CFG.demo;
+const remembered = () => { try { return localStorage.getItem(KEPT) === '1'; } catch { return false; } };
+const remember = () => { try { localStorage.setItem(KEPT, '1'); } catch {} };
+function spent() { remember(); clearTimeout(waitTimer); setState('used'); note(''); }
+const checked = () => { delete body.dataset.check; };
+if (remembered()) { spent(); checked(); }
+else {
+  setTimeout(checked, 4000);
+  ask('state').then(r => {
+    if (r.used && body.dataset.state === 'idle') spent();
+    else if (r.left > 1) $('fine').textContent = r.left + ' calls left on this demo. It books into a test copy of your booking system, so nothing real is booked. A call takes about three minutes.';
+  }, () => {}).finally(checked);
+}
+
+// The orbs follow each voice.
+function frame() {
+  for (const who of ['caller', 'sofie']) {
+    levels[who] += (targets[who] - levels[who]) * .35;
+    targets[who] *= .86;
+    $('orb-' + who).style.setProperty('--level', Math.min(1, levels[who]).toFixed(3));
+  }
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+const talking = (who, on) => $('orb-' + who).classList.toggle('talking', on);
+
+// Words as they are said. Her greeting is known word for word; the rest is
+// what Vapi's transcriber hears.
+const words = s => String(s).toLowerCase().replace(/[^a-z0-9']+/g, ' ').trim().split(' ').filter(Boolean);
+function close(a, b) { const x = words(a), y = new Set(words(b)); return x.length ? x.filter(w => y.has(w)).length / Math.max(x.length, y.size) : 0; }
+function tidy(who, text) {
+  if (who !== 'sofie') return text;
+  if (!greeted && close(text, CFG.first) > .5) { greeted = true; return CFG.first; }
+  return text.replace(/\bSophie\b/g, CFG.agent);
+}
+const nameOf = who => (who === 'sofie' ? CFG.agent : mode === 'you' ? 'You' : 'AI customer');
+function show() {
+  $('who').textContent = line.who ? nameOf(line.who) : '';
+  $('now').textContent = [line.done, line.partial].filter(Boolean).join(' ');
+  $('before').textContent = before;
+}
+function turnTo(who) {
+  if (line.who === who) return;
+  const said = [line.done, line.partial].filter(Boolean).join(' ');
+  if (said) before = nameOf(line.who) + ': ' + said;
+  line = { who, done: '', partial: '' };
+}
+// What the transcriber heard: used for a side until its exact words arrive.
+function heard(who, text, final) {
+  text = String(text || '').trim();
+  if (!text || exact[who]) return;
+  if (line.who === who && line.done && !line.partial && Date.now() - spokeAt[who] > 3500) turnTo(null);
+  turnTo(who);
+  if (final) spokeAt[who] = Date.now();
+  if (final) { line.done = [line.done, tidy(who, text)].filter(Boolean).join(' '); line.partial = ''; if (who === 'sofie') movePhase(text); }
+  else line.partial = text;
+  show();
+}
+// The exact words each voice was given, as it is about to say them.
+function spoken(who, text) {
+  text = String(text || '').trim();
+  if (!text) return;
+  const fresh = !exact[who] || Date.now() - spokeAt[who] > 3500;
+  exact[who] = true; spokeAt[who] = Date.now();
+  if (line.who !== who) turnTo(who);
+  else if (fresh) { turnTo(null); turnTo(who); }
+  line.done = [line.done, text].filter(Boolean).join(' '); line.partial = '';
+  if (who === 'sofie') movePhase(text);
+  show();
+}
+
+// Steering buttons for where the call is: before the booking, during it
+// (its questions stay open too), once it is booked.
+function movePhase(text) {
+  const next = /test booking|reference|anything else/i.test(text) ? 'end' : /\b(bedrooms?|bathrooms?|rooms|spaces|extras?|how often|suburb)\b/i.test(text) ? 'details' : null;
+  if (next && ORDER[next] > ORDER[phase]) { phase = next; chips(); }
+}
+function chips() {
+  const box = $('chips');
+  const open = CFG.steers.map((s, i) => ({ ...s, i })).filter(s => (s.when === phase || (phase === 'details' && s.when === 'question')) && !used.has(s.i)).sort((a, b) => (a.when === phase ? 0 : 1) - (b.when === phase ? 0 : 1)).slice(0, 4);
+  box.replaceChildren(...open.map(s => {
+    const b = document.createElement('button');
+    b.className = 'chip'; b.type = 'button'; b.textContent = s.label;
+    b.addEventListener('click', () => {
+      if (used.has(s.i)) return;
+      used.add(s.i); b.classList.add('sent'); b.textContent = 'Sent · the caller says it next';
+      ask('steer', { choice: s.i }).catch(() => { b.textContent = 'Could not send'; });
+      setTimeout(chips, 2600);
+    });
+    return b;
+  }));
+}
+
+// The lead, the moment she saves it.
+const args = a => { try { return typeof a === 'string' ? JSON.parse(a) : a; } catch { return null; } };
+function phoneText(s) { const d = String(s || '').replace(/\D/g, ''); const t = d.length === 11 && d[0] === '1' ? d.slice(1) : d; return t.length === 10 ? t.slice(0, 3) + '-' + t.slice(3, 6) + '-' + t.slice(6) : String(s || ''); }
+function deploy(found) {
+  if (!found || !found.caller_name) return;
+  lead = found;
+  const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text !== undefined) n.textContent = text; return n; };
+  const [level, tone] = URGENCY[lead.urgency] || [lead.urgency || '—', ''];
+  const card = el('div', 'card');
+  const top = el('div', 'top');
+  const ok = el('span', 'ok');
+  ok.innerHTML = '<svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M6.4 11.6 2.8 8l-1 1 4.6 4.6 8-8-1-1z"/></svg>';
+  ok.append('Lead deployed');
+  top.append(ok, el('span', '', new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })));
+  const dl = el('dl');
+  for (const [k, v, cls] of [['Needs', lead.service_needed], ['Urgency', level, 'level ' + tone], ['Best time', lead.preferred_callback_time], ['Where', lead.service_address_or_area]]) {
+    if (!v) continue;
+    const box = el('div'); box.append(el('dt', '', k));
+    const dd = el('dd'); dd.append(cls ? el('span', cls, v) : v); box.append(dd); dl.append(box);
+  }
+  card.append(top, el('h2', '', lead.caller_name), el('p', 'phone', phoneText(lead.callback_number)), dl);
+  if (lead.issue_summary) card.append(el('p', 'summary', lead.issue_summary));
+  card.append(el('p', 'tag', mode === 'you' ? 'From your call. In use, every lead goes straight to your team.' : 'From the AI customer, a made-up caller. In use, every lead goes straight to your team.'));
+  const box = $('lead');
+  box.replaceChildren(card);
+  box.classList.remove('show'); void box.offsetWidth; box.classList.add('show');
+  setTimeout(() => box.scrollIntoView({ behavior: 'smooth', block: 'center' }), 250);
+}
+function leadIn(messages) {
+  for (const m of messages || []) for (const c of m.tool_calls || m.toolCalls || []) if (c.function && c.function.name === 'save_lead') deploy(args(c.function.arguments));
+}
+
+// The booking system's side: each call she makes into it as she makes it,
+// and its answer as it comes (Vapi's events carry both).
+const BOOKING = ['get_price', 'find_times', 'create_booking', 'update_booking', 'confirm_booking'];
+let calls = new Map();
+const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text !== undefined) n.textContent = text; return n; };
+const money = n => (typeof n !== 'number' ? '' : n < 0 ? '−$' + (-n).toFixed(2) : '$' + n.toFixed(2));
+const plainKey = s => String(s || '').replace(/_/g, ' ');
+function callIn(id, name, a) {
+  if (!id || !BOOKING.includes(name) || calls.has(id)) return;
+  calls.set(id, { n: calls.size + 1, name, args: args(a) || {}, result: undefined });
+  drawCalls();
+}
+function resultIn(id, text) {
+  const c = calls.get(id);
+  if (!c || c.result !== undefined) return;
+  c.result = (typeof text === 'object' && text) || args(text) || { error: String(text || 'no answer') };
+  drawCalls();
+  if (c.name === 'confirm_booking' && c.result.status === 'confirmed') booked(c.result);
+}
+function toolsIn(e) {
+  for (const t of e.toolCallList || []) callIn(t.id, t.function && t.function.name, t.function && t.function.arguments);
+  for (const list of [e.messages, e.messagesOpenAIFormatted]) for (const m of list || []) {
+    for (const t of m.toolCalls || m.tool_calls || []) callIn(t.id, t.function && t.function.name, t.function && t.function.arguments);
+    if (m.role === 'tool_call_result') resultIn(m.toolCallId, m.result);
+    if (m.role === 'tool') resultIn(m.tool_call_id, m.content);
+  }
+  if (e.toolCallResult) resultIn(e.toolCallResult.toolCallId || e.toolCallResult.id, e.toolCallResult.result);
+}
+function sentOf(c) {
+  const a = c.args || {};
+  if (c.name === 'find_times') return [a.suburb, a.date, a.preferred_time].filter(Boolean).join(' · ');
+  if (c.name === 'confirm_booking') return a.booking_id || '';
+  const bits = [];
+  if (a.booking_id) bits.push(a.booking_id);
+  if (a.service) bits.push(plainKey(a.service));
+  if (a.frequency) bits.push(plainKey(a.frequency));
+  if (Array.isArray(a.rooms)) bits.push(a.rooms.map(r => r.count + ' ' + plainKey(r.type) + (r.deep ? ' (deep)' : '') + ((r.add_ons || []).length ? ' + ' + r.add_ons.map(plainKey).join(', ') : '')).join(', '));
+  if (a.hours) bits.push(a.hours + ' h');
+  if (a.pets && (a.pets.cats || a.pets.dogs || a.pets.other)) bits.push('pets');
+  if (a.parking) bits.push(a.parking + ' parking');
+  if (a.date) bits.push(a.date + (a.time ? ' ' + a.time : ''));
+  if (a.cleaner_id) bits.push(a.cleaner_id);
+  if (a.customer && a.customer.name) bits.push(a.customer.name);
+  return bits.join(' · ');
+}
+function gotOf(c) {
+  const r = c.result;
+  if (r === undefined) return 'waiting for the booking system';
+  if (r.error) return 'refused: ' + r.error;
+  if (c.name === 'get_price') return money(r.total_incl_gst) + ' incl. GST' + (r.plan_discount ? ' · ' + r.plan_discount.pct + '% plan discount' : '') + ' · about ' + r.estimated_hours + ' hours';
+  if (c.name === 'find_times') {
+    if (r.serviced === false) return 'not in the area: ' + (r.why || '');
+    const asked = r.asked_for ? r.asked_for + (r.asked_for_open ? ' is open · ' : ' is taken · ') : '';
+    return asked + (r.weekday || '') + ' open: ' + ((r.open_times || []).map(s => s.time + ' (' + s.cleaners.map(x => x.name).join(', ') + ')').join('; ') || 'nothing');
+  }
+  if (c.name === 'create_booking') return r.booking_id + ' held · ' + money(r.total_incl_gst);
+  if (c.name === 'update_booking') return 'changed ' + (r.changed || []).join(', ') + ' · ' + money(r.total_incl_gst);
+  if (c.name === 'confirm_booking') return r.reference + ' · confirmed (test booking)';
+  return 'done';
+}
+function drawCalls() {
+  const box = $('system');
+  if (!calls.size) return;
+  box.classList.add('show');
+  $('calls').replaceChildren(...[...calls.values()].map(c => {
+    const li = el('li', c.result === undefined ? 'wait' : c.result.error ? 'no' : '');
+    const row = el('div', 'row');
+    row.append(el('span', 'n', String(c.n).padStart(2, '0')), el('span', 'fn', c.name), el('span', 'sent', sentOf(c)), el('span', 'got', gotOf(c)));
+    const more = el('details');
+    more.append(el('summary', '', 'request and response'), el('pre', '', 'request ' + JSON.stringify(c.args, null, 2)));
+    if (c.result !== undefined) more.append(el('pre', '', 'response ' + JSON.stringify(c.result, null, 2)));
+    row.append(more);
+    li.append(row);
+    return li;
+  }));
+}
+// The confirmed booking, from the booking system's own answer, with the
+// access and notes she sent it.
+const SRC = { site: 'choresaway.co.nz', derived: 'from your prices', test: 'test value' };
+function booked(r) {
+  const sent = Object.assign({}, ...[...calls.values()].filter(c => (c.name === 'create_booking' || c.name === 'update_booking') && c.result && !c.result.error).map(c => c.args));
+  const card = el('div', 'card');
+  const top = el('div', 'top');
+  const ok = el('span', 'ok');
+  ok.innerHTML = '<svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M6.4 11.6 2.8 8l-1 1 4.6 4.6 8-8-1-1z"/></svg>';
+  ok.append('Test booking confirmed');
+  top.append(ok, el('span', '', r.reference || ''));
+  card.append(top, el('h2', '', r.service + (r.frequency && r.frequency !== 'one-off' ? ', ' + r.frequency : '')), el('p', 'when', (r.when || '') + ' · ' + (r.cleaner || '')));
+  const dl = el('dl');
+  const notes = (sent.rooms || []).filter(x => x.note).map(x => plainKey(x.type) + ': ' + x.note);
+  for (const [k, v, wide] of [['Customer', r.customer], ['Address', r.address], ['Rooms', (r.rooms || []).join(' · '), true], ['Access', sent.access, true], ['Notes', [sent.instructions, ...notes].filter(Boolean).join(' · '), true]]) {
+    if (!v) continue;
+    const box = el('div', wide ? 'wide' : ''); box.append(el('dt', '', k), el('dd', '', v)); dl.append(box);
+  }
+  card.append(dl);
+  const table = el('table');
+  for (const l of r.lines || []) { const tr = el('tr'); const td = el('td', '', l.item); td.append(el('span', 'src', SRC[l.src] || l.src)); tr.append(td, el('td', '', money(l.incl_gst))); table.append(tr); }
+  if (r.plan_discount) { const tr = el('tr'); tr.append(el('td', '', r.plan_discount.pct + '% plan discount'), el('td', '', money(r.plan_discount.incl_gst))); table.append(tr); }
+  const total = el('tr', 'total'); total.append(el('td', '', 'Total incl. GST'), el('td', '', money(r.total_incl_gst))); table.append(total);
+  card.append(table, el('p', 'tag', 'A test booking in a stand-in for your booking system, built from choresaway.co.nz. No cleaner is sent and nothing is charged.'));
+  const box = $('booking');
+  box.replaceChildren(card);
+  box.classList.remove('show'); void box.offsetWidth; box.classList.add('show');
+  setTimeout(() => box.scrollIntoView({ behavior: 'smooth', block: 'center' }), 250);
+}
+
+// Each voice as it comes: 16-bit sound, played in order, the orb following it.
+function play(who, data, rate) {
+  const s = new Int16Array(data), n = s.length;
+  if (!n) return;
+  const now = ctx.currentTime;
+  // What plays is never more than half a second behind the call (since
+  // 2026-11-11): after a stall the newer sound plays and the rest is skipped.
+  if (playAt[who] > now + MAX_AHEAD) return;
+  const out = ctx.createBuffer(1, n, rate), d = out.getChannelData(0);
+  let sum = 0;
+  for (let i = 0; i < n; i++) { d[i] = s[i] / 32768; sum += d[i] * d[i]; }
+  const src = ctx.createBufferSource(); src.buffer = out; src.connect(ctx.destination);
+  if (playAt[who] < now + .04) playAt[who] = now + .12;
+  const level = Math.sqrt(sum / n) * 7;
+  setTimeout(() => { targets[who] = Math.max(targets[who], level); }, (playAt[who] - now) * 1000);
+  src.start(playAt[who]); playAt[who] += out.duration;
+}
+
+function reset() {
+  clearInterval(ticking); clearTimeout(waitTimer);
+  sockets = []; phase = 'question'; used = new Set(); lead = null; greeted = false; started = 0; stopped = false;
+  exact = { sofie: false, caller: false }; spokeAt = { sofie: 0, caller: 0 }; playAt = { sofie: 0, caller: 0 };
+  line = { who: null, done: '', partial: '' }; before = '';
+  show(); $('chips').replaceChildren(); $('lead').replaceChildren(); $('lead').classList.remove('show');
+  calls = new Map(); $('calls').replaceChildren(); $('system').classList.remove('show'); $('booking').replaceChildren(); $('booking').classList.remove('show');
+  $('clock').textContent = '0:00';
+}
+function live() {
+  if (body.dataset.state !== 'connecting') return;
+  setState('live'); status('Live');
+  started = Date.now(); clearTimeout(waitTimer);
+  ticking = setInterval(() => { const s = Math.floor((Date.now() - started) / 1000); $('clock').textContent = Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); }, 500);
+  if (mode === 'ai') chips();
+}
+function ended(text) {
+  if (body.dataset.state !== 'live' && body.dataset.state !== 'connecting') return;
+  if (!callsLeft) remember();
+  $('after').textContent = callsLeft ? 'Reload this page for another call (' + callsLeft + ' left)' : "That was this demo's one call";
+  clearInterval(ticking); clearTimeout(waitTimer); setState('ended'); status(text || 'Call ended');
+  talking('caller', false); talking('sofie', false);
+  hangUp();
+  try { vapi && vapi.stop(); } catch {}
+  try { mic && mic.getTracks().forEach(t => t.stop()); } catch {}
+}
+// Both halves of a live call end together.
+function hangUp() {
+  for (const s of sockets) { try { if (s.readyState === 1) s.send(JSON.stringify({ type: 'end-call' })); s.close(); } catch {} }
+  sockets = [];
+}
+// Before the server has started a call: back to the two buttons, nothing used.
+function failed(text) {
+  clearInterval(ticking); clearTimeout(waitTimer);
+  hangUp();
+  try { vapi && vapi.stop(); } catch {}
+  try { mic && mic.getTracks().forEach(t => t.stop()); } catch {}
+  mic = null; starting = false;
+  setState('idle'); note(text);
+}
+// Once the server has started it, the demo's one call is spent, whatever
+// happens next: no second try, no "again" (v1 made a dud call again once).
+const COULD_NOT = 'The call could not connect';
+
+async function startAI() {
+  if (starting || body.dataset.state !== 'idle') return;
+  starting = true;
+  reset(); mode = 'ai'; body.dataset.mode = 'ai'; note('');
+  $('caller-name').textContent = 'AI customer';
+  ctx = ctx || new (window.AudioContext || window.webkitAudioContext)();
+  ctx.resume();
+  setState('connecting'); status('Calling ' + CFG.agent);
+  let found;
+  try { found = await ask('live', { relay: 1 }); } catch (e) { return e.used ? (starting = false, spent()) : failed(e.message); }
+  starting = false; callsLeft = Number(found.left) || 0; if (!callsLeft) remember();
+  waitTimer = setTimeout(() => ended(COULD_NOT), 45000);
+  const rate = found.sampleRate || 24000;
+  if (found.listen) return listen(found.listen, rate);
+  // Our relay could not be reached: this page passes the two voices itself,
+  // as every page did before 2026-11-11.
+  const open = url => new Promise((resolve, reject) => {
+    const s = new WebSocket(url); s.binaryType = 'arraybuffer';
+    s.onopen = () => resolve(s); s.onerror = () => reject(new Error(COULD_NOT));
+  });
+  let caller, agent;
+  try { caller = await open(found.caller.url); sockets.push(caller); agent = await open(found.agent.url); sockets.push(agent); }
+  catch { return ended(COULD_NOT); }
+  // Each voice into the other's ear, and both to the speakers.
+  agent.onmessage = m => {
+    if (typeof m.data !== 'string') { live(); if (caller.readyState === 1) caller.send(m.data); return play('sofie', m.data, rate); }
+    let e; try { e = JSON.parse(m.data); } catch { return; }
+    fromAgent(e);
+  };
+  caller.onmessage = m => {
+    if (typeof m.data !== 'string') { if (agent.readyState === 1) agent.send(m.data); return play('caller', m.data, rate); }
+    let e; try { e = JSON.parse(m.data); } catch { return; }
+    if (e.type === 'voice-input') spoken('caller', e.input);
+  };
+  const closed = () => ended();
+  agent.onclose = closed; caller.onclose = closed;
+}
+
+// The receptionist's call as it goes: her words, the caller's as she hears
+// them, and the lead she saves.
+function fromAgent(e) {
+  if (e.type === 'voice-input') spoken('sofie', e.input);
+  if (e.type === 'transcript') heard(e.role === 'assistant' ? 'sofie' : 'caller', e.transcript, e.transcriptType === 'final');
+  if (e.type === 'speech-update') talking(e.role === 'assistant' ? 'sofie' : 'caller', e.status === 'started');
+  if (e.type === 'tool-calls') for (const c of e.toolCallList || []) if (c.function && c.function.name === 'save_lead') deploy(args(c.function.arguments));
+  if (e.type === 'conversation-update') leadIn(e.messages || e.conversation);
+  if (e.type === 'tool-calls' || e.type === 'conversation-update' || e.type === 'tool-calls-result') toolsIn(e);
+}
+
+// Since 2026-11-11 the two voices pass between the calls on our relay
+// (demo-relay/), server to server, and this page only listens: a busy
+// computer or a locked phone can no longer slow the call itself (on
+// 2026-11-10 a busy Mac's browser passed them in bursts, 7 to 8 seconds
+// behind, and the receptionist never heard the caller's number). Sound that
+// reaches this page late, after a stall, is skipped so what plays is live; a
+// dropped line joins again and gets the words it missed.
+const LATE_MS = 800, MAX_AHEAD = 0.5;
+function listen(url, rate) {
+  let seq = 0, tries = 0, over = false, base = Infinity;
+  const join = () => {
+    const s = new WebSocket(url + '&after=' + seq); s.binaryType = 'arraybuffer';
+    sockets = [s];
+    s.onopen = () => { tries = 0; };
+    s.onmessage = m => {
+      if (typeof m.data !== 'string') {
+        const v = new DataView(m.data), who = v.getUint8(0) ? 'caller' : 'sofie';
+        const lag = performance.now() - v.getUint32(1);
+        base = Math.min(base, lag);
+        if (lag - base > LATE_MS) return;
+        if (who === 'sofie') live();
+        return play(who, m.data.slice(5), rate);
+      }
+      let x; try { x = JSON.parse(m.data); } catch { return; }
+      if (x.seq) seq = Math.max(seq, x.seq);
+      if (x.type === 'ended') { over = true; return ended(); }
+      if (x.side === 'agent') fromAgent(x.e || {});
+      else if (x.e && x.e.type === 'voice-input') spoken('caller', x.e.input);
+    };
+    s.onclose = () => {
+      if (over || (body.dataset.state !== 'live' && body.dataset.state !== 'connecting')) return;
+      if (++tries > 15) return ended(COULD_NOT);
+      setTimeout(join, Math.min(400 * tries, 3000));
+    };
+  };
+  join();
+}
+// A phone back from another app: its sound may have been paused.
+document.addEventListener('visibilitychange', () => { if (!document.hidden && ctx) ctx.resume().catch(() => {}); });
+
+async function startYou() {
+  if (starting || body.dataset.state !== 'idle') return;
+  starting = true;
+  reset(); mode = 'you'; body.dataset.mode = 'you'; note('');
+  $('caller-name').textContent = 'You';
+  // The microphone first, and Vapi's browser library: a refused microphone or
+  // a library that will not load never uses up the demo.
+  try { mic = await navigator.mediaDevices.getUserMedia({ audio: true }); }
+  catch { return failed('Allow this page to use your microphone, then try again.'); }
+  setState('connecting'); status('Calling ' + CFG.agent);
+  let Vapi, found;
+  try { ({ default: Vapi } = await import(CFG.sdk)); } catch { return failed('The call did not start. Try again in a moment.'); }
+  try { found = await ask('talk'); } catch (e) { return e.used ? (starting = false, spent()) : failed(e.message); }
+  starting = false; callsLeft = Number(found.left) || 0; if (!callsLeft) remember();
+  waitTimer = setTimeout(() => ended(COULD_NOT), 45000);
+  try {
+    // No key: the server started this call, and the page only joins it.
+    vapi = new Vapi('');
+    vapi.on('call-start', () => {
+      live();
+      try {
+        ctx = ctx || new (window.AudioContext || window.webkitAudioContext)();
+        const meter = ctx.createAnalyser(); meter.fftSize = 512; ctx.createMediaStreamSource(mic).connect(meter);
+        const buf = new Float32Array(meter.fftSize);
+        (function loop() { if (body.dataset.state !== 'live') return; meter.getFloatTimeDomainData(buf); let s = 0; for (const v of buf) s += v * v; targets.caller = Math.max(targets.caller, Math.sqrt(s / buf.length) * 6); requestAnimationFrame(loop); })();
+      } catch {}
+    });
+    vapi.on('call-end', () => ended());
+    vapi.on('error', () => ended(body.dataset.state === 'live' ? undefined : COULD_NOT));
+    vapi.on('volume-level', v => { targets.sofie = Math.max(targets.sofie, v * 1.4); });
+    vapi.on('speech-start', () => talking('sofie', true));
+    vapi.on('speech-end', () => talking('sofie', false));
+    vapi.on('message', m => {
+      if (m.type === 'voice-input') spoken('sofie', m.input);
+      if (m.type === 'transcript') heard(m.role === 'assistant' ? 'sofie' : 'caller', m.transcript, m.transcriptType === 'final');
+      if (m.type === 'tool-calls') for (const c of m.toolCallList || []) if (c.function && c.function.name === 'save_lead') deploy(args(c.function.arguments));
+      if (m.type === 'tool-calls' || m.type === 'conversation-update' || m.type === 'tool-calls-result') toolsIn(m);
+    });
+    await vapi.reconnect(found.call);
+  } catch { ended(COULD_NOT); }
+}
+
+function endNow() {
+  stopped = true;
+  try { if (mode === 'you' && vapi) vapi.end(); } catch {}
+  ended();
+}
+
+$('start-ai').addEventListener('click', startAI);
+$('start-you').addEventListener('click', startYou);
+$('end').addEventListener('click', endNow);
+</script>
+</body>
+</html>
