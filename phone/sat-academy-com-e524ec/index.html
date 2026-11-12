@@ -3,7 +3,7 @@
 <head>
 <meta name="robots" content="noindex, nofollow">
 <meta name="referrer" content="no-referrer">
-<!-- mockup phone/sat-academy-com-e524ec 1 61be284d -->
+<!-- phone mockup sat-academy-com-e524ec 36560c8b -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sofie · SAT Academy</title>
@@ -13,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
-  --accent: #ffffff;
+  --accent: #ff3b60;
   --glow: color-mix(in oklab, var(--accent) 55%, #ffffff);
   --ink: #f4f5f7; --soft: rgba(244, 245, 247, .56); --faint: rgba(244, 245, 247, .32);
   --line: rgba(255, 255, 255, .1); --glass: rgba(255, 255, 255, .045);
@@ -177,6 +177,22 @@ footer { padding: 18px clamp(16px, 4vw, 40px) 26px; text-align: center; font: 40
 </div>
 <script type="module">
 const CFG = {"endpoint":"https://kzxkxiicdblexurioywf.supabase.co/functions/v1/phone-mockup-v1-2","demo":"Zapn9YcSryfyOtZF_-aQ3OSt","agent":"Sofie","first":"Hi, you've reached SAT Academy. This is Sofie, their AI assistant, and this call may be recorded. How can I help you today?","sdk":"https://esm.sh/@vapi-ai/web@3.0.1","steers":[{"label":"Ask about simulation tests","when":"question"},{"label":"Ask about IELTS","when":"question"},{"label":"Ask about registration help","when":"question"},{"label":"Ask about studying online","when":"question"},{"label":"Ask course price","when":"question"},{"label":"Make it urgent","when":"details"},{"label":"Change callback time","when":"details"},{"label":"Add Turkish lessons","when":"details"},{"label":"Ask the address","when":"end"}]};
+
+// Sunny's own browser only: while this demo is open in it, sending pauses on
+// his Mac (src/hard-pause.js). Any other browser stops here.
+(function () {
+  let mine = false;
+  try { mine = localStorage.getItem('signalset-sunny') === '1'; } catch {}
+  if (!mine) return;
+  const tab = Math.random().toString(36).slice(2, 12) + Date.now().toString(36);
+  const ping = closed => fetch('http://127.0.0.1:4100/demo-open?tab=' + tab + '&demo=' + encodeURIComponent(location.pathname) + (closed ? '&closed=1' : ''),
+    { cache: 'no-store', keepalive: Boolean(closed) }).catch(() => {});
+  ping();
+  setInterval(() => ping(), 20000);
+  addEventListener('pagehide', () => ping(true));
+  addEventListener('pageshow', e => { if (e.persisted) ping(); });
+})();
+
 const $ = id => document.getElementById(id);
 const body = document.body;
 const URGENCY = { emergency: ['Emergency', 'hot'], urgent: ['Urgent', 'hot'], soon: ['Soon', 'soon'], flexible: ['Flexible', ''] };
