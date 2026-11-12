@@ -3,7 +3,7 @@
 <head>
 <meta name="robots" content="noindex, nofollow">
 <meta name="referrer" content="no-referrer">
-<!-- phone mockup sanctuaryhouse-com-au-adb156 b03196f2 -->
+<!-- phone mockup sanctuaryhouse-com-au-adb156 ac306796 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sofie · Sanctuary House Resort Motel</title>
@@ -177,6 +177,22 @@ footer { padding: 18px clamp(16px, 4vw, 40px) 26px; text-align: center; font: 40
 </div>
 <script type="module">
 const CFG = {"endpoint":"https://kzxkxiicdblexurioywf.supabase.co/functions/v1/phone-mockup-v1-2","demo":"1NaG9BWVgZsL4r-VLMaRY2MQ","agent":"Sofie","first":"Hi, you've reached Sanctuary House Resort Motel. This is Sofie, their AI assistant, and this call may be recorded. How can I help you today?","sdk":"https://esm.sh/@vapi-ai/web@3.0.1","steers":[{"label":"Ask about prices","when":"question"},{"label":"Ask about seniors discount","when":"question"},{"label":"Ask about restaurant","when":"question"},{"label":"Ask about location","when":"question"},{"label":"Ask about pets","when":"question"},{"label":"Dates are soon","when":"details"},{"label":"Different callback time","when":"details"},{"label":"Add a dinner booking","when":"details"},{"label":"Ask about inclusions","when":"end"}]};
+
+// Sunny's own browser only: while this demo is open in it, sending pauses on
+// his Mac (src/hard-pause.js). Any other browser stops here.
+(function () {
+  let mine = false;
+  try { mine = localStorage.getItem('signalset-sunny') === '1'; } catch {}
+  if (!mine) return;
+  const tab = Math.random().toString(36).slice(2, 12) + Date.now().toString(36);
+  const ping = closed => fetch('http://127.0.0.1:4100/demo-open?tab=' + tab + '&demo=' + encodeURIComponent(location.pathname) + (closed ? '&closed=1' : ''),
+    { cache: 'no-store', keepalive: Boolean(closed) }).catch(() => {});
+  ping();
+  setInterval(() => ping(), 20000);
+  addEventListener('pagehide', () => ping(true));
+  addEventListener('pageshow', e => { if (e.persisted) ping(); });
+})();
+
 const $ = id => document.getElementById(id);
 const body = document.body;
 const URGENCY = { emergency: ['Emergency', 'hot'], urgent: ['Urgent', 'hot'], soon: ['Soon', 'soon'], flexible: ['Flexible', ''] };
