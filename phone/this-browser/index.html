@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<!-- phone mockup this-browser fb751b55 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>This browser · Signal Set</title>
+<style>
+:root { --ink: #f4f5f7; --soft: rgba(244,245,247,.6); --ok: #7ee2a8; --no: #ffb547; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px 16px; background: #000; color: var(--ink); font: 400 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 520px; display: grid; gap: 16px; }
+h1 { margin: 0; font-size: 30px; letter-spacing: -.02em; }
+p { margin: 0; color: var(--soft); }
+#state { color: var(--ink); font-weight: 500; }
+#state.ok { color: var(--ok); }
+#state.no { color: var(--no); }
+button { justify-self: start; appearance: none; border: 1px solid rgba(255,255,255,.25); background: transparent; color: var(--ink); border-radius: 999px; padding: 10px 18px; font: inherit; font-size: 15px; cursor: pointer; }
+button:hover { border-color: rgba(255,255,255,.6); }
+</style>
+</head>
+<body>
+<main>
+  <h1>This browser is yours</h1>
+  <p id="state">Checking your Mac…</p>
+  <p>While a demo page is open in this browser, sending pauses on your Mac, and starts again within a few minutes of closing it. Building demos goes on. If Chrome asks to let this site reach devices on your network, click Allow.</p>
+  <button id="off" type="button">Stop doing this in this browser</button>
+</main>
+<script>
+const state = document.getElementById('state');
+const say = (text, cls) => { state.textContent = text; state.className = cls || ''; };
+let on = true;
+try {
+  if (new URLSearchParams(location.search).get('off') === '1') { localStorage.removeItem('signalset-sunny'); on = false; }
+  else localStorage.setItem('signalset-sunny', '1');
+} catch { on = false; }
+if (!on) say('Off: demo pages in this browser no longer pause sending.', 'no');
+else fetch('http://127.0.0.1:4100/demo-open?check=1', { cache: 'no-store' })
+  .then(r => r.json())
+  .then(() => say('Done. Your Mac answered, so demos open here pause sending.', 'ok'))
+  .catch(() => say('Your Mac did not answer yet. If Chrome asked, click Allow, then reload this page.', 'no'));
+document.getElementById('off').addEventListener('click', () => {
+  try { localStorage.removeItem('signalset-sunny'); } catch {}
+  say('Off: demo pages in this browser no longer pause sending.', 'no');
+});
+</script>
+</body>
+</html>
