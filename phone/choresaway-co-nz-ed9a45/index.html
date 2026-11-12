@@ -3,7 +3,7 @@
 <head>
 <meta name="robots" content="noindex, nofollow">
 <meta name="referrer" content="no-referrer">
-<!-- phone mockup choresaway-co-nz-ed9a45 d33ea343 -->
+<!-- phone mockup choresaway-co-nz-ed9a45 480ac054 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sofie · Chores Away</title>
@@ -241,6 +241,22 @@ body[data-state="used"] .dev { display: none; }
 </div>
 <script type="module">
 const CFG = {"endpoint":"https://kzxkxiicdblexurioywf.supabase.co/functions/v1/phone-mockup-v1-2","demo":"VCZVv_QVsewrryXsEJWMgGqT","agent":"Sofie","first":"Hi, you've reached Chores Away. This is Sofie, their AI assistant, and this call may be recorded. How can I help you today?","sdk":"https://esm.sh/@vapi-ai/web@3.0.1","steers":[{"label":"Ask about ironing","when":"question"},{"label":"Ask what's included","when":"question"},{"label":"Ask about payment","when":"question"},{"label":"Change the day","when":"details"},{"label":"Make it weekly","when":"details"},{"label":"Add the windows","when":"details"},{"label":"Outside windows","when":"details"},{"label":"Ask to cancel","when":"end"},{"label":"Ask about the cleaner","when":"end"}]};
+
+// Sunny's own browser only: while this demo is open in it, sending pauses on
+// his Mac (src/hard-pause.js). Any other browser stops here.
+(function () {
+  let mine = false;
+  try { mine = localStorage.getItem('signalset-sunny') === '1'; } catch {}
+  if (!mine) return;
+  const tab = Math.random().toString(36).slice(2, 12) + Date.now().toString(36);
+  const ping = closed => fetch('http://127.0.0.1:4100/demo-open?tab=' + tab + '&demo=' + encodeURIComponent(location.pathname) + (closed ? '&closed=1' : ''),
+    { cache: 'no-store', keepalive: Boolean(closed) }).catch(() => {});
+  ping();
+  setInterval(() => ping(), 20000);
+  addEventListener('pagehide', () => ping(true));
+  addEventListener('pageshow', e => { if (e.persisted) ping(); });
+})();
+
 const $ = id => document.getElementById(id);
 const body = document.body;
 const URGENCY = { emergency: ['Emergency', 'hot'], urgent: ['Urgent', 'hot'], soon: ['Soon', 'soon'], flexible: ['Flexible', ''] };
