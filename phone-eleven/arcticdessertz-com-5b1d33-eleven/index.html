@@ -3,7 +3,7 @@
 <head>
 <meta name="robots" content="noindex, nofollow">
 <meta name="referrer" content="no-referrer">
-<!-- phone eleven arcticdessertz-com-5b1d33-eleven 56ed2d70 -->
+<!-- phone eleven arcticdessertz-com-5b1d33-eleven d7f4f115 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sofie · Arctic Dessertz</title>
@@ -176,7 +176,7 @@ footer { padding: 18px clamp(16px, 4vw, 40px) 26px; text-align: center; font: 40
   <footer>Demo · not connected to your phone line · arcticdessertz.com</footer>
 </div>
 <script type="module">
-const CFG = {"endpoint":"https://kzxkxiicdblexurioywf.supabase.co/functions/v1/phone-mockup-eleven-realtime-v1","demo":"BsKuEQ2lX_UqiCo9y8lxc0Cy","agent":"Sofie","first":"Hi, you've reached Arctic Dessertz. I'm Sofie, the AI assistant here, and this call may be recorded. How can I help you today?","sdk":"https://esm.sh/@elevenlabs/client@1.32.1","bye":"(?:thanks?( you)?( so much)? for calling[^?!]{0,30}?\\btake care|gracias por (su )?llama(r|da)[^?!]{0,30}?\\bcu[ií]d[ae](se|te)|merci (d['’]avoir appel[ée]|de votre appel)[^?!]{0,30}?\\bbonne journ[ée]e)(,? [a-z]+)?[.!]?\\s*$","steers":[{"label":"Ask about pistachio items","when":"question"},{"label":"Ask about delivery","when":"question"},{"label":"Ask where they are","when":"question"},{"label":"Ask gelato flavours","when":"question"},{"label":"Ask for a custom cake","when":"question"},{"label":"Mention a nut allergy","when":"details"},{"label":"Change callback time","when":"details"},{"label":"Add a big group","when":"details"},{"label":"Ask Sunday hours","when":"end"}]};
+const CFG = {"endpoint":"https://kzxkxiicdblexurioywf.supabase.co/functions/v1/phone-mockup-eleven-realtime-v1","demo":"BsKuEQ2lX_UqiCo9y8lxc0Cy","agent":"Sofie","first":"Hi, you've reached Arctic Dessertz. I'm Sofie, the AI assistant here, and this call may be recorded. How can I help you today?","sdk":"https://esm.sh/@elevenlabs/client@1.32.1","bye":"(?:thanks?( you)?( so much)? for calling[^?!]{0,30}?\\btake care|gracias por (su )?llama(r|da)[^?!]{0,30}?\\bcu[ií]d[ae](se|te)|merci (d['’]avoir appel[ée]|de votre appel)[^?!]{0,30}?\\bbonne journ[ée]e)(,? [a-z]+)?[.!]?\\s*$","steers":[{"label":"Ask about pistachio items","when":"question"},{"label":"Ask about delivery","when":"question"},{"label":"Ask where they are","when":"question"},{"label":"Ask gelato flavours","when":"question"},{"label":"Ask for a custom cake","when":"question"},{"label":"Mention a nut allergy","when":"details"},{"label":"Change callback time","when":"details"},{"label":"Add a big group","when":"details"},{"label":"Ask Sunday hours","when":"end"}],"hours":[{"day":0,"from":780,"to":1440},{"day":1,"from":780,"to":1440},{"day":2,"from":780,"to":1440},{"day":3,"from":780,"to":1440},{"day":4,"from":780,"to":1560},{"day":5,"from":600,"to":1560},{"day":6,"from":600,"to":1440}],"tz":"America/Winnipeg"};
 
 // Sunny's own browser only: while this demo is open in it, sending pauses on
 // his Mac (src/hard-pause.js). Any other browser stops here.
@@ -202,7 +202,37 @@ let line = { who: null, done: '', partial: '' }, before = '', greeted = false, c
 let exact = { sofie: false, caller: false }, spokeAt = { sofie: 0, caller: 0 }, playAt = { sofie: 0, caller: 0 };
 const levels = { caller: 0, sofie: 0 }, targets = { caller: 0, sofie: 0 };
 const BYE = new RegExp(CFG.bye, 'i');
-const TAGS = /\[[a-z_ ]{2,30}\]\s*/gi;
+const TAGS = /\[\/?[a-z_ ]{2,30}\]\s*/gi;
+// "Are you open right now?", worked out here for this moment and handed to
+// her at the call's start (src/phone-mockup-eleven-realtime-v1/hours.js).
+const nowSentence = function nowSentence(periods, timeZone, date) {
+  const NAMES = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+  if (!periods || !periods.length || !timeZone) return '';
+  const parts = Object.fromEntries(new Intl.DateTimeFormat('en-US', { timeZone, weekday: 'long', hour: 'numeric', minute: '2-digit', hourCycle: 'h23' })
+    .formatToParts(date).map(p => [p.type, p.value]));
+  const day = NAMES.indexOf(parts.weekday);
+  const now = (Number(parts.hour) % 24) * 60 + Number(parts.minute);
+  const clock = mins => {
+    const m = ((mins % 1440) + 1440) % 1440;
+    if (m === 0) return 'midnight';
+    if (m === 720) return 'noon';
+    const h = Math.floor(m / 60), mm = m % 60;
+    return `${h % 12 || 12}${mm ? `:${String(mm).padStart(2, '0')}` : ''} ${h < 12 ? 'AM' : 'PM'}`;
+  };
+  const yesterday = (day + 6) % 7;
+  const open = periods.find(p => (p.day === day && p.from <= now && now < p.to) || (p.day === yesterday && p.to > 1440 && now < p.to - 1440));
+  const it = `It is ${clock(now).replace(/^(\d+) /, '$1:00 ')} on ${NAMES[day]} where we are.`;
+  if (open) return `${it} We are open right now, until ${clock(open.to)}${open.day === day && open.to > 1440 ? ', after midnight' : ''}.`;
+  for (let ahead = 0; ahead < 8; ahead++) {
+    const d = (day + ahead) % 7;
+    const next = periods.filter(p => p.day === d && (ahead > 0 || p.from > now)).sort((a, b) => a.from - b.from)[0];
+    if (!next) continue;
+    const when = ahead === 0 ? 'today' : ahead === 1 ? 'tomorrow' : `on ${NAMES[d]}`;
+    return `${it} We are closed right now; we open ${when} at ${clock(next.from)}.`;
+  }
+  return `${it} We are closed right now.`;
+};
+const rightNow = () => { try { return nowSentence(CFG.hours, CFG.tz, new Date()) || ''; } catch { return ''; } };
 
 const setState = s => { body.dataset.state = s; };
 const note = text => { $('note').textContent = text || ''; };
@@ -423,7 +453,7 @@ async function startAI() {
   ctx.resume();
   setState('connecting'); status('Calling ' + CFG.agent);
   let found;
-  try { found = await ask('live'); } catch (e) { return e.used ? (starting = false, spent()) : failed(e.message); }
+  try { found = await ask('live', { right_now: rightNow() }); } catch (e) { return e.used ? (starting = false, spent()) : failed(e.message); }
   starting = false; callsLeft = Number(found.left) || 0; if (!callsLeft) remember();
   waitTimer = setTimeout(() => ended(COULD_NOT), 45000);
   listen(found.listen, found.sampleRate || 16000);
@@ -508,6 +538,7 @@ async function startYou() {
     convo = await lib.Conversation.startSession({
       conversationToken: found.token,
       connectionType: 'webrtc',
+      ...(rightNow() ? { dynamicVariables: { right_now: rightNow() } } : {}),
       onConnect: () => live(),
       onDisconnect: () => ended(),
       onError: () => ended(body.dataset.state === 'live' ? undefined : COULD_NOT),
