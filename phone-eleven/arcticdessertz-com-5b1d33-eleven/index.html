@@ -3,7 +3,7 @@
 <head>
 <meta name="robots" content="noindex, nofollow">
 <meta name="referrer" content="no-referrer">
-<!-- phone eleven arcticdessertz-com-5b1d33-eleven c193d54b -->
+<!-- phone eleven arcticdessertz-com-5b1d33-eleven c5892a5e -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sofie · Arctic Dessertz</title>
@@ -364,7 +364,7 @@ function play(who, data, rate) {
   let sum = 0;
   for (let i = 0; i < n; i++) { d[i] = s[i] / 32768; sum += d[i] * d[i]; }
   const src = ctx.createBufferSource(); src.buffer = out; src.connect(ctx.destination);
-  if (playAt[who] < now + .04) playAt[who] = now + .12;
+  if (playAt[who] < now + .04) playAt[who] = now + CUSHION;
   const level = Math.sqrt(sum / n) * 7;
   setTimeout(() => { targets[who] = Math.max(targets[who], level); }, (playAt[who] - now) * 1000);
   src.start(playAt[who]); playAt[who] += out.duration;
@@ -434,7 +434,14 @@ async function startAI() {
 // steering click sends only which of the demo's notes, by number. Sound that
 // reaches this page late, after a stall, is skipped so what plays is live; a
 // dropped line joins again and gets the words it missed.
-const LATE_MS = 800, MAX_AHEAD = 0.5;
+// The AI call is only listened to, so its sound plays half a second behind
+// the call: a Wi-Fi or cell hiccup of up to half a second is ridden out with
+// no gap, and nobody hears the delay since nobody answers back (since
+// 2026-11-13; Sunny heard the AI call skip on his phone with v1.2's tenth of
+// a second). Late sound is dropped only past 1.5 seconds, and what plays is
+// never more than 1.2 seconds behind. The owner's own call goes over WebRTC,
+// which smooths its own sound.
+const CUSHION = 0.5, LATE_MS = 1500, MAX_AHEAD = 1.2;
 function steerTo(choice) {
   const s = sockets[0];
   if (!s || s.readyState !== 1) return false;
