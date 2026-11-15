@@ -3,7 +3,7 @@
 <head>
 <meta name="robots" content="noindex, nofollow">
 <meta name="referrer" content="no-referrer">
-<!-- phone eleven millermoves-co-uk-245e82-eleven 8e301f03 -->
+<!-- phone eleven millermoves-co-uk-245e82-eleven phone-mockup-eleven-realtime-v1.1 7b1c7166 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sofie · Miller Moves</title>
@@ -235,7 +235,38 @@ const nowSentence = function nowSentence(periods, timeZone, date) {
 };
 const rightNow = () => { try { return nowSentence(CFG.hours, CFG.tz, new Date()) || ''; } catch { return ''; } };
 
-const setState = s => { body.dataset.state = s; };
+// phone-mockup-eleven-realtime-v1.1: iPhone silent mode (2026-11-15,
+// src/phone-mockup-eleven-realtime-v1.1/page.js). On an iPhone or iPad set to
+// silent, the AI call plays as media, like a video, so it is heard: Safari's
+// setting, or, where a phone has no such setting, a looping silent clip. The
+// owner's own call is as before.
+const IOS = /iP(hone|ad|od)/.test(navigator.userAgent) || (navigator.maxTouchPoints > 1 && 'webkitAudioContext' in window);
+const SILENT = 'https://lifebaseai.github.io/mockups/phone-eleven/assets/phone-mockup-eleven-realtime-v1.1-silence.mp3';
+let clip = null, hush = null;
+function loud() {
+  if (!IOS) return;
+  clearTimeout(hush);
+  if (navigator.audioSession) { try { navigator.audioSession.type = 'playback'; return; } catch {} }
+  try {
+    if (!clip) {
+      clip = document.createElement('audio');
+      clip.setAttribute('x-webkit-airplay', 'deny');
+      clip.controls = false; clip.disableRemotePlayback = true; clip.preload = 'auto'; clip.loop = true; clip.src = SILENT;
+    }
+    const p = clip.play(); if (p) p.catch(() => {});
+  } catch {}
+}
+function quiet(ms) {
+  if (!clip) return;
+  clearTimeout(hush);
+  hush = setTimeout(() => { try { clip.pause(); clip.removeAttribute('src'); clip.load(); } catch {} clip = null; }, ms);
+}
+function plain() {
+  if (!IOS) return;
+  quiet(0);
+  try { if (navigator.audioSession) navigator.audioSession.type = 'auto'; } catch {}
+}
+const setState = s => { body.dataset.state = s; if (s === 'ended') quiet(2500); else if (s === 'idle' || s === 'used') quiet(0); };
 const note = text => { $('note').textContent = text || ''; };
 const status = text => { $('status').textContent = text; };
 
@@ -450,6 +481,7 @@ async function startAI() {
   starting = true;
   reset(); mode = 'ai'; body.dataset.mode = 'ai'; note('');
   $('caller-name').textContent = 'AI customer';
+  loud();
   ctx = ctx || new (window.AudioContext || window.webkitAudioContext)();
   ctx.resume();
   setState('connecting'); status('Calling ' + CFG.agent);
@@ -524,6 +556,7 @@ async function startYou() {
   starting = true;
   reset(); mode = 'you'; body.dataset.mode = 'you'; note('');
   $('caller-name').textContent = 'You';
+  plain();
   try { mic = await navigator.mediaDevices.getUserMedia({ audio: true }); }
   catch { return failed('Allow this page to use your microphone, then try again.'); }
   // Only to ask once: the call opens the microphone itself.
