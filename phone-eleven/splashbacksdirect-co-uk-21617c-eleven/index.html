@@ -3,7 +3,7 @@
 <head>
 <meta name="robots" content="noindex, nofollow">
 <meta name="referrer" content="no-referrer">
-<!-- phone eleven splashbacksdirect-co-uk-21617c-eleven phone-mockup-eleven-realtime-v1.1 0f42c8c2 -->
+<!-- phone eleven splashbacksdirect-co-uk-21617c-eleven phone-mockup-eleven-realtime-v1.1 3809511e -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sofie · Splashbacks Direct</title>
@@ -415,27 +415,31 @@ async function fetchLead(id) {
 }
 
 // Each voice as it comes: 16-bit sound, played in order, the orb following it.
-function play(who, data, rate) {
+// phone-mockup-eleven-realtime-v1.1: one clock for both voices (2026-11-16,
+// src/phone-mockup-eleven-realtime-v1.1/page.js): each piece plays at its own
+// moment of the call (t), half a second behind, so the two voices keep the
+// call's order and never stack; one that would play late moves the whole
+// call later together.
+let clock = null;
+function play(who, data, rate, t) {
   const s = new Int16Array(data), n = s.length;
   if (!n) return;
   const now = ctx.currentTime;
-  // What plays is never more than half a second behind the call (since
-  // 2026-11-11): after a stall the newer sound plays and the rest is skipped.
-  if (playAt[who] > now + MAX_AHEAD) return;
+  if (clock === null || clock + t / 1000 < now + .04) clock = now + CUSHION - t / 1000;
+  const at = clock + t / 1000;
   const out = ctx.createBuffer(1, n, rate), d = out.getChannelData(0);
   let sum = 0;
   for (let i = 0; i < n; i++) { d[i] = s[i] / 32768; sum += d[i] * d[i]; }
   const src = ctx.createBufferSource(); src.buffer = out; src.connect(ctx.destination);
-  if (playAt[who] < now + .04) playAt[who] = now + CUSHION;
   const level = Math.sqrt(sum / n) * 7;
-  setTimeout(() => { targets[who] = Math.max(targets[who], level); }, (playAt[who] - now) * 1000);
-  src.start(playAt[who]); playAt[who] += out.duration;
+  setTimeout(() => { targets[who] = Math.max(targets[who], level); }, (at - now) * 1000);
+  src.start(at); playAt[who] = at + out.duration;
 }
 
 function reset() {
   clearInterval(ticking); clearTimeout(waitTimer);
   sockets = []; phase = 'question'; used = new Set(); lead = null; greeted = false; started = 0; stopped = false; convId = null; bye = false;
-  exact = { sofie: false, caller: false }; spokeAt = { sofie: 0, caller: 0 }; playAt = { sofie: 0, caller: 0 };
+  exact = { sofie: false, caller: false }; spokeAt = { sofie: 0, caller: 0 }; playAt = { sofie: 0, caller: 0 }; clock = null;
   line = { who: null, done: '', partial: '' }; before = '';
   show(); $('chips').replaceChildren(); $('lead').replaceChildren(); $('lead').classList.remove('show');
   $('clock').textContent = '0:00';
@@ -525,7 +529,7 @@ function listen(url, rate) {
         if (lag - base > LATE_MS) return;
         if (who === 'sofie') live();
         pulse(who);
-        return play(who, m.data.slice(5), rate);
+        return play(who, m.data.slice(5), rate, v.getUint32(1));
       }
       let x; try { x = JSON.parse(m.data); } catch { return; }
       if (x.seq) seq = Math.max(seq, x.seq);
