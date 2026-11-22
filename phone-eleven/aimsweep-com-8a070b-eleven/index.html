@@ -3,7 +3,7 @@
 <head>
 <meta name="robots" content="noindex, nofollow">
 <meta name="referrer" content="no-referrer">
-<!-- phone eleven aimsweep-com-8a070b-eleven demo-call-eleven-v1 096a9e98 -->
+<!-- phone eleven aimsweep-com-8a070b-eleven phone-mockup-eleven-realtime-v1.2 d71ddd5f -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sofie · AIM Chimney Sweep &amp; Stove Shop</title>
@@ -265,6 +265,37 @@ function plain() {
   if (!IOS) return;
   quiet(0);
   try { if (navigator.audioSession) navigator.audioSession.type = 'auto'; } catch {}
+}
+// phone-mockup-eleven-realtime-v1.2: a gate on the caller's microphone (2026-11-22,
+// src/phone-mockup-eleven-realtime-v1.2/page.js). For "Call her yourself"
+// only: the browser's microphone goes through a gate before ElevenLabs'
+// library takes it, so a TV or a room behind the caller, much quieter than
+// their own voice, does not reach her. Any trouble: the plain microphone.
+let micGate = null;
+function gateMic() {
+  const md = navigator.mediaDevices;
+  if (micGate || !md || !md.getUserMedia || !window.AudioWorkletNode) return;
+  try {
+    const ac = new (window.AudioContext || window.webkitAudioContext)();
+    const url = URL.createObjectURL(new Blob(["class SignalSetMicGate extends AudioWorkletProcessor {\n  constructor(options) {\n    super();\n    const o = (options && options.processorOptions) || {};\n    this.openDb = o.openDb; this.holdS = o.holdMs / 1000; this.level = o.startDb;\n    this.fall = o.fallDbPerSecond; this.attack = o.attackDbPerSecond;\n    this.win = Math.max(1, Math.round(sampleRate * 0.02));\n    this.sq = new Float32Array(this.win); this.at = 0; this.sum = 0; this.hold = 0;\n  }\n  process(inputs, outputs) {\n    const input = inputs[0], output = outputs[0];\n    if (!input || !input.length || !input[0]) return true;\n    const first = input[0], n = first.length, dt = n / sampleRate;\n    for (let k = 0; k < n; k++) { const s = first[k] * first[k]; this.sum += s - this.sq[this.at]; this.sq[this.at] = s; this.at = (this.at + 1) % this.win; }\n    const db = 10 * Math.log10(Math.max(this.sum, 0) / this.win + 1e-12);\n    this.level = db > this.level ? Math.min(db, this.level + this.attack * dt) : Math.max(db, this.level - this.fall * dt);\n    if (db >= this.level - this.openDb) this.hold = this.holdS;\n    const pass = this.hold > 0;\n    this.hold -= dt;\n    for (let c = 0; c < output.length; c++) {\n      const from = input[c] || first, to = output[c];\n      for (let k = 0; k < n; k++) to[k] = pass ? from[k] : 0;\n    }\n    return true;\n  }\n}\nregisterProcessor('signalset-mic-gate', SignalSetMicGate);\n"], { type: 'text/javascript' }));
+    micGate = { ac, ready: ac.audioWorklet.addModule(url).then(() => true, () => false) };
+    ac.resume().catch(() => {});
+  } catch { micGate = null; return; }
+  const plainMic = md.getUserMedia.bind(md);
+  md.getUserMedia = async constraints => {
+    const stream = await plainMic(constraints);
+    if (mode !== 'you' || !constraints || !constraints.audio || !stream.getAudioTracks().length) return stream;
+    try {
+      if (!(await micGate.ready) || micGate.ac.state !== 'running') return stream;
+      const node = new AudioWorkletNode(micGate.ac, 'signalset-mic-gate', { processorOptions: {"openDb":7,"holdMs":700,"startDb":-60,"fallDbPerSecond":0.5,"attackDbPerSecond":50} });
+      const out = micGate.ac.createMediaStreamDestination();
+      micGate.ac.createMediaStreamSource(stream).connect(node).connect(out);
+      const [track] = out.stream.getAudioTracks();
+      const stopGated = track.stop.bind(track);
+      track.stop = () => { stopGated(); stream.getTracks().forEach(t => t.stop()); try { node.disconnect(); } catch {} };
+      return out.stream;
+    } catch { return stream; }
+  };
 }
 const setState = s => { body.dataset.state = s; if (s === 'ended') quiet(2500); else if (s === 'idle' || s === 'used') quiet(0); };
 const note = text => { $('note').textContent = text || ''; };
@@ -591,6 +622,7 @@ async function startYou() {
   reset(); mode = 'you'; body.dataset.mode = 'you'; note('');
   $('caller-name').textContent = 'You';
   plain();
+  gateMic();
   try { mic = await navigator.mediaDevices.getUserMedia({ audio: true }); }
   catch { return failed('Allow this page to use your microphone, then try again.'); }
   // Only to ask once: the call opens the microphone itself.
