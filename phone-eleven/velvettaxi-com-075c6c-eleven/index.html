@@ -3,7 +3,7 @@
 <head>
 <meta name="robots" content="noindex, nofollow">
 <meta name="referrer" content="no-referrer">
-<!-- mockup phone-eleven/velvettaxi-com-075c6c-eleven 1 56cf341a -->
+<!-- phone eleven velvettaxi-com-075c6c-eleven demo-call-eleven-v1 525956f5 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sofie · Velvet Taxi and Car Rental</title>
@@ -176,7 +176,7 @@ footer { padding: 18px clamp(16px, 4vw, 40px) 26px; text-align: center; font: 40
   <footer>Demo · not connected to your phone line · velvettaxi.com</footer>
 </div>
 <script type="module">
-const CFG = {"endpoint":"https://kzxkxiicdblexurioywf.supabase.co/functions/v1/phone-mockup-eleven-realtime-v1","demo":"beZ85gaUdQSyFaSWUPwL0gF0","agent":"Sofie","first":"Hi, you've reached Velvet Taxi and Car Rental. I'm Sofie, the AI assistant here, and this call may be recorded. How can I help you today?","sdk":"https://esm.sh/@elevenlabs/client@1.32.1","bye":"(?:thanks?( you)?( so much)? for calling[^?!]{0,30}?\\btake care|gracias por (su )?llama(r|da)[^?!]{0,30}?\\bcu[ií]d[ae](se|te)|merci (d['’]avoir appel[ée]|de votre appel)[^?!]{0,30}?\\bbonne journ[ée]e)(,? [a-z]+)?[.!]?\\s*$","steers":[{"label":"Ask about rental cars","when":"question"},{"label":"Ask about island tours","when":"question"},{"label":"Ask about golf bags","when":"question"},{"label":"Ask exact airport fare","when":"question"},{"label":"Ask about tonight","when":"question"},{"label":"Flight moved earlier","when":"details"},{"label":"Add a rental car","when":"details"},{"label":"Call back by email","when":"details"},{"label":"Ask years in business","when":"end"}],"hours":[],"tz":"America/New_York"};
+const CFG = {"endpoint":"https://kzxkxiicdblexurioywf.supabase.co/functions/v1/demo-call-eleven-v1","demo":"beZ85gaUdQSyFaSWUPwL0gF0","agent":"Sofie","first":"Hi, you've reached Velvet Taxi and Car Rental. I'm Sofie, the AI assistant here, and this call may be recorded. How can I help you today?","sdk":"https://lifebaseai.github.io/mockups/phone-eleven/assets/elevenlabs-client-1.32.1-livekit-2.24.1.js","bye":"(?:thanks?( you)?( so much)? for calling[^?!]{0,30}?\\btake care|gracias por (su )?llama(r|da)[^?!]{0,30}?\\bcu[ií]d[ae](se|te)|merci (d['’]avoir appel[ée]|de votre appel)[^?!]{0,30}?\\bbonne journ[ée]e)(,? [a-z]+)?[.!]?\\s*$","steers":[{"label":"Ask about rental cars","when":"question"},{"label":"Ask about island tours","when":"question"},{"label":"Ask about golf bags","when":"question"},{"label":"Ask exact airport fare","when":"question"},{"label":"Ask about tonight","when":"question"},{"label":"Flight moved earlier","when":"details"},{"label":"Add a rental car","when":"details"},{"label":"Call back by email","when":"details"},{"label":"Ask years in business","when":"end"}],"hours":[],"tz":"America/New_York"};
 
 // Sunny's own browser only: while this demo is open in it, sending pauses on
 // his Mac (src/hard-pause.js). Any other browser stops here.
@@ -478,12 +478,14 @@ function reset() {
 function live() {
   if (body.dataset.state !== 'connecting') return;
   setState('live'); status('Live');
+  if (mode === 'you' && !herFirst) { clearTimeout(hushTimer); const was = attempt; hushTimer = setTimeout(() => { if (was === attempt && !herFirst && body.dataset.state === 'live') giveBack(); }, 10000); }
   started = Date.now(); clearTimeout(waitTimer);
   ticking = setInterval(() => { const s = Math.floor((Date.now() - started) / 1000); $('clock').textContent = Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); }, 500);
   if (mode === 'ai') chips();
 }
 function ended(text) {
   if (body.dataset.state !== 'live' && body.dataset.state !== 'connecting') return;
+  if (mode === 'you' && !herFirst && !givingBack) return giveBack();
   if (!callsLeft) remember();
   $('after').textContent = callsLeft ? 'Reload this page for another call (' + callsLeft + ' left)' : "That was this demo's one call";
   clearInterval(ticking); clearTimeout(waitTimer); setState('ended'); status(text || 'Call ended');
@@ -510,6 +512,33 @@ function failed(text) {
 // Once the server has started it, the demo's one call is spent, whatever
 // happens next: no second try, no "again" (v1 made a dud call again once).
 const COULD_NOT = 'The call could not connect';
+/* demo-call-eleven-v1 */
+// demo-call-eleven-v1 (2026-11-22): an owner's call where Sofie never spoke
+// (the line dropped, failed, or stayed silent) is ended and given back by the
+// server, so a dead line never spends the demo's call. Each try is numbered,
+// and anything a stale try does later is ignored.
+let attempt = 0, herFirst = false, givingBack = false, hushTimer = null;
+async function giveBack() {
+  givingBack = true; attempt++;
+  const id = convId;
+  clearInterval(ticking); clearTimeout(waitTimer); clearTimeout(hushTimer);
+  try { convo && convo.endSession(); } catch {}
+  try { mic && mic.getTracks().forEach(t => t.stop()); } catch {}
+  convo = null; mic = null;
+  talking('caller', false); talking('sofie', false);
+  body.dataset.state = 'connecting'; status('Checking the line');
+  let back = null;
+  try { back = await ask('release', { conversation: id || '' }); } catch {}
+  if (back && back.released) {
+    try { localStorage.removeItem(KEPT); } catch {}
+    reset(); starting = false; herFirst = false; givingBack = false;
+    setState('idle');
+    note("The call didn't connect, so it wasn't counted. Try again, or let the AI customer call her.");
+    return;
+  }
+  ended(COULD_NOT);
+  givingBack = false;
+}
 
 async function startAI() {
   if (starting || body.dataset.state !== 'idle') return;
@@ -589,6 +618,7 @@ document.addEventListener('visibilitychange', () => { if (!document.hidden && ct
 async function startYou() {
   if (starting || body.dataset.state !== 'idle') return;
   starting = true;
+  const mine = ++attempt; herFirst = false;
   reset(); mode = 'you'; body.dataset.mode = 'you'; note('');
   $('caller-name').textContent = 'You';
   plain();
@@ -605,15 +635,17 @@ async function startYou() {
   convId = found.conversation || null;
   waitTimer = setTimeout(() => ended(COULD_NOT), 45000);
   try {
-    convo = await lib.Conversation.startSession({
+    const session = await lib.Conversation.startSession({
       conversationToken: found.token,
       connectionType: 'webrtc',
       ...(rightNow() ? { dynamicVariables: { right_now: rightNow() } } : {}),
-      onConnect: () => live(),
-      onDisconnect: () => ended(),
-      onError: () => ended(body.dataset.state === 'live' ? undefined : COULD_NOT),
+      onConnect: () => { if (mine === attempt) live(); },
+      onDisconnect: () => { if (mine === attempt) ended(); },
+      onError: () => { if (mine === attempt) ended(body.dataset.state === 'live' ? undefined : COULD_NOT); },
       onMessage: m => {
+        if (mine !== attempt) return;
         const who = m.source === 'ai' ? 'sofie' : 'caller';
+        if (who === 'sofie') herFirst = true;
         const text = String(m.message || '').replace(TAGS, '').trim();
         if (!text) return;
         spoken(who, text);
@@ -621,16 +653,20 @@ async function startYou() {
       },
       // Her goodbye ends the call once she has said it.
       onModeChange: m => {
+        if (mine !== attempt) return;
+        if (m.mode === 'speaking') herFirst = true;
         talking('sofie', m.mode === 'speaking');
         if (bye && m.mode === 'listening') setTimeout(endNow, 400);
       },
     });
+    if (mine !== attempt) { try { session.endSession(); } catch {} return; }
+    convo = session;
     (function loop() {
       if (body.dataset.state !== 'live' && body.dataset.state !== 'connecting') return;
       try { targets.sofie = Math.max(targets.sofie, convo.getOutputVolume() * 1.4); targets.caller = Math.max(targets.caller, convo.getInputVolume() * 1.2); } catch {}
       requestAnimationFrame(loop);
     })();
-  } catch { ended(COULD_NOT); }
+  } catch { if (mine === attempt) ended(COULD_NOT); }
 }
 
 function endNow() {
